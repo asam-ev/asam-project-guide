@@ -1,8 +1,8 @@
-[submodule "ASAM Style Resources"]
-	path = ASAM Style Resources
+[submodule "Style Resources"]
+	path = Style Resources
 	url = ../style-resources.git
-[submodule "ASAM Global Resources"]
-	path = ASAM Global Resources
+[submodule "Global Resources"]
+	path = Global Resources
 	url = ../global-resources.git
 [submodule "Testing Rules"]
 	path = Testing Rules
