@@ -1,0 +1,39 @@
+
+
+== Some Terms
+Git:: a version control system
+
+Gitlab:: popular open source interface we use that leverages Git
+
+Remote:: the server, i.e. not on your pc, often used to refer to the master repository of a project on a server
+
+Local:: A locally stored (on your pc) version of the remote repository
+
+Working copy:: Files that are not yet handled by git or that contain changes git is not "aware" of
+
+Staging Area:: Files or changes that git is aware of but that are not yet part of the history
+
+== Git Actions
+Clone:: done once to obtain a local copy of a remote repository
+
+Commit:: save the state of a repository (ideally with a “commit message” that gives some background). This “snapshot” only applies to the local repository.
+
+Push:: Copy the committed changes to the remote
+
+Pull:: Update your local copy with all changes that have been made to the remote
+
+Branch:: Diverge from the main line of development by creating a branch, this has a pointer to a specific commit in the parent to make it clear where it started
+
+Merge:: integrate the changes made in one branch into another
+
+
+== Working with Git
+
+The Git workflow is a 3 Step process:
+
+. Add files from the working copy to the staging area. 
+. Commit staged files to your local repo
+. Push to a remote repository.
+
+image::../images/git_workflow.svg[]
+

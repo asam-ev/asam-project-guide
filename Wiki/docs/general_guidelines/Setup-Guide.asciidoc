@@ -1,0 +1,151 @@
+:imagesdir: ../images
+:toc:
+
+= Setup Guide
+
+== Who This Guide Is For
+The goal of ASAM standards is to be comprehensive, complete, and easy to understand. In order to achieve this goal, ASAM employs the same tools and processes for creating these standards in all their projects. +
+New project members must, therefore, set up their accounts and computers accordingly. This page gives a summary of the <<Installing the tools,recommended tools and how to get them>>, how to set up accounts, as well as links to other helpful guides and related topics.
+
+== Working On ASAM Standards
+All ASAM standards are developed and written in the ASAM GitLab (https://code.asam.net). This GitLab has features for
+
+* discussing content and changes
+* versioning project files
+* reviewing changes
+* a change history
+* automatically document publishing
+
+
+== Setting Up Your ASAM GitLab Account
+:hide-uri-scheme:
+All specification-related documents are stored and updated in ASAMs Gitlab. *The ASAM Gitlab is located at https://code.asam.net.*
+
+Each user account is created by an ASAM representative. After creation, the user must finish setting up the account themselves.  This requires the following steps:
+
+. Follow the link in the Gitlab account creation email to set your password. 
++
+NOT,E: The email is sent by "GitLab +<code@asam.net>+".
++
+. Log in with your account using the "Standard" <image> access.
++
+You will be promted to upload an SSH key. See <<Setting up a Secure SSH connection to Gitlab>> for instructions on generating and uploading the SSH keys.
+
+== Installing The Tools
+:hide-uri-scheme:
+NOTE: This setup guide only covers the tools recommended by ASAM. 
+
+It is recommended to install and use the following tools:
+
+[frame="none", grid="none"]
+[source,asciidoc]
+[cols="1,1,5"]
+|====
+| [[bookmark-Git]]*Git*
+a| image::https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=32, height=32, align="center",link=https://git-scm.com/download/win, window=_blank]
+| The version control system we use. +
+https://git-scm.com/download/win
+
+| *VSCode*
+a| image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=32, height=32, align="center", link=https://code.visualstudio.com/download, window=_blank]
+| An all-in-one open-source text editor that makes life a lot easier. +
+https://code.visualstudio.com/download
+|====
+
+
+TIP: If you'd like to use VSCode for git, make sure to install VSCode before Git so the editor can be configured during setup of Git.
+
+If you prefer working online or not installing software on your computer, you can use the GitLab IDE to directly create and edit files without external tools. See the link:GitLab-IDE-Guide.adoc[GitLab IDE Guide].
+
+== Git And Gitlab
+ASAM uses Git for versioning projects and project files. Gitlab is the tool that provides a central hub and storage space (repository).
+
+=== Setting Up Git On Your PC
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=32, height=32, align="text-right",link=<<bookmark-Git>>]
+After installation of Git, configure your user credentials that Git uses when checking in changed content from your PC to the ASAM Gitlab.
+
+* To make sure your commits match your name and email details  a one time configuration is necessary.
+* In a powershell or terminal, execute the following commands and replace the entries _FIRST_NAME_, _LAST_NAME_, and _MY_NAME@example.com_ accordingly: 
+
++
+[source,git]
+----
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+----
+
+=== Secure SSH CXonnection To Gitlab
+
+NOTE: This is optional.
+
+To ensure you don't have to enter your login details every time you want to interact with the repository add an SSH key to your account
+
+. In a powershell window, enter the following: 
++
+NOTE: The powershell window should be opened in your user folder (Windows). 
++
+TIP: Replace _YourEmail@address.com_ with your company mail.
++
+[source,git]
+----
+ssh-keygen -t ed25519 -C "YourEmail@address.com"  
+----
+
+
+.. Confirm the suggested path
+.. Entering a password is optional and leads to additional steps every time you connect to the remote so I recommend against it
+
+
+. Enter
++
+[source,git]
+----
+Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard 
+----
++
+in the window to copy the created public key to the Windows clipboard.
++
+TIP: If this doesn’t work, open the file you created in a text editor and copy the whole text manually.
+
+
+. Edit your profile in Gitlab
+. Add the generated key to https://code.asam.net/profile/keys[Gitlab] - Paste the key copied in step 2, give it a title and then click "Add Key"
+
+
+
+== Configuring VSCode
+Visiual Studio Code is the suggested solution for 
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=64, height=64, role=right]
+
+. In the VSCode menu bar -> View -> Extensions 
++ 
+image::extensions.png[alt=Add extension under 'View'] 
+
+. Search for Asciidoc & install it. This provides preview and syntax highlighting for asciidoc files
++
+image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
+
+
+== Cloning A Repository For The First Time
+NOTE: This only needs to be done once to obtain a local copy.
+
+. Find the repository url on the website and copy the git url
+
+. Open Command Palette (Ctrl+Shift+P), type "Git: Clone", then press Enter
+
+. Enter the git url you copied earlier and press Enter
+
+. Select the folder on your pc where you want to save the repository
+
+image::gitclone.gif[]
+
+= Additional Topics
+
+== SSH Key
+TIP: If you have not set up SSH before with Git, this step is recommended in roder to speed up git access.
+
+== Further Topics
+
+* link:Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
+* link:Shared-OpenX-Calender.adoc[Synchronize with the OpenX calendar]
+* link:GitLab-IDE-Guide.adoc[GitLab IDE Guide]

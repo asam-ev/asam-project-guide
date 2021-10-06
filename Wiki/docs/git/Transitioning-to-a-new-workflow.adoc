@@ -1,0 +1,43 @@
+
+== Transitioning to the new Workflow
+
+IMPORTANT: This phase will run up to the upcoming project meeting on 4th to 6th of May
+
+=== Repository Tidy Up
+
+*Who: all project members*
+
+*	Remove stale branches (old branches that are not active or relevant) - merge them or delete them
+*	Close and consolidate issues –review the issues and see if they are all still relevant/needed. Close those that aren’t
+*	Consolidate branches that are maybe too granular – Merge them into one
+
+=== Feature List Compilation
+
+*Who: WG Leads*
+
+. Compile a list of the features planned for implementation by each of the working groups. This should include a first estimate of the delivery date for a first draft. This is based off of the table shared by Gil on 23.04:
+
++
+.The headers for the table of features
+[%headers,cols='6*']
+|===
+|Feature |Details & Dependencies |Maturity / Readiness |Must be in 2.0? |Expected Delivery Date | Comments 
+|Feature xx | | | | | 
+|===
+
+. issues created -> 1to1 mapping to planned deliveries (e.g. feature in feature list of document  subsection)
+. define a delivery date
+. assign a responsible
+. assign label Deliverable
+
+*next stage:*
+    
+. All WG leads define a set of milestones, assign issues to milestones
+
+=== Branch Structure Setup
+*Who: ASAM Office*
+
+. Create the develop branch and set it to default
+. Setup the release branch
+. Add draft flags to all content
+. Add draft attribute and config to CI

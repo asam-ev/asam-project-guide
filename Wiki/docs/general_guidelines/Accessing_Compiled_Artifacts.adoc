@@ -1,0 +1,4 @@
+:imagesdir: ../images
+
+.The gif below demonstrates how to access compiled html artifacts for other commits or branches
+image::downloading_artifacts.gif[]

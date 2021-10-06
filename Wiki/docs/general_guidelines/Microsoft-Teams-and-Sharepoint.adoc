@@ -1,0 +1,95 @@
+:imagesdir: ../images
+:toc:
+
+== Access
+
+WARNING: If you do not yet have access to Teams and have not been in touch with mailto:benjamin.engel@asam.net[me], please do so! 
+
+
+== Teams & Sharepoint
+
+* Each channel in Teams has a "chat" tab for chatting & a "files" tab to share files
+** If you need another Teams channel, let me know!
+* These files tabs can also be found directly in Sharepoint (sign in with your microsoft account)
+
+NOTE: Sharepoint is a Microsoft service that is used in the background by Teams to manage the files. This is why you can either access the files in Teams or directly in Sharepoint as it is essentially the same thing.
+
+== Sharepoint links 
+
+WARNING: These links will only work for you if you have access to the corresponding project!
+
+    * https://asamev.sharepoint.com/sites/asamopensimulationinterface/Freigegebene%20Dokumente/Forms/AllItems.aspx[OSI]
+    * https://asamev.sharepoint.com/sites/openscenario/Freigegebene%20Dokumente/Forms/AllItems.aspx[OpenSCENARIO 1.x]
+    * https://asamev.sharepoint.com/sites/openscenario2/Freigegebene%20Dokumente/Forms/AllItems.aspx[OpenSCENARIO 2.0]
+    * https://asamev.sharepoint.com/sites/openxontology/Freigegebene%20Dokumente/Forms/AllItems.aspx[OpenXOntology]
+
+[TIP]
+You can sync all project files if you have Onedrive: On the Sharepoint site -> Click Sync (see demo on Syncing)
+
+== Syncing Demo
+
+image::sync.gif[]
+
+== Teams Channels File Structure
+
+[source]
+----
+├───General(Allgemein)
+│   ├───admin
+│   │       Project_Participants.csv // list of all project participants + emails
+│   │       WP_Signups.xlsx // signup sheet for the WPs
+│   │       
+│   └───meetings
+│       └───YYYY-MM-DD_MeetingTitle // All project meeting documents here
+│               
+└───GroupName
+    ├───meetings
+    │   └───YYYY-MM-DD_MeetingTitle // All group meeting documents here
+    │           
+    └───WorkPackage
+        └───WPXX_WPNAME
+            ├───development // Anything being worked on goes here
+            │               // (that doesnt yet belong on git)
+            │       
+            └───meetings
+                └───YYYY-MM-DD_MeetingTitle // All WP meeting documents here
+----
+
+== Receiving Notifications in Teams
+* Notifications of new posts to Teams channels are not always on by default
+* Turn these on so you don't miss any updates (need to do this for each channel)!
+* https://support.microsoft.com/en-us/office/manage-notifications-in-teams-1cc31834-5fe5-412b-8edb-43fecc78413d[more info]
+
+image::notifications.gif[]
+
+== Email Notifications
+* Turn these to receive an email when you receive a notification 
+** We recommend at least personal, channel and team mentions
+
+image::notifications2.gif[]
+
+== Polls & Surveys
+
+* You can create a poll to vote or find good meeting slots with either https://www.doodle.com[Doodle] or Polly
+** Polly is a tool directly in Teams that can be used to create quick polls:
+
+image::polly1.gif[]
+
+
+
+== Meeting in Teams
+* You can create a new meeting directly in teams (if you have a license).
+** You send it to a channel, so anyone in the channel can join or to select contacts
+
+image::Creating_a_meeting_in_teams.gif[]
+
+* 
+
+== Obtain the email address of a channel
+image::email.gif[]
+
+
+
+== Coordination Teams Channel
+* Optional shared channel for all OpenX participants
+* Coming soon!

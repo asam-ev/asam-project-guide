@@ -1,0 +1,178 @@
+= Working on AsciiDoc in VSCode
+:imagesdir: ../images
+:toc:
+:icons: font
+:data-uri:
+
+== Recommended Extensions
+
+VSCode is already without extensions very powerful and user friendly. One thing that can make the VSCode experience even better are the extensions. There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.
+
+Installing an extension is really easy, just enter the extension menu (<<Interface>> see below where to find that), search for the desired extension. Than click on the Install-Button. 
+
+=== AsciiDoc
+
+The AsciiDoc extension will add the syntax the asciidoc interpreter to VSCode so you can use the preview feature and have syntax highlighting.
+
+image::asciidoc_ext.PNG[]
+
+=== GitGraph
+
+The GitGraph extension is a great tool navigating the branches in the git repository and provides a great overview.
+
+image::gitgraph_ext.PNG[]
+
+=== GitLens
+
+The GitLens Extension is a great extension to follow up on all the changes made to the documents within the repository.
+Gitlens provides:
+
+* Repository Overview
+* File History
+* Line History
+* Commit Comparison
+
+image::gitlens_ext.PNG[]
+
+=== Comment Anchors
+
+The Comment Anchor extension provides you with the ability of adding highlighted keywords to the raw text.
+
+image::comment_anchor_example.PNG[]
+
+The extension also lets you search for all available anchors in the repository or current file and offers a jump-to option.
+
+image::commentanchor_ext.PNG[]
+
+== Interface
+
+[horizontal]
+[yellow]#Editor#:: The main area to edit your files. You can open as many editors as you like side by side vertically and horizontally.
+[blue]#Side Bar#:: Contains different views like the Explorer to assist you while working on your project.
+[purple]#Status Bar#:: Information about the opened project and the files you edit.
+[red]#Activity Bar#:: Change the view in the side bar
+[green]#Git Bar#:: If in a git repo. shows the relevant git information. Branch, pull, errors
+
+
+image::vscode_ui.png[]
+
+
+== Interacting with Git
+
+https://code.visualstudio.com/docs/editor/versioncontrol#_git-support
+
+== Command Palette
+
+* Ctrl+Shift+P brings up the Command Palette. 
+
+* From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.
+
+image::vscode_command-palette.png[]
+
+== Activity Bar
+// Explorer - shows all of the files and folders you have access to
+// Search – Find and replace in files
+// Git – all git related commands, only active if in a git repository
+// Extensions let you add languages, debuggers, and tools to your installation to support your development workflow. 
+
+image::vscode_activity-bar.png[]
+
+== Adding VSCode support for diagrams (including preview)
+
+The kroki extension supports a wide range of diagrams from BPMN to Graphviz to PlantUML and Vega graphs using kroki and asciidoctor-kroki.
+
+You can see the full range and examples on the https://kroki.io/examples.html[website].
+
+This requires a diagram server. There are multiple options:
+
+. use the public kroki.io server
+. deploy your own server
+. https://docs.kroki.io/kroki/setup/install/[run a kroki docker container] on your local machine
+
+We will go with option 1
+
+
+WARNING: This extension will send graph information to https://kroki.io. If this is an issue it is also possible to use your own kroki instance (see https://docs.kroki.io/kroki/setup/install/[here for more information]).
+
+To enable diagram support, set the use_kroki parameter in your User Settings to true.
+
+image::enable_kroki.gif[]
+
+To cache and save diagrams locally set the kroki-fetch-diagram attribute in your document header:
+
+    = My Amazing Document
+    :kroki-fetch-diagram:
+    This will store images by default in your document folder, however you may also set imagesdir to store them elsewhere:
+
+    = My Amazing Document
+    :kroki-fetch-diagram:
+    :imagesdir: media
+
+
+The images are served over http:// and you must allow your preview to include data from unsafe sources. To do this open your command palette (ctrl+shift+P) and enter ``asciidoc preview security`` and choose ``Allow insecure content``.
+
+.opening asciidoc preview security settings
+image::plantuml_1.png[]
+
+.allow insecure content
+image::plantuml_2.png[]
+
+Now you can test this with examples:
+
+[cols="1,1"]
+|===
+a|
+[source,asciidoc]
+----
+[plantuml,puml,svg]
+....
+@startuml
+node "Test1" as tst1
+node "Test2" as tst2
+tst1 --> tst2: caption
+@enduml
+....
+----
+a|image::plantuml_3.png[]
+a|
+---- 
+[mermaid]
+....
+gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1, 20d
+    section Another
+    Task in sec      :2014-01-12, 12d
+    another task     :24d
+....  
+----  
+a|image::gannt_example.png[]
+a|
+----
+[mermaid]
+....
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+            
+....
+----
+a|image::pie_example.png[]
+a|
+----
+[mermaid]
+....
+graph TD
+    A[Christmas] --> B(Go shopping)
+    B --> C{Let me think}
+    C --> D[Laptop]
+    C --> E[iPhone]
+....
+----
+a|image::flow_example.png[]
+|===
+
