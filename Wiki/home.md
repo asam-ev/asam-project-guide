@@ -13,7 +13,7 @@ Finally, [synchronise with the OpenX calendar](docs/general_guidelines/Shared-Op
 ### Repository Workflow
 See the [Workflow Overview](docs/general_guidelines/Workflow.asciidoc) for a walkthrough on how to work on actively developing the ASAM standards.
 
-For a list of available labels in ASAM repositories, see this [overview of labels](/ocs/git/ASAM-Issue-and-MR-Labels.md)
+For a list of available labels in ASAM repositories, see this [overview of labels](docs/git/ASAM-Issue-and-MR-Labels.md)
 
 ---
 ### Project Guidelines
