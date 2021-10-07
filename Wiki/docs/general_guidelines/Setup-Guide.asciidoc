@@ -126,18 +126,9 @@ image::extensions.png[alt=Add extension under 'View']
 image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
 
 
-== Cloning A Repository For The First Time
-NOTE: This only needs to be done once to obtain a local copy.
+== Working With VSCode And Git
 
-. Find the repository url on the website and copy the git url
-
-. Open Command Palette (Ctrl+Shift+P), type "Git: Clone", then press Enter
-
-. Enter the git url you copied earlier and press Enter
-
-. Select the folder on your pc where you want to save the repository
-
-image::gitclone.gif[]
+For an example on how to work with VSCode and Git, see link:CloningRepoTutorial.adoc[Cloning Your First Repository].
 
 = Additional Topics
 
@@ -146,6 +137,7 @@ TIP: If you have not set up SSH before with Git, this step is recommended in rod
 
 == Further Topics
 
+* link:Platforms.md[Overview over used platforms]
 * link:Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
 * link:Shared-OpenX-Calender.adoc[Synchronize with the OpenX calendar]
 * link:GitLab-IDE-Guide.adoc[GitLab IDE Guide]
