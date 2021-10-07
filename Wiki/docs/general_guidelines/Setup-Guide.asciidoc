@@ -149,3 +149,5 @@ TIP: If you have not set up SSH before with Git, this step is recommended in rod
 * link:Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
 * link:Shared-OpenX-Calender.adoc[Synchronize with the OpenX calendar]
 * link:GitLab-IDE-Guide.adoc[GitLab IDE Guide]
+* link:ProjectGuidelines.adoc[Project Guidelines]
+* link:WritingGuidelines.adoc[Writing Guidelines]

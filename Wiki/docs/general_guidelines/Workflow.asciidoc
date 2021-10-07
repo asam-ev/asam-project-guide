@@ -194,3 +194,11 @@ IMPORTANT: Questions on content should be addressed to the original issue assign
 * Are all guidelines & conventions maintained?
 * Are all discussions resolved?
 . CCB merges the MRs to ``develop`` and ``release``
+
+
+---
+### Further Repository Guidelines
+- link:docs/git/Commit-Guidelines.adoc[Commit Message Guidelines] -  Formatting guidelines for commit messages on commits/merges to the ASAM master branches
+- link:docs/git/Branching.md[Branching]
+- link:docs/git/Forking.md[Forking]
+- link:docs/tool-specific/VSCode-Guide.adoc[VSCode at ASAM]
