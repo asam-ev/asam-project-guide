@@ -80,10 +80,7 @@ image::Creating_a_meeting_in_teams.gif[]
 
 * 
 
-=== Obtain The Email Address Of A Channel
-image::email.gif[]
-
-
+include::ObtainMailInTeams.adoc[]
 
 === Coordination Teams Channel
 * Optional shared channel for all OpenX participants

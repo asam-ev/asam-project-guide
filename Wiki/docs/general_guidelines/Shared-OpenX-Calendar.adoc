@@ -9,4 +9,8 @@ You can also subscribe to this calendar using its https://outlook.office365.com/
 * https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&hl=en[Subscribing with Google]
 
 
-The link for the calendar subscription is https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html
+The html link for the calendar subscription is https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html. 
+
+NOTE: Google Calendar cannot subscribe to an html link. Use the provided ICS link instead!
+
+TIP: You can use the html link to access the calendar directly in your browser.
