@@ -1,7 +1,7 @@
 GitLab provides a Web IDE editor for interacting with the repository's content directly through the browser. 
 
 ## What Is An "IDE"?
-The acronym _IDE_ stands for "Integrated Development Environment".
+The abbreviation _IDE_ stands for "Integrated Development Environment".
 
 ## What Is The Difference To The Web Editor?
 https://docs.gitlab.com/ee/user/project/repository/web_editor.html
