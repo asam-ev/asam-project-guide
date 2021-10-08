@@ -9,7 +9,9 @@
 The goal of ASAM standards is to be comprehensive, complete, and easy to understand. In order to achieve this goal, ASAM employs the same tools and processes for creating these standards in all their projects. +
 New project members must, therefore, set up their accounts and computers accordingly. This page gives a summary of the <<Installing the tools,recommended tools and how to get them>>, how to set up accounts, as well as links to other helpful guides and related topics.
 
-*If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your __GitLab account__, connect your __environment__ to it (or use the GitLab IDE), and continue with the [.underline]#guidelines# in the Wiki's link:./Wiki/home.md[Start Page].*
+*If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your __GitLab account__, connect your __environment__ to it (or use the link:GitLab-IDE_Guide.adoc[GitLab IDE]), and continue with the [.underline]#guidelines# in the Wiki's link:./Wiki/home.md[Start Page].*
+
+NOTE: This setup guide only covers the tools recommended by ASAM. You can use other compatible tools, as long as the single source of truth stays ASAM GitLab and your content is of the supported content type, such as asciidoc.
 
 == Working On ASAM Standards
 All ASAM standards are developed and written in the ASAM GitLab (https://code.asam.net). This GitLab has features for
@@ -27,10 +29,7 @@ All specification-related documents are stored and updated in ASAMs Gitlab. *The
 
 Each user account is created by an ASAM representative. After creation, the user must finish setting up the account themselves.  This requires the following steps:
 
-. Follow the link in the Gitlab account creation email to set your password. 
-+
-NOTE: The email is sent by "GitLab +<code@asam.net>+".
-+
+. Follow the link in the Gitlab account creation email sent by "GitLab +<code@asam.net>+" to set your password. 
 . Log in with your account using the image:GitLabStandardLoginButton.png[title="Standard Button"] access.
 +
 image:GitLabStandardLogin.png[title="Standard Login"]
@@ -41,7 +40,6 @@ NOTE: The "ASAM SVN" login is deprecated and will be removed in the future.
 
 == Installing The Tools
 :hide-uri-scheme:
-NOTE: This setup guide only covers the tools recommended by ASAM. 
 
 For working locally on the standardization process, the following tools are recommended:
 
@@ -63,19 +61,19 @@ https://git-scm.com/download/win
 
 TIP: If you'd like to use VSCode for Git, make sure to install VSCode before Git for Windows so the editor can be configured during setup!
 
-If you prefer working online and not installing software on your computer, you can use the *GitLab IDE* to directly create and edit files without external tools. See <<Working Without Software Installation>> for more information.
+TIP: *If you prefer working online without having to install software on your computer*, you can use the *GitLab IDE* to directly create and edit files without external tools. See *<<Working Without Software Installation>>* for more information.
 
 === Configuring VSCode
 
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=64, height=64, link=https://code.visualstudio.com/download, role=right]
 
-Visiual Studio Code is the suggested solution for checking out repositories and files from GitLab, adding and editing files, and pushing changes back to GitLab. However, users may choose any compatible program(s) instead, as long as GitLab stays the single point of truth for project files. Alternatively, users may also choose to work completly through GitLab by using the Web IDE provided there. See <<Working Without Software Installation>> for more information.
+Visiual Studio Code is the suggested solution for checking out repositories and files from GitLab, adding and editing files, and pushing changes back to GitLab. However, users may choose any compatible program(s) instead, as long as GitLab stays the single point of truth for project files. Alternatively, users may also choose to work completly through GitLab by using the Web IDE provided there. See *<<Working Without Software Installation>>* for more information.
 
-. In the VSCode menu bar -> View -> Extensions.
+. Access the extensions window through the VSCode menu bar -> View -> Extensions.
 + 
 image::extensions.png[alt=Add extension under 'View'] 
 
-. Search for Asciidoc & install it. This provides a preview feature and syntax highlighting for asciidoc files.
+. Search for AsciiDoc & install it. This provides a preview feature and syntax highlighting for asciidoc files.
 +
 image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
 
@@ -178,19 +176,43 @@ Now, GitLab knows the public key you use to authorize when interacting with GitL
 
 . Check if the SSH Agent is running
 .. Open a link:PowershellTutorial.adoc[PowerShell] window
-.. Type `Get-Service ssh-agent`, hit Enter and check the status. If the status is "Stopped", continue
-.. Type `Get-Service ssh-agent | Select StartType`, hit Enter and check the StartType. If it is "Disabled", continue with _Activate the SSH Agent_. Otherwise, continue with _Start the SSH Agent_.
+.. Type the following command, hit Enter, and check the status:
++
+[source,Shell]
+----
+Get-Service ssh-agent
+----
++
+If the status is "Stopped", continue.
+.. Type, hit Enter, and check the StartType. 
++
+[source,Shell]
+----
+Get-Service ssh-agent | Select StartType
+----
++
+If it is "Disabled", continue with _Activate the SSH Agent_. Otherwise, continue with _Start the SSH Agent_.
 
 . Activate the SSH Agent
 +
 NOTE: This requires administration rights. If you do not have these, request support from your IT department.
 +
 .. Open another link:PowershellTutorial.adoc[PowerShell] window (with Administration rights)
-.. Set the SSH Agent to start manually by typing `Get-Service -Name ssh-agent | Set-Service -StartupType Manual` and hitting Enter
+.. Set the SSH Agent to start manually by typing the following command and hitting Enter:
++
+[source,Shell]
+----
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+----
 
 . Start the SSH Agent
 .. Return to the PowerShell window or open a new one
-.. Enter `Start-Service ssh-agent` and hit Enter
+.. Enter the following command and hit Enter
++
+[source,Shell]
+----
+Start-Service ssh-agent
+----
 +
 
 . Add the SSH private key to the agent
@@ -198,7 +220,12 @@ NOTE: This requires administration rights. If you do not have these, request sup
 NOTE: This should not be done in the Administration link:PowershellTutorial.adoc[PowerShell] window if your Admin account is not your user account. Otherwise, Windows will complain about unprotected private key files!
 +
 .. Return to the PowerShell window or open a new one
-.. To add your generated private key to the SSH Agent, enter `ssh-add ~/.ssh/id_ed25519`
+.. To add your generated private key to the SSH Agent, enter 
++
+[source,Shell]
+----
+ssh-add ~/.ssh/id_ed25519
+----
 +
 NOTE: If you chose a different folder or filename, you may need to change the path ("~/.ssh/") and/or the filename ("id_ed25519") accordingly.
 
