@@ -249,7 +249,7 @@ See link:GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for more information.
 
 * link:Platforms.md[Overview over used platforms]
 * link:Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
-* link:Shared-OpenX-Calender.adoc[Synchronize with the OpenX calendar]
+* link:Shared-OpenX-Calendar.adoc[Synchronize with the OpenX calendar]
 * link:GitLab-IDE-Guide.adoc[GitLab IDE Guide]
 * link:ProjectGuidelines.adoc[Project Guidelines]
 * link:WritingGuidelines.adoc[Writing Guidelines]
