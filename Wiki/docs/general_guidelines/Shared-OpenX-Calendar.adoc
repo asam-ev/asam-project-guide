@@ -25,8 +25,8 @@ You can also subscribe to this calendar using its https://outlook.office365.com/
 
 
 *To subscribe*, use the ICS link: +
-https://outlook.office365.com/owa/calendar/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.ics
+*https://outlook.office365.com/owa/calendar/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.ics*
 
 TIP: You can use the html link to access the calendar directly in your browser.
 
-To view the calendar in your browser directly, use the html link: https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html. 
+To *view the calendar in your browser* directly, use the html link: https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html. 
