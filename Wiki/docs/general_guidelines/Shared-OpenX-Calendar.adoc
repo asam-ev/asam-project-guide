@@ -18,8 +18,10 @@ To view the calendar in your browser directly, use the html link: https://outloo
 .Click here to view the calendar on this page
 [%collapsible]
 ====
+++++
 <iframe src="https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html" width="900" height="400" name="OpenX calendar">
   <p>Your browser cannot open embeded frames, unfortunately. You can open the embedded page through this link: <a href="https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html">SELFHTML</a>
   </p>
 </iframe>
+++++
 ====

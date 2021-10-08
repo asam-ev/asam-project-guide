@@ -9,7 +9,7 @@
 The goal of ASAM standards is to be comprehensive, complete, and easy to understand. In order to achieve this goal, ASAM employs the same tools and processes for creating these standards in all their projects. +
 New project members must, therefore, set up their accounts and computers accordingly. This page gives a summary of the <<Installing the tools,recommended tools and how to get them>>, how to set up accounts, as well as links to other helpful guides and related topics.
 
-If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your GitLab account and connect your environment to it (or use the GitLab IDE) and continue with the guidelines in the Wiki's link:./Wiki/home.md[Start Page].
+*If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your __GitLab account__, connect your __environment__ to it (or use the GitLab IDE), and continue with the [.underline]#guidelines# in the Wiki's link:./Wiki/home.md[Start Page].*
 
 == Working On ASAM Standards
 All ASAM standards are developed and written in the ASAM GitLab (https://code.asam.net). This GitLab has features for
