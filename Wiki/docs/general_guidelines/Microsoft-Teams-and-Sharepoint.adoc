@@ -23,6 +23,8 @@ WARNING: Access to Teams requires you to have a Microsoft 365 Business Standard,
 
 NOTE: You can participate in meetings without having any Microsoft 365 account, but you CANNOT access channels and chats in Teams.
 
+NOTE: If you cannot access Teams after having been granted access by ASAM, check with your ASAM contact if you have already been assigned to any team or channel yet. You will receive an email from `noreply@email.teams.microsoft.com` when your account has been added to at least one channel.
+
 
 == Microsoft Teams
 

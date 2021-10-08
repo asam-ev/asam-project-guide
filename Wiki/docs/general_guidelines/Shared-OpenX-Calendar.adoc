@@ -3,14 +3,23 @@ All OpenX projects share a calendar under the email address of openx@asam.net. *
 
 Every project's MS Teams group has a tab in the _General_ channel called *_Calendar_* where you can refer to it.
 
-You can also subscribe to this calendar using its https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html[link] so that it appears in your own email clients:
+You can also subscribe to this calendar using its https://outlook.office365.com/owa/calendar/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.ics[link] so that it appears in your own email clients:
 
 * https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c[Subscribing with Outlook / Exchange Online]
 * https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&hl=en[Subscribing with Google]
 
-
-The html link for the calendar subscription is https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html. 
-
-NOTE: Google Calendar cannot subscribe to an html link. Use the provided ICS link instead!
+*To subscribe*, use the ICS link: +
+https://outlook.office365.com/owa/calendar/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.ics
 
 TIP: You can use the html link to access the calendar directly in your browser.
+
+To view the calendar in your browser directly, use the html link: https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html. 
+
+.Click here to view the calendar on this page
+[%collapsible]
+====
+<iframe src="https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html" width="900" height="400" name="OpenX calendar">
+  <p>Your browser cannot open embeded frames, unfortunately. You can open the embedded page through this link: <a href="https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html">SELFHTML</a>
+  </p>
+</iframe>
+====
