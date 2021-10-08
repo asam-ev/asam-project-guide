@@ -9,6 +9,8 @@ This Wiki provides information on how to **set up accounts and tools** for worki
 |[**Setup**](#first-time-setup)|<a href="docs/general_guidelines/Setup-Guide.asciidoc"><img src="docs/images/GettingStarted.jpg" alt="First Time Setup" width="120"/><br>First Time Setup|<a href="docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc"><img src="docs/images/Communication.png" alt="Teams & Sharepoint" width="120"/><br>Teams & Sharepoint|<a href="docs/general_guidelines/Shared-OpenX-Calendar.adoc"><img src="docs/images/Calendar.png" alt="OpenX Calendar" width="120"/><br>Shared Project Calendar|
 |[**Guidelines**](#guidelines)|<a href="docs/general_guidelines/Workflow.asciidoc"><img src="docs/images/Workflow.png" alt="Workflow Overview" width="120"/><br>Repository Guidelines|<a href="docs/general_guidelines/ProjectGuidelines.adoc"><img src="docs/images/ProjectGuidelines.png" alt="Project Guidelines" width="120"/><br>Project Guidelines|<a href="docs/general_guidelines/WritingGuidelines.adoc"><img src="docs/images/WritingGuideliens.png" alt="Writing Guidelines" width="120"/><br>Writing Guidelines|
 
+// TODO: replace images with ASAM images
+
 ---
 ---
 
