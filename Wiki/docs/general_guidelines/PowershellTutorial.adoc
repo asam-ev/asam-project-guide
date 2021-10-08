@@ -30,7 +30,7 @@ NOTE: This opens the PowerShell in the default location. Usually, this is your u
 
 image::PSWithRun.gif[width = 720]
 
-. Hit "Ctrl" + "R" to open the "Run" window
+. Hit "Win" + "R" to open the "Run" window
 . Type "powershell" and confirm with Enter
 
 ==== Windows Explorer
