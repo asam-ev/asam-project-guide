@@ -9,7 +9,7 @@
 The goal of ASAM standards is to be comprehensive, complete, and easy to understand. In order to achieve this goal, ASAM employs the same tools and processes for creating these standards in all their projects. +
 New project members must, therefore, set up their accounts and computers accordingly. This page gives a summary of the <<Installing the tools,recommended tools and how to get them>>, how to set up accounts, as well as links to other helpful guides and related topics.
 
-*If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your __GitLab account__, connect your __environment__ to it (or use the link:GitLab-IDE_Guide.adoc[GitLab IDE]), and continue with the [.underline]#guidelines# in the Wiki's link:./Wiki/home.md[Start Page].*
+*If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your __GitLab account__, connect your __environment__ to it (or use the link:../tool-specific/GitLab-IDE_Guide.adoc[GitLab IDE]), and continue with the [.underline]#guidelines# in the Wiki's link:./Wiki/home.md[Start Page].*
 
 NOTE: This setup guide only covers the tools recommended by ASAM. You can use other compatible tools, as long as the single source of truth stays ASAM GitLab and your content is of the supported content type, such as asciidoc.
 
@@ -275,13 +275,13 @@ For an example on how to work with VSCode and Git, see link:CloningRepoTutorial.
 == Working Without Software Installation
 
 GitLab provides an integrated working environment and text editor with which users can directly create and edit files without having to install Git or an editor like VSCode. 
-See link:GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for more information.
+See link:../tool-specific/GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for more information.
 
 == See Also
 
 * link:Platforms.md[Overview over used platforms]
 * link:Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
 * link:Shared-OpenX-Calendar.adoc[Synchronize with the OpenX calendar]
-* link:GitLab-IDE-Guide.adoc[GitLab IDE Guide]
+* link:../tool-specific/GitLab-IDE-Guide.adoc[GitLab IDE Guide]
 * link:ProjectGuidelines.adoc[Project Guidelines]
 * link:WritingGuidelines.adoc[Writing Guidelines]
