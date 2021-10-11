@@ -132,9 +132,9 @@ NOTE: If you cannot click "Next", make sure VSCode is already installed. Return 
 
 After installation of Git, configure your user credentials that Git uses when checking in changed content from your PC to the ASAM Gitlab. To make sure your commits match your name and email details, a one time configuration is necessary.
 
-TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found link:PowershellTutorial.adoc[here].
+TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found link:../tool-specific/PowershellTutorial.adoc[here].
 
-. Open a link:PowershellTutorial.adoc[PowerShell] window
+. Open a link:../tool-specific/PowershellTutorial.adoc[PowerShell] window
 . Execute the following command and replace the entries _FIRST_NAME_, _LAST_NAME_  accordingly: 
 
 +
@@ -159,9 +159,9 @@ NOTE: This is optional! It removes the need to enter the user password for every
 ===== Creating The SSH Keys And Apply In GitLab
 To ensure you don't have to enter your login details every time you want to interact with the repository, add an SSH key to your account. To do so, follow these steps:
 
-. In a link:PowershellTutorial.adoc[PowerShell] window, enter the following: 
+. In a link:../tool-specific/PowershellTutorial.adoc[PowerShell] window, enter the following: 
 +
-NOTE: The link:PowershellTutorial.adoc[PowerShell] window should be opened in your user folder (Windows). Usually, if you open it through right-click on the Windows button, this should be the case.
+NOTE: The link:../tool-specific/PowershellTutorial.adoc[PowerShell] window should be opened in your user folder (Windows). Usually, if you open it through right-click on the Windows button, this should be the case.
 +
 [source,git]
 ----
@@ -207,7 +207,7 @@ image:ConfirmSSHKey.png[title="Window shown after SHS key has been entered and c
 Now, GitLab knows the public key you use to authorize when interacting with GitLab from your PC. In order to use the generated keys for authorization by your PC, execute the following steps:
 
 . Check if the SSH Agent is running
-.. Open a link:PowershellTutorial.adoc[PowerShell] window
+.. Open a link:../tool-specific/PowershellTutorial.adoc[PowerShell] window
 .. Type the following command, hit Enter, and check the status:
 +
 [source,Shell]
@@ -229,7 +229,7 @@ If it is "Disabled", continue with _Activate the SSH Agent_. Otherwise, continue
 +
 NOTE: This requires administration rights. If you do not have these, request support from your IT department.
 +
-.. Open another link:PowershellTutorial.adoc[PowerShell] window (with Administration rights)
+.. Open another link:../tool-specific/PowershellTutorial.adoc[PowerShell] window (with Administration rights)
 .. Set the SSH Agent to start manually by typing the following command and hitting Enter:
 +
 [source,Shell]
@@ -249,7 +249,7 @@ Start-Service ssh-agent
 
 . Add the SSH private key to the agent
 +
-NOTE: This should not be done in the Administration link:PowershellTutorial.adoc[PowerShell] window if your Admin account is not your user account. Otherwise, Windows will complain about unprotected private key files!
+NOTE: This should not be done in the Administration link:../tool-specific/PowershellTutorial.adoc[PowerShell] window if your Admin account is not your user account. Otherwise, Windows will complain about unprotected private key files!
 +
 .. Return to the PowerShell window or open a new one
 .. To add your generated private key to the SSH Agent, enter 
