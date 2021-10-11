@@ -1,0 +1,34 @@
+:imagesdir: ../images
+
+== Cloning A Repository Using VSCode
+NOTE: This only needs to be done once to obtain a local copy.
+
+. Find the repository url on the website and copy the git url
+
+. Open Command Palette (Ctrl+Shift+P), type "Git: Clone", then press Enter
+
+. Paste the copied git url and press Enter
+
+. Select the folder on your PC where you want to save the repository
+
+image::gitclone.gif[]
+
+== Cloning A Repository Using Git Bash
+
+. Find the repository url on the website and copy the git url
+
+. Open the folder on your PC where you want to save the repository
+
+. Open the Git Bash from the Context Menu (right-click -> Select "Git Bash Here")
+
+. Type `git clone ` and then press the middle mouse button to paste the copied url. Confirm with Enter
+
+image::CloneByGitBash.gif[]
+
+== Cloning A Repository Using GitLab To VSCode
+
+. Under "Clone", click on "Visual Studio Code"
+
+. Select the folder on your PC where you want to save the repository
+
+image::CloneToVSCode.gif[]

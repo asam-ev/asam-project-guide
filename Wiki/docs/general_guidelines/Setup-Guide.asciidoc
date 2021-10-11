@@ -1,0 +1,255 @@
+:imagesdir: ../images
+:toc:
+
+= Setup Guide
+
+== Who This Guide Is For
+
+
+The goal of ASAM standards is to be comprehensive, complete, and easy to understand. In order to achieve this goal, ASAM employs the same tools and processes for creating these standards in all their projects. +
+New project members must, therefore, set up their accounts and computers accordingly. This page gives a summary of the <<Installing the tools,recommended tools and how to get them>>, how to set up accounts, as well as links to other helpful guides and related topics.
+
+*If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your __GitLab account__, connect your __environment__ to it (or use the link:GitLab-IDE_Guide.adoc[GitLab IDE]), and continue with the [.underline]#guidelines# in the Wiki's link:./Wiki/home.md[Start Page].*
+
+NOTE: This setup guide only covers the tools recommended by ASAM. You can use other compatible tools, as long as the single source of truth stays ASAM GitLab and your content is of the supported content type, such as asciidoc.
+
+== Working On ASAM Standards
+All ASAM standards are developed and written in the ASAM GitLab (https://code.asam.net). This GitLab has features for
+
+* commenting on content and changes
+* versioning project files
+* reviewing changes
+* a change history
+* automatically document publishing
+
+
+== Setting Up Your ASAM GitLab Account
+:hide-uri-scheme:
+All specification-related documents are stored and updated in ASAMs Gitlab. *The ASAM Gitlab is located at https://code.asam.net.*
+
+Each user account is created by an ASAM representative. After creation, the user must finish setting up the account themselves.  This requires the following steps:
+
+. Follow the link in the Gitlab account creation email sent by "GitLab +<code@asam.net>+" to set your password. 
+. Log in with your account using the image:GitLabStandardLoginButton.png[title="Standard Button"] access.
++
+image:GitLabStandardLogin.png[title="Standard Login"]
++
+You will be promted to upload an SSH key. See <<Secure SSH Connection To Gitlab>> for instructions on generating and uploading the SSH keys.
+
+NOTE: The "ASAM SVN" login is deprecated and will be removed in the future.
+
+== Installing The Tools
+:hide-uri-scheme:
+
+For working locally on the standardization process, the following tools are recommended:
+
+[frame="none", grid="none"]
+[source,asciidoc]
+[cols="1,1,5"]
+|====
+| *VSCode*
+a| image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=32, height=32, align="center", link=https://code.visualstudio.com/download, window=_blank]
+| An all-in-one open-source text editor that makes life a lot easier. +
+https://code.visualstudio.com/download
+
+| [[bookmark-git]]*Git*
+a| image::https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=32, height=32, align="center",link=https://git-scm.com/download/win, window=_blank]
+| The version control system we use. +
+https://git-scm.com/download/win
+|====
+
+
+TIP: If you'd like to use VSCode for Git, make sure to install VSCode before Git for Windows so the editor can be configured during setup!
+
+TIP: *If you prefer working online without having to install software on your computer*, you can use the *GitLab IDE* to directly create and edit files without external tools. See *<<Working Without Software Installation>>* for more information.
+
+=== Configuring VSCode
+
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=64, height=64, link=https://code.visualstudio.com/download, role=right]
+
+Visiual Studio Code is the suggested solution for checking out repositories and files from GitLab, adding and editing files, and pushing changes back to GitLab. However, users may choose any compatible program(s) instead, as long as GitLab stays the single point of truth for project files. Alternatively, users may also choose to work completly through GitLab by using the Web IDE provided there. See *<<Working Without Software Installation>>* for more information.
+
+. Access the extensions window through the VSCode menu bar -> View -> Extensions.
++ 
+image::extensions.png[alt=Add extension under 'View'] 
+
+. Search for AsciiDoc & install it. This provides a preview feature and syntax highlighting for asciidoc files.
++
+image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
+
+
+=== Git And Gitlab
+ASAM uses Git for versioning projects and project files. GitLab is the webhosted tool that provides a central hub and storage space (repository).
+
+==== Setting Up Git On Your PC
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=64, height=64, role="right",link=https://git-scm.com/download/win, window=_blank]
+
+Install Git on your computer. The installation routine requires many settings. You can leave most to all on their default. 
+
+*If you would like to use VSCode as your standard Git editor, follow the optional instructions below.*
+
+._Optional: Instructions on setting up VSCode as default Git editor_
+[%collapsible]
+====
+image:SelectVSCodeForGit.png[title="Use Visual Studio Code as Git's default editor"]
+
+* Select "Use Visual Studio Code as Git's default editor" from the drop-down menu
+
+NOTE: If you cannot click "Next", make sure VSCode is already installed. Return to the previous step and continue again. Now, the "next" button should be active.
+====
+
+After installation of Git, configure your user credentials that Git uses when checking in changed content from your PC to the ASAM Gitlab. To make sure your commits match your name and email details, a one time configuration is necessary.
+
+TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found link:PowershellTutorial.adoc[here].
+
+. Open a link:PowershellTutorial.adoc[PowerShell] window
+. Execute the following command and replace the entries _FIRST_NAME_, _LAST_NAME_  accordingly: 
+
++
+[source,git]
+----
+git config --global user.name "FIRST_NAME LAST_NAME"
+----
+
+. Next, execute the following command and replace the entry _MY_NAME@example.com_ with your comany's email:
++
+[source,git]
+----
+git config --global user.email "MY_NAME@example.com"
+----
+
+NOTE: If no error is returned, the configuration step has been successful.
+
+==== Secure SSH Connection To Gitlab
+
+NOTE: This is optional! It removes the need to enter the user password for every push/pull but requires some extra time for initial setup.
+
+===== Creating The SSH Keys And Apply In GitLab
+To ensure you don't have to enter your login details every time you want to interact with the repository, add an SSH key to your account. To do so, follow these steps:
+
+. In a link:PowershellTutorial.adoc[PowerShell] window, enter the following: 
++
+NOTE: The link:PowershellTutorial.adoc[PowerShell] window should be opened in your user folder (Windows). Usually, if you open it through right-click on the Windows button, this should be the case.
++
+[source,git]
+----
+ssh-keygen -t ed25519 -C "YourEmail@address.com"  
+----
++
+TIP: Replace _YourEmail@address.com_ with your company mail.
+
+.. Confirm the suggested path with Enter.
+.. Type in a passphrase and confirm with Enter, or just confirm without a passphrase.
++
+TIP: Entering a passphrase is optional and leads to additional steps every time you connect to the remote, so it is not recommended.
+
+. Enter the following to copy the created public key to the Windows clipboard:
++
+[source,git]
+----
+Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard 
+----
++
+TIP: If this doesn’t work, open the file you created in a text editor and copy the whole text manually.
+
+
+. Edit your profile in Gitlab
++
+image:AccessGitlabAccountConfig.png[title="Edit user profile in GitLab"]
+
+. Open the settings "SSH Keys" on the left
++
+image:OpenSSHSettings.png[title="Open the 'SSH Keys' settings"]
+
+. Add the generated key to https://code.asam.net/profile/keys[Gitlab] - Paste the key copied in step 2, give it a title and then click "Add Key"
++
+
+.Entry mask for SSH key in GitLab
+image:PasteSSHKey.png[title="Paste and confirm your new public SSH key"] +
+
+.Confirmation screen after SSH key has been entered in GitLab
+image:ConfirmSSHKey.png[title="Window shown after SHS key has been entered and confirmed"]
+
+===== Apply The Generated SSH Key Locally
+
+Now, GitLab knows the public key you use to authorize when interacting with GitLab from your PC. In order to use the generated keys for authorization by your PC, execute the following steps:
+
+. Check if the SSH Agent is running
+.. Open a link:PowershellTutorial.adoc[PowerShell] window
+.. Type the following command, hit Enter, and check the status:
++
+[source,Shell]
+----
+Get-Service ssh-agent
+----
++
+If the status is "Stopped", continue.
+.. Type, hit Enter, and check the StartType. 
++
+[source,Shell]
+----
+Get-Service ssh-agent | Select StartType
+----
++
+If it is "Disabled", continue with _Activate the SSH Agent_. Otherwise, continue with _Start the SSH Agent_.
+
+. Activate the SSH Agent
++
+NOTE: This requires administration rights. If you do not have these, request support from your IT department.
++
+.. Open another link:PowershellTutorial.adoc[PowerShell] window (with Administration rights)
+.. Set the SSH Agent to start manually by typing the following command and hitting Enter:
++
+[source,Shell]
+----
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+----
+
+. Start the SSH Agent
+.. Return to the PowerShell window or open a new one
+.. Enter the following command and hit Enter
++
+[source,Shell]
+----
+Start-Service ssh-agent
+----
++
+
+. Add the SSH private key to the agent
++
+NOTE: This should not be done in the Administration link:PowershellTutorial.adoc[PowerShell] window if your Admin account is not your user account. Otherwise, Windows will complain about unprotected private key files!
++
+.. Return to the PowerShell window or open a new one
+.. To add your generated private key to the SSH Agent, enter 
++
+[source,Shell]
+----
+ssh-add ~/.ssh/id_ed25519
+----
++
+NOTE: If you chose a different folder or filename, you may need to change the path ("~/.ssh/") and/or the filename ("id_ed25519") accordingly.
+
+*See also*:
+
+* link:https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent[Generating And Adding Your SSH Key To The SSH Agent]
+* link:https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro[Start SSH Agent]
+
+
+
+=== Working With VSCode And Git
+
+For an example on how to work with VSCode and Git, see link:CloningRepoTutorial.adoc[Cloning Your First Repository].
+
+== Working Without Software Installation
+
+GitLab provides an integrated working environment and text editor with which users can directly create and edit files without having to install Git or an editor like VSCode. 
+See link:GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for more information.
+
+== See Also
+
+* link:Platforms.md[Overview over used platforms]
+* link:Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
+* link:Shared-OpenX-Calendar.adoc[Synchronize with the OpenX calendar]
+* link:GitLab-IDE-Guide.adoc[GitLab IDE Guide]
+* link:ProjectGuidelines.adoc[Project Guidelines]
+* link:WritingGuidelines.adoc[Writing Guidelines]
