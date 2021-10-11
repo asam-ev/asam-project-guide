@@ -69,13 +69,45 @@ image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_C
 
 Visiual Studio Code is the suggested solution for checking out repositories and files from GitLab, adding and editing files, and pushing changes back to GitLab. However, users may choose any compatible program(s) instead, as long as GitLab stays the single point of truth for project files. Alternatively, users may also choose to work completly through GitLab by using the Web IDE provided there. See *<<Working Without Software Installation>>* for more information.
 
+TIP: VSCode can be extended with powerfull features through downloading extensions from the Marketplace. These extensions can help you with auto-completion, highlighting of text based on rules, adding editing features for formats, and many more. You can look for other extensions besides the suggested ones to expand your set of features and adapt your wokr environment to your needs as you like.
+
+==== Installing AsciiDoc Extension
+
+The AsciiDoc extension for Visual Sudio Code allows for easy creation and supported editing of asciidoc or adoc files within Visual Studio Code. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
+
 . Access the extensions window through the VSCode menu bar -> View -> Extensions.
 + 
 image::extensions.png[alt=Add extension under 'View'] 
 
-. Search for AsciiDoc & install it. This provides a preview feature and syntax highlighting for asciidoc files.
+. Search for AsciiDoc (or use asciidoctor.asciidoctor-vscode) & install it. This provides a preview feature and syntax highlighting for asciidoc files.
 +
 image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
+
+
+==== Installing Draw.io Extension
+
+The Draw.io extension for Visual Sudio Code allows for easy creation and supported editing of drawio and other files supported by Draw.io within Visual Studio Code. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
+
+. Access the extensions window through the VSCode menu bar -> View -> Extensions.
++ 
+image::extensions.png[alt=Add extension under 'View'] 
+
+. Search for Drawio (or use hediet.vscode-drawio) & install "Draw.io Integration". This provides a preview and editing features for drawio files.
++ 
+image::install_drawio.png[alt=Search and find the extension 'Draw.io Integration']
+
+
+==== Installing GitLens Extension
+
+Versioning through Git is integrated into VSCode natively. However, more and advanced Git features can be made accessible through extensions like GitLens. Especially for reviewing changes, comments, and revisions directly in VSCode, using such an extension helps tremendously. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
+
+. Access the extensions window through the VSCode menu bar -> View -> Extensions.
++ 
+image::extensions.png[alt=Add extension under 'View'] 
+
+. Search for GitLens (or use eamodio.gitlens) & install "GitLens -- Git supercharged". This provides additional Git features directly within VSCode, such diffing changes to previous commits, commenting, and more.
++ 
+image::install_gitlens.png[alt=Search and find the extension 'GitLens -- Git supercharged']
 
 
 === Git And Gitlab
