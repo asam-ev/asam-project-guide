@@ -2,7 +2,7 @@
 :imagesdir: ../images
 :toc:
 
-== Recommended Extensions
+== Recommended VSCode Extensions
 
 VSCode is already without extensions very powerful and user friendly. One thing that can make the VSCode experience even better are the extensions. There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.
 

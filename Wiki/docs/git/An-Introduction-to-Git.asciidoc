@@ -1,6 +1,6 @@
 
 
-== Some Terms
+== Terminology
 Git:: a version control system
 
 Gitlab:: popular open source interface we use that leverages Git
@@ -9,7 +9,7 @@ Remote:: the server, i.e. not on your pc, often used to refer to the master repo
 
 Local:: A locally stored (on your pc) version of the remote repository
 
-Working copy:: Files that are not yet handled by git or that contain changes git is not "aware" of
+Working Copy:: Files that are not yet handled by git or that contain changes git is not "aware" of
 
 Staging Area:: Files or changes that git is aware of but that are not yet part of the history
 
@@ -29,7 +29,7 @@ Merge:: integrate the changes made in one branch into another
 
 == Working with Git
 
-The Git workflow is a 3 Step process:
+The Git workflow is a 3 step process:
 
 . Add files from the working copy to the staging area. 
 . Commit staged files to your local repo
@@ -37,3 +37,11 @@ The Git workflow is a 3 Step process:
 
 image::../images/git_workflow.svg[]
 
+== Further Information
+
+- link:Git-Best-Practices.md[Git-Best-Practices]
+- link:Branching.md[Branching in Git/GitLab]
+- link:Branch-Naming-Conventions.adoc[Branch-naming Conventions]
+- link:Forking.md[Forking in Git/Gitlab]
+- link:ASAM-Issue-and-MR-Labels.md[Using Labels in Git and GitLab]
+- link:Merge-Requests.adoc[Merge Requests (MR)]

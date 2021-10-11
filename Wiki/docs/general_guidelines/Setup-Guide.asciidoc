@@ -54,7 +54,7 @@ https://code.visualstudio.com/download
 
 | [[bookmark-git]]*Git*
 a| image::https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=32, height=32, align="center",link=https://git-scm.com/download/win, window=_blank]
-| The version control system we use. +
+| The version control system ASAM uses. +
 https://git-scm.com/download/win
 |====
 
@@ -63,17 +63,18 @@ TIP: If you'd like to use VSCode for Git, make sure to install VSCode before Git
 
 TIP: *If you prefer working online without having to install software on your computer*, you can use the *GitLab IDE* to directly create and edit files without external tools. See *<<Working Without Software Installation>>* for more information.
 
-=== Configuring VSCode
+=== Setting Up VSCode
 
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=64, height=64, link=https://code.visualstudio.com/download, role=right]
 
 Visiual Studio Code is the suggested solution for checking out repositories and files from GitLab, adding and editing files, and pushing changes back to GitLab. However, users may choose any compatible program(s) instead, as long as GitLab stays the single point of truth for project files. Alternatively, users may also choose to work completly through GitLab by using the Web IDE provided there. See *<<Working Without Software Installation>>* for more information.
 
-TIP: VSCode can be extended with powerfull features through downloading extensions from the Marketplace. These extensions can help you with auto-completion, highlighting of text based on rules, adding editing features for formats, and many more. You can look for other extensions besides the suggested ones to expand your set of features and adapt your wokr environment to your needs as you like.
 
 ==== Installing Extensions (Asciidoc Example)
 
-The AsciiDoc extension for Visual Sudio Code allows for easy creation and supported editing of asciidoc or adoc files within Visual Studio Code. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
+Visual Studio Code can be adapted to each project's and the user's needs. This is done by installing and using extensions. This section shows how to install a new extension from the marketplace. As an example, we will use the AsciiDoc extension. 
+
+The AsciiDoc extension for VSCode allows for easy creation and supported editing of asciidoc or adoc files within VSCode. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
 
 . Access the extensions window through the VSCode menu bar -> View -> Extensions.
 + 
@@ -84,9 +85,7 @@ image::extensions.png[alt=Add extension under 'View']
 image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
 
 
-==== Other Extensions
-
-VSCode has a lot of very helpful extensions that can be downloaded and installed through the integrated marketplace. For a list of recommended extensions, see the link::../tool-specific/VSCode-Guide.adoc[Visual Studio Code Guide].
+VSCode has a lot of very helpful extensions that can be downloaded and installed through the integrated marketplace. You can view the recommended list of extensions below.
 
 .**View recommended extensions**
 [%collapsible]
@@ -94,8 +93,11 @@ VSCode has a lot of very helpful extensions that can be downloaded and installed
 include::../tool-specific/Recommended-VSCode-Extensions.adoc[leveloffset=3]
 ====
 
+For more information on VSCode, see the link::../tool-specific/VSCode-Guide.adoc[Visual Studio Code Guide].
+
 === Git And Gitlab
-ASAM uses Git for versioning projects and project files. GitLab is the webhosted tool that provides a central hub and storage space (repository).
+ASAM uses link:../git/An-Introduction-to-Git.asciidoc[Git] for versioning projects and project files. GitLab is the webhosted tool that provides a central hub and storage space (repository). +
+This section provides information on how to install and configure Git. If you want to read more on how to work with Git, see link:../git/An-Introduction-to-Git.asciidoc[An Introduction To Git] and link:../git/Git-Best-Practices.md[Git-Best-Practices].
 
 ==== Setting Up Git On Your PC
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=64, height=64, role="right",link=https://git-scm.com/download/win, window=_blank]
@@ -270,3 +272,4 @@ See link:../tool-specific/GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for mo
 * link:..tool-specific/VSCode-Guide.adoc[Further VSCode Guide]
 * link:ProjectGuidelines.adoc[Project Guidelines]
 * link:WritingGuidelines.adoc[Writing Guidelines]
+* link:../git/An-Introduction-to-Git.asciidoc[Git Introductions]
