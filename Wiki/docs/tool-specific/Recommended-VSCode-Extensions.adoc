@@ -1,0 +1,49 @@
+
+:imagesdir: ../images
+:toc:
+
+== Recommended Extensions
+
+VSCode is already without extensions very powerful and user friendly. One thing that can make the VSCode experience even better are the extensions. There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.
+
+Installing an extension is really easy, just enter the extension menu (<<Interface>> see below where to find that), search for the desired extension. Than click on the Install-Button. 
+
+=== AsciiDoc
+
+The AsciiDoc extension will add the syntax the asciidoc interpreter to VSCode so you can use the preview feature and have syntax highlighting.
+
+image::asciidoc_ext.PNG[]
+
+=== GitGraph
+
+The GitGraph extension is a great tool navigating the branches in the git repository and provides a great overview.
+
+image::gitgraph_ext.PNG[]
+
+=== GitLens
+
+The GitLens Extension is a great extension to follow up on all the changes made to the documents within the repository.
+Gitlens provides:
+
+* Repository Overview
+* File History
+* Line History
+* Commit Comparison
+
+image::gitlens_ext.PNG[]
+
+=== Comment Anchors
+
+The Comment Anchor extension provides you with the ability of adding highlighted keywords to the raw text.
+
+image::comment_anchor_example.PNG[]
+
+The extension also lets you search for all available anchors in the repository or current file and offers a jump-to option.
+
+image::commentanchor_ext.PNG[]
+
+=== Draw.io
+
+The Draw.io extension for Visual Sudio Code allows for easy creation and supported editing of drawio and other files supported by Draw.io within Visual Studio Code. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
+ 
+image::install_drawio.png[alt=Search and find the extension 'Draw.io Integration']
