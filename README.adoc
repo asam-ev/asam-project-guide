@@ -1,7 +1,11 @@
-= ASAM Standard Reference 
+= ASAM Project Guide
 
+THIS IS ALL DRAFT
+
+
+---
 Includes: Standard template, manuals, guidelines, build + test, resources.
-All standard are written after one version of the ASAM standard reference
+All standard are written after one version of the ASAM proect guide.
 
 ---
 
