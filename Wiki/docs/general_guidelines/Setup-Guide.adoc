@@ -126,20 +126,38 @@ After installation of Git, configure your user credentials that Git uses when ch
 TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found link:../tool-specific/PowershellTutorial.adoc[here].
 
 . Open a link:../tool-specific/PowershellTutorial.adoc[PowerShell] window
-. Execute the following command and replace the entries _FIRST_NAME_, _LAST_NAME_  accordingly: 
+. Execute the following command and replace the entries _"FIRST_NAME_, _LAST_NAME"_  accordingly: 
 
 +
 [source,git]
 ----
 git config --global user.name "FIRST_NAME LAST_NAME"
 ----
++
+.Example
+[%collapsible]
+====
+[source,git]
+----
+git config --global user.name Philip Windecker
+----
+====
 
-. Next, execute the following command and replace the entry _MY_NAME@example.com_ with your comany's email:
+. Next, execute the following command and replace the entry _"+MY_NAME@example.com+"_ with your comany's email:
 +
 [source,git]
 ----
 git config --global user.email "MY_NAME@example.com"
 ----
++
+.Example
+[%collapsible]
+====
+[source,git]
+----
+git config --global user.email philip.windecker@avenyr.de 
+----
+====
 
 NOTE: If no error is returned, the configuration step has been successful.
 
