@@ -1,0 +1,62 @@
+
+:imagesdir: ../images
+
+
+== Mandatory Tools
+
+[cols="^3s,8,^1,3"]
+[frame=none,grid=rows]
+
+|===
+h|Name|Description|Location|Links
+
+|image:https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png[width=32,link="https://code.asam.net"] +
+link:https://code.asam.net[GitLab]
+|All source code and standard relevant documentation. Issues relevant to deliverables should be created here.
+|ASAM
+|link:https://code.asam.net/[Acess through Webbrowser] +
+link:Workflow.asciidoc[Workflow Overview]
+
+|image:https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png[title="Microsoft Teams",width=32,link="https://www.microsoft.com/en-us/microsoft-teams/download-app"] +
+link:https://www.microsoft.com/en-us/microsoft-teams/download-app[Microsoft Teams]
+|Chat, conferencing, document folder for sharing documents (e.g. research papers, notes, videos, anything that does not need to be versioned).
+|ASAM
+|link:Microsoft-Teams-and-Sharepoint[Teams Guide] +
+link:Microsoft-Teams-and-Sharepoint.adoc[Teams and Sharepoint]
+
+|image:https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Microsoft_Office_SharePoint_%282019%E2%80%93present%29.svg/2000px-Microsoft_Office_SharePoint_%282019%E2%80%93present%29.svg.png[title="Microsoft Sharepoint",width=32] + 
+link:https://asamev.sharepoint.com/Freigegebene%20Dokumente/Forms/AllItems.aspx[Microsoft Sharepoint]
+|Sharepoint is a Microsoft service that is used in the background by Teams to manage files. It can be accessed directly or through Teams, which is why all files that have been added either way can be retrieved through both tools.
+|ASAM
+|link:Microsoft-Teams-and-Sharepoint.adoc[Teams and Sharepoint]
+
+|===
+
+== Recommended Tools
+
+[cols="^3s,8,^1,3"]
+[frame=none,grid=rows]
+|===
+h|Name|Description|Location|Links
+
+|image:https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=32, height=32, align="center",link=https://git-scm.com/download/win, window=_blank] +
+link:https.//git-scm.com/download/win[Git]
+|
+|
+|
+
+
+|image:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=32, height=32, align="center", link=https://code.visualstudio.com/download, window=_blank] +
+link:https://code.visualstudio.com/download[VSCode]
+|An all-in-one open-source text editor that makes life a lot easier. +
+https://code.visualstudio.com/download
+|
+|
+
+
+|image:https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[title="Draw.io",width=40,link="https://github.com/jgraph/drawio-desktop/releases/tag/v15.4.0"] +
+link:https://github.com/jgraph/drawio-desktop/releases/tag/v15.4.0[Draw.io]
+|
+|
+|
+|===

@@ -1,31 +1,48 @@
+
+:imagesdir: docs/images
+
 = ASAM Wiki
 This Wiki provides information on how to *set up accounts and tools* for working on ASAM projects. It also details the *general processes and workflows* employed by ASAM to ensure a _consistent_ and _efficient_ standardization. In addition to general information, each projects has its own project Wiki for project specific knowledge and definitions. Lastly, the ASAM Wiki provides *introductions to and reference pages for the proposed tools*.
 
 _Following these guidelines will minimize process overhead and increase the speed at which your input is integrated into the standard._
 
 
-[cols=">1,^1,^1,^1"]
+[cols=">1,^1,^1,^1,^1"]
 [grid="none",frame="none"]
-[]
 |===
 
-4+^h|General Wiki --  Quick Access
+5+^h|General Wiki --  Quick Access
 
 |<<First Time Setup,**Setup**>>
-|image:docs/images/GettingStarted.jpg[width=120,title="First Time Setup",link="docs/general_guidelines/Setup-Guide.asciidoc"] + 
+|image:GettingStarted.jpg[width=120,title="First Time Setup",link="docs/general_guidelines/Setup-Guide.asciidoc"] + 
 link:docs/general_guidelines/Setup-Guide.asciidoc[First Time Setup]
-|image:docs/images/Communication.png[Title=Teams & Sharepoint", width=120, link="docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc"] +
+|image:Communication.png[Title=Teams & Sharepoint", width=120, link="docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc"] +
 link:docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
-|image:docs/images/Calendar.png[title="OpenX Calendar",width=120,link="docs/general_guidelines/Shared-OpenX-Calendar.adoc"] +
+|image:Calendar.png[title="OpenX Calendar",width=120,link="docs/general_guidelines/Shared-OpenX-Calendar.adoc"] +
 link:docs/general_guidelines/Shared-OpenX-Calendar.adoc[Shared Project Calendar]
+| 
 
 |<<Guidelines,**Guidelines**>>
-|image:docs/images/Workflow.png[title="Workflow Overview", width=120, link=docs/general_guidelines/Workflow.asciidoc] +
+|image:Workflow.png[title="Workflow Overview", width=120, link=docs/general_guidelines/Workflow.asciidoc] +
 link:docs/general_guidelines/Workflow.asciidoc[Repository Guidelines]
-|image:docs/images/ProjectGuidelines.png[title="Project Guidelines", width=120, link=docs/general_guidelines/ProjectGuidelines.adoc] +
+|image:ProjectGuidelines.png[title="Project Guidelines", width=120, link=docs/general_guidelines/ProjectGuidelines.adoc] +
 link:docs/general_guidelines/ProjectGuidelines.adoc[Project Guidelines]
-|image:docs/images/WritingGuideliens.png[alt="Writing Guidelines", width="120", link=docs/general_guidelines/WritingGuidelines.adoc] +
+|image:WritingGuideliens.png[alt="Writing Guidelines", width="120", link=docs/general_guidelines/WritingGuidelines.adoc] +
 link:docs/general_guidelines/WritingGuidelines.adoc[Writing Guidelines]
+| 
+
+|<<Tools,**Tools**>> 
+|Gitlab
+|Git
+|VSCode
+|Draw.io
+
+// TODO
+|<<Templates,**Templates**>>
+|
+|
+|
+|
 
 |===
 
@@ -68,3 +85,19 @@ The guidelines are collected under **link:docs/general_guidelines/ProjectGuideli
 
 === Writing Guidelines
 General guidelines on how to write requirements and documentation can be found unter **link:docs/general_guidelines/WritingGuidelines.adoc[Writing Guidelines]**.
+
+
+---
+
+== Tools
+
+To work on ASAM projects, some tools are required and others are recommended.
+
+include::docs/general_guidelines/ToolsOverview.adoc[]
+
+---
+
+== Templates
+
+// TODO
+

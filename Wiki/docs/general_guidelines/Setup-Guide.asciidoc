@@ -1,3 +1,4 @@
+
 :imagesdir: ../images
 :toc:
 
@@ -62,6 +63,10 @@ https://git-scm.com/download/win
 TIP: If you'd like to use VSCode for Git, make sure to install VSCode before Git for Windows so the editor can be configured during setup!
 
 TIP: *If you prefer working online without having to install software on your computer*, you can use the *GitLab IDE* to directly create and edit files without external tools. See *<<Working Without Software Installation>>* for more information.
+
+See also:
+//TODO
+include::ToolsOverview.adoc[]
 
 === Setting Up VSCode
 
@@ -265,7 +270,7 @@ See link:../tool-specific/GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for mo
 
 == See Also
 
-* link:Platforms.md[Overview over used platforms]
+* link:Platforms.adoc[Overview over used platforms]
 * link:Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
 * link:Shared-OpenX-Calendar.adoc[Synchronize with the OpenX calendar]
 * link:../tool-specific/GitLab-IDE-Guide.adoc[GitLab IDE Guide]
