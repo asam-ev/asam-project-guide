@@ -70,7 +70,7 @@ In order to keep all ASAM projects aligned, each project follows the same basic 
 === Repository Guidelines
 The repository guidelines cover all topics related to working with the repository (GitLab). See the **link:docs/general_guidelines/Workflow.asciidoc[Workflow Overview]** for a walkthrough on how to actively develope the ASAM standards.
 
-A list of available labels in ASAM repositories can be accessed through the **link:docs/git/ASAM-Issue-and-MR-Labels.md[Overview Of Labels]**.
+A list of available labels in ASAM repositories can be accessed through the **link:docs/git/ASAM-Issue-and-MR-Labels.adoc[Overview Of Labels]**.
 
 _For information on how to set up your GitLab account, see **link:docs/general_guidelines/Setup-Guide.asciidoc[setup guide]**._
 

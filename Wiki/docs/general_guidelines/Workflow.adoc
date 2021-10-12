@@ -199,6 +199,6 @@ IMPORTANT: Questions on content should be addressed to the original issue assign
 ---
 ### Further Repository Guidelines
 - link:docs/git/Commit-Guidelines.adoc[Commit Message Guidelines] -  Formatting guidelines for commit messages on commits/merges to the ASAM master branches
-- link:docs/git/Branching.md[Branching]
-- link:docs/git/Forking.md[Forking]
+- link:docs/git/Branching.adoc[Branching]
+- link:docs/git/Forking.adoc[Forking]
 - link:docs/tool-specific/VSCode-Guide.adoc[VSCode at ASAM]

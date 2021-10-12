@@ -9,4 +9,4 @@ This section gathers links and information on how to work within a project.
 * link:docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
 * link:docs/general_guidelines/Shared-OpenX-Calendar.adoc[Shared Project Calendar]
 * link:docs/general_guidelines/ASAM-Project-Roles.adoc[ASAM Project Roles]
-* link:docs/general_guidelines/open-source/ASAM-DCO.md[ASAM DCO for Open Source Projects]
+* link:docs/general_guidelines/open-source/ASAM-DCO.adoc[ASAM DCO for Open Source Projects]

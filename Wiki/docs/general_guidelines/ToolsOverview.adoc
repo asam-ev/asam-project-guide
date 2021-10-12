@@ -24,7 +24,7 @@ link:https://www.microsoft.com/en-us/microsoft-teams/download-app[Microsoft Team
 |link:Microsoft-Teams-and-Sharepoint[Teams Guide] +
 link:Microsoft-Teams-and-Sharepoint.adoc[Teams and Sharepoint]
 
-|image:https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Microsoft_Office_SharePoint_%282019%E2%80%93present%29.svg/2000px-Microsoft_Office_SharePoint_%282019%E2%80%93present%29.svg.png[title="Microsoft Sharepoint",width=32] + 
+|image:https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Microsoft_Office_SharePoint_%282019%E2%80%93present%29.svg/2000px-Microsoft_Office_SharePoint_%282019%E2%80%93present%29.svg.png[title="Microsoft Sharepoint",width=32,link="https://asamev.sharepoint.com/Freigegebene%20Dokumente/Forms/AllItems.aspx"] + 
 link:https://asamev.sharepoint.com/Freigegebene%20Dokumente/Forms/AllItems.aspx[Microsoft Sharepoint]
 |Sharepoint is a Microsoft service that is used in the background by Teams to manage files. It can be accessed directly or through Teams, which is why all files that have been added either way can be retrieved through both tools.
 |ASAM
