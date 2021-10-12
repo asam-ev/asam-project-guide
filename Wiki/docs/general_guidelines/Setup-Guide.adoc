@@ -177,7 +177,7 @@ NOTE: The link:../tool-specific/PowershellTutorial.adoc[PowerShell] window shoul
 ssh-keygen -t ed25519 -C "YourEmail@address.com"  
 ----
 +
-TIP: Replace _YourEmail@address.com_ with your company mail.
+TIP: Replace _YourEmail@address.com_ within the quotation marks (" ") with your company mail but keep the quotation marks! This adds your email adress as an optional comment to the created key.This is the recommended way by GitLab.
 
 .. Confirm the suggested path with Enter.
 .. Type in a passphrase and confirm with Enter, or just confirm without a passphrase.
@@ -204,9 +204,6 @@ image:OpenSSHSettings.png[title="Open the 'SSH Keys' settings"]
 
 . Add the generated key to https://code.asam.net/profile/keys[Gitlab] - Paste the key copied in step 2, give it a title and then click "Add Key"
 +
-
-.Entry mask for SSH key in GitLab
-image:PasteSSHKey.png[title="Paste and confirm your new public SSH key"] +
 
 .Confirmation screen after SSH key has been entered in GitLab
 image:ConfirmSSHKey.png[title="Window shown after SHS key has been entered and confirmed"]
@@ -269,6 +266,8 @@ ssh-add ~/.ssh/id_ed25519
 ----
 +
 NOTE: If you chose a different folder or filename, you may need to change the path ("~/.ssh/") and/or the filename ("id_ed25519") accordingly.
++
+TIP: If the ~ is not recognised, replace "~" with "$HOME".
 
 *See also*:
 
