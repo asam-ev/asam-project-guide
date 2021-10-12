@@ -1,16 +1,23 @@
 
 :imagesdir: docs/images
+:general-uri: docs/general_guidelines/
+:git-uri: docs/git/
+:tools-uri: docs/tool-specific/
+:getting-started: {general-uri}Setup-Guide.adoc
+:communication: {general-uri}Microsoft-Teams-and-Sharepoint.adoc
+:open-x-cal: {general-uri}Shared-OpenX-Calendar.adoc
+:workflow: {general-uri}Workflow.adoc
+:project-guidelines: {general-uri}ProjectGuidelines.adoc
+:writing-guidelines: {general-uri}WritingGuidelines.adoc
+:gitlab-guide: {git-uri}GitLabGuide.adoc
+:git-guide: {git-uri}An-Introduction-to-Git.adoc
+:vscode-guide: {tools-uri}VSCode-Guide.adoc
+:drawio-guide: {tools-uri}DrawIOGuide.adoc
 
 = ASAM Wiki
 This Wiki provides information on how to *set up accounts and tools* for working on ASAM projects. It also details the *general processes and workflows* employed by ASAM to ensure a _consistent_ and _efficient_ standardization. In addition to general information, each projects has its own project Wiki for project specific knowledge and definitions. Lastly, the ASAM Wiki provides *introductions to and reference pages for the proposed tools*.
 
 _Following these guidelines will minimize process overhead and increase the speed at which your input is integrated into the standard._
-
-
-:general-uri: docs/general_guidelines/
-:git-uri: docs/git/
-:getting-started: {general-uri}Setup-Guide.adoc
-:communication: {general-uri}Microsoft-Teams-and-Sharepoint.adoc
 
 [cols=">1,^1,^1,^1,^1"]
 [grid="none",frame="none"]
@@ -21,30 +28,30 @@ _Following these guidelines will minimize process overhead and increase the spee
 |<<First Time Setup,**Setup**>>
 |image:GettingStarted.jpg[width=120,title="First Time Setup",link={getting-started}] + 
 link:{getting-started}[First Time Setup]
-|image:Communication.png[Title=Teams & Sharepoint", width=120, link="docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc"] +
-link:docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
-|image:Calendar.png[title="OpenX Calendar",width=120,link="docs/general_guidelines/Shared-OpenX-Calendar.adoc"] +
-link:docs/general_guidelines/Shared-OpenX-Calendar.adoc[Shared Project Calendar]
+|image:Communication.png[Title=Teams & Sharepoint", width=120, link={communication}] +
+link:{communication}[Teams & Sharepoint]
+|image:Calendar.png[title="OpenX Calendar",width=120,link={open-x-cal}] +
+link:{open-x-cal}[Shared Project Calendar]
 | 
 
 |<<Guidelines,**Guidelines**>>
-|image:Workflow.png[title="Workflow Overview", width=120, link=docs/general_guidelines/Workflow.asciidoc] +
-link:docs/general_guidelines/Workflow.asciidoc[Repository Guidelines]
-|image:ProjectGuidelines.png[title="Project Guidelines", width=120, link=docs/general_guidelines/ProjectGuidelines.adoc] +
-link:docs/general_guidelines/ProjectGuidelines.adoc[Project Guidelines]
-|image:WritingGuideliens.png[alt="Writing Guidelines", width="120", link=docs/general_guidelines/WritingGuidelines.adoc] +
-link:docs/general_guidelines/WritingGuidelines.adoc[Writing Guidelines]
+|image:Workflow.png[title="Workflow Overview", width=120, link={workflow}] +
+link:{workflow}[Repository Guidelines]
+|image:ProjectGuidelines.png[title="Project Guidelines", width=120, link={project-guidelines}] +
+link:{project-guidelines}[Project Guidelines]
+|image:WritingGuideliens.png[alt="Writing Guidelines", width="120", link={writing-guidelines}] +
+link:{writing-guidelines[Writing Guidelines]
 | 
 
 |<<Tools,**Tools**>> 
-|image:https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png[title="GitLab", width=120,link="docs/git/GitLabGuide.adoc"] + 
-link:docs/git/GitLabGuide.adoc[GitLab Guide]
-|image:https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[title="Git", width=120,link="docs/git/An-Introduction_to-Git.adoc"] + 
-link:docs/git/An-Introduction_to-Git.adoc[Git Guide]
-|image:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[title="Visual Studio Code",width=120,link="docs/tool-specific/VSCode-Guide"] + 
-link:docs/tool-specific/VSCode-Guide[VSCode Guide]
-|image:https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[title="Draw.io",width=120,link="docs/tool-specific/DrawIOGuide.adoc"] +
-link:docs/tool-specific/DrawIOGuide.adoc[Draw.io Guide]
+|image:https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png[title="GitLab", width=120,link={gitlab-guide}] + 
+link:{gitlab-guide}[GitLab Guide]
+|image:https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[title="Git", width=120,link={git-guide}] + 
+link:{git-guide}[Git Guide]
+|image:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[title="Visual Studio Code",width=120,link={vscode-guide}] + 
+link:{vscode-guide}[VSCode Guide]
+|image:https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[title="Draw.io",width=120,link={drawio-guide}] +
+link:{drawio-guide}[Draw.io Guide]
 
 // TODO
 |<<Templates,**Templates**>>
