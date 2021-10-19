@@ -262,7 +262,7 @@ NOTE: This should not be done in the Administration link:../tool-specific/Powers
 +
 [source,Shell]
 ----
-ssh-add ~/.ssh/id_ed25519
+ssh-add $HOME/.ssh/id_ed25519
 ----
 +
 NOTE: If you chose a different folder or filename, you may need to change the path ("~/.ssh/") and/or the filename ("id_ed25519") accordingly.
