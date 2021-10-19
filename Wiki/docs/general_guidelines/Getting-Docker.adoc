@@ -6,7 +6,6 @@
 = Setting Up Docker For Asciidoc
 
 == Why Docker?
-// TODO
 
 Docker is a platform where you use so-called containers to run applications in an encapsulated environment. From the docker homepage:
 
@@ -15,8 +14,6 @@ Docker is a platform where you use so-called containers to run applications in a
 image::https://docs.docker.com/engine/images/architecture.svg[title="The Docker link:https://docs.docker.com/get-started/overview/#docker-architecture[architecture]", link="https://docs.docker.com/get-started/overview/#docker-architecture"]
 
 For more information on how to use Docker, see the link:../tool-specific/DockerGuide.adoc[Docker Guide] or the link:https://docs.docker.com/get-started/[official guides] from Docker.
-
-// TODO
 
 == Docker Licenses
 
@@ -37,9 +34,6 @@ For more information on how to download and install docker, see https://docs.doc
 == Setup
 
 Docker uses virtualization features that require some setup and have system requirements that need to be met. 
-
-
-Also check out the link:https://docs.docker.com/desktop/windows/install/[official guide] on how to set up Docker Desktop for Windows.
 
 === System Requirements
 
@@ -72,9 +66,13 @@ Before first use, the integrated Linux distribution must be configured (e.g. a u
 You may reuse your Windows username and password or define a new user alltogether. Note that changing your windows password will not change your Linux user's password since both are independent. 
 
 === Setting Up Docker Desktop
-// TODO
+If all prerequesits have been met and the prepartory steps been executed, install the Docker Desktop app. See also https://docs.docker.com/desktop/windows/install/#install-docker-desktop-on-windows.
 
-Before you set up Docker Desktop, make sure
+After setup, you can try the example project to get to know basic Docker commands. 
+
+=== Adding Docker Extension To VSCode
+
+include::../tool-specific/Recommended-VSCode-Extensions.adoc[tag=docker-extension]
 
 == See Also
 * link:../writing_guidelines/Docker-For-Asciidoc.adoc[Using AsciiDoc with Docker]
