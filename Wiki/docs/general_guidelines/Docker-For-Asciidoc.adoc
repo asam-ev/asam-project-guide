@@ -1,0 +1,25 @@
+
+:toc:
+:imagesdir: ../images
+
+= Setting Up Docker For Asciidoc
+
+== Why Docker?
+
+// TODO
+
+== Docker Licenses
+
+== Getting Docker
+
+== Setup
+
+=== Setting Up Docker Desktop
+
+=== Retrieving The Docker Image
+
+=== Setting Up The Docker Image
+
+== See Also
+
+
