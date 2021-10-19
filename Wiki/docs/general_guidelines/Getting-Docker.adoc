@@ -1,0 +1,83 @@
+
+:toc:
+:imagesdir: ../images
+:docker-download: https://docs.docker.com/get-docker/
+
+= Setting Up Docker For Asciidoc
+
+== Why Docker?
+// TODO
+
+Docker is a platform where you use so-called containers to run applications in an encapsulated environment. From the docker homepage:
+
+> Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
+
+image::https://docs.docker.com/engine/images/architecture.svg[title="The Docker link:https://docs.docker.com/get-started/overview/#docker-architecture[architecture]", link="https://docs.docker.com/get-started/overview/#docker-architecture"]
+
+For more information on how to use Docker, see the link:../tool-specific/DockerGuide.adoc[Docker Guide] or the link:https://docs.docker.com/get-started/[official guides] from Docker.
+
+// TODO
+
+== Docker Licenses
+
+IMPORTANT: Professional use of Docker Desktop in large organizations (more than 250 employees or more than $10 million in annual revenue) *requires users to have a paid Docker subscription*. See https://www.docker.com/blog/updating-product-subscriptions/.
+
+If your company does not provide docker licenses, you can check the docker website what type of license applies to your company. Note that only Docker Desktop (Windows and Mac) requires license fees. Docker for Linux is (currently) still free under the Apache License, version 2.0.
+
+== Getting Docker Desktop
+
+NOTE: Alternatively to getting Docker Desktop, you can also download and install docker engine from binaries. This is free of charge but requires many more steps for setup. See https://docs.docker.com/engine/install/binaries/ for more information on this.
+
+image::https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png[width=80,link="{docker-download}", role="right"]
+This summary assumes that you are using **Windows**. If not, check out  the link:{docker-download}[official docker page] for information on how to retrieve and install docker.
+
+You can download Docker Desktop (the Docker version for Windows) link:{docker-download}[here].
+For more information on how to download and install docker, see https://docs.docker.com/desktop/windows/install/.
+
+== Setup
+
+Docker uses virtualization features that require some setup and have system requirements that need to be met. 
+
+
+Also check out the link:https://docs.docker.com/desktop/windows/install/[official guide] on how to set up Docker Desktop for Windows.
+
+=== System Requirements
+
+IMPORTANT: Before you can install Docker, make sure that your PC fulfills the requirements for it!
+
+NOTE: It is recommended to use the WSL2 backend. If this is not possible for you, you can follow the instructions on how to set up for Hyper-V.
+
+IMPORTANT: Make sure that you PC fulfills all requirements listed on https://docs.docker.com/desktop/windows/install/#system-requirements before installing the downloaded Docker Desktop application!
+
+TIP: To check your windows version, enter `Windows logo key`+`R`, type `winver` and confirm with Enter.
+
+=== Preparing Windows And Installing Docker
+**Follow the instructions step-by-step on https://docs.docker.com/desktop/windows/install/ to install Docker Desktop.** Make sure both your hardware and your window build confirm to them and you have all settings correctly set up both for Windows and your BIOS. 
+
+The command `wsl --install` is supposed to install both wsl, set it to the correct version (wsl2), and install Ubuntu as your standard Linux distribution. However, if you require a different distribution or the standard distribution is not installed automatically, you can download and install one manually. Run the following command to install Ubuntu manually after having set up WSL:
+
+```
+wsl --install -d Ubuntu
+```
+
+To get an overview over what distributions are available, enter
+
+```
+wsl --list --online
+```
+
+=== Setting Up The Linux Distribution
+Before first use, the integrated Linux distribution must be configured (e.g. a user with password must be created). Follow the instructions on https://docs.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-user-info. 
+
+You may reuse your Windows username and password or define a new user alltogether. Note that changing your windows password will not change your Linux user's password since both are independent. 
+
+=== Setting Up Docker Desktop
+// TODO
+
+Before you set up Docker Desktop, make sure
+
+== See Also
+* link:../writing_guidelines/Docker-For-Asciidoc.adoc[Using AsciiDoc with Docker]
+* link:../tool-specific/DockerGuide.adoc[Docker Guide]
+* link:WritingGuidelines.adoc[Writing Guidelines]
+* link:../writing_guidelines/AsciiDoc-Guide.adoc[AsciiDoc Guide]

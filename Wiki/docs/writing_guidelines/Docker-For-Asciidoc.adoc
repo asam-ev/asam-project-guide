@@ -1,0 +1,26 @@
+
+:toc:
+:imagesdir: ../images
+:docker-download: https://docs.docker.com/get-docker/
+
+= Setting Up Docker For Asciidoc
+
+== Wait, What Is Docker?
+// TODO
+
+Docker is a tool for hosting and accessing so-called containers.
+If you do not have Docker installed, check out the link:../general_guidelines/Getting-Docker[guide on getting docker] before continuing.
+
+== Setup
+
+=== Retrieving The Docker Image
+// TODO
+
+=== Setting Up The Docker Image
+// TODO
+
+== See Also
+* link:../general_guidelines/Getting-Docker.adoc[Getting Docker]
+* link:../tool-specific/DockerGuide.adoc[General Docker guide]
+* link:../general_guidelines/WritingGuidelines.adoc[Writing guidelines]
+* link:AsciiDoc-Guide.adoc[AsciiDoc guide]

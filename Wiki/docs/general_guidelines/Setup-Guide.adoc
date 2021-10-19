@@ -44,20 +44,8 @@ NOTE: The "ASAM SVN" login is deprecated and will be removed in the future.
 
 For working locally on the standardization process, the following tools are recommended:
 
-[frame="none", grid="none"]
-[source,asciidoc]
-[cols="1,1,5"]
-|====
-| *VSCode*
-a| image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=32, height=32, align="center", link=https://code.visualstudio.com/download, window=_blank]
-| An all-in-one open-source text editor that makes life a lot easier. +
-https://code.visualstudio.com/download
+include::ToolsOverview.adoc[tag="recommended"]
 
-| [[bookmark-git]]*Git*
-a| image::https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=32, height=32, align="center",link=https://git-scm.com/download/win, window=_blank]
-| The version control system ASAM uses. +
-https://git-scm.com/download/win
-|====
 
 
 TIP: If you'd like to use VSCode for Git, make sure to install VSCode before Git for Windows so the editor can be configured during setup!
@@ -295,3 +283,6 @@ See link:../tool-specific/GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for mo
 * link:ProjectGuidelines.adoc[Project Guidelines]
 * link:WritingGuidelines.adoc[Writing Guidelines]
 * link:../git/An-Introduction-to-Git.asciidoc[Git Introductions]
+* link:Getting-Docker.adoc[How to install Docker (if required)]
+* link:../tool-specific/DockerGuide.adoc[Docker Guide]
+* link:../writing_guidelines/Docker-For-Asciidoc.adoc[Docker for AsciiDoc]
