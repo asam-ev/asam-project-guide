@@ -4,6 +4,7 @@
 
 == Mandatory Tools
 
+// tag::mandatory[]
 [cols="^3s,8,^1,3"]
 [frame=none,grid=rows]
 
@@ -31,6 +32,8 @@ link:https://asamev.sharepoint.com/Freigegebene%20Dokumente/Forms/AllItems.aspx[
 |link:Microsoft-Teams-and-Sharepoint.adoc[Teams and Sharepoint]
 
 |===
+
+// end:mandatory[]
 
 == Recommended Tools
 
