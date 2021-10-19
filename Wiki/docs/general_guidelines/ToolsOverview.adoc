@@ -42,7 +42,7 @@ h|Name|Description|Location|Links
 |image:https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=32, height=32, align="center",link=https://git-scm.com/download/win, window=_blank] +
 link:https.//git-scm.com/download/win[Git]
 |
-|
+|Local/link:https://code.asam.net[GitLab]
 |
 
 
@@ -50,13 +50,13 @@ link:https.//git-scm.com/download/win[Git]
 link:https://code.visualstudio.com/download[VSCode]
 |An all-in-one open-source text editor that makes life a lot easier. +
 https://code.visualstudio.com/download
-|
+|Local
 |
 
 
 |image:https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[title="Draw.io",width=40,link="https://github.com/jgraph/drawio-desktop/releases/tag/v15.4.0"] +
-link:https://github.com/jgraph/drawio-desktop/releases/tag/v15.4.0[Draw.io]
-|
-|
-|
+link:https://github.com/jgraph/drawio-desktop/releases[Draw.io]
+|An editor for diagrams. Can be downloaded or access through the browser. Also has a (limited) VS Code extension.
+|Local/Web
+|link:../tool-specific/DrawIOGuide.adoc[Draw.io Guide]
 |===
