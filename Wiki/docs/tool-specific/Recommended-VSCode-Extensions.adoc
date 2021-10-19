@@ -62,6 +62,16 @@ NOTE: The Draw.io extension does not support remote custom libraries as of now. 
 
 For information on how to integrate the ASAM custom library for Draw.io, see the link:DrawIOGuide.adoc[Draw.io Guide].
 
+=== Docker
+
+// tag::docker-extension[]
+The Docker extension lets you directly interact with Docker through Visual Studio Code. You can run, for example, the docker-compose.yml directly without having to open a console or using Docker Desktop.
+
+.Docker (id: ms-azuretools.vscode-docker) 
+image::install_docker.png[alt=Search and find the extension 'Docker']
+
+//end::docker-extension[]
+
 == See Also
 
 * link:DrawIOGuide.adoc[Draw.io Guide]
