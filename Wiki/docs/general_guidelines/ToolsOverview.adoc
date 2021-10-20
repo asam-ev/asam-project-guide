@@ -75,7 +75,8 @@ A tool for hosting containers.
 |Local
 |<<{includedir}/general_guidelines/Getting-Docker.adoc#,Docker Setup>> +
 <<{includedir}/tool-specific/DockerGuide.adoc#,Docker Guide>> +
-<<{includedir}/writing_guidelines/Docker-For-Asciidoc.adoc#,Using Docker for AsciiDoc>>
+<<{includedir}/writing_guidelines/Docker-For-Asciidoc.adoc#,Using Docker for AsciiDoc>> +
+<<{includedir}/tool-specific/StandardDockerConfig.adoc#,Standard Docker-Compose>>
 
 |===
 
