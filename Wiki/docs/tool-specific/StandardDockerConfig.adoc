@@ -42,7 +42,7 @@ If Asciidoctor Diagram is to be used, make sure that the option `-r asciidoctor-
 
 === Mathjax
 
-
+Mathjax is a JavaScript display engine intended for displaying mathmatical expressions in browsers. This can be activated by adding `-a mathjax` to the entrypoint.
 
 === Asciidoctor Bibtex
 
