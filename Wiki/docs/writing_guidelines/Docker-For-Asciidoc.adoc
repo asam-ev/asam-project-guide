@@ -14,7 +14,7 @@ If you do not have Docker installed, check out the <<../general_guidelines/Getti
 
 == Setup
 
-Setup oif docker and adding the docker-compose.yml to a project is described on the linked pages:
+Setup if docker and adding the docker-compose.yml to a project is described on the linked pages:
 
 Tooling:: <<../general_guidelines/Getting-Docker.adoc#,Guide on getting docker>>
 
