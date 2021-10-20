@@ -20,13 +20,15 @@ TIP: It is recommended to use the VS Code extension and Draw.io Desktop *only* f
 
 Draw.io can be used either locally (through the dedicated app <<Local Setup (Desktop),Draw.io Deskop>> or through the <<Local Setup (VSCode Extension),VS Code Extension>>) or with the <<Remote Setup, web app>>. 
 
-=== Local Setup (Desktop)
+=== Local Setup 
+
+==== Draw.io App (Desktop)
 
 image::https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[width=80,link="{download-link-drawio}",role="right"]
 
 The desktop version can be downloaded as an installation package (requires installation) or a portable version (requires no installation). Both can be downloaded from link:{download-link-drawio}[here].
 
-=== Local Setup (VSCode Extension)
+=== VSCode Extension
 
 include::Recommended-VSCode-Extensions.adoc[tag=drawio-extension] 
 
@@ -36,7 +38,11 @@ The use of Draw.io through the web browser does not require any setup. Just use 
 
 == Adding The Custom ASAM Draw.io Library
 
-ASAM provides a custom Draw.io library which contains custom standard image elements and visualization structures that can be reused in new diagrams. The repository of this library is {library-repo}.
+ASAM provides a custom Draw.io library which contains custom standard image elements and visualization structures that can be reused in new diagrams. 
+
+The local setup requires a local copy of the ASAM library. You can either check out the full link:{library-repo}[repository] or you can just download the library file directly (the .xml in the repository). 
+
+**For local setup, it is __strongly__ recommended to check out the repository and activate the automatic fetching through VSCode.**
 
 === Add Library To Draw.io Desktop
 
