@@ -3,6 +3,8 @@ ifndef::imagesdir[]
 :imagesdir: docs/images
 endif::imagesdir[]
 
+:includedir: docs
+
 :general-uri: docs/general_guidelines/
 :git-uri: docs/git/
 :tools-uri: docs/tool-specific/
