@@ -1,0 +1,46 @@
+= Introduction 
+
+:sectnums:
+:sectnumlevels: 4
+:toc:
+:toclevels: 4
+:experimental:
+:keywords: AsciiDoc
+:source-highlighter: highlight.js
+:icons: font
+
+This Getting Started is a small guide to setup your own Docs Page using Antora and GitHub Pages. This will be pretty basic. If you are looking for more information feel free to visit the https://docs.antora.org/antora/1.1/[Antora Docs icon:external link[]].
+
+There are four parts to do
+
+. xref:gettingstarted/setupide.adoc[Setup the IDE]
+. xref:gettingstarted/repository.adoc[Create Repository]
+. xref:gettingstarted/playbook.adoc[Create Playbook Project]
+. xref:gettingstarted/githubpages.adoc[Generate and serve it]
+
+
+== Basic Overview
+
+To build your html docs page with Antora you need a GitHub Repository and a Playbook Project where the docs will be created.
+
+Antora will fetch the necessary files (antora.yml, adoc files ..) out of your Playbook Project and create a html Site out of it.
+
+NOTE: In this Guide we are going to have The Playbook Project inside the Repository for better traceability.
+
+https://pages.github.com/[GitHub Pages icon:external-link[]] will be used to serve our created example docs.
+
+and now .. xref:gettingstarted/setupide.adoc[get started!]
+
+== Useful Links
+
+https://github.com/fabianfnc/bocs[Example Repository + Playbook where we are on icon:external link[]]
+
+https://github.com/OpenEMS/openems/tree/develop/doc[OpenEMS Repository which is also using Antora icon:external link[]]
+
+https://antora.org/[Antora Info Site icon:external link[]]
+
+https://docs.antora.org/antora/1.1/[Antora Docs icon:external link[]]
+
+https://gitlab.com/antora[Antora GitLab Projects icon:external link[]]
+
+http://asciidoc.org/[AsciiDoc Info Site icon:external link[]] 
