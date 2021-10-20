@@ -52,7 +52,7 @@ NOTE: The use of asciidoctor-bibtex requires that a bibtex configuration for the
 
 === Single Input File
 
-You can define the input file by using `--trace path-to-file/filename.format`. In the standard version above, this is set to `standard/main.adoc`. Replace this, if necessary.
+You can define the input file by using `path-to-file/filename.format`. In the standard version above, this is set to `standard/main.adoc`. Replace this, if necessary.
 
 === Multiple Input Files
 
@@ -65,22 +65,6 @@ You can define the output file by using `-o path-to-file/filename.format`. By de
 === Output path
 
 If you only want to specifiy the output path but leave the naming convention of the input files, use the option `-D path` instead of 
-
-== Multi-file Conversion Variant
-
-This is a particular variant suitable to convert a multi-file structure such as a wiki without a bibtex integration. It will go through all files in the repository and create a corresponding .html in the same folder. If that file already exists, it is replaced with the update.
-
-[source,yaml]
-----
-version: "2"
-
-services:
-  asciidoctor:
-    image: asciidoctor/docker-asciidoctor
-    volumes:
-      - .:/documents
-    entrypoint: asciidoctor --failure-level WARN -r asciidoctor-diagram -a mathjax --trace '**/*.adoc'
-----
 
 == See Also
 
