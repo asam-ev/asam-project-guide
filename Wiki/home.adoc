@@ -1,5 +1,8 @@
 
+ifndef::imagesdir[] 
 :imagesdir: docs/images
+endif::imagesdir[]
+
 :general-uri: docs/general_guidelines/
 :git-uri: docs/git/
 :tools-uri: docs/tool-specific/
@@ -27,7 +30,7 @@ _Following these guidelines will minimize process overhead and increase the spee
 
 |<<First Time Setup,**Setup**>>
 |image:GettingStarted.jpg[width=120,title="First Time Setup",link={getting-started}] + 
-link:{getting-started}[First Time Setup]
+<<{getting-started},First Time Setup>>
 |image:Communication.png[Title=Teams & Sharepoint", width=120, link={communication}] +
 link:{communication}[Teams & Sharepoint]
 |image:Calendar.png[title="OpenX Calendar",width=120,link={open-x-cal}] +

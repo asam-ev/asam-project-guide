@@ -60,7 +60,7 @@ To get an overview over what distributions are available, enter
 wsl --list --online
 ```
 
-=== Setting Up The Linux Distribution
+=== Setting Up The Linux Distribution Under Windows
 Before first use, the integrated Linux distribution must be configured (e.g. a user with password must be created). Follow the instructions on https://docs.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-user-info. 
 
 You may reuse your Windows username and password or define a new user alltogether. Note that changing your windows password will not change your Linux user's password since both are independent. 

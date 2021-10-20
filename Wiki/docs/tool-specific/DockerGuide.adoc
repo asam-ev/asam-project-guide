@@ -4,3 +4,5 @@
 * link:https://docs.docker.com/get-started/[Official guide for Docker]
 
 
+IMPORTANT: Before running docker from VSCode, make sure to start Docker Desktop (and, thereby, the docker deamon).
+
