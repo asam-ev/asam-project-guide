@@ -255,6 +255,26 @@ NOTE: If you chose a different folder or filename, you may need to change the pa
 +
 TIP: If the ~ is not recognised, replace "~" with "$HOME".
 
+===== Add GitLab To Known Hosts
+
+Your computer needs to know that it can trust the ASAM Gitlab for SSH connections. To do this, you need to add code.asam.net to the known_hosts file.
+
+. Return to an open PowerShell window or open a new one
+. Establish a connection to the GitLab by entering the following line and confirming with Enter: 
++
+[source,Shell]
+----
+ssh -T code.asam.net
+----
++
+. If this is the first connection through ssh, you will see a prompt stating that the authenticity of host 'code.asam.net' can't be established.
++
+image::AddKnownHost.png[]
++
+. Enter 'yes' and confirm with enter
+. You will be prompted to enter your password, but this step is not required. Cancel the connection by typing `ctrl`+`c`.
+
+
 *See also*:
 
 * link:https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent[Generating And Adding Your SSH Key To The SSH Agent]
