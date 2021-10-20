@@ -28,6 +28,10 @@ All standard are written after one version of the ASAM proect guide.
 .. git
 .. local build asciidoctor
 
+
+// Project Lead
+. Project Lead Guide
+
 // Technical Writer
 . Editorial Guide (Redaktionleitfaden) 
 .. Asciidoc syntax reference/conventions
