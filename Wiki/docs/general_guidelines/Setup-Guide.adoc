@@ -52,9 +52,6 @@ TIP: If you'd like to use VSCode for Git, make sure to install VSCode before Git
 
 TIP: *If you prefer working online without having to install software on your computer*, you can use the *GitLab IDE* to directly create and edit files without external tools. See *<<Working Without Software Installation>>* for more information.
 
-See also:
-//TODO
-include::ToolsOverview.adoc[]
 
 === Setting Up VSCode
 
