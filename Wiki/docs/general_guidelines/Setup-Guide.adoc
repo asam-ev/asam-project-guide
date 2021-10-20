@@ -1,6 +1,7 @@
 
 :imagesdir: ../images
 :toc:
+:includedir: ..
 
 = Setup Guide
 
