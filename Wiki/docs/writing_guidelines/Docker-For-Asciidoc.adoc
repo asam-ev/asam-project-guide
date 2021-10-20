@@ -3,23 +3,24 @@
 :imagesdir: ../images
 :docker-download: https://docs.docker.com/get-docker/
 
-= Using Docker For Asciidoctor
+= How To Use Docker For Asciidoctor
 
 == Wait, What Is Docker?
 // TODO
 
-Docker is a tool for hosting and accessing so-called containers.
-If you do not have Docker installed, check out the link:../general_guidelines/Getting-Docker[guide on getting docker] before continuing.
+Docker is a tool for hosting and accessing so-called containers. For Asciidoc, docker can be used to run a pre-configured asciidoctor setup for creating html output locally. This removes the need to upload adoc files and use the build pipeline for every change you want to see.
+
+If you do not have Docker installed, check out the <<../general_guidelines/Getting-Docker.adoc#,guide on getting docker>> before continuing.
 
 == Setup
 
-=== Retrieving The Docker Image
-// TODO
-TODO
+Tooling:: <<../general_guidelines/Getting-Docker.adoc#,Guide on getting docker>>
 
-=== Setting Up The Docker Image
-// TODO
-TODO
+Project:: <<../tool-specific/StandardDockerConfig.adoc#,Standard docker-compose.yml>>
+
+== Using Docker For Asciidoc
+
+The <<../tool-specific/Recommended-VSCode-Extensions.adoc#AsciiDoc,VSCode extension for Asciidoc>> provides a decent preview. However, some styling and content will not look exactly as in the final result. If the layout and final look is important, you should create the HTMl output from the adoc files by using the asciidoctor docker container (configured in the <<../tool-specific/StandardDockerConfig.adoc#,standard docker-compose.yml>>).
 
 == See Also
 * link:../general_guidelines/Getting-Docker.adoc[Getting Docker]
