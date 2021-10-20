@@ -37,8 +37,6 @@ Docker uses virtualization features that require some setup and have system requ
 
 === System Requirements
 
-IMPORTANT: Before you can install Docker, make sure that your PC fulfills the requirements for it!
-
 NOTE: It is recommended to use the WSL2 backend. If this is not possible for you, you can follow the instructions on how to set up for Hyper-V.
 
 IMPORTANT: Make sure that you PC fulfills all requirements listed on https://docs.docker.com/desktop/windows/install/#system-requirements before installing the downloaded Docker Desktop application!
