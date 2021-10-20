@@ -3,7 +3,7 @@
 :imagesdir: ../images
 :docker-download: https://docs.docker.com/get-docker/
 
-= Setting Up Docker For Asciidoc
+= Using Docker For Asciidoctor
 
 == Wait, What Is Docker?
 // TODO
