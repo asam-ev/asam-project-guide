@@ -1,4 +1,3 @@
-* xref:home.adoc[ASAM Project Wiki]
 * Setup
 ** xref:general_guidelines/Setup-Guide.adoc[First Time Setup]
 ** xref:general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
