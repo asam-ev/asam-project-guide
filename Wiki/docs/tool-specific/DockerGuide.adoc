@@ -45,6 +45,8 @@ To run Docker-Compose on your docker-compose.yml, right-click on the file in you
 
 image::ComposeUp.png[title=Run "Compose Up" from the context menu]
 
+TIP: If your container has more than one service (e.g. asciidoctor and antora), use 'Compose Up - Select Service' instead and select the service(s) you want to run from the menu.
+
 === Running Docker Compose From Powershell
 
 IMPORTANT: The docker deamon must be running in the background before you can run docker commands from the powershell. To start the deamon, either have Docker Desktop automatically start with Windows or start it manually.
@@ -55,6 +57,8 @@ image::DockerFromPS.gif[title="Run Docker-Compose from Powershell"]
 
 . Navigate to the folder with your docker-compose.yml
 . Type `docker-compose run asciidoctor` and confirm with Enter
+
+NOTE: If you want to run another service in the same container, exchange `asciidoctor` with the other service's name.
 
 === Starting A Container From Docker Desktop
 
