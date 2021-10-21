@@ -1,4 +1,6 @@
+= An Introduction To Git
 
+:toc:
 
 == Terminology
 

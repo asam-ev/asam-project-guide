@@ -1,6 +1,5 @@
-
-:imagesdir: ../images
-= OpenX Calendar
+= Shared OpenX Calendar
+:toc:
 
 image::Calendar.png[width=120,role=right]
 All OpenX projects share a calendar under the email address of openx@asam.net. **This should be included on all meetings taking place for the projects to make sure it is up to date.**
