@@ -1,6 +1,0 @@
-name: asamwiki
-title: ASAM Wiki
-version: latest
-start_page: ROOT:home.adoc
-nav:
-- modules/ROOT/nav.adoc

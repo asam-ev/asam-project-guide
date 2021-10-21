@@ -1,0 +1,22 @@
+site:
+  title: ASAM Project Guide
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: https://code.asam.net/common/asam-project-guide
+  start_page: asamprojectguide::home.adoc
+content:
+  sources:
+    - url: .
+      branches: open*, DRAFT_8-migrate-wiki-to-antora
+      tags: open*
+      start_path: doc
+
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+
+
+output: 
+  clean: true 
+  dir: ./site

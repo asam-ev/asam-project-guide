@@ -19,7 +19,7 @@ endif::imagesdir[]
 :vscode-guide: {tools-uri}VSCode-Guide.adoc
 :drawio-guide: {tools-uri}DrawIOGuide.adoc
 
-= ASAM Wiki
+== ASAM Wiki
 This Wiki provides information on how to *set up accounts and tools* for working on ASAM projects. It also details the *general processes and workflows* employed by ASAM to ensure a _consistent_ and _efficient_ standardization. In addition to general information, each projects has its own project Wiki for project specific knowledge and definitions. Lastly, the ASAM Wiki provides *introductions to and reference pages for the proposed tools*.
 
 _Following these guidelines will minimize process overhead and increase the speed at which your input is integrated into the standard._
@@ -114,7 +114,7 @@ General guidelines on how to write requirements and documentation can be found u
 
 To work on ASAM projects, some tools are required and others are recommended.
 
-include::docs/general_guidelines/ToolsOverview.adoc[]
+include::general_guidelines/ToolsOverview.adoc[]
 
 ---
 

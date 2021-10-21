@@ -1,0 +1,6 @@
+name: asamprojectguide
+title: ASAM Project Guide
+version: baseline
+start_page: ROOT:home.adoc
+nav:
+- modules/ROOT/nav.adoc
