@@ -4,9 +4,9 @@ This section gathers links and information on how to work within a project.
 
 == Links
 
-* link:docs/general_guidelines/Meeting-Guidelines.adoc[Platforms & Communication Channels in an ASAM Project]
-* link:docs/general_guidelines/Meeting-Guidelines.adoc[Meeting Guidelines]
-* link:docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
-* link:docs/general_guidelines/Shared-OpenX-Calendar.adoc[Shared Project Calendar]
-* link:docs/general_guidelines/ASAM-Project-Roles.adoc[ASAM Project Roles]
-* link:docs/general_guidelines/open-source/ASAM-DCO.adoc[ASAM DCO for Open Source Projects]
+* <<docs/general_guidelines/Meeting-Guidelines.adoc#,Platforms & Communication Channels in an ASAM Project>>
+* <<docs/general_guidelines/Meeting-Guidelines.adoc#,Meeting Guidelines>>
+* <<docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc#,Teams & Sharepoint>>
+* <<docs/general_guidelines/Shared-OpenX-Calendar.adoc#,Shared Project Calendar>>
+* <<docs/general_guidelines/ASAM-Project-Roles.adoc#,ASAM Project Roles>>
+* <<docs/general_guidelines/open-source/ASAM-DCO.adoc#,ASAM DCO for Open Source Projects>>

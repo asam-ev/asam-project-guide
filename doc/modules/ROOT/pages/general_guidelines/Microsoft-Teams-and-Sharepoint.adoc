@@ -11,7 +11,7 @@ Sharepoint is a Microsoft service that is used in the background by Teams to man
 ** If you need another Teams channel, contact mailto:benjamin.engel@asam.net[me]!
 * These file tabs can also be found directly in Sharepoint (sign in with your microsoft account).
 
-IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See link:Workflow.asciidoc[Workflow Guidelines] for more information.
+IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See <<Workflow.asciidoc#,Workflow Guidelines>> for more information.
 
 == Getting Access
 

@@ -13,7 +13,7 @@ Docker is a platform where you use so-called containers to run applications in a
 
 image::https://docs.docker.com/engine/images/architecture.svg[title="The Docker link:https://docs.docker.com/get-started/overview/#docker-architecture[architecture]", link="https://docs.docker.com/get-started/overview/#docker-architecture"]
 
-For more information on how to use Docker, see the link:../tool-specific/DockerGuide.adoc[Docker Guide] or the link:https://docs.docker.com/get-started/[official guides] from Docker.
+For more information on how to use Docker, see the <<../tool-specific/DockerGuide.adoc#,Docker Guide>> or the <<https://docs.docker.com/get-started/#,official guides>> from Docker.
 
 == Docker Licenses
 
@@ -26,9 +26,9 @@ If your company does not provide docker licenses, you can check the docker websi
 NOTE: Alternatively to getting Docker Desktop, you can also download and install docker engine from binaries. This is free of charge but requires many more steps for setup. See https://docs.docker.com/engine/install/binaries/ for more information on this.
 
 image::https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png[width=80,link="{docker-download}", role="right"]
-This summary assumes that you are using **Windows**. If not, check out  the link:{docker-download}[official docker page] for information on how to retrieve and install docker.
+This summary assumes that you are using **Windows**. If not, check out  the <<{docker-download},official docker page>> for information on how to retrieve and install docker.
 
-You can download Docker Desktop (the Docker version for Windows) link:{docker-download}[here].
+You can download Docker Desktop (the Docker version for Windows) <<{docker-download},here>>.
 For more information on how to download and install docker, see https://docs.docker.com/desktop/windows/install/.
 
 == Setup
@@ -73,7 +73,7 @@ After setup, you can try the example project to get to know basic Docker command
 include::../tool-specific/Recommended-VSCode-Extensions.adoc[tag=docker-extension]
 
 == See Also
-* link:../writing_guidelines/Docker-For-Asciidoc.adoc[Using AsciiDoc with Docker]
-* link:../tool-specific/DockerGuide.adoc[Docker Guide]
-* link:WritingGuidelines.adoc[Writing Guidelines]
-* link:../writing_guidelines/AsciiDoc-Guide.adoc[AsciiDoc Guide]
+* <<../writing_guidelines/Docker-For-Asciidoc.adoc#,Using AsciiDoc with Docker>>
+* <<../tool-specific/DockerGuide.adoc#,Docker Guide>>
+* <<WritingGuidelines.adoc#,Writing Guidelines>>
+* <<../writing_guidelines/AsciiDoc-Guide.adoc#,AsciiDoc Guide>>

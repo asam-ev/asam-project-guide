@@ -15,5 +15,3 @@ services:
     # entrypoint:  --stacktrace antora-playbook.yml
     # entrypoint: sh
     command: --stacktrace site.yml
-
-
