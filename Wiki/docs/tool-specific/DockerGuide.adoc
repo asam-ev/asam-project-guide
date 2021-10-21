@@ -66,9 +66,6 @@ NOTE: This works if the container was already created through either using the <
 
 == See Also
 * link:https://docs.docker.com/get-started/[Official guide for Docker]
-* <<../general_guidelines/Getting-Docker.adoc, Setting Up Docker For Asciidoc>>
-* <<StandardDockerConfig.adoc,Default docker-compose.yml>>
-
-
-IMPORTANT: Before running docker from VSCode, make sure to start Docker Desktop (and, thereby, the docker deamon).
-
+* <<../general_guidelines/Getting-Docker.adoc#, Setting Up Docker>>
+* <<StandardDockerConfig.adoc#,Default docker-compose.yml>>
+* <<../writing_guidelines/Docker-For-Asciidco.adoc#,Using Docker for Asciidoctor>>
