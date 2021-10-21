@@ -1,12 +1,15 @@
 = Project Guidelines
+:toc: auto
+:mydir: general_guidelines/
+
 
 This section gathers links and information on how to work within a project. 
 
 == Links
 
-* xref:Meeting-Guidelines.adoc[Platforms & Communication Channels in an ASAM Project]
-* xref:Meeting-Guidelines.adoc[Meeting Guidelines]
-* xref:Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
-* xref:Shared-OpenX-Calendar.adoc[Shared Project Calendar]
-* xref:ASAM-Project-Roles.adoc[ASAM Project Roles]
-* xref:open-source/ASAM-DCO.adoc[ASAM DCO for Open Source Projects]
+* xref:{mydir}Platforms.adoc[Platforms & Communication Channels in an ASAM Project]
+* xref:{mydir}Meeting-Guidelines.adoc[Meeting Guidelines]
+* xref:{mydir}Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
+* xref:{mydir}Shared-OpenX-Calendar.adoc[Shared Project Calendar]
+* xref:{mydir}ASAM-Project-Roles.adoc[ASAM Project Roles]
+* xref:{mydir}open-source/ASAM-DCO.adoc[ASAM DCO for Open Source Projects]

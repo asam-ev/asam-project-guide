@@ -1,3 +1,6 @@
+= ASAM Commit Guidelines
+:toc:
+
 .ASAM OSC2 Commit Message Convention
 ----
 <GroupName>: <description>

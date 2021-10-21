@@ -1,11 +1,13 @@
+= Forking From Repository
+:toc:
 
 Creating a fork "clones" the repository into your profile, allowing you to make changes without having to interact with the main repository.
 
-> The procedure is the same on code.asam.net (gitlab) and on github.
+TIP: The procedure is the same on code.asam.net (gitlab) and on github.
 
-image::../images/forking-a-repo.gif[title="Forking a repo"]
+image::forking-a-repo.gif[title="Forking a repo"]
 
 To submit the changes you make in your fork back to the repository, submit a Merge/Pull request as normal in the main repository, making sure to select your fork.
 
 
-image::../images/creating-a-pr-from-a-fork.gif[title="Creating a PR from a fork"]
+image::creating-a-pr-from-a-fork.gif[title="Creating a PR from a fork"]
