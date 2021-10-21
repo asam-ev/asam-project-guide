@@ -15,6 +15,8 @@ image::https://docs.docker.com/engine/images/architecture.svg[title="The Docker 
 
 For more information on how to use Docker, see the link:../tool-specific/DockerGuide.adoc[Docker Guide] or the link:https://docs.docker.com/get-started/[official guides] from Docker.
 
+TIP: Want to learn more about Docker? See link:https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html[this page] for an explanation on the definitions of and the differences between images and containers.
+
 == Docker Licenses
 
 IMPORTANT: Professional use of Docker Desktop in large organizations (more than 250 employees or more than $10 million in annual revenue) *requires users to have a paid Docker subscription*. See https://www.docker.com/blog/updating-product-subscriptions/.
