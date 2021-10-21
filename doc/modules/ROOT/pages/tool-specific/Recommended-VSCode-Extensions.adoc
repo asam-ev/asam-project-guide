@@ -1,28 +1,25 @@
-
-:imagesdir: ../images
+= Recommended Visual Studio Code Extensions
 :toc:
-
-== Recommended VSCode Extensions
 
 VSCode is already without extensions very powerful and user friendly. One thing that can make the VSCode experience even better are the extensions. There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.
 
-Installing an extension is really easy, just enter the extension menu (<<Interface>> see below where to find that), search for the desired extension. Than click on the Install-Button. 
+Installing an extension is really easy, just enter the extension menu, search for the desired extension. Than click on the Install-Button. 
 
-=== AsciiDoc
+== AsciiDoc
 
 The AsciiDoc extension will add the syntax the asciidoc interpreter to VSCode so you can use the preview feature and have syntax highlighting.
 
 .AsciiDoc (id: asciidoctor.asciidoctor-vscode)
 image::asciidoc_ext.PNG[]
 
-=== Git Graph
+== Git Graph
 
 The Git Graph extension is a great tool navigating the branches in the git repository and provides a great overview.
 
 .Git Graph (id: mhutchie.git-graph)
 image::gitgraph_ext.PNG[]
 
-=== GitLens
+== GitLens
 
 The GitLens Extension is a great extension to follow up on all the changes made to the documents within the repository.
 Gitlens provides:
@@ -35,7 +32,7 @@ Gitlens provides:
 .GitLens -- Git supercharged (id: eamodio.gitlens)
 image::gitlens_ext.PNG[]
 
-=== Comment Anchors
+== Comment Anchors
 
 The Comment Anchor extension provides you with the ability of adding highlighted keywords to the raw text.
 
@@ -47,7 +44,7 @@ The extension also lets you search for all available anchors in the repository o
 .Comment Anchors (id: exodiusstudios.comment-anchors)
 image::commentanchor_ext.PNG[]
 
-=== Draw.io
+== Draw.io
 
 // tag::drawio-extension[]
 
@@ -60,9 +57,9 @@ NOTE: The Draw.io extension does not support remote custom libraries as of now. 
 
 // end::drawio-extension[]
 
-For information on how to integrate the ASAM custom library for Draw.io, see the link:DrawIOGuide.adoc[Draw.io Guide].
+For information on how to integrate the ASAM custom library for Draw.io, see the xref:DrawIOGuide.adoc[Draw.io Guide].
 
-=== Docker
+== Docker
 
 // tag::docker-extension[]
 The Docker extension lets you directly interact with Docker through Visual Studio Code. You can run, for example, the docker-compose.yml directly without having to open a console or using Docker Desktop.

@@ -5,7 +5,7 @@
 :data-uri:
 
 
-include::Recommended-VSCode-Extensions.adoc[]
+include::Recommended-VSCode-Extensions.adoc[leveloffset = +1]
 
 == Interface
 

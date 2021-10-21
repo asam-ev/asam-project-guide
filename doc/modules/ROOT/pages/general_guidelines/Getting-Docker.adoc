@@ -26,7 +26,7 @@ If your company does not provide docker licenses, you can check the docker websi
 NOTE: Alternatively to getting Docker Desktop, you can also download and install docker engine from binaries. This is free of charge but requires many more steps for setup. See https://docs.docker.com/engine/install/binaries/ for more information on this.
 
 image::https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png[width=80,link="{docker-download}", role="right"]
-This summary assumes that you are using **Windows**. If not, check out  the <<{docker-download},official docker page>> for information on how to retrieve and install docker.
+This summary assumes that you are using **Windows**. If not, check out the link:{docker-download}[official docker page] for information on how to retrieve and install docker.
 
 You can download Docker Desktop (the Docker version for Windows) <<{docker-download},here>>.
 For more information on how to download and install docker, see https://docs.docker.com/desktop/windows/install/.

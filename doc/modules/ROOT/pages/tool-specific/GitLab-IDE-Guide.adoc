@@ -1,3 +1,4 @@
+= GitLab IDE Guide
 GitLab provides a Web IDE editor for interacting with the repository's content directly through the browser. 
 
 ## What Is An "IDE"?

@@ -1,3 +1,4 @@
+= AsciiDoc Guide
 :hardbreaks:
 :nofooter:
 :icons: font

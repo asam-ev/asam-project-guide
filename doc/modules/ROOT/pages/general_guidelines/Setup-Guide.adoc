@@ -1,17 +1,15 @@
-
-:imagesdir: ../images
+= Setup Guide
 :toc:
 :includedir: ..
-
-= Setup Guide
+:mydir: general_guidelines/
 
 == Who This Guide Is For
 
 
 The goal of ASAM standards is to be comprehensive, complete, and easy to understand. In order to achieve this goal, ASAM employs the same tools and processes for creating these standards in all their projects. +
-New project members must, therefore, set up their accounts and computers accordingly. This page gives a summary of the <<Installing the tools,recommended tools and how to get them>>, how to set up accounts, as well as links to other helpful guides and related topics.
+New project members must, therefore, set up their accounts and computers accordingly. This page gives a summary of the <<Installing The Tools,recommended tools and how to get them>>, how to set up accounts, as well as links to other helpful guides and related topics.
 
-*If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your __GitLab account__, connect your __environment__ to it (or use the <<../tool-specific/GitLab-IDE_Guide.adoc[GitLab IDE]), and continue with the [.underline]#guidelines# in the Wiki's link:./Wiki/home.adoc#,Start Page>>.*
+*If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your __GitLab account__, connect your __environment__ to it (or use the xref:../tool-specific/GitLab-IDE-Guide.adoc[GitLab IDE]), and continue with the [.underline]#guidelines# in the Wiki's xref:../home.adoc[Start Page].*
 
 NOTE: This setup guide only covers the tools recommended by ASAM. You can use other compatible tools, as long as the single source of truth stays ASAM GitLab and your content is of the supported content type, such as asciidoc.
 
@@ -78,17 +76,15 @@ image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
 
 VSCode has a lot of very helpful extensions that can be downloaded and installed through the integrated marketplace. You can view the recommended list of extensions below.
 
-.**View recommended extensions**
-[%collapsible]
 ====
-include::../tool-specific/Recommended-VSCode-Extensions.adoc[leveloffset=3]
-====
+A list of recommended Visual Studio Code Extensions can be found xref:../tool-specific/Recommended-VSCode-Extensions.adoc[here].
 
-For more information on VSCode, see the <<:../tool-specific/VSCode-Guide.adoc#,Visual Studio Code Guide>>.
+For more information on VSCode, see the xref::../tool-specific/VSCode-Guide.adoc[Visual Studio Code Guide].
+====
 
 === Git And Gitlab
-ASAM uses <<../git/An-Introduction-to-Git.asciidoc#,Git>> for versioning projects and project files. GitLab is the webhosted tool that provides a central hub and storage space (repository). +
-This section provides information on how to install and configure Git. If you want to read more on how to work with Git, see <<../git/An-Introduction-to-Git.asciidoc#,An Introduction To Git>> and <<../git/Git-Best-Practices.adoc#,Git-Best-Practices>>.
+ASAM uses xref:../git/An-Introduction-to-Git.adoc[Git] for versioning projects and project files. GitLab is the webhosted tool that provides a central hub and storage space (repository). +
+This section provides information on how to install and configure Git. If you want to read more on how to work with Git, see xref:../git/An-Introduction-to-Git.adoc[An Introduction To Git] and xref:../git/Git-Best-Practices.adoc[Git-Best-Practices].
 
 ==== Setting Up Git On Your PC
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=64, height=64, role="right",link=https://git-scm.com/download/win, window=_blank]
@@ -97,9 +93,10 @@ Install Git on your computer. The installation routine requires many settings. Y
 
 *If you would like to use VSCode as your standard Git editor, follow the optional instructions below.*
 
-._Optional: Instructions on setting up VSCode as default Git editor_
-[%collapsible]
+
 ====
+_Optional: Instructions on setting up VSCode as default Git editor_
+
 image:SelectVSCodeForGit.png[title="Use Visual Studio Code as Git's default editor"]
 
 * Select "Use Visual Studio Code as Git's default editor" from the drop-down menu
@@ -109,9 +106,9 @@ NOTE: If you cannot click "Next", make sure VSCode is already installed. Return 
 
 After installation of Git, configure your user credentials that Git uses when checking in changed content from your PC to the ASAM Gitlab. To make sure your commits match your name and email details, a one time configuration is necessary.
 
-TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found <<../tool-specific/PowershellTutorial.adoc#,here>>.
+TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found xref:../tool-specific/PowershellTutorial.adoc[here].
 
-. Open a <<../tool-specific/PowershellTutorial.adoc#,PowerShell>> window
+. Open a xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window
 . Execute the following command and replace the entries _"FIRST_NAME_, _LAST_NAME"_  accordingly: 
 
 +
@@ -120,8 +117,7 @@ TIP: The following steps are tested with Microsoft Windows PowerShell. Instructi
 git config --global user.name "FIRST_NAME LAST_NAME"
 ----
 +
-.Example
-[%collapsible]
+.Setting your git user name
 ====
 [source,git]
 ----
@@ -136,8 +132,7 @@ git config --global user.name Philip Windecker
 git config --global user.email "MY_NAME@example.com"
 ----
 +
-.Example
-[%collapsible]
+.Setting your email
 ====
 [source,git]
 ----
@@ -154,9 +149,9 @@ NOTE: This is optional! It removes the need to enter the user password for every
 ===== Creating The SSH Keys And Apply In GitLab
 To ensure you don't have to enter your login details every time you want to interact with the repository, add an SSH key to your account. To do so, follow these steps:
 
-. In a <<../tool-specific/PowershellTutorial.adoc#,PowerShell>> window, enter the following: 
+. In a xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window, enter the following: 
 +
-NOTE: The <<../tool-specific/PowershellTutorial.adoc#,PowerShell>> window should be opened in your user folder (Windows). Usually, if you open it through right-click on the Windows button, this should be the case.
+NOTE: The xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window should be opened in your user folder (Windows). Usually, if you open it through right-click on the Windows button, this should be the case.
 +
 [source,git]
 ----
@@ -199,7 +194,7 @@ image:ConfirmSSHKey.png[title="Window shown after SHS key has been entered and c
 Now, GitLab knows the public key you use to authorize when interacting with GitLab from your PC. In order to use the generated keys for authorization by your PC, execute the following steps:
 
 . Check if the SSH Agent is running
-.. Open a <<../tool-specific/PowershellTutorial.adoc#,PowerShell>> window
+.. Open a xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window
 .. Type the following command, hit Enter, and check the status:
 +
 [source,Shell]
@@ -221,7 +216,7 @@ If it is "Disabled", continue with _Activate the SSH Agent_. Otherwise, continue
 +
 NOTE: This requires administration rights. If you do not have these, request support from your IT department.
 +
-.. Open another <<../tool-specific/PowershellTutorial.adoc#,PowerShell>> window (with Administration rights)
+.. Open another xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window (with Administration rights)
 .. Set the SSH Agent to start manually by typing the following command and hitting Enter:
 +
 [source,Shell]
@@ -241,7 +236,7 @@ Start-Service ssh-agent
 
 . Add the SSH private key to the agent
 +
-NOTE: This should not be done in the Administration <<../tool-specific/PowershellTutorial.adoc#,PowerShell>> window if your Admin account is not your user account. Otherwise, Windows will complain about unprotected private key files!
+NOTE: This should not be done in the Administration xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window if your Admin account is not your user account. Otherwise, Windows will complain about unprotected private key files!
 +
 .. Return to the PowerShell window or open a new one
 .. To add your generated private key to the SSH Agent, enter 
@@ -284,23 +279,23 @@ image::AddKnownHost.png[]
 
 === Working With VSCode And Git
 
-For an example on how to work with VSCode and Git, see <<CloningRepoTutorial.adoc#,Cloning Your First Repository>>.
+For an example on how to work with VSCode and Git, see xref:{mydir}CloningRepoTutorial.adoc[Cloning Your First Repository].
 
 == Working Without Software Installation
 
 GitLab provides an integrated working environment and text editor with which users can directly create and edit files without having to install Git or an editor like VSCode. 
-See <<../tool-specific/GitLab-IDE-Guide.adoc#,the GitLab Web IDE Guide>> for more information.
+See xref:../tool-specific/GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for more information.
 
 == See Also
 
-* <<Platforms.adoc#,Overview over used platforms>>
-* <<Microsoft-Teams-and-Sharepoint.adoc#,Teams & Sharepoint>>
-* <<Shared-OpenX-Calendar.adoc#,Synchronize with the OpenX calendar>>
-* <<../tool-specific/GitLab-IDE-Guide.adoc#,GitLab IDE Guide>>
-* <<..tool-specific/VSCode-Guide.adoc#,Further VSCode Guide>>
-* <<ProjectGuidelines.adoc#,Project Guidelines>>
-* <<WritingGuidelines.adoc#,Writing Guidelines>>
-* <<../git/An-Introduction-to-Git.asciidoc#,Git Introductions>>
-* <<Getting-Docker.adoc#,How to install Docker (if required)>>
-* <<../tool-specific/DockerGuide.adoc#,Docker Guide>>
-* <<../writing_guidelines/Docker-For-Asciidoc.adoc#,Docker for AsciiDoc>>
+* xref:{mydir}Platforms.adoc[Overview over used platforms]
+* xref:{mydir}Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
+* xref:{mydir}Shared-OpenX-Calendar.adoc[Synchronize with the OpenX calendar]
+* xref:tool-specific/GitLab-IDE-Guide.adoc[GitLab IDE Guide]
+* xref:tool-specific/VSCode-Guide.adoc[Further VSCode Guide]
+* xref:{mydir}ProjectGuidelines.adoc[Project Guidelines]
+* xref:{mydir}WritingGuidelines.adoc[Writing Guidelines]
+* xref:git/An-Introduction-to-Git.asciidoc[Git Introductions]
+* xref:{mydir}Getting-Docker.adoc[How to install Docker (if required)]
+* xref:tool-specific/DockerGuide.adoc[Docker Guide]
+* xref:writing_guidelines/Docker-For-Asciidoc.adoc[Docker for AsciiDoc]

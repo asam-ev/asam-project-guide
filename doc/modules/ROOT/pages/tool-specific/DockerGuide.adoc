@@ -1,7 +1,4 @@
-
-:imagesdir: ../images/
-
-// TODO
+= Docker Guide
 
 == Getting Started
 
