@@ -1,5 +1,5 @@
 
-ifndef::imagesdir[] 
+ifndef::imagesdir[]
 :imagesdir: docs/images
 endif::imagesdir[]
 
@@ -31,13 +31,13 @@ _Following these guidelines will minimize process overhead and increase the spee
 5+^h|General Wiki --  Quick Access
 
 |<<First Time Setup,**Setup**>>
-|image:GettingStarted.jpg[width=120,title="First Time Setup",link={getting-started}] + 
+|image:GettingStarted.jpg[width=120,title="First Time Setup",link={getting-started}] +
 <<{getting-started},First Time Setup>>
 |image:Communication.png[Title=Teams & Sharepoint", width=120, link={communication}] +
 link:{communication}[Teams & Sharepoint]
 |image:Calendar.png[title="OpenX Calendar",width=120,link={open-x-cal}] +
 link:{open-x-cal}[Shared Project Calendar]
-| 
+|
 
 |<<Guidelines,**Guidelines**>>
 |image:Workflow.png[title="Workflow Overview", width=120, link={workflow}] +
@@ -46,14 +46,14 @@ link:{workflow}[Repository Guidelines]
 link:{project-guidelines}[Project Guidelines]
 |image:WritingGuideliens.png[alt="Writing Guidelines", width="120", link={writing-guidelines}] +
 link:{writing-guidelines[Writing Guidelines]
-| 
+|
 
-|<<Tools,**Tools**>> 
-|image:https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png[title="GitLab", width=120,link={gitlab-guide}] + 
+|<<Tools,**Tools**>>
+|image:https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png[title="GitLab", width=120,link={gitlab-guide}] +
 link:{gitlab-guide}[GitLab Guide]
-|image:https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[title="Git", width=120,link={git-guide}] + 
+|image:https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[title="Git", width=120,link={git-guide}] +
 link:{git-guide}[Git Guide]
-|image:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[title="Visual Studio Code",width=120,link={vscode-guide}] + 
+|image:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[title="Visual Studio Code",width=120,link={vscode-guide}] +
 link:{vscode-guide}[VSCode Guide]
 |image:https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[title="Draw.io",width=120,link={drawio-guide}] +
 link:{drawio-guide}[Draw.io Guide]
@@ -71,7 +71,7 @@ link:{drawio-guide}[Draw.io Guide]
 
 == First Time Setup
 
-***You are new to ASAM projects? Then start here!*** 
+***You are new to ASAM projects? Then start here!***
 
 In order to participate in the ASAM standardization, users need to set up their account and tools and connect to the communication channels the group uses.
 
@@ -99,9 +99,9 @@ _For information on how to set up your GitLab account, see **link:docs/general_g
 ---
 
 === Project Guidelines
-This covers all topics related to working in a project. 
+This covers all topics related to working in a project.
 The guidelines are collected under **link:docs/general_guidelines/ProjectGuidelines.adoc[Project Guidelines]**.
-  
+
 ---
 
 === Writing Guidelines
@@ -114,7 +114,7 @@ General guidelines on how to write requirements and documentation can be found u
 
 To work on ASAM projects, some tools are required and others are recommended.
 
-include::docs/general_guidelines/ToolsOverview.adoc[]
+include::{general-uri}ToolsOverview.adoc[]
 
 ---
 
