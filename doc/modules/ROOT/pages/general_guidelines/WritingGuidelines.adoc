@@ -1,7 +1,5 @@
-= Writing Guidelines
-:toc:
 
-  - xref:../writing_guidelines/AsciiDoc-Guide.adoc[AsciiDoc Guide] 
+  - link:../writing_guidelines/Asciidoc-Guide.adoc[AsciiDoc Guide] 
   - Style Guidelines (TODO)
   - Writing Guide (TODO)
-  - xref:../writing_guidelines/Docker-For-Asciidoc.adoc[Guide for AsciiDoc with Docker]
+  - link:../writing_guidelines/Docker-For-Asciidoc.adoc[Guide for AsciiDoc with Docker]

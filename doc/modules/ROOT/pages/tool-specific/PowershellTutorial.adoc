@@ -14,6 +14,7 @@ There are multiple ways to open the PowerShell in windows:
 * <<Windows button>>
 * <<Run-command>>
 * <<Windows Explorer>>
+* <<Visual Studio Code>>
 
 ==== Windows button
 
@@ -42,6 +43,24 @@ image::PSWithExplorer.gif[width = 720]
 . Navigate to the location where you want to open your PowerShell in
 . Click on "File" -> "Open Windows PowerShell" (or hit "Alt" -> "D" -> "P" (German) or "Alt" -> "F" -> "P" (English) on your keyboard)
 
+==== Visual Studio Code
+
+===== Open Last Terminal
+NOTE: This opens the PowerShell in the last accessed project root folder!
+
+NOTE: The Terminal may already be open at the bottom of your window.
+
+image::PSWithVSCodeNormal.gif[width = 720]
+
+* Open the Terminal by clicking on "View -> Terminal"
+
+===== Open New Terminal
+NOTE: This adds a new terminal to the list of terminals and opens the view if hidden. You can delete unused terminals or keep multiple independent ones open if you like.
+
+image::PSWithVsCodeAdd.gif[width = 720]
+
+. Click on "Terminal -> "New Terminal"
+. Select the correct projectd folder
 
 === Administration Access
 
@@ -54,7 +73,6 @@ image::PSWithWinAdmin.gif[width = 720]
 . Right-click on the Windows button
 . Select "Windows PowerShell (Administrator)"
 . Confirm action with administrator account
-
 
 *See also*
 
