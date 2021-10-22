@@ -1,25 +1,24 @@
-
-ifndef::imagesdir[] 
-:imagesdir: docs/images
-endif::imagesdir[]
-
-:includedir: docs
-
-:general-uri: docs/general_guidelines/
-:git-uri: docs/git/
-:tools-uri: docs/tool-specific/
+= ASAM Wiki
+:description: The main wiki landing page for the ASAM Wiki and Project Guide.
+:keywords: main, wiki, home, start
+:url-repo: https://code.asam.net/common/asam-project-guide/
+:includedir: .
+:general-uri: {includedir}/general_guidelines/
+:git-uri: {includedir}/git/
+:tools-uri: {includedir}/tool-specific/
 :getting-started: {general-uri}Setup-Guide.adoc
 :communication: {general-uri}Microsoft-Teams-and-Sharepoint.adoc
 :open-x-cal: {general-uri}Shared-OpenX-Calendar.adoc
 :workflow: {general-uri}Workflow.adoc
 :project-guidelines: {general-uri}ProjectGuidelines.adoc
+:meeting-guidelines: {general-uri}Meeting-Guidelines.adoc
 :writing-guidelines: {general-uri}WritingGuidelines.adoc
 :gitlab-guide: {git-uri}GitLabGuide.adoc
 :git-guide: {git-uri}An-Introduction-to-Git.adoc
 :vscode-guide: {tools-uri}VSCode-Guide.adoc
 :drawio-guide: {tools-uri}DrawIOGuide.adoc
 
-= ASAM Wiki
+
 This Wiki provides information on how to *set up accounts and tools* for working on ASAM projects. It also details the *general processes and workflows* employed by ASAM to ensure a _consistent_ and _efficient_ standardization. In addition to general information, each projects has its own project Wiki for project specific knowledge and definitions. Lastly, the ASAM Wiki provides *introductions to and reference pages for the proposed tools*.
 
 _Following these guidelines will minimize process overhead and increase the speed at which your input is integrated into the standard._
@@ -30,36 +29,27 @@ _Following these guidelines will minimize process overhead and increase the spee
 
 5+^h|General Wiki --  Quick Access
 
-|<<First Time Setup,**Setup**>>
-|image:GettingStarted.jpg[width=120,title="First Time Setup",link={getting-started}] + 
-<<{getting-started},First Time Setup>>
-|image:Communication.png[Title=Teams & Sharepoint", width=120, link={communication}] +
-link:{communication}[Teams & Sharepoint]
-|image:Calendar.png[title="OpenX Calendar",width=120,link={open-x-cal}] +
-link:{open-x-cal}[Shared Project Calendar]
+|xref:First Time Setup[**Setup**]
+|xref:{getting-started}[image:GettingStarted.jpg[width=120,title="First Time Setup"] First Time Setup] 
+|xref:{communication}[image:Communication.png[Title=Teams & Sharepoint", width=120]Teams & Sharepoint]
+|xref:{open-x-cal}[image:Calendar.png[title="OpenX Calendar",width=120]Shared Project Calendar]
 | 
 
-|<<Guidelines,**Guidelines**>>
-|image:Workflow.png[title="Workflow Overview", width=120, link={workflow}] +
-link:{workflow}[Repository Guidelines]
-|image:ProjectGuidelines.png[title="Project Guidelines", width=120, link={project-guidelines}] +
-link:{project-guidelines}[Project Guidelines]
-|image:WritingGuideliens.png[alt="Writing Guidelines", width="120", link={writing-guidelines}] +
-link:{writing-guidelines[Writing Guidelines]
-| 
+|xref:Guidelines[**Guidelines**]
+|xref:{workflow}[image:Workflow.png[title="Workflow Overview", width=120]Repository Guidelines]
+|xref:{project-guidelines}[image:ProjectGuidelines.png[title="Project Guidelines", width=120]Project Guidelines]
+|xref:{meeting-guidelines}[image:MeetingGuidelines.png[alt="Meeting Guidelines", width="120"]Meeting Guidelines]
+|xref:{writing-guidelines}[image:WritingGuideliens.png[alt="Writing Guidelines", width="120"]Writing Guidelines]
 
-|<<Tools,**Tools**>> 
-|image:https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png[title="GitLab", width=120,link={gitlab-guide}] + 
-link:{gitlab-guide}[GitLab Guide]
-|image:https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[title="Git", width=120,link={git-guide}] + 
-link:{git-guide}[Git Guide]
-|image:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[title="Visual Studio Code",width=120,link={vscode-guide}] + 
-link:{vscode-guide}[VSCode Guide]
-|image:https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[title="Draw.io",width=120,link={drawio-guide}] +
-link:{drawio-guide}[Draw.io Guide]
+
+|xref:Tools[**Tools**] 
+|xref:{gitlab-guide}[image:https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png[title="GitLab", width=120]GitLab Guide]
+|xref:{git-guide}[image:https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[title="Git", width=120] Git Guide]
+|xref:{vscode-guide}[image:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[title="Visual Studio Code",width=120]VSCode Guide]
+|xref:{drawio-guide}[image:https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[title="Draw.io",width=120]Draw.io Guide]
 
 // TODO
-|<<Templates,**Templates**>>
+|xref:Templates[**Templates**]
 |
 |
 |
@@ -75,37 +65,37 @@ link:{drawio-guide}[Draw.io Guide]
 
 In order to participate in the ASAM standardization, users need to set up their account and tools and connect to the communication channels the group uses.
 
-1. The **link:docs/general_guidelines/Setup-Guide.asciidoc[setup guide]** provides a step-by-step on setting up your GitLab account and installing the tools recommended by ASAM for interacting with ASAM standards and repositories. You also find information on how you can, alternatively, participate without having to install tools on your PC.
+1. The **xref:{includedir}/general_guidelines/Setup-Guide.adoc#[setup guide]** provides a step-by-step on setting up your GitLab account and installing the tools recommended by ASAM for interacting with ASAM standards and repositories. You also find information on how you can, alternatively, participate without having to install tools on your PC.
 
-2. The guide to **link:docs/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]** contains information on setting up Microsoft Teams.
+2. The guide to **xref:{includedir}/general_guidelines/Microsoft-Teams-and-Sharepoint.adoc#[Teams & Sharepoint]** contains information on setting up Microsoft Teams.
 
-3. The guide for the **link:docs/general_guidelines/Shared-OpenX-Calendar.adoc[OpenX calendar]**, a shared calendar across all ASAM OpenX projects that lists all meetings taking place, provides instructions on how to synchronize this calendar with your company's to keep all relevant meetings together.
+3. The guide for the **xref:{includedir}/general_guidelines/Shared-OpenX-Calendar.adoc#[OpenX calendar]**, a shared calendar across all ASAM OpenX projects that lists all meetings taking place, provides instructions on how to synchronize this calendar with your company's to keep all relevant meetings together.
 
 ---
 
 == Guidelines
 
-In order to keep all ASAM projects aligned, each project follows the same basic workflows and uses the same guidelines for the **<<repository-guidelines,repositories>>** (how to use GitLab), the **<<project-guidelines,projects>>** (how projects are structured), and for **<<writing-guidelines,writing>>** (how to create content for the standards).
+In order to keep all ASAM projects aligned, each project follows the same basic workflows and uses the same guidelines for the **xref:{repository-guidelines}[repositories]** (how to use GitLab), the **xref:{project-guidelines}[projects]** (how projects are structured), and for **xref:{writing-guidelines}[writing]** (how to create content for the standards).
 
 ---
 === Repository Guidelines
-The repository guidelines cover all topics related to working with the repository (GitLab). See the **link:docs/general_guidelines/Workflow.asciidoc[Workflow Overview]** for a walkthrough on how to actively develope the ASAM standards.
+The repository guidelines cover all topics related to working with the repository (GitLab). See the **xref:{includedir}/general_guidelines/Workflow.adoc#[Workflow Overview]** for a walkthrough on how to actively develope the ASAM standards.
 
-A list of available labels in ASAM repositories can be accessed through the **link:docs/git/ASAM-Issue-and-MR-Labels.adoc[Overview Of Labels]**.
+A list of available labels in ASAM repositories can be accessed through the **xref:{includedir}/git/ASAM-Issue-and-MR-Labels.adoc#[Overview Of Labels]**.
 
-_For information on how to set up your GitLab account, see **link:docs/general_guidelines/Setup-Guide.asciidoc[setup guide]**._
+_For information on how to set up your GitLab account, see **xref:{includedir}/general_guidelines/Setup-Guide.adoc#[setup guide]**._
 
 
 ---
 
 === Project Guidelines
 This covers all topics related to working in a project. 
-The guidelines are collected under **link:docs/general_guidelines/ProjectGuidelines.adoc[Project Guidelines]**.
+The guidelines are collected under **xref:{includedir}/general_guidelines/ProjectGuidelines.adoc#[Project Guidelines]**.
   
 ---
 
 === Writing Guidelines
-General guidelines on how to write requirements and documentation can be found unter **link:docs/general_guidelines/WritingGuidelines.adoc[Writing Guidelines]**.
+General guidelines on how to write requirements and documentation can be found unter **xref:{includedir}/general_guidelines/WritingGuidelines.adoc#[Writing Guidelines]**.
 
 
 ---
@@ -114,7 +104,7 @@ General guidelines on how to write requirements and documentation can be found u
 
 To work on ASAM projects, some tools are required and others are recommended.
 
-include::docs/general_guidelines/ToolsOverview.adoc[]
+include::general_guidelines/ToolsOverview.adoc[]
 
 ---
 
