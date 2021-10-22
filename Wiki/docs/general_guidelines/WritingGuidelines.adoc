@@ -1,5 +1,9 @@
 
-  - link:../writing_guidelines/Asciidoc-Guide.adoc[AsciiDoc Guide] 
-  - Style Guidelines (TODO)
-  - Writing Guide (TODO)
-  - link:../writing_guidelines/Docker-For-Asciidoc.adoc[Guide for AsciiDoc with Docker]
+:cdir: ../writing_guidelines/
+
+- link:{cdir}Asciidoc-Guide.adoc[AsciiDoc Guide] 
+- Style Guidelines (TODO)
+- xref:{cdir}writing_guide[ASAM Writing Guide]
+- link:{cdir}Docker-For-Asciidoc.adoc[Guide for AsciiDoc with Docker]
+- xref:{cdir}coding_style.adoc[ASAM Coding Style]
+- xref:{cdir}plantuml_documentation_guide[Documentation Guide for PlantUML]
