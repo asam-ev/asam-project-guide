@@ -12,7 +12,7 @@
 	url = ../linting-rules.git
 [submodule "ASAM Standard Template"]
 	path = ASAM Standard Template
-	url = ../standard-template.git
+	url = https://code.asam.net/common/templates/standard-template.git
 [submodule "Build"]
 	path = Build
 	url = ../build.git
