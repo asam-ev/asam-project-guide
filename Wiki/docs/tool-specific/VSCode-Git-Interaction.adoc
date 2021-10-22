@@ -11,3 +11,4 @@ You can find a very helpful overview at https://code.visualstudio.com/docs/edito
 * xref:../git/ASAM-Issue-and-MR-Labels.adoc[ASAM Issue and Merge Request Labels]
 * xref:../git/Branch-Naming-Conventions.adoc[ASAM Branch Naming Conventions]
 * xref:../git/Commit-Guidelines.adoc[ASAM Commit Guidelines]
+* xref:../git/Submodules.adoc[Working With Submodules]

@@ -1,5 +1,9 @@
 :imagesdir: ../images
 
+If you want to work on a repository locally, you need to first check it out from remote (GitLab). To do so, follow one of the cloning instructions below.
+
+IMPORTANT: If your project contains submodules, make sure to also update them. See xref:../git/Submodules.adoc[Working With Submodules] for more information.
+
 == Cloning A Repository Using VSCode
 NOTE: This only needs to be done once to obtain a local copy.
 
@@ -24,7 +28,11 @@ image:git_error_host-key-verification-failed.PNG[]
 
 . Open the Git Bash from the Context Menu (right-click -> Select "Git Bash Here")
 
-. Type `git clone ` and then press the middle mouse button to paste the copied url. Confirm with Enter
+. Type `git clone --recurse-submodules` and then press the middle mouse button to paste the copied url. Confirm with Enter
++
+NOTE: With this command, you do not need to manually initialize the submodules after checkout! 
+
+TIP: Alternatively to the Git Bash, you can also use the xref:../tool-specific/PowershellTutorial.adoc[Microsoft Powershell] with the same commands. Make sure to open your Powershell in your directory, though.
 
 image::CloneByGitBash.gif[]
 
@@ -35,3 +43,7 @@ image::CloneByGitBash.gif[]
 . Select the folder on your PC where you want to save the repository
 
 image::CloneToVSCode.gif[]
+
+== See Also
+
+* xref:../git/Submodules.adoc[Working With Submodules]
