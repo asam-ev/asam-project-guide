@@ -4,11 +4,25 @@
 This is a summary of recommended VSCode settings to follow writing guidelines easier.
 
 == Indentations
-* Insert 4 spaces instead of tabs. The Writing guide does not allow any tabs.
-I am not sure if "editor.tabSize": 4 is enough (see here).
+
+image::VSCodeSettingsIndent.png[]
+. Open the Command Palett (`Ctrl`+ `Shift` + `P`)
+. Type "user settings" and confirm with Enter
+. Search for "indent" in the user settings
+. Enable "Insert Spaces"
+. Set "Tab Size" to 4
+
+IMPORTANT: The xref:../writing_guidelines/writing_guide.adoc[writing guide] does not allow any tabs!
 
 == Automatic Removal Of Spaces After Periods
-* When saving the file, remove spaces after periods automatically. According to the Writing guide, there should be a line break after each sentence. No additional space after a period is required. Seems like the setting "files.trimTrailingWhitespace": true is enough.
+
+image::VSCodeSettingsWhiteSpace.png[]
+. Open the Command Palett (`Ctrl`+ `Shift` + `P`)
+. Type "user settings" and confirm with Enter
+. Search for "whitespace" in the user settings
+. Enable "Trim Trailing Whitespace"
+
+IMPORTANT: The xref:../writing_guidelines/writing_guide.adoc[writing guide] requires a line break after each sentence and no additional space after a period is therefore required!
 
 // tag::kroki[]
 == Enabling Kroki Support In AsciiDoc
@@ -28,7 +42,7 @@ WARNING: This extension will send graph information to https://kroki.io. If this
 To enable diagram support, set the use_kroki parameter in your User Settings to true.
 
 image::enable_kroki.gif[Enabling Kroki diagram support in AsciiDoc extension]
- 
+
 . Open the Command Palett (`Ctrl`+ `Shift` + `P`)
 . Type "user settings" and confirm with Enter
 . Search for "kroki" in the user settings and enable the "Use_kroki" checkbox
