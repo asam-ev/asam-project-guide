@@ -1,4 +1,4 @@
-:imagesdir: ../images
+= Cloning A Repository
 
 == Cloning A Repository Using VSCode
 NOTE: This only needs to be done once to obtain a local copy.
@@ -13,7 +13,7 @@ NOTE: This only needs to be done once to obtain a local copy.
 
 image::gitclone.gif[]
 
-TIP: If you encounter an error that the host key verification failed, you need to add GitLab to your known_host file. See <<Setup-Guide.adoc#add-gitlab-to-known-hosts,setup for ssh>>. + 
+TIP: If you encounter an error that the host key verification failed, you need to add GitLab to your known_host file. See <<Setup-Guide.adoc#add-gitlab-to-known-hosts,setup for ssh>>. +
 image:git_error_host-key-verification-failed.PNG[]
 
 == Cloning A Repository Using Git Bash

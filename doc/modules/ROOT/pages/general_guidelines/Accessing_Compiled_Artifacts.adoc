@@ -1,4 +1,4 @@
-:imagesdir: ../images
+= Accessing Compiled Artifacts
 
 .This gif demonstrates how to access compiled html artifacts for other commits or branches
 image::downloading_artifacts.gif[]

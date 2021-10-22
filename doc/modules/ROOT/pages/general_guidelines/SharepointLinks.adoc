@@ -1,7 +1,6 @@
-:imagesdir: ../images
-=== Sharepoint Links 
+= Sharepoint Links
 
-This is a summary of important Sharepoint links. 
+This is a summary of important Sharepoint links.
 
 WARNING: These links will only work for you if you have access to the corresponding project!
 
