@@ -1,6 +1,4 @@
 = Working on AsciiDoc in VSCode
-:imagesdir: ../images
-:toc:
 :icons: font
 :data-uri:
 
@@ -26,7 +24,7 @@ https://code.visualstudio.com/docs/editor/versioncontrol#_git-support
 
 == Command Palette
 
-* Ctrl+Shift+P brings up the Command Palette. 
+* Ctrl+Shift+P brings up the Command Palette.
 
 * From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.
 
@@ -98,7 +96,7 @@ tst1 --> tst2: caption
 ----
 a|image::plantuml_3.png[]
 a|
----- 
+----
 [mermaid]
 ....
 gantt
@@ -110,8 +108,8 @@ gantt
     section Another
     Task in sec      :2014-01-12, 12d
     another task     :24d
-....  
-----  
+....
+----
 a|image::gannt_example.png[]
 a|
 ----
@@ -121,7 +119,7 @@ pie title Pets adopted by volunteers
     "Dogs" : 386
     "Cats" : 85
     "Rats" : 15
-            
+
 ....
 ----
 a|image::pie_example.png[]

@@ -3,8 +3,6 @@
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ..../images/
-:toc:
 
 [.lead]
 All ASAM OpenX Standards are written using the Asciidoc format https://asciidoc.org/[asciidoc Homepage]. AsciiDoc is a mature, plain-text writing format for authoring notes, articles, documentation, books, ebooks, web pages, slide decks, blog posts, man pages and more.
@@ -208,13 +206,13 @@ We can mix ordered and bulleted lists however we want:
 * bullet
 . number
 ** bullet
-.. loweralpha 
+.. loweralpha
 ....
 |
 * bullet
 . number
 ** bullet
-.. loweralpha 
+.. loweralpha
 
 |===
 
@@ -231,7 +229,7 @@ The image path is obtained by combining the root of the project directory, follo
 ....
 :imagesdir: images
 ....
-and we have 
+and we have
 ....
 image::subdirectory/filename.png[]
 ....
@@ -391,9 +389,9 @@ If you're authoring new content, you'll want to review this section for some nit
 
 == Document headers
 
-Each AsciiDoc file header goes directly underneath the document title (see <<Headings>>). 
+Each AsciiDoc file header goes directly underneath the document title (see <<Headings>>).
 
-You won't need to touch any of the parameters in this heading. 
+You won't need to touch any of the parameters in this heading.
 
 
 == Tables

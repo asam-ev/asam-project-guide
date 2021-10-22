@@ -1,10 +1,8 @@
 = Setup Guide
-:toc:
 :includedir: ..
 :mydir: general_guidelines/
 
-== Who This Guide Is For
-
+image::GettingStarted.jpg[width=120,role=right]
 
 The goal of ASAM standards is to be comprehensive, complete, and easy to understand. In order to achieve this goal, ASAM employs the same tools and processes for creating these standards in all their projects. +
 New project members must, therefore, set up their accounts and computers accordingly. This page gives a summary of the <<Installing The Tools,recommended tools and how to get them>>, how to set up accounts, as well as links to other helpful guides and related topics.
@@ -29,7 +27,7 @@ All specification-related documents are stored and updated in ASAMs Gitlab. *The
 
 Each user account is created by an ASAM representative. After creation, the user must finish setting up the account themselves.  This requires the following steps:
 
-. Follow the link in the Gitlab account creation email sent by "GitLab +<code@asam.net>+" to set your password. 
+. Follow the link in the Gitlab account creation email sent by "GitLab +<code@asam.net>+" to set your password.
 . Log in with your account using the image:GitLabStandardLoginButton.png[title="Standard Button"] access.
 +
 image:GitLabStandardLogin.png[title="Standard Login"]
@@ -61,13 +59,13 @@ Visiual Studio Code is the suggested solution for checking out repositories and 
 
 ==== Installing Extensions (Asciidoc Example)
 
-Visual Studio Code can be adapted to each project's and the user's needs. This is done by installing and using extensions. This section shows how to install a new extension from the marketplace. As an example, we will use the AsciiDoc extension. 
+Visual Studio Code can be adapted to each project's and the user's needs. This is done by installing and using extensions. This section shows how to install a new extension from the marketplace. As an example, we will use the AsciiDoc extension.
 
 The AsciiDoc extension for VSCode allows for easy creation and supported editing of asciidoc or adoc files within VSCode. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
 
 . Access the extensions window through the VSCode menu bar -> View -> Extensions.
-+ 
-image::extensions.png[alt=Add extension under 'View'] 
++
+image::extensions.png[alt=Add extension under 'View']
 
 . Search for AsciiDoc (or use asciidoctor.asciidoctor-vscode) & install it. This provides a preview feature and syntax highlighting for asciidoc files.
 +
@@ -89,7 +87,7 @@ This section provides information on how to install and configure Git. If you wa
 ==== Setting Up Git On Your PC
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png[alt=Git, width=64, height=64, role="right",link=https://git-scm.com/download/win, window=_blank]
 
-Install Git on your computer. The installation routine requires many settings. You can leave most to all on their default. 
+Install Git on your computer. The installation routine requires many settings. You can leave most to all on their default.
 
 *If you would like to use VSCode as your standard Git editor, follow the optional instructions below.*
 
@@ -109,7 +107,7 @@ After installation of Git, configure your user credentials that Git uses when ch
 TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found xref:../tool-specific/PowershellTutorial.adoc[here].
 
 . Open a xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window
-. Execute the following command and replace the entries _"FIRST_NAME_, _LAST_NAME"_  accordingly: 
+. Execute the following command and replace the entries _"FIRST_NAME_, _LAST_NAME"_  accordingly:
 
 +
 [source,git]
@@ -136,7 +134,7 @@ git config --global user.email "MY_NAME@example.com"
 ====
 [source,git]
 ----
-git config --global user.email philip.windecker@avenyr.de 
+git config --global user.email philip.windecker@avenyr.de
 ----
 ====
 
@@ -149,13 +147,13 @@ NOTE: This is optional! It removes the need to enter the user password for every
 ===== Creating The SSH Keys And Apply In GitLab
 To ensure you don't have to enter your login details every time you want to interact with the repository, add an SSH key to your account. To do so, follow these steps:
 
-. In a xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window, enter the following: 
+. In a xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window, enter the following:
 +
 NOTE: The xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window should be opened in your user folder (Windows). Usually, if you open it through right-click on the Windows button, this should be the case.
 +
 [source,git]
 ----
-ssh-keygen -t ed25519 -C "YourEmail@address.com"  
+ssh-keygen -t ed25519 -C "YourEmail@address.com"
 ----
 +
 TIP: Replace _YourEmail@address.com_ within the quotation marks (" ") with your company mail but keep the quotation marks! This adds your email adress as an optional comment to the created key.This is the recommended way by GitLab.
@@ -169,7 +167,7 @@ TIP: Entering a passphrase is optional and leads to additional steps every time 
 +
 [source,git]
 ----
-Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard 
+Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard
 ----
 +
 TIP: If this doesn’t work, open the file you created in a text editor and copy the whole text manually.
@@ -203,7 +201,7 @@ Get-Service ssh-agent
 ----
 +
 If the status is "Stopped", continue.
-.. Type, hit Enter, and check the StartType. 
+.. Type, hit Enter, and check the StartType.
 +
 [source,Shell]
 ----
@@ -239,7 +237,7 @@ Start-Service ssh-agent
 NOTE: This should not be done in the Administration xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window if your Admin account is not your user account. Otherwise, Windows will complain about unprotected private key files!
 +
 .. Return to the PowerShell window or open a new one
-.. To add your generated private key to the SSH Agent, enter 
+.. To add your generated private key to the SSH Agent, enter
 +
 [source,Shell]
 ----
@@ -255,7 +253,7 @@ TIP: If the ~ is not recognised, replace "~" with "$HOME".
 Your computer needs to know that it can trust the ASAM Gitlab for SSH connections. To do this, you need to add code.asam.net to the known_hosts file.
 
 . Return to an open PowerShell window or open a new one
-. Establish a connection to the GitLab by entering the following line and confirming with Enter: 
+. Establish a connection to the GitLab by entering the following line and confirming with Enter:
 +
 [source,Shell]
 ----
@@ -283,7 +281,7 @@ For an example on how to work with VSCode and Git, see xref:{mydir}CloningRepoTu
 
 == Working Without Software Installation
 
-GitLab provides an integrated working environment and text editor with which users can directly create and edit files without having to install Git or an editor like VSCode. 
+GitLab provides an integrated working environment and text editor with which users can directly create and edit files without having to install Git or an editor like VSCode.
 See xref:../tool-specific/GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for more information.
 
 == See Also

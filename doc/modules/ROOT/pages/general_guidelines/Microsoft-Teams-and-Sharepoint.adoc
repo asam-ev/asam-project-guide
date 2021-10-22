@@ -1,7 +1,6 @@
-:imagesdir: ../images
-:toc:
-
 = Teams & Sharepoint
+
+image::Communication.png[width=120,role=right]
 
 Microsoft (MS) Teams is used to communicate and exchange documents **without direct impact on the standards** within project groups. Different groups and topics are gathered under different channels. Here, users can chat with each other and share files directly. +
 Sharepoint is a Microsoft service that is used in the background by Teams to manage files. It can be accessed directly or through Teams, which is why all files that have been added either way can be retrieved through both tools.
@@ -17,9 +16,9 @@ IMPORTANT: Project files such as chapters, specifications, or images intended fo
 
 Access to MS Teams and Sharepoint have to be granted by ASAM.
 
-WARNING: If you do not yet have access to Teams and have not been in touch with mailto:benjamin.engel@asam.net[me], please do so! 
+WARNING: If you do not yet have access to Teams and have not been in touch with mailto:benjamin.engel@asam.net[me], please do so!
 
-WARNING: Access to Teams requires you to have a Microsoft 365 Business Standard, Microsoft 365 Enterprise, and Microsoft 365 Education account. If your company does not have such an account yet, contact your IT to check your options first. 
+WARNING: Access to Teams requires you to have a Microsoft 365 Business Standard, Microsoft 365 Enterprise, and Microsoft 365 Education account. If your company does not have such an account yet, contact your IT to check your options first.
 
 NOTE: You can participate in meetings without having any Microsoft 365 account, but you CANNOT access channels and chats in Teams.
 
@@ -36,19 +35,19 @@ NOTE: If you cannot access Teams after having been granted access by ASAM, check
 │   ├───admin
 │   │       Project_Participants.csv // list of all project participants + emails
 │   │       WP_Signups.xlsx // signup sheet for the WPs
-│   │       
+│   │
 │   └───meetings
 │       └───YYYY-MM-DD_MeetingTitle // All project meeting documents here
-│               
+│
 └───GroupName
     ├───meetings
     │   └───YYYY-MM-DD_MeetingTitle // All group meeting documents here
-    │           
+    │
     └───WorkPackage
         └───WPXX_WPNAME
             ├───development // Anything being worked on goes here
             │               // (that doesnt yet belong on git)
-            │       
+            │
             └───meetings
                 └───YYYY-MM-DD_MeetingTitle // All WP meeting documents here
 ----
@@ -61,7 +60,7 @@ NOTE: If you cannot access Teams after having been granted access by ASAM, check
 image::notifications.gif[]
 
 === Email Notifications
-* Turn these to receive an email when you receive a notification 
+* Turn these to receive an email when you receive a notification
 ** We recommend at least personal, channel and team mentions
 
 image::notifications2.gif[]
@@ -80,7 +79,7 @@ image::polly1.gif[]
 
 image::Creating_a_meeting_in_teams.gif[]
 
-* 
+*
 
 include::ObtainMailInTeams.adoc[]
 

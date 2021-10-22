@@ -1,5 +1,4 @@
 = Shared OpenX Calendar
-:toc:
 
 image::Calendar.png[width=120,role=right]
 All OpenX projects share a calendar under the email address of openx@asam.net. **This should be included on all meetings taking place for the projects to make sure it is up to date.**
@@ -14,8 +13,8 @@ You can also subscribe to this calendar using its https://outlook.office365.com/
 [align=center]
 |===
 
-|image:https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg[width=80,title="Outlook / Exchange Online",link="https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c"]
-|image:https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg[width=80,title="Subscribing with Google Calendar", link="https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&hl=en"]
+|image:https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg[width=80,title="Outlook / Exchange Online",link="https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c", window=_blank]
+|image:https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg[width=80,title="Subscribing with Google Calendar", link="https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&hl=en", window=_blank]
 
 |https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c[Subscribing with Outlook / Exchange Online]
 |https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&hl=en[Subscribing with Google]
@@ -28,4 +27,4 @@ You can also subscribe to this calendar using its https://outlook.office365.com/
 
 TIP: You can use the html link to access the calendar directly in your browser.
 
-To *view the calendar in your browser* directly, use the html link: https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html. 
+To *view the calendar in your browser* directly, use the html link: https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html.

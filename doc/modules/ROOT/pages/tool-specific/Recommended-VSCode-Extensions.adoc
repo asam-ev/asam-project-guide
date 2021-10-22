@@ -1,9 +1,8 @@
 = Recommended Visual Studio Code Extensions
-:toc:
 
 VSCode is already without extensions very powerful and user friendly. One thing that can make the VSCode experience even better are the extensions. There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.
 
-Installing an extension is really easy, just enter the extension menu, search for the desired extension. Than click on the Install-Button. 
+Installing an extension is really easy, just enter the extension menu, search for the desired extension. Than click on the Install-Button.
 
 == AsciiDoc
 
@@ -49,7 +48,7 @@ image::commentanchor_ext.PNG[]
 // tag::drawio-extension[]
 
 The Draw.io extension for Visual Sudio Code allows for easy creation and assisted editing of drawio and other files supported by Draw.io within Visual Studio Code. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
- 
+
 .Draw.io Integration (id: hediet.vscode-drawio)
 image::install_drawio.png[alt=Search and find the extension 'Draw.io Integration']
 
@@ -64,7 +63,7 @@ For information on how to integrate the ASAM custom library for Draw.io, see the
 // tag::docker-extension[]
 The Docker extension lets you directly interact with Docker through Visual Studio Code. You can run, for example, the docker-compose.yml directly without having to open a console or using Docker Desktop.
 
-.Docker (id: ms-azuretools.vscode-docker) 
+.Docker (id: ms-azuretools.vscode-docker)
 image::install_docker.png[alt=Search and find the extension 'Docker']
 
 //end::docker-extension[]

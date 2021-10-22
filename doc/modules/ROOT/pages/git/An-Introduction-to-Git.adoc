@@ -1,7 +1,5 @@
 = An Introduction To Git
 
-:toc:
-
 == Terminology
 
 Git:: A version control system. Used by ASAM in their projects.
@@ -20,7 +18,7 @@ Merge Request:: If the changes made in a separate branch of a project are to be 
 
 == Git Actions
 
-Clone:: Done once to obtain a local copy of a remote repository. 
+Clone:: Done once to obtain a local copy of a remote repository.
 
 Add:: Will add new and changed files to the Staging Area.
 
@@ -37,11 +35,11 @@ Merge:: Integrate the changes made in one branch into another. Most times, this 
 
 == Working with Git
 
-TIP: It is best practice to check for changes on remote before changing files locally and before pushing changes to remote. 
+TIP: It is best practice to check for changes on remote before changing files locally and before pushing changes to remote.
 
 The Git workflow making changes is a 3 step process:
 
-. Add files from the working copy to the staging area. 
+. Add files from the working copy to the staging area.
 . Commit staged files to your local repo
 . Push to a remote repository.
 

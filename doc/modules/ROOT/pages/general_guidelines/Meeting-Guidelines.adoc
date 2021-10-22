@@ -1,5 +1,4 @@
 = Meeting Guidelines
-:toc:
 :mydir: general_guidelines/
 
 == Whom To Invite?

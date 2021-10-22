@@ -2,7 +2,6 @@
 
 = Branching
 There a many ways to create a branch in the git process. Two options are highlighted below.
-:toc:
 
 == Option 1: Using VSCode
 

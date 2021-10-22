@@ -1,9 +1,5 @@
-
-:toc:
-:imagesdir: ../images
+= Docker Setup Guide
 :docker-download: https://docs.docker.com/get-docker/
-
-= Setting Up Docker For Asciidoc
 
 == Why Docker?
 
@@ -25,7 +21,7 @@ If your company does not provide docker licenses, you can check the docker websi
 
 == Preparations
 
-Docker uses virtualization features that require some setup and have system requirements that need to be met. 
+Docker uses virtualization features that require some setup and have system requirements that need to be met.
 
 === System Requirements
 
@@ -71,9 +67,9 @@ c
 
 
 === Setting Up The Linux Distribution Under Windows
-Before first use, the WSL2 Linux distribution must be configured (e.g. a user with password must be created). Follow the instructions on https://docs.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-user-info. 
+Before first use, the WSL2 Linux distribution must be configured (e.g. a user with password must be created). Follow the instructions on https://docs.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-user-info.
 
-NOTE: You may reuse your Windows username and password or define a new user alltogether. Note that changing your windows password will not change your Linux user's password since both are independent. 
+NOTE: You may reuse your Windows username and password or define a new user alltogether. Note that changing your windows password will not change your Linux user's password since both are independent.
 
 == Getting Docker Desktop
 
@@ -88,7 +84,7 @@ For more information on how to download and install docker, see https://docs.doc
 === Setting Up Docker Desktop
 If all prerequesits have been met and the prepartory steps been executed, install the Docker Desktop app. See also https://docs.docker.com/desktop/windows/install/#install-docker-desktop-on-windows.
 
-After setup, you can try the example project to get to know basic Docker commands. 
+After setup, you can try the example project to get to know basic Docker commands.
 
 === Adding Docker Extension To VSCode
 
