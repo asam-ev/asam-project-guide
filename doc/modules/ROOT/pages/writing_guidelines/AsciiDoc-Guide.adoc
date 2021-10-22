@@ -290,7 +290,7 @@ The syntax that you should use depends on what you're linking to:
 * <<Link to a section on the same page>>
 * <<Link to another page in the docs>>
 
-==== Link to an external site
+=== Link to an external site
 
 [cols="a,a"]
 |===
@@ -303,7 +303,7 @@ https://ww.url.com[link text^]
 
 The ^ opens the link in a new browser tab.
 
-==== Link to a section on the same page
+=== Link to a section on the same page
 
 [cols="a,a"]
 |===

@@ -1,7 +1,7 @@
 site:
   title: ASAM Project Guide
   # the 404 page and sitemap files only get generated when the url property is set
-  # TODO: This has to be changed to the actual hosting 
+  # TODO: This has to be changed to the actual hosting
   url: https://code.asam.net/common/asam-project-guide
   start_page: asamprojectguide::home.adoc
 content:
@@ -14,10 +14,9 @@ content:
 
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
-    snapshot: true
+    url: ./antora_ui_bundle/bundled/ui-bundle.zip
+    # snapshot: true
 
-
-output: 
-  clean: true 
+output:
+  clean: true
   dir: ./site

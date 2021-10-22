@@ -498,7 +498,7 @@ In this example, the tag is named `exampleInclude`.
 .ASAM example code block included by tags    <2>
 [source, osc2]    <3>
 ----    <4>
-include::../resources/examplecode.js[tags=exampleInclude]    <5>
+include::{examplesdir}/examplecode.js[tags=exampleInclude]    <5>
 ----    <6>
 ....
 
@@ -521,7 +521,7 @@ This is how the reference looks like inside the adoc file:
 .ASAM example code block included by tags
 [source, osc2]
 ----
-include::../resources/examplecode.js[tags=exampleInclude]
+include::{examplesdir}/examplecode.js[tags=exampleInclude]
 ----
 
 === Source code snippets
@@ -593,7 +593,7 @@ New content in this case means content in adoc files that is not already reviewe
 A typical adoc topic looks like this:
 
 [source]
-```
+----
   [#top-an-example-topic]
   = Topic heading
 
@@ -606,7 +606,7 @@ A typical adoc topic looks like this:
 
   Some other content that is already reviewed and
   ready for being part of the standard documentation.
-```
+----
 
 When a review is started, a WG-Lead or a member of the CCB removes the draft-mechanism for the part that has to be reviewed in the review merge request.
 

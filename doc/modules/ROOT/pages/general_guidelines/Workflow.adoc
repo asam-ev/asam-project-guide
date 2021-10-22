@@ -2,7 +2,7 @@
 
 IMPORTANT: 28.04.2021: See https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/git/Transitioning-to-a-new-workflow[Transitioning to the new Workflow] for steps we need to take to enable this workflow
 
-=== Workflow Overview
+== Workflow Overview
 
 .OSC2 Workflow Stages
 [mermaid]
@@ -17,7 +17,7 @@ ISSUE
 ....
 
 
-=== Branch Structure
+== Branch Structure
 
 image::2021-04-15_OSC2_RevisedWorkflow-Diagram_v5-Page-2.png[]
 

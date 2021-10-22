@@ -19,7 +19,10 @@
 :drawio-guide: {tools-uri}DrawIOGuide.adoc
 
 
-This Wiki provides information on how to *set up accounts and tools* for working on ASAM projects. It also details the *general processes and workflows* employed by ASAM to ensure a _consistent_ and _efficient_ standardization. In addition to general information, each projects has its own project Wiki for project specific knowledge and definitions. Lastly, the ASAM Wiki provides *introductions to and reference pages for the proposed tools*.
+This Wiki provides information on how to *set up accounts and tools* for working on ASAM projects.
+It also details the *general processes and workflows* employed by ASAM to ensure a _consistent_ and _efficient_ standardization.
+In addition to general information, each projects has its own project Wiki for project specific knowledge and definitions.
+Lastly, the ASAM Wiki provides *introductions to and reference pages for the proposed tools*.
 
 _Following these guidelines will minimize process overhead and increase the speed at which your input is integrated into the standard._
 
@@ -75,7 +78,7 @@ In order to participate in the ASAM standardization, users need to set up their 
 
 == Guidelines
 
-In order to keep all ASAM projects aligned, each project follows the same basic workflows and uses the same guidelines for the **xref:{repository-guidelines}[repositories]** (how to use GitLab), the **xref:{project-guidelines}[projects]** (how projects are structured), and for **xref:{writing-guidelines}[writing]** (how to create content for the standards).
+In order to keep all ASAM projects aligned, each project follows the same basic workflows and uses the same guidelines for the **xref:{workflow}[repositories]** (how to use GitLab), the **xref:{project-guidelines}[projects]** (how projects are structured), and for **xref:{writing-guidelines}[writing]** (how to create content for the standards).
 
 ---
 === Repository Guidelines
@@ -104,7 +107,7 @@ General guidelines on how to write requirements and documentation can be found u
 
 To work on ASAM projects, some tools are required and others are recommended.
 
-include::{general-uri}ToolsOverview.adoc[]
+include::{general-uri}ToolsOverview.adoc[leveloffset=+2]
 
 ---
 
