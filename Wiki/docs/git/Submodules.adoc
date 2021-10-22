@@ -1,0 +1,66 @@
+= Submodules In Git
+
+Submodules are a way to include other repositories within your repository. This way, you do not need to copy identical content from another repository and risk getting out of synch with changes in said external repository. You can even check out a specific version of that submodule if you need to stay on that version. However, submodules do not automatically update the same way as your main repository does. 
+
+This page give an overview over how to pull existing submodules and shows how to add and remove submodules from a project, if needed.
+
+TIP: If you are not setting up or responsible for a git repository, you only need to know how to pull a previously set up submodule in git. Note that there is a difference between initial pull after first checking out the repository and a regular update.
+
+== Pulling A Submodule
+
+Pulling a submodule can currently only be done through a terminal window.
+
+TIP: If you have link:https://tortoisegit.org/[TortoiseGit] installed, you can also do this through the TortoiseGit UI. See the link:https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules] for more information.
+
+. To pull a submodule, you need to open a terminal (git bash or xref:../tool-specific/PowershellTutorial.adoc[Windows Powershell]) in the folder of your git repository. 
+. Type the one of the following commands and confirm with Enter
+.. **Updating Submodules after checking out repository** (first time):
++
+[source]
+----
+git submodule update --recursive --init
+----
++
+.. **Regular updating of Submodules**:
++
+[source]
+----
+git submodule update --recursive
+----
++
+NOTE: After you have initialized your submodules for the first time, they will also show up in your Git window in VSCode where you can update them directly from VSCode.
+
+TIP: You can even leave out the `--recursive` part if you know that your submodules do not contain submodules themselves.
+
+== Switching To A Specific Submodule Version
+TIP: If you have link:https://tortoisegit.org/[TortoiseGit] installed, you can also do this through the TortoiseGit UI. See the link:https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules] for more information.
+
+== Adding A New Submodule To A Repository
+
+TIP: If you have link:https://tortoisegit.org/[TortoiseGit] installed, you can also do this through the TortoiseGit UI. See the link:https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules] for more information.
+
+TODO
+
+== Removing A Submodule From A Repository
+
+TODO
+
+== Changing Remote For A Submodule
+
+In case the location of the submodule on remote (i.e. on GitLab) is changed, the url must also be changed manually in every repository that includes this as a submodule. To do this, follow these instructions:
+
+. Open a git bash or a Powershell window
+. Type in the following command (replacing the placeholders) and confirm with Enter:
++
+[source]
+----
+git submodule set-url <Submodule Name> <New Git url to .git file>
+----
+
+.Changing submodule "ASAM Standard Template" url
+====
+[source]
+----
+git submodule set-url "ASAM Standard Template" https://code.asam.net/common/templates/standard-template.git
+----
+====
