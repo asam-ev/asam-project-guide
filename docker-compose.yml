@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  asciidoctor:
+    image: asciidoctor/docker-asciidoctor
+    volumes:
+      - .:/documents
+    entrypoint: asciidoctor -r asciidoctor-diagram -a mathjax --trace '**/*.adoc'

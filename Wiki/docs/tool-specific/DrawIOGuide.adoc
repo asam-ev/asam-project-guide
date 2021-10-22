@@ -1,0 +1,99 @@
+
+
+:imagesdir: ../images
+:web-link-drawio: https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fcode.asam.net%2Fcommon%2Fasam-graphic-library%2F-%2Fraw%2Fmaster%2FASAM_graphics_library.xml
+:download-link-drawio: https://github.com/jgraph/drawio-desktop/releases
+:library-repo: https://code.asam.net/common/asam-graphic-library/-/raw/master/ASAM_graphics_library.xml
+
+:toc:
+
+= Working With Draw.io
+
+== Overview
+Draw.io is a free tool for creating diagrams. The tool can be downloaded and run locally (as link:{download-link-drawio}[Draw.io Desktop]), accessed through a web browser (through link:{web-link-drawio}[Draw.io web link with ASAM library]), or be used through the Visual Studio Code extension (id: hediet.vscode-drawio). 
+
+**ASAM recommends using the link:{web-link-drawio}[web app].**
+
+TIP: It is recommended to use the VS Code extension and Draw.io Desktop *only* for viewing diagrams and making small alterations, not creating them or making bigger changes. The reason is that the ASAM library cannot be integrated directly as of now into the extension solution.
+
+== Setup Of Draw.io
+
+Draw.io can be used either locally (through the dedicated app <<Local Setup (Desktop),Draw.io Deskop>> or through the <<Local Setup (VSCode Extension),VS Code Extension>>) or with the <<Remote Setup, web app>>. 
+
+=== Local Setup 
+
+==== Draw.io App (Desktop)
+
+image::https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[width=80,link="{download-link-drawio}",role="right"]
+
+The desktop version can be downloaded as an installation package (requires installation) or a portable version (requires no installation). Both can be downloaded from link:{download-link-drawio}[here].
+
+=== VSCode Extension
+
+include::Recommended-VSCode-Extensions.adoc[tag=drawio-extension] 
+
+=== Remote Setup
+
+The use of Draw.io through the web browser does not require any setup. Just use the provided link:{web-link-drawio}[link].
+
+== Adding The Custom ASAM Draw.io Library
+
+ASAM provides a custom Draw.io library which contains custom standard image elements and visualization structures that can be reused in new diagrams. 
+
+The local setup requires a local copy of the ASAM library. You can either check out the full link:{library-repo}[repository] or you can just download the library file directly (the .xml in the repository). 
+
+**For local setup, it is __strongly__ recommended to check out the repository and activate the automatic fetching through VSCode.**
+
+=== Add Library To Draw.io Desktop
+
+image::DrawioImportLibrary.gif[title=Import ASAM Draw.io library into Desktop.]
+
+. Download the library from the link:{library-repo}[repository] on GitLab.
+. Open the draw.io app and either create a new diagram or open any existing one
+. Click _File_ -> _Open Library..._
+. Select the file and click _Open_.
+. The library is now imported under its filename.
+
+The library file will be opened every time you open Draw.io Desktop again. Note that changing or updating that file will also update the library when the app is opened. However, you need to make sure to regularly check for updates for this library file.
+
+TIP: You can also open a drawio file directly by double-clicking on the file to open the editor. 
+
+TIP: We recommend checking out the repository with git instead of manually downloading just the library file. For more information on how to check out a repository, see the link:../git/An-Introduction-to-Git.adoc[Git introductions].
+
+=== Add Library To Draw.io VS Code Extension
+
+At this time, the VS Code extension does not provide url links to libraries. The only option to add the library is to download a copy and add it manually. 
+
+
+image::DrawioImportLibraryVSCode.gif[title=Import ASAM Draw.io library into VSCode extension.] 
+
+. Download the library from the link:{library-repo}[repository] on GitLab.
+. In Visual Studio Code, access the extension settings for Draw.io Integration and open the settings.json file
+. Below the line with `"hediet.vscode-drawio.local-storage"`, add the following lines and replace `\<<filepath/filename>>` with the path to the downloaded library file (.xml): +
+```
+    "hediet.vscode-drawio.customLibraries": [
+        {
+            "libName": "ASAM Standard Library",
+            "file": "<<filepath/filename>>",
+            "entryId": "ASAM"
+        }
+    ],
+```
+NOTE: Remove the comma after the last braket ("]") if there is no other line before the closing curly bracket ("}").
+
+The library will then be available when opening any drawio file in VSCode under the name "ASAM Standard Library".
+
+TIP: We recommend checking out the repository with git instead of manually downloading just the library file. For more information on how to check out a repository, see the link:../git/An-Introduction-to-Git.adoc[Git introductions].
+
+=== Add Library To Remote
+
+You do not need to add the library if you open the remote editor with the provided link:{web-link-drawio}[link]. If you already have the editor open, the custom library can be added by extending the URL to the diagram with `?clibs=Uhttps%3A%2F%2Fcode.asam.net%2Fcommon%2Fasam-graphic-library%2F-%2Fraw%2Fmaster%2FASAM_graphics_l` or (if a `?` part is already included) with `&clibs=Uhttps%3A%2F%2Fcode.asam.net%2Fcommon%2Fasam-graphic-library%2F-%2Fraw%2Fmaster%2FASAM_graphics_l`.
+
+The final url should look something like {web-link-drawio}.
+
+
+== See Also
+
+* link:Recommended-VSCode-Extensions.adoc[Recommended Visual Studio Code Extensions]
+* link:https://drawio-app.com/tutorials/[Online tutorials on Draw.io]
+* link:https://code.asam.net/common/asam-graphic-library[Repository for custom ASAM Draw.io library]
