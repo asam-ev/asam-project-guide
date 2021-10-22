@@ -1,8 +1,13 @@
 = Adding VSCode Support For Diagrams With Kroki
+:imagesdir: ../images
 
 The kroki extension supports a wide range of diagrams from BPMN to Graphviz to PlantUML and Vega graphs using kroki and asciidoctor-kroki.
 
 You can see the full range and examples on the https://kroki.io/examples.html[website].
+
+== Enabling Kroki Support In AsciiDoc
+
+The AsciiDoc extension for Visual Studio Code (see xref:Recommended-VSCode-Extensions.adoc#AsciiDoc[Recommended Visual Studio Code Extensions]) comes with the ability to include Kroki diagrams. However, it is deactivated by default and must be configured before first use.
 
 This requires a diagram server. There are multiple options:
 
@@ -10,13 +15,17 @@ This requires a diagram server. There are multiple options:
 . deploy your own server
 . https://docs.kroki.io/kroki/setup/install/[run a kroki docker container] on your local machine
 
-We will go with option 1
+We will go with option 1.
 
 WARNING: This extension will send graph information to https://kroki.io. If this is an issue, it is also possible to use your own kroki instance (see https://docs.kroki.io/kroki/setup/install/[here for more information]).
 
 To enable diagram support, set the use_kroki parameter in your User Settings to true.
 
-image::enable_kroki.gif[]
+image::enable_kroki.gif[Enabling Kroki diagram support in AsciiDoc extension]
+ 
+. Open the Command Palett (`Ctrl`+ `Shift` + `P`)
+. Type "user settings" and confirm with Enter
+. Search for "kroki" in the user settings and enable the "Use_kroki" checkbox
 
 
 == Caching Diagrams Locally
@@ -44,10 +53,13 @@ image::plantuml_1.png[]
 .allow insecure content
 image::plantuml_2.png[]
 
-Now you can test this with examples:
+== Testing Kroki Examples
 
-[cols="1,1"]
+With the settings done and caching activated, you can test Kroki with the following examples:
+
+[cols="1h,4,4"]
 |===
+|PlantUML
 a|
 [source,asciidoc]
 ----
@@ -61,6 +73,8 @@ tst1 --> tst2: caption
 ....
 ----
 a|image::plantuml_3.png[]
+
+|Gantt Diagram
 a|
 ---- 
 [mermaid]
@@ -77,6 +91,8 @@ gantt
 ....  
 ----  
 a|image::gannt_example.png[]
+
+|Pie Diagram
 a|
 ----
 [mermaid]
