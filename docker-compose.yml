@@ -15,3 +15,11 @@ services:
     # entrypoint:  --stacktrace antora-playbook.yml
     # entrypoint: sh
     command: --stacktrace site.yml
+
+  lunr:
+    image: ggrossetie/antora-lunr
+    volumes:
+      - .:/antora
+    # entrypoint:  --stacktrace antora-playbook.yml
+    # entrypoint: sh
+    command: --stacktrace site.yml
