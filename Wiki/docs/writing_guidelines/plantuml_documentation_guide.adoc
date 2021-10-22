@@ -187,7 +187,7 @@ Use the download button on the pipeline continuous integration page.
 [#fig-plantuml-documentation-guide-artifacts-ci]
 .Download option on CI page
 [.thumb]
-image::./images/artifact_download_ci.png[where to download the artifacts on the CI page]
+image::../images/artifact_download_ci.png[where to download the artifacts on the CI page]
 
 
 ==== Merge request page
@@ -197,7 +197,7 @@ Use the download option on the page of the merge request.
 [#fig-plantuml-documentation-guide-artifacts-ci]
 .Download option on MR page
 [.thumb]
-image::./images/artifact_download_mr.png[where to download the artifacts on the MR page]
+image::../images/artifact_download_mr.png[where to download the artifacts on the MR page]
 
 === Using adoc fragments
 
