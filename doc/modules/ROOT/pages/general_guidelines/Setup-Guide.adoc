@@ -9,7 +9,7 @@ New project members must, therefore, set up their accounts and computers accordi
 
 *If you have already worked with Git, GitLab, and tools like Visual Studio Code, just set up your __GitLab account__, connect your __environment__ to it (or use the xref:../tool-specific/GitLab-IDE-Guide.adoc[GitLab IDE]), and continue with the [.underline]#guidelines# in the Wiki's xref:../home.adoc[Start Page].*
 
-NOTE: This setup guide only covers the tools recommended by ASAM. You can use other compatible tools, as long as the single source of truth stays ASAM GitLab and your content is of the supported content type, such as asciidoc.
+NOTE: This setup guide only covers the tools recommended by ASAM. You can use other compatible tools, as long as the single source of truth stays ASAM GitLab and your content is of the supported content type, such as AsciiDoc.
 
 == Working On ASAM Standards
 All ASAM standards are developed and written in the ASAM GitLab (https://code.asam.net). This GitLab has features for
@@ -23,16 +23,16 @@ All ASAM standards are developed and written in the ASAM GitLab (https://code.as
 
 == Setting Up Your ASAM GitLab Account
 :hide-uri-scheme:
-All specification-related documents are stored and updated in ASAMs Gitlab. *The ASAM Gitlab is located at https://code.asam.net.*
+All specification-related documents are stored and updated in ASAMs GitLab. *The ASAM GitLab is located at https://code.asam.net.*
 
 Each user account is created by an ASAM representative. After creation, the user must finish setting up the account themselves.  This requires the following steps:
 
-. Follow the link in the Gitlab account creation email sent by "GitLab +<code@asam.net>+" to set your password.
+. Follow the link in the GitLab account creation email sent by "GitLab +<code@asam.net>+" to set your password.
 . Log in with your account using the image:GitLabStandardLoginButton.png[title="Standard Button"] access.
 +
 image:GitLabStandardLogin.png[title="Standard Login"]
 +
-You will be promted to upload an SSH key. See <<Secure SSH Connection To Gitlab>> for instructions on generating and uploading the SSH keys.
+You will be promted to upload an SSH key. See <<Secure SSH Connection To GitLab>> for instructions on generating and uploading the SSH keys.
 
 NOTE: The "ASAM SVN" login is deprecated and will be removed in the future.
 
@@ -61,13 +61,13 @@ Visiual Studio Code is the suggested solution for checking out repositories and 
 
 Visual Studio Code can be adapted to each project's and the user's needs. This is done by installing and using extensions. This section shows how to install a new extension from the marketplace. As an example, we will use the AsciiDoc extension.
 
-The AsciiDoc extension for VSCode allows for easy creation and supported editing of asciidoc or adoc files within VSCode. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
+The AsciiDoc extension for VSCode allows for easy creation and supported editing of AsciiDoc or adoc files within VSCode. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
 
 . Access the extensions window through the VSCode menu bar -> View -> Extensions.
 +
 image::extensions.png[alt=Add extension under 'View']
 
-. Search for AsciiDoc (or use asciidoctor.asciidoctor-vscode) & install it. This provides a preview feature and syntax highlighting for asciidoc files.
+. Search for AsciiDoc (or use asciidoctor.asciidoctor-vscode) & install it. This provides a preview feature and syntax highlighting for AsciiDoc files.
 +
 image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
 
@@ -80,7 +80,7 @@ A list of recommended Visual Studio Code Extensions can be found xref:../tool-sp
 For more information on VSCode, see the xref::../tool-specific/VSCode-Guide.adoc[Visual Studio Code Guide].
 ====
 
-=== Git And Gitlab
+=== Git And GitLab
 ASAM uses xref:../git/An-Introduction-to-Git.adoc[Git] for versioning projects and project files. GitLab is the webhosted tool that provides a central hub and storage space (repository). +
 This section provides information on how to install and configure Git. If you want to read more on how to work with Git, see xref:../git/An-Introduction-to-Git.adoc[An Introduction To Git] and xref:../git/Git-Best-Practices.adoc[Git-Best-Practices].
 
@@ -102,7 +102,7 @@ image:SelectVSCodeForGit.png[title="Use Visual Studio Code as Git's default edit
 NOTE: If you cannot click "Next", make sure VSCode is already installed. Return to the previous step and continue again. Now, the "next" button should be active.
 ====
 
-After installation of Git, configure your user credentials that Git uses when checking in changed content from your PC to the ASAM Gitlab. To make sure your commits match your name and email details, a one time configuration is necessary.
+After installation of Git, configure your user credentials that Git uses when checking in changed content from your PC to the ASAM GitLab. To make sure your commits match your name and email details, a one time configuration is necessary.
 
 TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found xref:../tool-specific/PowershellTutorial.adoc[here].
 
@@ -140,7 +140,7 @@ git config --global user.email philip.windecker@avenyr.de
 
 NOTE: If no error is returned, the configuration step has been successful.
 
-==== Secure SSH Connection To Gitlab
+==== Secure SSH Connection To GitLab
 
 NOTE: This is optional! It removes the need to enter the user password for every push/pull but requires some extra time for initial setup.
 
@@ -173,15 +173,15 @@ Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard
 TIP: If this doesn’t work, open the file you created in a text editor and copy the whole text manually.
 
 
-. Edit your profile in Gitlab
+. Edit your https://code.asam.net/-/profile[profile in GitLab]
 +
-image:AccessGitlabAccountConfig.png[title="Edit user profile in GitLab"]
+image:AccessGitLabAccountConfig.png[title="Edit user profile in GitLab"]
 
 . Open the settings "SSH Keys" on the left
 +
 image:OpenSSHSettings.png[title="Open the 'SSH Keys' settings"]
 
-. Add the generated key to https://code.asam.net/profile/keys[Gitlab] - Paste the key copied in step 2, give it a title and then click "Add Key"
+. Add the generated key to the https://code.asam.net/profile/keys[SSH window in GitLab] - Paste the key copied in step 2, give it a title and then click "Add Key"
 +
 
 .Confirmation screen after SSH key has been entered in GitLab
@@ -250,7 +250,7 @@ TIP: If the ~ is not recognised, replace "~" with "$HOME".
 
 ===== Add GitLab To Known Hosts
 
-Your computer needs to know that it can trust the ASAM Gitlab for SSH connections. To do this, you need to add code.asam.net to the known_hosts file.
+Your computer needs to know that it can trust the ASAM GitLab for SSH connections. To do this, you need to add code.asam.net to the known_hosts file.
 
 . Return to an open PowerShell window or open a new one
 . Establish a connection to the GitLab by entering the following line and confirming with Enter:
@@ -293,7 +293,7 @@ See xref:../tool-specific/GitLab-IDE-Guide.adoc[the GitLab Web IDE Guide] for mo
 * xref:tool-specific/VSCode-Guide.adoc[Further VSCode Guide]
 * xref:{mydir}ProjectGuidelines.adoc[Project Guidelines]
 * xref:{mydir}WritingGuidelines.adoc[Writing Guidelines]
-* xref:git/An-Introduction-to-Git.asciidoc[Git Introductions]
+* xref:git/An-Introduction-to-Git.adoc[Git Introductions]
 * xref:{mydir}Getting-Docker.adoc[How to install Docker (if required)]
 * xref:tool-specific/DockerGuide.adoc[Docker Guide]
 * xref:writing_guidelines/Docker-For-Asciidoc.adoc[Docker for AsciiDoc]

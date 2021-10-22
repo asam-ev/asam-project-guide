@@ -24,7 +24,7 @@ All standard are written after one version of the ASAM proect guide.
 
 . Standard Tools
 .. VSCode
-.. Gitlab
+.. GitLab
 .. git
 .. local build asciidoctor
 
@@ -33,7 +33,7 @@ All standard are written after one version of the ASAM proect guide.
 . Project Lead Guide
 
 // Technical Writer
-. Editorial Guide (Redaktionleitfaden) 
+. Editorial Guide (Redaktionleitfaden)
 .. Asciidoc syntax reference/conventions
 .. Writing Rules, Spelling
 .. Checklist for technical writer
@@ -47,7 +47,7 @@ All standard are written after one version of the ASAM proect guide.
 . Handling repos
 . Pipeline internals
 . Release Process & Tagging & gitattributes
-. Gitlab Workflow and Branching
+. GitLab Workflow and Branching
 
 
 Standard Template

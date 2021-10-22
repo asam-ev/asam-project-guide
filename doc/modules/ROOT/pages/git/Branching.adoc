@@ -9,16 +9,16 @@ image::../images/create-a-branch.gif[title="Create a new branch in VSCode"]
 
 **Note this is a local branch. You need to push it before it is also on the remote.**
 
-image::../images/push-a-new-branch-vscode.gif[title="Push a new branch in Gitlab"]
+image::../images/push-a-new-branch-vscode.gif[title="Push a new branch in GitLab"]
 
 
-== Option 2: In Gitlab
+== Option 2: In GitLab
 
-image::../images/create-a-branch-gitlab.gif[title="Create a new branch in Gitlab"]
+image::../images/create-a-branch-gitlab.gif[title="Create a new branch in GitLab"]
 
 **Note you need to checkout this branch locally as this only creates the branch on the server.**
 
-image::../images/checkout-a-new-branch-gitlab.gif[title="Push a new branch in Gitlab"]
+image::../images/checkout-a-new-branch-gitlab.gif[title="Push a new branch in GitLab"]
 
 
 == Option 3: Command Line

@@ -43,13 +43,13 @@ The Git workflow making changes is a 3 step process:
 . Commit staged files to your local repo
 . Push to a remote repository.
 
-image::../images/git_workflow.svg[]
+image::git_workflow.svg[]
 
 == Further Information
 
 - link:Git-Best-Practices.adoc[Git-Best-Practices]
 - link:Branching.adoc[Branching in Git/GitLab]
 - link:Branch-Naming-Conventions.adoc[Branch-naming Conventions]
-- link:Forking.adoc[Forking in Git/Gitlab]
+- link:Forking.adoc[Forking in Git/GitLab]
 - link:ASAM-Issue-and-MR-Labels.adoc[Using Labels in Git and GitLab]
 - link:Merge-Requests.adoc[Merge Requests (MR)]

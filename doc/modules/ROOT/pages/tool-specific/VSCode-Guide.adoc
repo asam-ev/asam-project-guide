@@ -72,7 +72,7 @@ To cache and save diagrams locally set the kroki-fetch-diagram attribute in your
 
 The images are served over http:// and you must allow your preview to include data from unsafe sources. To do this open your command palette (ctrl+shift+P) and enter ``asciidoc preview security`` and choose ``Allow insecure content``.
 
-.opening asciidoc preview security settings
+.opening AsciiDoc preview security settings
 image::plantuml_1.png[]
 
 .allow insecure content

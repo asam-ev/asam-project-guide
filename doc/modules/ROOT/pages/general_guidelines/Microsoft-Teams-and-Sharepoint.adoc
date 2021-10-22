@@ -10,7 +10,7 @@ Sharepoint is a Microsoft service that is used in the background by Teams to man
 ** If you need another Teams channel, contact mailto:benjamin.engel@asam.net[me]!
 * These file tabs can also be found directly in Sharepoint (sign in with your microsoft account).
 
-IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See <<Workflow.asciidoc#,Workflow Guidelines>> for more information.
+IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See xref:./general_guidelines/Workflow.adoc[Workflow Guidelines] for more information.
 
 == Getting Access
 
@@ -81,7 +81,7 @@ image::Creating_a_meeting_in_teams.gif[]
 
 *
 
-include::ObtainMailInTeams.adoc[]
+include::../general_guidelines/ObtainMailInTeams.adoc[leveloffset=+1]
 
 === Coordination Teams Channel
 * Optional shared channel for all OpenX participants
@@ -90,4 +90,4 @@ include::ObtainMailInTeams.adoc[]
 
 == Sharepoint
 
-include::SharepointLinks.adoc[]
+include::../general_guidelines/SharepointLinks.adoc[leveloffset=+1]

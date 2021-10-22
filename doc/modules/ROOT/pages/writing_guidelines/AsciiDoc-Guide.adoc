@@ -12,7 +12,7 @@ You write an AsciiDoc document the same way you would write a normal text docume
 
 **Main advantages:**
 
-* Can be edited in any text editor or using the online editor in Gitlab
+* Can be edited in any text editor or using the online editor in GitLab
 * Focus on content not on formatting!
 * Versionable and diffable – i.e. we can tell who did what, when and where!
 * In the end we can deliver an interactive html instead of a static pdf
@@ -276,7 +276,7 @@ Hosted on YouTube:
 video::id[youtube]
 ....
 
-Hosted locally in Gitlab:
+Hosted locally in GitLab:
 
 ....
 video::file.mp4

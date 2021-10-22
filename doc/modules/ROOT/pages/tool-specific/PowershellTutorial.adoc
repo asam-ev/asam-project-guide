@@ -2,6 +2,9 @@
 
 == How To Open Microsoft Powershell
 
+image::https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png[width=120,role=right]
+
+
 The PowerShell in Windows 10 is used to execute commands directly and interface with windows functions in text form through a shell. It is more powerfull than the old commandline tool ("cmd") and can be executed as standard user (<<Standard Access>>) or with administration rights (<<Administration Access>>).
 
 === Standard Access
