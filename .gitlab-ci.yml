@@ -1,0 +1,21 @@
+# Cache docker images
+cache:
+  key: one-key-to-rule-them-all
+
+stages:
+  - build
+
+variables:
+  GIT_SUBMODULE_STRATEGY: normal
+
+ 
+antora-build:
+  stage: build
+  tags:
+    - asciidoc
+  image: antora/antora
+  script:
+    - antora --stacktrace site.yml
+  artifacts:
+    paths:
+      - site
