@@ -6,9 +6,11 @@ This is a summary of recommended VSCode settings to follow writing guidelines ea
 == Indentations
 
 image::VSCodeSettingsIndent.png[]
+image::VSCodeSettingsDetectIndent.png[]
 . Open the Command Palett (`Ctrl`+ `Shift` + `P`)
 . Type "user settings" and confirm with Enter
 . Search for "indent" in the user settings
+. Disable "Detect Indentation"
 . Enable "Insert Spaces"
 . Set "Tab Size" to 4
 
