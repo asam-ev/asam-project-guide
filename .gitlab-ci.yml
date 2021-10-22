@@ -16,6 +16,6 @@ antora-build:
   image: antora/antora
   script:
     - antora --stacktrace site.yml
-  artifacts:
-    paths:
-      - site
+  # artifacts:
+  #   paths:
+  #     - site
