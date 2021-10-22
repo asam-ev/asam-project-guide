@@ -23,11 +23,11 @@ This Wiki provides information on how to *set up accounts and tools* for working
 
 _Following these guidelines will minimize process overhead and increase the speed at which your input is integrated into the standard._
 
+== Quick Acess
+
 [cols=">1,^1,^1,^1,^1"]
 [grid="none",frame="none"]
 |===
-
-5+^h|General Wiki --  Quick Access
 
 |xref:First Time Setup[**Setup**]
 |xref:{getting-started}[image:GettingStarted.jpg[width=120,title="First Time Setup"] First Time Setup]
