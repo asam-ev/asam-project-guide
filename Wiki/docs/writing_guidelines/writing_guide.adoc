@@ -383,12 +383,12 @@ Figures, like pictures or drawings, may be used to illustrate complex facts.
 ```
 [#fig-uuid]
 .This is the caption of the figure
-image::./images/logo.png[an alternative text]
+image::../images/logo.png[an alternative text]
 ```
 
 [#fig-uuid]
 .This is the caption of the figure
-image::./images/logo.png[an alternative text]
+image::../images/logo.png[an alternative text]
 
 === Tables
 
@@ -650,7 +650,7 @@ You can easily switch off the preview and view the source content by clicking on
 
 [#fig-osc2-writing-guide-source-view]
 .How to switch to source-view in Gitlab
-image::./images/source_view.png[Source view icon location]
+image::../images/source_view.png[Source view icon location]
 The icon next to it switches back to the preview.
 
 
