@@ -6,3 +6,20 @@ services:
     volumes:
       - .:/documents
     entrypoint: asciidoctor -r asciidoctor-diagram -a mathjax --trace '**/*.adoc'
+
+# run with docker-compose run antora
+  antora:
+    image: antora/antora
+    volumes:
+      - .:/antora
+    # entrypoint:  --stacktrace antora-playbook.yml
+    # entrypoint: sh
+    command: --stacktrace site.yml
+
+  lunr:
+    image: ggrossetie/antora-lunr
+    volumes:
+      - .:/antora
+    # entrypoint:  --stacktrace antora-playbook.yml
+    # entrypoint: sh
+    command: --stacktrace site.yml

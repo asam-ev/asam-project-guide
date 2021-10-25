@@ -1,0 +1,44 @@
+= Docker Guide
+:mydir: tool-specific/
+
+== Getting Started
+
+This guide assumes you already have Docker installed and set up. If not, see xref:general_guidelines/Getting-Docker.adoc[Setting Up Docker For Asciidoc] first.
+
+For the default docker-compose.yml needed to easily create the html result of a project locally, see the xref:{mydir}StandardDockerConfig.adoc[default docker-compose.yml for creating local htmls].
+
+== Running Docker-Compose From VSCode
+
+IMPORTANT: The docker deamon must be running in the background before you can run docker commands from VSCode. To start the deamon, either have Docker Desktop automatically start with Windows or start it manually.
+
+You can run Docker-Compose directly from within Visual Studio Code if you have added the docker extensions. VSCode will automatically ask you if it finds a .yml file in your project workspace. Otherwise, you can get it through the usual way of finding and installing extensions:
+
+include::Recommended-VSCode-Extensions.adoc[tag=docker-extension]
+
+To run Docker-Compose on your docker-compose.yml, right-click on the file in your workspace and select `Compose Up` from the menu.
+
+image::ComposeUp.png[title=Run "Compose Up" from the context menu]
+
+== Running Docker-Compose From Powershell
+
+IMPORTANT: The docker deamon must be running in the background before you can run docker commands from the powershell. To start the deamon, either have Docker Desktop automatically start with Windows or start it manually.
+
+You can run docker commands from the Windows powershell or the cmd tool.
+
+image::DockerFromPS.gif[title="Run Docker-Compose from Powershell"]
+
+. Navigate to the folder with your docker-compose.yml
+. Type `docker-compose run asciidoctor` and confirm with Enter
+
+== Starting A Container From Docker Desktop
+
+NOTE: This works if the container was already created through either using the <<Running Docker-Compose From VSCode,VSCode method>> or the <<Running Docker-Compose From Powershell,Powershell method>>.
+
+. Open Docker Desktop (if you already started it, it may be in the system tray)
+. Go to "Containers/Apps" and select your container from the list
+. Click the image:play-button-docker.png[alt=Play] button to run the container
+
+== See Also
+* link:https://docs.docker.com/get-started/[Official guide for Docker]
+* xref:general_guidelines/Getting-Docker.adoc[Setting Up Docker For Asciidoc]
+* xref:{mydir}StandardDockerConfig.adoc[Default docker-compose.yml for creating local htmls]
