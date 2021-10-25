@@ -42,6 +42,8 @@ Note that it is a WIP and will likely change over time.
 +++ Tools
 
 ++ Project Content
++++_ ideally, this is handled directly in the respective repository. Alternatively, all documentation is done in the Project Guide on a branch.
++++_ separate module
 +++ Timelines And Milestones
 +++ Responsibilities
 +++ Specific Project Roles
