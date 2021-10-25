@@ -5,9 +5,13 @@
 A project's final specification document is created as HTML file. However, having to run it through the pipeline every time before being able to see the final result after having made changes is neither efficient nor
 To render a project's documentation without having to upload it, use Docker Compose with a correctly defined docker-compose.yml file.
 
+You can download the standard docker-compose.yml link:{attachmentsdir}/docker-compose.yml[here].
+
 **See also**: <<../general_guidelines/WhatIsYaml.adoc#,What is YAML/yml?>>
 
 == Standard Docker-Compose Instructions
+
+// TODO: Link to the attachment file!
 
 . Create a new `docker-compose.yml` file in the root directory of the project.
 . Add the following content to the created file:
