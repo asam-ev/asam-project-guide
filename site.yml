@@ -15,7 +15,8 @@ content:
 ui:
   bundle:
     url: ./antora_ui_bundle/bundled/ui-bundle.zip
-    # snapshot: true
+    snapshot: true
+  supplemental_files: /usr/local/share/.config/yarn/global/node_modules/antora-lunr/supplemental_ui
 
 output:
   clean: true
