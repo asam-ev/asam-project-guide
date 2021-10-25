@@ -2,7 +2,6 @@
 
 THIS IS ALL DRAFT
 
-
 ---
 Includes: Standard template, manuals, guidelines, build + test, resources.
 All standard are written after one version of the ASAM proect guide.
@@ -51,3 +50,9 @@ All standard are written after one version of the ASAM proect guide.
 
 
 Standard Template
+
+---
+
+include::./doc/modules/ROOT/pages/antora/Build-Antora-Locally.adoc[leveloffset=+1]
+
+---
