@@ -1,10 +1,11 @@
 = Docker Guide
+:mydir: tool-specific/
 
 == Getting Started
 
-This guide assumes you already have Docker installed and set up. If not, see <<../general_guidelines/Getting-Docker.adoc, Setting Up Docker For Asciidoc>> first.
+This guide assumes you already have Docker installed and set up. If not, see xref:general_guidelines/Getting-Docker.adoc[Setting Up Docker For Asciidoc] first.
 
-For the default docker-compose.yml needed to easily create the html result of a project locally, see the <<StandardDockerConfig.adoc,default docker-compose.yml for creating local htmls>>.
+For the default docker-compose.yml needed to easily create the html result of a project locally, see the xref:{mydir}StandardDockerConfig.adoc[default docker-compose.yml for creating local htmls].
 
 == Running Docker-Compose From VSCode
 
@@ -39,9 +40,5 @@ NOTE: This works if the container was already created through either using the <
 
 == See Also
 * link:https://docs.docker.com/get-started/[Official guide for Docker]
-* <<../general_guidelines/Getting-Docker.adoc, Setting Up Docker For Asciidoc>>
-* <<StandardDockerConfig.adoc,Default docker-compose.yml for creating local htmls>>
-
-
-IMPORTANT: Before running docker from VSCode, make sure to start Docker Desktop (and, thereby, the docker deamon).
-
+* xref:general_guidelines/Getting-Docker.adoc[Setting Up Docker For Asciidoc]
+* xref:{mydir}StandardDockerConfig.adoc[Default docker-compose.yml for creating local htmls]
