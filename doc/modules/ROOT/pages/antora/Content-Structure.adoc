@@ -13,9 +13,12 @@ Note that it is a WIP and will likely change over time.
 +++_ this is the default page
 +++ New Here?
 ++++_ this contains linked or specific content for new members/people
-++++ Include: Roles@ASAM
 ++++ Include: How ASAM Works
 ++++ Link: Processes And Workflows
+++++ Include: Roles@ASAM
+++++ Projects Overview
++++++_ overview over what projects there are; tbd: include: about asam?
+++++ Include: ASAM Contacts
 +++ About This Guide
 ++++_ this should explain how this guide works
 +++ General Content
@@ -24,6 +27,8 @@ Note that it is a WIP and will likely change over time.
 ++++ Roles@ASAM
 +++++_ link from each role to the role-specific content
 +++ Role-specific Content
+++++_ these hang under an overview over all roles
+++++ Role Summary Page
 ++++ Tooling
 ++++ Guides
 ++++ Best Practices
@@ -46,7 +51,9 @@ Note that it is a WIP and will likely change over time.
 +++ Specific Tool Configurations
 +++ Project Content Explanations / Examples
 
-
+-- Re-usable Partials
+--- ASAM Role Definitions
+--- ASAM Contacts
 @endmindmap
 ----
 
@@ -76,3 +83,10 @@ Note that it is a WIP and will likely change over time.
 
 @endmindmap
 ----
+
+== Reference:
+
+* https://docs.unity3d.com/Manual/UnityOverview.html
+* https://docs.blender.org/manual/en/dev/
+
+
