@@ -21,3 +21,8 @@ ui:
 output:
   clean: true
   dir: ./site
+
+asciidoc:
+  extensions:
+  - asciidoctor-kroki
+#   - asciidoctor-diagram

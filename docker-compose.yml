@@ -23,3 +23,11 @@ services:
     # entrypoint:  --stacktrace antora-playbook.yml
     # entrypoint: sh
     command: --stacktrace site.yml
+
+  custom-lunr:
+    image: local/antora-lunr:latest
+    volumes:
+      - .:/antora
+    # entrypoint:  --stacktrace antora-playbook.yml
+    # entrypoint: sh
+    command: --stacktrace site.yml
