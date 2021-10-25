@@ -8,7 +8,7 @@ The suggested method is to use the provided docker-compose.yml in this repositor
 NOTE: This service provides a searchbar in the header and support for diagrams.
 
 . Check out the link:https://github.com/Mogztter/antora-lunr[antora-lunr repository]
-. Create a new file namend "Dockerfile.custom" in the folder of that repository and add the following content to it:
+. Create a new file namend "DOCKERFILE.custom" in the folder of that repository and add the following content to it:
 +
 [source,docker]
 ----
@@ -25,6 +25,7 @@ RUN yarn global add asciidoctor-kroki
 docker build -t local/antora-lunr:latest -f Dockerfile.custom .
 ----
 +
+TIP: Alternatively, you can also download link:{attachmentsdir}/DOCKERFILE.custom[this example, opts="download", download="true"] and use it directly.
 . Check out the latest version of this repository (containing the project guide)
 . Build and run a docker container using the provided docker-compose.yml for the service "custom-lunr"
 
