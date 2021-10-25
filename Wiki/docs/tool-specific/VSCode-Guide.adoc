@@ -1,11 +1,12 @@
-= Working on AsciiDoc in VSCode
+= Visual Studio Code Overview
 :imagesdir: ../images
 :toc:
 :icons: font
 :data-uri:
 
+Visual Studio Code is a powerful code and text editor that can be highly individualized and adapted to the task at hand using the existing extensions for it. Here, you get an overview over how Visual Studio Code is structured. 
 
-include::Recommended-VSCode-Extensions.adoc[]
+For the Visual Studio Code extensions recommended by ASAM as well as specific tutorials, see the links under <<See Also>>. 
 
 == Interface
 
@@ -20,19 +21,22 @@ include::Recommended-VSCode-Extensions.adoc[]
 image::vscode_ui.png[]
 
 
-== Interacting with Git
-
-https://code.visualstudio.com/docs/editor/versioncontrol#_git-support
-
 == Command Palette
 
-* Ctrl+Shift+P brings up the Command Palette. 
+The Command Palette in VSCode allows you to access specific menus and functions of the program directly without having to navigate there through the menu strucutre. It also helps when looking for an option to change as it contains a search function with auto-completion. 
 
-* From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.
+* `Ctrl`+`Shift`+`P` brings up the Command Palette. 
+
+From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.
 
 image::vscode_command-palette.png[]
 
+NOTE: Many tutorials in this Wiki for VSCode make use of the Command Palette.
+
 == Activity Bar
+
+The Activity Bar contains a direct access to many important base or extensions features. The following image shows standard functionality, but some extensions like GitLens will add their own icon and features.
+
 // Explorer - shows all of the files and folders you have access to
 // Search – Find and replace in files
 // Git – all git related commands, only active if in a git repository
@@ -40,102 +44,12 @@ image::vscode_command-palette.png[]
 
 image::vscode_activity-bar.png[]
 
-== Adding VSCode support for diagrams (including preview)
+// TODO: Add description with pictures for all four standard entries.
+// TODO: Add descriptions for all recommended extensions (on the extension page).
 
-The kroki extension supports a wide range of diagrams from BPMN to Graphviz to PlantUML and Vega graphs using kroki and asciidoctor-kroki.
+== See Also
 
-You can see the full range and examples on the https://kroki.io/examples.html[website].
-
-This requires a diagram server. There are multiple options:
-
-. use the public kroki.io server
-. deploy your own server
-. https://docs.kroki.io/kroki/setup/install/[run a kroki docker container] on your local machine
-
-We will go with option 1
-
-
-WARNING: This extension will send graph information to https://kroki.io. If this is an issue it is also possible to use your own kroki instance (see https://docs.kroki.io/kroki/setup/install/[here for more information]).
-
-To enable diagram support, set the use_kroki parameter in your User Settings to true.
-
-image::enable_kroki.gif[]
-
-To cache and save diagrams locally set the kroki-fetch-diagram attribute in your document header:
-
-    = My Amazing Document
-    :kroki-fetch-diagram:
-    This will store images by default in your document folder, however you may also set imagesdir to store them elsewhere:
-
-    = My Amazing Document
-    :kroki-fetch-diagram:
-    :imagesdir: media
-
-
-The images are served over http:// and you must allow your preview to include data from unsafe sources. To do this open your command palette (ctrl+shift+P) and enter ``asciidoc preview security`` and choose ``Allow insecure content``.
-
-.opening asciidoc preview security settings
-image::plantuml_1.png[]
-
-.allow insecure content
-image::plantuml_2.png[]
-
-Now you can test this with examples:
-
-[cols="1,1"]
-|===
-a|
-[source,asciidoc]
-----
-[plantuml,puml,svg]
-....
-@startuml
-node "Test1" as tst1
-node "Test2" as tst2
-tst1 --> tst2: caption
-@enduml
-....
-----
-a|image::plantuml_3.png[]
-a|
----- 
-[mermaid]
-....
-gantt
-    title A Gantt Diagram
-    dateFormat  YYYY-MM-DD
-    section Section
-    A task           :a1, 2014-01-01, 30d
-    Another task     :after a1, 20d
-    section Another
-    Task in sec      :2014-01-12, 12d
-    another task     :24d
-....  
-----  
-a|image::gannt_example.png[]
-a|
-----
-[mermaid]
-....
-pie title Pets adopted by volunteers
-    "Dogs" : 386
-    "Cats" : 85
-    "Rats" : 15
-            
-....
-----
-a|image::pie_example.png[]
-a|
-----
-[mermaid]
-....
-graph TD
-    A[Christmas] --> B(Go shopping)
-    B --> C{Let me think}
-    C --> D[Laptop]
-    C --> E[iPhone]
-....
-----
-a|image::flow_example.png[]
-|===
-
+* xref:Recommended-VSCode-Extensions.adoc[Recommended Visual Studio Code extensions]
+* xref:Adding-Diagrams-To-VSCode.adoc[Adding Diagrams to Visual Studio Code with Kroki]
+* xref:VSCode-Git-Interaction.adoc[Interacting with Git through Visual Studio Code]
+* xref:Recommended-VSCode-Settings.adoc[Recommended VSCode Settings]
