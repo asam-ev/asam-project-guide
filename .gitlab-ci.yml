@@ -13,7 +13,7 @@ antora-build:
   stage: build
   tags:
     - asciidoc
-  image: antora/antora
+  image: ggrossetie/antora-lunr
   script:
     - antora --stacktrace site.yml
   # artifacts:
