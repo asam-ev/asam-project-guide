@@ -1,0 +1,78 @@
+= Proposed Project Guide Structure In Antora
+
+The following is a proposal for the project guide structure in Antora.
+Note that it is a WIP and will likely change over time.
+
+
+.Document Structure - Concept
+[plantuml,mindmap2,svg]
+----
+@startmindmap
++ **ASAM Project Guide Structure**
+++ Landing Page Introductions
++++_ this is the default page
++++ New Here?
+++++_ this contains linked or specific content for new members/people
+++++ Include: Roles@ASAM
+++++ Include: How ASAM Works
+++++ Link: Processes And Workflows
++++ About This Guide
+++++_ this should explain how this guide works
++++ General Content
+++++ About ASAM
+++++ How ASAM Works - High-Level Workflows
+++++ Roles@ASAM
++++++_ link from each role to the role-specific content
++++ Role-specific Content
+++++ Tooling
+++++ Guides
+++++ Best Practices
+++++ Linked General Information
++++ Short Tutorials
+
+++ Landing Page Definitions
++++ Definitions
++++ Extended Tutorials
++++ Processes And Workflows
++++ Tools
+
+++ Project Content
++++ Timelines And Milestones
++++ Responsibilities
++++ Specific Project Roles
++++ Specific Definitions
++++ Specific Tutorials
++++ Specific Processes And Workflows
++++ Specific Tool Configurations
++++ Project Content Explanations / Examples
+
+
+@endmindmap
+----
+
+.Roles And Tasks - Concept
+[plantuml,mindmap2,svg]
+----
+@startmindmap
++ **ASAM Project Guide Structure**
+
+++ Roles
++++ ASAM Offices
++++ Workgroup (WG) Member
++++ Project Lead
++++ WG Lead
++++ Technical Writer
++++ Service Provider
+
+-- Tasks
+@endmindmap
+----
+
+.Folder Structure - Concept
+[plantuml,mindmap2,svg]
+----
+@startmindmap
++ **Antora Folder Structure**
+
+@endmindmap
+----
