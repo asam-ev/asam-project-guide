@@ -7,7 +7,7 @@ site:
 content:
   sources:
     - url: .
-      branches: open*, DRAFT_8-migrate-wiki-to-antora
+      branches: open*, master
       tags: open*
       start_path: doc
 

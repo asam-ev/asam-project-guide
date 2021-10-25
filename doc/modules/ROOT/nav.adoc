@@ -1,5 +1,4 @@
-* Setup
-** xref:general_guidelines/Setup-Guide.adoc[First Time Setup]
+* xref:general_guidelines/Setup-Guide.adoc[Setup]
 ** xref:general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
 ** xref:general_guidelines/Shared-OpenX-Calendar.adoc[Shared-OpenX-Calendar]
 * Guidelines

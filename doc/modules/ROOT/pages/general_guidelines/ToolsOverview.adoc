@@ -55,16 +55,15 @@ link:https.//git-scm.com/download/win[Git]
 
 |image:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=32, height=32, align="center", link=https://code.visualstudio.com/download, window=_blank] +
 link:https://code.visualstudio.com/download[VSCode]
-|An all-in-one open-source text editor that makes life a lot easier. +
-https://code.visualstudio.com/download
+|An all-in-one open-source text editor that makes life a lot easier.
 |Local
-|
+|link:https://code.visualstudio.com/download[Download link for VSCode]
 
 
 |image:https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png[title="Draw.io",width=40,link="https://github.com/jgraph/drawio-desktop/releases/tag/v15.4.0"] +
 link:https://github.com/jgraph/drawio-desktop/releases[Draw.io]
 |An editor for diagrams. Can be downloaded or access through the browser. Also has a (limited) VS Code extension.
-|Local/Web
+|Local/link:https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fcode.asam.net%2Fcommon%2Fasam-graphic-library%2F-%2Fraw%2Fmaster%2FASAM_graphics_library.xml[Web]
 |xref:{includedir}/tool-specific/DrawIOGuide.adoc[Draw.io Guide]
 
 |image:https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png[title="Docker Desktop",width=40,link="https://docs.docker.com/get-docker/"] +

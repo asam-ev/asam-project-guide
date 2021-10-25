@@ -49,6 +49,7 @@ TIP: If you'd like to use VSCode for Git, make sure to install VSCode before Git
 
 TIP: *If you prefer working online without having to install software on your computer*, you can use the *GitLab IDE* to directly create and edit files without external tools. See *<<Working Without Software Installation>>* for more information.
 
+// TODO: Split content into follow up pages here
 
 === Setting Up VSCode
 
@@ -79,6 +80,8 @@ A list of recommended Visual Studio Code Extensions can be found xref:../tool-sp
 
 For more information on VSCode, see the xref::../tool-specific/VSCode-Guide.adoc[Visual Studio Code Guide].
 ====
+
+// TODO: Split content into follow up pages here
 
 === Git And GitLab
 ASAM uses xref:../git/An-Introduction-to-Git.adoc[Git] for versioning projects and project files. GitLab is the webhosted tool that provides a central hub and storage space (repository). +
@@ -273,11 +276,13 @@ image::AddKnownHost.png[]
 * link:https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent[Generating And Adding Your SSH Key To The SSH Agent]
 * link:https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro[Start SSH Agent]
 
-
+// TODO: Split content into follow up pages here
 
 === Working With VSCode And Git
 
-For an example on how to work with VSCode and Git, see xref:{mydir}CloningRepoTutorial.adoc[Cloning Your First Repository].
+For an example on how to work with VSCode and Git, see xref:{mydir}CloningRepoTutorial.adoc[Cloning A Repository].
+
+// TODO: Keep here!!!
 
 == Working Without Software Installation
 

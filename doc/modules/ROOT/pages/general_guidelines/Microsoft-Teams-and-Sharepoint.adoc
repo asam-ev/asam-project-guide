@@ -55,7 +55,7 @@ NOTE: If you cannot access Teams after having been granted access by ASAM, check
 === Receiving Notifications In Teams
 * Notifications of new posts to Teams channels are not always on by default
 * Turn these on so you don't miss any updates (need to do this for each channel)!
-* https://support.microsoft.com/en-us/office/manage-notifications-in-teams-1cc31834-5fe5-412b-8edb-43fecc78413d[more info]
+* https://support.microsoft.com/en-us/office/manage-notifications-in-teams-1cc31834-5fe5-412b-8edb-43fecc78413d[More information] by Microsoft
 
 image::notifications.gif[]
 
@@ -79,8 +79,6 @@ image::polly1.gif[]
 
 image::Creating_a_meeting_in_teams.gif[]
 
-*
-
 include::../general_guidelines/ObtainMailInTeams.adoc[leveloffset=+1]
 
 === Coordination Teams Channel
@@ -90,4 +88,4 @@ include::../general_guidelines/ObtainMailInTeams.adoc[leveloffset=+1]
 
 == Sharepoint
 
-include::../general_guidelines/SharepointLinks.adoc[leveloffset=+1]
+include::../general_guidelines/SharepointLinks.adoc[leveloffset=+2]
