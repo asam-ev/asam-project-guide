@@ -1,29 +1,36 @@
 = Submodules In Git
 
-Submodules are a way to include other repositories within your repository. This way, you do not need to copy identical content from another repository and risk getting out of synch with changes in said external repository. You can even check out a specific version of that submodule if you need to stay on that version. However, submodules do not automatically update the same way as your main repository does. 
+Submodules are a way to include other repositories within your repository. This way, you do not need to copy identical content from another repository and risk getting out of synch with changes in said external repository. You can even check out a specific version of that submodule if you need to stay on that version. However, submodules do not automatically update the same way as your main repository does.
 
 This page give an overview over how to pull existing submodules and shows how to add and remove submodules from a project, if needed.
 
 TIP: If you are not setting up or responsible for a git repository, you only need to know how to pull a previously set up submodule in git. Note that there is a difference between initial pull after first checking out the repository and a regular update.
 
+NOTE: All examples are shown using the https://code.asam.net/common/style-resources[ASAM asciidoc-resources repository^] (replace it with the link to your required submodule repository).
+
+== Git Submodule Usage
+
+ASAM uses submodules to include reuse resources in all repositories, e.g. document style configuration.
+The submodule has to be added to the repository during setup of the repository.
+
 == Pulling A Submodule
 
 Pulling a submodule can currently only be done through a terminal window.
 
-TIP: If you have link:https://tortoisegit.org/[TortoiseGit] installed, you can also do this through the TortoiseGit UI. See the link:https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules] for more information.
+TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI. See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
 
-. To pull a submodule, you need to open a terminal (git bash or xref:../tool-specific/PowershellTutorial.adoc[Windows Powershell]) in the folder of your git repository. 
+. To pull a submodule, you need to open a terminal (git bash or xref:../tool-specific/PowershellTutorial.adoc[Windows Powershell]) in the folder of your git repository.
 . Type the one of the following commands and confirm with Enter
 .. **Updating Submodules after checking out repository** (first time):
 +
-[source]
+[source, git]
 ----
 git submodule update --recursive --init
 ----
 +
 .. **Regular updating of Submodules**:
 +
-[source]
+[source, git]
 ----
 git submodule update --recursive
 ----
@@ -33,17 +40,96 @@ NOTE: After you have initialized your submodules for the first time, they will a
 TIP: You can even leave out the `--recursive` part if you know that your submodules do not contain submodules themselves.
 
 == Switching To A Specific Submodule Version
-TIP: If you have link:https://tortoisegit.org/[TortoiseGit] installed, you can also do this through the TortoiseGit UI. See the link:https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules] for more information.
+TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI. See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
+
+When a certain version of the submodule is needed, go into the submodule and checkout the needed version.
+
+[source,console]
+----
+cd asciidoc-resources
+git checkout [tag]
+cd ..
+git add asciidoc-resources
+----
+
+* After that, `git commit` & `git push`.
+
 
 == Adding A New Submodule To A Repository
 
-TIP: If you have link:https://tortoisegit.org/[TortoiseGit] installed, you can also do this through the TortoiseGit UI. See the link:https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules] for more information.
+TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI. See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
 
-TODO
+To add a submodule to a repository, follow these steps.
+
+. Open a xref:tool-specific/PowershellTutorial.adoc[PowerShell] window in your repositories root folder
+. Enter the following command for adding the other repository as a submodule (replace url as needed):
++
+[source,git]
+----
+git submodule add git@code.asam.net:common/style-resources.git // <1>
+----
+
++
+. Edit .gitmodule with any text editor (e.g. VSCode) to change the remote url to the local path:
++
+[source,git]
+----
+// Before editing
+[submodule "asciidoc-resources"]
+        path = asciidoc-resources
+        url = git@code.asam.net:common/style-resources.git // <1>
+
+########
+
+// After editing
+[submodule "asciidoc-resources"]
+        path = asciidoc-resources
+        url = ../../common/asciidoc-resources.git // <2>
+
+----
+
++
+. Stage/add your changed .gitmodules in git:
+
++
+[source,git]
+----
+git add .gitmodules
+----
+
++
+. After that, `git commit` & `git push`.
+
+<1> absolute path to repo
+<2> relative path to repo, when parent repo is also on https://code.asam.net[window=_blank]. Note that this has so represent the internal repository structure of code.asam.net.
+
+
+[NOTE]
+====
+When setting up a repository NOT on code.asam.net (e.g. Github for OSI)::
+. Use the https adress of the repository.
+`+git submodule add https://code.asam.net/common/style-resources.git+`
+
+. Do **NOT** edit .gitmodule for relative pathing!
+====
+
+
 
 == Removing A Submodule From A Repository
 
-TODO
+To delete a submodule do:
+
+[source,console]
+----
+> git rm .gitmodules // <1>
+> git rm asciidoc-resources
+----
+* After that `> git commit` & `> git push`.
+
+<1> This deletes all submodules in a repository. If there is another submodule that should be kept, just delete the corresponding lines from the `.gitmodules` instead.
+
+
+
 
 == Changing Remote For A Submodule
 
@@ -52,14 +138,14 @@ In case the location of the submodule on remote (i.e. on GitLab) is changed, the
 . Open a git bash or a Powershell window
 . Type in the following command (replacing the placeholders) and confirm with Enter:
 +
-[source]
+[source,git]
 ----
 git submodule set-url <Submodule Name> <New Git url to .git file>
 ----
 
 .Changing submodule "ASAM Standard Template" url
 ====
-[source]
+[source,git]
 ----
 git submodule set-url "ASAM Standard Template" https://code.asam.net/common/templates/standard-template.git
 ----
