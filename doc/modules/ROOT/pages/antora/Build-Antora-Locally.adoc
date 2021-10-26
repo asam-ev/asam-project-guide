@@ -44,5 +44,5 @@ NOTE: This service does not provide a searchbar or support for diagrams.
 . Start docker (if not yet running)
 . Build and run a docker container using the provided docker-compose.yml for the service "antora"
 
-TIP: If you get an error message that ".../antora-lunr/supplemental_ui" was not found, use <<Build With Antora/Lunr,Lunr>> instead.
+TIP: If you get an error message that ".../antora-lunr/supplemental_ui" was not found, use <<Build With Antora/Lunr (Recommended),Lunr>> instead.
 

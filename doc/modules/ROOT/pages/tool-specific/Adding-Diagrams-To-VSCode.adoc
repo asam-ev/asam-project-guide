@@ -1,5 +1,4 @@
 = Adding VSCode Support For Diagrams With Kroki
-:imagesdir: ../images
 
 The kroki extension supports a wide range of diagrams from BPMN to Graphviz to PlantUML and Vega graphs using kroki and asciidoctor-kroki.
 
@@ -22,7 +21,7 @@ This will store images by default in your document folder. However, you may also
     :kroki-fetch-diagram:
     :imagesdir: media
 
-The images are served over http:// and you must allow your preview to include data from unsafe sources. To do this, open your command palette (ctrl+shift+P) and enter ``asciidoc preview security`` and choose ``Allow insecure content``. 
+The images are served over http:// and you must allow your preview to include data from unsafe sources. To do this, open your command palette (ctrl+shift+P) and enter ``asciidoc preview security`` and choose ``Allow insecure content``.
 
 NOTE: Access to this global setting is only available if you have currently are in an AsciiDoc file in VSCode. Otherwise, the setting will not show up.
 
@@ -55,7 +54,7 @@ a|image::plantuml_3.png[]
 
 |Gantt Diagram
 a|
----- 
+----
 [mermaid]
 ....
 gantt
@@ -67,8 +66,8 @@ gantt
     section Another
     Task in sec      :2014-01-12, 12d
     another task     :24d
-....  
-----  
+....
+----
 a|image::gannt_example.png[]
 
 |Pie Diagram
@@ -80,7 +79,7 @@ pie title Pets adopted by volunteers
     "Dogs" : 386
     "Cats" : 85
     "Rats" : 15
-            
+
 ....
 ----
 a|image::pie_example.png[]

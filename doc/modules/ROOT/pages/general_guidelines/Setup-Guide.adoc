@@ -1,6 +1,8 @@
 = Setup Guide
 :includedir: ..
 :mydir: general_guidelines/
+:powershelllink: xref:../tool-specific/PowershellTutorial.adoc
+:powershell: {powershelllink}[PowerShell]
 
 image::GettingStarted.jpg[width=120,role=right]
 
@@ -12,7 +14,7 @@ New project members must, therefore, set up their accounts and computers accordi
 NOTE: This setup guide only covers the tools recommended by ASAM. You can use other compatible tools, as long as the single source of truth stays ASAM GitLab and your content is of the supported content type, such as AsciiDoc.
 
 == Working On ASAM Standards
-All ASAM standards are developed and written in the ASAM GitLab (https://code.asam.net). This GitLab has features for
+All ASAM standards are developed and written in the ASAM GitLab (https://code.asam.net[window=_blank]). This GitLab has features for
 
 * commenting on content and changes
 * versioning project files
@@ -23,7 +25,7 @@ All ASAM standards are developed and written in the ASAM GitLab (https://code.as
 
 == Setting Up Your ASAM GitLab Account
 :hide-uri-scheme:
-All specification-related documents are stored and updated in ASAMs GitLab. *The ASAM GitLab is located at https://code.asam.net.*
+All specification-related documents are stored and updated in ASAMs GitLab. *The ASAM GitLab is located at https://code.asam.net[window=_blank].*
 
 Each user account is created by an ASAM representative. After creation, the user must finish setting up the account themselves.  This requires the following steps:
 
@@ -41,7 +43,7 @@ NOTE: The "ASAM SVN" login is deprecated and will be removed in the future.
 
 For working locally on the standardization process, the following tools are recommended:
 
-include::ToolsOverview.adoc[tag="recommended"]
+include::partial$Tools-List.adoc[tag="recommended"]
 
 
 
@@ -53,7 +55,7 @@ TIP: *If you prefer working online without having to install software on your co
 
 === Setting Up VSCode
 
-image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=64, height=64, link=https://code.visualstudio.com/download, role=right]
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=64, height=64, link=https://code.visualstudio.com/download, role=right, window=_blank]
 
 Visiual Studio Code is the suggested solution for checking out repositories and files from GitLab, adding and editing files, and pushing changes back to GitLab. However, users may choose any compatible program(s) instead, as long as GitLab stays the single point of truth for project files. Alternatively, users may also choose to work completly through GitLab by using the Web IDE provided there. See *<<Working Without Software Installation>>* for more information.
 
@@ -107,9 +109,9 @@ NOTE: If you cannot click "Next", make sure VSCode is already installed. Return 
 
 After installation of Git, configure your user credentials that Git uses when checking in changed content from your PC to the ASAM GitLab. To make sure your commits match your name and email details, a one time configuration is necessary.
 
-TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found xref:../tool-specific/PowershellTutorial.adoc[here].
+TIP: The following steps are tested with Microsoft Windows PowerShell. Instructions on how to open the PowerShell can be found {powershelllink}[here].
 
-. Open a xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window
+. Open a {powershell} window
 . Execute the following command and replace the entries _"FIRST_NAME_, _LAST_NAME"_  accordingly:
 
 +
@@ -150,9 +152,9 @@ NOTE: This is optional! It removes the need to enter the user password for every
 ===== Creating The SSH Keys And Apply In GitLab
 To ensure you don't have to enter your login details every time you want to interact with the repository, add an SSH key to your account. To do so, follow these steps:
 
-. In a xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window, enter the following:
+. In a {powershell} window, enter the following:
 +
-NOTE: The xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window should be opened in your user folder (Windows). Usually, if you open it through right-click on the Windows button, this should be the case.
+NOTE: The {powershell} window should be opened in your user folder (Windows). Usually, if you open it through right-click on the Windows button, this should be the case.
 +
 [source,git]
 ----
@@ -176,7 +178,7 @@ Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard
 TIP: If this doesn’t work, open the file you created in a text editor and copy the whole text manually.
 
 
-. Edit your https://code.asam.net/-/profile[profile in GitLab]
+. Edit your https://code.asam.net/-/profile[profile in GitLab^]
 +
 image:AccessGitLabAccountConfig.png[title="Edit user profile in GitLab"]
 
@@ -184,7 +186,7 @@ image:AccessGitLabAccountConfig.png[title="Edit user profile in GitLab"]
 +
 image:OpenSSHSettings.png[title="Open the 'SSH Keys' settings"]
 
-. Add the generated key to the https://code.asam.net/profile/keys[SSH window in GitLab] - Paste the key copied in step 2, give it a title and then click "Add Key"
+. Add the generated key to the https://code.asam.net/profile/keys[SSH window in GitLab^] - Paste the key copied in step 2, give it a title and then click "Add Key"
 +
 
 .Confirmation screen after SSH key has been entered in GitLab
@@ -195,7 +197,7 @@ image:ConfirmSSHKey.png[title="Window shown after SHS key has been entered and c
 Now, GitLab knows the public key you use to authorize when interacting with GitLab from your PC. In order to use the generated keys for authorization by your PC, execute the following steps:
 
 . Check if the SSH Agent is running
-.. Open a xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window
+.. Open a {powershell} window
 .. Type the following command, hit Enter, and check the status:
 +
 [source,Shell]
@@ -217,7 +219,7 @@ If it is "Disabled", continue with _Activate the SSH Agent_. Otherwise, continue
 +
 NOTE: This requires administration rights. If you do not have these, request support from your IT department.
 +
-.. Open another xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window (with Administration rights)
+.. Open another {powershell} window (with Administration rights)
 .. Set the SSH Agent to start manually by typing the following command and hitting Enter:
 +
 [source,Shell]
@@ -237,7 +239,7 @@ Start-Service ssh-agent
 
 . Add the SSH private key to the agent
 +
-NOTE: This should not be done in the Administration xref:../tool-specific/PowershellTutorial.adoc[PowerShell] window if your Admin account is not your user account. Otherwise, Windows will complain about unprotected private key files!
+NOTE: This should not be done in the Administration {powershell} window if your Admin account is not your user account. Otherwise, Windows will complain about unprotected private key files!
 +
 .. Return to the PowerShell window or open a new one
 .. To add your generated private key to the SSH Agent, enter
@@ -271,10 +273,10 @@ image::AddKnownHost.png[]
 . You will be prompted to enter your password, but this step is not required. Cancel the connection by typing `ctrl`+`c`.
 
 
-*See also*:
+*More links*:
 
-* link:https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent[Generating And Adding Your SSH Key To The SSH Agent]
-* link:https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro[Start SSH Agent]
+* https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent[Generating And Adding Your SSH Key To The SSH Agent^]
+* https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro[Start SSH Agent^]
 
 // TODO: Split content into follow up pages here
 

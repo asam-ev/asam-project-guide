@@ -7,15 +7,15 @@ Docker is a platform where you use so-called containers to run applications in a
 
 > Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
 
-image::https://docs.docker.com/engine/images/architecture.svg[title="The Docker link:https://docs.docker.com/get-started/overview/#docker-architecture[architecture]", link="https://docs.docker.com/get-started/overview/#docker-architecture"]
+image::https://docs.docker.com/engine/images/architecture.svg[title="The Docker link:https://docs.docker.com/get-started/overview/#docker-architecture[architecture]", link="https://docs.docker.com/get-started/overview/#docker-architecture", window=_blank]
 
-For more information on how to use Docker, see the <<../tool-specific/DockerGuide.adoc#,Docker Guide>> or the <<https://docs.docker.com/get-started/#,official guides>> from Docker.
+For more information on how to use Docker, see the xref:tool-specific/DockerGuide.adoc[Docker Guide] or the link:https://docs.docker.com/get-started/[official guides, window=_blank] from Docker.
 
-TIP: Want to learn more about Docker? See link:https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html[this page] for an explanation on the definitions of and the differences between images and containers. In short: Images are the blueprints for containers. When executed, an image is used to create a container.
+TIP: Want to learn more about Docker? See link:https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html[this page by Dockerlabs, window=_blank] for an explanation on the definitions of and the differences between images and containers. In short: Images are the blueprints for containers. When executed, an image is used to create a container.
 
 == Docker Licenses
 
-IMPORTANT: Professional use of Docker Desktop in large organizations (more than 250 employees or more than $10 million in annual revenue) *requires users to have a paid Docker subscription*. See https://www.docker.com/blog/updating-product-subscriptions/.
+IMPORTANT: Professional use of Docker Desktop in large organizations (more than 250 employees or more than $10 million in annual revenue) *requires users to have a paid Docker subscription*. See link:https://www.docker.com/blog/updating-product-subscriptions/[window=_blank].
 
 If your company does not provide docker licenses, you can check the docker website what type of license applies to your company. Note that only Docker Desktop (Windows and Mac) requires license fees. Docker for Linux is (currently) still free under the Apache License, version 2.0.
 
@@ -30,7 +30,7 @@ NOTE: It is recommended to use the WSL2 backend. If this is not possible for you
 .What is WSL?
 [%collapsible]
 ====
-WSL is short for Windows Subsystem for Linux. From https://docs.microsoft.com/en-us/windows/wsl/about:
+WSL is short for Windows Subsystem for Linux. From link:https://docs.microsoft.com/en-us/windows/wsl/about[ window=_blank]:
 
 > The Windows Subsystem for Linux lets developers run a GNU/Linux environment -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup.
 
@@ -38,13 +38,13 @@ In the context of Docker, WSL2 and a compatible Linux distribution are used to r
 ====
 
 
-IMPORTANT: Make sure that you PC fulfills all requirements listed on https://docs.docker.com/desktop/windows/install/#system-requirements before installing the downloaded Docker Desktop application!
+IMPORTANT: Make sure that you PC fulfills all requirements listed on the link:https://docs.docker.com/desktop/windows/install/#system-requirements[official system requirements, window=_blank] before installing the downloaded Docker Desktop application!
 
 TIP: To check your windows version, enter `Windows logo key`+`R`, type `winver` and confirm with Enter. Make sure your build number is higher than the required minimum. If not, ask your IT to update your windows build.
 
 === Preparing Windows
 
-. **Prepare WSL2** on your Computer by following the instructions on https://docs.microsoft.com/en-us/windows/wsl/install.
+. **Prepare WSL2** on your Computer by following the instructions on link:https://docs.microsoft.com/en-us/windows/wsl/install[window=_blank].
 +
 .[.underline]#Read this in case Ubuntu for WSL is not installed automatically#
 [%collapsible]
@@ -63,26 +63,26 @@ wsl --list --online
 c
 ====
 +
-. Make sure your **BIOS-level virtualization support** is enabled (see https://docs.docker.com/desktop/windows/install/#wsl-2-backend)
+. Make sure your **BIOS-level virtualization support** is enabled (see link:https://docs.docker.com/desktop/windows/install/#wsl-2-backend[window=_blank])
 
 
 === Setting Up The Linux Distribution Under Windows
-Before first use, the WSL2 Linux distribution must be configured (e.g. a user with password must be created). Follow the instructions on https://docs.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-user-info.
+Before first use, the WSL2 Linux distribution must be configured (e.g. a user with password must be created). Follow the instructions on link:https://docs.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-user-info[window=_blank].
 
 NOTE: You may reuse your Windows username and password or define a new user alltogether. Note that changing your windows password will not change your Linux user's password since both are independent.
 
 == Getting Docker Desktop
 
-NOTE: Alternatively to getting Docker Desktop, you can also download and install docker engine from binaries. This is free of charge but requires many more steps for setup. See https://docs.docker.com/engine/install/binaries/ for more information on this.
+NOTE: Alternatively to getting Docker Desktop, you can also download and install docker engine from binaries. This is free of charge but requires many more steps for setup. See link:https://docs.docker.com/engine/install/binaries/[window=_blank] for more information on this.
 
 image::https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png[width=80,link="{docker-download}", role="right"]
-This summary assumes that you are using **Windows**. If not, check out  the link:{docker-download}[official docker page] for information on how to retrieve and install docker.
+This summary assumes that you are using **Windows**. If not, check out  the link:{docker-download}[official docker page, window=_blank] for information on how to retrieve and install docker.
 
-You can download Docker Desktop (the Docker version for Windows) link:{docker-download}[here].
-For more information on how to download and install docker, see https://docs.docker.com/desktop/windows/install/.
+You can download Docker Desktop (the Docker version for Windows) link:{docker-download}[here, window=_blank].
+For more information on how to download and install docker, see link:https://docs.docker.com/desktop/windows/install/[window=_blank].
 
 === Setting Up Docker Desktop
-If all prerequesits have been met and the prepartory steps been executed, install the Docker Desktop app. See also https://docs.docker.com/desktop/windows/install/#install-docker-desktop-on-windows.
+If all prerequesits have been met and the prepartory steps been executed, install the Docker Desktop app. See also link:https://docs.docker.com/desktop/windows/install/#install-docker-desktop-on-windows[window=_blank].
 
 After setup, you can try the example project to get to know basic Docker commands.
 
@@ -91,7 +91,7 @@ After setup, you can try the example project to get to know basic Docker command
 include::../tool-specific/Recommended-VSCode-Extensions.adoc[tag=docker-extension]
 
 == See Also
-* <<../writing_guidelines/Docker-For-Asciidoc.adoc#,Using AsciiDoc with Docker>>
-* <<../tool-specific/DockerGuide.adoc#,Docker Guide>>
-* <<WritingGuidelines.adoc#,Writing Guidelines>>
-* <<../writing_guidelines/AsciiDoc-Guide.adoc#,AsciiDoc Guide>>
+* xref:writing_guidelines/Docker-For-Asciidoc.adoc[Using AsciiDoc with Docker]
+* xref:tool-specific/DockerGuide.adoc[Docker Guide]
+* xref:general_guidelines/WritingGuidelines.adoc[Writing Guidelines]
+* xref:writing_guidelines/AsciiDoc-Guide.adoc[AsciiDoc Guide]

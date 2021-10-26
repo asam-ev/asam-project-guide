@@ -86,7 +86,7 @@ Note that it is a WIP and will likely change over time.
 @endmindmap
 ----
 
-== Reference:
+== Reference
 
 * https://docs.unity3d.com/Manual/UnityOverview.html
 * https://docs.blender.org/manual/en/dev/

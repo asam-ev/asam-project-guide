@@ -1,6 +1,6 @@
 = ASAM Standard Workflows
 
-IMPORTANT: 28.04.2021: See https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/git/Transitioning-to-a-new-workflow[Transitioning to the new Workflow] for steps we need to take to enable this workflow
+IMPORTANT: 28.04.2021: See https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/git/Transitioning-to-a-new-workflow[Transitioning to the new Workflow^] for steps we need to take to enable this workflow
 
 == Workflow Overview
 
@@ -19,7 +19,7 @@ ISSUE
 
 == Branch Structure
 
-image::2021-04-15_OSC2_RevisedWorkflow-Diagram_v5-Page-2.png[]
+image::2021-04-15_OSC2_RevisedWorkflow-Diagram_v5-Page-2.png[Revised Workflow Diagram Open Scenario 2.0]
 
 2 primary project branches:
 
@@ -32,20 +32,23 @@ release:: Content that has been subjected to the following:
 . Review by the CCB
 
 +
-This branch can only be merged to by the ASAM office or the project's Change Control Board (CCB). Unless indicated by a clear git tag all commits are considered to be part of a release candidate.
+This branch can only be merged to by the ASAM office or the project's Change Control Board (CCB).
+Unless indicated by a clear git tag, all commits are considered to be part of a release candidate.
 
 master:: (default branch) All development activity takes place on this branch.
 
 
-Users MAY branch off master for more focused development work. These branches SHOULD be short-lived (<2 weeks) and regularly merged back. These branches MAY be squashed and MUST be merged via fast-forward merge (enabled by default).
+Users **MAY** branch off master for more focused development work.
+These branches **SHOULD** be short-lived (<2 weeks) and regularly merged back.
+These branches **MAY** be squashed and **MUST** be merged via fast-forward merge (enabled by default).
 
 == ASAM OSC2 Commit Message Convention
 
-See xref:git/Commit-Guidelines.adoc[here]
+The Open Scenario 2 Commit Message Convention can be found xref:git/Commit-Guidelines.adoc[here]
 
 == Project Workflow
 
-NOTE: ``Code snippets`` are https://code.asam.net/help/user/project/quick_actions[GitLab quick actions] that can be used directly in comments.
+NOTE: ``Code snippets`` are https://code.asam.net/help/user/project/quick_actions[GitLab quick actions^] that can be used directly in comments.
 
 [IMPORTANT]
 ====
@@ -69,8 +72,8 @@ To make the parts visible again, you have to set the attribute `draft` for your 
 
 **Solution for VisualStudioCode with Asciidoc extension:**
 
-1. In the Asciidoc extension settings go to `Preview:Attributes - Edit in settings.json`.
-2. In the settings.json add the `draft` attribute:
+1. In the Asciidoc extension settings, go to `Preview:Attributes - Edit in settings.json`.
+2. In the settings.json, add the `draft` attribute:
 
         "asciidoc.preview.attributes": {
             "draft": ""
@@ -97,7 +100,6 @@ image::source_view.png[]
 
 The icon next to it switches back to the preview.
 
-
 ====
 
 [NOTE]
@@ -118,7 +120,6 @@ You can also download the artifacts directly from the pipeline result page.
 . Assign the issues to a responsible: ``/assign @<user>``
 
 
-
 === ANALYSIS
 
 *Who: Issue Assignee*
@@ -134,9 +135,8 @@ You can also download the artifacts directly from the pipeline result page.
 . [OPTIONAL] An assignee MAY create a separate branch off of _develop_ to make it easier to keep development separate. Such a branch SHOULD be short-lived (no more than 2 weeks) to ensure progress and direction are visible to project members and that it is not too out of sync with other activities.
 . Change the issue status ``/label ~Implementation`` to indicate that a proposal is being implemented for this issue
 
+
 === REVIEW
-
-
 
 *Who: WG Lead*
 
@@ -155,7 +155,7 @@ You can also download the artifacts directly from the pipeline result page.
 * Content specific: Start a review in the changes tab of the MR
 
 +
-NOTE: To start a review, write a comment on a diff as normal under the Changes tab in a merge request, and then select Start a review. Click https://docs.gitlab.com/ee/user/discussions/#starting-a-review[here] for more information.
+NOTE: To start a review, write a comment on a diff as normal under the Changes tab in a merge request, and then select Start a review. Click https://docs.gitlab.com/ee/user/discussions/#starting-a-review[here^] for more information.
 
 * If the review feedback requires further development work, the process restarts from the <<IMPLEMENTATION>> stage
 

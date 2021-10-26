@@ -5,7 +5,7 @@
 
 === Contributors
 - Develop software, i.e. write source code and tests.
-- For open-source projects hosted under the ASAM organization on Github.com all commits **must** include a sign-off message. See <<docs/project_guidelines/open-source/ASAM-DCO.adoc#,Comitting to Open Source ASAM projects>>
+- For open-source projects hosted under the ASAM organization on Github.com all commits **must** include a sign-off message. See xref:general_guidelines/open-source/ASAM-DCO.adoc[Comitting to Open Source ASAM projects].
 
 === ASAM Change Control Board
 
@@ -23,7 +23,7 @@
 - Review contributions
 - Merge source code, documentation and tests into the main branches.
 - Named in the project proposal and extendable by majority vote of existing committers
-- **Does not merge content where third-party content or libraries are included prior to approval by the <<Project Coordinator,Project Coordinator>>**
+- **Does not merge content where third-party content or libraries are included prior to approval by the <<Project Coordinator,project coordinator>>**
 - Should no project be running, the CCB can submit a proposal to the CG:Sim for a patch/minor/major project addressing a set amount of issues
 
 === Project Leader
@@ -56,7 +56,7 @@
 
 == Coordination Group: Simulation
 
-- Develop/maintain the ASAM Simulation roadmap 
+- Develop/maintain the ASAM Simulation roadmap
 
 - Strategic analysis
   - Identify/initiate further ASAM activities in Simulation
@@ -64,7 +64,7 @@
   - Ensure alignment with external activities
 
 - Accelerate the ASAM decision making process
-  - Pre-approval, final approval stays with TSC 
+  - Pre-approval, final approval stays with TSC
 
 - Review and refine relevant processes
   - e.g. development and release process, collaborative software development, etc.

@@ -1,5 +1,4 @@
 = ASAM Recommended Visual Studio Code Settings
-:imagesdir: ../images
 
 This is a summary of recommended VSCode settings to follow writing guidelines easier.
 

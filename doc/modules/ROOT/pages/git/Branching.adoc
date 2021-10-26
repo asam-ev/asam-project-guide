@@ -1,25 +1,44 @@
-
-
 = Branching
+
 There a many ways to create a branch in the git process. Two options are highlighted below.
+
 
 == Option 1: Using VSCode
 
-image::../images/create-a-branch.gif[title="Create a new branch in VSCode"]
+image::create-a-branch.gif[title="Create a new branch in VSCode"]
 
-**Note this is a local branch. You need to push it before it is also on the remote.**
+. Click on the branch icon on the bottom left
+. Click on "Create New Branch"
+. Enter a new xref:git/Branch-Naming-Conventions.adoc[valid] branch name and confirm with Enter
 
-image::../images/push-a-new-branch-vscode.gif[title="Push a new branch in GitLab"]
+You are automatically switched to the new branch.
+
+[NOTE]
+====
+**This is a local branch**. You need to push it before it is also on the remote.
+
+image:push-a-new-branch-vscode.gif[title="Push a new branch in GitLab"]
+====
 
 
 == Option 2: In GitLab
 
-image::../images/create-a-branch-gitlab.gif[title="Create a new branch in GitLab"]
+image::create-a-branch-gitlab.gif[title="Create a new branch in GitLab"]
 
-**Note you need to checkout this branch locally as this only creates the branch on the server.**
+. Open an issue for which you want to create a new branch
+. Select "Create branch" from the dropdown menu
+. Enter a new xref:git/Branch-Naming-Conventions.adoc[valid] branch name
+. Click "Create branch"
 
-image::../images/checkout-a-new-branch-gitlab.gif[title="Push a new branch in GitLab"]
+The branch is now created on remote.
 
+
+[NOTE]
+====
+**You need to check out this branch locally as this only creates the branch on the server.**
+
+image::checkout-a-new-branch-gitlab.gif[title="Push a new branch in GitLab"]
+====
 
 == Option 3: Command Line
 If you want to use this option, you don't need a guide!

@@ -1,11 +1,10 @@
-
 = Git Best Practices
 
-A guide for programming within version control.
+This is a guide for programming with version control.
 
-- Avoid merge commits by using a link:https://help.github.com/articles/about-git-rebase/[rebase workflow].
-- Squash multiple trivial commits into a single commit.
-- Write a link:http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html[good commit message].
+- Avoid merge commits by using a https://help.github.com/articles/about-git-rebase/[rebase workflow^].
+- https://www.git-tower.com/learn/git/faq/git-squash[Squash^] multiple trivial commits into a single commit.
+- Write a http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html[good commit message^].
 
 
 == Maintain A Repo
@@ -15,7 +14,7 @@ A guide for programming within version control.
 - Delete local and remote feature branches after merging.
 - Perform work in a feature branch.
 - Rebase frequently to incorporate upstream changes.
-- Use a link:https://help.github.com/articles/using-pull-requests/[pull request] for code reviews.
+- Use a https://help.github.com/articles/using-pull-requests/[pull request^] for code reviews.
 
 
 == Write A Feature
@@ -56,7 +55,7 @@ git commit --verbose
 ----
 
 
-Write a link:http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html[good commit message]. Example format:
+Write a http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html[good commit message^]. Example format:
 
     Present-tense summary under 50 characters
 
@@ -65,7 +64,7 @@ Write a link:http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.htm
 
     http://project.management-system.com/ticket/123
 
-If you've created more than one commit, link:https://help.github.com/articles/about-git-rebase/[use `git rebase` interactively] to squash them into cohesive commits with good
+If you've created more than one commit, https://help.github.com/articles/about-git-rebase/[use `git rebase` interactively^] to squash them into cohesive commits with good
 messages:
 
 [source,console]
@@ -82,13 +81,13 @@ git push origin <branch-name>
 ----
 
 
-Submit a link:https://help.github.com/articles/using-pull-requests/[GitHub pull request].
+Submit a https://help.github.com/articles/using-pull-requests/[GitHub pull request^].
 
 Ask for a code review in the project's chat room.
 
 == Review Code
 
-A team member other than the author reviews the pull request. They follow link:code-review/[Code Review] guidelines to avoid miscommunication.
+A team member other than the author reviews the pull request. They follow Code Review guidelines to avoid miscommunication.
 
 They make comments and ask questions directly on lines of code in the GitHub web
 interface or in the project's chat room.
