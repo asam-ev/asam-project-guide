@@ -9,7 +9,7 @@ NOTE: This only needs to be done once to obtain a local copy.
 
 . Find the repository url on the website and copy the git url
 
-. Open Command Palette (Ctrl+Shift+P), type "Git: Clone", then press Enter
+. Open the xref:tool-specific/VSCode-Command-Palette.adoc[Command Palette], type "Git: Clone", then press Enter
 
 . Paste the copied git url and press Enter
 
@@ -32,7 +32,7 @@ image:git_error_host-key-verification-failed.PNG[]
 +
 NOTE: With this command, you do not need to manually initialize the submodules after checkout!
 
-TIP: Alternatively to the Git Bash, you can also use the xref:../tool-specific/PowershellTutorial.adoc[Microsoft Powershell] with the same commands. Make sure to open your Powershell in your directory, though.
+TIP: Alternatively to the Git Bash, you can also use the xref:../tool-specific/PowerShell-Basics.adoc[Microsoft Powershell] with the same commands. Make sure to open your Powershell in your directory, though.
 
 image::CloneByGitBash.gif[]
 

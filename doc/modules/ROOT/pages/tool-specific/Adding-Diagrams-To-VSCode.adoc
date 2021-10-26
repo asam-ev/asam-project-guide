@@ -2,9 +2,9 @@
 
 The kroki extension supports a wide range of diagrams from BPMN to Graphviz to PlantUML and Vega graphs using kroki and asciidoctor-kroki.
 
-You can see the full range and examples on the https://kroki.io/examples.html[website].
+You can see the full range and examples on the official https://kroki.io/examples.html[website^].
 
-include::Recommended-VSCode-Settings.adoc[tag=kroki]
+include::partial$VSCode/Settings/Kroki.adoc[]
 
 == Caching Diagrams Locally
 
@@ -19,16 +19,24 @@ This will store images by default in your document folder. However, you may also
 
     = My Amazing Document
     :kroki-fetch-diagram:
-    :imagesdir: media
+    :imagesdir: images
 
-The images are served over http:// and you must allow your preview to include data from unsafe sources. To do this, open your command palette (ctrl+shift+P) and enter ``asciidoc preview security`` and choose ``Allow insecure content``.
+
+NOTE: In the example above, the images are now stored in a folder named "images".
+
+The images are served over http:// and you must allow your preview to include data from unsafe sources.
+To do this:
+
+. Open the xref:tool-specific/VSCode-Command-Palette.adoc[Command Palette].
+. Enter ``asciidoc preview security`` .
+. Choose ``Allow insecure content``.
 
 NOTE: Access to this global setting is only available if you have currently are in an AsciiDoc file in VSCode. Otherwise, the setting will not show up.
 
-.opening asciidoc preview security settings
+.Opening asciidoc preview security settings
 image::plantuml_1.png[]
 
-.allow insecure content
+.Allowing insecure content
 image::plantuml_2.png[]
 
 == Testing Kroki Examples
@@ -37,6 +45,8 @@ With the settings done and caching activated, you can test Kroki with the follow
 
 [cols="1h,4,4"]
 |===
+h|Type |Code |Result
+
 |PlantUML
 a|
 [source,asciidoc]

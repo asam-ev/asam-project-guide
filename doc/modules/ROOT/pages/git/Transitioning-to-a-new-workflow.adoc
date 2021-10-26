@@ -1,9 +1,10 @@
+= Transitioning To The New Workflow
 
-== Transitioning to the new Workflow
+This describes the transition of Open Scenario 2.0 to the new workflow.
 
 IMPORTANT: This phase will run up to the upcoming project meeting on 4th to 6th of May
 
-=== Repository Tidy Up
+== Repository Tidy Up
 
 *Who: all project members*
 
@@ -11,7 +12,7 @@ IMPORTANT: This phase will run up to the upcoming project meeting on 4th to 6th 
 *	Close and consolidate issues –review the issues and see if they are all still relevant/needed. Close those that aren’t
 *	Consolidate branches that are maybe too granular – Merge them into one
 
-=== Feature List Compilation
+== Feature List Compilation
 
 *Who: WG Leads*
 
@@ -21,20 +22,27 @@ IMPORTANT: This phase will run up to the upcoming project meeting on 4th to 6th 
 .The headers for the table of features
 [%headers,cols='6*']
 |===
-|Feature |Details & Dependencies |Maturity / Readiness |Must be in 2.0? |Expected Delivery Date | Comments 
-|Feature xx | | | | | 
+h|Feature |Details & Dependencies |Maturity / Readiness |Must be in 2.0? |Expected Delivery Date | Comments
+
+|Feature xx
+|
+|
+|
+|
+|
+
 |===
 
-. issues created -> 1to1 mapping to planned deliveries (e.g. feature in feature list of document  subsection)
-. define a delivery date
-. assign a responsible
-. assign label Deliverable
+. Issues created -> 1to1 mapping to planned deliveries (e.g. feature in feature list of document  subsection)
+. Define a delivery date
+. Assign a responsible user
+. Assign label `Deliverable`
 
-*next stage:*
-    
+*Next Stage:*
+
 . All WG leads define a set of milestones, assign issues to milestones
 
-=== Branch Structure Setup
+== Branch Structure Setup
 *Who: ASAM Office*
 
 . Create the develop branch and set it to default

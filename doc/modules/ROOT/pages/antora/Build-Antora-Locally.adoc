@@ -17,7 +17,7 @@ RUN yarn global add asciidoctor-kroki
 ----
 +
 . Start docker (if not already open)
-. Open a xref:../tool-specific/PowershellTutorial.adoc[Powershell] in this folder
+. Open a xref:../tool-specific/PowerShell-Basics.adoc[Powershell] in this folder
 . Run the following command to create the custom image:
 +
 [source,docker]

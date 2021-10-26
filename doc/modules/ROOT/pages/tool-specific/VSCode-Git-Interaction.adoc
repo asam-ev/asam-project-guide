@@ -1,6 +1,6 @@
 = Interacting With Git Through Visual Studio Code
 
-You can find a very helpful overview at https://code.visualstudio.com/docs/editor/versioncontrol#_git-support.
+You can find a very helpful overview at https://code.visualstudio.com/docs/editor/versioncontrol#_git-support[window=_blank].
 
 //TODO: Add extensive explanation and content
 

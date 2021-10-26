@@ -1,7 +1,7 @@
 = Setup Guide
 :includedir: ..
 :mydir: general_guidelines/
-:powershelllink: xref:../tool-specific/PowershellTutorial.adoc
+:powershelllink: xref:../tool-specific/PowerShell-Basics.adoc
 :powershell: {powershelllink}[PowerShell]
 
 image::GettingStarted.jpg[width=120,role=right]

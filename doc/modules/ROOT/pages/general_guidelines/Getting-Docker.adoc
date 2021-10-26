@@ -88,7 +88,7 @@ After setup, you can try the example project to get to know basic Docker command
 
 === Adding Docker Extension To VSCode
 
-include::../tool-specific/Recommended-VSCode-Extensions.adoc[tag=docker-extension]
+include::partial$VSCode/Extensions/Docker.adoc[]
 
 == See Also
 * xref:writing_guidelines/Docker-For-Asciidoc.adoc[Using AsciiDoc with Docker]

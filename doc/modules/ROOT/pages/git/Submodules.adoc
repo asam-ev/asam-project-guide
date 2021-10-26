@@ -19,7 +19,7 @@ Pulling a submodule can currently only be done through a terminal window.
 
 TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI. See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
 
-. To pull a submodule, you need to open a terminal (git bash or xref:../tool-specific/PowershellTutorial.adoc[Windows Powershell]) in the folder of your git repository.
+. To pull a submodule, you need to open a terminal (git bash or xref:../tool-specific/PowerShell-Basics.adoc[Windows Powershell]) in the folder of your git repository.
 . Type the one of the following commands and confirm with Enter
 .. **Updating Submodules after checking out repository** (first time):
 +
@@ -61,7 +61,7 @@ TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also 
 
 To add a submodule to a repository, follow these steps.
 
-. Open a xref:tool-specific/PowershellTutorial.adoc[PowerShell] window in your repositories root folder
+. Open a xref:tool-specific/PowerShell-Basics.adoc[PowerShell] window in your repositories root folder
 . Enter the following command for adding the other repository as a submodule (replace url as needed):
 +
 [source,git]

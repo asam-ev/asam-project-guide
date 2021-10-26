@@ -13,7 +13,7 @@ IMPORTANT: The docker deamon must be running in the background before you can ru
 
 You can run Docker-Compose directly from within Visual Studio Code if you have added the docker extensions. VSCode will automatically ask you if it finds a .yml file in your project workspace. Otherwise, you can get it through the usual way of finding and installing extensions:
 
-include::Recommended-VSCode-Extensions.adoc[tag=docker-extension]
+include::partial$VSCode/Extensions/Docker.adoc[]
 
 To run Docker-Compose on your docker-compose.yml, right-click on the file in your workspace and select `Compose Up` from the menu.
 
@@ -39,6 +39,6 @@ NOTE: This works if the container was already created through either using the <
 . Click the image:play-button-docker.png[alt=Play] button to run the container
 
 == See Also
-* link:https://docs.docker.com/get-started/[Official guide for Docker]
+* https://docs.docker.com/get-started/[Official guide for Docker^]
 * xref:general_guidelines/Getting-Docker.adoc[Setting Up Docker For Asciidoc]
 * xref:{mydir}StandardDockerConfig.adoc[Default docker-compose.yml for creating local htmls]

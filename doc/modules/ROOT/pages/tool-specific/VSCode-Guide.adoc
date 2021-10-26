@@ -1,12 +1,15 @@
 = Visual Studio Code Overview
-:icons: font
 :data-uri:
 
-Visual Studio Code is a powerful code and text editor that can be highly individualized and adapted to the task at hand using the existing extensions for it. Here, you get an overview over how Visual Studio Code is structured. 
+Visual Studio Code is a powerful code and text editor that can be highly individualized and adapted to the task at hand using the existing extensions for it. Here, you get an overview over how Visual Studio Code is structured.
 
-For the Visual Studio Code extensions recommended by ASAM as well as specific tutorials, see the links under <<See Also>>. 
+For the Visual Studio Code extensions recommended by ASAM as well as specific tutorials, see the links under <<See Also>>.
 
 == Interface
+
+image::vscode_ui.png[]
+
+// TODO: Add colors to Antora as well
 
 [horizontal]
 [yellow]#Editor#:: The main area to edit your files. You can open as many editors as you like side by side vertically and horizontally.
@@ -16,20 +19,8 @@ For the Visual Studio Code extensions recommended by ASAM as well as specific tu
 [green]#Git Bar#:: If in a git repo. shows the relevant git information. Branch, pull, errors
 
 
-image::vscode_ui.png[]
+include::../tool-specific/VSCode-Command-Palette.adoc[leveloffset=+1]
 
-
-== Command Palette
-
-The Command Palette in VSCode allows you to access specific menus and functions of the program directly without having to navigate there through the menu strucutre. It also helps when looking for an option to change as it contains a search function with auto-completion. 
-
-* `Ctrl`+`Shift`+`P` brings up the Command Palette. 
-
-From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.
-
-image::vscode_command-palette.png[]
-
-NOTE: Many tutorials in this Wiki for VSCode make use of the Command Palette.
 
 == Activity Bar
 
@@ -45,9 +36,10 @@ image::vscode_activity-bar.png[]
 // TODO: Add description with pictures for all four standard entries.
 // TODO: Add descriptions for all recommended extensions (on the extension page).
 
+
 == See Also
 
-* xref:Recommended-VSCode-Extensions.adoc[Recommended Visual Studio Code extensions]
-* xref:Adding-Diagrams-To-VSCode.adoc[Adding Diagrams to Visual Studio Code with Kroki]
-* xref:VSCode-Git-Interaction.adoc[Interacting with Git through Visual Studio Code]
-* xref:Recommended-VSCode-Settings.adoc[Recommended VSCode Settings]
+* xref:tool-specific/Recommended-VSCode-Extensions.adoc[Recommended Visual Studio Code extensions]
+* xref:tool-specific/Adding-Diagrams-To-VSCode.adoc[Adding Diagrams to Visual Studio Code with Kroki]
+* xref:tool-specific/VSCode-Git-Interaction.adoc[Interacting with Git through Visual Studio Code]
+* xref:tool-specific/Recommended-VSCode-Settings.adoc[Recommended VSCode Settings]

@@ -1,3 +1,0 @@
-= GitLab Guide
-
-TODO
