@@ -107,7 +107,7 @@ General guidelines on how to write requirements and documentation can be found u
 
 To work on ASAM projects, some tools are required and others are recommended.
 
-include::{general-uri}ToolsOverview.adoc[leveloffset=+2]
+include::partial$Tools-List.adoc[leveloffset=+2]
 
 ---
 

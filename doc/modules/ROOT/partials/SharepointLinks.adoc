@@ -1,4 +1,3 @@
-= Sharepoint Links
 
 This is a summary of important Sharepoint links.
 
@@ -13,4 +12,4 @@ WARNING: These links will only work for you if you have access to the correspond
 You can sync all project files if you have Onedrive: on the Sharepoint site -> Click Sync (see demo on synchronizing).
 
 .Demo on synchronizing
-image::sync.gif[]
+image::sync.gif[Demo on synchronizing]
