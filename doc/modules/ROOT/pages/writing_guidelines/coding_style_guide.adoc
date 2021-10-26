@@ -1,7 +1,6 @@
 [#top-osc2-coding-style-guide]
 = The OpenSCENARIO2 coding style guide
 :numbered:
-:toc: preamble
 
 This coding style guide is intended to help you writing source code in the OpenSCENARIO 2.x domain specific language in a uniform way.
 
@@ -15,7 +14,7 @@ You should follow the recommendations in this document in the following cases:
 
 . You are a _scenario developer_ writing fully functional scenarios for real use.
 . You are a _writer of documentation_ and want to add code examples (snippets) to your adoc document. +
-In this case you should mark your code examples as a `+[source, osc2]+` source block as described in the https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/writing_guide.adoc[writing guide].
+In this case you should mark your code examples as a `+[source, osc2]+` source block as described in the xref:writing_guidelines/writing_guide.adoc[writing guide].
 
 
 By following the recommendations in this guide your code becomes easy-to-understand for you and other users.
@@ -29,10 +28,14 @@ By following the recommendations in this guide your code becomes easy-to-underst
 ** *Tab size: 4*
 ** *Insert spaces*
 
+TIP: For support in Visual Studio Code, see xref:tool-specific/Recommended-VSCode-Settings.adoc#Indentations[Indentations].
+
 === Encoding
 * Use *UTF-8* as encoding.
 
 === Whitespace
+
+TIP: For support in Visual Studio Code, see xref:tool-specific/Recommended-VSCode-Settings.adoc#_automatic_removal_of_spaces_after_periods[Automatic Whitespace Removal].
 
 Whitespace characters provide better readability when used in the correct places.
 
@@ -70,8 +73,9 @@ swerve_story: serial:
         keep_speed()
     with:
         until (top.time > 5sec)
-----
 
+----
+// TODO: line with "until ()" is incorrect
 
 === Comments
 
@@ -264,10 +268,10 @@ scenario slower_large_vehicle_in_adjacent_lane
 
 == Related topics
 
-* If you cannot find a recommendation for your source code formatting or naming problem in this document, follow the https://www.python.org/dev/peps/pep-0008/[Style Guide for Python Code (PEP 8)].
-* For more information about creating documentation with adoc-topics check out the https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/writing_guide.adoc[Writing guide].
+* If you cannot find a recommendation for your source code formatting or naming problem in this document, follow the https://www.python.org/dev/peps/pep-0008/[Style Guide for Python Code (PEP 8)^].
+* For more information about creating documentation with adoc-topics check out the xref:writing_guidelines/writing_guide.adoc[writing guide].
 
 
 == Contact information
 
-If you have any questions and/or suggestions concerning this coding style guide for OpenSCENARIO 2 please contact andreas.muetsch@dxc.com.
+If you have any questions and/or suggestions concerning this coding style guide for OpenSCENARIO 2, please contact andreas.muetsch@dxc.com.

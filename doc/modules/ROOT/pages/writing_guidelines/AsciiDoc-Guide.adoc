@@ -5,7 +5,7 @@
 :linkattrs:
 
 [.lead]
-All ASAM OpenX Standards are written using the Asciidoc format https://asciidoc.org/[asciidoc Homepage]. AsciiDoc is a mature, plain-text writing format for authoring notes, articles, documentation, books, ebooks, web pages, slide decks, blog posts, man pages and more.
+All ASAM OpenX Standards are written using the Asciidoc format https://asciidoc.org/[asciidoc Homepage^]. AsciiDoc is a mature, plain-text writing format for authoring notes, articles, documentation, books, ebooks, web pages, slide decks, blog posts, man pages and more.
 
 
 You write an AsciiDoc document the same way you would write a normal text document. There are no markup tags or weird format notations. AsciiDoc files are designed to be viewed, edited and printed directly or translated to other presentation formats.
@@ -20,8 +20,8 @@ You write an AsciiDoc document the same way you would write a normal text docume
 
 The content of this page is intended to provide a quick overview of the most-used features of the language. See the links below for more detail
 
-* https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Quick reference]
-* https://asciidoctor.org/docs/user-manual/[User manual]
+* https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Quick reference^]
+* https://asciidoctor.org/docs/user-manual/[User manual^]
 
 
 
@@ -238,20 +238,23 @@ Then the full search path is
 {projectroot}/images/subdirectory/filename.png
 ....
 
-== Images with links
+
+=== Images with links
 
 You can add a link to an image so it acts like a "button."
 
 
 *Syntax*
 
-Use the following syntax when adding your image:
+Use one of the following syntax when adding your image:
 
 ....
 image:<file_name>.<ext>[alt=<text>,link=<url>,window=_blank]
+xref:path-to-file/file.adoc[image:<file_name>.<ext>[alt=<text>]<Link name>^]
+<url>[image:<file_name>.<ext>[alt=<text>]<Link name>^]
 ....
 
-"window=_blank" opens the link in a new browser tab (or window).
+"window=_blank" opens the link in a new browser tab (or window). The addition of "^" at the end of the link name does the same in a shorthand version.
 
 For example:
 
@@ -296,7 +299,7 @@ The syntax that you should use depends on what you're linking to:
 |===
 |
 ....
-https://ww.url.com[link text^]
+https://www.url.com[link text^]
 ....
 |https://www.url.com[link text^]
 |===
@@ -353,10 +356,24 @@ I want an anchor [[anchorlabel]]
 Then I make a <<anchorlabel, link>> to it
 |===
 
+=== Link to another page in the docs
 
-== Notes, tips, etc.
+[cols="a,a"]
+|===
+|
+....
+xref:writing_guidelines/AsciiDoc-Guide.adoc[link text for inline macro]
+xref::writing_guidelines/AsciiDoc-Guide.adoc[link text for macro]
+....
+|xref:writing_guidelines/AsciiDoc-Guide.adoc[link text for inline macro]
+xref::writing_guidelines/AsciiDoc-Guide.adoc[link text for macro]
+|===
 
-You might want to draw attention to certain statements by creating notes or tips. Format them as follows:
+TIP: Use the inline macro when you add text before and/or after the macro. Otherwise, use the standard macro.
+
+== Admonitions: Notes, tips, etc.
+
+You might want to draw attention to certain statements by creating notes or tips - so-called admonitions. Format them as follows:
 
 ....
 NOTE: text
@@ -369,6 +386,38 @@ CAUTION: text
 
 WARNING: text
 ....
+
+If your admonition is longer, use the extended form:
+
+....
+[NOTE]
+====
+text
+====
+
+[TIP]
+====
+text
+====
+
+[IMPORTANT]
+====
+text
+====
+
+[CAUTION]
+====
+text
+====
+
+[WARNING]
+====
+text
+====
+....
+
+
+
 
 Use each of these sparingly. You don't want to create pages that are full of notes and tips. They become less meaningful if you do.
 
@@ -386,6 +435,7 @@ WARNING: And this is a warning that informs of danger or harm. This one should b
 
 
 If you're authoring new content, you'll want to review this section for some nitty-gritty details.
+
 
 == Document headers
 

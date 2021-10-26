@@ -2,7 +2,6 @@
 
 = PlantUML documentation guide
 :numbered:
-:toc: preamble
 
 This guide shows how to add documentation comments (short: _adoc-comments_) to plantuml-files.
 These adoc-comments are used by the UML2adoc script to generate documentation fragments.
@@ -14,7 +13,9 @@ These adoc-comments are used by the UML2adoc script to generate documentation fr
 * Put adoc-comments *after* the *element* the comment belongs to.
 * Please do not use standard apostrophes (') inside your comment as this is the comment marker used by plantuml. Use quotation marks (") or acute accents (´) instead.
 
+
 == Types of documentation comments
+
 === Simple comment `#/'adoc# <text> #'/#`
 
 * A standard adoc-documentation of an element.
@@ -31,6 +32,7 @@ enum Example_enum {
 
 }
 ----
+
 
 === Basic comment `#/'adoc-basic# <keyword>: <text> #`'/#`
 
@@ -62,13 +64,12 @@ Path to an adoc-fragment with implementation details.
 If found, this fragment is added after the description tables. +
 Works best with paths relative to the adoc-output directory.
 
-
 * The information forms the basic information table in the fragment.
 * Information about *inheritance, composition, aggregation and connection* is automatically retrieved.
 
-
 [#code-osc2-plantuml-documentation-example-basic]
-.Example
+.Basic comments
+====
 ----
 class child_class {
     /'adoc-basic instantiable: no'/
@@ -83,9 +84,9 @@ class child_class {
 
 }
 ----
+====
 
-* _Note:_ If the inheritance relationship between elements is expressed in the plantuml using `<|--`  or `<|..` the keyword *parent* is not needed.
-
+* _Note:_ If the inheritance relationship between elements is expressed in the plantuml using `<|--`  or `<|..`, the keyword *parent* is not needed.
 
 
 === Property comment `#/'adoc-property# <type>;<card.>;<desc.> #'/#`
@@ -98,13 +99,16 @@ class child_class {
 * The information forms the table of properties.
 
 [#code-osc2-plantuml-documentation-example-property]
-.Example
+.Properties comments
+====
 ----
 class thing {
     center  /'adoc-property double;1..1;Geometrical center '/
     length  /'adoc-property double;1..1;Dimension in x-direction '/
 }
 ----
+====
+
 
 === State comment `#/'adoc-state# <state>: <type>;<card.>;<desc.>  #'/#`
 * Used to document the *states* of a class.
@@ -115,7 +119,8 @@ class thing {
 * The information forms the table of states in the fragment.
 
 [#code-osc2-plantuml-documentation-example-state]
-.Example
+.State comments
+====
 ----
 class another_class {
 
@@ -123,6 +128,8 @@ class another_class {
     /'adoc-state position: double;1..1;The position '/
 }
 ----
+====
+
 
 === Method comment `#/'adoc-method# <method_fragment.adoc> #'/#`
 
@@ -130,12 +137,15 @@ class another_class {
 * Fragment with detailed description, like return value and arguments.
 
 [#code-osc2-plantuml-documentation-example-method]
-.Example
+.Method comments
+====
 ----
 class yet_another_class {
     do_something()  /'adoc-method ./path/to/fragment/thing_do_something.adoc '/
 }
 ----
+====
+
 
 === Modifier comment `#/'adoc-modifier# <modifier_fragment.adoc> #'/#`
 
@@ -143,12 +153,15 @@ class yet_another_class {
 * Fragment with detailed description, like description and parameters.
 
 [#code-osc2-plantuml-documentation-example-modifier]
-.Example
+.Modifier comments
+====
 ----
 class and_another_class {
     modify_xy()  /'adoc-modifier ./path/to/fragment/thing_modify_xy.adoc '/
 }
 ----
+====
+
 
 == Workflow
 
@@ -161,12 +174,14 @@ Follow these steps to add documentation:
 
 The pipeline then runs the script and adoc fragments are created automatically.
 
+
 === Excluding files with `#/'adoc-fileignore`'/#`
 
 If you want to exclude a uml-file from being analyzed, insert `+/'adoc-fileignore'/+` at the beginning of the uml-file.
 
 [#code-osc2-plantuml-documentation-example-ignore]
-.Example
+.Exculding files
+====
 ----
 @startuml foo
 /'adoc-fileignore'/
@@ -175,10 +190,13 @@ class bar {
 }
 @enduml
 ----
+====
+
 === Checking adoc-fragments
 
 If you want to check the content of the created fragments, you can download them as a pipeline artifact.
 Depending on which Gitlab page you are using you can find the artifacts at different places.
+
 
 ==== Pipeline CI page
 
@@ -199,9 +217,11 @@ Use the download option on the page of the merge request.
 [.thumb]
 image::artifact_download_mr.png[where to download the artifacts on the MR page]
 
+
 === Using adoc fragments
 
 Once the fragments are available in the pipeline you can use the anchors to link to specific parts or you can include the fragments in your adoc documents.
+
 
 ==== Linking to adoc fragments
 
@@ -231,13 +251,9 @@ You can make the adoc-fragment part of your adoc-topic by including it using the
 
 ```
  include::./path/to/fragments/fragment_name.adoc[]
-
 ```
 
 This way the whole fragment appears as if it was copied into your topic.
 
 * The name of the fragment is +
 `<plantuml_name>_<element_type>_<element_name>.adoc`
-
-
-

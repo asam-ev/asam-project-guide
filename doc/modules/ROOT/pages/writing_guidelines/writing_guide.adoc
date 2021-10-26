@@ -1,7 +1,6 @@
 [#top-osc2-writing-guide]
 = Writing guide
 :numbered:
-:toc: preamble
 
 This guide is intended to help you writing content for ASAM projects.
 It provides you a set of hints and rules that make it easier to contribute concise and homogeneous content and documents to the projects.
@@ -201,7 +200,7 @@ Use them to create consistent content.
 
 === Uppercase and lowercase
 
-* In headings and captions only the *first word* begins with an uppercase letter (sentence-style capitalization).
+* In headings and captions, only the *first word* begins with an uppercase letter (sentence-style capitalization).
 * _Exception_: *Acronyms* and *proper names* are spelled as is.
 
 [#tab-osc2-writing-guide-headings]
@@ -254,7 +253,7 @@ Use them to create consistent content.
 
 * All topics, figures, tables and code examples shall have a unique tag.
 * Sections may also have a tag if a link to the section is needed.
-* _Note:_ If you can not come up with a document-wide unique id, just add `[#tag-uid]`.
+* _Note:_ If you cannot come up with a document-wide unique id, just add `[#tag-uid]`.
 This triggers a pipeline warning and the technical writer can help you.
 
 ```
@@ -265,6 +264,8 @@ Examples:
 [#code-uid]
 [#sec-uid]
 ```
+
+TIP: You can generate a UUID using a generator like https://www.uuidgenerator.net/.
 
 === Non-normative sections
 
@@ -383,12 +384,12 @@ Figures, like pictures or drawings, may be used to illustrate complex facts.
 ```
 [#fig-uuid]
 .This is the caption of the figure
-image::../images/logo.png[an alternative text]
+image::logo.png[an alternative text]
 ```
 
 [#fig-uuid]
 .This is the caption of the figure
-image::../images/logo.png[an alternative text]
+image::logo.png[an alternative text]
 
 === Tables
 
@@ -498,7 +499,7 @@ In this example, the tag is named `exampleInclude`.
 .ASAM example code block included by tags    <2>
 [source, osc2]    <3>
 ----    <4>
-include::{examplesdir}/examplecode.js[tags=exampleInclude]    <5>
+include::<path-to-file>/examplecode.js[tags=exampleInclude]    <5>
 ----    <6>
 ....
 
@@ -511,7 +512,7 @@ For example, `osc2`, `xml`, or `java`.
 <5> Directly include the source code within the source code file with a tag marking fragment.
 <6> Insert a code block delimiter.
 
-NOTE: For more information see the https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/[Asciidoctor reference].
+NOTE: For more information see the https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/[Asciidoctor reference^].
 
 ==== Result
 
@@ -650,7 +651,7 @@ You can easily switch off the preview and view the source content by clicking on
 
 [#fig-osc2-writing-guide-source-view]
 .How to switch to source-view in Gitlab
-image::../images/source_view.png[Source view icon location]
+image::source_view.png[Source view icon location]
 The icon next to it switches back to the preview.
 
 
