@@ -13,7 +13,7 @@
 :project-guidelines: {general-uri}ProjectGuidelines.adoc
 :meeting-guidelines: {general-uri}Meeting-Guidelines.adoc
 :writing-guidelines: {general-uri}WritingGuidelines.adoc
-:gitlab-guide: {git-uri}GitLabGuide.adoc
+:gitlab-guide: {tools-uri}GitLab-IDE-Guide.adoc
 :git-guide: {git-uri}An-Introduction-to-Git.adoc
 :vscode-guide: {tools-uri}VSCode-Guide.adoc
 :drawio-guide: {tools-uri}DrawIOGuide.adoc
