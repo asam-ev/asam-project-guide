@@ -3,4 +3,10 @@ title: ASAM Project Guide
 version: baseline
 start_page: ROOT:home.adoc
 nav:
-- modules/ROOT/nav.adoc
+- modules/ROOT/nav_intro.adoc
+- modules/ROOT/nav_processes.adoc
+- modules/ROOT/nav_roles.adoc
+- modules/ROOT/nav_project.adoc
+- modules/ROOT/nav_tools.adoc
+- modules/ROOT/nav_definitions.adoc
+- modules/ROOT/nav_guide.adoc

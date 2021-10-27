@@ -1,0 +1,24 @@
+* Tools And Scripts
+** xref:general_guidelines/ToolsOverview.adoc[Tools Overview]
+*** Docker
+**** Setup
+**** Specific steps
+**** Best Practices
+**** Further informationt
+*** Git
+**** Setup
+**** Specific steps
+**** Best Practices
+**** Further informationt
+*** VSCode
+**** Setup
+**** Specific steps
+**** Best Practices
+**** Further informationt
+*** Draw.io
+**** Setup
+**** Specific steps
+**** Best Practices
+**** Further informationt
+** Scripts
+*** tbd
