@@ -1,6 +1,6 @@
 name: asamprojectguide
 title: ASAM Project Guide
-version: baseline
+version: Structure_Test
 start_page: ROOT:home.adoc
 nav:
 - modules/ROOT/nav_intro.adoc
