@@ -1,4 +1,4 @@
-* Kompendium
+* Compendium
 ** Definitions
 *** Definition 1
 *** Definition 2

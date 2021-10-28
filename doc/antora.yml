@@ -3,10 +3,10 @@ title: ASAM Project Guide
 version: Structure_Test
 start_page: ROOT:home.adoc
 nav:
-- modules/ROOT/nav_intro.adoc
-- modules/ROOT/nav_processes.adoc
-- modules/ROOT/nav_roles.adoc
-- modules/ROOT/nav_project.adoc
-- modules/ROOT/nav_tools.adoc
-- modules/ROOT/nav_definitions.adoc
-- modules/ROOT/nav_guide.adoc
+- modules/getting-started/nav.adoc
+- modules/handbook/nav.adoc
+- modules/role-specific/nav.adoc
+- modules/open-/nav.adoc
+- modules/tooling/nav.adoc
+- modules/definitions/nav.adoc
+- modules/project-guide/nav.adoc

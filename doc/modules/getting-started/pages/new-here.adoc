@@ -1,0 +1,8 @@
+= New Here?
+
+Welcome :)
+
+This page gives instructions for those new here and tries to guide them through everything to make the onboarding as smooth as possible.
+
+// TODO
+

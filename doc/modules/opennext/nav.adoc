@@ -1,4 +1,4 @@
-* Project OpenNEXT
+* Project **__OpenNEXT__**
 ** Timelines And Milestones
 ** Responsibilities
 ** OpenNEXT Project Roles
