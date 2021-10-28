@@ -49,7 +49,7 @@ def main(argv):
 
         for f in filenames:
             for type in filetypes:
-                if f.endswith(type) and not f[0]=="_":
+                if f.endswith(type) and not f[0]=="_" and not f in [x+".adoc" for x in dirnames]:
                     list_entries.append(f)
                     break
 
@@ -66,20 +66,26 @@ def main(argv):
             for c in path_components[:-2]:
                 parent_path+=c+"/"
 
-            print(parent_path+path_components[-2]+".adoc")
             with open(parent_path+path_components[-2]+".adoc","a") as f:
                 for e in list_entries:
-                    content =  " xref:" + current_relative_path + e + "[]\n"
+                    content =  " xref:" + current_relative_path.replace("\\","/") + e + "[]\n"
                     temp_nav_content += "*"*current_level + content
                     f.write("* "+content)
 
             index = nav_content.find(path_components[-2]+".adoc[]\n") + len(path_components[-2]+".adoc[]\n")
             nav_content = nav_content[:index] + temp_nav_content + nav_content[index:]
 
-    print(nav_content)
+    # print(nav_content)
+    target = path[:path.rfind("/pages",1)]+"/"
+    print(target)
+    with open(target+"nav.adoc","w") as file:
+        file.write(nav_content)
 
-    for f in created_files:
-        os.remove(f)
+
+    # Note: This is where antora would create the htmls before this script removes the created files again. Alternatively, the files could stay there and not be deleted, just overwritten every time the script is run...
+
+    # for f in created_files:
+    #     os.remove(f)
 
 
 if __name__ == "__main__":

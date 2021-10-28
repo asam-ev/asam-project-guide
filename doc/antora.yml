@@ -10,3 +10,4 @@ nav:
 - modules/tooling/nav.adoc
 - modules/definitions/nav.adoc
 - modules/project-guide/nav.adoc
+- modules/ROOT/nav.adoc
