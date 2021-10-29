@@ -3,7 +3,7 @@ Clone:: Done once to obtain a local copy of a remote repository.
 
 Add:: Will add new and changed files to the Staging Area.
 
-Commit:: Save the state of a repository (ideally with a “commit message” that gives some background). This “snapshot” only applies to the local repository. It applies the staging area or, if used with the command '-a', all changes, staged or unstaged.
+Commit:: Save the state of a repository (ideally with a "commit message" that gives some background). This "snapshot" only applies to the local repository. It applies the staging area or, if used with the command '-a', all changes, staged or unstaged.
 
 Push:: Copy the committed changes to the remote.
 
