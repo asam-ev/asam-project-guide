@@ -1,0 +1,11 @@
+= Linking Test
+
+My standard body text.
+
+no problem
+
+
+reference:: antora,home
+
+
+my home town Is :D
