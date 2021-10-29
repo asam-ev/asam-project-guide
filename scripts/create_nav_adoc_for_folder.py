@@ -14,6 +14,10 @@ def main(argv):
     except:
         print("Use '-p <path>' or '--path <path>' to specifiy the path the script shall look into.")
 
+    if not opts:
+        print("Use '-p <path>' or '--path <path>' to specifiy the path the script shall look into.")
+        exit(1)
+
     for opt,arg in opts:
         if opt in ("-p","--path"):
             path = path + arg
