@@ -77,7 +77,6 @@ def main(argv):
 
     # print(nav_content)
     target = path[:path.rfind("/pages",1)]+"/"
-    print(target)
     with open(target+"nav.adoc","w") as file:
         file.write(nav_content)
 
