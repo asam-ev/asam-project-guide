@@ -1,0 +1,9 @@
+= writing_guidelines
+
+== Subpages
+
+*  xref:writing_guidelines/AsciiDoc-Guide.adoc[]
+*  xref:writing_guidelines/Docker-For-Asciidoc.adoc[]
+*  xref:writing_guidelines/coding_style_guide.adoc[]
+*  xref:writing_guidelines/plantuml_documentation_guide.adoc[]
+*  xref:writing_guidelines/writing_guide.adoc[]

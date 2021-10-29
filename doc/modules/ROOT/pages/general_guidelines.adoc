@@ -1,0 +1,19 @@
+= general_guidelines
+
+== Subpages
+
+*  xref:general_guidelines/ASAM-Project-Roles.adoc[]
+*  xref:general_guidelines/Accessing_Compiled_Artifacts.adoc[]
+*  xref:general_guidelines/CloningRepoTutorial.adoc[]
+*  xref:general_guidelines/Getting-Docker.adoc[]
+*  xref:general_guidelines/Meeting-Guidelines.adoc[]
+*  xref:general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[]
+*  xref:general_guidelines/Platforms.adoc[]
+*  xref:general_guidelines/ProjectGuidelines.adoc[]
+*  xref:general_guidelines/Setup-Guide.adoc[]
+*  xref:general_guidelines/Shared-OpenX-Calendar.adoc[]
+*  xref:general_guidelines/ToolsOverview.adoc[]
+*  xref:general_guidelines/WhatIsYaml.adoc[]
+*  xref:general_guidelines/Workflow.adoc[]
+*  xref:general_guidelines/WritingGuidelines.adoc[]
+*  xref:general_guidelines/open-source.adoc[]
