@@ -25,7 +25,9 @@ services:
     command: --stacktrace site.yml
 
   custom-lunr:
-    image: local/antora-lunr:latest
+    build:
+      context: doc\modules\ROOT\assets\attachments\.
+      dockerfile: DOCKERFILE.custom
     volumes:
       - .:/antora
     # entrypoint:  --stacktrace antora-playbook.yml
