@@ -150,3 +150,23 @@ git submodule set-url <Submodule Name> <New Git url to .git file>
 git submodule set-url "ASAM Standard Template" https://code.asam.net/common/templates/standard-template.git
 ----
 ====
+
+TIP: Don't forget to check out the changed submodule after remote has been changed and add the changes made to .gitmodules and the pulled submodule.
+
+.Full example for changing a submodule (for asciidoc-resources)
+====
+[source,git]
+----
+git submodule set-url asciidoc-resources git@code.asam.net:common/style-resources.git
+cd .\asciidoc-resources\
+git checkout master
+git pull
+cd ..
+(change .gitmodules for relative pathing for pipeline)
+git add .gitmodules
+git add asciidoc-resources
+git status
+git commit <...>
+git push
+----
+====
