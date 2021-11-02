@@ -1,6 +1,0 @@
-= antora
-
-== Subpages
-
-*  xref:antora/Build-Antora-Locally.adoc[]
-*  xref:antora/Content-Structure.adoc[]

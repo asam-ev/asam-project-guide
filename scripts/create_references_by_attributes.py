@@ -54,8 +54,12 @@ def main(argv):
 
     for afile in found_files[0].reference_macro_occurence_list:
         afile.find_reference_macro(find_and_replace=True)
-        print("NEW:  \n"+"\n".join(afile.content))
+        # print("NEW:  \n"+"\n".join(afile.content))
         # print("OLD:  \n"+"\n".join(afile.original_content))
+
+        afile.write_to_file()
+        afile.revert_reference_macro_substitution()
+        afile.write_to_file(filename=afile.filename+"1")
 
 
 
@@ -181,6 +185,18 @@ class AsciiDocContent:
 
     def revert_reference_macro_substitution(self):
         self.content = copy.deepcopy(self.original_content)
+
+    def write_to_file(self,filename="",path=""):
+        if not filename:
+            filename = self.filename
+
+        if not path:
+            path = self.path
+
+        content = "\n".join(self.content)
+        with open(path+filename,'w') as file:
+            file.write(content)
+
 
 
 class ReferenceNotFound(Exception):

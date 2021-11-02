@@ -1,6 +1,0 @@
-= implementers-forum
-
-== Subpages
-
-*  xref:implementers-forum/Feedback-Guide.adoc[]
-*  xref:implementers-forum/Scenario-Writers-Guide.adoc[]

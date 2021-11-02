@@ -86,9 +86,11 @@ def main(argv):
 
 
     # Note: This is where antora would create the htmls before this script removes the created files again. Alternatively, the files could stay there and not be deleted, just overwritten every time the script is run...
+    # INFO: For now, this is done in a cleanup script afterwards.
 
-    # for f in created_files:
-    #     os.remove(f)
+    for f in created_files:
+        with open(f+"2",'w') as file:
+            file.write("delete!")
 
 
 if __name__ == "__main__":
