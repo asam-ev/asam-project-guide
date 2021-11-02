@@ -145,7 +145,7 @@ class AsciiDocContent:
         self.reference_macro_occurence_list.append((self))
 
     def substitute_reference_macro(self,ref_list,line):
-        reference_start = "== Related Topics"
+        reference_start = "== Related Topics\n\n"
         references = [x.replace(" ","") for x in ref_list.split(",")]
         self.content[line] = reference_start
         self.content.insert(line+1,"")
@@ -159,7 +159,7 @@ class AsciiDocContent:
 
     def _make_reference_replacement_text(self,ref_text,line,offset):
         reference_structure = "* xref:"
-        reference_ending = "[]"
+        reference_ending = "[]\n"
 
         link_text = []
 
@@ -175,7 +175,7 @@ class AsciiDocContent:
                 if link_module_index+2 < len(link_path_parts):
                     path_addition = "/".join(link_path_parts[link_module_index+2:])
 
-                link_text.append(reference_structure+module_addition+path_addition+link[1]+"[]")
+                link_text.append(reference_structure+module_addition+path_addition+link[1]+reference_ending)
 
         except:
             raise ReferenceNotFound(ref_text+" not found in keys: "+self.attributes_dict.keys)
@@ -193,9 +193,8 @@ class AsciiDocContent:
         if not path:
             path = self.path
 
-        content = "\n".join(self.content)
         with open(path+filename,'w') as file:
-            file.write(content)
+            file.writelines(self.content)
 
 
 

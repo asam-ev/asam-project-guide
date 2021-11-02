@@ -1,7 +1,7 @@
-from posixpath import dirname
 import sys, getopt
-import os
+from shutil import copyfile
 from os import walk
+import os
 
 def main(argv):
     parameters = "p:"
@@ -81,6 +81,8 @@ def main(argv):
 
     # print(nav_content)
     target = path[:path.rfind("/pages",1)]+"/"
+    if os.path.isfile(target+"nav.adoc"):
+        copyfile(target+"nav.adoc",target+"nav.adoc1")
     with open(target+"nav.adoc","w") as file:
         file.write(nav_content)
 

@@ -4,9 +4,9 @@ version: Structure_Test
 start_page: ROOT:home.adoc
 nav:
 - modules/getting-started/nav.adoc
-- modules/handbook/nav.adoc
 - modules/role-specific/nav.adoc
-- modules/open-/nav.adoc
+- modules/handbook/nav.adoc
+- modules/opennext/nav.adoc
 - modules/tooling/nav.adoc
 - modules/definitions/nav.adoc
 - modules/project-guide/nav.adoc
