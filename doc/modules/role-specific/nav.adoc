@@ -1,4 +1,4 @@
-* ASAM Roles
+* Role-Specific Instructions
 ** ASAM Offices
 *** Tasks and responsibilities
 *** Suggested Tools
@@ -31,6 +31,11 @@
 *** General Information Links
 ** Service Provider
 *** Tasks and responsibilities
+*** Suggested Tools
+*** Guides
+*** Best Practices
+*** General Information Links
+** Technical Steering Commitee (TSC)
 *** Suggested Tools
 *** Guides
 *** Best Practices

@@ -12,120 +12,119 @@ NOTE: Names and labels are working titles and neither final nor formal.
 ----
 @startmindmap
 + **ASAM Project Guide Structure**
-++ **__Landing Page__: Introductions** (main)
+'tag::first_level[]
+++ **__HOME__**
 +++_ this is the default page; links to all major areas
+++ **Introductions** (main)
++++_ landing page for introductory content and general overview
+'end::first_level[]
 
-+++ New Here?
++++ **New Here?**
 ++++_ this contains linked or specific content for new members/people and gives step-by-step instructions
 
-++++ About this guide
-+++++_ includes the guide overview (or links to it?)
+++++ **How ASAM Works**
++++++_ a short high-level overview over ASAM and how members participate etc.
 
-++++ How ASAM Works (High Level)
-+++++_ a short overview over ASAM and how members participate etc.
-
-++++ Processes And Workflows (High Level)
+++++ **Processes And Workflows - Overview**
 +++++_ a short overview over all major processes + links to their full definition
 
-++++ Roles@ASAM (High Level)
-+++++_ a short overview over all typical roles and a link to the roles landing page
+++++ **ASAM Roles - Overview**
++++++_ a short overview over all typical roles at ASAM and a link to the roles landing page
 
-++++ Standard Tools (Summary)
+++++ **Standard Tools - Overview**
 +++++_ summarizes the standard tools used at and supported by ASAM in their projects and notes that there are more - see roles
 
-++++ Projects Overview (High Level)
+++++ **ASAM Projects - Overview**
 +++++_ overview over what projects there are and links (?) to them
 
-++++ ASAM Contacts
+++++ **ASAM Contacts**
 +++++_ important contacts at ASAM
 
 
-+++ About This Guide
++++ **About This Guide**
 ++++_ this should explain how this guide works
 
-++++ Intentions And Content
+++++ **Intentions And Content**
 +++++_ describes what this guide does and doesn't do and gives an overview over its general structure
 
-++++ Using This Guide
+++++ **Using This Guide**
 +++++_ tips and information on navigating and using this guide, e.g. search feature etc.
 
-++++ Working On The Guide
+++++ **Working On The Guide**
 +++++_ this only gives a brief summary and links to the detailed section
 
 
-+++ Standard Setup
++++ **Standard Setup**
 ++++_ desribes a standard tool and environment setup suited for most roles (TBD!) and gives a short usage example/desription
 
-++++ MS Teams
+++++ **MS Teams**
 +++++_ setup of teams and link to tutorials
 
-++++ Sharepoint
+++++ **Sharepoint**
 +++++_ setup of sharepoint, core instructions on how to use it (what for and what not) and link to guidelines and tutorials
 
-++++ Docker
+++++ **Docker**
 +++++_ setup of docker and link to getting important images
 
-++++ Git
+++++ **Git**
 +++++_ setup of git and link to further tutorials / guidelines
 
-++++ VSCode
+++++ **VSCode**
 +++++_ setup of VSCode and link to further tutorials / guidelines
 
-
-++ __Landing Page__: General Project Processes
+'tag::first_level[]
+++ **General Project Processes**
 +++_ contains all important processes used by ASAM and in their projects
+'end::first_level[]
++++ **Standard Development Processes**
 
-+++ Standard Development
++++ **Working Model (workgroups)**
 
-+++ Working Model (workgroups)
++++ **Issue-driven Workflow**
 
-+++ Issue-driven Workflow
++++ **Review, Release**
 
-+++ Review, Release
++++ **ASAM Deliverables**
 
-+++ ASAM Deliverables
-
-
-++ __Landing Page__: Role Knowledge
+'tag::first_level[]
+++ **Role Knowledge**
 +++_ this page contains the role definitions and links to role definitions
-
-+++ Role-specific Content
+'end::first_level[]
++++ **Role-specific Content**
 ++++_ one for each role; each follows the same basic structure and contains a summary of the role
 
-++++ Suggested Tooling
+++++ **Suggested Tooling**
 
-++++ Guides
+++++ **Guides**
 
-++++ Best Practices
+++++ **Best Practices**
 
-++++ Linked General Information
+++++ **Linked General Information**
 
-
-++ __Landing Page__: Project Content
-+++_ ideally, this is handled directly in the respective repository. **Alternatively, all documentation is done in the Project Guide on a branch.**
+'tag::first_level[]
+++ **Project Content**
++++_ ideally, this is handled directly in the respective repository. **Alternatively, all documentation is done in the Project Guide on a branch.** It should contain a starting site (directly accessed through "Project Content") that links to other pages in the project as well as collects important links, project members (?) etc.
 
 +++_ separate module per project
+'end::first_level[]
++++ **Timelines And Milestones**
 
-+++ Timelines And Milestones
++++ **Specific Project Roles**
 
-+++ Responsibilities
++++ **Specific Definitions**
 
-+++ Specific Project Roles
++++ **Specific Tutorials**
 
-+++ Specific Definitions
++++ **Specific Processes And Workflows**
 
-+++ Specific Tutorials
++++ **Specific Tool Configurations**
 
-+++ Specific Processes And Workflows
++++ **Project Content Explanations / Examples**
 
-+++ Specific Tool Configurations
-
-+++ Project Content Explanations / Examples
-
-
-++ __Landing Page__: Tools
+'tag::first_level[]
+++ **Tools & Scripts**
 +++_ contains all information in full on tools
-
+'end::first_level[]
 +++ Tool main page
 ++++_ each tool has its own main page and the same basic architecture, with some alterations
 
@@ -137,29 +136,39 @@ NOTE: Names and labels are working titles and neither final nor formal.
 
 ++++ Links to further guidelines, tools etc.
 
-
-++ __Landing Page__: Kompendium
+'tag::first_level[]
+++ **Compendium**
 +++_ this contains all definitions in their original file. pages may include (parts) of them where needed, e.g. for roles and tutorials
++++_ TBD: Join with ASAM Project Handbook?
+'end::first_level[]
++++ **Processes And Workflows**
+++++_ all processes and workflows go here, either linked automatically or manually (TBD)
 
-+++ Definitions
-++++_ all definitions, wording etc. go here
++++ **Definitions**
+++++_ all definitions, wording etc. go here, linked automatically
 
-+++ Processes And Workflows
-++++_ all processes and workflows go here
++++ **Abbreviations**
+++++_ contains a list of typical abbreviations, ideally can be reused in projects etc.
 
+'tag::first_level[]
+++ **HOW-TOs For Typical Tasks**
++++_ this contains tutorials and how-tos on specific tasks, described in pages framed as questions
+'end::first_level[]
++++_ all content is linked from other tutorials and pages
++++_ no pages are directly linked in the navbar, but all are automatically added by the reference macro
 
-++ __Landing Page__: Working On The Guide
+'tag::first_level[]
+++ **Working On The Guide**
 +++_ this contains tutorials, definitions, and guidelines for working on this specification
+'end::first_level[]
 
-+++ Editing content
++++ **Editing Content**
 
-+++ Adding pages
++++ **Adding Pages**
 
-+++ Adding images, examples ...
++++ **Adding Images, Examples ...**
 
-+++ Adding a new project
-
-+++ Working in branches
++++ **Working With Projects**
 
 +++ ...
 
@@ -167,6 +176,15 @@ NOTE: Names and labels are working titles and neither final nor formal.
 -- Re-usable Partials
 --- ASAM Role Definitions
 --- ASAM Contacts
+
+legend right
+    * **Page in navigation bar (linked)**
+    * __**Header in navigation bar (unlinked)**__
+    * Page without entry in navigation bar
+    * __descriptive text__
+
+end legend
+
 @endmindmap
 ----
 

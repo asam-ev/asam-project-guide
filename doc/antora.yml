@@ -5,9 +5,10 @@ start_page: ROOT:home.adoc
 nav:
 - modules/getting-started/nav.adoc
 - modules/role-specific/nav.adoc
-- modules/handbook/nav.adoc
 - modules/opennext/nav.adoc
+- modules/handbook/nav.adoc
 - modules/tooling/nav.adoc
-- modules/definitions/nav.adoc
+- modules/compendium/nav.adoc
+- modules/tasks/nav.adoc
 - modules/project-guide/nav.adoc
 - modules/ROOT/nav.adoc
