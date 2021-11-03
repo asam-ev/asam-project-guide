@@ -2,6 +2,5 @@
 ** Editing Content
 ** Adding Pages
 ** Images And Examples
-** Adding A New Project
-** Working In Branches
+** Working With Projects
 ** Further Links

@@ -21,4 +21,8 @@
 **** Best Practices
 **** Further informationt
 ** Scripts
+*** build.py
+**** Using build.py
+**** build.py attributes and config
+** CI/CD
 *** tbd
