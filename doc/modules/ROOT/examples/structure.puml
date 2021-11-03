@@ -1,0 +1,293 @@
+'tag::standard[]
+@startmindmap
++ **ASAM Project Guide Structure**
+'end::standard[]
+'tag::first_level[]
+++ **__HOME__**
+'tag::comment[]
++++_ this is the default page; links to all major areas
+'end::comment[]
+
+'tag::introductions[]
+++ **Introductions** (main)
+'tag::comment[]
++++_ landing page for introductory content and general overview
+'end::comment[]
+'end::first_level[]
+
+
++++ **New Here?**
+'tag::comment[]
+++++_ this contains linked or specific content for new members/people and gives step-by-step instructions
+'end::comment[]
+
+++++ **How ASAM Works**
+'tag::comment[]
++++++_ a short high-level overview over ASAM and how members participate etc.
+'end::comment[]
+
+++++ **Processes And Workflows - Overview**
+'tag::comment[]
++++++_ a short overview over all major processes + links to their full definition
+'end::comment[]
+
+++++ **ASAM Roles - Overview**
+'tag::comment[]
++++++_ a short overview over all typical roles at ASAM and a link to the roles landing page
+'end::comment[]
+
+++++ **Standard Tools - Overview**
+'tag::comment[]
++++++_ summarizes the standard tools used at and supported by ASAM in their projects and notes that there are more - see roles
+'end::comment[]
+
+++++ **ASAM Projects - Overview**
+'tag::comment[]
++++++_ overview over what projects there are and links (?) to them
+'end::comment[]
+
+++++ **ASAM Contacts**
+'tag::comment[]
++++++_ important contacts at ASAM
+'end::comment[]
+
+
++++ **About This Guide**
+'tag::comment[]
+++++_ this should explain how this guide works
+'end::comment[]
+
+++++ **Intentions And Content**
+'tag::comment[]
++++++_ describes what this guide does and doesn't do and gives an overview over its general structure
+'end::comment[]
+
+++++ **Using This Guide**
+'tag::comment[]
++++++_ tips and information on navigating and using this guide, e.g. search feature etc.
+'end::comment[]
+
+++++ **Working On The Guide**
+'tag::comment[]
++++++_ this only gives a brief summary and links to the detailed section
+'end::comment[]
+
+
++++ **Quick Setup**
+'tag::comment[]
+++++_ desribes a standard tool and environment setup suited for most roles (TBD!) and gives a short usage example/desription
+'end::comment[]
+
+++++ **Microsoft Teams**
+'tag::comment[]
++++++_ setup of teams and link to tutorials
+'end::comment[]
+
+++++ **Sharepoint**
+'tag::comment[]
++++++_ setup of sharepoint, core instructions on how to use it (what for and what not) and link to guidelines and tutorials
+'end::comment[]
+
+++++ **Docker**
+'tag::comment[]
++++++_ setup of docker and link to getting important images
+'end::comment[]
+
+++++ **Git**
+'tag::comment[]
++++++_ setup of git and link to further tutorials / guidelines
+'end::comment[]
+
+++++ **Visual Studio Code**
+'tag::comment[]
++++++_ setup of VSCode and link to further tutorials / guidelines
+'end::comment[]
+'end::introductions[]
+
+'tag::roles[]
+'tag::first_level[]
+++ **Role-Specific Instructions**
+'tag::comment[]
++++_ this page contains the role definitions and links to role definitions
+'end::comment[]
+'end::first_level[]
+
++++ **Role-specific Content**
+'tag::comment[]
+++++_ one for each role; each follows the same basic structure and contains a summary of the role
+'end::comment[]
+
+++++ **Tasks And Responsibilities**
+
+++++ **Suggested Tools**
+
+++++ **Guides**
+
+++++ **Best Practices**
+
+++++ **General Information Links**
+'end::roles[]
+
+'tag::project[]
+'tag::first_level[]
+++ **Project Content**
+'tag::comment[]
++++_ ideally, this is handled directly in the respective repository. **Alternatively, all documentation is done in the Project Guide on a branch.** It should contain a starting site (directly accessed through "Project Content") that links to other pages in the project as well as collects important links, project members (?) etc.
++++_ separate module per project
+'end::comment[]
+'end::first_level[]
++++ **Timelines And Milestones**
+
++++ **Specific Project Roles**
+
++++ **Specific Definitions**
+
++++ **Specific Tutorials**
+
++++ **Specific Processes And Workflows**
+
++++ **Specific Tool Configurations**
+
++++ **Project Content Explanations**
+
++++ **Examples**
+'end::project[]
+
+'tag::general_project_processes[]
+'tag::first_level[]
+++ **ASAM Project Handbook**
+'tag::comment[]
++++_ contains all important processes used by ASAM and in their projects
+'end::comment[]
+'end::first_level[]
++++ **Standard Development Processes**
+
++++ **Working Model (workgroups)**
+
++++ **Issue-driven Workflow**
+
++++ **Reviews and Releases**
+
++++ **ASAM Deliverables**
+'end::general_project_processes[]
+
+'tag::tools[]
+'tag::first_level[]
+++ **Tools & Scripts**
+'tag::comment[]
++++_ contains all information in full on tools
+'end::comment[]
+'end::first_level[]
++++ Tools Overview
+'tag::comment[]
+++++_ lists all tools that are covered
+'end::comment[]
+
+++++ Tool main page
+'tag::comment[]
++++++_ each tool has its own main page and the same basic architecture, with some alterations
+'end::comment[]
+
++++++ General Setup (mandatory steps)
+
++++++ Additional setup steps (optional and recommended)
+
++++++ Using the tool
+
++++++ Links to further guidelines, tools etc.
+
++++ Scripts Overview
+'tag::comment[]
+++++_ lists all scripts that are covered
+'end::comment[]
+
+++++ Script page
+'tag::comment[]
++++++_ each script has its own page
+'end::comment[]
+
++++++ Using the script
+
++++++ Commands And Attributes
+
++++ CI/CD Overview
+'tag::comment[]
+++++_ describes pipelines etc; same structure for each pipeline
+'end::comment[]
+
+++++ Pipeline main page
+'tag::comment[]
++++++_ each pipeline has its own main page and the same basic architecture, with some alterations
+'end::comment[]
+'end::tools[]
+
+'tag::compendium[]
+'tag::first_level[]
+++ **Compendium**
+'tag::comment[]
++++_ this contains all definitions in their original file. pages may include (parts) of them where needed, e.g. for roles and tutorials
++++_ TBD: Join with ASAM Project Handbook?
+'end::comment[]
+'end::first_level[]
+
++++ **Processes And Workflows**
+'tag::comment[]
+++++_ all processes and workflows go here, either linked automatically or manually (TBD)
+'end::comment[]
+
++++ **Definitions**
+'tag::comment[]
+++++_ all definitions, wording etc. go here, linked automatically
+'end::comment[]
+
++++ **Abbreviations**
+'tag::comment[]
+++++_ contains a list of typical abbreviations, ideally can be reused in projects etc.
+'end::comment[]
+'end::compendium[]
+
+'tag::how_to[]
+'tag::first_level[]
+++ **HOW-TOs For Typical Tasks**
+'tag::comment[]
++++_ this contains tutorials and how-tos on specific tasks, described in pages framed as questions
+'end::comment[]
++++_ all content is linked from other tutorials and pages
++++_ no pages are directly linked in the navbar, but all are automatically added by the reference macro
+'end::comment[]
+'end::first_level[]
+'end::how_to[]
+
+'tag::project_guide[]
+'tag::first_level[]
+++ **Working On The Project Guide**
+'tag::comment[]
++++_ this contains tutorials, definitions, and guidelines for working on this specification
+'end::comment[]
+'end::first_level[]
+
++++ **Editing Content**
+
++++ **Adding Pages**
+
++++ **Images & Examples**
+
++++ **Working With Projects**
+
++++ Further Links
+'end::project_guide[]
+
+-- Re-usable Partials
+--- ASAM Role Definitions
+--- ASAM Contacts
+'tag::standard[]
+legend right
+    * **Page in navigation bar (linked)**
+    * __**Header in navigation bar (unlinked)**__
+    * Page without entry in navigation bar
+    * __descriptive text__
+
+end legend
+
+@endmindmap
+'end::standard[]

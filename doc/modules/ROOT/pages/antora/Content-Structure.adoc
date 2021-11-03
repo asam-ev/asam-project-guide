@@ -10,183 +10,66 @@ NOTE: Names and labels are working titles and neither final nor formal.
 .Document Structure - Concept
 [plantuml,mindmap2,svg]
 ----
-@startmindmap
-+ **ASAM Project Guide Structure**
-'tag::first_level[]
-++ **__HOME__**
-+++_ this is the default page; links to all major areas
-++ **Introductions** (main)
-+++_ landing page for introductory content and general overview
-'end::first_level[]
-
-+++ **New Here?**
-++++_ this contains linked or specific content for new members/people and gives step-by-step instructions
-
-++++ **How ASAM Works**
-+++++_ a short high-level overview over ASAM and how members participate etc.
-
-++++ **Processes And Workflows - Overview**
-+++++_ a short overview over all major processes + links to their full definition
-
-++++ **ASAM Roles - Overview**
-+++++_ a short overview over all typical roles at ASAM and a link to the roles landing page
-
-++++ **Standard Tools - Overview**
-+++++_ summarizes the standard tools used at and supported by ASAM in their projects and notes that there are more - see roles
-
-++++ **ASAM Projects - Overview**
-+++++_ overview over what projects there are and links (?) to them
-
-++++ **ASAM Contacts**
-+++++_ important contacts at ASAM
-
-
-+++ **About This Guide**
-++++_ this should explain how this guide works
-
-++++ **Intentions And Content**
-+++++_ describes what this guide does and doesn't do and gives an overview over its general structure
-
-++++ **Using This Guide**
-+++++_ tips and information on navigating and using this guide, e.g. search feature etc.
-
-++++ **Working On The Guide**
-+++++_ this only gives a brief summary and links to the detailed section
-
-
-+++ **Standard Setup**
-++++_ desribes a standard tool and environment setup suited for most roles (TBD!) and gives a short usage example/desription
-
-++++ **MS Teams**
-+++++_ setup of teams and link to tutorials
-
-++++ **Sharepoint**
-+++++_ setup of sharepoint, core instructions on how to use it (what for and what not) and link to guidelines and tutorials
-
-++++ **Docker**
-+++++_ setup of docker and link to getting important images
-
-++++ **Git**
-+++++_ setup of git and link to further tutorials / guidelines
-
-++++ **VSCode**
-+++++_ setup of VSCode and link to further tutorials / guidelines
-
-'tag::first_level[]
-++ **General Project Processes**
-+++_ contains all important processes used by ASAM and in their projects
-'end::first_level[]
-+++ **Standard Development Processes**
-
-+++ **Working Model (workgroups)**
-
-+++ **Issue-driven Workflow**
-
-+++ **Review, Release**
-
-+++ **ASAM Deliverables**
-
-'tag::first_level[]
-++ **Role Knowledge**
-+++_ this page contains the role definitions and links to role definitions
-'end::first_level[]
-+++ **Role-specific Content**
-++++_ one for each role; each follows the same basic structure and contains a summary of the role
-
-++++ **Suggested Tooling**
-
-++++ **Guides**
-
-++++ **Best Practices**
-
-++++ **Linked General Information**
-
-'tag::first_level[]
-++ **Project Content**
-+++_ ideally, this is handled directly in the respective repository. **Alternatively, all documentation is done in the Project Guide on a branch.** It should contain a starting site (directly accessed through "Project Content") that links to other pages in the project as well as collects important links, project members (?) etc.
-
-+++_ separate module per project
-'end::first_level[]
-+++ **Timelines And Milestones**
-
-+++ **Specific Project Roles**
-
-+++ **Specific Definitions**
-
-+++ **Specific Tutorials**
-
-+++ **Specific Processes And Workflows**
-
-+++ **Specific Tool Configurations**
-
-+++ **Project Content Explanations / Examples**
-
-'tag::first_level[]
-++ **Tools & Scripts**
-+++_ contains all information in full on tools
-'end::first_level[]
-+++ Tool main page
-++++_ each tool has its own main page and the same basic architecture, with some alterations
-
-++++ General Setup (mandatory steps)
-
-++++ Additional setup steps (optional and recommended)
-
-++++ Using the tool
-
-++++ Links to further guidelines, tools etc.
-
-'tag::first_level[]
-++ **Compendium**
-+++_ this contains all definitions in their original file. pages may include (parts) of them where needed, e.g. for roles and tutorials
-+++_ TBD: Join with ASAM Project Handbook?
-'end::first_level[]
-+++ **Processes And Workflows**
-++++_ all processes and workflows go here, either linked automatically or manually (TBD)
-
-+++ **Definitions**
-++++_ all definitions, wording etc. go here, linked automatically
-
-+++ **Abbreviations**
-++++_ contains a list of typical abbreviations, ideally can be reused in projects etc.
-
-'tag::first_level[]
-++ **HOW-TOs For Typical Tasks**
-+++_ this contains tutorials and how-tos on specific tasks, described in pages framed as questions
-'end::first_level[]
-+++_ all content is linked from other tutorials and pages
-+++_ no pages are directly linked in the navbar, but all are automatically added by the reference macro
-
-'tag::first_level[]
-++ **Working On The Guide**
-+++_ this contains tutorials, definitions, and guidelines for working on this specification
-'end::first_level[]
-
-+++ **Editing Content**
-
-+++ **Adding Pages**
-
-+++ **Adding Images, Examples ...**
-
-+++ **Working With Projects**
-
-+++ ...
-
-
--- Re-usable Partials
---- ASAM Role Definitions
---- ASAM Contacts
-
-legend right
-    * **Page in navigation bar (linked)**
-    * __**Header in navigation bar (unlinked)**__
-    * Page without entry in navigation bar
-    * __descriptive text__
-
-end legend
-
-@endmindmap
+include::example$structure.puml[]
 ----
+
+
+.Document Structure - Level 1
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;first_level]
+----
+
+.Document Structure - Introductions
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;introductions;!comment]
+----
+
+.Document Structure - General Project Processes
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;general_project_processes;!comment]
+----
+
+.Document Structure - Roles
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;roles;!comment]
+----
+
+.Document Structure - Project Handbook
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;project;!comment]
+----
+
+.Document Structure - Tools&Scripts
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;tools;!comment]
+----
+
+.Document Structure - Compendium
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;compendium;!comment]
+----
+
+.Document Structure - How-Tos
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;how_to;!comment]
+----
+
+.Document Structure - Working On Project Guide
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;project_guide;!comment]
+----
+
+
+
 
 .Roles And Tasks - Concept
 [plantuml,mindmap2,svg]

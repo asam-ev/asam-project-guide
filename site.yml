@@ -23,6 +23,8 @@ output:
   dir: ./site
 
 asciidoc:
+  attributes:
+    :plantuml-server-url: http://www.plantuml.com/plantuml
   extensions:
   - asciidoctor-kroki
 #   - asciidoctor-diagram
