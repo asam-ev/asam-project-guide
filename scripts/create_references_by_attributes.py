@@ -74,6 +74,7 @@ class AsciiDocContent:
 
         self.pattern_attr = re.compile("^\s*:keywords:(.*)")
         self.pattern_ref = re.compile("reference::(.*)\n?")
+        self.pattern_keyword_link = re.compile("key-link::(.*),(.*)\n?")
         self.content = content
         self.original_content = copy.deepcopy(self.content)
         self.filename = filename
@@ -146,41 +147,76 @@ class AsciiDocContent:
 
     def substitute_reference_macro(self,ref_list,line):
         reference_start = "== Related Topics\n\n"
-        references = [x.replace(" ","") for x in ref_list.split(",")]
+        total_ref_elements = [x.replace(" ","") for x in ref_list.split(",")]
+        references = [x.replace(" ","") for x in ref_list.split(",") if not x.startswith("!")]
+        exceptions = [x[1:] for x in list(set(total_ref_elements) - set(references))]
         self.content[line] = reference_start
         self.content.insert(line+1,"")
         offset = 2
         replacement_content = []
-        for ref in references:
-            replacement_content += self._make_reference_replacement_text(ref,line,offset)
+        if references:
+            for ref in references:
+                replacement_content += self._make_reference_replacement_text(ref,exceptions)
 
-        replacement_content = list(dict.fromkeys(replacement_content))
-        self.content[line+offset:line+offset]=replacement_content
+            replacement_content = list(dict.fromkeys(replacement_content))
+            self.content[line+offset:line+offset]=replacement_content
 
-    def _make_reference_replacement_text(self,ref_text,line,offset):
+    def _make_reference_replacement_text(self,ref_text,exceptions):
         reference_structure = "* xref:"
         reference_ending = "[]\n"
 
         link_text = []
+        excl_links = []
+        links = []
 
         try:
             links = self.attributes_dict[ref_text]
-            for link in links:
-                module_addition = ""
-                path_addition = ""
-                link_module, link_module_index, link_path_parts = self._get_module_from_path(link[0])
-                if not self.module == link_module:
-                    module_addition = link_module+":"
-
-                if link_module_index+2 < len(link_path_parts):
-                    path_addition = "/".join(link_path_parts[link_module_index+2:])
-
-                link_text.append(reference_structure+module_addition+path_addition+link[1]+reference_ending)
 
         except:
-            raise ReferenceNotFound(ref_text+" not found in keys: "+self.attributes_dict.keys)
+            # raise ReferenceNotFound(ref_text+" not found in keys: "+self.attributes_dict.keys())
+            print(ref_text+" not found in keys: "+",".join(self.attributes_dict.keys()))
+
+        for exc in exceptions:
+            try:
+                excl_links.append(self.attributes_dict[exc])
+            except:
+                print("No exceptions found!")
+
+        for link in links:
+            pass_this_link = False
+            for exc in excl_links:
+                if link in exc:
+                    pass_this_link = True
+                break
+
+            if pass_this_link:
+                continue
+            module_addition = ""
+            path_addition = ""
+            link_module, link_module_index, link_path_parts = self._get_module_from_path(link[0])
+            if not self.module == link_module:
+                module_addition = link_module+":"
+
+            if link_module_index+2 < len(link_path_parts):
+                path_addition = "/".join(link_path_parts[link_module_index+2:])
+
+            link_text.append(reference_structure+module_addition+path_addition+link[1]+reference_ending)
 
         return link_text
+
+
+    # def substitute_key_link_macro(self,key,tag,line):
+    #     #TODO
+    #     reference_start = "== Related Topics\n\n"
+    #     self.content[line] = reference_start
+    #     self.content.insert(line+1,"")
+    #     offset = 2
+    #     replacement_content = []
+    #     for ref in references:
+    #         replacement_content += self._make_reference_replacement_text(ref,line,offset)
+
+    #     replacement_content = list(dict.fromkeys(replacement_content))
+    #     self.content[line+offset:line+offset]=replacement_content
 
 
     def revert_reference_macro_substitution(self):
