@@ -1,0 +1,23 @@
+= Current ASAM Projects
+:description: Links to the current projects page at ASAM. Contains links on how to add new project ideas and other such topics.
+:keywords: projects, ASAM, new-here-content, ideation, standards
+
+== Project Types
+https://www.asam.net/active-projects/project-types/
+
+== Released Standards
+https://www.asam.net/standards/
+
+== Current Projects
+=== Proposals
+https://www.asam.net/active-projects/proposals/
+
+=== Ongoing Projects
+https://www.asam.net/active-projects/projects/
+
+=== Public Reviews
+https://www.asam.net/active-projects/public-review/
+
+== Want To Add A New Idea?
+Enter your idea for a new project through the ideation process:
+https://www.asam.net/active-projects/ideation/

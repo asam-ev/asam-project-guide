@@ -1,0 +1,3 @@
+= Intentions And Content Of The Project Guide
+:description: A summary of the intentions and the content of this project guide.
+:keywords: introduction, about

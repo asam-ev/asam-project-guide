@@ -24,7 +24,11 @@ output:
 
 asciidoc:
   attributes:
-    :plantuml-server-url: http://www.plantuml.com/plantuml
+    plantuml-server-url: http://www.plantuml.com/plantuml
+    guide-repo-url: https://code.asam.net/common/asam-project-guide/
+    hide-uri-scheme:
+    gitlab-url: https://code.asam.net
+
   extensions:
   - asciidoctor-kroki
 #   - asciidoctor-diagram

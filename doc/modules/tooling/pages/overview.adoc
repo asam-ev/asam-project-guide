@@ -1,0 +1,18 @@
+= Tools Overview
+:description: Gives an overview over the mandatory and recommended tools most commonly used in ASAM projects.
+:keywords: overview,tools,landing_page
+
+Most participants in ASAM projects do not require dedicated software installations in order to be able to participate in the process.
+Tools mandatory for every member are hosted by ASAM and can be accessed online and without local setup.
+An overview over these can be found under <<Mandatory Tools>>.
+
+Depending on your role at ASAM, some tasks may require local software installation or may benefit from one. In some cases, you may decide whether you would like to use the provided online tools or interface with them through a local setup. For some of these, ASAM provides a recommended base setup, listed under <<Recommended Tools>>.
+
+NOTE: Since ASAM does not develope those tools, descriptions and information on how to install, set up and use them is kept as short as possible to minimize outdated information in this guide as much as possible.
+
+== Mandatory Tools
+include::partial$Tools-List.adoc[tag=mandatory]
+
+
+== Recommended Tools
+include::partial$Tools-List.adoc[tag=recommended]

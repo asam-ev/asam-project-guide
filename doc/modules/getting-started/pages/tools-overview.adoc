@@ -1,5 +1,0 @@
-= Standard Tools - Overview
-
-Lists standard tools for users and links to the tools section.
-
-// TODO

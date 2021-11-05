@@ -1,0 +1,24 @@
+= The Release Phase
+:description: Describes the release phase in the ASAM development process for standards.
+:keywords: release,phase,standard,process
+include::partial$_attributes.adoc[]
+
+The purpose of the release phase is to obtain a release decision at ASAM and to publish the new standard.
+
+image::release_phase.png[title="The Release Phase"]
+
+
+== R1 - Candidate Release
+include::partial$release-candidate.adoc[tag=long]
+
+== R2 - Release Candidate Review
+include::partial$release-candidate-review.adoc[tag=long]
+
+== R3 - Release Decision
+include::partial$release-decision.adoc[tag=long]
+
+== R4 - Publication Preparation
+include::partial$release-publication-preparation.adoc[tag=long]
+
+== R5 - Publication
+include::partial$release-publication.adoc[tag=long]

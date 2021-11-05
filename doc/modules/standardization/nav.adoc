@@ -1,0 +1,12 @@
+* xref:home.adoc[ASAM Standardization Process]
+** xref:asam-development-process.adoc[The ASAM Development Process]
+** xref:project-ideation.adoc[The Ideation Phase]
+** xref:proposal-phase.adoc[The Proposal Phase]
+** xref:project-setup.adoc[Setup Of A Project]
+** xref:development-phase.adoc[The Development Phase]
+** xref:review-phase.adoc[The Review Phase]
+** xref:release-phase.adoc[The Release Phase]
+** Working Model (workgroups)
+** Issue-driven Workflow
+** Reviews and Releases
+** ASAM Deliverables

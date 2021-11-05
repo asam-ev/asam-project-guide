@@ -1,6 +1,0 @@
-* ASAM Project Handbook
-** Standard Development
-** Working Model (workgroups)
-** Issue-driven Workflow
-** Reviews and Releases
-** ASAM Deliverables

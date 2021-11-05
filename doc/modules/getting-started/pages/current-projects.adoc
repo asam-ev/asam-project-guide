@@ -1,5 +1,0 @@
-= Current ASAM Projects
-
-Lists or links current projects at ASAM.
-
-// TODO

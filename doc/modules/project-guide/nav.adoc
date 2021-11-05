@@ -1,6 +1,0 @@
-* Working On The Project Guide
-** Editing Content
-** Adding Pages
-** Images And Examples
-** Working With Projects
-** Further Links

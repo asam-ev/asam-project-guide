@@ -1,5 +1,13 @@
 = Introduction
+:description: Introduction page for the project guide. Links to all information in the introduction section.
+:keywords: introduction, landing_page
 
-* New here? See xref:new-here.adoc[New Here].
-* See xref:about-this-guide.adoc[About This Guide] to learn more about the ASAM Project Guide
-* For a quick setup on tooling, see xref:quick-setup.adoc[Quick Setup]
+> Nobody is born an expert.
+
+Everyone needs to start somewhere. To do so, the following sections is supposed to give a basic summary over all important aspects of working at and with ASAM.
+
+* New here? See the xref:new-here.adoc[New Here] pages for the very basics about ASAM and the ASAM projects.
+* If you want to learn more about this Project Guide, see the section xref:about-this-guide.adoc[About This Guide].
+* For a quick setup on the most commonly used tools suggested by ASAM, see the section xref:quick-setup.adoc[Quick Setup].
+
+reference:: landing_page,!introduction

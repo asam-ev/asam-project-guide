@@ -1,5 +1,0 @@
-= Tools Overview
-:includedir: ..
-
-include::partial$Tools-List.adoc[]
-
