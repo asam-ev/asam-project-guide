@@ -66,6 +66,7 @@ def main(argv):
 class AsciiDocContent:
     attributes_dict = {}
     reference_macro_occurence_list = []
+    include_by_keyword_macro_occurence_list = []
 
     def __init__(self, path, filename):
         content = []
@@ -74,7 +75,7 @@ class AsciiDocContent:
 
         self.pattern_attr = re.compile("^\s*:keywords:(.*)")
         self.pattern_ref = re.compile("reference::(.*)\n?")
-        self.pattern_keyword_link = re.compile("key-link::(.*),(.*)\n?")
+        self.pattern_keyword_include = re.compile("key-include::(.*),(.*)\n?")
         self.content = content
         self.original_content = copy.deepcopy(self.content)
         self.filename = filename
@@ -125,25 +126,44 @@ class AsciiDocContent:
                 self.attributes_dict[attr]=[(self.path,self.filename)]
 
     def find_reference_macro(self, find_and_replace=False):
-        found = False
-        i = 0
-        for line in self.content:
-            result = self.pattern_ref.findall(line)
-            if result:
-                found = True
-                if find_and_replace:
-                    self.substitute_reference_macro(result[0],i)
-                else:
-                    self._add_to_reference_macro_occurence_list()
-                    break
+        found = self._find_macro_of_type(self.pattern_ref,find_and_replace,"reference")
+        return found
 
-            i += 1
-
+    def find_include_by_keyword_macro(self, find_and_replace=False):
+        found = self._find_macro_of_type(self.pattern_keyword_include,find_and_replace,"include_by_keyword")
         return found
 
     def _add_to_reference_macro_occurence_list(self):
         # self.reference_macro_occurence_list.append((self.path,self.filename))
         self.reference_macro_occurence_list.append((self))
+
+    def _find_macro_of_type(self,pattern,find_and_replace,type):
+        found = False
+        i = 0
+        for line in self.content:
+            result = pattern.findall(line)
+            if result:
+                found = True
+                if(type=="reference"):
+                    if find_and_replace:
+                        self.substitute_reference_macro(result[0],i)
+                    else:
+                        self._add_to_reference_macro_occurence_list()
+                        break
+                # elif (type == "include_by_keyword"):
+                #     if find_and_replace:
+                #         self.substitute_include_by_keyword_macro()
+                #     else:
+                #         self._add_to_include_by_keyword_macro_occurence_list()
+                #         break
+                else:
+                    print("Unknown type for find_macro_of_type provided: "+type)
+                    return False
+
+            i += 1
+
+        return found
+
 
     def substitute_reference_macro(self,ref_list,line):
         reference_start = "== Related Topics\n\n"
