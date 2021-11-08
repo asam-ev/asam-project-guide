@@ -1,0 +1,242 @@
+@startuml
+component compendium {
+rectangle "compendium:nav.adoc" as f0_1
+}
+component getting-involved {
+rectangle "getting-involved:nav.adoc" as f1_1
+}
+component getting-started {
+rectangle "getting-started:nav.adoc" as f2_1
+rectangle "getting-started:about-this-guide.adoc" as f2_2
+rectangle "getting-started:main.adoc" as f2_3
+rectangle "getting-started:new-here.adoc" as f2_4
+rectangle "getting-started:quick-setup.adoc" as f2_5
+rectangle "getting-started:about_guide/intentions-and-content.adoc" as f2_6
+rectangle "getting-started:about_guide/using-this-guide.adoc" as f2_7
+rectangle "getting-started:about_guide/working-on-the-guide.adoc" as f2_8
+rectangle "getting-started:new_here/asam-contacts.adoc" as f2_9
+rectangle "getting-started:new_here/current-projects.adoc" as f2_10
+rectangle "getting-started:new_here/how-asam-works.adoc" as f2_11
+rectangle "getting-started:new_here/processes-and-workflows-overview.adoc" as f2_12
+rectangle "getting-started:new_here/roles-overview.adoc" as f2_13
+rectangle "getting-started:new_here/tools-overview.adoc" as f2_14
+rectangle "getting-started:quick_setup/docker-standard.adoc" as f2_15
+rectangle "getting-started:quick_setup/git-standard.adoc" as f2_16
+rectangle "getting-started:quick_setup/microsoft-teams-standard.adoc" as f2_17
+rectangle "getting-started:quick_setup/sharepoint-standard.adoc" as f2_18
+rectangle "getting-started:quick_setup/vscode-standard.adoc" as f2_19
+}
+component project-guide {
+rectangle "project-guide:nav.adoc" as f3_1
+}
+component role-specific {
+rectangle "role-specific:nav.adoc" as f4_1
+rectangle "role-specific:ASAM-Project-Roles.adoc" as f4_2
+rectangle "role-specific:home.adoc" as f4_3
+}
+component ROOT {
+rectangle "ROOT:1nav.adoc" as f5_1
+rectangle "ROOT:nav.adoc" as f5_2
+rectangle "ROOT:home copy.adoc" as f5_3
+rectangle "ROOT:home.adoc" as f5_4
+rectangle "ROOT:linking-test.adoc" as f5_5
+rectangle "ROOT:antora/Build-Antora-Locally.adoc" as f5_6
+rectangle "ROOT:antora/Content-Structure.adoc" as f5_7
+rectangle "ROOT:guides/Accessing_Compiled_Artifacts.adoc" as f5_8
+rectangle "ROOT:guides/Meeting-Guidelines.adoc" as f5_9
+rectangle "ROOT:guides/Platforms.adoc" as f5_10
+rectangle "ROOT:guides/ProjectGuidelines.adoc" as f5_11
+rectangle "ROOT:guides/WhatIsYaml.adoc" as f5_12
+rectangle "ROOT:guides/Workflow.adoc" as f5_13
+rectangle "ROOT:guides/WritingGuidelines.adoc" as f5_14
+rectangle "ROOT:implementers-forum/Feedback-Guide.adoc" as f5_15
+rectangle "ROOT:implementers-forum/Scenario-Writers-Guide.adoc" as f5_16
+rectangle "ROOT:open-source/ASAM-DCO.adoc" as f5_17
+rectangle "ROOT:writing_guidelines/AsciiDoc-Guide.adoc" as f5_18
+rectangle "ROOT:writing_guidelines/coding_style_guide.adoc" as f5_19
+rectangle "ROOT:writing_guidelines/plantuml_documentation_guide.adoc" as f5_20
+rectangle "ROOT:writing_guidelines/writing_guide.adoc" as f5_21
+}
+component standardization {
+rectangle "standardization:nav.adoc" as f6_1
+rectangle "standardization:asam-development-process.adoc" as f6_2
+rectangle "standardization:development-phase.adoc" as f6_3
+rectangle "standardization:home.adoc" as f6_4
+rectangle "standardization:proposal-phase.adoc" as f6_5
+rectangle "standardization:release-phase.adoc" as f6_6
+rectangle "standardization:review-phase.adoc" as f6_7
+}
+component tasks {
+rectangle "tasks:nav.adoc" as f7_1
+}
+component tooling {
+rectangle "tooling:nav.adoc" as f8_1
+rectangle "tooling:CloningRepoTutorial.adoc" as f8_2
+rectangle "tooling:gitlab.adoc" as f8_3
+rectangle "tooling:Microsoft-Teams-and-Sharepoint.adoc" as f8_4
+rectangle "tooling:overview.adoc" as f8_5
+rectangle "tooling:Setup-Guide.adoc" as f8_6
+rectangle "tooling:Shared-OpenX-Calendar.adoc" as f8_7
+rectangle "tooling:docker/Docker-For-Asciidoc.adoc" as f8_8
+rectangle "tooling:docker/Getting-Docker.adoc" as f8_9
+rectangle "tooling:git/An-Introduction-to-Git.adoc" as f8_10
+rectangle "tooling:git/ASAM-Issue-and-MR-Labels.adoc" as f8_11
+rectangle "tooling:git/Branch-Naming-Conventions.adoc" as f8_12
+rectangle "tooling:git/Branching.adoc" as f8_13
+rectangle "tooling:git/Commit-Guidelines.adoc" as f8_14
+rectangle "tooling:git/Forking.adoc" as f8_15
+rectangle "tooling:git/Git-Best-Practices.adoc" as f8_16
+rectangle "tooling:git/Merge-Requests.adoc" as f8_17
+rectangle "tooling:git/Resolving-Merge-Conflicts.adoc" as f8_18
+rectangle "tooling:git/Submodules.adoc" as f8_19
+rectangle "tooling:git/Transitioning-to-a-new-workflow.adoc" as f8_20
+rectangle "tooling:gitlab/gitlab-setup.adoc" as f8_21
+}
+
+f2_3 -left-> f2_1
+f2_4 -left-> f2_1
+f2_2 -left-> f2_1
+f2_5 -left-> f2_1
+f2_4 -left-> f2_3
+f2_2 -> f2_3
+f2_5 -left-> f2_3
+f6_4 -left-> f6_1
+f6_2 -left-> f6_1
+f6_5 -left-> f6_1
+f6_3 -left-> f6_1
+f6_7 -left-> f6_1
+f6_6 -left-> f6_1
+f8_5 -left-> f8_1
+f8_3 -left-> f8_1
+
+cloud "https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png"  as u1
+cloud "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png"  as u2
+cloud "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png"  as u3
+cloud "https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png"  as u4
+cloud "https://github.com/Mogztter/antora-lunr"  as u5
+cloud "https://code.asam.net"  as u6
+cloud "https://github.com/asam-ev"  as u7
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/git/Transitioning-to-a-new-workflow"  as u8
+cloud "https://code.asam.net/help/user/project/quick_actions"  as u9
+cloud "https://docs.gitlab.com/ee/user/discussions/#starting-a-review"  as u10
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/boards/66"  as u11
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues?label_name%5B%5D=ScenarioDescription"  as u12
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/Contact-Persons-from-OSC2-Development-Project"  as u13
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues?label_name%5B%5D=GeneralFeedback"  as u14
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues/245"  as u15
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=#"  as u16
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/jobs/artifacts/master/raw/Language/ASAM_OpenSCENARIO_BS-1-6_Language-Reference-Manual_V2-0-0.html?job=draft"  as u17
+cloud "https://asciidoc.org/"  as u18
+cloud "https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/"  as u19
+cloud "https://asciidoctor.org/docs/user-manual/"  as u20
+cloud "https://www.url.com"  as u21
+cloud "https://asciidoctor.org/docs/user-manual/#tables"  as u22
+cloud "https://asciidoctor.org/docs/user-manual/#include-directive"  as u23
+cloud "https://www.python.org/dev/peps/pep-0008/"  as u24
+cloud "https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/"  as u25
+cloud "https://code.asam.net/simulation/resources/-/blob/master/asciidoc_tutorial/asciidoc_tutorial.adoc"  as u26
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/tree/master/Documentation/etc/templates"  as u27
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc"  as u28
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc"  as u29
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/general_guidelines/Workflow"  as u30
+cloud "https://support.microsoft.com/en-us/office/manage-notifications-in-teams-1cc31834-5fe5-412b-8edb-43fecc78413d"  as u31
+cloud "https://www.doodle.com"  as u32
+cloud "https://code.asam.net/-/profile"  as u33
+cloud "https://code.asam.net/profile/keys"  as u34
+cloud "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent"  as u35
+cloud "https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro"  as u36
+cloud "https://outlook.office365.com/owa/calendar/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.ics"  as u37
+cloud "https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"  as u38
+cloud "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"  as u39
+cloud "https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c"  as u40
+cloud "https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&hl=en"  as u41
+cloud "https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html"  as u42
+cloud "https://code.asam.net/common/style-resources"  as u43
+cloud "https://docs.docker.com/engine/images/architecture.svg"  as u44
+cloud "https://docs.docker.com/get-started/"  as u45
+cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u46
+cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u47
+cloud "https://docs.microsoft.com/en-us/windows/wsl/about"  as u48
+cloud "https://docs.docker.com/desktop/windows/install/"  as u49
+cloud "https://docs.microsoft.com/en-us/windows/wsl/install"  as u50
+cloud "https://docs.microsoft.com/en-us/windows/wsl/setup/environment"  as u51
+cloud "https://docs.docker.com/engine/install/binaries/"  as u52
+cloud "https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png"  as u53
+cloud "https://help.github.com/articles/about-git-rebase/"  as u54
+cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u55
+cloud "http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html"  as u56
+cloud "https://help.github.com/articles/using-pull-requests/"  as u57
+cloud "http://stackoverflow.com/a/17819027"  as u58
+cloud "https://tortoisegit.org/"  as u59
+
+f4_3 .up.>> u1
+f4_3 .up.>> u2
+f4_3 .up.>> u3
+f4_3 .up.>> u4
+f5_3 .up.>> u1
+f5_3 .up.>> u2
+f5_3 .up.>> u3
+f5_3 .up.>> u4
+f5_6 .up.>> u5
+f5_10 .up.>> u6
+f5_10 .up.>> u7
+f5_13 .up.>> u8
+f5_13 .up.>> u9
+f5_13 .up.>> u10
+f5_15 .up.>> u11
+f5_15 .up.>> u12
+f5_15 .up.>> u13
+f5_15 .up.>> u14
+f5_15 .up.>> u15
+f5_16 .up.>> u16
+f5_16 .up.>> u17
+f5_16 .up.>> u13
+f5_18 .up.>> u18
+f5_18 .up.>> u19
+f5_18 .up.>> u20
+f5_18 .up.>> u21
+f5_18 .up.>> u22
+f5_18 .up.>> u23
+f5_19 .up.>> u24
+f5_21 .up.>> u25
+f5_21 .up.>> u26
+f5_21 .up.>> u27
+f5_21 .up.>> u28
+f5_21 .up.>> u29
+f5_21 .up.>> u30
+f8_4 .up.>> u31
+f8_4 .up.>> u32
+f8_6 .up.>> u6
+f8_6 .up.>> u3
+f8_6 .up.>> u2
+f8_6 .up.>> u33
+f8_6 .up.>> u34
+f8_6 .up.>> u35
+f8_6 .up.>> u36
+f8_7 .up.>> u37
+f8_7 .up.>> u38
+f8_7 .up.>> u39
+f8_7 .up.>> u40
+f8_7 .up.>> u41
+f8_7 .up.>> u42
+f8_8 .up.>> u43
+f8_9 .up.>> u44
+f8_9 .up.>> u45
+f8_9 .up.>> u46
+f8_9 .up.>> u47
+f8_9 .up.>> u48
+f8_9 .up.>> u49
+f8_9 .up.>> u50
+f8_9 .up.>> u51
+f8_9 .up.>> u52
+f8_9 .up.>> u53
+f8_16 .up.>> u54
+f8_16 .up.>> u55
+f8_16 .up.>> u56
+f8_16 .up.>> u57
+f8_16 .up.>> u58
+f8_19 .up.>> u43
+f8_19 .up.>> u59
+f8_19 .up.>> u6
+f8_21 .up.>> u6
+@enduml
