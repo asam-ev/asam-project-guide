@@ -1,0 +1,19 @@
+= ASAM Standardization Process
+:description: The standardization process applied at ASAM. Contains the general process as well as specifics on the life cycle of a project.
+:keywords: main, wiki, home, start
+include::partial$_attributes.adoc[]
+
+Creating standards at ASAM follows very specific processes.
+Everyone involved in such activities must familiarize themselves with these to understand the DOs and DON'Ts and to minimize complications and overhead.
+
+Reading through these may also provide a better understanding on what is expected at which point during a project's life cycle.
+
+== Subchapters
+
+* {development-process}
+* {ideation-phase}
+* {proposal-phase}
+* {project-setup}
+* {development-phase}
+* {review-phase}
+* {release-phase}

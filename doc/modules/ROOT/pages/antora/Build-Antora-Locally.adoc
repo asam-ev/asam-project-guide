@@ -1,4 +1,5 @@
 = Build Antora On Your Local PC
+:keywords: antora,guide,docker
 
 This guide explains how to build this wiki locally on your PC without having activate the ASAM build pipeline.
 The suggested method is to use the provided docker-compose.yml in this repository.

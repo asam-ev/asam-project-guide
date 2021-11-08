@@ -1,0 +1,20 @@
+= The Review Phase
+:description: Describes the review phase in the ASAM development process for standards.
+:keywords: review,phase,standard,process
+include::partial$_attributes.adoc[]
+
+The purpose of the review phase is to involve members of ASAM outside the project group to give their review feedback and to increase the overall quality and acceptance of the standard prior to its release.
+
+image::review_phase.png[title="The Review Phase"]
+
+== C1 - Draft Release
+include::partial$review-draft-release.adoc[tag=long]
+
+== C2 - Public Draft Review
+include::partial$review-public-draft.adoc[tag=long]
+
+== C3 - Feedback Deadline
+include::partial$review-feedback-deadline.adoc[tag=long]
+
+== C4 - Feedback Processing
+include::partial$review-feedback-processing.adoc[tag=long]

@@ -1,63 +1,75 @@
 = Proposed Project Guide Structure In Antora
+:keywords: antora,structure
 
 The following is a proposal for the project guide structure in Antora.
 Note that it is a WIP and will likely change over time.
+
+NOTE: Names and labels are working titles and neither final nor formal.
 
 
 .Document Structure - Concept
 [plantuml,mindmap2,svg]
 ----
-@startmindmap
-+ **ASAM Project Guide Structure**
-++ Landing Page Introductions
-+++_ this is the default page
-+++ New Here?
-++++_ this contains linked or specific content for new members/people
-++++ Include: How ASAM Works
-++++ Link: Processes And Workflows
-++++ Include: Roles@ASAM
-++++ Projects Overview
-+++++_ overview over what projects there are; tbd: include: about asam?
-++++ Include: ASAM Contacts
-+++ About This Guide
-++++_ this should explain how this guide works
-+++ General Content
-++++ About ASAM
-++++ How ASAM Works - High-Level Workflows
-++++ Roles@ASAM
-+++++_ link from each role to the role-specific content
-+++ Role-specific Content
-++++_ these hang under an overview over all roles
-++++ Role Summary Page
-++++ Tooling
-++++ Guides
-++++ Best Practices
-++++ Linked General Information
-+++ Short Tutorials
-
-++ Landing Page Definitions
-+++ Definitions
-+++ Extended Tutorials
-+++ Processes And Workflows
-+++ Tools
-
-++ Project Content
-+++_ ideally, this is handled directly in the respective repository. Alternatively, all documentation is done in the Project Guide on a branch.
-+++_ separate module
-+++ Timelines And Milestones
-+++ Responsibilities
-+++ Specific Project Roles
-+++ Specific Definitions
-+++ Specific Tutorials
-+++ Specific Processes And Workflows
-+++ Specific Tool Configurations
-+++ Project Content Explanations / Examples
-
--- Re-usable Partials
---- ASAM Role Definitions
---- ASAM Contacts
-@endmindmap
+include::example$structure.puml[]
 ----
+
+
+.Document Structure - Level 1
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;first_level]
+----
+
+.Document Structure - Introductions
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;introductions;!comment]
+----
+
+.Document Structure - General Project Processes
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;general_project_processes;!comment]
+----
+
+.Document Structure - Roles
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;roles;!comment]
+----
+
+.Document Structure - Project Handbook
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;project;!comment]
+----
+
+.Document Structure - Tools&Scripts
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;tools;!comment]
+----
+
+.Document Structure - Compendium
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;compendium;!comment]
+----
+
+.Document Structure - How-Tos
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;how_to;!comment]
+----
+
+.Document Structure - Working On Project Guide
+[plantuml,mindmap2,svg]
+----
+include::example$structure.puml[tags=standard;project_guide;!comment]
+----
+
+
+
 
 .Roles And Tasks - Concept
 [plantuml,mindmap2,svg]
@@ -74,6 +86,13 @@ Note that it is a WIP and will likely change over time.
 +++ Service Provider
 
 -- Tasks
+--- "add table to asciidoc"
+--- "add project member to project"
+--- "lead a ASAM standardization project"
+--- "understand ASAM standardization process"
+--- "propose a new standardization to ASAM"
+--- "add bibtex bibliography to project"
+--- ...
 @endmindmap
 ----
 
@@ -82,7 +101,17 @@ Note that it is a WIP and will likely change over time.
 ----
 @startmindmap
 + **Antora Folder Structure**
-
+++_ note: this is visible in the url and should, therefore, make sense
+++ Role-Specific
++++_ this should only contain pages that are singular to that role and make inclusions of reusable pages from other places as well as partials
+++ Guidelines
++++_ contains all guidelines with labels for the relevant roles
+++ Tooling
++++_ contains all instructions, pages, and tutorials for tools, sorted through folders with the toolname
++++ VSCode
++++ Git
++++ Drawio
++++ Docker
 @endmindmap
 ----
 
@@ -90,5 +119,3 @@ Note that it is a WIP and will likely change over time.
 
 * https://docs.unity3d.com/Manual/UnityOverview.html
 * https://docs.blender.org/manual/en/dev/
-
-

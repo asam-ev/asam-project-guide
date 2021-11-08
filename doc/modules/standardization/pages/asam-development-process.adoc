@@ -1,0 +1,17 @@
+= ASAM Development Process For Standards
+:description: Summarizes the overal devlopment process for ASAM standards.
+:keywords: summary,summarize,development,process
+include::partial$_attributes.adoc[]
+
+ASAM standards are developed and maintained within projects. The main contributors to projects are volunteer experts from its member companies, supported by the ASAM office and an optional, ASAM-funded service provider. ASAM provides the complete framework for the project group, including guidelines, templates, IT infrastructure, a project budget, administrative support and worldwide marketing.
+
+image::asam-development-process.png[]
+
+The ASAM standards development process consists of five phases:
+
+[horizontal]
+Phase 1:: {ideation-phase}
+Phase 2:: {proposal-phase}
+Phase 3:: {development-phase}
+Phase 4:: {review-phase}
+Phase 5:: {release-phase}

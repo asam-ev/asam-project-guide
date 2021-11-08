@@ -1,0 +1,11 @@
+= New Here?
+:description: A summary page containing overview information for people new to ASAM (projects) and this Project Guide.
+:keywords: welcome, new_member, overview, new-here
+
+This page gives instructions for those new to ASAM (projects) and tries to guide them through everything to make the onboarding as smooth as possible.
+
+The following pages contain a general overview over ASAM, this project guide, and many more topics.
+
+// TODO
+
+reference:: new-here-content

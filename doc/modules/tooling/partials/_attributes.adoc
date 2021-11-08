@@ -1,0 +1,4 @@
+:setup-image: https://cdn-icons-png.flaticon.com/128/4411/4411634.png
+:guide-image: https://cdn-icons-png.flaticon.com/128/1705/1705243.png
+:troubleshooting-image: https://cdn-icons-png.flaticon.com/128/1522/1522004.png
+:best-practices-image: https://cdn-icons-png.flaticon.com/128/716/716041.png

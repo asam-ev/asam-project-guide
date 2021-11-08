@@ -1,0 +1,17 @@
+= Roles At ASAM - Overview
+:description: Links to the current contact page for ASAM Office members.
+:keywords: roles, ASAM, new-here-content
+
+ASAM projects have a couple of standard roles:
+
+TODO
+
+ASAM Global Technology Manager (GTM):: A GTM is an ASAM employee focussed on coordinating project processes and the background work behind a project.
+ASAM Standard User:: An ASAM Standard User is someone that is part of the ASAM community but not involved in the project at hand.
+Workgroup (WG) Member:: An ASAM User that is involved directly in the development of an ASAM standard. They are a participant in a workgroup (WG) of a standard, a subdivision of the overall project.
+Workgroup (WG) Leader:: The WG member that leads the respective workgroup.
+Project Lead:: The person responsible for leading and coordinating all project activities. Normally, this position is filled by one of the leading project members in the project.
+Technical Steering Commitee (TSC) Member:: A member of commitee responsible for approving or rejecting projects and proposals.
+Reviewer:: An ASAM Standard User or WG Member that reviews a draft or release candidate for a new or updated standard.
+Technical Writer:: Formats and writes the document(s) of the standard based on the provided input from the WG members in a formalized and standard-conform way.
+Service Provider:: Provides additional services necessary for the standard development.

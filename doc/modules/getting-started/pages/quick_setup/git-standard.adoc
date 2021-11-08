@@ -1,0 +1,5 @@
+= Git Quick Setup
+
+Gives a quick setup guide for Git.
+
+// TODO
