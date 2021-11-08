@@ -71,26 +71,43 @@ rectangle "tasks:nav.adoc" as f7_1
 }
 component tooling {
 rectangle "tooling:nav.adoc" as f8_1
-rectangle "tooling:CloningRepoTutorial.adoc" as f8_2
-rectangle "tooling:gitlab.adoc" as f8_3
-rectangle "tooling:Microsoft-Teams-and-Sharepoint.adoc" as f8_4
-rectangle "tooling:overview.adoc" as f8_5
-rectangle "tooling:Setup-Guide.adoc" as f8_6
-rectangle "tooling:Shared-OpenX-Calendar.adoc" as f8_7
-rectangle "tooling:docker/Docker-For-Asciidoc.adoc" as f8_8
-rectangle "tooling:docker/Getting-Docker.adoc" as f8_9
-rectangle "tooling:git/An-Introduction-to-Git.adoc" as f8_10
-rectangle "tooling:git/ASAM-Issue-and-MR-Labels.adoc" as f8_11
-rectangle "tooling:git/Branch-Naming-Conventions.adoc" as f8_12
-rectangle "tooling:git/Branching.adoc" as f8_13
-rectangle "tooling:git/Commit-Guidelines.adoc" as f8_14
-rectangle "tooling:git/Forking.adoc" as f8_15
-rectangle "tooling:git/Git-Best-Practices.adoc" as f8_16
-rectangle "tooling:git/Merge-Requests.adoc" as f8_17
-rectangle "tooling:git/Resolving-Merge-Conflicts.adoc" as f8_18
-rectangle "tooling:git/Submodules.adoc" as f8_19
-rectangle "tooling:git/Transitioning-to-a-new-workflow.adoc" as f8_20
-rectangle "tooling:gitlab/gitlab-setup.adoc" as f8_21
+rectangle "tooling:gitlab.adoc" as f8_2
+rectangle "tooling:Microsoft-Teams-and-Sharepoint.adoc" as f8_3
+rectangle "tooling:overview.adoc" as f8_4
+rectangle "tooling:Setup-Guide.adoc" as f8_5
+rectangle "tooling:Shared-OpenX-Calendar.adoc" as f8_6
+rectangle "tooling:vscode.adoc" as f8_7
+rectangle "tooling:working-without-software-installation.adoc" as f8_8
+rectangle "tooling:docker/Docker-For-Asciidoc.adoc" as f8_9
+rectangle "tooling:docker/DockerGuide.adoc" as f8_10
+rectangle "tooling:docker/Getting-Docker.adoc" as f8_11
+rectangle "tooling:docker/StandardDockerConfig.adoc" as f8_12
+rectangle "tooling:drawio/DrawIOGuide.adoc" as f8_13
+rectangle "tooling:general_guidelines/Setup-Guide.adoc" as f8_14
+rectangle "tooling:git/An-Introduction-to-Git.adoc" as f8_15
+rectangle "tooling:git/ASAM-Issue-and-MR-Labels.adoc" as f8_16
+rectangle "tooling:git/Branch-Naming-Conventions.adoc" as f8_17
+rectangle "tooling:git/Branching.adoc" as f8_18
+rectangle "tooling:git/CloningRepoTutorial.adoc" as f8_19
+rectangle "tooling:git/Commit-Guidelines.adoc" as f8_20
+rectangle "tooling:git/Forking.adoc" as f8_21
+rectangle "tooling:git/Git-Best-Practices.adoc" as f8_22
+rectangle "tooling:git/Merge-Requests.adoc" as f8_23
+rectangle "tooling:git/Resolving-Merge-Conflicts.adoc" as f8_24
+rectangle "tooling:git/Submodules.adoc" as f8_25
+rectangle "tooling:git/Transitioning-to-a-new-workflow.adoc" as f8_26
+rectangle "tooling:gitlab/gitlab-further-information.adoc" as f8_27
+rectangle "tooling:gitlab/Gitlab-Ide-guide.adoc" as f8_28
+rectangle "tooling:gitlab/gitlab-setup.adoc" as f8_29
+rectangle "tooling:powershell/PowerShell-Basics.adoc" as f8_30
+rectangle "tooling:vscode/Adding-Diagrams-To-VSCode.adoc" as f8_31
+rectangle "tooling:vscode/Recommended-VSCode-Extensions.adoc" as f8_32
+rectangle "tooling:vscode/Recommended-VSCode-Settings.adoc" as f8_33
+rectangle "tooling:vscode/vscode-further-information.adoc" as f8_34
+rectangle "tooling:vscode/VSCode-Git-Interaction.adoc" as f8_35
+rectangle "tooling:vscode/vscode-guide.adoc" as f8_36
+rectangle "tooling:vscode/vscode-setup.adoc" as f8_37
+rectangle "tooling:vscode/vscode_extensions.adoc" as f8_38
 }
 
 f2_3 -left-> f2_1
@@ -106,8 +123,10 @@ f6_5 -left-> f6_1
 f6_3 -left-> f6_1
 f6_7 -left-> f6_1
 f6_6 -left-> f6_1
-f8_5 -left-> f8_1
-f8_3 -left-> f8_1
+f8_4 -left-> f8_1
+f8_2 -left-> f8_1
+f8_7 -left-> f8_1
+f8_2 -> f8_7
 
 cloud "https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png"  as u1
 cloud "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png"  as u2
@@ -152,8 +171,8 @@ cloud "https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calen
 cloud "https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&hl=en"  as u41
 cloud "https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html"  as u42
 cloud "https://code.asam.net/common/style-resources"  as u43
-cloud "https://docs.docker.com/engine/images/architecture.svg"  as u44
-cloud "https://docs.docker.com/get-started/"  as u45
+cloud "https://docs.docker.com/get-started/"  as u44
+cloud "https://docs.docker.com/engine/images/architecture.svg"  as u45
 cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u46
 cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u47
 cloud "https://docs.microsoft.com/en-us/windows/wsl/about"  as u48
@@ -162,12 +181,21 @@ cloud "https://docs.microsoft.com/en-us/windows/wsl/install"  as u50
 cloud "https://docs.microsoft.com/en-us/windows/wsl/setup/environment"  as u51
 cloud "https://docs.docker.com/engine/install/binaries/"  as u52
 cloud "https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png"  as u53
-cloud "https://help.github.com/articles/about-git-rebase/"  as u54
-cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u55
-cloud "http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html"  as u56
-cloud "https://help.github.com/articles/using-pull-requests/"  as u57
-cloud "http://stackoverflow.com/a/17819027"  as u58
-cloud "https://tortoisegit.org/"  as u59
+cloud "https://drawio-app.com/tutorials/"  as u54
+cloud "https://code.asam.net/common/asam-graphic-library"  as u55
+cloud "https://help.github.com/articles/about-git-rebase/"  as u56
+cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u57
+cloud "http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html"  as u58
+cloud "https://help.github.com/articles/using-pull-requests/"  as u59
+cloud "http://stackoverflow.com/a/17819027"  as u60
+cloud "https://tortoisegit.org/"  as u61
+cloud "https://docs.gitlab.com/ee/user/project/repository/web_editor.html"  as u62
+cloud "https://docs.gitlab.com/ee/user/project/web_ide/#open-the-web-ide"  as u63
+cloud "https://docs.gitlab.com/ee/user/project/web_ide/"  as u64
+cloud "https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png"  as u65
+cloud "https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1"  as u66
+cloud "https://kroki.io/examples.html"  as u67
+cloud "https://code.visualstudio.com/docs/editor/versioncontrol#_git-support"  as u68
 
 f4_3 .up.>> u1
 f4_3 .up.>> u2
@@ -204,39 +232,61 @@ f5_21 .up.>> u27
 f5_21 .up.>> u28
 f5_21 .up.>> u29
 f5_21 .up.>> u30
-f8_4 .up.>> u31
-f8_4 .up.>> u32
-f8_6 .up.>> u6
-f8_6 .up.>> u3
-f8_6 .up.>> u2
-f8_6 .up.>> u33
-f8_6 .up.>> u34
-f8_6 .up.>> u35
-f8_6 .up.>> u36
-f8_7 .up.>> u37
-f8_7 .up.>> u38
-f8_7 .up.>> u39
-f8_7 .up.>> u40
-f8_7 .up.>> u41
-f8_7 .up.>> u42
-f8_8 .up.>> u43
-f8_9 .up.>> u44
-f8_9 .up.>> u45
-f8_9 .up.>> u46
-f8_9 .up.>> u47
-f8_9 .up.>> u48
-f8_9 .up.>> u49
-f8_9 .up.>> u50
-f8_9 .up.>> u51
-f8_9 .up.>> u52
-f8_9 .up.>> u53
-f8_16 .up.>> u54
-f8_16 .up.>> u55
-f8_16 .up.>> u56
-f8_16 .up.>> u57
-f8_16 .up.>> u58
-f8_19 .up.>> u43
-f8_19 .up.>> u59
-f8_19 .up.>> u6
-f8_21 .up.>> u6
+f8_3 .up.>> u31
+f8_3 .up.>> u32
+f8_5 .up.>> u6
+f8_5 .up.>> u3
+f8_5 .up.>> u2
+f8_5 .up.>> u33
+f8_5 .up.>> u34
+f8_5 .up.>> u35
+f8_5 .up.>> u36
+f8_6 .up.>> u37
+f8_6 .up.>> u38
+f8_6 .up.>> u39
+f8_6 .up.>> u40
+f8_6 .up.>> u41
+f8_6 .up.>> u42
+f8_7 .up.>> u3
+f8_9 .up.>> u43
+f8_10 .up.>> u44
+f8_11 .up.>> u45
+f8_11 .up.>> u44
+f8_11 .up.>> u46
+f8_11 .up.>> u47
+f8_11 .up.>> u48
+f8_11 .up.>> u49
+f8_11 .up.>> u50
+f8_11 .up.>> u51
+f8_11 .up.>> u52
+f8_11 .up.>> u53
+f8_13 .up.>> u4
+f8_13 .up.>> u54
+f8_13 .up.>> u55
+f8_14 .up.>> u6
+f8_14 .up.>> u3
+f8_14 .up.>> u2
+f8_14 .up.>> u33
+f8_14 .up.>> u34
+f8_14 .up.>> u35
+f8_14 .up.>> u36
+f8_22 .up.>> u56
+f8_22 .up.>> u57
+f8_22 .up.>> u58
+f8_22 .up.>> u59
+f8_22 .up.>> u60
+f8_25 .up.>> u43
+f8_25 .up.>> u61
+f8_25 .up.>> u6
+f8_27 .up.>> u62
+f8_27 .up.>> u63
+f8_27 .up.>> u64
+f8_28 .up.>> u62
+f8_28 .up.>> u63
+f8_28 .up.>> u64
+f8_30 .up.>> u65
+f8_30 .up.>> u66
+f8_31 .up.>> u67
+f8_35 .up.>> u68
+f8_37 .up.>> u3
 @enduml
