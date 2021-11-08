@@ -24,4 +24,4 @@
 *** Guide
 *** Troubleshooting
 *** Further information
-** xref:working-without-software-insatllation.adoc[Working Without Software Installation]
+** xref:working-without-software-installation.adoc[Working Without Software Installation]
