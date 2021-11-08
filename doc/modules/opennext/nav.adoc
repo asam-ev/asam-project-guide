@@ -1,9 +1,0 @@
-* Project **__OpenNEXT__**
-** Timelines And Milestones
-** OpenNEXT Project Roles
-** OpenNEXT Definitions
-** OpenNEXT Tutorials
-** OpenNEXT Processes And Workflows
-** OpenNEXT Tool Configurations
-** OpenNEXT Content Explanations
-** OpenNEXT Examples

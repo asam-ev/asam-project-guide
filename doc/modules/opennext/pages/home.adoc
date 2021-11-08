@@ -1,4 +1,0 @@
-= OpenNEXT - Project Page
-:description: Test project's landing page
-:keywords: landing_page,project
-
