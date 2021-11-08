@@ -1,0 +1,4 @@
+= Visual Studio Code - Further Information
+:description: Contains further information on VSCode and additional links
+:keywords: vscode, further-information
+

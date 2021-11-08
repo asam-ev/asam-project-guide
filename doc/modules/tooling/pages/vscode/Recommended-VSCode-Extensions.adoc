@@ -1,0 +1,35 @@
+= Recommended Visual Studio Code Extensions
+:lookup: partial$VSCode/Extensions
+
+VSCode is already without extensions very powerful and user friendly. One thing that can make the VSCode experience even better are the extensions. There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.
+
+Installing an extension is really easy, just enter the extension menu, search for the desired extension. Than click on the Install-Button.
+
+== AsciiDoc
+
+include::{lookup}/Asciidoctor.adoc[]
+
+== Git Graph
+
+include::{lookup}/GitGraph.adoc[]
+
+== GitLens
+
+include::{lookup}/GitLens.adoc[]
+
+== Comment Anchors
+
+include::{lookup}/Comment-Anchors.adoc[]
+
+== Draw.io
+
+include::{lookup}/Drawio.adoc[]
+
+== Docker
+
+include::{lookup}/Docker.adoc[]
+
+== See Also
+
+* link:DrawIOGuide.adoc[Draw.io Guide]
+* link:VSCode-Guide[Visual Studio Code Guide]

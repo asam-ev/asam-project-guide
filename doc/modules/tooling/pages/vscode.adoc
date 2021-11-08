@@ -1,0 +1,35 @@
+= Visual Studioi Code
+:description: A summary page describing what VSCode is and where to find related information, guides etc.
+:keywords: vscode,summary,tool
+:gitlab: xref:gitlab.adoc[GitLab]
+
+include::partial$_attributes.adoc[]
+
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=120, height=64, link=https://code.visualstudio.com/download, role=right, window=_blank]
+
+
+Visiual Studio Code is the suggested solution for checking out repositories and files from {gitlab}, adding and editing files, and pushing changes back to {gitlab}. However, users may choose any compatible program(s) instead, as long as {gitlab} stays the single point of truth for project files. Alternatively, users may also choose to work completly through {gitlab} by using the Web IDE provided there. See {gitlab} for more information.
+
+== Visual Studio Code At ASAM
+ASAM recommends using Visual Studio Code (VSCode) for local text document interaction, such as:
+
+* Writing and editing AsciiDoc content
+* Managing complex structures in a single workspace
+* Instant preview for asciidoc, plantuml, draw.io and more
+
+
+== Content
+
+[cols="1,1"]
+|===
+|xref:vscode/vscode-setup.adoc[image:{setup-image}[width=120,title="GitLab Setup"] Visual Studio Code Setup]
+|xref:vscode/vscode-guide.adoc[image:{guide-image}[width=120,title="GitLab Guides"] Visual Studio Code Guides]
+
+|xref:vscode/vscode-troubleshooting.adoc[image:{troubleshooting-image}[width=120,title="Visual Studio Code Troubleshooting"] Visual Studio Code Troubleshooting]
+|xref:vscode/vscode-best-practices.adoc[image:{best-practices-image}[width=120,title="Visual Studio Code Best Practices"] Visual Studio Code Best Practices]
+
+|===
+
+reference::vscode,!summary
+
+* {gitlab}

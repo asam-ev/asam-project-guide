@@ -4,7 +4,7 @@
 
 include::partial$_attributes.adoc[]
 
-image::gitlab-icon.png[width=120,role=right]
+image::gitlab-icon.png[width=120,role=right,link={gitlab-url},window=_blank]
 
 GitLab is a web-based DevOps lifecycle tool that provides a xref:git.adoc[Git] repository manager.
 It can host wikis, has issue-tracking and continuous integration and deployment pipeline features, using an open-source license.

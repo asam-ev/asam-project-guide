@@ -1,0 +1,5 @@
+====
+A list of recommended Visual Studio Code Extensions can be found xref:../tool-specific/Recommended-VSCode-Extensions.adoc[here].
+
+For more information on VSCode, see the xref::../tool-specific/VSCode-Guide.adoc[Visual Studio Code Guide].
+====
