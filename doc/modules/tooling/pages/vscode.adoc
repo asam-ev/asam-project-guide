@@ -1,4 +1,4 @@
-= Visual Studioi Code
+= Visual Studio Code
 :description: A summary page describing what VSCode is and where to find related information, guides etc.
 :keywords: vscode,summary,tool
 :gitlab: xref:gitlab.adoc[GitLab]
