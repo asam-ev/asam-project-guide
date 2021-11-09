@@ -4,6 +4,8 @@
 
 include::partial$_attributes.adoc[]
 
+{gitlab-icon}
+
 == Context
 All specification-related documents are stored and updated in ASAMs GitLab.
 *The ASAM GitLab is located at {gitlab-url}[window=_blank].*
@@ -26,7 +28,7 @@ NOTE: The "ASAM SVN" login is deprecated and will be removed in the future.
 
 reference:: gitlab,git-setup,!gitlab-setup
 
-== Trouble Shooting / Known Issues
+== Troubleshooting / Known Issues
 
 === I have not received a mail from "GitLab"
 Ask an ASAM employee to support you by creating your GitLab account.

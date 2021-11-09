@@ -4,6 +4,8 @@
 
 include::partial$_attributes.adoc[]
 
+{gitlab-icon}
+
 ASAM GitLab:: {gitlab-url}
 
 What Is An "IDE"?:: The abbreviation _IDE_ stands for "Integrated Development Environment".
