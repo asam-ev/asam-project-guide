@@ -2,7 +2,7 @@ import os
 
 def main():
     reference_macro_replacement()
-    # nav_adoc_creation()
+    nav_adoc_creation()
     run_docker_compose()
     cleanup()
     open_project_guide()
@@ -20,7 +20,7 @@ def reference_macro_replacement():
 def nav_adoc_creation():
     print("CREATE NAV.ADOC FOR FOLDER")
     try:
-        os.system("python create_nav_adoc_for_folder.py -p doc/modules/ROOT/pages/")
+        os.system("python create_nav_adoc_for_folder.py -p doc/modules/compendium/pages/ --module")
     except:
         pass
 
