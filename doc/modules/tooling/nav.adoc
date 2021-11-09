@@ -4,7 +4,7 @@
 *** xref:gitlab/gitlab-setup.adoc[Setup]
 // *** Guide
 // *** Troubleshooting
-*** xref:gitlab/gitlab-further-information.adoc[Further information]
+*** xref:gitlab/gitlab-further-information.adoc[Further Information]
 ** xref:calendar.adoc[OpenX Calendar]
 *** xref:calendar/calendar-setup.adoc[Setup]
 *** xref:calendar/calendar-best-practices.adoc[Best Practices]
@@ -16,18 +16,18 @@
 *** xref:vscode/vscode-setup.adoc[Setup]
 *** xref:vscode/vscode-guide.adoc[Guide]
 *** Troubleshooting
-*** xref:vscode/vscode-further-information.adoc[Further information]
+*** xref:vscode/vscode-further-information.adoc[Further Information]
 ** Git
 *** Setup
 *** Guide
 *** Troubleshooting
 *** Further information
-** Draw.io
-*** Setup
+** xref:drawio.adoc[Draw.io]
+*** xref:drawio/drawio-setup.adoc[Setup]
 *** Guide
 *** Troubleshooting
 *** Further information
 ** xref:docker.adoc[Docker]
 *** xref:docker/docker-setup.adoc[Setup]
 *** xref:docker/docker-guides.adoc[Guide]
-*** xref:docker/docker-best-practices.adoc[Best Pracices]
+*** xref:docker/docker-best-practices.adoc[Best Practices]
