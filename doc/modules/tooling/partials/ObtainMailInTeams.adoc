@@ -1,9 +1,0 @@
-
-.How to obtain the email address of a Teams channel
-image::email.gif[Obtaining an Email Adress of a Channel]
-
-. Select the channel you are interested in
-
-. Click on "..." and select "Get email address"
-
-. Copy the selected address to clipboard

@@ -1,0 +1,40 @@
+= Microsoft Teams And Sharepoint
+:description: A summary page describing what MS Teams and Sharepoint are and where to find related information, guides etc.
+:keywords: teams,sharepoint,summary,tool
+
+include::partial$_attributes.adoc[]
+
+//TODO icon
+
+
+Microsoft (MS) Teams is used to communicate and exchange documents **without direct impact on the standards** within project groups.
+Different groups and topics are gathered under different channels.
+Here, users can chat with each other and share files directly. +
+Sharepoint is a Microsoft service that is used in the background by Teams to manage files.
+It can be accessed directly or through Teams, which is why all files that have been added either way can be retrieved through both tools.
+
+
+* Each channel in Teams has a "chat" tab for chatting & a "files" tab to share files.
+** If you need another Teams channel, contact mailto:benjamin.engel@asam.net[Benjamin Engel]!
+* These file tabs can also be found directly in Sharepoint (sign in with your microsoft account).
+
+IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See xref:general_guidelines/Workflow.adoc[Workflow Guidelines] for more information.
+
+
+== MS Teams At ASAM
+//TODO
+
+== MS Sharepoint At ASAM
+//TODO
+
+== Content
+
+[cols="1,1,1"]
+|===
+|xref:teams_and_sharepoint/teams-and-sharepoint-setup.adoc[image:{setup-image}[width=120,title="Teams And Sharepoint Setup"] Teams And Sharepoint Setup]
+|xref:teams_and_sharepoint/teams-and-sharepoint-guide.adoc[image:{guide-image}[width=120,title="Teams And Sharepoint Guides"] Teams And Sharepoint Guides]
+|xref:teams_and_sharepoint/teams-and-sharepoint-best-practices.adoc[image:{best-practices-image}[width=120,title="Teams And Sharepoint Best Practices"] Teams And Sharepoint Best Practices]
+
+|===
+
+reference::teams,sharepoint,!summary
