@@ -1,3 +1,4 @@
+= Visual Studio Code Extension: Git Graph
 
 The Git Graph extension is a great tool navigating the branches in the git repository and provides a great overview.
 

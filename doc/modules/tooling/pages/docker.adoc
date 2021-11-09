@@ -1,0 +1,30 @@
+= Docker
+:description: A summary page describing what Docker is and where to find related information, guides etc.
+:keywords: docker,summary,tool,recommended
+
+include::partial$_attributes.adoc[]
+
+{docker-icon}
+
+Docker is a platform where you use so-called containers to run applications in an encapsulated environment. With this, you do not need to install and configure software, programming languages etc: just download and use a pre-configured container that has all the relevant configuration already built in. From the docker homepage:
+
+> Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
+
+image::https://docs.docker.com/engine/images/architecture.svg[title="The Docker link:https://docs.docker.com/get-started/overview/#docker-architecture[architecture]", link="https://docs.docker.com/get-started/overview/#docker-architecture", window=_blank]
+
+== Docker At ASAM
+TODO
+
+== Content
+
+[cols="1,1"]
+|===
+|xref:docker/docker-setup.adoc[image:{setup-image}[width=120,title="Docker Setup"] Docker Setup]
+|xref:docker/docker-guides.adoc[image:{guide-image}[width=120,title="Docker Guides"] Docker Guides]
+
+|xref:docker/docker-troubleshooting.adoc[image:{troubleshooting-image}[width=120,title="Docker Troubleshooting"] Docker Troubleshooting]
+|xref:docker/docker-best-practices.adoc[image:{best-practices-image}[width=120,title="Docker Best Practices"] Docker Best Practices]
+
+|===
+
+reference::docker,!summary

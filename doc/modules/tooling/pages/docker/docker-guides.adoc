@@ -1,0 +1,18 @@
+= Docker Guide
+:description: A guide to using docker at ASAM
+:keywords: docker, guide
+:offset-value: leveloffset=+1
+
+include::partial$_attributes.adoc[]
+
+{docker-icon}
+
+
+For the default docker-compose.yml needed to easily create the html result of a project locally, see the xref:compendium:docker/standard-docker-config.adoc[default docker-compose.yml for creating local htmls].
+
+include::compendium:page$vscode/run-docker.adoc[{offset-value}]
+
+include::compendium:page$powershell/run-docker.adoc[{offset-value}]
+
+include::compendium:page$docker/run-docker.adoc[{offset-value}]
+

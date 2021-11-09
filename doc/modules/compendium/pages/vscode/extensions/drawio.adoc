@@ -1,3 +1,4 @@
+= Visual Studio Code Extension: Draw.io
 
 // tag::drawio-extension[]
 

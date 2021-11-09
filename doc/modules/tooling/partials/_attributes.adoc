@@ -2,11 +2,18 @@
 :guide-image: https://cdn-icons-png.flaticon.com/128/1705/1705243.png
 :troubleshooting-image: https://cdn-icons-png.flaticon.com/128/1522/1522004.png
 :best-practices-image: https://cdn-icons-png.flaticon.com/128/716/716041.png
+:docker-image: https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png
+:calendar-image: https://cdn-icons-png.flaticon.com/512/860/860794.png
+:vscode-image: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png
 
 :calendar-url: https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html
 :vscode-url: https://code.visualstudio.com/download
+:docker-url: https://docs.docker.com/get-docker/
 
 :gitlab-icon: {gitlab-url}[image:gitlab-icon.png[alt="GitLab Icon", width=120,role=right] ,window=_blank]
-:calendar-icon: {calendar-url}[image:https://cdn-icons-png.flaticon.com/512/860/860794.png[alt="OpenX Calendar Icon",width=120,role=right] ,window=_blank]
+:calendar-icon: {calendar-url}[image:{calendar-image}[alt="OpenX Calendar Icon",width=120,role=right] ,window=_blank]
 :git-icon:
-:vscode-icon: {vscode-url}[image:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=120, role=right] ,window=_blank]
+:vscode-icon: {vscode-url}[image:{vscode-image}[alt=Visual Studio Code, width=120, role=right] ,window=_blank]
+:docker-icon: {docker-url}[image:{docker-image}[alt=Docker, width=120, role=right] ,window=_blank]
+
+:openx-calendar-mail: openx@asam.net

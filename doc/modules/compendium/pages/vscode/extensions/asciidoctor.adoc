@@ -1,3 +1,4 @@
+= Visual Studio Code Extension: AsciiDoc
 
 The AsciiDoc extension will add the syntax the AsciiDoc interpreter to VSCode so you can use the preview feature and have syntax highlighting.
 

@@ -1,0 +1,1 @@
+:docker-deamon-warning: IMPORTANT: The docker deamon must be running in the background before you can run docker commands from VSCode. To start the deamon, either have Docker Desktop automatically start with Windows or start it manually.

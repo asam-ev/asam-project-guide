@@ -1,3 +1,4 @@
+= Visual Studio Code Extension: Comment Anchors
 
 The Comment Anchor extension provides you with the ability of adding highlighted keywords to the raw text.
 

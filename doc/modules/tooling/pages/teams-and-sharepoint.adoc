@@ -1,6 +1,6 @@
 = Microsoft Teams And Sharepoint
 :description: A summary page describing what MS Teams and Sharepoint are and where to find related information, guides etc.
-:keywords: teams,sharepoint,summary,tool
+:keywords: teams,sharepoint,summary,tool,mandatory
 
 include::partial$_attributes.adoc[]
 

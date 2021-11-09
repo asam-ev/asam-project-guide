@@ -43,7 +43,7 @@ NOTE: The "ASAM SVN" login is deprecated and will be removed in the future.
 
 For working locally on the standardization process, the following tools are recommended:
 
-include::partial$Tools-List.adoc[tag="recommended"]
+include::partial$tools-list.adoc[tag="recommended"]
 
 
 

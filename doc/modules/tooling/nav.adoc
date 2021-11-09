@@ -27,8 +27,7 @@
 *** Guide
 *** Troubleshooting
 *** Further information
-** Docker
-*** Setup
-*** Guide
-*** Troubleshooting
-*** Further information
+** xref:docker.adoc[Docker]
+*** xref:docker/docker-setup.adoc[Setup]
+*** xref:docker/docker-guides.adoc[Guide]
+*** xref:docker/docker-best-practices.adoc[Best Pracices]

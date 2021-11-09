@@ -1,6 +1,10 @@
 = Working Without Software Installation
 :description: Contains an overview over when and how working without any additional software installation is possible.
-:keywords: installation,software,online,gitlab
+:keywords: installation,software,online,gitlab,recommended
 
 {gitlab-url}[GitLab] provides an integrated working environment and text editor with which users can directly create and edit files without having to install xref:git.adoc[Git] or an editor like xref:vscode.adoc[Visual Studio Code].
-See xref:gitlab/gitlab-ide-guide.adoc[the GitLab Web IDE Guide] for more information.
+See xref:compendium:gitlab/gitlab-ide-guide.adoc[the GitLab Web IDE Guide] for more information.
+
+However, note that you will still need to configure your accounts for the mandatory tools.
+
+reference::mandatory

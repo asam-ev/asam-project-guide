@@ -1,6 +1,6 @@
 = GitLab
 :description: A summary page describing what GitLab is and where to find related information, guides etc.
-:keywords: gitlab,summary,tool
+:keywords: gitlab,summary,tool,mandatory
 
 include::partial$_attributes.adoc[]
 
