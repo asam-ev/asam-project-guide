@@ -5,9 +5,7 @@
 
 include::partial$_attributes.adoc[]
 
-image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=64, height=64, link={vscode-download}, role=right, window=_blank]
-
-include::partial$_attributes.adoc[]
+{vscode-icon}
 
 == Context
 Visual Studio Code is the recommended editor for working on AsciiDoc files and diagrams locally. It is also a useful tool for interfacing with git.
@@ -44,7 +42,7 @@ VSCode has a lot of very helpful extensions that can be downloaded and installed
 
 // TODO: Split content into follow up pages here
 
-== Trouble Shooting / Known Issues
+== Troubleshooting / Known Issues
 
 === I have a problem and I don't know what
 //TODO
