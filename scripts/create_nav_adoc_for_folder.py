@@ -136,6 +136,8 @@ def initial_steps_performed_only_once(relative_path_depth,use_module,dirpath,bas
 
     return relative_path_depth,base_level,nav_content,module,module_path,created
 
+
+# TODO: Add append feature so that existing files are only appended, not skipped or overwritten (also: do this for the Subpages part in "create_pure_nvaigatoin_adoc_file!)
 def add_subdirectories_to_main_file(created_files,main_file,list_entries,current_relative_path):
     content = []
     content_array = []
