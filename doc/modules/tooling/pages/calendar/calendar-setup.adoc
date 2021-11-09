@@ -1,0 +1,58 @@
+= Setting Up The Shared OpenX Calendar
+:description: How to import the shared OpenX calendar.
+:keywords: task,fragment,setup,openx-calendar, calendar-setup
+
+:calendar-ics: https://outlook.office365.com/owa/calendar/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.ics
+:outlook-url: https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c
+:google-url: https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&hl=en
+
+include::partial$_attributes.adoc[]
+
+{calendar-icon}
+
+All OpenX projects share a calendar under the email address of openx@asam.net.
+**This should be included on all meetings taking place for the projects to make sure it is up to date.**
+Every project's MS Teams group has a tab in the _General_ channel called *_Calendar_* where you can refer to it.
+
+
+*To subscribe*, use the ICS link: +
+*https://outlook.office365.com/owa/calendar/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.ics[window=_blank]*
+
+
+
+
+== Context
+All meetings are synchronized through the shared OpenX calendard.
+**The OpenX calendar can be {calendar-url}[viewed online,window=_blank] as well.**
+
+== Result
+The user has activated their ASAM GitLab account and can access the correct project repositories.
+
+== Prerequisites
+none
+
+== How
+
+. Copy the {calendar-ics}[**ics link**] to you clipboard
+. Follow the instructions for your calendar type:
+
+[#Calendar-Installation-Instructions]
+[cols="^1s,^1s"]
+[frame=none,grid=cols]
+[align=center]
+|===
+
+|link:{outlook-url}[image:https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg[width=80,title="Outlook / Exchange Online",window=_blank]]
+|link:{google-url}[image:https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg[width=80,title="Subscribing with Google Calendar",window=_blank]]
+
+|{outlook-url}[Subscribing with Outlook / Exchange Online^]
+|{google-url}[Subscribing with Google^]
+
+|===
+
+== Troubleshooting / Known Issues
+
+=== I cannot subscribe using the provided link
+Make sure you use the {calendar-ics}[**ics link**], not the web url.
+Subscribing requires an ics link or file.
+The web url ({calendar-url}[link,window=_blank]) is *ONLY* for viewing the calendar online without subscribing to it.

@@ -1,0 +1,13 @@
+= Shared OpenX Calendar - Best Practices
+:description:
+:keywords: openx-calendar,best-practices
+
+include::partial$_attributes.adoc[]
+
+{calendar-icon}
+
+All OpenX projects share a calendar under the email address of openx@asam.net. **This should be included on all meetings taking place for the projects to make sure it is up to date.**
+
+Every project's MS Teams group has a tab in the _General_ channel called *_Calendar_* where you can refer to it.
+
+To *view the calendar in your browser* directly: https://outlook.office365.com/calendar/published/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.html[Display calendar in webbrowser^].

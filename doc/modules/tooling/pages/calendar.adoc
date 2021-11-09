@@ -1,0 +1,21 @@
+= OpenX Calendar
+:description: A summary page describing what the OpenX calendar is and where to find related information, guides etc.
+:keywords: openx-calendar,summary,tool
+
+include::partial$_attributes.adoc[]
+
+{calendar-icon}
+
+// TODO: description
+
+== Content
+
+[cols="1,1,1"]
+|===
+|xref:calendar/calendar-setup.adoc[image:{setup-image}[width=120,title="OpenX Calendar Setup"] OpenX Calendar Setup]
+|xref:calendar/calendar-best-practices.adoc[image:{best-practices-image}[width=120,title="OpenX Calendar Best Practices"] OpenX Calendar Best Practices]
+|xref:calendar/calendar-troubleshooting.adoc[image:{troubleshooting-image}[width=120,title="OpenX Calendar Troubleshooting"] GitLab Troubleshooting]
+
+|===
+
+reference::openx-calendar,!summary

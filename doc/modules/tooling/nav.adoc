@@ -1,19 +1,27 @@
 * xref:overview.adoc[Tools Overview]
+** xref:working-without-software-installation.adoc[Working Without Software Installation]
 ** xref:gitlab.adoc[GitLab]
 *** xref:gitlab/gitlab-setup.adoc[Setup]
 // *** Guide
 // *** Troubleshooting
 *** xref:gitlab/gitlab-further-information.adoc[Further information]
-** Git
-*** Setup
-*** Guide
-*** Troubleshooting
-*** Further information
+** xref:calendar.adoc[OpenX Calendar]
+*** xref:calendar/calendar-setup.adoc[Setup]
+*** xref:calendar/calendar-best-practices.adoc[Best Practices]
+** xref:teams-and-sharepoint.adoc[Microsoft Teams And Sharepoint]
+*** xref:teams_and_sharepoint/teams-and-sharepoint-setup.adoc[Setup]
+*** xref:teams_and_sharepoint/teams-and-sharepoint-guide.adoc[Guide]
+*** xref:teams_and_sharepoint/teams-and-sharepoint-best-practices.adoc[Best Practices]
 ** xref:vscode.adoc[VSCode]
 *** xref:vscode/vscode-setup.adoc[Setup]
 *** xref:vscode/vscode-guide.adoc[Guide]
 *** Troubleshooting
 *** xref:vscode/vscode-further-information.adoc[Further information]
+** Git
+*** Setup
+*** Guide
+*** Troubleshooting
+*** Further information
 ** Draw.io
 *** Setup
 *** Guide
@@ -24,4 +32,3 @@
 *** Guide
 *** Troubleshooting
 *** Further information
-** xref:working-without-software-installation.adoc[Working Without Software Installation]
