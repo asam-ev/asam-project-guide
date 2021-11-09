@@ -57,7 +57,7 @@ TIP: *If you prefer working online without having to install software on your co
 
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png[alt=Visual Studio Code, width=64, height=64, link=https://code.visualstudio.com/download, role=right, window=_blank]
 
-Visiual Studio Code is the suggested solution for checking out repositories and files from GitLab, adding and editing files, and pushing changes back to GitLab. However, users may choose any compatible program(s) instead, as long as GitLab stays the single point of truth for project files. Alternatively, users may also choose to work completly through GitLab by using the Web IDE provided there. See *<<Working Without Software Installation>>* for more information.
+Visual Studio Code is the suggested solution for checking out repositories and files from GitLab, adding and editing files, and pushing changes back to GitLab. However, users may choose any compatible program(s) instead, as long as GitLab stays the single point of truth for project files. Alternatively, users may also choose to work completly through GitLab by using the Web IDE provided there. See *<<Working Without Software Installation>>* for more information.
 
 
 ==== Installing Extensions (Asciidoc Example)
