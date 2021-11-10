@@ -1,10 +1,10 @@
-= GitLab - Further Information
-:description: Contains further information and tips on using GitLab at ASAM.
-:keywords: further-information, gitlab
+= GitLab Terminology
+:description: Contains terminology on GitLab at ASAM.
+:keywords: terminology, gitlab
+:page-partial:
 
 include::partial$_attributes.adoc[]
 
-{gitlab-icon}
 
 ASAM GitLab:: {gitlab-url}
 

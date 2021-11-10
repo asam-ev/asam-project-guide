@@ -1,0 +1,202 @@
+= Setting Up Git
+:description: Contains a summary of how to set up git locally.
+:keywords: setup, git, task, fragment, git-setup
+:vscode: xref:vscode.adoc[Visual Studio Code]
+:powershell: xref:compendium:powershell/powershell-basics.adoc[PowerShell]
+:gitlab: ASAM {gitlab-url}[GitLab^]
+
+include::partial$_attributes.adoc[]
+
+{git-icon}
+
+
+== Context
+In order to work locally on the repositories and their content hosted at the {gitlab}, users can install and set up Git on their local computer.
+Git can also interface directly with {vscode}, making changing and updating files from within one tool an easy option.
+
+== Result
+* Git is installed locally.
+* Git credentials (SSH) is configured
+
+== Prerequisites
+* For direct integration: {vscode} is installed
+
+== How
+Git requires a multi-step installation.
+The following sections describe each part of this setup sequentially.
+
+=== Install Git On Your Computer
+. {git-url}[Download Git]
+. Follow the installation instructions on screen.
+The installation routine requires many settings.
+You can leave most to all on their default value.
++
+__**OPTIONAL**: If you would like to use {vscode} as your standard Git editor, follow the optional instructions below.__
++
+.. Select "Use Visual Studio Code as Git's default editor" from the drop-down menu.
++
+image:select-vscode-for-git.png[title="Use Visual Studio Code as Git's default editor"]
+
+=== Configure User Credentials
+After installation of Git, **configure your user credentials** that Git uses when checking in changed content from your PC to the {gitlab}.
+To make sure your commits match your name and email details, a one time configuration is necessary.
+
+. Open a {powershell} window
+. Execute the following command and replace the entries _"FIRST_NAME_, _LAST_NAME"_  accordingly:
++
+[source,git]
+----
+git config --global user.name "FIRST_NAME LAST_NAME"
+----
++
+.Setting your git user name
+====
+[source,git]
+----
+git config --global user.name Philip Windecker
+----
+====
+. Next, execute the following command and replace the entry _"+MY_NAME@example.com+"_ with your comany's email:
++
+[source,git]
+----
+git config --global user.email "MY_NAME@example.com"
+----
++
+.Setting your email
+====
+[source,git]
+----
+git config --global user.email philip.windecker@avenyr.de
+----
+====
++
+NOTE: If no error is returned, the configuration step has been successful.
+
+
+
+=== __OPTIONAL__: SSH Key Pair
+
+To ensure you don't have to enter your login details every time you want to interact with the repository, add an SSH key to your account.
+
+. In a {powershell} window, enter the following:
++
+NOTE: The {powershell} window should be opened in your user folder (Windows).
+Usually, if you open it through right-click on the Windows button, this should be the case.
++
+[source,git]
+----
+ssh-keygen -t ed25519 -C "YourEmail@address.com"
+----
++
+.Generating the ssh key pair
+====
+[source,git]
+----
+ssh-keygen -t ed25519 -C "philip.windecker@avenyr.de"
+----
+====
++
+. Confirm the suggested path with Enter.
+. Type in a passphrase and confirm with Enter, or just confirm without a passphrase.
++
+TIP: Entering a passphrase is optional and leads to additional steps every time you connect to the remote, so it is not recommended.
+
+. Copy the created public key to the Windows clipboard:
++
+[source,git]
+----
+Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard
+----
++
+
+
+. Edit your https://code.asam.net/-/profile[profile in GitLab^]
++
+image:access-gitlab-account-config.png[title="Edit user profile in GitLab"]
+
+. Open the settings "SSH Keys" on the left
++
+image:open-ssh-settings.png[title="Open the 'SSH Keys' settings"]
+
+. Add the generated key to the https://code.asam.net/profile/keys[SSH window in GitLab^] - Paste the key copied in step 2, give it a title and then click "Add Key"
++
+.Confirmation screen after SSH key has been entered in GitLab
+image:confirm-ssh-key.png[title="Window shown after SHS key has been entered and confirmed"]
++
+. In your {powershell} window, type the following command, hit Enter, and check the status:
++
+[source,Shell]
+----
+Get-Service ssh-agent
+----
++
+.. If the status is "Stopped", type the following, hit Enter, and check the StartType.
++
+[source,Shell]
+----
+Get-Service ssh-agent | Select StartType
+----
++
+.. If it is "Disabled": Activate the SSH Agent
++
+NOTE: This requires administration rights. If you do not have these, request support from your IT department.
++
+... Open another {powershell} window (with **Administration** rights)
+... Set the SSH Agent to start manually by typing the following command and hitting Enter:
++
+[source,Shell]
+----
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+----
+... Close the PowerShell window with administration rights
+
+. Return to the other PowerShell window
+. Enter the following command and hit Enter
++
+[source,Shell]
+----
+Start-Service ssh-agent
+----
++
+
+. To add your generated private key to the SSH Agent, enter
++
+[source,Shell]
+----
+ssh-add $HOME/.ssh/id_ed25519
+----
++
+NOTE: If you chose a different folder or filename, you may need to change the path ("~/.ssh/") and/or the filename ("id_ed25519") accordingly.
++
+TIP: If the ~ is not recognised, replace "~" with "$HOME".
+. Establish a connection to the GitLab by entering the following line and confirming with Enter:
++
+[source,Shell]
+----
+ssh -T code.asam.net
+----
++
+. If this is the first connection through ssh, you will see a prompt stating that the authenticity of host 'code.asam.net' can't be established.
++
+image::add-known-host.png[alt="Add GitLab to known hosts"]
++
+. Enter 'yes' and confirm with enter
+. You will be prompted to enter your password, but this step is not required.
+Cancel the connection by typing `ctrl`+`c`.
+
+
+
+== Troubleshooting / Known Issues
+=== I cannot click "Next" after selecting Visual Studio Code as Git's default editor
+If you cannot click "Next", make sure Visual Studio Code is already installed.
+Return to the previous step and continue again.
+Now, the "next" button should be active.
+
+=== I cannot copy the key using the provided command
+Open the file you created in a text editor and copy the whole text manually.
+
+=== I cannot add my private key to the SSH agent
+This cannot be done in the Administration {powershell} window if your Admin account is not your user account!
+Otherwise, Windows will complain about unprotected private key files!
+Switch to a non-administrator PowerShell and execute the command again.

@@ -2,32 +2,35 @@
 ** xref:working-without-software-installation.adoc[Working Without Software Installation]
 ** xref:gitlab.adoc[GitLab]
 *** xref:gitlab/gitlab-setup.adoc[Setup]
-// *** Guide
-// *** Troubleshooting
-*** xref:gitlab/gitlab-further-information.adoc[Further Information]
+*** xref:gitlab/gitlab-guides.adoc[Guides]
 ** xref:calendar.adoc[OpenX Calendar]
 *** xref:calendar/calendar-setup.adoc[Setup]
 *** xref:calendar/calendar-best-practices.adoc[Best Practices]
 ** xref:teams-and-sharepoint.adoc[Microsoft Teams And Sharepoint]
 *** xref:teams_and_sharepoint/teams-and-sharepoint-setup.adoc[Setup]
-*** xref:teams_and_sharepoint/teams-and-sharepoint-guide.adoc[Guide]
+*** xref:teams_and_sharepoint/teams-and-sharepoint-guides.adoc[Guides]
 *** xref:teams_and_sharepoint/teams-and-sharepoint-best-practices.adoc[Best Practices]
 ** xref:vscode.adoc[VSCode]
 *** xref:vscode/vscode-setup.adoc[Setup]
-*** xref:vscode/vscode-guide.adoc[Guide]
-*** Troubleshooting
+*** xref:vscode/vscode-guides.adoc[Guides]
 *** xref:vscode/vscode-further-information.adoc[Further Information]
-** Git
-*** Setup
-*** Guide
-*** Troubleshooting
-*** Further information
+** xref:git.adoc[Git]
+*** xref:git/git-setup.adoc[Setup]
+*** xref:git/git-guides.adoc[Guides]
+*** xref:git/git-troubleshooting.adoc[Troubleshooting]
+*** xref:git/git-best-practices.adoc[Best Practices]
 ** xref:drawio.adoc[Draw.io]
 *** xref:drawio/drawio-setup.adoc[Setup]
-*** Guide
-*** Troubleshooting
-*** Further information
 ** xref:docker.adoc[Docker]
 *** xref:docker/docker-setup.adoc[Setup]
-*** xref:docker/docker-guides.adoc[Guide]
+*** xref:docker/docker-guides.adoc[Guides]
 *** xref:docker/docker-best-practices.adoc[Best Practices]
+// ** Powershell
+// *** Guides
+
+
+// ** Toolname
+// *** Setup
+// *** Guides
+// *** Troubleshooting
+// *** Best Practices

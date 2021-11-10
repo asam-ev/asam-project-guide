@@ -1,12 +1,11 @@
-= Visual Studio Code Extension: Comment Anchors
 
 The Comment Anchor extension provides you with the ability of adding highlighted keywords to the raw text.
 
 .Comment Anchors examples
-image::comment_anchor_example.PNG[]
+image::compendium:comment_anchor_example.PNG[]
 
 The extension also lets you search for all available anchors in the repository or current file and offers a jump-to option.
 
 .Comment Anchors (id: exodiusstudios.comment-anchors)
-image::commentanchor_ext.PNG[]
+image::compendium:commentanchor_ext.PNG[]
 

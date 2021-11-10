@@ -1,4 +1,10 @@
 = Git Best Practices
+:description: Contains best practices for using git.
+:keywords: git, best-practices,repository,repo,feature,commit
+
+include::partial$_attributes.adoc[]
+
+{git-icon}
 
 This is a guide for programming with version control.
 

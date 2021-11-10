@@ -1,19 +1,21 @@
 = ASAM Recommended Visual Studio Code Settings
-:lookup: partial$VSCode/Settings
+
+
+:lookup: compendium:partial$vscode
 
 This is a summary of recommended VSCode settings to follow writing guidelines easier.
 
 
 == Indentations
 
-include::{lookup}/Indentations.adoc[]
+include::{lookup}/indentations.adoc[]
 
 
 == Automatic Removal Of Spaces After Periods
 
-include::{lookup}/Spaces-Removal.adoc[]
+include::{lookup}/spaces-removal.adoc[]
 
 
 == Enabling Kroki Support In AsciiDoc
 
-include::{lookup}/Kroki.adoc[]
+include::{lookup}/kroki.adoc[]

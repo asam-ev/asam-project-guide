@@ -1,3 +1,7 @@
+= Windows Subsystem for Linux (WSL)
+:description: A terminology page for WSL
+:keywords: terminology,term,wsl
+
 .What is WSL?
 [%collapsible]
 ====

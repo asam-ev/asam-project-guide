@@ -1,3 +1,7 @@
+= Git Terminology
+:description: Lists terms and terminology for git
+:keywords: term, terminology, git
+
 
 Git:: A version control system. Used by ASAM in their projects.
 

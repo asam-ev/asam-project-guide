@@ -18,9 +18,9 @@ The user has activated their ASAM GitLab account and can access the correct proj
 
 == How
 . Follow the link in the GitLab account creation email sent by "GitLab +<code@asam.net>+" to set your password.
-. Log in with your account using the image:GitLabStandardLoginButton.png[title="Standard Button"] access.
+. Log in with your account using the image:gitlab-standard-login-button.png[title="Standard Button"] access.
 +
-image:GitLabStandardLogin.png[title="Standard Login"]
+image:gitlab-standard-login.png[title="Standard Login"]
 +
 You will be promted to upload an SSH key. See <<Secure SSH Connection To GitLab>> for instructions on generating and uploading the SSH keys. **This is only required IF you use git locally in addition to GitLab.**
 

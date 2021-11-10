@@ -23,10 +23,7 @@ ASAM recommends using Visual Studio Code (VSCode) for local text document intera
 [cols="1,1"]
 |===
 |xref:vscode/vscode-setup.adoc[image:{setup-image}[width=120,title="GitLab Setup"] Visual Studio Code Setup]
-|xref:vscode/vscode-guide.adoc[image:{guide-image}[width=120,title="GitLab Guides"] Visual Studio Code Guides]
-
-|xref:vscode/vscode-troubleshooting.adoc[image:{troubleshooting-image}[width=120,title="Visual Studio Code Troubleshooting"] Visual Studio Code Troubleshooting]
-|xref:vscode/vscode-best-practices.adoc[image:{best-practices-image}[width=120,title="Visual Studio Code Best Practices"] Visual Studio Code Best Practices]
+|xref:vscode/vscode-guides.adoc[image:{guide-image}[width=120,title="GitLab Guides"] Visual Studio Code Guides]
 
 |===
 

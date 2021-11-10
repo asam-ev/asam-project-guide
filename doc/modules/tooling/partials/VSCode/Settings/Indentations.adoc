@@ -1,9 +1,0 @@
-
-image::VSCodeSettingsIndent.png[]
-. Open the xref:tool-specific/VSCode-Command-Palette.adoc[Command Palette]
-. Type "user settings" and confirm with Enter
-. Search for "indent" in the user settings
-. Enable "Insert Spaces"
-. Set "Tab Size" to 4
-
-IMPORTANT: The xref:../writing_guidelines/writing_guide.adoc[writing guide] does not allow any tabs!

@@ -25,9 +25,6 @@ ASAM uses {gitlab-url}[GitLab] for multiple aspects of its standardization proce
 |xref:gitlab/gitlab-setup.adoc[image:{setup-image}[width=120,title="GitLab Setup"] GitLab Setup]
 |xref:gitlab/gitlab-guides.adoc[image:{guide-image}[width=120,title="GitLab Guides"] GitLab Guides]
 
-|xref:gitlab/gitlab-troubleshooting.adoc[image:{troubleshooting-image}[width=120,title="GitLab Troubleshooting"] GitLab Troubleshooting]
-|xref:gitlab/gitlab-best-practices.adoc[image:{best-practices-image}[width=120,title="GitLab Best Practices"] GitLab Best Practices]
-
 |===
 
 reference::gitlab,!summary

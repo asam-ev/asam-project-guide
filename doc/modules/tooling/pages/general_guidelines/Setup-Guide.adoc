@@ -72,7 +72,7 @@ image::extensions.png[alt=Add extension under 'View']
 
 . Search for AsciiDoc (or use asciidoctor.asciidoctor-vscode) & install it. This provides a preview feature and syntax highlighting for AsciiDoc files.
 +
-image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
+image::asciidoc_ext.png[alt=Search and find the extension 'AsciiDoc']
 
 
 VSCode has a lot of very helpful extensions that can be downloaded and installed through the integrated marketplace. You can view the recommended list of extensions below.

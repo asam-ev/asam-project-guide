@@ -1,4 +1,3 @@
-= Visual Studio Code Extension: GitLens
 
 The GitLens Extension is a great extension to follow up on all the changes made to the documents within the repository.
 Gitlens provides:
@@ -9,5 +8,5 @@ Gitlens provides:
 * Commit Comparison
 
 .GitLens -- Git supercharged (id: eamodio.gitlens)
-image::gitlens_ext.PNG[]
+image::compendium:gitlens_ext.PNG[]
 

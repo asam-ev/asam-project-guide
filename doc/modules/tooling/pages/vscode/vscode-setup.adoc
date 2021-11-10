@@ -8,7 +8,8 @@ include::partial$_attributes.adoc[]
 {vscode-icon}
 
 == Context
-Visual Studio Code is the recommended editor for working on AsciiDoc files and diagrams locally. It is also a useful tool for interfacing with git.
+Visual Studio Code is the recommended editor for working on AsciiDoc files and diagrams locally.
+It is also a useful tool for interfacing with git.
 
 == Result
 The user has installed Visual Studio Code and configured it with the recommended settings.
@@ -21,24 +22,7 @@ none
 . Follow the instructions during installation
 . After installation, start VSCode for further configuration
 
-=== Install Extensions
-
-Visual Studio Code can be adapted to each project's and the user's needs. This is done by installing and using extensions. This section shows how to install a new extension from the marketplace. As an example, we will use the AsciiDoc extension.
-
-The AsciiDoc extension for VSCode allows for easy creation and supported editing of AsciiDoc or adoc files within VSCode. For shortcuts and tips, see the documentation of the extension. You can access that documentation when you click on the extension in the marketplace.
-
-. Access the extensions window through the VSCode menu bar -> View -> Extensions.
-+
-image::extensions.png[alt=Add extension under 'View']
-
-. Search for AsciiDoc (or use asciidoctor.asciidoctor-vscode) & install it. This provides a preview feature and syntax highlighting for AsciiDoc files.
-+
-image::install_asciidoc.png[alt=Search and find the extension 'AsciiDoc']
-
-
-VSCode has a lot of very helpful extensions that can be downloaded and installed through the integrated marketplace. You can view the recommended list of extensions below.
-
-
+NOTE: For recommended settings and extensions, see the xref:vscode/vscode-guides.adoc#_install_extensions[guides on Visual Studio Code].
 
 // TODO: Split content into follow up pages here
 
