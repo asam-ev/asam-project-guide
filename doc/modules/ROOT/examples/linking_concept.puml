@@ -35,8 +35,8 @@ rectangle "compendium:teams/receive-notifications.adoc" as f0_32
 rectangle "compendium:teams/teams-channel-file-structure.adoc" as f0_33
 rectangle "compendium:vscode/Adding-Diagrams-To-VSCode.adoc" as f0_34
 rectangle "compendium:vscode/cloning-a-repository.adoc" as f0_35
-rectangle "compendium:vscode/recommended-vscode-extensions.adoc" as f0_36
-rectangle "compendium:vscode/recommended-vscode-settings.adoc" as f0_37
+rectangle "compendium:vscode/Recommended-VSCode-Extensions.adoc" as f0_36
+rectangle "compendium:vscode/Recommended-VSCode-Settings.adoc" as f0_37
 rectangle "compendium:vscode/run-docker.adoc" as f0_38
 rectangle "compendium:vscode/vscode-activity-bar.adoc" as f0_39
 rectangle "compendium:vscode/vscode-command-palette.adoc" as f0_40
@@ -104,9 +104,11 @@ rectangle "standardization:nav.adoc" as f6_1
 rectangle "standardization:asam-development-process.adoc" as f6_2
 rectangle "standardization:development-phase.adoc" as f6_3
 rectangle "standardization:home.adoc" as f6_4
-rectangle "standardization:proposal-phase.adoc" as f6_5
-rectangle "standardization:release-phase.adoc" as f6_6
-rectangle "standardization:review-phase.adoc" as f6_7
+rectangle "standardization:project-setup.adoc" as f6_5
+rectangle "standardization:project-types.adoc" as f6_6
+rectangle "standardization:proposal-phase.adoc" as f6_7
+rectangle "standardization:release-phase.adoc" as f6_8
+rectangle "standardization:review-phase.adoc" as f6_9
 }
 component tasks {
 rectangle "tasks:nav.adoc" as f7_1
@@ -129,7 +131,7 @@ rectangle "tooling:docker/docker-guides.adoc" as f8_14
 rectangle "tooling:docker/docker-setup.adoc" as f8_15
 rectangle "tooling:drawio/drawio-setup.adoc" as f8_16
 rectangle "tooling:general_guidelines/Setup-Guide.adoc" as f8_17
-rectangle "tooling:git/git-best-practices.adoc" as f8_18
+rectangle "tooling:git/Git-Best-Practices.adoc" as f8_18
 rectangle "tooling:git/git-guides.adoc" as f8_19
 rectangle "tooling:git/git-setup.adoc" as f8_20
 rectangle "tooling:gitlab/gitlab-guides.adoc" as f8_21
@@ -150,10 +152,12 @@ f2_2 -> f2_3
 f2_5 -left-> f2_3
 f6_4 -left-> f6_1
 f6_2 -left-> f6_1
-f6_5 -left-> f6_1
-f6_3 -left-> f6_1
 f6_7 -left-> f6_1
 f6_6 -left-> f6_1
+f6_5 -left-> f6_1
+f6_3 -left-> f6_1
+f6_9 -left-> f6_1
+f6_8 -left-> f6_1
 f8_7 -left-> f8_1
 f8_10 -left-> f8_1
 f8_6 -left-> f8_1

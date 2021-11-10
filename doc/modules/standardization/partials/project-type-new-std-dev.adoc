@@ -1,4 +1,3 @@
-= New Standard Development
 
 Start the development of a completely new standard within ASAM
 The development project meets one of the follow-ing criteria:

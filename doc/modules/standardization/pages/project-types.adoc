@@ -2,14 +2,14 @@
 
 == Standard Development
 
-include::partial$project-type-new-std-dev.adoc[tag=long]
+include::partial$project-type-new-std-dev.adoc[]
 
-include::partial$project-type-further-std-dev.adoc[tag=long]
+include::partial$project-type-further-std-dev.adoc[]
 
 == Other Project types
 
-include::partial$project-type-concept.adoc[tag=long]
+include::partial$project-type-concept.adoc[]
 
-include::partial$project-type-implementation.adoc[tag=long]
+include::partial$project-type-implementation.adoc[]
 
-include::partial$project-type-study.adoc[tag=long]
+include::partial$project-type-study.adoc[]

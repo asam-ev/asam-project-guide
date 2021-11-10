@@ -5,3 +5,4 @@
 :development-phase: xref:development-phase.adoc[The Development Phase]
 :review-phase: xref:review-phase.adoc[The Review Phase]
 :release-phase: xref:release-phase.adoc[The Release Phase]
+:project-types: xref:project-types.adoc[Project Types]
