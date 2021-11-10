@@ -1,0 +1,15 @@
+= Project Types
+
+== Standard Development
+
+include::partial$project-type-new-std-dev.adoc[tag=long]
+
+include::partial$project-type-further-std-dev.adoc[tag=long]
+
+== Other Project types
+
+include::partial$project-type-concept.adoc[tag=long]
+
+include::partial$project-type-implementation.adoc[tag=long]
+
+include::partial$project-type-study.adoc[tag=long]
