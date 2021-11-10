@@ -1,0 +1,3 @@
+= Project Setup
+
+How to setup a project, steps to take
