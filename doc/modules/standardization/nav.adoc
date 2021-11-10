@@ -2,6 +2,7 @@
 ** xref:asam-development-process.adoc[The ASAM Development Process]
 ** xref:project-ideation.adoc[The Ideation Phase]
 ** xref:proposal-phase.adoc[The Proposal Phase]
+** xref:project-types.adoc[Project types]
 ** xref:project-setup.adoc[Setup Of A Project]
 ** xref:development-phase.adoc[The Development Phase]
 ** xref:review-phase.adoc[The Review Phase]
