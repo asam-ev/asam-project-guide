@@ -4,7 +4,7 @@
 
 Lists standard tools for users and links to the tools section.
 
-// TODO
+// TODO this needs to be replaced with the setup guide in here
 
 https://www.asam.net/active-projects/resources/
 
