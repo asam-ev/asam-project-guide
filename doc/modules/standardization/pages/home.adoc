@@ -13,6 +13,7 @@ Reading through these may also provide a better understanding on what is expecte
 * {development-process}
 * {ideation-phase}
 * {proposal-phase}
+* {project-types}
 * {project-setup}
 * {development-phase}
 * {review-phase}

@@ -1,10 +1,9 @@
-= Further Standard Development
 
 Continue the development of a completely existing standard within ASAM
 
 == Major Version Development
 
-Major version developments of ASAM standards introduce significant changes to  the  standard.  
+Major version developments of ASAM standards introduce significant changes to  the  standard.
 Major version  development projects meet one or more of the following criteria:
 
 * Addition of a new, major feature.
@@ -17,10 +16,10 @@ The number of major version releases meets the pattern:
 
 .Summary
 |===
-|Purpose 
+|Purpose
 a|
 * Add major features
-* Make significant changes to existing features 
+* Make significant changes to existing features
 |Version| X.0.0
 |New Features | yes
 |Backward compatible | n.a.
@@ -30,16 +29,16 @@ a|
 
 == Minor Version Development
 
-Minor version developments of ASAM standards introduce  changes  to  existing  features  on  a  smaller scale or introduce new features that are rather small relative to the rest of the standard. 
+Minor version developments of ASAM standards introduce  changes  to  existing  features  on  a  smaller scale or introduce new features that are rather small relative to the rest of the standard.
 Minor version development projects meet one or more of the following criteria:
 
 * Addition of new features, which are considered as small relative to existing features.
 * Insignificant changes or additions to existing features.
 
-It  is  expected  that  the  implementation  of  the  new version will require low development or migration efforts by tool vendors and end users. 
-A new minor version of an ASAM standard shall be backward-compatible to its immediate predecessor version. 
+It  is  expected  that  the  implementation  of  the  new version will require low development or migration efforts by tool vendors and end users.
+A new minor version of an ASAM standard shall be backward-compatible to its immediate predecessor version.
 Exceptions are allowed, require approval from the TSC and must be documented in the standard.
-The number of minor version releases meets the pattern: 
+The number of minor version releases meets the pattern:
 "?.X.0". X is an integer number starting with 1. ? is the current major release number.
 The following process steps are not mandatory and are skipped by default, unless otherwise decided by the TSC or the project group:
 
@@ -57,7 +56,7 @@ a|
 |Backward compatible | yes
 |Funding Limit | 25%
 |Process
-a| 
+a|
 Standard Development Process except:
 * Proposal Workshop
 * Review Phase
@@ -73,11 +72,11 @@ Revision version developments of ASAM standards resolve technical issues with th
 * Editorial improvements.
 * Any kind of changes to examples, including the addition of examples.
 
-It is expected that the implementation of the new version will require low development or migration ef-forts by tool vendors and end users. 
-Revisions cannot include new features. 
+It is expected that the implementation of the new version will require low development or migration ef-forts by tool vendors and end users.
+Revisions cannot include new features.
 The only exception is, that a new feature has been forgotten in an earlier release of the standard and is absolutely required for a functional and meaningful standard.
 A new revision version of an ASAM standard shall be backward-compatible to its immediate predecessor version.
-The only exception is, that the correction of an error or the removal of an ambiguity cannot be reasonably solved in any other way than breaking the backward-compatibility. 
+The only exception is, that the correction of an error or the removal of an ambiguity cannot be reasonably solved in any other way than breaking the backward-compatibility.
 An exception requires approval from the TSC and must be documented in the standard.
 Revision development projects may be converted to a minor or major version development project during the course of the project term, if backward-compatibility issues turn out to be too  severe or  new  features  need  to  be  added.  The  TSC  has  to  approve  this  change  of project type.
 Only those ASAM members, who were actively involved in development of the preceding major or minor version, can participate in the revision development project.
@@ -104,7 +103,7 @@ a|
 |Backward compatible | yes
 |Funding Limit | 25%
 |Process
-a| 
+a|
 Standard Development Process except:
 * Proposal Workshop
 * Review Phase
