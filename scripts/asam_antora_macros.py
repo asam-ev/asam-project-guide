@@ -235,9 +235,11 @@ class AsciiDocContent:
     def _make_reference_replacement_text(self,ref_text,exceptions):
         reference_structure = "* xref:"
         reference_ending = "[]\n"
+        self_exclusion = (self.path,self.filename)
+
 
         link_text = []
-        excl_links = []
+        excl_links = [self_exclusion]
         links = []
 
         try:
@@ -256,7 +258,10 @@ class AsciiDocContent:
         for link in links:
             pass_this_link = False
             for exc in excl_links:
-                if link in exc:
+                if(link and link[1] =="merge.adoc" and self.filename == "merge.adoc"):
+                    print("link",link)
+                    print("exc",exc)
+                if link == exc:
                     pass_this_link = True
                 break
 
