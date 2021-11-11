@@ -27,7 +27,7 @@ NOTE: It is recommended to use the WSL2 backend. If this is not possible for you
 === Standard Docker-Desktop Installation
 . {docker-url}[Download, window=_blank] the latest Docker version.
 . Follow the https://docs.docker.com/desktop/windows/install/[official installation instructions, window=_blank].
-. __OPTIONAL: Add xref:compendium:vscode/recommended-vscode-extensions.adoc#_docker[docker extensions] in xref:vscode.adoc[Visual Studio Code]__.
+. __OPTIONAL: Add xref:{vscode-extensions}#_docker[docker extensions] in xref:vscode.adoc[Visual Studio Code]__.
 . RECOMMENDED: After setup, you can try the example project to get to know basic Docker commands.
 
 === Build From Binaries
