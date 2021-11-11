@@ -24,4 +24,4 @@ Description for how and what for <Toolname> is typically used at ASAM.
 
 |===
 
-reference::<toolname>,!summary
+related::<toolname>,!summary

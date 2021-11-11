@@ -1,5 +1,6 @@
 * Working On The Project Guide
 ** Editing Content
+** xref:add-new-module.adoc[Adding A Module]
 ** Adding Pages
 ** Images & Examples
 ** Working With Projects

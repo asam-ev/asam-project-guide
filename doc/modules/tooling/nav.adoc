@@ -13,7 +13,6 @@
 ** xref:vscode.adoc[VSCode]
 *** xref:vscode/vscode-setup.adoc[Setup]
 *** xref:vscode/vscode-guides.adoc[Guides]
-*** xref:vscode/vscode-further-information.adoc[Further Information]
 ** xref:git.adoc[Git]
 *** xref:git/git-setup.adoc[Setup]
 *** xref:git/git-guides.adoc[Guides]

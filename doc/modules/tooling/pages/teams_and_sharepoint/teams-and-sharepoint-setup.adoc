@@ -4,6 +4,9 @@
 
 include::partial$_attributes.adoc[]
 
+{sharepoint-icon}
+{teams-icon}
+
 // If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
 
 == Context
@@ -37,5 +40,5 @@ Try navigating to the parent folder and then access the target folder from there
 If this does not work: Check with your ASAM contact if your access to the folder has been revoked or the folder has been renamed.
 
 //OPTIONAL: Add the reference macro with keywords you want to reference.
-// Example: reference::guide,!main   <-- (lists all pages where the keyword "guide" but not "main" were used)
+// Example: related::guide,!main   <-- (lists all pages where the keyword "guide" but not "main" were used)
 

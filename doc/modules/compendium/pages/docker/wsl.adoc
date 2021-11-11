@@ -1,6 +1,9 @@
 = Windows Subsystem for Linux (WSL)
 :description: A terminology page for WSL
 :keywords: terminology,term,wsl
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
 
 .What is WSL?
 [%collapsible]

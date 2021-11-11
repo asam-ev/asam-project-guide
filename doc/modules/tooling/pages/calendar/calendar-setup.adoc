@@ -13,7 +13,7 @@ include::partial$_attributes.adoc[]
 
 
 == Context
-include::page$calendar-best-practices.adoc[tag="disclaimer"]
+include::partial$calendar-include-mail.adoc[]
 
 == Result
 The user has activated their ASAM GitLab account and can access the correct project repositories.

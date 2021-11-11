@@ -1,0 +1,3 @@
+
+Contains a collection of information targeted at people new to ASAM.
+Here, information on ASAM itself as well as overview information for projects and other introductory topics is gathered.

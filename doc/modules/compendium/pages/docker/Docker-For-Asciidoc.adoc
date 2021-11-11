@@ -1,14 +1,14 @@
 
 = How To Use Docker For Asciidoctor
+:description: A how-to on using docker for asciidoctor
+:keywords: docker,asciidoc,asciidoctor
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
 :docker-download: https://docs.docker.com/get-docker/
 
 == Wait, What Is Docker?
-
-Docker is a tool for hosting and accessing so-called containers. For Asciidoc, docker can be used to run a pre-configured asciidoctor setup for creating html output locally. This removes the need to upload adoc files and use the build pipeline for every change you want to see. It also means you do not have to install and configure Asciidoctor first since this is already done in the pre-configured Docker image.
-
-If you do not have Docker installed, check out the xref:general_guidelines/Getting-Docker.adoc[guide on getting docker] before continuing.
-
-If your project is currently missing the docker-compose.yml, see these xref:tool-specific/StandardDockerConfig.adoc[instructions] on how to set it up.
+include::compendium:partial$what-is-docker.adoc[]
 
 == Setup
 

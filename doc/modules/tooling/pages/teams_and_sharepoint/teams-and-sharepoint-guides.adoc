@@ -3,6 +3,11 @@
 :keywords: teams,sharepoint,guide
 :offset_value: leveloffset=+2
 
+include::partial$_attributes.adoc[]
+
+{sharepoint-icon}
+{teams-icon}
+
 TODO: write description
 
 == Microsoft Teams

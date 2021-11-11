@@ -6,11 +6,7 @@ include::partial$_attributes.adoc[]
 
 {docker-icon}
 
-Docker is a platform where you use so-called containers to run applications in an encapsulated environment. With this, you do not need to install and configure software, programming languages etc: just download and use a pre-configured container that has all the relevant configuration already built in. From the docker homepage:
-
-> Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
-
-image::https://docs.docker.com/engine/images/architecture.svg[title="The Docker link:https://docs.docker.com/get-started/overview/#docker-architecture[architecture]", link="https://docs.docker.com/get-started/overview/#docker-architecture", window=_blank]
+include::compendium:partial$what-is-docker.adoc[tag=intro]
 
 == Docker At ASAM
 TODO
@@ -27,4 +23,4 @@ TODO
 
 |===
 
-reference::docker,!summary
+related::docker,!summary

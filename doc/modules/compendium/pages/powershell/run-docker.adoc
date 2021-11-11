@@ -5,7 +5,7 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-{docker-deamon-warning}
+IMPORTANT: {docker-deamon-warning}
 
 You can run docker commands from the Windows powershell or the cmd tool.
 

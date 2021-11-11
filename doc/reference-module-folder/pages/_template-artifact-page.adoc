@@ -25,4 +25,4 @@ Describe the steps to perform this artifact. If you have alternative ways, use s
 If you have steps for this artifact where troubleshooting or known issues exist, add subchapters for each topic.
 
 //OPTIONAL: Add the reference macro with keywords you want to reference.
-// Example: reference::guide,!main   <-- (lists all pages where the keyword "guide" but not "main" were used)
+// Example: related::guide,!main   <-- (lists all pages where the keyword "guide" but not "main" were used)
