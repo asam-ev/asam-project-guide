@@ -1,6 +1,9 @@
 = Working with Git
 :description: Describes the standard way of working with git.
 :keywords: git,worklfow
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
 
 TIP: It is best practice to check for changes on remote before changing files locally and before pushing changes to remote.
 

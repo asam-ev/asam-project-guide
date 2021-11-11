@@ -3,6 +3,8 @@
 :keywords: git,gitlab,review,code
 :page-partial:
 
+include::compendium:partial$_attributes.adoc[]
+
 A team member other than the author reviews the pull request.
 They follow Code Review guidelines to avoid miscommunication.
 

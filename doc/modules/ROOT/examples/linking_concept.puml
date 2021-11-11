@@ -1,16 +1,16 @@
 @startuml
 component compendium {
 rectangle "compendium:nav.adoc" as f0_1
-rectangle "compendium:docker/Docker-For-Asciidoc.adoc" as f0_2
-rectangle "compendium:docker/run-docker.adoc" as f0_3
-rectangle "compendium:docker/standard-docker-config.adoc" as f0_4
+rectangle "compendium:docker/docker-for-asciidoc.adoc" as f0_2
+rectangle "compendium:docker/standard-docker-config.adoc" as f0_3
+rectangle "compendium:docker/starting-a-container.adoc" as f0_4
 rectangle "compendium:docker/wsl.adoc" as f0_5
 rectangle "compendium:git/cloning-repo-tutorial.adoc" as f0_6
 rectangle "compendium:git/commit-guidelines.adoc" as f0_7
 rectangle "compendium:git/git-actions.adoc" as f0_8
 rectangle "compendium:git/git-terminology.adoc" as f0_9
 rectangle "compendium:git/maintain-a-repo.adoc" as f0_10
-rectangle "compendium:git/Merge-Requests.adoc" as f0_11
+rectangle "compendium:git/merge-requests.adoc" as f0_11
 rectangle "compendium:git/merge.adoc" as f0_12
 rectangle "compendium:git/Resolving-Merge-Conflicts.adoc" as f0_13
 rectangle "compendium:git/review-code.adoc" as f0_14
@@ -153,6 +153,7 @@ rectangle "tooling:vscode/vscode-guides.adoc" as f8_25
 rectangle "tooling:vscode/vscode-setup.adoc" as f8_26
 }
 
+f8_3 -left-> f0_2
 f2_3 -left-> f2_1
 f2_4 -left-> f2_1
 f2_2 -left-> f2_1
@@ -236,18 +237,17 @@ cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/tree/master/
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc"  as u48
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc"  as u49
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/general_guidelines/Workflow"  as u50
-cloud "https://docs.docker.com/engine/images/architecture.svg"  as u51
-cloud "https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"  as u52
-cloud "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"  as u53
-cloud "https://docs.docker.com/get-started/"  as u54
-cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u55
-cloud "https://docs.docker.com/desktop/windows/install/#system-requirements"  as u56
-cloud "https://docs.docker.com/desktop/windows/install/"  as u57
-cloud "https://docs.docker.com/engine/install/binaries/"  as u58
-cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u59
-cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u60
-cloud "https://code.asam.net/-/profile"  as u61
-cloud "https://code.asam.net/profile/keys"  as u62
+cloud "https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"  as u51
+cloud "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"  as u52
+cloud "https://docs.docker.com/get-started/"  as u53
+cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u54
+cloud "https://docs.docker.com/desktop/windows/install/#system-requirements"  as u55
+cloud "https://docs.docker.com/desktop/windows/install/"  as u56
+cloud "https://docs.docker.com/engine/install/binaries/"  as u57
+cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u58
+cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u59
+cloud "https://code.asam.net/-/profile"  as u60
+cloud "https://code.asam.net/profile/keys"  as u61
 
 f0_2 .up.>> u1
 f0_5 .up.>> u2
@@ -310,18 +310,17 @@ f5_21 .up.>> u47
 f5_21 .up.>> u48
 f5_21 .up.>> u49
 f5_21 .up.>> u50
-f8_3 .up.>> u51
+f8_12 .up.>> u51
 f8_12 .up.>> u52
-f8_12 .up.>> u53
+f8_13 .up.>> u53
 f8_13 .up.>> u54
-f8_13 .up.>> u55
+f8_15 .up.>> u55
 f8_15 .up.>> u56
 f8_15 .up.>> u57
 f8_15 .up.>> u58
-f8_15 .up.>> u59
 f8_17 .up.>> u8
-f8_17 .up.>> u60
+f8_17 .up.>> u59
 f8_17 .up.>> u7
+f8_19 .up.>> u60
 f8_19 .up.>> u61
-f8_19 .up.>> u62
 @enduml

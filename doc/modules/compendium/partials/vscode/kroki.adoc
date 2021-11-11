@@ -1,5 +1,5 @@
 
-The AsciiDoc extension for Visual Studio Code (see xref:compendium:vscode/recommended-vscode-extensions.adoc#_asciidoc[Recommended Visual Studio Code Extensions]) comes with the ability to include Kroki diagrams.
+The AsciiDoc extension for Visual Studio Code (see xref:{vscode-extensions}#_asciidoc[Recommended Visual Studio Code Extensions]) comes with the ability to include Kroki diagrams.
 However, it is deactivated by default and must be configured before first use.
 
 This requires a diagram server.

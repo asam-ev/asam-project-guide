@@ -1,6 +1,9 @@
 = Git Actions
 :description: Lists typical git actions and their meaning.
 :keywords: git,action,actions
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
 
 Clone:: Done once to obtain a local copy of a remote repository.
 

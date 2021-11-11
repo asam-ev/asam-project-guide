@@ -3,6 +3,8 @@
 :keywords: git,gitlab,repo,repository
 :page-partial:
 
+include::compendium:partial$_attributes.adoc[]
+
 - Avoid including files in source control that are specific to your development
   machine or process.
 - Delete local and remote feature branches after merging.

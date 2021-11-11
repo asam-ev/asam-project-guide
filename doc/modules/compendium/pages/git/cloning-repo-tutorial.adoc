@@ -1,6 +1,9 @@
 = Cloning A Repository With Git
 :description: Gives a tutorial on how to clone a repository using git
 :keywords: tutorial,git,clone,cloning
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
 
 If you want to work on a repository locally, you need to first check it out from remote (GitLab).
 To do so, follow one of the cloning instructions below.

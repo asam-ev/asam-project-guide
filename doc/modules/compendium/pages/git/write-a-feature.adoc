@@ -3,6 +3,8 @@
 :keywords: git,gitlab,feature
 :page-partial:
 
+include::compendium:partial$_attributes.adoc[]
+
 Create a local feature branch based off `main`.
 
 [source,console]

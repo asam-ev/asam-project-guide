@@ -3,6 +3,8 @@
 :keywords: git,gitlab,merge,rebase,squash,fetch
 :page-partial:
 
+include::compendium:partial$_attributes.adoc[]
+
 Rebase interactively.
 Squash commits like "Fix whitespace" into one or a small number of valuable commit(s).
 Edit commit messages to reveal intent.
@@ -53,3 +55,5 @@ Delete your local feature branch.
 ----
 git branch --delete <branch-name>
 ----
+
+related::merge,merge-request

@@ -1,4 +1,10 @@
 = Merge Requests
+:description: Summarizes how merge requests work and how to best approach them.
+:keywords: git,gitlab,merge,merge-request,review
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
+
 
 == Merge Commit Strategy
 - History of commits in a PR must be clean prior to merge
@@ -48,9 +54,3 @@ NOTE: Discussion and feedback takes place via comments in the PR
 * CCB to review the milestone assignment
 * This must relate the change type (breaking change, backwards compatible, bug) to the release types (major/minor/maintenance)
 * For now, we will work with one master. Should we have many PRs targeting a future release we might implement multiple "development" branches for the different versions. (Only when necessary)
-
-
-== See Also
-
-* xref:git/Resolving-Merge-Conflicts[Resolving Merge Conflicts]
-
