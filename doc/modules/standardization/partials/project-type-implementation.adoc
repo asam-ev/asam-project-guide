@@ -1,19 +1,8 @@
-= Implementation Project 
+//tag::long[]
 
-.Summary
-|===
-|Purpose 
-a| Develop supplementary products supporting the application of ASAM standards
-|Funding Limit | none
-|Process
-a| 
-Standard Development Process except:
-
-* Proposal Workshop
-* Review Phase
-|===
-
+//tag::short[]
 An implementation project has the purpose to create a supplementary product that supports the ap-plication of an ASAM standard in the industry. 
+//end::short[]
 An ASAM product shall cover one of the following use-cases:
 
 * supports the development of standard-based, commercial products(e.g. development tool kit)
@@ -78,3 +67,22 @@ Distributable source code files shall include the following comment text in the 
 // <File short description>
 // Any use is limited to the scope described in the ASAM license terms.  This  file  is  distributable  in  accordance  with the ASAM license terms.See www.asam.net/license.html for further details.
 ----
+
+//tag::table[]
+.Summary
+|===
+|Purpose 
+a| Develop supplementary products supporting the application of ASAM standards
+|Funding Limit | none
+|Process
+a| 
+Standard Development Process except:
+
+* Proposal Workshop
+* Review Phase
+|===
+//end::table[]
+//end::long[]
+
+
+

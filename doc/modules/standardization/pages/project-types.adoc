@@ -2,14 +2,37 @@
 
 == Standard Development
 
+=== New Standard
+
 include::partial$project-type-new-std-dev.adoc[tag=long]
+
+=== Further Standard Development
 
 include::partial$project-type-further-std-dev.adoc[tag=long]
 
+==== Major Version Development
+
+include::partial$project-type-major.adoc[tag=long]
+
+==== Minor Version Development
+
+include::partial$project-type-minor.adoc[tag=long]
+
+==== Revision Version Development
+
+include::partial$project-type-revision.adoc[tag=long]
+
+
 == Other Project types
+
+=== Concept Project
 
 include::partial$project-type-concept.adoc[tag=long]
 
+=== Implementation Project
+
 include::partial$project-type-implementation.adoc[tag=long]
+
+==== Study Project
 
 include::partial$project-type-study.adoc[tag=long]

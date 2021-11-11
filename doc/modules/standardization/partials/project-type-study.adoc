@@ -1,29 +1,7 @@
-= Study Project
-
-Start the development of a completely new standard within ASAM
-
-.Summary
-|===
-|Purpose 
-a| Develop supplementary products supporting the application of ASAM standards
-|Funding Limit 
-a| 
-* Small budget project:
-** 5000€
-* Large budget project:
-** 25%
-
-|Process
-a| 
-* Small budget project:
-** Managed by the office
-* Large budget project:
-** Regular Proposal Process
-** no Proposal Workshop 
-** no Review Phase
-|===
-
+//tag::long[]
+//tag:short[]
 Study projects provide members an organizational structure to study or analyze specific aspects of ASAM standards in a collaborative way. 
+//end::short[]
 Study projects have the overall goal to enhance the understanding of ASAM standards among the participants, to promote their application in member companies and to create change requests for the further development of ASAM standards. 
 This project type is specifically intended for members in regions, where ASAM standards are not well known. 
 The content of study projects can be, but is not limited to:
@@ -58,3 +36,27 @@ Some further rules apply for study projects:
 Upon request, ASAM provides funding for study projects up to the limit for small budget projects.
 
 In case that a larger budget is required beyond the limit of a small budget project, then the project must be requested via the regular project proposal process, which consist of the process steps P2 Proposal Writing, P3 Proposal Submission, P4 Proposal Publication and P5 Proposal Decision by the TSC.
+
+//tag::table[]
+.Summary
+|===
+|Purpose 
+a| Develop supplementary products supporting the application of ASAM standards
+|Funding Limit 
+a| 
+* Small budget project:
+** 5000€
+* Large budget project:
+** 25%
+
+|Process
+a| 
+* Small budget project:
+** Managed by the office
+* Large budget project:
+** Regular Proposal Process
+** no Proposal Workshop 
+** no Review Phase
+|===
+//end::table[]
+//end::long[]

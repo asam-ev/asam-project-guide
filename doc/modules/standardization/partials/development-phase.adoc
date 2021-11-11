@@ -38,10 +38,10 @@ The Office will provisionally lead the project until the group has elected the p
 Upon request, the Office provides training to the project group members about ASAM guide-lines and best practices.
 Furthermore, the Office assists the project leader upon his request to manage the meetings during the initial meetings.
 
-The ASAM IT infrastructure provides services for collaboration such as a version control system for documents and files, a change request tracking system and remote conferenc-ing.
+The ASAM IT infrastructure provides services for collaboration such as a version control system for documents and files, a change request tracking system and remote conferencing.
 The use of alternative IT services requires the approval from the ASAM Office.
 
-Individual project group members have the primary task to make their expertise and com-mitted work time available for the development of the standard.
+Individual project group members have the primary task to make their expertise and committed work time available for the development of the standard.
 This specifically means:
 
 - provide use-cases, application & process knowledge and requirements as a foundation for developing the standard
