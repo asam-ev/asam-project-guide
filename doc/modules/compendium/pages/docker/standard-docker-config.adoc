@@ -1,35 +1,33 @@
 = Standard Docker Compose YAML
+:description: Contains the standard docker-compose.yml description with the specification on how to use it.
+:keywords: docker,compose,yml,yaml
+:page-partial:
+
+:docker-compose-download: compendium:{attachmentsdir}/docker-compose.yml
+:docker-compose-include: compendium:example$docker-compose.yml
+
+
+include::compendium:partial$_attributes.adoc[]
 
 == Why Use Docker?
 
-A project's final specification document is created as HTML file.
-However, having to run it through the pipeline every time before being able to see the final result after having made changes is neither efficient nor friendly to the other workgroup members.
-To render a project's documentation without having to upload it, use Docker Compose with a correctly defined docker-compose.yml file.
-**See also**: xref:../general_guidelines/WhatIsYaml.adoc[What is YAML/yml?]
+include::compendium:partial$what-is-docker.adoc[]
 
-TIP: You can download the standard docker-compose.yml link:{attachmentsdir}/docker-compose.yml[here,opts=download].
+TIP: You can download the standard docker-compose.yml link:{docker-compose-download}[here,opts=download].
 
-NOTE: For Antora, the docker-compose must be slightly different.
+NOTE: For Antora, the docker-compose is slightly different.
+You can see an example in the {guide-repo-url}[project guide repository].
 
 // TODO: Add description and specifications for Antora file.
 
 == Standard Docker-Compose Instructions
-
-// TODO: Link to the attachment file!
 
 . Create a new `docker-compose.yml` file in the root directory of the project.
 . Add the following content to the created file:
 +
 [source,yaml]
 ----
-version: "2"
-
-services:
-  asciidoctor:
-    image: asciidoctor/docker-asciidoctor
-    volumes:
-      - .:/documents
-    entrypoint: asciidoctor --failure-level WARN -r asciidoctor-diagram -a mathjax -r asciidoctor-bibtex --trace standard/main.adoc -o HTML_standard_local_build.html
+include::{docker-compose-include}[]
 
 ----
 +
@@ -80,11 +78,3 @@ You can define the output file by using `-o path-to-file/filename.format`. By de
 === Output path
 
 If you only want to specifiy the output path but leave the naming convention of the input files, use the option `-D path` instead of
-
-
-== See Also
-
-- xref:writing_guidelines/Docker-For-Asciidoc.adoc[Using Docker for Asciidoctor]
-- xref:tool-specific/DockerGuide.adoc[Docker Guide]
-- xref:general_guidelines/Getting-Docker.adoc[Docker Setup]
-- xref:antora/Build-Antora-Locally.adoc[Antora Local Build Guide]
