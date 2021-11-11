@@ -1,4 +1,9 @@
 = Transitioning To The New Workflow
+:description: Describes how to transition to the new workflow (osc2 only!).
+:keywords: osc2-only
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
 
 This describes the transition of Open Scenario 2.0 to the new workflow.
 
