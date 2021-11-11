@@ -1,6 +1,6 @@
 = Standard Tools - Overview
 :description: Links to the current contact page for ASAM Office members.
-:keywords: tools, ASAM, new-here-content
+:keywords: tools, asam new-here-content
 
 Lists standard tools for users and links to the tools section.
 

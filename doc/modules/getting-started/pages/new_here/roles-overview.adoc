@@ -1,8 +1,8 @@
 = Roles At ASAM - Overview
 :description: Links to the current contact page for ASAM Office members.
-:keywords: roles, ASAM, new-here-content
+:keywords: roles, asam new-here-content
 
-Every ASAM Project has mandatory and optional roles, the optional roles depend on the size and the structure of the project. 
+Every ASAM Project has mandatory and optional roles, the optional roles depend on the size and the structure of the project.
 
 ASAM projects have a couple of standard roles:
 
@@ -32,6 +32,6 @@ Service Provider:: Provides additional services necessary for the standard devel
 |===
 |Role               | comment
 |TSC                | The TSC is responsible to approve budget, and project as well as releases of project results, such as standards or concept papers
-|Standard User      | Someone who is using the ASAM standard 
+|Standard User      | Someone who is using the ASAM standard
 |Reviewer          | A Standard user that want to provide feedback either in a review phase or afterwards
 |===

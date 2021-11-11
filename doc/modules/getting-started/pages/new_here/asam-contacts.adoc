@@ -1,6 +1,6 @@
 = ASAM Contacts
 :description: Links to the current contact page for ASAM Office members.
-:keywords: contacts, ASAM, new-here-content, about
+:keywords: contacts, asam, new-here-content, about
 
 :asam_contacts: https://www.asam.net/about-asam/asam-in-person/
 

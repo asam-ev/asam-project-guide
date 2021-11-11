@@ -1,6 +1,6 @@
 = Current ASAM Projects
 :description: Links to the current projects page at ASAM. Contains links on how to add new project ideas and other such topics.
-:keywords: projects, ASAM, new-here-content, ideation, standards
+:keywords: projects, asam, new-here-content, ideation, standards
 
 == Project Types
 https://www.asam.net/active-projects/project-types/
