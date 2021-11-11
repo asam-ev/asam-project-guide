@@ -17,4 +17,4 @@ Once you create a merge request git lab will tell you if there are merge conflic
 
 Another possibility is to merge using VSCode, here a similar feature is included, in the end when done merging a merge commit is being created, which than can be pushed
 
-reference::merge
+related::merge,git

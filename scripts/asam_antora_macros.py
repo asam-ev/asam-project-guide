@@ -253,7 +253,7 @@ class AsciiDocContent:
             try:
                 excl_links.append(self.attributes_dict[exc])
             except:
-                print("No exceptions found!")
+                pass
 
         for link in links:
             pass_this_link = False
@@ -400,7 +400,7 @@ class AsciiDocContent:
         x = 0
         # TODO: Create logic
 
-    def create_linking_concept_graph(self, output_filename = "linking_concept.puml", output_path = "../doc/modules/ROOT/examples/"):
+    def create_linking_concept_graph(self, output_filename = "linking_concept.puml", output_path = "../doc/modules/compendium/examples/"):
         files = []
         for afile in self.adoc_files:
             files.append({"filename": afile.filename,"module_path":afile.module_path,"module":afile.module})

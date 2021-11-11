@@ -15,3 +15,5 @@ image::compendium:git-workflow.svg[Git Workflow]
 . Add files from the working copy to the staging area.
 . Commit staged files to your local repo.
 . Push to a remote repository.
+
+related::git

@@ -7,3 +7,5 @@ include::compendium:partial$_attributes.adoc[]
 
 
 See xref:gitlab/commit-guidelines.adoc[]
+
+related::git

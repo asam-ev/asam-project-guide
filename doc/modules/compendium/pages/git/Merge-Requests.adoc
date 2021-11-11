@@ -55,4 +55,4 @@ NOTE: Discussion and feedback takes place via comments in the PR
 * This must relate the change type (breaking change, backwards compatible, bug) to the release types (major/minor/maintenance)
 * For now, we will work with one master. Should we have many PRs targeting a future release we might implement multiple "development" branches for the different versions. (Only when necessary)
 
-reference::merge
+related::merge,git

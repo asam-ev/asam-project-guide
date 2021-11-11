@@ -15,7 +15,7 @@ rectangle "compendium:git/merge-requests.adoc" as f0_12
 rectangle "compendium:git/merge.adoc" as f0_13
 rectangle "compendium:git/review-code.adoc" as f0_14
 rectangle "compendium:git/submodules.adoc" as f0_15
-rectangle "compendium:git/Transitioning-to-a-new-workflow.adoc" as f0_16
+rectangle "compendium:git/transitioning-to-a-new-workflow.adoc" as f0_16
 rectangle "compendium:git/working-with-git.adoc" as f0_17
 rectangle "compendium:git/write-a-feature.adoc" as f0_18
 rectangle "compendium:git/submodules/submodule-pull.adoc" as f0_19

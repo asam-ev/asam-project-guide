@@ -42,3 +42,5 @@ git commit <...>
 git push
 ----
 ====
+
+related::submodules

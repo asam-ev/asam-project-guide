@@ -18,3 +18,5 @@ git add asciidoc-resources
 ----
 
 * After that, `git commit` & `git push`.
+
+related::submodules
