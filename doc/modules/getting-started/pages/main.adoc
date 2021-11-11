@@ -10,4 +10,4 @@ Everyone needs to start somewhere. To do so, the following sections is supposed 
 * If you want to learn more about this Project Guide, see the section xref:about-this-guide.adoc[About This Guide].
 * For a quick setup on the most commonly used tools suggested by ASAM, see the section xref:quick-setup.adoc[Quick Setup].
 
-reference:: landing_page,!introduction
+related:: landing_page,!introduction

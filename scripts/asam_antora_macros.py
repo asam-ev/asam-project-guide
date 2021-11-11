@@ -45,12 +45,18 @@ def main(argv):
                     if asciidoc_file.has_module():
                         attributes = asciidoc_file.find_attributes()
                         macro_found = asciidoc_file.find_reference_macro()
+                        macro_found = asciidoc_file.find_related_topics_macro()
                         found_files.append(asciidoc_file)
 
-    for afile in found_files[0].reference_macro_occurence_list:
-        afile.find_reference_macro(find_and_replace=True)
+    for afile in found_files:
+        if afile in found_files[0].reference_macro_occurence_list:
+            afile.find_reference_macro(find_and_replace=True)
+
+        if afile in found_files[0].related_topics_macro_occurence_list:
+            afile.find_related_topics_macro(find_and_replace=True)
+
         afile.write_to_file()
-        afile.revert_reference_macro_substitution()
+        afile.revert_macro_substitution()
         afile.write_to_file(filename=afile.filename+"1")
 
     found_files[0].create_linking_concept_graph()
@@ -59,6 +65,7 @@ def main(argv):
 class AsciiDocContent:
     attributes_dict = {}
     reference_macro_occurence_list = []
+    related_topics_macro_occurence_list = []
     include_by_keyword_macro_occurence_list = []
     xref_occurence_dict = {}
     link_occurence_dict = {}
@@ -76,7 +83,7 @@ class AsciiDocContent:
 
         self.pattern_ref = re.compile("reference::(.*)\n?")
 
-        self.pattern_keyword_include = re.compile("key-include::(.*),(.*)\n?")
+        self.pattern_reltop = re.compile("related::(.*)\n?")
 
         # pattern_xref_macro: (2) = module; (3) = path/filename; (5) = id
         self.pattern_xref_macro = re.compile("xref:{1,2}(([^\s:\[]*):)?([^#\n\[]*)(#([^\[]*))?\[.*\]")
@@ -151,6 +158,10 @@ class AsciiDocContent:
             elif attr not in self.attributes_dict.keys():
                 self.attributes_dict[attr]=[(self.path,self.filename)]
 
+    def find_related_topics_macro(self, find_and_replace=False):
+        found = self._find_macro_of_type(self.pattern_reltop,find_and_replace,"related-topics")
+        return found
+
     def find_reference_macro(self, find_and_replace=False):
         found = self._find_macro_of_type(self.pattern_ref,find_and_replace,"reference")
         return found
@@ -160,8 +171,10 @@ class AsciiDocContent:
         return found
 
     def _add_to_reference_macro_occurence_list(self):
-        # self.reference_macro_occurence_list.append((self.path,self.filename))
-        self.reference_macro_occurence_list.append((self))
+        self.reference_macro_occurence_list.append(self)
+
+    def _add_to_related_topics_macro_occurence_list(self):
+        self.related_topics_macro_occurence_list.append(self)
 
     def _find_macro_of_type(self,pattern,find_and_replace,type):
         found = False
@@ -176,12 +189,12 @@ class AsciiDocContent:
                     else:
                         self._add_to_reference_macro_occurence_list()
                         break
-                # elif (type == "include_by_keyword"):
-                #     if find_and_replace:
-                #         self.substitute_include_by_keyword_macro()
-                #     else:
-                #         self._add_to_include_by_keyword_macro_occurence_list()
-                #         break
+                elif(type=="related-topics"):
+                    if find_and_replace:
+                        self.substitute_related_topics_macro(result[0],i)
+                    else:
+                        self._add_to_related_topics_macro_occurence_list()
+                        break
                 else:
                     print("Unknown type for find_macro_of_type provided: "+type)
                     return False
@@ -190,19 +203,31 @@ class AsciiDocContent:
 
         return found
 
-
     def substitute_reference_macro(self,ref_list,line):
-        reference_start = "== Related Topics\n\n"
+        self.content[line] = ""
+        offset = 1
+        self.insert_references_in_content(line,offset,ref_list)
+
+
+    def substitute_related_topics_macro(self,ref_list,line):
+        self.content[line] = "== Related Topics\n\n"
+        self.content.insert(line+1,"")
+        offset = 2
+        self.insert_references_in_content(line,offset,ref_list)
+
+    def make_cross_reference_replacements(self,ref_list):
         total_ref_elements = [x.replace(" ","") for x in ref_list.split(",")]
         references = [x.replace(" ","") for x in ref_list.split(",") if not x.startswith("!")]
         exceptions = [x[1:] for x in list(set(total_ref_elements) - set(references))]
-        self.content[line] = reference_start
-        self.content.insert(line+1,"")
-        offset = 2
+        return references,exceptions
+
+    def insert_references_in_content(self,line,offset,ref_list):
+        references, exceptions = self.make_cross_reference_replacements(ref_list)
         replacement_content = []
         if references:
             for ref in references:
-                replacement_content += self._make_reference_replacement_text(ref,exceptions)
+                new_text = self._make_reference_replacement_text(ref,exceptions)
+                replacement_content += new_text
 
             replacement_content = list(dict.fromkeys(replacement_content))
             self.content[line+offset:line+offset]=replacement_content
@@ -250,22 +275,7 @@ class AsciiDocContent:
 
         return link_text
 
-
-    # def substitute_key_link_macro(self,key,tag,line):
-    #     #TODO
-    #     reference_start = "== Related Topics\n\n"
-    #     self.content[line] = reference_start
-    #     self.content.insert(line+1,"")
-    #     offset = 2
-    #     replacement_content = []
-    #     for ref in references:
-    #         replacement_content += self._make_reference_replacement_text(ref,line,offset)
-
-    #     replacement_content = list(dict.fromkeys(replacement_content))
-    #     self.content[line+offset:line+offset]=replacement_content
-
-
-    def revert_reference_macro_substitution(self):
+    def revert_macro_substitution(self):
         self.content = copy.deepcopy(self.original_content)
 
     def write_to_file(self,filename="",path=""):
@@ -308,7 +318,6 @@ class AsciiDocContent:
 
         return xref, url, local_xref
 
-
     def _add_to_xref_occurence_dict(self,xref):
         key = self.module+"\\\\"+self.module_path+self.filename
         if not key in self.xref_occurence_dict:
@@ -321,8 +330,6 @@ class AsciiDocContent:
 
             else:
                 self._add_entry_to_xref_occurence_dict(x,key)
-
-
 
     def _add_entry_to_xref_occurence_dict(self,x,key):
         # TODO: Replace attributes in links with correct text

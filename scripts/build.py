@@ -1,7 +1,7 @@
 import os
 
 def main():
-    reference_macro_replacement()
+    asam_macro_replacement()
     nav_adoc_creation()
     run_docker_compose()
     cleanup()
@@ -10,10 +10,10 @@ def main():
     os.chdir("../scripts")
 
 
-def reference_macro_replacement():
+def asam_macro_replacement():
     print("CREATE REFERENCES BY ATTRIBUTES")
     try:
-        os.system("python create_references_by_attributes.py -p doc/modules")
+        os.system("python asam_antora_macros.py -p doc/modules")
     except:
         pass
 

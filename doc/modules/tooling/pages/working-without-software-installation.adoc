@@ -3,8 +3,8 @@
 :keywords: installation,software,online,gitlab,recommended
 
 {gitlab-url}[GitLab] provides an integrated working environment and text editor with which users can directly create and edit files without having to install xref:git.adoc[Git] or an editor like xref:vscode.adoc[Visual Studio Code].
-See xref:compendium:gitlab/gitlab-ide-guide.adoc[the GitLab Web IDE Guide] for more information.
+See xref:compendium:gitlab/gitlab-ide-guide.adoc[the GitLab Web IDE Guide] in the compendium for more information.
 
 However, note that you will still need to configure your accounts for the mandatory tools.
 
-reference::mandatory
+related::mandatory

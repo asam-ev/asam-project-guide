@@ -1,6 +1,6 @@
 = Git
 :description: A summary page describing what Git is and where to find related information, guides etc.
-:keywords: git,summary,tool,mandatory
+:keywords: git,summary,tool,recommended
 
 include::partial$_attributes.adoc[]
 
@@ -32,4 +32,6 @@ ASAM recommends using Git for working on a repository locally:
 
 |===
 
-reference::git,!summary
+related::git,!summary
+
+* xref:gitlab.adoc[]

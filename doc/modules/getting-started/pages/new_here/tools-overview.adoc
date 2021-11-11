@@ -4,8 +4,8 @@
 
 Lists standard tools for users and links to the tools section.
 
-// TODO this needs to be replaced with the setup guide in here
+include::tooling:partial$tools-list.adoc[]
 
 https://www.asam.net/active-projects/resources/
 
-reference:: tools_overview
+related:: tools-overview

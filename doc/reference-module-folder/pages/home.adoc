@@ -11,6 +11,6 @@ include::partial$module-description.adoc[]
 
 <add a general description on this module and as many subsections as necessary to structure the subsequent pages>
 
-reference:: landing_page,!<module>
+related:: landing_page,!<module>
 
 //TODO: Replace all <module> with your module label, replace <Module Name> with the name of the module
