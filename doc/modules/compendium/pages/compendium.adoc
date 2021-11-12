@@ -6,6 +6,5 @@
 TODO
 
 files::[]
-folders::[]
 
 related::landing_page[]

@@ -1,4 +1,4 @@
-= Special ASAM Antora Macros
+= Custom ASAM Antora Macros
 :description: Lists all custom macros used throughout the Project Guide that require special scripts by ASAM to be processed correctly.
 :keywords: macro,script,asam,custom,project-guide
 
@@ -10,14 +10,17 @@ This page collects all those macros and explains what they do and how to use the
 Each macro also has a detailed instructions page with more details.
 
 == The "related" Macro
-include::partial$macro-related.adoc[tag=how]
-xref::macros/macro-related.adoc[]
+include::partial$macro-related.adoc[tag="how"]
+
+See: xref:macros/macro-related.adoc[]
 
 == The "reference" Macro
 include::partial$macro-reference.adoc[tag=how]
-xref::macros/macro-reference.adoc[]
+
+See: xref:macros/macro-reference.adoc[]
 
 == The "pages" Macro
 include::partial$macro-pages.adoc[tag=how]
-xref::macros/macro-pages.adoc[]
+
+See: xref:macros/macro-pages.adoc[]
 

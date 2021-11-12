@@ -32,12 +32,6 @@
 :standardization-icon: xref:{standardization-xref}[image:{standardization-image}[alt= Standardization, width={width-large}, role=right]]
 :standardization-icon-norole: xref:{standardization-xref}[image:{standardization-image}[alt= Standardization, width={width-small}]]
 
-//how-to
-:tasks-image: https://cdn-icons-png.flaticon.com/512/4403/4403464.png
-:tasks-xref: tasks:home.adoc
-:tasks-icon: xref:{tasks-xref}[image:{tasks-image}[alt= How-To, width={width-large}, role=right]]
-:tasks-icon-norole: xref:{tasks-xref}[image:{tasks-image}[alt= How-To, width={width-small}]]
-
 //compendium
 :compendium-image: https://cdn-icons-png.flaticon.com/512/6091/6091684.png
 :compendium-xref: compendium:home.adoc

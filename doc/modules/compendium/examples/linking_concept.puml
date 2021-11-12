@@ -132,50 +132,58 @@ rectangle "standardization:proposal-phase.adoc" as f6_7
 rectangle "standardization:release-phase.adoc" as f6_8
 rectangle "standardization:review-phase.adoc" as f6_9
 }
-component tasks {
-rectangle "tasks:nav.adoc" as f7_1
-}
 component tooling {
-rectangle "tooling:nav.adoc" as f8_1
-rectangle "tooling:calendar.adoc" as f8_2
-rectangle "tooling:docker.adoc" as f8_3
-rectangle "tooling:drawio.adoc" as f8_4
-rectangle "tooling:git.adoc" as f8_5
-rectangle "tooling:gitlab.adoc" as f8_6
-rectangle "tooling:overview.adoc" as f8_7
-rectangle "tooling:teams-and-sharepoint.adoc" as f8_8
-rectangle "tooling:vscode.adoc" as f8_9
-rectangle "tooling:working-without-software-installation.adoc" as f8_10
-rectangle "tooling:calendar/calendar-best-practices.adoc" as f8_11
-rectangle "tooling:calendar/calendar-setup.adoc" as f8_12
-rectangle "tooling:docker/docker-best-practices.adoc" as f8_13
-rectangle "tooling:docker/docker-guides.adoc" as f8_14
-rectangle "tooling:docker/docker-setup.adoc" as f8_15
-rectangle "tooling:drawio/drawio-setup.adoc" as f8_16
-rectangle "tooling:git/git-best-practices.adoc" as f8_17
-rectangle "tooling:git/git-guides.adoc" as f8_18
-rectangle "tooling:git/git-setup.adoc" as f8_19
-rectangle "tooling:gitlab/gitlab-guides.adoc" as f8_20
-rectangle "tooling:gitlab/gitlab-setup.adoc" as f8_21
-rectangle "tooling:teams_and_sharepoint/teams-and-sharepoint-best-practices.adoc" as f8_22
-rectangle "tooling:teams_and_sharepoint/teams-and-sharepoint-guides.adoc" as f8_23
-rectangle "tooling:teams_and_sharepoint/teams-and-sharepoint-setup.adoc" as f8_24
-rectangle "tooling:vscode/vscode-guides.adoc" as f8_25
-rectangle "tooling:vscode/vscode-setup.adoc" as f8_26
+rectangle "tooling:nav.adoc" as f7_1
+rectangle "tooling:calendar.adoc" as f7_2
+rectangle "tooling:docker.adoc" as f7_3
+rectangle "tooling:drawio.adoc" as f7_4
+rectangle "tooling:git.adoc" as f7_5
+rectangle "tooling:gitlab.adoc" as f7_6
+rectangle "tooling:overview.adoc" as f7_7
+rectangle "tooling:teams-and-sharepoint.adoc" as f7_8
+rectangle "tooling:vscode.adoc" as f7_9
+rectangle "tooling:working-without-software-installation.adoc" as f7_10
+rectangle "tooling:calendar/calendar-best-practices.adoc" as f7_11
+rectangle "tooling:calendar/calendar-setup.adoc" as f7_12
+rectangle "tooling:docker/docker-best-practices.adoc" as f7_13
+rectangle "tooling:docker/docker-guides.adoc" as f7_14
+rectangle "tooling:docker/docker-setup.adoc" as f7_15
+rectangle "tooling:drawio/drawio-setup.adoc" as f7_16
+rectangle "tooling:git/git-best-practices.adoc" as f7_17
+rectangle "tooling:git/git-guides.adoc" as f7_18
+rectangle "tooling:git/git-setup.adoc" as f7_19
+rectangle "tooling:gitlab/gitlab-guides.adoc" as f7_20
+rectangle "tooling:gitlab/gitlab-setup.adoc" as f7_21
+rectangle "tooling:teams_and_sharepoint/teams-and-sharepoint-best-practices.adoc" as f7_22
+rectangle "tooling:teams_and_sharepoint/teams-and-sharepoint-guides.adoc" as f7_23
+rectangle "tooling:teams_and_sharepoint/teams-and-sharepoint-setup.adoc" as f7_24
+rectangle "tooling:vscode/vscode-guides.adoc" as f7_25
+rectangle "tooling:vscode/vscode-setup.adoc" as f7_26
 }
 
-f8_3 -> f0_5
+f7_3 -> f0_5
 f2_3 -left-> f2_1
 f2_4 -left-> f2_1
 f2_2 -left-> f2_1
-f2_5 -left-> f2_1
 f2_4 -left-> f2_3
 f2_2 -> f2_3
 f2_5 -left-> f2_3
 f3_8 -left-> f3_1
+f3_6 -left-> f3_1
 f3_4 -left-> f3_1
+f3_10 -left-> f3_1
+f3_2 -left-> f3_1
+f3_3 -left-> f3_1
+f3_9 -left-> f3_1
+f3_7 -left-> f3_1
+f3_5 -left-> f3_1
+f3_11 -left-> f3_1
 f3_3 -left-> f3_2
 f3_10 -> f3_2
+f3_6 -left-> f3_2
+f3_6 -left-> f3_4
+f3_2 -left-> f3_10
+f3_3 -left-> f3_10
 f6_4 -left-> f6_1
 f6_2 -left-> f6_1
 f6_7 -left-> f6_1
@@ -184,22 +192,22 @@ f6_5 -left-> f6_1
 f6_3 -left-> f6_1
 f6_9 -left-> f6_1
 f6_8 -left-> f6_1
-f8_7 -left-> f8_1
-f8_10 -left-> f8_1
-f8_6 -left-> f8_1
-f8_2 -left-> f8_1
-f8_8 -left-> f8_1
-f8_9 -left-> f8_1
-f8_5 -left-> f8_1
-f8_4 -left-> f8_1
-f8_3 -left-> f8_1
-f8_6 -left-> f8_5
-f8_5 -> f8_6
-f8_10 -> f8_7
-f8_6 -> f8_9
-f8_5 -left-> f8_10
-f8_9 -left-> f8_16
-f8_9 -left-> f8_19
+f7_7 -left-> f7_1
+f7_10 -left-> f7_1
+f7_6 -left-> f7_1
+f7_2 -left-> f7_1
+f7_8 -left-> f7_1
+f7_9 -left-> f7_1
+f7_5 -left-> f7_1
+f7_4 -left-> f7_1
+f7_3 -left-> f7_1
+f7_6 -left-> f7_5
+f7_5 -> f7_6
+f7_10 -> f7_7
+f7_6 -> f7_9
+f7_5 -left-> f7_10
+f7_9 -left-> f7_16
+f7_9 -left-> f7_19
 
 cloud "https://github.com/Mogztter/antora-lunr"  as u1
 cloud "https://code.asam.net/common/style-resources"  as u2
@@ -247,21 +255,24 @@ cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/tree/master/
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc"  as u44
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc"  as u45
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/general_guidelines/Workflow"  as u46
-cloud "https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png"  as u47
-cloud "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png"  as u48
-cloud "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png"  as u49
-cloud "https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png"  as u50
-cloud "https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"  as u51
-cloud "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"  as u52
-cloud "https://docs.docker.com/get-started/"  as u53
-cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u54
-cloud "https://docs.docker.com/desktop/windows/install/#system-requirements"  as u55
-cloud "https://docs.docker.com/desktop/windows/install/"  as u56
-cloud "https://docs.docker.com/engine/install/binaries/"  as u57
-cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u58
-cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u59
-cloud "https://code.asam.net/-/profile"  as u60
-cloud "https://code.asam.net/profile/keys"  as u61
+cloud "https://docs.antora.org/antora/2.1/page/create-standard-page/"  as u47
+cloud "https://docs.antora.org/antora/2.1/page/#standard"  as u48
+cloud "https://docs.antora.org/antora/2.1/page/#partial"  as u49
+cloud "https://cdn.icon-icons.com/icons2/2415/PNG/512/gitlab_original_logo_icon_146503.png"  as u50
+cloud "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png"  as u51
+cloud "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png"  as u52
+cloud "https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png"  as u53
+cloud "https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"  as u54
+cloud "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"  as u55
+cloud "https://docs.docker.com/get-started/"  as u56
+cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u57
+cloud "https://docs.docker.com/desktop/windows/install/#system-requirements"  as u58
+cloud "https://docs.docker.com/desktop/windows/install/"  as u59
+cloud "https://docs.docker.com/engine/install/binaries/"  as u60
+cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u61
+cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u62
+cloud "https://code.asam.net/-/profile"  as u63
+cloud "https://code.asam.net/profile/keys"  as u64
 
 f0_4 .up.>> u1
 f0_5 .up.>> u2
@@ -318,21 +329,24 @@ f0_68 .up.>> u43
 f0_68 .up.>> u44
 f0_68 .up.>> u45
 f0_68 .up.>> u46
-f4_3 .up.>> u47
-f4_3 .up.>> u48
-f4_3 .up.>> u49
+f3_2 .up.>> u47
+f3_10 .up.>> u48
+f3_10 .up.>> u49
 f4_3 .up.>> u50
-f8_12 .up.>> u51
-f8_12 .up.>> u52
-f8_13 .up.>> u53
-f8_13 .up.>> u54
-f8_15 .up.>> u55
-f8_15 .up.>> u56
-f8_15 .up.>> u57
-f8_15 .up.>> u58
-f8_17 .up.>> u7
-f8_17 .up.>> u59
-f8_17 .up.>> u6
-f8_19 .up.>> u60
-f8_19 .up.>> u61
+f4_3 .up.>> u51
+f4_3 .up.>> u52
+f4_3 .up.>> u53
+f7_12 .up.>> u54
+f7_12 .up.>> u55
+f7_13 .up.>> u56
+f7_13 .up.>> u57
+f7_15 .up.>> u58
+f7_15 .up.>> u59
+f7_15 .up.>> u60
+f7_15 .up.>> u61
+f7_17 .up.>> u7
+f7_17 .up.>> u62
+f7_17 .up.>> u6
+f7_19 .up.>> u63
+f7_19 .up.>> u64
 @enduml

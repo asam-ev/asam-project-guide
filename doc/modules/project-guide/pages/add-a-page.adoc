@@ -1,6 +1,6 @@
-= Adding A New Page To The Project Guide
+= Adding A Page
 :description: Explains how to add a new page to the project guide and what to look out for.
-:keywords: page,project-guide
+:keywords: page,project-guide,new-content-guide
 :page-partial:
 
 include::partial$_attributes.adoc[]
@@ -12,7 +12,8 @@ To add a new page or make an existing page compatible with Antora, there are som
 In particular, some AsciiDoc shortcuts or alternatives may not work.
 On the other hand, Antora provides additional and specific attributes that can be utilized for maximum effect.
 
-Some types of content require a specific structure. These are listed and linked below and are described in their own separate pages.
+Some types of content require a specific structure.
+These are listed and linked below and are described in their own separate pages.
 
 NOTE: If you want to define a reusable content, consider using a xref:add-a-partial.adoc[Partial] instead.
 See xref:pages-vs-partials.adoc[Pages VS Partials] for more information on the difference between those two.
@@ -24,10 +25,14 @@ An Antora and ASAM conforming page is created.
 none
 
 == How
+IMPORTANT: These instructions already include the requirements of https://docs.antora.org/antora/2.1/page/create-standard-page/[Creating A Standard Page] by Antora implicitely.
+However, if one deviates from this guide here, the Antora restrictions and requirements still apply!
+
 . Find the module you want your page to be located in.
 +
 TIP: This should be the module which it relates to most closely.
 See other pages in the modules in question for reference.
+You can also look at the xref:content-structure.adoc[content structure concept] for the Project Guide.
 
 . Create your file in the "pages" folder or move it there
 .. Alternatively, create a new folder and/or add your file to an existing folder within the "pages" folder if you want to add a structure within the module.

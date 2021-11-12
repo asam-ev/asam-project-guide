@@ -1,7 +1,28 @@
 * xref:home.adoc[Working On The Project Guide]
+** xref:content-structure.adoc[The Project Guide Structure]
 ** xref:add-new-module.adoc[Adding A Module]
-** xref:add-a-page.adoc[Adding Pages]
-** Images & Examples
+** xref:pages-vs-partials.adoc[Pages VS Partials]
+** Pages
+*** xref:add-a-page.adoc[Adding A Page]
+**** Adding Task Artifacts
+**** Adding Tool Descriptions
+*** Moving/Renaming/Deleting A Page
+** Partials
+*** xref:add-a-partial.adoc[Adding Partials]
+** Referencing And Including
+*** xref:images.adoc[Images]
+*** xref:examples.adoc[Examples]
+*** xref:attachments.adoc[Attachments]
+*** xref:including.adoc[Including Pages And Partials]
+*** Cross-referencing
+** Macros
+*** Asciidoctor
+*** Antora
+*** xref:special-macros.adoc[ASAM Macros]
+**** xref:macros/macro-pages.adoc[Pages Macro]
+**** xref:macros/macro-reference.adoc[Reference Macro]
+**** xref:macros/macro-related.adoc[Related Macro]
 ** Working With Projects
+** Additional Infos
 
 // You may use links to pages or text for non-linked headers

@@ -4,7 +4,11 @@
 
 include::partial$_attributes.adoc[]
 
-Welcome to the **ASAM Project Guide**. This guide provides an introduction to new members on ASAM in general and its most central topics, gives an overview on how to get involved and provides role-specific information for working at ASAM and in ASAM projects. In addition to that, it also contains a full explanation on each and every process and workflow applied in ASAM projects, contains guides on suggested tools as well as a compendium on specific tasks and topics. Lastly, you can also find information and guides on how to participate in improving this project guide.
+Welcome to the **ASAM Project Guide**!
+
+This guide provides an introduction to new members on ASAM in general and its most central topics, gives an overview on how to get involved and provides role-specific information for working at ASAM and in ASAM projects.
+In addition to that, it also contains a full explanation on each and every process and workflow applied in ASAM projects, contains guides on suggested tools as well as a compendium on specific tasks and topics.
+Lastly, you can also find information and guides on how to participate in improving this project guide.
 
 
 == Quick Access
@@ -26,10 +30,6 @@ include::role-specific:partial$module-description.adoc[]
 |{standardization-icon-norole}
 |
 include::standardization:partial$module-description.adoc[]
-
-|{tasks-icon-norole}
-|
-include::tasks:partial$module-description.adoc[]
 
 |{compendium-icon-norole}
 |

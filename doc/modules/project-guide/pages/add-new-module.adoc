@@ -1,52 +1,28 @@
-= Add A New Module To The Project Guide
+= Adding A New Module
 :description: Describes how to add a new module to the ASAM Project Guide so that it contains all importantn infos and structures by default for Antora to build correctly.
-:keywords: antora,guide,module
+:keywords: antora,guide,module,new-content-guide
 
 == Add Mandatory Folders And Files
 To add a new module to the project guide, follow these instructions:
 
-. Copy the folder "reference-module-folder" with all its files and subfolders into the "modules" folder
+. Copy the folder "reference-module-folder" located in the "examples" folder of the "project-guide" module with all its files and subfolders into the "modules" folder
+
 . Rename the folder to be the name of the new module
 +
 TIP: The name of the folder will show in the page url.
 Choose a meaningful but short name, if possible.
 
 . Add a description for the module to the file "partials/module-description.adoc" in your new module
+
 . Add the new module's nav.adoc file to the antora.yml in the "doc" folder
 +
 TIP: The position in the list reflects the order of the modules in Antora's sidebar.
+
 . Change the content of the module's nav.adoc file according to the in-module-navigation you want to have in the sidebar.
 
-== Add Files To Module
-You can add new files to your module.
-If the folder still contains a "delete_this" file, delete that file after adding the new one.
-It only functions as a placeholder so the folder structure is synched with git.
+. Add the module structure to the plantuml file "structure.puml" in the examles of the project-guide module
+//TODO: Automate this process step!
 
-Content page:: Add your content pages under the "pages" folder.
-You can use subfolders for structuring.
-A content page must contain the following:
-+
-* A title ("= Title") in capitals
-* A ":description: <text>" attribute with a short description of the content of this page
-* A ":keywords: <text>" attribute with labels for automatic cross-referencing
-* If the page is to be included in full or in part somewhere else, add the attribute ":page-partial:"
-+
-IMPORTANT: Consider using a fragment instead as these are intended to be included and pages are not.
-However, if you want to include a page with its title, a page is preferable to a partial/fragment.
-Note that you need to add "<module>:" after each and every "include::", "xref::", "image::" etc. where you reference within your module, as otherwise a cross-module inclusion will not work.
+. Update the xref:content-structure.adoc[Content Structure Adoc] file accordingly
 
-* After the attributes, add "include::partial$_attributes.adoc[]"
-
-.Default page header with placeholders
-[source,asciidoc]
-----
-= <Page Title>
-:description: any
-:keywords: any
-:page-partial:
-
-\include::<module>:partial$_attributes.adoc[]
-----
-
-Fragments:: Reusable page content is added under the "partials" folder.
-You can use subfolders for structring.
+related::new-content-guide[]

@@ -7,14 +7,14 @@ include::partial$_attributes.adoc[]
 
 == Context
 
-include::partial$macro-reference[tag=context]
+include::partial$macro-reference.adoc[tag=context]
 
 == Result
 The page automatically links to all other pages containing the listed attributes, excluding pages containing the excluded attributes.
 
 == Prerequisites
-include::partial$macro-reference[tag=prerequisits]
+include::partial$macro-reference.adoc[tag=prerequisits]
 
 == How
-include::partial$macro-reference[tag=how]
+include::partial$macro-reference.adoc[tag=how]
 
