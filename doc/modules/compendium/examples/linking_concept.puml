@@ -2,74 +2,76 @@
 component compendium {
 rectangle "compendium:nav.adoc" as f0_1
 rectangle "compendium:antora.adoc" as f0_2
-rectangle "compendium:antora/build-antora-locally.adoc" as f0_3
-rectangle "compendium:docker/docker-for-asciidoc.adoc" as f0_4
-rectangle "compendium:docker/standard-docker-config.adoc" as f0_5
-rectangle "compendium:docker/starting-a-container.adoc" as f0_6
-rectangle "compendium:docker/wsl.adoc" as f0_7
-rectangle "compendium:git/cloning-repo-tutorial.adoc" as f0_8
-rectangle "compendium:git/commit-guidelines.adoc" as f0_9
-rectangle "compendium:git/git-actions.adoc" as f0_10
-rectangle "compendium:git/git-terminology.adoc" as f0_11
-rectangle "compendium:git/maintain-a-repo.adoc" as f0_12
-rectangle "compendium:git/merge-conflicts.adoc" as f0_13
-rectangle "compendium:git/merge-requests.adoc" as f0_14
-rectangle "compendium:git/merge.adoc" as f0_15
-rectangle "compendium:git/review-code.adoc" as f0_16
-rectangle "compendium:git/submodules.adoc" as f0_17
-rectangle "compendium:git/transitioning-to-a-new-workflow.adoc" as f0_18
-rectangle "compendium:git/working-with-git.adoc" as f0_19
-rectangle "compendium:git/write-a-feature.adoc" as f0_20
-rectangle "compendium:git/submodules/submodule-pull.adoc" as f0_21
-rectangle "compendium:git/submodules/submodules-add.adoc" as f0_22
-rectangle "compendium:git/submodules/submodules-changing-remote.adoc" as f0_23
-rectangle "compendium:git/submodules/submodules-switch-version.adoc" as f0_24
-rectangle "compendium:gitlab/ASAM-Issue-and-MR-Labels.adoc" as f0_25
-rectangle "compendium:gitlab/Branch-Naming-Conventions.adoc" as f0_26
-rectangle "compendium:gitlab/Branching.adoc" as f0_27
-rectangle "compendium:gitlab/cloning-a-repository.adoc" as f0_28
-rectangle "compendium:gitlab/commit-guidelines.adoc" as f0_29
-rectangle "compendium:gitlab/Forking.adoc" as f0_30
-rectangle "compendium:gitlab/gitlab-ide-guide.adoc" as f0_31
-rectangle "compendium:gitlab/gitlab-terminology.adoc" as f0_32
-rectangle "compendium:guides/Accessing_Compiled_Artifacts.adoc" as f0_33
-rectangle "compendium:guides/Meeting-Guidelines.adoc" as f0_34
-rectangle "compendium:guides/Platforms.adoc" as f0_35
-rectangle "compendium:guides/ProjectGuidelines.adoc" as f0_36
-rectangle "compendium:guides/WhatIsYaml.adoc" as f0_37
-rectangle "compendium:guides/Workflow.adoc" as f0_38
-rectangle "compendium:guides/WritingGuidelines.adoc" as f0_39
-rectangle "compendium:implementers-forum/Feedback-Guide.adoc" as f0_40
-rectangle "compendium:implementers-forum/Scenario-Writers-Guide.adoc" as f0_41
-rectangle "compendium:open-source/ASAM-DCO.adoc" as f0_42
-rectangle "compendium:powershell/cloning-a-repository.adoc" as f0_43
-rectangle "compendium:powershell/powershell-basics.adoc" as f0_44
-rectangle "compendium:powershell/run-docker.adoc" as f0_45
-rectangle "compendium:sharepoint/links.adoc" as f0_46
-rectangle "compendium:sharepoint/synchronizing-sharepoint-with-onedrive.adoc" as f0_47
-rectangle "compendium:teams/email-notifications.adoc" as f0_48
-rectangle "compendium:teams/meetings-in-teams.adoc" as f0_49
-rectangle "compendium:teams/obtain-channel-email.adoc" as f0_50
-rectangle "compendium:teams/polls-and-surveys.adoc" as f0_51
-rectangle "compendium:teams/receive-notifications.adoc" as f0_52
-rectangle "compendium:teams/teams-channel-file-structure.adoc" as f0_53
-rectangle "compendium:vscode/Adding-Diagrams-To-VSCode.adoc" as f0_54
-rectangle "compendium:vscode/cloning-a-repository.adoc" as f0_55
-rectangle "compendium:vscode/recommended-vscode-extensions.adoc" as f0_56
-rectangle "compendium:vscode/recommended-vscode-settings.adoc" as f0_57
-rectangle "compendium:vscode/run-docker.adoc" as f0_58
-rectangle "compendium:vscode/vscode-activity-bar.adoc" as f0_59
-rectangle "compendium:vscode/vscode-command-palette.adoc" as f0_60
-rectangle "compendium:vscode/VSCode-Git-Interaction.adoc" as f0_61
-rectangle "compendium:vscode/vscode-install-extension.adoc" as f0_62
-rectangle "compendium:vscode/vscode-interface.adoc" as f0_63
-rectangle "compendium:writing_guidelines/AsciiDoc-Guide.adoc" as f0_64
-rectangle "compendium:writing_guidelines/coding_style_guide.adoc" as f0_65
-rectangle "compendium:writing_guidelines/plantuml_documentation_guide.adoc" as f0_66
-rectangle "compendium:writing_guidelines/writing_guide.adoc" as f0_67
+rectangle "compendium:compendium.adoc" as f0_3
+rectangle "compendium:antora/build-antora-locally.adoc" as f0_4
+rectangle "compendium:docker/docker-for-asciidoc.adoc" as f0_5
+rectangle "compendium:docker/standard-docker-config.adoc" as f0_6
+rectangle "compendium:docker/starting-a-container.adoc" as f0_7
+rectangle "compendium:docker/wsl.adoc" as f0_8
+rectangle "compendium:git/cloning-repo-tutorial.adoc" as f0_9
+rectangle "compendium:git/commit-guidelines.adoc" as f0_10
+rectangle "compendium:git/git-actions.adoc" as f0_11
+rectangle "compendium:git/git-terminology.adoc" as f0_12
+rectangle "compendium:git/maintain-a-repo.adoc" as f0_13
+rectangle "compendium:git/merge-conflicts.adoc" as f0_14
+rectangle "compendium:git/merge-requests.adoc" as f0_15
+rectangle "compendium:git/merge.adoc" as f0_16
+rectangle "compendium:git/review-code.adoc" as f0_17
+rectangle "compendium:git/submodules.adoc" as f0_18
+rectangle "compendium:git/transitioning-to-a-new-workflow.adoc" as f0_19
+rectangle "compendium:git/working-with-git.adoc" as f0_20
+rectangle "compendium:git/write-a-feature.adoc" as f0_21
+rectangle "compendium:git/submodules/submodule-pull.adoc" as f0_22
+rectangle "compendium:git/submodules/submodules-add.adoc" as f0_23
+rectangle "compendium:git/submodules/submodules-changing-remote.adoc" as f0_24
+rectangle "compendium:git/submodules/submodules-switch-version.adoc" as f0_25
+rectangle "compendium:gitlab/ASAM-Issue-and-MR-Labels.adoc" as f0_26
+rectangle "compendium:gitlab/Branch-Naming-Conventions.adoc" as f0_27
+rectangle "compendium:gitlab/Branching.adoc" as f0_28
+rectangle "compendium:gitlab/cloning-a-repository.adoc" as f0_29
+rectangle "compendium:gitlab/commit-guidelines.adoc" as f0_30
+rectangle "compendium:gitlab/Forking.adoc" as f0_31
+rectangle "compendium:gitlab/gitlab-ide-guide.adoc" as f0_32
+rectangle "compendium:gitlab/gitlab-terminology.adoc" as f0_33
+rectangle "compendium:guides/Accessing_Compiled_Artifacts.adoc" as f0_34
+rectangle "compendium:guides/Meeting-Guidelines.adoc" as f0_35
+rectangle "compendium:guides/Platforms.adoc" as f0_36
+rectangle "compendium:guides/ProjectGuidelines.adoc" as f0_37
+rectangle "compendium:guides/WhatIsYaml.adoc" as f0_38
+rectangle "compendium:guides/Workflow.adoc" as f0_39
+rectangle "compendium:guides/WritingGuidelines.adoc" as f0_40
+rectangle "compendium:implementers-forum/Feedback-Guide.adoc" as f0_41
+rectangle "compendium:implementers-forum/Scenario-Writers-Guide.adoc" as f0_42
+rectangle "compendium:open-source/ASAM-DCO.adoc" as f0_43
+rectangle "compendium:powershell/cloning-a-repository.adoc" as f0_44
+rectangle "compendium:powershell/powershell-basics.adoc" as f0_45
+rectangle "compendium:powershell/run-docker.adoc" as f0_46
+rectangle "compendium:sharepoint/links.adoc" as f0_47
+rectangle "compendium:sharepoint/synchronizing-sharepoint-with-onedrive.adoc" as f0_48
+rectangle "compendium:teams/email-notifications.adoc" as f0_49
+rectangle "compendium:teams/meetings-in-teams.adoc" as f0_50
+rectangle "compendium:teams/obtain-channel-email.adoc" as f0_51
+rectangle "compendium:teams/polls-and-surveys.adoc" as f0_52
+rectangle "compendium:teams/receive-notifications.adoc" as f0_53
+rectangle "compendium:teams/teams-channel-file-structure.adoc" as f0_54
+rectangle "compendium:vscode/Adding-Diagrams-To-VSCode.adoc" as f0_55
+rectangle "compendium:vscode/cloning-a-repository.adoc" as f0_56
+rectangle "compendium:vscode/recommended-vscode-extensions.adoc" as f0_57
+rectangle "compendium:vscode/recommended-vscode-settings.adoc" as f0_58
+rectangle "compendium:vscode/run-docker.adoc" as f0_59
+rectangle "compendium:vscode/vscode-activity-bar.adoc" as f0_60
+rectangle "compendium:vscode/vscode-command-palette.adoc" as f0_61
+rectangle "compendium:vscode/VSCode-Git-Interaction.adoc" as f0_62
+rectangle "compendium:vscode/vscode-install-extension.adoc" as f0_63
+rectangle "compendium:vscode/vscode-interface.adoc" as f0_64
+rectangle "compendium:writing_guidelines/AsciiDoc-Guide.adoc" as f0_65
+rectangle "compendium:writing_guidelines/coding_style_guide.adoc" as f0_66
+rectangle "compendium:writing_guidelines/plantuml_documentation_guide.adoc" as f0_67
+rectangle "compendium:writing_guidelines/writing_guide.adoc" as f0_68
 }
 component getting-involved {
 rectangle "getting-involved:nav.adoc" as f1_1
+rectangle "getting-involved:home.adoc" as f1_2
 }
 component getting-started {
 rectangle "getting-started:nav.adoc" as f2_1
@@ -98,10 +100,15 @@ rectangle "project-guide:add-a-page.adoc" as f3_2
 rectangle "project-guide:add-a-partial.adoc" as f3_3
 rectangle "project-guide:add-new-module.adoc" as f3_4
 rectangle "project-guide:attachments.adoc" as f3_5
-rectangle "project-guide:Content-Structure.adoc" as f3_6
+rectangle "project-guide:content-structure.adoc" as f3_6
 rectangle "project-guide:examples.adoc" as f3_7
-rectangle "project-guide:images.adoc" as f3_8
-rectangle "project-guide:pages-vs-partials.adoc" as f3_9
+rectangle "project-guide:home.adoc" as f3_8
+rectangle "project-guide:images.adoc" as f3_9
+rectangle "project-guide:pages-vs-partials.adoc" as f3_10
+rectangle "project-guide:special-macros.adoc" as f3_11
+rectangle "project-guide:macros/macro-pages.adoc" as f3_12
+rectangle "project-guide:macros/macro-reference.adoc" as f3_13
+rectangle "project-guide:macros/macro-related.adoc" as f3_14
 }
 component role-specific {
 rectangle "role-specific:nav.adoc" as f4_1
@@ -157,7 +164,7 @@ rectangle "tooling:vscode/vscode-guides.adoc" as f8_25
 rectangle "tooling:vscode/vscode-setup.adoc" as f8_26
 }
 
-f8_3 -> f0_4
+f8_3 -> f0_5
 f2_3 -left-> f2_1
 f2_4 -left-> f2_1
 f2_2 -left-> f2_1
@@ -165,7 +172,10 @@ f2_5 -left-> f2_1
 f2_4 -left-> f2_3
 f2_2 -> f2_3
 f2_5 -left-> f2_3
+f3_8 -left-> f3_1
 f3_4 -left-> f3_1
+f3_3 -left-> f3_2
+f3_10 -> f3_2
 f6_4 -left-> f6_1
 f6_2 -left-> f6_1
 f6_7 -left-> f6_1
@@ -253,61 +263,61 @@ cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u59
 cloud "https://code.asam.net/-/profile"  as u60
 cloud "https://code.asam.net/profile/keys"  as u61
 
-f0_3 .up.>> u1
-f0_4 .up.>> u2
-f0_7 .up.>> u3
-f0_12 .up.>> u4
-f0_15 .up.>> u5
-f0_17 .up.>> u2
-f0_20 .up.>> u6
-f0_20 .up.>> u7
-f0_20 .up.>> u4
-f0_21 .up.>> u8
+f0_4 .up.>> u1
+f0_5 .up.>> u2
+f0_8 .up.>> u3
+f0_13 .up.>> u4
+f0_16 .up.>> u5
+f0_18 .up.>> u2
+f0_21 .up.>> u6
+f0_21 .up.>> u7
+f0_21 .up.>> u4
 f0_22 .up.>> u8
-f0_22 .up.>> u9
-f0_24 .up.>> u8
-f0_31 .up.>> u10
-f0_31 .up.>> u11
-f0_31 .up.>> u12
+f0_23 .up.>> u8
+f0_23 .up.>> u9
+f0_25 .up.>> u8
 f0_32 .up.>> u10
 f0_32 .up.>> u11
 f0_32 .up.>> u12
-f0_35 .up.>> u9
-f0_35 .up.>> u13
-f0_38 .up.>> u14
-f0_38 .up.>> u15
-f0_38 .up.>> u16
-f0_40 .up.>> u17
-f0_40 .up.>> u18
-f0_40 .up.>> u19
-f0_40 .up.>> u20
-f0_40 .up.>> u21
-f0_41 .up.>> u22
-f0_41 .up.>> u23
+f0_33 .up.>> u10
+f0_33 .up.>> u11
+f0_33 .up.>> u12
+f0_36 .up.>> u9
+f0_36 .up.>> u13
+f0_39 .up.>> u14
+f0_39 .up.>> u15
+f0_39 .up.>> u16
+f0_41 .up.>> u17
+f0_41 .up.>> u18
 f0_41 .up.>> u19
-f0_44 .up.>> u24
-f0_44 .up.>> u25
-f0_46 .up.>> u26
-f0_46 .up.>> u27
-f0_46 .up.>> u28
-f0_46 .up.>> u29
-f0_51 .up.>> u30
-f0_52 .up.>> u31
-f0_54 .up.>> u32
-f0_61 .up.>> u33
-f0_64 .up.>> u34
-f0_64 .up.>> u35
-f0_64 .up.>> u36
-f0_64 .up.>> u37
-f0_64 .up.>> u38
-f0_64 .up.>> u39
-f0_65 .up.>> u40
-f0_67 .up.>> u41
-f0_67 .up.>> u42
-f0_67 .up.>> u43
-f0_67 .up.>> u44
-f0_67 .up.>> u45
-f0_67 .up.>> u46
+f0_41 .up.>> u20
+f0_41 .up.>> u21
+f0_42 .up.>> u22
+f0_42 .up.>> u23
+f0_42 .up.>> u19
+f0_45 .up.>> u24
+f0_45 .up.>> u25
+f0_47 .up.>> u26
+f0_47 .up.>> u27
+f0_47 .up.>> u28
+f0_47 .up.>> u29
+f0_52 .up.>> u30
+f0_53 .up.>> u31
+f0_55 .up.>> u32
+f0_62 .up.>> u33
+f0_65 .up.>> u34
+f0_65 .up.>> u35
+f0_65 .up.>> u36
+f0_65 .up.>> u37
+f0_65 .up.>> u38
+f0_65 .up.>> u39
+f0_66 .up.>> u40
+f0_68 .up.>> u41
+f0_68 .up.>> u42
+f0_68 .up.>> u43
+f0_68 .up.>> u44
+f0_68 .up.>> u45
+f0_68 .up.>> u46
 f4_3 .up.>> u47
 f4_3 .up.>> u48
 f4_3 .up.>> u49

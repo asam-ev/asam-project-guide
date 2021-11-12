@@ -81,9 +81,9 @@ class AsciiDocContent:
 
         self.pattern_attr = re.compile("^\s*:keywords:(.*)")
 
-        self.pattern_ref = re.compile("reference::(.*)\n?")
+        self.pattern_ref = re.compile("reference::(.*)\[(.*)\]\n?")
 
-        self.pattern_reltop = re.compile("related::(.*)\n?")
+        self.pattern_reltop = re.compile("related::(.*)\[(.*)\]\n?")
 
         # pattern_xref_macro: (2) = module; (3) = path/filename; (5) = id
         self.pattern_xref_macro = re.compile("xref:{1,2}(([^\s:\[]*):)?([^#\n\[]*)(#([^\[]*))?\[.*\]")
@@ -215,7 +215,8 @@ class AsciiDocContent:
         offset = 2
         self.insert_references_in_content(line,offset,ref_list)
 
-    def make_cross_reference_replacements(self,ref_list):
+    def make_cross_reference_replacements(self,ref_list_input):
+        ref_list = ref_list_input[0]
         total_ref_elements = [x.replace(" ","") for x in ref_list.split(",")]
         references = [x.replace(" ","") for x in ref_list.split(",") if not x.startswith("!")]
         exceptions = [x[1:] for x in list(set(total_ref_elements) - set(references))]
@@ -258,9 +259,6 @@ class AsciiDocContent:
         for link in links:
             pass_this_link = False
             for exc in excl_links:
-                if(link and link[1] =="merge.adoc" and self.filename == "merge.adoc"):
-                    print("link",link)
-                    print("exc",exc)
                 if link == exc:
                     pass_this_link = True
                 break

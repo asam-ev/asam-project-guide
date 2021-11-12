@@ -43,4 +43,4 @@ git push
 ----
 ====
 
-related::submodules
+related::submodules[]

@@ -29,4 +29,4 @@ NOTE: After you have initialized your submodules for the first time, they will a
 
 TIP: You can even leave out the `--recursive` part if you know that your submodules do not contain submodules themselves.
 
-related::submodules
+related::submodules[]

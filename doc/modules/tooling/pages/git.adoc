@@ -32,6 +32,6 @@ ASAM recommends using Git for working on a repository locally:
 
 |===
 
-related::git,!summary
+related::git,!summary[]
 
 * xref:gitlab.adoc[]

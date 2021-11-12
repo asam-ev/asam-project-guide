@@ -8,4 +8,4 @@ include::tooling:partial$tools-list.adoc[]
 
 https://www.asam.net/active-projects/resources/
 
-related:: tools-overview
+related::tools-overview[]

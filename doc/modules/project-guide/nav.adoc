@@ -1,7 +1,6 @@
-* Working On The Project Guide
-** Editing Content
+* xref:home.adoc[Working On The Project Guide]
 ** xref:add-new-module.adoc[Adding A Module]
-** Adding Pages
+** xref:add-a-page.adoc[Adding Pages]
 ** Images & Examples
 ** Working With Projects
 

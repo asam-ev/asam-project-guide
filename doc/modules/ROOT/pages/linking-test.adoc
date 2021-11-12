@@ -5,7 +5,7 @@ My standard body text.
 
 no problem
 
-related:: antora,home
+related::antora,home[]
 
 my home town Is :D
 

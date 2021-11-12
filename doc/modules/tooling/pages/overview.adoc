@@ -26,12 +26,12 @@ TIP: Instead of installing software locally, ASAM supports **{no-installation}**
 
 include::tooling:partial$tools-list.adoc[tag=mandatory]
 
-reference:: mandatory
+reference::mandatory[]
 
 
 == Recommended Tools
 include::tooling:partial$tools-list.adoc[tag=recommended]
 
-reference:: recommended
+reference::recommended[]
 
-related:: landing_page,!tools
+related::landing_page,!tools[]

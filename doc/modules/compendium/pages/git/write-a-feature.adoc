@@ -71,4 +71,4 @@ Submit a https://help.github.com/articles/using-pull-requests/[GitHub pull reque
 
 Ask for a code review in the project's chat room.
 
-related::git
+related::git[]

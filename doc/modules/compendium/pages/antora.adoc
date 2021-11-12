@@ -3,4 +3,4 @@
 Antora is a pipeline for building documentation and guides from AsciiDoc files.
 It is used to create the ASAM Project Guide (this document) from the files in its original {guide-repo-url}[repository].
 
-related::project-guide,antora
+related::project-guide,antora[]

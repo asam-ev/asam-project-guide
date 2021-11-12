@@ -27,4 +27,4 @@ ASAM uses {gitlab-url}[GitLab] for multiple aspects of its standardization proce
 
 |===
 
-related::gitlab,!summary
+related::gitlab,!summary[]

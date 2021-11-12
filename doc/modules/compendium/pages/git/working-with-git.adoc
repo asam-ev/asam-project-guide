@@ -16,4 +16,4 @@ image::compendium:git-workflow.svg[Git Workflow]
 . Commit staged files to your local repo.
 . Push to a remote repository.
 
-related::git
+related::git[]

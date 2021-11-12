@@ -25,4 +25,4 @@ ASAM uses Draw.io for creating custom diagrams for standards and documentation.
 
 |===
 
-related::docker,!summary
+related::docker,!summary[]

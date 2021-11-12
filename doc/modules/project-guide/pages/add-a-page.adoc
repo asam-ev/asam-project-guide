@@ -1,0 +1,44 @@
+= Adding A New Page To The Project Guide
+:description: Explains how to add a new page to the project guide and what to look out for.
+:keywords: page,project-guide
+:page-partial:
+
+include::partial$_attributes.adoc[]
+
+// If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
+
+== Context
+To add a new page or make an existing page compatible with Antora, there are some rules to follow.
+In particular, some AsciiDoc shortcuts or alternatives may not work.
+On the other hand, Antora provides additional and specific attributes that can be utilized for maximum effect.
+
+Some types of content require a specific structure. These are listed and linked below and are described in their own separate pages.
+
+NOTE: If you want to define a reusable content, consider using a xref:add-a-partial.adoc[Partial] instead.
+See xref:pages-vs-partials.adoc[Pages VS Partials] for more information on the difference between those two.
+
+== Result
+An Antora and ASAM conforming page is created.
+
+== Prerequisites
+none
+
+== How
+. Find the module you want your page to be located in.
++
+TIP: This should be the module which it relates to most closely.
+See other pages in the modules in question for reference.
+
+. Create your file in the "pages" folder or move it there
+.. Alternatively, create a new folder and/or add your file to an existing folder within the "pages" folder if you want to add a structure within the module.
++
+TIP: You can copy the corresponding template file from the examples folder in the project-guide module folder.
+
+. Add the following standard content to your file and modify it accordingly:
++
+[source,asciidoc]
+----
+include::example$reference-module-folder/pages/_template-default-page.adoc[]
+----
++
+NOTE: Remove the backslash in the template file before the include instruction when you copy the template file directly.

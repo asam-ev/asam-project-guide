@@ -12,4 +12,4 @@ include::compendium:partial$_attributes.adoc[]
 - Rebase frequently to incorporate upstream changes.
 - Use a https://help.github.com/articles/using-pull-requests/[pull request^] for code reviews.
 
-related::git
+related::git[]

@@ -16,4 +16,4 @@ include::compendium:page$powershell/cloning-a-repository.adoc[leveloffset=+1]
 
 include::compendium:page$gitlab/cloning-a-repository.adoc[leveloffset=+1]
 
-related::git
+related::git[]

@@ -1,0 +1,20 @@
+= Macro: related
+:description: Describes the use of the macro "related" in detail.
+:keywords: macro,asam,antora,custom
+:page-partial:
+
+include::partial$_attributes.adoc[]
+
+== Context
+
+include::partial$macro-related[tag=context]
+
+== Result
+The page automatically links to all other pages containing the listed attributes under a new subsection, excluding pages containing the excluded attributes.
+
+== Prerequisites
+include::partial$macro-related[tag=prerequisits]
+
+== How
+include::partial$macro-related[tag=how]
+

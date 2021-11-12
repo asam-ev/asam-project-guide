@@ -27,6 +27,6 @@ ASAM recommends using Visual Studio Code (VSCode) for local text document intera
 
 |===
 
-related::vscode,!summary
+related::vscode,!summary[]
 
 * {gitlab}

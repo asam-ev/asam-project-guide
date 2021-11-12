@@ -20,4 +20,4 @@ IMPORTANT: It is **mandatory** for all OpenX projects to invite the OpenX calend
 
 |===
 
-related::openx-calendar,!summary
+related::openx-calendar,!summary[]

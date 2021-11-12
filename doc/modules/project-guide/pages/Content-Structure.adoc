@@ -1,5 +1,6 @@
 = Proposed Project Guide Structure In Antora
-:keywords: antora,structure
+:description: Summarizes the proposed general structure of the project guide.
+:keywords: antora,structure,project-guide
 
 The following is a proposal for the project guide structure in Antora.
 Note that it is a WIP and will likely change over time.

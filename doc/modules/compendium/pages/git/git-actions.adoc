@@ -19,4 +19,4 @@ Branch:: Diverge from the main line of development by creating a branch; this ha
 
 Merge:: Integrate the changes made in one branch into another. Most times, this is used to integrate the changes from your branch to the main (master) branch.
 
-related::git
+related::git[]

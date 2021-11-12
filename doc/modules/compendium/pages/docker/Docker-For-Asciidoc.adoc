@@ -24,4 +24,4 @@ If you use the standard configuration, the created file will be named "HTML_stan
 
 TIP: For ensuring compliance with the ASAM style guidelines, make sure the project contains the relevant https://code.asam.net/common/style-resources[style resources^] and that they are included as "preamble.adoc" in the file you are processing with asciidoctor.
 
-related::docker
+related::docker[]

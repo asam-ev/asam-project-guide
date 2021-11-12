@@ -12,4 +12,4 @@ WSL is short for Windows Subsystem for Linux. From link:https://docs.microsoft.c
 In the context of Docker, WSL2 and a compatible Linux distribution are used to run containers built for Linux on a Windows computer.
 In other words, WSL allows you to run a Linux directly within Windows without having to install a new operating system in parallel to your main one (Windows).
 
-related::docker
+related::docker[]

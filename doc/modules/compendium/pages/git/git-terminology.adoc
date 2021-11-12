@@ -20,4 +20,4 @@ Staging Area:: Collection of files or changes that git is aware of but that are 
 
 Merge Request:: If the changes made in a separate branch of a project are to be combined with another branch (usually the main or master branch), a Merge Request is triggered to review the changes and solve any conflicts where two independently made changes on the same file would interfere with one another.
 
-related::git
+related::git[]

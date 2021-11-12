@@ -1,0 +1,11 @@
+= Compendium
+:description: Landing page for all automatically gathered knowledge pieces and content in this project guide.
+:keywords: landing_page,compendium
+:page-aliases: home.adoc
+
+TODO
+
+files::[]
+folders::[]
+
+related::landing_page[]

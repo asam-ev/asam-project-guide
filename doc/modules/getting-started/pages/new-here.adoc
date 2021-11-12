@@ -8,4 +8,4 @@ The following pages contain a general overview over ASAM, this project guide, an
 
 // TODO
 
-related:: new-here-content
+related::new-here-content[]

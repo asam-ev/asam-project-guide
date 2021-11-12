@@ -7,4 +7,4 @@ See xref:compendium:gitlab/gitlab-ide-guide.adoc[the GitLab Web IDE Guide] in th
 
 However, note that you will still need to configure your accounts for the mandatory tools.
 
-related::mandatory
+related::mandatory[]
