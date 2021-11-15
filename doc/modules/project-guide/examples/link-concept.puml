@@ -1,0 +1,146 @@
+@startuml
+package ROOT #5050d0 {
+rectangle "home.adoc" as f5_3
+}
+package compendium #ff5050 {
+rectangle "compendium.adoc" as f0_3
+rectangle "nav.adoc" as f0_1
+rectangle "antora.adoc" as f0_2
+rectangle "docker/docker-for-asciidoc.adoc" as f0_5
+}
+package getting-involved #5050ff {
+rectangle "home.adoc" as f1_2
+}
+package getting-started #50ff50 {
+rectangle "main.adoc" as f2_3
+rectangle "nav.adoc" as f2_1
+rectangle "new-here.adoc" as f2_4
+rectangle "about-this-guide.adoc" as f2_2
+rectangle "quick-setup.adoc" as f2_5
+}
+package project-guide #ffff50 {
+rectangle "home.adoc" as f3_8
+rectangle "nav.adoc" as f3_1
+rectangle "content-structure.adoc" as f3_6
+rectangle "add-new-module.adoc" as f3_4
+rectangle "pages-vs-partials.adoc" as f3_11
+rectangle "add-a-page.adoc" as f3_2
+rectangle "add-a-partial.adoc" as f3_3
+rectangle "images.adoc" as f3_9
+rectangle "examples.adoc" as f3_7
+rectangle "attachments.adoc" as f3_5
+rectangle "special-macros.adoc" as f3_12
+rectangle "used-attributes.adoc" as f3_13
+rectangle "link-concept.adoc" as f3_10
+}
+package role-specific #ff50ff {
+rectangle "home.adoc" as f4_3
+}
+package standardization #d05050 {
+rectangle "asam-development-process.adoc" as f6_2
+rectangle "development-phase.adoc" as f6_3
+rectangle "home.adoc" as f6_4
+rectangle "proposal-phase.adoc" as f6_7
+rectangle "release-phase.adoc" as f6_8
+rectangle "review-phase.adoc" as f6_9
+rectangle "nav.adoc" as f6_1
+rectangle "project-types.adoc" as f6_6
+rectangle "project-setup.adoc" as f6_5
+}
+package tooling #d0d050 {
+rectangle "docker.adoc" as f7_3
+rectangle "drawio.adoc" as f7_4
+rectangle "git.adoc" as f7_5
+rectangle "gitlab.adoc" as f7_6
+rectangle "working-without-software-installation.adoc" as f7_10
+rectangle "overview.adoc" as f7_7
+rectangle "calendar.adoc" as f7_2
+rectangle "teams-and-sharepoint.adoc" as f7_8
+rectangle "vscode.adoc" as f7_9
+rectangle "nav.adoc" as f7_1
+rectangle "drawio/drawio-setup.adoc" as f7_16
+rectangle "git/git-setup.adoc" as f7_19
+}
+
+f0_1 -[#FF0000]-> f0_3
+f0_1 -[#FF0000]-> f0_2
+f0_5 --[#FF0000]--> f7_3
+f2_1 -[#00FF00]-> f2_3
+f2_1 -[#00FF00]-> f2_4
+f2_1 -[#00FF00]-> f2_2
+f2_3 -[#00FF00]-> f2_4
+f2_3 -[#00FF00]-> f2_2
+f2_3 -[#00FF00]-> f2_5
+f3_1 -[#CCCC00]-> f3_8
+f3_1 -[#CCCC00]-> f3_6
+f3_1 -[#CCCC00]-> f3_4
+f3_1 -[#CCCC00]-> f3_11
+f3_1 -[#CCCC00]-> f3_2
+f3_1 -[#CCCC00]-> f3_3
+f3_1 -[#CCCC00]-> f3_9
+f3_1 -[#CCCC00]-> f3_7
+f3_1 -[#CCCC00]-> f3_5
+f3_1 -[#CCCC00]-> f3_12
+f3_1 -[#CCCC00]-> f3_13
+f3_2 -[#CCCC00]-> f3_3
+f3_2 -[#CCCC00]-> f3_11
+f3_2 -[#CCCC00]-> f3_6
+f3_4 -[#CCCC00]-> f3_6
+f3_11 -[#CCCC00]-> f3_2
+f3_11 -[#CCCC00]-> f3_3
+f3_13 -[#CCCC00]-> f3_4
+f3_13 -[#CCCC00]-> f3_6
+f3_13 -[#CCCC00]-> f3_12
+f3_13 --[#CCCC00]--> f4_3
+f3_13 -[#CCCC00]-> f3_13
+f3_13 --[#CCCC00]--> f0_3
+f3_13 --[#CCCC00]--> f6_2
+f3_13 --[#CCCC00]--> f6_3
+f3_13 --[#CCCC00]--> f7_3
+f3_13 --[#CCCC00]--> f7_4
+f3_13 -[#CCCC00]-> f3_10
+f3_13 --[#CCCC00]--> f1_2
+f3_13 --[#CCCC00]--> f7_5
+f3_13 --[#CCCC00]--> f7_6
+f3_13 --[#CCCC00]--> f7_10
+f3_13 --[#CCCC00]--> f5_3
+f3_13 --[#CCCC00]--> f6_4
+f3_13 --[#CCCC00]--> f2_3
+f3_13 -[#CCCC00]-> f3_8
+f3_13 --[#CCCC00]--> f7_7
+f3_13 --[#CCCC00]--> f7_2
+f3_13 --[#CCCC00]--> f7_8
+f3_13 -[#CCCC00]-> f3_2
+f3_13 -[#CCCC00]-> f3_3
+f3_13 --[#CCCC00]--> f2_4
+f3_13 -[#CCCC00]-> f3_11
+f3_13 --[#CCCC00]--> f6_7
+f3_13 --[#CCCC00]--> f6_8
+f3_13 --[#CCCC00]--> f6_9
+f3_13 --[#CCCC00]--> f7_9
+f6_1 -[#800000]-> f6_4
+f6_1 -[#800000]-> f6_2
+f6_1 -[#800000]-> f6_7
+f6_1 -[#800000]-> f6_6
+f6_1 -[#800000]-> f6_5
+f6_1 -[#800000]-> f6_3
+f6_1 -[#800000]-> f6_9
+f6_1 -[#800000]-> f6_8
+f7_1 -[#808000]-> f7_7
+f7_1 -[#808000]-> f7_10
+f7_1 -[#808000]-> f7_6
+f7_1 -[#808000]-> f7_2
+f7_1 -[#808000]-> f7_8
+f7_1 -[#808000]-> f7_9
+f7_1 -[#808000]-> f7_5
+f7_1 -[#808000]-> f7_4
+f7_1 -[#808000]-> f7_3
+f7_5 -[#808000]-> f7_6
+f7_6 -[#808000]-> f7_5
+f7_7 -[#808000]-> f7_10
+f7_9 -[#808000]-> f7_6
+f7_10 -[#808000]-> f7_5
+f7_16 -[#808000]-> f7_9
+f7_19 -[#808000]-> f7_9
+
+@enduml

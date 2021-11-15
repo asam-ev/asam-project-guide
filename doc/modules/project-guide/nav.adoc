@@ -22,6 +22,7 @@
 **** xref:macros/macro-pages.adoc[Pages Macro]
 **** xref:macros/macro-reference.adoc[Reference Macro]
 **** xref:macros/macro-related.adoc[Related Macro]
+**** xref:used-attributes.adoc[Used Attributes]
 ** Working With Projects
 ** Additional Infos
 

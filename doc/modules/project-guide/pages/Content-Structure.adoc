@@ -62,3 +62,5 @@ include::{structure}[tags=standard;tools;!comment]
 ----
 include::{structure}[tags=standard;project_guide;!comment]
 ----
+
+related::structure[]

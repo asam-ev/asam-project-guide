@@ -44,9 +44,15 @@ def main(argv):
                     asciidoc_file = AsciiDocContent(dirpath,filename)
                     if asciidoc_file.has_module():
                         attributes = asciidoc_file.find_attributes()
-                        macro_found = asciidoc_file.find_reference_macro()
-                        macro_found = asciidoc_file.find_related_topics_macro()
                         found_files.append(asciidoc_file)
+
+    attributes_file = found_files[0].write_attributes_to_file()
+    if not attributes_file in found_files:
+        found_files.append(attributes_file)
+
+    for afile in found_files:
+        macro_found = afile.find_reference_macro()
+        macro_found = afile.find_related_topics_macro()
 
     for afile in found_files:
         if afile in found_files[0].reference_macro_occurence_list:
@@ -59,7 +65,9 @@ def main(argv):
         afile.revert_macro_substitution()
         afile.write_to_file(filename=afile.filename+"1")
 
-    found_files[0].create_linking_concept_graph()
+    print("Create linking concept graph")
+    found_files[0].create_linking_concept()
+
 
 
 class AsciiDocContent:
@@ -100,7 +108,8 @@ class AsciiDocContent:
         self.path = path
         self.module, self.module_path = self._set_module_and_module_path()
         self.update_linking_dicts()
-        self.adoc_files.append(self)
+        if not self in self.adoc_files:
+            self.adoc_files.append(self)
 
     def _set_module_and_module_path(self):
         module, __, __, module_path = self._get_module_from_path(self.path)
@@ -147,6 +156,8 @@ class AsciiDocContent:
 
         if attr:
             attributes = attr[0][0].split(",")
+            while("" in attributes) :
+                attributes.remove("")
             self._add_to_attributes_dict(attributes)
         return attr
 
@@ -398,66 +409,122 @@ class AsciiDocContent:
         x = 0
         # TODO: Create logic
 
-    def create_linking_concept_graph(self, output_filename = "linking_concept.puml", output_path = "../doc/modules/compendium/examples/"):
-        files = []
-        for afile in self.adoc_files:
-            files.append({"filename": afile.filename,"module_path":afile.module_path,"module":afile.module})
-
-        output_content = ["@startuml"]
+    def _add_puml_content(self,content_list,files_list,full_list,linked_files,name=""):
+        container_type = "package"
+        page_type = "rectangle"
+        web_type = "cloud"
+        graph_start = "@startuml"
+        content_list = [graph_start]
         i = 1
         m = 0
         current_module = ""
-        for f in files:
+        color_choices = ['#FF0000', '#0000FF', '#00FF00', '#CCCC00', '#FF00FF', '#000080', '#800000', '#808000', '#800080','#008080','#00FFFF']
+        current_color = 0
+
+        for f in files_list:
+
+            # Create new module container for diagram when switching to new module
             if not current_module:
                 current_module = f["module"]
-                output_content.append("component {comp} {{".format(comp = current_module))
+                if "color" in f.keys():
+                    current_color = color_choices.index(f['color'][1:-1])
+                content_list.append("{type} {cmod} {color} {{".format(type = container_type,cmod = current_module,color = color_variant(color_choices[current_color])))
             elif current_module != f["module"]:
                 m += 1
                 i = 1
-                output_content.append("}")
+                if "color" in f.keys():
+                    current_color = color_choices.index(f['color'][1:-1])
+                else:
+                    new_val = current_color+1
+                    limit = len(color_choices)-1
+                    current_color = new_val % limit
+
+                content_list.append("}")
                 current_module = f["module"]
-                output_content.append("component {comp} {{".format(comp = current_module))
+                content_list.append("{type} {cmod} {color} {{".format(type = container_type,cmod = current_module,color = color_variant(color_choices[current_color])))
 
+            if not "plantuml_id" in f.keys():
+                f["plantuml_id"] = "f{mod}_{num}".format(mod = m,num = i)
 
-            f["plantuml_id"] = "f{mod}_{num}".format(mod = m,num = i)
-            output_content.append('rectangle "{fileidentifier}" as {num}'.format(fileidentifier = f["module"]+":"+f["module_path"]+f["filename"], num = f["plantuml_id"]))
+            if not "color" in f.keys():
+                f["color"] = "[{color}]".format(color = color_choices[current_color])
+            content_list.append('{type} "{fileidentifier}" as {num}'.format(type = page_type,fileidentifier = f["module_path"]+f["filename"], num = f["plantuml_id"]))
             i +=1
 
-        output_content.append("}")
-        output_content.append("")
+        content_list.append("}")
+        content_list.append("")
 
+        xref_uml_arrows = []
         for xref_key in self.xref_occurence_dict:
             for xref in self.xref_occurence_dict[xref_key]:
-                for f in files:
-                    if f['module'] == xref['module'] and f['module_path'] == xref['module_path'] and f['filename'] == xref['filename']:
-                        for t in files:
+                xref_found = False
+                for f in files_list:
+                    f_in_xref = f['module'] == xref['module'] and f['module_path'] == xref['module_path'] and f['filename'] == xref['filename']
+                    if f_in_xref:
+                        if not f in linked_files:
+                            linked_files.append(f)
+
+                        for t in full_list:
                             if t['module']+"\\\\"+t['module_path']+t['filename'] == xref_key:
+                                xref_found = True
                                 f_split = f['plantuml_id'].split("_")
                                 t_split = t['plantuml_id'].split("_")
 
-                                arrow = " -> "
+                                arrow = " -{color}-> ".format(color = t['color'])
 
-                                if t_split[0] > f_split[0]:
-                                    arrow = " -up-> "
+                                if t_split[0] != f_split[0]:
+                                    arrow = " --{color}--> ".format(color = t['color'])
 
-                                elif t_split[1] < f_split[1]:
-                                    arrow = " -left-> "
+                                xref_uml_arrows.append(t['plantuml_id'] + arrow + f['plantuml_id'])
+                                if not t in linked_files:
+                                    linked_files.append(t)
 
-                                output_content.append(f['plantuml_id'] + arrow + t['plantuml_id'])
                                 break
 
-                        break
+                        if xref_found:
+                            break
 
-        output_content.append("")
+        content_list += xref_uml_arrows
+        content_list.append("")
+        sorted_linked_files = sorted(linked_files, key=lambda d: d['module'])
+        return content_list,sorted_linked_files
+
+    def create_linking_concept(self, output_filename = "link-concept", output_path = "../doc/modules/project-guide/examples/"):
+        all_files = []
+        linked_files = []
+        unlinked_files = []
+        graph_file_extension = ".puml"
+        unlinked_addon = "-unlinked"
+        full_addon = "-full"
+        txt_file_extension = ".json"
+        container_type = "package"
+        page_type = "rectangle"
+        web_type = "cloud"
+        for afile in self.adoc_files:
+            file_identifier = {"filename": afile.filename,"module_path":afile.module_path,"module":afile.module}
+            if not file_identifier in all_files:
+                all_files.append(file_identifier)
+
+        output_content_graph_full = []
+        output_content_graph  = []
+        output_content_graph_unlinked = []
+        output_content_graph_web = []
+
+        output_content_graph_full,linked_files = self._add_puml_content(output_content_graph_full,all_files,all_files,linked_files,name="full")
+        output_content_graph,__ = self._add_puml_content(output_content_graph,linked_files,all_files,linked_files,name="linked")
+        for f in all_files:
+            if f not in linked_files:
+                unlinked_files.append(f)
+
+        output_content_graph_unlinked,__ = self._add_puml_content(output_content_graph_unlinked,unlinked_files,all_files,linked_files,name="unlinked")
+
 
         target_urls = {}
         target_links = []
         i = 1
         for link_key in self.link_occurence_dict:
-            # key = self.module+"\\\\"+self.module_path+"/"+self.filename
-            # value = url
             plantuml_id = ""
-            for f in files:
+            for f in all_files:
                 if f['module']+"\\\\"+f['module_path']+f['filename'] == link_key:
                     plantuml_id = f['plantuml_id']
                     break
@@ -474,22 +541,75 @@ class AsciiDocContent:
                 target_links.append(plantuml_id + " .up.>> " + url_id)
 
         for u in target_urls:
-            output_content.append('cloud "{url}"  as {url_id}'.format(url = u,url_id = target_urls[u]))
+            output_content_graph_full.append('{type} "{url}"  as {url_id}'.format(type=web_type,url = u,url_id = target_urls[u]))
             # output_content.append("url of {url_id} is [[{url}]]".format(url_id = target_urls[u], url = u))
 
-        output_content.append("")
+        output_content_graph_full.append("")
 
-        output_content += target_links
+        output_content_graph_full += target_links
 
-        output_content.append("@enduml")
-        output = "\n".join(output_content)
-        with open(output_path+"/"+output_filename,"w") as file:
+        output_content_graph_full.append("@enduml")
+        output_content_graph.append("@enduml")
+        output_content_graph_unlinked.append("@enduml")
+        output_graph_full = "\n".join(output_content_graph_full)
+        output_graph = "\n".join(output_content_graph)
+        output_graph_unlinked = "\n".join(output_content_graph_unlinked)
+
+        with open(output_path+"/"+output_filename+graph_file_extension,"w") as file:
+            file.write(output_graph)
+
+        with open(output_path+"/"+output_filename+unlinked_addon+graph_file_extension,"w") as file:
+            file.write(output_graph_unlinked)
+
+        with open(output_path+"/"+output_filename+full_addon+graph_file_extension,"w") as file:
+            file.write(output_graph_full)
+
+
+    def write_attributes_to_file(self,output_filename = "used-attributes", output_path = "../doc/modules/project-guide/pages/"):
+        content = ["= Used Attributes In ASAM Projectd Guide"]
+        content.append(":description: Automatically generated overview over all attributes used throughout this Project Guide.")
+        content.append(":keywords: generated,attributes,link-concept,structure")
+        content.append("")
+        content.append("This page is an automatically generated list of all attributes used throught this Project Guide.")
+        content.append("Every attribute has its own subsection and contains a link to each page as well as the original filename, path and module in the repository.")
+        content.append("")
+        content.append("== List Of Attributes")
+        content.append("")
+
+        for a in sorted(self.attributes_dict):
+            content.append("")
+            content.append("=== {attr}".format(attr = a))
+            content.append("")
+            for f in self.attributes_dict[a]:
+                module, __, __, module_path = self._get_module_from_path(f[0])
+                content.append("* xref:{module}:{path}{filename}[{module}/pages/{path}{filename}]".format(module = module,path=module_path,filename=f[1]))
+
+
+        content.append("")
+        content.append("related::structure[]")
+        content.append("")
+        output = "\n".join(content)
+        with open(output_path+"/"+output_filename+".adoc","w") as file:
             file.write(output)
 
+        return AsciiDocContent(output_path,output_filename+".adoc")
 
 
 class ReferenceNotFound(Exception):
     pass
+
+def color_variant(hex_color, brightness_offset=80):
+    """ takes a color like #87c95f and produces a lighter or darker variant """
+    if len(hex_color) != 7:
+        raise Exception("Passed %s into color_variant(), needs to be in #87c95f format." % hex_color)
+    rgb_hex = [hex_color[x:x+2] for x in [1, 3, 5]]
+    new_rgb_int = [int(hex_value, 16) + brightness_offset for hex_value in rgb_hex]
+    new_rgb_int = [min([255, max([0, i])]) for i in new_rgb_int] # make sure new values are between 0 and 255
+    # hex() produces "0x88", we want just "88"
+    r = hex(new_rgb_int[0])[2:] if len(hex(new_rgb_int[0])[2:]) > 1 else "0"+hex(new_rgb_int[0])[2:]
+    g = hex(new_rgb_int[1])[2:] if len(hex(new_rgb_int[1])[2:]) > 1 else "0"+hex(new_rgb_int[1])[2:]
+    b = hex(new_rgb_int[2])[2:] if len(hex(new_rgb_int[2])[2:]) > 1 else "0"+hex(new_rgb_int[2])[2:]
+    return "#" + r+g+b
 
 if __name__ == "__main__":
     main(sys.argv[1:])

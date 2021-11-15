@@ -23,5 +23,5 @@ my home town Is :D
 .Linking Concept Image
 [plantuml,mindmap2,svg]
 ----
-include::example$linking_concept.puml[]
+include::project-guide:example$link-concept.puml[]
 ----
