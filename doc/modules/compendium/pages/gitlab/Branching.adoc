@@ -1,6 +1,7 @@
 = Branching
 
-There a many ways to create a branch in the git process. Two options are highlighted below.
+There a many ways to create a branch in the git process.
+Two options are highlighted below.
 
 
 == Option 1: Using VSCode
@@ -15,7 +16,8 @@ You are automatically switched to the new branch.
 
 [NOTE]
 ====
-**This is a local branch**. You need to push it before it is also on the remote.
+**This is a local branch**.
+You need to push it before it is also on the remote.
 
 image:push-a-new-branch-vscode.gif[title="Push a new branch in GitLab"]
 ====

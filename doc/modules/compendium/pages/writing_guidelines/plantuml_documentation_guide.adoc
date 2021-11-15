@@ -11,7 +11,8 @@ These adoc-comments are used by the UML2adoc script to generate documentation fr
 (Single-line comments `'...` can still be used for commenting out parts of the plantuml or for comments that shall not appear in the adoc fragment)
 * Put adoc-comments *inside* the *element-body {}*.
 * Put adoc-comments *after* the *element* the comment belongs to.
-* Please do not use standard apostrophes (') inside your comment as this is the comment marker used by plantuml. Use quotation marks (") or acute accents (´) instead.
+* Please do not use standard apostrophes (') inside your comment as this is the comment marker used by plantuml.
+Use quotation marks (") or acute accents (´) instead.
 
 
 == Types of documentation comments
@@ -42,7 +43,8 @@ enum Example_enum {
 ** *instantiable* +
 Yes for normal entities, no for abstract entities.
 ** *parent* +
-You may add a parent manually here. Parents are also automatically deduced from the uml file.
+You may add a parent manually here.
+Parents are also automatically deduced from the uml file.
 ** *description* +
 A description of the entity.
 ** *controlled_states* +
@@ -52,7 +54,8 @@ Action-specific information about when exactly an action ends.
 ** *action_actors* +
 Action-specific information about which actors use the action.
 ** *include* +
-Path to an adoc-fragment. If found, this fragment is added at the end of the description text before the basic information table.
+Path to an adoc-fragment.
+If found, this fragment is added at the end of the description text before the basic information table.
 Use this option for more sophisitcated text formatting with paragraphs, lists and pictures. +
 Works best with paths relative to the adoc-output directory.
 ** *examples* +

@@ -86,7 +86,8 @@ It can also be found using the search function.
 
 * Pages **SHALL** be used for **content** that users shall be able to **search and access directly**.
 * It **SHALL** also be used in case the content is supposed to have one or more **section headers**.
-* **DO NOT** use **tags** in pages. Instead, use partials.
+* **DO NOT** use **tags** in pages.
+Instead, use partials.
 * Pages **MUST** contain a **title**.
 
 For more information on page requirements, see xref:add-a-page.adoc[Adding A Page].

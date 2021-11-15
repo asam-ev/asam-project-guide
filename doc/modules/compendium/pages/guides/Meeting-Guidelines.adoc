@@ -6,14 +6,17 @@
 - Send the invite to those emails registered for the group; additionally, CC the following:
   - The project lead and the ASAM representative.
   - The shared OpenX Calendar, openx@asam.net.
-  - The Teams channel email; this will post the meeting in the channel for all to see. See xref:{mydir}Microsoft-Teams-and-Sharepoint.adoc#_obtain_the_email_address_of_a_channel[Obtaining A Teams Channel Email].
+  - The Teams channel email; this will post the meeting in the channel for all to see.
+  See xref:{mydir}Microsoft-Teams-and-Sharepoint.adoc#_obtain_the_email_address_of_a_channel[Obtaining A Teams Channel Email].
 
-> To find the list of people registered for your group or WP, see the WP signup list. Its location is described in the xref:{mydir}Microsoft-Teams-and-Sharepoint#user-content-teams-channels-file-structure[Teams&Sharepoint Overview].
+> To find the list of people registered for your group or WP, see the WP signup list.
+Its location is described in the xref:{mydir}Microsoft-Teams-and-Sharepoint#user-content-teams-channels-file-structure[Teams&Sharepoint Overview].
 
 // TODO: find correct link and information supposed to go here.
 // TODO: write the full meaning of "WP"
 
 == Setting Up A Meeting
-- If you have a Teams license, you can setup a Teams meeting directly. See xref:{mydir}Microsoft-Teams-and-Sharepoint#_meetings_in_teams[setting up a Teams meeting].
+- If you have a Teams license, you can setup a Teams meeting directly.
+See xref:{mydir}Microsoft-Teams-and-Sharepoint#_meetings_in_teams[setting up a Teams meeting].
 - Otherwise, feel free to use whatever solution you or your company normally use.
-- If all else fails, send the details to your ASAM rep. and they will assist (either Teams or Zoom).
+- If all else fails, send the details to your ASAM representative and they will assist (either Teams or Zoom).

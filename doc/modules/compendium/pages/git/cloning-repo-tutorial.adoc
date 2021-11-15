@@ -8,7 +8,8 @@ include::compendium:partial$_attributes.adoc[]
 If you want to work on a repository locally, you need to first check it out from remote (GitLab).
 To do so, follow one of the cloning instructions below.
 
-IMPORTANT: If your project contains submodules, make sure to also update them. See xref:compendium:git/submodules.adoc[Working With Submodules] for more information.
+IMPORTANT: If your project contains submodules, make sure to also update them.
+ See xref:compendium:git/submodules.adoc[Working With Submodules] for more information.
 
 include::compendium:page$vscode/cloning-a-repository.adoc[leveloffset=+1]
 

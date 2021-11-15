@@ -3,7 +3,9 @@
 :keywords: summary,summarize,development,process
 include::partial$_attributes.adoc[]
 
-ASAM standards are developed and maintained within projects. The main contributors to projects are volunteer experts from its member companies, supported by the ASAM office and an optional, ASAM-funded service provider. ASAM provides the complete framework for the project group, including guidelines, templates, IT infrastructure, a project budget, administrative support and worldwide marketing.
+ASAM standards are developed and maintained within projects.
+The main contributors to projects are volunteer experts from its member companies, supported by the ASAM office and an optional, ASAM-funded service provider.
+ASAM provides the complete framework for the project group, including guidelines, templates, IT infrastructure, a project budget, administrative support and worldwide marketing.
 
 image::asam-development-process.png[]
 

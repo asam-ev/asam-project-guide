@@ -14,14 +14,17 @@ IMPORTANT: This phase will run up to the upcoming project meeting on 4th to 6th 
 *Who: all project members*
 
 *	Remove stale branches (old branches that are not active or relevant) - merge them or delete them
-*	Close and consolidate issues –review the issues and see if they are all still relevant/needed. Close those that aren’t
+*	Close and consolidate issues –review the issues and see if they are all still relevant/needed.
+Close those that aren’t
 *	Consolidate branches that are maybe too granular – Merge them into one
 
 == Feature List Compilation
 
 *Who: WG Leads*
 
-. Compile a list of the features planned for implementation by each of the working groups. This should include a first estimate of the delivery date for a first draft. This is based off of the table shared by Gil on 23.04:
+. Compile a list of the features planned for implementation by each of the working groups.
+This should include a first estimate of the delivery date for a first draft.
+This is based off of the table shared by Gil on 23.04:
 
 +
 .The headers for the table of features

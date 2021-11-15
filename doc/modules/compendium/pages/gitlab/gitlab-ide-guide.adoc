@@ -17,4 +17,5 @@ https://docs.gitlab.com/ee/user/project/repository/web_editor.html[window=_blank
 https://docs.gitlab.com/ee/user/project/web_ide/#open-the-web-ide[window=_blank]
 
 ## IDE Tutorial
-GitLab provides documentation on how to use the Web IDE. See https://docs.gitlab.com/ee/user/project/web_ide/[window=_blank]
+GitLab provides documentation on how to use the Web IDE.
+See https://docs.gitlab.com/ee/user/project/web_ide/[window=_blank]

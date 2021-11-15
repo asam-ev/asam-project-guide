@@ -140,7 +140,8 @@ Get-Service ssh-agent | Select StartType
 +
 .. If it is "Disabled": Activate the SSH Agent
 +
-NOTE: This requires administration rights. If you do not have these, request support from your IT department.
+NOTE: This requires administration rights.
+If you do not have these, request support from your IT department.
 +
 ... Open another {powershell} window (with **Administration** rights)
 ... Set the SSH Agent to start manually by typing the following command and hitting Enter:

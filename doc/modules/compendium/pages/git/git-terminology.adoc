@@ -6,11 +6,13 @@
 include::compendium:partial$_attributes.adoc[]
 
 
-Git:: A version control system. Used by ASAM in their projects.
+Git:: A version control system.
+Used by ASAM in their projects.
 
 GitLab:: Popular Open Source platform ASAM uses that leverages Git.
 
-Remote:: The server, i.e. not on your PC, often used to refer to the master repository of a project on a server. The default name on (local) git is "origin".
+Remote:: The server, i.e. not on your PC, often used to refer to the master repository of a project on a server.
+The default name on (local) git is "origin".
 
 Local:: A locally (on your pc) stored (cloned) version of the remote repository.
 

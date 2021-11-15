@@ -17,7 +17,9 @@ h| Stage/Label | Issue state | Description
 
 | ~IF-DevProjectActionNeeded
 | open
-| Waiting for answers or proposals for solutions from Development Project. This might be either addressed in Q&A live sessions or via gitlab comments. The state may change back to ~IF-InternalReview if all questions are answered and no further need for action is identified.
+| Waiting for answers or proposals for solutions from Development Project.
+This might be either addressed in Q&A live sessions or via gitlab comments.
+The state may change back to ~IF-InternalReview if all questions are answered and no further need for action is identified.
 
 | ~IF-DevProjectInProgress
 | open

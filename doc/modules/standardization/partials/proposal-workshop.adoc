@@ -3,7 +3,8 @@
 [cols="1h,20"]
 |===
 |Purpose
-|To discuss and agree the content of a project proposal. Results of an optional concept project shall be included.
+|To discuss and agree the content of a project proposal.
+Results of an optional concept project shall be included.
 
 |Responsible
 |Office, in collaboration with initiating member(s).

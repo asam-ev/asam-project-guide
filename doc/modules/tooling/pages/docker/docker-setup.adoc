@@ -19,7 +19,8 @@ However, docker support is not natively integrated and must be installed and set
 * Docker is set up and ready.
 
 == Prerequisites
-NOTE: It is recommended to use the WSL2 backend. If this is not possible for you, you can follow the instructions on how to set up for Hyper-V.
+NOTE: It is recommended to use the WSL2 backend.
+If this is not possible for you, you can follow the instructions on how to set up for Hyper-V.
 
 * https://docs.docker.com/desktop/windows/install/#system-requirements[Official system requirements, window=_blank] are met
 
@@ -39,6 +40,9 @@ See link:https://docs.docker.com/engine/install/binaries/[instructions for insta
 
 == Troubleshooting / Known Issues
 === Docker-Desktop License
-IMPORTANT: Professional use of Docker Desktop in large organizations (more than 250 employees or more than $10 million in annual revenue) *requires users to have a paid Docker subscription*. See link:https://www.docker.com/blog/updating-product-subscriptions/[window=_blank].
+IMPORTANT: Professional use of Docker Desktop in large organizations (more than 250 employees or more than $10 million in annual revenue) *requires users to have a paid Docker subscription*.
+See link:https://www.docker.com/blog/updating-product-subscriptions/[window=_blank].
 
-If your company does not provide docker licenses, you can check the docker website what type of license applies to your company. Note that only Docker Desktop (Windows and Mac) requires license fees. Docker for Linux is (currently) still free under the Apache License, version 2.0.
+If your company does not provide docker licenses, you can check the docker website what type of license applies to your company.
+Note that only Docker Desktop (Windows and Mac) requires license fees.
+Docker for Linux is (currently) still free under the Apache License, version 2.0.

@@ -5,7 +5,8 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI. See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
+TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI.
+See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
 
 To add a submodule to a repository, follow these steps.
 
@@ -49,7 +50,8 @@ git add .gitmodules
 . After that, `git commit` & `git push`.
 
 <1> absolute path to repo
-<2> relative path to repo, when parent repo is also on https://code.asam.net[window=_blank]. Note that this has so represent the internal repository structure of code.asam.net.
+<2> relative path to repo, when parent repo is also on https://code.asam.net[window=_blank].
+Note that this has so represent the internal repository structure of code.asam.net.
 
 
 [NOTE]
@@ -74,6 +76,7 @@ To delete a submodule do:
 ----
 * After that `> git commit` & `> git push`.
 
-<1> This deletes all submodules in a repository. If there is another submodule that should be kept, just delete the corresponding lines from the `.gitmodules` instead.
+<1> This deletes all submodules in a repository.
+If there is another submodule that should be kept, just delete the corresponding lines from the `.gitmodules` instead.
 
-related::submodules[]
+related::submodule[]

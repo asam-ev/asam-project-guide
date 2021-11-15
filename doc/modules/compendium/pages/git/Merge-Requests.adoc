@@ -10,14 +10,17 @@ include::compendium:partial$_attributes.adoc[]
 - History of commits in a PR must be clean prior to merge
 - Commit messages to a protected or master branch must adhere to conventional commits specification
 
-Repositories allow fast-forward merges only (`--ff-only`) and squash commits by default. This means we do not have a merge commit and that all commits are squashed.
+Repositories allow fast-forward merges only (`--ff-only`) and squash commits by default.
+This means we do not have a merge commit and that all commits are squashed.
 
-For squash commits with one commit, the commit message is taken directly (squash does not take place). For actual squashes the commit messages are taken from:
+For squash commits with one commit, the commit message is taken directly (squash does not take place).
+For actual squashes the commit messages are taken from:
 
 . The first multi-line commit message in the merge.
 . The merge request’s title if no multi-line commit message is found.
 
-Squash commits is enabled by default but can be turned off, we do not always want to squash. This is to make sure that for those times that people create multiple unrelated changes in one branch we can still add them to the history.
+Squash commits is enabled by default but can be turned off, we do not always want to squash.
+This is to make sure that for those times that people create multiple unrelated changes in one branch we can still add them to the history.
 
 
 == Merge/Pull Request Review
@@ -53,6 +56,8 @@ NOTE: Discussion and feedback takes place via comments in the PR
 * PRs to be assigned to a milestone by PR creator
 * CCB to review the milestone assignment
 * This must relate the change type (breaking change, backwards compatible, bug) to the release types (major/minor/maintenance)
-* For now, we will work with one master. Should we have many PRs targeting a future release we might implement multiple "development" branches for the different versions. (Only when necessary)
+* For now, we will work with one master.
+Should we have many PRs targeting a future release we might implement multiple "development" branches for the different versions.
+(Only when necessary)
 
 related::merge,git[]

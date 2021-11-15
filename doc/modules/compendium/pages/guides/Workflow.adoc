@@ -66,7 +66,8 @@ To convert content to reviewed (i.e. non draft) content, the encapsulating ifdef
 These flags SHOULD only be modified by WG Leads, the CCB or the ASAM office.
 
 You may experience an empty preview in your editor when editing files that contain the mechanism.
-This is actually a good sign. The preview is working correctly and hides all parts marked as draft.
+This is actually a good sign.
+The preview is working correctly and hides all parts marked as draft.
 
 To make the parts visible again, you have to set the attribute `draft` for your preview window.
 
@@ -124,7 +125,8 @@ You can also download the artifacts directly from the pipeline result page.
 
 *Who: Issue Assignee*
 
-. Coordinate & drive the preparation of a proposal for addressing the issue. Either via comments or in further meetings.
+. Coordinate & drive the preparation of a proposal for addressing the issue.
+Either via comments or in further meetings.
 . ``/label ~Analysis`` to indicate this issue is being looked at and discussed.
 
 === IMPLEMENTATION
@@ -132,7 +134,8 @@ You can also download the artifacts directly from the pipeline result page.
 *Who: Issue Assignee*
 
 . Once a proposal is ready to be implemented, begin submitting work via commits to the develop branch
-. [OPTIONAL] An assignee MAY create a separate branch off of _develop_ to make it easier to keep development separate. Such a branch SHOULD be short-lived (no more than 2 weeks) to ensure progress and direction are visible to project members and that it is not too out of sync with other activities.
+. [OPTIONAL] An assignee MAY create a separate branch off of _develop_ to make it easier to keep development separate.
+Such a branch SHOULD be short-lived (no more than 2 weeks) to ensure progress and direction are visible to project members and that it is not too out of sync with other activities.
 . Change the issue status ``/label ~Implementation`` to indicate that a proposal is being implemented for this issue
 
 
@@ -146,7 +149,8 @@ You can also download the artifacts directly from the pipeline result page.
 .. Change the issue status ``/label ~ProjectReview``
 .. Create a new branch from develop
 .. Remove the encapsulating draft feature flag from the content (make sure that all other content remains within the draft flag) and commit the change.
-.. Open a MR to develop, add a comment to request review by the whole project and the implementers forum: ``/request_review @all``. The MR MUST include document subsection number(s) being reviewed and a link to the lines of source code to be reviewed.
+.. Open a MR to develop, add a comment to request review by the whole project and the implementers forum: ``/request_review @all``.
+The MR MUST include document subsection number(s) being reviewed and a link to the lines of source code to be reviewed.
 
 *Who: All project members & Implementers Forum*
 
@@ -155,7 +159,8 @@ You can also download the artifacts directly from the pipeline result page.
 * Content specific: Start a review in the changes tab of the MR
 
 +
-NOTE: To start a review, write a comment on a diff as normal under the Changes tab in a merge request, and then select Start a review. Click https://docs.gitlab.com/ee/user/discussions/#starting-a-review[here^] for more information.
+NOTE: To start a review, write a comment on a diff as normal under the Changes tab in a merge request, and then select Start a review.
+Click https://docs.gitlab.com/ee/user/discussions/#starting-a-review[here^] for more information.
 
 * If the review feedback requires further development work, the process restarts from the <<IMPLEMENTATION>> stage
 
@@ -177,7 +182,8 @@ image::ReviewExample.gif[]
 
 
 +
-IMPORTANT: Questions on content should be addressed to the original issue assignee who will be responsible for ensuring a satisfactory resolution. In the case that questions lead to significant changes to the content, the MR is reopened for review on resolution.
+IMPORTANT: Questions on content should be addressed to the original issue assignee who will be responsible for ensuring a satisfactory resolution.
+In the case that questions lead to significant changes to the content, the MR is reopened for review on resolution.
 
 * On completion of the integration:
 .. Create a 2nd MR from the review branch to release (same MR title)

@@ -5,7 +5,8 @@
 image::https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png[width=120,role=right]
 
 
-The PowerShell in Windows 10 is used to execute commands directly and interface with windows functions in text form through a shell. It is more powerfull than the old commandline tool ("cmd") and can be executed as standard user (<<Standard Access>>) or with administration rights (<<Administration Access>>).
+The PowerShell in Windows 10 is used to execute commands directly and interface with windows functions in text form through a shell.
+It is more powerfull than the old commandline tool ("cmd") and can be executed as standard user (<<Standard Access>>) or with administration rights (<<Administration Access>>).
 
 === Standard Access
 
@@ -18,7 +19,8 @@ There are multiple ways to open the PowerShell in windows:
 
 ==== Windows button
 
-NOTE: This opens the PowerShell in the default location. Usually, this is your user's home directory.
+NOTE: This opens the PowerShell in the default location.
+Usually, this is your user's home directory.
 
 .Opening the PowerShell  with the windows button.
 image::PSWithWin.gif[width = 720]
@@ -27,7 +29,8 @@ image::PSWithWin.gif[width = 720]
 . Select "Windows PowerShell"
 
 ==== Run-command
-NOTE: This opens the PowerShell in the default location. Usually, this is your user's home directory.
+NOTE: This opens the PowerShell in the default location.
+Usually, this is your user's home directory.
 
 image::PSWithRun.gif[width = 720]
 
@@ -55,7 +58,8 @@ image::PSWithVSCodeNormal.gif[width = 720]
 * Open the Terminal by clicking on "View -> Terminal"
 
 ===== Open New Terminal
-NOTE: This adds a new terminal to the list of terminals and opens the view if hidden. You can delete unused terminals or keep multiple independent ones open if you like.
+NOTE: This adds a new terminal to the list of terminals and opens the view if hidden.
+You can delete unused terminals or keep multiple independent ones open if you like.
 
 image::PSWithVsCodeAdd.gif[width = 720]
 
@@ -65,7 +69,8 @@ image::PSWithVsCodeAdd.gif[width = 720]
 === Administration Access
 
 The easiest way to open a PowerShell with administration rights is as follows:
-NOTE: This opens the PowerShell in the default location. Usually, this is your user's home directory.
+NOTE: This opens the PowerShell in the default location.
+Usually, this is your user's home directory.
 
 .Opening the PowerShell  with the windows button and with Administrator rights.
 image::PSWithWinAdmin.gif[width = 720]

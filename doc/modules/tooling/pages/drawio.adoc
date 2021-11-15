@@ -11,7 +11,8 @@ The tool can be downloaded and run locally (as {drawio-download}[Draw.io Desktop
 
 **ASAM recommends using the link:{drawio-url}[web app^].**
 
-TIP: It is recommended to use the VS Code extension and Draw.io Desktop *only* for viewing diagrams and making small alterations, not creating them or making bigger changes. The reason is that the ASAM library cannot be integrated directly as of now into the extension solution.
+TIP: It is recommended to use the VS Code extension and Draw.io Desktop *only* for viewing diagrams and making small alterations, not creating them or making bigger changes.
+The reason is that the ASAM library cannot be integrated directly as of now into the extension solution.
 
 
 == Draw.io At ASAM

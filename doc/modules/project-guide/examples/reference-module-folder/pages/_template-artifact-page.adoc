@@ -17,7 +17,8 @@ Describe the expected results of this artifact.
 List all preqrequisits for this artifact.
 
 == How
-Describe the steps to perform this artifact. If you have alternative ways, use subchapters.
+Describe the steps to perform this artifact.
+If you have alternative ways, use subchapters.
 
 == Troubleshooting / Known Issues
 // OPTIONAL

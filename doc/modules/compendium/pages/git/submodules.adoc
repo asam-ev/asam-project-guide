@@ -6,11 +6,15 @@
 include::compendium:partial$_attributes.adoc[]
 
 == What Are Submodules
-Submodules are a way to include other repositories within your repository. This way, you do not need to copy identical content from another repository and risk getting out of synch with changes in said external repository. You can even check out a specific version of that submodule if you need to stay on that version. However, submodules do not automatically update the same way as your main repository does.
+Submodules are a way to include other repositories within your repository.
+This way, you do not need to copy identical content from another repository and risk getting out of synch with changes in said external repository.
+You can even check out a specific version of that submodule if you need to stay on that version.
+However, submodules do not automatically update the same way as your main repository does.
 
 This page give an overview over how to pull existing submodules and shows how to add and remove submodules from a project, if needed.
 
-TIP: If you are not setting up or responsible for a git repository, you only need to know how to pull a previously set up submodule in git. Note that there is a difference between initial pull after first checking out the repository and a regular update.
+TIP: If you are not setting up or responsible for a git repository, you only need to know how to pull a previously set up submodule in git.
+Note that there is a difference between initial pull after first checking out the repository and a regular update.
 
 NOTE: All examples are shown using the https://code.asam.net/common/style-resources[ASAM asciidoc-resources repository^] (replace it with the link to your required submodule repository).
 

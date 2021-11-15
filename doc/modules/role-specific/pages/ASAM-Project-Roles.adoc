@@ -5,7 +5,8 @@
 
 === Contributors
 - Develop software, i.e. write source code and tests.
-- For open-source projects hosted under the ASAM organization on Github.com all commits **must** include a sign-off message. See xref:general_guidelines/open-source/ASAM-DCO.adoc[Comitting to Open Source ASAM projects].
+- For open-source projects hosted under the ASAM organization on Github.com all commits **must** include a sign-off message.
+See xref:general_guidelines/open-source/ASAM-DCO.adoc[Comitting to Open Source ASAM projects].
 
 === ASAM Change Control Board
 

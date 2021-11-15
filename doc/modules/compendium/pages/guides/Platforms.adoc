@@ -4,7 +4,9 @@
 : Chat, conferencing, document folder for sharing documents (e.g. research papers, notes, videos, anything that does not need to be versioned) - See the xref:general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[Teams Guide]
 
 https://code.asam.net[**GitLab**^]
-: All source code and standard relevant documentation. Issues relevant to deliverables should be created here. See xref:general_guidelines/Workflow.adoc[Workflow Overview]
+: All source code and standard relevant documentation.
+Issues relevant to deliverables should be created here.
+See xref:general_guidelines/Workflow.adoc[Workflow Overview]
 
 https://github.com/asam-ev[**Github - Standards**^]
 : ADD
@@ -14,4 +16,5 @@ https://github.com/asam-ev[**Github - Open Source Software Platform**^]
 
 **Mailing list**:: Project level communication will be duplicated here from the teams channel for redundancy (e.g. project meetings, announcements)
 
-**OpenXCalendar**:: Subscribable, shared calendar for all OpenX projects - this lists (filterable) all meetings for each project. See xref:general_guidelines/Shared-OpenX-Calendar.adoc[OpenX Calendar]
+**OpenXCalendar**:: Subscribable, shared calendar for all OpenX projects - this lists (filterable) all meetings for each project.
+See xref:general_guidelines/Shared-OpenX-Calendar.adoc[OpenX Calendar]

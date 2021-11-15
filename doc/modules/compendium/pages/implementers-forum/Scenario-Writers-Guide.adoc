@@ -9,7 +9,8 @@
 
 . Start writing the scenario using the https://code.asam.net/simulation/standard/openscenario-2.0/-/jobs/artifacts/master/raw/Language/ASAM_OpenSCENARIO_BS-1-6_Language-Reference-Manual_V2-0-0.html?job=draft[OpenSCENARI0 2.0 Language Reference Manual^]
 
-. When you have a first draft of the scenario, commit it to the repository. Make sure to stick to the directory structure defined below (creating folders if neccessary):
+. When you have a first draft of the scenario, commit it to the repository.
+Make sure to stick to the directory structure defined below (creating folders if neccessary):
 
 +
 .Directory structure for scenario files
@@ -37,6 +38,7 @@ icon:folder[] Examples
 
 ** Scenario specification subgroup meetings will be used to review and discuss areas where you need support
 
-** If the group agrees that the feature in question cannot be written,  members of the development project are approached for input/feedback. In a comment, detail out all information the users need to understand the problem then flag the members using `@`.
+** If the group agrees that the feature in question cannot be written,  members of the development project are approached for input/feedback.
+In a comment, detail out all information the users need to understand the problem then flag the members using `@`.
 
 You find a list of persons responsible for the different topics from the development project https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/Contact-Persons-from-OSC2-Development-Project[here^].

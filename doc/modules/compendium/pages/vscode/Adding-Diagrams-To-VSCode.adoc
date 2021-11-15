@@ -1,21 +1,27 @@
 = Adding VSCode Support For Diagrams With Kroki
+:description: Describes how to add support for diagrams with kroki in VSCode.
+:keywords: vscode,kroki,diagrams
+
+include::partial$_attributes.adoc[]
 
 The kroki extension supports a wide range of diagrams from BPMN to Graphviz to PlantUML and Vega graphs using kroki and asciidoctor-kroki.
 
 You can see the full range and examples on the official https://kroki.io/examples.html[website^].
 
-include::partial$VSCode/Settings/Kroki.adoc[]
+include::partial$vscode/kroki.adoc[]
 
 == Caching Diagrams Locally
 
 NOTE: This is a per-file setting and must be done in each applicable AsciiDoc file.
 
-By default, diagrams are not saved locally. To cache and save diagrams locally, set the kroki-fetch-diagram attribute in your document header:
+By default, diagrams are not saved locally.
+To cache and save diagrams locally, set the kroki-fetch-diagram attribute in your document header:
 
     = My Amazing Document
     :kroki-fetch-diagram:
 
-This will store images by default in your document folder. However, you may also set `imagesdir` to store them elsewhere:
+This will store images by default in your document folder.
+However, you may also set `imagesdir` to store them elsewhere:
 
     = My Amazing Document
     :kroki-fetch-diagram:
@@ -31,7 +37,8 @@ To do this:
 . Enter ``asciidoc preview security`` .
 . Choose ``Allow insecure content``.
 
-NOTE: Access to this global setting is only available if you have currently are in an AsciiDoc file in VSCode. Otherwise, the setting will not show up.
+NOTE: Access to this global setting is only available if you have currently are in an AsciiDoc file in VSCode.
+Otherwise, the setting will not show up.
 
 .Opening asciidoc preview security settings
 image::plantuml_1.png[]

@@ -1,6 +1,9 @@
-
 = What Is YAML/yml?
+:description: Describes the term YAML (yml) and what it means.
+:keywords: yml,yaml
 
-YAML is a data-serialization language that is human-readable. It is similar to XML and has a very minimal syntax. Its file type is `.yml`.
+YAML is a data-serialization language that is human-readable.
+It is similar to XML and has a very minimal syntax.
+Its file type is `.yml`.
 
 In the context of docker, YAML files are used to give instructions to docker-compose (as docker-compose.yml, e.g. the xref:tool-specific/StandardDockerConfig.adoc[default project docker-compose.yml]) or for building complex page structures (such as with Antora).

@@ -4,9 +4,12 @@
 :lookup: compendium:partial$vscode
 :page-partial:
 
-VSCode is already without extensions very powerful and user friendly. One thing that can make the VSCode experience even better are the extensions. There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.
+VSCode is already without extensions very powerful and user friendly.
+One thing that can make the VSCode experience even better are the extensions.
+There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.
 
-Installing an extension is really easy, just enter the extension menu, search for the desired extension. Than click on the Install-Button.
+Installing an extension is really easy, just enter the extension menu, search for the desired extension.
+Then, click on the Install-Button.
 
 == AsciiDoc
 

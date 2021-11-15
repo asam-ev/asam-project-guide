@@ -5,10 +5,13 @@
 :linkattrs:
 
 [.lead]
-All ASAM OpenX Standards are written using the Asciidoc format https://asciidoc.org/[asciidoc Homepage^]. AsciiDoc is a mature, plain-text writing format for authoring notes, articles, documentation, books, ebooks, web pages, slide decks, blog posts, man pages and more.
+All ASAM OpenX Standards are written using the Asciidoc format https://asciidoc.org/[asciidoc Homepage^].
+AsciiDoc is a mature, plain-text writing format for authoring notes, articles, documentation, books, ebooks, web pages, slide decks, blog posts, man pages and more.
 
 
-You write an AsciiDoc document the same way you would write a normal text document. There are no markup tags or weird format notations. AsciiDoc files are designed to be viewed, edited and printed directly or translated to other presentation formats.
+You write an AsciiDoc document the same way you would write a normal text document.
+There are no markup tags or weird format notations.
+AsciiDoc files are designed to be viewed, edited and printed directly or translated to other presentation formats.
 
 **Main advantages:**
 
@@ -18,7 +21,8 @@ You write an AsciiDoc document the same way you would write a normal text docume
 * In the end we can deliver an interactive html instead of a static pdf
 
 
-The content of this page is intended to provide a quick overview of the most-used features of the language. See the links below for more detail
+The content of this page is intended to provide a quick overview of the most-used features of the language.
+See the links below for more detail
 
 * https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Quick reference^]
 * https://asciidoctor.org/docs/user-manual/[User manual^]
@@ -45,7 +49,8 @@ The content of this page is intended to provide a quick overview of the most-use
 ===== Level 4 section
 |===
 
-You can have only one page title, but you can have multiple section titles. For example, you might have three level 1 sections that include level 2 and 3 sections:
+You can have only one page title, but you can have multiple section titles.
+For example, you might have three level 1 sections that include level 2 and 3 sections:
 
 [cols="a,a"]
 |===
@@ -115,7 +120,9 @@ Continuation text for the previous list item.
 
 * Item 3
 |===
-TIP: The + is a list continuation. It keeps the text inline with the list item. Omitting the + affects the formatting of that line.
+TIP: The + is a list continuation.
+It keeps the text inline with the list item.
+Omitting the + affects the formatting of that line.
 
 Adding another space before the + adopts the indentation of one level higher:
 
@@ -177,7 +184,8 @@ Item 2::
 Description 2
 |===
 
-When you add [horizontal] above item 1, the label and description appear on the same line. That works well when you have very short descriptions.
+When you add [horizontal] above item 1, the label and description appear on the same line.
+That works well when you have very short descriptions.
 
 
 == Ordered Lists
@@ -223,9 +231,12 @@ We can mix ordered and bulleted lists however we want:
 image::file.gif[alt text]
 ....
 
-TIP: "alt text" means alternative text. It describes the image that appears on the page. The primary use is for visually-impaired users who use screen readers.
+TIP: "alt text" means alternative text.
+It describes the image that appears on the page.
+The primary use is for visually-impaired users who use screen readers.
 
-The image path is obtained by combining the root of the project directory, followed by the imagesdir parameter defined in the preamble, followed by whatever you define in image. So if it is defined as
+The image path is obtained by combining the root of the project directory, followed by the imagesdir parameter defined in the preamble, followed by whatever you define in image.
+So if it is defined as
 ....
 :imagesdir: images
 ....
@@ -254,7 +265,8 @@ xref:path-to-file/file.adoc[image:<file_name>.<ext>[alt=<text>]<Link name>^]
 <url>[image:<file_name>.<ext>[alt=<text>]<Link name>^]
 ....
 
-"window=_blank" opens the link in a new browser tab (or window). The addition of "^" at the end of the link name does the same in a shorthand version.
+"window=_blank" opens the link in a new browser tab (or window).
+The addition of "^" at the end of the link name does the same in a shorthand version.
 
 For example:
 
@@ -369,11 +381,13 @@ xref::writing_guidelines/AsciiDoc-Guide.adoc[link text for macro]
 xref::writing_guidelines/AsciiDoc-Guide.adoc[link text for macro]
 |===
 
-TIP: Use the inline macro when you add text before and/or after the macro. Otherwise, use the standard macro.
+TIP: Use the inline macro when you add text before and/or after the macro.
+Otherwise, use the standard macro.
 
 == Admonitions: Notes, tips, etc.
 
-You might want to draw attention to certain statements by creating notes or tips - so-called admonitions. Format them as follows:
+You might want to draw attention to certain statements by creating notes or tips - so-called admonitions.
+Format them as follows:
 
 ....
 NOTE: text
@@ -419,19 +433,25 @@ text
 
 
 
-Use each of these sparingly. You don't want to create pages that are full of notes and tips. They become less meaningful if you do.
+Use each of these sparingly.
+You don't want to create pages that are full of notes and tips.
+They become less meaningful if you do.
 
 Here's what each of these looks like when the AsciiDoc content is turned into HTML:
 
-NOTE: This is a note. It includes extra info that a reader might need to know.
+NOTE: This is a note.
+It includes extra info that a reader might need to know.
 
-TIP: Here's a tip. A tip provides useful information that can help a user do something or understand something.
+TIP: Here's a tip.
+A tip provides useful information that can help a user do something or understand something.
 
 IMPORTANT: This is important information that the reader must be aware of so they don't do something that they shouldn't.
 
-CAUTION: A caution advises the reader to act carefully. Use this in rare circumstances.
+CAUTION: A caution advises the reader to act carefully.
+Use this in rare circumstances.
 
-WARNING: And this is a warning that informs of danger or harm. This one should be used very rarely, as well.
+WARNING: And this is a warning that informs of danger or harm.
+This one should be used very rarely, as well.
 
 
 If you're authoring new content, you'll want to review this section for some nitty-gritty details.
@@ -458,11 +478,14 @@ Here's syntax for a basic table:
 |===
 ....
 
-There are _many_ ways to format a table. Refer to the https://asciidoctor.org/docs/user-manual/#tables[AsciiDoctor User Manual^] for additional help.
+There are _many_ ways to format a table.
+Refer to the https://asciidoctor.org/docs/user-manual/#tables[AsciiDoctor User Manual^] for additional help.
 
 == Task headings
 
-If you're explaining how to perform a task, you might include introductory information before you get to the steps. And you might need to say what to do after completing the steps. If you do, it's best to organize that information using headers, which enables scanning.
+If you're explaining how to perform a task, you might include introductory information before you get to the steps.
+And you might need to say what to do after completing the steps.
+If you do, it's best to organize that information using headers, which enables scanning.
 
 Use the following headings as needed:
 
@@ -482,7 +505,7 @@ _The individual steps to complete the task._
 
 _What the user should do next._
 
-Each of these should include a . right before the text, like so:
+Each of these should include a `.` right before the text, like so:
 
 ....
 .What you'll need
@@ -543,7 +566,9 @@ For inline code, enclose it with ` to apply monospace font:
 
 == Content reuse and including files
 
-If you have a chunk of content that's repeated across different pages, you can easily write it once and reuse it across those pages. Reuse is possible from within the same repository and across repositories. In the files where you'd like to reuse content:
+If you have a chunk of content that's repeated across different pages, you can easily write it once and reuse it across those pages.
+Reuse is possible from within the same repository and across repositories.
+In the files where you'd like to reuse content:
 
 . If you're reusing the content from within the _same_ repository, use the following syntax on a line by itself:
 +
@@ -556,6 +581,3 @@ If you have a chunk of content that's repeated across different pages, you can e
 
 
 If you want to learn more about the include directive, https://asciidoctor.org/docs/user-manual/#include-directive[check out the AsciiDoctor User Manual^].
-
-
-

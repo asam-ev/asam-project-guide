@@ -8,10 +8,12 @@
 
 . Open the Git Bash from the Context Menu (right-click -> Select "Git Bash Here")
 
-. Type `git clone --recurse-submodules` and then press the middle mouse button to paste the copied url. Confirm with Enter
+. Type `git clone --recurse-submodules` and then press the middle mouse button to paste the copied url.
+Confirm with Enter
 +
 NOTE: With this command, you do not need to manually initialize the submodules after checkout!
 
-TIP: Alternatively to the Git Bash, you can also use the xref:compendium:powershell/powershell-basics.adoc[Microsoft Powershell] with the same commands. Make sure to open your Powershell in your directory, though.
+TIP: Alternatively to the Git Bash, you can also use the xref:compendium:powershell/powershell-basics.adoc[Microsoft Powershell] with the same commands.
+Make sure to open your Powershell in your directory, though.
 
 image::compendium:clone-by-git-bash.gif[]

@@ -24,7 +24,8 @@ git rebase origin/main
 ----
 
 
-Resolve conflicts. When feature is complete and tests pass, stage the changes.
+Resolve conflicts.
+When feature is complete and tests pass, stage the changes.
 
 [source,console]
 ----
