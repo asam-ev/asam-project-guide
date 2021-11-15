@@ -6,19 +6,15 @@
 
 include::partial$project-type-new-std-dev.adoc[tag=long]
 
-=== Further Standard Development
-
-include::partial$project-type-further-std-dev.adoc[tag=long]
-
-==== Major Version Development
+=== Major Version Development
 
 include::partial$project-type-major.adoc[tag=long]
 
-==== Minor Version Development
+=== Minor Version Development
 
 include::partial$project-type-minor.adoc[tag=long]
 
-==== Revision Version Development
+=== Revision Version Development
 
 include::partial$project-type-revision.adoc[tag=long]
 

@@ -1,5 +1,8 @@
 
-Start the development of a completely new standard within ASAM
+//tag::long[]
+//tag::short[]
+Start the development of a completely new standard within ASAM.
+//end::short[]
 The development project meets one of the follow-ing criteria:
 
 * There exists no predecessor in the ASAM standard portfolio.
@@ -8,12 +11,28 @@ The development project meets one of the follow-ing criteria:
 
 A new ASAM standard gets the version number "1.0.0".If a new standard replaces a deprecated standard, then the new standard cannot have the same name than the deprecated standard.
 
+//tag::table[]
 .Summary
+[cols="1h,1"]
 |===
-|Purpose|
-|Version| 1.0.0
-|New Features | yes
-|Backward compatible | n.a.
-|Funding Limit | 25%
-|Process| Standard Development Process
+|Purpose
+|
+
+|Version
+| 1.0.0
+
+|New Features
+| yes
+
+|Backward compatible
+| n.a.
+
+|Funding Limit
+| 25%
+
+|Process
+| Standard Development Process
+
 |===
+//end::table[]
+//end::long[]

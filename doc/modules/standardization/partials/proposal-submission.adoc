@@ -16,7 +16,7 @@
 The submitter of the project proposal sends the proposal document to the Office and declares this to be his official proposal submission.
 
 Besides the submitter, at least two further members must support the proposal and be listed as participants for the proposed project group.
-//end:long[]
+//end::long[]
 
 //tag::short[]
 The proposal author submits the project proposal to ASAM.

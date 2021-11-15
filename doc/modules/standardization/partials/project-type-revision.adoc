@@ -1,6 +1,9 @@
 // tag::long[]
-// tag::table[]
-Revision version developments of ASAM standards resolve technical issues with the currently released version  of  the  standard.  Revision  version  development projects meet one or more of the following criteria:
+//tag::short[]
+Revision version developments of ASAM standards resolve technical issues with the currently released version  of  the  standard.
+//end::short[]
+
+Revision  version  development projects meet one or more of the following criteria:
 
 * Correction of errors.
 * Removal of ambiguities.
@@ -8,18 +11,33 @@ Revision version developments of ASAM standards resolve technical issues with th
 * Editorial improvements.
 * Any kind of changes to examples, including the addition of examples.
 
-It is expected that the implementation of the new version will require low development or migration ef-forts by tool vendors and end users. 
-Revisions cannot include new features. 
+It is expected that the implementation of the new version will require low development or migration ef-forts by tool vendors and end users.
+
+Revisions cannot include new features.
 The only exception is, that a new feature has been forgotten in an earlier release of the standard and is absolutely required for a functional and meaningful standard.
+
 A new revision version of an ASAM standard shall be backward-compatible to its immediate predecessor version.
-The only exception is, that the correction of an error or the removal of an ambiguity cannot be reasonably solved in any other way than breaking the backward-compatibility. 
+The only exception is, that the correction of an error or the removal of an ambiguity cannot be reasonably solved in any other way than breaking the backward-compatibility.
+
 An exception requires approval from the TSC and must be documented in the standard.
-Revision development projects may be converted to a minor or major version development project during the course of the project term, if backward-compatibility issues turn out to be too  severe or  new  features  need  to  be  added.  The  TSC  has  to  approve  this  change  of project type.
+
+Revision development projects may be converted to a minor or major version development project during the course of the project term, if backward-compatibility issues turn out to be too  severe or  new  features  need  to  be  added.
+The  TSC  has  to  approve  this  change  of project type.
+
 Only those ASAM members, who were actively involved in development of the preceding major or minor version, can participate in the revision development project.
+
 Revision projects are limited to a life cycle of up to 18 months.
-Unlike other project types, the paid service provider for a revision project can be contracted without a public request for quotation. The service provider is confirmed by the TSC and is appointed  before  the  project  starts.
+
+Unlike other project types, the paid service provider for a revision project can be contracted without a public request for quotation.
+
+The service provider is confirmed by the TSC and is appointed  before  the  project  starts.
+
 The  project  leader  and  the  service  provider  must  be employees from different companies.
-The number of minor version releases meets the pattern: "?.?.X". X is an integer number starting with 1. ? represents the current major and minor release number.
+
+The number of minor version releases meets the pattern: "?.?.X".
+X is an integer number starting with 1.
+? represents the current major and minor release number.
+
 The following process steps are not mandatory and are skipped by default, unless otherwise decided by the TSC or the project group:
 
 * P1: Proposal Workshop
@@ -27,6 +45,7 @@ The following process steps are not mandatory and are skipped by default, unless
 
 // tag::table[]
 .Summary
+[cols="1h,1"]
 |===
 |Purpose
 a|
@@ -35,19 +54,25 @@ a|
 * Add clarifications
 * Make editorial improvements
 * Change/add examples
-|Version| ?.?.X
-|New Features | n.a
-|Backward compatible | yes
-|Funding Limit | 25%
+
+|Version
+| ?.?.X
+
+|New Features
+| n.a
+
+|Backward compatible
+| yes
+
+|Funding Limit
+| 25%
+
 |Process
-a| 
+a|
 Standard Development Process except:
 * Proposal Workshop
 * Review Phase
+
 |===
 // end::table[]
 // end::long[]
-
-// tag::short[]
-Revision version developments of ASAM standards resolve technical issues with the currently released version  of  the  standard.
-// end::short[]
