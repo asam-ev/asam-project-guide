@@ -1,8 +1,10 @@
 @startuml
 package compendium #ff5050 {
+rectangle "nav.adoc" as f0_1
+rectangle "antora.adoc" as f0_2
 rectangle "antora/build-antora-locally.adoc" as f0_4
-rectangle "docker/standard-docker-config.adoc" as f0_6
-rectangle "docker/starting-a-container.adoc" as f0_7
+rectangle "docker/run-docker.adoc" as f0_6
+rectangle "docker/standard-docker-config.adoc" as f0_7
 rectangle "docker/wsl.adoc" as f0_8
 rectangle "git/cloning-repo-tutorial.adoc" as f0_9
 rectangle "git/commit-guidelines.adoc" as f0_10

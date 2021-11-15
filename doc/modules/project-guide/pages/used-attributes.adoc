@@ -146,19 +146,23 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === desktop
 
-* xref:compendium:docker/starting-a-container.adoc[compendium/pages/docker/starting-a-container.adoc]
+* xref:compendium:docker/run-docker.adoc[compendium/pages/docker/run-docker.adoc]
 
 === development
 
 * xref:standardization:asam-development-process.adoc[standardization/pages/asam-development-process.adoc]
 * xref:standardization:development-phase.adoc[standardization/pages/development-phase.adoc]
 
+=== diagrams
+
+* xref:compendium:vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/vscode/Adding-Diagrams-To-VSCode.adoc]
+
 === docker
 
 * xref:compendium:antora/build-antora-locally.adoc[compendium/pages/antora/build-antora-locally.adoc]
 * xref:compendium:docker/docker-for-asciidoc.adoc[compendium/pages/docker/docker-for-asciidoc.adoc]
+* xref:compendium:docker/run-docker.adoc[compendium/pages/docker/run-docker.adoc]
 * xref:compendium:docker/standard-docker-config.adoc[compendium/pages/docker/standard-docker-config.adoc]
-* xref:compendium:docker/starting-a-container.adoc[compendium/pages/docker/starting-a-container.adoc]
 * xref:compendium:docker/wsl.adoc[compendium/pages/docker/wsl.adoc]
 * xref:compendium:powershell/run-docker.adoc[compendium/pages/powershell/run-docker.adoc]
 * xref:compendium:vscode/recommended-vscode-extensions.adoc[compendium/pages/vscode/recommended-vscode-extensions.adoc]
@@ -191,6 +195,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 === extensions
 
 * xref:compendium:vscode/recommended-vscode-extensions.adoc[compendium/pages/vscode/recommended-vscode-extensions.adoc]
+* xref:compendium:vscode/vscode-install-extension.adoc[compendium/pages/vscode/vscode-install-extension.adoc]
 
 === feature
 
@@ -328,6 +333,10 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 * xref:getting-started:main.adoc[getting-started/pages/main.adoc]
 * xref:getting-started:about_guide/intentions-and-content.adoc[getting-started/pages/about_guide/intentions-and-content.adoc]
+
+=== kroki
+
+* xref:compendium:vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/vscode/Adding-Diagrams-To-VSCode.adoc]
 
 === landing_page
 
@@ -558,6 +567,10 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 * xref:project-guide:special-macros.adoc[project-guide/pages/special-macros.adoc]
 
+=== settings
+
+* xref:compendium:vscode/recommended-vscode-settings.adoc[compendium/pages/vscode/recommended-vscode-settings.adoc]
+
 === setup
 
 * xref:tooling:calendar/calendar-setup.adoc[tooling/pages/calendar/calendar-setup.adoc]
@@ -716,10 +729,13 @@ Every attribute has its own subsection and contains a link to each page as well 
 === vscode
 
 * xref:compendium:gitlab/cloning-a-repository.adoc[compendium/pages/gitlab/cloning-a-repository.adoc]
+* xref:compendium:vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/vscode/Adding-Diagrams-To-VSCode.adoc]
 * xref:compendium:vscode/cloning-a-repository.adoc[compendium/pages/vscode/cloning-a-repository.adoc]
 * xref:compendium:vscode/recommended-vscode-extensions.adoc[compendium/pages/vscode/recommended-vscode-extensions.adoc]
+* xref:compendium:vscode/recommended-vscode-settings.adoc[compendium/pages/vscode/recommended-vscode-settings.adoc]
 * xref:compendium:vscode/run-docker.adoc[compendium/pages/vscode/run-docker.adoc]
 * xref:compendium:vscode/vscode-activity-bar.adoc[compendium/pages/vscode/vscode-activity-bar.adoc]
+* xref:compendium:vscode/vscode-install-extension.adoc[compendium/pages/vscode/vscode-install-extension.adoc]
 * xref:compendium:vscode/vscode-interface.adoc[compendium/pages/vscode/vscode-interface.adoc]
 * xref:tooling:vscode.adoc[tooling/pages/vscode.adoc]
 * xref:tooling:vscode/vscode-guides.adoc[tooling/pages/vscode/vscode-guides.adoc]
@@ -752,9 +768,11 @@ Every attribute has its own subsection and contains a link to each page as well 
 === yaml
 
 * xref:compendium:docker/standard-docker-config.adoc[compendium/pages/docker/standard-docker-config.adoc]
+* xref:compendium:guides/WhatIsYaml.adoc[compendium/pages/guides/WhatIsYaml.adoc]
 
 === yml
 
 * xref:compendium:docker/standard-docker-config.adoc[compendium/pages/docker/standard-docker-config.adoc]
+* xref:compendium:guides/WhatIsYaml.adoc[compendium/pages/guides/WhatIsYaml.adoc]
 
 related::structure[]

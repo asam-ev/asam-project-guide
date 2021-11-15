@@ -3,10 +3,8 @@ package ROOT #5050d0 {
 rectangle "home.adoc" as f5_3
 }
 package compendium #ff5050 {
-rectangle "compendium.adoc" as f0_3
-rectangle "nav.adoc" as f0_1
-rectangle "antora.adoc" as f0_2
 rectangle "docker/docker-for-asciidoc.adoc" as f0_5
+rectangle "compendium.adoc" as f0_3
 }
 package getting-involved #5050ff {
 rectangle "home.adoc" as f1_2
@@ -62,8 +60,6 @@ rectangle "drawio/drawio-setup.adoc" as f7_16
 rectangle "git/git-setup.adoc" as f7_19
 }
 
-f0_1 -[#FF0000]-> f0_3
-f0_1 -[#FF0000]-> f0_2
 f0_5 --[#FF0000]--> f7_3
 f2_1 -[#00FF00]-> f2_3
 f2_1 -[#00FF00]-> f2_4

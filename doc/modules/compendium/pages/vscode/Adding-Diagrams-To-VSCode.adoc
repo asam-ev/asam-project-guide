@@ -2,7 +2,7 @@
 :description: Describes how to add support for diagrams with kroki in VSCode.
 :keywords: vscode,kroki,diagrams
 
-include::partial$_attributes.adoc[]
+include::compendium:partial$_attributes.adoc[]
 
 The kroki extension supports a wide range of diagrams from BPMN to Graphviz to PlantUML and Vega graphs using kroki and asciidoctor-kroki.
 

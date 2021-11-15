@@ -4,6 +4,8 @@
 :page-partial:
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$_attributes.adoc[]
+
 
 {docker-icon}
 

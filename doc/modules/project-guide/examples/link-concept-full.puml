@@ -5,8 +5,8 @@ rectangle "antora.adoc" as f0_2
 rectangle "compendium.adoc" as f0_3
 rectangle "antora/build-antora-locally.adoc" as f0_4
 rectangle "docker/docker-for-asciidoc.adoc" as f0_5
-rectangle "docker/standard-docker-config.adoc" as f0_6
-rectangle "docker/starting-a-container.adoc" as f0_7
+rectangle "docker/run-docker.adoc" as f0_6
+rectangle "docker/standard-docker-config.adoc" as f0_7
 rectangle "docker/wsl.adoc" as f0_8
 rectangle "git/cloning-repo-tutorial.adoc" as f0_9
 rectangle "git/commit-guidelines.adoc" as f0_10
@@ -163,8 +163,6 @@ rectangle "vscode/vscode-guides.adoc" as f7_25
 rectangle "vscode/vscode-setup.adoc" as f7_26
 }
 
-f0_1 -[#FF0000]-> f0_3
-f0_1 -[#FF0000]-> f0_2
 f0_5 --[#FF0000]--> f7_3
 f2_1 -[#00FF00]-> f2_3
 f2_1 -[#00FF00]-> f2_4
@@ -252,58 +250,59 @@ cloud "http://stackoverflow.com/a/17819027"  as u5
 cloud "http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html"  as u6
 cloud "https://help.github.com/articles/about-git-rebase/"  as u7
 cloud "https://tortoisegit.org/"  as u8
-cloud "https://code.asam.net"  as u9
-cloud "https://docs.gitlab.com/ee/user/project/repository/web_editor.html"  as u10
-cloud "https://docs.gitlab.com/ee/user/project/web_ide/#open-the-web-ide"  as u11
-cloud "https://docs.gitlab.com/ee/user/project/web_ide/"  as u12
-cloud "https://github.com/asam-ev"  as u13
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/git/Transitioning-to-a-new-workflow"  as u14
-cloud "https://code.asam.net/help/user/project/quick_actions"  as u15
-cloud "https://docs.gitlab.com/ee/user/discussions/#starting-a-review"  as u16
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/boards/66"  as u17
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues?label_name%5B%5D=ScenarioDescription"  as u18
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/Contact-Persons-from-OSC2-Development-Project"  as u19
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues?label_name%5B%5D=GeneralFeedback"  as u20
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues/245"  as u21
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=#"  as u22
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/jobs/artifacts/master/raw/Language/ASAM_OpenSCENARIO_BS-1-6_Language-Reference-Manual_V2-0-0.html?job=draft"  as u23
-cloud "https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png"  as u24
-cloud "https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1"  as u25
-cloud "https://asamev.sharepoint.com/sites/asamopensimulationinterface/Freigegebene%20Dokumente/Forms/AllItems.aspx"  as u26
-cloud "https://asamev.sharepoint.com/sites/openscenario/Freigegebene%20Dokumente/Forms/AllItems.aspx"  as u27
-cloud "https://asamev.sharepoint.com/sites/openscenario2/Freigegebene%20Dokumente/Forms/AllItems.aspx"  as u28
-cloud "https://asamev.sharepoint.com/sites/openxontology/Freigegebene%20Dokumente/Forms/AllItems.aspx"  as u29
-cloud "https://www.doodle.com"  as u30
-cloud "https://support.microsoft.com/en-us/office/manage-notifications-in-teams-1cc31834-5fe5-412b-8edb-43fecc78413d"  as u31
-cloud "https://kroki.io/examples.html"  as u32
-cloud "https://code.visualstudio.com/docs/editor/versioncontrol#_git-support"  as u33
-cloud "https://asciidoc.org/"  as u34
-cloud "https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/"  as u35
-cloud "https://asciidoctor.org/docs/user-manual/"  as u36
-cloud "https://www.url.com"  as u37
-cloud "https://asciidoctor.org/docs/user-manual/#tables"  as u38
-cloud "https://asciidoctor.org/docs/user-manual/#include-directive"  as u39
-cloud "https://www.python.org/dev/peps/pep-0008/"  as u40
-cloud "https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/"  as u41
-cloud "https://code.asam.net/simulation/resources/-/blob/master/asciidoc_tutorial/asciidoc_tutorial.adoc"  as u42
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/tree/master/Documentation/etc/templates"  as u43
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc"  as u44
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc"  as u45
-cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/general_guidelines/Workflow"  as u46
-cloud "https://docs.antora.org/antora/2.1/page/create-standard-page/"  as u47
-cloud "https://docs.antora.org/antora/2.1/page/#standard"  as u48
-cloud "https://docs.antora.org/antora/2.1/page/#partial"  as u49
-cloud "https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"  as u50
-cloud "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"  as u51
-cloud "https://docs.docker.com/get-started/"  as u52
-cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u53
-cloud "https://docs.docker.com/desktop/windows/install/#system-requirements"  as u54
-cloud "https://docs.docker.com/desktop/windows/install/"  as u55
-cloud "https://docs.docker.com/engine/install/binaries/"  as u56
-cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u57
-cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u58
-cloud "https://code.asam.net/-/profile"  as u59
-cloud "https://code.asam.net/profile/keys"  as u60
+cloud "https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html"  as u9
+cloud "https://code.asam.net"  as u10
+cloud "https://docs.gitlab.com/ee/user/project/repository/web_editor.html"  as u11
+cloud "https://docs.gitlab.com/ee/user/project/web_ide/#open-the-web-ide"  as u12
+cloud "https://docs.gitlab.com/ee/user/project/web_ide/"  as u13
+cloud "https://github.com/asam-ev"  as u14
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/git/Transitioning-to-a-new-workflow"  as u15
+cloud "https://code.asam.net/help/user/project/quick_actions"  as u16
+cloud "https://docs.gitlab.com/ee/user/discussions/#starting-a-review"  as u17
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/boards/66"  as u18
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues?label_name%5B%5D=ScenarioDescription"  as u19
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/Contact-Persons-from-OSC2-Development-Project"  as u20
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues?label_name%5B%5D=GeneralFeedback"  as u21
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues/245"  as u22
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=#"  as u23
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/jobs/artifacts/master/raw/Language/ASAM_OpenSCENARIO_BS-1-6_Language-Reference-Manual_V2-0-0.html?job=draft"  as u24
+cloud "https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png"  as u25
+cloud "https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1"  as u26
+cloud "https://asamev.sharepoint.com/sites/asamopensimulationinterface/Freigegebene%20Dokumente/Forms/AllItems.aspx"  as u27
+cloud "https://asamev.sharepoint.com/sites/openscenario/Freigegebene%20Dokumente/Forms/AllItems.aspx"  as u28
+cloud "https://asamev.sharepoint.com/sites/openscenario2/Freigegebene%20Dokumente/Forms/AllItems.aspx"  as u29
+cloud "https://asamev.sharepoint.com/sites/openxontology/Freigegebene%20Dokumente/Forms/AllItems.aspx"  as u30
+cloud "https://www.doodle.com"  as u31
+cloud "https://support.microsoft.com/en-us/office/manage-notifications-in-teams-1cc31834-5fe5-412b-8edb-43fecc78413d"  as u32
+cloud "https://kroki.io/examples.html"  as u33
+cloud "https://code.visualstudio.com/docs/editor/versioncontrol#_git-support"  as u34
+cloud "https://asciidoc.org/"  as u35
+cloud "https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/"  as u36
+cloud "https://asciidoctor.org/docs/user-manual/"  as u37
+cloud "https://www.url.com"  as u38
+cloud "https://asciidoctor.org/docs/user-manual/#tables"  as u39
+cloud "https://asciidoctor.org/docs/user-manual/#include-directive"  as u40
+cloud "https://www.python.org/dev/peps/pep-0008/"  as u41
+cloud "https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/"  as u42
+cloud "https://code.asam.net/simulation/resources/-/blob/master/asciidoc_tutorial/asciidoc_tutorial.adoc"  as u43
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/tree/master/Documentation/etc/templates"  as u44
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc"  as u45
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc"  as u46
+cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/general_guidelines/Workflow"  as u47
+cloud "https://docs.antora.org/antora/2.1/page/create-standard-page/"  as u48
+cloud "https://docs.antora.org/antora/2.1/page/#standard"  as u49
+cloud "https://docs.antora.org/antora/2.1/page/#partial"  as u50
+cloud "https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"  as u51
+cloud "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"  as u52
+cloud "https://docs.docker.com/get-started/"  as u53
+cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u54
+cloud "https://docs.docker.com/desktop/windows/install/#system-requirements"  as u55
+cloud "https://docs.docker.com/desktop/windows/install/"  as u56
+cloud "https://docs.docker.com/engine/install/binaries/"  as u57
+cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u58
+cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u59
+cloud "https://code.asam.net/-/profile"  as u60
+cloud "https://code.asam.net/profile/keys"  as u61
 
 f0_4 .up.>> u1
 f0_5 .up.>> u2
@@ -315,65 +314,68 @@ f0_21 .up.>> u6
 f0_21 .up.>> u7
 f0_21 .up.>> u4
 f0_22 .up.>> u8
+f0_22 .up.>> u9
 f0_23 .up.>> u8
 f0_23 .up.>> u9
+f0_23 .up.>> u10
 f0_25 .up.>> u8
-f0_32 .up.>> u10
+f0_25 .up.>> u9
 f0_32 .up.>> u11
 f0_32 .up.>> u12
-f0_33 .up.>> u10
+f0_32 .up.>> u13
 f0_33 .up.>> u11
 f0_33 .up.>> u12
-f0_36 .up.>> u9
-f0_36 .up.>> u13
-f0_39 .up.>> u14
+f0_33 .up.>> u13
+f0_36 .up.>> u10
+f0_36 .up.>> u14
 f0_39 .up.>> u15
 f0_39 .up.>> u16
-f0_41 .up.>> u17
+f0_39 .up.>> u17
 f0_41 .up.>> u18
 f0_41 .up.>> u19
 f0_41 .up.>> u20
 f0_41 .up.>> u21
-f0_42 .up.>> u22
+f0_41 .up.>> u22
 f0_42 .up.>> u23
-f0_42 .up.>> u19
-f0_45 .up.>> u24
+f0_42 .up.>> u24
+f0_42 .up.>> u20
 f0_45 .up.>> u25
-f0_47 .up.>> u26
+f0_45 .up.>> u26
 f0_47 .up.>> u27
 f0_47 .up.>> u28
 f0_47 .up.>> u29
-f0_52 .up.>> u30
-f0_53 .up.>> u31
-f0_55 .up.>> u32
-f0_62 .up.>> u33
-f0_65 .up.>> u34
+f0_47 .up.>> u30
+f0_52 .up.>> u31
+f0_53 .up.>> u32
+f0_55 .up.>> u33
+f0_62 .up.>> u34
 f0_65 .up.>> u35
 f0_65 .up.>> u36
 f0_65 .up.>> u37
 f0_65 .up.>> u38
 f0_65 .up.>> u39
-f0_66 .up.>> u40
-f0_68 .up.>> u41
+f0_65 .up.>> u40
+f0_66 .up.>> u41
 f0_68 .up.>> u42
 f0_68 .up.>> u43
 f0_68 .up.>> u44
 f0_68 .up.>> u45
 f0_68 .up.>> u46
-f3_2 .up.>> u47
-f3_11 .up.>> u48
+f0_68 .up.>> u47
+f3_2 .up.>> u48
 f3_11 .up.>> u49
-f7_12 .up.>> u50
+f3_11 .up.>> u50
 f7_12 .up.>> u51
-f7_13 .up.>> u52
+f7_12 .up.>> u52
 f7_13 .up.>> u53
-f7_15 .up.>> u54
+f7_13 .up.>> u54
 f7_15 .up.>> u55
 f7_15 .up.>> u56
 f7_15 .up.>> u57
+f7_15 .up.>> u58
 f7_17 .up.>> u7
-f7_17 .up.>> u58
+f7_17 .up.>> u59
 f7_17 .up.>> u6
-f7_19 .up.>> u59
 f7_19 .up.>> u60
+f7_19 .up.>> u61
 @enduml
