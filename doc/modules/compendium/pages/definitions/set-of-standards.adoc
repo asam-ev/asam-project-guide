@@ -1,0 +1,8 @@
+= Set Of Standards
+:description: A definition of the term "set of standards".
+:keywords: definition
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
+
+include::compendium:partial$set-of-standards.adoc[]

@@ -1,0 +1,17 @@
+= Associated Standard
+:description: Definition of an associated standard.
+:keywords: definition,classification,associated-standard
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
+
+
+An associated standard always refers to a base standard.
+These are examples of associated standards:
+
+* xref:compendium:definitions/application-area-companion.adoc[Application Area Companion]
+* xref:compendium:definitions/transport-layer-specification.adoc[Transport Layer Specification]
+
+//tag::related[]
+related::associated-standard[]
+//end::related[]
