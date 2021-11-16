@@ -449,6 +449,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 === overview
 
 * xref:getting-started:new-here.adoc[getting-started/pages/new-here.adoc]
+* xref:role-specific:asam-project-roles.adoc[role-specific/pages/asam-project-roles.adoc]
 * xref:tooling:overview.adoc[tooling/pages/overview.adoc]
 
 === page
@@ -558,9 +559,18 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:git/review-code.adoc[compendium/pages/git/review-code.adoc]
 * xref:standardization:review-phase.adoc[standardization/pages/review-phase.adoc]
 
+=== role
+
+* xref:role-specific:technical-writer.adoc[role-specific/pages/technical-writer.adoc]
+
+=== role-landing-page
+
+* xref:role-specific:technical-writer.adoc[role-specific/pages/technical-writer.adoc]
+
 === roles
 
 * xref:getting-started:new_here/roles-overview.adoc[getting-started/pages/new_here/roles-overview.adoc]
+* xref:role-specific:asam-project-roles.adoc[role-specific/pages/asam-project-roles.adoc]
 * xref:role-specific:home.adoc[role-specific/pages/home.adoc]
 
 === script
@@ -633,6 +643,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === summary
 
+* xref:role-specific:asam-project-roles.adoc[role-specific/pages/asam-project-roles.adoc]
 * xref:standardization:asam-development-process.adoc[standardization/pages/asam-development-process.adoc]
 * xref:tooling:calendar.adoc[tooling/pages/calendar.adoc]
 * xref:tooling:docker.adoc[tooling/pages/docker.adoc]
@@ -682,6 +693,10 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:tooling:teams-and-sharepoint.adoc[tooling/pages/teams-and-sharepoint.adoc]
 * xref:tooling:teams_and_sharepoint/teams-and-sharepoint-guides.adoc[tooling/pages/teams_and_sharepoint/teams-and-sharepoint-guides.adoc]
 * xref:tooling:teams_and_sharepoint/teams-and-sharepoint-setup.adoc[tooling/pages/teams_and_sharepoint/teams-and-sharepoint-setup.adoc]
+
+=== technical-writer
+
+* xref:role-specific:technical-writer.adoc[role-specific/pages/technical-writer.adoc]
 
 === term
 

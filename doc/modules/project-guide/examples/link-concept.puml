@@ -32,7 +32,9 @@ rectangle "used-attributes.adoc" as f3_13
 rectangle "link-concept.adoc" as f3_10
 }
 package role-specific #ff50ff {
-rectangle "home.adoc" as f4_3
+rectangle "home.adoc" as f4_4
+rectangle "asam-project-roles.adoc" as f4_2
+rectangle "technical-writer.adoc" as f4_9
 }
 package standardization #d05050 {
 rectangle "asam-development-process.adoc" as f6_2
@@ -87,7 +89,7 @@ f3_11 -[#CCCC00]-> f3_3
 f3_13 -[#CCCC00]-> f3_4
 f3_13 -[#CCCC00]-> f3_6
 f3_13 -[#CCCC00]-> f3_12
-f3_13 --[#CCCC00]--> f4_3
+f3_13 --[#CCCC00]--> f4_4
 f3_13 -[#CCCC00]-> f3_13
 f3_13 --[#CCCC00]--> f0_3
 f3_13 --[#CCCC00]--> f6_2
@@ -109,11 +111,13 @@ f3_13 --[#CCCC00]--> f7_8
 f3_13 -[#CCCC00]-> f3_2
 f3_13 -[#CCCC00]-> f3_3
 f3_13 --[#CCCC00]--> f2_4
+f3_13 --[#CCCC00]--> f4_2
 f3_13 -[#CCCC00]-> f3_11
 f3_13 --[#CCCC00]--> f6_7
 f3_13 --[#CCCC00]--> f6_8
 f3_13 --[#CCCC00]--> f6_9
 f3_13 --[#CCCC00]--> f7_9
+f3_13 --[#CCCC00]--> f4_9
 f6_1 -[#800000]-> f6_4
 f6_1 -[#800000]-> f6_2
 f6_1 -[#800000]-> f6_7
