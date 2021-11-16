@@ -29,6 +29,15 @@ asciidoc:
     hide-uri-scheme:
     gitlab-url: https://code.asam.net
     # diagram-max-get-size: 8192
+    # Defined role attributes
+    role-reviewer: 'xref:role-specific:reviewer.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FA8072;" >REVIEWER</role>]'
+    role-wg-member: 'xref:role-specific:wg-member.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#BDB76B;" >WG MEMBER</role>]'
+    role-technical-writer: 'xref:role-specific:technical-writer.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#D8BFD8;" >TECHNICAL WRITER</role>]'
+    role-project-lead: 'xref:role-specific:project-lead.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#6A5ACD;" >PROJECT LEAD</role>]'
+    role-gtm: 'xref:role-specific:gtm.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#32CD32;" >GTM</role>]'
+    role-service-provider: 'xref:role-specific:service-provider.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FFDEAD;" >SERVICE PROVIDER</role>]'
+    role-standard-user: 'xref:role-specific:standard-user.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CD853F;" >STANDARD USER</role>]'
+
 
   extensions:
   - asciidoctor-kroki

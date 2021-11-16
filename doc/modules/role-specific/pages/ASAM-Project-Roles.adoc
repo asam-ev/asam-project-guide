@@ -1,4 +1,8 @@
 = ASAM Project Roles
+:description: A summary for all roles in ASAM projects.
+:keywords: roles,overview,summary
+
+include::partial$_attributes.adoc[]
 
 == Development Team
 >mandatory, staffed by members and paid service provider, roles are non-exclusive
