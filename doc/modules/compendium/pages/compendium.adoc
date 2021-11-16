@@ -3,6 +3,11 @@
 :keywords: landing_page,compendium
 :page-aliases: home.adoc
 
+include::partial$_attributes.adoc[]
+include::ROOT:partial$_attributes.adoc[]
+
+{compendium-icon}
+
 TODO
 
 files::[]

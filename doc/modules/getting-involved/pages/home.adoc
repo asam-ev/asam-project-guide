@@ -2,6 +2,11 @@
 :description: Landing page for information on how to get involved in ASAM projects.
 :keywords: landing_page,get-involved
 
+include::partial$_attributes.adoc[]
+include::ROOT:partial$_attributes.adoc[]
+
+{getting-involved-icon}
+
 TODO
 
 related::landing_page[]

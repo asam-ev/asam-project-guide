@@ -20,23 +20,24 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === action
 
-* xref:compendium:git/git-actions.adoc[compendium/pages/git/git-actions.adoc]
+* xref:compendium:tools/git/git-actions.adoc[compendium/pages/tools/git/git-actions.adoc]
 
 === actions
 
-* xref:compendium:git/git-actions.adoc[compendium/pages/git/git-actions.adoc]
+* xref:compendium:tools/git/git-actions.adoc[compendium/pages/tools/git/git-actions.adoc]
 
 === activity-bar
 
-* xref:compendium:vscode/vscode-activity-bar.adoc[compendium/pages/vscode/vscode-activity-bar.adoc]
+* xref:compendium:tools/vscode/vscode-activity-bar.adoc[compendium/pages/tools/vscode/vscode-activity-bar.adoc]
 
 === add
 
-* xref:compendium:git/submodules/submodules-add.adoc[compendium/pages/git/submodules/submodules-add.adoc]
+* xref:compendium:tools/git/submodules/submodules-add.adoc[compendium/pages/tools/git/submodules/submodules-add.adoc]
 
 === antora
 
-* xref:compendium:antora/build-antora-locally.adoc[compendium/pages/antora/build-antora-locally.adoc]
+* xref:compendium:tools/antora.adoc[compendium/pages/tools/antora.adoc]
+* xref:compendium:tools/antora/build-antora-locally.adoc[compendium/pages/tools/antora/build-antora-locally.adoc]
 * xref:project-guide:add-new-module.adoc[project-guide/pages/add-new-module.adoc]
 * xref:project-guide:content-structure.adoc[project-guide/pages/content-structure.adoc]
 * xref:project-guide:macros/macro-reference.adoc[project-guide/pages/macros/macro-reference.adoc]
@@ -44,11 +45,11 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === artifact
 
-* xref:compendium:teams/email-notifications.adoc[compendium/pages/teams/email-notifications.adoc]
-* xref:compendium:teams/meetings-in-teams.adoc[compendium/pages/teams/meetings-in-teams.adoc]
-* xref:compendium:teams/obtain-channel-email.adoc[compendium/pages/teams/obtain-channel-email.adoc]
-* xref:compendium:teams/polls-and-surveys.adoc[compendium/pages/teams/polls-and-surveys.adoc]
-* xref:compendium:teams/receive-notifications.adoc[compendium/pages/teams/receive-notifications.adoc]
+* xref:compendium:tools/teams/email-notifications.adoc[compendium/pages/tools/teams/email-notifications.adoc]
+* xref:compendium:tools/teams/meetings-in-teams.adoc[compendium/pages/tools/teams/meetings-in-teams.adoc]
+* xref:compendium:tools/teams/obtain-channel-email.adoc[compendium/pages/tools/teams/obtain-channel-email.adoc]
+* xref:compendium:tools/teams/polls-and-surveys.adoc[compendium/pages/tools/teams/polls-and-surveys.adoc]
+* xref:compendium:tools/teams/receive-notifications.adoc[compendium/pages/tools/teams/receive-notifications.adoc]
 
 === asam
 
@@ -68,20 +69,34 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === asciidoc
 
-* xref:compendium:docker/docker-for-asciidoc.adoc[compendium/pages/docker/docker-for-asciidoc.adoc]
-* xref:compendium:vscode/recommended-vscode-extensions.adoc[compendium/pages/vscode/recommended-vscode-extensions.adoc]
+* xref:compendium:tools/docker/docker-for-asciidoc.adoc[compendium/pages/tools/docker/docker-for-asciidoc.adoc]
+* xref:compendium:tools/vscode/recommended-vscode-extensions.adoc[compendium/pages/tools/vscode/recommended-vscode-extensions.adoc]
 
 === asciidoctor
 
-* xref:compendium:docker/docker-for-asciidoc.adoc[compendium/pages/docker/docker-for-asciidoc.adoc]
+* xref:compendium:tools/docker/docker-for-asciidoc.adoc[compendium/pages/tools/docker/docker-for-asciidoc.adoc]
+
+=== associated-standard
+
+* xref:compendium:definitions/application-area-companion.adoc[compendium/pages/definitions/application-area-companion.adoc]
+* xref:compendium:definitions/associated-standard.adoc[compendium/pages/definitions/associated-standard.adoc]
+* xref:compendium:definitions/transport-layer-specification.adoc[compendium/pages/definitions/transport-layer-specification.adoc]
 
 === attributes
 
 * xref:project-guide:used-attributes.adoc[project-guide/pages/used-attributes.adoc]
 
+=== base-standard
+
+* xref:compendium:definitions/api.adoc[compendium/pages/definitions/api.adoc]
+* xref:compendium:definitions/base-standard.adoc[compendium/pages/definitions/base-standard.adoc]
+* xref:compendium:definitions/format-description.adoc[compendium/pages/definitions/format-description.adoc]
+* xref:compendium:definitions/protocol-definition.adoc[compendium/pages/definitions/protocol-definition.adoc]
+* xref:compendium:definitions/technology-reference.adoc[compendium/pages/definitions/technology-reference.adoc]
+
 === bash
 
-* xref:compendium:powershell/cloning-a-repository.adoc[compendium/pages/powershell/cloning-a-repository.adoc]
+* xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
 
 === best-practices
 
@@ -95,31 +110,36 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === channel
 
-* xref:compendium:teams/obtain-channel-email.adoc[compendium/pages/teams/obtain-channel-email.adoc]
-* xref:compendium:teams/teams-channel-file-structure.adoc[compendium/pages/teams/teams-channel-file-structure.adoc]
+* xref:compendium:tools/teams/obtain-channel-email.adoc[compendium/pages/tools/teams/obtain-channel-email.adoc]
+* xref:compendium:tools/teams/teams-channel-file-structure.adoc[compendium/pages/tools/teams/teams-channel-file-structure.adoc]
+
+=== classification
+
+* xref:compendium:definitions/associated-standard.adoc[compendium/pages/definitions/associated-standard.adoc]
+* xref:compendium:definitions/base-standard.adoc[compendium/pages/definitions/base-standard.adoc]
 
 === clone
 
-* xref:compendium:git/cloning-repo-tutorial.adoc[compendium/pages/git/cloning-repo-tutorial.adoc]
-* xref:compendium:gitlab/cloning-a-repository.adoc[compendium/pages/gitlab/cloning-a-repository.adoc]
-* xref:compendium:powershell/cloning-a-repository.adoc[compendium/pages/powershell/cloning-a-repository.adoc]
-* xref:compendium:vscode/cloning-a-repository.adoc[compendium/pages/vscode/cloning-a-repository.adoc]
+* xref:compendium:tools/git/cloning-repo-tutorial.adoc[compendium/pages/tools/git/cloning-repo-tutorial.adoc]
+* xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
+* xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
+* xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
 
 === cloning
 
-* xref:compendium:git/cloning-repo-tutorial.adoc[compendium/pages/git/cloning-repo-tutorial.adoc]
-* xref:compendium:gitlab/cloning-a-repository.adoc[compendium/pages/gitlab/cloning-a-repository.adoc]
-* xref:compendium:powershell/cloning-a-repository.adoc[compendium/pages/powershell/cloning-a-repository.adoc]
-* xref:compendium:vscode/cloning-a-repository.adoc[compendium/pages/vscode/cloning-a-repository.adoc]
+* xref:compendium:tools/git/cloning-repo-tutorial.adoc[compendium/pages/tools/git/cloning-repo-tutorial.adoc]
+* xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
+* xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
+* xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
 
 === code
 
-* xref:compendium:git/review-code.adoc[compendium/pages/git/review-code.adoc]
+* xref:compendium:tools/git/review-code.adoc[compendium/pages/tools/git/review-code.adoc]
 
 === commit
 
-* xref:compendium:git/commit-guidelines.adoc[compendium/pages/git/commit-guidelines.adoc]
-* xref:compendium:gitlab/commit-guidelines.adoc[compendium/pages/gitlab/commit-guidelines.adoc]
+* xref:compendium:tools/git/commit-guidelines.adoc[compendium/pages/tools/git/commit-guidelines.adoc]
+* xref:compendium:tools/gitlab/commit-guidelines.adoc[compendium/pages/tools/gitlab/commit-guidelines.adoc]
 * xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
 
 === compendium
@@ -128,15 +148,24 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === compose
 
-* xref:compendium:docker/standard-docker-config.adoc[compendium/pages/docker/standard-docker-config.adoc]
+* xref:compendium:tools/docker/standard-docker-config.adoc[compendium/pages/tools/docker/standard-docker-config.adoc]
 
 === conflict
 
-* xref:compendium:git/merge-conflicts.adoc[compendium/pages/git/merge-conflicts.adoc]
+* xref:compendium:tools/git/merge-conflicts.adoc[compendium/pages/tools/git/merge-conflicts.adoc]
 
 === contacts
 
 * xref:getting-started:new_here/asam-contacts.adoc[getting-started/pages/new_here/asam-contacts.adoc]
+
+=== content-characterization
+
+* xref:compendium:definitions/api.adoc[compendium/pages/definitions/api.adoc]
+* xref:compendium:definitions/application-area-companion.adoc[compendium/pages/definitions/application-area-companion.adoc]
+* xref:compendium:definitions/format-description.adoc[compendium/pages/definitions/format-description.adoc]
+* xref:compendium:definitions/protocol-definition.adoc[compendium/pages/definitions/protocol-definition.adoc]
+* xref:compendium:definitions/technology-reference.adoc[compendium/pages/definitions/technology-reference.adoc]
+* xref:compendium:definitions/transport-layer-specification.adoc[compendium/pages/definitions/transport-layer-specification.adoc]
 
 === custom
 
@@ -144,9 +173,22 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:project-guide:macros/macro-reference.adoc[project-guide/pages/macros/macro-reference.adoc]
 * xref:project-guide:macros/macro-related.adoc[project-guide/pages/macros/macro-related.adoc]
 
+=== definition
+
+* xref:compendium:definitions/api.adoc[compendium/pages/definitions/api.adoc]
+* xref:compendium:definitions/application-area-companion.adoc[compendium/pages/definitions/application-area-companion.adoc]
+* xref:compendium:definitions/associated-standard.adoc[compendium/pages/definitions/associated-standard.adoc]
+* xref:compendium:definitions/base-standard.adoc[compendium/pages/definitions/base-standard.adoc]
+* xref:compendium:definitions/format-description.adoc[compendium/pages/definitions/format-description.adoc]
+* xref:compendium:definitions/protocol-definition.adoc[compendium/pages/definitions/protocol-definition.adoc]
+* xref:compendium:definitions/set-of-standards.adoc[compendium/pages/definitions/set-of-standards.adoc]
+* xref:compendium:definitions/status-of-document.adoc[compendium/pages/definitions/status-of-document.adoc]
+* xref:compendium:definitions/technology-reference.adoc[compendium/pages/definitions/technology-reference.adoc]
+* xref:compendium:definitions/transport-layer-specification.adoc[compendium/pages/definitions/transport-layer-specification.adoc]
+
 === desktop
 
-* xref:compendium:docker/run-docker.adoc[compendium/pages/docker/run-docker.adoc]
+* xref:compendium:tools/docker/run-docker.adoc[compendium/pages/tools/docker/run-docker.adoc]
 
 === development
 
@@ -155,18 +197,18 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === diagrams
 
-* xref:compendium:vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/vscode/Adding-Diagrams-To-VSCode.adoc]
+* xref:compendium:tools/vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/tools/vscode/Adding-Diagrams-To-VSCode.adoc]
 
 === docker
 
-* xref:compendium:antora/build-antora-locally.adoc[compendium/pages/antora/build-antora-locally.adoc]
-* xref:compendium:docker/docker-for-asciidoc.adoc[compendium/pages/docker/docker-for-asciidoc.adoc]
-* xref:compendium:docker/run-docker.adoc[compendium/pages/docker/run-docker.adoc]
-* xref:compendium:docker/standard-docker-config.adoc[compendium/pages/docker/standard-docker-config.adoc]
-* xref:compendium:docker/wsl.adoc[compendium/pages/docker/wsl.adoc]
-* xref:compendium:powershell/run-docker.adoc[compendium/pages/powershell/run-docker.adoc]
-* xref:compendium:vscode/recommended-vscode-extensions.adoc[compendium/pages/vscode/recommended-vscode-extensions.adoc]
-* xref:compendium:vscode/run-docker.adoc[compendium/pages/vscode/run-docker.adoc]
+* xref:compendium:tools/antora/build-antora-locally.adoc[compendium/pages/tools/antora/build-antora-locally.adoc]
+* xref:compendium:tools/docker/docker-for-asciidoc.adoc[compendium/pages/tools/docker/docker-for-asciidoc.adoc]
+* xref:compendium:tools/docker/run-docker.adoc[compendium/pages/tools/docker/run-docker.adoc]
+* xref:compendium:tools/docker/standard-docker-config.adoc[compendium/pages/tools/docker/standard-docker-config.adoc]
+* xref:compendium:tools/docker/wsl.adoc[compendium/pages/tools/docker/wsl.adoc]
+* xref:compendium:tools/powershell/run-docker.adoc[compendium/pages/tools/powershell/run-docker.adoc]
+* xref:compendium:tools/vscode/recommended-vscode-extensions.adoc[compendium/pages/tools/vscode/recommended-vscode-extensions.adoc]
+* xref:compendium:tools/vscode/run-docker.adoc[compendium/pages/tools/vscode/run-docker.adoc]
 * xref:tooling:docker.adoc[tooling/pages/docker.adoc]
 * xref:tooling:docker/docker-best-practices.adoc[tooling/pages/docker/docker-best-practices.adoc]
 * xref:tooling:docker/docker-guides.adoc[tooling/pages/docker/docker-guides.adoc]
@@ -178,7 +220,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === drawio
 
-* xref:compendium:vscode/recommended-vscode-extensions.adoc[compendium/pages/vscode/recommended-vscode-extensions.adoc]
+* xref:compendium:tools/vscode/recommended-vscode-extensions.adoc[compendium/pages/tools/vscode/recommended-vscode-extensions.adoc]
 * xref:tooling:drawio.adoc[tooling/pages/drawio.adoc]
 * xref:tooling:drawio/drawio-setup.adoc[tooling/pages/drawio/drawio-setup.adoc]
 
@@ -188,27 +230,27 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === email
 
-* xref:compendium:teams/email-notifications.adoc[compendium/pages/teams/email-notifications.adoc]
-* xref:compendium:teams/obtain-channel-email.adoc[compendium/pages/teams/obtain-channel-email.adoc]
-* xref:compendium:teams/polls-and-surveys.adoc[compendium/pages/teams/polls-and-surveys.adoc]
+* xref:compendium:tools/teams/email-notifications.adoc[compendium/pages/tools/teams/email-notifications.adoc]
+* xref:compendium:tools/teams/obtain-channel-email.adoc[compendium/pages/tools/teams/obtain-channel-email.adoc]
+* xref:compendium:tools/teams/polls-and-surveys.adoc[compendium/pages/tools/teams/polls-and-surveys.adoc]
 
 === extensions
 
-* xref:compendium:vscode/recommended-vscode-extensions.adoc[compendium/pages/vscode/recommended-vscode-extensions.adoc]
-* xref:compendium:vscode/vscode-install-extension.adoc[compendium/pages/vscode/vscode-install-extension.adoc]
+* xref:compendium:tools/vscode/recommended-vscode-extensions.adoc[compendium/pages/tools/vscode/recommended-vscode-extensions.adoc]
+* xref:compendium:tools/vscode/vscode-install-extension.adoc[compendium/pages/tools/vscode/vscode-install-extension.adoc]
 
 === feature
 
-* xref:compendium:git/write-a-feature.adoc[compendium/pages/git/write-a-feature.adoc]
+* xref:compendium:tools/git/write-a-feature.adoc[compendium/pages/tools/git/write-a-feature.adoc]
 * xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
 
 === fetch
 
-* xref:compendium:git/merge.adoc[compendium/pages/git/merge.adoc]
+* xref:compendium:tools/git/merge.adoc[compendium/pages/tools/git/merge.adoc]
 
 === file-structure
 
-* xref:compendium:teams/teams-channel-file-structure.adoc[compendium/pages/teams/teams-channel-file-structure.adoc]
+* xref:compendium:tools/teams/teams-channel-file-structure.adoc[compendium/pages/tools/teams/teams-channel-file-structure.adoc]
 
 === fragment
 
@@ -230,24 +272,24 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === git
 
-* xref:compendium:git/cloning-repo-tutorial.adoc[compendium/pages/git/cloning-repo-tutorial.adoc]
-* xref:compendium:git/commit-guidelines.adoc[compendium/pages/git/commit-guidelines.adoc]
-* xref:compendium:git/git-actions.adoc[compendium/pages/git/git-actions.adoc]
-* xref:compendium:git/git-terminology.adoc[compendium/pages/git/git-terminology.adoc]
-* xref:compendium:git/maintain-a-repo.adoc[compendium/pages/git/maintain-a-repo.adoc]
-* xref:compendium:git/merge-conflicts.adoc[compendium/pages/git/merge-conflicts.adoc]
-* xref:compendium:git/merge-requests.adoc[compendium/pages/git/merge-requests.adoc]
-* xref:compendium:git/merge.adoc[compendium/pages/git/merge.adoc]
-* xref:compendium:git/review-code.adoc[compendium/pages/git/review-code.adoc]
-* xref:compendium:git/submodules.adoc[compendium/pages/git/submodules.adoc]
-* xref:compendium:git/working-with-git.adoc[compendium/pages/git/working-with-git.adoc]
-* xref:compendium:git/write-a-feature.adoc[compendium/pages/git/write-a-feature.adoc]
-* xref:compendium:git/submodules/submodule-pull.adoc[compendium/pages/git/submodules/submodule-pull.adoc]
-* xref:compendium:git/submodules/submodules-add.adoc[compendium/pages/git/submodules/submodules-add.adoc]
-* xref:compendium:git/submodules/submodules-changing-remote.adoc[compendium/pages/git/submodules/submodules-changing-remote.adoc]
-* xref:compendium:git/submodules/submodules-switch-version.adoc[compendium/pages/git/submodules/submodules-switch-version.adoc]
-* xref:compendium:powershell/cloning-a-repository.adoc[compendium/pages/powershell/cloning-a-repository.adoc]
-* xref:compendium:vscode/cloning-a-repository.adoc[compendium/pages/vscode/cloning-a-repository.adoc]
+* xref:compendium:tools/git/cloning-repo-tutorial.adoc[compendium/pages/tools/git/cloning-repo-tutorial.adoc]
+* xref:compendium:tools/git/commit-guidelines.adoc[compendium/pages/tools/git/commit-guidelines.adoc]
+* xref:compendium:tools/git/git-actions.adoc[compendium/pages/tools/git/git-actions.adoc]
+* xref:compendium:tools/git/git-terminology.adoc[compendium/pages/tools/git/git-terminology.adoc]
+* xref:compendium:tools/git/maintain-a-repo.adoc[compendium/pages/tools/git/maintain-a-repo.adoc]
+* xref:compendium:tools/git/merge-conflicts.adoc[compendium/pages/tools/git/merge-conflicts.adoc]
+* xref:compendium:tools/git/merge-requests.adoc[compendium/pages/tools/git/merge-requests.adoc]
+* xref:compendium:tools/git/merge.adoc[compendium/pages/tools/git/merge.adoc]
+* xref:compendium:tools/git/review-code.adoc[compendium/pages/tools/git/review-code.adoc]
+* xref:compendium:tools/git/submodules.adoc[compendium/pages/tools/git/submodules.adoc]
+* xref:compendium:tools/git/working-with-git.adoc[compendium/pages/tools/git/working-with-git.adoc]
+* xref:compendium:tools/git/write-a-feature.adoc[compendium/pages/tools/git/write-a-feature.adoc]
+* xref:compendium:tools/git/submodules/submodule-pull.adoc[compendium/pages/tools/git/submodules/submodule-pull.adoc]
+* xref:compendium:tools/git/submodules/submodules-add.adoc[compendium/pages/tools/git/submodules/submodules-add.adoc]
+* xref:compendium:tools/git/submodules/submodules-changing-remote.adoc[compendium/pages/tools/git/submodules/submodules-changing-remote.adoc]
+* xref:compendium:tools/git/submodules/submodules-switch-version.adoc[compendium/pages/tools/git/submodules/submodules-switch-version.adoc]
+* xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
+* xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
 * xref:tooling:git.adoc[tooling/pages/git.adoc]
 * xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
 * xref:tooling:git/git-guides.adoc[tooling/pages/git/git-guides.adoc]
@@ -259,22 +301,22 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === gitlab
 
-* xref:compendium:git/maintain-a-repo.adoc[compendium/pages/git/maintain-a-repo.adoc]
-* xref:compendium:git/merge-conflicts.adoc[compendium/pages/git/merge-conflicts.adoc]
-* xref:compendium:git/merge-requests.adoc[compendium/pages/git/merge-requests.adoc]
-* xref:compendium:git/merge.adoc[compendium/pages/git/merge.adoc]
-* xref:compendium:git/review-code.adoc[compendium/pages/git/review-code.adoc]
-* xref:compendium:git/submodules.adoc[compendium/pages/git/submodules.adoc]
-* xref:compendium:git/write-a-feature.adoc[compendium/pages/git/write-a-feature.adoc]
-* xref:compendium:git/submodules/submodule-pull.adoc[compendium/pages/git/submodules/submodule-pull.adoc]
-* xref:compendium:git/submodules/submodules-add.adoc[compendium/pages/git/submodules/submodules-add.adoc]
-* xref:compendium:git/submodules/submodules-changing-remote.adoc[compendium/pages/git/submodules/submodules-changing-remote.adoc]
-* xref:compendium:git/submodules/submodules-switch-version.adoc[compendium/pages/git/submodules/submodules-switch-version.adoc]
-* xref:compendium:gitlab/cloning-a-repository.adoc[compendium/pages/gitlab/cloning-a-repository.adoc]
-* xref:compendium:gitlab/commit-guidelines.adoc[compendium/pages/gitlab/commit-guidelines.adoc]
-* xref:compendium:gitlab/gitlab-ide-guide.adoc[compendium/pages/gitlab/gitlab-ide-guide.adoc]
-* xref:compendium:gitlab/gitlab-terminology.adoc[compendium/pages/gitlab/gitlab-terminology.adoc]
-* xref:compendium:vscode/recommended-vscode-extensions.adoc[compendium/pages/vscode/recommended-vscode-extensions.adoc]
+* xref:compendium:tools/git/maintain-a-repo.adoc[compendium/pages/tools/git/maintain-a-repo.adoc]
+* xref:compendium:tools/git/merge-conflicts.adoc[compendium/pages/tools/git/merge-conflicts.adoc]
+* xref:compendium:tools/git/merge-requests.adoc[compendium/pages/tools/git/merge-requests.adoc]
+* xref:compendium:tools/git/merge.adoc[compendium/pages/tools/git/merge.adoc]
+* xref:compendium:tools/git/review-code.adoc[compendium/pages/tools/git/review-code.adoc]
+* xref:compendium:tools/git/submodules.adoc[compendium/pages/tools/git/submodules.adoc]
+* xref:compendium:tools/git/write-a-feature.adoc[compendium/pages/tools/git/write-a-feature.adoc]
+* xref:compendium:tools/git/submodules/submodule-pull.adoc[compendium/pages/tools/git/submodules/submodule-pull.adoc]
+* xref:compendium:tools/git/submodules/submodules-add.adoc[compendium/pages/tools/git/submodules/submodules-add.adoc]
+* xref:compendium:tools/git/submodules/submodules-changing-remote.adoc[compendium/pages/tools/git/submodules/submodules-changing-remote.adoc]
+* xref:compendium:tools/git/submodules/submodules-switch-version.adoc[compendium/pages/tools/git/submodules/submodules-switch-version.adoc]
+* xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
+* xref:compendium:tools/gitlab/commit-guidelines.adoc[compendium/pages/tools/gitlab/commit-guidelines.adoc]
+* xref:compendium:tools/gitlab/gitlab-ide-guide.adoc[compendium/pages/tools/gitlab/gitlab-ide-guide.adoc]
+* xref:compendium:tools/gitlab/gitlab-terminology.adoc[compendium/pages/tools/gitlab/gitlab-terminology.adoc]
+* xref:compendium:tools/vscode/recommended-vscode-extensions.adoc[compendium/pages/tools/vscode/recommended-vscode-extensions.adoc]
 * xref:tooling:gitlab.adoc[tooling/pages/gitlab.adoc]
 * xref:tooling:working-without-software-installation.adoc[tooling/pages/working-without-software-installation.adoc]
 * xref:tooling:gitlab/gitlab-guides.adoc[tooling/pages/gitlab/gitlab-guides.adoc]
@@ -286,7 +328,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === guide
 
-* xref:compendium:antora/build-antora-locally.adoc[compendium/pages/antora/build-antora-locally.adoc]
+* xref:compendium:tools/antora/build-antora-locally.adoc[compendium/pages/tools/antora/build-antora-locally.adoc]
 * xref:project-guide:add-new-module.adoc[project-guide/pages/add-new-module.adoc]
 * xref:tooling:docker/docker-guides.adoc[tooling/pages/docker/docker-guides.adoc]
 * xref:tooling:teams_and_sharepoint/teams-and-sharepoint-guides.adoc[tooling/pages/teams_and_sharepoint/teams-and-sharepoint-guides.adoc]
@@ -294,8 +336,8 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === guidelines
 
-* xref:compendium:git/commit-guidelines.adoc[compendium/pages/git/commit-guidelines.adoc]
-* xref:compendium:gitlab/commit-guidelines.adoc[compendium/pages/gitlab/commit-guidelines.adoc]
+* xref:compendium:tools/git/commit-guidelines.adoc[compendium/pages/tools/git/commit-guidelines.adoc]
+* xref:compendium:tools/gitlab/commit-guidelines.adoc[compendium/pages/tools/gitlab/commit-guidelines.adoc]
 
 === guides
 
@@ -305,21 +347,21 @@ Every attribute has its own subsection and contains a link to each page as well 
 === home
 
 * xref:ROOT:home.adoc[ROOT/pages/home.adoc]
-* xref:standardization:home.adoc[standardization/pages/home.adoc]
 
 === how-to
 
-* xref:compendium:gitlab/cloning-a-repository.adoc[compendium/pages/gitlab/cloning-a-repository.adoc]
-* xref:compendium:powershell/cloning-a-repository.adoc[compendium/pages/powershell/cloning-a-repository.adoc]
-* xref:compendium:vscode/cloning-a-repository.adoc[compendium/pages/vscode/cloning-a-repository.adoc]
+* xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
+* xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
+* xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
 
 === ide
 
-* xref:compendium:gitlab/gitlab-ide-guide.adoc[compendium/pages/gitlab/gitlab-ide-guide.adoc]
+* xref:compendium:tools/gitlab/gitlab-ide-guide.adoc[compendium/pages/tools/gitlab/gitlab-ide-guide.adoc]
 
 === ideation
 
 * xref:getting-started:new_here/current-projects.adoc[getting-started/pages/new_here/current-projects.adoc]
+* xref:standardization:project-ideation.adoc[standardization/pages/project-ideation.adoc]
 
 === installation
 
@@ -327,7 +369,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === interface
 
-* xref:compendium:vscode/vscode-interface.adoc[compendium/pages/vscode/vscode-interface.adoc]
+* xref:compendium:tools/vscode/vscode-interface.adoc[compendium/pages/tools/vscode/vscode-interface.adoc]
 
 === introduction
 
@@ -336,7 +378,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === kroki
 
-* xref:compendium:vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/vscode/Adding-Diagrams-To-VSCode.adoc]
+* xref:compendium:tools/vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/tools/vscode/Adding-Diagrams-To-VSCode.adoc]
 
 === landing_page
 
@@ -345,11 +387,12 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:getting-started:main.adoc[getting-started/pages/main.adoc]
 * xref:project-guide:home.adoc[project-guide/pages/home.adoc]
 * xref:role-specific:home.adoc[role-specific/pages/home.adoc]
+* xref:standardization:home.adoc[standardization/pages/home.adoc]
 * xref:tooling:overview.adoc[tooling/pages/overview.adoc]
 
 === link
 
-* xref:compendium:sharepoint/links.adoc[compendium/pages/sharepoint/links.adoc]
+* xref:compendium:tools/sharepoint/links.adoc[compendium/pages/tools/sharepoint/links.adoc]
 
 === link-concept
 
@@ -361,7 +404,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === links
 
-* xref:compendium:sharepoint/links.adoc[compendium/pages/sharepoint/links.adoc]
+* xref:compendium:tools/sharepoint/links.adoc[compendium/pages/tools/sharepoint/links.adoc]
 
 === macro
 
@@ -372,7 +415,6 @@ Every attribute has its own subsection and contains a link to each page as well 
 === main
 
 * xref:ROOT:home.adoc[ROOT/pages/home.adoc]
-* xref:standardization:home.adoc[standardization/pages/home.adoc]
 
 === mandatory
 
@@ -382,17 +424,17 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === meetings
 
-* xref:compendium:teams/meetings-in-teams.adoc[compendium/pages/teams/meetings-in-teams.adoc]
+* xref:compendium:tools/teams/meetings-in-teams.adoc[compendium/pages/tools/teams/meetings-in-teams.adoc]
 
 === merge
 
-* xref:compendium:git/merge-conflicts.adoc[compendium/pages/git/merge-conflicts.adoc]
-* xref:compendium:git/merge-requests.adoc[compendium/pages/git/merge-requests.adoc]
-* xref:compendium:git/merge.adoc[compendium/pages/git/merge.adoc]
+* xref:compendium:tools/git/merge-conflicts.adoc[compendium/pages/tools/git/merge-conflicts.adoc]
+* xref:compendium:tools/git/merge-requests.adoc[compendium/pages/tools/git/merge-requests.adoc]
+* xref:compendium:tools/git/merge.adoc[compendium/pages/tools/git/merge.adoc]
 
 === merge-request
 
-* xref:compendium:git/merge-requests.adoc[compendium/pages/git/merge-requests.adoc]
+* xref:compendium:tools/git/merge-requests.adoc[compendium/pages/tools/git/merge-requests.adoc]
 
 === module
 
@@ -420,16 +462,16 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === notifications
 
-* xref:compendium:teams/email-notifications.adoc[compendium/pages/teams/email-notifications.adoc]
-* xref:compendium:teams/receive-notifications.adoc[compendium/pages/teams/receive-notifications.adoc]
+* xref:compendium:tools/teams/email-notifications.adoc[compendium/pages/tools/teams/email-notifications.adoc]
+* xref:compendium:tools/teams/receive-notifications.adoc[compendium/pages/tools/teams/receive-notifications.adoc]
 
 === onedrive
 
-* xref:compendium:sharepoint/synchronizing-sharepoint-with-onedrive.adoc[compendium/pages/sharepoint/synchronizing-sharepoint-with-onedrive.adoc]
+* xref:compendium:tools/sharepoint/synchronizing-sharepoint-with-onedrive.adoc[compendium/pages/tools/sharepoint/synchronizing-sharepoint-with-onedrive.adoc]
 
 === online
 
-* xref:compendium:gitlab/gitlab-ide-guide.adoc[compendium/pages/gitlab/gitlab-ide-guide.adoc]
+* xref:compendium:tools/gitlab/gitlab-ide-guide.adoc[compendium/pages/tools/gitlab/gitlab-ide-guide.adoc]
 * xref:tooling:working-without-software-installation.adoc[tooling/pages/working-without-software-installation.adoc]
 
 === openx-calendar
@@ -444,7 +486,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === osc2-only
 
-* xref:compendium:git/transitioning-to-a-new-workflow.adoc[compendium/pages/git/transitioning-to-a-new-workflow.adoc]
+* xref:compendium:tools/git/transitioning-to-a-new-workflow.adoc[compendium/pages/tools/git/transitioning-to-a-new-workflow.adoc]
 
 === overview
 
@@ -465,27 +507,30 @@ Every attribute has its own subsection and contains a link to each page as well 
 === phase
 
 * xref:standardization:development-phase.adoc[standardization/pages/development-phase.adoc]
+* xref:standardization:project-ideation.adoc[standardization/pages/project-ideation.adoc]
 * xref:standardization:proposal-phase.adoc[standardization/pages/proposal-phase.adoc]
 * xref:standardization:release-phase.adoc[standardization/pages/release-phase.adoc]
 * xref:standardization:review-phase.adoc[standardization/pages/review-phase.adoc]
 
 === poll
 
-* xref:compendium:teams/polls-and-surveys.adoc[compendium/pages/teams/polls-and-surveys.adoc]
+* xref:compendium:tools/teams/polls-and-surveys.adoc[compendium/pages/tools/teams/polls-and-surveys.adoc]
 
 === polls
 
-* xref:compendium:teams/polls-and-surveys.adoc[compendium/pages/teams/polls-and-surveys.adoc]
+* xref:compendium:tools/teams/polls-and-surveys.adoc[compendium/pages/tools/teams/polls-and-surveys.adoc]
 
 === powershell
 
-* xref:compendium:powershell/cloning-a-repository.adoc[compendium/pages/powershell/cloning-a-repository.adoc]
-* xref:compendium:powershell/run-docker.adoc[compendium/pages/powershell/run-docker.adoc]
+* xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
+* xref:compendium:tools/powershell/run-docker.adoc[compendium/pages/tools/powershell/run-docker.adoc]
 
 === process
 
 * xref:standardization:asam-development-process.adoc[standardization/pages/asam-development-process.adoc]
 * xref:standardization:development-phase.adoc[standardization/pages/development-phase.adoc]
+* xref:standardization:project-ideation.adoc[standardization/pages/project-ideation.adoc]
+* xref:standardization:project-setup.adoc[standardization/pages/project-setup.adoc]
 * xref:standardization:proposal-phase.adoc[standardization/pages/proposal-phase.adoc]
 * xref:standardization:release-phase.adoc[standardization/pages/release-phase.adoc]
 * xref:standardization:review-phase.adoc[standardization/pages/review-phase.adoc]
@@ -504,9 +549,13 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:project-guide:pages-vs-partials.adoc[project-guide/pages/pages-vs-partials.adoc]
 * xref:project-guide:special-macros.adoc[project-guide/pages/special-macros.adoc]
 
+=== project-types
+
+* xref:standardization:project-types.adoc[standardization/pages/project-types.adoc]
+
 === projects
 
-* xref:compendium:sharepoint/links.adoc[compendium/pages/sharepoint/links.adoc]
+* xref:compendium:tools/sharepoint/links.adoc[compendium/pages/tools/sharepoint/links.adoc]
 * xref:getting-started:new_here/current-projects.adoc[getting-started/pages/new_here/current-projects.adoc]
 
 === proposal
@@ -515,11 +564,11 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === pull
 
-* xref:compendium:git/submodules/submodule-pull.adoc[compendium/pages/git/submodules/submodule-pull.adoc]
+* xref:compendium:tools/git/submodules/submodule-pull.adoc[compendium/pages/tools/git/submodules/submodule-pull.adoc]
 
 === rebase
 
-* xref:compendium:git/merge.adoc[compendium/pages/git/merge.adoc]
+* xref:compendium:tools/git/merge.adoc[compendium/pages/tools/git/merge.adoc]
 
 === recommended
 
@@ -535,36 +584,41 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === remote
 
-* xref:compendium:git/submodules/submodules-changing-remote.adoc[compendium/pages/git/submodules/submodules-changing-remote.adoc]
+* xref:compendium:tools/git/submodules/submodules-changing-remote.adoc[compendium/pages/tools/git/submodules/submodules-changing-remote.adoc]
 
 === repo
 
-* xref:compendium:git/maintain-a-repo.adoc[compendium/pages/git/maintain-a-repo.adoc]
-* xref:compendium:gitlab/cloning-a-repository.adoc[compendium/pages/gitlab/cloning-a-repository.adoc]
-* xref:compendium:powershell/cloning-a-repository.adoc[compendium/pages/powershell/cloning-a-repository.adoc]
-* xref:compendium:vscode/cloning-a-repository.adoc[compendium/pages/vscode/cloning-a-repository.adoc]
+* xref:compendium:tools/git/maintain-a-repo.adoc[compendium/pages/tools/git/maintain-a-repo.adoc]
+* xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
+* xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
+* xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
 * xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
 
 === repository
 
-* xref:compendium:git/maintain-a-repo.adoc[compendium/pages/git/maintain-a-repo.adoc]
-* xref:compendium:gitlab/cloning-a-repository.adoc[compendium/pages/gitlab/cloning-a-repository.adoc]
-* xref:compendium:powershell/cloning-a-repository.adoc[compendium/pages/powershell/cloning-a-repository.adoc]
-* xref:compendium:vscode/cloning-a-repository.adoc[compendium/pages/vscode/cloning-a-repository.adoc]
+* xref:compendium:tools/git/maintain-a-repo.adoc[compendium/pages/tools/git/maintain-a-repo.adoc]
+* xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
+* xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
+* xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
 * xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
 
 === review
 
-* xref:compendium:git/merge-requests.adoc[compendium/pages/git/merge-requests.adoc]
-* xref:compendium:git/review-code.adoc[compendium/pages/git/review-code.adoc]
+* xref:compendium:tools/git/merge-requests.adoc[compendium/pages/tools/git/merge-requests.adoc]
+* xref:compendium:tools/git/review-code.adoc[compendium/pages/tools/git/review-code.adoc]
 * xref:standardization:review-phase.adoc[standardization/pages/review-phase.adoc]
 
 === role
 
+* xref:compendium:roles/standard-expert-group.adoc[compendium/pages/roles/standard-expert-group.adoc]
+* xref:compendium:roles/standard-manager.adoc[compendium/pages/roles/standard-manager.adoc]
+* xref:compendium:roles/standard-user.adoc[compendium/pages/roles/standard-user.adoc]
+* xref:compendium:roles/tsc.adoc[compendium/pages/roles/tsc.adoc]
 * xref:role-specific:gtm.adoc[role-specific/pages/gtm.adoc]
 * xref:role-specific:project-lead.adoc[role-specific/pages/project-lead.adoc]
 * xref:role-specific:reviewer.adoc[role-specific/pages/reviewer.adoc]
 * xref:role-specific:service-provider.adoc[role-specific/pages/service-provider.adoc]
+* xref:role-specific:standard-manager.adoc[role-specific/pages/standard-manager.adoc]
 * xref:role-specific:standard-user.adoc[role-specific/pages/standard-user.adoc]
 * xref:role-specific:technical-writer.adoc[role-specific/pages/technical-writer.adoc]
 * xref:role-specific:wg-member.adoc[role-specific/pages/wg-member.adoc]
@@ -575,6 +629,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:role-specific:project-lead.adoc[role-specific/pages/project-lead.adoc]
 * xref:role-specific:reviewer.adoc[role-specific/pages/reviewer.adoc]
 * xref:role-specific:service-provider.adoc[role-specific/pages/service-provider.adoc]
+* xref:role-specific:standard-manager.adoc[role-specific/pages/standard-manager.adoc]
 * xref:role-specific:standard-user.adoc[role-specific/pages/standard-user.adoc]
 * xref:role-specific:technical-writer.adoc[role-specific/pages/technical-writer.adoc]
 * xref:role-specific:wg-member.adoc[role-specific/pages/wg-member.adoc]
@@ -591,10 +646,11 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === settings
 
-* xref:compendium:vscode/recommended-vscode-settings.adoc[compendium/pages/vscode/recommended-vscode-settings.adoc]
+* xref:compendium:tools/vscode/recommended-vscode-settings.adoc[compendium/pages/tools/vscode/recommended-vscode-settings.adoc]
 
 === setup
 
+* xref:standardization:project-setup.adoc[standardization/pages/project-setup.adoc]
 * xref:tooling:calendar/calendar-setup.adoc[tooling/pages/calendar/calendar-setup.adoc]
 * xref:tooling:docker/docker-setup.adoc[tooling/pages/docker/docker-setup.adoc]
 * xref:tooling:drawio/drawio-setup.adoc[tooling/pages/drawio/drawio-setup.adoc]
@@ -605,8 +661,8 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === sharepoint
 
-* xref:compendium:sharepoint/links.adoc[compendium/pages/sharepoint/links.adoc]
-* xref:compendium:sharepoint/synchronizing-sharepoint-with-onedrive.adoc[compendium/pages/sharepoint/synchronizing-sharepoint-with-onedrive.adoc]
+* xref:compendium:tools/sharepoint/links.adoc[compendium/pages/tools/sharepoint/links.adoc]
+* xref:compendium:tools/sharepoint/synchronizing-sharepoint-with-onedrive.adoc[compendium/pages/tools/sharepoint/synchronizing-sharepoint-with-onedrive.adoc]
 * xref:tooling:teams-and-sharepoint.adoc[tooling/pages/teams-and-sharepoint.adoc]
 * xref:tooling:teams_and_sharepoint/teams-and-sharepoint-guides.adoc[tooling/pages/teams_and_sharepoint/teams-and-sharepoint-guides.adoc]
 * xref:tooling:teams_and_sharepoint/teams-and-sharepoint-setup.adoc[tooling/pages/teams_and_sharepoint/teams-and-sharepoint-setup.adoc]
@@ -617,14 +673,23 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === squash
 
-* xref:compendium:git/merge.adoc[compendium/pages/git/merge.adoc]
+* xref:compendium:tools/git/merge.adoc[compendium/pages/tools/git/merge.adoc]
 
 === standard
 
+* xref:standardization:creation-of-standards.adoc[standardization/pages/creation-of-standards.adoc]
 * xref:standardization:development-phase.adoc[standardization/pages/development-phase.adoc]
+* xref:standardization:project-ideation.adoc[standardization/pages/project-ideation.adoc]
+* xref:standardization:project-setup.adoc[standardization/pages/project-setup.adoc]
 * xref:standardization:proposal-phase.adoc[standardization/pages/proposal-phase.adoc]
 * xref:standardization:release-phase.adoc[standardization/pages/release-phase.adoc]
 * xref:standardization:review-phase.adoc[standardization/pages/review-phase.adoc]
+
+=== standardization
+
+* xref:standardization:home.adoc[standardization/pages/home.adoc]
+* xref:standardization:issue-resolution.adoc[standardization/pages/issue-resolution.adoc]
+* xref:standardization:project-types.adoc[standardization/pages/project-types.adoc]
 
 === standards
 
@@ -633,7 +698,6 @@ Every attribute has its own subsection and contains a link to each page as well 
 === start
 
 * xref:ROOT:home.adoc[ROOT/pages/home.adoc]
-* xref:standardization:home.adoc[standardization/pages/home.adoc]
 
 === structure
 
@@ -643,11 +707,11 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === submodule
 
-* xref:compendium:git/submodules.adoc[compendium/pages/git/submodules.adoc]
-* xref:compendium:git/submodules/submodule-pull.adoc[compendium/pages/git/submodules/submodule-pull.adoc]
-* xref:compendium:git/submodules/submodules-add.adoc[compendium/pages/git/submodules/submodules-add.adoc]
-* xref:compendium:git/submodules/submodules-changing-remote.adoc[compendium/pages/git/submodules/submodules-changing-remote.adoc]
-* xref:compendium:git/submodules/submodules-switch-version.adoc[compendium/pages/git/submodules/submodules-switch-version.adoc]
+* xref:compendium:tools/git/submodules.adoc[compendium/pages/tools/git/submodules.adoc]
+* xref:compendium:tools/git/submodules/submodule-pull.adoc[compendium/pages/tools/git/submodules/submodule-pull.adoc]
+* xref:compendium:tools/git/submodules/submodules-add.adoc[compendium/pages/tools/git/submodules/submodules-add.adoc]
+* xref:compendium:tools/git/submodules/submodules-changing-remote.adoc[compendium/pages/tools/git/submodules/submodules-changing-remote.adoc]
+* xref:compendium:tools/git/submodules/submodules-switch-version.adoc[compendium/pages/tools/git/submodules/submodules-switch-version.adoc]
 
 === summarize
 
@@ -667,23 +731,23 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === survey
 
-* xref:compendium:teams/polls-and-surveys.adoc[compendium/pages/teams/polls-and-surveys.adoc]
+* xref:compendium:tools/teams/polls-and-surveys.adoc[compendium/pages/tools/teams/polls-and-surveys.adoc]
 
 === surveys
 
-* xref:compendium:teams/polls-and-surveys.adoc[compendium/pages/teams/polls-and-surveys.adoc]
+* xref:compendium:tools/teams/polls-and-surveys.adoc[compendium/pages/tools/teams/polls-and-surveys.adoc]
 
 === switch
 
-* xref:compendium:git/submodules/submodules-switch-version.adoc[compendium/pages/git/submodules/submodules-switch-version.adoc]
+* xref:compendium:tools/git/submodules/submodules-switch-version.adoc[compendium/pages/tools/git/submodules/submodules-switch-version.adoc]
 
 === synch
 
-* xref:compendium:sharepoint/synchronizing-sharepoint-with-onedrive.adoc[compendium/pages/sharepoint/synchronizing-sharepoint-with-onedrive.adoc]
+* xref:compendium:tools/sharepoint/synchronizing-sharepoint-with-onedrive.adoc[compendium/pages/tools/sharepoint/synchronizing-sharepoint-with-onedrive.adoc]
 
 === synchronization
 
-* xref:compendium:sharepoint/synchronizing-sharepoint-with-onedrive.adoc[compendium/pages/sharepoint/synchronizing-sharepoint-with-onedrive.adoc]
+* xref:compendium:tools/sharepoint/synchronizing-sharepoint-with-onedrive.adoc[compendium/pages/tools/sharepoint/synchronizing-sharepoint-with-onedrive.adoc]
 
 === task
 
@@ -696,26 +760,31 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === teams
 
-* xref:compendium:teams/email-notifications.adoc[compendium/pages/teams/email-notifications.adoc]
-* xref:compendium:teams/meetings-in-teams.adoc[compendium/pages/teams/meetings-in-teams.adoc]
-* xref:compendium:teams/obtain-channel-email.adoc[compendium/pages/teams/obtain-channel-email.adoc]
-* xref:compendium:teams/polls-and-surveys.adoc[compendium/pages/teams/polls-and-surveys.adoc]
-* xref:compendium:teams/receive-notifications.adoc[compendium/pages/teams/receive-notifications.adoc]
-* xref:compendium:teams/teams-channel-file-structure.adoc[compendium/pages/teams/teams-channel-file-structure.adoc]
+* xref:compendium:tools/teams/email-notifications.adoc[compendium/pages/tools/teams/email-notifications.adoc]
+* xref:compendium:tools/teams/meetings-in-teams.adoc[compendium/pages/tools/teams/meetings-in-teams.adoc]
+* xref:compendium:tools/teams/obtain-channel-email.adoc[compendium/pages/tools/teams/obtain-channel-email.adoc]
+* xref:compendium:tools/teams/polls-and-surveys.adoc[compendium/pages/tools/teams/polls-and-surveys.adoc]
+* xref:compendium:tools/teams/receive-notifications.adoc[compendium/pages/tools/teams/receive-notifications.adoc]
+* xref:compendium:tools/teams/teams-channel-file-structure.adoc[compendium/pages/tools/teams/teams-channel-file-structure.adoc]
 * xref:tooling:teams-and-sharepoint.adoc[tooling/pages/teams-and-sharepoint.adoc]
 * xref:tooling:teams_and_sharepoint/teams-and-sharepoint-guides.adoc[tooling/pages/teams_and_sharepoint/teams-and-sharepoint-guides.adoc]
 * xref:tooling:teams_and_sharepoint/teams-and-sharepoint-setup.adoc[tooling/pages/teams_and_sharepoint/teams-and-sharepoint-setup.adoc]
 
+=== template
+
+* xref:compendium:templates/cover-page.adoc[compendium/pages/templates/cover-page.adoc]
+* xref:compendium:templates/directories.adoc[compendium/pages/templates/directories.adoc]
+
 === term
 
-* xref:compendium:docker/wsl.adoc[compendium/pages/docker/wsl.adoc]
-* xref:compendium:git/git-terminology.adoc[compendium/pages/git/git-terminology.adoc]
+* xref:compendium:tools/docker/wsl.adoc[compendium/pages/tools/docker/wsl.adoc]
+* xref:compendium:tools/git/git-terminology.adoc[compendium/pages/tools/git/git-terminology.adoc]
 
 === terminology
 
-* xref:compendium:docker/wsl.adoc[compendium/pages/docker/wsl.adoc]
-* xref:compendium:git/git-terminology.adoc[compendium/pages/git/git-terminology.adoc]
-* xref:compendium:gitlab/gitlab-terminology.adoc[compendium/pages/gitlab/gitlab-terminology.adoc]
+* xref:compendium:tools/docker/wsl.adoc[compendium/pages/tools/docker/wsl.adoc]
+* xref:compendium:tools/git/git-terminology.adoc[compendium/pages/tools/git/git-terminology.adoc]
+* xref:compendium:tools/gitlab/gitlab-terminology.adoc[compendium/pages/tools/gitlab/gitlab-terminology.adoc]
 
 === tool
 
@@ -738,28 +807,28 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === tutorial
 
-* xref:compendium:git/cloning-repo-tutorial.adoc[compendium/pages/git/cloning-repo-tutorial.adoc]
+* xref:compendium:tools/git/cloning-repo-tutorial.adoc[compendium/pages/tools/git/cloning-repo-tutorial.adoc]
 
 === ui
 
-* xref:compendium:vscode/vscode-activity-bar.adoc[compendium/pages/vscode/vscode-activity-bar.adoc]
-* xref:compendium:vscode/vscode-interface.adoc[compendium/pages/vscode/vscode-interface.adoc]
+* xref:compendium:tools/vscode/vscode-activity-bar.adoc[compendium/pages/tools/vscode/vscode-activity-bar.adoc]
+* xref:compendium:tools/vscode/vscode-interface.adoc[compendium/pages/tools/vscode/vscode-interface.adoc]
 
 === version
 
-* xref:compendium:git/submodules/submodules-switch-version.adoc[compendium/pages/git/submodules/submodules-switch-version.adoc]
+* xref:compendium:tools/git/submodules/submodules-switch-version.adoc[compendium/pages/tools/git/submodules/submodules-switch-version.adoc]
 
 === vscode
 
-* xref:compendium:gitlab/cloning-a-repository.adoc[compendium/pages/gitlab/cloning-a-repository.adoc]
-* xref:compendium:vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/vscode/Adding-Diagrams-To-VSCode.adoc]
-* xref:compendium:vscode/cloning-a-repository.adoc[compendium/pages/vscode/cloning-a-repository.adoc]
-* xref:compendium:vscode/recommended-vscode-extensions.adoc[compendium/pages/vscode/recommended-vscode-extensions.adoc]
-* xref:compendium:vscode/recommended-vscode-settings.adoc[compendium/pages/vscode/recommended-vscode-settings.adoc]
-* xref:compendium:vscode/run-docker.adoc[compendium/pages/vscode/run-docker.adoc]
-* xref:compendium:vscode/vscode-activity-bar.adoc[compendium/pages/vscode/vscode-activity-bar.adoc]
-* xref:compendium:vscode/vscode-install-extension.adoc[compendium/pages/vscode/vscode-install-extension.adoc]
-* xref:compendium:vscode/vscode-interface.adoc[compendium/pages/vscode/vscode-interface.adoc]
+* xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
+* xref:compendium:tools/vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/tools/vscode/Adding-Diagrams-To-VSCode.adoc]
+* xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
+* xref:compendium:tools/vscode/recommended-vscode-extensions.adoc[compendium/pages/tools/vscode/recommended-vscode-extensions.adoc]
+* xref:compendium:tools/vscode/recommended-vscode-settings.adoc[compendium/pages/tools/vscode/recommended-vscode-settings.adoc]
+* xref:compendium:tools/vscode/run-docker.adoc[compendium/pages/tools/vscode/run-docker.adoc]
+* xref:compendium:tools/vscode/vscode-activity-bar.adoc[compendium/pages/tools/vscode/vscode-activity-bar.adoc]
+* xref:compendium:tools/vscode/vscode-install-extension.adoc[compendium/pages/tools/vscode/vscode-install-extension.adoc]
+* xref:compendium:tools/vscode/vscode-interface.adoc[compendium/pages/tools/vscode/vscode-interface.adoc]
 * xref:tooling:vscode.adoc[tooling/pages/vscode.adoc]
 * xref:tooling:vscode/vscode-guides.adoc[tooling/pages/vscode/vscode-guides.adoc]
 * xref:tooling:vscode/vscode-setup.adoc[tooling/pages/vscode/vscode-setup.adoc]
@@ -772,30 +841,26 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 * xref:getting-started:new-here.adoc[getting-started/pages/new-here.adoc]
 
-=== wiki
-
-* xref:standardization:home.adoc[standardization/pages/home.adoc]
-
 === workflows
 
 * xref:getting-started:new_here/processes-and-workflows-overview.adoc[getting-started/pages/new_here/processes-and-workflows-overview.adoc]
 
 === worklfow
 
-* xref:compendium:git/working-with-git.adoc[compendium/pages/git/working-with-git.adoc]
+* xref:compendium:tools/git/working-with-git.adoc[compendium/pages/tools/git/working-with-git.adoc]
 
 === wsl
 
-* xref:compendium:docker/wsl.adoc[compendium/pages/docker/wsl.adoc]
+* xref:compendium:tools/docker/wsl.adoc[compendium/pages/tools/docker/wsl.adoc]
 
 === yaml
 
-* xref:compendium:docker/standard-docker-config.adoc[compendium/pages/docker/standard-docker-config.adoc]
 * xref:compendium:guides/WhatIsYaml.adoc[compendium/pages/guides/WhatIsYaml.adoc]
+* xref:compendium:tools/docker/standard-docker-config.adoc[compendium/pages/tools/docker/standard-docker-config.adoc]
 
 === yml
 
-* xref:compendium:docker/standard-docker-config.adoc[compendium/pages/docker/standard-docker-config.adoc]
 * xref:compendium:guides/WhatIsYaml.adoc[compendium/pages/guides/WhatIsYaml.adoc]
+* xref:compendium:tools/docker/standard-docker-config.adoc[compendium/pages/tools/docker/standard-docker-config.adoc]
 
 related::structure[]

@@ -7,10 +7,10 @@ include::partial$_attributes.adoc[]
 
 {git-icon}
 
-include::compendium:page$git/git-terminology.adoc[{offset-value}]
+include::compendium:page$tools/git/git-terminology.adoc[{offset-value}]
 
-include::compendium:page$git/git-actions.adoc[{offset-value}]
+include::compendium:page$tools/git/git-actions.adoc[{offset-value}]
 
-include::compendium:page$git/working-with-git.adoc[{offset-value}]
+include::compendium:page$tools/git/working-with-git.adoc[{offset-value}]
 
-include::compendium:page$git/cloning-repo-tutorial.adoc[{offset-value}]
+include::compendium:page$tools/git/cloning-repo-tutorial.adoc[{offset-value}]

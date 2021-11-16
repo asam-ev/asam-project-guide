@@ -2,4 +2,9 @@
 :description: The landing page for the ASAM Roles
 :keywords: landing_page,roles,asam
 
+include::partial$_attributes.adoc[]
+include::ROOT:partial$_attributes.adoc[]
+
+{role-specific-icon}
+
 TODO

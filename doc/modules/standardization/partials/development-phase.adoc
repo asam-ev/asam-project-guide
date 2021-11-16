@@ -53,7 +53,7 @@ This specifically means:
 - review the work of other authors
 
 The project leader is the elected manager and representative of the project group.
-He has the following tasks:
+They have the following tasks:
 
 - invite members to the next meeting(s)
 - determine the meeting agenda
@@ -66,8 +66,8 @@ He has the following tasks:
 - collect measures regarding project status and report the project status to the TSC
 
 The project leader can delegate some of the tasks to project members or service providers.
-However, he cannot delegate responsibilities.
-He remains the responsible person for each task listed above.
+However, they cannot delegate responsibilities.
+They remain the responsible person for each task listed above.
 
 Each meeting has a host.
 Typically, meetings are hosted by a different project group mem-ber at each meeting.
@@ -102,7 +102,7 @@ A decision is made by absolute majority.
 
 New companies may join the group after the beginning of the development phase.
 Requests for new admissions are directed to the project leader.
-He brings the request into the next group meeting.
+They bring the request into the next group meeting.
 New admissions are accepted by absolute majority of the group members.
 Admission of new member companies shall be an exception and shall be handled with more restraint the more the project has advanced.
 

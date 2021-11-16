@@ -34,8 +34,8 @@ The submitter shall send out the proposal to all participants of the Proposal Wo
 
 //tag::short[]
 The proposal author prepares the project proposal.
-He considers input of the preceeding proposal workshop (if available).
-He defines which content shall be included in the standard, creates a project plan and estimates work efforts and a (optional) budget.
-He must also find a minimum of three companies (including his own), who commit work resources to the project.
+They consider input of the preceeding proposal workshop (if available).
+They define which content shall be included in the standard, creates a project plan and estimates work efforts and a (optional) budget.
+They must also find a minimum of three companies (including his own), who commit work resources to the project.
 The ASAM office supports the proposal author.
 //end::short[]

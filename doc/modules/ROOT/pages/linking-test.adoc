@@ -9,6 +9,7 @@
 
 {role-service-provider}
 {role-standard-user}
+{role-standard-manager}
 
 My standard body text.
 

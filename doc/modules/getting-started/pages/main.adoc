@@ -2,6 +2,11 @@
 :description: Introduction page for the project guide. Links to all information in the introduction section.
 :keywords: introduction, landing_page
 
+include::partial$_attributes.adoc[]
+include::ROOT:partial$_attributes.adoc[]
+
+{getting-started-icon}
+
 > Nobody is born an expert.
 
 Everyone needs to start somewhere.

@@ -45,11 +45,6 @@ def main(argv):
                     if asciidoc_file.has_module():
                         attributes = asciidoc_file.find_attributes()
                         roles = asciidoc_file.find_roles()
-                        if filename == "linking-test.adoc":
-                            print(filename)
-                            print("roles",roles)
-                            print("roles_dict",asciidoc_file.roles_dict)
-
                         found_files.append(asciidoc_file)
 
     attributes_file = found_files[0].write_attributes_to_file()
@@ -60,10 +55,6 @@ def main(argv):
         macro_found = afile.find_reference_macro()
         macro_found = afile.find_related_topics_macro()
         macro_found = afile.find_role_related_topics_macro()
-
-
-    print("role_related_topics_macro_occurence_list",found_files[0].role_related_topics_macro_occurence_list)
-    print("roles_dict",found_files[0].roles_dict)
 
     for afile in found_files:
         if afile in found_files[0].reference_macro_occurence_list:
@@ -79,7 +70,7 @@ def main(argv):
         afile.revert_macro_substitution()
         afile.write_to_file(filename=afile.filename+"1")
 
-    print("Create linking concept graph")
+    print("CREATE LINKING CONCEPT DOCUMENTS")
     found_files[0].create_linking_concept()
 
 
@@ -198,7 +189,6 @@ class AsciiDocContent:
         return attr
 
     def find_roles(self):
-        # TODO: TEST
         roles = []
         for line in self.content:
             result = self.pattern_roles.findall(line)

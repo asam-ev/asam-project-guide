@@ -1,14 +1,38 @@
-import os
+import os,sys,getopt
 
-def main():
-    asam_macro_replacement()
-    nav_adoc_creation()
-    run_docker_compose()
-    cleanup()
-    open_project_guide()
-    print("BUILD DONE")
-    os.chdir("../scripts")
+def main(argv):
+    parameters="sf"
+    parameters_long = ["start","finish"]
 
+    do_start = False
+    do_finish = False
+
+    try:
+        opts, args = getopt.getopt(argv,parameters,parameters_long)
+    except:
+        print("Use '-p <path>' or '--path <path>' to specifiy the path the script shall look into.")
+
+    for opt,arg in opts:
+        if opt in ("-s","--start"):
+            do_start = True
+
+        elif opt in ("-f","--finish"):
+            do_finish = True
+            do_clean = True
+
+    if not (do_start or do_finish):
+        do_start = do_finish  = True
+
+
+    if do_start:
+        asam_macro_replacement()
+        nav_adoc_creation()
+        run_docker_compose()
+
+    if do_finish:
+        cleanup()
+        open_project_guide()
+        print("BUILD DONE")
 
 def asam_macro_replacement():
     print("CREATE REFERENCES BY ATTRIBUTES")
@@ -56,4 +80,4 @@ def open_project_guide():
     os.system("start chrome {pos}".format(pos = os.getcwd()+"/index.html"))
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

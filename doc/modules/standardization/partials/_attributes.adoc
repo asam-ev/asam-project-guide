@@ -1,3 +1,4 @@
+
 :development-process: xref:asam-development-process.adoc[The ASAM Development Process]
 :ideation-phase: xref:project-ideation.adoc[The Ideation Phase]
 :proposal-phase: xref:proposal-phase.adoc[The Proposal Phase]
@@ -6,3 +7,4 @@
 :review-phase: xref:review-phase.adoc[The Review Phase]
 :release-phase: xref:release-phase.adoc[The Release Phase]
 :project-types: xref:project-types.adoc[Project Types]
+:creation-of-standards: xref:cration-of-standards.adoc[Creation Of Standards]

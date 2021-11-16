@@ -1,0 +1,14 @@
+= Standard Manager
+:description: Summary and landing page for standad manager.
+:keywords: role, role-landing-page
+
+include::partial$_attributes.adoc[]
+
+[horizontal,role=right]
+Label:: {role-standard-manager}
+
+TODO: Description
+
+role_related::standard-manager[]
+
+related::role-landing-page,role[]

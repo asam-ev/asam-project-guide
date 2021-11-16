@@ -1,0 +1,56 @@
+= Creation Of Standards
+:description: Summarizes how standards are created at ASAM.
+:keywords: standard
+:level: leveloffset=+1
+:sublevel: leveloffset=+2,tag=!related
+
+include::partial$_attributes.adoc[]
+
+This section describes the structure of standards documents and the types of standards that are produced in projects.
+
+== Classification Of Standards
+
+There are two types of standards: <<Base Standard,Base standards>> and <<Associated Standard,associated standards>>.
+
+Standards can consist of several parts.
+These parts are independent (e.g., <<Technology Reference,technology references>>) and must each individually comply with the <<Structure Of Standards,basic document structure for ASAM standards>>.
+
+include::compendium:page$definitions/base-standard.adoc[{sublevel}]
+
+include::compendium:page$definitions/associated-standard.adoc[{sublevel}]
+
+== Content Characterization
+The content characterization indicates the type of the part of the standard. These are:
+
+* <<Format Description>>
+* <<Application Programming Interface,API>>
+* <<Protocol Definitions>>
+* <<Technology Reference>>
+* <<Application Area Companion>>
+* <<Transport Layer Specification>>.
+
+include::compendium:partial$set-of-standards.adoc[]
+
+include::compendium:page$definitions/format-description.adoc[{sublevel}]
+
+include::compendium:page$definitions/api.adoc[{sublevel}]
+
+include::compendium:page$definitions/protocol-definition.adoc[{sublevel}]
+
+include::compendium:page$definitions/technology-reference.adoc[{sublevel}]
+
+include::compendium:page$definitions/application-area-companion.adoc[{sublevel}]
+
+include::compendium:page$definitions/transport-layer-specification.adoc[{sublevel}]
+
+== Structure Of Standards
+ASAM e.V. provides a template for creating an ASAM specification, including a description of use and illustrated by examples.
+The style sheet defines an identical look & feel for all ASAM standards.
+The main definitions are for the headers and footers, and for the cover page and directories.
+Rules for designing graphics, tables, source text, headings, etc. are included.
+
+include::compendium:page$templates/cover-page.adoc[{sublevel}]
+
+include::compendium:page$definitions/status-of-document.adoc[{sublevel}]
+
+include::compendium:page$templates/directories.adoc[{sublevel}]

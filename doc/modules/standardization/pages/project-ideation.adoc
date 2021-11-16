@@ -1,0 +1,11 @@
+= The Project Ideation Phase
+:description: Describes the ideation process for a new project.
+:keywords: ideation,phase,standard,process
+
+include::partial$_attributes.adoc[]
+
+The convergence of the automotive markets with new trends in digitation, autonomous driving, alternative propulsion, and vehicle as a service as enabled by new IT business models provides many new technical concepts that can be standardized in ASAM.
+
+
+ASAM has launched this ideation platform to address topics and challenges that may benefit from standardization, and to get a feeling for their market relevance.
+We invite you to send us your ideas, share your expertise, and address your requirements.

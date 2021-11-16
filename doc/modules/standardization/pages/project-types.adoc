@@ -1,4 +1,13 @@
 = Project Types
+:description: Summary of all project types at ASAM.
+:keywords: project-types,standardization
+
+include::partial$_attributes.adoc[]
+
+ASAM distinguishes between two types of development:keywords:
+
+* <<Standard Development>>
+* <<Other Project Types>>
 
 == Standard Development
 
@@ -19,7 +28,7 @@ include::partial$project-type-minor.adoc[tag=long]
 include::partial$project-type-revision.adoc[tag=long]
 
 
-== Other Project types
+== Other Project Types
 
 === Concept Project
 
