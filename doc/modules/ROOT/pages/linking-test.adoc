@@ -1,5 +1,15 @@
 = Linking Test
 
+{role-reviewer}
+{role-wg-member}
+{role-technical-writer}
+
+{role-project-lead}
+{role-gtm}
+
+{role-service-provider}
+{role-standard-user}
+
 My standard body text.
 
 

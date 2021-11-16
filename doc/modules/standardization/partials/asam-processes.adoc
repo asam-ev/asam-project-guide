@@ -1,0 +1,17 @@
+
+//tag::short[]
+* I: Ideation Phase
+* P: Proposal Phase
+* D: Development Phase
+* C: Review Phase
+* R: Release Phase
+//end::short[]
+
+//tag::enumerated[]
+[horizontal]
+Phase 1:: {ideation-phase}
+Phase 2:: {proposal-phase}
+Phase 3:: {development-phase}
+Phase 4:: {review-phase}
+Phase 5:: {release-phase}
+//end::enumerated[]
