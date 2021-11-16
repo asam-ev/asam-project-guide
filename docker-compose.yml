@@ -4,7 +4,7 @@ services:
 
   custom-lunr:
     build:
-      context: doc\modules\ROOT\assets\attachments\.
+      context: doc\modules\compendium\assets\attachments\.
       dockerfile: DOCKERFILE.custom
     volumes:
       - .:/antora
