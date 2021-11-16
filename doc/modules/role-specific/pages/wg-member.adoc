@@ -1,0 +1,14 @@
+= Working Group Member
+:description: Summary and landing page for wg members.
+:keywords: role, role-landing-page
+
+include::partial$_attributes.adoc[]
+
+[horizontal,role=right]
+Label:: {role-wg-member}
+
+TODO: Description
+
+role_related::wg-member[]
+
+related::role-landing-page,role[]

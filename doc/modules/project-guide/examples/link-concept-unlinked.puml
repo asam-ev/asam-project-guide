@@ -93,12 +93,6 @@ rectangle "macros/macro-related.adoc" as f3_16
 }
 package role-specific #ff50ff {
 rectangle "nav.adoc" as f4_1
-rectangle "gtm.adoc" as f4_3
-rectangle "project-lead.adoc" as f4_5
-rectangle "reviewer.adoc" as f4_6
-rectangle "service-provider.adoc" as f4_7
-rectangle "standard-user.adoc" as f4_8
-rectangle "wg-member.adoc" as f4_10
 }
 package ROOT #5050d0 {
 rectangle "1nav.adoc" as f5_1

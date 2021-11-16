@@ -561,11 +561,23 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === role
 
+* xref:role-specific:gtm.adoc[role-specific/pages/gtm.adoc]
+* xref:role-specific:project-lead.adoc[role-specific/pages/project-lead.adoc]
+* xref:role-specific:reviewer.adoc[role-specific/pages/reviewer.adoc]
+* xref:role-specific:service-provider.adoc[role-specific/pages/service-provider.adoc]
+* xref:role-specific:standard-user.adoc[role-specific/pages/standard-user.adoc]
 * xref:role-specific:technical-writer.adoc[role-specific/pages/technical-writer.adoc]
+* xref:role-specific:wg-member.adoc[role-specific/pages/wg-member.adoc]
 
 === role-landing-page
 
+* xref:role-specific:gtm.adoc[role-specific/pages/gtm.adoc]
+* xref:role-specific:project-lead.adoc[role-specific/pages/project-lead.adoc]
+* xref:role-specific:reviewer.adoc[role-specific/pages/reviewer.adoc]
+* xref:role-specific:service-provider.adoc[role-specific/pages/service-provider.adoc]
+* xref:role-specific:standard-user.adoc[role-specific/pages/standard-user.adoc]
 * xref:role-specific:technical-writer.adoc[role-specific/pages/technical-writer.adoc]
+* xref:role-specific:wg-member.adoc[role-specific/pages/wg-member.adoc]
 
 === roles
 
@@ -693,10 +705,6 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:tooling:teams-and-sharepoint.adoc[tooling/pages/teams-and-sharepoint.adoc]
 * xref:tooling:teams_and_sharepoint/teams-and-sharepoint-guides.adoc[tooling/pages/teams_and_sharepoint/teams-and-sharepoint-guides.adoc]
 * xref:tooling:teams_and_sharepoint/teams-and-sharepoint-setup.adoc[tooling/pages/teams_and_sharepoint/teams-and-sharepoint-setup.adoc]
-
-=== technical-writer
-
-* xref:role-specific:technical-writer.adoc[role-specific/pages/technical-writer.adoc]
 
 === term
 

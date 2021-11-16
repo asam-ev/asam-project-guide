@@ -1,0 +1,14 @@
+= Standard User
+:description: Summary and landing page for standad users.
+:keywords: role, role-landing-page
+
+include::partial$_attributes.adoc[]
+
+[horizontal,role=right]
+Label:: {role-standard-user}
+
+TODO: Description
+
+role_related::standard-user[]
+
+related::role-landing-page,role[]

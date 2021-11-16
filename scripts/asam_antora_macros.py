@@ -44,6 +44,12 @@ def main(argv):
                     asciidoc_file = AsciiDocContent(dirpath,filename)
                     if asciidoc_file.has_module():
                         attributes = asciidoc_file.find_attributes()
+                        roles = asciidoc_file.find_roles()
+                        if filename == "linking-test.adoc":
+                            print(filename)
+                            print("roles",roles)
+                            print("roles_dict",asciidoc_file.roles_dict)
+
                         found_files.append(asciidoc_file)
 
     attributes_file = found_files[0].write_attributes_to_file()
@@ -53,6 +59,11 @@ def main(argv):
     for afile in found_files:
         macro_found = afile.find_reference_macro()
         macro_found = afile.find_related_topics_macro()
+        macro_found = afile.find_role_related_topics_macro()
+
+
+    print("role_related_topics_macro_occurence_list",found_files[0].role_related_topics_macro_occurence_list)
+    print("roles_dict",found_files[0].roles_dict)
 
     for afile in found_files:
         if afile in found_files[0].reference_macro_occurence_list:
@@ -60,6 +71,9 @@ def main(argv):
 
         if afile in found_files[0].related_topics_macro_occurence_list:
             afile.find_related_topics_macro(find_and_replace=True)
+
+        if afile in found_files[0].role_related_topics_macro_occurence_list:
+            afile.find_role_related_topics_macro(find_and_replace=True)
 
         afile.write_to_file()
         afile.revert_macro_substitution()
@@ -71,9 +85,11 @@ def main(argv):
 
 
 class AsciiDocContent:
-    attributes_dict = {}
+    attr_dict = {}
+    roles_dict = {}
     reference_macro_occurence_list = []
     related_topics_macro_occurence_list = []
+    role_related_topics_macro_occurence_list = []
     include_by_keyword_macro_occurence_list = []
     xref_occurence_dict = {}
     link_occurence_dict = {}
@@ -81,26 +97,46 @@ class AsciiDocContent:
     local_xref_occurence_dict = {}
     adoc_files = []
 
+    pattern_attr = ""
+    pattern_roles = ""
+    pattern_ref = ""
+    pattern_role_reltop = ""
+    pattern_reltop = ""
+    # pattern_xref_macro: (2) = module; (3) = path/filename; (5) = id
+    pattern_xref_macro = ""
+    # pattern_link_macro: (1) = url (via link); (4): url (direct)
+    pattern_link_macro = ""
+    # pattern_local_xref_macro: (1) = local reference; (3) = display text
+    pattern_local_xref_macro = ""
+
     def __init__(self, path, filename):
         content = []
         with open(path+filename,"r") as file:
             content = file.readlines()
 
+        if not self.pattern_attr:
+            self.pattern_attr = re.compile("^\s*:keywords:(.*)")
 
-        self.pattern_attr = re.compile("^\s*:keywords:(.*)")
+        if not self.pattern_roles:
+            self.pattern_roles = re.compile("{role-([^}]*)}")
 
-        self.pattern_ref = re.compile("reference::(.*)\[(.*)\]\n?")
+        if not self.pattern_ref:
+            self.pattern_ref = re.compile("^\s*reference::(.*)\[(.*)\]\n?")
 
-        self.pattern_reltop = re.compile("related::(.*)\[(.*)\]\n?")
+        if not self.pattern_role_reltop:
+            self.pattern_role_reltop = re.compile("^\s*role_related::(.*)\[(.*)\]\n?")
 
-        # pattern_xref_macro: (2) = module; (3) = path/filename; (5) = id
-        self.pattern_xref_macro = re.compile("xref:{1,2}(([^\s:\[]*):)?([^#\n\[]*)(#([^\[]*))?\[.*\]")
+        if not self.pattern_reltop:
+            self.pattern_reltop = re.compile("^\s*related::(.*)\[(.*)\]\n?")
 
-        # pattern_link_macro: (1) = url (via link); (4): url (direct)
-        self.pattern_link_macro = re.compile("link:{1,2}(http[^#\n\[]*)(#([^\[]*))?\[.*\]|(http[^\[]*)(#([^\[]*))?\[.*\]")
+        if not self.pattern_xref_macro:
+            self.pattern_xref_macro = re.compile("xref:{1,2}(([^\s:\[]*):)?([^#\n\[]*)(#([^\[]*))?\[.*\]")
 
-        # pattern_local_xref_macro: (1) = local reference; (3) = display text
-        self.pattern_local_xref_macro = re.compile("<<{1,2}([^#\n\,]*)(,[^>]*)?>>")
+        if not self.pattern_link_macro:
+            self.pattern_link_macro = re.compile("link:{1,2}(http[^#\n\[]*)(#([^\[]*))?\[.*\]|(http[^\[]*)(#([^\[]*))?\[.*\]")
+
+        if not self.pattern_local_xref_macro:
+            self.pattern_local_xref_macro = re.compile("<<{1,2}([^#\n\,]*)(,[^>]*)?>>")
 
         self.content = content
         self.original_content = copy.deepcopy(self.content)
@@ -158,19 +194,39 @@ class AsciiDocContent:
             attributes = attr[0][0].split(",")
             while("" in attributes) :
                 attributes.remove("")
-            self._add_to_attributes_dict(attributes)
+            self._add_to_selected_dict(attributes,self.attr_dict)
         return attr
 
-    def _add_to_attributes_dict(self, attributes):
+    def find_roles(self):
+        # TODO: TEST
+        roles = []
+        for line in self.content:
+            result = self.pattern_roles.findall(line)
+            if result:
+                roles.append(result)
+
+        if roles:
+            attributes = [x[0] for x in roles]
+            while("" in attributes) :
+                attributes.remove("")
+
+            self._add_to_selected_dict(attributes,self.roles_dict)
+        return roles
+
+    def _add_to_selected_dict(self, attributes,target_dict):
         for attr_o in attributes:
             attr = attr_o.replace(" ","")
-            if attr in self.attributes_dict.keys():
-                self.attributes_dict[attr].append((self.path,self.filename))
-            elif attr not in self.attributes_dict.keys():
-                self.attributes_dict[attr]=[(self.path,self.filename)]
+            if attr in target_dict.keys():
+                target_dict[attr].append((self.path,self.filename))
+            elif attr not in target_dict.keys():
+                target_dict[attr]=[(self.path,self.filename)]
 
     def find_related_topics_macro(self, find_and_replace=False):
         found = self._find_macro_of_type(self.pattern_reltop,find_and_replace,"related-topics")
+        return found
+
+    def find_role_related_topics_macro(self, find_and_replace=False):
+        found = self._find_macro_of_type(self.pattern_role_reltop,find_and_replace,"role-related-topics")
         return found
 
     def find_reference_macro(self, find_and_replace=False):
@@ -186,6 +242,9 @@ class AsciiDocContent:
 
     def _add_to_related_topics_macro_occurence_list(self):
         self.related_topics_macro_occurence_list.append(self)
+
+    def _add_to_role_related_topics_macro_occurence_list(self):
+        self.role_related_topics_macro_occurence_list.append(self)
 
     def _find_macro_of_type(self,pattern,find_and_replace,type):
         found = False
@@ -206,6 +265,12 @@ class AsciiDocContent:
                     else:
                         self._add_to_related_topics_macro_occurence_list()
                         break
+                elif(type=="role-related-topics"):
+                    if find_and_replace:
+                        self.substitute_role_related_topics_macro(result[0],i)
+                    else:
+                        self._add_to_role_related_topics_macro_occurence_list()
+                        break
                 else:
                     print("Unknown type for find_macro_of_type provided: "+type)
                     return False
@@ -217,14 +282,20 @@ class AsciiDocContent:
     def substitute_reference_macro(self,ref_list,line):
         self.content[line] = ""
         offset = 1
-        self.insert_references_in_content(line,offset,ref_list)
+        self.insert_references_in_content(line,offset,ref_list,self.attr_dict)
 
 
     def substitute_related_topics_macro(self,ref_list,line):
         self.content[line] = "== Related Topics\n\n"
         self.content.insert(line+1,"")
         offset = 2
-        self.insert_references_in_content(line,offset,ref_list)
+        self.insert_references_in_content(line,offset,ref_list,self.attr_dict)
+
+    def substitute_role_related_topics_macro(self,ref_list,line):
+        self.content[line] = "== Role Related Topics\n\n"
+        self.content.insert(line+1,"")
+        offset = 2
+        self.insert_references_in_content(line,offset,ref_list,self.roles_dict)
 
     def make_cross_reference_replacements(self,ref_list_input):
         ref_list = ref_list_input[0]
@@ -233,18 +304,18 @@ class AsciiDocContent:
         exceptions = [x[1:] for x in list(set(total_ref_elements) - set(references))]
         return references,exceptions
 
-    def insert_references_in_content(self,line,offset,ref_list):
+    def insert_references_in_content(self,line,offset,ref_list,target_dict):
         references, exceptions = self.make_cross_reference_replacements(ref_list)
         replacement_content = []
         if references:
             for ref in references:
-                new_text = self._make_reference_replacement_text(ref,exceptions)
+                new_text = self._make_reference_replacement_text(ref,exceptions,target_dict)
                 replacement_content += new_text
 
             replacement_content = list(dict.fromkeys(replacement_content))
             self.content[line+offset:line+offset]=replacement_content
 
-    def _make_reference_replacement_text(self,ref_text,exceptions):
+    def _make_reference_replacement_text(self,ref_text,exceptions,target_dict):
         reference_structure = "* xref:"
         reference_ending = "[]\n"
         self_exclusion = (self.path,self.filename)
@@ -255,15 +326,15 @@ class AsciiDocContent:
         links = []
 
         try:
-            links = self.attributes_dict[ref_text]
+            links = target_dict[ref_text]
 
         except:
             # raise ReferenceNotFound(ref_text+" not found in keys: "+self.attributes_dict.keys())
-            print(ref_text+" not found in keys: "+",".join(self.attributes_dict.keys()))
+            print(ref_text+" not found in keys: "+",".join(target_dict.keys()))
 
         for exc in exceptions:
             try:
-                excl_links.append(self.attributes_dict[exc])
+                excl_links.append(target_dict[exc])
             except:
                 pass
 
@@ -576,11 +647,11 @@ class AsciiDocContent:
         content.append("== List Of Attributes")
         content.append("")
 
-        for a in sorted(self.attributes_dict):
+        for a in sorted(self.attr_dict):
             content.append("")
             content.append("=== {attr}".format(attr = a))
             content.append("")
-            for f in self.attributes_dict[a]:
+            for f in self.attr_dict[a]:
                 module, __, __, module_path = self._get_module_from_path(f[0])
                 content.append("* xref:{module}:{path}{filename}[{module}/pages/{path}{filename}]".format(module = module,path=module_path,filename=f[1]))
 

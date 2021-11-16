@@ -1,0 +1,14 @@
+= Project Lead
+:description: Summary and landing page for project leads.
+:keywords: role, role-landing-page
+
+include::partial$_attributes.adoc[]
+
+[horizontal,role=right]
+Label:: {role-project-lead}
+
+TODO: Description
+
+role_related::project-lead[]
+
+related::role-landing-page,role[]

@@ -1,0 +1,14 @@
+= Reviewer
+:description: Summary and landing page for reviwers.
+:keywords: role, role-landing-page
+
+include::partial$_attributes.adoc[]
+
+[horizontal,role=right]
+Label:: {role-reviewer}
+
+TODO: Description
+
+role_related::reviewer[]
+
+related::role-landing-page,role[]

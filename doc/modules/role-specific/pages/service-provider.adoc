@@ -1,0 +1,14 @@
+= Service Provider
+:description: Summary and landing page for service providers.
+:keywords: role, role-landing-page
+
+include::partial$_attributes.adoc[]
+
+[horizontal,role=right]
+Label:: {role-service-provider}
+
+TODO: Description
+
+role_related::service-provider[]
+
+related::role-landing-page,role[]
