@@ -59,7 +59,7 @@ See the result in <<code-example-code-block-tag>>.
 .ASAM example code block
 [source,js]
 ----
-include::../resources/examplecode.js[tags=exampleInclude]
+include::compendium:example$/examplecode.js[tags=exampleInclude]
 ----
 
 ​

@@ -32,7 +32,7 @@ See the result in <<fig-example-drawio>>.
 
 [[fig-example-drawio]]
 .example graphic
-image::examplegraphic.drawio.svg[image]
+image::compendium:examplegraphic.drawio.svg[image]
 
 
 
@@ -147,5 +147,5 @@ TrafficParticipant -- dynamicLimits
 .example plantuml - included from file
 [plantuml, svg]
 ----
-include::../images/ExamplePlantUML.plantuml[]
+include::compendium:example$ExamplePlantUML.plantuml[]
 ----

@@ -1,42 +1,52 @@
 * xref:home.adoc[Role-Specific Instructions]
-** ASAM Office
-*** Tasks and responsibilities
-*** Suggested Tools
-*** Guides
-*** Best Practices
-*** General Information Links
-** Workgroup (WG) Member
-*** Tasks and responsibilities
-*** Suggested Tools
-*** Guides
-*** Best Practices
-*** General Information Links
-** Project Lead
-*** Tasks and responsibilities
-*** Suggested Tools
-*** Guides
-*** Best Practices
-*** General Information Links
-** Workgroup (WG) Lead
-*** Tasks and responsibilities
-*** Suggested Tools
-*** Guides
-*** Best Practices
-*** General Information Links
-** Technical Writer
-*** Tasks and responsibilities
-*** Suggested Tools
-*** Guides
-*** Best Practices
-*** General Information Links
-** Service Provider
-*** Tasks and responsibilities
-*** Suggested Tools
-*** Guides
-*** Best Practices
-*** General Information Links
-** Technical Steering Commitee (TSC)
-*** Suggested Tools
-*** Guides
-*** Best Practices
-*** General Information Links
+** xref:asam-project-roles.adoc[]
+** xref:gtm.adoc[]
+** xref:project-lead.adoc[]
+** xref:wg-member.adoc[]
+** xref:reviewer.adoc[]
+** xref:technical-writer.adoc[]
+** xref:service-provider.adoc[]
+** xref:standard-manager.adoc[]
+** xref:standard-user.adoc[]
+
+// ** ASAM Office
+// *** Tasks and responsibilities
+// *** Suggested Tools
+// *** Guides
+// *** Best Practices
+// *** General Information Links
+// ** Workgroup (WG) Member
+// *** Tasks and responsibilities
+// *** Suggested Tools
+// *** Guides
+// *** Best Practices
+// *** General Information Links
+// ** Project Lead
+// *** Tasks and responsibilities
+// *** Suggested Tools
+// *** Guides
+// *** Best Practices
+// *** General Information Links
+// ** Workgroup (WG) Lead
+// *** Tasks and responsibilities
+// *** Suggested Tools
+// *** Guides
+// *** Best Practices
+// *** General Information Links
+// ** Technical Writer
+// *** Tasks and responsibilities
+// *** Suggested Tools
+// *** Guides
+// *** Best Practices
+// *** General Information Links
+// ** Service Provider
+// *** Tasks and responsibilities
+// *** Suggested Tools
+// *** Guides
+// *** Best Practices
+// *** General Information Links
+// ** Technical Steering Commitee (TSC)
+// *** Suggested Tools
+// *** Guides
+// *** Best Practices
+// *** General Information Links

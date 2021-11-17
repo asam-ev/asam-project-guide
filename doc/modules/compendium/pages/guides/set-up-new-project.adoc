@@ -1,0 +1,11 @@
+= How To Set Up A New Project
+:description:
+:keywords: how-to
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
+
+Proposal Generator:: https://code.asam.net/internal/proposal-generator
+
+Reference project repository:: https://code.asam.net/internal/asciidoc-example-document
+

@@ -4,7 +4,7 @@
 :keywords: writing_guide
 :numbered:
 
-indlude::compendium:partial$_attributes.adoc[]
+include::compendium:partial$_attributes.adoc[]
 
 {role-technical-writer}
 
