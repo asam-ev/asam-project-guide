@@ -1,0 +1,22 @@
+[[top-links]]
+= How to include links in ASAM documents
+:description: How-To for including links in ASAM documents (standards).
+:keywords: asciidoc,link,how-to
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
+
+
+This chapters shows how to include links in an ASAM standard.
+
+== Code
+....
+https://www.asam.net[ASAM Website] // <1>
+....
+<1> First is the URL, followed by the link name in square brackets
+
+== Result
+
+The result is a link called "ASAM Website", that links to URL `+https://www.asam.net+`.
+
+https://www.asam.net[ASAM Website]
