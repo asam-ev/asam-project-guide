@@ -1,0 +1,6 @@
+
+:abb: xref:compendium:abbreviations.adoc
+
+:api: {abb}#_api[API]
+:tsc: {abb}#_tsc[TSC]
+

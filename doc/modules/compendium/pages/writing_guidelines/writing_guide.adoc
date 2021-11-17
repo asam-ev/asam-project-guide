@@ -1,6 +1,13 @@
 [#top-osc2-writing-guide]
 = Writing guide
+:description: Writing guide for technical writers.
+:keywords: writing_guide
 :numbered:
+
+indlude::compendium:partial$_attributes.adoc[]
+
+{role-technical-writer}
+
 
 This guide is intended to help you writing content for ASAM projects.
 It provides you a set of hints and rules that make it easier to contribute concise and homogeneous content and documents to the projects.
@@ -679,3 +686,6 @@ See the https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master
 == Contact information
 
 If you have any questions and/or suggestions concerning this Writing guide for OpenSCENARIO 2 please contact andreas.muetsch@dxc.com.
+
+
+related::writing_guide[]
