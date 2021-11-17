@@ -1,23 +1,69 @@
-= Current ASAM Projects
+= Current And Past ASAM Projects
 :description: Links to the current projects page at ASAM. Contains links on how to add new project ideas and other such topics.
 :keywords: projects, asam, new-here-content, ideation, standards
 
+You can find information on released standards and current projects on the ASAM website.
+
 == Project Types
-https://www.asam.net/active-projects/project-types/
+ASAM has four defined project types, which further characterize the work to be done within the projects. They are:
+
+* <<Standard Development Project>>
+* <<Implementation Project>>
+* <<Concept Project>>
+* <<Study Project>>
+
+
+They all have in common that the primary output of the project is a standard. The upper limit for subsidiary funding from ASAM is 25% of the total required project budget.
+
+=== Standard Development Project
+The core of ASAM is to carry out standard development projects with the goal to create new standards and to update existing standards in accordance with the demands of ASAM members and market requirements. ASAM defines four types of standard development projects, depending on the expected magnitude of changes to the standard:
+
+* <<New Standard Development>>
+* <<Major Version Development>>
+* <<Minor Version Development>>
+* <<Revision Development>>
+
+They all have in common that the primary output of the project is a standard. The upper limit for subsidiary funding from ASAM is 25% of the total required project budget.
+
+==== New Standard Development
+include::standardization:partial$project-type-new-std-dev.adoc[tag=short]
+
+==== Major Version Development
+include::standardization:partial$project-type-major.adoc[tag=short]
+
+==== Minor Version Development
+include::standardization:partial$project-type-minor.adoc[tag=short]
+
+==== Revision Development
+include::standardization:partial$project-type-revision.adoc[tag=short]
+
+=== Implementation Project
+include::standardization:partial$project-type-implementation.adoc[tag=short]
+
+=== Concept Project
+include::standardization:partial$project-type-concept.adoc[tag=short]
+
+=== Study Project
+include::standardization:partial$project-type-study.adoc[tag=short]
+
 
 == Released Standards
-https://www.asam.net/standards/
+You can find the current list of released standards at https://www.asam.net/standards/.
 
 == Current Projects
 === Proposals
-https://www.asam.net/active-projects/proposals/
+All current proposals are listed under https://www.asam.net/active-projects/proposals/.
 
 === Ongoing Projects
-https://www.asam.net/active-projects/projects/
+All currently ongoing projects are listed under https://www.asam.net/active-projects/projects/.
 
 === Public Reviews
-https://www.asam.net/active-projects/public-review/
+Any public review is listed under https://www.asam.net/active-projects/public-review/.
 
 == Want To Add A New Idea?
 Enter your idea for a new project through the ideation process:
-https://www.asam.net/active-projects/ideation/
+https://www.asam.net/active-projects/ideation/.
+
+You can also find more information in this Project Guide on the xref:standardization:project-ideation.adoc[] page.
+
+For a more detailed look at processes and projects, see xref:standardization:home.adoc[].

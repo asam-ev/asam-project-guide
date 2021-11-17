@@ -544,7 +544,6 @@ Every attribute has its own subsection and contains a link to each page as well 
 === overview
 
 * xref:getting-started:new-here.adoc[getting-started/pages/new-here.adoc]
-* xref:role-specific:asam-project-roles.adoc[role-specific/pages/asam-project-roles.adoc]
 * xref:tooling:overview.adoc[tooling/pages/overview.adoc]
 
 === page
@@ -698,7 +697,6 @@ Every attribute has its own subsection and contains a link to each page as well 
 === roles
 
 * xref:getting-started:new_here/roles-overview.adoc[getting-started/pages/new_here/roles-overview.adoc]
-* xref:role-specific:asam-project-roles.adoc[role-specific/pages/asam-project-roles.adoc]
 * xref:role-specific:home.adoc[role-specific/pages/home.adoc]
 
 === script
@@ -780,7 +778,6 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === summary
 
-* xref:role-specific:asam-project-roles.adoc[role-specific/pages/asam-project-roles.adoc]
 * xref:standardization:asam-development-process.adoc[standardization/pages/asam-development-process.adoc]
 * xref:tooling:calendar.adoc[tooling/pages/calendar.adoc]
 * xref:tooling:docker.adoc[tooling/pages/docker.adoc]

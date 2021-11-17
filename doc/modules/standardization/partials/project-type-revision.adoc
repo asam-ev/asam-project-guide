@@ -1,7 +1,13 @@
-// tag::long[]
+
 //tag::short[]
-Revision version developments of ASAM standards resolve technical issues with the currently released version  of  the  standard.
+A revision version development project resolves technical issues of the standard, i.e. corrects errors, removes ambiguities, adds clarifications to existing descriptions, makes editorial improvements or changes examples.
+It is expected that the implementation of the new version will require low development or migration efforts by tool vendors and end users.
+Revisions cannot include new features.
+A new revision version of an ASAM standard is always backward-compatible.
 //end::short[]
+
+// tag::long[]
+Revision version developments of ASAM standards resolve technical issues with the currently released version  of  the  standard.
 
 Revision  version  development projects meet one or more of the following criteria:
 

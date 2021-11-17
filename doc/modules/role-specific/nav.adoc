@@ -1,5 +1,4 @@
 * xref:home.adoc[Role-Specific Instructions]
-** xref:asam-project-roles.adoc[]
 ** xref:gtm.adoc[]
 ** xref:project-lead.adoc[]
 ** xref:wg-member.adoc[]

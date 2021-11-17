@@ -142,16 +142,15 @@ rectangle "macros/macro-related.adoc" as f3_16
 }
 package role-specific #ff50ff {
 rectangle "nav.adoc" as f4_1
-rectangle "asam-project-roles.adoc" as f4_2
-rectangle "gtm.adoc" as f4_3
-rectangle "home.adoc" as f4_4
-rectangle "project-lead.adoc" as f4_5
-rectangle "reviewer.adoc" as f4_6
-rectangle "service-provider.adoc" as f4_7
-rectangle "standard-manager.adoc" as f4_8
-rectangle "standard-user.adoc" as f4_9
-rectangle "technical-writer.adoc" as f4_10
-rectangle "wg-member.adoc" as f4_11
+rectangle "gtm.adoc" as f4_2
+rectangle "home.adoc" as f4_3
+rectangle "project-lead.adoc" as f4_4
+rectangle "reviewer.adoc" as f4_5
+rectangle "service-provider.adoc" as f4_6
+rectangle "standard-manager.adoc" as f4_7
+rectangle "standard-user.adoc" as f4_8
+rectangle "technical-writer.adoc" as f4_9
+rectangle "wg-member.adoc" as f4_10
 }
 package ROOT #5050d0 {
 rectangle "1nav.adoc" as f5_1
@@ -231,7 +230,7 @@ f3_13 --[#CCCC00]--> f0_2
 f3_13 -[#CCCC00]-> f3_4
 f3_13 -[#CCCC00]-> f3_6
 f3_13 -[#CCCC00]-> f3_12
-f3_13 --[#CCCC00]--> f4_4
+f3_13 --[#CCCC00]--> f4_3
 f3_13 -[#CCCC00]-> f3_13
 f3_13 --[#CCCC00]--> f0_3
 f3_13 --[#CCCC00]--> f6_2
@@ -254,7 +253,6 @@ f3_13 --[#CCCC00]--> f7_8
 f3_13 -[#CCCC00]-> f3_2
 f3_13 -[#CCCC00]-> f3_3
 f3_13 --[#CCCC00]--> f2_4
-f3_13 --[#CCCC00]--> f4_2
 f3_13 -[#CCCC00]-> f3_11
 f3_13 --[#CCCC00]--> f6_10
 f3_13 --[#CCCC00]--> f6_11
@@ -262,26 +260,25 @@ f3_13 --[#CCCC00]--> f6_12
 f3_13 --[#CCCC00]--> f6_8
 f3_13 --[#CCCC00]--> f6_9
 f3_13 --[#CCCC00]--> f7_9
-f3_13 --[#CCCC00]--> f4_3
+f3_13 --[#CCCC00]--> f4_2
+f3_13 --[#CCCC00]--> f4_4
 f3_13 --[#CCCC00]--> f4_5
 f3_13 --[#CCCC00]--> f4_6
 f3_13 --[#CCCC00]--> f4_7
 f3_13 --[#CCCC00]--> f4_8
 f3_13 --[#CCCC00]--> f4_9
 f3_13 --[#CCCC00]--> f4_10
-f3_13 --[#CCCC00]--> f4_11
 f3_13 --[#CCCC00]--> f6_3
 f3_13 --[#CCCC00]--> f6_6
-f4_1 -[#FF00FF]-> f4_4
-f4_1 -[#FF00FF]-> f4_2
 f4_1 -[#FF00FF]-> f4_3
-f4_1 -[#FF00FF]-> f4_5
-f4_1 -[#FF00FF]-> f4_11
-f4_1 -[#FF00FF]-> f4_6
+f4_1 -[#FF00FF]-> f4_2
+f4_1 -[#FF00FF]-> f4_4
 f4_1 -[#FF00FF]-> f4_10
+f4_1 -[#FF00FF]-> f4_5
+f4_1 -[#FF00FF]-> f4_9
+f4_1 -[#FF00FF]-> f4_6
 f4_1 -[#FF00FF]-> f4_7
 f4_1 -[#FF00FF]-> f4_8
-f4_1 -[#FF00FF]-> f4_9
 f6_1 -[#800000]-> f6_5
 f6_1 -[#800000]-> f6_9
 f6_1 -[#800000]-> f6_2
