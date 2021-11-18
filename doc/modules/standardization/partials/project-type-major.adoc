@@ -1,9 +1,9 @@
 // tag::long[]
 // tag::short[]
-Major version developments of ASAM standards introduce significant changes to  the  standard.
+Major version developments of ASAM standards introduce significant changes to the standard.
 // end::short[]
 
-Major version  development projects meet one or more of the following criteria:
+Major version development projects meet one or more of the following criteria:
 
 * Addition of a new, major feature.
 * Significant changes to existing features.

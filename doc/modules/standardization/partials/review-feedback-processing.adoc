@@ -3,7 +3,7 @@
 [cols="1h,20"]
 |===
 |Purpose
-|To review and decide upon the reviewers' feedback and to incorporate cor-responding changes to the draft standard.
+|To review and decide upon the reviewers' feedback and to incorporate corresponding changes to the draft standard.
 
 |Responsible
 |Project group
@@ -17,8 +17,8 @@ The decision includes as a minimum the status "accepted", "rejected" or "deferre
 The decision must be documented.
 
 Accepted feedback shall be implemented.
-The project group has full authority how to im-plement the reviewers' feedback into the standard.
-They can implement changes as pro-posed by the reviewer, or decide for a different implementation.
+The project group has full authority how to implement the reviewers' feedback into the standard.
+They can implement changes as proposed by the reviewer, or decide for a different implementation.
 
 If a reviewer's feedback is actually out-of-scope, since it contains a request to consider a new use-case, feature or requirement, then the feedback shall be rejected and transferred to the ASAM CR-system with status "new".
 

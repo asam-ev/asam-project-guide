@@ -3,7 +3,7 @@
 [cols="1h,20"]
 |===
 |Purpose
-|To create a preliminary version of the standard for carrying out a public re-view.
+|To create a preliminary version of the standard for carrying out a public review.
 
 |Responsible
 |Project group

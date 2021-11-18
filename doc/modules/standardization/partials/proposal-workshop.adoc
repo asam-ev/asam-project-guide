@@ -40,7 +40,7 @@ Non-members can participate upon invitation by the Office.
 By default, the Office moderates the workshop.
 This task can be passed to a member, if appropriate.
 
-If there is significant interest in the proposed project in different regions (primarily in North America, Europe, East Asia), then the Office organizes meetings in a way that equally al-lows all members from those regions to influence the results of the Proposal Workshop.
+If there is significant interest in the proposed project in different regions (primarily in North America, Europe, East Asia), then the Office organizes meetings in a way that equally allows all members from those regions to influence the results of the Proposal Workshop.
 
 The results of the Proposal Workshop are documented in meeting minutes, which are sent out to all participants after the meeting.
 // end::long[]

@@ -3,7 +3,7 @@
 [cols="1h,20"]
 |===
 |Purpose
-|To prepare all marketing and distribution activities for the new standard re-lease.
+|To prepare all marketing and distribution activities for the new standard release.
 
 |Responsible
 |Office

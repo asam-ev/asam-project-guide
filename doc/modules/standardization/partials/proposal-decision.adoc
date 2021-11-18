@@ -18,7 +18,7 @@ Proposals are handled during the meeting via a three-step process:
 
 . Submitter presents the proposal to the TSC members.
 . TSC members are given the opportunity to ask questions.
-. TSC members discuss the proposal (without submitter's presence) and then pro-ceed with casting their votes on the proposal.
+. TSC members discuss the proposal (without submitter's presence) and then proceed with casting their votes on the proposal.
 
 The TSC does not modify the content of the proposal.
 If this is deemed to be necessary, then the proposal shall be rejected.
@@ -26,9 +26,9 @@ If this is deemed to be necessary, then the proposal shall be rejected.
 The TSC may add constraints or conditions for the execution of the proposed project.
 They are noted in the meeting minutes.
 
-The TSC may decide to approve only some of the defined work packages of the project and ask for re-submission of the proposal with a content update for the unapproved work pack-ages.
+The TSC may decide to approve only some of the defined work packages of the project and ask for re-submission of the proposal with a content update for the unapproved work packages.
 
-The TSC might assign a mentor for each new standard or major version development pro-ject.
+The TSC might assign a mentor for each new standard or major version development project.
 The mentor shall be a member of the TSC.
 
 The voting is carried out in accordance with the TSC voting rules.

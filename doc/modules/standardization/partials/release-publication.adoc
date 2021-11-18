@@ -15,7 +15,7 @@
 The Office carries out all planed publication activities.
 As a minimum, the Office undertakes the following publication measures:
 
--  The standard can be sold and is downloadable from the ASAM web site.
+- The standard can be sold and is downloadable from the ASAM web site.
 - The release is announced via newsletter.
 - New standards and major version releases get a news article on the ASAM web-site.
 

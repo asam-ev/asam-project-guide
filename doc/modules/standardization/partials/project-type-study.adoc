@@ -23,7 +23,7 @@ The process to request, approve and carrying out a study project is:
 . ASAM Office checks the information and approves or rejects the project.
 . ASAM Office informs the TSC about the project.
 . ASAM Office publishes an announcement of the project.
-. The study project starts and is being carried out as described in the study project in-formation sheet.
+. The study project starts and is being carried out as described in the study project information sheet.
 . The ASAM Office monitors the project activities.
 
 Some further rules apply for study projects:

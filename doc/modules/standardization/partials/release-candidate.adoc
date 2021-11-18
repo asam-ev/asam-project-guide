@@ -3,7 +3,7 @@
 [cols="1h,20"]
 |===
 |Purpose
-|To decide upon technical readiness of the standard and submit the delivera-bles to the TSC.
+|To decide upon technical readiness of the standard and submit the deliverables to the TSC.
 
 |Responsible
 |Project group
@@ -14,7 +14,7 @@
 // end::table[]
 The project group prepares a release candidate and agrees per formal voting to submit the candidate to the TSC for release decision.
 Each company has one vote.
-The release can-didate is accepted by absolute two-thirds majority.
+The release candidate is accepted by absolute two-thirds majority.
 The group's decision is documented in the meeting minutes.
 
 The project leader submits the following deliverables to ASAM:
@@ -24,7 +24,7 @@ The project leader submits the following deliverables to ASAM:
 - revision history documentation (not needed for version 1.0.0).
 - new release presentation.
 
-Sources are those digital work products, which can be modified or edited with standard tools such as text editors, image processors or modelling tools, and which are the input for gen-erators that produce the final deliverables.
+Sources are those digital work products, which can be modified or edited with standard tools such as text editors, image processors or modeling tools, and which are the input for generators that produce the final deliverables.
 
 // end::long[]
 

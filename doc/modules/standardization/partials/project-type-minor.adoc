@@ -1,6 +1,6 @@
 // tag::long[]
 // tag::short[]
-Minor version developments of ASAM standards introduce  changes  to  existing  features  on  a  smaller scale or introduce new features that are rather small relative to the rest of the standard.
+Minor version developments of ASAM standards introduce changes to existing features on a smaller scale or introduce new features that are rather small relative to the rest of the standard.
 // end::short[]
 
 Minor version development projects meet one or more of the following criteria:
@@ -8,7 +8,7 @@ Minor version development projects meet one or more of the following criteria:
 * Addition of new features, which are considered as small relative to existing features.
 * Insignificant changes or additions to existing features.
 
-It  is  expected  that  the  implementation  of  the  new version will require low development or migration efforts by tool vendors and end users.
+It is expected that the implementation of the new version will require low development or migration efforts by tool vendors and end users.
 
 A new minor version of an ASAM standard shall be backward-compatible to its immediate predecessor version.
 Exceptions are allowed, require approval from the TSC and must be documented in the standard.
@@ -52,4 +52,3 @@ Standard Development Process except:
 |===
 // end::table[]
 // end::long[]
-

@@ -33,5 +33,5 @@ The minimum publication period for project proposals is four weeks and shall not
 //tag::short[]
 The ASAM office publishes the project proposal.
 The minimum publication period is four weeks.
-Members can comment the proposal and register for participation in the upcomming project.
+Members can comment the proposal and register for participation in the upcoming project.
 //end::short[]

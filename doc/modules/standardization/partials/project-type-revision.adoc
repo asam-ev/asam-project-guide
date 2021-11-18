@@ -1,9 +1,9 @@
 // tag::long[]
 //tag::short[]
-Revision version developments of ASAM standards resolve technical issues with the currently released version  of  the  standard.
+Revision version developments of ASAM standards resolve technical issues with the currently released version of the standard.
 //end::short[]
 
-Revision  version  development projects meet one or more of the following criteria:
+Revision version development projects meet one or more of the following criteria:
 
 * Correction of errors.
 * Removal of ambiguities.
@@ -21,8 +21,8 @@ The only exception is, that the correction of an error or the removal of an ambi
 
 An exception requires approval from the TSC and must be documented in the standard.
 
-Revision development projects may be converted to a minor or major version development project during the course of the project term, if backward-compatibility issues turn out to be too  severe or  new  features  need  to  be  added.
-The  TSC  has  to  approve  this  change  of project type.
+Revision development projects may be converted to a minor or major version development project during the course of the project term, if backward-compatibility issues turn out to be too severe or new features need to be added.
+The TSC has to approve this change of project type.
 
 Only those ASAM members, who were actively involved in development of the preceding major or minor version, can participate in the revision development project.
 
@@ -30,9 +30,9 @@ Revision projects are limited to a life cycle of up to 18 months.
 
 Unlike other project types, the paid service provider for a revision project can be contracted without a public request for quotation.
 
-The service provider is confirmed by the TSC and is appointed  before  the  project  starts.
+The service provider is confirmed by the TSC and is appointed before the project starts.
 
-The  project  leader  and  the  service  provider  must  be employees from different companies.
+The project leader and the service provider must be employees from different companies.
 
 The number of minor version releases meets the pattern: "?.?.X".
 X is an integer number starting with 1.

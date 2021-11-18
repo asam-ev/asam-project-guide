@@ -18,7 +18,7 @@ The governing documents, which shall be considered during the development phase 
 - the project guide (this document).
 - the project proposal.
 
-The project leader is responsible that the project is managed in compliance with the docu-ments.
+The project leader is responsible that the project is managed in compliance with the documents.
 Each project member shall be aware of the content of the documents.
 
 The project group has the additional task to review all open or incoming change requests (CR) and decide, whether they shall be resolved, declined or deferred to a later project.
@@ -35,7 +35,7 @@ ASAM requires a minimum of rules to be followed:
 - the working language is English
 
 The Office will provisionally lead the project until the group has elected the project leader.
-Upon request, the Office provides training to the project group members about ASAM guide-lines and best practices.
+Upon request, the Office provides training to the project group members about ASAM guidelines and best practices.
 Furthermore, the Office assists the project leader upon his request to manage the meetings during the initial meetings.
 
 The ASAM IT infrastructure provides services for collaboration such as a version control system for documents and files, a change request tracking system and remote conferencing.
@@ -70,13 +70,13 @@ However, they cannot delegate responsibilities.
 They remain the responsible person for each task listed above.
 
 Each meeting has a host.
-Typically, meetings are hosted by a different project group mem-ber at each meeting.
+Typically, meetings are hosted by a different project group member at each meeting.
 The tasks of the host are:
 
 - provide meeting room and catering
-- provide Internet connection, a speaker phone and video conferencing, as re-quired
+- provide Internet connection, a speaker phone and video conferencing, as required
 
-The ASAM Office takes over the role of meeting host, if video conferencing has been re-quested and budgeted as per approved project proposal.
+The ASAM Office takes over the role of meeting host, if video conferencing has been requested and budgeted as per approved project proposal.
 
 Project groups can have one or multiple service provider(s).
 They are being paid from the approved project budget.
@@ -97,7 +97,7 @@ The meeting minutes shall clearly describe, what the members are voting on.
 Each company has one vote.
 At least 50% of all companies, which participate in the project, must cast their vote for the voting result to be valid.
 Project group members can cast their votes up to five work days after the publication of the meeting minutes.
-Votes cannot be transferred to other com-panies.
+Votes cannot be transferred to other companies.
 A decision is made by absolute majority.
 
 New companies may join the group after the beginning of the development phase.

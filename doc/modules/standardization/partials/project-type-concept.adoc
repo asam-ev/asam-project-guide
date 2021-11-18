@@ -8,9 +8,9 @@ The goals of concept projects are:
 
 
 . to propose specific content for ASAM standards
-. to provide justification or proof for the useful-ness, practicability and feasibility of the proposals
+. to provide justification or proof for the usefulness, practicability and feasibility of the proposals
 
-In order to reach the goals and to enable the project group to develop  specific  content  proposals,  concept  projects  may  include  some  of  the  following methods:
+In order to reach the goals and to enable the project group to develop specific content proposals, concept projects may include some of the following methods:
 
 * feasibility study
 * requirements evaluation
@@ -21,9 +21,9 @@ In order to reach the goals and to enable the project group to develop  specific
 The minimum deliverable of a concept project must be a concept paper.
 The paper shall include the findings of the project group and proposals for ASAM standards.
 Proposals for ASAM standards shall be as specific as possible.
-Ideally, the concept project documents their proposals in a copy-&-past ready format, as it could be taken over into the respective ASAM standard.
+Ideally, the concept project documents their proposals in a copy & past ready format, as it could be taken over into the respective ASAM standard.
 Upon request, ASAM provides funding for concept projects up to 75% of the total required project budget.Concept projects are carried out via the standard development process.
-The following pro-cess steps are not mandatory and are skipped by default, unless otherwise decided by the TSC or the project group:
+The following process steps are not mandatory and are skipped by default, unless otherwise decided by the TSC or the project group:
 
 * P1: Proposal Workshop
 * C: Review Phase

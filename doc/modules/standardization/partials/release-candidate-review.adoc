@@ -3,7 +3,7 @@
 [cols="1h,20"]
 |===
 |Purpose
-|To review the deliverables, to clarify open questions, and to come to an indi-vidual conclusion about the release-worthiness of the release candidate.
+|To review the deliverables, to clarify open questions, and to come to an individual conclusion about the release-worthiness of the release candidate.
 
 |Responsible
 |TSC

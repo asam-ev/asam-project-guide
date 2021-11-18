@@ -1,6 +1,6 @@
 //tag::long[]
 //tag::short[]
-An implementation project has the purpose to create a supplementary product that supports the ap-plication of an ASAM standard in the industry.
+An implementation project has the purpose to create a supplementary product that supports the application of an ASAM standard in the industry.
 //end::short[]
 
 An ASAM product shall cover one of the following use-cases:
@@ -50,7 +50,7 @@ The following process steps are not mandatory and are skipped by default, unless
 When members propose the further development of a standard, for which an ASAM product exists, members must also propose the further development of this product, unless the pro-posed changes of the standard have no impact on the product.
 If the ASAM product shall not be further developed, then ASAM shall publicly announce that the development of the product is discontinued.
 
-ASAM products shall not compete with a member company's product business(non-com-petition clause).
+ASAM products shall not compete with a member company's product business(non-competition clause).
 
 Members can object an implementation project proposal and shall provide a justification for their objection.
 
@@ -58,7 +58,7 @@ The TSC checks during P5 Project Approval, whether the objection is justified.
 
 In case of a justified objection, the TSC shall not approve the proposed project or decide on measures that would remove the member's objection.
 
-Non-distributable  source  code  files shall  include  the  following  comment  text  in  the  file header:
+Non-distributable source code files shall include the following comment text in the file header:
 
 .header template for non-distributable source code
 ----
@@ -76,7 +76,7 @@ Distributable source code files shall include the following comment text in the 
 // © by ASAM e.V., <Year>
 // <File short description>
 // Any use is limited to the scope described in the ASAM license terms.
-This  file  is  distributable  in  accordance  with the ASAM license terms.See www.asam.net/license.html for further details.
+This file is distributable in accordance with the ASAM license terms.See www.asam.net/license.html for further details.
 ----
 
 //tag::table[]
@@ -98,6 +98,3 @@ Standard Development Process except:
 |===
 //end::table[]
 //end::long[]
-
-
-
