@@ -7,4 +7,9 @@ include::compendium:partial$_attributes.adoc[]
 include::compendium:partial$abbreviations.adoc[]
 
 == API
-Application Programming Interface:: Eine API (Application Programming Interface) ist ein Satz von Befehlen, Funktionen, Protokollen und Objekten, die Programmierer verwenden können, um eine Software zu erstellen oder mit einem externen System zu interagieren. Sie stellt Entwicklern Standardbefehle für die Ausführung allgemeiner Operationen zur Verfügung, so dass Codes nicht von Grund auf neu geschrieben werden müssen.
+Application Programming Interface:: An application programming interface (API) is a connection between computers or between computer programs.
+It is a type of software interface, offering a service to other pieces of software. See https://en.wikipedia.org/wiki/API[Wikipedia].
+
+== TSC
+Technical Steering Committee::
+https://www.asam.net/active-projects/technical-steering/
