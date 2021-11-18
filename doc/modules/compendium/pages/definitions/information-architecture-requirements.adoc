@@ -1,4 +1,4 @@
-= Requirements of the Information Architecture
+= Requirements of the information architecture
 :description: Summarizes the requirements (agreed and in discussion) regarding the information architecture
 :keywords: requirements,information-architecture,writing_guide
 
@@ -7,16 +7,53 @@ include::compendium:partial$_attributes.adoc[]
 
 == Requirement categories
 
-* build **[B]**
-* syntax **[X]**
-* structure **[S]**
-* technical **[T]**
+:b: [B]
+:x: [X]
+:s: [S]
+:t: [T]
+:w: [W]
+:c: [C]
+:d: [D]
 
-* writing rules **[W]**
-* content **[C]**
+:b-def: <<build,{b}>>
+:x-def: <<syntax,{x}>>
+:s-def: <<structure,{s}>>
+:t-def: <<technical,{t}>>
+:w-def: <<writing,{w}>>
+:c-def: <<content,{c}>>
+:d-def: <<document,{d}>>
+
+:b-tab: <<build-tab,{b}>>
+:x-tab: <<syntax-tab,{x}>>
+:s-tab: <<structure-tab,{s}>>
+:t-tab: <<technical-tab,{t}>>
+:w-tab: <<writing-tab,{w}>>
+:c-tab: <<content-tab,{c}>>
+:d-tab: <<document-tab,{d}>>
+
+[[build]]
+* build **{b-tab}**
+
+[[syntax]]
+* syntax **{x-tab}**
+
+[[structure]]
+* structure **{s-tab}**
+
+[[technical]]
+* technical **{t-tab}**
+
+[[writing]]
+* writing rules **{w-tab}**
+
+[[content]]
+* content **{c-tab}**
+
+[[document]]
+* document **{d-tab}**
 
 
-== Requirements List
+== Requirements list
 
 //Status Markers
 :approved: &#9989;
@@ -109,10 +146,11 @@ include::compendium:partial$_attributes.adoc[]
 
 
 .Requirements List {counter2:index:0}
-[options="header"]
+[options="header",cols="2,8,8,1,2"]
 |===
-|ID | Short Description      | Status | Ref
+|Type | ID | Short Description      | Status | Ref
 
+.8+h| [[build-tab]] {b-def}
 | {B-1}
 |
 |
@@ -154,6 +192,7 @@ include::compendium:partial$_attributes.adoc[]
 |
 |
 
+.16+h| [[syntax-tab]] {x-def}
 | {X-1}
 |
 |
@@ -235,6 +274,7 @@ include::compendium:partial$_attributes.adoc[]
 |
 |
 
+.7+h| [[structure-tab]] {s-def}
 | {S-1}
 |
 |
@@ -270,6 +310,7 @@ include::compendium:partial$_attributes.adoc[]
 |
 |
 
+.9+h| [[technical-tab]] {t-def}
 | {T-1}
 | All documents shall have `.adoc` as file extention
 |
@@ -316,6 +357,7 @@ Therefore, there should be a maximum line length.
 |
 |
 
+.7+h| [[writing-tab]] {w-def}
 | {W-1}
 |
 |
@@ -351,6 +393,7 @@ Therefore, there should be a maximum line length.
 |
 |
 
+.3+h| [[content-tab]] {c-def}
 | {C-1}
 |
 |
@@ -361,6 +404,12 @@ Therefore, there should be a maximum line length.
 |
 |
 
+| {C-5}
+| The specific technical content of standard should be in chapter 6 and its subfolders, once this is unified any reader will know, to look in chapter 6 for technical specifications.
+|
+|
+
+.2+h| [[document-tab]] {d-def}
 | {D-2}
 |
 |
@@ -371,14 +420,8 @@ Therefore, there should be a maximum line length.
 |
 |
 
-
-| {C-5}
-| The specific technical content of standard should be in chapter 6 and its subfolders, once this is unified any reader will know, to look in chapter 6 for technical specifications.
-|
-|
-
 |===
 
 
-== Requirement Details
+== Requirement details
 TODO
