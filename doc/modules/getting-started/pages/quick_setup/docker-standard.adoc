@@ -1,5 +1,0 @@
-= Docker Quick Setup
-
-Gives a quick setup guide for Docker.
-
-// TODO

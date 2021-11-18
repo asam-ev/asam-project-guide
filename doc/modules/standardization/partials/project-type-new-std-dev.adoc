@@ -1,8 +1,11 @@
 
-//tag::long[]
 //tag::short[]
-Start the development of a completely new standard within ASAM.
+A new standard is developed from the outset. There is no predecessor in the ASAM standard portfolio, or the predecessor has been declared as 'depricated'. A new ASAM standard can be a transfer from another organization or an extension of a standard from another standardization organization.
 //end::short[]
+
+//tag::long[]
+Start the development of a completely new standard within ASAM.
+
 The development project meets one of the following criteria:
 
 * There exists no predecessor in the ASAM standard portfolio.

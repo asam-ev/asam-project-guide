@@ -1,0 +1,15 @@
+= Abbreviations
+:description: A collection of abbreviations used throughout the ASAM Project Guide.
+:keywords: abbr, abbreviation
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
+
+== API
+Application Programming Interface:: An application programming interface (API) is a connection between computers or between computer programs.
+It is a type of software interface, offering a service to other pieces of software. See https://en.wikipedia.org/wiki/API[Wikipedia].
+
+== TSC
+Technical Steering Committee::
+https://www.asam.net/active-projects/technical-steering/

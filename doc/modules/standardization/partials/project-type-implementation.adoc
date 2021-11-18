@@ -1,7 +1,21 @@
-//tag::long[]
+
 //tag::short[]
-An implementation project has the purpose to create a supplementary product that supports the application of an ASAM standard in the industry.
+An implementation project has the purpose to create a supplementary product that supports the implementation or application of an ASAM standard in the industry.
+The result of an implementation project can be a tool or source code.
+Examples for tools are checkers for file formats and APIs, add-ons or plug-ins for de-facto standard IDEs (e.g. MATLAB, Simulink, Eclipse, etc.), importers, exporters or reference implementations.
+Source code is typically an implementation of the standard and can be used as a reference for sofware development or is directly used as compilable software components in COTS products.
+Source code shall ensure a high degree of standard-compliance and significantly reduce software development efforts at ASAM tool vendor companies, where otherwise each of the them would have to develop the software by themselves.
+
+
+
+Deliverables of an implementation project have product-quality.
+They are professionally developed by a contractor in accordance with customary industry quality guidelines.
+A project group must always exist to define requirements for the product and review the results of the contractor's work.
+Funding for implementation projects can be up to 100% of the project's required budget.
 //end::short[]
+
+//tag::long[]
+An implementation project has the purpose to create a supplementary product that supports the ap-plication of an ASAM standard in the industry.
 
 An ASAM product shall cover one of the following use-cases:
 
@@ -60,23 +74,34 @@ In case of a justified objection, the TSC shall not approve the proposed project
 
 Non-distributable source code files shall include the following comment text in the file header:
 
-.header template for non-distributable source code
+.Header template for non-distributable source code
 ----
 // <ASAM Standard Name and Version>
+
+
 // © by ASAM e.V., <Year>
+
+
 // <File short description>
-// Any use is limited to the scope described in the ASAM license terms.See www.asam.net/license.html for further details.
+
+
+// Any use is limited to the scope described in the ASAM license terms. See https://www.asam.net/license.html[window=_blank] for further details.
 ----
 
 Distributable source code files shall include the following comment text in the file header:
 
-.header template for distributable source code
+.Header template for distributable source code
 ----
 // <ASAM Standard Name and Version>
+
+
 // © by ASAM e.V., <Year>
+
+
 // <File short description>
-// Any use is limited to the scope described in the ASAM license terms.
-This file is distributable in accordance with the ASAM license terms.See www.asam.net/license.html for further details.
+
+
+// Any use is limited to the scope described in the ASAM license terms. This file is distributable in accordance with the ASAM license terms. See www.asam.net/license.html for further details.
 ----
 
 //tag::table[]

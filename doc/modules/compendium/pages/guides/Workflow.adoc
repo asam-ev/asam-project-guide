@@ -1,8 +1,8 @@
-= ASAM Standard Workflows
+= ASAM standard workflows
 
 IMPORTANT: 28.04.2021: See https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/git/Transitioning-to-a-new-workflow[Transitioning to the new Workflow^] for steps we need to take to enable this workflow
 
-== Workflow Overview
+== Workflow overview
 
 .OSC2 Workflow Stages
 [mermaid]
@@ -17,7 +17,7 @@ ISSUE
 ....
 
 
-== Branch Structure
+== Branch structure
 
 image::2021-04-15_OSC2_RevisedWorkflow-Diagram_v5-Page-2.png[Revised Workflow Diagram Open Scenario 2.0]
 
@@ -42,11 +42,11 @@ Users **MAY** branch off master for more focused development work.
 These branches **SHOULD** be short-lived (<2 weeks) and regularly merged back.
 These branches **MAY** be squashed and **MUST** be merged via fast-forward merge (enabled by default).
 
-== ASAM OSC2 Commit Message Convention
+== ASAM OSC2 commit message convention
 
 The Open Scenario 2 Commit Message Convention can be found xref:git/Commit-Guidelines.adoc[here]
 
-== Project Workflow
+== Project workflow
 
 NOTE: ``Code snippets`` are https://code.asam.net/help/user/project/quick_actions[GitLab quick actions^] that can be used directly in comments.
 
@@ -112,7 +112,7 @@ You can also download the artifacts directly from the pipeline result page.
 ====
 
 
-=== INITIAL SETUP
+=== Initial setup
 
 *Who: WG Leads*
 
@@ -121,7 +121,7 @@ You can also download the artifacts directly from the pipeline result page.
 . Assign the issues to a responsible: ``/assign @<user>``
 
 
-=== ANALYSIS
+=== Analysis
 
 *Who: Issue Assignee*
 
@@ -129,7 +129,7 @@ You can also download the artifacts directly from the pipeline result page.
 Either via comments or in further meetings.
 . ``/label ~Analysis`` to indicate this issue is being looked at and discussed.
 
-=== IMPLEMENTATION
+=== Implementation
 
 *Who: Issue Assignee*
 
@@ -139,7 +139,7 @@ Such a branch SHOULD be short-lived (no more than 2 weeks) to ensure progress an
 . Change the issue status ``/label ~Implementation`` to indicate that a proposal is being implemented for this issue
 
 
-=== REVIEW
+=== Review
 
 *Who: WG Lead*
 
@@ -173,7 +173,7 @@ image::ReviewExample.gif[]
 . The MR is assigned to the service provider for integration
 .. ``/assign @amuetsch``
 
-=== INTEGRATION
+=== Integration
 
 . The service provider (SP) refines the content in the MR:
 .. Change status to ``/label ~Integration``
@@ -191,7 +191,7 @@ In the case that questions lead to significant changes to the content, the MR is
 .. Both MRs MUST be set to squash commits with fast-forward merging (default).
 .. Squash commit message MUST adhere to the commit conventions
 
-=== MERGE
+=== Merge
 
 *Who: CCB*
 
@@ -201,10 +201,3 @@ In the case that questions lead to significant changes to the content, the MR is
 * Are all discussions resolved?
 . CCB merges the MRs to ``develop`` and ``release``
 
-
----
-### Further Repository Guidelines
-- xref:git/Commit-Guidelines.adoc[Commit Message Guidelines] -  Formatting guidelines for commit messages on commits/merges to the ASAM master branches
-- xref:git/Branching.adoc[Branching]
-- xref:git/Forking.adoc[Forking]
-- xref:tool-specific/VSCode-Guide.adoc[VSCode at ASAM]

@@ -1,7 +1,13 @@
-// tag::long[]
+
 // tag::short[]
-Major version developments of ASAM standards introduce significant changes to the standard.
+A major version development project introduces significant changes to the standard, e.g. the addition of a new major feature or significant changes to existing features.
+It is expected that the implementation of the new version will require significant development or migration efforts by tool vendors and end users alike.
+A new major version of an ASAM standard does not have to be backward-compatible to its predecessor.
 // end::short[]
+
+// tag::long[]
+
+Major version developments of ASAM standards introduce significant changes to the standard.
 
 Major version development projects meet one or more of the following criteria:
 

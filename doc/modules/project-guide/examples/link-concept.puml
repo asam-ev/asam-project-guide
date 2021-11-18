@@ -3,8 +3,9 @@ package ROOT #5050d0 {
 rectangle "home.adoc" as f5_3
 }
 package compendium #ff5050 {
-rectangle "tools/docker/docker-for-asciidoc.adoc" as f0_31
-rectangle "compendium.adoc" as f0_2
+rectangle "tools/docker/docker-for-asciidoc.adoc" as f0_43
+rectangle "abbreviations.adoc" as f0_2
+rectangle "compendium.adoc" as f0_3
 }
 package getting-involved #5050ff {
 rectangle "home.adoc" as f1_2
@@ -15,7 +16,8 @@ rectangle "main.adoc" as f2_3
 rectangle "nav.adoc" as f2_1
 rectangle "new-here.adoc" as f2_4
 rectangle "about-this-guide.adoc" as f2_2
-rectangle "quick-setup.adoc" as f2_5
+rectangle "new_here/current-projects.adoc" as f2_9
+rectangle "new_here/how-asam-works.adoc" as f2_10
 }
 package project-guide #ffff50 {
 rectangle "home.adoc" as f3_8
@@ -33,30 +35,30 @@ rectangle "used-attributes.adoc" as f3_13
 rectangle "link-concept.adoc" as f3_10
 }
 package role-specific #ff50ff {
-rectangle "home.adoc" as f4_4
-rectangle "asam-project-roles.adoc" as f4_2
-rectangle "gtm.adoc" as f4_3
-rectangle "project-lead.adoc" as f4_5
-rectangle "reviewer.adoc" as f4_6
-rectangle "service-provider.adoc" as f4_7
-rectangle "standard-manager.adoc" as f4_8
-rectangle "standard-user.adoc" as f4_9
-rectangle "technical-writer.adoc" as f4_10
-rectangle "wg-member.adoc" as f4_11
+rectangle "home.adoc" as f4_3
+rectangle "gtm.adoc" as f4_2
+rectangle "project-lead.adoc" as f4_4
+rectangle "reviewer.adoc" as f4_5
+rectangle "service-provider.adoc" as f4_6
+rectangle "standard-manager.adoc" as f4_7
+rectangle "standard-user.adoc" as f4_8
+rectangle "technical-writer.adoc" as f4_9
+rectangle "wg-member.adoc" as f4_10
 rectangle "nav.adoc" as f4_1
 }
 package standardization #d05050 {
+rectangle "project-ideation.adoc" as f6_8
+rectangle "home.adoc" as f6_6
+rectangle "deliverables.adoc" as f6_4
 rectangle "asam-development-process.adoc" as f6_2
-rectangle "development-phase.adoc" as f6_4
-rectangle "home.adoc" as f6_5
-rectangle "proposal-phase.adoc" as f6_10
-rectangle "release-phase.adoc" as f6_11
-rectangle "review-phase.adoc" as f6_12
-rectangle "project-types.adoc" as f6_9
+rectangle "development-phase.adoc" as f6_5
+rectangle "proposal-phase.adoc" as f6_11
+rectangle "release-phase.adoc" as f6_12
+rectangle "review-phase.adoc" as f6_13
+rectangle "project-setup.adoc" as f6_9
+rectangle "project-types.adoc" as f6_10
 rectangle "creation-of-standards.adoc" as f6_3
-rectangle "issue-resolution.adoc" as f6_6
-rectangle "project-ideation.adoc" as f6_7
-rectangle "project-setup.adoc" as f6_8
+rectangle "issue-resolution.adoc" as f6_7
 rectangle "nav.adoc" as f6_1
 }
 package tooling #d0d050 {
@@ -74,14 +76,16 @@ rectangle "drawio/drawio-setup.adoc" as f7_16
 rectangle "git/git-setup.adoc" as f7_19
 }
 
-f0_31 --[#FF0000]--> f7_3
+f0_43 --[#FF0000]--> f7_3
 f1_1 -[#0000FF]-> f1_2
 f2_1 -[#00FF00]-> f2_3
 f2_1 -[#00FF00]-> f2_4
 f2_1 -[#00FF00]-> f2_2
 f2_3 -[#00FF00]-> f2_4
 f2_3 -[#00FF00]-> f2_2
-f2_3 -[#00FF00]-> f2_5
+f2_9 --[#00FF00]--> f6_8
+f2_9 --[#00FF00]--> f6_6
+f2_10 --[#00FF00]--> f6_6
 f3_1 -[#CCCC00]-> f3_8
 f3_1 -[#CCCC00]-> f3_6
 f3_1 -[#CCCC00]-> f3_4
@@ -99,14 +103,17 @@ f3_2 -[#CCCC00]-> f3_6
 f3_4 -[#CCCC00]-> f3_6
 f3_11 -[#CCCC00]-> f3_2
 f3_11 -[#CCCC00]-> f3_3
+f3_13 --[#CCCC00]--> f0_2
+f3_13 --[#CCCC00]--> f2_2
 f3_13 -[#CCCC00]-> f3_4
 f3_13 -[#CCCC00]-> f3_6
 f3_13 -[#CCCC00]-> f3_12
-f3_13 --[#CCCC00]--> f4_4
+f3_13 --[#CCCC00]--> f4_3
 f3_13 -[#CCCC00]-> f3_13
-f3_13 --[#CCCC00]--> f0_2
-f3_13 --[#CCCC00]--> f6_2
+f3_13 --[#CCCC00]--> f0_3
 f3_13 --[#CCCC00]--> f6_4
+f3_13 --[#CCCC00]--> f6_2
+f3_13 --[#CCCC00]--> f6_5
 f3_13 --[#CCCC00]--> f7_3
 f3_13 --[#CCCC00]--> f7_4
 f3_13 -[#CCCC00]-> f3_10
@@ -115,46 +122,53 @@ f3_13 --[#CCCC00]--> f7_5
 f3_13 --[#CCCC00]--> f7_6
 f3_13 --[#CCCC00]--> f7_10
 f3_13 --[#CCCC00]--> f5_3
+f3_13 --[#CCCC00]--> f6_8
 f3_13 --[#CCCC00]--> f2_3
 f3_13 -[#CCCC00]-> f3_8
-f3_13 --[#CCCC00]--> f6_5
+f3_13 --[#CCCC00]--> f6_6
 f3_13 --[#CCCC00]--> f7_7
 f3_13 --[#CCCC00]--> f7_2
 f3_13 --[#CCCC00]--> f7_8
 f3_13 -[#CCCC00]-> f3_2
 f3_13 -[#CCCC00]-> f3_3
 f3_13 --[#CCCC00]--> f2_4
-f3_13 --[#CCCC00]--> f4_2
 f3_13 -[#CCCC00]-> f3_11
-f3_13 --[#CCCC00]--> f6_10
 f3_13 --[#CCCC00]--> f6_11
 f3_13 --[#CCCC00]--> f6_12
+f3_13 --[#CCCC00]--> f6_13
 f3_13 --[#CCCC00]--> f6_9
+f3_13 --[#CCCC00]--> f6_10
 f3_13 --[#CCCC00]--> f7_9
-f3_13 --[#CCCC00]--> f4_3
+f3_13 --[#CCCC00]--> f4_2
+f3_13 --[#CCCC00]--> f4_4
 f3_13 --[#CCCC00]--> f4_5
 f3_13 --[#CCCC00]--> f4_6
 f3_13 --[#CCCC00]--> f4_7
 f3_13 --[#CCCC00]--> f4_8
 f3_13 --[#CCCC00]--> f4_9
 f3_13 --[#CCCC00]--> f4_10
-f3_13 --[#CCCC00]--> f4_11
 f3_13 --[#CCCC00]--> f6_3
-f3_13 --[#CCCC00]--> f6_6
 f3_13 --[#CCCC00]--> f6_7
-f3_13 --[#CCCC00]--> f6_8
+f4_1 -[#FF00FF]-> f4_3
+f4_1 -[#FF00FF]-> f4_2
 f4_1 -[#FF00FF]-> f4_4
-f6_1 -[#800000]-> f6_5
-f6_1 -[#800000]-> f6_9
-f6_1 -[#800000]-> f6_2
-f6_1 -[#800000]-> f6_7
-f6_1 -[#800000]-> f6_10
-f6_1 -[#800000]-> f6_4
-f6_1 -[#800000]-> f6_12
-f6_1 -[#800000]-> f6_11
-f6_1 -[#800000]-> f6_8
-f6_1 -[#800000]-> f6_3
+f4_1 -[#FF00FF]-> f4_10
+f4_1 -[#FF00FF]-> f4_5
+f4_1 -[#FF00FF]-> f4_9
+f4_1 -[#FF00FF]-> f4_6
+f4_1 -[#FF00FF]-> f4_7
+f4_1 -[#FF00FF]-> f4_8
 f6_1 -[#800000]-> f6_6
+f6_1 -[#800000]-> f6_10
+f6_1 -[#800000]-> f6_2
+f6_1 -[#800000]-> f6_8
+f6_1 -[#800000]-> f6_11
+f6_1 -[#800000]-> f6_5
+f6_1 -[#800000]-> f6_13
+f6_1 -[#800000]-> f6_12
+f6_1 -[#800000]-> f6_9
+f6_1 -[#800000]-> f6_3
+f6_1 -[#800000]-> f6_7
 f7_1 -[#808000]-> f7_7
 f7_1 -[#808000]-> f7_10
 f7_1 -[#808000]-> f7_6

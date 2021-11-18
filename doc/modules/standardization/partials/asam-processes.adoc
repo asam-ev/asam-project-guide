@@ -1,10 +1,18 @@
 
 //tag::short[]
-* I: Ideation Phase
-* P: Proposal Phase
-* D: Development Phase
-* C: Review Phase
-* R: Release Phase
+include::standardization:partial$_attributes.adoc[]
+
+ASAM standardization activities are organized in projects.
+They are a temporary endeavor of ASAM members undertaken to develop or modify a standard with a defined beginning, a defined end and defined resources.
+
+ASAM projects are carried out via the ASAM standard development process.
+This process consists of four phases and a total of up to fifteen process steps, as described in the next subchapters:
+
+* **I**: {ideation-phase}
+* **P**: {proposal-phase}
+* **D**: {development-phase}
+* **C**: {review-phase}
+* **R**: {release-phase}
 //end::short[]
 
 //tag::enumerated[]

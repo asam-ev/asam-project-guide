@@ -1,0 +1,53 @@
+[[top-tables]]
+= How to include tables in ASAM documents
+:description: How-To for including tables in ASAM documents (standards).
+:keywords: asciidoc,table,how-to
+:page-partial:
+
+include::compendium:partial$_attributes.adoc[]
+
+
+This chapters shows how to include tables in an ASAM standard.
+
+== Code
+....
+[[tab-example-table]] // <1>
+.Date and time format specifiers // <2>
+[cols=",,",options="header",frame=topbot,grid=rows] // <3>
+|=== // <4>
+|Specifiers |Meaning |Example  // <5>
+|yyyy |Year (four digits) |``2011``
+|M, MM |Month in year (without / with leading zero) |``9, 09``
+|d, dd |Day in month (without / with leading zero) |``3, 09``
+|H, HH |Hours, 0-23 count (without / with leading zero) |``7, 07``
+|m, mm |Minutes (without / with leading zero) |``2, 02``
+|s, ss |Seconds (without / with leading zero) |``4, 04``
+|F, FF, FFF |Milliseconds (without / with leading zeros) |``357, 04, 002 ``
+|Z |RFC 822 time zone (time shift to GMT) |``+100``
+|=== // <6>
+....
+<1> Anchor for the table. Reference this anchor using \<<tab-example-table>>
+<2> Table caption
+<3> Option for rendering the table
+<4> Table delimiter
+<5> Actual table definition
+<6> Table delimiter
+
+== Result
+
+See the result in <<tab-example-table>>.
+
+[[tab-example-table]]
+.Date and time format specifiers
+[cols=",,",options="header",frame=topbot,grid=rows]
+|===
+|Specifiers |Meaning |Example
+|yyyy |Year (four digits) |``2011``
+|M, MM |Month in year (without / with leading zero) |``9, 09``
+|d, dd |Day in month (without / with leading zero) |``3, 09``
+|H, HH |Hours, 0-23 count (without / with leading zero) |``7, 07``
+|m, mm |Minutes (without / with leading zero) |``2, 02``
+|s, ss |Seconds (without / with leading zero) |``4, 04``
+|F, FF, FFF |Milliseconds (without / with leading zeros) |``357, 04, 002 ``
+|Z |RFC 822 time zone (time shift to GMT) |``+100``
+|===

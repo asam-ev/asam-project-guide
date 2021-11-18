@@ -1,4 +1,4 @@
-= What Is YAML/yml?
+= What is YAML/yml?
 :description: Describes the term YAML (yml) and what it means.
 :keywords: yml,yaml
 

@@ -1,8 +1,6 @@
 = AsciiDoc Guide
-:hardbreaks:
-:nofooter:
-:icons: font
-:linkattrs:
+:description: TBD
+:keywords: writing_guide
 
 [.lead]
 All ASAM OpenX Standards are written using the Asciidoc format https://asciidoc.org/[asciidoc Homepage^].

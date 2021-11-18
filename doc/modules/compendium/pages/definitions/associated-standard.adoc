@@ -1,4 +1,4 @@
-= Associated Standard
+= Associated standard
 :description: Definition of an associated standard.
 :keywords: definition,classification,associated-standard
 :page-partial:

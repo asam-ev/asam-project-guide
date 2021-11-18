@@ -1,5 +1,0 @@
-= Microsoft Teams Quick Setup
-
-Gives a quick setup guide for MS Teams.
-
-// TODO

@@ -1,4 +1,9 @@
-= About This Guide
+= About this guide
+:description: An "about" for the Project Guide.
+:keywords: about,project-guide
+
+include::partial$_attributes.adoc[]
+
 
 Explains the use of this guide, how it is generally structured and how to best use it.
 

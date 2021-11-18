@@ -1,0 +1,40 @@
+
+//tag::summary[]
+Within projects at ASAM, participant have one or more roles.
+Each of these roles has their own set of requirements, mandatory and/or optional tool, guidelines and how-tos, some of them shared between multiple roles.
+//end::summary[]
+
+//tag::list_of_roles[]
+
+.List of roles
+|===
+|Role |Description
+
+| {role-reviewer}
+| TODO
+
+| {role-wg-member}
+| TODO
+
+| {role-technical-writer}
+| TODO
+
+| {role-project-lead}
+| TODO
+
+| {role-gtm}
+| TODO
+
+| {role-service-provider}
+| TODO
+
+| {role-standard-user}
+| TODO
+
+| {role-standard-manager}
+| TODO
+
+|===
+
+
+//end::list_of_roles[]

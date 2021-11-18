@@ -14,6 +14,5 @@ To do so, the following sections is supposed to give a basic summary over all im
 
 * New here? See the xref:new-here.adoc[New Here] pages for the very basics about ASAM and the ASAM projects.
 * If you want to learn more about this Project Guide, see the section xref:about-this-guide.adoc[About This Guide].
-* For a quick setup on the most commonly used tools suggested by ASAM, see the section xref:quick-setup.adoc[Quick Setup].
 
 related::landing_page[]

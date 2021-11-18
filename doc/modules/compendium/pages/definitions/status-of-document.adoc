@@ -1,4 +1,4 @@
-= Status Of Documents
+= Status of documents
 :description: Describes what the status of a standardization document is.
 :keywords: definition
 :page-partial:
