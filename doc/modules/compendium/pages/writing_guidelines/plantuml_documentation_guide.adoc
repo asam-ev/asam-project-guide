@@ -260,3 +260,5 @@ This way the whole fragment appears as if it was copied into your topic.
 
 * The name of the fragment is +
 `<plantuml_name>_<element_type>_<element_name>.adoc`
+
+See also: https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc

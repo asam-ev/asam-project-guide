@@ -275,3 +275,5 @@ scenario slower_large_vehicle_in_adjacent_lane
 == Contact information
 
 If you have any questions and/or suggestions concerning this coding style guide for OpenSCENARIO 2, please contact andreas.muetsch@dxc.com.
+
+See also: https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc
