@@ -687,5 +687,7 @@ See the https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master
 
 If you have any questions and/or suggestions concerning this Writing guide for OpenSCENARIO 2 please contact andreas.muetsch@dxc.com.
 
+See also: https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/writing_guide.adoc[window=_blank]
+
 
 related::writing_guide[]
