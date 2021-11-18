@@ -3,7 +3,8 @@ package ROOT #5050d0 {
 rectangle "home.adoc" as f5_3
 }
 package compendium #ff5050 {
-rectangle "tools/docker/docker-for-asciidoc.adoc" as f0_43
+rectangle "guides/commenting.adoc" as f0_16
+rectangle "tools/docker/docker-for-asciidoc.adoc" as f0_48
 rectangle "abbreviations.adoc" as f0_2
 rectangle "compendium.adoc" as f0_3
 }
@@ -62,6 +63,7 @@ rectangle "issue-resolution.adoc" as f6_7
 rectangle "nav.adoc" as f6_1
 }
 package tooling #d0d050 {
+rectangle "vscode.adoc" as f7_9
 rectangle "docker.adoc" as f7_3
 rectangle "drawio.adoc" as f7_4
 rectangle "git.adoc" as f7_5
@@ -70,13 +72,13 @@ rectangle "working-without-software-installation.adoc" as f7_10
 rectangle "overview.adoc" as f7_7
 rectangle "calendar.adoc" as f7_2
 rectangle "teams-and-sharepoint.adoc" as f7_8
-rectangle "vscode.adoc" as f7_9
 rectangle "nav.adoc" as f7_1
 rectangle "drawio/drawio-setup.adoc" as f7_16
 rectangle "git/git-setup.adoc" as f7_19
 }
 
-f0_43 --[#FF0000]--> f7_3
+f0_16 --[#FF0000]--> f7_9
+f0_48 --[#FF0000]--> f7_3
 f1_1 -[#0000FF]-> f1_2
 f2_1 -[#00FF00]-> f2_3
 f2_1 -[#00FF00]-> f2_4

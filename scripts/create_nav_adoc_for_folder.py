@@ -108,7 +108,7 @@ def create_pure_navigation_adoc_file(fname,dname,created_files):
     if not os.path.isfile(fname):
         created = True
         with open(fname,'w') as f:
-            f.write("= "+dname.capitalize()+"\n\n== Subpages\n\n")
+            f.write("= "+dname.replace("_"," ").capitalize()+"\n\n== Subpages\n\n")
 
     if created:
         created_files.append(fname)
