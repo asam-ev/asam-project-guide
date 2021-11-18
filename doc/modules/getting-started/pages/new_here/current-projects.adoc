@@ -40,27 +40,37 @@ include::standardization:partial$project-type-revision.adoc[tag=short]
 === Implementation Project
 include::standardization:partial$project-type-implementation.adoc[tag=short]
 
-=== Concept Project
+=== Concept project
 include::standardization:partial$project-type-concept.adoc[tag=short]
 
-=== Study Project
+=== Study project
 include::standardization:partial$project-type-study.adoc[tag=short]
 
 
-== Released Standards
+== Released standards
 You can find the current list of released standards at https://www.asam.net/standards/.
 
-== Current Projects
+== Current projects
 === Proposals
+ASAM members are invited to:
+
+* Provide comments about the content of the proposal.
+* Enroll for participation in the project.
+
 All current proposals are listed under https://www.asam.net/active-projects/proposals/.
 
-=== Ongoing Projects
+=== Ongoing projects
 All currently ongoing projects are listed under https://www.asam.net/active-projects/projects/.
 
-=== Public Reviews
+=== Public reviews
+The purpose of a "Public Review" is to involve ASAM members who are not part of the project group but work in the respective domain, to obtain their review feedback and to increase the overall quality and acceptance of a standard prior to its release.
+If you are employee of an ASAM member company, you are eligible to take part in the review process.
+
 Any public review is listed under https://www.asam.net/active-projects/public-review/.
 
-== Want To Add A New Idea?
+== Want to add a new idea?
+include::standardization:partial$project-ideation.adoc[tag=short]
+
 Enter your idea for a new project through the ideation process:
 https://www.asam.net/active-projects/ideation/.
 

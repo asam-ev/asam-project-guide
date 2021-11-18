@@ -1,5 +1,5 @@
 
-//tag:short[]
+//tag::short[]
 Study projects provide members an organizational structure to study or analyze specific aspects of ASAM standards in a collaborative way.
 Study projects have the overall goal to enhance the understanding of ASAM standards, to promote their application in member companies and to create change requests for the further development of ASAM standards.
 This project type is specifically intended for members in regions, where ASAM standards are not well known.

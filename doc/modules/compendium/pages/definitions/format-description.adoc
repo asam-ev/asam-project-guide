@@ -1,4 +1,4 @@
-= Format Description
+= Format description
 :description: Definition of a format description.
 :keywords: definition,content-characterization,base-standard
 :page-partial:

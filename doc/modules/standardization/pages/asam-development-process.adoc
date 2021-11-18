@@ -1,14 +1,8 @@
-= ASAM Development Process For Standards
+= ASAM development process for standards
 :description: Summarizes the overal devlopment process for ASAM standards.
 :keywords: summary,summarize,development,process
+
 include::partial$_attributes.adoc[]
-
-
-ASAM standardization activities are organized in projects.
-They are a temporary endeavor of ASAM members undertaken to develop or modify a standard with a defined beginning, a defined end and defined resources.
-
-ASAM projects are carried out via the ASAM standard development process.
-This process consists of four phases and a total of up to fifteen process steps, as described in the next subchapters:
 
 include::partial$asam-processes.adoc[tag=short]
 

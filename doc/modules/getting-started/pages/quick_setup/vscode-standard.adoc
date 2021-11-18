@@ -1,5 +1,0 @@
-= Visual Studio Code Quick Setup
-
-Gives a quick setup guide for VSCode.
-
-// TODO

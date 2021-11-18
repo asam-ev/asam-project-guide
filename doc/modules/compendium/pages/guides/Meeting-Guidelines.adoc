@@ -1,7 +1,7 @@
-= Meeting Guidelines
+= Meeting guidelines
 :mydir: general_guidelines/
 
-== Whom To Invite?
+== Whom to invite?
 - While the project is still in the early phase, people will likely be moving around in groups
 - Send the invite to those emails registered for the group; additionally, CC the following:
   - The project lead and the ASAM representative.
@@ -15,7 +15,7 @@ Its location is described in the xref:{mydir}Microsoft-Teams-and-Sharepoint#user
 // TODO: find correct link and information supposed to go here.
 // TODO: write the full meaning of "WP"
 
-== Setting Up A Meeting
+== Setting up a meeting
 - If you have a Teams license, you can setup a Teams meeting directly.
 See xref:{mydir}Microsoft-Teams-and-Sharepoint#_meetings_in_teams[setting up a Teams meeting].
 - Otherwise, feel free to use whatever solution you or your company normally use.

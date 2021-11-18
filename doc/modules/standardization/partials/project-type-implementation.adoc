@@ -74,23 +74,34 @@ In case of a justified objection, the TSC shall not approve the proposed project
 
 Non-distributable  source  code  files shall  include  the  following  comment  text  in  the  file header:
 
-.header template for non-distributable source code
+.Header template for non-distributable source code
 ----
 // <ASAM Standard Name and Version>
+
+
 // © by ASAM e.V., <Year>
+
+
 // <File short description>
-// Any use is limited to the scope described in the ASAM license terms.See www.asam.net/license.html for further details.
+
+
+// Any use is limited to the scope described in the ASAM license terms. See https://www.asam.net/license.html[window=_blank] for further details.
 ----
 
 Distributable source code files shall include the following comment text in the file header:
 
-.header template for distributable source code
+.Header template for distributable source code
 ----
 // <ASAM Standard Name and Version>
+
+
 // © by ASAM e.V., <Year>
+
+
 // <File short description>
-// Any use is limited to the scope described in the ASAM license terms.
-This  file  is  distributable  in  accordance  with the ASAM license terms.See www.asam.net/license.html for further details.
+
+
+// Any use is limited to the scope described in the ASAM license terms. This  file  is  distributable  in  accordance  with the ASAM license terms. See www.asam.net/license.html for further details.
 ----
 
 //tag::table[]

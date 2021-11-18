@@ -1,5 +1,0 @@
-= Quick Setup Guide
-
-Shows the most default setup, whom it is for, where to find more detailed information and links to the subchapters.
-
-// TODO

@@ -8,7 +8,7 @@ All standard are written after one version of the ASAM proect guide.
 
 ---
 
-== Chapter structure draft:
+== Chapter structure draft
 
 . Introduction
 . Overview

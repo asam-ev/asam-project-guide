@@ -18,6 +18,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === about
 
+* xref:getting-started:about-this-guide.adoc[getting-started/pages/about-this-guide.adoc]
 * xref:getting-started:about_guide/intentions-and-content.adoc[getting-started/pages/about_guide/intentions-and-content.adoc]
 * xref:getting-started:new_here/asam-contacts.adoc[getting-started/pages/new_here/asam-contacts.adoc]
 * xref:getting-started:new_here/how-asam-works.adoc[getting-started/pages/new_here/how-asam-works.adoc]
@@ -64,16 +65,13 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:getting-started:new_here/asam-contacts.adoc[getting-started/pages/new_here/asam-contacts.adoc]
 * xref:getting-started:new_here/current-projects.adoc[getting-started/pages/new_here/current-projects.adoc]
 * xref:getting-started:new_here/how-asam-works.adoc[getting-started/pages/new_here/how-asam-works.adoc]
+* xref:getting-started:new_here/processes-and-workflows-overview.adoc[getting-started/pages/new_here/processes-and-workflows-overview.adoc]
+* xref:getting-started:new_here/roles-overview.adoc[getting-started/pages/new_here/roles-overview.adoc]
+* xref:getting-started:new_here/tools-overview.adoc[getting-started/pages/new_here/tools-overview.adoc]
 * xref:project-guide:special-macros.adoc[project-guide/pages/special-macros.adoc]
 * xref:project-guide:macros/macro-reference.adoc[project-guide/pages/macros/macro-reference.adoc]
 * xref:project-guide:macros/macro-related.adoc[project-guide/pages/macros/macro-related.adoc]
 * xref:role-specific:home.adoc[role-specific/pages/home.adoc]
-
-=== asamnew-here-content
-
-* xref:getting-started:new_here/processes-and-workflows-overview.adoc[getting-started/pages/new_here/processes-and-workflows-overview.adoc]
-* xref:getting-started:new_here/roles-overview.adoc[getting-started/pages/new_here/roles-overview.adoc]
-* xref:getting-started:new_here/tools-overview.adoc[getting-started/pages/new_here/tools-overview.adoc]
 
 === asciidoc
 
@@ -203,6 +201,10 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:definitions/status-of-document.adoc[compendium/pages/definitions/status-of-document.adoc]
 * xref:compendium:definitions/technology-reference.adoc[compendium/pages/definitions/technology-reference.adoc]
 * xref:compendium:definitions/transport-layer-specification.adoc[compendium/pages/definitions/transport-layer-specification.adoc]
+
+=== deliverable
+
+* xref:standardization:deliverables.adoc[standardization/pages/deliverables.adoc]
 
 === desktop
 
@@ -508,6 +510,9 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:getting-started:new_here/asam-contacts.adoc[getting-started/pages/new_here/asam-contacts.adoc]
 * xref:getting-started:new_here/current-projects.adoc[getting-started/pages/new_here/current-projects.adoc]
 * xref:getting-started:new_here/how-asam-works.adoc[getting-started/pages/new_here/how-asam-works.adoc]
+* xref:getting-started:new_here/processes-and-workflows-overview.adoc[getting-started/pages/new_here/processes-and-workflows-overview.adoc]
+* xref:getting-started:new_here/roles-overview.adoc[getting-started/pages/new_here/roles-overview.adoc]
+* xref:getting-started:new_here/tools-overview.adoc[getting-started/pages/new_here/tools-overview.adoc]
 
 === new_member
 
@@ -593,6 +598,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === project-guide
 
+* xref:getting-started:about-this-guide.adoc[getting-started/pages/about-this-guide.adoc]
 * xref:project-guide:add-a-page.adoc[project-guide/pages/add-a-page.adoc]
 * xref:project-guide:add-a-partial.adoc[project-guide/pages/add-a-partial.adoc]
 * xref:project-guide:content-structure.adoc[project-guide/pages/content-structure.adoc]
@@ -746,6 +752,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === standardization
 
+* xref:standardization:deliverables.adoc[standardization/pages/deliverables.adoc]
 * xref:standardization:home.adoc[standardization/pages/home.adoc]
 * xref:standardization:issue-resolution.adoc[standardization/pages/issue-resolution.adoc]
 * xref:standardization:project-types.adoc[standardization/pages/project-types.adoc]
