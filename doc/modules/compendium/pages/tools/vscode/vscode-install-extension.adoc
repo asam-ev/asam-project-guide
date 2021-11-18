@@ -1,4 +1,4 @@
-= Install Extensions
+= Install extensions
 :description: Explains how to install extensions for VSCode.
 :keywords: vscode,extensions
 

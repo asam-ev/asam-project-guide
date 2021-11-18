@@ -1,6 +1,6 @@
-= ASAM Developer Certeification Of Origin For Open Source Projects
+= ASAM developer Certeification Of Origin For Open Source Projects
 
-== Developer Certification of Origin (DCO)
+== Developer certification of Origin (DCO)
 To make a good faith effort to ensure licensing criteria are met, ASAM open source projects require the Developer Certificate of Origin (DCO) process to be followed.
 
 The DCO is an attestation attached to every contribution made by every developer.
@@ -36,7 +36,7 @@ The DCO agreement is shown below and online.
         consistent with this project or the open source license(s)
         involved.
 
-== DCO Sign-Off Methods
+== DCO sign-Off Methods
 The DCO requires a sign-off message in the following format appear on each commit in the pull request:
 [source]
 ----

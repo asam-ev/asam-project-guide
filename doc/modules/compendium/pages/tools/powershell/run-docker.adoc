@@ -1,4 +1,4 @@
-= Running Docker-Compose From Powershell
+= Running docker-Compose From Powershell
 :description: Run docker-compose from Powershell
 :keywords: docker,powershell
 :page-partial:

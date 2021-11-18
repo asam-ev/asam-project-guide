@@ -3,12 +3,13 @@
 :keywords: docker,summary,tool,recommended
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {docker-icon}
 
 include::compendium:partial$what-is-docker.adoc[tag=intro]
 
-== Docker At ASAM
+== Docker at ASAM
 TODO
 
 == Content

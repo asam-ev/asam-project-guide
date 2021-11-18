@@ -1,8 +1,8 @@
-= ASAM Issue And Merge Request Labels
+= ASAM issue And Merge Request Labels
 
 **Mouse over the labels for more information.**
 
-== General Labels
+== General labels
 
 === Issue type labels (automatically assigned in issue templates)
 Each issue should be assigned ONE of:
@@ -30,7 +30,7 @@ These are used to define which release milestone the issues will be integrated i
 All ASAM projects have their Work Packages for projects clustered into groups or categories.
 These labels are defined individually for each project and should be used to categorise issues.
 
-=== Work Package Labels
+=== Work package Labels
 All ASAM projects are have work items assigned to smaller work packages (that are then also assigned to a group or category).
 These labels are defined individually for each project and should be used to further categorise issues.
 

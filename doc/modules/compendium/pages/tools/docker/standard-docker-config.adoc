@@ -1,4 +1,4 @@
-= Standard Docker Compose YAML
+= Standard docker Compose YAML
 :description: Contains the standard docker-compose.yml description with the specification on how to use it.
 :keywords: docker,compose,yml,yaml
 :page-partial:
@@ -9,18 +9,18 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-== Why Use Docker?
+== Why use Docker?
 
 include::compendium:partial$what-is-docker.adoc[]
 
 TIP: You can download the standard docker-compose.yml link:{docker-compose-download}[here,opts=download].
 
 NOTE: For Antora, the docker-compose is slightly different.
-You can see an example in the {guide-repo-url}[project guide repository].
+You can see an example in the {guide-repo-url}[Project Guide repository].
 
 // TODO: Add description and specifications for Antora file.
 
-== Standard Docker-Compose Instructions
+== Standard docker-Compose Instructions
 
 . Create a new `docker-compose.yml` file in the root directory of the project.
 . Add the following content to the created file:
@@ -38,13 +38,13 @@ NOTE: Usually, the only adaption that may be required is to change the input fil
 TIP: It is also possible to include the running of scripts into this (e.g. adoc2LOFT)
 
 
-=== Typical Configuration Options
+=== Typical configuration Options
 
 Each project may have slightly different requirements, and at different stages of the project different features are available or not.
 To accommodate for that, the docker-compose.yml can be configured with options in the `entrypoint`.
 
 
-=== Asciidoctor Diagram
+=== Asciidoctor diagram
 
 If Asciidoctor Diagram is to be used, make sure that the option `-r asciidoctor-diagram` is set.
 
@@ -55,7 +55,7 @@ Mathjax is a JavaScript display engine intended for displaying mathmatical expre
 This can be activated by adding `-a mathjax` to the entrypoint.
 
 
-=== Asciidoctor Bibtex
+=== Asciidoctor bibtex
 
 If Asciidoctor Bibtex is to be used, make sure that the option `-r asciidoctor-bibtex` is set.
 
@@ -64,19 +64,19 @@ If the project does not have such a configuration (yet), remove this option.
 Otherwise, the container will fail to create any output!
 
 
-=== Single Input File
+=== Single input File
 
 You can define the input file by using `path-to-file/filename.format`.
 In the standard version above, this is set to `standard/main.adoc`.
 Replace this, if necessary.
 
 
-=== Multiple Input Files
+=== Multiple input Files
 
 If you want to process more than one file in one go, you can replace `path-to-file`, `filename` or both with `*`, so that it searches through all paths, files or both respectively.
 
 
-=== Output File
+=== Output file
 
 You can define the output file by using `-o path-to-file/filename.format`.
 By default, HTML is created, so use ".html" as your format.

@@ -1,4 +1,4 @@
-= Linking Test
+= Linking test
 
 {role-reviewer}
 {role-wg-member}

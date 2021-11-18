@@ -1,4 +1,4 @@
-= Recommended Visual Studio Code Extensions
+= Recommended visual Studio Code Extensions
 :description: A collecteion of recommended VSCode extensions
 :keywords: vscode,extensions,gitlab,asciidoc,drawio,docker
 :lookup: compendium:partial$vscode
@@ -15,7 +15,7 @@ Then, click on the Install-Button.
 
 include::{lookup}/asciidoctor.adoc[]
 
-== Git Graph
+== Git graph
 
 include::{lookup}/git-graph.adoc[]
 
@@ -23,7 +23,7 @@ include::{lookup}/git-graph.adoc[]
 
 include::{lookup}/gitlens.adoc[]
 
-== Comment Anchors
+== Comment anchors
 
 include::{lookup}/comment-anchors.adoc[]
 

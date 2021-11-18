@@ -1,4 +1,4 @@
-= Standard User
+= Standard user
 :description: Describes a standard user from ASAM project view.
 :keywords: role
 
@@ -9,7 +9,7 @@ include::compendium:partial$_attributes.adoc[]
 
 //end::default[]
 
-== Issue Resolution
+== Issue resolution
 //tag::issue_resolution[]
 A user of an ASAM standard (member or buyer) contacts ASAM technical support with a support request.
 They may suspect or report an issue with the standard.

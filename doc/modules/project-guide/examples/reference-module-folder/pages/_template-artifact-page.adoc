@@ -1,9 +1,10 @@
-= Artifact Page Name
+= Artifact page Name
 :description: The artefact's description
 :keywords: artifact
 :page-partial:
 
 \include::partial$_attributes.adoc[]
+\include::compendium:partial$abbreviations.adoc[]
 
 // If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
 

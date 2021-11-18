@@ -1,8 +1,9 @@
-= How To Get Involved At ASAM
+= How to Get Involved At ASAM
 :description: Landing page for information on how to get involved in ASAM projects.
 :keywords: landing_page,get-involved
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 include::ROOT:partial$_attributes.adoc[]
 
 {getting-involved-icon}

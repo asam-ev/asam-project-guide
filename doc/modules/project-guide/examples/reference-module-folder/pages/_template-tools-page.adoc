@@ -2,7 +2,8 @@
 :description: A summary page describing what <toolname> is and where to find related information, guides etc.
 :keywords: <toolname>,summary,tool,mandatory
 
-include::partial$_attributes.adoc[]
+\include::partial$_attributes.adoc[]
+\include::compendium:partial$abbreviations.adoc[]
 
 {<toolname>-icon}
 

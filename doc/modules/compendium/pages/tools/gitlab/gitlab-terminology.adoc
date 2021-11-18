@@ -4,6 +4,7 @@
 :page-partial:
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 
 ASAM GitLab:: {gitlab-url}

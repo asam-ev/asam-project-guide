@@ -1,9 +1,10 @@
-= Setting Up Visual Studio Code
+= Setting up Visual Studio Code
 :description: Contains a summary of how to do a basic VSCode setup.
 :keywords: setup, vscode, task, fragment, vscode-setup
 :vscode-download: https://code.visualstudio.com/download
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {vscode-icon}
 

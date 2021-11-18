@@ -276,13 +276,13 @@ class AsciiDocContent:
 
 
     def substitute_related_topics_macro(self,ref_list,line):
-        self.content[line] = "== Related Topics\n\n"
+        self.content[line] = "== Related topics\n\n"
         self.content.insert(line+1,"")
         offset = 2
         self.insert_references_in_content(line,offset,ref_list,self.attr_dict)
 
     def substitute_role_related_topics_macro(self,ref_list,line):
-        self.content[line] = "== Role Related Topics\n\n"
+        self.content[line] = "== Role related Topics\n\n"
         self.content.insert(line+1,"")
         offset = 2
         self.insert_references_in_content(line,offset,ref_list,self.roles_dict)
@@ -627,14 +627,14 @@ class AsciiDocContent:
 
 
     def write_attributes_to_file(self,output_filename = "used-attributes", output_path = "../doc/modules/project-guide/pages/"):
-        content = ["= Used Attributes In ASAM Projectd Guide"]
+        content = ["= Used attributes In ASAM Projectd Guide"]
         content.append(":description: Automatically generated overview over all attributes used throughout this Project Guide.")
         content.append(":keywords: generated,attributes,link-concept,structure")
         content.append("")
         content.append("This page is an automatically generated list of all attributes used throught this Project Guide.")
         content.append("Every attribute has its own subsection and contains a link to each page as well as the original filename, path and module in the repository.")
         content.append("")
-        content.append("== List Of Attributes")
+        content.append("== List of Attributes")
         content.append("")
 
         for a in sorted(self.attr_dict):

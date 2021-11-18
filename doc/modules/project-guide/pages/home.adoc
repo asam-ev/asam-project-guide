@@ -1,8 +1,9 @@
-= Working On The Project Guide
+= Working on The Project Guide
 :description: Landing page for information on how to work on the ASAM Project Guide using Asciidoctor and Antora.
 :keywords: landing_page,project-guide
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 include::ROOT:partial$_attributes.adoc[]
 
 {project-guide-icon}
@@ -11,7 +12,7 @@ This module collects information on how to work on the ASAM Project Guide.
 In particular, it contains specific configurations and attributes to use as well as custom macros specific to ASAM.
 It also references particularities of Antora and links to important information pages for Asciidoctor and Antora.
 
-== See Also
+== See also
 
 reference::project-guide[]
 

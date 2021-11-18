@@ -1,9 +1,10 @@
 = Adding A Page
-:description: Explains how to add a new page to the project guide and what to look out for.
+:description: Explains how to add a new page to the Project Guide and what to look out for.
 :keywords: page,project-guide,new-content-guide
 :page-partial:
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 // If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
 

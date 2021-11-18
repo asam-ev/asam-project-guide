@@ -3,7 +3,7 @@
 [cols="1h,20"]
 |===
 |Purpose
-|To decide upon technical readiness of the standard and submit the deliverables to the TSC.
+|To decide upon technical readiness of the standard and submit the deliverables to the {tsc}.
 
 |Responsible
 |Project group
@@ -12,7 +12,7 @@
 |none
 |===
 // end::table[]
-The project group prepares a release candidate and agrees per formal voting to submit the candidate to the TSC for release decision.
+The project group prepares a release candidate and agrees per formal voting to submit the candidate to the {tsc} for release decision.
 Each company has one vote.
 The release candidate is accepted by absolute two-thirds majority.
 The group's decision is documented in the meeting minutes.
@@ -29,5 +29,5 @@ Sources are those digital work products, which can be modified or edited with st
 // end::long[]
 
 //tag::short[]
-The project group prepares a release candidate and agrees per formal voting with an absolute two-thirds majority to submit the candidate to the TSC.
+The project group prepares a release candidate and agrees per formal voting with an absolute two-thirds majority to submit the candidate to the {tsc}.
 //end::short[]

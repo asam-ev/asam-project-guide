@@ -4,6 +4,7 @@
 
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 AsciiDoc files in Antora have different meaning depending on their location in the folder structure.
 The following table shows the relation to the location for Antora.
@@ -77,7 +78,7 @@ The following table shows the relation to the location for Antora.
 
 |===
 
-== When To Use A Page
+== When to Use A Page
 A page is located in the "pages" folder (or a subfolder therein) of a module.
 
 Each page is rendered into an html by the Antora build pipeline and is accessible through direct link or (if set up) cross-references or the sidebar.
@@ -94,7 +95,7 @@ For more information on page requirements, see xref:add-a-page.adoc[Adding A Pag
 
 For more information on how Antora handles pages in general, see https://docs.antora.org/antora/2.1/page/#standard[Standard Pages In Antora].
 
-== When To Use A Partial
+== When to Use A Partial
 A partial is located in the "partials" folder (or a subfolder therein) of a module.
 
 Partials are not rendered into hmls by the Antora build pipeline.

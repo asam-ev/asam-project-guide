@@ -1,14 +1,15 @@
-= Creation Of Standards
+= Creation of Standards
 :description: Summarizes how standards are created at ASAM.
 :keywords: standard
 :level: leveloffset=+1
 :sublevel: leveloffset=+2,tag=!related
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 This section describes the structure of standards documents and the types of standards that are produced in projects.
 
-== Classification Of Standards
+== Classification of Standards
 
 There are two types of standards: <<Base Standard,Base standards>> and <<Associated Standard,associated standards>>.
 
@@ -19,7 +20,7 @@ include::compendium:page$definitions/base-standard.adoc[{sublevel}]
 
 include::compendium:page$definitions/associated-standard.adoc[{sublevel}]
 
-== Content Characterization
+== Content characterization
 The content characterization indicates the type of the part of the standard. These are:
 
 * <<Format Description>>
@@ -43,7 +44,7 @@ include::compendium:page$definitions/application-area-companion.adoc[{sublevel}]
 
 include::compendium:page$definitions/transport-layer-specification.adoc[{sublevel}]
 
-== Structure Of Standards
+== Structure of Standards
 ASAM e.V. provides a template for creating an ASAM specification, including a description of use and illustrated by examples.
 The style sheet defines an identical look & feel for all ASAM standards.
 The main definitions are for the headers and footers, and for the cover page and directories.

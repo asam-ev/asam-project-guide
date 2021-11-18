@@ -1,18 +1,19 @@
-= Standard Expert Group
+= Standard expert Group
 :description: Describes a standard expert group (member) from ASAM project view.
 :keywords: role
 
 //tag::default[]
 include::compendium:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 // {role-standard-expert-group}
 //end::default[]
 
-== Issue Resolution
+== Issue resolution
 //tag::issue_resolution[]
 
 Each ASAM standard has an Standard Expert Group.
-The members of the Standard Expert Group have the primary purpose to ensure technical meaningfulness and correctness of revisions to their standard and to provide the necessary legitimacy for the new release to-gether with the TSC (see next sub-chapter).
+The members of the Standard Expert Group have the primary purpose to ensure technical meaningfulness and correctness of revisions to their standard and to provide the necessary legitimacy for the new release to-gether with the {tsc} (see next sub-chapter).
 The members of the Standard Expert Group have four primary tasks:
 
 * Review and confirm reported issues.
@@ -35,6 +36,6 @@ All other continuous work is being done by the Standard Manager.
 Meetings shall preferably be carried out via remote participation (phone + application sharing via Internet).
 
 The Standard Expert Group shall consist of at least three members.
-If the number of mem-bers drops below this limit, then the Standard Manager reports this to the TSC.
-The TSC decides upon next steps.
+If the number of mem-bers drops below this limit, then the Standard Manager reports this to the {tsc}.
+The {tsc} decides upon next steps.
 //end::issue_resolution[]

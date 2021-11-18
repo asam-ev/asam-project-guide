@@ -3,6 +3,7 @@
 :keywords: gitlab,summary,tool,mandatory
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {gitlab-icon}
 

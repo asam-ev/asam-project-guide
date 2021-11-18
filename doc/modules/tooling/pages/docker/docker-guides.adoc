@@ -1,9 +1,10 @@
-= Docker Guide
+= Docker guide
 :description: A guide to using docker at ASAM
 :keywords: docker, guide
 :offset-value: leveloffset=+1
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {docker-icon}
 

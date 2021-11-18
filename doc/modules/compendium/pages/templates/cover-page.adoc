@@ -1,4 +1,4 @@
-= Cover Page
+= Cover page
 :description: Describes the cover page template for ASAM standards.
 :keywords: template
 :page-partial:

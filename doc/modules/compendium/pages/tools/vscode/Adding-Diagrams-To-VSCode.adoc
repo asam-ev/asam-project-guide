@@ -10,20 +10,20 @@ You can see the full range and examples on the official https://kroki.io/example
 
 include::partial$vscode/kroki.adoc[]
 
-== Caching Diagrams Locally
+== Caching diagrams Locally
 
 NOTE: This is a per-file setting and must be done in each applicable AsciiDoc file.
 
 By default, diagrams are not saved locally.
 To cache and save diagrams locally, set the kroki-fetch-diagram attribute in your document header:
 
-    = My Amazing Document
+    = My amazing Document
     :kroki-fetch-diagram:
 
 This will store images by default in your document folder.
 However, you may also set `imagesdir` to store them elsewhere:
 
-    = My Amazing Document
+    = My amazing Document
     :kroki-fetch-diagram:
     :imagesdir: images
 
@@ -46,7 +46,7 @@ image::plantuml_1.png[]
 .Allowing insecure content
 image::plantuml_2.png[]
 
-== Testing Kroki Examples
+== Testing kroki Examples
 
 With the settings done and caching activated, you can test Kroki with the following examples:
 

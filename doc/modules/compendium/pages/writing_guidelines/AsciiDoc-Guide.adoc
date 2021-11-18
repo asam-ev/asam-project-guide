@@ -186,7 +186,7 @@ When you add [horizontal] above item 1, the label and description appear on the 
 That works well when you have very short descriptions.
 
 
-== Ordered Lists
+== Ordered lists
 
 
 [cols="a,a"]

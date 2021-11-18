@@ -1,7 +1,8 @@
-= The Development Phase
+= The development Phase
 :description: Describes the proposal phase in the ASAM development process for standards.
 :keywords: development,phase,standard,process
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 The purpose of the development phase is to create a new version of the standard.
 

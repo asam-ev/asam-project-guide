@@ -2,8 +2,8 @@
 :description: Describes how to add a new module to the ASAM Project Guide so that it contains all importantn infos and structures by default for Antora to build correctly.
 :keywords: antora,guide,module,new-content-guide
 
-== Add Mandatory Folders And Files
-To add a new module to the project guide, follow these instructions:
+== Add mandatory Folders And Files
+To add a new module to the Project Guide, follow these instructions:
 
 . Copy the folder "reference-module-folder" located in the "examples" folder of the "project-guide" module with all its files and subfolders into the "modules" folder
 

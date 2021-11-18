@@ -16,7 +16,7 @@ TIP: If you are using Visual Studio Code, see the xref:../tool-specific/Recommen
 
 == Language
 
-=== Use American English (AE)
+=== Use american English (AE)
 
 * Use "English (US)" (ISO: *en-US*) as a language setting in your text editor.
 * Mnemonic: -or, -l, -yze, -er

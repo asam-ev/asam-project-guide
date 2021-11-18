@@ -1,4 +1,4 @@
-= Visual Studio Code Interface
+= Visual studio Code Interface
 :description: Describes the VSCode interface
 :keywords: ui,interface,vscode
 

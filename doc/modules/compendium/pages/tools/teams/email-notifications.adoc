@@ -1,4 +1,4 @@
-= Email Notifications From Microsoft Teams
+= Email notifications From Microsoft Teams
 :description: Activate email notifications for MS Teams
 :keywords: artifact,teams,email,notifications
 :page-partial:

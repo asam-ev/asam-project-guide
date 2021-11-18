@@ -1,8 +1,9 @@
-= Issue Resolution Process
+= Issue resolution Process
 :description: Describes the issue resolution process in the ASAM standardization in case a released standard has issues.
 :keywords: standardization
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 ASAM standards are used by companies, who are either members of ASAM or buyers of the standards.
 If a standard has a known problem, then members generally have the expectation that the known problem is fixed within a reasonable time.
@@ -26,13 +27,13 @@ The request of a new feature or modification of an existing feature, independent
 == Roles
 Several parties are involved in carrying out the issue resolution process.
 
-=== Standard User
+=== Standard user
 include::compendium:page$roles/standard-user.adoc[tags=default;issue_resolution]
 
-=== Standard Manager
+=== Standard manager
 include::compendium:page$roles/standard-manager.adoc[tags=default;issue_resolution]
 
-=== Standard Expert Group
+=== Standard expert Group
 include::compendium:page$roles/standard-expert-group.adoc[tags=default;issue_resolution]
 
 === TSC
@@ -94,7 +95,7 @@ image::compendium:issue-resolution-phase.png[]
 
 === Phase 3: Release
 [horizontal]
-3.1:: The Standard Manager submits the revised standard to the TSC for public release.
+3.1:: The Standard Manager submits the revised standard to the {tsc} for public release.
 The release process is the same as described in chapter 1.4 "Release Phase".
 Correction sheets can be published immediately after the technical release from the Standard Expert Group.
-The TSC confirms in its next meeting the release.
+The {tsc} confirms in its next meeting the release.

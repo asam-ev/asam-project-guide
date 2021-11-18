@@ -1,4 +1,4 @@
-= Visual Studio Code Activity Bar
+= Visual studio Code Activity Bar
 :description: Describes the VSCode activity bar
 :keywords: ui,activity-bar,vscode
 :page-partial:

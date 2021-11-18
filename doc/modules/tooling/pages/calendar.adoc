@@ -3,6 +3,7 @@
 :keywords: openx-calendar,summary,tool,mandatory
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {calendar-icon}
 

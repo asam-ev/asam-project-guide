@@ -1,8 +1,9 @@
-= Standard User
+= Standard user
 :description: Summary and landing page for standad users.
 :keywords: role, role-landing-page
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 [horizontal,role=right]
 Label:: {role-standard-user}

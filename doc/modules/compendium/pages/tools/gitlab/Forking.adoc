@@ -1,10 +1,10 @@
-= Forking From Repository
+= Forking from Repository
 
 Creating a fork "clones" the repository into your profile, allowing you to make changes without having to interact with the main repository.
 
 TIP: The procedure is the same on code.asam.net (gitlab) and on github.
 
-== Forking Step-by-Step
+== Forking step-by-Step
 
 image::forking-a-repo.gif[title="Forking a repo"]
 

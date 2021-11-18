@@ -1,4 +1,4 @@
-= How To Use Docker For Asciidoctor
+= How to Use Docker For Asciidoctor
 :description: A how-to on using docker for asciidoctor
 :keywords: docker,asciidoc,asciidoctor
 :page-partial:
@@ -9,7 +9,7 @@ include::compendium:partial$_attributes.adoc[]
 == Wait, What Is Docker?
 include::compendium:partial$what-is-docker.adoc[]
 
-== Using Docker For Asciidoc
+== Using docker For Asciidoc
 
 The xref:{vscode-extensions}#_asciidoc[VSCode extension for Asciidoc] provides a decent preview.
 However, some styling and content will not look exactly as in the final result.

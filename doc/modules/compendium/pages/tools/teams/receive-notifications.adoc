@@ -1,4 +1,4 @@
-= Receiving Notifications In Microsoft Teams
+= Receiving notifications In Microsoft Teams
 :description: Activate notifications directly within MS Teams
 :keywords: artifact,teams,notifications
 :page-partial:

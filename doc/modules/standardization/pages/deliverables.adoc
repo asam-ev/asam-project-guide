@@ -3,6 +3,7 @@
 :keywords: deliverable,standardization
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 The deliverables of a standard package consist of standard documents and other files.
 A standard package consists of at least one base standard.

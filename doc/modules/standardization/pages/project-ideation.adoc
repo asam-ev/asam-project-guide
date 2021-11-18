@@ -1,7 +1,8 @@
-= The Project Ideation Phase
+= The project Ideation Phase
 :description: Describes the ideation process for a new project.
 :keywords: ideation,phase,standard,process
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 include::partial$project-ideation.adoc[tag=long]

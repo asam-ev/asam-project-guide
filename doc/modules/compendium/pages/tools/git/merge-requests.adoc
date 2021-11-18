@@ -1,4 +1,4 @@
-= Merge Requests
+= Merge requests
 :description: Summarizes how merge requests work and how to best approach them.
 :keywords: git,gitlab,merge,merge-request,review
 :page-partial:
@@ -6,7 +6,7 @@
 include::compendium:partial$_attributes.adoc[]
 
 
-== Merge Commit Strategy
+== Merge commit Strategy
 - History of commits in a PR must be clean prior to merge
 - Commit messages to a protected or master branch must adhere to conventional commits specification
 

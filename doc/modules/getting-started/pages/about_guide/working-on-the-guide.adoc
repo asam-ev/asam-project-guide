@@ -1,5 +1,5 @@
-= Working On The Project Guide
+= Working on The Project Guide
 
-Explains how to work on the project guide and where to find important guidelines, information etc.
+Explains how to work on the Project Guide and where to find important guidelines, information etc.
 
 // TODO

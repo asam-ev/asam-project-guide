@@ -1,4 +1,4 @@
-= Transport Layer Specification
+= Transport layer Specification
 :description: Definition of a transport layer specification.
 :keywords: definition,content-characterization,associated-standard
 :page-partial:

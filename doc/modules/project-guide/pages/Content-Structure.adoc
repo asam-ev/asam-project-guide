@@ -1,9 +1,9 @@
-= Project Guide Structure
-:description: Summarizes the proposed general structure of the project guide.
+= Project guide Structure
+:description: Summarizes the proposed general structure of the Project Guide.
 :keywords: antora,structure,project-guide
 :structure: project-guide:example$structure.puml
 
-The following is a proposal for the project guide structure in Antora.
+The following is a proposal for the Project Guide structure in Antora.
 Note that it is a WIP and will likely change over time.
 
 NOTE: Names and labels are working titles and neither final nor formal.

@@ -3,6 +3,7 @@
 :keywords: drawio,summary,tool,recommended
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {drawio-icon}
 

@@ -1,6 +1,6 @@
-= Microsoft PowerShell Basics
+= Microsoft powerShell Basics
 
-== How To Open Microsoft Powershell
+== How to Open Microsoft Powershell
 
 image::https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png[width=120,role=right]
 
@@ -8,7 +8,7 @@ image::https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.p
 The PowerShell in Windows 10 is used to execute commands directly and interface with windows functions in text form through a shell.
 It is more powerfull than the old commandline tool ("cmd") and can be executed as standard user (<<Standard Access>>) or with administration rights (<<Administration Access>>).
 
-=== Standard Access
+=== Standard access
 
 There are multiple ways to open the PowerShell in windows:
 
@@ -37,7 +37,7 @@ image::PSWithRun.gif[width = 720]
 . Hit "Win" + "R" to open the "Run" window
 . Type "powershell" and confirm with Enter
 
-==== Windows Explorer
+==== Windows explorer
 NOTE: This opens the PowerShell in the current folder you are in!
 
 image::PSWithExplorer.gif[width = 720]
@@ -46,9 +46,9 @@ image::PSWithExplorer.gif[width = 720]
 . Navigate to the location where you want to open your PowerShell in
 . Click on "File" -> "Open Windows PowerShell" (or hit "Alt" -> "D" -> "P" (German) or "Alt" -> "F" -> "P" (English) on your keyboard)
 
-==== Visual Studio Code
+==== Visual studio Code
 
-===== Open Last Terminal
+===== Open last Terminal
 NOTE: This opens the PowerShell in the last accessed project root folder!
 
 NOTE: The Terminal may already be open at the bottom of your window.
@@ -57,7 +57,7 @@ image::PSWithVSCodeNormal.gif[width = 720]
 
 * Open the Terminal by clicking on "View -> Terminal"
 
-===== Open New Terminal
+===== Open new Terminal
 NOTE: This adds a new terminal to the list of terminals and opens the view if hidden.
 You can delete unused terminals or keep multiple independent ones open if you like.
 
@@ -66,7 +66,7 @@ image::PSWithVsCodeAdd.gif[width = 720]
 . Click on "Terminal -> "New Terminal"
 . Select the correct projectd folder
 
-=== Administration Access
+=== Administration access
 
 The easiest way to open a PowerShell with administration rights is as follows:
 NOTE: This opens the PowerShell in the default location.

@@ -1,4 +1,4 @@
-= Changing Remote For A Submodule
+= Changing remote For A Submodule
 :description: Describes how to change the remote of a submodule in a repository.
 :keywords: git,gitlab,submodule,remote
 :page-partial:

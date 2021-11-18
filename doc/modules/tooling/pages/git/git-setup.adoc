@@ -1,4 +1,4 @@
-= Setting Up Git
+= Setting up Git
 :description: Contains a summary of how to set up git locally.
 :keywords: setup, git, task, fragment, git-setup
 :vscode: xref:vscode.adoc[Visual Studio Code]
@@ -6,6 +6,7 @@
 :gitlab: ASAM {gitlab-url}[GitLab^]
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {git-icon}
 
@@ -25,7 +26,7 @@ Git can also interface directly with {vscode}, making changing and updating file
 Git requires a multi-step installation.
 The following sections describe each part of this setup sequentially.
 
-=== Install Git On Your Computer
+=== Install git On Your Computer
 . {git-url}[Download Git]
 . Follow the installation instructions on screen.
 The installation routine requires many settings.
@@ -37,7 +38,7 @@ __**OPTIONAL**: If you would like to use {vscode} as your standard Git editor, f
 +
 image:select-vscode-for-git.png[title="Use Visual Studio Code as Git's default editor"]
 
-=== Configure User Credentials
+=== Configure user Credentials
 After installation of Git, **configure your user credentials** that Git uses when checking in changed content from your PC to the {gitlab}.
 To make sure your commits match your name and email details, a one time configuration is necessary.
 

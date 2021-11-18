@@ -1,21 +1,21 @@
-= Branch Naming Conventions
+= Branch naming Conventions
 
 
-== Name Template
+== Name template
 
 ====
 `[red]#change-type#/[green]#group-name#/[yellow]#branch-title#`
 ====
 
 
-== General Guidelines
+== General guidelines
 
 - Applies to all branches on the OSI repositories
 - All lowercase
 - Use hyphens not spaces
 
 
-== Change Types
+== Change types
 [horizontal]
 `feature`:: branches that enhance the standard or add additional features
 `fix`:: Bug fixes to contradictions or errors in the standard
@@ -48,7 +48,7 @@ h|Name | Description
 |===
 
 
-== Branch Title
+== Branch title
 - Should be descriptive and make the change clear, i.e. not "update-sensor-model-x" but rather "initial-radarsensorviewconfig-support"
 
 

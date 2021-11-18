@@ -1,8 +1,9 @@
-=  ASAM General Technology Manager
+=  ASAM general Technology Manager
 :description: Summary and landing page for GTMs.
 :keywords: role, role-landing-page
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 [horizontal,role=right]
 Label:: {role-gtm}

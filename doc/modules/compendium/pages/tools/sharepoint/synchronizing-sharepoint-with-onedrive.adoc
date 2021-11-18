@@ -1,4 +1,4 @@
-= Synchronizing Sharepoint With OneDrive
+= Synchronizing sharepoint With OneDrive
 :description:
 :keywords: sharepoint,synchronization,synch,onedrive
 :page-partial:

@@ -1,4 +1,4 @@
-= ASAM Commit Guidelines
+= ASAM commit Guidelines
 :description: Git and GitLab commit guidelines
 :keywords: gitlab,commit,guidelines
 

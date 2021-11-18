@@ -1,4 +1,4 @@
-= ASAM  Project Guide Link Concept
+= ASAM Project Guide Link Concept
 :description: Contains the (generated) link concept for the ASAM Project Guide.
 :keywords: linking,generated,project-guide,structure
 

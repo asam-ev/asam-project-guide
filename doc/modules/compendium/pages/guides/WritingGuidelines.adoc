@@ -1,4 +1,4 @@
-= Writing Guidelines Overview
+= Writing guidelines Overview
 :cdir: ../writing_guidelines/
 
 - xref:{cdir}Asciidoc-Guide.adoc[AsciiDoc Guide]

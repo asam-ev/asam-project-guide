@@ -1,9 +1,10 @@
-= Git Best Practices
+= Git best Practices
 :description: Contains best practices for using git.
 :keywords: git, best-practices,repository,repo,feature,commit
 :offset-value: leveloffset=+1
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {git-icon}
 

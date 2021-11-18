@@ -1,4 +1,4 @@
-= Git Actions
+= Git actions
 :description: Lists typical git actions and their meaning.
 :keywords: git,action,actions
 :page-partial:

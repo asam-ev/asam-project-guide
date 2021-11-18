@@ -1,4 +1,4 @@
-= Visual Studio Code Guide
+= Visual studio Code Guide
 :description: A guide for VSCode explaining basic ui and usability topics.
 :keywords: guide, vscode
 
@@ -8,6 +8,7 @@
 :offset-value-sub: leveloffset=+{level-sub}
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {vscode-icon}
 

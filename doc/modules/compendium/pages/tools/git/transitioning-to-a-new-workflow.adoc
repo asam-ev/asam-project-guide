@@ -1,4 +1,4 @@
-= Transitioning To The New Workflow
+= Transitioning to The New Workflow
 :description: Describes how to transition to the new workflow (osc2 only!).
 :keywords: osc2-only
 :page-partial:
@@ -9,7 +9,7 @@ This describes the transition of Open Scenario 2.0 to the new workflow.
 
 IMPORTANT: This phase will run up to the upcoming project meeting on 4th to 6th of May
 
-== Repository Tidy Up
+== Repository tidy Up
 
 *Who: all project members*
 
@@ -18,7 +18,7 @@ IMPORTANT: This phase will run up to the upcoming project meeting on 4th to 6th 
 Close those that aren’t
 *	Consolidate branches that are maybe too granular – Merge them into one
 
-== Feature List Compilation
+== Feature list Compilation
 
 *Who: WG Leads*
 
@@ -50,7 +50,7 @@ h|Feature |Details & Dependencies |Maturity / Readiness |Must be in 2.0? |Expect
 
 . All WG leads define a set of milestones, assign issues to milestones
 
-== Branch Structure Setup
+== Branch structure Setup
 *Who: ASAM Office*
 
 . Create the develop branch and set it to default

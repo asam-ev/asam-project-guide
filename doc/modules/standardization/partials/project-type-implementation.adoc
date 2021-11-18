@@ -56,7 +56,7 @@ Excluded are expenses for meeting participation and travel.
 
 Implementation projects are carried out via the standard development process.
 
-The following process steps are not mandatory and are skipped by default, unless otherwise decided by the TSC or the project group:
+The following process steps are not mandatory and are skipped by default, unless otherwise decided by the {tsc} or the project group:
 
 * P1: Proposal Workshop
 * C: Review Phase
@@ -68,9 +68,9 @@ ASAM products shall not compete with a member company's product business(non-com
 
 Members can object an implementation project proposal and shall provide a justification for their objection.
 
-The TSC checks during P5 Project Approval, whether the objection is justified.
+The {tsc} checks during P5 Project Approval, whether the objection is justified.
 
-In case of a justified objection, the TSC shall not approve the proposed project or decide on measures that would remove the member's objection.
+In case of a justified objection, the {tsc} shall not approve the proposed project or decide on measures that would remove the member's objection.
 
 Non-distributable source code files shall include the following comment text in the file header:
 

@@ -1,4 +1,4 @@
-= Git Commit Guidelines
+= Git commit Guidelines
 :description: Referal page to GitLab Commit Guidelines
 :keywords: git,commit,guidelines
 :page-partial:

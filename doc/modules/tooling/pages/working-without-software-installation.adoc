@@ -1,4 +1,4 @@
-= Working Without Software Installation
+= Working without Software Installation
 :description: Contains an overview over when and how working without any additional software installation is possible.
 :keywords: installation,software,online,gitlab,recommended
 

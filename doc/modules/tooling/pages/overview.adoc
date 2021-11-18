@@ -1,4 +1,4 @@
-= Tools Overview
+= Tools overview
 :description: Gives an overview over the mandatory and recommended tools most commonly used in ASAM projects.
 :keywords: overview,tools,landing_page,tools-overview
 :no-installation: xref:working-without-software-installation.adoc[Working Without Software Installation]
@@ -21,7 +21,7 @@ For some of these, ASAM provides a recommended base setup, listed under <<Recomm
 
 NOTE: Since ASAM does not develope those tools, descriptions and information on how to install, set up and use them is kept as short as possible to minimize outdated information in this guide as much as possible.
 
-== Mandatory Tools
+== Mandatory tools
 TIP: Instead of installing software locally, ASAM supports **{no-installation}** for some roles.
 
 include::tooling:partial$tools-list.adoc[tag=mandatory]
@@ -29,7 +29,7 @@ include::tooling:partial$tools-list.adoc[tag=mandatory]
 reference::mandatory[]
 
 
-== Recommended Tools
+== Recommended tools
 include::tooling:partial$tools-list.adoc[tag=recommended]
 
 reference::recommended[]

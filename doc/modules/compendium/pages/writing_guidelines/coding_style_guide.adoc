@@ -1,5 +1,5 @@
 [#top-osc2-coding-style-guide]
-= The OpenSCENARIO2 coding style guide
+= The openSCENARIO2 coding style guide
 :numbered:
 
 This coding style guide is intended to help you writing source code in the OpenSCENARIO 2.x domain specific language in a uniform way.

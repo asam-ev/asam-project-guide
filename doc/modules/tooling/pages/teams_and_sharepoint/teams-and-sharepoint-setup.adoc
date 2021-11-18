@@ -1,8 +1,9 @@
-= Setting Up Microsoft Teams And Sharepoint
+= Setting up Microsoft Teams And Sharepoint
 :description: Setup of MS Teams and sharepoint
 :keywords: setup,teams,sharepoint
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {sharepoint-icon}
 {teams-icon}

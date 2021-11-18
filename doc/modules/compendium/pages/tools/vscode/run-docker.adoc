@@ -1,4 +1,4 @@
-= Running Docker-Compose From VSCode
+= Running docker-Compose From VSCode
 :description: Run docker-compose from VSCode
 :keywords: docker,vscode
 :page-partial:

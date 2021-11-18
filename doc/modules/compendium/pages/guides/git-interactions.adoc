@@ -8,7 +8,7 @@ include::compendium:partial$_attributes.adoc[]
 
 Make any changes. Once you are ready to share them, upload them to the remote
 
-=== Git Bash to Commit / Push / Pull
+=== Git bash to Commit / Push / Pull
 git bash commands to commit and push changes
 
     git add . # add your changes to the tracked versioning of git
@@ -19,7 +19,7 @@ to pull the latest changes, open the git bash in the repository folder (or chang
 
     git pull
 
-=== Git Commit / Push / Pull using VS-Code
+=== Git commit / Push / Pull using VS-Code
 
 to commit the changes in VS-Code, change to the source control (using the side bar), here you will find a list of changed files. +
 Please select all the files you want to commit (this is called staging). When hovering over the file with the mouse the "+" Button will appear, use this to stage.

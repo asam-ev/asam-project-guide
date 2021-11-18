@@ -3,6 +3,7 @@
 :keywords: project-types,standardization
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 ASAM distinguishes between two types of development:
 
@@ -12,7 +13,7 @@ ASAM distinguishes between two types of development:
 .Project types
 image::project-types.png[]
 
-== Standard Development
+== Standard development
 
 === New standard
 

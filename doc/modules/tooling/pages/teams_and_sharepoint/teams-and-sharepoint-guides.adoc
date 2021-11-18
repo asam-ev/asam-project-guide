@@ -1,16 +1,17 @@
-= Microsoft Teams And Sharepoint Guide
+= Microsoft teams And Sharepoint Guide
 :description:
 :keywords: teams,sharepoint,guide
 :offset_value: leveloffset=+2
 
 include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 {sharepoint-icon}
 {teams-icon}
 
 TODO: write description
 
-== Microsoft Teams
+== Microsoft teams
 include::compendium:page$tools/teams/teams-channel-file-structure.adoc[{offset_value}]
 
 include::compendium:page$tools/teams/receive-notifications.adoc[{offset_value}]
