@@ -3,23 +3,29 @@
 :keywords: antora,structure,project-guide
 :structure: project-guide:example$structure.puml
 
-The following is a proposal for the Project Guide structure in Antora.
-Note that it is a WIP and will likely change over time.
+include::partial$_attributes.adoc[]
+include::ROOT:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
-NOTE: Names and labels are working titles and neither final nor formal.
+This is the Project Guide structure concept.
+It summarizes the concept behind the actual structure braodly.
 
-
+== General structure
 .Document Structure - Concept
 [plantuml,mindmap2,svg]
 ----
 include::{structure}[]
 ----
 
+== Modules
 .Document Structure - Modules
 [plantuml,mindmap2,svg]
 ----
 include::{structure}[tags=standard;first_level]
 ----
+
+== Module "Introduction"
+{getting-started-icon-norole}
 
 .Document Structure - Introduction
 [plantuml,mindmap2,svg]
@@ -27,11 +33,17 @@ include::{structure}[tags=standard;first_level]
 include::{structure}[tags=standard;introductions;!comment]
 ----
 
-.Document Structure - How To Get Involved
+== Module "How to get involved"
+{getting-involved-icon-norole}
+
+.Document Structure - How to get involved
 [plantuml,mindmap2,svg]
 ----
 include::{structure}[tags=standard;getting_involved;!comment]
 ----
+
+== Module "Role-specific instructions"
+{role-specific-icon-norole}
 
 .Document Structure - Role-Specific Instructions
 [plantuml,mindmap2,svg]
@@ -39,11 +51,17 @@ include::{structure}[tags=standard;getting_involved;!comment]
 include::{structure}[tags=standard;roles;!comment]
 ----
 
-.Document Structure - ASAM Standardization Process
+== Module "ASAM standardization process"
+{standardization-icon-norole}
+
+.Document Structure - ASAM standardization process
 [plantuml,mindmap2,svg]
 ----
 include::{structure}[tags=standard;general_project_processes;!comment]
 ----
+
+== Module "Compendium"
+{compendium-icon-norole}
 
 .Document Structure - Compendium
 [plantuml,mindmap2,svg]
@@ -51,13 +69,19 @@ include::{structure}[tags=standard;general_project_processes;!comment]
 include::{structure}[tags=standard;compendium;!comment]
 ----
 
+== Module "Tools"
+{tools-icon-norole}
+
 .Document Structure - Tools
 [plantuml,mindmap2,svg]
 ----
 include::{structure}[tags=standard;tools;!comment]
 ----
 
-.Document Structure - Working On The Project Guide
+== Module "Working on the Project Guide"
+{project-guide-icon-norole}
+
+.Document Structure - Working on the Project Guide
 [plantuml,mindmap2,svg]
 ----
 include::{structure}[tags=standard;project_guide;!comment]

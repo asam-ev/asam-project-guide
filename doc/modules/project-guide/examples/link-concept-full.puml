@@ -88,7 +88,7 @@ rectangle "tools/teams/obtain-channel-email.adoc" as f0_85
 rectangle "tools/teams/polls-and-surveys.adoc" as f0_86
 rectangle "tools/teams/receive-notifications.adoc" as f0_87
 rectangle "tools/teams/teams-channel-file-structure.adoc" as f0_88
-rectangle "tools/vscode/adding-diagrams-to-vscode.adoc" as f0_89
+rectangle "tools/vscode/Adding-Diagrams-To-VSCode.adoc" as f0_89
 rectangle "tools/vscode/cloning-a-repository.adoc" as f0_90
 rectangle "tools/vscode/recommended-vscode-extensions.adoc" as f0_91
 rectangle "tools/vscode/recommended-vscode-settings.adoc" as f0_92
@@ -129,18 +129,20 @@ rectangle "nav.adoc" as f3_1
 rectangle "add-a-page.adoc" as f3_2
 rectangle "add-a-partial.adoc" as f3_3
 rectangle "add-new-module.adoc" as f3_4
-rectangle "attachments.adoc" as f3_5
-rectangle "Content-Structure.adoc" as f3_6
-rectangle "examples.adoc" as f3_7
-rectangle "home.adoc" as f3_8
-rectangle "images.adoc" as f3_9
-rectangle "link-concept.adoc" as f3_10
-rectangle "pages-vs-partials.adoc" as f3_11
-rectangle "special-macros.adoc" as f3_12
-rectangle "used-attributes.adoc" as f3_13
-rectangle "macros/macro-pages.adoc" as f3_14
-rectangle "macros/macro-reference.adoc" as f3_15
-rectangle "macros/macro-related.adoc" as f3_16
+rectangle "add-task-page.adoc" as f3_5
+rectangle "add-tool-page.adoc" as f3_6
+rectangle "attachments.adoc" as f3_7
+rectangle "content-structure.adoc" as f3_8
+rectangle "examples.adoc" as f3_9
+rectangle "home.adoc" as f3_10
+rectangle "images.adoc" as f3_11
+rectangle "link-concept.adoc" as f3_12
+rectangle "pages-vs-partials.adoc" as f3_13
+rectangle "special-macros.adoc" as f3_14
+rectangle "used-attributes.adoc" as f3_15
+rectangle "macros/macro-pages.adoc" as f3_16
+rectangle "macros/macro-reference.adoc" as f3_17
+rectangle "macros/macro-related.adoc" as f3_18
 }
 package role-specific #ff50ff {
 rectangle "nav.adoc" as f4_1
@@ -219,67 +221,75 @@ f2_3 -[#00FF00]-> f2_2
 f2_9 --[#00FF00]--> f6_8
 f2_10 --[#00FF00]--> f6_6
 f2_14 --[#00FF00]--> f4_3
+f3_1 -[#CCCC00]-> f3_10
 f3_1 -[#CCCC00]-> f3_8
 f3_1 -[#CCCC00]-> f3_4
-f3_1 -[#CCCC00]-> f3_11
+f3_1 -[#CCCC00]-> f3_13
 f3_1 -[#CCCC00]-> f3_2
+f3_1 -[#CCCC00]-> f3_5
 f3_1 -[#CCCC00]-> f3_3
+f3_1 -[#CCCC00]-> f3_11
 f3_1 -[#CCCC00]-> f3_9
 f3_1 -[#CCCC00]-> f3_7
-f3_1 -[#CCCC00]-> f3_5
-f3_1 -[#CCCC00]-> f3_12
-f3_1 -[#CCCC00]-> f3_13
+f3_1 -[#CCCC00]-> f3_14
+f3_1 -[#CCCC00]-> f3_15
 f3_2 -[#CCCC00]-> f3_3
-f3_2 -[#CCCC00]-> f3_11
-f3_11 -[#CCCC00]-> f3_2
-f3_11 -[#CCCC00]-> f3_3
-f3_13 --[#CCCC00]--> f0_2
-f3_13 --[#CCCC00]--> f2_2
-f3_13 -[#CCCC00]-> f3_4
-f3_13 -[#CCCC00]-> f3_6
-f3_13 -[#CCCC00]-> f3_12
-f3_13 --[#CCCC00]--> f4_3
-f3_13 -[#CCCC00]-> f3_13
-f3_13 --[#CCCC00]--> f0_3
-f3_13 --[#CCCC00]--> f6_4
-f3_13 --[#CCCC00]--> f6_2
-f3_13 --[#CCCC00]--> f6_5
-f3_13 --[#CCCC00]--> f7_3
-f3_13 --[#CCCC00]--> f7_4
-f3_13 -[#CCCC00]-> f3_10
-f3_13 --[#CCCC00]--> f1_2
-f3_13 --[#CCCC00]--> f7_5
-f3_13 --[#CCCC00]--> f7_6
-f3_13 --[#CCCC00]--> f7_10
-f3_13 --[#CCCC00]--> f5_3
-f3_13 --[#CCCC00]--> f1_3
-f3_13 --[#CCCC00]--> f6_8
-f3_13 --[#CCCC00]--> f2_3
-f3_13 -[#CCCC00]-> f3_8
-f3_13 --[#CCCC00]--> f6_6
-f3_13 --[#CCCC00]--> f7_7
-f3_13 --[#CCCC00]--> f7_2
-f3_13 --[#CCCC00]--> f7_8
+f3_2 -[#CCCC00]-> f3_13
+f3_2 -[#CCCC00]-> f3_8
+f3_4 -[#CCCC00]-> f3_8
+f3_5 -[#CCCC00]-> f3_8
+f3_6 -[#CCCC00]-> f3_8
 f3_13 -[#CCCC00]-> f3_2
 f3_13 -[#CCCC00]-> f3_3
-f3_13 --[#CCCC00]--> f2_4
-f3_13 -[#CCCC00]-> f3_11
-f3_13 --[#CCCC00]--> f6_11
-f3_13 --[#CCCC00]--> f6_12
-f3_13 --[#CCCC00]--> f6_13
-f3_13 --[#CCCC00]--> f6_9
-f3_13 --[#CCCC00]--> f6_10
-f3_13 --[#CCCC00]--> f7_9
-f3_13 --[#CCCC00]--> f4_2
-f3_13 --[#CCCC00]--> f4_4
-f3_13 --[#CCCC00]--> f4_5
-f3_13 --[#CCCC00]--> f4_6
-f3_13 --[#CCCC00]--> f4_7
-f3_13 --[#CCCC00]--> f4_8
-f3_13 --[#CCCC00]--> f4_9
-f3_13 --[#CCCC00]--> f4_10
-f3_13 --[#CCCC00]--> f6_3
-f3_13 --[#CCCC00]--> f6_7
+f3_15 --[#CCCC00]--> f0_2
+f3_15 --[#CCCC00]--> f2_2
+f3_15 -[#CCCC00]-> f3_4
+f3_15 -[#CCCC00]-> f3_8
+f3_15 -[#CCCC00]-> f3_14
+f3_15 --[#CCCC00]--> f4_3
+f3_15 -[#CCCC00]-> f3_15
+f3_15 --[#CCCC00]--> f0_3
+f3_15 --[#CCCC00]--> f6_4
+f3_15 --[#CCCC00]--> f6_2
+f3_15 --[#CCCC00]--> f6_5
+f3_15 --[#CCCC00]--> f7_3
+f3_15 --[#CCCC00]--> f7_4
+f3_15 -[#CCCC00]-> f3_12
+f3_15 --[#CCCC00]--> f1_2
+f3_15 --[#CCCC00]--> f7_5
+f3_15 --[#CCCC00]--> f7_6
+f3_15 --[#CCCC00]--> f7_10
+f3_15 --[#CCCC00]--> f5_3
+f3_15 --[#CCCC00]--> f1_3
+f3_15 --[#CCCC00]--> f6_8
+f3_15 --[#CCCC00]--> f2_3
+f3_15 -[#CCCC00]-> f3_10
+f3_15 --[#CCCC00]--> f6_6
+f3_15 --[#CCCC00]--> f7_7
+f3_15 --[#CCCC00]--> f7_2
+f3_15 --[#CCCC00]--> f7_8
+f3_15 -[#CCCC00]-> f3_2
+f3_15 -[#CCCC00]-> f3_3
+f3_15 -[#CCCC00]-> f3_5
+f3_15 --[#CCCC00]--> f2_4
+f3_15 -[#CCCC00]-> f3_13
+f3_15 --[#CCCC00]--> f6_11
+f3_15 --[#CCCC00]--> f6_12
+f3_15 --[#CCCC00]--> f6_13
+f3_15 --[#CCCC00]--> f6_9
+f3_15 --[#CCCC00]--> f6_10
+f3_15 --[#CCCC00]--> f7_9
+f3_15 --[#CCCC00]--> f4_2
+f3_15 --[#CCCC00]--> f4_4
+f3_15 --[#CCCC00]--> f4_5
+f3_15 --[#CCCC00]--> f4_6
+f3_15 --[#CCCC00]--> f4_7
+f3_15 --[#CCCC00]--> f4_8
+f3_15 --[#CCCC00]--> f4_9
+f3_15 --[#CCCC00]--> f4_10
+f3_15 --[#CCCC00]--> f6_3
+f3_15 --[#CCCC00]--> f6_7
+f3_15 -[#CCCC00]-> f3_6
 f4_1 -[#FF00FF]-> f4_3
 f4_1 -[#FF00FF]-> f4_2
 f4_1 -[#FF00FF]-> f4_4
@@ -373,23 +383,22 @@ cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc"  as u54
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/general_guidelines/Workflow"  as u55
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/writing_guide.adoc"  as u56
-cloud "https://www.asam.net/about-asam/asam-in-person/"  as u57
-cloud "https://www.asam.net/index.php?eID=dumpFile&t=p&p=45037&token=7a818e902d4de269ab69f086d1ae100239999480"  as u58
-cloud "https://www.asam.net/active-projects/resources/"  as u59
-cloud "https://docs.antora.org/antora/2.1/page/create-standard-page/"  as u60
-cloud "https://docs.antora.org/antora/2.1/page/#standard"  as u61
-cloud "https://docs.antora.org/antora/2.1/page/#partial"  as u62
-cloud "https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"  as u63
-cloud "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"  as u64
-cloud "https://docs.docker.com/get-started/"  as u65
-cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u66
-cloud "https://docs.docker.com/desktop/windows/install/#system-requirements"  as u67
-cloud "https://docs.docker.com/desktop/windows/install/"  as u68
-cloud "https://docs.docker.com/engine/install/binaries/"  as u69
-cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u70
-cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u71
-cloud "https://code.asam.net/-/profile"  as u72
-cloud "https://code.asam.net/profile/keys"  as u73
+cloud "https://www.asam.net/index.php?eID=dumpFile&t=p&p=45037&token=7a818e902d4de269ab69f086d1ae100239999480"  as u57
+cloud "https://www.asam.net/active-projects/resources/"  as u58
+cloud "https://docs.antora.org/antora/2.1/page/create-standard-page/"  as u59
+cloud "https://docs.antora.org/antora/2.1/page/#standard"  as u60
+cloud "https://docs.antora.org/antora/2.1/page/#partial"  as u61
+cloud "https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"  as u62
+cloud "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"  as u63
+cloud "https://docs.docker.com/get-started/"  as u64
+cloud "https://dockerlabs.collabnix.com/beginners/components/container-vs-image.html"  as u65
+cloud "https://docs.docker.com/desktop/windows/install/#system-requirements"  as u66
+cloud "https://docs.docker.com/desktop/windows/install/"  as u67
+cloud "https://docs.docker.com/engine/install/binaries/"  as u68
+cloud "https://www.docker.com/blog/updating-product-subscriptions/"  as u69
+cloud "https://www.git-tower.com/learn/git/faq/git-squash"  as u70
+cloud "https://code.asam.net/-/profile"  as u71
+cloud "https://code.asam.net/profile/keys"  as u72
 
 f0_2 .up.>> u1
 f0_9 .up.>> u2
@@ -460,23 +469,24 @@ f0_102 .up.>> u53
 f0_102 .up.>> u54
 f0_102 .up.>> u55
 f0_102 .up.>> u56
-f2_8 .up.>> u57
-f2_10 .up.>> u58
-f2_14 .up.>> u59
-f3_2 .up.>> u60
-f3_11 .up.>> u61
-f3_11 .up.>> u62
+f2_10 .up.>> u57
+f2_14 .up.>> u58
+f3_2 .up.>> u59
+f3_5 .up.>> u59
+f3_6 .up.>> u59
+f3_13 .up.>> u60
+f3_13 .up.>> u61
+f7_12 .up.>> u62
 f7_12 .up.>> u63
-f7_12 .up.>> u64
+f7_13 .up.>> u64
 f7_13 .up.>> u65
-f7_13 .up.>> u66
+f7_15 .up.>> u66
 f7_15 .up.>> u67
 f7_15 .up.>> u68
 f7_15 .up.>> u69
-f7_15 .up.>> u70
 f7_17 .up.>> u28
-f7_17 .up.>> u71
+f7_17 .up.>> u70
 f7_17 .up.>> u27
+f7_19 .up.>> u71
 f7_19 .up.>> u72
-f7_19 .up.>> u73
 @enduml

@@ -1,11 +1,16 @@
-= Visual Studio command palette
+= Visual Studio Code command palette
+:description: A short introduction to the VSCode command palette.
+:keywords: vscode,command
+
+include::compendium:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 The Command Palette in Visual Studio Code allows you to access specific menus and functions of the program directly without having to navigate there through the menu strucutre.
 It also helps when looking for an option to change as it contains a search function with auto-completion.
 
 * `Ctrl`+`Shift`+`P` brings up the Command Palette.
 
-From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.
+From here, you have access to all of the functionality of {vscode}, including keyboard shortcuts for the most common operations.
 
 image::compendium:vscode_command-palette.png[]
 

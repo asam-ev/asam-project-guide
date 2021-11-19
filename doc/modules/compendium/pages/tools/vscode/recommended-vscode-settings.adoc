@@ -1,8 +1,9 @@
-= ASAM recommended visual studio code settings
+= ASAM recommended Visual Studio Code settings
 :description: Summarizes the recommended {vscode} settings.
 :keywords: vscode,settings
 
 include::compendium:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 :lookup: compendium:partial$vscode
 

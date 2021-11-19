@@ -3,6 +3,7 @@
 :keywords: asciidoc,comment,gitlab,vscode
 
 include::compendium:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 For writing standards and concept paper in the simulation domain at ASAM, we use asciidoc.
 Our prefered editor for this is Visual Studio Code.
@@ -18,7 +19,7 @@ Those branches should be create by using the issues in GitLab.
 Once we have this branch, we can get started working on the content, during our work/review/... we recognize things we want to change, discuss, review, etc.
 There are now to possibilities how to handle his process, either use the comment feature in the issues and describe where and what you want to annotate.
 
-Another and quicker way to comment directly in the document can be used when installing the VSCode Extension "Comment Anchor".
+Another and quicker way to comment directly in the document can be used when installing the {vscode} Extension "Comment Anchor".
 
 image::comment_anchor.jpg[comment_anchor, 1100]
 

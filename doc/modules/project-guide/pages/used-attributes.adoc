@@ -48,7 +48,8 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:tools/antora.adoc[compendium/pages/tools/antora.adoc]
 * xref:compendium:tools/antora/build-antora-locally.adoc[compendium/pages/tools/antora/build-antora-locally.adoc]
 * xref:project-guide:add-new-module.adoc[project-guide/pages/add-new-module.adoc]
-* xref:project-guide:Content-Structure.adoc[project-guide/pages/Content-Structure.adoc]
+* xref:project-guide:content-structure.adoc[project-guide/pages/content-structure.adoc]
+* xref:project-guide:macros/macro-pages.adoc[project-guide/pages/macros/macro-pages.adoc]
 * xref:project-guide:macros/macro-reference.adoc[project-guide/pages/macros/macro-reference.adoc]
 * xref:project-guide:macros/macro-related.adoc[project-guide/pages/macros/macro-related.adoc]
 
@@ -70,6 +71,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:getting-started:new_here/roles-overview.adoc[getting-started/pages/new_here/roles-overview.adoc]
 * xref:getting-started:new_here/tools-overview.adoc[getting-started/pages/new_here/tools-overview.adoc]
 * xref:project-guide:special-macros.adoc[project-guide/pages/special-macros.adoc]
+* xref:project-guide:macros/macro-pages.adoc[project-guide/pages/macros/macro-pages.adoc]
 * xref:project-guide:macros/macro-reference.adoc[project-guide/pages/macros/macro-reference.adoc]
 * xref:project-guide:macros/macro-related.adoc[project-guide/pages/macros/macro-related.adoc]
 * xref:role-specific:home.adoc[role-specific/pages/home.adoc]
@@ -158,6 +160,10 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:guides/asciidoc/code.adoc[compendium/pages/guides/asciidoc/code.adoc]
 * xref:compendium:tools/git/review-code.adoc[compendium/pages/tools/git/review-code.adoc]
 
+=== command
+
+* xref:compendium:tools/vscode/vscode-command-palette.adoc[compendium/pages/tools/vscode/vscode-command-palette.adoc]
+
 === comment
 
 * xref:compendium:guides/commenting.adoc[compendium/pages/guides/commenting.adoc]
@@ -197,6 +203,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 === custom
 
 * xref:project-guide:special-macros.adoc[project-guide/pages/special-macros.adoc]
+* xref:project-guide:macros/macro-pages.adoc[project-guide/pages/macros/macro-pages.adoc]
 * xref:project-guide:macros/macro-reference.adoc[project-guide/pages/macros/macro-reference.adoc]
 * xref:project-guide:macros/macro-related.adoc[project-guide/pages/macros/macro-related.adoc]
 
@@ -232,7 +239,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === diagrams
 
-* xref:compendium:tools/vscode/adding-diagrams-to-vscode.adoc[compendium/pages/tools/vscode/adding-diagrams-to-vscode.adoc]
+* xref:compendium:tools/vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/tools/vscode/Adding-Diagrams-To-VSCode.adoc]
 
 === docker
 
@@ -454,7 +461,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === kroki
 
-* xref:compendium:tools/vscode/adding-diagrams-to-vscode.adoc[compendium/pages/tools/vscode/adding-diagrams-to-vscode.adoc]
+* xref:compendium:tools/vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/tools/vscode/Adding-Diagrams-To-VSCode.adoc]
 
 === landing_page
 
@@ -486,6 +493,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 === macro
 
 * xref:project-guide:special-macros.adoc[project-guide/pages/special-macros.adoc]
+* xref:project-guide:macros/macro-pages.adoc[project-guide/pages/macros/macro-pages.adoc]
 * xref:project-guide:macros/macro-reference.adoc[project-guide/pages/macros/macro-reference.adoc]
 * xref:project-guide:macros/macro-related.adoc[project-guide/pages/macros/macro-related.adoc]
 
@@ -522,6 +530,8 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:project-guide:add-a-page.adoc[project-guide/pages/add-a-page.adoc]
 * xref:project-guide:add-a-partial.adoc[project-guide/pages/add-a-partial.adoc]
 * xref:project-guide:add-new-module.adoc[project-guide/pages/add-new-module.adoc]
+* xref:project-guide:add-task-page.adoc[project-guide/pages/add-task-page.adoc]
+* xref:project-guide:add-tool-page.adoc[project-guide/pages/add-tool-page.adoc]
 
 === new-here
 
@@ -577,6 +587,8 @@ Every attribute has its own subsection and contains a link to each page as well 
 === page
 
 * xref:project-guide:add-a-page.adoc[project-guide/pages/add-a-page.adoc]
+* xref:project-guide:add-task-page.adoc[project-guide/pages/add-task-page.adoc]
+* xref:project-guide:add-tool-page.adoc[project-guide/pages/add-tool-page.adoc]
 * xref:project-guide:pages-vs-partials.adoc[project-guide/pages/pages-vs-partials.adoc]
 
 === partial
@@ -624,7 +636,9 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:getting-started:about-this-guide.adoc[getting-started/pages/about-this-guide.adoc]
 * xref:project-guide:add-a-page.adoc[project-guide/pages/add-a-page.adoc]
 * xref:project-guide:add-a-partial.adoc[project-guide/pages/add-a-partial.adoc]
-* xref:project-guide:Content-Structure.adoc[project-guide/pages/Content-Structure.adoc]
+* xref:project-guide:add-task-page.adoc[project-guide/pages/add-task-page.adoc]
+* xref:project-guide:add-tool-page.adoc[project-guide/pages/add-tool-page.adoc]
+* xref:project-guide:content-structure.adoc[project-guide/pages/content-structure.adoc]
 * xref:project-guide:home.adoc[project-guide/pages/home.adoc]
 * xref:project-guide:link-concept.adoc[project-guide/pages/link-concept.adoc]
 * xref:project-guide:pages-vs-partials.adoc[project-guide/pages/pages-vs-partials.adoc]
@@ -796,7 +810,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === structure
 
-* xref:project-guide:Content-Structure.adoc[project-guide/pages/Content-Structure.adoc]
+* xref:project-guide:content-structure.adoc[project-guide/pages/content-structure.adoc]
 * xref:project-guide:link-concept.adoc[project-guide/pages/link-concept.adoc]
 * xref:project-guide:used-attributes.adoc[project-guide/pages/used-attributes.adoc]
 
@@ -849,6 +863,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === task
 
+* xref:project-guide:add-task-page.adoc[project-guide/pages/add-task-page.adoc]
 * xref:tooling:calendar/calendar-setup.adoc[tooling/pages/calendar/calendar-setup.adoc]
 * xref:tooling:docker/docker-setup.adoc[tooling/pages/docker/docker-setup.adoc]
 * xref:tooling:drawio/drawio-setup.adoc[tooling/pages/drawio/drawio-setup.adoc]
@@ -884,8 +899,16 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:tools/git/git-terminology.adoc[compendium/pages/tools/git/git-terminology.adoc]
 * xref:compendium:tools/gitlab/gitlab-terminology.adoc[compendium/pages/tools/gitlab/gitlab-terminology.adoc]
 
+=== todo
+
+* xref:compendium:guides/set-up-new-project.adoc[compendium/pages/guides/set-up-new-project.adoc]
+* xref:compendium:tools/gitlab/Branching.adoc[compendium/pages/tools/gitlab/Branching.adoc]
+* xref:project-guide:add-a-partial.adoc[project-guide/pages/add-a-partial.adoc]
+* xref:project-guide:macros/macro-pages.adoc[project-guide/pages/macros/macro-pages.adoc]
+
 === tool
 
+* xref:project-guide:add-tool-page.adoc[project-guide/pages/add-tool-page.adoc]
 * xref:tooling:calendar.adoc[tooling/pages/calendar.adoc]
 * xref:tooling:docker.adoc[tooling/pages/docker.adoc]
 * xref:tooling:drawio.adoc[tooling/pages/drawio.adoc]
@@ -926,12 +949,13 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:guides/commenting.adoc[compendium/pages/guides/commenting.adoc]
 * xref:compendium:guides/switch_branches.adoc[compendium/pages/guides/switch_branches.adoc]
 * xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
-* xref:compendium:tools/vscode/adding-diagrams-to-vscode.adoc[compendium/pages/tools/vscode/adding-diagrams-to-vscode.adoc]
+* xref:compendium:tools/vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/tools/vscode/Adding-Diagrams-To-VSCode.adoc]
 * xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
 * xref:compendium:tools/vscode/recommended-vscode-extensions.adoc[compendium/pages/tools/vscode/recommended-vscode-extensions.adoc]
 * xref:compendium:tools/vscode/recommended-vscode-settings.adoc[compendium/pages/tools/vscode/recommended-vscode-settings.adoc]
 * xref:compendium:tools/vscode/run-docker.adoc[compendium/pages/tools/vscode/run-docker.adoc]
 * xref:compendium:tools/vscode/vscode-activity-bar.adoc[compendium/pages/tools/vscode/vscode-activity-bar.adoc]
+* xref:compendium:tools/vscode/vscode-command-palette.adoc[compendium/pages/tools/vscode/vscode-command-palette.adoc]
 * xref:compendium:tools/vscode/vscode-install-extension.adoc[compendium/pages/tools/vscode/vscode-install-extension.adoc]
 * xref:compendium:tools/vscode/vscode-interface.adoc[compendium/pages/tools/vscode/vscode-interface.adoc]
 * xref:tooling:vscode.adoc[tooling/pages/vscode.adoc]

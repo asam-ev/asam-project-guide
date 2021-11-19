@@ -4,6 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 IMPORTANT: {docker-deamon-warning}
 

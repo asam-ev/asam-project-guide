@@ -1,3 +1,10 @@
 = Intentions and content of the Project Guide
 :description: A summary of the intentions and the content of this Project Guide.
 :keywords: introduction, about
+
+include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
+
+The ASAM Project Guide intends to gather all general knowledge on what a standard is, how to participate in creating a standard works and all related topics.
+The target audience is both interested non-ASAM members (information on ASAM and how to get involved), ASAM members (instructions on tasks and processes depending on roles) and external suppliers (processes, tools, guides).
+

@@ -1,4 +1,8 @@
 = Branching
+:keywords: todo
+
+include::compendium:partial$abbreviations.adoc[]
+
 
 There a many ways to create a branch in the git process.
 Two options are highlighted below.

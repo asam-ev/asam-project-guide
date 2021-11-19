@@ -107,9 +107,9 @@ rectangle "new_here/project-types.adoc" as f2_12
 rectangle "new_here/roles-overview.adoc" as f2_13
 }
 package project-guide #ffff50 {
-rectangle "macros/macro-pages.adoc" as f3_14
-rectangle "macros/macro-reference.adoc" as f3_15
-rectangle "macros/macro-related.adoc" as f3_16
+rectangle "macros/macro-pages.adoc" as f3_16
+rectangle "macros/macro-reference.adoc" as f3_17
+rectangle "macros/macro-related.adoc" as f3_18
 }
 package ROOT #5050d0 {
 rectangle "1nav.adoc" as f5_1

@@ -4,8 +4,8 @@
 ** xref:pages-vs-partials.adoc[]
 ** Pages
 *** xref:add-a-page.adoc[]
-**** Adding Task Artifacts
-**** Adding Tool Descriptions
+**** xref:add-task-page.adoc[]
+**** xref:add-tool-page.adoc[]
 *** Moving/Renaming/Deleting A Page
 ** Partials
 *** xref:add-a-partial.adoc[]

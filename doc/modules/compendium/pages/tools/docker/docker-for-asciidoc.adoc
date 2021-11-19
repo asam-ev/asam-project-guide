@@ -4,6 +4,8 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
+
 :docker-download: https://docs.docker.com/get-docker/
 
 == Wait, What Is Docker?

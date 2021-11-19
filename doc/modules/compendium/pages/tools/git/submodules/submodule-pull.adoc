@@ -4,6 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
 
 Pulling a submodule can currently only be done through a terminal window.
 

@@ -1,0 +1,42 @@
+= Adding a Tool page
+:description: Explains how to add a new page for a tool to the Project Guide and what to look out for.
+:keywords: tool,page,project-guide,new-content-guide
+:page-partial:
+
+include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
+
+== Context
+In order to make documented tools easier to understand, it is necessary to have a standard format for a tool's main page.
+For this purpose, the _template-tools-page.adoc file in this module's examples was created.
+Each tool that is documented in this Project Guide shall use the tools template.
+
+== Result
+A tool's main page is created that follows the ASAM tools template.
+
+== Prerequisites
+none
+
+== How
+IMPORTANT: These instructions already include the requirements of https://docs.antora.org/antora/2.1/page/create-standard-page/[Creating A Standard Page] by Antora implicitely.
+However, if one deviates from this guide here, the Antora restrictions and requirements still apply!
+
+. Find the module you want your page to be located in.
++
+TIP: This should be the module which it relates to most closely.
+See other pages in the modules in question for reference.
+You can also look at the xref:content-structure.adoc[] for the Project Guide.
+
+. Create your file in the "pages" folder or move it there
+.. Alternatively, create a new folder and/or add your file to an existing folder within the "pages" folder if you want to add a structure within the module.
++
+TIP: You can copy the template file from the examples folder in the project-guide module folder.
+
+. Add the following standard content to your file and modify it accordingly:
++
+[source,asciidoc]
+----
+include::example$reference-module-folder/pages/_template-tools-page.adoc[]
+----
++
+NOTE: Remove the backslash in the template file before the include instruction when you copy the template file directly.

@@ -48,3 +48,6 @@ include::example$reference-module-folder/pages/_template-default-page.adoc[]
 ----
 +
 NOTE: Remove the backslash in the template file before the include instruction when you copy the template file directly.
++
+IMPORTANT: Some pages or all pages in a certain module may use a custom convention, such as displaying an icon.
+Look at similar files/pages in the same module and follow those conventions, where they add to the template above.

@@ -2,6 +2,9 @@
 :description: Links to the current contact page for ASAM Office members.
 :keywords: roles, asam, new-here-content
 
+include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
+
 include::role-specific:partial$roles.adoc[tag=summary]
 
 The following table contains a list of all project roles and a short description for them.

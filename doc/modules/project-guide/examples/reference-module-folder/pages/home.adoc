@@ -4,6 +4,8 @@
 
 include::<module>:partial$_attributes.adoc[]
 include::ROOT:partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
+
 
 {<module>-icon}
 

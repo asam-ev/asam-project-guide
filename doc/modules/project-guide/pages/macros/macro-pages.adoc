@@ -1,0 +1,11 @@
+= Macro: pages
+:description: Describes the use of the macro "pages" in detail.
+:keywords: macro,asam,antora,custom,todo
+:page-partial:
+
+include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
+
+
+TODO
+Also, write macro functions first!

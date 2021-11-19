@@ -7,7 +7,7 @@ rectangle "abbreviations.adoc" as f0_2
 rectangle "guides/commenting.adoc" as f0_16
 rectangle "tools/docker/docker-for-asciidoc.adoc" as f0_48
 rectangle "tools/vscode/vscode-command-palette.adoc" as f0_95
-rectangle "tools/vscode/adding-diagrams-to-vscode.adoc" as f0_89
+rectangle "tools/vscode/Adding-Diagrams-To-VSCode.adoc" as f0_89
 rectangle "compendium.adoc" as f0_3
 }
 package getting-involved #5050ff {
@@ -25,19 +25,21 @@ rectangle "new_here/how-asam-works.adoc" as f2_10
 rectangle "new_here/tools-overview.adoc" as f2_14
 }
 package project-guide #ffff50 {
-rectangle "home.adoc" as f3_8
+rectangle "home.adoc" as f3_10
 rectangle "nav.adoc" as f3_1
+rectangle "content-structure.adoc" as f3_8
 rectangle "add-new-module.adoc" as f3_4
-rectangle "pages-vs-partials.adoc" as f3_11
+rectangle "pages-vs-partials.adoc" as f3_13
 rectangle "add-a-page.adoc" as f3_2
+rectangle "add-task-page.adoc" as f3_5
 rectangle "add-a-partial.adoc" as f3_3
-rectangle "images.adoc" as f3_9
-rectangle "examples.adoc" as f3_7
-rectangle "attachments.adoc" as f3_5
-rectangle "special-macros.adoc" as f3_12
-rectangle "used-attributes.adoc" as f3_13
-rectangle "Content-Structure.adoc" as f3_6
-rectangle "link-concept.adoc" as f3_10
+rectangle "images.adoc" as f3_11
+rectangle "examples.adoc" as f3_9
+rectangle "attachments.adoc" as f3_7
+rectangle "special-macros.adoc" as f3_14
+rectangle "used-attributes.adoc" as f3_15
+rectangle "add-tool-page.adoc" as f3_6
+rectangle "link-concept.adoc" as f3_12
 }
 package role-specific #ff50ff {
 rectangle "home.adoc" as f4_3
@@ -96,67 +98,75 @@ f2_3 -[#00FF00]-> f2_2
 f2_9 --[#00FF00]--> f6_8
 f2_10 --[#00FF00]--> f6_6
 f2_14 --[#00FF00]--> f4_3
+f3_1 -[#CCCC00]-> f3_10
 f3_1 -[#CCCC00]-> f3_8
 f3_1 -[#CCCC00]-> f3_4
-f3_1 -[#CCCC00]-> f3_11
+f3_1 -[#CCCC00]-> f3_13
 f3_1 -[#CCCC00]-> f3_2
+f3_1 -[#CCCC00]-> f3_5
 f3_1 -[#CCCC00]-> f3_3
+f3_1 -[#CCCC00]-> f3_11
 f3_1 -[#CCCC00]-> f3_9
 f3_1 -[#CCCC00]-> f3_7
-f3_1 -[#CCCC00]-> f3_5
-f3_1 -[#CCCC00]-> f3_12
-f3_1 -[#CCCC00]-> f3_13
+f3_1 -[#CCCC00]-> f3_14
+f3_1 -[#CCCC00]-> f3_15
 f3_2 -[#CCCC00]-> f3_3
-f3_2 -[#CCCC00]-> f3_11
-f3_11 -[#CCCC00]-> f3_2
-f3_11 -[#CCCC00]-> f3_3
-f3_13 --[#CCCC00]--> f0_2
-f3_13 --[#CCCC00]--> f2_2
-f3_13 -[#CCCC00]-> f3_4
-f3_13 -[#CCCC00]-> f3_6
-f3_13 -[#CCCC00]-> f3_12
-f3_13 --[#CCCC00]--> f4_3
-f3_13 -[#CCCC00]-> f3_13
-f3_13 --[#CCCC00]--> f0_3
-f3_13 --[#CCCC00]--> f6_4
-f3_13 --[#CCCC00]--> f6_2
-f3_13 --[#CCCC00]--> f6_5
-f3_13 --[#CCCC00]--> f7_3
-f3_13 --[#CCCC00]--> f7_4
-f3_13 -[#CCCC00]-> f3_10
-f3_13 --[#CCCC00]--> f1_2
-f3_13 --[#CCCC00]--> f7_5
-f3_13 --[#CCCC00]--> f7_6
-f3_13 --[#CCCC00]--> f7_10
-f3_13 --[#CCCC00]--> f5_3
-f3_13 --[#CCCC00]--> f1_3
-f3_13 --[#CCCC00]--> f6_8
-f3_13 --[#CCCC00]--> f2_3
-f3_13 -[#CCCC00]-> f3_8
-f3_13 --[#CCCC00]--> f6_6
-f3_13 --[#CCCC00]--> f7_7
-f3_13 --[#CCCC00]--> f7_2
-f3_13 --[#CCCC00]--> f7_8
+f3_2 -[#CCCC00]-> f3_13
+f3_2 -[#CCCC00]-> f3_8
+f3_4 -[#CCCC00]-> f3_8
+f3_5 -[#CCCC00]-> f3_8
+f3_6 -[#CCCC00]-> f3_8
 f3_13 -[#CCCC00]-> f3_2
 f3_13 -[#CCCC00]-> f3_3
-f3_13 --[#CCCC00]--> f2_4
-f3_13 -[#CCCC00]-> f3_11
-f3_13 --[#CCCC00]--> f6_11
-f3_13 --[#CCCC00]--> f6_12
-f3_13 --[#CCCC00]--> f6_13
-f3_13 --[#CCCC00]--> f6_9
-f3_13 --[#CCCC00]--> f6_10
-f3_13 --[#CCCC00]--> f7_9
-f3_13 --[#CCCC00]--> f4_2
-f3_13 --[#CCCC00]--> f4_4
-f3_13 --[#CCCC00]--> f4_5
-f3_13 --[#CCCC00]--> f4_6
-f3_13 --[#CCCC00]--> f4_7
-f3_13 --[#CCCC00]--> f4_8
-f3_13 --[#CCCC00]--> f4_9
-f3_13 --[#CCCC00]--> f4_10
-f3_13 --[#CCCC00]--> f6_3
-f3_13 --[#CCCC00]--> f6_7
+f3_15 --[#CCCC00]--> f0_2
+f3_15 --[#CCCC00]--> f2_2
+f3_15 -[#CCCC00]-> f3_4
+f3_15 -[#CCCC00]-> f3_8
+f3_15 -[#CCCC00]-> f3_14
+f3_15 --[#CCCC00]--> f4_3
+f3_15 -[#CCCC00]-> f3_15
+f3_15 --[#CCCC00]--> f0_3
+f3_15 --[#CCCC00]--> f6_4
+f3_15 --[#CCCC00]--> f6_2
+f3_15 --[#CCCC00]--> f6_5
+f3_15 --[#CCCC00]--> f7_3
+f3_15 --[#CCCC00]--> f7_4
+f3_15 -[#CCCC00]-> f3_12
+f3_15 --[#CCCC00]--> f1_2
+f3_15 --[#CCCC00]--> f7_5
+f3_15 --[#CCCC00]--> f7_6
+f3_15 --[#CCCC00]--> f7_10
+f3_15 --[#CCCC00]--> f5_3
+f3_15 --[#CCCC00]--> f1_3
+f3_15 --[#CCCC00]--> f6_8
+f3_15 --[#CCCC00]--> f2_3
+f3_15 -[#CCCC00]-> f3_10
+f3_15 --[#CCCC00]--> f6_6
+f3_15 --[#CCCC00]--> f7_7
+f3_15 --[#CCCC00]--> f7_2
+f3_15 --[#CCCC00]--> f7_8
+f3_15 -[#CCCC00]-> f3_2
+f3_15 -[#CCCC00]-> f3_3
+f3_15 -[#CCCC00]-> f3_5
+f3_15 --[#CCCC00]--> f2_4
+f3_15 -[#CCCC00]-> f3_13
+f3_15 --[#CCCC00]--> f6_11
+f3_15 --[#CCCC00]--> f6_12
+f3_15 --[#CCCC00]--> f6_13
+f3_15 --[#CCCC00]--> f6_9
+f3_15 --[#CCCC00]--> f6_10
+f3_15 --[#CCCC00]--> f7_9
+f3_15 --[#CCCC00]--> f4_2
+f3_15 --[#CCCC00]--> f4_4
+f3_15 --[#CCCC00]--> f4_5
+f3_15 --[#CCCC00]--> f4_6
+f3_15 --[#CCCC00]--> f4_7
+f3_15 --[#CCCC00]--> f4_8
+f3_15 --[#CCCC00]--> f4_9
+f3_15 --[#CCCC00]--> f4_10
+f3_15 --[#CCCC00]--> f6_3
+f3_15 --[#CCCC00]--> f6_7
+f3_15 -[#CCCC00]-> f3_6
 f4_1 -[#FF00FF]-> f4_3
 f4_1 -[#FF00FF]-> f4_2
 f4_1 -[#FF00FF]-> f4_4

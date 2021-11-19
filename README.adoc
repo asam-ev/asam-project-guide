@@ -22,7 +22,7 @@ All standard are written after one version of the ASAM proect guide.
 . Deliverables of ASAM standards (standard documentation, user guide, UML model, examples, what shall not be included (e.g. implementation, tool))
 
 . Standard Tools
-.. {vscode}
+.. VSCode
 .. GitLab
 .. git
 .. local build asciidoctor
