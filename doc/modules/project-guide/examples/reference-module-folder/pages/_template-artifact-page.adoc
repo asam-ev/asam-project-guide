@@ -1,4 +1,4 @@
-= Artifact page Name
+= Artifact page name
 :description: The artefact's description
 :keywords: artifact
 :page-partial:

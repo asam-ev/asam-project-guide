@@ -1,6 +1,6 @@
-= ASAM developer Certeification Of Origin For Open Source Projects
+= ASAM developer certeification of origin for open source projects
 
-== Developer certification of Origin (DCO)
+== Developer certification of origin (DCO)
 To make a good faith effort to ensure licensing criteria are met, ASAM open source projects require the Developer Certificate of Origin (DCO) process to be followed.
 
 The DCO is an attestation attached to every contribution made by every developer.
@@ -54,7 +54,7 @@ If you want to be reminded to add the sign-off for commits in your repository, y
 ----
     #!/bin/sh
     #
-    = Check for DCO/Signed-off-by in message
+    = Check for dCO/Signed-off-by in message
     #
 
     if ! grep -q "^Signed-off-by: " "$1"
@@ -66,6 +66,6 @@ If you want to be reminded to add the sign-off for commits in your repository, y
 
 Placing this script into a file called `.git/hooks/commit-msg` and making it executable (e.g. using `chmod a+x .git/hooks/commit-msg` on unixoid operating systems) will prevent commits that do not have a sign-off.
 
-== Ensuring git signoff in VSCode
+== Ensuring git signoff in vSCode
 
 TODO

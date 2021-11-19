@@ -1,4 +1,4 @@
-= Standard docker Compose YAML
+= Standard docker compose yAML
 :description: Contains the standard docker-compose.yml description with the specification on how to use it.
 :keywords: docker,compose,yml,yaml
 :page-partial:
@@ -9,7 +9,7 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-== Why use Docker?
+== Why use docker?
 
 include::compendium:partial$what-is-docker.adoc[]
 
@@ -38,7 +38,7 @@ NOTE: Usually, the only adaption that may be required is to change the input fil
 TIP: It is also possible to include the running of scripts into this (e.g. adoc2LOFT)
 
 
-=== Typical configuration Options
+=== Typical configuration options
 
 Each project may have slightly different requirements, and at different stages of the project different features are available or not.
 To accommodate for that, the docker-compose.yml can be configured with options in the `entrypoint`.
@@ -64,14 +64,14 @@ If the project does not have such a configuration (yet), remove this option.
 Otherwise, the container will fail to create any output!
 
 
-=== Single input File
+=== Single input file
 
 You can define the input file by using `path-to-file/filename.format`.
 In the standard version above, this is set to `standard/main.adoc`.
 Replace this, if necessary.
 
 
-=== Multiple input Files
+=== Multiple input files
 
 If you want to process more than one file in one go, you can replace `path-to-file`, `filename` or both with `*`, so that it searches through all paths, files or both respectively.
 

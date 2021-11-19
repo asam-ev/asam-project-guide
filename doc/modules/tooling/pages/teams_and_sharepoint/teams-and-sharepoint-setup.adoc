@@ -1,4 +1,4 @@
-= Setting up Microsoft Teams And Sharepoint
+= Setting up microsoft teams and sharepoint
 :description: Setup of MS Teams and sharepoint
 :keywords: setup,teams,sharepoint
 
@@ -29,14 +29,14 @@ WARNING: If you do not yet have access to Teams, get in touch with mailto:benjam
 //Describe the steps to perform this artifact. If you have alternative ways, use subchapters.
 
 == Troubleshooting / Known Issues
-=== I do not have MS Teams
+=== I do not have mS Teams
 
 
 === My ASAM Teams account cannot access any team channel
 Check with your ASAM contact if you have already been assigned to any team or channel yet.
 You will receive an email from `noreply@email.teams.microsoft.com` when your account has been added to at least one channel.
 
-=== I cannot access my Sharepoint folder
+=== I cannot access my sharepoint folder
 Try navigating to the parent folder and then access the target folder from there again.
 If this does not work: Check with your ASAM contact if your access to the folder has been revoked or the folder has been renamed.
 

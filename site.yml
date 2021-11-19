@@ -7,7 +7,7 @@ site:
 content:
   sources:
     - url: .
-      branches: open*, master
+      branches: HEAD
       tags: open*
       start_path: doc
 

@@ -128,7 +128,7 @@ rectangle "add-a-page.adoc" as f3_2
 rectangle "add-a-partial.adoc" as f3_3
 rectangle "add-new-module.adoc" as f3_4
 rectangle "attachments.adoc" as f3_5
-rectangle "content-structure.adoc" as f3_6
+rectangle "Content-Structure.adoc" as f3_6
 rectangle "examples.adoc" as f3_7
 rectangle "home.adoc" as f3_8
 rectangle "images.adoc" as f3_9
@@ -190,7 +190,7 @@ rectangle "docker/docker-best-practices.adoc" as f7_13
 rectangle "docker/docker-guides.adoc" as f7_14
 rectangle "docker/docker-setup.adoc" as f7_15
 rectangle "drawio/drawio-setup.adoc" as f7_16
-rectangle "git/git-best-practices.adoc" as f7_17
+rectangle "git/Git-Best-Practices.adoc" as f7_17
 rectangle "git/git-guides.adoc" as f7_18
 rectangle "git/git-setup.adoc" as f7_19
 rectangle "gitlab/gitlab-guides.adoc" as f7_20
@@ -214,7 +214,6 @@ f2_9 --[#00FF00]--> f6_8
 f2_9 --[#00FF00]--> f6_6
 f2_10 --[#00FF00]--> f6_6
 f3_1 -[#CCCC00]-> f3_8
-f3_1 -[#CCCC00]-> f3_6
 f3_1 -[#CCCC00]-> f3_4
 f3_1 -[#CCCC00]-> f3_11
 f3_1 -[#CCCC00]-> f3_2
@@ -226,8 +225,6 @@ f3_1 -[#CCCC00]-> f3_12
 f3_1 -[#CCCC00]-> f3_13
 f3_2 -[#CCCC00]-> f3_3
 f3_2 -[#CCCC00]-> f3_11
-f3_2 -[#CCCC00]-> f3_6
-f3_4 -[#CCCC00]-> f3_6
 f3_11 -[#CCCC00]-> f3_2
 f3_11 -[#CCCC00]-> f3_3
 f3_13 --[#CCCC00]--> f0_2

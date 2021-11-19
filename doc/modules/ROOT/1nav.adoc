@@ -1,18 +1,18 @@
-* xref:general_guidelines/Setup-Guide.adoc[Setup]
-** xref:general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[Teams & Sharepoint]
-** xref:general_guidelines/Shared-OpenX-Calendar.adoc[Shared-OpenX-Calendar]
+* xref:general_guidelines/Setup-Guide.adoc[]
+** xref:general_guidelines/Microsoft-Teams-and-Sharepoint.adoc[]
+** xref:general_guidelines/Shared-OpenX-Calendar.adoc[]
 * Guidelines
-** xref:general_guidelines/Workflow.adoc[Workflow Guidelines]
-** xref:general_guidelines/ProjectGuidelines.adoc[Project Guidelines]
-** xref:general_guidelines/Meeting-Guidelines.adoc[Meeting Guidelines]
-** xref:general_guidelines/WritingGuidelines.adoc[Writing Guidelines]
+** xref:general_guidelines/Workflow.adoc[]
+** xref:general_guidelines/ProjectGuidelines.adoc[]
+** xref:general_guidelines/Meeting-Guidelines.adoc[]
+** xref:general_guidelines/WritingGuidelines.adoc[]
 * Tools
-** xref:general_guidelines/ToolsOverview.adoc[Tools Overview]
+** xref:general_guidelines/ToolsOverview.adoc[]
 ** Tools Installation Guides
-*** xref:general_guidelines/Getting-Docker.adoc[Getting Git]
-*** xref:general_guidelines/Getting-Docker.adoc[Getting Visual Studio Code]
-*** xref:general_guidelines/Getting-Docker.adoc[Getting Draw.io]
-*** xref:general_guidelines/Getting-Docker.adoc[Getting Docker]
+*** xref:general_guidelines/Getting-Docker.adoc[]
+*** xref:general_guidelines/Getting-Docker.adoc[]
+*** xref:general_guidelines/Getting-Docker.adoc[]
+*** xref:general_guidelines/Getting-Docker.adoc[]
 ** Tools Usage Guides
 * Project
 * Templates

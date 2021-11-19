@@ -78,7 +78,7 @@ The following table shows the relation to the location for Antora.
 
 |===
 
-== When to Use A Page
+== When to use a page
 A page is located in the "pages" folder (or a subfolder therein) of a module.
 
 Each page is rendered into an html by the Antora build pipeline and is accessible through direct link or (if set up) cross-references or the sidebar.
@@ -91,11 +91,11 @@ It can also be found using the search function.
 Instead, use partials.
 * Pages **MUST** contain a **title**.
 
-For more information on page requirements, see xref:add-a-page.adoc[Adding A Page].
+For more information on page requirements, see xref:add-a-page.adoc[].
 
 For more information on how Antora handles pages in general, see https://docs.antora.org/antora/2.1/page/#standard[Standard Pages In Antora].
 
-== When to Use A Partial
+== When to use a partial
 A partial is located in the "partials" folder (or a subfolder therein) of a module.
 
 Partials are not rendered into hmls by the Antora build pipeline.
@@ -108,6 +108,6 @@ Partials also do not support all macros, particularly the ASAM macros are not ap
 * **DO NOT** use a **title** or **section headings** in partials.
 
 
-For more information on partials requirements, see xref:add-a-partial.adoc[Adding A Partial].
+For more information on partials requirements, see xref:add-a-partial.adoc[].
 
 For more information on how Antora handles partials in general, see https://docs.antora.org/antora/2.1/page/#partial[Reusable Partial Pages In Antora].

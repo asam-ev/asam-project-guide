@@ -1,11 +1,11 @@
-= Build antora On Your Local PC
+= Build antora on your local pC
 :description: Describes how to build antora locally on you pc without needing to run the CI/CD on GitLab.
 :keywords: antora,guide,docker
 
 This guide explains how to build this wiki locally on your PC without having activate the ASAM build pipeline.
 The suggested method is to use the provided docker-compose.yml in this repository.
 
-== Build with Custom Image (Pro)
+== Build with custom image (Pro)
 
 NOTE: This service provides a searchbar in the header and support for diagrams.
 
@@ -31,7 +31,7 @@ TIP: Alternatively, you can also download link:{attachmentsdir}/DOCKERFILE.custo
 . Check out the latest version of this repository (containing the Project Guide)
 . Build and run a docker container using the provided docker-compose.yml for the service "custom-lunr"
 
-== Build with Antora/Lunr (Recommended)
+== Build with antora/Lunr (Recommended)
 
 NOTE: This service provides a searchbar in the header but no support for diagrams.
 
@@ -39,7 +39,7 @@ NOTE: This service provides a searchbar in the header but no support for diagram
 . Start docker (if not yet running)
 . Build and run a docker container using the provided docker-compose.yml for the service "lunr"
 
-== Build with Antora
+== Build with antora
 NOTE: This service does not provide a searchbar or support for diagrams.
 
 . Check out the latest version of this repository

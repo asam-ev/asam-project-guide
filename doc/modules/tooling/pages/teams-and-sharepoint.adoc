@@ -1,4 +1,4 @@
-= Microsoft teams And Sharepoint
+= Microsoft teams and sharepoint
 :description: A summary page describing what MS Teams and Sharepoint are and where to find related information, guides etc.
 :keywords: teams,sharepoint,summary,tool,mandatory
 
@@ -21,13 +21,13 @@ It can be accessed directly or through Teams, which is why all files that have b
 ** If you need another Teams channel, contact mailto:benjamin.engel@asam.net[Benjamin Engel]!
 * These file tabs can also be found directly in Sharepoint (sign in with your microsoft account).
 
-IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See xref:general_guidelines/Workflow.adoc[Workflow Guidelines] for more information.
+IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See xref:general_guidelines/Workflow.adoc[] for more information.
 
 
-== MS teams At ASAM
+== MS teams at ASAM
 //TODO
 
-== MS sharepoint At ASAM
+== MS sharepoint at ASAM
 //TODO
 
 == Content

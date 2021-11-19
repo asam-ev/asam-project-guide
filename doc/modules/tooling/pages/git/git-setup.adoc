@@ -1,7 +1,7 @@
-= Setting up Git
+= Setting up git
 :description: Contains a summary of how to set up git locally.
 :keywords: setup, git, task, fragment, git-setup
-:vscode: xref:vscode.adoc[Visual Studio Code]
+:vscode: xref:vscode.adoc[]
 :powershell: xref:compendium:powershell/powershell-basics.adoc[PowerShell]
 :gitlab: ASAM {gitlab-url}[GitLab^]
 
@@ -26,7 +26,7 @@ Git can also interface directly with {vscode}, making changing and updating file
 Git requires a multi-step installation.
 The following sections describe each part of this setup sequentially.
 
-=== Install git On Your Computer
+=== Install git on your computer
 . {git-url}[Download Git]
 . Follow the installation instructions on screen.
 The installation routine requires many settings.
@@ -38,7 +38,7 @@ __**OPTIONAL**: If you would like to use {vscode} as your standard Git editor, f
 +
 image:select-vscode-for-git.png[title="Use Visual Studio Code as Git's default editor"]
 
-=== Configure user Credentials
+=== Configure user credentials
 After installation of Git, **configure your user credentials** that Git uses when checking in changed content from your PC to the {gitlab}.
 To make sure your commits match your name and email details, a one time configuration is necessary.
 
@@ -198,7 +198,7 @@ Now, the "next" button should be active.
 === I cannot copy the key using the provided command
 Open the file you created in a text editor and copy the whole text manually.
 
-=== I cannot add my private key to the SSH agent
+=== I cannot add my private key to the sSH agent
 This cannot be done in the Administration {powershell} window if your Admin account is not your user account!
 Otherwise, Windows will complain about unprotected private key files!
 Switch to a non-administrator PowerShell and execute the command again.

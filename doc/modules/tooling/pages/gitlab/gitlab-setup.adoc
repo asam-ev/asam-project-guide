@@ -1,4 +1,4 @@
-= Setting up Your ASAM GitLab Account
+= Setting up your ASAM GitLab Account
 :description: How to setup your ASAM GitLab account.
 :keywords: task,fragment,setup,gitlab,account,gitlab-setup
 

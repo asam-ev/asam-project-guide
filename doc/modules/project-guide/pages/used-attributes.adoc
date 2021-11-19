@@ -48,7 +48,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:tools/antora.adoc[compendium/pages/tools/antora.adoc]
 * xref:compendium:tools/antora/build-antora-locally.adoc[compendium/pages/tools/antora/build-antora-locally.adoc]
 * xref:project-guide:add-new-module.adoc[project-guide/pages/add-new-module.adoc]
-* xref:project-guide:content-structure.adoc[project-guide/pages/content-structure.adoc]
+* xref:project-guide:Content-Structure.adoc[project-guide/pages/Content-Structure.adoc]
 * xref:project-guide:macros/macro-reference.adoc[project-guide/pages/macros/macro-reference.adoc]
 * xref:project-guide:macros/macro-related.adoc[project-guide/pages/macros/macro-related.adoc]
 
@@ -118,7 +118,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 * xref:tooling:calendar/calendar-best-practices.adoc[tooling/pages/calendar/calendar-best-practices.adoc]
 * xref:tooling:docker/docker-best-practices.adoc[tooling/pages/docker/docker-best-practices.adoc]
-* xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
+* xref:tooling:git/Git-Best-Practices.adoc[tooling/pages/git/Git-Best-Practices.adoc]
 
 === branch
 
@@ -166,7 +166,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:guides/git-interactions.adoc[compendium/pages/guides/git-interactions.adoc]
 * xref:compendium:tools/git/commit-guidelines.adoc[compendium/pages/tools/git/commit-guidelines.adoc]
 * xref:compendium:tools/gitlab/commit-guidelines.adoc[compendium/pages/tools/gitlab/commit-guidelines.adoc]
-* xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
+* xref:tooling:git/Git-Best-Practices.adoc[tooling/pages/git/Git-Best-Practices.adoc]
 
 === compendium
 
@@ -276,7 +276,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 === feature
 
 * xref:compendium:tools/git/write-a-feature.adoc[compendium/pages/tools/git/write-a-feature.adoc]
-* xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
+* xref:tooling:git/Git-Best-Practices.adoc[tooling/pages/git/Git-Best-Practices.adoc]
 
 === fetch
 
@@ -335,7 +335,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
 * xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
 * xref:tooling:git.adoc[tooling/pages/git.adoc]
-* xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
+* xref:tooling:git/Git-Best-Practices.adoc[tooling/pages/git/Git-Best-Practices.adoc]
 * xref:tooling:git/git-guides.adoc[tooling/pages/git/git-guides.adoc]
 * xref:tooling:git/git-setup.adoc[tooling/pages/git/git-setup.adoc]
 
@@ -617,7 +617,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:getting-started:about-this-guide.adoc[getting-started/pages/about-this-guide.adoc]
 * xref:project-guide:add-a-page.adoc[project-guide/pages/add-a-page.adoc]
 * xref:project-guide:add-a-partial.adoc[project-guide/pages/add-a-partial.adoc]
-* xref:project-guide:content-structure.adoc[project-guide/pages/content-structure.adoc]
+* xref:project-guide:Content-Structure.adoc[project-guide/pages/Content-Structure.adoc]
 * xref:project-guide:home.adoc[project-guide/pages/home.adoc]
 * xref:project-guide:link-concept.adoc[project-guide/pages/link-concept.adoc]
 * xref:project-guide:pages-vs-partials.adoc[project-guide/pages/pages-vs-partials.adoc]
@@ -671,7 +671,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
 * xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
 * xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
-* xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
+* xref:tooling:git/Git-Best-Practices.adoc[tooling/pages/git/Git-Best-Practices.adoc]
 
 === repository
 
@@ -679,7 +679,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
 * xref:compendium:tools/powershell/cloning-a-repository.adoc[compendium/pages/tools/powershell/cloning-a-repository.adoc]
 * xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
-* xref:tooling:git/git-best-practices.adoc[tooling/pages/git/git-best-practices.adoc]
+* xref:tooling:git/Git-Best-Practices.adoc[tooling/pages/git/Git-Best-Practices.adoc]
 
 === requirements
 
@@ -788,7 +788,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === structure
 
-* xref:project-guide:content-structure.adoc[project-guide/pages/content-structure.adoc]
+* xref:project-guide:Content-Structure.adoc[project-guide/pages/Content-Structure.adoc]
 * xref:project-guide:link-concept.adoc[project-guide/pages/link-concept.adoc]
 * xref:project-guide:used-attributes.adoc[project-guide/pages/used-attributes.adoc]
 

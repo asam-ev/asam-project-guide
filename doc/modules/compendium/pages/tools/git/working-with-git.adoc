@@ -1,4 +1,4 @@
-= Working with Git
+= Working with git
 :description: Describes the standard way of working with git.
 :keywords: git,worklfow
 :page-partial:

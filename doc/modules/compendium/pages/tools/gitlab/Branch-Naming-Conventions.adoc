@@ -1,4 +1,4 @@
-= Branch naming Conventions
+= Branch naming conventions
 
 
 == Name template

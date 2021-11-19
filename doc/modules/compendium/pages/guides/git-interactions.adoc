@@ -8,7 +8,7 @@ include::compendium:partial$_attributes.adoc[]
 
 Make any changes. Once you are ready to share them, upload them to the remote
 
-=== Git bash to Commit / Push / Pull
+=== Git bash to commit / Push / Pull
 git bash commands to commit and push changes
 
     git add . # add your changes to the tracked versioning of git

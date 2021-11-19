@@ -1,4 +1,4 @@
-= Recommended visual Studio Code Extensions
+= Recommended visual studio code extensions
 :description: A collecteion of recommended VSCode extensions
 :keywords: vscode,extensions,gitlab,asciidoc,drawio,docker
 :lookup: compendium:partial$vscode

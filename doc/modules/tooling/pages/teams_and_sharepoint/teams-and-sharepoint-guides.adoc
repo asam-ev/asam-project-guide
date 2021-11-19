@@ -1,4 +1,4 @@
-= Microsoft teams And Sharepoint Guide
+= Microsoft teams and sharepoint guide
 :description:
 :keywords: teams,sharepoint,guide
 :offset_value: leveloffset=+2

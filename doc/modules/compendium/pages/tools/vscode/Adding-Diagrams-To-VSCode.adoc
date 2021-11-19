@@ -10,20 +10,20 @@ You can see the full range and examples on the official https://kroki.io/example
 
 include::partial$vscode/kroki.adoc[]
 
-== Caching diagrams Locally
+== Caching diagrams locally
 
 NOTE: This is a per-file setting and must be done in each applicable AsciiDoc file.
 
 By default, diagrams are not saved locally.
 To cache and save diagrams locally, set the kroki-fetch-diagram attribute in your document header:
 
-    = My amazing Document
+    = My amazing document
     :kroki-fetch-diagram:
 
 This will store images by default in your document folder.
 However, you may also set `imagesdir` to store them elsewhere:
 
-    = My amazing Document
+    = My amazing document
     :kroki-fetch-diagram:
     :imagesdir: images
 
@@ -33,7 +33,7 @@ NOTE: In the example above, the images are now stored in a folder named "images"
 The images are served over http:// and you must allow your preview to include data from unsafe sources.
 To do this:
 
-. Open the xref:tool-specific/VSCode-Command-Palette.adoc[Command Palette].
+. Open the xref:tool-specific/VSCode-Command-Palette.adoc[].
 . Enter ``asciidoc preview security`` .
 . Choose ``Allow insecure content``.
 
@@ -46,7 +46,7 @@ image::plantuml_1.png[]
 .Allowing insecure content
 image::plantuml_2.png[]
 
-== Testing kroki Examples
+== Testing kroki examples
 
 With the settings done and caching activated, you can test Kroki with the following examples:
 

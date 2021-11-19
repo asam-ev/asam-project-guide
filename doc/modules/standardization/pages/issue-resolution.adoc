@@ -1,4 +1,4 @@
-= Issue resolution Process
+= Issue resolution process
 :description: Describes the issue resolution process in the ASAM standardization in case a released standard has issues.
 :keywords: standardization
 
@@ -33,7 +33,7 @@ include::compendium:page$roles/standard-user.adoc[tags=default;issue_resolution]
 === Standard manager
 include::compendium:page$roles/standard-manager.adoc[tags=default;issue_resolution]
 
-=== Standard expert Group
+=== Standard expert group
 include::compendium:page$roles/standard-expert-group.adoc[tags=default;issue_resolution]
 
 === TSC

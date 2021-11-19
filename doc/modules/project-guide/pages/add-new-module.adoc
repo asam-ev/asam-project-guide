@@ -2,7 +2,7 @@
 :description: Describes how to add a new module to the ASAM Project Guide so that it contains all importantn infos and structures by default for Antora to build correctly.
 :keywords: antora,guide,module,new-content-guide
 
-== Add mandatory Folders And Files
+== Add mandatory folders and files
 To add a new module to the Project Guide, follow these instructions:
 
 . Copy the folder "reference-module-folder" located in the "examples" folder of the "project-guide" module with all its files and subfolders into the "modules" folder
@@ -23,6 +23,6 @@ TIP: The position in the list reflects the order of the modules in Antora's side
 . Add the module structure to the plantuml file "structure.puml" in the examles of the project-guide module
 //TODO: Automate this process step!
 
-. Update the xref:content-structure.adoc[Content Structure Adoc] file accordingly
+. Update the xref:content-structure.adoc[] file accordingly
 
 related::new-content-guide[]

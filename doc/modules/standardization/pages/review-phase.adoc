@@ -1,10 +1,10 @@
-= The review Phase
-:description: Describes the review phase in the ASAM development process for standards.
+= The Review phase
+:description: Describes the Review phase in the ASAM development process for standards.
 :keywords: review,phase,standard,process
 include::partial$_attributes.adoc[]
 include::compendium:partial$abbreviations.adoc[]
 
-The purpose of the review phase is to involve members of ASAM outside the project group to give their review feedback and to increase the overall quality and acceptance of the standard prior to its release.
+The purpose of the Review phase is to involve members of ASAM outside the project group to give their review feedback and to increase the overall quality and acceptance of the standard prior to its release.
 
 image::review_phase.png[title="The Review Phase"]
 

@@ -1,10 +1,10 @@
-= The release Phase
-:description: Describes the release phase in the ASAM development process for standards.
+= The Release phase
+:description: Describes the Release phase in the ASAM development process for standards.
 :keywords: release,phase,standard,process
 include::partial$_attributes.adoc[]
 include::compendium:partial$abbreviations.adoc[]
 
-The purpose of the release phase is to obtain a release decision at ASAM and to publish the new standard.
+The purpose of the Release phase is to obtain a release decision at ASAM and to publish the new standard.
 
 image::release_phase.png[title="The Release Phase"]
 

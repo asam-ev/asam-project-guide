@@ -1,6 +1,6 @@
 = Feedback guide
 
-== Overview on The Different Feedback Mechanisms
+== Overview on the different feedback mechanisms
 
 === Feedback stages
 
@@ -42,7 +42,7 @@ This is the workflow in which order an issue may be assigned to a certain stage:
 An overview of all currently available feedback issues you find in the https://code.asam.net/simulation/standard/openscenario-2.0/-/boards/66[IF Feedback Board^].
 
 
-=== Scenario specific Feedback
+=== Scenario specific feedback
 Use the issues created for each scenario https://code.asam.net/simulation/standard/openscenario-2.0/-/issues?label_name%5B%5D=ScenarioDescription[link to the list of issues for scenario feedback^].
 
 If you create a new issue for a new scenario, please assign the labels ~ImplementersForum, ~ScenarioDescription and ~IF-InternalReview (and no other labels).
@@ -58,12 +58,12 @@ But please be spare with such issues and also try to put connected topics into t
 https://code.asam.net/simulation/standard/openscenario-2.0/-/issues?label_name%5B%5D=GeneralFeedback[Link to the list of issues for general feedback^].
 
 
-== Feedback to OSC2 Feature List (Excel Table)
+== Feedback to oSC2 Feature List (Excel Table)
 Add your feedback as comment to the respective gitLab issue https://code.asam.net/simulation/standard/openscenario-2.0/-/issues/245[Collect feedback to OSC2.0 feature list^].
 
 
-== General guidelines For Content Of Given Feedback
-=== What should be contained in the IF-feedback from the perspective of the OSC2.0 project to be most valuable and helpful?
+== General guidelines for content of given feedback
+=== What should be contained in the iF-feedback from the perspective of the OSC2.0 project to be most valuable and helpful?
 - **Ambiguities in the language** (should have high priority)
   - How clear is the intended meaning and use of language constructs and domain model entities?
 - Are there any **important features missing for 2.0**?  (e.g. if you cannot express things at all)
@@ -77,7 +77,7 @@ Add your feedback as comment to the respective gitLab issue https://code.asam.ne
 **_General request: Feedback should be constructive and specific not only complains, but also reasons and proposals for improvements if possible._**
 
 
-=== What are The Implementers Forum Members Planning/Expecting To Provide (Subgroup A, Subgroup B)?
+=== What are the implementers forum members planning/Expecting To Provide (Subgroup A, Subgroup B)?
 - Which features were intensively used during specification of different case-studies? => Priority to be contained in 2.0
 - For which abstraction level which features were used? => Feature Sets, Usage & Pragmatics Group
 - For which use-case which features where used? => Feature Sets, Priorities, Usage & Pragmatics Group

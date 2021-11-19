@@ -1,4 +1,4 @@
-= The project Ideation Phase
+= The Project Ideation phase
 :description: Describes the ideation process for a new project.
 :keywords: ideation,phase,standard,process
 

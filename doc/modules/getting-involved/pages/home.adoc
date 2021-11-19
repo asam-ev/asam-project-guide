@@ -1,4 +1,4 @@
-= How to Get Involved At ASAM
+= How to get involved at ASAM
 :description: Landing page for information on how to get involved in ASAM projects.
 :keywords: landing_page,get-involved
 

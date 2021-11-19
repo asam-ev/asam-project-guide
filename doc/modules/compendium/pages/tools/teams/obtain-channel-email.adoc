@@ -1,4 +1,4 @@
-= Obtain the Email Address Of A Channel
+= Obtain the email address of a channel
 :description: Obtain the email adress of a teams channel in MS Teams
 :keywords: artifact,teams,email,channel
 :page-partial:

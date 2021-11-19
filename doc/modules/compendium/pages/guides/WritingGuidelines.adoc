@@ -1,11 +1,11 @@
-= Writing guidelines Overview
+= Writing guidelines overview
 :cdir: ../writing_guidelines/
 
-- xref:{cdir}Asciidoc-Guide.adoc[AsciiDoc Guide]
+- xref:{cdir}Asciidoc-Guide.adoc[]
 - Style Guidelines (TODO)
 - xref:{cdir}writing_guide[ASAM Writing Guide]
-- xref:{cdir}Docker-For-Asciidoc.adoc[Guide for AsciiDoc with Docker]
-- xref:{cdir}coding_style.adoc[ASAM Coding Style]
+- xref:{cdir}Docker-For-Asciidoc.adoc[]
+- xref:{cdir}coding_style.adoc[]
 - xref:{cdir}plantuml_documentation_guide[Documentation Guide for PlantUML]
 
 TODO: Include content from https://code.asam.net/internal/asciidoc-example-document/-/tree/master/

@@ -1,4 +1,4 @@
-= Project guide Structure
+= Project Guide structure
 :description: Summarizes the proposed general structure of the Project Guide.
 :keywords: antora,structure,project-guide
 :structure: project-guide:example$structure.puml

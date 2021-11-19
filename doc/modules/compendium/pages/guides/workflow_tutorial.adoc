@@ -4,7 +4,7 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-== Workflow tutorial for the projects using Gitlab
+== Workflow tutorial for the projects using gitlab
 
 In this tutorial we will go through the workflow we want to use to create the OpenDRIVE concept Paper.
 

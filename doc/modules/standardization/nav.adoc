@@ -1,4 +1,4 @@
-* xref:home.adoc[ASAM Standardization Process]
+* xref:home.adoc[]
 ** xref:project-types.adoc[]
 ** xref:asam-development-process.adoc[]
 *** xref:project-ideation.adoc[]

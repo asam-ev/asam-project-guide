@@ -1,4 +1,4 @@
-= Visual studio Command Palette
+= Visual studio command palette
 
 The Command Palette in Visual Studio Code allows you to access specific menus and functions of the program directly without having to navigate there through the menu strucutre.
 It also helps when looking for an option to change as it contains a search function with auto-completion.

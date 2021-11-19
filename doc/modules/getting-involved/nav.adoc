@@ -1,4 +1,4 @@
-* xref:home.adoc[How To Get Involved]
+* xref:home.adoc[]
 ** Propose New Project
 ** New Standard: Join Proposal Workshop
 ** Active Project: Join As Work Group Member

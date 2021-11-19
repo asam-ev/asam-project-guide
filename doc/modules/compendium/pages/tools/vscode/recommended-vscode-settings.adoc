@@ -1,4 +1,4 @@
-= ASAM recommended Visual Studio Code Settings
+= ASAM recommended visual studio code settings
 :description: Summarizes the recommended VSCode settings.
 :keywords: vscode,settings
 
@@ -14,11 +14,11 @@ This is a summary of recommended VSCode settings to follow writing guidelines ea
 include::{lookup}/indentations.adoc[]
 
 
-== Automatic removal Of Spaces After Periods
+== Automatic removal of spaces after periods
 
 include::{lookup}/spaces-removal.adoc[]
 
 
-== Enabling kroki Support In AsciiDoc
+== Enabling kroki support in asciiDoc
 
 include::{lookup}/kroki.adoc[]

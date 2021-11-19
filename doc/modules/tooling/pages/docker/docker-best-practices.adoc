@@ -1,4 +1,4 @@
-= Docker best Practices
+= Docker best practices
 :description: A collection of best practices regarding Docker at ASAM.
 :keywords: docker, best-practices
 

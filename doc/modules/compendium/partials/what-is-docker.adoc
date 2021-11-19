@@ -17,12 +17,12 @@ For Asciidoc, docker can be used to run a pre-configured asciidoctor setup for c
 This removes the need to upload adoc files and use the build pipeline for every change you want to see.
 It also means you do not have to install and configure Asciidoctor first since this is already done in the pre-configured Docker image.
 
-If you do not have Docker installed, check out the xref:tooling:docker.adoc[tooling page on docker] before continuing.
+If you do not have Docker installed, check out the xref:tooling:docker.adoc[] before continuing.
 
-If your project is currently missing the docker-compose.yml, see these xref:compendium:docker/standard-docker-config.adoc[instructions] on how to set it up.
+If your project is currently missing the docker-compose.yml, see these xref:compendium:docker/standard-docker-config.adoc[] on how to set it up.
 
 A project's final specification document is created as HTML file.
 However, having to run it through the pipeline every time before being able to see the final result after having made changes is neither efficient nor friendly to the other workgroup members.
 To render a project's documentation without having to upload it, use Docker Compose with a correctly defined docker-compose.yml file.
 
-For information on what YAML/yml means, see xref:compendium:what-is-yaml.adoc[What is YAML/yml?]
+For information on what YAML/yml means, see xref:compendium:what-is-yaml.adoc[]

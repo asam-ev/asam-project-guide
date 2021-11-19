@@ -12,11 +12,11 @@ include::compendium:partial$_attributes.adoc[]
 This guide is intended to help you writing content for ASAM projects.
 It provides you a set of hints and rules that make it easier to contribute concise and homogeneous content and documents to the projects.
 
-TIP: If you are using Visual Studio Code, see the xref:../tool-specific/Recommended-VSCode-Settings.adoc[recommended VSCode Settings].
+TIP: If you are using Visual Studio Code, see the xref:../tool-specific/Recommended-VSCode-Settings.adoc[].
 
 == Language
 
-=== Use american English (AE)
+=== Use american english (AE)
 
 * Use "English (US)" (ISO: *en-US*) as a language setting in your text editor.
 * Mnemonic: -or, -l, -yze, -er
@@ -632,7 +632,7 @@ The preview is working correctly and hides all parts marked as draft. +
 +
 To make the parts visible again, you have to set the attribute `draft` for your preview window.
 
-==== VisualStudioCode with Asciidoc extension
+==== VisualStudioCode with asciidoc extension
 
 . In the Asciidoc extension settings go to `Preview:Attributes - Edit in settings.json`.
 . In the settings.json add the `draft` attribute:
@@ -676,11 +676,11 @@ You can also download the artifacts directly from the pipeline result page.
 
 == Related topics
 
-* For a short introduction to Asciidoc, see the https://code.asam.net/simulation/resources/-/blob/master/asciidoc_tutorial/asciidoc_tutorial.adoc[AsciiDoc Guide].
+* For a short introduction to Asciidoc, see the https://code.asam.net/simulation/resources/-/blob/master/asciidoc_tutorial/asciidoc_tutorial.adoc[].
 * The https://code.asam.net/simulation/standard/openscenario-2.0/-/tree/master/Documentation/etc/templates[adoc-templates] can be found https://code.asam.net/simulation/standard/openscenario-2.0/-/tree/master/Documentation/etc/templates[here].
-* For a guide on how to format code examples see the https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc[Coding style guide].
+* For a guide on how to format code examples see the https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc[].
 * Topics for entities of the domain model can be automatically created if the UML diagrams contain specially formatted comments. +
-See the https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc[PlantUML documentation guide] for more details.
+See the https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc[] for more details.
 * More information about the workflow and review process can be found in the https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/general_guidelines/Workflow[Project Wiki].
 
 == Contact information

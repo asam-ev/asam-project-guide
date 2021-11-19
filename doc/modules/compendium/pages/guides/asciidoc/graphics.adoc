@@ -41,7 +41,7 @@ image::compendium:examplegraphic.drawio.svg[image]
 
 PlantUML can be defined in the AsciiDoc file direktly or included as a seperate file.
 
-=== Code in AsciiDoc
+=== Code in asciiDoc
 ....
 [[fig-example-plantuml-code]] // <1>
 .example graphic // <2>

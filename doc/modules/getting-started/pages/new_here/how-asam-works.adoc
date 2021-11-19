@@ -9,8 +9,8 @@ The ASAM organization is built around its members. For more information, see the
 
 == The project development process
 ASAM projects follow a defined development process.
-For a general overview, see the xref:new_here/processes-and-workflows-overview.adoc[Processes And Workflows Overview].
+For a general overview, see the xref:new_here/processes-and-workflows-overview.adoc[].
 
-A more detailed summary of the ASAM processes can be found in the xref:standardization:home.adoc[Standardization Module] of this guide.
+A more detailed summary of the ASAM processes can be found in the xref:standardization:home.adoc[] of this guide.
 
 related::asam[]

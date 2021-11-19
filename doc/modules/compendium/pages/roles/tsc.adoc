@@ -1,4 +1,4 @@
-= Technical steering Committee (TSC)
+= Technical steering committee (TSC)
 :description: Describes a standard expert group (member) from ASAM project view.
 :keywords: role
 

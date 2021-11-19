@@ -1,4 +1,4 @@
-= Interacting with Git Through Visual Studio Code
+= Interacting with git through visual studio code
 
 You can find a very helpful overview at https://code.visualstudio.com/docs/editor/versioncontrol#_git-support[window=_blank].
 
@@ -6,9 +6,9 @@ You can find a very helpful overview at https://code.visualstudio.com/docs/edito
 
 == See also
 
-* xref:../git/An-Introduction-to-Git.adoc[An introduction to Git]
-* xref:../git/Git-Best-Practices.adoc[Git Best Practices]
-* xref:../git/ASAM-Issue-and-MR-Labels.adoc[ASAM Issue and Merge Request Labels]
-* xref:../git/Branch-Naming-Conventions.adoc[ASAM Branch Naming Conventions]
-* xref:../git/Commit-Guidelines.adoc[ASAM Commit Guidelines]
-* xref:../git/Submodules.adoc[Working With Submodules]
+* xref:../git/An-Introduction-to-Git.adoc[]
+* xref:../git/Git-Best-Practices.adoc[]
+* xref:../git/ASAM-Issue-and-MR-Labels.adoc[]
+* xref:../git/Branch-Naming-Conventions.adoc[]
+* xref:../git/Commit-Guidelines.adoc[]
+* xref:../git/Submodules.adoc[]

@@ -1,4 +1,4 @@
-= Sharepoint link Summary
+= Sharepoint link summary
 :description: This is a summary of important Sharepoint links.
 :keywords: sharepoint,link,links,projects
 :page-partial:

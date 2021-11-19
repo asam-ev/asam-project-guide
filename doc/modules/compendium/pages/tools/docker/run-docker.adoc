@@ -1,4 +1,4 @@
-= Starting a container from Docker Desktop
+= Starting a container from docker desktop
 :description: Run docker-compose from Desktop
 :keywords: docker,desktop
 :page-partial:

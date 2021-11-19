@@ -15,9 +15,9 @@ include::compendium:partial$abbreviations.adoc[]
 === Contributors
 - Develop software, i.e. write source code and tests.
 - For open-source projects hosted under the ASAM organization on Github.com all commits **must** include a sign-off message.
-See xref:general_guidelines/open-source/ASAM-DCO.adoc[Comitting to Open Source ASAM projects].
+See xref:general_guidelines/open-source/ASAM-DCO.adoc[].
 
-=== ASAM change Control Board
+=== ASAM change control board
 
 *CCB*
 
@@ -114,7 +114,7 @@ Service Provider:: Provides additional services necessary for the standard devel
 |Role               | comment
 |{tsc}                | The {tsc} is responsible to approve budget, and project as well as releases of project results, such as standards or concept papers
 |Standard User      | Someone who is using the ASAM standard
-|Reviewer          | A Standard user that want to provide feedback either in a review phase or afterwards
+|Reviewer          | A Standard user that want to provide feedback either in a Review phase or afterwards
 |===
 
 

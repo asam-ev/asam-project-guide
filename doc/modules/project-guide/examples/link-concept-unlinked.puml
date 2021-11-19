@@ -124,7 +124,7 @@ rectangle "calendar/calendar-setup.adoc" as f7_12
 rectangle "docker/docker-best-practices.adoc" as f7_13
 rectangle "docker/docker-guides.adoc" as f7_14
 rectangle "docker/docker-setup.adoc" as f7_15
-rectangle "git/git-best-practices.adoc" as f7_17
+rectangle "git/Git-Best-Practices.adoc" as f7_17
 rectangle "git/git-guides.adoc" as f7_18
 rectangle "gitlab/gitlab-guides.adoc" as f7_20
 rectangle "gitlab/gitlab-setup.adoc" as f7_21

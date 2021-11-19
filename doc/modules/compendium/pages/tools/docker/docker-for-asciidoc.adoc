@@ -1,4 +1,4 @@
-= How to Use Docker For Asciidoctor
+= How to use docker for asciidoctor
 :description: A how-to on using docker for asciidoctor
 :keywords: docker,asciidoc,asciidoctor
 :page-partial:
@@ -9,13 +9,13 @@ include::compendium:partial$_attributes.adoc[]
 == Wait, What Is Docker?
 include::compendium:partial$what-is-docker.adoc[]
 
-== Using docker For Asciidoc
+== Using docker for asciidoc
 
 The xref:{vscode-extensions}#_asciidoc[VSCode extension for Asciidoc] provides a decent preview.
 However, some styling and content will not look exactly as in the final result.
 If the layout and final look is important, you should create the HTMl output from the adoc files by using the asciidoctor docker container (configured in the xref:compendium:docker/standard-docker-config.adoc[standard docker-compose.yml]).
 
-For information on how to execute docker-compose, see the xref:tooling:docker.adoc[Docker Tooling].
+For information on how to execute docker-compose, see the xref:tooling:docker.adoc[].
 
 IMPORTANT: Make sure to execute the asciidoctor service in the container as it may contain more than one service.
 

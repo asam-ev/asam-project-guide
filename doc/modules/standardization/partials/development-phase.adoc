@@ -13,7 +13,7 @@
 |===
 // end::table[]
 
-The governing documents, which shall be considered during the development phase of the project, are:
+The governing documents, which shall be considered during the Development phase of the project, are:
 
 - the Project Guide (this document).
 - the project proposal.
@@ -24,7 +24,7 @@ Each project member shall be aware of the content of the documents.
 The project group has the additional task to review all open or incoming change requests (CR) and decide, whether they shall be resolved, declined or deferred to a later project.
 Upon technical release of the new standard, no CR shall be in an unviewed and undecided status.
 
-ASAM work groups are given a lot of latitude to organize their work during the development phase of the project.
+ASAM work groups are given a lot of latitude to organize their work during the Development phase of the project.
 Project groups can determine their own rules, processes and formats how to conduct meetings and how to carry out their work.
 ASAM requires a minimum of rules to be followed:
 
@@ -100,7 +100,7 @@ Project group members can cast their votes up to five work days after the public
 Votes cannot be transferred to other companies.
 A decision is made by absolute majority.
 
-New companies may join the group after the beginning of the development phase.
+New companies may join the group after the beginning of the Development phase.
 Requests for new admissions are directed to the project leader.
 They bring the request into the next group meeting.
 New admissions are accepted by absolute majority of the group members.
@@ -126,7 +126,7 @@ The {tsc} then votes on the expulsion of the member.
 // end::long[]
 
 //tag::short[]
-During the development phase, the actual development work, as defined in the project proposal, is carried out by the members of the project group.
+During the Development phase, the actual development work, as defined in the project proposal, is carried out by the members of the project group.
 This requires project group members, which are technical experts in the subject matter of the project.
 Their role is primarily to provide requirements, develop concepts for specific features of the standard and to review the work of the standard author.
 In case that the project has no service provider who takes over the role of standard author, then the project members also write the standard and produce all further artifacts that shall be delivered together with the standard.
