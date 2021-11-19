@@ -32,13 +32,13 @@ rectangle "add-new-module.adoc" as f3_4
 rectangle "pages-vs-partials.adoc" as f3_13
 rectangle "add-a-page.adoc" as f3_2
 rectangle "add-task-page.adoc" as f3_5
+rectangle "add-tool-page.adoc" as f3_6
 rectangle "add-a-partial.adoc" as f3_3
 rectangle "images.adoc" as f3_11
 rectangle "examples.adoc" as f3_9
 rectangle "attachments.adoc" as f3_7
 rectangle "special-macros.adoc" as f3_14
 rectangle "used-attributes.adoc" as f3_15
-rectangle "add-tool-page.adoc" as f3_6
 rectangle "link-concept.adoc" as f3_12
 }
 package role-specific #ff50ff {
@@ -104,6 +104,7 @@ f3_1 -[#CCCC00]-> f3_4
 f3_1 -[#CCCC00]-> f3_13
 f3_1 -[#CCCC00]-> f3_2
 f3_1 -[#CCCC00]-> f3_5
+f3_1 -[#CCCC00]-> f3_6
 f3_1 -[#CCCC00]-> f3_3
 f3_1 -[#CCCC00]-> f3_11
 f3_1 -[#CCCC00]-> f3_9
@@ -148,6 +149,7 @@ f3_15 --[#CCCC00]--> f7_8
 f3_15 -[#CCCC00]-> f3_2
 f3_15 -[#CCCC00]-> f3_3
 f3_15 -[#CCCC00]-> f3_5
+f3_15 -[#CCCC00]-> f3_6
 f3_15 --[#CCCC00]--> f2_4
 f3_15 -[#CCCC00]-> f3_13
 f3_15 --[#CCCC00]--> f6_11
@@ -166,7 +168,6 @@ f3_15 --[#CCCC00]--> f4_9
 f3_15 --[#CCCC00]--> f4_10
 f3_15 --[#CCCC00]--> f6_3
 f3_15 --[#CCCC00]--> f6_7
-f3_15 -[#CCCC00]-> f3_6
 f4_1 -[#FF00FF]-> f4_3
 f4_1 -[#FF00FF]-> f4_2
 f4_1 -[#FF00FF]-> f4_4
