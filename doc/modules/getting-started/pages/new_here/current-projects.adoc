@@ -1,82 +1,54 @@
-= Current and past ASAM projects
-:description: Links to the current projects page at ASAM. Contains links on how to add new project ideas and other such topics.
+= Current projects at ASAM
+:description: Links to the current projects page at ASAM.
 :keywords: projects, asam, new-here-content, ideation, standards
+:asam-released: https://www.asam.net/standards/
+:asam-current: https://www.asam.net/active-projects/projects/
+:asam-proposal: https://www.asam.net/active-projects/proposals/
+:asam-review: https://www.asam.net/active-projects/public-review/
 
 include::partial$_attributes.adoc[]
 include::compendium:partial$abbreviations.adoc[]
 
-You can find information on released standards and current projects on the ASAM website.
-
-== Project types
-ASAM has four defined project types, which further characterize the work to be done within the projects. They are:
-
-* <<Standard development project>>
-* <<Implementation project>>
-* <<Concept project>>
-* <<Study project>>
-
-
-They all have in common that the primary output of the project is a standard. The upper limit for subsidiary funding from ASAM is 25% of the total required project budget.
-
-=== Standard development project
-The core of ASAM is to carry out standard development projects with the goal to create new standards and to update existing standards in accordance with the demands of ASAM members and market requirements. ASAM defines four types of standard development projects, depending on the expected magnitude of changes to the standard:
-
-* <<New standard development>>
-* <<Major version development>>
-* <<Minor version development>>
-* <<Revision development>>
-
-They all have in common that the primary output of the project is a standard. The upper limit for subsidiary funding from ASAM is 25% of the total required project budget.
-
-==== New standard development
-include::standardization:partial$project-type-new-std-dev.adoc[tag=short]
-
-==== Major version development
-include::standardization:partial$project-type-major.adoc[tag=short]
-
-==== Minor version development
-include::standardization:partial$project-type-minor.adoc[tag=short]
-
-==== Revision development
-include::standardization:partial$project-type-revision.adoc[tag=short]
-
-=== Implementation project
-include::standardization:partial$project-type-implementation.adoc[tag=short]
-
-=== Concept project
-include::standardization:partial$project-type-concept.adoc[tag=short]
-
-=== Study project
-include::standardization:partial$project-type-study.adoc[tag=short]
-
+TIP: You can find information on released standards and current projects on the [ASAM website].
 
 == Released standards
-You can find the current list of released standards at https://www.asam.net/standards/.
+
+[role=right]
+====
+{asam-released}[Released ASAM standards^]
+====
+
+All standards that have been previously created and approved can be found on the ASAM website.
 
 == Current projects
+There are different stages for a project to be in.
+Not all these stages are public (e.g. xref:standardization:project-ideation.adoc[]).
+The following section summarize the open information on current project activities.
+
 === Proposals
+[role=right]
+====
+{asam-proposal}[ASAM proposals website^]
+====
+
 ASAM members are invited to:
 
 * Provide comments about the content of the proposal.
 * Enroll for participation in the project.
 
-All current proposals are listed under https://www.asam.net/active-projects/proposals/.
-
 === Ongoing projects
-All currently ongoing projects are listed under https://www.asam.net/active-projects/projects/.
+[role=right]
+====
+{asam-current}[ASAM current projects website^]
+====
+
+Projects currently under development are publicly announced, but their project work is usually for members only until the results are ready to be published.
 
 === Public reviews
+[role=right]
+====
+{asam-review}[ASAM public reviews website^]
+====
+
 The purpose of a "Public Review" is to involve ASAM members who are not part of the project group but work in the respective domain, to obtain their review feedback and to increase the overall quality and acceptance of a standard prior to its release.
 If you are employee of an ASAM member company, you are eligible to take part in the review process.
-
-Any public review is listed under https://www.asam.net/active-projects/public-review/.
-
-== Want to add a new idea?
-include::standardization:partial$project-ideation.adoc[tag=short]
-
-Enter your idea for a new project through the ideation process:
-https://www.asam.net/active-projects/ideation/.
-
-You can also find more information in this Project Guide on the xref:standardization:project-ideation.adoc[] page.
-
-For a more detailed look at processes and projects, see xref:standardization:home.adoc[].

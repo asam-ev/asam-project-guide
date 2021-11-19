@@ -1,5 +1,5 @@
 * xref:home.adoc[]
-** Propose New Project
+** xref:new-idea.adoc[]
 ** New Standard: Join Proposal Workshop
 ** Active Project: Join As Work Group Member
 ** Active Project: Lead a Project

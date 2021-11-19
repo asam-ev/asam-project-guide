@@ -4,9 +4,9 @@ There a many ways to create a branch in the git process.
 Two options are highlighted below.
 
 
-== Option 1: Using VSCode
+== Option 1: Using Visual Studio Code
 
-image::create-a-branch.gif[title="Create a new branch in VSCode"]
+image::create-a-branch.gif[title="Create a new branch in {vscode}"]
 
 . Click on the branch icon on the bottom left
 . Click on "Create New Branch"

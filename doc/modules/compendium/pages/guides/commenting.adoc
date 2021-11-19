@@ -11,7 +11,7 @@ To store all of our documents, ASAM provides a GitLab repsoitory at {gitlab-url}
 xref:tooling:vscode.adoc[].
 
 Once a document is written by the group/service provider, we want to review and comment on the document.
-Unfortunatelly, there is no native built-in comment feature in GitLab and/or VSCode.
+Unfortunatelly, there is no native built-in comment feature in GitLab and/or {vscode}.
 Also everyone / every working group is working on their own branch.
 Those branches should be create by using the issues in GitLab.
 
@@ -32,7 +32,7 @@ There are several possiblities of comment types.
 . FIXME: you found a mistake in a document
 . STUB: t.b.d
 
-The list above looks like this in the VSCode Editor:
+The list above looks like this in the {vscode} Editor:
 
 image:sim_anchors.png[sim_anchors, 800]
 
@@ -58,7 +58,7 @@ For detailed comments that relate to a section/image/chapter of your document us
 image:workflow.png[workflow, 1100]
 
 Now we have all those anchors in our document, how to find them again?
-To solve this issue, you can open the "Comment Anchor" Menu via the VSCode sidebar (marked as `1`).
+To solve this issue, you can open the "Comment Anchor" Menu via the {vscode} sidebar (marked as `1`).
 Now, the below window opens and we have two seperate possiblities to check our comments.
 First, we have an overview about the comments in the acitve file (marked as `2`) and we can scan the whole workspace for comments and get that overview (marked as `3`)
 

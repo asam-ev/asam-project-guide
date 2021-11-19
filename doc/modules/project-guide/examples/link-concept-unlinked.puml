@@ -84,13 +84,11 @@ rectangle "tools/teams/obtain-channel-email.adoc" as f0_85
 rectangle "tools/teams/polls-and-surveys.adoc" as f0_86
 rectangle "tools/teams/receive-notifications.adoc" as f0_87
 rectangle "tools/teams/teams-channel-file-structure.adoc" as f0_88
-rectangle "tools/vscode/Adding-Diagrams-To-VSCode.adoc" as f0_89
 rectangle "tools/vscode/cloning-a-repository.adoc" as f0_90
 rectangle "tools/vscode/recommended-vscode-extensions.adoc" as f0_91
 rectangle "tools/vscode/recommended-vscode-settings.adoc" as f0_92
 rectangle "tools/vscode/run-docker.adoc" as f0_93
 rectangle "tools/vscode/vscode-activity-bar.adoc" as f0_94
-rectangle "tools/vscode/vscode-command-palette.adoc" as f0_95
 rectangle "tools/vscode/VSCode-Git-Interaction.adoc" as f0_96
 rectangle "tools/vscode/vscode-install-extension.adoc" as f0_97
 rectangle "tools/vscode/vscode-interface.adoc" as f0_98
@@ -105,8 +103,8 @@ rectangle "about_guide/using-this-guide.adoc" as f2_6
 rectangle "about_guide/working-on-the-guide.adoc" as f2_7
 rectangle "new_here/asam-contacts.adoc" as f2_8
 rectangle "new_here/processes-and-workflows-overview.adoc" as f2_11
-rectangle "new_here/roles-overview.adoc" as f2_12
-rectangle "new_here/tools-overview.adoc" as f2_13
+rectangle "new_here/project-types.adoc" as f2_12
+rectangle "new_here/roles-overview.adoc" as f2_13
 }
 package project-guide #ffff50 {
 rectangle "macros/macro-pages.adoc" as f3_14

@@ -9,6 +9,13 @@ include::compendium:partial$abbreviations.adoc[]
 
 {role-specific-icon}
 
+This module contains detailed information on all roles typically found in and related to ASAM projects.
+Each role has an overview over related how-tos, installation instructions and other information that apply to multiple roles.
+In addition to that, specific instruction pages and guides for this particular role may be included in this module directly.
+
+include::partial$roles.adoc[tag = list_of_roles]
+
+
 == Development team
 > mandatory, staffed by members and paid service provider, roles are non-exclusive
 

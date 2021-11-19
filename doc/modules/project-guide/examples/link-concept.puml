@@ -3,14 +3,17 @@ package ROOT #5050d0 {
 rectangle "home.adoc" as f5_3
 }
 package compendium #ff5050 {
+rectangle "abbreviations.adoc" as f0_2
 rectangle "guides/commenting.adoc" as f0_16
 rectangle "tools/docker/docker-for-asciidoc.adoc" as f0_48
-rectangle "abbreviations.adoc" as f0_2
+rectangle "tools/vscode/vscode-command-palette.adoc" as f0_95
+rectangle "tools/vscode/adding-diagrams-to-vscode.adoc" as f0_89
 rectangle "compendium.adoc" as f0_3
 }
 package getting-involved #5050ff {
 rectangle "home.adoc" as f1_2
 rectangle "nav.adoc" as f1_1
+rectangle "new-idea.adoc" as f1_3
 }
 package getting-started #50ff50 {
 rectangle "main.adoc" as f2_3
@@ -19,6 +22,7 @@ rectangle "new-here.adoc" as f2_4
 rectangle "about-this-guide.adoc" as f2_2
 rectangle "new_here/current-projects.adoc" as f2_9
 rectangle "new_here/how-asam-works.adoc" as f2_10
+rectangle "new_here/tools-overview.adoc" as f2_14
 }
 package project-guide #ffff50 {
 rectangle "home.adoc" as f3_8
@@ -77,17 +81,21 @@ rectangle "drawio/drawio-setup.adoc" as f7_16
 rectangle "git/git-setup.adoc" as f7_19
 }
 
+f0_2 --[#FF0000]--> f7_9
 f0_16 --[#FF0000]--> f7_9
 f0_48 --[#FF0000]--> f7_3
+f0_89 -[#FF0000]-> f0_95
 f1_1 -[#0000FF]-> f1_2
+f1_1 -[#0000FF]-> f1_3
+f1_3 --[#0000FF]--> f6_8
 f2_1 -[#00FF00]-> f2_3
 f2_1 -[#00FF00]-> f2_4
 f2_1 -[#00FF00]-> f2_2
 f2_3 -[#00FF00]-> f2_4
 f2_3 -[#00FF00]-> f2_2
 f2_9 --[#00FF00]--> f6_8
-f2_9 --[#00FF00]--> f6_6
 f2_10 --[#00FF00]--> f6_6
+f2_14 --[#00FF00]--> f4_3
 f3_1 -[#CCCC00]-> f3_8
 f3_1 -[#CCCC00]-> f3_4
 f3_1 -[#CCCC00]-> f3_11
@@ -121,6 +129,7 @@ f3_13 --[#CCCC00]--> f7_5
 f3_13 --[#CCCC00]--> f7_6
 f3_13 --[#CCCC00]--> f7_10
 f3_13 --[#CCCC00]--> f5_3
+f3_13 --[#CCCC00]--> f1_3
 f3_13 --[#CCCC00]--> f6_8
 f3_13 --[#CCCC00]--> f2_3
 f3_13 -[#CCCC00]-> f3_8

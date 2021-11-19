@@ -6,7 +6,10 @@ Each of these roles has their own set of requirements, mandatory and/or optional
 
 //tag::list_of_roles[]
 
+TIP: Click on a role's label to navigate directly to the role's summary page.
+
 .List of roles
+[cols = ">2,5"]
 |===
 |Role |Description
 

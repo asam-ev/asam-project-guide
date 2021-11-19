@@ -15,7 +15,7 @@ IMPORTANT: Never work on the master branch, always create your own development b
 To work on the files in your branch you can either use the integrated WEB IDE or any other text editor, to pull, commit, push etc. to the repository you can use any git tool.
 We recommend to use the following tools:
 
-- Texteditor: Visual Studio Code (VSCode) https://code.visualstudio.com/ please install also the AsciiDoc Extension, this can be done in VSCode
+- Texteditor: Visual Studio Code ({vscode}) https://code.visualstudio.com/ please install also the AsciiDoc Extension, this can be done in {vscode}
 
 - git tools: https://git-scm.com/downloads
 

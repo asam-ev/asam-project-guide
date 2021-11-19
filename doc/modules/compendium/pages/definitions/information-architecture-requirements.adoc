@@ -3,6 +3,7 @@
 :keywords: requirements,information-architecture,writing_guide
 
 include::compendium:partial$_attributes.adoc[]
+include::compendium:parital$abbreviations.adoc[]
 
 
 == Requirement categories

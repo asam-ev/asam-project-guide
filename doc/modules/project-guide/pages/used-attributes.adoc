@@ -66,6 +66,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:getting-started:new_here/current-projects.adoc[getting-started/pages/new_here/current-projects.adoc]
 * xref:getting-started:new_here/how-asam-works.adoc[getting-started/pages/new_here/how-asam-works.adoc]
 * xref:getting-started:new_here/processes-and-workflows-overview.adoc[getting-started/pages/new_here/processes-and-workflows-overview.adoc]
+* xref:getting-started:new_here/project-types.adoc[getting-started/pages/new_here/project-types.adoc]
 * xref:getting-started:new_here/roles-overview.adoc[getting-started/pages/new_here/roles-overview.adoc]
 * xref:getting-started:new_here/tools-overview.adoc[getting-started/pages/new_here/tools-overview.adoc]
 * xref:project-guide:special-macros.adoc[project-guide/pages/special-macros.adoc]
@@ -231,7 +232,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === diagrams
 
-* xref:compendium:tools/vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/tools/vscode/Adding-Diagrams-To-VSCode.adoc]
+* xref:compendium:tools/vscode/adding-diagrams-to-vscode.adoc[compendium/pages/tools/vscode/adding-diagrams-to-vscode.adoc]
 
 === docker
 
@@ -424,8 +425,13 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 * xref:compendium:tools/gitlab/gitlab-ide-guide.adoc[compendium/pages/tools/gitlab/gitlab-ide-guide.adoc]
 
+=== idea
+
+* xref:getting-involved:new-idea.adoc[getting-involved/pages/new-idea.adoc]
+
 === ideation
 
+* xref:getting-involved:new-idea.adoc[getting-involved/pages/new-idea.adoc]
 * xref:getting-started:new_here/current-projects.adoc[getting-started/pages/new_here/current-projects.adoc]
 * xref:standardization:project-ideation.adoc[standardization/pages/project-ideation.adoc]
 
@@ -448,7 +454,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 === kroki
 
-* xref:compendium:tools/vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/tools/vscode/Adding-Diagrams-To-VSCode.adoc]
+* xref:compendium:tools/vscode/adding-diagrams-to-vscode.adoc[compendium/pages/tools/vscode/adding-diagrams-to-vscode.adoc]
 
 === landing_page
 
@@ -527,6 +533,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:getting-started:new_here/current-projects.adoc[getting-started/pages/new_here/current-projects.adoc]
 * xref:getting-started:new_here/how-asam-works.adoc[getting-started/pages/new_here/how-asam-works.adoc]
 * xref:getting-started:new_here/processes-and-workflows-overview.adoc[getting-started/pages/new_here/processes-and-workflows-overview.adoc]
+* xref:getting-started:new_here/project-types.adoc[getting-started/pages/new_here/project-types.adoc]
 * xref:getting-started:new_here/roles-overview.adoc[getting-started/pages/new_here/roles-overview.adoc]
 * xref:getting-started:new_here/tools-overview.adoc[getting-started/pages/new_here/tools-overview.adoc]
 
@@ -631,6 +638,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 
 * xref:compendium:tools/sharepoint/links.adoc[compendium/pages/tools/sharepoint/links.adoc]
 * xref:getting-started:new_here/current-projects.adoc[getting-started/pages/new_here/current-projects.adoc]
+* xref:getting-started:new_here/project-types.adoc[getting-started/pages/new_here/project-types.adoc]
 
 === proposal
 
@@ -900,6 +908,10 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:guides/workflow_tutorial.adoc[compendium/pages/guides/workflow_tutorial.adoc]
 * xref:compendium:tools/git/cloning-repo-tutorial.adoc[compendium/pages/tools/git/cloning-repo-tutorial.adoc]
 
+=== type
+
+* xref:getting-started:new_here/project-types.adoc[getting-started/pages/new_here/project-types.adoc]
+
 === ui
 
 * xref:compendium:tools/vscode/vscode-activity-bar.adoc[compendium/pages/tools/vscode/vscode-activity-bar.adoc]
@@ -914,7 +926,7 @@ Every attribute has its own subsection and contains a link to each page as well 
 * xref:compendium:guides/commenting.adoc[compendium/pages/guides/commenting.adoc]
 * xref:compendium:guides/switch_branches.adoc[compendium/pages/guides/switch_branches.adoc]
 * xref:compendium:tools/gitlab/cloning-a-repository.adoc[compendium/pages/tools/gitlab/cloning-a-repository.adoc]
-* xref:compendium:tools/vscode/Adding-Diagrams-To-VSCode.adoc[compendium/pages/tools/vscode/Adding-Diagrams-To-VSCode.adoc]
+* xref:compendium:tools/vscode/adding-diagrams-to-vscode.adoc[compendium/pages/tools/vscode/adding-diagrams-to-vscode.adoc]
 * xref:compendium:tools/vscode/cloning-a-repository.adoc[compendium/pages/tools/vscode/cloning-a-repository.adoc]
 * xref:compendium:tools/vscode/recommended-vscode-extensions.adoc[compendium/pages/tools/vscode/recommended-vscode-extensions.adoc]
 * xref:compendium:tools/vscode/recommended-vscode-settings.adoc[compendium/pages/tools/vscode/recommended-vscode-settings.adoc]

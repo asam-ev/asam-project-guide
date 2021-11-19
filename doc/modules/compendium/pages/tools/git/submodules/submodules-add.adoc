@@ -19,7 +19,7 @@ git submodule add git@code.asam.net:common/style-resources.git // <1>
 ----
 
 +
-. Edit .gitmodule with any text editor (e.g. VSCode) to change the remote url to the local path:
+. Edit .gitmodule with any text editor (e.g. {vscode}) to change the remote url to the local path:
 +
 [source,git]
 ----

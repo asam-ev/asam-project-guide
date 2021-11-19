@@ -1,25 +1,35 @@
 
+//tag::image[]
+
+image::standardization:asam-development-process.png[]
+
+//end::image[]
+
 //tag::short[]
+
 include::standardization:partial$_attributes.adoc[]
 
 ASAM standardization activities are organized in projects.
 They are a temporary endeavor of ASAM members undertaken to develop or modify a standard with a defined beginning, a defined end and defined resources.
 
 ASAM projects are carried out via the ASAM standard development process.
-This process consists of four phases and a total of up to fifteen process steps, as described in the next subchapters:
+This process consists of five phases and a total of up to fifteen process steps, as described in the next subchapters:
 
 * **I**: {ideation-phase}
 * **P**: {proposal-phase}
 * **D**: {development-phase}
 * **C**: {review-phase}
 * **R**: {release-phase}
+
 //end::short[]
 
 //tag::enumerated[]
+
 [horizontal]
 Phase 1:: {ideation-phase}
 Phase 2:: {proposal-phase}
 Phase 3:: {development-phase}
 Phase 4:: {review-phase}
 Phase 5:: {release-phase}
+
 //end::enumerated[]

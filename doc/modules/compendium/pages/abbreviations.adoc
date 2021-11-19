@@ -10,6 +10,9 @@ include::compendium:partial$abbreviations.adoc[]
 Application Programming Interface:: An application programming interface (API) is a connection between computers or between computer programs.
 It is a type of software interface, offering a service to other pieces of software. See https://en.wikipedia.org/wiki/API[Wikipedia].
 
+== VSCode
+Visual Studio Code:: xref:tooling:vscode.adoc[]
+
 == TSC
 Technical Steering Committee::
 https://www.asam.net/active-projects/technical-steering/

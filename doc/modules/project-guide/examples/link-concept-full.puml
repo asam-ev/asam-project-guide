@@ -88,7 +88,7 @@ rectangle "tools/teams/obtain-channel-email.adoc" as f0_85
 rectangle "tools/teams/polls-and-surveys.adoc" as f0_86
 rectangle "tools/teams/receive-notifications.adoc" as f0_87
 rectangle "tools/teams/teams-channel-file-structure.adoc" as f0_88
-rectangle "tools/vscode/Adding-Diagrams-To-VSCode.adoc" as f0_89
+rectangle "tools/vscode/adding-diagrams-to-vscode.adoc" as f0_89
 rectangle "tools/vscode/cloning-a-repository.adoc" as f0_90
 rectangle "tools/vscode/recommended-vscode-extensions.adoc" as f0_91
 rectangle "tools/vscode/recommended-vscode-settings.adoc" as f0_92
@@ -106,6 +106,7 @@ rectangle "writing_guidelines/writing_guide.adoc" as f0_102
 package getting-involved #5050ff {
 rectangle "nav.adoc" as f1_1
 rectangle "home.adoc" as f1_2
+rectangle "new-idea.adoc" as f1_3
 }
 package getting-started #50ff50 {
 rectangle "nav.adoc" as f2_1
@@ -119,8 +120,9 @@ rectangle "new_here/asam-contacts.adoc" as f2_8
 rectangle "new_here/current-projects.adoc" as f2_9
 rectangle "new_here/how-asam-works.adoc" as f2_10
 rectangle "new_here/processes-and-workflows-overview.adoc" as f2_11
-rectangle "new_here/roles-overview.adoc" as f2_12
-rectangle "new_here/tools-overview.adoc" as f2_13
+rectangle "new_here/project-types.adoc" as f2_12
+rectangle "new_here/roles-overview.adoc" as f2_13
+rectangle "new_here/tools-overview.adoc" as f2_14
 }
 package project-guide #ffff50 {
 rectangle "nav.adoc" as f3_1
@@ -202,17 +204,21 @@ rectangle "vscode/vscode-guides.adoc" as f7_25
 rectangle "vscode/vscode-setup.adoc" as f7_26
 }
 
+f0_2 --[#FF0000]--> f7_9
 f0_16 --[#FF0000]--> f7_9
 f0_48 --[#FF0000]--> f7_3
+f0_89 -[#FF0000]-> f0_95
 f1_1 -[#0000FF]-> f1_2
+f1_1 -[#0000FF]-> f1_3
+f1_3 --[#0000FF]--> f6_8
 f2_1 -[#00FF00]-> f2_3
 f2_1 -[#00FF00]-> f2_4
 f2_1 -[#00FF00]-> f2_2
 f2_3 -[#00FF00]-> f2_4
 f2_3 -[#00FF00]-> f2_2
 f2_9 --[#00FF00]--> f6_8
-f2_9 --[#00FF00]--> f6_6
 f2_10 --[#00FF00]--> f6_6
+f2_14 --[#00FF00]--> f4_3
 f3_1 -[#CCCC00]-> f3_8
 f3_1 -[#CCCC00]-> f3_4
 f3_1 -[#CCCC00]-> f3_11
@@ -246,6 +252,7 @@ f3_13 --[#CCCC00]--> f7_5
 f3_13 --[#CCCC00]--> f7_6
 f3_13 --[#CCCC00]--> f7_10
 f3_13 --[#CCCC00]--> f5_3
+f3_13 --[#CCCC00]--> f1_3
 f3_13 --[#CCCC00]--> f6_8
 f3_13 --[#CCCC00]--> f2_3
 f3_13 -[#CCCC00]-> f3_8
@@ -367,7 +374,7 @@ cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/general_guidelines/Workflow"  as u55
 cloud "https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/writing_guide.adoc"  as u56
 cloud "https://www.asam.net/about-asam/asam-in-person/"  as u57
-cloud "https://www.asam.net/about-asam/organization/"  as u58
+cloud "https://www.asam.net/index.php?eID=dumpFile&t=p&p=45037&token=7a818e902d4de269ab69f086d1ae100239999480"  as u58
 cloud "https://www.asam.net/active-projects/resources/"  as u59
 cloud "https://docs.antora.org/antora/2.1/page/create-standard-page/"  as u60
 cloud "https://docs.antora.org/antora/2.1/page/#standard"  as u61
@@ -455,7 +462,7 @@ f0_102 .up.>> u55
 f0_102 .up.>> u56
 f2_8 .up.>> u57
 f2_10 .up.>> u58
-f2_13 .up.>> u59
+f2_14 .up.>> u59
 f3_2 .up.>> u60
 f3_11 .up.>> u61
 f3_11 .up.>> u62

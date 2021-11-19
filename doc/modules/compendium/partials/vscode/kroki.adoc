@@ -18,6 +18,6 @@ To enable diagram support, set the use_kroki parameter in your User Settings to 
 
 image::compendium:enable_kroki.gif[Enabling Kroki diagram support in AsciiDoc extension]
 
-. Open the xref:compendium:vscode/vscode-command-palette.adoc[]
+. Open the {command-palette}
 . Type "user settings" and confirm with Enter
 . Search for "kroki" in the user settings and enable the "Use_kroki" checkbox

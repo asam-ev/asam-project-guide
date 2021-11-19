@@ -46,7 +46,7 @@ image::PSWithExplorer.gif[width = 720]
 . Navigate to the location where you want to open your PowerShell in
 . Click on "File" -> "Open Windows PowerShell" (or hit "Alt" -> "D" -> "P" (German) or "Alt" -> "F" -> "P" (English) on your keyboard)
 
-==== Visual studio code
+==== Visual Studio Code
 
 ===== Open last terminal
 NOTE: This opens the PowerShell in the last accessed project root folder!

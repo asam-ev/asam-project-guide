@@ -9,11 +9,11 @@ This is done by installing and using extensions.
 This section shows how to install a new extension from the marketplace.
 As an example, we will use the xref:{vscode-extensions}#_asciidoc[AsciiDoc] extension.
 
-The AsciiDoc extension for VSCode allows for easy creation and supported editing of AsciiDoc or adoc files within VSCode.
+The AsciiDoc extension for {vscode} allows for easy creation and supported editing of AsciiDoc or adoc files within {vscode}.
 For shortcuts and tips, see the documentation of the extension.
 You can access that documentation when you click on the extension in the marketplace.
 
-. Access the extensions window through the VSCode menu bar -> View -> Extensions.
+. Access the extensions window through the {vscode} menu bar -> View -> Extensions.
 +
 image::compendium:extensions.png[alt=Add extension under 'View']
 
@@ -24,6 +24,6 @@ image::compendium:asciidoc_ext.png[alt=Search and find the extension 'AsciiDoc']
 
 
 //tag::standalone[]
-VSCode has a lot of very helpful extensions that can be downloaded and installed through the integrated marketplace.
+{vscode} has a lot of very helpful extensions that can be downloaded and installed through the integrated marketplace.
 You can view the recommended list of extensions xref:{vscode-extensions}[here].
 //end::standalone[]

@@ -19,7 +19,7 @@ To be able to access the ASAM asset library, follow the instructions below.
 The user can access Draw.io with the ASAM library connected to create and edit diagrams.
 
 == Prerequisites
-* Local Setup (VSCode): xref:vscode.adoc[] is installed
+* Local Setup ({vscode}): xref:vscode.adoc[] is installed
 
 == How
 Draw.io can be used either locally (through the dedicated app <<Draw.io App (Desktop),Draw.io Deskop>> or through the <<VSCode Extension,VS Code Extension>>) or with the <<Remote Setup, web app>>.
@@ -41,7 +41,7 @@ include::compendium:partial$vscode/drawio.adoc[]
 NOTE: At this time, the VS Code extension does not provide url links to libraries.
 The only option to add the library is to download a copy and add it manually.
 
-. Install the drawio extensions in VSCode
+. Install the drawio extensions in {vscode}
 . Check out the {library-repo}[asset library repository^]
 . In Visual Studio Code, access the extension settings for Draw.io Integration and open the settings.json file
 . Below the line with `"hediet.vscode-drawio.local-storage"`, add the following lines and replace `\<<filepath/filename>>` with the path to the downloaded library file (.xml):

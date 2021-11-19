@@ -1,16 +1,23 @@
 = How ASAM works
 :description: Links to the current contact page for ASAM Office members.
 :keywords: about, asam, new-here-content, organization
+:asam-orga: https://www.asam.net/about-asam/organization/
+
+ASAM is a standardization organization where experts from OEMs, Tier-1s, tool vendors, engineering service providers, and research institutes meet to commonly standardize development and test systems for the automotive industry.
 
 == The organization
-https://www.asam.net/about-asam/organization/[image:https://www.asam.net/index.php?eID=dumpFile&t=p&p=45037&token=7a818e902d4de269ab69f086d1ae100239999480[title="The ASAM Organization"] The ASAM Organization^]
 
-The ASAM organization is built around its members. For more information, see the https://www.asam.net/about-asam/organization/[ASAM Website^].
+{asam-orga}[image:https://www.asam.net/index.php?eID=dumpFile&t=p&p=45037&token=7a818e902d4de269ab69f086d1ae100239999480[title="The ASAM Organization"] ^] +
+{asam-orga}[The ASAM organization^]
+
+The ASAM organization is built around its members.
+For more information, see the {asam-orga}[ASAM Website^].
 
 == The project development process
 ASAM projects follow a defined development process.
-For a general overview, see the xref:new_here/processes-and-workflows-overview.adoc[].
 
-A more detailed summary of the ASAM processes can be found in the xref:standardization:home.adoc[] of this guide.
+* For a general overview, see the xref:new_here/processes-and-workflows-overview.adoc[].
+
+* A more detailed summary of the ASAM processes can be found in the xref:standardization:home.adoc[] of this guide.
 
 related::asam[]

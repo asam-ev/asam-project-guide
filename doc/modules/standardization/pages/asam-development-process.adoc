@@ -15,8 +15,7 @@ Real projects may have iterations, loops and interventions by the {tsc}, Office,
 Project groups may decide to re-start a project with an updated project proposal, upgrade to a higher release level, or to prematurely end the project.
 While those events can occur and need to be appropriately managed, they are out-of-scope for this guideline document.
 
-
-image::asam-development-process.png[]
+include::partial$asam-processes.adoc[tag=image]
 
 The ASAM standards development process consists of five phases:
 
