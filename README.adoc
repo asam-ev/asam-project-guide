@@ -1,6 +1,10 @@
 = ASAM Project Guide
 
-THIS IS ALL DRAFT
+image::https://github.com/asam-ev/asam-project-guide/actions/workflows/site-build.yml/badge.svg?branch=main[link=https://github.com/asam-ev/asam-project-guide/actions/workflows/site-build.yml]
+
+****
+IMPORTANT: This guide is a work in progress and subject to change!
+****
 
 Hosted version available at:
 https://asam-ev.github.io/asam-project-guide/asamprojectguide/baseline/home.html[ASAM Project Guide (Link)]
@@ -10,6 +14,8 @@ Includes: Standard template, manuals, guidelines, build + test, resources.
 All standard are written after one version of the ASAM proect guide.
 
 ---
+
+
 
 == Chapter structure draft
 
