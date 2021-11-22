@@ -2,12 +2,20 @@ version: "2"
 
 services:
 
-  custom-lunr:
+  custom-lunr-local:
     build:
       context: doc\modules\compendium\assets\attachments\.
       dockerfile: DOCKERFILE.custom
     volumes:
       - .:/antora
     # entrypoint:  --stacktrace antora-playbook.yml
+    # entrypoint: sh
+    command: --stacktrace site.yml
+
+
+  custom-lunr:
+    image: ghcr.io/asam-ev/project-guide-docker:1
+    volumes:
+      - .:/antora
     # entrypoint: sh
     command: --stacktrace site.yml

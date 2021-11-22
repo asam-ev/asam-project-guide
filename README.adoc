@@ -2,6 +2,9 @@
 
 THIS IS ALL DRAFT
 
+Hosted version available at:
+https://asam-ev.github.io/asam-project-guide/asamprojectguide/baseline/home.html[ASAM Project Guide (Link)]
+
 ---
 Includes: Standard template, manuals, guidelines, build + test, resources.
 All standard are written after one version of the ASAM proect guide.
