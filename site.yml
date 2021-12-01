@@ -12,15 +12,25 @@ content:
       start_path: doc
 
 
+# ui:
+#   bundle:
+#     url: ./antora_ui_bundle/bundled/ui-bundle.zip
+#     snapshot: true
+#   supplemental_files: /usr/local/share/.config/yarn/global/node_modules/antora-lunr/supplemental_ui
+
 ui:
   bundle:
-    url: ./antora_ui_bundle/bundled/ui-bundle.zip
+    url: ./ui-bundle.zip
+    # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  supplemental_files: /usr/local/share/.config/yarn/global/node_modules/antora-lunr/supplemental_ui
+  supplemental_files: ./supplemental_ui
 
 output:
   clean: true
   dir: ./site
+
+runtime:
+  fetch: true
 
 asciidoc:
   attributes:
@@ -43,3 +53,7 @@ asciidoc:
   extensions:
   - asciidoctor-kroki
 #   - asciidoctor-diagram
+
+# antora:
+#   extensions:
+#     - require: '@antora/antora-lunr-extension'

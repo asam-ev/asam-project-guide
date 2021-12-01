@@ -1,0 +1,43 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="{{or site.url (or siteRootUrl siteRootPath)}}">{{site.title}}
+          {{#unless (eq page.componentVersion.displayVersion "master")}}{{#unless (eq page.layout '404')}} –
+          V{{page.componentVersion.displayVersion}}{{/unless}}{{/unless}}</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Downloads</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Full EBNF</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Related ASAM Standards</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" target="_blank" href="#">OpenSCENARIO 1</a>
+            <a class="navbar-item" target="_blank" href="#">OpenDRIVE</a>
+            <a class="navbar-item" target="_blank" href="#">OpenLabel</a>
+            <a class="navbar-item" target="_blank" href="#">OpenODD</a>
+            <a class="navbar-item" target="_blank" href="#">OpenXOntology</a>
+            <a class="navbar-item" target="_blank" href="#">OSI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
