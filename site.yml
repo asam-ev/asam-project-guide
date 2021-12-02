@@ -35,11 +35,14 @@ runtime:
 
 asciidoc:
   attributes:
-    plantuml-server-url: http://www.plantuml.com/plantuml
+    # plantuml-server-url: http://www.plantuml.com/plantuml
     guide-repo-url: https://code.asam.net/common/asam-project-guide/
     hide-uri-scheme:
     gitlab-url: https://code.asam.net
-    # diagram-max-get-size: 8192
+    kroki-http-method: post
+    kroki-server-url: 'http://kroki:8000'
+    kroki-fetch-diagram: ""
+
     # Defined role attributes
     role-reviewer: 'xref:role-specific:reviewer.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FA8072;" >REVIEWER</role>]'
     role-wg-member: 'xref:role-specific:wg-member.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#BDB76B;" >WG MEMBER</role>]'
@@ -50,11 +53,11 @@ asciidoc:
     role-standard-user: 'xref:role-specific:standard-user.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CD853F;" >STANDARD USER</role>]'
     role-standard-manager: 'xref:role-specific:standard-manager.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#DEB887;" >STANDARD MANAGER</role>]'
 
-
   extensions:
   - asciidoctor-kroki
+  - '@djencks/asciidoctor-mathjax'
 #   - asciidoctor-diagram
 
-# antora:
-#   extensions:
-#     - require: '@antora/antora-lunr-extension'
+antora:
+  extensions:
+    - require: '@antora/antora-lunr-extension'

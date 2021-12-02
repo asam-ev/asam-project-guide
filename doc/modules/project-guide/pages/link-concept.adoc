@@ -4,6 +4,12 @@
 
 == Graph
 
+=== Full
+[plantuml,plantuml,svg]
+----
+include::example$link-concept-full.puml[]
+----
+
 === Linked
 [plantuml,plantuml,svg]
 ----

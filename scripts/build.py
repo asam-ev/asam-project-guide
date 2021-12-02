@@ -51,12 +51,12 @@ def nav_adoc_creation():
 def run_docker_compose():
     print("RUN DOCKER-COMPOSE")
     try:
-        os.system("docker-compose run custom-lunr")
+        os.system("docker-compose run antora")
     except:
         try:
             os.chdir("../")
             # print(os.getcwd())
-            os.system("docker-compose run custom-lunr")
+            os.system("docker-compose run antora")
         except:
             pass
 
