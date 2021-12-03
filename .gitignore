@@ -1,4 +1,6 @@
 *.html
+*.adoc1
+*.adoc2
 site/
 used-attributes.adoc
 doc/modules/project-guide/examples/link-concept-full.puml
