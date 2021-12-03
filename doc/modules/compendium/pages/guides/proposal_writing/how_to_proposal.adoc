@@ -1,0 +1,37 @@
+= How-to create a proposal
+:description: How-to for creating a new project proposal
+:keywords: proposal, executive-draft
+:page-partial:
+
+include::partial$_attributes.adoc[]
+include::compendium:partial$abbreviations.adoc[]
+
+// If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
+
+== Context
+To start a new project with a xref:standardization:proposal-phase.adoc[Project Proposal], it first needs a Project Proposal Executive Draft for internal analysis before the xref:standardization:proposal-phase.adoc#_p1_proposal_workshop[Proposal Workshop].
+This guide explains how to create such an Executive Draft and what to look out for when doing so.
+
+== Result
+A valid Project Proposal Executive Draft as preparation for the xref:standardization:proposal-phase.adoc#_p1_proposal_workshop[Proposal Workshop].
+
+NOTE: The final Project Proposal document is generated based on Asciidoc files.
+The Executive Draft described here is currently created as a Word document based on a simple template in order to minimize any entry barrier.
+
+== Prerequisites
+The idea has been proposed and approved in the xref:standardization:project-ideation.adoc[Ideation Phase].
+
+== How
+. Download the https://code.asam.net/common/templates/proposal-template[Executive Draft template^]
+. Fill in the project details in the general structure where already available
+. Write project specific content in the appropriate section
+. Discuss and optimize the document with your ASAM representative
+. Send in the completed document as a rough Proposal Draft for the xref:standardization:proposal-phase.adoc#_p1_proposal_workshop[Proposal Workshop]
+
+== Troubleshooting / Known Issues
+// OPTIONAL
+
+If you have steps for this artifact where troubleshooting or known issues exist, add subchapters for each topic.
+
+//OPTIONAL: Add the reference macro with keywords you want to reference.
+// Example: related::guide,!main[]   <-- (lists all pages where the keyword "guide" but not "main" were used)
