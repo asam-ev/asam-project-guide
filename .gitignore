@@ -1,3 +1,6 @@
 *.html
 site/
 used-attributes.adoc
+doc/modules/project-guide/examples/link-concept-full.puml
+doc/modules/project-guide/examples/link-concept-unlinked.puml
+doc/modules/project-guide/examples/link-concept.puml
