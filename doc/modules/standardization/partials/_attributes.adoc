@@ -7,4 +7,4 @@
 :review-phase: xref:standardization:review-phase.adoc[]
 :release-phase: xref:standardization:release-phase.adoc[]
 :project-types: xref:standardization:project-types.adoc[]
-:creation-of-standards: xref:standardization:cration-of-standards.adoc[]
+:creation-of-standards: xref:standardization:creation-of-standards.adoc[]
