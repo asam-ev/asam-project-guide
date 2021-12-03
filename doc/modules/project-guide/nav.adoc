@@ -1,5 +1,6 @@
 * xref:home.adoc[]
 ** xref:content-structure.adoc[]
+** xref:link-concept.adoc[]
 ** xref:add-new-module.adoc[]
 ** xref:pages-vs-partials.adoc[]
 ** Pages

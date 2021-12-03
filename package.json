@@ -1,7 +1,7 @@
 {
    "private": true,
   "scripts": {
-    "clean-build": "npm run clean-install;npm run build", 
+    "clean-build": "npm run clean-install;npm run build",
     "clean-install": "rm -rf node_modules/ .cache/ package-lock.json ;npm run plain-install",
     "plain-install": "npm i --cache=.cache/npm --no-optional",
     "docker-build": "npm run plain-install; antora --stacktrace --fetch --clean osc2/site.yml",
@@ -10,7 +10,7 @@
   "devDependencies": {
     "@antora/cli": "^3.0.0-beta.2",
     "@antora/site-generator-default": "^3.0.0-beta.2",
-    "asciidoctor-kroki": "0.8.2",
+    "asciidoctor-kroki": "0.14.0",
     "@antora/antora-lunr-extension": "https://gitlab.com/antora/antora-lunr-extension",
     "@djencks/asciidoctor-mathjax": "^0.0.7"
   }

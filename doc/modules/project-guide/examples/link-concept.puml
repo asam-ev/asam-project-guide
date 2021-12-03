@@ -28,6 +28,7 @@ package project-guide #ffff50 {
 rectangle "home.adoc" as f3_10
 rectangle "nav.adoc" as f3_1
 rectangle "content-structure.adoc" as f3_8
+rectangle "link-concept.adoc" as f3_12
 rectangle "add-new-module.adoc" as f3_4
 rectangle "pages-vs-partials.adoc" as f3_13
 rectangle "add-a-page.adoc" as f3_2
@@ -39,7 +40,6 @@ rectangle "examples.adoc" as f3_9
 rectangle "attachments.adoc" as f3_7
 rectangle "special-macros.adoc" as f3_14
 rectangle "used-attributes.adoc" as f3_15
-rectangle "link-concept.adoc" as f3_12
 }
 package role-specific #ff50ff {
 rectangle "home.adoc" as f4_3
@@ -100,6 +100,7 @@ f2_10 --[#00FF00]--> f6_6
 f2_14 --[#00FF00]--> f4_3
 f3_1 -[#CCCC00]-> f3_10
 f3_1 -[#CCCC00]-> f3_8
+f3_1 -[#CCCC00]-> f3_12
 f3_1 -[#CCCC00]-> f3_4
 f3_1 -[#CCCC00]-> f3_13
 f3_1 -[#CCCC00]-> f3_2
