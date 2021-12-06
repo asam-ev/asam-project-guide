@@ -16,6 +16,11 @@ ASAM is a standardization organization where experts from OEMs, Tier-1s, tool ve
 The ASAM organization is built around its members.
 For more information, see the {asam-orga}[ASAM Website^].
 
+== ASAM statutes
+ASAM e.V. is built around statutes that define what ASAM is, what its objectives are and what 'membership' means and implies.
+It also specifies the organs and the management side of ASAM.
+The statutes are public and can be accessed through the https://www.asam.net/asam-statutes/[ASAM website^].
+
 == The project development process
 ASAM projects follow a defined development process.
 
