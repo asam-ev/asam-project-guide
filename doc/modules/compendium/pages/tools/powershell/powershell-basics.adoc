@@ -1,6 +1,6 @@
-= Microsoft powerShell Basics
+= Microsoft PowerShell Basics
 
-== How to open microsoft powershell
+== How to open microsoft PowerShell
 
 image::https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png[width=120,role=right]
 
