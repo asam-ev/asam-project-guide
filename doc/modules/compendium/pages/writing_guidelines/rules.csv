@@ -10,7 +10,33 @@ ASM-8,List element,-,-,new
 ASM-9,List one sentence per line,-,-,new
 ASM-10,List type,-,-,new
 ASM-11,List end of element,-,-,new
-
-
-
-
+ASM-12,Image anchor "fig-",-,-,new
+ASM-13,Table anchor "tab-",-,-,new
+ASM-14,Code anchor "code-",-,-,new
+ASM-15,xrefstyle short,-,-,new
+ASM-16,Anchor syntax [#anchor],-,-,new
+ASM-17,General spellcheck,-,-,new
+ASM-18,LOF created automatically,-,-,new
+ASM-19,LOT created automatically,-,-,new
+ASM-20,No Trailing whitespaces,-,-,new
+ASM-21,Modal verbs,-,-,new
+ASM-22,Standard ASAM Chapter structure,-,-,new
+ASM-23,Document Extention .adoc,-,-,new
+ASM-24,Two blank lines,-,-,new
+ASM-25,One sentence per line,-,-,new
+ASM-26,No empty chapters,-,-,new
+ASM-27,No unused chapters,-,-,new
+ASM-28,Included images shown,-,-,new
+ASM-29,No unused images,-,-,new
+ASM-30,Filenames lowercase,-,-,new
+ASM-31,Standard disclaimer,-,-,new
+ASM-32,Standard License,-,-,new
+ASM-33,No Oxford commas ,-,-,new
+ASM-34,Repository contains LICENSE,-,-,new
+ASM-35,Repository contains contact persons,-,-,new
+ASM-36,Repository contains roadmap,-,-,new
+ASM-37,No broken internal links,-,-,new
+ASM-38,No broken external links,-,-,new
+ASM-39,Mapping file defines structure,-,-,new
+ASM-40,Mapping file named main.adoc,-,-,new
+ASM-41,Deliverable naming,-,-,new
