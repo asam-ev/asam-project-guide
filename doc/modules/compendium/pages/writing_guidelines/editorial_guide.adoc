@@ -1,0 +1,5 @@
+= Editorial guide
+
+This section contains the editorial guide for technical writers and project members.
+
+It contains rules for contributing content to a project in written form.
