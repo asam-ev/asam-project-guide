@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>The openSCENARIO2 coding style guide :: ASAM Project Guide</title>
+    <meta name="description" content="Summary of (osc2) coding styles and guideline on how to use them.">
+    <meta name="keywords" content="coding, style-guide, osc2">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -296,15 +298,6 @@
     <a class="nav-link" href="../guides/Meeting-Guidelines.html">Meeting guidelines</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../guides/Platforms.html">Platforms used at ASAM</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../guides/Workflow.html">ASAM standard workflows</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../guides/WritingGuidelines.html">Writing guidelines overview</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="#guides/asciidoc.adoc">guides/asciidoc.adoc</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -341,6 +334,9 @@
     <a class="nav-link" href="../guides/git-interactions.html">Git interactions</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../guides/platforms_at_asam.html">Platforms used at ASAM</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="#guides/proposal_writing.adoc">guides/proposal_writing.adoc</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -356,13 +352,31 @@
     <a class="nav-link" href="../guides/set-up-new-project.html">How to set up a new project</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../guides/standard_workflow.html">ASAM standard workflows</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../guides/switch_branches.html">How to switch branches</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../guides/what-is-yaml.html">What is yAML/yml?</a>
+    <a class="nav-link" href="../guides/workflow_tutorial.html">Workflow tutorial</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../guides/workflow_tutorial.html">Workflow tutorial</a>
+    <a class="nav-link" href="../guides/writing_guidelines.html">Writing guidelines overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="asciidoc_guide.html">AsciiDoc Guide</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="coding_style_guide.html">The openSCENARIO2 coding style guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="editorial_guide.html">Editorial guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="plantuml_documentation_guide.html">PlantUML documentation guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="writing_guide.html">Writing guide</a>
   </li>
 </ul>
   </li>
@@ -383,7 +397,7 @@
     <a class="nav-link" href="../open-source.html">Open-source</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../open-source/ASAM-DCO.html">ASAM developer certeification of origin for open source projects</a>
+    <a class="nav-link" href="../open-source/asam_dco.html">ASAM developer certeification of origin for open source projects</a>
   </li>
 </ul>
   </li>
@@ -512,19 +526,19 @@
     <a class="nav-link" href="../tools/gitlab/ASAM-Issue-and-MR-Labels.html">ASAM issue and merge request labels</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tools/gitlab/Branch-Naming-Conventions.html">Branch naming conventions</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tools/gitlab/Branching.html">Branching</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../tools/gitlab/Forking.html">Forking from repository</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tools/gitlab/branch_naming_conventions.html">Branch naming conventions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tools/gitlab/branchings.html">Branching</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../tools/gitlab/cloning-a-repository.html">Cloning A Repository Using GitLab To Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tools/gitlab/commit-guidelines.html">ASAM commit guidelines</a>
+    <a class="nav-link" href="../tools/gitlab/commit_guidelines.html">ASAM commit guidelines</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../tools/gitlab/gitlab-ide-guide.html">GitLab IDE Guide</a>
@@ -581,7 +595,7 @@
     <a class="nav-link" href="../tools/vscode/Adding-Diagrams-To-VSCode.html">Adding VSCode Support For Diagrams With Kroki</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tools/vscode/VSCode-Git-Interaction.html">Interacting with git through visual studio code</a>
+    <a class="nav-link" href="../tools/vscode/VSCode-Git-Interaction.html">Interacting with git through Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../tools/vscode/cloning-a-repository.html">Cloning A Repository Using Visual Studio Code</a>
@@ -610,25 +624,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../writing_guidelines.html">Writing guidelines</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="AsciiDoc-Guide.html">AsciiDoc Guide</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="coding_style_guide.html">The openSCENARIO2 coding style guide</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="editorial_guide.html">Editorial guide</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="plantuml_documentation_guide.html">PlantUML documentation guide</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="writing_guide.html">Writing guide</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -705,10 +701,7 @@
     <a class="nav-link" href="../../tooling/git/git-guides.html">Git guides</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#git/git-troubleshooting.adoc">git/git-troubleshooting.adoc</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#git/git-best-practices.adoc">git/git-best-practices.adoc</a>
+    <a class="nav-link" href="../../tooling/git/git_best_practices.html">Git best practices</a>
   </li>
 </ul>
   </li>
@@ -793,16 +786,16 @@
     <span class="nav-text">Referencing And Including</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../project-guide/images.html">images.adoc</a>
+    <a class="nav-link" href="../../project-guide/images.html">Using images</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../project-guide/examples.html">examples.adoc</a>
+    <a class="nav-link" href="../../project-guide/examples.html">Using examples</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../project-guide/attachments.html">attachments.adoc</a>
+    <a class="nav-link" href="../../project-guide/attachments.html">Using attachments</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#including.adoc">including.adoc</a>
+    <a class="nav-link" href="../../project-guide/including.html">Including pages and partials</a>
   </li>
   <li class="nav-item" data-depth="3">
     <span class="nav-text">Cross-referencing</span>
@@ -879,7 +872,7 @@
   <ul>
     <li><a href="../../home.html">ASAM Project Guide</a></li>
     <li><a href="../compendium.html">Compendium</a></li>
-    <li><a href="../writing_guidelines.html">Writing guidelines</a></li>
+    <li><a href="../guides.html">Guides</a></li>
     <li><a href="coding_style_guide.html">The openSCENARIO2 coding style guide</a></li>
   </ul>
 </nav>
@@ -959,7 +952,7 @@ In this case you should mark your code examples as a <code>[source, osc2]</code>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-For support in Visual Studio Code, see <a href="#tool-specific/Recommended-VSCode-Settings.adoc#Indentations" class="xref unresolved">Indentations</a>.
+For support in Visual Studio Code, see <a href="../tools/vscode/recommended-vscode-settings.html#_indentations" class="xref page">Indentations</a>.
 </td>
 </tr>
 </table>
@@ -984,7 +977,7 @@ For support in Visual Studio Code, see <a href="#tool-specific/Recommended-VSCod
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-For support in Visual Studio Code, see <a href="#tool-specific/Recommended-VSCode-Settings.adoc#_automatic_removal_of_spaces_after_periods" class="xref unresolved">Automatic Whitespace Removal</a>.
+For support in Visual Studio Code, see <a href="../tools/vscode/recommended-vscode-settings.html#_automatic_removal_of_spaces_after_periods" class="xref page">Automatic Whitespace Removal</a>.
 </td>
 </tr>
 </table>
@@ -1144,13 +1137,13 @@ Use <a href="#_use_snake_case_only">Use <em>snake_case</em> only</a> until furth
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2"># 1: Define an actor
 actor car_group:
-     average_distance: distance
+     average_distance: length
      number_of_cars: uint
 
 # 2: Define a road element struct
 struct geometric_road: road_element:
-    min_radius: distance
-    max_radius: distance
+    min_radius: length
+    max_radius: length
     side: av_side
 
 # 3: Define a scenario
@@ -1216,14 +1209,14 @@ scenario dut.mix_three_dangers:
     v1_route: v1.route
 
     ego_start_speed: speed
-    ego_start_distance: distance
+    ego_start_distance: length
     v1_start_speed: speed
-    v1_start_distance: distance
+    v1_start_distance: length
 
     simulation_platform_choice: string
     simulation_time_threshold_reached: time
     ego_ttc_threshold: time
-    ego_distance_to_bias: distance
+    ego_distance_to_bias: length
     lane_choice: string
     ego_lane: lane
     map: file_path
@@ -1264,8 +1257,8 @@ scenario dut.mix_three_dangers:
     # Relationship Syntax
     keep(v1_start_speed -[:SLOWER_THAN]-&gt; ego_start_speed)
 
-    def distance_between_ego_vehicle_and_v1(vehicle, vehicle): distance is external "kpi.py"
-    def get_ttc_with_vehicle_to_vehicle(vehicle, vehicle, string): time is external "kpi_TTC.py"
+    def distance_between_ego_vehicle_and_v1(vehicle, vehicle) -&gt; length is external "kpi.py"
+    def get_ttc_with_vehicle_to_vehicle(vehicle, vehicle, string) -&gt; time is external "kpi_TTC.py"
 
     !ego_speed: speed = ego_vehicle.speed
     !ego_end_of_road: Position = ego_vehicle.end_of_road
@@ -1275,7 +1268,7 @@ scenario dut.mix_three_dangers:
     !ego_collision_monitor: integer = sensor.collision.v.fr1.count
 
     !ego_ttc_with_v1: time = sample(ego_vehicle.get_ttc_with_vehicle_to_vehicle(ego_vehicle:vehicle, v1:vehicle, [simulation_platform_choice]))
-    !ego_distance_to_v1: distance = sample(distance_between_egoVehicle_and_v1(v1:vehicle, ego_vehicle:vehicle, [simulation_platform_choice]))
+    !ego_distance_to_v1: length = sample(distance_between_egoVehicle_and_v1(v1:vehicle, ego_vehicle:vehicle, [simulation_platform_choice]))
 
     event observation_complete is(one_of(@end_conditions))
 
@@ -1314,17 +1307,6 @@ scenario dut.mix_three_dangers:
 <p>For more information about creating documentation with adoc-topics check out the <a href="writing_guide.html" class="xref page">Writing guide</a>.</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_contact_information"><a class="anchor" href="#_contact_information"></a>6. Contact information</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>If you have any questions and/or suggestions concerning this coding style guide for OpenSCENARIO 2, please contact <a href="mailto:andreas.muetsch@dxc.com">andreas.muetsch@dxc.com</a>.</p>
-</div>
-<div class="paragraph">
-<p>See also: <a href="https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc" class="bare">https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc</a></p>
 </div>
 </div>
 </div>
