@@ -2,7 +2,7 @@ site:
   title: ASAM Project Guide
   # the 404 page and sitemap files only get generated when the url property is set
   # TODO: This has to be changed to the actual hosting
-  url: https://code.asam.net/common/asam-project-guide
+  url: https://github.com/asam-ev/asam-project-guide
   start_page: asamprojectguide::home.adoc
 content:
   sources:
@@ -10,7 +10,7 @@ content:
       branches: HEAD
       tags: open*
       start_path: doc
-      edit_url: 'https://code.asam.net/common/asam-project-guide/-/blob/{refname}/{path}'
+      edit_url: 'https://github.com/asam-ev/asam-project-guide/-/blob/{refname}/{path}'
 
 
 # ui:
@@ -36,7 +36,7 @@ runtime:
 asciidoc:
   attributes:
     # plantuml-server-url: http://www.plantuml.com/plantuml
-    guide-repo-url: https://code.asam.net/common/asam-project-guide/
+    guide-repo-url: https://github.com/asam-ev/asam-project-guide/
     hide-uri-scheme:
     gitlab-url: https://code.asam.net
     kroki-http-method: post

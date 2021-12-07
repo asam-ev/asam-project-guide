@@ -1,0 +1,58 @@
+name: ASAM Project Guide build
+
+on:
+  # create: # new branches or tags
+  # release: # new releases
+  # pull_request: 
+  #   branches: [ main ]
+  push: # on push. This may be removed later
+  # schedule: # periodic - needed because some of the content is from the other repos
+  #   - cron:  '30 5,20 * * *' # twice per day, in the morning and evening.
+
+jobs: 
+  build:
+    name: Prepare the ASAM project guide by cloning and running pre-build scripts
+    runs-on: ubuntu-20.04
+    
+    services: 
+      kroki:
+        image: yuzutech/kroki
+        env:
+          KROKI_MAX_URI_LENGTH: 8000
+
+    steps:
+    
+    # checkout repo
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # setup python        
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.7'
+
+    # run python script macro replacement
+    - name: run python script macro replacement
+      working-directory: scripts
+      run: python asam_antora_macros.py -p doc/modules
+
+    # run python script macro replacement
+    - name: run python script create nav for folder
+      working-directory: scripts
+      run: python create_nav_adoc_for_folder.py -p doc/modules/compendium/pages/ --module
+
+    # build site
+    - name: Generate site
+      uses: docker://ghcr.io/asam-ev/project-guide-docker:v3
+      with:
+        entrypoint: sh
+        args: run-build.sh
+
+    # deploy to gh-pages
+    - name: deploy to gh-pages if push to main branch
+      if: ${{ github.ref == 'refs/heads/main' }}
+      uses:  peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site

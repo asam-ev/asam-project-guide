@@ -3,8 +3,7 @@ version: "2"
 services:
 
   antora:
-    build:
-      context: .
+    image: ghcr.io/asam-ev/project-guide-docker:sha-e899eb5
     volumes:
       - .:/usr/src/app/osc2 #has to match WORKSPACE defined in Dockerfile + folder "osc2" from package.json-> docker-build
     depends_on:
@@ -15,51 +14,6 @@ services:
 
   kroki:
     image: yuzutech/kroki
-    # ports:
-    #   - 8000:8000
     environment:
       - KROKI_MAX_URI_LENGTH=20000
-
-  antora-node:
-    image: node
-    environment:
-      - CI=true
-      - DOCSEARCH_ENABLED=true
-      - DOCSEARCH_ENGINE=lunr
-    logging:
-      driver: local
-    volumes:
-      - .:/home
-    working_dir: /home
-    entrypoint: npm run build
-
-  antora-clean:
-    image: node
-    environment:
-      - CI=true
-      - DOCSEARCH_ENABLED=true
-      - DOCSEARCH_ENGINE=lunr
-    volumes:
-      - .:/home
-    working_dir: /home
-    entrypoint: npm run clean-build
-
-  plain-install:
-    image: node
-    environment:
-      - CI=true
-      - DOCSEARCH_ENABLED=true
-      - DOCSEARCH_ENGINE=lunr
-    volumes:
-      - .:/home
-    working_dir: /home
-    entrypoint: npm run plain-install
-
-  bash:
-    image: node
-    environment:
-      - CI=true
-    volumes:
-      - .:/home
-    working_dir: /home
-    entrypoint: /bin/bash
+    
