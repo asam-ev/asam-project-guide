@@ -22,7 +22,7 @@ services:
       - KROKI_MERMAID_HOST=mermaid
 
   blockdiag:
-    image: yuzutech/kroki-blockdiag
+    image: yuzutech/kroki-blockdiag:0.15.1
 
   mermaid:
-    image: yuzutech/kroki-mermaid
+    image: yuzutech/kroki-mermaid:0.15.1

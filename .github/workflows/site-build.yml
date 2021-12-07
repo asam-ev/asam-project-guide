@@ -19,6 +19,13 @@ jobs:
         image: yuzutech/kroki:0.15.1
         env:
           KROKI_MAX_URI_LENGTH: 8000
+          KROKI_BLOCKDIAG_HOST: blockdiag
+          KROKI_MERMAID_HOST: mermaid
+      blockdiag:
+        image: yuzutech/kroki-blockdiag:0.15.1
+      mermaid:
+        image: yuzutech/kroki-mermaid:0.15.1
+
 
     steps:
     
