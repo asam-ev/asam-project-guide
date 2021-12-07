@@ -41,7 +41,7 @@ jobs:
 
     # run python script macro replacement
     - name: run python script create nav for folder
-      working-directory: /repo/scripts
+      working-directory: repo/scripts
       run: python create_nav_adoc_for_folder.py -p doc/modules/compendium/pages/ --module
 
     # build site
