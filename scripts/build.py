@@ -75,9 +75,15 @@ def cleanup():
 
 def open_project_guide():
     print("OPEN INDEX.HTML")
-    os.chdir("../site")
-    # print(os.getcwd())
-    os.system("start chrome {pos}".format(pos = os.getcwd()+"/index.html"))
+    try:
+        os.chdir("../site")
+        # print(os.getcwd())
+        os.system("start chrome {pos}".format(pos = os.getcwd()+"/index.html"))
+    except:
+        try:
+            os.system("start chrome {pos}".format(pos = os.getcwd()+"/index.html"))
+        except:
+            pass
 
 if __name__ == "__main__":
     main(sys.argv[1:])
