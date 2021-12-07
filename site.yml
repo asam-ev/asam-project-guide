@@ -42,6 +42,7 @@ asciidoc:
     kroki-http-method: post
     kroki-server-url: 'http://kroki:8000'
     kroki-fetch-diagram: ""
+    abb: compendium:partial$abbreviations.adoc
 
     # Defined role attributes
     role-reviewer: 'xref:role-specific:reviewer.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FA8072;" >REVIEWER</role>]'

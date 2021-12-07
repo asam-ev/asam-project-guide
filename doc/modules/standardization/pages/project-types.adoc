@@ -3,7 +3,7 @@
 :keywords: project-types,standardization
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 ASAM distinguishes between two types of development:
 

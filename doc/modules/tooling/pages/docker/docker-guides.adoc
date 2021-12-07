@@ -4,12 +4,12 @@
 :offset-value: leveloffset=+1
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 {docker-icon}
 
 
-For the default docker-compose.yml needed to easily create the html result of a project locally, see the xref:compendium:docker/standard-docker-config.adoc[default docker-compose.yml for creating local htmls].
+For the default docker-compose.yml needed to easily create the html result of a project locally, see the xref:compendium:tools/docker/standard-docker-config.adoc[default docker-compose.yml for creating local htmls].
 
 include::compendium:page$tools/vscode/run-docker.adoc[{offset-value}]
 

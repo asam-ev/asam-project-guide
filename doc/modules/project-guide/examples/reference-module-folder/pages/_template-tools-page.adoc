@@ -3,7 +3,7 @@
 :keywords: <toolname>,summary,tool,mandatory
 
 \include::partial$_attributes.adoc[]
-\include::compendium:partial$abbreviations.adoc[]
+\include::{abb}[]
 
 {<toolname>-icon}
 

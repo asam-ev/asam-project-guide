@@ -3,7 +3,7 @@
 :keywords: ideation, idea
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 == Want to add a new idea?
 include::standardization:partial$project-ideation.adoc[tag=short]

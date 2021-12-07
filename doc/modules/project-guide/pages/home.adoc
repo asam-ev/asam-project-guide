@@ -3,7 +3,7 @@
 :keywords: landing_page,project-guide
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 include::ROOT:partial$_attributes.adoc[]
 
 {project-guide-icon}

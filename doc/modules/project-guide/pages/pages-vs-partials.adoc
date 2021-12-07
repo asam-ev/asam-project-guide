@@ -4,7 +4,7 @@
 
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 AsciiDoc files in Antora have different meaning depending on their location in the folder structure.
 The following table shows the relation to the location for Antora.

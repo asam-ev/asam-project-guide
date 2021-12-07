@@ -6,6 +6,6 @@
 include::compendium:partial$_attributes.adoc[]
 
 
-See xref:gitlab/commit-guidelines.adoc[]
+See xref:compendium:tools/gitlab/commit_guidelines.adoc[]
 
 related::git[]

@@ -3,7 +3,7 @@
 :keywords: landing_page,get-involved
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 include::ROOT:partial$_attributes.adoc[]
 
 {getting-involved-icon}

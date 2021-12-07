@@ -3,7 +3,7 @@
 :keywords: tools, asam, new-here-content
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 For the development of standards, ASAM requires the use of some <<mandatory_tools_table,**mandatory tools**>> and recommends the use of others (<<recommended_tools_table,**recommended tools**>>).
 Mandatory tools are tools that are required for specific tasks at ASAM.

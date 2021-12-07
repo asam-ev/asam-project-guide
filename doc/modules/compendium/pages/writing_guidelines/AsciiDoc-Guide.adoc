@@ -3,7 +3,7 @@
 :keywords: writing_guide
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 
 [.lead]
@@ -377,10 +377,10 @@ Then I make a <<anchorlabel, link>> to it
 |
 ....
 xref:writing_guidelines/AsciiDoc-Guide.adoc[link text for inline macro]
-xref::writing_guidelines/AsciiDoc-Guide.adoc[link text for macro]
+xref:writing_guidelines/AsciiDoc-Guide.adoc[link text for macro]
 ....
 |xref:writing_guidelines/AsciiDoc-Guide.adoc[link text for inline macro]
-xref::writing_guidelines/AsciiDoc-Guide.adoc[link text for macro]
+xref:writing_guidelines/AsciiDoc-Guide.adoc[link text for macro]
 |===
 
 TIP: Use the inline macro when you add text before and/or after the macro.

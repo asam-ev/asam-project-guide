@@ -1,11 +1,10 @@
 = Build Antora on your local PC
 :description: Describes how to build antora locally on you pc without needing to run the CI/CD on GitLab.
 :keywords: antora,guide,docker
-:powershell: xref:compendium:tools/powershell/powershell-basics.adoc[PowerShell]
 
 include::tooling:partial$_attributes.adoc[]
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 == Context
 This guide explains how to build this Projectd Guide locally on your PC without having activated the ASAM build pipeline.

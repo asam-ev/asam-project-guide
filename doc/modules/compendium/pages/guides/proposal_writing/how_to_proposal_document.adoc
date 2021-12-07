@@ -4,7 +4,7 @@
 :proposal-workshop: xref:standardization:proposal-phase.adoc#_p1_proposal_workshop[Proposal Workshop]
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 // If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
 

@@ -3,9 +3,9 @@
 :keywords: landing_page,roles,asam
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 include::ROOT:partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 {role-specific-icon}
 

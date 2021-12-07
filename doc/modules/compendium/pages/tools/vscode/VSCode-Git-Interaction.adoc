@@ -1,14 +1,12 @@
-= Interacting with git through visual studio code
+= Interacting with git through Visual Studio Code
+:description: Describes how to interact with git through vscode
+:keywords: vscode,git
+
+include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 You can find a very helpful overview at https://code.visualstudio.com/docs/editor/versioncontrol#_git-support[window=_blank].
 
 //TODO: Add extensive explanation and content
 
-== See also
-
-* xref:../git/An-Introduction-to-Git.adoc[]
-* xref:../git/Git-Best-Practices.adoc[]
-* xref:../git/ASAM-Issue-and-MR-Labels.adoc[]
-* xref:../git/Branch-Naming-Conventions.adoc[]
-* xref:../git/Commit-Guidelines.adoc[]
-* xref:../git/Submodules.adoc[]
+related::git[]

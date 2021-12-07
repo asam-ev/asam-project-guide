@@ -2,7 +2,7 @@
 :description: Describes the Proposal phase in the ASAM development process for standards.
 :keywords: proposal,phase,standard,process
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 The purpose of the Proposal phase is to transfer ideas for standard development into a specific ASAM project proposal and to obtain a decision on the proposal.
 

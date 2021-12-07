@@ -1,0 +1,3 @@
+= Using attachments
+:description: Provides information on attachments in Antora.
+:keywords: project-guide, antora, attachment

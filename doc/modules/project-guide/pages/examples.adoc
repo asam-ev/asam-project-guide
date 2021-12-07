@@ -1,0 +1,3 @@
+= Using examples
+:description: Provides information on using examples in Antora.
+:keywords: project-guide, antora, example

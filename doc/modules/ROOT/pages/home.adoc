@@ -3,7 +3,7 @@
 :keywords: main, home, start
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 Welcome to the **ASAM Project Guide**!
 

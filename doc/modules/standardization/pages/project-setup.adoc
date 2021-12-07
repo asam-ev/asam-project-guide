@@ -3,7 +3,7 @@
 :keywords: setup,standard,process
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 How to setup a project, steps to take
 

@@ -1,7 +1,10 @@
 = Branching
-:keywords: todo
+:description: Describes branching in git and gitlab
+:keywords: git,gitlab,branching,branch
+:convention: xref:compendium:tools/gitlab/branch_naming_conventions.adoc
 
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 
 
 There a many ways to create a branch in the git process.
@@ -14,7 +17,7 @@ image::create-a-branch.gif[title="Create a new branch in {vscode}"]
 
 . Click on the branch icon on the bottom left
 . Click on "Create New Branch"
-. Enter a new xref:git/Branch-Naming-Conventions.adoc[valid] branch name and confirm with Enter
+. Enter a new {convention}[valid] branch name and confirm with Enter
 
 You are automatically switched to the new branch.
 
@@ -33,7 +36,7 @@ image::create-a-branch-gitlab.gif[title="Create a new branch in GitLab"]
 
 . Open an issue for which you want to create a new branch
 . Select "Create branch" from the dropdown menu
-. Enter a new xref:git/Branch-Naming-Conventions.adoc[valid] branch name
+. Enter a new {convention}[valid] branch name
 . Click "Create branch"
 
 The branch is now created on remote.

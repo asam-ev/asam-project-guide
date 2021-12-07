@@ -38,7 +38,7 @@ C --> D(Final CCB review & merge)
 . When a PR is ready for a review the CCB assigns it to a reviewer(s)
 * This could be a group in an ASAM project, an expert in the CCB or a participating service provider (e.g. for editorial review)
 * On approval by the reviewers the PR/MR is assigned the ~ReadyForCCBReview label
-. Final review & merge by CCB - includes ensuring clear commit history that adheres to xref:git/Commit-Guidelines.adoc[]
+. Final review & merge by CCB - includes ensuring clear commit history that adheres to xref:compendium:tools/gitlab/commit_guidelines.adoc[]
 * Discussion highlights and final decisions need to be documented in PRs/issues
 * If necessary, further participants will be invited to CCB for more discussion (e.g. if a decision is needed on a PR or issue)
 

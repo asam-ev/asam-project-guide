@@ -6,7 +6,7 @@ NOTE: This only needs to be done once to obtain a local copy.
 
 . Find the repository url on the website and copy the git url
 
-. Open the xref:compendium:vscode/vscode-command-palette.adoc[], type "Git: Clone", then press Enter
+. Open the xref:compendium:tools/vscode/vscode-command-palette.adoc[], type `Git: Clone`, then press Enter
 
 . Paste the copied git url and press Enter
 
@@ -14,6 +14,5 @@ NOTE: This only needs to be done once to obtain a local copy.
 
 image::compendium:gitlab-clone-ssh.gif[]
 
-TIP: If you encounter an error that the host key verification failed, you need to add GitLab to your known_host file.
-See xref:tooling:git/git-troubleshooting.adoc[]. +
+TIP: If you encounter an error that the host key verification failed, you need to add GitLab to your known_host file. +
 image:compendium:git_error_host-key-verification-failed.PNG[]

@@ -7,7 +7,7 @@
 :asam-review: https://www.asam.net/active-projects/public-review/
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 TIP: You can find information on released standards and current projects on the [ASAM website].
 

@@ -3,7 +3,7 @@
 :keywords: summary,summarize,development,process
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 include::partial$asam-processes.adoc[tag=short]
 
 The description of the ASAM standard development process in this chapter contains all formal process steps to develop an ASAM standard.

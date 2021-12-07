@@ -44,7 +44,7 @@ These branches **MAY** be squashed and **MUST** be merged via fast-forward merge
 
 == ASAM OSC2 commit message convention
 
-The Open Scenario 2 Commit Message Convention can be found xref:git/Commit-Guidelines.adoc[here]
+The Open Scenario 2 Commit Message Convention can be found xref:compendium:tools/gitlab/commit_guidelines.adoc[here]
 
 == Project workflow
 

@@ -4,7 +4,7 @@
 :gitlab: xref:gitlab.adoc[]
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 {vscode-icon}
 

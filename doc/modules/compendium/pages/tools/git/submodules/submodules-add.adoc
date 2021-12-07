@@ -4,14 +4,14 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI.
 See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
 
 To add a submodule to a repository, follow these steps.
 
-. Open a xref:tool-specific/PowerShell-Basics.adoc[PowerShell] window in your repositories root folder
+. Open a {powershell} window in your repositories root folder
 . Enter the following command for adding the other repository as a submodule (replace url as needed):
 +
 [source,git]

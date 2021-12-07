@@ -3,7 +3,7 @@
 :keywords: roles, asam, new-here-content
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 include::role-specific:partial$roles.adoc[tag=summary]
 

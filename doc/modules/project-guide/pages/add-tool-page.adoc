@@ -4,7 +4,7 @@
 :page-partial:
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 == Context
 In order to make documented tools easier to understand, it is necessary to have a standard format for a tool's main page.

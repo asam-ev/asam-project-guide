@@ -3,7 +3,7 @@
 :keywords: welcome, new_member, overview, new-here
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 This page gives instructions for those new to ASAM (projects) and tries to guide them through everything to make the onboarding as smooth as possible.
 

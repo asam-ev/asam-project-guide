@@ -4,7 +4,7 @@
 
 //tag::default[]
 include::compendium:partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 // {role-tsc}
 //end::default[]

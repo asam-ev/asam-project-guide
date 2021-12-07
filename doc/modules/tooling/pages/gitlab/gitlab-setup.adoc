@@ -3,7 +3,7 @@
 :keywords: task,fragment,setup,gitlab,account,gitlab-setup
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 {gitlab-icon}
 

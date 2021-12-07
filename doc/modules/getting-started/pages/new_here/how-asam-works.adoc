@@ -4,7 +4,7 @@
 :asam-orga: https://www.asam.net/about-asam/organization/
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 ASAM is a standardization organization where experts from OEMs, Tier-1s, tool vendors, engineering service providers, and research institutes meet to commonly standardize development and test systems for the automotive industry.
 

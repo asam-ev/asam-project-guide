@@ -3,7 +3,7 @@
 :keywords: projects, type, asam, new-here-content
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 
 ASAM has four defined project types, which further characterize the work to be done within the projects. They are:

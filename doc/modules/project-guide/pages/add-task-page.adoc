@@ -4,7 +4,7 @@
 :page-partial:
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 == Context
 In order to make documented tasks easier to understand, it is necessary to have a standard format for tasks in which they are written.

@@ -3,7 +3,7 @@
 :keywords: about,project-guide
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 
 
 Explains the use of this guide, how it is generally structured and how to best use it.

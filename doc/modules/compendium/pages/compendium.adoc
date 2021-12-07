@@ -4,7 +4,7 @@
 :page-aliases: home.adoc
 
 include::partial$_attributes.adoc[]
-include::compendium:partial$abbreviations.adoc[]
+include::{abb}[]
 include::ROOT:partial$_attributes.adoc[]
 
 {compendium-icon}
