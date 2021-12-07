@@ -49,7 +49,7 @@ jobs:
       uses: docker://ghcr.io/asam-ev/project-guide-docker:3
       with:
         entrypoint: sh
-        args: run-build.sh
+        args: repo/run-build.sh
 
     # deploy to gh-pages
     - name: deploy to gh-pages if push to main branch
