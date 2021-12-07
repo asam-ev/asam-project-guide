@@ -5,26 +5,28 @@ on:
   # release: # new releases
   # pull_request: 
   #   branches: [ main ]
-  push: # on push. This may be removed later
+  push: # on push
   # schedule: # periodic - needed because some of the content is from the other repos
   #   - cron:  '30 5,20 * * *' # twice per day, in the morning and evening.
 
 jobs: 
   build:
-    name: Prepare the ASAM project guide by cloning and running pre-build scripts
+    name: Build the ASAM project guide and deploy it to gh-pages
     runs-on: ubuntu-20.04
     
     services: 
       kroki:
-        image: yuzutech/kroki
+        image: yuzutech/kroki:0.15.1
         env:
           KROKI_MAX_URI_LENGTH: 8000
 
     steps:
     
-    # checkout repo
+    # checkout repo into folder guide. This is done to match the setup for the local build in docker-compose
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        path: repo
 
     # setup python        
     - name: Setup Python
