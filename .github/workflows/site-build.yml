@@ -44,7 +44,7 @@ jobs:
 
     # build site
     - name: Generate site
-      uses: docker://ghcr.io/asam-ev/project-guide-docker:v3
+      uses: docker://ghcr.io/asam-ev/project-guide-docker:3
       with:
         entrypoint: sh
         args: run-build.sh
