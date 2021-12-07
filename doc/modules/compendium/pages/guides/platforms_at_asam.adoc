@@ -1,7 +1,7 @@
 = Platforms used at ASAM
 
 **Microsoft Teams**
-: Chat, conferencing, document folder for sharing documents (e.g. research papers, notes, videos, anything that does not need to be versioned) - See the xref:tooling:teams_and_sharepoint.adoc[]
+: Chat, conferencing, document folder for sharing documents (e.g. research papers, notes, videos, anything that does not need to be versioned) - See the xref:tooling:teams-and-sharepoint.adoc[]
 
 https://code.asam.net[**GitLab**^]
 : All source code and standard relevant documentation.
