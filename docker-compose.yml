@@ -8,6 +8,8 @@ services:
       - .:/usr/src/app/repo #has to match WORKSPACE defined in Dockerfile + folder from package.json "docker-build"
     depends_on:
       - kroki
+      - blockdiag
+      - mermaid
     entrypoint: npm run docker-build
     # entrypoint: /bin/bash
 
@@ -16,4 +18,11 @@ services:
     image: yuzutech/kroki:0.15.1
     environment:
       - KROKI_MAX_URI_LENGTH=20000
-    
+      - KROKI_BLOCKDIAG_HOST=blockdiag
+      - KROKI_MERMAID_HOST=mermaid
+
+  blockdiag:
+    image: yuzutech/kroki-blockdiag
+
+  mermaid:
+    image: yuzutech/kroki-mermaid

@@ -39,7 +39,7 @@ asciidoc:
     guide-repo-url: https://github.com/asam-ev/asam-project-guide/
     hide-uri-scheme:
     gitlab-url: https://code.asam.net
-    kroki-http-method: post
+    # kroki-http-method: post
     kroki-server-url: 'http://kroki:8000'
     kroki-fetch-diagram: ""
     abb: compendium:partial$abbreviations.adoc
