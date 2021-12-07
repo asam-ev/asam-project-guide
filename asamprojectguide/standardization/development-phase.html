@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>The Development phase :: ASAM Project Guide</title>
+    <meta name="description" content="Describes the Proposal phase in the ASAM development process for standards.">
+    <meta name="keywords" content="development,phase,standard,process">
+    <meta name="generator" content="Antora 3.0.0-rc.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+<link rel="icon" type="image/png" sizes="32x32" href="../../_/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../_/img/favicon-16x16.png">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://github.com/asam-ev/asam-project-guide">ASAM Project Guide
+           –
+          Vbaseline</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Downloads</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Full EBNF</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Related ASAM Standards</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" target="_blank" href="#">OpenSCENARIO 1</a>
+            <a class="navbar-item" target="_blank" href="#">OpenDRIVE</a>
+            <a class="navbar-item" target="_blank" href="#">OpenLabel</a>
+            <a class="navbar-item" target="_blank" href="#">OpenODD</a>
+            <a class="navbar-item" target="_blank" href="#">OpenXOntology</a>
+            <a class="navbar-item" target="_blank" href="#">OSI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="asamprojectguide" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../home.html">ASAM Project Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../getting-started/main.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../getting-started/new-here.html">New here?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/new_here/how-asam-works.html">How ASAM works</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/new_here/processes-and-workflows-overview.html">Processes and workflows - overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/new_here/project-types.html">ASAM projects types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/new_here/current-projects.html">Current projects at ASAM</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/new_here/roles-overview.html">Roles at ASAM - overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/new_here/tools-overview.html">Standard tools - overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/new_here/asam-contacts.html">ASAM contacts</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../getting-started/about-this-guide.html">About this guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/about_guide/intentions-and-content.html">Intentions and content of the Project Guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/about_guide/using-this-guide.html">Using this guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-started/about_guide/working-on-the-guide.html">Working on the Project Guide</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../getting-involved/home.html">How to get involved at ASAM</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/new-idea.html">How to enter a new idea</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">New Standard: Join Proposal Workshop</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Active Project: Join As Work Group Member</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Active Project: Lead a Project</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Join Webinar</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Become A Service Provider</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Review A Standard</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../role-specific/home.html">ASAM roles</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/gtm.html">ASAM general technology manager</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/project-lead.html">Project lead</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/wg-member.html">Working group member</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/reviewer.html">Reviewer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/technical-writer.html">Technical writer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/service-provider.html">Service provider</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/standard-manager.html">Standard manager</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/standard-user.html">Standard user</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="home.html">ASAM standardization process</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="project-types.html">Project types</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="asam-development-process.html">ASAM development process for standards</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="project-ideation.html">The Project Ideation phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="proposal-phase.html">The Proposal phase</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="development-phase.html">The Development phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="review-phase.html">The Review phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="release-phase.html">The Release phase</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="project-setup.html">Project setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="creation-of-standards.html">Creation of standards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="issue-resolution.html">Issue resolution process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Working Model (workgroups)</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Issue-driven Workflow</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Reviews and Releases</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">ASAM Deliverables</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/compendium.html">Compendium</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../compendium/abbreviations.html">Abbreviations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../compendium/compendium.html">Compendium</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/definitions.html">Definitions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/api.html">Application programming interface</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/application-area-companion.html">Application area companion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/associated-standard.html">Associated standard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/base-standard.html">Base standard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/format-description.html">Format description</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/information-architecture-requirements.html">Requirements of the information architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/protocol-definition.html">Protocol definitions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/set-of-standards.html">Set of standards</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/status-of-document.html">Status of documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/technology-reference.html">Technology reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/transport-layer-specification.html">Transport layer specification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/guides.html">Guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/Accessing_Compiled_Artifacts.html">Accessing compiled artifacts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/Meeting-Guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/Platforms.html">Platforms used at ASAM</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/Workflow.html">ASAM standard workflows</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/WritingGuidelines.html">Writing guidelines overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#guides/asciidoc.adoc">guides/asciidoc.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/asciidoc/code.html">How to include code blocks in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/asciidoc/diagrams.html">Diagrams</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/asciidoc/formulas.html">How to include formulas in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/asciidoc/graphics.html">How to include graphics in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/asciidoc/headings.html">How to write headings in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/asciidoc/links.html">How to include links in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/asciidoc/paragraphs.html">How to write a paragraph in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/asciidoc/roadmaps.html">How to create roadmaps in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/asciidoc/tables.html">How to include tables in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/commenting.html">How to comment and review adoc files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/git-interactions.html">Git interactions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#guides/proposal_writing.adoc">guides/proposal_writing.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/how_to_executive_draft.html">How-to create an executive proposal draft</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/how_to_proposal_document.html">How-to create an executive proposal draft</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/reviewing.html">guides/reviewing.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/set-up-new-project.html">How to set up a new project</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/switch_branches.html">How to switch branches</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/what-is-yaml.html">What is yAML/yml?</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/workflow_tutorial.html">Workflow tutorial</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/implementers-forum.html">Implementers-forum</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/implementers-forum/Feedback-Guide.html">Feedback guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/implementers-forum/Scenario-Writers-Guide.html">OSC2 Scenario Writing Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/open-source.html">Open-source</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/open-source/ASAM-DCO.html">ASAM developer certeification of origin for open source projects</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/roles.html">Roles</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/roles/call-for-offers.html">Call for offers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/roles/standard-expert-group.html">Standard expert group</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/roles/standard-manager.html">Standard manager</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/roles/standard-user.html">Standard user</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/roles/tsc.html">Technical steering committee (TSC)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/templates.html">Templates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/templates/cover-page.html">Cover page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/templates/directories.html">Directories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/templates/project-proposal.html">Template for project proposals (AsciiDoc)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools.html">Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/antora.html">Antora</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/antora/build-antora-locally.html">Build Antora on your local PC</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#tools/docker.adoc">tools/docker.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/docker/docker-for-asciidoc.html">How to use docker for asciidoctor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/docker/run-docker.html">Starting a container from docker desktop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/docker/standard-docker-config.html">Standard docker compose yAML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/docker/wsl.html">Windows subsystem for linux (WSL)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#tools/git.adoc">tools/git.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/cloning-repo-tutorial.html">Cloning A Repository With Git</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/commit-guidelines.html">Git commit guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/git-actions.html">Git actions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/git-terminology.html">Git terminology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/maintain-a-repo.html">Maintain A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/merge-conflicts.html">Merge conflicts: Preventing And Resolving</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/merge-requests.html">Merge requests</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/merge.html">Merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/review-code.html">Review code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/submodules.html">Submodules in git</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodule-pull.html">Pulling A Submodule</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodules-add.html">Adding A New Submodule To A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodules-changing-remote.html">Changing remote for a submodule</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodules-switch-version.html">Switching to a specific submodule version</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodules.html">Git submodules usage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/transitioning-to-a-new-workflow.html">Transitioning to the new workflow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/working-with-git.html">Working with git</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/git/write-a-feature.html">Write A Feature</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#tools/gitlab.adoc">tools/gitlab.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/gitlab/ASAM-Issue-and-MR-Labels.html">ASAM issue and merge request labels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/gitlab/Branch-Naming-Conventions.html">Branch naming conventions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/gitlab/Branching.html">Branching</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/gitlab/Forking.html">Forking from repository</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/gitlab/cloning-a-repository.html">Cloning A Repository Using GitLab To Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/gitlab/commit-guidelines.html">ASAM commit guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/gitlab/gitlab-ide-guide.html">GitLab IDE Guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/gitlab/gitlab-terminology.html">GitLab Terminology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#tools/powershell.adoc">tools/powershell.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/powershell/cloning-a-repository.html">Cloning A Repository Using Git Bash / Powershell</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/powershell/powershell-basics.html">Microsoft PowerShell Basics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/powershell/run-docker.html">Running docker-Compose From Powershell</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#tools/sharepoint.adoc">tools/sharepoint.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/sharepoint/links.html">Sharepoint link summary</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/sharepoint/synchronizing-sharepoint-with-onedrive.html">Synchronizing sharepoint with oneDrive</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#tools/teams.adoc">tools/teams.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/teams/email-notifications.html">Email notifications from microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/teams/meetings-in-teams.html">Meetings in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/teams/obtain-channel-email.html">Obtain the email address of a channel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/teams/polls-and-surveys.html">Polls &amp; Surveys</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/teams/receive-notifications.html">Receiving notifications in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/teams/teams-channel-file-structure.html">Teams channels file structure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#tools/vscode.adoc">tools/vscode.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/Adding-Diagrams-To-VSCode.html">Adding VSCode Support For Diagrams With Kroki</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/VSCode-Git-Interaction.html">Interacting with git through visual studio code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/cloning-a-repository.html">Cloning A Repository Using Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/recommended-vscode-extensions.html">Recommended Visual Studio Code extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/recommended-vscode-settings.html">ASAM recommended Visual Studio Code settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/run-docker.html">Running docker-Compose From VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/vscode-activity-bar.html">Visual Studio Code activity bar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/vscode-command-palette.html">Visual Studio Code command palette</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/vscode-install-extension.html">Install extensions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/tools/vscode/vscode-interface.html">Visual Studio Code interface</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/writing_guidelines.html">Writing guidelines</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/AsciiDoc-Guide.html">AsciiDoc Guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/coding_style_guide.html">The openSCENARIO2 coding style guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/plantuml_documentation_guide.html">PlantUML documentation guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/writing_guide.html">Writing guide</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/overview.html">Tools overview</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tooling/working-without-software-installation.html">Working without software installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/gitlab.html">GitLab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/gitlab/gitlab-setup.html">Setting up your ASAM GitLab Account</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/gitlab/gitlab-guides.html">GitLab Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/calendar.html">OpenX Calendar</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/calendar/calendar-setup.html">Setting up the openX Calendar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/teams-and-sharepoint.html">Microsoft teams and sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/teams_and_sharepoint/teams-and-sharepoint-setup.html">Setting up microsoft teams and sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/teams_and_sharepoint/teams-and-sharepoint-guides.html">Microsoft teams and sharepoint guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/teams_and_sharepoint/teams-and-sharepoint-best-practices.html">teams_and_sharepoint/teams-and-sharepoint-best-practices.adoc</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/vscode/vscode-setup.html">Setting up visual studio code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/vscode/vscode-guides.html">Visual Studio Code guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/git/git-setup.html">Setting up git</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/git/git-guides.html">Git guides</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#git/git-troubleshooting.adoc">git/git-troubleshooting.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#git/git-best-practices.adoc">git/git-best-practices.adoc</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/drawio/drawio-setup.html">Setting up draw.io</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/docker/docker-setup.html">Setting up docker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/docker/docker-guides.html">Docker guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/docker/docker-best-practices.html">Docker best practices</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../project-guide/home.html">Working on the Project Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#content-structure.adoc">content-structure.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../project-guide/link-concept.html">ASAM Project Guide Link Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../project-guide/add-new-module.html">Adding A New Module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../project-guide/pages-vs-partials.html">Pages VS Partials</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Pages</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../project-guide/add-a-page.html">Adding A Page</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../project-guide/add-task-page.html">Adding a Task page</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../project-guide/add-tool-page.html">Adding a Tool page</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Moving/Renaming/Deleting A Page</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Partials</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../project-guide/add-a-partial.html">Adding A Partial</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Referencing And Including</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../project-guide/images.html">images.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../project-guide/examples.html">examples.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../project-guide/attachments.html">attachments.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#including.adoc">including.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Cross-referencing</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Macros</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Asciidoctor</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Antora</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../project-guide/special-macros.html">Custom ASAM Antora Macros</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../project-guide/macros/macro-pages.html">Macro: pages</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../project-guide/macros/macro-reference.html">Macro: reference</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../project-guide/macros/macro-related.html">Macro: related</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../project-guide/used-attributes.html">Used attributes In ASAM Projectd Guide</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Working With Projects</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Additional Infos</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Guide</span>
+    <span class="version">baseline</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../home.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../home.html">baseline</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../home.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../home.html">ASAM Project Guide</a></li>
+    <li><a href="home.html">ASAM standardization process</a></li>
+    <li><a href="asam-development-process.html">ASAM development process for standards</a></li>
+    <li><a href="development-phase.html">The Development phase</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/-/blob/main/doc/modules/standardization/pages/development-phase.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">The Development phase</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The purpose of the Development phase is to create a new version of the standard.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/development_phase.png" alt="development phase">
+</div>
+<div class="title">Figure 1. The Development Phase</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_d1_development_phase"><a class="anchor" href="#_d1_development_phase"></a>D1 - Development Phase</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 4.7619%;">
+<col style="width: 95.2381%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Purpose</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To develop a new version of a standard or a new standard.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Responsible</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Project group</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Involved</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a>, Office</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The governing documents, which shall be considered during the Development phase of the project, are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the Project Guide (this document).</p>
+</li>
+<li>
+<p>the project proposal.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The project leader is responsible that the project is managed in compliance with the documents.
+Each project member shall be aware of the content of the documents.</p>
+</div>
+<div class="paragraph">
+<p>The project group has the additional task to review all open or incoming change requests (CR) and decide, whether they shall be resolved, declined or deferred to a later project.
+Upon technical release of the new standard, no CR shall be in an unviewed and undecided status.</p>
+</div>
+<div class="paragraph">
+<p>ASAM work groups are given a lot of latitude to organize their work during the Development phase of the project.
+Project groups can determine their own rules, processes and formats how to conduct meetings and how to carry out their work.
+ASAM requires a minimum of rules to be followed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>each project must have an elected project leader</p>
+</li>
+<li>
+<p>each meeting is documented via minutes</p>
+</li>
+<li>
+<p>members need to use the ASAM IT infrastructure</p>
+</li>
+<li>
+<p>standards are written by using the ASAM document template for standards</p>
+</li>
+<li>
+<p>the working language is English</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Office will provisionally lead the project until the group has elected the project leader.
+Upon request, the Office provides training to the project group members about ASAM guidelines and best practices.
+Furthermore, the Office assists the project leader upon his request to manage the meetings during the initial meetings.</p>
+</div>
+<div class="paragraph">
+<p>The ASAM IT infrastructure provides services for collaboration such as a version control system for documents and files, a change request tracking system and remote conferencing.
+The use of alternative IT services requires the approval from the ASAM Office.</p>
+</div>
+<div class="paragraph">
+<p>Individual project group members have the primary task to make their expertise and committed work time available for the development of the standard.
+This specifically means:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>provide use-cases, application &amp; process knowledge and requirements as a foundation for developing the standard</p>
+</li>
+<li>
+<p>potentially submit company-IP for ASAM standardization</p>
+</li>
+<li>
+<p>provide expertise on technical details</p>
+</li>
+<li>
+<p>vote on the acceptance of individual proposals and the release candidate</p>
+</li>
+<li>
+<p>potentially write parts of the standard or contribute to other works of authorship</p>
+</li>
+<li>
+<p>use, control and review the work of service providers</p>
+</li>
+<li>
+<p>review the work of other authors</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The project leader is the elected manager and representative of the project group.
+They have the following tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>invite members to the next meeting(s)</p>
+</li>
+<li>
+<p>determine the meeting agenda</p>
+</li>
+<li>
+<p>moderate project group meetings</p>
+</li>
+<li>
+<p>writes the meeting minutes</p>
+</li>
+<li>
+<p>manage the service provider(s)</p>
+</li>
+<li>
+<p>coordinate the standard authors (if there is more than one)</p>
+</li>
+<li>
+<p>represent the group towards the <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a>, Office and ASAM members</p>
+</li>
+<li>
+<p>is responsible for the work group&#8217;s progress and the final deliverables to ASAM</p>
+</li>
+<li>
+<p>collect measures regarding project status and report the project status to the <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The project leader can delegate some of the tasks to project members or service providers.
+However, they cannot delegate responsibilities.
+They remain the responsible person for each task listed above.</p>
+</div>
+<div class="paragraph">
+<p>Each meeting has a host.
+Typically, meetings are hosted by a different project group member at each meeting.
+The tasks of the host are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>provide meeting room and catering</p>
+</li>
+<li>
+<p>provide Internet connection, a speaker phone and video conferencing, as required</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The ASAM Office takes over the role of meeting host, if video conferencing has been requested and budgeted as per approved project proposal.</p>
+</div>
+<div class="paragraph">
+<p>Project groups can have one or multiple service provider(s).
+They are being paid from the approved project budget.
+Their services may comprise, but are not limited to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>authoring the standard</p>
+</li>
+<li>
+<p>create other work artefacts, e.g. UML models, schemas, interface description files, examples, etc.</p>
+</li>
+<li>
+<p>prepare technical content of meetings</p>
+</li>
+<li>
+<p>develop prototypes, tools or software as part of the standard</p>
+</li>
+<li>
+<p>create the deliverables to ASAM</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A service provider can take over some of the tasks of the project leader.
+Service providers and the project leader must originate from different companies.</p>
+</div>
+<div class="paragraph">
+<p>The group shall strive to make all decisions in consensus.
+If this seems impossible in certain situations, then the project leader may call for a vote on a specific topic.
+The meeting minutes shall clearly describe, what the members are voting on.
+Each company has one vote.
+At least 50% of all companies, which participate in the project, must cast their vote for the voting result to be valid.
+Project group members can cast their votes up to five work days after the publication of the meeting minutes.
+Votes cannot be transferred to other companies.
+A decision is made by absolute majority.</p>
+</div>
+<div class="paragraph">
+<p>New companies may join the group after the beginning of the Development phase.
+Requests for new admissions are directed to the project leader.
+They bring the request into the next group meeting.
+New admissions are accepted by absolute majority of the group members.
+Admission of new member companies shall be an exception and shall be handled with more restraint the more the project has advanced.</p>
+</div>
+<div class="paragraph">
+<p>During the duration of the project, the project&#8217;s progress is controlled by the <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a>.
+Project controlling is carried out according to the following process:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The project leader submits a controlling report four weeks prior to the next <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> meeting.</p>
+</li>
+<li>
+<p><a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> members review the written project report prior to the <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> meeting.</p>
+</li>
+<li>
+<p>The <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> meeting organizer creates a project list that includes the date of the last report of the project given to the <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a>.</p>
+</li>
+<li>
+<p>The project is put on the <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> agenda, if either the project leader or a <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> member request a live report.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> may draw its conclusions from the report.
+If a project does not work as expected, the <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> may decide on corrective actions.</p>
+</div>
+<div class="paragraph">
+<p>The project leader can propose to the <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> to expel a member from the work group.
+One reason for expulsion can be, that a work group member has continually failed to meet his commitments, e.g. to participate at work group meetings.
+The project leader shall provide justification and evidence for his proposal.
+The <a href="../compendium/abbreviations.html#_tsc" class="xref page">TSC</a> then votes on the expulsion of the member.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script src="../../_/js/vendor/search.js" id="search-script"
+    data-base-path="../.." data-page-path="/asamprojectguide/standardization/development-phase.html"></script>
+<script async src="../../_/../search-index.js"></script>
+  </body>
+</html>
