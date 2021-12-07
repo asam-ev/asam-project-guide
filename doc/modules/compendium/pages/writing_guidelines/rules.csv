@@ -1,15 +1,15 @@
 Number,Short_Description,Link_to_Project_Guide,Link_to_Test,Status
-ASM-1,No fixed versioning,,,
-ASM-2,Heading case,,,
-ASM-3,Heading punctuation,,,
-ASM-4,Heading numbering,,,
-ASM-5,,,,
-ASM-6,,,,
-ASM-7,,,,
-ASM-8,,,,
-ASM-9,,,,
-ASM-10,,,,
-
+ASM-1,No fixed versioning,-,-,new
+ASM-2,Heading case,-,-,new
+ASM-3,Heading punctuation,-,-,new
+ASM-4,Heading numbering,-,-,new
+ASM-5,List capitalization,-,-,new
+ASM-6,List punctuation,-,-,new
+ASM-7,List completeness (...),-,-,new
+ASM-8,List element,-,-,new
+ASM-9,List one sentence per line,-,-,new
+ASM-10,List type,-,-,new
+ASM-11,List end of element,-,-,new
 
 
 
