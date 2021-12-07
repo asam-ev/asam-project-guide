@@ -22,7 +22,7 @@ include::partial$roles.adoc[tag = list_of_roles]
 === Contributors
 - Develop software, i.e. write source code and tests.
 - For open-source projects hosted under the ASAM organization on Github.com all commits **must** include a sign-off message.
-See xref:general_guidelines/open-source/asam-dco.adoc[].
+See xref:compendium:open-source/asam_dco.adoc[].
 
 === ASAM change control board
 

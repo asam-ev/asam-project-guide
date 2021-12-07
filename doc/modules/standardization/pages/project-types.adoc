@@ -11,7 +11,7 @@ ASAM distinguishes between two types of development:
 * <<Other Project Types>>
 
 .Project types
-image::project-types.png[]
+image::project_types.png[]
 
 == Standard development
 

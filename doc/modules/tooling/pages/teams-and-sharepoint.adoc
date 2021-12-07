@@ -21,7 +21,7 @@ It can be accessed directly or through Teams, which is why all files that have b
 ** If you need another Teams channel, contact mailto:benjamin.engel@asam.net[Benjamin Engel]!
 * These file tabs can also be found directly in Sharepoint (sign in with your microsoft account).
 
-IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See xref:general_guidelines/Workflow.adoc[] for more information.
+IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See xref:compendium:guides/standard_workflow.adoc[] for more information.
 
 
 == MS teams at ASAM
@@ -40,15 +40,4 @@ IMPORTANT: Project files such as chapters, specifications, or images intended fo
 
 |===
 
-== Related topics
-
-* xref:compendium:teams/email-notifications.adoc[]
-* xref:compendium:teams/meetings-in-teams.adoc[]
-* xref:compendium:teams/obtain-channel-email.adoc[]
-* xref:compendium:teams/polls-and-surveys.adoc[]
-* xref:compendium:teams/receive-notifications.adoc[]
-* xref:compendium:teams/teams-channel-file-structure.adoc[]
-* xref:teams_and_sharepoint/teams-and-sharepoint-guides.adoc[]
-* xref:teams_and_sharepoint/teams-and-sharepoint-setup.adoc[]
-* xref:compendium:sharepoint/links.adoc[]
-* xref:compendium:sharepoint/synchronizing-sharepoint-with-onedrive.adoc[]
+related::sharepoint[]

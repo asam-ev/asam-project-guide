@@ -1,5 +1,7 @@
 [#top-osc2-coding-style-guide]
 = The openSCENARIO2 coding style guide
+:description: Summary of (osc2) coding styles and guideline on how to use them.
+:keywords: coding, style-guide, osc2
 :numbered:
 
 This coding style guide is intended to help you writing source code in the OpenSCENARIO 2.x domain specific language in a uniform way.
@@ -14,10 +16,11 @@ You should follow the recommendations in this document in the following cases:
 
 . You are a _scenario developer_ writing fully functional scenarios for real use.
 . You are a _writer of documentation_ and want to add code examples (snippets) to your adoc document. +
-In this case you should mark your code examples as a `+[source, osc2]+` source block as described in the xref:writing_guidelines/writing_guide.adoc[].
+In this case you should mark your code examples as a `+[source, osc2]+` source block as described in the xref:compendium:writing_guidelines/writing_guide.adoc[].
 
 
 By following the recommendations in this guide your code becomes easy-to-understand for you and other users.
+
 
 == Formatting
 
@@ -28,19 +31,19 @@ By following the recommendations in this guide your code becomes easy-to-underst
 ** *Tab size: 4*
 ** *Insert spaces*
 
-TIP: For support in Visual Studio Code, see xref:tool-specific/Recommended-VSCode-Settings.adoc#Indentations[Indentations].
+TIP: For support in Visual Studio Code, see xref:compendium:tools/vscode/recommended-vscode-settings.adoc#_indentations[Indentations].
 
 === Encoding
 * Use *UTF-8* as encoding.
 
 === Whitespace
 
-TIP: For support in Visual Studio Code, see xref:tool-specific/Recommended-VSCode-Settings.adoc#_automatic_removal_of_spaces_after_periods[Automatic Whitespace Removal].
+TIP: For support in Visual Studio Code, see xref:compendium:tools/vscode//recommended-vscode-settings.adoc#_automatic_removal_of_spaces_after_periods[Automatic Whitespace Removal].
 
 Whitespace characters provide better readability when used in the correct places.
 
 * Use only *space characters* as whitespace.
-* Replace tabs with four spaces as described in <<Indentation>>.
+* Replace tabs with four spaces as described in <<_indentation>>.
 
 The correct use of space characters within osc2 source code is as follows:
 
@@ -73,9 +76,7 @@ swerve_story: serial:
         keep_speed()
     with:
         until (top.time > 5sec)
-
 ----
-// TODO: line with "until ()" is incorrect
 
 === Comments
 
@@ -125,13 +126,13 @@ Use <<Use _snake_case_ only>> until further notice!
 ----
 # 1: Define an actor
 actor car_group:
-     average_distance: distance
+     average_distance: length
      number_of_cars: uint
 
 # 2: Define a road element struct
 struct geometric_road: road_element:
-    min_radius: distance
-    max_radius: distance
+    min_radius: length
+    max_radius: length
     side: av_side
 
 # 3: Define a scenario
@@ -182,14 +183,14 @@ scenario slower_large_vehicle_in_adjacent_lane
     v1_route: v1.route
 
     ego_start_speed: speed
-    ego_start_distance: distance
+    ego_start_distance: length
     v1_start_speed: speed
-    v1_start_distance: distance
+    v1_start_distance: length
 
     simulation_platform_choice: string
     simulation_time_threshold_reached: time
     ego_ttc_threshold: time
-    ego_distance_to_bias: distance
+    ego_distance_to_bias: length
     lane_choice: string
     ego_lane: lane
     map: file_path
@@ -230,8 +231,8 @@ scenario slower_large_vehicle_in_adjacent_lane
     # Relationship Syntax
     keep(v1_start_speed -[:SLOWER_THAN]-> ego_start_speed)
 
-    def distance_between_ego_vehicle_and_v1(vehicle, vehicle): distance is external "kpi.py"
-    def get_ttc_with_vehicle_to_vehicle(vehicle, vehicle, string): time is external "kpi_TTC.py"
+    def distance_between_ego_vehicle_and_v1(vehicle, vehicle) -> length is external "kpi.py"
+    def get_ttc_with_vehicle_to_vehicle(vehicle, vehicle, string) -> time is external "kpi_TTC.py"
 
     !ego_speed: speed = ego_vehicle.speed
     !ego_end_of_road: Position = ego_vehicle.end_of_road
@@ -241,7 +242,7 @@ scenario slower_large_vehicle_in_adjacent_lane
     !ego_collision_monitor: integer = sensor.collision.v.fr1.count
 
     !ego_ttc_with_v1: time = sample(ego_vehicle.get_ttc_with_vehicle_to_vehicle(ego_vehicle:vehicle, v1:vehicle, [simulation_platform_choice]))
-    !ego_distance_to_v1: distance = sample(distance_between_egoVehicle_and_v1(v1:vehicle, ego_vehicle:vehicle, [simulation_platform_choice]))
+    !ego_distance_to_v1: length = sample(distance_between_egoVehicle_and_v1(v1:vehicle, ego_vehicle:vehicle, [simulation_platform_choice]))
 
     event observation_complete is(one_of(@end_conditions))
 
@@ -272,8 +273,8 @@ scenario slower_large_vehicle_in_adjacent_lane
 * For more information about creating documentation with adoc-topics check out the xref:writing_guidelines/writing_guide.adoc[].
 
 
-== Contact information
+// == Contact information
 
-If you have any questions and/or suggestions concerning this coding style guide for OpenSCENARIO 2, please contact andreas.muetsch@dxc.com.
+// If you have any questions and/or suggestions concerning this coding style guide for OpenSCENARIO 2, please contact andreas.muetsch@dxc.com.
 
-See also: https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc
+// See also: https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc

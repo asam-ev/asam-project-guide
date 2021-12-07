@@ -16,5 +16,3 @@ include::compendium:page$tools/vscode/cloning-a-repository.adoc[leveloffset=+1]
 include::compendium:page$tools/powershell/cloning-a-repository.adoc[leveloffset=+1]
 
 include::compendium:page$tools/gitlab/cloning-a-repository.adoc[leveloffset=+1]
-
-related::git[]

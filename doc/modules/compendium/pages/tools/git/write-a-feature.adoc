@@ -71,5 +71,3 @@ git push origin <branch-name>
 Submit a https://help.github.com/articles/using-pull-requests/[GitHub pull request^].
 
 Ask for a code review in the project's chat room.
-
-related::git[]

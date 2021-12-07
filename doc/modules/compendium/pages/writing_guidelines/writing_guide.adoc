@@ -5,6 +5,7 @@
 :numbered:
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 {role-technical-writer}
 
@@ -12,7 +13,7 @@ include::compendium:partial$_attributes.adoc[]
 This guide is intended to help you writing content for ASAM projects.
 It provides you a set of hints and rules that make it easier to contribute concise and homogeneous content and documents to the projects.
 
-TIP: If you are using Visual Studio Code, see the xref:../tool-specific/Recommended-VSCode-Settings.adoc[].
+TIP: If you are using {vscode}, see the xref:compendium:tools/vscode/recommended-vscode-settings.adoc[].
 
 == Language
 

@@ -23,13 +23,11 @@ ASAM recommends using Git for working on a repository locally:
 
 == Content
 
-[cols="1,1"]
+[cols="1,1,1"]
 |===
 |xref:git/git-setup.adoc[image:{setup-image}[width=120,title="GitLab Setup"] Git Setup]
 |xref:git/git-guides.adoc[image:{guide-image}[width=120,title="GitLab Guides"] Git Guides]
-
-|xref:git/git-troubleshooting.adoc[image:{troubleshooting-image}[width=120,title="Git Troubleshooting"] Git Troubleshooting]
-|xref:git/git-best-practices.adoc[image:{best-practices-image}[width=120,title="Git Best Practices"] Git Best Practices]
+|xref:git/git_best_practices.adoc[image:{best-practices-image}[width=120,title="Git Best Practices"] Git Best Practices]
 
 |===
 

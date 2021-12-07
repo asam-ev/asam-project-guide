@@ -55,5 +55,3 @@ Delete your local feature branch.
 ----
 git branch --delete <branch-name>
 ----
-
-related::merge,git[]
