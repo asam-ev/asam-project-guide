@@ -6,7 +6,7 @@ ASM-4,Heading numbering,-,-,draft
 ASM-5,List capitalization,-,-,draft
 ASM-6,List punctuation,-,-,draft
 ASM-7,List completeness (...),-,-,draft
-ASM-8,List element,-,-,draft
+ASM-8,List content,-,-,draft
 ASM-9,List one sentence per line,-,-,draft
 ASM-10,List type,-,-,draft
 ASM-11,List end of element,-,-,draft
@@ -40,4 +40,3 @@ ASM-38,No broken external links,-,-,draft
 ASM-39,Mapping file defines structure,-,-,draft
 ASM-40,Mapping file named main.adoc,-,-,draft
 ASM-41,Deliverable naming,-,-,draft
-ASM-42,List content,-,-,draft

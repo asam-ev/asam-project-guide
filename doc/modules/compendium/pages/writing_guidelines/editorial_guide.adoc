@@ -162,7 +162,7 @@ If an item in a list is not a full sentence, then do not put the following punct
 * Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation
 * Google Developer Documentation Style Guide: https://developers.google.com/style/lists
 
-=== Use lists with similarly structured items for complex text (ASM-42)
+=== Use lists with similarly structured items for complex text (ASM-8)
 
 Use lists instead of long sentences to present complex text in a way that is easier to read and understand.
 The list items shall be a set of similarly structured items.
