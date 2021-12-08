@@ -16,6 +16,7 @@ It contains rules for contributing content to a project in written form.
 
 This section contains rules how to create headings.
 
+[#sec-ASM-2]
 === Start headings with a capital letter (ASM-2)
 
 * In headings and captions, only the *first word* begins with an uppercase letter (sentence-style capitalization).
@@ -23,7 +24,7 @@ This section contains rules how to create headings.
 
 *Example*
 
-[#tab-UUID]
+[#tab-07cd91ec-32d0-4890-8276-cbadc0efc6b0]
 .Use of uppercase in headings and captions
 [%header]
 |===
@@ -41,6 +42,7 @@ ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 These rules apply to lists:
 
+[#sec-ASM-5]
 === Start each list item in a list with an uppercase letter (ASM-5)
 
 *Example*
@@ -55,11 +57,12 @@ These rules apply to lists:
 
 ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 
+[#sec-ASM-6]
 === Put a full stop at the end of a list item if it is a full sentence (ASM-6)
 
 *Example*
 
-[#tab-UUID]
+[#tab-23063c34-07c7-4ecd-a797-ad8d715df052]
 .Use of full stops at the end of a list item
 [%header]
 |===
@@ -98,6 +101,29 @@ ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 
 
 ASAM Writing Guide
 
+[#sec-ASM-8]
+=== Use lists with similarly structured items for complex text (ASM-8)
+
+Use lists instead of long sentences to present complex text in a way that is easier to read and understand.
+The list items shall be a set of similarly structured items.
+For example, each item should be a noun or a phrase that starts with a verb.
+
+*Example*
+
+```
+The outline of the road marking is described by the attributes @length and @space:
+
+* @length represents the visible part of the line.
+* @space describes the non-visible part.
+```
+
+*Source*
+
+* ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
+* Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists
+* Google Developer Documentation Style Guide: https://developers.google.com/style/lists
+
+[#sec-ASM-10]
 === Choose a suitable type of list (ASM-10)
 
 ==== Use a bulleted list for things that have something in common but don’t need to appear in a particular order.
@@ -132,6 +158,7 @@ To sign on to a database:
 
 Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists
 
+[#sec-ASM-11]
 === Do not put punctuation or conjunctions at the end of a list item if it is not a full sentence (ASM-11)
 
 If an item in a list is not a full sentence, then do not put the following punctuation or conjunctions:
@@ -143,7 +170,7 @@ If an item in a list is not a full sentence, then do not put the following punct
 
 *Example*
 
-[#tab-UUID]
+[#tab-a099df34-7296-42e1-bd7f-db180f84fe66]
 .Use of punctuation and conjunctions at the end of an item
 [%header]
 |===
@@ -160,25 +187,4 @@ If an item in a list is not a full sentence, then do not put the following punct
 
 * ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 * Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation
-* Google Developer Documentation Style Guide: https://developers.google.com/style/lists
-
-=== Use lists with similarly structured items for complex text (ASM-8)
-
-Use lists instead of long sentences to present complex text in a way that is easier to read and understand.
-The list items shall be a set of similarly structured items.
-For example, each item should be a noun or a phrase that starts with a verb.
-
-*Example*
-
-```
-The outline of the road marking is described by the attributes @length and @space:
-
-* @length represents the visible part of the line.
-* @space describes the non-visible part.
-```
-
-*Source*
-
-* ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
-* Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists
 * Google Developer Documentation Style Guide: https://developers.google.com/style/lists

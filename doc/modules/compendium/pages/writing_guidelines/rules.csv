@@ -4,12 +4,12 @@ ASM-2,Heading case,-,-,draft
 ASM-3,Heading punctuation,-,-,draft
 ASM-4,Heading numbering,-,-,draft
 ASM-5,List capitalization,-,-,draft
-ASM-6,List punctuation,-,-,draft
+ASM-6,List punctuation,<<sec-ASM-6>>,-,draft
 ASM-7,List completeness (...),-,-,draft
-ASM-8,List content,-,-,draft
-ASM-9,List one sentence per line,-,-,draft
-ASM-10,List type,-,-,draft
-ASM-11,List end of element,-,-,draft
+ASM-8,List content,<<sec-ASM-8>>,-,draft
+ASM-9,List one sentence per line,<<sec-ASM-9>>,-,draft
+ASM-10,List type,<<sec-ASM-10>>,-,draft
+ASM-11,List end of element,<<sec-ASM-11>>,-,draft
 ASM-12,Image anchor fig-,-,-,draft
 ASM-13,Table anchor tab-,-,-,draft
 ASM-14,Code anchor code-,-,-,draft
