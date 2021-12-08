@@ -12,6 +12,13 @@ It contains rules for contributing content to a project in written form.
 * Decision Guidance
 * Potential for automatic checking, for example with link on vale rule
 
+== List of rules
+
+[format=csv]
+|===
+include::compendium:example$rules.csv[]
+|===
+
 == Headings
 
 This section contains rules how to create headings.
@@ -80,27 +87,6 @@ ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 
 * ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 * Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation
 
-=== Just add one sentence per line (ASM-9)
-
-* Insert a line break after each sentence.
-* Do not add manual line breaks inside sentences.
-
-*Instruction*
-
-* _"Only hit 'enter' after a period ('.'), but make sure to hit 'enter' after a period."_
-
-*Example*
-
-```
-* This is the first sentence.
-* This is the second sentence.
-* This is the third sentence.
-```
-
-*Source*
-
-ASAM Writing Guide
-
 [#sec-ASM-8]
 === Use lists with similarly structured items for complex text (ASM-8)
 
@@ -122,6 +108,28 @@ The outline of the road marking is described by the attributes @length and @spac
 * ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 * Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists
 * Google Developer Documentation Style Guide: https://developers.google.com/style/lists
+
+[#sec-ASM-9]
+=== Just add one sentence per line (ASM-9)
+
+* Insert a line break after each sentence.
+* Do not add manual line breaks inside sentences.
+
+*Instruction*
+
+* _"Only hit 'enter' after a period ('.'), but make sure to hit 'enter' after a period."_
+
+*Example*
+
+```
+* This is the first sentence.
+* This is the second sentence.
+* This is the third sentence.
+```
+
+*Source*
+
+ASAM Writing Guide
 
 [#sec-ASM-10]
 === Choose a suitable type of list (ASM-10)
