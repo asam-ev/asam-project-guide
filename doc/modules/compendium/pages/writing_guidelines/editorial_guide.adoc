@@ -3,3 +3,182 @@
 This section contains the editorial guide for technical writers and project members.
 
 It contains rules for contributing content to a project in written form.
+
+* Rule shall have a unique identifier, for example 1234
+* Is it useful to have a list that contains all rules?
+* Source of the rule, for example microsoft.com
+* Instructions for technical writers
+* Negative Example and positive Example in a table
+* Decision Guidance
+* Potential for automatic checking, for example with link on vale rule
+
+== Headings
+
+This section contains rules how to create headings.
+
+=== Start headings with a capital letter (ASM-2)
+
+* In headings and captions, only the *first word* begins with an uppercase letter (sentence-style capitalization).
+* _Exception_: *Acronyms* and *proper names* are spelled as is.
+
+*Example*
+
+[#tab-UUID]
+.Use of uppercase in headings and captions
+[%header]
+|===
+|No                                             |#Yes#
+|[.line-through]#Wrong Formatting of a Heading# |Correct formatting of a heading
+|[.line-through]#Asam rules to follow#          |ASAM rules to follow
+|[.line-through]#Scope of OpenScenario#         |Scope of OpenSCENARIO
+|===
+
+*Source*
+
+ASAM Writing Guide: 4.5. Uppercase and lowercase
+
+== Lists
+
+These rules apply to lists:
+
+=== Start each list item in a list with an uppercase letter (ASM-5)
+
+*Example*
+
+```
+* This is the first sentence.
+* This is the second sentence.
+* This is the third sentence.
+```
+
+*Source*
+
+ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
+
+=== Put a full stop at the end of a list item if it is a full sentence (ASM-6)
+
+*Example*
+
+[#tab-UUID]
+.Use of full stops at the end of a list item
+[%header]
+|===
+|No |#Yes#
+|[.line-through]#* This is the first sentence# +
+[.line-through]#* This is the second sentence# +
+[.line-through]#* This is the third sentence#
+|* This is the first sentence. +
+* This is the second sentence. +
+* This is the third sentence.
+|===
+
+*Source*
+
+* ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
+* Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation
+
+=== Just add one sentence per line (ASM-9)
+
+* Insert a line break after each sentence.
+* Do not add manual line breaks inside sentences.
+
+*Instruction*
+
+* _"Only hit 'enter' after a period ('.'), but make sure to hit 'enter' after a period."_
+
+*Example*
+
+```
+* This is the first sentence.
+* This is the second sentence.
+* This is the third sentence.
+```
+
+*Source*
+
+ASAM Writing Guide
+
+=== Choose a suitable type of list (ASM-10)
+
+==== Use a bulleted list for things that have something in common but don’t need to appear in a particular order.
+
+*Example*
+
+```
+The database owner can:
+
+* Create and delete a database.
+* Add, delete, or modify a document.
+* Add, delete, or modify any information in the database
+```
+
+*Source*
+
+Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists
+
+==== Use a numbered list for sequential items (like a procedure) or prioritized items (like a top 10 list).
+
+*Example*
+
+```
+To sign on to a database:
+
+1. On the File menu, select Open database.
+2. In Username, enter your name.
+3. In Password, enter your password, and then select OK.
+```
+
+*Source*
+
+Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists
+
+=== Do not put punctuation or conjunctions at the end of a list item if it is not a full sentence (ASM-11)
+
+If an item in a list is not a full sentence, then do not put the following punctuation or conjunctions:
+
+* Full stops (periods)
+* Semicolons
+* Commas
+* Conjunctions like and or or
+
+*Example*
+
+[#tab-UUID]
+.Use of punctuation and conjunctions at the end of an item
+[%header]
+|===
+|No |#Yes#
+|[.line-through]#* Common junctions,# +
+[.line-through]#* Direct junctions, and# +
+[.line-through]#* Virtual junctions.#
+|* Common junctions +
+* Direct junctions +
+* Virtual junctions
+|===
+
+*Source*
+
+* ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
+* Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation
+* Google Developer Documentation Style Guide: https://developers.google.com/style/lists
+
+=== Use lists with similarly structured items for complex text (ASM-42)
+
+Use lists instead of long sentences to present complex text in a way that is easier to read and understand.
+The list items shall be a set of similarly structured items.
+For example, each item should be a noun or a phrase that starts with a verb.
+
+*Example*
+
+```
+The outline of the road marking is described by the attributes @length and @space:
+
+* @length represents the visible part of the line.
+* @space describes the non-visible part.
+```
+
+*Source*
+
+* ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
+* Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists
+* Google Developer Documentation Style Guide: https://developers.google.com/style/lists
