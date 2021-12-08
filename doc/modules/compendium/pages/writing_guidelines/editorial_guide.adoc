@@ -60,6 +60,17 @@ These rules apply to lists:
 * This is the third sentence.
 ```
 
+*Exceptions*
+
+If a list item starts with one of the following, do not use an uppercase letter:
+
+* Code elements +
+For example: * `<elevation>` elements shall be defined in ascending order according to the s-coordinate.
+* Mathematical signs +
+For example: * `x` and `y`
+* URLs +
+For example: * http://www.asam.net
+
 *Source*
 
 ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
