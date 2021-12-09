@@ -3,22 +3,25 @@ from os import walk
 from helpers import asciidoc as A
 from helpers import constants as C
 
-
-def main(argv):
+def check_parameters(argv):
     parameters = "p:"
     parameters_long = ["path="]
     path = "../"
-    excluded_directory_names = ["assets","examples","partials"]
 
     try:
         opts, args = getopt.getopt(argv,parameters,parameters_long)
     except:
         print("Use '-p <path>' or '--path <path>' to specifiy the path the script shall look into.")
+        exit(1)
 
     for opt,arg in opts:
         if opt in ("-p","--path"):
             path = path + arg
 
+    return path
+
+def main(argv):
+    path = check_parameters(argv)
 
     found_files = []
     for (dirpath, dirnames, filenames) in walk(path):
@@ -27,7 +30,7 @@ def main(argv):
 
         skip = False
         dirpath = dirpath.replace("\\",C.PATH_DIVIDER)
-        for exc in excluded_directory_names:
+        for exc in C.EXCLUDED_DIRECTORY_NAMES:
             if dirpath.find(C.PATH_DIVIDER+exc)>-1:
                 skip = True
                 break
@@ -49,11 +52,6 @@ def main(argv):
         found_files.append(attributes_file)
 
     for afile in found_files:
-        macro_found = afile.find_reference_macro()
-        macro_found = afile.find_related_topics_macro()
-        macro_found = afile.find_role_related_topics_macro()
-
-    for afile in found_files:
         if afile in found_files[0].reference_macro_occurence_list:
             afile.find_reference_macro(find_and_replace=True)
 
@@ -62,6 +60,9 @@ def main(argv):
 
         if afile in found_files[0].role_related_topics_macro_occurence_list:
             afile.find_role_related_topics_macro(find_and_replace=True)
+
+        if afile in found_files[0].pages_macro_occurence_list:
+            afile.find_pages_macro(find_and_replace=True)
 
         afile.write_to_file()
         afile.revert_macro_substitution()

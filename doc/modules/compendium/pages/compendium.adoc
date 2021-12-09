@@ -2,6 +2,7 @@
 :description: Landing page for all automatically gathered knowledge pieces and content in this Project Guide.
 :keywords: landing_page,compendium
 :page-aliases: home.adoc
+:adoc-exclude:
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -11,6 +12,6 @@ include::ROOT:partial$_attributes.adoc[]
 
 TODO
 
-files::[]
+pages::[]
 
 related::landing_page[]

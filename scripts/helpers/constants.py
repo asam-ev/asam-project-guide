@@ -13,7 +13,7 @@ MODULE_SEPARATOR = ":"
 # Default Values
 DEFAULT_OUTPUT_PATH = "output/"
 DEFAULT_OUTPUT_FILENAME = "results"
-
+EXCLUDED_DIRECTORY_NAMES = ["assets","examples","partials"]
 
 # Attributes
 KEYWORDDS = "keywords"
@@ -25,6 +25,7 @@ ROLE_MACRO = "role_related::"
 RELATED_MACRO = "related::"
 LINK_MACRO = "link:"
 INCLUDE_MACRO = "include::"
+PAGES_MACRO = "pages::"
 
 # Composite Constants
 NAV = "nav"+ASCIIDOC_FILEEXTENSION

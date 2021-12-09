@@ -1,27 +1,36 @@
 import copy
 import re
+from os import walk
 
 from helpers import constants as C
 from helpers import functions as F
 
 class AsciiDocContent:
+    # Global dicts for referencing
     attr_dict = {}
     keywords_dict = {}
     roles_dict = {}
-    reference_macro_occurence_list = []
-    related_topics_macro_occurence_list = []
-    role_related_topics_macro_occurence_list = []
-    include_by_keyword_macro_occurence_list = []
     xref_occurence_dict = {}
     link_occurence_dict = {}
     inverse_link_ocurence_dict = {}
     local_xref_occurence_dict = {}
-    adoc_files = []
     partial_include_dict = {}
 
+    # Lists of AsciiDocContent instances where a custom macro was found
+    reference_macro_occurence_list = []
+    related_topics_macro_occurence_list = []
+    role_related_topics_macro_occurence_list = []
+    pages_macro_occurence_list = []
+    include_by_keyword_macro_occurence_list = []
+
+    # Internal list of all instances of this class
+    adoc_files = []
+
+    # Global patterns definition
     pattern_keywords = ""
     pattern_attr = ""
     pattern_roles = ""
+    pattern_pages = ""
     pattern_ref = ""
     pattern_role_reltop = ""
     pattern_reltop = ""
@@ -36,7 +45,29 @@ class AsciiDocContent:
         content = []
         with open(path+filename,"r") as file:
             content = file.readlines()
+        self.check_patterns_exist()
 
+        self.content = content
+        self.original_content = copy.deepcopy(self.content)
+        self.filename = filename
+        self.path = path
+        self.module, self.module_path = self._set_module_and_module_path()
+        self.update_linking_dicts()
+        if not self in self.adoc_files:
+            self.adoc_files.append(self)
+
+        self.type = self._get_type_from_path(self.path)
+        self.find_attributes()
+        self.find_keywords()
+        self.find_roles()
+        self._get_all_partial_includes()
+
+        self.find_reference_macro()
+        self.find_related_topics_macro()
+        self.find_role_related_topics_macro()
+        self.find_pages_macro()
+
+    def check_patterns_exist(self):
         if not self.pattern_keywords:
             self.pattern_keywords = re.compile("^\s*:{keywords}:(.*)".format(keywords = C.KEYWORDDS))
 
@@ -64,20 +95,9 @@ class AsciiDocContent:
         if not self.pattern_local_xref_macro:
             self.pattern_local_xref_macro = re.compile("<<{1,2}([^#\n\,]*)(,[^>]*)?>>")
 
-        self.content = content
-        self.original_content = copy.deepcopy(self.content)
-        self.filename = filename
-        self.path = path
-        self.module, self.module_path = self._set_module_and_module_path()
-        self.update_linking_dicts()
-        if not self in self.adoc_files:
-            self.adoc_files.append(self)
+        if not self.pattern_pages:
+            self.pattern_pages = re.compile("^\s*{page}[\[]*\[(.*)\]\n?".format(page = C.PAGES_MACRO))
 
-        self.type = self._get_type_from_path(self.path)
-        self.find_attributes()
-        self.find_keywords()
-        self.find_roles()
-        self._get_all_partial_includes()
 
     def _set_module_and_module_path(self):
         module, __, __, module_path = self._get_module_from_path(self.path)
@@ -210,6 +230,10 @@ class AsciiDocContent:
         found = self._find_macro_of_type(self.pattern_role_reltop,find_and_replace,"role-related-topics")
         return found
 
+    def find_pages_macro(self, find_and_replace=False):
+        found = self._find_macro_of_type(self.pattern_pages,find_and_replace,"pages")
+        return found
+
     def find_reference_macro(self, find_and_replace=False):
         found = self._find_macro_of_type(self.pattern_ref,find_and_replace,"reference")
         return found
@@ -226,6 +250,9 @@ class AsciiDocContent:
 
     def _add_to_role_related_topics_macro_occurence_list(self):
         self.role_related_topics_macro_occurence_list.append(self)
+
+    def _add_to_pages_macro_occurence_list(self):
+        self.pages_macro_occurence_list.append(self)
 
     def _find_macro_of_type(self,pattern,find_and_replace,type):
         found = False
@@ -252,6 +279,11 @@ class AsciiDocContent:
                     else:
                         self._add_to_role_related_topics_macro_occurence_list()
                         break
+                elif(type=="pages"):
+                    if find_and_replace:
+                        self.substitute_pages_macro(result[0],i)
+                    else:
+                        self._add_to_pages_macro_occurence_list()
                 else:
                     print("Unknown type for find_macro_of_type provided: "+type)
                     return False
@@ -278,7 +310,44 @@ class AsciiDocContent:
         offset = 2
         self.insert_references_in_content(line,offset,ref_list,self.roles_dict)
 
-    def make_cross_reference_replacements(self,ref_list_input):
+    def substitute_pages_macro(self,arg_list,line):
+        args = arg_list.split(",")
+        do_all = False
+        if "all" in args:
+            do_all = True
+
+        self.content[line] = "== Pages\n\n"
+        self.content.insert(line+1,"")
+        offset = 2
+        pages_dict = self.get_other_pages_and_folders(do_all)
+        fake_ref_list = [self.filename]
+        self.insert_references_in_content(line,offset,fake_ref_list,pages_dict)
+
+    def get_other_pages_and_folders(self,do_all):
+        files = []
+        folders = []
+        new_dict = {}
+        for (dirpath, dirnames, filenames) in walk(self.path):
+            if(dirpath[-1] != C.PATH_DIVIDER):
+                dirpath += C.PATH_DIVIDER
+
+            dirpath = dirpath.replace("\\",C.PATH_DIVIDER)
+
+            for filename in filenames:
+                if filename == self.filename:
+                    continue
+
+                if filename.endswith(C.ASCIIDOC_FILEEXTENSION):
+                    files.append((dirpath,filename))
+
+            folders = dirnames
+            if not do_all:
+                break
+
+        new_dict[self.filename] = files
+        return new_dict
+
+    def get_references_and_exceptions(self,ref_list_input):
         ref_list = ref_list_input[0]
         total_ref_elements = [x.replace(" ","") for x in ref_list.split(",")]
         references = [x.replace(" ","") for x in ref_list.split(",") if not x.startswith("!")]
@@ -286,7 +355,7 @@ class AsciiDocContent:
         return references,exceptions
 
     def insert_references_in_content(self,line,offset,ref_list,target_dict):
-        references, exceptions = self.make_cross_reference_replacements(ref_list)
+        references, exceptions = self.get_references_and_exceptions(ref_list)
         replacement_content = []
         if references:
             for ref in references:
@@ -308,7 +377,6 @@ class AsciiDocContent:
 
         try:
             links = target_dict[ref_text]
-
         except:
             # raise ReferenceNotFound(ref_text+" not found in keys: "+self.attributes_dict.keys())
             print(ref_text+" not found in keys: "+",".join(target_dict.keys()))
