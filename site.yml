@@ -10,7 +10,7 @@ content:
       branches: HEAD
       tags: open*
       start_path: doc
-      edit_url: 'https://github.com/asam-ev/asam-project-guide/-/blob/{refname}/{path}'
+      edit_url: 'https://github.com/asam-ev/asam-project-guide/blob/{refname}/{path}'
 
 
 # ui:
