@@ -64,7 +64,7 @@ You can delete unused terminals or keep multiple independent ones open if you li
 image::PSWithVsCodeAdd.gif[width = 720]
 
 . Click on "Terminal -> "New Terminal"
-. Select the correct projectd folder
+. Select the correct project folder
 
 === Administration access
 
