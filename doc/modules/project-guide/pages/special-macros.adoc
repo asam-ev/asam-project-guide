@@ -2,6 +2,9 @@
 :description: Lists all custom macros used throughout the Project Guide that require special scripts by ASAM to be processed correctly.
 :keywords: macro,script,asam,custom,project-guide
 
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
 Antora and Asciidoctor already provide a rich set of features and macros.
 However, not all functions that ASAM requires for an efficient and partially automated content structuring are present by default.
 For this reason, some additional scripts were created that can be executed locally or in the pipeline when building the Project Guide.

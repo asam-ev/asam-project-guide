@@ -1,6 +1,7 @@
 = The Release phase
 :description: Describes the Release phase in the ASAM development process for standards.
 :keywords: release,phase,standard,process
+
 include::partial$_attributes.adoc[]
 include::{abb}[]
 

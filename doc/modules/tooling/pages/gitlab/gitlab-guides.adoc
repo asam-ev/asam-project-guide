@@ -3,6 +3,9 @@
 :keywords: guides,gitlab
 :offset-value: leveloffset=+1
 
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
 include::compendium:page$tools/gitlab/gitlab-ide-guide.adoc[{offset-value}]
 
 include::compendium:page$tools/gitlab/gitlab-terminology.adoc[{offset-value}]

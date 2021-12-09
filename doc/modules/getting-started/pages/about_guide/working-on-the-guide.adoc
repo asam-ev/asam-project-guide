@@ -1,4 +1,9 @@
 = Working on the Project Guide
+:description: todo
+:keywords: todo
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
 
 Explains how to work on the Project Guide and where to find important guidelines, information etc.
 

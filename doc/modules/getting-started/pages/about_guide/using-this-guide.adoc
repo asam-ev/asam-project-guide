@@ -1,4 +1,9 @@
 = Using this guide
+:description: todo
+:keywords: todo
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
 
 This summarizes information on how to use this guide.
 

@@ -1,6 +1,7 @@
 = The Development phase
 :description: Describes the Proposal phase in the ASAM development process for standards.
 :keywords: development,phase,standard,process
+
 include::partial$_attributes.adoc[]
 include::{abb}[]
 

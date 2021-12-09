@@ -7,8 +7,8 @@ include::{abb}[]
 
 ASAM distinguishes between two types of development:
 
-* <<Standard Development>>
-* <<Other Project Types>>
+* <<Standard development>>
+* <<Other project types>>
 
 .Project types
 image::project_types.png[]
