@@ -1,10 +1,14 @@
 * xref:home.adoc[]
-** xref:new-idea.adoc[]
-** New Standard: Join Proposal Workshop
-** Active Project: Join As Work Group Member
-** Active Project: Lead a Project
-** Join Webinar
-** Become A Service Provider
-** Review A Standard
+** Ideation
+*** xref:ideation/new-idea.adoc[]
+** Proposal
+*** xref:proposal/proposal_workshop.adoc[]
+** Development
+*** xref:development/workgroup_member.adoc[]
+*** xref:development/project_lead.adoc[]
+** xref:webinar.adoc[]
+** xref:service_provider.adoc[]
+** Review
+*** xref:review/review_standard.adoc[]
 
 // You may use links to pages or text for non-linked headers

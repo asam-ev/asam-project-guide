@@ -26,10 +26,10 @@ This process consists of five phases and a total of up to fifteen process steps,
 //tag::enumerated[]
 
 [horizontal]
-Phase 1:: {ideation-phase}
-Phase 2:: {proposal-phase}
-Phase 3:: {development-phase}
-Phase 4:: {review-phase}
-Phase 5:: {release-phase}
+Phase 1 (I):: {ideation-phase}
+Phase 2 (P):: {proposal-phase}
+Phase 3 (D):: {development-phase}
+Phase 4 (C):: {review-phase}
+Phase 5 (R):: {release-phase}
 
 //end::enumerated[]

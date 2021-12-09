@@ -5,7 +5,7 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-== Want to add a new idea?
+
 include::standardization:partial$project-ideation.adoc[tag=short]
 
 Enter your idea for a new project through the ideation process:

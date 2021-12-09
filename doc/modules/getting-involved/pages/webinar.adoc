@@ -1,0 +1,7 @@
+= Join a webinar
+:description: Describes how to join an ASAM webinar.
+:keywords: webinar
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+

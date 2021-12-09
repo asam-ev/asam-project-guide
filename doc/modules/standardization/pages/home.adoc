@@ -9,7 +9,7 @@ include::ROOT:partial$_attributes.adoc[]
 {standardization-icon}
 
 Creating standards at ASAM follows very specific processes.
-Everyone involved in such activities must familiarize themselves with these to understand the DOs and DON'Ts and to minimize complications and overhead.
+Everyone involved in such activities must familiarize themselves with these to understand the **DOs** and **DON'Ts** in order to minimize complications and overhead.
 
 Reading through these may also provide a better understanding on what is expected at which point during a project's life cycle.
 
@@ -24,5 +24,3 @@ Reading through these may also provide a better understanding on what is expecte
 ** {release-phase}
 * {project-setup}
 * {creation-of-standards}
-
-related::landing_page[]

@@ -24,7 +24,7 @@ The statutes are public and can be accessed through the https://www.asam.net/asa
 == The project development process
 ASAM projects follow a defined development process.
 
-* For a general overview, see the xref:new_here/processes-and-workflows-overview.adoc[].
+* For a general overview, see the xref:processes-and-workflows-overview.adoc[].
 
 * A more detailed summary of the ASAM processes can be found in the xref:standardization:home.adoc[] of this guide.
 
