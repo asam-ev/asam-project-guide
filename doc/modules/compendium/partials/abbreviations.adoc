@@ -1,7 +1,7 @@
 
-:abb: xref:compendium:abbreviations.adoc
+:abb-link: xref:compendium:abbreviations.adoc#_
 
-:api: {abb}#_api[API]
-:tsc: {abb}#_tsc[TSC]
-:vscode: {abb}#_vscode[VSCode]
+:api: {abb-link}api[API]
+:tsc: {abb-link}tsc[TSC]
+:vscode: {abb-link}vscode[VSCode]
 
