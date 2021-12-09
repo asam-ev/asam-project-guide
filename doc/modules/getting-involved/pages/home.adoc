@@ -8,6 +8,14 @@ include::ROOT:partial$_attributes.adoc[]
 
 {getting-involved-icon}
 
-TODO
+[IMPORTANT]
+====
+**If you are not an ASAM member yet, see https://www.asam.net/about-asam/join-asam/[join ASAM on the ASAM website^].**
+The linked page contains all necessary information on membership, benefits and related topics.
+====
 
-related::landing_page[]
+You want to **propose an idea**, **join a proposal** or **define a new standard** at ASAM?
+This section describes requirements and necessary steps for doing so.
+
+
+pages::[all]
