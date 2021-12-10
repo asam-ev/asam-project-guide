@@ -949,7 +949,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ASM-2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Heading case</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-2">Start headings with a capital letter (ASM-2)</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
 </tr>
@@ -970,7 +970,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ASM-5</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">List capitalization</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-5">Start each list item in a list with an uppercase letter (ASM-5)</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
 </tr>
@@ -1230,6 +1230,13 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">ASM-42</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">List order</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASM-43</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backticks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-43">Use backticks for inline literals (ASM-43)</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
 </tr>
@@ -1564,6 +1571,61 @@ For example, each item should be a noun or a phrase that starts with a verb.</p>
 <p>Google Developer Documentation Style Guide: <a href="https://developers.google.com/style/lists" class="bare">https://developers.google.com/style/lists</a></p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_source_code_examples"><a class="anchor" href="#_source_code_examples"></a>Source code examples</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These rules apply to source code examples:</p>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-43"><a class="anchor" href="#sec-ASM-43"></a>Use backticks for inline literals (ASM-43)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use pairs of single backticks (` `) for inline literals.</p>
+</li>
+<li>
+<p>Do not use pairs of double backticks (`` ``).
+In AsciiDoc, double backticks are used <a href="https://docs.asciidoctor.org/asciidoc/latest/text/monospace/#unconstrained">for text formatting in certain cases</a>.
+Unfortunately, this causes poor wording and readability and therefore shall not be used.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<table id="tab-ce27729f-33c4-47b2-a579-e7a1c2434c3a" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Use backticks for inline literals</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">No</th>
+<th class="tableblock halign-left valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">The example below shows the structure of an ``Act``.</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The example below shows the structure of an `Act`.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">Movements of vehicles in ``Act`` are defined in the ``ManeuverGroup``s section.</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Movements of vehicles in `Act` are defined in the `ManeuverGroup` section.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM Writing Guide: 6.1. Inline literals</p>
 </div>
 </div>
 </div>
