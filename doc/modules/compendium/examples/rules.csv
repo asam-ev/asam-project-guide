@@ -1,9 +1,9 @@
 ID,Short_Description,Link_to_Project_Guide,Link_to_Test,Status
 ASM-1,No fixed versioning,-,-,draft
-ASM-2,Heading case,-,-,draft
+ASM-2,Heading case,<<sec-ASM-2>>,-,draft
 ASM-3,Heading punctuation,-,-,draft
 ASM-4,Heading numbering,-,-,draft
-ASM-5,List capitalization,-,-,draft
+ASM-5,List capitalization,<<sec-ASM-5>>,-,draft
 ASM-6,List punctuation,<<sec-ASM-6>>,-,draft
 ASM-7,List completeness (...),-,-,draft
 ASM-8,List content,<<sec-ASM-8>>,-,draft
@@ -41,3 +41,4 @@ ASM-39,Mapping file defines structure,-,-,draft
 ASM-40,Mapping file named main.adoc,-,-,draft
 ASM-41,Deliverable naming,-,-,draft
 ASM-42,List order,-,-,draft
+ASM-43,Backticks,<<sec-ASM-43>>,-,draft

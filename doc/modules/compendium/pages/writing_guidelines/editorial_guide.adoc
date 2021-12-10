@@ -207,3 +207,30 @@ If an item in a list is not a full sentence, then do not put the following punct
 * ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 * Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation
 * Google Developer Documentation Style Guide: https://developers.google.com/style/lists
+
+== Source code examples
+
+These rules apply to source code examples:
+
+[#sec-ASM-43]
+=== Use backticks for inline literals (ASM-43)
+
+* Use pairs of single backticks (` `) for inline literals.
+* Do not use pairs of double backticks (\\`` ``).
+In AsciiDoc, double backticks are used https://docs.asciidoctor.org/asciidoc/latest/text/monospace/#unconstrained[for text formatting in certain cases].
+Unfortunately, this causes poor wording and readability and therefore shall not be used.
+
+*Example*
+
+[#tab-ce27729f-33c4-47b2-a579-e7a1c2434c3a]
+.Use backticks for inline literals
+[%header]
+|===
+|No |#Yes#
+|[.line-through]#The example below shows the structure of an \\``Act``.#                             |The example below shows the structure of an \`Act`.
+|[.line-through]#Movements of vehicles in \\``Act`` are defined in the \``ManeuverGroup``s section.# |Movements of vehicles in \`Act` are defined in the \`ManeuverGroup` section.
+|===
+
+*Source*
+
+ASAM Writing Guide: 6.1. Inline literals
