@@ -1,4 +1,4 @@
-Number,Short_Description,Link_to_Project_Guide,Link_to_Test,Status
+ID,Short_Description,Link_to_Project_Guide,Link_to_Test,Status
 ASM-1,No fixed versioning,-,-,draft
 ASM-2,Heading case,-,-,draft
 ASM-3,Heading punctuation,-,-,draft
@@ -21,7 +21,7 @@ ASM-19,LOT created automatically,-,-,draft
 ASM-20,No Trailing whitespaces,-,-,draft
 ASM-21,Modal verbs,-,-,draft
 ASM-22,Standard ASAM Chapter structure,-,-,draft
-ASM-23,Document Extention .adoc,-,-,draft
+ASM-23,Document extension .adoc,-,-,draft
 ASM-24,Two blank lines,-,-,draft
 ASM-25,One sentence per line,-,-,draft
 ASM-26,No empty chapters,-,-,draft
