@@ -1,18 +1,24 @@
+[#top-cf80501d-bcfb-4014-82b7-ee21314f52d9]
 = Editorial guide
+:description: Editorial guide for technical writers
+:keywords: writing_guide
+:numbered:
 
-This section contains the editorial guide for technical writers and project members.
+include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
-It contains rules for contributing content to a project in written form.
+{role-technical-writer}
+{role-wg-member}
 
-* Rule shall have a unique identifier, for example 1234
-* Is it useful to have a list that contains all rules?
-* Source of the rule, for example microsoft.com
-* Instructions for technical writers
-* Negative Example and positive Example in a table
-* Decision Guidance
-* Potential for automatic checking, for example with link on vale rule
 
-== List of rules
+This section contains the ASAM Editorial Guide for technical writers and working group members.
+It contains editorial rules for contributing content to a project in written form.
+
+If an editorial rule is missing in the ASAM Editorial Guide, follow the guidelines in the xref:compendium:writing_guidelines/documentation_processes.adoc#sec-18931c78-0dc9-46a5-9e4d-e00c39c7ce8b[Creating new editorial rules] section to add a missing rule.
+
+== List of editorial rules
+
+This section contains a list of the entire editorial rules.
 
 [format=csv]
 |===
@@ -21,7 +27,7 @@ include::compendium:example$rules.csv[]
 
 == Headings
 
-This section contains rules how to create headings.
+This section contains editorial rules on how to create headings.
 
 [#sec-ASM-2]
 === Start headings with a capital letter (ASM-2)
@@ -47,7 +53,7 @@ ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 == Lists
 
-These rules apply to lists:
+These editorial rules apply to lists:
 
 [#sec-ASM-5]
 === Start each list item in a list with an uppercase letter (ASM-5)
@@ -140,7 +146,7 @@ The outline of the road marking is described by the attributes @length and @spac
 
 *Source*
 
-ASAM Writing Guide
+ASAM Writing Guide: 4.3. One sentence per line
 
 [#sec-ASM-10]
 === Choose a suitable type of list (ASM-10)
@@ -217,6 +223,7 @@ These rules apply to source code examples:
 
 * Use pairs of single backticks (` `) for inline literals.
 * Do not use pairs of double backticks (\\`` ``).
+
 In AsciiDoc, double backticks are used https://docs.asciidoctor.org/asciidoc/latest/text/monospace/#unconstrained[for text formatting in certain cases].
 Unfortunately, this causes poor wording and readability and therefore shall not be used.
 
