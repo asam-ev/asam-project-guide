@@ -10,6 +10,8 @@ See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[Tortoi
 
 When a certain version of the submodule is needed, go into the submodule and checkout the needed version.
 
+.Full example for update versiono of a submodule (for asciidoc-resources)
+====
 [source,console]
 ----
 cd asciidoc-resources
@@ -17,6 +19,7 @@ git checkout [tag]
 cd ..
 git add asciidoc-resources
 ----
+====
 
 * After that, `git commit` & `git push`.
 
