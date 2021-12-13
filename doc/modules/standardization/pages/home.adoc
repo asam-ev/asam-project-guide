@@ -24,3 +24,19 @@ Reading through these may also provide a better understanding on what is expecte
 ** {release-phase}
 * {project-setup}
 * {creation-of-standards}
+
+ifdef::draft[]
+== TEST2
+
+[mermaid,subs=macros]
+----
+graph LR
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+    click A "../../getting-started/main.html" _top
+    click B "../../getting-started/main.html" _parent
+----
+endif::[]

@@ -7,7 +7,45 @@ include::{abb}[]
 
 The purpose of the Proposal phase is to transfer ideas for standard development into a specific ASAM project proposal and to obtain a decision on the proposal.
 
-image::proposal_phase.png[title="The Proposal Phase"]
+// image::proposal_phase.png[title="The Proposal Phase"]
+
+// .The Proposal phase
+// [mermaid,Proposal phase, subs=attributes]
+// ----
+// include::example$diagrams/phase_proposal.mermaid[]
+// ----
+
+// .The Proposal phase - p1
+// [mermaid,Proposal phase, subs=attributes]
+// ----
+// include::example$diagrams/phase_proposal_1.mermaid[]
+// ----
+
+// .The Proposal phase - p2
+// [mermaid,Proposal phase, subs=attributes]
+// ----
+// include::example$diagrams/phase_proposal_2.mermaid[]
+// ----
+
+// .The Proposal phase - p3
+// [mermaid,Proposal phase, subs=attributes]
+// ----
+// include::example$diagrams/phase_proposal_3.mermaid[]
+// ----
+
+// .The Proposal phase - plantuml
+// [plantuml,Proposal phase, subs=attributes]
+// ----
+// include::example$diagrams/phase_proposal.puml[]
+// ----
+
+// .The Proposal phase - graphviz
+// [graphviz,Proposal phase, subs=attributes]
+// ----
+// include::example$diagrams/phase_proposal.grviz[]
+// ----
+
+image::proposal_phase_v2.drawio.svg[title="The Proposal Phase",opts=interactive]
 
 == P1 - Proposal Workshop
 include::partial$proposal-workshop.adoc[tag=long]
