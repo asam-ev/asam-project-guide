@@ -35,6 +35,7 @@ runtime:
 
 asciidoc:
   attributes:
+    page-pagination: true
     guide-repo-url: https://github.com/asam-ev/asam-project-guide/
     hide-uri-scheme:
     gitlab-url: https://code.asam.net
