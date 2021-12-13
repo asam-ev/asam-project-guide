@@ -1,7 +1,8 @@
 
 //tag::image[]
 
-image::standardization:asam-development-process.png[]
+// image::standardization:asam-development-process.png[]
+image::standardization:asam-development-process.drawio.svg[title="ASAM Development Process for Standards",opts=interactive]
 
 //end::image[]
 
@@ -29,7 +30,7 @@ This process consists of five phases and a total of up to fifteen process steps,
 Phase 1 (I):: {ideation-phase}
 Phase 2 (P):: {proposal-phase}
 Phase 3 (D):: {development-phase}
-Phase 4 (C):: {review-phase}
-Phase 5 (R):: {release-phase}
+Phase 4 \(C):: {review-phase}
+Phase 5 \(R):: {release-phase}
 
 //end::enumerated[]
