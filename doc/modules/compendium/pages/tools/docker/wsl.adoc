@@ -4,6 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 WSL is short for Windows Subsystem for Linux.
 From link:https://docs.microsoft.com/en-us/windows/wsl/about[ window=_blank]:

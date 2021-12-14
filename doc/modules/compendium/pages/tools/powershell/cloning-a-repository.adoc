@@ -3,6 +3,7 @@
 :keywords: powershell,how-to,clone,cloning,git,bash,repository,repo
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 . Find the repository url on the website and copy the git url
 

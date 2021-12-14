@@ -1,4 +1,9 @@
 = Microsoft PowerShell Basics
+:description: Describes how to open up a MS PowerShell.
+:keywords: powershell
+
+include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 == How to open microsoft PowerShell
 

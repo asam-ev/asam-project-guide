@@ -2,4 +2,7 @@
 :description: Contains a description of the proposal template
 :keywords: proposal, template
 
+include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
+
 TODO

@@ -4,6 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 Rebase interactively.
 Squash commits like "Fix whitespace" into one or a small number of valuable commit(s).

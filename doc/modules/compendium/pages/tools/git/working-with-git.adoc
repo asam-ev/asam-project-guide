@@ -4,6 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 TIP: It is best practice to check for changes on remote before changing files locally and before pushing changes to remote.
 

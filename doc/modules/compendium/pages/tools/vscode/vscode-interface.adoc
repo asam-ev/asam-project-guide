@@ -2,6 +2,9 @@
 :description: Describes the VSCode interface
 :keywords: ui,interface,vscode
 
+include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
+
 image::compendium:vscode_ui.png[]
 
 // TODO: Add colors to Antora as well

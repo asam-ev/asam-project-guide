@@ -3,6 +3,8 @@
 :keywords: sharepoint,synchronization,synch,onedrive
 :page-partial:
 
+include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 .Demo on synchronizing
 image::compendium:snychronizing_with_onedrive.gif[Demo on synchronizing]

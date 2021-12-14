@@ -4,6 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 A base standard defines the syntax, abstract models, and functionality for general use.
 A base standard is defined in a technology-independent form.

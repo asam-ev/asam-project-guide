@@ -4,7 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
-
+include::{abb}[]
 
 == Merge commit strategy
 - History of commits in a PR must be clean prior to merge

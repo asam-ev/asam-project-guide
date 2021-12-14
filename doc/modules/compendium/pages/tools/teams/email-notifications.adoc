@@ -4,6 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 == Context
 Notifications in Microsoft Teams (MS Teams) can be easily overlooked.

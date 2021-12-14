@@ -5,6 +5,7 @@
 :asam: {abb-link}asam[ASAM]
 :ccb: {abb-link}ccb[CCB]
 :cr: {abb-link}cr[CR]
+:dco: {abb-link}dco[DCO]
 :tsc: {abb-link}tsc[TSC]
 :vscode: {abb-link}vscode[VSCode]
 
@@ -22,6 +23,9 @@ Change Control Board:: TODO
 
 == CR
 Change Request:: TODO
+
+== DCO
+Developer Certificate of Origin:: The DCO is an attestation attached to every contribution made by every developer.
 
 == TSC
 Technical Steering Committee::

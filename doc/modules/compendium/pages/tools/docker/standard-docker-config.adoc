@@ -8,6 +8,7 @@
 
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 == Why use docker?
 

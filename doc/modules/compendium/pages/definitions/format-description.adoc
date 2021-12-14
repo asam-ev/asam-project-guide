@@ -4,6 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 A format description standard defines the syntax and semantics of a file format to exchange data.
 Currently these standards are defined in XML, but older standards, such as ASAM MCD-2 MC (ASAP2), still use proprietary ASCII formats.

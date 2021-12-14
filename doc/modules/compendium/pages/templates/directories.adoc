@@ -3,6 +3,7 @@
 :keywords: template
 
 include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 Depending on the content, there is a
 

@@ -3,6 +3,9 @@
 :keywords: sharepoint,link,links,projects
 :page-partial:
 
+include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
+
 WARNING: These links will only work for you if you have access to the corresponding project!
 
     * https://asamev.sharepoint.com/sites/asamopensimulationinterface/Freigegebene%20Dokumente/Forms/AllItems.aspx[OSI] - Link to the OSI standard

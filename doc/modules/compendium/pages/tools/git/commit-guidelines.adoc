@@ -4,7 +4,7 @@
 :page-partial:
 
 include::compendium:partial$_attributes.adoc[]
-
+include::{abb}[]
 
 See xref:compendium:tools/gitlab/commit_guidelines.adoc[]
 

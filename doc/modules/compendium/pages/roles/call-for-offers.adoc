@@ -1,6 +1,9 @@
 = Call for offers
 :description: Describes what a call for offers is and where to find information.
-:keywords:
+:keywords: service-provider
+
+include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
 
 {role-service-provider}
 

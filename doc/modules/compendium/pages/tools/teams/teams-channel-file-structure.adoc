@@ -3,6 +3,9 @@
 :keywords: teams,channel,file-structure
 :page-partial:
 
+include::compendium:partial$_attributes.adoc[]
+include::{abb}[]
+
 [source]
 ----
 ├───General(Allgemein)
