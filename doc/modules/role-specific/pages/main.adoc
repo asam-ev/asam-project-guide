@@ -105,27 +105,6 @@ Reviewer:: An ASAM Standard User or WG Member that reviews a draft or release ca
 Technical Writer:: Formats and writes the document(s) of the standard based on the provided input from the WG members in a formalized and standard-conform way.
 Service Provider:: Provides additional services necessary for the standard development.
 
-.Roles within ASAM Projects
-|===
-|Role               |required       | comment
-|GTM                |mandatory      | every project needs one responsible GTM within {asam}
-|Project Member     |mandatory      | every project needs project members from at least three different companies
-|Project Lead       |mandatory      | without an elected project lead the project may not start. The project lead is a project member elected by the project members to become the project lead.
-|Workgroup Member   |optional       | if the project is split up into smaller working groups, a project member can join a workgroup to become a workgroup member
-|Workgroup Lead     |optional       | if the project is split up into smaller working groups, a project member can be elected to be the workgroup lead and will support the project lead.
-|Service Provider   |optional       | if the project needs additional resources a service provider can be hired, this requires approved budget by the {tsc}
-| Technical Writer  |optional       | if the project requires a technical writer either the ASAM technical writer will fill this role or a service provider can be hired to fill that role.
-|===
-
-.Roles around ASAM Projects
-|===
-|Role               | comment
-|{tsc}                | The {tsc} is responsible to approve budget, and project as well as releases of project results, such as standards or concept papers
-|Standard User      | Someone who is using the ASAM standard
-|Reviewer          | A Standard user that want to provide feedback either in a Review phase or afterwards
-|===
-
-
 
   related::role,roles[]
 

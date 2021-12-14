@@ -23,7 +23,7 @@ Close those that aren’t
 
 *Who: WG Leads*
 
-. Compile a list of the features planned for implementation by each of the working groups.
+. Compile a list of the features planned for implementation by each of the  workgroups.
 This should include a first estimate of the delivery date for a first draft.
 This is based off of the table shared by Gil on 23.04:
 

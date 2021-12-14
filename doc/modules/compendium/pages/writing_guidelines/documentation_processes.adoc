@@ -14,7 +14,7 @@ include::{abb}[]
 == GitLab issues
 
 In ASAM projects, GitLab is used to manage the standard development processes.
-GitLab issues that are documentation related are created by working group members and technical writers.
+GitLab issues that are documentation related are created by workgroup members and technical writers.
 This section contains information on documentation related GitLab issues.
 
 === Life-cycles for GitLab issues
@@ -22,15 +22,15 @@ This section contains information on documentation related GitLab issues.
 This section displays the GitLab issue life-cycles when creating documentation for {asam} and explains labels used in GitLab for specific life-cycles.
 
 * Every documentation related GitLab issue shall have a `isDocumentationRelated` label.
-* If a GitLab issue is ready for creating content for the documentation, the working group members assign the `isReadyForServiceProvider` label to the issue.
+* If a GitLab issue is ready for creating content for the documentation, the workgroup members assign the `isReadyForServiceProvider` label to the issue.
 * If a technical writer starts working on the documentation, the technical writer assigns the `isInProgress` label to the GitLab issue.
 * If a technical writer has questions regarding a GitLab issue, the technical writer assigns the `needsClarification` label to the issue and adds the questions as a comment.
 * If a GitLab issue has been finally edited by a technical writer, the technical writer assigns the `needsReview` label to the issue.
 * All GitLab issues labeled `needsReview` will be discussed in the upcoming project meeting.
-The technical writer presents the changes to the working group members.
-* If the changes are accepted by the working group members, the GitLab issue is closed.
+The technical writer presents the changes to the workgroup members.
+* If the changes are accepted by the workgroup members, the GitLab issue is closed.
 * If there are objections regarding a change to the documentation, a new iteration process starts.
-Objections are communicated by the working group members and added as comments to the GitLab issue.
+Objections are communicated by the workgroup members and added as comments to the GitLab issue.
 
 ==== Labels for GitLab issues
 
@@ -48,15 +48,15 @@ Objections are communicated by the working group members and added as comments t
 == Editorial rules
 
 In the ASAM Editorial Guide, editorial rules exist.
-Working group members and technical writers shall apply the rules when creating documentation for ASAM.
+workgroup members and technical writers shall apply the rules when creating documentation for ASAM.
 This section contains information on how to create and apply editorial rules.
 
 === Using editorial rules
 
-. Provide the ASAM Editorial Guide to working group members and technical writers when a project starts.
-. Working group members should try to apply the editorial rules.
-. Technical writers may educate working group members who do not apply the editorial rules.
-. Technical writers shall review the content committed by working group members as soon as possible.
+. Provide the ASAM Editorial Guide to workgroup members and technical writers when a project starts.
+. workgroup members should try to apply the editorial rules.
+. Technical writers may educate workgroup members who do not apply the editorial rules.
+. Technical writers shall review the content committed by workgroup members as soon as possible.
 
 === Applying and creating rules
 

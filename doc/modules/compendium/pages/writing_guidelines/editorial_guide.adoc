@@ -11,7 +11,7 @@ include::{abb}[]
 {role-wg-member}
 
 
-This section contains the ASAM Editorial Guide for technical writers and working group members.
+This section contains the ASAM Editorial Guide for technical writers and workgroup members.
 It contains editorial rules for contributing content to a project in written form.
 
 If an editorial rule is missing in the ASAM Editorial Guide, follow the guidelines in the xref:compendium:writing_guidelines/documentation_processes.adoc#sec-18931c78-0dc9-46a5-9e4d-e00c39c7ce8b[Creating new editorial rules] section to add a missing rule.
