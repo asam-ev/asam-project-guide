@@ -18,7 +18,7 @@ TIP: You can find information on released standards and current projects on the 
 {asam-released}[Released ASAM standards^]
 ====
 
-All standards that have been previously created and approved can be found on the ASAM website.
+All standards that have been previously created and approved can be found on the {asam-released}[ASAM website^].
 
 == Current projects
 There are different stages for a project to be in.

@@ -1,6 +1,7 @@
 = How to get involved at ASAM
 :description: Landing page for information on how to get involved in ASAM projects.
 :keywords: landing_page,get-involved
+:page-aliases: home.adoc
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -10,11 +11,11 @@ include::ROOT:partial$_attributes.adoc[]
 
 [IMPORTANT]
 ====
-**If you are not an ASAM member yet, see https://www.asam.net/about-asam/join-asam/[join ASAM on the ASAM website^].**
+**If you are not an {asam} member yet, see https://www.asam.net/about-asam/join-asam/[join ASAM on the ASAM website^].**
 The linked page contains all necessary information on membership, benefits and related topics.
 ====
 
-You want to **propose an idea**, **join a proposal** or **define a new standard** at ASAM?
+You want to **propose an idea**, **join a proposal** or **define a new standard** at {asam}?
 This section describes requirements and necessary steps for doing so.
 
 

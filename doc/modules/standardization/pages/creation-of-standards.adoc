@@ -45,7 +45,7 @@ include::compendium:page$definitions/application-area-companion.adoc[{sublevel}]
 include::compendium:page$definitions/transport-layer-specification.adoc[{sublevel}]
 
 == Structure of standards
-ASAM e.V. provides a template for creating an ASAM specification, including a description of use and illustrated by examples.
+{asam} provides a template for creating an ASAM specification, including a description of use and illustrated by examples.
 The style sheet defines an identical look & feel for all ASAM standards.
 The main definitions are for the headers and footers, and for the cover page and directories.
 Rules for designing graphics, tables, source text, headings, etc. are included.

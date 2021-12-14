@@ -1,0 +1,8 @@
+= How to add a new abbreviation
+:description: Describes necessary steps to add a new abbreviation.
+:keywords: how-to
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+TODO

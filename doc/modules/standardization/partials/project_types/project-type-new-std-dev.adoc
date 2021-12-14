@@ -4,7 +4,7 @@ A new standard is developed from the outset. There is no predecessor in the ASAM
 //end::short[]
 
 //tag::long[]
-Start the development of a completely new standard within ASAM.
+Start the development of a completely new standard within {asam}.
 
 The development project meets one of the following criteria:
 

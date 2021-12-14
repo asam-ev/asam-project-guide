@@ -101,7 +101,7 @@ A partial is located in the "partials" folder (or a subfolder therein) of a modu
 Partials are not rendered into hmls by the Antora build pipeline.
 Instead, they can be included in pages and only be rendered in those.
 
-Partials also do not support all macros, particularly the ASAM macros are not applied.
+Partials also do not support all macros, particularly the xref:special-macros.adoc[ASAM macros] are not applied.
 
 * Partials **SHALL** be used for **reusable content** that is included in **at least two separate files**.
 * Partials **MAY** be sectioned with **tags**.

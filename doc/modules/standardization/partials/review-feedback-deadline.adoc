@@ -14,7 +14,7 @@
 // end::table[]
 The Office terminates the public draft review process by:
 
-- removing the draft standard download from the ASAM web page.
+- removing the draft standard download from the https://www.asam.net/active-projects/public-review/[ASAM website^].
 - closing the IT-solution to accept further review feedback.
 
 // end::long[]

@@ -5,7 +5,7 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-The purpose of the Review phase is to involve members of ASAM outside the project group to give their review feedback and to increase the overall quality and acceptance of the standard prior to its release.
+The purpose of the Review phase is to involve members of {asam} outside the project group to give their review feedback and to increase the overall quality and acceptance of the standard prior to its release.
 
 image::review_phase.png[title="The Review Phase"]
 

@@ -19,7 +19,7 @@ and has the following properties:
 * Platform-independent
 * Technology-independent
 * Supplier-independent
-* Does not contradict any other ASAM standard
+* Does not contradict any other https://www.asam.net/standards/[ASAM standard^]
 
 There are platform- and technology-specific mapping rules for each base standard.
 These are defined in xref:compendium:definitions/technology-reference.adoc[] as independent parts of the base standard.

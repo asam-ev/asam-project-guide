@@ -15,27 +15,27 @@ h|Name|Description|Location|Link
 {gitlab-url}[GitLab^]
 |All source code and standard relevant documentation.
 Issues relevant to deliverables should be created here.
-|ASAM
+|ASAM IT infrastructure
 |{gitlab-url}[Acess through Webbrowser^] +
 xref:tooling:gitlab.adoc[]
 
 |{calendar-icon-norole} +
 {calendar-url}[OpenX Calendar^]
 |Shared calendar for all OpenX projects.
-|ASAM
+|ASAM IT infrastructure
 |xref:tooling:calendar.adoc[]
 
 |{teams-icon-norole} +
 {teams-url}[Microsoft Teams^]
 |Chat, conferencing, document folder for sharing documents (e.g. research papers, notes, videos, anything that does not need to be versioned).
-|ASAM
+|ASAM IT infrastructure
 |xref:tooling:teams-and-sharepoint.adoc[]
 
 |{sharepoint-icon-norole} +
 {sharepoint-url}[Microsoft Sharepoint^]
 |Sharepoint is a Microsoft service that is used in the background by Teams to manage files.
 It can be accessed directly or through Teams, which is why all files that have been added either way can be retrieved through both tools.
-|ASAM
+|ASAM IT infrastructure
 |xref:tooling:teams-and-sharepoint.adoc[]
 
 |===

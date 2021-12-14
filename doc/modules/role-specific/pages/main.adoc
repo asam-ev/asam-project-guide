@@ -1,6 +1,7 @@
 = ASAM roles
 :description: The landing page for the ASAM Roles
 :keywords: landing_page,roles,asam
+:page-aliases: home.adoc
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -54,7 +55,7 @@ See xref:compendium:open-source/asam_dco.adoc[].
 === Project coordinator
 - Assists and supports the <<Project Leader,project leader>> in coordinating the project
 - Moderation of meetings
-- Harmonisation with other ongoing projects in- and outside of ASAM
+- Harmonisation with other ongoing projects in- and outside of {asam}
 - Technical & architectural support for the project
 
 === Legal reviewer
@@ -76,11 +77,11 @@ See xref:compendium:open-source/asam_dco.adoc[].
 - Develop/maintain the ASAM Simulation roadmap
 
 - Strategic analysis
-  - Identify/initiate further ASAM activities in Simulation
+  - Identify/initiate further {asam} activities in Simulation
   - Ensure no overlap of standards
   - Ensure alignment with external activities
 
-- Accelerate the ASAM decision making process
+- Accelerate the {asam} decision making process
   - Pre-approval, final approval stays with {tsc}
 
 - Review and refine relevant processes
@@ -107,7 +108,7 @@ Service Provider:: Provides additional services necessary for the standard devel
 .Roles within ASAM Projects
 |===
 |Role               |required       | comment
-|GTM                |mandatory      | every project needs one responsible GTM within ASAM
+|GTM                |mandatory      | every project needs one responsible GTM within {asam}
 |Project Member     |mandatory      | every project needs project members from at least three different companies
 |Project Lead       |mandatory      | without an elected project lead the project may not start. The project lead is a project member elected by the project members to become the project lead.
 |Workgroup Member   |optional       | if the project is split up into smaller working groups, a project member can join a workgroup to become a workgroup member
