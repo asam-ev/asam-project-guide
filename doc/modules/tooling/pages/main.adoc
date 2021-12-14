@@ -26,13 +26,13 @@ NOTE: Since {asam} does not develope those tools, descriptions and information o
 == Mandatory tools
 TIP: Instead of installing software locally, {asam} supports **{no-installation}** for some roles.
 
-include::tooling:partial$tools-list.adoc[tag=mandatory]
+include::tooling:partial$list-of-tools.adoc[tag=mandatory]
 
 reference::mandatory[]
 
 
 == Recommended tools
-include::tooling:partial$tools-list.adoc[tag=recommended]
+include::tooling:partial$list-of-tools.adoc[tag=recommended]
 
 reference::recommended[]
 
