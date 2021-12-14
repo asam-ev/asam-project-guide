@@ -3,7 +3,6 @@
 :keywords: asciidoc,comment,gitlab,vscode
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 For writing standards and concept paper in the simulation domain at ASAM, we use asciidoc.
 Our prefered editor for this is Visual Studio Code.

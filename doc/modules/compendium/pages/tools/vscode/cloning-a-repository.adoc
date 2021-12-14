@@ -3,7 +3,6 @@
 :keywords: vscode,how-to,clone,cloning,git,repository,repo
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 NOTE: This only needs to be done once to obtain a local copy.
 

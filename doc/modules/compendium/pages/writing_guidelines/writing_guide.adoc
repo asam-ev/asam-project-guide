@@ -5,7 +5,6 @@
 :numbered:
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 {role-technical-writer}
 

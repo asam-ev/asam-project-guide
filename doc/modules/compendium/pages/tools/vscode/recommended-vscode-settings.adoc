@@ -3,7 +3,6 @@
 :keywords: vscode,settings
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 :lookup: compendium:partial$vscode
 

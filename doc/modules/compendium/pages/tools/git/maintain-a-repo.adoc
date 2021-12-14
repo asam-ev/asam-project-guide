@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 - Avoid including files in source control that are specific to your development
   machine or process.

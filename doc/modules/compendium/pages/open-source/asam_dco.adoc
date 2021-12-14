@@ -3,7 +3,6 @@
 :keywords:
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 
 == Developer certification of origin (DCO)

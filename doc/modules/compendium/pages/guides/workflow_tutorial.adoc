@@ -3,7 +3,6 @@
 :keywords: gitlab,workflow,guide,tutorial
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 
 == Workflow tutorial for the projects using gitlab

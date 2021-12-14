@@ -4,7 +4,6 @@
 :keywords: git, submodule
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 
 {asam} uses submodules to include reuse resources in all repositories, e.g. document style configuration.

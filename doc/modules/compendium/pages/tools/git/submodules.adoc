@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 == What are submodules
 Submodules are a way to include other repositories within your repository.

@@ -4,6 +4,5 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 include::compendium:partial$set-of-standards.adoc[]

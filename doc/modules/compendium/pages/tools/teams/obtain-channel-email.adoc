@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 == Context
 Users can send mails to teams channels which are then automatically posted as messages in that channel.

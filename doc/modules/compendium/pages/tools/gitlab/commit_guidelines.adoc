@@ -3,7 +3,6 @@
 :keywords: gitlab,commit,guidelines
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 .ASAM OSC2 Commit Message Convention
 ----

@@ -3,7 +3,6 @@
 :keywords: service-provider
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 {role-service-provider}
 

@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 WARNING: These links will only work for you if you have access to the corresponding project!
 

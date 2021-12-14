@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 The draft number is counted up during the development of new versions. Before the release, the release candidate appears for review. The date is updated accordingly in all versions
 

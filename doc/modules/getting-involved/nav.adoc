@@ -2,6 +2,10 @@
 ** Ideation
 *** xref:ideation/new-idea.adoc[]
 ** Proposal
+*** xref:proposal/proposal_setup.adoc[]
+*** xref:proposal/contribute_with_issues.adoc[]
+*** xref:proposal/contribute_in_asciidoc.adoc[]
+*** xref:proposal/proposal_workshop_preparation.adoc[]
 *** xref:proposal/proposal_workshop.adoc[]
 ** Development
 *** xref:development/workgroup_member.adoc[]

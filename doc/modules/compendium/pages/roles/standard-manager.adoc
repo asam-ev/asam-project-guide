@@ -4,7 +4,6 @@
 
 //tag::default[]
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 {role-standard-manager}
 

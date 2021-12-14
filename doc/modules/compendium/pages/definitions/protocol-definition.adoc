@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 A protocol definition defines the syntax, semantics, and synchronization of communication.
 A communications protocol is a system of digital message formats and rules for exchanging the messages in or between computer systems.

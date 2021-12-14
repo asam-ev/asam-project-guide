@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 The Activity Bar contains a direct access to many important base or extensions features.
 The following image shows standard functionality, but some extensions like GitLens will add their own icon and features.

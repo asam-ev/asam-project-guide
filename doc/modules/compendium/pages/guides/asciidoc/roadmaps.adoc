@@ -5,7 +5,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 This chapters shows how to include roadmaps in an ASAM standard.
 

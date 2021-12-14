@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 Pulling a submodule can currently only be done through a terminal window.
 

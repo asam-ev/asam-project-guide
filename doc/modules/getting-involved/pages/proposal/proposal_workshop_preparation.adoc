@@ -1,0 +1,14 @@
+= Prepare a Proposal Workshop
+:description: What to prepare for a proposal workshop.
+:keywords: proposal-workshop, proposal
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+{role-gtm}
+
+TODO
+
+If you are looking for more information on the proposal workshop, see the section <<Related topics>>.
+
+related::proposal-workshop[]

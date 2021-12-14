@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 An application area companion is an associated extension of a base standard for a specific type of device or a specific application area.
 A companion uses the syntax and the abstract models of the base standard.

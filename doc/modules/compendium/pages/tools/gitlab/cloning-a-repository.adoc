@@ -3,7 +3,6 @@
 :keywords: vscode,how-to,clone,cloning,gitlab,repository,repo
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 . Under "Clone", click on "Visual Studio Code"
 

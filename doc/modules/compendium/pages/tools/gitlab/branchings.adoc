@@ -3,7 +3,6 @@
 :keywords: git,gitlab,branching,branch
 :convention: xref:compendium:tools/gitlab/branch_naming_conventions.adoc
 
-include::{abb}[]
 include::compendium:partial$_attributes.adoc[]
 
 

@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 Git:: A version control system.
 Used by {asam} in their projects.

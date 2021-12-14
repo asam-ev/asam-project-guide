@@ -5,7 +5,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 {vscode} is already without extensions very powerful and user friendly.
 One thing that can make the {vscode} experience even better are the extensions.

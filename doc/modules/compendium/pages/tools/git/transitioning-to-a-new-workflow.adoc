@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 This describes the transition of Open Scenario 2.0 to the new workflow.
 

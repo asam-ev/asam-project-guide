@@ -2,6 +2,9 @@
 :description: Describes how to set up a new project proposal.
 :keywords: proposal, setup
 
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
 {role-gtm}
 
 TODO

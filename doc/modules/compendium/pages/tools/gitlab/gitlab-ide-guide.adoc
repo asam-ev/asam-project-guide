@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 GitLab provides a Web IDE editor for interacting with the repository's content directly through the browser.
 // TODO

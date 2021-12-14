@@ -4,7 +4,6 @@
 
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 A team member other than the author reviews the pull request.
 They follow Code Review guidelines to avoid miscommunication.

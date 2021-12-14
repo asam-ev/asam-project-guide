@@ -3,7 +3,6 @@
 :keywords: powershell
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 == How to open microsoft PowerShell
 
