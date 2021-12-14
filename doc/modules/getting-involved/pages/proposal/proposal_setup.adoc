@@ -7,4 +7,4 @@ include::{abb}[]
 
 {role-gtm}
 
-TODO
+include::compendium:page$guides/proposal_writing/how_to_executive_draft.adoc[leveloffset=+1]
