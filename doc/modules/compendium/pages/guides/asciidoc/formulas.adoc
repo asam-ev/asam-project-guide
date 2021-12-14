@@ -2,7 +2,7 @@
 = How to include formulas in ASAM documents
 :description: How-To for including formulas in ASAM documents (standards).
 :keywords: asciidoc,formula,how-to
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

@@ -1,7 +1,7 @@
 = Sharepoint link summary
 :description: This is a summary of important Sharepoint links.
 :keywords: sharepoint,link,links,projects
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 include::{abb}[]

@@ -2,7 +2,7 @@
 = How to include code blocks in ASAM documents
 :description: How-To for including code blocks in ASAM documents (standards).
 :keywords: asciidoc,code,how-to
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

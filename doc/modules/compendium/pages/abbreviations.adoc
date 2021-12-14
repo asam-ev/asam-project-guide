@@ -1,7 +1,6 @@
 = Abbreviations
 :description: A collection of abbreviations used throughout the ASAM Project Guide.
 :keywords: abbr, abbreviation
-:page-partial:
 :is_abbreviations:
 
 include::compendium:partial$_attributes.adoc[]

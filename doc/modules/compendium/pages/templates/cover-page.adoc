@@ -1,7 +1,7 @@
 = Cover page
 :description: Describes the cover page template for ASAM standards.
 :keywords: template
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 include::{abb}[]

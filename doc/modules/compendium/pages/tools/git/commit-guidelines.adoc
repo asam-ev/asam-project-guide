@@ -1,7 +1,7 @@
 = Git commit guidelines
 :description: Referal page to GitLab Commit Guidelines
 :keywords: git,commit,guidelines
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 include::{abb}[]

@@ -2,7 +2,7 @@
 = How to write headings in ASAM documents
 :description: How-To for writing headings in ASAM documents (standards).
 :keywords: asciidoc,heading,how-to
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

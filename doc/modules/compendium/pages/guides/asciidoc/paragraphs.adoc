@@ -2,7 +2,7 @@
 = How to write a paragraph in ASAM documents
 :description: How-To for writing a paragraph in ASAM documents (standards).
 :keywords: asciidoc,how-to
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

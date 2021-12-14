@@ -1,7 +1,7 @@
 = Adding A New Submodule To A Repository
 :description: Describes how to add a new submodule in a repository.
 :keywords: git,gitlab,submodule,add
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 include::{abb}[]

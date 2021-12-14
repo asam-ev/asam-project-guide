@@ -1,7 +1,7 @@
 = Running docker-Compose From VSCode
 :description: Run docker-compose from VSCode
 :keywords: docker,vscode
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 include::{abb}[]

@@ -1,7 +1,7 @@
 = Changing remote for a submodule
 :description: Describes how to change the remote of a submodule in a repository.
 :keywords: git,gitlab,submodule,remote
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 include::{abb}[]

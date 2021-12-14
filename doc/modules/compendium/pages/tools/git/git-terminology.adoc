@@ -1,7 +1,7 @@
 = Git terminology
 :description: Lists terms and terminology for git
 :keywords: term, terminology, git
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 include::{abb}[]

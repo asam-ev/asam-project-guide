@@ -2,7 +2,7 @@
 = How to include links in ASAM documents
 :description: How-To for including links in ASAM documents (standards).
 :keywords: asciidoc,link,how-to
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

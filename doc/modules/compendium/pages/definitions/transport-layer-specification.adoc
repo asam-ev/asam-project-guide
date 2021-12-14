@@ -1,7 +1,7 @@
 = Transport layer specification
 :description: Definition of a transport layer specification.
 :keywords: definition,content-characterization,associated-standard
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 include::{abb}[]

@@ -1,7 +1,7 @@
 = Base standard
 :description: Definition of a base standard.
 :keywords: definition,classification,base-standard
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 include::{abb}[]
