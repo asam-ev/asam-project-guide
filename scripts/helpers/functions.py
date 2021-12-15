@@ -178,3 +178,4 @@ def update_nav_adoc_file(path,nav_content):
         copyfile(target+"nav.adoc",target+"nav.adoc1")
     with open(target+"nav.adoc","w") as file:
         file.write(nav_content)
+        print(nav_content)
