@@ -2,7 +2,6 @@
 :description: A terminology page for WSL
 :keywords: terminology,term,wsl,docker
 
-
 include::compendium:partial$_attributes.adoc[]
 
 WSL is short for Windows Subsystem for Linux.

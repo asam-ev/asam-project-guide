@@ -2,7 +2,6 @@
 :description: A guide to using the GitLab IDE.
 :keywords: gitlab, ide, online
 
-
 include::compendium:partial$_attributes.adoc[]
 
 GitLab provides a Web IDE editor for interacting with the repository's content directly through the browser.

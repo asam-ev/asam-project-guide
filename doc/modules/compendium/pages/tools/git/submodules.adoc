@@ -2,7 +2,6 @@
 :description: Describes submodules and their usage in Git.
 :keywords: git,gitlab,submodule
 
-
 include::compendium:partial$_attributes.adoc[]
 
 == What are submodules

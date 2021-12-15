@@ -2,7 +2,6 @@
 :description:
 :keywords: sharepoint,synchronization,synch,onedrive
 
-
 include::compendium:partial$_attributes.adoc[]
 
 .Demo on synchronizing

@@ -1,4 +1,8 @@
 = ASAM issue and merge request labels
+:description: todo
+:keywords: todo
+
+include::compendium:partial$_attributes.adoc[]
 
 **Mouse over the labels for more information.**
 

@@ -2,7 +2,6 @@
 :description: Contains terminology on GitLab at ASAM.
 :keywords: terminology, gitlab
 
-
 include::compendium:partial$_attributes.adoc[]
 
 

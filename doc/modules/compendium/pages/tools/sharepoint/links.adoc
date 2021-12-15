@@ -2,7 +2,6 @@
 :description: This is a summary of important Sharepoint links.
 :keywords: sharepoint,link,links,projects
 
-
 include::compendium:partial$_attributes.adoc[]
 
 WARNING: These links will only work for you if you have access to the corresponding project!

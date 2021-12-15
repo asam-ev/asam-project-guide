@@ -2,7 +2,6 @@
 :description: Run docker-compose from VSCode
 :keywords: docker,vscode
 
-
 include::compendium:partial$_attributes.adoc[]
 
 IMPORTANT: {docker-deamon-warning}

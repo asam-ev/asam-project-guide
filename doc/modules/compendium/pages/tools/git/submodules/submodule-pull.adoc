@@ -2,7 +2,6 @@
 :description: Describes how a submodule can be pulled.
 :keywords: git,gitlab,submodule,pull
 
-
 include::compendium:partial$_attributes.adoc[]
 
 Pulling a submodule can currently only be done through a terminal window.

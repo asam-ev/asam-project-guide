@@ -2,7 +2,6 @@
 :description: Summarizes how merge requests work and how to best approach them.
 :keywords: git,gitlab,merge,merge-request,review
 
-
 include::compendium:partial$_attributes.adoc[]
 
 == Merge commit strategy

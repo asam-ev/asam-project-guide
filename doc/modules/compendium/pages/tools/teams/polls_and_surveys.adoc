@@ -2,7 +2,6 @@
 :description: Use polls and surveys with MS Teams
 :keywords: artifact,teams,email,poll,polls,survey,surveys
 
-
 include::compendium:partial$_attributes.adoc[]
 
 == Context

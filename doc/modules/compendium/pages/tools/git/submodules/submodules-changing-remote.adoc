@@ -2,7 +2,6 @@
 :description: Describes how to change the remote of a submodule in a repository.
 :keywords: git,gitlab,submodule,remote
 
-
 include::compendium:partial$_attributes.adoc[]
 
 In case the location of the submodule on remote (i.e. on GitLab) is changed, the url must also be changed manually in every repository that includes this as a submodule.

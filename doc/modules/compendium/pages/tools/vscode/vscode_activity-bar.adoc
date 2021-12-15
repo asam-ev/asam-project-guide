@@ -2,7 +2,6 @@
 :description: Describes the VSCode activity bar
 :keywords: ui,activity-bar,vscode
 
-
 include::compendium:partial$_attributes.adoc[]
 
 The Activity Bar contains a direct access to many important base or extensions features.

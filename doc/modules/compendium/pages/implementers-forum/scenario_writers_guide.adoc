@@ -1,4 +1,8 @@
 = OSC2 Scenario Writing Process
+:description: todo
+:keywords: todo
+
+include::compendium:partial$_attributes.adoc[]
 
 . Select a scenario specification from the Extracted Scenario Specifications table on the Miro board
 

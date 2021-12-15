@@ -2,7 +2,6 @@
 :description: Run docker-compose from Powershell
 :keywords: docker,powershell
 
-
 include::compendium:partial$_attributes.adoc[]
 
 IMPORTANT: {docker-deamon-warning}

@@ -2,7 +2,6 @@
 :description: Describes best practices for how to maintain a repo with git/gitlab
 :keywords: git,gitlab,repo,repository
 
-
 include::compendium:partial$_attributes.adoc[]
 
 - Avoid including files in source control that are specific to your development

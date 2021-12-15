@@ -1,6 +1,6 @@
 = ASAM developer certification of origin for open source projects
 :description: Contains the ASAM DCO and describes its use.
-:keywords:
+:keywords: todo
 
 include::compendium:partial$_attributes.adoc[]
 

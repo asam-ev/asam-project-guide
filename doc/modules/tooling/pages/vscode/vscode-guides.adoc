@@ -15,12 +15,12 @@ include::{abb}[]
 Visual Studio Code is a powerful code and text editor that can be highly individualized and adapted to the task at hand using the existing extensions for it.
 Here, you get an overview over how Visual Studio Code is structured.
 
-include::compendium:page$tools/vscode/vscode-command-palette.adoc[{offset-value}]
+include::compendium:page$tools/vscode/vscode_command-palette.adoc[{offset-value}]
 
-include::compendium:page$tools/vscode/vscode-activity-bar.adoc[{offset-value}]
+include::compendium:page$tools/vscode/vscode_activity-bar.adoc[{offset-value}]
 
-include::compendium:page$tools/vscode/vscode-install-extension.adoc[{offset-value}]
+include::compendium:page$tools/vscode/vscode_install_extension.adoc[{offset-value}]
 
-include::compendium:page$tools/vscode/recommended-vscode-extensions.adoc[{offset-value-sub}]
+include::compendium:page$tools/vscode/recommended_vscode_extensions.adoc[{offset-value-sub}]
 
-include::compendium:page$tools/vscode/recommended-vscode-settings.adoc[{offset-value}]
+include::compendium:page$tools/vscode/recommended_vscode_settings.adoc[{offset-value}]

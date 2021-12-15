@@ -2,7 +2,6 @@
 :description: Plan and participate in meetings directly through MS Teams
 :keywords: artifact,teams,meetings
 
-
 include::compendium:partial$_attributes.adoc[]
 
 == Context

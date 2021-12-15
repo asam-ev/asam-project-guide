@@ -1,4 +1,8 @@
 = Feedback guide
+:description: todo
+:keywords: todo
+
+include::compendium:partial$_attributes.adoc[]
 
 == Overview on the different feedback mechanisms
 

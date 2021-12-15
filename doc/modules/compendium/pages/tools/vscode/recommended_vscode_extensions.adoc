@@ -3,7 +3,6 @@
 :keywords: vscode,extensions,gitlab,asciidoc,drawio,docker
 :lookup: compendium:partial$vscode
 
-
 include::compendium:partial$_attributes.adoc[]
 
 {vscode} is already without extensions very powerful and user friendly.

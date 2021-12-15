@@ -1,4 +1,8 @@
 = Accessing compiled artifacts
+:description: todo
+:keywords: todo
+
+include::compendium:partial$_attributes.adoc[]
 
 .This gif demonstrates how to access compiled html artifacts for other commits or branches
 image::downloading_artifacts.gif[]

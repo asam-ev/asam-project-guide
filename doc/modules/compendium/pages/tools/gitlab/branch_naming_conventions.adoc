@@ -1,5 +1,8 @@
 = Branch naming conventions
+:description: todo
+:keywords: todo
 
+include::compendium:partial$_attributes.adoc[]
 
 == Name template
 

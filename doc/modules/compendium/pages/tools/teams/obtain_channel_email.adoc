@@ -2,7 +2,6 @@
 :description: Obtain the email adress of a teams channel in MS Teams
 :keywords: artifact,teams,email,channel
 
-
 include::compendium:partial$_attributes.adoc[]
 
 == Context

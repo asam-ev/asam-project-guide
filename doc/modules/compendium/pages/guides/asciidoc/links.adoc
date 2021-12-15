@@ -3,7 +3,6 @@
 :description: How-To for including links in ASAM documents (standards).
 :keywords: asciidoc,link,how-to
 
-
 include::compendium:partial$_attributes.adoc[]
 
 

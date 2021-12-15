@@ -2,7 +2,6 @@
 :description: Describes how the version of a submodule can be switched or set.
 :keywords: git,gitlab,submodule,switch,version
 
-
 include::compendium:partial$_attributes.adoc[]
 
 TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI.
