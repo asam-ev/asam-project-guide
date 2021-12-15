@@ -54,6 +54,30 @@ ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 These editorial rules apply to lists:
 
+[#sec-ASM-8]
+=== Use lists with similarly structured items for complex text (ASM-8)
+
+Use lists instead of long sentences to present complex text in a way that is easier to read and understand.
+The list items shall be a set of similarly structured items.
+For example, each item should be a noun or a phrase that starts with a verb.
+
+*Example*
+
+```
+The outline of the road marking is described by the attributes @length and @space:
+
+* @length represents the visible part of the line.
+* @space describes the non-visible part.
+```
+
+*Source*
+
+* ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
+* Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists
+* Google Developer Documentation Style Guide: https://developers.google.com/style/lists
+
+TODO: Use AsciiDoc syntax for lists.
+
 [#sec-ASM-5]
 === Start each list item in a list with an uppercase letter (ASM-5)
 
@@ -103,28 +127,6 @@ ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 
 * ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 * Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation
 
-[#sec-ASM-8]
-=== Use lists with similarly structured items for complex text (ASM-8)
-
-Use lists instead of long sentences to present complex text in a way that is easier to read and understand.
-The list items shall be a set of similarly structured items.
-For example, each item should be a noun or a phrase that starts with a verb.
-
-*Example*
-
-```
-The outline of the road marking is described by the attributes @length and @space:
-
-* @length represents the visible part of the line.
-* @space describes the non-visible part.
-```
-
-*Source*
-
-* ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
-* Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists
-* Google Developer Documentation Style Guide: https://developers.google.com/style/lists
-
 [#sec-ASM-9]
 === Just add one sentence per line (ASM-9)
 
@@ -150,7 +152,7 @@ ASAM Writing Guide: 4.3. One sentence per line
 [#sec-ASM-10]
 === Choose a suitable type of list (ASM-10)
 
-==== Use a bulleted list for things that have something in common but don’t need to appear in a particular order.
+==== Use a bulleted list for things that have something in common but do not need to appear in a particular order.
 
 *Example*
 
@@ -240,3 +242,230 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 *Source*
 
 ASAM Writing Guide: 6.1. Inline literals
+
+== Tables
+
+[#sec-ASM-44]
+=== Use tables to represent sets of related pieces of information (ASM-44)
+
+Use tables if you have to present a huge amount of similar data in a very compressed form.
+
+*Exception*
+
+* If you have only one column in your table, turn the table into a list.
+
+*Example*
+
+```
+[#tab-uuid]
+.This is the caption of the table
+|===
+|cell 1_1 | cell 1_2 | cell 1_3
+|cell 2_1 | cell 2_2 | cell 2_3
+|cell 3_1 | cell 3_2 | cell 3_3
+|===
+```
+
+*Source*
+
+[#sec-ASM-45]
+=== Use AsciiDoc syntax for tables (ASM-45)
+
+*Example*
+
+```
+[#tab-uuid]
+.This is the caption of the table
+|===
+|cell 1_1 | cell 1_2 | cell 1_3
+|cell 2_1 | cell 2_2 | cell 2_3
+|cell 3_1 | cell 3_2 | cell 3_3
+|===
+```
+
+*Source*
+
+https://docs.asciidoctor.org/asciidoc/latest/tables/build-a-basic-table/
+
+[#sec-ASM-46]
+=== Create a tag/ID with a UUID for every table (ASM-46)
+
+TODO: Writing guide: tag, AsciiDoctor o. h.: ID???
+
+*Example*
+
+```
+[#tab-uuid]
+.This is the caption of the table
+|===
+|cell 1_1 | cell 1_2 | cell 1_3
+|cell 2_1 | cell 2_2 | cell 2_3
+|cell 3_1 | cell 3_2 | cell 3_3
+|===
+```
+
+*Source*
+
+ASAM Writing Guide: 5.3. Tables
+
+[#sec-ASM-47]
+=== Create a title/caption for every table (ASM-47)
+
+TODO: Writing guide: caption, AsciiDoctor o. h.: caption???
+
+*Example*
+
+```
+[#tab-uuid]
+.This is the caption of the table
+|===
+|cell 1_1 | cell 1_2 | cell 1_3
+|cell 2_1 | cell 2_2 | cell 2_3
+|cell 3_1 | cell 3_2 | cell 3_3
+|===
+```
+
+*Source*
+
+ASAM Writing Guide: 5.3. Tables
+
+== Figures
+
+TODO: Terminology: Images or figures?
+
+These rules apply to figures:
+
+* Each image shall have a description (exception: decorative images).
+* The description shall be below the image.
+* The description shall start with "Figure [number] shows" (no initial article).
+* The description shall not contain references to the placement of the image ("before", "below").
+
+
+[#sec-ASM-28]
+=== Make sure that all images included in the User Guide are shown correctly (ASM-28)
+
+*Example*
+
+TODO: ?
+
+*Source*
+
+TODO: ?
+
+[#sec-ASM-29]
+=== Make sure that there are no unused images in the repository of the standard (ASM-29)
+
+
+
+*Exceptions*
+
+TODO: (Are there any exceptions where it makes sense to keep unused images?)
+
+*Example*
+
+TODO: ?
+
+*Source*
+
+TODO: ?
+
+[#sec-ASM-xx]
+=== Illustrate complex facts with figures (ASM-xx)
+
+Figures, for example pictures or drawings, may be used to illustrate complex facts.
+
+In AsciiDoc, figures are included with the following syntax:
+
+```
+[#img-sunset]
+.A mountain sunset
+image::sunset.jpg[Sunset,200,100]
+```
+
+*Exception*
+
+If you cannot use an image with the file type SVG, use the file type PNG.
+
+*Example*
+
+*Source*
+
+
+[#sec-ASM-xx]
+=== Use images with the file type SVG (ASM-)
+
+*Exception*
+
+If you cannot use an image with the file type SVG, use the file type PNG.
+
+*Example*
+
+*Source*
+
+
+[#sec-ASM-xx]
+=== Rule 3 (ASM-)
+
+*Exception*
+
+*Example*
+
+*Source*
+
+
+[#sec-ASM-xx]
+=== Rule 3 (ASM-)
+
+*Exception*
+
+*Example*
+
+*Source*
+
+
+[#sec-ASM-xx]
+=== Rule 3 (ASM-)
+
+*Exception*
+
+*Example*
+
+*Source*
+
+
+[#sec-ASM-48]
+=== Rule 3 (ASM-)
+
+*Exception*
+
+*Example*
+
+*Source*
+
+[#sec-ASM-49]
+=== Rule 3 (ASM-)
+
+=== Rule 3 (ASM-)
+
+*Exception*
+
+*Example*
+
+*Source*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Source*
+
+ASAM Writing Guide: 5.2. Figures
