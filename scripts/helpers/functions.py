@@ -130,7 +130,7 @@ def create_pure_navigation_adoc_file(fname,dname,created_files):
 
     if created:
         created_files.append(fname.replace("\\","/"))
-        print("Created new file "+fname.replace("\\","/"))
+        print("Created new file "+fname)
 
     return created
 
