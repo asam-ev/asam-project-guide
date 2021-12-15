@@ -123,14 +123,15 @@ def add_xref(level,path,filename):
 
 def create_pure_navigation_adoc_file(fname,dname,created_files):
     created = False
-    if not os.path.isfile(fname):
+    myname = fname.replace("\\","/")
+    if not os.path.isfile(myname):
         created = True
-        with open(fname,'w') as f:
+        with open(myname,'w') as f:
             f.write("= "+dname.replace("_"," ").capitalize()+"\n\n== Subpages\n\n")
 
     if created:
-        created_files.append(fname.replace("\\","/"))
-        print("Created new file "+fname)
+        created_files.append(myname)
+        print("Created new file "+myname)
 
     return created
 

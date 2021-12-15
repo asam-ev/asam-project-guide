@@ -47,7 +47,6 @@ def main(argv):
 
         # Analyze current directory
         current_level = base_level + dirpath.replace("\\","/").count('/') - relative_path_depth
-        print(base_level, relative_path_depth, current_level)
         list_entries = []
 
         # If folder contains subfolders, check and create new files for each folder where there is no file with the same name in this directory yet.
