@@ -2,10 +2,9 @@
 = How to create roadmaps in ASAM documents
 :description: How-To for creating roadmaps in ASAM documents (standards).
 :keywords: asciidoc,roadmap,how-to
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 This chapters shows how to include roadmaps in an ASAM standard.
 

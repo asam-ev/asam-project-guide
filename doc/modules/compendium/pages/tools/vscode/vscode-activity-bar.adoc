@@ -1,7 +1,9 @@
 = Visual Studio Code activity bar
 :description: Describes the VSCode activity bar
 :keywords: ui,activity-bar,vscode
-:page-partial:
+
+
+include::compendium:partial$_attributes.adoc[]
 
 The Activity Bar contains a direct access to many important base or extensions features.
 The following image shows standard functionality, but some extensions like GitLens will add their own icon and features.

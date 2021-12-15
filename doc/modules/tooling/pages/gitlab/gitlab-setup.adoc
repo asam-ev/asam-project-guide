@@ -15,7 +15,7 @@ All specification-related documents are stored and updated in ASAMs GitLab.
 The user has activated their ASAM GitLab account and can access the correct project repositories.
 
 == Prerequisites
-* Account created by an ASAM employee.
+* Account created by the ASAM office.
 
 == How
 . Follow the link in the GitLab account creation email sent by "GitLab +<code@asam.net>+" to set your password.
@@ -34,14 +34,14 @@ related::gitlab,git-setup,!gitlab-setup[]
 == Troubleshooting / Known Issues
 
 === I have not received a mail from "GitLab"
-Ask an ASAM employee to support you by creating your GitLab account.
+Ask the ASAM office to support you by creating your GitLab account.
 
 === I forgot my password and cannot use the login anymore
 Click the "Forgot your password?" button and follow the instructions.
 
 [#no-access]
 === I cannot access my project's repository
-Ask an ASAM employee to grant you the correct rights according to your role in the project.
+Ask the ASAM office to grant you the correct rights according to your role in the project.
 
 === I cannot access the "Common" group
 See <<no-access,I cannot access my project's repository>>.

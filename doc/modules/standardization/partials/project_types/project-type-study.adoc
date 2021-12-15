@@ -7,7 +7,7 @@ This project type is specifically intended for members in regions, where ASAM st
 Study projects have no expected deliverables other than a final report.
 The standard development process does not apply for study projects in case that either no budget or a small budget is needed.
 Study projects are open to all ASAM members, i.e. also to members in a 'passive' membership class.
-ASAM may provides funding up to the limit for small budget projects.
+{asam} may provides funding up to the limit for small budget projects.
 //end::short[]
 
 //tag::long[]
@@ -46,7 +46,7 @@ Some further rules apply for study projects:
 The minutes may be translated into the working language of the study group.
 * The project members use the ASAM IT infrastructure.
 
-Upon request, ASAM provides funding for study projects up to the limit for small budget projects.
+Upon request, {asam} provides funding for study projects up to the limit for small budget projects.
 
 In case that a larger budget is required beyond the limit of a small budget project, then the project must be requested via the regular project proposal process, which consist of the process steps P2 Proposal Writing, P3 Proposal Submission, P4 Proposal Publication and P5 Proposal Decision by the {tsc}.
 

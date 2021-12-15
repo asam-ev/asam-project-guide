@@ -1,6 +1,7 @@
 = ASAM roles
 :description: The landing page for the ASAM Roles
 :keywords: landing_page,roles,asam
+:page-aliases: home.adoc
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -54,7 +55,7 @@ See xref:compendium:open-source/asam_dco.adoc[].
 === Project coordinator
 - Assists and supports the <<Project Leader,project leader>> in coordinating the project
 - Moderation of meetings
-- Harmonisation with other ongoing projects in- and outside of ASAM
+- Harmonisation with other ongoing projects in- and outside of {asam}
 - Technical & architectural support for the project
 
 === Legal reviewer
@@ -76,11 +77,11 @@ See xref:compendium:open-source/asam_dco.adoc[].
 - Develop/maintain the ASAM Simulation roadmap
 
 - Strategic analysis
-  - Identify/initiate further ASAM activities in Simulation
+  - Identify/initiate further {asam} activities in Simulation
   - Ensure no overlap of standards
   - Ensure alignment with external activities
 
-- Accelerate the ASAM decision making process
+- Accelerate the {asam} decision making process
   - Pre-approval, final approval stays with {tsc}
 
 - Review and refine relevant processes
@@ -103,27 +104,6 @@ Technical Steering Committee ({tsc}) Member:: A member of committee responsible 
 Reviewer:: An ASAM Standard User or WG Member that reviews a draft or release candidate for a new or updated standard.
 Technical Writer:: Formats and writes the document(s) of the standard based on the provided input from the WG members in a formalized and standard-conform way.
 Service Provider:: Provides additional services necessary for the standard development.
-
-.Roles within ASAM Projects
-|===
-|Role               |required       | comment
-|GTM                |mandatory      | every project needs one responsible GTM within ASAM
-|Project Member     |mandatory      | every project needs project members from at least three different companies
-|Project Lead       |mandatory      | without an elected project lead the project may not start. The project lead is a project member elected by the project members to become the project lead.
-|Workgroup Member   |optional       | if the project is split up into smaller working groups, a project member can join a workgroup to become a workgroup member
-|Workgroup Lead     |optional       | if the project is split up into smaller working groups, a project member can be elected to be the workgroup lead and will support the project lead.
-|Service Provider   |optional       | if the project needs additional resources a service provider can be hired, this requires approved budget by the {tsc}
-| Technical Writer  |optional       | if the project requires a technical writer either the ASAM technical writer will fill this role or a service provider can be hired to fill that role.
-|===
-
-.Roles around ASAM Projects
-|===
-|Role               | comment
-|{tsc}                | The {tsc} is responsible to approve budget, and project as well as releases of project results, such as standards or concept papers
-|Standard User      | Someone who is using the ASAM standard
-|Reviewer          | A Standard user that want to provide feedback either in a Review phase or afterwards
-|===
-
 
 
   related::role,roles[]

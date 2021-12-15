@@ -2,7 +2,7 @@
 = Diagrams
 :description: How-To for working with diagrams in ASAM documents (standards).
 :keywords: asciidoc,diagram,how-to
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

@@ -1,7 +1,7 @@
 = Starting a container from docker desktop
 :description: Run docker-compose from Desktop
 :keywords: docker,desktop
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

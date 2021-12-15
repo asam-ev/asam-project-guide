@@ -2,4 +2,4 @@
 The AsciiDoc extension will add the syntax the AsciiDoc interpreter to {vscode} so you can use the preview feature and have syntax highlighting.
 
 .AsciiDoc (id: asciidoctor.asciidoctor-vscode)
-image::compendium:asciidoc_ext.PNG[]
+image::compendium:asciidoc_ext.png[]

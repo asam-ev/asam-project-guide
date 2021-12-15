@@ -1,7 +1,7 @@
 = GitLab Terminology
 :description: Contains terminology on GitLab at ASAM.
 :keywords: terminology, gitlab
-:page-partial:
+
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

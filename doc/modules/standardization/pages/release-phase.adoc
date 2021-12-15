@@ -5,9 +5,9 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-The purpose of the Release phase is to obtain a release decision at ASAM and to publish the new standard.
+The purpose of the Release phase is to obtain a release decision at {asam} and to publish the new standard.
 
-image::release_phase.png[title="The Release Phase"]
+image::asam-development-process-Release.drawio.svg[title="The Release Phase (simplified)",opts=interactive]
 
 
 == R1 - Candidate Release

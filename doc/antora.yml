@@ -3,7 +3,7 @@ title: ASAM Project Guide
 version: master
 display_version: baseline
 prerelease: -dev
-start_page: ROOT:home.adoc
+start_page: ROOT:index.adoc
 nav:
 - modules/getting-started/nav.adoc
 - modules/getting-involved/nav.adoc

@@ -1,0 +1,20 @@
+= How-to add and include the enrollment list
+:description: How-to for adding and including the enrollment list in a project proposal.
+:keywords: proposal, enrollment
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+// If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
+
+== Context
+TODO
+
+== Result
+The enrollment list is included as source file in the proposal project.
+
+== Prerequisites
+* TODO
+
+== How
+. TODO

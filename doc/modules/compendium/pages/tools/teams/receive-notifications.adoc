@@ -1,7 +1,7 @@
 = Receiving notifications in microsoft teams
 :description: Activate notifications directly within MS Teams
 :keywords: artifact,teams,notifications
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

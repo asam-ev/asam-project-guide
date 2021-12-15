@@ -1,10 +1,9 @@
 = Adding A New Submodule To A Repository
 :description: Describes how to add a new submodule in a repository.
 :keywords: git,gitlab,submodule,add
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI.
 See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.

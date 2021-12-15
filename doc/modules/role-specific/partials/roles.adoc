@@ -1,6 +1,6 @@
 
 //tag::summary[]
-Within projects at ASAM, participant have one or more roles.
+Within projects at {asam}, participant have one or more roles.
 Each of these roles has their own set of requirements, mandatory and/or optional tool, guidelines and how-tos, some of them shared between multiple roles.
 //end::summary[]
 
@@ -9,33 +9,63 @@ Each of these roles has their own set of requirements, mandatory and/or optional
 TIP: Click on a role's label to navigate directly to the role's summary page.
 
 .List of roles
-[cols = ">2,5"]
+[cols = ">2,1,4"]
 |===
-|Role |Description
+|Role |Required |Description
 
-| {role-reviewer}
-| TODO
-
-| {role-wg-member}
-| TODO
-
-| {role-technical-writer}
-| TODO
-
-| {role-project-lead}
-| TODO
+3+^h| Roles within ASAM projects
 
 | {role-gtm}
-| TODO
+|mandatory
+| The GTM is the technology contact at ASAM offices.
+Every project needs one responsible GTM.
+
+| Project Member
+|mandatory
+| Every project needs project members from at least three (3) different companies.
+See Workgroup Member
+
+| {role-project-lead}
+|mandatory
+| The project leader.
+Without an elected project lead, the project may not start.
+The project members must elect a project lead at the beginning of the project.
+
+| {role-wg-member}
+|optional
+| If the project is split up into smaller workgroups, a project member can join a workgroup to become a workgroup member.
+
+| {role-wg-lead}
+| optional
+| If the project is split up into smaller workgroups, a project member can be elected to be the workgroup lead and will support the project lead.
+Each workgroup should have zero or one workgropu lead.
 
 | {role-service-provider}
-| TODO
+| optional
+| if the project needs additional resources a service provider can be hired, this requires approved budget by the {tsc}.
+
+| {role-technical-writer}
+| optional
+| if the project requires a technical writer either the ASAM technical writer will fill this role or a service provider can be hired to fill that role.
+
+3+^h| Roles around ASAM projects
 
 | {role-standard-user}
-| TODO
+| na
+| Someone who is using the ASAM standard.
 
 | {role-standard-manager}
-| TODO
+| mandatory
+| The manager at ASAM responsible for the standard.
+
+| {tsc}
+| mandatory
+| The {tsc} is responsible to approve budget, and project as well as releases of project results, such as standards or concept papers.
+
+
+| {role-reviewer}
+| temporary
+| A Standard user that want to provide feedback either in a Review phase or afterwards.
 
 |===
 

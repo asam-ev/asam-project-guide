@@ -1,7 +1,7 @@
 = Email notifications from microsoft teams
 :description: Activate email notifications for MS Teams
 :keywords: artifact,teams,email,notifications
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

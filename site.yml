@@ -2,8 +2,8 @@ site:
   title: ASAM Project Guide
   # the 404 page and sitemap files only get generated when the url property is set
   # TODO: This has to be changed to the actual hosting
-  url: https://github.com/asam-ev/asam-project-guide
-  start_page: asamprojectguide::home.adoc
+  url: https://asam-ev.github.io/asam-project-guide/
+  start_page: asamprojectguide::index.adoc
 content:
   sources:
     - url: .
@@ -35,24 +35,32 @@ runtime:
 
 asciidoc:
   attributes:
-    # plantuml-server-url: http://www.plantuml.com/plantuml
+    page-pagination: true
     guide-repo-url: https://github.com/asam-ev/asam-project-guide/
     hide-uri-scheme:
     gitlab-url: https://code.asam.net
-    # kroki-http-method: post
     kroki-server-url: 'http://kroki:8000'
     kroki-fetch-diagram: ""
     abb: compendium:partial$abbreviations.adoc
+    # Allow URI read to retrieve SVG on compilation
+    allow-uri-read: true
+    # use SVG unless otherwise specified
+    kroki-default-format: svg
+    # Make SVG inline so that we can get interactive (can be overridden by schema with "opts=none")
+    kroki-default-options: interactive
 
-    # Defined role attributes
+
+    ## Defined role attributes
     role-reviewer: 'xref:role-specific:reviewer.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FA8072;" >REVIEWER</role>]'
     role-wg-member: 'xref:role-specific:wg-member.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#BDB76B;" >WG MEMBER</role>]'
+    role-wg-lead: 'xref:role-specific:wg-lead.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#14BCCD;" >WG LEAD</role>]'
     role-technical-writer: 'xref:role-specific:technical-writer.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#D8BFD8;" >TECHNICAL WRITER</role>]'
     role-project-lead: 'xref:role-specific:project-lead.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#6A5ACD;" >PROJECT LEAD</role>]'
     role-gtm: 'xref:role-specific:gtm.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#32CD32;" >GTM</role>]'
     role-service-provider: 'xref:role-specific:service-provider.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FFDEAD;" >SERVICE PROVIDER</role>]'
     role-standard-user: 'xref:role-specific:standard-user.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CD853F;" >STANDARD USER</role>]'
     role-standard-manager: 'xref:role-specific:standard-manager.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#DEB887;" >STANDARD MANAGER</role>]'
+
 
   extensions:
   - asciidoctor-kroki

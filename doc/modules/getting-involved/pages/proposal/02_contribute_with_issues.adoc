@@ -1,0 +1,13 @@
+= How to contribute to a proposal through GitLab issues
+:description: Describes how one can participate in the creation of a proposal through GitLab issues.
+:keywords: proposal, gitlab, issue
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+{role-wg-member}
+{role-project-lead}
+
+TODO: Add image with highlighted steps here.
+
+TODO

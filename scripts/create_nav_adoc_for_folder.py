@@ -60,7 +60,7 @@ def main(argv):
         # Add found supported files to list
         for f in filenames:
             for type in filetypes:
-                if f.endswith(type) and not f[0]=="_" and not f in [x+".adoc" for x in dirnames]:
+                if f.endswith(type) and not f[0]=="_" and not f in [x+".adoc" for x in dirnames] and not (dirpath.split("/")[-2] == "pages" and dirpath.split("/")[-3]+".adoc" == f):
                     list_entries.append(f)
                     break
 

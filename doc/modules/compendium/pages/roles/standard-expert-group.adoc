@@ -4,7 +4,6 @@
 
 //tag::default[]
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 // {role-standard-expert-group}
 //end::default[]
@@ -26,7 +25,7 @@ An optional task of the Standard Expert Group is to review feature requests and 
 The members of the Standard Expert Groups are volunteers from ASAM member companies.
 By default, members of the project group, which developed the latest version of the standard, become automatically members of the Standard Expert Group.
 They shall commit their participation in this group for one year as a minimum.
-A member can leave the group by notifying ASAM of his intentions not to be part of the group any longer or because they are not working for an ASAM member company any longer.
+A member can leave the group by notifying {asam} of his intentions not to be part of the group any longer or because they are not working for an ASAM member company any longer.
 New members can join by absolute majority decision of the current Standard Expert Group members.
 
 The work load for the Standard Expert Group members shall be kept to a minimum.

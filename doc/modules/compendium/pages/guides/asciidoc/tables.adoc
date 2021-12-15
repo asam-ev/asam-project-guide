@@ -2,7 +2,7 @@
 = How to include tables in ASAM documents
 :description: How-To for including tables in ASAM documents (standards).
 :keywords: asciidoc,table,how-to
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

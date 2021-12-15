@@ -5,7 +5,7 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-ASAM distinguishes between two types of development:
+{asam} distinguishes between two types of development:
 
 * <<Standard development>>
 * <<Other project types>>

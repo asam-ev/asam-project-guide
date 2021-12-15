@@ -12,7 +12,7 @@
 |Members, project group
 |===
 // end::table[]
-The Office publishes the start of the public review process via newsletter and ASAM web page, and provides additional information such as a brief description of the changes in the standard, review process steps and the review deadline.
+The Office publishes the start of the public review process via newsletter and https://www.asam.net/active-projects/public-review/[ASAM website], and provides additional information, such as a brief description of the changes in the standard, review process steps and the review deadline.
 
 The Office provides an IT-solution for carrying out the public draft review.
 The Office provides technical support for reviewers and ensures that review feedback is accessible to the project group members in a timely manner.

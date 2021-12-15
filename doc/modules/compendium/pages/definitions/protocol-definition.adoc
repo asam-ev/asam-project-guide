@@ -1,7 +1,7 @@
 = Protocol definitions
 :description: Definition of a protocol definition.
 :keywords: definition,content-characterization,base-standard
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 

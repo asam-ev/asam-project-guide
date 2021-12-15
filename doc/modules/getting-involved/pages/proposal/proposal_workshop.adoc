@@ -1,7 +1,0 @@
-= Join a proposal workshop
-:description: Describes how to join a proposal workshop
-:keywords: proposal-workshop
-
-include::partial$_attributes.adoc[]
-include::{abb}[]
-

@@ -6,7 +6,7 @@ include::partial$_attributes.adoc[]
 include::{abb}[]
 
 
-ASAM has four defined project types, which further characterize the work to be done within the projects. They are:
+{asam} has four defined project types, which further characterize the work to be done within the projects. They are:
 
 * <<Standard development project>>
 * <<Implementation project>>
@@ -14,17 +14,17 @@ ASAM has four defined project types, which further characterize the work to be d
 * <<Study project>>
 
 
-They all have in common that the primary output of the project is a standard. The upper limit for subsidiary funding from ASAM is 25% of the total required project budget.
+They all have in common that the primary output of the project is a standard. The upper limit for subsidiary funding from {asam} is 25% of the total required project budget.
 
 == Standard development project
-The core of ASAM is to carry out standard development projects with the goal to create new standards and to update existing standards in accordance with the demands of ASAM members and market requirements. ASAM defines four types of standard development projects, depending on the expected magnitude of changes to the standard:
+The core of {asam} is to carry out standard development projects with the goal to create new standards and to update existing standards in accordance with the demands of ASAM members and market requirements. {asam} defines four types of standard development projects, depending on the expected magnitude of changes to the standard:
 
 * <<New standard development>>
 * <<Major version development>>
 * <<Minor version development>>
 * <<Revision development>>
 
-They all have in common that the primary output of the project is a standard. The upper limit for subsidiary funding from ASAM is 25% of the total required project budget.
+They all have in common that the primary output of the project is a standard. The upper limit for subsidiary funding from {asam} is 25% of the total required project budget.
 
 === New standard development
 include::standardization:partial$project_types/project-type-new-std-dev.adoc[tag=short]

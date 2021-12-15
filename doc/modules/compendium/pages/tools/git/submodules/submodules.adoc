@@ -1,7 +1,12 @@
 [[top-submodules]]
 = Git submodules usage
+:description: Describes how to use submodules in git.
+:keywords: git, submodule
 
-ASAM uses submodules to include reuse resources in all repositories, e.g. document style configuration.
+include::compendium:partial$_attributes.adoc[]
+
+
+{asam} uses submodules to include reuse resources in all repositories, e.g. document style configuration.
 The submodule has to be added to the repository during setup of the repository.
 
 == Adding a submodule

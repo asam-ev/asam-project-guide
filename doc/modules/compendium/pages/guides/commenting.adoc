@@ -3,7 +3,6 @@
 :keywords: asciidoc,comment,gitlab,vscode
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 For writing standards and concept paper in the simulation domain at ASAM, we use asciidoc.
 Our prefered editor for this is Visual Studio Code.
@@ -13,7 +12,7 @@ xref:tooling:vscode.adoc[].
 
 Once a document is written by the group/service provider, we want to review and comment on the document.
 Unfortunatelly, there is no native built-in comment feature in GitLab and/or {vscode}.
-Also everyone / every working group is working on their own branch.
+Also everyone / every  workgroup is working on their own branch.
 Those branches should be create by using the issues in GitLab.
 
 Once we have this branch, we can get started working on the content, during our work/review/... we recognize things we want to change, discuss, review, etc.

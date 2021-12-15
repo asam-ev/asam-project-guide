@@ -1,10 +1,9 @@
 = How to use docker for asciidoctor
 :description: A how-to on using docker for asciidoctor
 :keywords: docker,asciidoc,asciidoctor
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 :docker-download: https://docs.docker.com/get-docker/
 

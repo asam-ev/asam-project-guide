@@ -1,7 +1,7 @@
 = Submodules in git
 :description: Describes submodules and their usage in Git.
 :keywords: git,gitlab,submodule
-:page-partial:
+
 
 include::compendium:partial$_attributes.adoc[]
 
@@ -20,7 +20,7 @@ NOTE: All examples are shown using the https://code.asam.net/common/style-resour
 
 == Git submodule usage
 
-ASAM uses submodules to include reuse resources in all repositories, e.g. document style configuration.
+{asam} uses submodules to include reuse resources in all repositories, e.g. document style configuration.
 The submodule has to be added to the repository during setup of the repository.
 
 related::submodule,git[]

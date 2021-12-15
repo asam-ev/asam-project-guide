@@ -2,3 +2,6 @@
 :vscode-extensions: compendium:tools/vscode/recommended-vscode-extensions.adoc
 :command-palette: xref:compendium:tools/vscode//vscode-command-palette.adoc[]
 :powershell: xref:compendium:tools/powershell/powershell-basics.adoc[PowerShell]
+:page-partial:
+
+include::{abb}[]
