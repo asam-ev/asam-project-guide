@@ -362,7 +362,7 @@ class AsciiDocContent:
                 new_text = self._make_reference_replacement_text(ref,exceptions,target_dict)
                 replacement_content += new_text
 
-            replacement_content = list(dict.fromkeys(replacement_content))
+            replacement_content = sorted(list(dict.fromkeys(replacement_content)))
             self.content[line+offset:line+offset]=replacement_content
 
     def _make_reference_replacement_text(self,ref_text,exceptions,target_dict):
