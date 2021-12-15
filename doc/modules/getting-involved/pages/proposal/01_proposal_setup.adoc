@@ -7,4 +7,8 @@ include::{abb}[]
 
 {role-gtm}
 
+TIP: For information on the proposal phase, see xref:standardization:proposal-phase.adoc[].
+
+TODO: Add image with highlighted step here.
+
 include::compendium:page$guides/proposal_writing/how_to_executive_draft.adoc[leveloffset=+1]

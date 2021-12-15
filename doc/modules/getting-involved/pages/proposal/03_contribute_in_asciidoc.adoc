@@ -5,5 +5,9 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{role-wg-member}
+{role-project-lead}
+
+TODO: Add image with highlighted steps here.
 
 TODO

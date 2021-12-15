@@ -5,6 +5,10 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{role-wg-member}
+
+TODO: Add image with highlighted step here.
+
 TODO
 
 If you are looking for more information on the proposal workshop, see the section <<Related topics>>.

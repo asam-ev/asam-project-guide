@@ -1,0 +1,7 @@
+= How to get involved: Proposal phase
+:description: Summarizes topics on getting involved in the proposal phase.
+:keywords: proposal
+
+Here you find all topics on how to get involved in the Proposal phase.
+
+pages::[]

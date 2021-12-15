@@ -1,4 +1,4 @@
-= How to get involved at ASAM
+= How to get involved
 :description: Landing page for information on how to get involved in ASAM projects.
 :keywords: landing_page,get-involved
 :page-aliases: home.adoc
@@ -19,4 +19,9 @@ You want to **propose an idea**, **join a proposal** or **define a new standard*
 This section describes requirements and necessary steps for doing so.
 
 
-pages::[all]
+== Content
+* xref:ideation/ideation.adoc[Ideation phase]
+* xref:proposal/proposal.adoc[Proposal phase]
+* xref:development/development.adoc[Development phase]
+* xref:review/review.adoc[Review phase]
+* xref:other/other.adoc[Other topics]

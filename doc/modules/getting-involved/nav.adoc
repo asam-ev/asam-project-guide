@@ -1,18 +1,19 @@
 * xref:home.adoc[]
-** Ideation
-*** xref:ideation/new-idea.adoc[]
-** Proposal
-*** xref:proposal/proposal_setup.adoc[]
-*** xref:proposal/contribute_with_issues.adoc[]
-*** xref:proposal/contribute_in_asciidoc.adoc[]
-*** xref:proposal/proposal_workshop_preparation.adoc[]
-*** xref:proposal/proposal_workshop.adoc[]
-** Development
-*** xref:development/workgroup_member.adoc[]
-*** xref:development/project_lead.adoc[]
-** xref:webinar.adoc[]
-** xref:service_provider.adoc[]
-** Review
-*** xref:review/review_standard.adoc[]
+** xref:ideation/ideation.adoc[Ideation]
+*** xref:ideation/01_new-idea.adoc[]
+** xref:proposal/proposal.adoc[Proposal]
+*** xref:proposal/01_proposal_setup.adoc[]
+*** xref:proposal/02_contribute_with_issues.adoc[]
+*** xref:proposal/03_contribute_in_asciidoc.adoc[]
+*** xref:proposal/04_proposal_workshop_preparation.adoc[]
+*** xref:proposal/05_join_proposal_workshop.adoc[]
+** xref:development/development.adoc[Development]
+*** xref:development/01_workgroup_member.adoc[]
+*** xref:development/02_project_lead.adoc[]
+*** xref:development/03_service_provider.adoc[]
+** xref:review/review.adoc[Review]
+*** xref:review/01_review_standard.adoc[]
+** xref:other/other.adoc[Other]
+*** xref:other/01_webinar.adoc[]
 
 // You may use links to pages or text for non-linked headers
