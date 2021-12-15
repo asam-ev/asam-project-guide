@@ -20,6 +20,9 @@ This section describes requirements and necessary steps for doing so.
 
 
 == Content
+
+How to get involved:
+
 * xref:ideation/ideation.adoc[Ideation phase]
 * xref:proposal/proposal.adoc[Proposal phase]
 * xref:development/development.adoc[Development phase]
