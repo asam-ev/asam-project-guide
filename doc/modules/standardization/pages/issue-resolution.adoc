@@ -20,7 +20,7 @@ Issues in the context of this process have one of the following characteristics:
 * Specification gap: missing content required for a functional system and for com-plete understanding.
 * Lack of clarity: Unclear, vague or ambiguous description, which leads to misun-derstandings and misinterpretations.
 
-The issue may exist in the xref:compendium:definitions/base-standard.adoc[base standard], in xref:compendium:definitions/associated-standard.adoc[associate standards], schema files, interface definition files, model files, examples or any other supplements of the standard.
+The issue may exist in the xref:compendium:definitions/base_standard.adoc[base standard], in xref:compendium:definitions/associated_standard.adoc[associate standards], schema files, interface definition files, model files, examples or any other supplements of the standard.
 
 The request of a new feature or modification of an existing feature, independent of its declared urgency and importance, is not an issue handled through this process.
 
@@ -28,13 +28,13 @@ The request of a new feature or modification of an existing feature, independent
 Several parties are involved in carrying out the issue resolution process.
 
 === Standard user
-include::compendium:page$roles/standard-user.adoc[tags=default;issue_resolution]
+include::compendium:page$roles/standard_user.adoc[tags=default;issue_resolution]
 
 === Standard manager
-include::compendium:page$roles/standard-manager.adoc[tags=default;issue_resolution]
+include::compendium:page$roles/standard_manager.adoc[tags=default;issue_resolution]
 
 === Standard expert group
-include::compendium:page$roles/standard-expert-group.adoc[tags=default;issue_resolution]
+include::compendium:page$roles/standard_expert-group.adoc[tags=default;issue_resolution]
 
 === TSC
 include::compendium:page$roles/tsc.adoc[tags=default;issue_resolution]

@@ -8,8 +8,8 @@ include::compendium:partial$_attributes.adoc[]
 An associated standard always refers to a base standard.
 These are examples of associated standards:
 
-* xref:compendium:definitions/application-area-companion.adoc[]
-* xref:compendium:definitions/transport-layer-specification.adoc[]
+* xref:compendium:definitions/application_area_companion.adoc[]
+* xref:compendium:definitions/transport_layer_specification.adoc[]
 
 //tag::related[]
 related::associated-standard[]

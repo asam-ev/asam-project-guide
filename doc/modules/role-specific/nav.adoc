@@ -5,8 +5,8 @@
 ** xref:reviewer.adoc[]
 ** xref:technical-writer.adoc[]
 ** xref:service-provider.adoc[]
-** xref:standard-manager.adoc[]
-** xref:standard-user.adoc[]
+** xref:standard_manager.adoc[]
+** xref:standard_user.adoc[]
 
 // ** ASAM Office
 // *** Tasks and responsibilities
