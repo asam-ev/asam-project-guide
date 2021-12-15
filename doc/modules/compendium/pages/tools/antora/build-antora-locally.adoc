@@ -3,8 +3,7 @@
 :keywords: antora,guide,docker
 
 include::tooling:partial$_attributes.adoc[]
-include::partial$_attributes.adoc[]
-include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 
 == Context
 This guide explains how to build this Project Guide locally on your PC without having activated the ASAM build pipeline.

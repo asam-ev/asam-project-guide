@@ -2,8 +2,7 @@
 :description: How-to for adding and including the enrollment list in a project proposal.
 :keywords: proposal, enrollment
 
-include::partial$_attributes.adoc[]
-include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 
 // If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
 

@@ -3,8 +3,7 @@
 :keywords: terminology, gitlab
 
 
-include::partial$_attributes.adoc[]
-include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 
 
 ASAM GitLab:: {gitlab-url}

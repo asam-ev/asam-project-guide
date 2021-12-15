@@ -4,8 +4,7 @@
 :page-aliases: home.adoc, main.adoc
 :adoc-exclude:
 
-include::partial$_attributes.adoc[]
-include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 include::ROOT:partial$_attributes.adoc[]
 
 {compendium-icon}
