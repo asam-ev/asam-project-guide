@@ -7,7 +7,8 @@ include::{abb}[]
 
 The purpose of the Review phase is to involve members of {asam} outside the project group to give their review feedback and to increase the overall quality and acceptance of the standard prior to its release.
 
-image::review_phase.png[title="The Review Phase"]
+// image::review_phase.png[title="The Review Phase"]
+image::asam-development-process-Review.drawio.svg[title="The Review Phase (simplified)"]
 
 == C1 - Draft Release
 include::partial$review-draft-release.adoc[tag=long]
