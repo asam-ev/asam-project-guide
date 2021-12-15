@@ -5,6 +5,6 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-image::asam-development-process-Ideation.drawio.svg[title="The Ideation Phase (simplified)"]
+image::asam-development-process-Ideation.drawio.svg[title="The Ideation Phase (simplified)",opts=interactive]
 
 include::partial$project-ideation.adoc[tag=long]
