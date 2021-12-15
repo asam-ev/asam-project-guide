@@ -137,7 +137,7 @@ def create_pure_navigation_adoc_file(fname,dname,created_files):
 
 def initial_steps_performed_only_once(relative_path_depth,use_module,dirpath,base_level,nav_content,current_level,created_files,module,module_path,created):
     if relative_path_depth == -1:
-        relative_path_depth = dirpath.count('\\')
+        relative_path_depth = dirpath.count('/')
         if use_module:
             split_path = dirpath.split("/")
             try:

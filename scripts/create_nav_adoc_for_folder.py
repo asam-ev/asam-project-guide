@@ -29,7 +29,8 @@ def main(argv):
         elif opt in ("-m", "--module"):
             use_module = True
 
-    base_level = current_level = 1
+    base_level = 1
+    current_level = 1
     relative_path_depth = -1
     path_delimiter = ["/","\\"]
 
@@ -45,7 +46,8 @@ def main(argv):
         relative_path_depth,base_level,nav_content,module,module_path,module_file_created=F.initial_steps_performed_only_once(relative_path_depth,use_module,dirpath,base_level,nav_content,current_level, created_files,module,module_path,module_file_created)
 
         # Analyze current directory
-        current_level = base_level + dirpath.count('\\') - relative_path_depth
+        current_level = base_level + dirpath.replace("\\","/").count('/') - relative_path_depth
+        print(base_level, relative_path_depth, current_level)
         list_entries = []
 
         # If folder contains subfolders, check and create new files for each folder where there is no file with the same name in this directory yet.
