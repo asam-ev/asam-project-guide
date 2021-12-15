@@ -1,16 +1,17 @@
 import os,sys,getopt
 
 def main(argv):
-    parameters="sf"
-    parameters_long = ["start","finish"]
+    parameters="sft"
+    parameters_long = ["start","finish","test"]
 
     do_start = False
     do_finish = False
+    do_test = False
 
     try:
         opts, args = getopt.getopt(argv,parameters,parameters_long)
     except:
-        print("Use '-p <path>' or '--path <path>' to specifiy the path the script shall look into.")
+        print("Optional parameters are: -s, --start, -f, --finish, -t, --test")
 
     for opt,arg in opts:
         if opt in ("-s","--start"):
@@ -20,9 +21,18 @@ def main(argv):
             do_finish = True
             do_clean = True
 
+        elif opt in ("-t","--test"):
+            do_test = True
+
     if not (do_start or do_finish):
         do_start = do_finish  = True
 
+
+    if do_test:
+        asam_macro_replacement()
+        nav_adoc_creation()
+        cleanup()
+        exit(0)
 
     if do_start:
         asam_macro_replacement()
