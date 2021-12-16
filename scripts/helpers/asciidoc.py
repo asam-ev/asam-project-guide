@@ -304,11 +304,30 @@ class AsciiDocContent:
         offset = 2
         self.insert_references_in_content(line,offset,ref_list,self.keywords_dict)
 
-    def substitute_role_related_topics_macro(self,ref_list,line):
-        self.content[line] = "== Role related Topics\n\n"
+    def substitute_role_related_topics_macro(self,ref_list_in,line):
+        target_dict = self.roles_dict
+        ref_list = ref_list_in
+        additional_dict = self.keywords_dict
+        if not ref_list[1]:
+            self.content[line] = "== Role-related topics\n\n"
+        else:
+            self.content[line] = "\n"
+
         self.content.insert(line+1,"")
         offset = 2
-        self.insert_references_in_content(line,offset,ref_list,self.roles_dict)
+
+        if ref_list[1]:
+            ref_self = ref_list[0]
+            ref_list = ref_list[1].split(",")
+            target_dict = {}
+            for i in range(len(ref_list)):
+                key = "{content}".format(content=ref_list[i])
+                if key in additional_dict:
+                    target_dict[key] = [x for x in additional_dict[key] if x in self.roles_dict[ref_self]]
+
+
+        self.insert_references_in_content(line,offset,ref_list,target_dict)
+
 
     def substitute_pages_macro(self,arg_list,line):
         args = arg_list.split(",")
