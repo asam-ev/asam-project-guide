@@ -6,8 +6,10 @@
 :ccb: {abb-link}ccb[CCB]
 :cr: {abb-link}cr[CR]
 :dco: {abb-link}dco[DCO]
+:gtm: {abb-link}gtm[GTM]
 :tsc: {abb-link}tsc[TSC]
 :vscode: {abb-link}vscode[VSCode]
+:wg: {abb-link}wg[WG]
 
 ifdef::is_abbreviations[]
 
@@ -27,6 +29,9 @@ Change Request:: TODO
 == DCO
 Developer Certificate of Origin:: The DCO is an attestation attached to every contribution made by every developer.
 
+== GTM
+ASAM Global Technology Manager:: A GTM is an ASAM employee focussed on coordinating project processes and the background work behind a project.
+
 == TSC
 Technical Steering Committee::
 https://www.asam.net/active-projects/technical-steering/
@@ -34,5 +39,8 @@ https://www.asam.net/active-projects/technical-steering/
 == VSCode
 Visual Studio Code:: xref:tooling:vscode.adoc[]
 
+== WG
+Workgroup:: A subgroup within a project dedicated to a specific topic.
+Consists of xref:role-specific:wg-member.adoc[workgroup members] and a xref:role-specific:wg-lead.adoc[workgroup lead].
 
 endif::[]
