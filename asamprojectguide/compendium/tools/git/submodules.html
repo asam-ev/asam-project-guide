@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Submodules in git :: ASAM Project Guide</title>
     <link rel="prev" href="review_code.html">
-    <link rel="next" href="submodules/submodules-add.html">
+    <link rel="next" href="submodules/submodule-delete.html">
     <meta name="description" content="Describes submodules and their usage in Git.">
     <meta name="keywords" content="git,gitlab,submodule">
     <meta name="generator" content="Antora 3.0.0-rc.1">
@@ -548,6 +548,9 @@
     <a class="nav-link" href="submodules.html">Submodules in git</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="submodules/submodule-delete.html">Removing A Submodule From A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="5">
     <a class="nav-link" href="submodules/submodules-add.html">Adding A New Submodule To A Repository</a>
   </li>
   <li class="nav-item" data-depth="5">
@@ -558,9 +561,6 @@
   </li>
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="submodules/submodules-switch-version.html">Switching to a specific submodule version</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="submodules/submodules.html">Git submodules usage</a>
   </li>
 </ul>
   </li>
@@ -962,11 +962,12 @@
 <div class="paragraph">
 <p>Submodules are a way to include other repositories within your repository.
 This way, you do not need to copy identical content from another repository and risk getting out of synch with changes in said external repository.
-You can even check out a specific version of that submodule if you need to stay on that version.
-However, submodules do not automatically update the same way as your main repository does.</p>
+Simplified, a submodule is a pointer to another repository in a specific (!) version.
+This pointer is part of the repository.<br>
+For further information, see the <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">official documentation</a>.</p>
 </div>
 <div class="paragraph">
-<p>This page give an overview over how to pull existing submodules and shows how to add and remove submodules from a project, if needed.</p>
+<p>This page give an overview over how to handle submodules in ASAM projects.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -975,20 +976,8 @@ However, submodules do not automatically update the same way as your main reposi
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-If you are not setting up or responsible for a git repository, you only need to know how to pull a previously set up submodule in git.
-Note that there is a difference between initial pull after first checking out the repository and a regular update.
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-All examples are shown using the <a href="https://code.asam.net/common/style-resources" target="_blank" rel="noopener">ASAM asciidoc-resources repository</a> (replace it with the link to your required submodule repository).
+If you are not setting up or responsible for a git repository, you only need to know how to <a href="#compendium:tools/git/submodules/submodule-pull.adoc" class="xref unresolved">pull a previously set up submodule in git</a>.
+For this you only need to know: <code>git submodule update --init</code>. See below for details.
 </td>
 </tr>
 </table>
@@ -1010,49 +999,7 @@ The submodule has to be added to the repository during setup of the repository.<
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../../guides/git_interactions.html" class="xref page">Git interactions</a></p>
-</li>
-<li>
-<p><a href="../../guides/switch_branches.html" class="xref page">How to switch branches</a></p>
-</li>
-<li>
-<p><a href="../../../tooling/git.html" class="xref page">Git</a></p>
-</li>
-<li>
-<p><a href="../../../tooling/git/git-guides.html" class="xref page">Git guides</a></p>
-</li>
-<li>
-<p><a href="../../../tooling/git/git-setup.html" class="xref page">Setting up git</a></p>
-</li>
-<li>
-<p><a href="../../../tooling/git/git_best_practices.html" class="xref page">Git best practices</a></p>
-</li>
-<li>
-<p><a href="cloning_repo_tutorial.html" class="xref page">Cloning A Repository With Git</a></p>
-</li>
-<li>
-<p><a href="commit_guidelines.html" class="xref page">Git commit guidelines</a></p>
-</li>
-<li>
-<p><a href="git_actions.html" class="xref page">Git actions</a></p>
-</li>
-<li>
-<p><a href="git_terminology.html" class="xref page">Git terminology</a></p>
-</li>
-<li>
-<p><a href="maintain_a_repo.html" class="xref page">Maintain A Repository</a></p>
-</li>
-<li>
-<p><a href="merge.html" class="xref page">Merge</a></p>
-</li>
-<li>
-<p><a href="merge_conflicts.html" class="xref page">Merge conflicts: Preventing And Resolving</a></p>
-</li>
-<li>
-<p><a href="merge_requests.html" class="xref page">Merge requests</a></p>
-</li>
-<li>
-<p><a href="review_code.html" class="xref page">Review code</a></p>
+<p><a href="submodules/submodule-delete.html" class="xref page">Removing A Submodule From A Repository</a></p>
 </li>
 <li>
 <p><a href="submodules/submodules-add.html" class="xref page">Adding A New Submodule To A Repository</a></p>
@@ -1066,34 +1013,13 @@ The submodule has to be added to the repository during setup of the repository.<
 <li>
 <p><a href="submodules/submodules-switch-version.html" class="xref page">Switching to a specific submodule version</a></p>
 </li>
-<li>
-<p><a href="submodules/submodules.html" class="xref page">Git submodules usage</a></p>
-</li>
-<li>
-<p><a href="working_with_git.html" class="xref page">Working with git</a></p>
-</li>
-<li>
-<p><a href="write_a_feature.html" class="xref page">Write A Feature</a></p>
-</li>
-<li>
-<p><a href="../gitlab/branching_repo.html" class="xref page">Branching</a></p>
-</li>
-<li>
-<p><a href="../powershell/cloning_a_repository.html" class="xref page">Cloning A Repository Using Git Bash / Powershell</a></p>
-</li>
-<li>
-<p><a href="../vscode/cloning_a_repository.html" class="xref page">Cloning A Repository Using Visual Studio Code</a></p>
-</li>
-<li>
-<p><a href="../vscode/vscode_git-interaction.html" class="xref page">Interacting with git through Visual Studio Code</a></p>
-</li>
 </ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="review_code.html">Review code</a></span>
-  <span class="next"><a href="submodules/submodules-add.html">Adding A New Submodule To A Repository</a></span>
+  <span class="next"><a href="submodules/submodule-delete.html">Removing A Submodule From A Repository</a></span>
 </nav>
 </article>
   </div>

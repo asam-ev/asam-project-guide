@@ -548,6 +548,9 @@
     <a class="nav-link" href="../submodules.html">Submodules in git</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="submodule-delete.html">Removing A Submodule From A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="5">
     <a class="nav-link" href="submodules-add.html">Adding A New Submodule To A Repository</a>
   </li>
   <li class="nav-item is-current-page" data-depth="5">
@@ -558,9 +561,6 @@
   </li>
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="submodules-switch-version.html">Switching to a specific submodule version</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="submodules.html">Git submodules usage</a>
   </li>
 </ul>
   </li>
@@ -966,42 +966,20 @@ To do this, follow these instructions:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Open a git bash or a Powershell window</p>
-</li>
-<li>
-<p>Type in the following command (replacing the placeholders) and confirm with Enter:</p>
+<p>Open a terminal and type in the following command (replacing the placeholders) and confirm with Enter:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git submodule set-url &lt;Submodule Name&gt; &lt;New Git url to .git file&gt;</code></pre>
 </div>
 </div>
 </li>
+<li>
+<p>Check out the changed submodule after remote has been changed and <code>git add</code> the changes made to .gitmodules and the pulled submodule.</p>
+</li>
 </ol>
 </div>
 <div class="exampleblock">
-<div class="title">Example 1. Changing submodule "ASAM Standard Template" url</div>
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git submodule set-url "ASAM Standard Template" https://code.asam.net/common/templates/standard-template.git</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Don&#8217;t forget to check out the changed submodule after remote has been changed and add the changes made to .gitmodules and the pulled submodule.
-</td>
-</tr>
-</table>
-</div>
-<div class="exampleblock">
-<div class="title">Example 2. Full example for changing a submodule (for asciidoc-resources)</div>
+<div class="title">Example 1. Full example for changing a submodule (for asciidoc-resources)</div>
 <div class="content">
 <div class="listingblock">
 <div class="content">
@@ -1031,6 +1009,9 @@ git push</code></pre>
 <p><a href="../submodules.html" class="xref page">Submodules in git</a></p>
 </li>
 <li>
+<p><a href="submodule-delete.html" class="xref page">Removing A Submodule From A Repository</a></p>
+</li>
+<li>
 <p><a href="submodules-add.html" class="xref page">Adding A New Submodule To A Repository</a></p>
 </li>
 <li>
@@ -1038,9 +1019,6 @@ git push</code></pre>
 </li>
 <li>
 <p><a href="submodules-switch-version.html" class="xref page">Switching to a specific submodule version</a></p>
-</li>
-<li>
-<p><a href="submodules.html" class="xref page">Git submodules usage</a></p>
 </li>
 </ul>
 </div>

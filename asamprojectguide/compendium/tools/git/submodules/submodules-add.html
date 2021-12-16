@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Adding A New Submodule To A Repository :: ASAM Project Guide</title>
-    <link rel="prev" href="../submodules.html">
+    <link rel="prev" href="submodule-delete.html">
     <link rel="next" href="submodules-changing-remote.html">
     <meta name="description" content="Describes how to add a new submodule in a repository.">
     <meta name="keywords" content="git,gitlab,submodule,add">
@@ -547,6 +547,9 @@
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../submodules.html">Submodules in git</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="submodule-delete.html">Removing A Submodule From A Repository</a>
+  </li>
   <li class="nav-item is-current-page" data-depth="5">
     <a class="nav-link" href="submodules-add.html">Adding A New Submodule To A Repository</a>
   </li>
@@ -558,9 +561,6 @@
   </li>
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="submodules-switch-version.html">Switching to a specific submodule version</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="submodules.html">Git submodules usage</a>
   </li>
 </ul>
   </li>
@@ -978,7 +978,7 @@ See the <a href="https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.ht
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Open a <a href="../../powershell/powershell_basics.html" class="xref page">PowerShell</a> window in your repositories root folder</p>
+<p>Open a terminal of your choice window in your repositories root folder</p>
 </li>
 <li>
 <p>Enter the following command for adding the other repository as a submodule (replace url as needed):</p>
@@ -989,7 +989,8 @@ See the <a href="https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.ht
 </div>
 </li>
 <li>
-<p>Edit .gitmodule with any text editor (e.g. <a href="../../../abbreviations.html#_vscode" class="xref page">VSCode</a>) to change the remote url to the local path:</p>
+<p>Edit .gitmodule with any text editor (e.g. <a href="../../../abbreviations.html#_vscode" class="xref page">VSCode</a>) to change the remote url to the local path.
+This is needed for the GitLab pipeline to checkout the submodule without access token:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">// Before editing
@@ -1005,6 +1006,19 @@ See the <a href="https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.ht
         url = ../../common/asciidoc-resources.git <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
 </div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>absolute path to repo</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>relative path to repo when parent repo is also on <a href="https://code.asam.net" class="bare" target="_blank" rel="noopener">https://code.asam.net</a>.
+Note that this has so represent the internal repository structure of code.asam.net.</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>Stage/add your changed .gitmodules in git:</p>
@@ -1018,19 +1032,6 @@ See the <a href="https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.ht
 <p>After that, <code>git commit</code> &amp; <code>git push</code>.</p>
 </li>
 </ol>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>absolute path to repo</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>relative path to repo, when parent repo is also on <a href="https://code.asam.net" class="bare" target="_blank" rel="noopener">https://code.asam.net</a>.
-Note that this has so represent the internal repository structure of code.asam.net.</td>
-</tr>
-</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1046,11 +1047,11 @@ Note that this has so represent the internal repository structure of code.asam.n
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Use the https adress of the repository.
+<p>Use the <strong>https</strong> adress of the repository.
 <code>git submodule add https://code.asam.net/common/style-resources.git</code></p>
 </li>
 <li>
-<p>Do <strong>NOT</strong> edit .gitmodule for relative pathing!</p>
+<p>Do <strong>not</strong> edit .gitmodule for relative pathing!</p>
 </li>
 </ol>
 </div>
@@ -1058,36 +1059,6 @@ Note that this has so represent the internal repository structure of code.asam.n
 </dl>
 </div>
 </td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_removing_a_submodule_from_a_repository"><a class="anchor" href="#_removing_a_submodule_from_a_repository"></a>Removing A Submodule From A Repository</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To delete a submodule do:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">&gt; git rm .gitmodules <i class="conum" data-value="1"></i><b>(1)</b>
-&gt; git rm asciidoc-resources</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>After that <code>&gt; git commit</code> &amp; <code>&gt; git push</code>.</p>
-</li>
-</ul>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>This deletes all submodules in a repository.
-If there is another submodule that should be kept, just delete the corresponding lines from the <code>.gitmodules</code> instead.</td>
 </tr>
 </table>
 </div>
@@ -1102,6 +1073,9 @@ If there is another submodule that should be kept, just delete the corresponding
 <p><a href="../submodules.html" class="xref page">Submodules in git</a></p>
 </li>
 <li>
+<p><a href="submodule-delete.html" class="xref page">Removing A Submodule From A Repository</a></p>
+</li>
+<li>
 <p><a href="submodules-changing-remote.html" class="xref page">Changing remote for a submodule</a></p>
 </li>
 <li>
@@ -1110,15 +1084,12 @@ If there is another submodule that should be kept, just delete the corresponding
 <li>
 <p><a href="submodules-switch-version.html" class="xref page">Switching to a specific submodule version</a></p>
 </li>
-<li>
-<p><a href="submodules.html" class="xref page">Git submodules usage</a></p>
-</li>
 </ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../submodules.html">Submodules in git</a></span>
+  <span class="prev"><a href="submodule-delete.html">Removing A Submodule From A Repository</a></span>
   <span class="next"><a href="submodules-changing-remote.html">Changing remote for a submodule</a></span>
 </nav>
 </article>

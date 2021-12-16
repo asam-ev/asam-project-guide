@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Git submodules usage :: ASAM Project Guide</title>
-    <link rel="prev" href="submodules-switch-version.html">
-    <link rel="next" href="../transitioning_to_a_new_workflow.html">
-    <meta name="description" content="Describes how to use submodules in git.">
-    <meta name="keywords" content="git, submodule">
+    <title>Removing A Submodule From A Repository :: ASAM Project Guide</title>
+    <link rel="prev" href="../submodules.html">
+    <link rel="next" href="submodules-add.html">
+    <meta name="description" content="Describes how to delete a submodule in a repository.">
+    <meta name="keywords" content="git,gitlab,submodule,delete">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../../_'</script>
@@ -547,6 +547,9 @@
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../submodules.html">Submodules in git</a>
 <ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="5">
+    <a class="nav-link" href="submodule-delete.html">Removing A Submodule From A Repository</a>
+  </li>
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="submodules-add.html">Adding A New Submodule To A Repository</a>
   </li>
@@ -558,9 +561,6 @@
   </li>
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="submodules-switch-version.html">Switching to a specific submodule version</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="5">
-    <a class="nav-link" href="submodules.html">Git submodules usage</a>
   </li>
 </ul>
   </li>
@@ -946,137 +946,21 @@
     <li><a href="../../../tools.html">Tools</a></li>
     <li><a href="../../git.html">Git</a></li>
     <li><a href="../submodules.html">Submodules in git</a></li>
-    <li><a href="submodules.html">Git submodules usage</a></li>
+    <li><a href="submodule-delete.html">Removing A Submodule From A Repository</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/compendium/pages/tools/git/submodules/submodules.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/compendium/pages/tools/git/submodules/submodule-delete.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Git submodules usage</h1>
+<h1 class="page">Removing A Submodule From A Repository</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="../../../abbreviations.html#_asam" class="xref page">ASAM</a> uses submodules to include reuse resources in all repositories, e.g. document style configuration.
-The submodule has to be added to the repository during setup of the repository.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_adding_a_submodule"><a class="anchor" href="#_adding_a_submodule"></a>Adding a submodule</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To add a submodule to a repository, follow this steps. All examples are shown using the <a href="https://code.asam.net/common/style-resources">ASAM asciidoc-resources repository</a>. Replace as needed.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">&gt; git submodule add git@code.asam.net:common/style-resources.git <i class="conum" data-value="1"></i><b>(1)</b>
-// Then edit .gitmodule for relative pathing
-&gt; git add .gitmodules</code></pre>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_edit_gitmodule_for_relative_pathing"><a class="anchor" href="#_edit_gitmodule_for_relative_pathing"></a>Edit .gitmodule for relative pathing</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">&gt; cat .gitmodules
-[submodule "asciidoc-resources"]
-        path = asciidoc-resources
-        url = git@code.asam.net:common/style-resources.git <i class="conum" data-value="1"></i><b>(1)</b>
-// [change path using editor of choice]
-&gt; cat .gitmodules
-[submodule "asciidoc-resources"]
-        path = asciidoc-resources
-        url = ../../common/asciidoc-resources.git <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>absolute path to repo</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>relative path to repo, when parent repo is also on <a href="https://code.asam.net" class="bare">https://code.asam.net</a>. Note that this has so represent the internal repository structure of code.asam.net.</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>After that <code>&gt; git commit</code> &amp; <code>&gt; git push</code>.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">When setting up a repository NOT on code.asam.net (e.g. Github for OSI)</dt>
-<dd>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>use the https adress of the repository.
-<code>git submodule add https://code.asam.net/common/style-resources.git</code></p>
-</li>
-<li>
-<p>Do <strong>NOT</strong> <a href="#_edit_gitmodule_for_relative_pathing">Edit .gitmodule for relative pathing</a>!</p>
-</li>
-</ol>
-</div>
-</dd>
-</dl>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_using_a_submodule"><a class="anchor" href="#_using_a_submodule"></a>Using a submodule</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>A submodule is not autoatically checkout with chechout of the parent directory. To checkout the submodule use:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">&gt; git submodule update --init</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_settings_a_submodule_to_a_certain_tag"><a class="anchor" href="#_settings_a_submodule_to_a_certain_tag"></a>Settings a submodule to a certain tag</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>When a certain version of the submodule is needed, go into the submodule and checkout the needed version.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">&gt; cd asciidoc-resources
-&gt; git checkout [tag]
-&gt; cd ..
-&gt; git add asciidoc-resources</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>After that <code>&gt; git commit</code> &amp; <code>&gt; git push</code>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_deleting_a_submodule"><a class="anchor" href="#_deleting_a_submodule"></a>Deleting a submodule</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To delete a submodule do:</p>
+<p>To delete a submodule:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1084,22 +968,51 @@ The submodule has to be added to the repository during setup of the repository.<
 &gt; git rm asciidoc-resources</code></pre>
 </div>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>After that <code>&gt; git commit</code> &amp; <code>&gt; git push</code>.</p>
+</li>
+</ul>
+</div>
 <div class="colist arabic">
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>This deletes all submodules in a repository. If there is another submodule that should be kept, just delete the corresponding lines from the <code>.gitmodules</code>.</td>
+<td>This deletes all submodules in a repository.
+If there is another submodule that should be kept, just delete the corresponding lines from the <code>.gitmodules</code> instead.</td>
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>After that <code>&gt; git commit</code> &amp; <code>&gt; git push</code>.</p>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_related_topics"><a class="anchor" href="#_related_topics"></a>Related topics</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../submodules.html" class="xref page">Submodules in git</a></p>
+</li>
+<li>
+<p><a href="submodules-add.html" class="xref page">Adding A New Submodule To A Repository</a></p>
+</li>
+<li>
+<p><a href="submodules-changing-remote.html" class="xref page">Changing remote for a submodule</a></p>
+</li>
+<li>
+<p><a href="submodules-pull.html" class="xref page">Pulling A Submodule</a></p>
+</li>
+<li>
+<p><a href="submodules-switch-version.html" class="xref page">Switching to a specific submodule version</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="submodules-switch-version.html">Switching to a specific submodule version</a></span>
-  <span class="next"><a href="../transitioning_to_a_new_workflow.html">Transitioning to the new workflow</a></span>
+  <span class="prev"><a href="../submodules.html">Submodules in git</a></span>
+  <span class="next"><a href="submodules-add.html">Adding A New Submodule To A Repository</a></span>
 </nav>
 </article>
   </div>
@@ -1111,7 +1024,7 @@ The submodule has to be added to the repository during setup of the repository.<
 <script async src="../../../../../_/js/vendor/highlight.js"></script>
 <script src="../../../../../_/js/vendor/lunr.js"></script>
 <script src="../../../../../_/js/vendor/search.js" id="search-script"
-    data-base-path="../../../../.." data-page-path="/asamprojectguide/compendium/tools/git/submodules/submodules.html"></script>
+    data-base-path="../../../../.." data-page-path="/asamprojectguide/compendium/tools/git/submodules/submodule-delete.html"></script>
 <script async src="../../../../../_/../search-index.js"></script>
   </body>
 </html>

@@ -548,6 +548,9 @@
     <a class="nav-link" href="../submodules.html">Submodules in git</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="submodule-delete.html">Removing A Submodule From A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="5">
     <a class="nav-link" href="submodules-add.html">Adding A New Submodule To A Repository</a>
   </li>
   <li class="nav-item" data-depth="5">
@@ -558,9 +561,6 @@
   </li>
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="submodules-switch-version.html">Switching to a specific submodule version</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="submodules.html">Git submodules usage</a>
   </li>
 </ul>
   </li>
@@ -978,26 +978,14 @@ See the <a href="https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.ht
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>To pull a submodule, you need to open a terminal (git bash or <a href="../../powershell/powershell_basics.html" class="xref page">PowerShell</a>) in the folder of your git repository.</p>
-</li>
-<li>
-<p>Type the one of the following commands and confirm with Enter</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p><strong>Updating Submodules after checking out repository</strong> (first time):</p>
+<p>To pull a submodule, you need to open a terminal in the folder of your git repository.</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git submodule update --recursive --init</code></pre>
+<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git submodule update --init</code></pre>
 </div>
 </div>
 </li>
-<li>
-<p><strong>Regular updating of Submodules</strong>:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git submodule update --recursive</code></pre>
-</div>
+</ol>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1007,24 +995,6 @@ See the <a href="https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.ht
 </td>
 <td class="content">
 After you have initialized your submodules for the first time, they will also show up in your Git window in <a href="../../../abbreviations.html#_vscode" class="xref page">VSCode</a> where you can update them directly from <a href="../../../abbreviations.html#_vscode" class="xref page">VSCode</a>.
-</td>
-</tr>
-</table>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-You can even leave out the <code>--recursive</code> part if you know that your submodules do not contain submodules themselves.
 </td>
 </tr>
 </table>
@@ -1040,6 +1010,9 @@ You can even leave out the <code>--recursive</code> part if you know that your s
 <p><a href="../submodules.html" class="xref page">Submodules in git</a></p>
 </li>
 <li>
+<p><a href="submodule-delete.html" class="xref page">Removing A Submodule From A Repository</a></p>
+</li>
+<li>
 <p><a href="submodules-add.html" class="xref page">Adding A New Submodule To A Repository</a></p>
 </li>
 <li>
@@ -1047,9 +1020,6 @@ You can even leave out the <code>--recursive</code> part if you know that your s
 </li>
 <li>
 <p><a href="submodules-switch-version.html" class="xref page">Switching to a specific submodule version</a></p>
-</li>
-<li>
-<p><a href="submodules.html" class="xref page">Git submodules usage</a></p>
 </li>
 </ul>
 </div>
