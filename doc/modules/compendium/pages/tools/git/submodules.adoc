@@ -7,19 +7,18 @@ include::compendium:partial$_attributes.adoc[]
 == What are submodules
 Submodules are a way to include other repositories within your repository.
 This way, you do not need to copy identical content from another repository and risk getting out of synch with changes in said external repository.
-You can even check out a specific version of that submodule if you need to stay on that version.
-However, submodules do not automatically update the same way as your main repository does.
+Simplified, a submodule is a pointer to another repository in a specific (!) version.
+This pointer is part of the repository. +
+For further information, see the https://git-scm.com/book/en/v2/Git-Tools-Submodules[official documentation].
 
-This page give an overview over how to pull existing submodules and shows how to add and remove submodules from a project, if needed.
+This page give an overview over how to handle submodules in ASAM projects.
 
-TIP: If you are not setting up or responsible for a git repository, you only need to know how to pull a previously set up submodule in git.
-Note that there is a difference between initial pull after first checking out the repository and a regular update.
-
-NOTE: All examples are shown using the https://code.asam.net/common/style-resources[ASAM asciidoc-resources repository^] (replace it with the link to your required submodule repository).
+TIP: If you are not setting up or responsible for a git repository, you only need to know how to xref:compendium:tools/git/submodules/submodule-pull.adoc[pull a previously set up submodule in git].
+For this you only need to know: `+git submodule update --init+`. See below for details.
 
 == Git submodule usage
 
 {asam} uses submodules to include reuse resources in all repositories, e.g. document style configuration.
 The submodule has to be added to the repository during setup of the repository.
 
-related::submodule,git[]
+related::submodule[]

@@ -9,7 +9,7 @@ See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[Tortoi
 
 To add a submodule to a repository, follow these steps.
 
-. Open a {powershell} window in your repositories root folder
+. Open a terminal of your choice window in your repositories root folder
 . Enter the following command for adding the other repository as a submodule (replace url as needed):
 +
 [source,git]
@@ -18,7 +18,8 @@ git submodule add git@code.asam.net:common/style-resources.git // <1>
 ----
 
 +
-. Edit .gitmodule with any text editor (e.g. {vscode}) to change the remote url to the local path:
+. Edit .gitmodule with any text editor (e.g. {vscode}) to change the remote url to the local path.
+This is needed for the GitLab pipeline to checkout the submodule without access token:
 +
 [source,git]
 ----
@@ -35,6 +36,9 @@ git submodule add git@code.asam.net:common/style-resources.git // <1>
         url = ../../common/asciidoc-resources.git // <2>
 
 ----
+<1> absolute path to repo
+<2> relative path to repo when parent repo is also on https://code.asam.net[window=_blank].
+Note that this has so represent the internal repository structure of code.asam.net.
 
 +
 . Stage/add your changed .gitmodules in git:
@@ -48,34 +52,17 @@ git add .gitmodules
 +
 . After that, `git commit` & `git push`.
 
-<1> absolute path to repo
-<2> relative path to repo, when parent repo is also on https://code.asam.net[window=_blank].
-Note that this has so represent the internal repository structure of code.asam.net.
 
 
 [NOTE]
 ====
 When setting up a repository NOT on code.asam.net (e.g. Github for OSI)::
-. Use the https adress of the repository.
+. Use the **https** adress of the repository.
 `+git submodule add https://code.asam.net/common/style-resources.git+`
 
-. Do **NOT** edit .gitmodule for relative pathing!
+. Do **not** edit .gitmodule for relative pathing!
 ====
 
 
-
-== Removing A Submodule From A Repository
-
-To delete a submodule do:
-
-[source,console]
-----
-> git rm .gitmodules // <1>
-> git rm asciidoc-resources
-----
-* After that `> git commit` & `> git push`.
-
-<1> This deletes all submodules in a repository.
-If there is another submodule that should be kept, just delete the corresponding lines from the `.gitmodules` instead.
 
 related::submodule[]

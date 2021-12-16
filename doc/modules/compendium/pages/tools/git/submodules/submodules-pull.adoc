@@ -9,24 +9,14 @@ Pulling a submodule can currently only be done through a terminal window.
 TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI.
 See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
 
-. To pull a submodule, you need to open a terminal (git bash or {powershell}) in the folder of your git repository.
-. Type the one of the following commands and confirm with Enter
-.. **Updating Submodules after checking out repository** (first time):
+. To pull a submodule, you need to open a terminal in the folder of your git repository.
 +
 [source, git]
 ----
-git submodule update --recursive --init
+git submodule update --init
 ----
-+
-.. **Regular updating of Submodules**:
-+
-[source, git]
-----
-git submodule update --recursive
-----
-+
-NOTE: After you have initialized your submodules for the first time, they will also show up in your Git window in {vscode} where you can update them directly from {vscode}.
 
-TIP: You can even leave out the `--recursive` part if you know that your submodules do not contain submodules themselves.
+
+NOTE: After you have initialized your submodules for the first time, they will also show up in your Git window in {vscode} where you can update them directly from {vscode}.
 
 related::submodule[]
