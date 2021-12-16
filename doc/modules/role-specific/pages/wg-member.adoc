@@ -10,6 +10,7 @@ Label:: {role-wg-member}
 
 TODO: Description
 
-role_related::wg-member[]
+== Proposal phase
+role_related::wg-member[proposal]
 
-related::role-landing-page,role[]
+role_related::wg-member[]

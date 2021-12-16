@@ -10,6 +10,7 @@ Label:: {role-gtm}
 
 TODO: Description
 
-role_related::gtm[]
+== Proposal phase
+role_related::gtm[proposal]
 
-related::role-landing-page,role[]
+role_related::gtm[]

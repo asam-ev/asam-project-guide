@@ -10,6 +10,7 @@ Label:: {role-project-lead}
 
 TODO: Description
 
-role_related::project-lead[]
+== Proposal phase
+role_related::project-lead[proposal]
 
-related::role-landing-page,role[]
+role_related::project-lead[]
