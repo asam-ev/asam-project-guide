@@ -7,6 +7,10 @@ include::compendium:partial$_attributes.adoc[]
 
 // If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
 
+//tag::roles[]
+{role-project-lead}
+//end::roles[]
+
 == Context
 To start a new project with a xref:standardization:proposal-phase.adoc[Project Proposal], it first needs a Project Proposal Executive Draft for internal analysis.
 It also is the basis for the xref:compendium:guides/proposal_writing/how_to_proposal_document.adoc[Project Proposal Draft] before the {proposal-workshop}.
@@ -20,7 +24,7 @@ The Executive Draft described here is currently created as a Word document based
 
 == Prerequisites
 * The idea has been proposed and approved in the xref:standardization:project-ideation.adoc[Ideation Phase].
-* The proposal needs at least four (4) partner companies (the idea-giver + 3).
+* The proposal needs at least three (3) partner companies.
 * The xref:compendium:guides/proposal_writing/how_to_setup_git.adoc[project repostiory] has been set up by the {gtm}.
 
 == How

@@ -1,1 +1,0 @@
-include::compendium:page$guides/proposal_writing/contribute_with_issues.adoc[]

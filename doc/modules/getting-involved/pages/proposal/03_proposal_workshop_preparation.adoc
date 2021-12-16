@@ -1,4 +1,4 @@
-= Prepare a Proposal Workshop
+= Prepare a Proposal workshop
 :description: What to prepare for a proposal workshop.
 :keywords: proposal-workshop, proposal
 
@@ -7,7 +7,7 @@ include::{abb}[]
 
 {role-gtm}
 
-TODO: Add image with highlighted step here.
+image::standardization:proposal_phase_v2-Organize_Workshop.drawio.svg[title="Organize Proposal workshop",opts=interactive]
 
 TODO
 

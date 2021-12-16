@@ -1,4 +1,4 @@
-= Merge
+= Merge a branch
 :description: Describes what a merge is and how to best merge content with git.
 :keywords: git,gitlab,merge,rebase,squash,fetch
 
@@ -54,3 +54,9 @@ Delete your local feature branch.
 ----
 git branch --delete <branch-name>
 ----
+
+
+TODO
+image::compendium:workflow_tut_step3.png[img4, 1100,title="merge request"]
+
+image::compendium:workflow_tut_step4.png[img5, 1100,title="merge request options"]

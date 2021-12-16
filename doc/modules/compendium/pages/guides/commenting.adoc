@@ -4,9 +4,7 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-For writing standards and concept paper in the simulation domain at ASAM, we use asciidoc.
-Our prefered editor for this is Visual Studio Code.
-To store all of our documents, ASAM provides a GitLab repsoitory at {gitlab-url}.
+include::compendium:partial$conventions/git-based_workflow.adoc[tag=short]
 
 xref:tooling:vscode.adoc[].
 

@@ -22,7 +22,7 @@ For proposal submission, the proposal document must be converted into the approp
 TODO
 
 * The idea has been proposed and approved in the xref:standardization:project-ideation.adoc[Ideation Phase].
-* The proposal needs at least four (4) partner companies (the idea-giver + 3).
+* The proposal needs at least three (3) partner companies.
 
 == How
 . Download the https://code.asam.net/common/templates/proposal-template[Executive Draft template^]

@@ -6,13 +6,9 @@ include::compendium:partial$_attributes.adoc[]
 
 
 [.lead]
-All ASAM OpenX Standards are written using the Asciidoc format https://asciidoc.org/[asciidoc Homepage^].
-AsciiDoc is a mature, plain-text writing format for authoring notes, articles, documentation, books, ebooks, web pages, slide decks, blog posts, man pages and more.
+include::compendium:partial$asciidoc.adoc[]
 
-
-You write an AsciiDoc document the same way you would write a normal text document.
-There are no markup tags or weird format notations.
-AsciiDoc files are designed to be viewed, edited and printed directly or translated to other presentation formats.
+NOTE: {asam} uses `.adoc` as fileextension for all AsciiDoc files.
 
 **Main advantages:**
 

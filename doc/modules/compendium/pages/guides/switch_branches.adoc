@@ -21,3 +21,6 @@ Now select a desired branch and open the Context Menu to use the "Checkout Branc
 image::git_graph.png[img62, 900, title="using Git Graph"]
 
 
+TODO
+image::compendium:workflow_tut_switch_branch.png[img3, 1100,title="select branch"]
+

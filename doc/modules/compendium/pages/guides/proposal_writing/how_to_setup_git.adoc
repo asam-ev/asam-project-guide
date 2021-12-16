@@ -2,10 +2,11 @@
 :description: Describes how to set up a new project proposal.
 :keywords: proposal, setup
 
-include::partial$_attributes.adoc[]
-include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 
+//tag::roles[]
 {role-gtm}
+//end::roles[]
 
 TIP: For information on the proposal phase, see xref:standardization:proposal-phase.adoc[].
 
