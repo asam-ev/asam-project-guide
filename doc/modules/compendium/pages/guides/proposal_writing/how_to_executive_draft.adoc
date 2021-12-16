@@ -21,10 +21,12 @@ The Executive Draft described here is currently created as a Word document based
 == Prerequisites
 * The idea has been proposed and approved in the xref:standardization:project-ideation.adoc[Ideation Phase].
 * The proposal needs at least four (4) partner companies (the idea-giver + 3).
+* The xref:compendium:guides/proposal_writing/how_to_setup_git.adoc[project repostiory] has been set up by the {gtm}.
 
 == How
-. Download the https://code.asam.net/common/templates/proposal-template[Executive Draft template^].
-See also: xref:compendium:templates/project_proposal.adoc[].
+
+=== Working in GitLab
+. Log into {gitlab-url}[GitLab] and access the proposal project with the url the {gtm} provided
 . Fill in the standard structure as follows: +
 +
 TIP: The more details you add initially, the easier it is for ASAM to understand and support your proposal and the deeper and more focussed the discussions in the workshops will be.

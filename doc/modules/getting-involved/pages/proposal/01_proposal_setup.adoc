@@ -5,7 +5,7 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-{role-gtm}
+{role-project-lead}
 
 TIP: For information on the proposal phase, see xref:standardization:proposal-phase.adoc[].
 
