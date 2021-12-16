@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Removing A Submodule From A Repository :: ASAM Project Guide</title>
-    <link rel="prev" href="../submodules.html">
-    <link rel="next" href="submodules-add.html">
-    <meta name="description" content="Describes how to delete a submodule in a repository.">
-    <meta name="keywords" content="git,gitlab,submodule,delete">
+    <title>Changing remote for a submodule :: ASAM Project Guide</title>
+    <link rel="prev" href="submodule_add.html">
+    <link rel="next" href="submodule_delete.html">
+    <meta name="description" content="Describes how to change the remote of a submodule in a repository.">
+    <meta name="keywords" content="git,gitlab,submodule,remote">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../../_'</script>
@@ -547,20 +547,20 @@
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../submodules.html">Submodules in git</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="submodule_add.html">Adding A New Submodule To A Repository</a>
+  </li>
   <li class="nav-item is-current-page" data-depth="5">
-    <a class="nav-link" href="submodule-delete.html">Removing A Submodule From A Repository</a>
+    <a class="nav-link" href="submodule_changing_remote.html">Changing remote for a submodule</a>
   </li>
   <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="submodules-add.html">Adding A New Submodule To A Repository</a>
+    <a class="nav-link" href="submodule_delete.html">Removing A Submodule From A Repository</a>
   </li>
   <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="submodules-changing-remote.html">Changing remote for a submodule</a>
+    <a class="nav-link" href="submodule_pull.html">Pulling A Submodule</a>
   </li>
   <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="submodules-pull.html">Pulling A Submodule</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="submodules-switch-version.html">Switching to a specific submodule version</a>
+    <a class="nav-link" href="submodules_switch_version.html">Switching to a specific submodule version</a>
   </li>
 </ul>
   </li>
@@ -946,43 +946,57 @@
     <li><a href="../../../tools.html">Tools</a></li>
     <li><a href="../../git.html">Git</a></li>
     <li><a href="../submodules.html">Submodules in git</a></li>
-    <li><a href="submodule-delete.html">Removing A Submodule From A Repository</a></li>
+    <li><a href="submodule_changing_remote.html">Changing remote for a submodule</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/compendium/pages/tools/git/submodules/submodule-delete.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/compendium/pages/tools/git/submodules/submodule_changing_remote.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Removing A Submodule From A Repository</h1>
+<h1 class="page">Changing remote for a submodule</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>To delete a submodule:</p>
+<p>In case the location of the submodule on remote (i.e. on GitLab) is changed, the url must also be changed manually in every repository that includes this as a submodule.
+To do this, follow these instructions:</p>
 </div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a terminal and type in the following command (replacing the placeholders) and confirm with Enter:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">&gt; git rm .gitmodules <i class="conum" data-value="1"></i><b>(1)</b>
-&gt; git rm asciidoc-resources</code></pre>
+<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git submodule set-url &lt;Submodule Name&gt; &lt;New Git url to .git file&gt;</code></pre>
 </div>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>After that <code>&gt; git commit</code> &amp; <code>&gt; git push</code>.</p>
 </li>
-</ul>
+<li>
+<p>Check out the changed submodule after remote has been changed and <code>git add</code> the changes made to .gitmodules and the pulled submodule.</p>
+</li>
+</ol>
 </div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>This deletes all submodules in a repository.
-If there is another submodule that should be kept, just delete the corresponding lines from the <code>.gitmodules</code> instead.</td>
-</tr>
-</table>
+<div class="exampleblock">
+<div class="title">Example 1. Full example for changing a submodule (for asciidoc-resources)</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git submodule set-url asciidoc-resources git@code.asam.net:common/style-resources.git
+cd .\asciidoc-resources\
+git checkout master
+git pull
+cd ..
+(change .gitmodules for relative pathing for pipeline)
+git add .gitmodules
+git add asciidoc-resources
+git status
+git commit &lt;...&gt;
+git push</code></pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -995,24 +1009,24 @@ If there is another submodule that should be kept, just delete the corresponding
 <p><a href="../submodules.html" class="xref page">Submodules in git</a></p>
 </li>
 <li>
-<p><a href="submodules-add.html" class="xref page">Adding A New Submodule To A Repository</a></p>
+<p><a href="submodule_add.html" class="xref page">Adding A New Submodule To A Repository</a></p>
 </li>
 <li>
-<p><a href="submodules-changing-remote.html" class="xref page">Changing remote for a submodule</a></p>
+<p><a href="submodule_delete.html" class="xref page">Removing A Submodule From A Repository</a></p>
 </li>
 <li>
-<p><a href="submodules-pull.html" class="xref page">Pulling A Submodule</a></p>
+<p><a href="submodule_pull.html" class="xref page">Pulling A Submodule</a></p>
 </li>
 <li>
-<p><a href="submodules-switch-version.html" class="xref page">Switching to a specific submodule version</a></p>
+<p><a href="submodules_switch_version.html" class="xref page">Switching to a specific submodule version</a></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../submodules.html">Submodules in git</a></span>
-  <span class="next"><a href="submodules-add.html">Adding A New Submodule To A Repository</a></span>
+  <span class="prev"><a href="submodule_add.html">Adding A New Submodule To A Repository</a></span>
+  <span class="next"><a href="submodule_delete.html">Removing A Submodule From A Repository</a></span>
 </nav>
 </article>
   </div>
@@ -1024,7 +1038,7 @@ If there is another submodule that should be kept, just delete the corresponding
 <script async src="../../../../../_/js/vendor/highlight.js"></script>
 <script src="../../../../../_/js/vendor/lunr.js"></script>
 <script src="../../../../../_/js/vendor/search.js" id="search-script"
-    data-base-path="../../../../.." data-page-path="/asamprojectguide/compendium/tools/git/submodules/submodule-delete.html"></script>
+    data-base-path="../../../../.." data-page-path="/asamprojectguide/compendium/tools/git/submodules/submodule_changing_remote.html"></script>
 <script async src="../../../../../_/../search-index.js"></script>
   </body>
 </html>
