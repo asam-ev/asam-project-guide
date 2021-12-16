@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Workflow tutorial :: ASAM Project Guide</title>
+    <title>Workflow tutorial for the projects using gitlab :: ASAM Project Guide</title>
     <link rel="prev" href="switch_branches.html">
     <link rel="next" href="writing_guidelines.html">
     <meta name="description" content="A guide on the GitLab workflow for projects.">
-    <meta name="keywords" content="gitlab,workflow,guide,tutorial">
+    <meta name="keywords" content="gitlab,workflow,tutorial">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -120,16 +120,13 @@
     <a class="nav-link" href="../../getting-involved/proposal/01_proposal_setup.html">Project Proposal setup</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../getting-involved/proposal/02_contribute_with_issues.html">How to contribute to a proposal through GitLab issues</a>
+    <a class="nav-link" href="../../getting-involved/proposal/02_contributing.html">Contributing to a Project Proposal</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../getting-involved/proposal/03_contribute_in_asciidoc.html">How to contribute to a proposal directly in AsciiDoc files</a>
+    <a class="nav-link" href="../../getting-involved/proposal/03_proposal_workshop_preparation.html">Prepare a Proposal workshop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../getting-involved/proposal/04_proposal_workshop_preparation.html">Prepare a Proposal Workshop</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../getting-involved/proposal/05_join_proposal_workshop.html">Join a proposal workshop</a>
+    <a class="nav-link" href="../../getting-involved/proposal/04_join_proposal_workshop.html">Join a Proposal workshop</a>
   </li>
 </ul>
   </li>
@@ -373,6 +370,9 @@
     <a class="nav-link" href="proposal_writing.html">Proposal writing</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="proposal_writing/contribute_in_asciidoc.html">How to contribute to a proposal directly in AsciiDoc files</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="proposal_writing/contribute_with_issues.html">How to contribute to a proposal through GitLab issues</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -408,7 +408,7 @@
     <a class="nav-link" href="switch_branches.html">How to switch branches</a>
   </li>
   <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="workflow_tutorial.html">Workflow tutorial</a>
+    <a class="nav-link" href="workflow_tutorial.html">Workflow tutorial for the projects using gitlab</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="writing_guidelines.html">Writing guidelines overview</a>
@@ -541,7 +541,7 @@
     <a class="nav-link" href="../tools/git/maintain_a_repo.html">Maintain A Repository</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../tools/git/merge.html">Merge</a>
+    <a class="nav-link" href="../tools/git/merge.html">Merge a branch</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../tools/git/merge_conflicts.html">Merge conflicts: Preventing And Resolving</a>
@@ -598,13 +598,16 @@
     <a class="nav-link" href="../tools/gitlab/branch_naming_conventions.html">Branch naming conventions</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../tools/gitlab/branching_repo.html">Branching</a>
+    <a class="nav-link" href="../tools/gitlab/branching_repo.html">Creating a branch</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../tools/gitlab/cloning_a_repository.html">Cloning A Repository Using GitLab To Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../tools/gitlab/commit_guidelines.html">ASAM commit guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/create_branch_from_issue.html">Create development branch from issues</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../tools/gitlab/forking_repo.html">Forking from repository</a>
@@ -953,7 +956,7 @@
     <li><a href="../../index.html">ASAM Project Guide</a></li>
     <li><a href="../compendium.html">Compendium</a></li>
     <li><a href="../guides.html">Guides</a></li>
-    <li><a href="workflow_tutorial.html">Workflow tutorial</a></li>
+    <li><a href="workflow_tutorial.html">Workflow tutorial for the projects using gitlab</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/compendium/pages/guides/workflow_tutorial.adoc">Edit this Page</a></div>
@@ -963,12 +966,19 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Workflow tutorial</h1>
-<div class="sect1">
-<h2 id="_workflow_tutorial_for_the_projects_using_gitlab"><a class="anchor" href="#_workflow_tutorial_for_the_projects_using_gitlab"></a>Workflow tutorial for the projects using gitlab</h2>
+<h1 class="page">Workflow tutorial for the projects using gitlab</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>In this tutorial we will go through the workflow we want to use to create the OpenDRIVE concept Paper.</p>
+<p><a href="../../role-specific/gtm.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#32CD32;" >GTM</role></a>
+<a href="../../role-specific/project-lead.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#6A5ACD;" >PROJECT LEAD</role></a>
+<a href="../../role-specific/wg-member.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#BDB76B;" >WG MEMBER</role></a>
+<a href="../../role-specific/wg-lead.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#14BCCD;" >WG LEAD</role></a>
+<a href="../../role-specific/technical-writer.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#D8BFD8;" >TECHNICAL WRITER</role></a>
+<a href="../../role-specific/service-provider.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FFDEAD;" >SERVICE PROVIDER</role></a></p>
+</div>
+<div class="paragraph">
+<p>In this tutorial, we will go through the workflow we want to use to create project documents in GitLab.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -977,7 +987,7 @@
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Never work on the master branch, always create your own development branch
+Never work on the master branch, always create your own <a href="#_create_development_branch">development branch</a>!
 </td>
 </tr>
 </table>
@@ -988,120 +998,252 @@ Never work on the master branch, always create your own development branch
 <h2 id="_tooling"><a class="anchor" href="#_tooling"></a>Tooling</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To work on the files in your branch you can either use the integrated WEB IDE or any other text editor, to pull, commit, push etc. to the repository you can use any git tool.
-We recommend to use the following tools:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Texteditor: Visual Studio Code (<a href="../abbreviations.html#_vscode" class="xref page">VSCode</a>) <a href="https://code.visualstudio.com/" class="bare">https://code.visualstudio.com/</a> please install also the AsciiDoc Extension, this can be done in <a href="../abbreviations.html#_vscode" class="xref page">VSCode</a></p>
-</li>
-<li>
-<p>git tools: <a href="https://git-scm.com/downloads" class="bare">https://git-scm.com/downloads</a></p>
-</li>
-</ul>
+<p>To work on the files in your branch, you can either use the <a href="../tools/gitlab/gitlab-ide_guide.html" class="xref page">Gitlab IDE</a> or a local setup consisting of text editor and Git.
+For the tools supported by <a href="../abbreviations.html#_asam" class="xref page">ASAM</a>, see <a href="../../tooling/main.html" class="xref page">Tools overview</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_create_your_own_development_branch"><a class="anchor" href="#_create_your_own_development_branch"></a>create your own development branch</h2>
+<h2 id="_create_development_branch"><a class="anchor" href="#_create_development_branch"></a>1. Create development branch</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you want to start writing on the OpenDRIVE Concept Document, please create your own development branch. This branch can than be merged into the master branch after you are done with your work. Please keep in mind to change only few files at once in one branch, this will make merging easier.
-The change to one file can be significant.</p>
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CA4444;" >MANDATORY</label></p>
 </div>
 <div class="paragraph">
-<p>To create a new branch please follow these simple steps:</p>
+<p>Each topic must be developed in a separate development branch before it is merged to main when ready.
+Please keep in mind to change only few files at once in one branch to minimize the chance for <a href="../tools/git/merge_conflicts.html" class="xref page">merge conflicts</a> to occur.</p>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Give the branch a significant name that describes its intensions.
+See <a href="../tools/gitlab/branch_naming_conventions.html" class="xref page">Branch naming conventions</a> for branch name conventions at <a href="../abbreviations.html#_asam" class="xref page">ASAM</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you want to switch the branch you are viewing and working on, see <a href="switch_branches.html" class="xref page">How to switch branches</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_create_development_branch_from_issue"><a class="anchor" href="#_create_development_branch_from_issue"></a>1.1. Create development branch from issue</h3>
+<div class="paragraph">
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#E69138;" >RECOMMENDED</label></p>
+</div>
+<div class="paragraph">
+<p>The recommended way of working is by using issues.</p>
+</div>
+<div class="paragraph">
+<p>The general idea is: Whenever an issue is opened, a branch is created with it.
+Thus, it is possible to work on the issue in an individual branch and merge that branch back to <code>main</code> after the issue is done.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create an issue, using one of the available templates.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/workflow_tut_issue1.png" alt="create_issue" width="1100" height="create issue">
+</div>
+</div>
+</li>
+<li>
+<p>Fill out the neccessary fields.
+Keep the size of the issue reasonable, for example by trying to have it cover about 8 hours of work.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/workflow_tut_issue2.png" alt="define_issue" width="1100" height="define issue">
+</div>
+</div>
+</li>
+<li>
+<p>Open your issue and create your branch from it.
+Follow the <a href="../tools/gitlab/branch_naming_conventions.html" class="xref page">Branch naming conventions</a> for the branch name.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/workflow_tut_issue_branch.png" alt="create_branch" width="1100" height="create branch from issue">
+</div>
+</div>
+</li>
+<li>
+<p>Now, the ticket is created and we can start working on the issue.
+When working on the issue, document your progress to be able to know when the task is done.
+Please keep the documentation for the progress short and simple.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/workflow_tut_issue3.png" alt="work_on_issue" width="1100" height="work on issue">
+</div>
+</div>
+</li>
+<li>
+<p>If there are open points that need to be discussed with the group, start a new thread in the issue so others can reply to your suggestion or question</p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/workflow_tut_issue4.png" alt="start_thread" width="1100" height="start thread">
+</div>
+</div>
+<div class="paragraph">
+<p>A thread in an issue looks like the image below.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/workflow_tut_issue5.png" alt="thread" width="1100" height="thread">
+</div>
+</div>
+</li>
+<li>
+<p>As soon as the issue is done, create a merge request for the branch to start an internal review.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_development_branch_manually"><a class="anchor" href="#_create_development_branch_manually"></a>1.2. Create development branch manually</h3>
+<div class="paragraph">
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#76A5AF;" >OPTIONAL</label></p>
+</div>
+<div class="paragraph">
+<p>Alternatively, you can create your branch manually, either through GitLab or locally (if set up).</p>
+</div>
+<div class="paragraph">
+<p>There a many ways to create a branch in the git process.
+Two options are highlighted below.</p>
+</div>
+<div class="sect3">
+<h4 id="_option_1_using_visual_studio_code"><a class="anchor" href="#_option_1_using_visual_studio_code"></a>1.2.1. Option 1: Using Visual Studio Code</h4>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/create-a-branch.png" alt="create a branch">
+</div>
+<div class="title">Figure 1. Create a new branch in <a href="../abbreviations.html#_vscode" class="xref page">VSCode</a></div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click on the branch icon on the bottom left</p>
+</li>
+<li>
+<p>Click on "Create New Branch"</p>
+</li>
+<li>
+<p>Enter a new <a href="../tools/gitlab/branch_naming_conventions.html" class="xref page">valid</a> branch name and confirm with Enter</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You are automatically switched to the new branch.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>This is a local branch</strong>.
+You need to push it before it is also on the remote.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_option_2_in_gitlab"><a class="anchor" href="#_option_2_in_gitlab"></a>1.2.2. Option 2: In GitLab</h4>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/workflow_tut_step1.png" alt="img1" width="1100">
 </div>
-<div class="title">Figure 1. select the dropdown menu for new branch</div>
+<div class="title">Figure 2. select the dropdown menu for new branch</div>
 </div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open an issue for which you want to create a new branch</p>
+</li>
+<li>
+<p>Select "Create branch" from the dropdown menu</p>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/workflow_tut_step2.png" alt="img2" width="1100">
 </div>
-<div class="title">Figure 2. create name for new branch</div>
+<div class="title">Figure 3. create name for new branch</div>
+</div>
+</li>
+<li>
+<p>Enter a new <a href="../tools/gitlab/branch_naming_conventions.html" class="xref page">valid</a> branch name</p>
+</li>
+<li>
+<p>Click "Create branch"</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>now the repository is switched to your new branch and you can get started working on this branch.
-If you want to switch back to any ofther branch see image below:</p>
+<p>The branch is now created on remote.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/workflow_tut_switch_branch.png" alt="img3" width="1100">
-</div>
-<div class="title">Figure 3. select branch</div>
-</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>After you are done with your work it is time to merge your branch to the master branch, for this you have to create a "merge request"</p>
+<p><strong>You need to check out this branch locally as this only creates the branch on the server.</strong></p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/workflow_tut_step3.png" alt="img4" width="1100">
+</td>
+</tr>
+</table>
 </div>
-<div class="title">Figure 4. merge request</div>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/workflow_tut_step4.png" alt="img5" width="1100">
-</div>
-<div class="title">Figure 5. merge request options</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_use_issue_tracker_to_create_development_branch"><a class="anchor" href="#_use_issue_tracker_to_create_development_branch"></a>use issue tracker to create development branch</h2>
+<h2 id="_work_in_your_development_branch"><a class="anchor" href="#_work_in_your_development_branch"></a>2. Work in your development branch</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The preferred way of working on the concepts is by using issues. When ever a issue is opened a branch is created with it. So it is possible to work on the issue in an individual branch an merge that branch onto the master after the issue is done.</p>
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CA4444;" >MANDATORY</label></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If you are using the <a href="../tools/gitlab/gitlab-ide_guide.html" class="xref page">Gitlab IDE</a>, you can edit the files directly in your browser.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>The first step is to create an issue:</p>
+<p>If you are using a local setup, you can pull, change, stage, commit and push through Git.
+See the guide on <a href="git_interactions.html" class="xref page">Git interactions</a> for further information on how to work with a repository.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/workflow_tut_issue1.png" alt="img6" width="1100" height="create issue">
 </div>
+</div>
+<div class="sect1">
+<h2 id="_merge_all_changes_back_to_the_main_branch"><a class="anchor" href="#_merge_all_changes_back_to_the_main_branch"></a>3. Merge all changes back to the main branch</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CA4444;" >MANDATORY</label></p>
 </div>
 <div class="paragraph">
-<p>fill out the neccessary fields. keep in mind to have a reasonable size of the issue, for example an issue is worth 8h of work.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/workflow_tut_issue2.png" alt="img7" width="1100" height="define issue">
-</div>
+<p>After you are done with your work, create a "merge request" to the <code>main</code> branch.
+This is described in <a href="../tools/git/merge.html" class="xref page">Merge a branch</a>.</p>
 </div>
 <div class="paragraph">
-<p>now the ticket is created and we can start working on the issue. when wie work on the issue we also want to document our progress, so we know when we are done with the task.
-Please keep the documentation for the progress short and simple.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/workflow_tut_issue3.png" alt="img8" width="1100" height="work on issue">
-</div>
+<p>It is recommended to only merge a development branch once all issues related to it are closed.
+Each merge request must be reviewed internally with a simple review before it is allowed to be merged into <code>main</code> in order to minimize mistakes slipping through.</p>
 </div>
 <div class="paragraph">
-<p>if there are openpoints that need to be discussed with te group you can also staert a new thread in the issue so others can reply to your suggestion or question</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/workflow_tut_issue4.png" alt="img8" width="1100" height="start thread">
-</div>
-</div>
-<div class="paragraph">
-<p>a thread in an issue looks like the image below.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/workflow_tut_issue5.png" alt="img8" width="1100" height="thread">
-</div>
-</div>
-<div class="paragraph">
-<p>as soon as you are done with your issue, please close the issue.
-When all issues for your development branch are closed we can start a simple review of the work and merge the branch back onto the master branch.</p>
+<p>Once a branch is merged into <code>main</code>, its changes are now offical and applied.</p>
 </div>
 </div>
 </div>

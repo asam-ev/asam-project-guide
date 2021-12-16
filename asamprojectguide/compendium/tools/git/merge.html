@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Merge :: ASAM Project Guide</title>
+    <title>Merge a branch :: ASAM Project Guide</title>
     <link rel="prev" href="maintain_a_repo.html">
     <link rel="next" href="merge_conflicts.html">
     <meta name="description" content="Describes what a merge is and how to best merge content with git.">
@@ -120,16 +120,13 @@
     <a class="nav-link" href="../../../getting-involved/proposal/01_proposal_setup.html">Project Proposal setup</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../../getting-involved/proposal/02_contribute_with_issues.html">How to contribute to a proposal through GitLab issues</a>
+    <a class="nav-link" href="../../../getting-involved/proposal/02_contributing.html">Contributing to a Project Proposal</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../../getting-involved/proposal/03_contribute_in_asciidoc.html">How to contribute to a proposal directly in AsciiDoc files</a>
+    <a class="nav-link" href="../../../getting-involved/proposal/03_proposal_workshop_preparation.html">Prepare a Proposal workshop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../../getting-involved/proposal/04_proposal_workshop_preparation.html">Prepare a Proposal Workshop</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../../getting-involved/proposal/05_join_proposal_workshop.html">Join a proposal workshop</a>
+    <a class="nav-link" href="../../../getting-involved/proposal/04_join_proposal_workshop.html">Join a Proposal workshop</a>
   </li>
 </ul>
   </li>
@@ -373,6 +370,9 @@
     <a class="nav-link" href="../../guides/proposal_writing.html">Proposal writing</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../guides/proposal_writing/contribute_in_asciidoc.html">How to contribute to a proposal directly in AsciiDoc files</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../guides/proposal_writing/contribute_with_issues.html">How to contribute to a proposal through GitLab issues</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -408,7 +408,7 @@
     <a class="nav-link" href="../../guides/switch_branches.html">How to switch branches</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../guides/workflow_tutorial.html">Workflow tutorial</a>
+    <a class="nav-link" href="../../guides/workflow_tutorial.html">Workflow tutorial for the projects using gitlab</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../guides/writing_guidelines.html">Writing guidelines overview</a>
@@ -541,7 +541,7 @@
     <a class="nav-link" href="maintain_a_repo.html">Maintain A Repository</a>
   </li>
   <li class="nav-item is-current-page" data-depth="4">
-    <a class="nav-link" href="merge.html">Merge</a>
+    <a class="nav-link" href="merge.html">Merge a branch</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="merge_conflicts.html">Merge conflicts: Preventing And Resolving</a>
@@ -598,13 +598,16 @@
     <a class="nav-link" href="../gitlab/branch_naming_conventions.html">Branch naming conventions</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../gitlab/branching_repo.html">Branching</a>
+    <a class="nav-link" href="../gitlab/branching_repo.html">Creating a branch</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../gitlab/cloning_a_repository.html">Cloning A Repository Using GitLab To Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../gitlab/commit_guidelines.html">ASAM commit guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../gitlab/create_branch_from_issue.html">Create development branch from issues</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../gitlab/forking_repo.html">Forking from repository</a>
@@ -954,7 +957,7 @@
     <li><a href="../../compendium.html">Compendium</a></li>
     <li><a href="../../tools.html">Tools</a></li>
     <li><a href="../git.html">Git</a></li>
-    <li><a href="merge.html">Merge</a></li>
+    <li><a href="merge.html">Merge a branch</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/compendium/pages/tools/git/merge.adoc">Edit this Page</a></div>
@@ -964,7 +967,7 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Merge</h1>
+<h1 class="page">Merge a branch</h1>
 <div class="paragraph">
 <p>Rebase interactively.
 Squash commits like "Fix whitespace" into one or a small number of valuable commit(s).
@@ -1016,6 +1019,16 @@ git push</code></pre>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git branch --delete &lt;branch-name&gt;</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>TODO
+image::compendium:workflow_tut_step3.png[img4, 1100,title="merge request"]</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/workflow_tut_step4.png" alt="img5" width="1100">
+</div>
+<div class="title">Figure 1. merge request options</div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="maintain_a_repo.html">Maintain A Repository</a></span>
