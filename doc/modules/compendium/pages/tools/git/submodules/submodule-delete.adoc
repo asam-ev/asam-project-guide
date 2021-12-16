@@ -1,10 +1,8 @@
-== Removing A Submodule From A Repository
+= Removing A Submodule From A Repository
 :description: Describes how to delete a submodule in a repository.
 :keywords: git,gitlab,submodule,delete
-:page-partial:
 
 include::compendium:partial$_attributes.adoc[]
-include::{abb}[]
 
 
 To delete a submodule:
