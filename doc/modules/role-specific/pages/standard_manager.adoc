@@ -11,5 +11,3 @@ Label:: {role-standard-manager}
 TODO: Description
 
 role_related::standard-manager[]
-
-related::role-landing-page,role[]

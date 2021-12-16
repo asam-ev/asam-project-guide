@@ -11,5 +11,3 @@ Label:: {role-service-provider}
 TODO: Description
 
 role_related::service-provider[]
-
-related::role-landing-page,role[]

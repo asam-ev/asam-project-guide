@@ -11,5 +11,3 @@ Label:: {role-reviewer}
 TODO: Description
 
 role_related::reviewer[]
-
-related::role-landing-page,role[]

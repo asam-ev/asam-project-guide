@@ -11,5 +11,3 @@ Label:: {role-standard-user}
 TODO: Description
 
 role_related::standard-user[]
-
-related::role-landing-page,role[]
