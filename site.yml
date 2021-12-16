@@ -61,6 +61,10 @@ asciidoc:
     role-standard-user: 'xref:role-specific:standard_user.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CD853F;" >STANDARD USER</role>]'
     role-standard-manager: 'xref:role-specific:standard_manager.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#DEB887;" >STANDARD MANAGER</role>]'
 
+    ## Labels
+    mandatory: '<label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CA4444;" >MANDATORY</label>'
+    recommended: '<label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#E69138;" >RECOMMENDED</label>'
+    optional: '<label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#76A5AF;" >OPTIONAL</label>'
 
   extensions:
   - asciidoctor-kroki
