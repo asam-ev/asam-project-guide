@@ -5,10 +5,10 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-ASAM distinguishes between two types of development:
+{asam} distinguishes between two types of development:
 
-* <<Standard Development>>
-* <<Other Project Types>>
+* <<Standard development>>
+* <<Other project types>>
 
 .Project types
 image::project_types.png[]
@@ -17,31 +17,31 @@ image::project_types.png[]
 
 === New standard
 
-include::partial$project-type-new-std-dev.adoc[tag=long]
+include::partial$project_types/project-type-new-std-dev.adoc[tag=long]
 
 === Major version development
 
-include::partial$project-type-major.adoc[tag=long]
+include::partial$project_types/project-type-major.adoc[tag=long]
 
 === Minor version development
 
-include::partial$project-type-minor.adoc[tag=long]
+include::partial$project_types/project-type-minor.adoc[tag=long]
 
 === Revision version development
 
-include::partial$project-type-revision.adoc[tag=long]
+include::partial$project_types/project-type-revision.adoc[tag=long]
 
 
 == Other project types
 
 === Concept project
 
-include::partial$project-type-concept.adoc[tag=long]
+include::partial$project_types/project-type-concept.adoc[tag=long]
 
 === Implementation project
 
-include::partial$project-type-implementation.adoc[tag=long]
+include::partial$project_types/project-type-implementation.adoc[tag=long]
 
 ==== Study project
 
-include::partial$project-type-study.adoc[tag=long]
+include::partial$project_types/project-type-study.adoc[tag=long]

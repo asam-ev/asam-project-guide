@@ -1,4 +1,8 @@
 = Platforms used at ASAM
+:description: todo
+:keywords: todo
+
+include::compendium:partial$_attributes.adoc[]
 
 **Microsoft Teams**
 : Chat, conferencing, document folder for sharing documents (e.g. research papers, notes, videos, anything that does not need to be versioned) - See the xref:tooling:teams-and-sharepoint.adoc[]

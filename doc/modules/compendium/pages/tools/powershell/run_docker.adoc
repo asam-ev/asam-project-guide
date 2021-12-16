@@ -1,0 +1,14 @@
+= Running docker-Compose From Powershell
+:description: Run docker-compose from Powershell
+:keywords: docker,powershell
+
+include::compendium:partial$_attributes.adoc[]
+
+IMPORTANT: {docker-deamon-warning}
+
+You can run docker commands from the Windows powershell or the cmd tool.
+
+image::compendium:docker-from-ps.gif[title="Run Docker-Compose from Powershell"]
+
+. Navigate to the folder with your docker-compose.yml
+. Type `docker-compose run asciidoctor` and confirm with Enter

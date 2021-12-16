@@ -7,7 +7,7 @@ include::{abb}[]
 
 {calendar-icon}
 
-ASAM has a shared calendar for all OpenX projects: the OpenX calendar ({openx-calendar-mail}).
+{asam} has a shared calendar for all OpenX projects: the OpenX calendar ({openx-calendar-mail}).
 Members can subscribe to it and invite it to automatically keep track of all meetings related to any OpenX project.
 
 IMPORTANT: It is **mandatory** for all OpenX projects to invite the OpenX calendar!

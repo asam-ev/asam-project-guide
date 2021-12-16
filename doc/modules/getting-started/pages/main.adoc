@@ -11,9 +11,12 @@ include::ROOT:partial$_attributes.adoc[]
 > Nobody is born an expert.
 
 Everyone needs to start somewhere.
-To do so, the following sections is supposed to give a basic summary over all important aspects of working at and with ASAM.
+To do so, the following sections give a basic summary over all important aspects of working at and with {asam}.
 
-* xref:new-here.adoc[] See these pages for the very basics about ASAM and the ASAM projects.
-* If you want to learn more about this Project Guide, see the section xref:about-this-guide.adoc[].
-
-related::landing_page[]
+* xref:how-asam-works.adoc[]
+* xref:processes-and-workflows-overview.adoc[]
+* xref:project-types.adoc[]
+* xref:current-projects.adoc[]
+* xref:roles-overview.adoc[]
+* xref:tools-overview.adoc[]
+* xref:asam-contacts.adoc[]

@@ -12,20 +12,20 @@ include::{abb}[]
 TODO: write description
 
 == Microsoft teams
-include::compendium:page$tools/teams/teams-channel-file-structure.adoc[{offset_value}]
+include::compendium:page$tools/teams/teams-channel_file-structure.adoc[{offset_value}]
 
-include::compendium:page$tools/teams/receive-notifications.adoc[{offset_value}]
+include::compendium:page$tools/teams/receive_notifications.adoc[{offset_value}]
 
 include::compendium:page$tools/teams/email-notifications.adoc[{offset_value}]
 
-include::compendium:page$tools/teams/polls-and-surveys.adoc[{offset_value}]
+include::compendium:page$tools/teams/polls_and_surveys.adoc[{offset_value}]
 
-include::compendium:page$tools/teams/meetings-in-teams.adoc[{offset_value}]
+include::compendium:page$tools/teams/meetings_in_teams.adoc[{offset_value}]
 
-include::compendium:page$tools/teams/obtain-channel-email.adoc[{offset_value}]
+include::compendium:page$tools/teams/obtain_channel_email.adoc[{offset_value}]
 
 == Sharepoint
 
 include::compendium:page$tools/sharepoint/links.adoc[{offset_value}]
 
-include::compendium:page$tools/sharepoint/synchronizing-sharepoint-with-onedrive.adoc[{offset_value}]
+include::compendium:page$tools/sharepoint/synchronizing_sharepoint_with_onedrive.adoc[{offset_value}]

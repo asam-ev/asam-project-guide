@@ -1,0 +1,30 @@
+= How to get involved
+:description: Landing page for information on how to get involved in ASAM projects.
+:keywords: landing_page,get-involved
+:page-aliases: home.adoc
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+include::ROOT:partial$_attributes.adoc[]
+
+{getting-involved-icon}
+
+[IMPORTANT]
+====
+**If you are not an {asam} member yet, see https://www.asam.net/about-asam/join-asam/[join ASAM on the ASAM website^].**
+The linked page contains all necessary information on membership, benefits and related topics.
+====
+
+You want to **propose an idea**, **join a proposal** or **define a new standard** at {asam}?
+This section describes requirements and necessary steps for doing so.
+
+
+== Content
+
+How to get involved:
+
+* xref:ideation/ideation.adoc[Ideation phase]
+* xref:proposal/proposal.adoc[Proposal phase]
+* xref:development/development.adoc[Development phase]
+* xref:review/review.adoc[Review phase]
+* xref:other/other.adoc[Other topics]

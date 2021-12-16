@@ -1,4 +1,8 @@
 = ASAM standard workflows
+:description: todo
+:keywords: todo
+
+include::compendium:partial$_attributes.adoc[]
 
 IMPORTANT: 28.04.2021: See https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/git/Transitioning-to-a-new-workflow[Transitioning to the new Workflow^] for steps we need to take to enable this workflow
 

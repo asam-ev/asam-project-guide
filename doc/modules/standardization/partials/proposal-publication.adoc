@@ -14,7 +14,7 @@
 // end::table[]
 
 The Office checks the proposal document for formal compliance.
-Once the document is accepted, the Office checks the document into the {tsc} file repository, puts the proposal on the ASAM website for download and publishes the proposal via a newsletter- and optional webpage-article.
+Once the document is accepted, the Office checks the document into the {tsc} file repository, puts the proposal on the https://www.asam.net/active-projects/proposals/[ASAM website^] for download and publishes the proposal via a newsletter- and optional webpage-article.
 
 Members are invited to enroll for participation in the upcoming project.
 The Office manages the registration of project group members during this phase.

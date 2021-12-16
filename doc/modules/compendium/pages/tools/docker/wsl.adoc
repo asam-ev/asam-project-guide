@@ -1,7 +1,6 @@
 = Windows subsystem for linux (WSL)
 :description: A terminology page for WSL
 :keywords: terminology,term,wsl,docker
-:page-partial:
 
 include::compendium:partial$_attributes.adoc[]
 

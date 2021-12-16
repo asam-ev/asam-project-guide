@@ -3,8 +3,7 @@
 :keywords: proposal, executive-draft
 :proposal-workshop: xref:standardization:proposal-phase.adoc#_p1_proposal_workshop[Proposal Workshop]
 
-include::partial$_attributes.adoc[]
-include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 
 // If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
 
@@ -24,8 +23,8 @@ The Executive Draft described here is currently created as a Word document based
 * The proposal needs at least four (4) partner companies (the idea-giver + 3).
 
 == How
-. Download the https://code.asam.net/common/templates/proposal-template[Executive Draft template^]
-// TODO: Update link and add correct template
+. Download the https://code.asam.net/common/templates/proposal-template[Executive Draft template^].
+See also: xref:compendium:templates/project_proposal.adoc[].
 . Fill in the standard structure as follows: +
 +
 TIP: The more details you add initially, the easier it is for ASAM to understand and support your proposal and the deeper and more focussed the discussions in the workshops will be.

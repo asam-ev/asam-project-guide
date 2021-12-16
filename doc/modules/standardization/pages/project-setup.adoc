@@ -1,5 +1,5 @@
 = Project setup
-:description: Describes how to set up a new projectd.
+:description: Describes how to set up a new project.
 :keywords: setup,standard,process
 
 include::partial$_attributes.adoc[]
@@ -7,4 +7,11 @@ include::{abb}[]
 
 How to setup a project, steps to take
 
+== Proposal setup
+TODO
+
+== Standardization setup
+TODO
+
+== Revision setup
 TODO

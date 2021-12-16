@@ -1,10 +1,15 @@
 = Writing guidelines overview
+:description: todo
+:keywords: todo
+
+include::compendium:partial$_attributes.adoc[]
+
 :cdir: compendium:writing_guidelines/
 
 - xref:{cdir}asciidoc_guide.adoc[]
 - Style Guidelines (TODO)
 - xref:{cdir}writing_guide[ASAM Writing Guide]
-- xref:tools/docker/docker-for-asciidoc.adoc[]
+- xref:tools/docker/docker_for_asciidoc.adoc[]
 - xref:{cdir}coding_style_guide.adoc[]
 - xref:{cdir}plantuml_documentation_guide[Documentation Guide for PlantUML]
 

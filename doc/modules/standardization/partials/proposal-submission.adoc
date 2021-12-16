@@ -3,7 +3,7 @@
 [cols="1h,20"]
 |===
 |Purpose
-|To submit the finalized project proposal to ASAM
+|To submit the finalized project proposal to {asam}
 
 |Responsible
 |Proposal submitter
@@ -19,6 +19,6 @@ Besides the submitter, at least two further members must support the proposal an
 //end::long[]
 
 //tag::short[]
-The proposal author submits the project proposal to ASAM.
+The proposal author submits the project proposal to {asam}.
 The ASAM office carries out a formal check of the submission.
 //end::short[]

@@ -1,7 +1,7 @@
 import sys, getopt
-from shutil import copyfile
 from os import walk
-import os
+
+from helpers import functions as F
 
 def main(argv):
 
@@ -29,7 +29,8 @@ def main(argv):
         elif opt in ("-m", "--module"):
             use_module = True
 
-    base_level = current_level = 1
+    base_level = 1
+    current_level = 1
     relative_path_depth = -1
     path_delimiter = ["/","\\"]
 
@@ -42,17 +43,17 @@ def main(argv):
             dirpath = dirpath + "\\"
 
         # Do the initial setup steps (once!)
-        relative_path_depth,base_level,nav_content,module,module_path,module_file_created=initial_steps_performed_only_once(relative_path_depth,use_module,dirpath,base_level,nav_content,current_level, created_files,module,module_path,module_file_created)
+        relative_path_depth,base_level,nav_content,module,module_path,module_file_created=F.initial_steps_performed_only_once(relative_path_depth,use_module,dirpath,base_level,nav_content,current_level, created_files,module,module_path,module_file_created)
 
         # Analyze current directory
-        current_level = base_level + dirpath.count('\\') - relative_path_depth
+        current_level = base_level + dirpath.replace("\\","/").count('/') - relative_path_depth
         list_entries = []
 
         # If folder contains subfolders, check and create new files for each folder where there is no file with the same name in this directory yet.
         if(dirnames):
             for dname in dirnames:
                 fname = dirpath+dname+".adoc"
-                created = create_pure_navigation_adoc_file(fname,dname,created_files)
+                created = F.create_pure_navigation_adoc_file(fname,dname,created_files)
                 list_entries.append(dname+".adoc")
 
         current_relative_path = dirpath.replace(path,'')
@@ -60,7 +61,7 @@ def main(argv):
         # Add found supported files to list
         for f in filenames:
             for type in filetypes:
-                if f.endswith(type) and not f[0]=="_" and not f in [x+".adoc" for x in dirnames]:
+                if f.endswith(type) and not f[0]=="_" and not f in [x+".adoc" for x in dirnames] and not (dirpath.split("/")[-2] == "pages" and dirpath.split("/")[-3]+".adoc" == f):
                     list_entries.append(f)
                     break
 
@@ -75,22 +76,22 @@ def main(argv):
         # If in pages folder
         if not current_relative_path:
             for e in list_entries:
-                nav_content += add_xref(current_level,current_relative_path,e)
+                nav_content += F.add_xref(current_level,current_relative_path,e)
 
             if use_module and module_file_created:
-                content = add_subdirectories_to_main_file(created_files,module_path+"/pages/"+module+".adoc",list_entries,current_relative_path)
+                content = F.add_subdirectories_to_main_file(created_files,module_path+"/pages/"+module+".adoc",list_entries,current_relative_path)
 
         # If in any subfolder
         else:
 
-            content = add_subdirectories_to_main_file(created_files,parent_path+path_components[-2]+".adoc",list_entries,current_relative_path)
+            content = F.add_subdirectories_to_main_file(created_files,parent_path+path_components[-2]+".adoc",list_entries,current_relative_path)
             for line in content:
                 temp_nav_content += "*"*current_level + line
 
             index = nav_content.find(path_components[-2]+".adoc[]\n") + len(path_components[-2]+".adoc[]\n")
             nav_content = nav_content[:index] + temp_nav_content + nav_content[index:]
 
-    update_nav_adoc_file(path,nav_content)
+    F.update_nav_adoc_file(path,nav_content)
 
     # Note: This is where antora would create the htmls before this script removes the created files again. Alternatively, the files could stay there and not be deleted, just overwritten every time the script is run...
     # INFO: For now, this is done in a cleanup script afterwards.
@@ -98,67 +99,6 @@ def main(argv):
     for f in created_files:
         with open(f+"2",'w') as file:
             file.write("delete!")
-
-def add_xref(level,path,filename):
-    new_line = "*"*level + " xref:" + path + filename + "[]\n"
-    return new_line
-
-def create_pure_navigation_adoc_file(fname,dname,created_files):
-    created = False
-    if not os.path.isfile(fname):
-        created = True
-        with open(fname,'w') as f:
-            f.write("= "+dname.replace("_"," ").capitalize()+"\n\n== Subpages\n\n")
-
-    if created:
-        created_files.append(fname)
-
-    return created
-
-
-def initial_steps_performed_only_once(relative_path_depth,use_module,dirpath,base_level,nav_content,current_level,created_files,module,module_path,created):
-    if relative_path_depth == -1:
-        relative_path_depth = dirpath.count('\\')
-        if use_module:
-            split_path = dirpath.split("/")
-            try:
-                module = split_path[split_path.index("modules")+1]
-                module_path = "/".join(split_path[:split_path.index("modules")+2])
-            except:
-                print("Module could not be determined: path does not contain '/module' element.")
-
-            if module:
-                base_level += 1
-                # nav_content += "*"*current_level + " xref:" + module_path
-                module_filename = module+".adoc"
-                nav_content += add_xref(current_level,"",module_filename)
-                created = create_pure_navigation_adoc_file(module_path+"/pages/"+module_filename,module,created_files)
-
-    return relative_path_depth,base_level,nav_content,module,module_path,created
-
-
-# TODO: Add append feature so that existing files are only appended, not skipped or overwritten (also: do this for the Subpages part in "create_pure_nvaigatoin_adoc_file!)
-def add_subdirectories_to_main_file(created_files,main_file,list_entries,current_relative_path):
-    content = []
-    content_array = []
-    for e in list_entries:
-        line = " xref:" + current_relative_path.replace("\\","/") + e + "[]\n"
-        content.append("*"+line)
-        content_array.append(line)
-
-    if main_file in created_files:
-        with open(main_file,"a") as f:
-                f.writelines(content)
-
-    return content_array
-
-
-def update_nav_adoc_file(path,nav_content):
-    target = path[:path.rfind("/pages",1)]+"/"
-    if os.path.isfile(target+"nav.adoc"):
-        copyfile(target+"nav.adoc",target+"nav.adoc1")
-    with open(target+"nav.adoc","w") as file:
-        file.write(nav_content)
 
 
 if __name__ == "__main__":

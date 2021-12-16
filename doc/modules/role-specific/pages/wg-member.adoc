@@ -1,4 +1,4 @@
-= Working group member
+= Workgroup member
 :description: Summary and landing page for wg members.
 :keywords: role, role-landing-page
 

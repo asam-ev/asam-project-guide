@@ -1,9 +1,0 @@
-= Call for offers
-:description: Describes what a call for offers is and where to find information.
-:keywords:
-
-{role-service-provider}
-
-A "call for offers" is issued by ASAM when a service provider is required.
-
-For current calls, see https://www.asam.net/active-projects/call-for-offers/.

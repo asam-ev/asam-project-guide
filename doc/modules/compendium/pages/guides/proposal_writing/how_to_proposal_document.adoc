@@ -1,10 +1,9 @@
-= How-to create an executive proposal draft
+= How-to create a project proposal document
 :description: How-to for creating a new project proposal from an executive draft
-:keywords: proposal, executive-draft
+:keywords: proposal, document
 :proposal-workshop: xref:standardization:proposal-phase.adoc#_p1_proposal_workshop[Proposal Workshop]
 
-include::partial$_attributes.adoc[]
-include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 
 // If you use a recurring image for similar artifacts, declare it as attribute in partials/_attributes.adoc and reference here.
 

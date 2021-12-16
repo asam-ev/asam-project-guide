@@ -2,6 +2,8 @@
 :description: Git and GitLab commit guidelines
 :keywords: gitlab,commit,guidelines
 
+include::compendium:partial$_attributes.adoc[]
+
 .ASAM OSC2 Commit Message Convention
 ----
 <GroupName>: <description>

@@ -1,0 +1,7 @@
+= How to get involved: Development phase
+:description: Summarizes topics on getting involved in the development phase.
+:keywords: development
+
+Here you find all topics on how to get involved in the Development phase.
+
+pages::[]

@@ -2,4 +2,8 @@
 :description: Instructions on how to add a partial
 :keywords: new-content-guide,project-guide,partial,todo
 
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
 TODO

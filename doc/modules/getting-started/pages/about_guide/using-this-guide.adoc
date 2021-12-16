@@ -1,5 +1,0 @@
-= Using this guide
-
-This summarizes information on how to use this guide.
-
-// TODO

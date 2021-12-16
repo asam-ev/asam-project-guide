@@ -1,7 +1,11 @@
 [#top-osc2-plantuml-documentation-guide]
 
 = PlantUML documentation guide
+:description: todo
+:keywords: todo
 :numbered:
+
+include::compendium:partial$_attributes.adoc[]
 
 This guide shows how to add documentation comments (short: _adoc-comments_) to plantuml-files.
 These adoc-comments are used by the UML2adoc script to generate documentation fragments.

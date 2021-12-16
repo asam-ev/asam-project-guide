@@ -2,8 +2,7 @@
 :description: TBD
 :keywords: writing_guide
 
-include::partial$_attributes.adoc[]
-include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 
 
 [.lead]

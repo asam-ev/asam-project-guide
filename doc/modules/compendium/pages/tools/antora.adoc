@@ -2,8 +2,7 @@
 :description: Summary description of what Antora is.
 :keywords: antora
 
-include::partial$_attributes.adoc[]
-include::{abb}[]
+include::compendium:partial$_attributes.adoc[]
 
 Antora is a pipeline for building documentation and guides from AsciiDoc files.
 It is used to create the ASAM Project Guide (this document) from the files in its original {guide-repo-url}[repository].

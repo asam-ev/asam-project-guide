@@ -1,0 +1,22 @@
+= Pulling A Submodule
+:description: Describes how a submodule can be pulled.
+:keywords: git,gitlab,submodule,pull
+
+include::compendium:partial$_attributes.adoc[]
+
+Pulling a submodule can currently only be done through a terminal window.
+
+TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI.
+See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
+
+. To pull a submodule, you need to open a terminal in the folder of your git repository.
++
+[source, git]
+----
+git submodule update --init
+----
+
+
+NOTE: After you have initialized your submodules for the first time, they will also show up in your Git window in {vscode} where you can update them directly from {vscode}.
+
+related::submodule[]
