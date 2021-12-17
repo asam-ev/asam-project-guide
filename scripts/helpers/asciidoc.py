@@ -721,15 +721,15 @@ class AsciiDocContent:
             file.write(output_graph_full)
 
 
-    def write_attributes_to_file(self,output_filename = "used-attributes", output_path = "../doc/modules/project-guide/pages/"):
-        content = ["= Used attributes In ASAM Projectd Guide"]
-        content.append(":description: Automatically generated overview over all attributes used throughout this Project Guide.")
-        content.append(":keywords: generated,attributes,link-concept,structure")
+    def write_attributes_to_file(self,output_filename = "used-keywords", output_path = "../doc/modules/project-guide/pages/"):
+        content = ["= Used keywords In ASAM Project Guide"]
+        content.append(":description: Automatically generated overview over all keywords used throughout this Project Guide.")
+        content.append(":keywords: generated,keywords,link-concept,structure")
         content.append("")
-        content.append("This page is an automatically generated list of all attributes used throught this Project Guide.")
-        content.append("Every attribute has its own subsection and contains a link to each page as well as the original filename, path and module in the repository.")
+        content.append("This page is an automatically generated list of all keywords used throught this Project Guide.")
+        content.append("Every keyword has its own subsection and contains a link to each page as well as the original filename, path and module in the repository.")
         content.append("")
-        content.append("== List of Attributes")
+        content.append("== List of keywords")
         content.append("")
 
         for a in sorted(self.keywords_dict):
