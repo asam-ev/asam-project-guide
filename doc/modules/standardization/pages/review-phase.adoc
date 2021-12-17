@@ -21,3 +21,5 @@ include::partial$review-feedback-deadline.adoc[tag=long]
 
 == C4 - Feedback Processing
 include::partial$review-feedback-processing.adoc[tag=long]
+
+related::review[]

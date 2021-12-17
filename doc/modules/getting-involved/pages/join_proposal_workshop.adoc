@@ -1,0 +1,1 @@
+include::standardization:page$proposal/04_join_proposal_workshop.adoc[]

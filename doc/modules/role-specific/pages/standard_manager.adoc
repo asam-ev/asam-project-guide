@@ -3,7 +3,8 @@
 :keywords: role, role-landing-page
 
 include::partial$_attributes.adoc[]
-include::{abb}[]
+
+{standard-manager-description}
 
 [horizontal,role=right]
 Label:: {role-standard-manager}

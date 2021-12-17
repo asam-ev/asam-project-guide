@@ -1,7 +1,0 @@
-= How to get involved: Ideation phase
-:description: Summarizes topics on getting involved in the ideation phase.
-:keywords: ideation
-
-Here you find all topics on how to get involved in the Ideation phase.
-
-pages::[]

@@ -24,3 +24,5 @@ include::partial$release-publication-preparation.adoc[tag=long]
 
 == R5 - Publication
 include::partial$release-publication.adoc[tag=long]
+
+related::release[]

@@ -3,12 +3,11 @@
 :keywords: role, role-landing-page
 
 include::partial$_attributes.adoc[]
-include::{abb}[]
 
 [horizontal,role=right]
 Label:: {role-gtm}
 
-TODO: Description
+{gtm-description}
 
 == Proposal phase
 role_related::gtm[proposal]

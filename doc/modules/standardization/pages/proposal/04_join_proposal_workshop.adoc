@@ -1,6 +1,7 @@
 = Join a Proposal workshop
 :description: Describes how to join a proposal workshop
 :keywords: proposal-workshop
+:page-partial:
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

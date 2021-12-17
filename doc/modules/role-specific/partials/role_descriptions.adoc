@@ -1,0 +1,27 @@
+
+:gtm-description: The GTM is the technology contact at ASAM offices.
+Every project needs one responsible GTM.
+
+:project-member-description: Every project needs project members from at least three (3) different companies. \
+See Workgroup Member
+
+:project-lead-description: The project leader is responsible for the coordination of all project activities. \
+Without an elected project lead, the project may not start. \
+The project members must elect a project lead at the beginning of the project.
+
+:wg-member-description: If the project is split up into smaller workgroups, a project member can join a workgroup to become a workgroup member.
+
+:wg-lead-description: If the project is split up into smaller workgroups, a project member can be elected to be the workgroup lead and will support the project lead. \
+Each workgroup should have zero or one workgropu lead.
+
+:service-provider-description: if the project needs additional resources a service provider can be hired, this requires approved budget by the {tsc}.
+
+:technical-writer-description: if the project requires a technical writer either the ASAM technical writer will fill this role or a service provider can be hired to fill that role.
+
+:standard-user-description: Someone who is using the ASAM standard.
+
+:standard-manager-description: The manager at ASAM responsible for the standard.
+
+:tsc-description: The {tsc} is responsible to approve budget, and project as well as releases of project results, such as standards or concept papers.
+
+:reviewer-description: A Standard user that want to provide feedback either in a Review phase or afterwards.

@@ -1,7 +1,0 @@
-= How to get involved: Review phase
-:description: Summarizes topics on getting involved in the review phase.
-:keywords: review
-
-Here you find all topics on how to get involved in the Review phase.
-
-pages::[]

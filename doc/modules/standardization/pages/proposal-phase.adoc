@@ -29,3 +29,8 @@ include::partial$proposal-publication.adoc[tag=long]
 
 == P5 - Proposal Decision
 include::partial$proposal-decision.adoc[tag=long]
+
+
+pages::[path=proposal]
+
+related::proposal[]

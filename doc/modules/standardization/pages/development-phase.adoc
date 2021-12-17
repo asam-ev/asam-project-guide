@@ -12,3 +12,5 @@ image::asam-development-process-Development.drawio.svg[title="The Development Ph
 
 == D1 - Development Phase
 include::partial$development-phase.adoc[tag=long]
+
+related::development[]

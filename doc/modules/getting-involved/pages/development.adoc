@@ -4,4 +4,4 @@
 
 Here you find all topics on how to get involved in the Development phase.
 
-pages::[]
+pages::[path=development]

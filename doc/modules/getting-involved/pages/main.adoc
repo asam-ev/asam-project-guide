@@ -16,15 +16,8 @@ The linked page contains all necessary information on membership, benefits and r
 ====
 
 You want to **propose an idea**, **join a proposal** or **define a new standard** at {asam}?
-This section describes requirements and necessary steps for doing so.
+The pages in this module got you covered.
 
+include::partial$module-description.adoc[]
 
-== Content
-
-How to get involved:
-
-* xref:ideation/ideation.adoc[Ideation phase]
-* xref:proposal/proposal.adoc[Proposal phase]
-* xref:development/development.adoc[Development phase]
-* xref:review/review.adoc[Review phase]
-* xref:other/other.adoc[Other topics]
+pages::[]

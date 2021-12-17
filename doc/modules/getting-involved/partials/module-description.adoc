@@ -1,3 +1,2 @@
 
-This module contains information and instructions on how to get involved in ASAM projects.
-It is intended in particular for individuals and companies currently not yet involved in ASAM projects and activities as well as seasoned ASAM project members interested in participating in new projects.
+Here, you find information, instructions and important tutorials on how to get involved in {asam} and its projects.

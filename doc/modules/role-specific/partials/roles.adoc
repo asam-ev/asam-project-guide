@@ -1,10 +1,12 @@
 
 //tag::summary[]
 Within projects at {asam}, participant have one or more roles.
-Each of these roles has their own set of requirements, mandatory and/or optional tool, guidelines and how-tos, some of them shared between multiple roles.
+Each of these roles has their own set of requirements, mandatory and/or {optional} tool, guidelines and how-tos, some of them shared between multiple roles.
 //end::summary[]
 
 //tag::list_of_roles[]
+
+include::role-specific:partial$role_descriptions.adoc[]
 
 TIP: Click on a role's label to navigate directly to the role's summary page.
 
@@ -16,56 +18,51 @@ TIP: Click on a role's label to navigate directly to the role's summary page.
 3+^h| Roles within ASAM projects
 
 | {role-gtm}
-|mandatory
-| The GTM is the technology contact at ASAM offices.
-Every project needs one responsible GTM.
+|{mandatory}
+| {gtm-description}
 
 | Project Member
-|mandatory
-| Every project needs project members from at least three (3) different companies.
-See Workgroup Member
+|{mandatory}
+| {project-member-description}
 
 | {role-project-lead}
-|mandatory
-| The project leader.
-Without an elected project lead, the project may not start.
-The project members must elect a project lead at the beginning of the project.
+|{mandatory}
+| {project-lead-description}
 
 | {role-wg-member}
-|optional
-| If the project is split up into smaller workgroups, a project member can join a workgroup to become a workgroup member.
+|{optional}
+| {wg-member-description}
 
 | {role-wg-lead}
-| optional
-| If the project is split up into smaller workgroups, a project member can be elected to be the workgroup lead and will support the project lead.
-Each workgroup should have zero or one workgropu lead.
+| {optional}
+| {wg-lead-description}
 
 | {role-service-provider}
-| optional
-| if the project needs additional resources a service provider can be hired, this requires approved budget by the {tsc}.
+| {optional}
+| {service-provider-description}
 
 | {role-technical-writer}
-| optional
-| if the project requires a technical writer either the ASAM technical writer will fill this role or a service provider can be hired to fill that role.
+| {optional}
+| {technical-writer-description}
 
 3+^h| Roles around ASAM projects
 
 | {role-standard-user}
 | na
-| Someone who is using the ASAM standard.
+| {standard-user-description}
 
 | {role-standard-manager}
-| mandatory
-| The manager at ASAM responsible for the standard.
+| {mandatory}
+| {standard-manager-description}
 
 | {tsc}
-| mandatory
-| The {tsc} is responsible to approve budget, and project as well as releases of project results, such as standards or concept papers.
+| {mandatory}
+| {tsc-description}
 
 
 | {role-reviewer}
-| temporary
-| A Standard user that want to provide feedback either in a Review phase or afterwards.
+| {mandatory}
+| {reviewer-description}
 
 |===
 
