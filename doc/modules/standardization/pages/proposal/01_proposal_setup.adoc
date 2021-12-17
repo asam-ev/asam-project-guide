@@ -7,6 +7,6 @@ include::{abb}[]
 
 {role-project-lead}
 
-image::standardization:proposal_phase_v2-Executive_Draft.drawio.svg[title="Proposal preparation",opts=interactive]
+image::standardization:proposal_phase_v2-Executive_Draft.svg[title="Proposal preparation",opts=interactive]
 
 include::compendium:page$guides/proposal_writing/how_to_executive_draft.adoc[leveloffset=+1, tag=!roles]

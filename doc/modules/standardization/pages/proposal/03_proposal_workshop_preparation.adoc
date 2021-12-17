@@ -7,7 +7,7 @@ include::{abb}[]
 
 {role-gtm}
 
-image::standardization:proposal_phase_v2-Organize_Workshop.drawio.svg[title="Organize Proposal workshop",opts=interactive]
+image::standardization:proposal_phase_v2-Organize_Workshop.svg[title="Organize Proposal workshop",opts=interactive]
 
 TODO
 

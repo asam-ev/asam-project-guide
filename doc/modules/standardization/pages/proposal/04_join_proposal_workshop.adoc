@@ -8,7 +8,7 @@ include::{abb}[]
 
 {role-wg-member}
 
-image::standardization:proposal_phase_v2-Join_Workshop.drawio.svg[title="Join Proposal workshop",opts=interactive]
+image::standardization:proposal_phase_v2-Join_Workshop.svg[title="Join Proposal workshop",opts=interactive]
 
 TODO
 

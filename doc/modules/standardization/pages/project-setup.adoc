@@ -15,6 +15,7 @@ include::compendium:page$guides/proposal_writing/how_to_setup_git.adoc[leveloffs
 include::compendium:page$guides/proposal_writing/how_to_enrollment_list.adoc[leveloffset=+2]
 
 == Standardization setup
+image::project_setup.jpg[]
 TODO
 
 == Revision setup

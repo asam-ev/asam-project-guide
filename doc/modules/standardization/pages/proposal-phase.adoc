@@ -9,7 +9,7 @@ The purpose of the Proposal phase is to transfer ideas for standard development 
 
 image::asam-development-process-Proposal.drawio.svg[title="The Proposal Phase (simplified)",opts=interactive]
 
-image::proposal_phase_v2-Proposal_Phase.drawio.svg[title="The Proposal Phase (expanded and interactive) as BPMN 2.0",opts=interactive]
+image::proposal_phase_v2-Proposal_Phase.svg[title="The Proposal Phase (expanded and interactive) as BPMN 2.0",opts=interactive]
 
 == P1 - Proposal Workshop
 include::partial$proposal-workshop.adoc[tag=long]
