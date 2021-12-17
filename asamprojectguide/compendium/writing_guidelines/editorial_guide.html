@@ -1309,8 +1309,8 @@ It contains editorial rules for contributing content to a project in written for
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ASM-xx</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tables</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASM-47</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List use asciidoc syntax</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
@@ -1521,12 +1521,41 @@ For example, each item should be a noun or a phrase that starts with a verb.</p>
 </li>
 </ul>
 </div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-47"><a class="anchor" href="#sec-ASM-47"></a>3.2. Use AsciiDoc syntax for lists (ASM-47)</h3>
 <div class="paragraph">
-<p>TODO: Use AsciiDoc syntax for lists.</p>
+<p>Use only asciidoc syntax to format lists.
+Use either ordered or unordered lists.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Unordered list
+* This is an item.
+* This is another item.
+* This is an additional item.
+
+Ordered list
+. This is the first item.
+. This is the second item.
+. This is the third item.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Exceptions</strong>
+n/a</p>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong>
+* <a href="https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/</a>
+* <a href="https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-5"><a class="anchor" href="#sec-ASM-5"></a>3.2. Start each list item in a list with an uppercase letter (ASM-5)</h3>
+<h3 id="sec-ASM-5"><a class="anchor" href="#sec-ASM-5"></a>3.3. Start each list item in a list with an uppercase letter (ASM-5)</h3>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
@@ -1567,7 +1596,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-6"><a class="anchor" href="#sec-ASM-6"></a>3.3. Put a full stop at the end of a list item if it is a full sentence (ASM-6)</h3>
+<h3 id="sec-ASM-6"><a class="anchor" href="#sec-ASM-6"></a>3.4. Put a full stop at the end of a list item if it is a full sentence (ASM-6)</h3>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
@@ -1609,7 +1638,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-9"><a class="anchor" href="#sec-ASM-9"></a>3.4. Just add one sentence per line (ASM-9)</h3>
+<h3 id="sec-ASM-9"><a class="anchor" href="#sec-ASM-9"></a>3.5. Just add one sentence per line (ASM-9)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1648,9 +1677,9 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-10"><a class="anchor" href="#sec-ASM-10"></a>3.5. Choose a suitable type of list (ASM-10)</h3>
+<h3 id="sec-ASM-10"><a class="anchor" href="#sec-ASM-10"></a>3.6. Choose a suitable type of list (ASM-10)</h3>
 <div class="sect3">
-<h4 id="_use_a_bulleted_list_for_things_that_have_something_in_common_but_do_not_need_to_appear_in_a_particular_order"><a class="anchor" href="#_use_a_bulleted_list_for_things_that_have_something_in_common_but_do_not_need_to_appear_in_a_particular_order"></a>3.5.1. Use a bulleted list for things that have something in common but do not need to appear in a particular order.</h4>
+<h4 id="_use_a_bulleted_list_for_things_that_have_something_in_common_but_do_not_need_to_appear_in_a_particular_order"><a class="anchor" href="#_use_a_bulleted_list_for_things_that_have_something_in_common_but_do_not_need_to_appear_in_a_particular_order"></a>3.6.1. Use a bulleted list for things that have something in common but do not need to appear in a particular order.</h4>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
@@ -1671,7 +1700,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect3">
-<h4 id="_use_a_numbered_list_for_sequential_items_like_a_procedure_or_prioritized_items_like_a_top_10_list"><a class="anchor" href="#_use_a_numbered_list_for_sequential_items_like_a_procedure_or_prioritized_items_like_a_top_10_list"></a>3.5.2. Use a numbered list for sequential items (like a procedure) or prioritized items (like a top 10 list).</h4>
+<h4 id="_use_a_numbered_list_for_sequential_items_like_a_procedure_or_prioritized_items_like_a_top_10_list"><a class="anchor" href="#_use_a_numbered_list_for_sequential_items_like_a_procedure_or_prioritized_items_like_a_top_10_list"></a>3.6.2. Use a numbered list for sequential items (like a procedure) or prioritized items (like a top 10 list).</h4>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
@@ -1693,7 +1722,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-11"><a class="anchor" href="#sec-ASM-11"></a>3.6. Do not put punctuation or conjunctions at the end of a list item if it is not a full sentence (ASM-11)</h3>
+<h3 id="sec-ASM-11"><a class="anchor" href="#sec-ASM-11"></a>3.7. Do not put punctuation or conjunctions at the end of a list item if it is not a full sentence (ASM-11)</h3>
 <div class="paragraph">
 <p>If an item in a list is not a full sentence, then do not put the following punctuation or conjunctions:</p>
 </div>
