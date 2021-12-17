@@ -428,8 +428,15 @@ class AsciiDocContent:
             module_addition = ""
             path_addition = ""
             link_module, link_module_index, link_path_parts,__ = self._get_module_from_path(link[0])
-            if not self.module == link_module:
-                module_addition = link_module+C.MODULE_SEPARATOR
+
+            # always add module_addition
+            module_addition = link_module+C.MODULE_SEPARATOR
+
+            ## Only add module addition if not in same module
+            # if not self.module == link_module:
+            #     module_addition = link_module+C.MODULE_SEPARATOR
+
+
 
             if link_module_index+2 < len(link_path_parts):
                 path_addition = C.PATH_DIVIDER.join(link_path_parts[link_module_index+2:])
