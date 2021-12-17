@@ -1,6 +1,6 @@
 import copy
 import re
-from os import walk
+from os import path, walk
 
 from helpers import constants as C
 from helpers import functions as F
@@ -335,25 +335,35 @@ class AsciiDocContent:
         if "all" in args:
             do_all = True
 
+        path_offset = ""
+        args = [x.split("=") for x in args]
+        for a in args:
+            if "path" in a:
+                path_offset = a[1]
+
         self.content[line] = "== Pages\n\n"
         self.content.insert(line+1,"")
         offset = 2
-        pages_dict = self.get_other_pages_and_folders(do_all)
+        pages_dict = self.get_other_pages_and_folders(do_all,path_offset)
+
         fake_ref_list = [self.filename]
         self.insert_references_in_content(line,offset,fake_ref_list,pages_dict)
 
-    def get_other_pages_and_folders(self,do_all):
+    def get_other_pages_and_folders(self,do_all,path_offset):
         files = []
         folders = []
         new_dict = {}
-        for (dirpath, dirnames, filenames) in walk(self.path):
+        target_path = self.path if not path_offset else self.path+path_offset+"/"
+        target_path = target_path.replace("//","/")
+
+        for (dirpath, dirnames, filenames) in walk(target_path):
             if(dirpath[-1] != C.PATH_DIVIDER):
                 dirpath += C.PATH_DIVIDER
 
             dirpath = dirpath.replace("\\",C.PATH_DIVIDER)
 
             for filename in filenames:
-                if filename == self.filename:
+                if filename == self.filename and not path_offset:
                     continue
 
                 if filename.endswith(C.ASCIIDOC_FILEEXTENSION):
