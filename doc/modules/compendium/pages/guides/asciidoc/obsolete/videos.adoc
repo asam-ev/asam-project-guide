@@ -1,0 +1,19 @@
+[[top-videos]]
+= How to include videos in ASAM documents
+:description: How-To for including videos in ASAM documents (standards).
+:keywords: asciidoc,video,how-to
+:reftext: Videos
+
+
+
+Hosted on YouTube:
+
+....
+video::id[youtube]
+....
+
+Hosted locally in GitLab:
+
+....
+video::file.mp4
+....

@@ -1,5 +1,5 @@
 [[top-diagrams]]
-= Diagrams
+= How to work with diagrams in ASAM documents
 :description: How-To for working with diagrams in ASAM documents (standards).
 :keywords: asciidoc,diagram,how-to
 
@@ -8,15 +8,6 @@ include::compendium:partial$_attributes.adoc[]
 
 
 Just some Examples for diagrams to be used in the standards.
-
-CAUTION: This is outdated. We decided to use DrawIO for diagrams. See section <<top-images>> for more information.
-
-== ToDo List
-- [x] PlantUML
-- [x] Blockdiag
-- [x] Mermaid
-- [x] Ditaa
-- [ ] DrawIO
 
 
 == Examples

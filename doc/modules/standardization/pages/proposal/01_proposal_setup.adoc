@@ -1,24 +1,12 @@
-= Project Proposal setup
-:description: Describes how to set up a new project proposal.
-:keywords: proposal, setup
+= Create the first Proposal Draft
+:description: Describes how to create a new propsal draft.
+:keywords: proposal, draft
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
 {role-project-lead}
-{role-gtm}
-
-TIP: For information on the proposal phase, see xref:standardization:proposal-phase.adoc[].
 
 image::standardization:proposal_phase_v2-Executive_Draft.drawio.svg[title="Proposal preparation",opts=interactive]
 
-== Setup steps: GTM
-
-include::compendium:page$guides/proposal_writing/how_to_setup_git.adoc[leveloffset=+2]
-
-include::compendium:page$guides/proposal_writing/how_to_enrollment_list.adoc[leveloffset=+2]
-
-
-== Setup steps: Project Lead
-
-include::compendium:page$guides/proposal_writing/how_to_executive_draft.adoc[leveloffset=+2]
+include::compendium:page$guides/proposal_writing/how_to_executive_draft.adoc[leveloffset=+1, tag=!roles]

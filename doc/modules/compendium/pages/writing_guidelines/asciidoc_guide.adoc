@@ -1,19 +1,25 @@
 = AsciiDoc Guide
-:description: TBD
-:keywords: writing_guide
+:description: An overview over AsciiDoc and how it works.
+:keywords: asciidoc, guide
 
 include::compendium:partial$_attributes.adoc[]
+
+{role-technical-writer}
+{role-project-lead}
+{role-wg-member}
 
 
 [.lead]
 include::compendium:partial$asciidoc.adoc[]
 
-NOTE: {asam} uses `.adoc` as fileextension for all AsciiDoc files.
+TIP: See xref:compendium:writing_guidelines/writing_guide.adoc[] for ASAM-specific writing style requirements.
+
+NOTE: __{asam}__ uses `.adoc` as fileextension for all AsciiDoc files.
 
 **Main advantages:**
 
-* Can be edited in any text editor or using the online editor in GitLab
-* Focus on content not on formatting!
+* Can be edited in any text editor or using the xref:compendium:tools/gitlab/gitlab-ide_guide.adoc[online editor in GitLab]
+* Focus on content, not on formatting!
 * Versionable and diffable – i.e. we can tell who did what, when and where!
 * In the end we can deliver an interactive html instead of a static pdf
 
@@ -24,557 +30,39 @@ See the links below for more detail
 * https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Quick reference^]
 * https://asciidoctor.org/docs/user-manual/[User manual^]
 
+== Asciidoctor syntax quick reference
+For general information on how to write and format AsciiDoc content, see the official https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[Asciidoctor Syntax Quick Reference^].
 
+== ASAM-specific guide
+Besides the general syntax, __{asam}__ standards follow ASAM guidelines as well.
+These are listed below.
 
-== Headings
+// include::compendium:page$guides/asciidoc/headings.adoc[leveloffset=+1]
 
+//include::compendium:page$guides/asciidoc/header.adoc[leveloffset=+1]
 
-[cols="a,a"]
-|===
-|
-....
-= Page title
-== Level 1 section
-=== Level 2 section
-==== Level 3 section
-===== Level 4 section
-....
-|
-== Level 1 section
-=== Level 2 section
-==== Level 3 section
-===== Level 4 section
-|===
+//include::compendium:page$guides/asciidoc/formatting.adoc[leveloffset=+1]
 
-You can have only one page title, but you can have multiple section titles.
-For example, you might have three level 1 sections that include level 2 and 3 sections:
+// include::compendium:page$guides/asciidoc/lists.adoc[leveloffset=+1]
 
-[cols="a,a"]
-|===
-|
-....
-= Page title
-== Level 1 section
-=== Level 2 section
+include::compendium:page$guides/asciidoc/graphics.adoc[leveloffset=+2]
 
-== Level 1 section
+// include::compendium:page$guides/asciidoc/diagrams.adoc[leveloffset=+2]
 
-== Level 1 section
-=== Level 2 section
-==== Level 3 section
-....
-|
-== Level 1 section
-=== Level 2 section
-== Level 1 section
-== Level 1 section
-=== Level 2 section
-==== Level 3 section
-|===
+// include::compendium:page$guides/asciidoc/videos.adoc[leveloffset=+2]
 
+// include::compendium:page$guides/asciidoc/links.adoc[leveloffset=+1]
 
-== Bold text
+include::compendium:page$guides/asciidoc/admonitions.adoc[leveloffset=+2]
 
-[cols="a,a"]
-|===
-|
-....
-*Text*
-....
-| *Text*
-|===
+// include::compendium:page$guides/asciidoc/tables.adoc[leveloffset=+1]
 
-== Italic text
+include::compendium:page$guides/asciidoc/tasks.adoc[leveloffset=+2]
 
-[cols="a,a"]
-|===
-|
-....
-_Text_
-....
-|_Text_
-|===
+include::compendium:page$guides/asciidoc/code.adoc[leveloffset=+2]
 
-== Bulleted lists
-[cols="a,a"]
-|===
-|
-....
-* Item 1
-* Item 2
-** Item 2a
-+
-Continuation text for the previous list item.
+include::compendium:page$guides/asciidoc/formulas.adoc[leveloffset=+2]
 
-* Item 3
-....
-|* Item 1
+include::compendium:page$guides/asciidoc/roadmaps.adoc[leveloffset=+2]
 
-* Item 2
-** Item 2a
-+
-Continuation text for the previous list item.
-
-* Item 3
-|===
-TIP: The + is a list continuation.
-It keeps the text inline with the list item.
-Omitting the + affects the formatting of that line.
-
-Adding another space before the + adopts the indentation of one level higher:
-
-[cols="a,a"]
-|===
-|
-....
-* Item 1
-* Item 2
-** Item 2a
-
-+
-Continuation text for the previous list item.
-* Item 3
-....
-|
-* Item 1
-* Item 2
-** Item 2a
-
-+
-Continuation text for the previous list item.
-* Item 3
-|===
-
-== Labeled lists
-
-[cols="a,a"]
-|===
-|
-....
-Item 1::
-Description 1
-
-Item 2::
-Description 2
-....
-|Item 1::
-Description 1
-
-Item 2::
-Description 2
-
-|
-
-....
-[horizontal]
-Item 1::
-Description 1
-
-Item 2::
-Description 2
-....
-|[horizontal]
-Item 1::
-Description 1
-
-Item 2::
-Description 2
-|===
-
-When you add [horizontal] above item 1, the label and description appear on the same line.
-That works well when you have very short descriptions.
-
-
-== Ordered lists
-
-
-[cols="a,a"]
-|===
-
-|
-....
-. number
-.. loweralpha
-... lowerroman
-. number
-....
-|
-. number
-.. loweralpha
-... lowerroman
-. number
-
-|
-We can mix ordered and bulleted lists however we want:
-
-....
-* bullet
-. number
-** bullet
-.. loweralpha
-....
-|
-* bullet
-. number
-** bullet
-.. loweralpha
-
-|===
-
-
-== Images
-
-....
-image::file.gif[alt text]
-....
-
-TIP: "alt text" means alternative text.
-It describes the image that appears on the page.
-The primary use is for visually-impaired users who use screen readers.
-
-The image path is obtained by combining the root of the project directory, followed by the imagesdir parameter defined in the preamble, followed by whatever you define in image.
-So if it is defined as
-....
-:imagesdir: images
-....
-and we have
-....
-image::subdirectory/filename.png[]
-....
-Then the full search path is
-....
-{projectroot}/images/subdirectory/filename.png
-....
-
-
-=== Images with links
-
-You can add a link to an image so it acts like a "button."
-
-
-*Syntax*
-
-Use one of the following syntax when adding your image:
-
-....
-image:<file_name>.<ext>[alt=<text>,link=<url>,window=_blank]
-xref:path-to-file/file.adoc[image:<file_name>.<ext>[alt=<text>]<Link name>^]
-<url>[image:<file_name>.<ext>[alt=<text>]<Link name>^]
-....
-
-"window=_blank" opens the link in a new browser tab (or window).
-The addition of "^" at the end of the link name does the same in a shorthand version.
-
-For example:
-
-[cols="a,a"]
-|===
-|
-....
-image:logo.png[alt=A button titled ASAM Home,link=https://asam.net,window=_blank]
-....
-|
-image:logo.png[alt=A button titled ASAM Home,link=https://asam.net,window=_blank]
-|===
-
-
-
-
-== Videos
-
-Hosted on YouTube:
-
-....
-video::id[youtube]
-....
-
-Hosted locally in GitLab:
-
-....
-video::file.mp4
-....
-
-== Links
-
-The syntax that you should use depends on what you're linking to:
-
-* <<Link to an external site>>
-* <<Link to a section on the same page>>
-* <<Link to another page in the docs>>
-
-=== Link to an external site
-
-[cols="a,a"]
-|===
-|
-....
-https://www.url.com[link text^]
-....
-|https://www.url.com[link text^]
-|===
-
-The ^ opens the link in a new browser tab.
-
-=== Link to a section on the same page
-
-[cols="a,a"]
-|===
-|
-....
-<<section_title>>
-....
-
-e.g.
-....
-For more details, see <<Headings>>.
-....
-|
-
-For more details, see <<Headings>>.
-|
-The link text can be something other than the section title:
-
-....
-<<section_title,Different link text>>
-....
-
-e.g.
-
-....
-<<Headings,Learn the syntax for headings>>
-....
-|
-
-<<Headings,Learn the syntax for headings>>.
-|===
-
-You can create custom anchors and link to them as well
-
-[cols="a,a"]
-|===
-|
-....
-I want an anchor [[anchorlabel]]
-
-Then I make a <<anchorlabel, link>> to it
-....
-|
-
-I want an anchor [[anchorlabel]]
-
-Then I make a <<anchorlabel, link>> to it
-|===
-
-=== Link to another page in the docs
-
-[cols="a,a"]
-|===
-|
-....
-xref:writing_guidelines/asciidoc_guide.adoc[link text for inline macro]
-xref:writing_guidelines/asciidoc_guide.adoc[link text for macro]
-....
-|xref:writing_guidelines/asciidoc_guide.adoc[link text for inline macro]
-xref:writing_guidelines/asciidoc_guide.adoc[link text for macro]
-|===
-
-TIP: Use the inline macro when you add text before and/or after the macro.
-Otherwise, use the standard macro.
-
-== Admonitions: Notes, tips, etc.
-
-You might want to draw attention to certain statements by creating notes or tips - so-called admonitions.
-Format them as follows:
-
-....
-NOTE: text
-
-TIP: text
-
-IMPORTANT: text
-
-CAUTION: text
-
-WARNING: text
-....
-
-If your admonition is longer, use the extended form:
-
-....
-[NOTE]
-====
-text
-====
-
-[TIP]
-====
-text
-====
-
-[IMPORTANT]
-====
-text
-====
-
-[CAUTION]
-====
-text
-====
-
-[WARNING]
-====
-text
-====
-....
-
-
-
-
-Use each of these sparingly.
-You don't want to create pages that are full of notes and tips.
-They become less meaningful if you do.
-
-Here's what each of these looks like when the AsciiDoc content is turned into HTML:
-
-NOTE: This is a note.
-It includes extra info that a reader might need to know.
-
-TIP: Here's a tip.
-A tip provides useful information that can help a user do something or understand something.
-
-IMPORTANT: This is important information that the reader must be aware of so they don't do something that they shouldn't.
-
-CAUTION: A caution advises the reader to act carefully.
-Use this in rare circumstances.
-
-WARNING: And this is a warning that informs of danger or harm.
-This one should be used very rarely, as well.
-
-
-If you're authoring new content, you'll want to review this section for some nitty-gritty details.
-
-
-== Document headers
-
-Each AsciiDoc file header goes directly underneath the document title (see <<Headings>>).
-
-You won't need to touch any of the parameters in this heading.
-
-
-== Tables
-
-Here's syntax for a basic table:
-
-....
-[cols=2*,options="header",cols="25,75"]
-|===
-| heading column 1
-| heading column 2
-| row 1 column 1 | row 1 column 2
-| row 2 column 1 | row 2 column 2
-|===
-....
-
-There are _many_ ways to format a table.
-Refer to the https://asciidoctor.org/docs/user-manual/#tables[AsciiDoctor User Manual^] for additional help.
-
-== Task headings
-
-If you're explaining how to perform a task, you might include introductory information before you get to the steps.
-And you might need to say what to do after completing the steps.
-If you do, it's best to organize that information using headers, which enables scanning.
-
-Use the following headings as needed:
-
-.What you'll need
-
-_The information the user needs to complete the task._
-
-.About this task
-
-_Some extra contextual info the user might need to know about this task._
-
-.Steps
-
-_The individual steps to complete the task._
-
-.What's next?
-
-_What the user should do next._
-
-Each of these should include a `.` right before the text, like so:
-
-....
-.What you'll need
-.About this task
-.Steps
-.What's next?
-....
-
-This syntax applies bold text in a larger font.
-
-== Code & syntax highlighting
-
-
-[cols="a,a"]
-|===
-|
-For inline code, enclose it with ` to apply monospace font:
-....
-`volume show -is-encrypted true`
-....
-|For inline code, enclose it with ` to apply monospace font: `volume show -is-encrypted true`
-
-| For code blocks: the html in the square brackets tells the compiler that this is html source code for source highlighting.
-
-....
-[source, html]
-----
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
-</body>
-</html>
-
-----
-....
-|
-[source, html]
-----
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
-</body>
-</html>
-
-----
-
-|===
-
-== Content reuse and including files
-
-If you have a chunk of content that's repeated across different pages, you can easily write it once and reuse it across those pages.
-Reuse is possible from within the same repository and across repositories.
-In the files where you'd like to reuse content:
-
-. If you're reusing the content from within the _same_ repository, use the following syntax on a line by itself:
-+
- include::<filename>.adoc[]
-
-
-. If you're reusing the content in a _different_ repository, use the following syntax on a line by itself:
-+
- include::<FILE_RAW_URL>[]
-
-
-If you want to learn more about the include directive, https://asciidoctor.org/docs/user-manual/#include-directive[check out the AsciiDoctor User Manual^].
+include::compendium:page$guides/asciidoc/partials.adoc[leveloffset=+2]

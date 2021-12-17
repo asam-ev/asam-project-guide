@@ -10,8 +10,12 @@ include::ROOT:partial$_attributes.adoc[]
 {project-guide-icon}
 
 This module collects information on how to work on the ASAM Project Guide.
-In particular, it contains specific configurations and attributes to use as well as custom macros specific to {asam}.
+In particular, it contains specific configurations and attributes to use as well as custom macros specific to __{asam}__.
 It also references particularities of Antora and links to important information pages for Asciidoctor and Antora.
+
+== Content
+
+include::../nav.adoc[lines=2..-1]
 
 == See also
 

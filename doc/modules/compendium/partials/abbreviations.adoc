@@ -7,11 +7,14 @@
 :cr: {abb-link}cr[CR]
 :dco: {abb-link}dco[DCO]
 :gtm: {abb-link}gtm[GTM]
+:loki: {abb-link}loki[LOKI]
 :tsc: {abb-link}tsc[TSC]
 :vscode: {abb-link}vscode[VSCode]
 :wg: {abb-link}wg[WG]
 
 ifdef::is_abbreviations[]
+
+include::role-specific:partial$role_descriptions.adoc[]
 
 == API
 Application Programming Interface:: An application programming interface (API) is a connection between computers or between computer programs.
@@ -30,11 +33,16 @@ Change Request:: TODO
 Developer Certificate of Origin:: The DCO is an attestation attached to every contribution made by every developer.
 
 == GTM
-ASAM Global Technology Manager:: A GTM is an ASAM employee focussed on coordinating project processes and the background work behind a project.
+ASAM Global Technology Manager:: {gtm-description}
+See also: xref:role-specific:gtm.adoc[]
+
+== LOKI
+List Of Known Issues:: A public list of known issues related to a certain standard.
+The list is maintained by the xref:role-specific:standard_manager.adoc[].
 
 == TSC
-Technical Steering Committee::
-https://www.asam.net/active-projects/technical-steering/
+Technical Steering Committee:: {tsc-description}
+See also: xref:role-specific:tsc.adoc[].
 
 == VSCode
 Visual Studio Code:: xref:tooling:vscode.adoc[]

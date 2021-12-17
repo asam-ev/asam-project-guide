@@ -12,7 +12,7 @@ Welcome to the **ASAM Project Guide**!
 IMPORTANT: This guide is a work in progress and subject to change!
 ****
 
-This guide provides an introduction to new members on {asam} in general and its most central topics, gives an overview on how to get involved and provides role-specific information for working at {asam} and in ASAM projects.
+This guide provides an introduction to new members on __{asam}__ in general and its most central topics, gives an overview on how to get involved and provides role-specific information for working at __{asam}__ and in ASAM projects.
 
 In addition to that, it also contains a full explanation on each and every process and workflow applied in ASAM projects, contains guides on suggested tools as well as a compendium on specific tasks and topics.
 

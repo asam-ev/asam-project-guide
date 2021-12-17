@@ -1,0 +1,112 @@
+[[top-links]]
+= How to include links in ASAM documents
+:description: How-To for including links in ASAM documents (standards).
+:keywords: asciidoc,link,how-to
+:reftext: Links
+
+include::compendium:partial$_attributes.adoc[]
+
+
+This chapters shows how to include links in an ASAM standard.
+
+== Code
+....
+https://www.asam.net[ASAM Website] // <1>
+....
+<1> First is the URL, followed by the link name in square brackets
+
+== Result
+
+The result is a link called "ASAM Website", that links to URL `+https://www.asam.net+`.
+
+https://www.asam.net[ASAM Website]
+
+
+
+
+== Links
+
+The syntax that you should use depends on what you're linking to:
+
+* <<Link to an external site>>
+* <<Link to a section on the same page>>
+* <<Link to another page in the docs>>
+
+=== Link to an external site
+
+[cols="a,a"]
+|===
+|
+....
+https://www.url.com[link text^]
+....
+|https://www.url.com[link text^]
+|===
+
+The ^ opens the link in a new browser tab.
+
+=== Link to a section on the same page
+
+[cols="a,a"]
+|===
+|
+....
+<<section_title>>
+....
+
+e.g.
+....
+For more details, see <<Headings>>.
+....
+|
+
+For more details, see <<Headings>>.
+|
+The link text can be something other than the section title:
+
+....
+<<section_title,Different link text>>
+....
+
+e.g.
+
+....
+<<Headings,Learn the syntax for headings>>
+....
+|
+
+<<Headings,Learn the syntax for headings>>.
+|===
+
+You can create custom anchors and link to them as well
+
+[cols="a,a"]
+|===
+|
+....
+I want an anchor [[anchorlabel]]
+
+Then I make a <<anchorlabel, link>> to it
+....
+|
+
+I want an anchor [[anchorlabel]]
+
+Then I make a <<anchorlabel, link>> to it
+|===
+
+=== Link to another page in the docs
+
+[cols="a,a"]
+|===
+|
+....
+xref:writing_guidelines/asciidoc_guide.adoc[link text for inline macro]
+xref:writing_guidelines/asciidoc_guide.adoc[link text for macro]
+....
+|xref:writing_guidelines/asciidoc_guide.adoc[link text for inline macro]
+xref:writing_guidelines/asciidoc_guide.adoc[link text for macro]
+|===
+
+TIP: Use the inline macro when you add text before and/or after the macro.
+Otherwise, use the standard macro.

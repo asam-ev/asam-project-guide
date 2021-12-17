@@ -6,7 +6,7 @@ include::compendium:partial$_attributes.adoc[]
 
 :lookup: compendium:partial$vscode
 
-This is a summary of recommended {vscode} settings to follow writing guidelines easier.
+This is a summary of recommended __{vscode}__ settings to follow writing guidelines easier.
 
 
 == Indentations

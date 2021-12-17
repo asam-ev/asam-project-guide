@@ -14,14 +14,14 @@ include::{abb}[]
 
 == Context
 In order to work locally on the repositories and their content hosted at the {gitlab}, users can install and set up Git on their local computer.
-Git can also interface directly with {vscode}, making changing and updating files from within one tool an easy option.
+Git can also interface directly with __{vscode}__, making changing and updating files from within one tool an easy option.
 
 == Result
 * Git is installed locally.
 * Git credentials (SSH) is configured
 
 == Prerequisites
-* For direct integration: {vscode} is installed
+* For direct integration: __{vscode}__ is installed
 
 == How
 Git requires a multi-step installation.
@@ -33,7 +33,7 @@ The following sections describe each part of this setup sequentially.
 The installation routine requires many settings.
 You can leave most to all on their default value.
 +
-__**OPTIONAL**: If you would like to use {vscode} as your standard Git editor, follow the optional instructions below.__
+__**OPTIONAL**: If you would like to use __{vscode}__ as your standard Git editor, follow the optional instructions below.__
 +
 .. Select "Use Visual Studio Code as Git's default editor" from the drop-down menu.
 +

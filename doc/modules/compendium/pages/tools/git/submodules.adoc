@@ -18,7 +18,7 @@ For this you only need to know: `+git submodule update --init+`. See below for d
 
 == Git submodule usage
 
-{asam} uses submodules to include reuse resources in all repositories, e.g. document style configuration.
+__{asam}__ uses submodules to include reuse resources in all repositories, e.g. document style configuration.
 The submodule has to be added to the repository during setup of the repository.
 
 related::submodule[]

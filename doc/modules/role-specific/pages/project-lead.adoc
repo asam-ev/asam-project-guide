@@ -9,9 +9,20 @@ include::partial$_attributes.adoc[]
 [horizontal,role=right]
 Label:: {role-project-lead}
 
-TODO: Description
+== Description
+- Elected by and originating from the group of project members.
+- Named in Project Proposal
 
-== Proposal phase
+== Requirements
+- Must be a project member.
+- Can be the idea giver, but does not need to.
+
+== Responsibilities
+- Project management, meeting organization and alignment with ASAM office
+
+== Involvements
+
+=== Proposal phase
 role_related::project-lead[proposal]
 
 role_related::project-lead[]

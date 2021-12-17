@@ -1,0 +1,9 @@
+[[top-doc-headers]]
+= Using document headers in ASAM documents
+:description: How-To for using document headers in ASAM documents (standards).
+:keywords: asciidoc,headers,how-to
+:reftext: Document headers
+
+Each AsciiDoc file header goes directly underneath the document title (see xref:compendium:guides/asciidoc/obsolete/headings.adoc[]).
+
+You won't need to touch any of the parameters in this heading.

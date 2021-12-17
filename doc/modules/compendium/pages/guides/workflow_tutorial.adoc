@@ -18,7 +18,7 @@ IMPORTANT: Never work on the master branch, always create your own <<Create deve
 == Tooling
 
 To work on the files in your branch, you can either use the xref:compendium:tools/gitlab/gitlab-ide_guide.adoc[Gitlab IDE] or a local setup consisting of text editor and Git.
-For the tools supported by {asam}, see xref:tooling:main.adoc[].
+For the tools supported by __{asam}__, see xref:tooling:main.adoc[].
 
 :numbered:
 
@@ -30,7 +30,7 @@ Each topic must be developed in a separate development branch before it is merge
 Please keep in mind to change only few files at once in one branch to minimize the chance for xref:compendium:tools/git/merge_conflicts.adoc[merge conflicts] to occur.
 
 TIP: Give the branch a significant name that describes its intensions.
-See xref:compendium:tools/gitlab/branch_naming_conventions.adoc[] for branch name conventions at {asam}.
+See xref:compendium:tools/gitlab/branch_naming_conventions.adoc[] for branch name conventions at __{asam}__.
 
 If you want to switch the branch you are viewing and working on, see xref:compendium:guides/switch_branches.adoc[].
 

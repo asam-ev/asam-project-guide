@@ -5,10 +5,14 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-How to setup a project, steps to take
+{role-gtm}
+
+How to setup a project, steps to take.
 
 == Proposal setup
-TODO
+include::compendium:page$guides/proposal_writing/how_to_setup_git.adoc[leveloffset=+2]
+
+include::compendium:page$guides/proposal_writing/how_to_enrollment_list.adoc[leveloffset=+2]
 
 == Standardization setup
 TODO

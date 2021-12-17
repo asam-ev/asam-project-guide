@@ -1,6 +1,6 @@
 = How to set up a new project
 :description: Describes how to set up a new ASAM standardization project.
-:keywords: how-to, todo, proposal
+:keywords: how-to, TODO, proposal
 
 include::compendium:partial$_attributes.adoc[]
 

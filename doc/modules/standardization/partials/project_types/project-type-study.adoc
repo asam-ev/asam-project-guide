@@ -7,7 +7,7 @@ This project type is specifically intended for members in regions, where ASAM st
 Study projects have no expected deliverables other than a final report.
 The standard development process does not apply for study projects in case that either no budget or a small budget is needed.
 Study projects are open to all ASAM members, i.e. also to members in a 'passive' membership class.
-{asam} may provides funding up to the limit for small budget projects.
+__{asam}__ may provides funding up to the limit for small budget projects.
 //end::short[]
 
 //tag::long[]
@@ -31,7 +31,7 @@ The process to request, approve and carrying out a study project is:
 
 . Member submits a study project information sheet to the ASAM Office for project approval.
 . ASAM Office checks the information and approves or rejects the project.
-. ASAM Office informs the {tsc} about the project.
+. ASAM Office informs the __{tsc}__ about the project.
 . ASAM Office publishes an announcement of the project.
 . The study project starts and is being carried out as described in the study project information sheet.
 . The ASAM Office monitors the project activities.
@@ -46,9 +46,9 @@ Some further rules apply for study projects:
 The minutes may be translated into the working language of the study group.
 * The project members use the ASAM IT infrastructure.
 
-Upon request, {asam} provides funding for study projects up to the limit for small budget projects.
+Upon request, __{asam}__ provides funding for study projects up to the limit for small budget projects.
 
-In case that a larger budget is required beyond the limit of a small budget project, then the project must be requested via the regular project proposal process, which consist of the process steps P2 Proposal Writing, P3 Proposal Submission, P4 Proposal Publication and P5 Proposal Decision by the {tsc}.
+In case that a larger budget is required beyond the limit of a small budget project, then the project must be requested via the regular project proposal process, which consist of the process steps P2 Proposal Writing, P3 Proposal Submission, P4 Proposal Publication and P5 Proposal Decision by the __{tsc}__.
 
 //tag::table[]
 .Summary

@@ -10,10 +10,10 @@ include::compendium:partial$_attributes.adoc[]
 == Context
 In case a new project is proposed, the first step is to create an xref:compendium:guides/proposal_writing/how_to_executive_draft.adoc[Executive Draft] for internal analysis.
 Based on this draft, a rough Proposal Draft is then created that contains further details needed for the {proposal-workshop}.
-This Proposal Draft is then further expanded and detailed until it is ready for submission to the {tsc}.
+This Proposal Draft is then further expanded and detailed until it is ready for submission to the __{tsc}__.
 
 == Result
-A valid Project Proposal is created that can be brought to decision by the {tsc}.
+A valid Project Proposal is created that can be brought to decision by the __{tsc}__.
 
 NOTE: The final Project Proposal document is generated based on Asciidoc files, but the initial executive draft may be a Word document.
 For proposal submission, the proposal document must be converted into the appropriate Asciidoc structure.

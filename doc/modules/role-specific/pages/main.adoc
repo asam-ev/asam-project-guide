@@ -15,94 +15,10 @@ include::partial$module-description.adoc[]
 
 include::partial$roles.adoc[tag = list_of_roles]
 
+== Content
 
-== Development team
-> mandatory, staffed by members and paid service provider, roles are non-exclusive
+include::../nav.adoc[lines=2..-1]
 
-=== Contributors
-- Develop software, i.e. write source code and tests.
-- For open-source projects hosted under the ASAM organization on Github.com all commits **must** include a sign-off message.
-See xref:compendium:open-source/asam_dco.adoc[].
-
-=== ASAM change control board
-
-*CCB*
-
-==== Requirements
-- Minimum of three representatives from 3 different companies
-- Equivalent to the classical ASAM role of "Standard Manager"
-- Select volunteers from running projects (at least one from each group or category in a project)
-- Should no project be running the positions on the CCB will be made open to volunteers by ASAM members and decided on by the CG:Sim
-- CCB named on the repository Readme for each standard
-
-==== Tasks
-- Review and categorise issues
-- Review contributions
-- Merge source code, documentation and tests into the main branches.
-- Named in the project proposal and extendable by majority vote of existing committers
-- **Does not merge content where third-party content or libraries are included prior to approval by the <<Project Coordinator,project coordinator>>**
-- Should no project be running, the CCB can submit a proposal to the CG:Sim for a patch/minor/major project addressing a set amount of issues
-
-=== Project leader
-- Elected by and originating from the group of project members.
-- Project management, meeting organization and alignment with ASAM office
-- Named in Project Proposal
-
-== Administrative team
->mandatory, staffed by the ASAM office
-
-=== Project coordinator
-- Assists and supports the <<Project Leader,project leader>> in coordinating the project
-- Moderation of meetings
-- Harmonisation with other ongoing projects in- and outside of {asam}
-- Technical & architectural support for the project
-
-=== Legal reviewer
-- Reviews and provides clearance for the use of publicly licensed, third-party or initial-contribution source-code.
-- Reviews legal documentation in source code and legal documents distributed with source code.
-- Resolves legal issues.
-- May use a lawyer specialized in IT-law as an external resource.
-
-=== IT administrator
-- Setup, configures and maintains [server-based] tools and tooling infrastructure for use in projects.
-- Responsibility does not include tools installed on project member's personal computers.
-
-=== Business assistant
-- Carries out public calls for offer, commissioning and payment of service providers.
-- Other commercial and administrative tasks
-
-== Coordination group: Simulation
-
-- Develop/maintain the ASAM Simulation roadmap
-
-- Strategic analysis
-  - Identify/initiate further {asam} activities in Simulation
-  - Ensure no overlap of standards
-  - Ensure alignment with external activities
-
-- Accelerate the {asam} decision making process
-  - Pre-approval, final approval stays with {tsc}
-
-- Review and refine relevant processes
-  - e.g. development and release process, collaborative software development, etc.
-
-
-
-  Every ASAM Project has mandatory and optional roles, the optional roles depend on the size and the structure of the project.
-
-ASAM projects have a couple of standard roles:
-
-ASAM Global Technology Manager (GTM):: A GTM is an ASAM employee focussed on coordinating project processes and the background work behind a project.
-ASAM Standard User:: An ASAM Standard User is someone that is part of the ASAM community but not involved in the project development at hand.
-Workgroup (WG) Member:: An ASAM User that is involved directly in the development of an ASAM standard.
-They are a participant in a workgroup (WG) of a standard, a subdivision of the overall project.
-Workgroup (WG) Leader:: The WG member that leads the respective workgroup.
-Project Lead:: The person responsible for leading and coordinating all project activities.
-Normally, this position is filled by one of the leading project members in the project.
-Technical Steering Committee ({tsc}) Member:: A member of committee responsible for approving or rejecting projects and proposals.
-Reviewer:: An ASAM Standard User or WG Member that reviews a draft or release candidate for a new or updated standard.
-Technical Writer:: Formats and writes the document(s) of the standard based on the provided input from the WG members in a formalized and standard-conform way.
-Service Provider:: Provides additional services necessary for the standard development.
 
 
   related::role,roles[]

@@ -11,14 +11,10 @@ include::ROOT:partial$_attributes.adoc[]
 > Nobody is born an expert.
 
 Everyone needs to start somewhere. +
-To do so, the following sections give a basic summary over all important aspects of working at and with {asam}.
+To do so, the following sections give a basic summary over all important aspects of working at and with __{asam}__.
 
 include::partial$module-description.adoc[]
 
-* xref:how-asam-works.adoc[]
-* xref:processes-and-workflows-overview.adoc[]
-* xref:project-types.adoc[]
-* xref:current-projects.adoc[]
-* xref:roles-overview.adoc[]
-* xref:tools-overview.adoc[]
-* xref:asam-contacts.adoc[]
+== Content
+
+include::../nav.adoc[lines=2..-1]

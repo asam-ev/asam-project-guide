@@ -18,7 +18,7 @@ This section contains information on documentation related GitLab issues.
 
 === Life-cycles for GitLab issues
 
-This section displays the GitLab issue life-cycles when creating documentation for {asam} and explains labels used in GitLab for specific life-cycles.
+This section displays the GitLab issue life-cycles when creating documentation for __{asam}__ and explains labels used in GitLab for specific life-cycles.
 
 * Every documentation related GitLab issue shall have a `isDocumentationRelated` label.
 * If a GitLab issue is ready for creating content for the documentation, the workgroup members assign the `isReadyForServiceProvider` label to the issue.
@@ -59,7 +59,7 @@ This section contains information on how to create and apply editorial rules.
 
 === Applying and creating rules
 
-When creating documentation for {asam}, the following approach is applicable:
+When creating documentation for __{asam}__, the following approach is applicable:
 
 . Check if an appropriate editorial rule exists in the ASAM Editorial Guide when creating documentation.
 .. If an editorial rule exists, apply the rule to the documentation.
@@ -72,8 +72,8 @@ In the list of editorial rules, each rule can be assigned one of the following t
 |===
 |Status tag |Description
 |draft      |The `draft` tag is assigned to editorial rules that have been created and are not approved yet.
-|approved   |The `approved` tag is assigned to editorial rules the OpenX team agreed on and that shall be applied when crating documentation for {asam}.
-|rejected   |The `rejected` tag is assigned to editorial rules the OpenX team did not agree on and that shall not be applied when crating documentation for {asam}.
+|approved   |The `approved` tag is assigned to editorial rules the OpenX team agreed on and that shall be applied when crating documentation for __{asam}__.
+|rejected   |The `rejected` tag is assigned to editorial rules the OpenX team did not agree on and that shall not be applied when crating documentation for __{asam}__.
 |===
 
 [#sec-18931c78-0dc9-46a5-9e4d-e00c39c7ce8b]
@@ -118,7 +118,7 @@ This section contains information on how to add an editorial rule
 .. Check if an editorial rule exists in the https://asd-ste100.org/request.html[ASD-STE100 Specification] (Simplified Technical English).
 .. Check if an editorial rule exists in the https://developers.google.com/style/[Google developer documentation style guide] and the https://docs.microsoft.com/en-us/style-guide/welcome/[Microsoft Writing Style Guide].
 . Extract useful editorial rules from the existing resources.
-. Adjust the wording in editorial rules when transferring rules to the ASAM Editorial Guide, for example, Microsoft names subunits of a list items, that are named elements at {asam}.
+. Adjust the wording in editorial rules when transferring rules to the ASAM Editorial Guide, for example, Microsoft names subunits of a list items, that are named elements at __{asam}__.
 . Draft the section for the editorial rule in the ASAM Editorial Guide.
 . Have a look if an automatic test exists, for example, for https://github.com/errata-ai/vale[Vale].
 . Add a link to the section of the editorial rule and, if applicable, a link the file for the automatic test to the `rules.csv` file.

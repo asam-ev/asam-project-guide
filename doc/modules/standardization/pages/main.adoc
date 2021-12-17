@@ -9,11 +9,12 @@ include::ROOT:partial$_attributes.adoc[]
 
 {standardization-icon}
 
-Creating standards at {asam} follows very specific processes.
+Creating standards at __{asam}__ follows very specific processes.
 Everyone involved in such activities must familiarize themselves with these to understand the **DOs** and **DON'Ts** in order to minimize complications and overhead.
 
 Reading through these may also provide a better understanding on what is expected at which point during a project's life cycle.
 
+ifdef::debug[]
 == Subchapters
 
 * {project-types}
@@ -26,18 +27,9 @@ Reading through these may also provide a better understanding on what is expecte
 * {project-setup}
 * {creation-of-standards}
 
-ifdef::draft[]
-== TEST2
-
-[mermaid,subs=macros]
-----
-graph LR
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
-    click A "../../getting-started/main.html" _top
-    click B "../../getting-started/main.html" _parent
-----
 endif::[]
+
+
+== Content
+
+include::../nav.adoc[lines=2..-1]

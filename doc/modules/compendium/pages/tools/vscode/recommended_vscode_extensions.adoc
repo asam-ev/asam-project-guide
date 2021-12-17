@@ -5,8 +5,8 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-{vscode} is already without extensions very powerful and user friendly.
-One thing that can make the {vscode} experience even better are the extensions.
+__{vscode}__ is already without extensions very powerful and user friendly.
+One thing that can make the __{vscode}__ experience even better are the extensions.
 There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.
 
 Installing an extension is really easy, just enter the extension menu, search for the desired extension.

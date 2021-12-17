@@ -1,6 +1,7 @@
 = Standard user
 :description: Summary and landing page for standad users.
 :keywords: role, role-landing-page
+:page-partial:
 
 include::partial$_attributes.adoc[]
 
@@ -9,6 +10,14 @@ include::partial$_attributes.adoc[]
 [horizontal,role=right]
 Label:: {role-standard-user}
 
-TODO: Description
+== Responsibilites
+
+=== Issue resolution
+//tag::issue_resolution[]
+A user of an ASAM standard (member or buyer) contacts https://www.asam.net/contact/[ASAM technical support^] with a support request.
+They may suspect or report an issue with the standard. +
+Typically, the user asks for a clarification on the reported issue and expects an answer that allows him to proceed with his work.
+They may also demand a fix of the issue.
+//end::issue_resolution[]
 
 role_related::standard-user[]

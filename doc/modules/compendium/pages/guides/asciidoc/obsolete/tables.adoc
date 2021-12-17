@@ -51,3 +51,23 @@ See the result in <<tab-example-table>>.
 |F, FF, FFF |Milliseconds (without / with leading zeros) |``357, 04, 002 ``
 |Z |RFC 822 time zone (time shift to GMT) |``+100``
 |===
+
+
+
+
+== Tables
+
+Here's syntax for a basic table:
+
+....
+[cols=2*,options="header",cols="25,75"]
+|===
+| heading column 1
+| heading column 2
+| row 1 column 1 | row 1 column 2
+| row 2 column 1 | row 2 column 2
+|===
+....
+
+There are _many_ ways to format a table.
+Refer to the https://asciidoctor.org/docs/user-manual/#tables[AsciiDoctor User Manual^] for additional help.

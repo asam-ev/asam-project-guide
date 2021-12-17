@@ -7,7 +7,7 @@ Two options are highlighted below.
 
 == Option 1: Using Visual Studio Code
 
-image::create-a-branch.png[title="Create a new branch in {vscode}"]
+image::create-a-branch.png[title="Create a new branch in __{vscode}__"]
 
 . Click on the branch icon on the bottom left
 . Click on "Create New Branch"

@@ -25,12 +25,12 @@ The Executive Draft described here is currently created as a Word document based
 == Prerequisites
 * The idea has been proposed and approved in the xref:standardization:project-ideation.adoc[Ideation Phase].
 * The proposal needs at least three (3) partner companies.
-* The xref:compendium:guides/proposal_writing/how_to_setup_git.adoc[project repostiory] has been set up by the {gtm}.
+* The xref:compendium:guides/proposal_writing/how_to_setup_git.adoc[project repostiory] has been set up by the __{gtm}__.
 
 == How
 
 === Working in GitLab
-. Log into {gitlab-url}[GitLab] and access the proposal project with the url the {gtm} provided
+. Log into {gitlab-url}[GitLab] and access the proposal project with the url the __{gtm}__ provided
 . Fill in the standard structure as follows: +
 +
 TIP: The more details you add initially, the easier it is for ASAM to understand and support your proposal and the deeper and more focussed the discussions in the workshops will be.

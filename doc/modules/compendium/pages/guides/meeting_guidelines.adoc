@@ -1,6 +1,6 @@
 = Meeting guidelines
-:description: todo
-:keywords: todo
+:description: TODO
+:keywords: TODO
 
 include::compendium:partial$_attributes.adoc[]
 

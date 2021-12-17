@@ -1,0 +1,50 @@
+[[top-heading]]
+= How to write headings in ASAM documents
+:description: How-To for writing headings in ASAM documents (standards).
+:keywords: asciidoc,heading,how-to
+:reftext: Headings
+
+include::compendium:partial$_attributes.adoc[]
+
+[cols="a,a"]
+|===
+|
+....
+= Page title
+== Level 1 section
+=== Level 2 section
+==== Level 3 section
+===== Level 4 section
+....
+|
+== Level 1 section
+=== Level 2 section
+==== Level 3 section
+===== Level 4 section
+|===
+
+You can have only one page title, but you can have multiple section titles.
+For example, you might have three level 1 sections that include level 2 and 3 sections:
+
+[cols="a,a"]
+|===
+|
+....
+= Page title
+== Level 1 section
+=== Level 2 section
+
+== Level 1 section
+
+== Level 1 section
+=== Level 2 section
+==== Level 3 section
+....
+|
+== Level 1 section
+=== Level 2 section
+== Level 1 section
+== Level 1 section
+=== Level 2 section
+==== Level 3 section
+|===

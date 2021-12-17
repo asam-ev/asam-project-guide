@@ -15,7 +15,7 @@ Alternatively, users may also choose to work completly through {gitlab} by using
 See {gitlab} for more information.
 
 == Visual Studio Code at ASAM
-{asam} recommends using Visual Studio Code ({vscode}) for local text document interaction, such as:
+__{asam}_ recommends using Visual Studio Code (_{vscode}__) for local text document interaction, such as:
 
 * Writing and editing AsciiDoc content
 * Managing complex structures in a single workspace

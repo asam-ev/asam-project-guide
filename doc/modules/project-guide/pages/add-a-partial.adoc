@@ -1,6 +1,6 @@
 = Adding A Partial
 :description: Instructions on how to add a partial
-:keywords: new-content-guide,project-guide,partial,todo
+:keywords: new-content-guide,project-guide,partial,TODO
 
 
 include::partial$_attributes.adoc[]

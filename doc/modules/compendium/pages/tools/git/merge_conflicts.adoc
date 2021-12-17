@@ -16,6 +16,6 @@ If the branch lives longer than expected, merge the master branch into your bran
 Once you create a merge request git lab will tell you if there are merge conflicts.
 It can than lead you through the conflicting parts and lets you choose if your or the old content is to be merged.
 
-Another possibility is to merge using {vscode}, here a similar feature is included, in the end when done merging a merge commit is being created, which than can be pushed
+Another possibility is to merge using __{vscode}__, here a similar feature is included, in the end when done merging a merge commit is being created, which than can be pushed
 
 related::merge,git[]

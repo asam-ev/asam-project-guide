@@ -2,7 +2,7 @@
 //tag::short[]
 An implementation project has the purpose to create a supplementary product that supports the implementation or application of an ASAM standard in the industry.
 The result of an implementation project can be a tool or source code.
-Examples for tools are checkers for file formats and {api}s, add-ons or plug-ins for de-facto standard IDEs (e.g. MATLAB, Simulink, Eclipse, etc.), importers, exporters or reference implementations.
+Examples for tools are checkers for file formats and __{api}__s, add-ons or plug-ins for de-facto standard IDEs (e.g. MATLAB, Simulink, Eclipse, etc.), importers, exporters or reference implementations.
 Source code is typically an implementation of the standard and can be used as a reference for sofware development or is directly used as compilable software components in COTS products.
 Source code shall ensure a high degree of standard-compliance and significantly reduce software development efforts at ASAM tool vendor companies, where otherwise each of the them would have to develop the software by themselves.
 
@@ -26,7 +26,7 @@ An ASAM product shall cover one of the following use-cases:
 
 Another auxiliary purpose of an implementation project can be to support the standard development by providing feedback from the implementers to the standard developers to improve the quality and maturity of the standard while it is still in development.
 
-For liability reasons, {asam} shall develop and distribute source code only as a result of an implementation project.
+For liability reasons, __{asam}__ shall develop and distribute source code only as a result of an implementation project.
 Members may use the source code to create tools or other executables from the source code.
 
 As an example, implementation projects may include the development of source code for one of the following products.
@@ -34,14 +34,14 @@ This list is not exhaustive and should only serve as a guideline of what might b
 
 * Checker tool for syntax checks of non-schema-based file formats
 * Checker tool for plausibility checks of schema-based file formats
-* Checker tool for {api} checks
+* Checker tool for __{api}__ checks
 * Add-on or plug-in for de-facto standard IDEs (e.g. MATLAB, Simulink, Eclipse etc.)
 * Importers or parsers
 * Exporters or generators
 * Reference implementations of tools or tool components
 * Behavioral software components
 * Additions to popular open-source projects (e.g. Eclipse, openMDM, Artop, etc.)
-* {api} stubs and skeletons
+* __{api}__ stubs and skeletons
 
 The deliverable(s) of an implementation project must have product-quality.
 Consequently, ASAM products are professionally developed in accordance to customary quality guidelines of the automotive or IT industries, whichever is applicable.
@@ -50,27 +50,27 @@ For example, schemata definition files shall be commented.
 
 Further rules and guidelines for this project type are set forth in the document "GuidelinesForASAMCheckerTools".
 
-Upon request, {asam} provides funding up to 100% of the project's required budget.
+Upon request, __{asam}__ provides funding up to 100% of the project's required budget.
 
 Excluded are expenses for meeting participation and travel.
 
 Implementation projects are carried out via the standard development process.
 
-The following process steps are not mandatory and are skipped by default, unless otherwise decided by the {tsc} or the project group:
+The following process steps are not mandatory and are skipped by default, unless otherwise decided by the __{tsc}__ or the project group:
 
 * P1: Proposal Workshop
 * C: Review Phase
 
 When members propose the further development of a standard, for which an ASAM product exists, members must also propose the further development of this product, unless the pro-posed changes of the standard have no impact on the product.
-If the ASAM product shall not be further developed, then {asam} shall publicly announce that the development of the product is discontinued.
+If the ASAM product shall not be further developed, then __{asam}__ shall publicly announce that the development of the product is discontinued.
 
 ASAM products shall not compete with a member company's product business(non-competition clause).
 
 Members can object an implementation project proposal and shall provide a justification for their objection.
 
-The {tsc} checks during P5 Project Approval, whether the objection is justified.
+The __{tsc}__ checks during P5 Project Approval, whether the objection is justified.
 
-In case of a justified objection, the {tsc} shall not approve the proposed project or decide on measures that would remove the member's objection.
+In case of a justified objection, the __{tsc}__ shall not approve the proposed project or decide on measures that would remove the member's objection.
 
 Non-distributable source code files shall include the following comment text in the file header:
 

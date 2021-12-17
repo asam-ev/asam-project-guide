@@ -1,15 +1,18 @@
 * xref:home.adoc[]
-** xref:content_structure.adoc[]
-** xref:link-concept.adoc[]
-** xref:add-new-module.adoc[]
-** xref:pages-vs-partials.adoc[]
-** Pages
-*** xref:add-a-page.adoc[]
-**** xref:add-task-page.adoc[]
-**** xref:add-tool-page.adoc[]
-*** Moving/Renaming/Deleting A Page
-** Partials
-*** xref:add-a-partial.adoc[]
+** Structure
+*** xref:content_structure.adoc[]
+*** xref:link-concept.adoc[]
+*** xref:used-keywords.adoc[]
+** Adding content
+*** xref:add-new-module.adoc[]
+*** xref:pages-vs-partials.adoc[]
+*** Pages
+**** xref:add-a-page.adoc[]
+***** xref:add-task-page.adoc[]
+***** xref:add-tool-page.adoc[]
+**** Moving/Renaming/Deleting A Page
+*** Partials
+**** xref:add-a-partial.adoc[]
 ** Referencing And Including
 *** xref:images.adoc[]
 *** xref:examples.adoc[]
@@ -23,7 +26,6 @@
 **** xref:macros/macro-pages.adoc[]
 **** xref:macros/macro-reference.adoc[]
 **** xref:macros/macro-related.adoc[]
-**** xref:used-attributes.adoc[]
 ** Working With Projects
 ** Additional Infos
 

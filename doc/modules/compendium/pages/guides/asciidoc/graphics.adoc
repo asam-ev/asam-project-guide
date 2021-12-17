@@ -2,16 +2,20 @@
 = How to include graphics in ASAM documents
 :description: How-To for including graphics in ASAM documents (standards).
 :keywords: asciidoc,graphic,figure,how-to
+:reftext: Graphics
+:drawio: xref:tooling:drawio.adoc[]
 
 
 include::compendium:partial$_attributes.adoc[]
 
 
-This chapters shows how to include graphics in an ASAM standard.
 
-For most cases DrawIO shall be used. Its a possibility to generate graphics with a powerful tool that can be included directly, without a intermediate image format. See <<top-drawio>> for usage.
+For most cases, {drawio} shall be used.
+It's a possibility to generate graphics with a powerful tool that can be included directly, without a intermediate image format.
+See <<top-drawio>> for usage.
 
-Im some cases, e.g. Domain Model in OSC2, PlantUMl is used to model the relationships. See <<top-plantuml>> for usage.
+Im some cases, PlantUMl is used to model the relationships.
+See <<top-plantuml>> for usage.
 
 [[top-drawio]]
 == DrawIO
@@ -149,3 +153,34 @@ TrafficParticipant -- dynamicLimits
 ----
 include::compendium:example$ExamplePlantUML.plantuml[]
 ----
+
+
+== Images with links
+
+You can add a link to an image so it acts like a "button."
+
+
+*Syntax*
+
+Use one of the following syntax when adding your image:
+
+....
+image:<file_name>.<ext>[alt=<text>,link=<url>,window=_blank]
+xref:path-to-file/file.adoc[image:<file_name>.<ext>[alt=<text>]<Link name>^]
+<url>[image:<file_name>.<ext>[alt=<text>]<Link name>^]
+....
+
+"window=_blank" opens the link in a new browser tab (or window).
+The addition of "^" at the end of the link name does the same in a shorthand version.
+
+For example:
+
+[cols="a,a"]
+|===
+|
+....
+image:logo.png[alt=A button titled ASAM Home,link=https://asam.net,window=_blank]
+....
+|
+image:logo.png[alt=A button titled ASAM Home,link=https://asam.net,window=_blank]
+|===
