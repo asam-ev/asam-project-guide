@@ -76,7 +76,34 @@ The outline of the road marking is described by the attributes @length and @spac
 * Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists
 * Google Developer Documentation Style Guide: https://developers.google.com/style/lists
 
-TODO: Use AsciiDoc syntax for lists.
+[#sec-ASM-47]
+=== Use AsciiDoc syntax for lists (ASM-47)
+
+Use only asciidoc syntax to format lists.
+Use either ordered or unordered lists.
+
+*Example*
+
+```
+Unordered list
+* This is an item.
+* This is another item.
+* This is an additional item.
+
+Ordered list
+. This is the first item.
+. This is the second item.
+. This is the third item.
+
+```
+
+*Exceptions*
+n/a
+
+*Source*
+* https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/
+* https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/
+
 
 [#sec-ASM-5]
 === Start each list item in a list with an uppercase letter (ASM-5)
