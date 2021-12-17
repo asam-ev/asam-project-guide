@@ -15,7 +15,8 @@ Label:: {role-project-lead}
 
 == Requirements
 - Must be a project member.
-- Can be the idea giver, but does not need to.
+- Can be the idea giver, but does not have to.
+- Must complete the xref:compendium:roles/project_lead_training.adoc[]
 
 == Responsibilities
 - Project management, meeting organization and alignment with ASAM office
