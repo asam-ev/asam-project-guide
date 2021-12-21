@@ -1753,9 +1753,9 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-none hljs">To sign on to a database:
 
-1. On the File menu, select Open database.
-2. In Username, enter your name.
-3. In Password, enter your password, and then select OK.</code></pre>
+. On the File menu, select Open database.
+. In Username, enter your name.
+. In Password, enter your password, and then select OK.</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1945,6 +1945,9 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 <p><strong>Source</strong></p>
 </div>
 <div class="paragraph">
+<p>ASAM Writing Guide: 5.3. Tables</p>
+</div>
+<div class="paragraph">
 <p><a href="https://docs.asciidoctor.org/asciidoc/latest/tables/build-a-basic-table/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/tables/build-a-basic-table/</a></p>
 </div>
 </div>
@@ -1975,10 +1978,7 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-47"><a class="anchor" href="#sec-ASM-47"></a>5.4. Create a title/caption for every table (ASM-47)</h3>
-<div class="paragraph">
-<p>TODO: Writing guide: caption, AsciiDoctor o. h.: caption???</p>
-</div>
+<h3 id="sec-ASM-47"><a class="anchor" href="#sec-ASM-47"></a>5.4. Create a caption for every table (ASM-47)</h3>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
@@ -2027,8 +2027,62 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM Writing Guide: 5.2. Figures</p>
+</div>
 <div class="sect2">
-<h3 id="sec-ASM-28"><a class="anchor" href="#sec-ASM-28"></a>6.1. Make sure that all images included in the User Guide are shown correctly (ASM-28)</h3>
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.1. Illustrate complex facts with figures (ASM-xx)</h3>
+<div class="paragraph">
+<p>TODO: Start rules with "use"? "Use figures to illustrate complex facts"?</p>
+</div>
+<div class="paragraph">
+<p>Figures, for example, pictures or drawings, may be used to illustrate complex facts.</p>
+</div>
+<div class="paragraph">
+<p><strong>Exception</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM Writing Guide: 5.2. Figures</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.2. Use images with the file type SVG (ASM-)</h3>
+<div class="paragraph">
+<p>SVG is the preferred format for images.</p>
+</div>
+<div class="paragraph">
+<p><strong>Exception</strong></p>
+</div>
+<div class="paragraph">
+<p>If you cannot use an image with the file type SVG, use the file type PNG.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM Writing Guide: 5.2. Figures</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-28"><a class="anchor" href="#sec-ASM-28"></a>6.3. Make sure that all images included in the User Guide are shown correctly (ASM-28)</h3>
+<div class="paragraph">
+<p><strong>Exceptions</strong></p>
+</div>
+<div class="paragraph">
+<p>TODO: Add "There are no exceptions." to every rule without exceptions?</p>
+</div>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
@@ -2043,7 +2097,7 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-29"><a class="anchor" href="#sec-ASM-29"></a>6.2. Make sure that there are no unused images in the repository of the standard (ASM-29)</h3>
+<h3 id="sec-ASM-29"><a class="anchor" href="#sec-ASM-29"></a>6.4. Make sure that there are no unused images in the repository of the standard (ASM-29)</h3>
 <div class="paragraph">
 <p><strong>Exceptions</strong></p>
 </div>
@@ -2064,116 +2118,164 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.3. Illustrate complex facts with figures (ASM-xx)</h3>
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.5. Use one folder "images" per chapter (ASM-)</h3>
 <div class="paragraph">
-<p>Figures, for example pictures or drawings, may be used to illustrate complex facts.</p>
+<p>Subchapters use the same folder.</p>
 </div>
 <div class="paragraph">
-<p>In AsciiDoc, figures are included with the following syntax:</p>
+<p>TODO: "Chapter" or "topic"?</p>
+</div>
+<div class="paragraph">
+<p><strong>Exception</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">[#img-sunset]
-.A mountain sunset
-image::sunset.jpg[Sunset,200,100]</code></pre>
+<pre class="highlightjs highlight"><code class="language-none hljs">standard/
+├── ...
+├── 07_geometry/
+│   ├── images/
+│   ├── 07_00_geometry.adoc
+│   ├── 07_01_road_reference_line.adoc
+│   ├── 07_02_straight_line.adoc
+│   └── ...
+└── ...</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p><strong>Exception</strong></p>
-</div>
-<div class="paragraph">
-<p>If you cannot use an image with the file type SVG, use the file type PNG.</p>
-</div>
-<div class="paragraph">
-<p><strong>Example</strong></p>
 </div>
 <div class="paragraph">
 <p><strong>Source</strong></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.4. Use images with the file type SVG (ASM-)</h3>
-<div class="paragraph">
-<p><strong>Exception</strong></p>
-</div>
-<div class="paragraph">
-<p>If you cannot use an image with the file type SVG, use the file type PNG.</p>
-</div>
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.6. Use AsciiDoc syntax for images (ASM-)</h3>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#fig-uuid]
+.This is the caption of the figure
+image::logo.png[an alternative text]</code></pre>
 </div>
-</div>
-<div class="sect2">
-<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.5. Rule 3 (ASM-)</h3>
-<div class="paragraph">
-<p><strong>Exception</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Example</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.6. Rule 3 (ASM-)</h3>
-<div class="paragraph">
-<p><strong>Exception</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Example</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.7. Rule 3 (ASM-)</h3>
-<div class="paragraph">
-<p><strong>Exception</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Example</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="sec-ASM-48"><a class="anchor" href="#sec-ASM-48"></a>6.8. Rule 3 (ASM-)</h3>
-<div class="paragraph">
-<p><strong>Exception</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Example</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="sec-ASM-49"><a class="anchor" href="#sec-ASM-49"></a>6.9. Rule 3 (ASM-)</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_rule_3_asm"><a class="anchor" href="#_rule_3_asm"></a>6.10. Rule 3 (ASM-)</h3>
-<div class="paragraph">
-<p><strong>Exception</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Example</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
 </div>
 <div class="paragraph">
 <p><strong>Source</strong></p>
 </div>
 <div class="paragraph">
 <p>ASAM Writing Guide: 5.2. Figures</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.asciidoctor.org/asciidoc/latest/macros/images/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/macros/images/</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.7. Create a tag/ID with a UUID for every figure (ASM-)</h3>
+<div class="paragraph">
+<p>TODO: Writing guide: tag, AsciiDoctor o. h.: ID???</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#fig-uuid]
+.This is the caption of the figure
+image::logo.png[an alternative text]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM Writing Guide: 5.2. Figures</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.8. Create a caption for every figure (ASM-)</h3>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#fig-uuid]
+.This is the caption of the figure
+image::logo.png[an alternative text]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM Writing Guide: 5.2. Figures</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.9. Write an alternative text for every figure (ASM-)</h3>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#fig-uuid]
+.This is the caption of the figure
+image::logo.png[an alternative text]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM Writing Guide: 5.2. Figures</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.10. Rule x (ASM-)</h3>
+<div class="paragraph">
+<p><strong>Exception</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.11. Rule x (ASM-)</h3>
+<div class="paragraph">
+<p><strong>Exception</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.12. Rule x (ASM-)</h3>
+<div class="paragraph">
+<p><strong>Exception</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.13. Rule x (ASM-)</h3>
+<div class="paragraph">
+<p><strong>Exception</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
 </div>
 </div>
 </div>
