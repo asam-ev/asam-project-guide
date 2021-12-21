@@ -200,9 +200,9 @@ Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-co
 ```
 To sign on to a database:
 
-1. On the File menu, select Open database.
-2. In Username, enter your name.
-3. In Password, enter your password, and then select OK.
+. On the File menu, select Open database.
+. In Username, enter your name.
+. In Password, enter your password, and then select OK.
 ```
 
 *Source*
@@ -310,6 +310,8 @@ Use tables if you have to present a huge amount of similar data in a very compre
 
 *Source*
 
+ASAM Writing Guide: 5.3. Tables
+
 https://docs.asciidoctor.org/asciidoc/latest/tables/build-a-basic-table/
 
 [#sec-ASM-46]
@@ -334,9 +336,7 @@ TODO: Writing guide: tag, AsciiDoctor o. h.: ID???
 ASAM Writing Guide: 5.3. Tables
 
 [#sec-ASM-47]
-=== Create a title/caption for every table (ASM-47)
-
-TODO: Writing guide: caption, AsciiDoctor o. h.: caption???
+=== Create a caption for every table (ASM-47)
 
 *Example*
 
@@ -365,9 +365,46 @@ These rules apply to figures:
 * The description shall start with "Figure [number] shows" (no initial article).
 * The description shall not contain references to the placement of the image ("before", "below").
 
+*Source*
+
+ASAM Writing Guide: 5.2. Figures
+
+[#sec-ASM-xx]
+=== Illustrate complex facts with figures (ASM-xx)
+
+TODO: Start rules with "use"? "Use figures to illustrate complex facts"?
+
+Figures, for example, pictures or drawings, may be used to illustrate complex facts.
+
+*Exception*
+
+*Example*
+
+*Source*
+
+ASAM Writing Guide: 5.2. Figures
+
+[#sec-ASM-xx]
+=== Use images with the file type SVG (ASM-)
+
+SVG is the preferred format for images.
+
+*Exception*
+
+If you cannot use an image with the file type SVG, use the file type PNG.
+
+*Example*
+
+*Source*
+
+ASAM Writing Guide: 5.2. Figures
 
 [#sec-ASM-28]
 === Make sure that all images included in the User Guide are shown correctly (ASM-28)
+
+*Exceptions*
+
+TODO: Add "There are no exceptions." to every rule without exceptions?
 
 *Example*
 
@@ -379,8 +416,6 @@ TODO: ?
 
 [#sec-ASM-29]
 === Make sure that there are no unused images in the repository of the standard (ASM-29)
-
-
 
 *Exceptions*
 
@@ -395,102 +430,129 @@ TODO: ?
 TODO: ?
 
 [#sec-ASM-xx]
-=== Illustrate complex facts with figures (ASM-xx)
+=== Use one folder "images" per chapter (ASM-)
 
-Figures, for example pictures or drawings, may be used to illustrate complex facts.
+Subchapters use the same folder.
 
-In AsciiDoc, figures are included with the following syntax:
+TODO: "Chapter" or "topic"?
+
+*Exception*
+
+*Example*
 
 ```
-[#img-sunset]
-.A mountain sunset
-image::sunset.jpg[Sunset,200,100]
+standard/
+├── ...
+├── 07_geometry/
+│   ├── images/
+│   ├── 07_00_geometry.adoc
+│   ├── 07_01_road_reference_line.adoc
+│   ├── 07_02_straight_line.adoc
+│   └── ...
+└── ...
 ```
 
-*Exception*
-
-If you cannot use an image with the file type SVG, use the file type PNG.
-
-*Example*
-
 *Source*
-
 
 [#sec-ASM-xx]
-=== Use images with the file type SVG (ASM-)
-
-*Exception*
-
-If you cannot use an image with the file type SVG, use the file type PNG.
+=== Use AsciiDoc syntax for images (ASM-)
 
 *Example*
 
-*Source*
-
-
-[#sec-ASM-xx]
-=== Rule 3 (ASM-)
-
-*Exception*
-
-*Example*
-
-*Source*
-
-
-[#sec-ASM-xx]
-=== Rule 3 (ASM-)
-
-*Exception*
-
-*Example*
-
-*Source*
-
-
-[#sec-ASM-xx]
-=== Rule 3 (ASM-)
-
-*Exception*
-
-*Example*
-
-*Source*
-
-
-[#sec-ASM-48]
-=== Rule 3 (ASM-)
-
-*Exception*
-
-*Example*
-
-*Source*
-
-[#sec-ASM-49]
-=== Rule 3 (ASM-)
-
-=== Rule 3 (ASM-)
-
-*Exception*
-
-*Example*
-
-*Source*
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+[#fig-uuid]
+.This is the caption of the figure
+image::logo.png[an alternative text]
+```
 
 *Source*
 
 ASAM Writing Guide: 5.2. Figures
+
+https://docs.asciidoctor.org/asciidoc/latest/macros/images/
+
+[#sec-ASM-xx]
+=== Create a tag/ID with a UUID for every figure (ASM-)
+
+TODO: Writing guide: tag, AsciiDoctor o. h.: ID???
+
+*Example*
+
+```
+[#fig-uuid]
+.This is the caption of the figure
+image::logo.png[an alternative text]
+```
+
+*Source*
+
+ASAM Writing Guide: 5.2. Figures
+
+[#sec-ASM-xx]
+=== Create a caption for every figure (ASM-)
+
+*Example*
+
+```
+[#fig-uuid]
+.This is the caption of the figure
+image::logo.png[an alternative text]
+```
+
+*Source*
+
+ASAM Writing Guide: 5.2. Figures
+
+[#sec-ASM-xx]
+=== Write an alternative text for every figure (ASM-)
+
+*Example*
+
+```
+[#fig-uuid]
+.This is the caption of the figure
+image::logo.png[an alternative text]
+```
+
+*Source*
+
+ASAM Writing Guide: 5.2. Figures
+
+[#sec-ASM-xx]
+=== Rule x (ASM-)
+
+*Exception*
+
+*Example*
+
+*Source*
+
+
+[#sec-ASM-xx]
+=== Rule x (ASM-)
+
+*Exception*
+
+*Example*
+
+*Source*
+
+
+[#sec-ASM-xx]
+=== Rule x (ASM-)
+
+*Exception*
+
+*Example*
+
+*Source*
+
+[#sec-ASM-xx]
+=== Rule x (ASM-)
+
+*Exception*
+
+*Example*
+
+*Source*
+
