@@ -1482,10 +1482,13 @@ It contains editorial rules for contributing content to a project in written for
 <li>
 <p>In headings and captions, only the <strong>first word</strong> begins with an uppercase letter (sentence-style capitalization).</p>
 </li>
-<li>
-<p><em>Exception</em>: <strong>Acronyms</strong> and <strong>proper names</strong> are spelled as is.</p>
-</li>
 </ul>
+</div>
+<div class="paragraph">
+<p><strong>Exception</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Acronyms</strong> and <strong>proper names</strong> are spelled as is.</p>
 </div>
 <div class="paragraph">
 <p><strong>Example</strong></p>
@@ -1534,10 +1537,16 @@ It contains editorial rules for contributing content to a project in written for
 </div>
 <div class="sect2">
 <h3 id="sec-ASM-8"><a class="anchor" href="#sec-ASM-8"></a>3.1. Use lists with similarly structured items for complex text (ASM-8)</h3>
-<div class="paragraph">
-<p>Use lists instead of long sentences to present complex text in a way that is easier to read and understand.
-The list items shall be a set of similarly structured items.
+<div class="ulist">
+<ul>
+<li>
+<p>Use lists instead of long sentences to present complex text in a way that is easier to read and understand.</p>
+</li>
+<li>
+<p>The list items shall be a set of similarly structured items.
 For example, each item should be a noun or a phrase that starts with a verb.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><strong>Example</strong></p>
@@ -1569,9 +1578,15 @@ For example, each item should be a noun or a phrase that starts with a verb.</p>
 </div>
 <div class="sect2">
 <h3 id="sec-ASM-48"><a class="anchor" href="#sec-ASM-48"></a>3.2. Use AsciiDoc syntax for lists (ASM-48)</h3>
-<div class="paragraph">
-<p>Use only asciidoc syntax to format lists.
-Use either ordered or unordered lists.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use only asciidoc syntax to format lists.</p>
+</li>
+<li>
+<p>Use either ordered or unordered lists (see <a href="#sec-ASM-10">Choose a suitable type of list (ASM-10)</a>).</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><strong>Example</strong></p>
@@ -1579,28 +1594,85 @@ Use either ordered or unordered lists.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-none hljs">Unordered list
+
 * This is an item.
 * This is another item.
 * This is an additional item.
 
 Ordered list
+
 . This is the first item.
 . This is the second item.
 . This is the third item.</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Exceptions</strong>
-n/a</p>
+<p><strong>Exceptions</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>Source</strong>
-* <a href="https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/</a>
-* <a href="https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/</a></p>
+<p>n/a</p>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/</a></p>
+</li>
+<li>
+<p><a href="https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/</a></p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-5"><a class="anchor" href="#sec-ASM-5"></a>3.3. Start each list item in a list with an uppercase letter (ASM-5)</h3>
+<h3 id="sec-ASM-10"><a class="anchor" href="#sec-ASM-10"></a>3.3. Choose a suitable type of list (ASM-10)</h3>
+<div class="sect3">
+<h4 id="_use_a_bulleted_list_for_things_that_have_something_in_common_but_do_not_need_to_appear_in_a_particular_order"><a class="anchor" href="#_use_a_bulleted_list_for_things_that_have_something_in_common_but_do_not_need_to_appear_in_a_particular_order"></a>3.3.1. Use a bulleted list for things that have something in common but do not need to appear in a particular order</h4>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">The database owner can:
+
+* Create and delete a database.
+* Add, delete, or modify a document.
+* Add, delete, or modify any information in the database</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>Microsoft Style Guide: <a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists" class="bare">https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_use_a_numbered_list_for_sequential_items_like_a_procedure_or_prioritized_items_like_a_top_10_list"><a class="anchor" href="#_use_a_numbered_list_for_sequential_items_like_a_procedure_or_prioritized_items_like_a_top_10_list"></a>3.3.2. Use a numbered list for sequential items (like a procedure) or prioritized items (like a top 10 list)</h4>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">To sign on to a database:
+
+. On the File menu, select Open database.
+. In Username, enter your name.
+. In Password, enter your password, and then select OK.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>Microsoft Style Guide: <a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists" class="bare">https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-5"><a class="anchor" href="#sec-ASM-5"></a>3.4. Start each list item in a list with an uppercase letter (ASM-5)</h3>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
@@ -1641,7 +1713,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-6"><a class="anchor" href="#sec-ASM-6"></a>3.4. Put a full stop at the end of a list item if it is a full sentence (ASM-6)</h3>
+<h3 id="sec-ASM-6"><a class="anchor" href="#sec-ASM-6"></a>3.5. Put a full stop at the end of a list item if it is a full sentence (ASM-6)</h3>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
@@ -1683,7 +1755,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-9"><a class="anchor" href="#sec-ASM-9"></a>3.5. Just add one sentence per line (ASM-9)</h3>
+<h3 id="sec-ASM-9"><a class="anchor" href="#sec-ASM-9"></a>3.6. Just add one sentence per line (ASM-9)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1707,63 +1779,39 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
+<div class="paragraph">
+<p>Code</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">* This is the first sentence.
-* This is the second sentence.
-* This is the third sentence.</code></pre>
+<pre class="highlightjs highlight"><code class="language-none hljs">* This is the first sentence of the element.
+This is the second sentence of the element.
+* This is the second element.
+* This is the third element.</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Result</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>This is the first sentence of the element.
+This is the second sentence of the element.</p>
+</li>
+<li>
+<p>This is the second element.</p>
+</li>
+<li>
+<p>This is the third element.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><strong>Source</strong></p>
 </div>
 <div class="paragraph">
 <p>ASAM Writing Guide: 4.3. One sentence per line</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="sec-ASM-10"><a class="anchor" href="#sec-ASM-10"></a>3.6. Choose a suitable type of list (ASM-10)</h3>
-<div class="sect3">
-<h4 id="_use_a_bulleted_list_for_things_that_have_something_in_common_but_do_not_need_to_appear_in_a_particular_order"><a class="anchor" href="#_use_a_bulleted_list_for_things_that_have_something_in_common_but_do_not_need_to_appear_in_a_particular_order"></a>3.6.1. Use a bulleted list for things that have something in common but do not need to appear in a particular order.</h4>
-<div class="paragraph">
-<p><strong>Example</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">The database owner can:
-
-* Create and delete a database.
-* Add, delete, or modify a document.
-* Add, delete, or modify any information in the database</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
-</div>
-<div class="paragraph">
-<p>Microsoft Style Guide: <a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists" class="bare">https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists</a></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_use_a_numbered_list_for_sequential_items_like_a_procedure_or_prioritized_items_like_a_top_10_list"><a class="anchor" href="#_use_a_numbered_list_for_sequential_items_like_a_procedure_or_prioritized_items_like_a_top_10_list"></a>3.6.2. Use a numbered list for sequential items (like a procedure) or prioritized items (like a top 10 list).</h4>
-<div class="paragraph">
-<p><strong>Example</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">To sign on to a database:
-
-. On the File menu, select Open database.
-. In Username, enter your name.
-. In Password, enter your password, and then select OK.</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
-</div>
-<div class="paragraph">
-<p>Microsoft Style Guide: <a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists" class="bare">https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists</a></p>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -1783,7 +1831,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <p>Commas</p>
 </li>
 <li>
-<p>Conjunctions like and or or</p>
+<p>Conjunctions like "and" or "or"</p>
 </li>
 </ul>
 </div>
@@ -2008,31 +2056,6 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 <div class="paragraph">
 <p>TODO: Terminology: Images or figures?</p>
 </div>
-<div class="paragraph">
-<p>These rules apply to figures:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Each image shall have a description (exception: decorative images).</p>
-</li>
-<li>
-<p>The description shall be below the image.</p>
-</li>
-<li>
-<p>The description shall start with "Figure [number] shows" (no initial article).</p>
-</li>
-<li>
-<p>The description shall not contain references to the placement of the image ("before", "below").</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
-</div>
-<div class="paragraph">
-<p>ASAM Writing Guide: 5.2. Figures</p>
-</div>
 <div class="sect2">
 <h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.1. Illustrate complex facts with figures (ASM-xx)</h3>
 <div class="paragraph">
@@ -2231,12 +2254,46 @@ image::logo.png[an alternative text]</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.10. Rule x (ASM-)</h3>
+<h3 id="sec-ASM-xx"><a class="anchor" href="#sec-ASM-xx"></a>6.10. Write a description for each image (ASM-)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The description shall be below the image.</p>
+</li>
+<li>
+<p>The description shall start with "[Reference to figure] shows".
+The description shall not have an initial article.</p>
+</li>
+<li>
+<p>The description shall not contain references to the placement of the image; for example, "before" or "below".</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><strong>Exception</strong></p>
 </div>
 <div class="paragraph">
+<p>Decorative images shall not have a description.</p>
+</div>
+<div class="paragraph">
 <p><strong>Example</strong></p>
+</div>
+<div class="paragraph">
+<p>TODO: How to handle two-part examples?</p>
+</div>
+<div class="paragraph">
+<p>Code</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">&lt;&lt;fig-7558b905-679d-4fb9-affa-3b3b72025a18&gt;&gt; shows the offset of the center lane away from the road reference line.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Result</p>
+</div>
+<div class="paragraph">
+<p>Figure 58 shows the offset of the center lane away from the road reference line.</p>
 </div>
 <div class="paragraph">
 <p><strong>Source</strong></p>
