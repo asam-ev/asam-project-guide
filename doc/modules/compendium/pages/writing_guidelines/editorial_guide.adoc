@@ -24,6 +24,78 @@ This section contains a list of the entire editorial rules.
 include::compendium:example$rules.csv[]
 |===
 
+
+== Basics
+
+This section contains editorial rules on the language.
+
+[#sec-ASM-49]
+=== Use American English (ASM-49)
+
+* The default language is American English.
+* Use the Merriam Webster Dictonary to check for correct spelling. (https://www.merriam-webster.com/ )
+
+*Example*
+
+[#tab-155e4338-6dba-4a1e-a04d-8863228bf22f]
+.Use of American English
+[%header]
+|===
+|No                         |#Yes#
+|[.line-through]#colour#    |color
+|[.line-through]#labelling# |labeling
+|[.line-through]#analyse#   |analyze
+|[.line-through]#centre#    |center
+|===
+
+*Source*
+
+ASAM Writing Guide: 1.1. Use american english (AE)
+
+
+[#sec-ASM-51]
+=== Use a comma as decimal separator (ASM-51)
+
+* The decimal separator in numeric values is a comma: `,`
+* Do not use columns in numeric values.
+
+*Example*
+
+[#tab-155e4338-6dba-4a1e-a04d-8863228bf22f]
+.Use of a column as decimal separator
+[%header]
+|===
+|No                         |#Yes#
+|[.line-through]#1,234.56#    |1234,56
+|[.line-through]#1,000#   |1000
+|===
+
+*Source*
+
+ISO/IEC Directives, Part 2, Sixth edition, 2011, 6.6.8 Representation of numbers and numerical values
+
+
+[#sec-ASM-52]
+=== Use a leading zero for values between -1 and 1 (ASM-51)
+
+* A zero precedes the decimal separator in numeric values between -1 and 1.
+
+*Example*
+
+[#tab-155e4338-6dba-4a1e-a04d-8863228bf22f]
+.Use of a leading zero for values between -1 and 1
+[%header]
+|===
+|No                         |#Yes#
+|[.line-through]#.5# |0,5
+|[.line-through]#-,7# |-0,7
+|===
+
+*Source*
+
+ISO/IEC Directives, Part 2, Sixth edition, 2011, 6.6.8 Representation of numbers and numerical values
+
+
 == Headings
 
 This section contains editorial rules on how to create headings.
@@ -310,6 +382,8 @@ Use tables if you have to present a huge amount of similar data in a very compre
 
 *Source*
 
+Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/tables
+
 [#sec-ASM-45]
 === Use AsciiDoc syntax for tables (ASM-45)
 
@@ -370,6 +444,34 @@ ASAM Writing Guide: 5.3. Tables
 *Source*
 
 ASAM Writing Guide: 5.3. Tables
+
+
+[#sec-ASM-50]
+=== Start text in the table header with a capital letter (ASM-50)
+
+* In a cell in the header row of a table, only the *first word* begins with an uppercase letter (sentence-style capitalization).
+
+*Exception*
+
+*Acronyms* and *proper names* are spelled as is.
+
+*Example*
+
+[#tab-07cd91ec-32d0-4890-8276-cbadc0efc6b0]
+.Use of uppercase in the table header
+[%header]
+|===
+|no                                             |#Yes#
+|[.line-through]#Wrong Formatting of a Heading# |Correct formatting of a heading
+|[.line-through]#Asam rules to follow#          |ASAM rules to follow
+|[.line-through]#Scope of OpenScenario#         |Scope of OpenSCENARIO
+|===
+
+*Source*
+
+Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/tables
+
+ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 == Figures
 
@@ -511,6 +613,16 @@ ASAM Writing Guide: 5.2. Figures
 
 [#sec-ASM-xx]
 === Write an alternative text for every figure (ASM-)
+
+_TODO: How does the alternative text comply with the image numbering?_
+```
+image::images/uml_notation.drawio.svg[1100]
+```
+ vs.
+```
+image::images/uml_notation.drawio.svg[alternative text, 1100]
+```
+
 
 *Example*
 
