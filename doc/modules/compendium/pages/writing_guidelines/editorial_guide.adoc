@@ -32,7 +32,10 @@ This section contains editorial rules on how to create headings.
 === Start headings with a capital letter (ASM-2)
 
 * In headings and captions, only the *first word* begins with an uppercase letter (sentence-style capitalization).
-* _Exception_: *Acronyms* and *proper names* are spelled as is.
+
+*Exception*
+
+*Acronyms* and *proper names* are spelled as is.
 
 *Example*
 
@@ -57,8 +60,8 @@ These editorial rules apply to lists:
 [#sec-ASM-8]
 === Use lists with similarly structured items for complex text (ASM-8)
 
-Use lists instead of long sentences to present complex text in a way that is easier to read and understand.
-The list items shall be a set of similarly structured items.
+* Use lists instead of long sentences to present complex text in a way that is easier to read and understand.
+* The list items shall be a set of similarly structured items.
 For example, each item should be a noun or a phrase that starts with a verb.
 
 *Example*
@@ -79,29 +82,68 @@ The outline of the road marking is described by the attributes @length and @spac
 [#sec-ASM-48]
 === Use AsciiDoc syntax for lists (ASM-48)
 
-Use only asciidoc syntax to format lists.
-Use either ordered or unordered lists.
+* Use only asciidoc syntax to format lists.
+* Use either ordered or unordered lists (see <<#sec-ASM-10>>).
 
 *Example*
 
 ```
 Unordered list
+
 * This is an item.
 * This is another item.
 * This is an additional item.
 
 Ordered list
+
 . This is the first item.
 . This is the second item.
 . This is the third item.
 ```
 
 *Exceptions*
+
 n/a
 
 *Source*
+
 * https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/
 * https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/
+
+[#sec-ASM-10]
+=== Choose a suitable type of list (ASM-10)
+
+==== Use a bulleted list for things that have something in common but do not need to appear in a particular order
+
+*Example*
+
+```
+The database owner can:
+
+* Create and delete a database.
+* Add, delete, or modify a document.
+* Add, delete, or modify any information in the database
+```
+
+*Source*
+
+Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists
+
+==== Use a numbered list for sequential items (like a procedure) or prioritized items (like a top 10 list)
+
+*Example*
+
+```
+To sign on to a database:
+
+. On the File menu, select Open database.
+. In Username, enter your name.
+. In Password, enter your password, and then select OK.
+```
+
+*Source*
+
+Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists
 
 [#sec-ASM-5]
 === Start each list item in a list with an uppercase letter (ASM-5)
@@ -164,50 +206,25 @@ ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 
 
 *Example*
 
+Code
+
 ```
-* This is the first sentence.
-* This is the second sentence.
-* This is the third sentence.
+* This is the first sentence of the element.
+This is the second sentence of the element.
+* This is the second element.
+* This is the third element.
 ```
+
+Result
+
+* This is the first sentence of the element.
+This is the second sentence of the element.
+* This is the second element.
+* This is the third element.
 
 *Source*
 
 ASAM Writing Guide: 4.3. One sentence per line
-
-[#sec-ASM-10]
-=== Choose a suitable type of list (ASM-10)
-
-==== Use a bulleted list for things that have something in common but do not need to appear in a particular order.
-
-*Example*
-
-```
-The database owner can:
-
-* Create and delete a database.
-* Add, delete, or modify a document.
-* Add, delete, or modify any information in the database
-```
-
-*Source*
-
-Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists
-
-==== Use a numbered list for sequential items (like a procedure) or prioritized items (like a top 10 list).
-
-*Example*
-
-```
-To sign on to a database:
-
-. On the File menu, select Open database.
-. In Username, enter your name.
-. In Password, enter your password, and then select OK.
-```
-
-*Source*
-
-Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists
 
 [#sec-ASM-11]
 === Do not put punctuation or conjunctions at the end of a list item if it is not a full sentence (ASM-11)
@@ -217,7 +234,7 @@ If an item in a list is not a full sentence, then do not put the following punct
 * Full stops (periods)
 * Semicolons
 * Commas
-* Conjunctions like and or or
+* Conjunctions like "and" or "or"
 
 *Example*
 
@@ -357,17 +374,6 @@ ASAM Writing Guide: 5.3. Tables
 == Figures
 
 TODO: Terminology: Images or figures?
-
-These rules apply to figures:
-
-* Each image shall have a description (exception: decorative images).
-* The description shall be below the image.
-* The description shall start with "Figure [number] shows" (no initial article).
-* The description shall not contain references to the placement of the image ("before", "below").
-
-*Source*
-
-ASAM Writing Guide: 5.2. Figures
 
 [#sec-ASM-xx]
 === Illustrate complex facts with figures (ASM-xx)
@@ -519,11 +525,30 @@ image::logo.png[an alternative text]
 ASAM Writing Guide: 5.2. Figures
 
 [#sec-ASM-xx]
-=== Rule x (ASM-)
+=== Write a description for each image (ASM-)
+
+* The description shall be below the image.
+* The description shall start with "[Reference to figure] shows".
+The description shall not have an initial article.
+* The description shall not contain references to the placement of the image; for example, "before" or "below".
 
 *Exception*
 
+Decorative images shall not have a description.
+
 *Example*
+
+TODO: How to handle two-part examples?
+
+Code
+
+```
+<<fig-7558b905-679d-4fb9-affa-3b3b72025a18>> shows the offset of the center lane away from the road reference line.
+```
+
+Result
+
+Figure 58 shows the offset of the center lane away from the road reference line.
 
 *Source*
 
