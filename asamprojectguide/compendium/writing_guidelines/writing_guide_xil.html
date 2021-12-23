@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Writing guide :: ASAM Project Guide</title>
-    <link rel="prev" href="plantuml_documentation_guide.html">
-    <link rel="next" href="writing_guide_xil.html">
-    <meta name="description" content="Writing guide for technical writers.">
-    <meta name="keywords" content="writing_guide">
+    <title>Untitled :: ASAM Project Guide</title>
+    <link rel="prev" href="writing_guide.html">
+    <link rel="next" href="../../tooling/main.html">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -722,10 +720,10 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="plantuml_documentation_guide.html">PlantUML documentation guide</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="3">
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="writing_guide.html">Writing guide</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="writing_guide_xil.html">writing_guidelines/writing_guide_xil.adoc</a>
   </li>
 </ul>
@@ -986,46 +984,103 @@
     <li><a href="../../index.html">ASAM Project Guide</a></li>
     <li><a href="../compendium.html">Compendium</a></li>
     <li><a href="../writing_guidelines.html">Writing guidelines</a></li>
-    <li><a href="writing_guide.html">Writing guide</a></li>
+    <li><a href="writing_guide_xil.html">writing_guidelines/writing_guide_xil.adoc</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/compendium/pages/writing_guidelines/writing_guide.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/compendium/pages/writing_guidelines/writing_guide_xil.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Writing guide</h1>
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="../../role-specific/technical-writer.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#D8BFD8;" >TECHNICAL WRITER</role></a>
-<a href="../../role-specific/wg-member.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#BDB76B;" >WG MEMBER</role></a></p>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_language">1. Language</a>
+<ul class="sectlevel2">
+<li><a href="#_use_american_english_ae">1.1. Use American English (AE)</a></li>
+<li><a href="#_verbs_with_a_special_meaning_shall_should_may_can">1.2. Verbs with a special meaning (shall, should, may, can)</a></li>
+<li><a href="#_keep_it_short">1.3. Keep it short</a></li>
+<li><a href="#_use_present_tense">1.4. Use present tense</a></li>
+<li><a href="#_use_active_voice">1.5. Use active voice</a></li>
+</ul>
+</li>
+<li><a href="#_keep_it_simple">2. Keep it simple</a>
+<ul class="sectlevel2">
+<li><a href="#_use_simple_constructs">2.1. Use simple constructs</a></li>
+<li><a href="#_do_not_use_abbreviations">2.2. Do not use abbreviations</a></li>
+</ul>
+</li>
+<li><a href="#_be_precise">3. Be precise</a>
+<ul class="sectlevel2">
+<li><a href="#_do_not_use_synonyms">3.1. Do not use synonyms</a></li>
+<li><a href="#_avoid_words_that_are_not_precise">3.2. Avoid words that are not precise</a></li>
+<li><a href="#_use_that_and_which_correctly">3.3. Use 'that' and 'which' correctly</a></li>
+<li><a href="#_use_since_and_because_correctly">3.4. Use 'since' and 'because' correctly</a></li>
+</ul>
+</li>
+<li><a href="#_formatting">4. Formatting</a>
+<ul class="sectlevel2">
+<li><a href="#_consistent_formatting">4.1. Consistent formatting</a></li>
+<li><a href="#_typographic_conventions_for_xil">4.2. Typographic conventions for XiL</a></li>
+<li><a href="#_one_sentence_per_line">4.3. One sentence per line</a></li>
+<li><a href="#_use_paragraphs">4.4. Use paragraphs</a></li>
+<li><a href="#_manual_line_breaks">4.5. Manual line breaks</a></li>
+<li><a href="#_uppercase_and_lowercase">4.6. Uppercase and lowercase</a></li>
+<li><a href="#_tags_aka_anchors">4.7. Tags (aka anchors)</a></li>
+<li><a href="#_indentation">4.8. Indentation</a></li>
+</ul>
+</li>
+<li><a href="#_file_handling">5. File handling</a>
+<ul class="sectlevel2">
+<li><a href="#_file_names">5.1. File names</a></li>
+<li><a href="#_file_names_for_figures">5.2. File names for figures</a></li>
+<li><a href="#_file_formats">5.3. File formats</a></li>
+<li><a href="#_directory_structure">5.4. Directory structure</a></li>
+</ul>
+</li>
+<li><a href="#_additional_elements">6. Additional elements</a>
+<ul class="sectlevel2">
+<li><a href="#_lists">6.1. Lists</a></li>
+<li><a href="#_figures">6.2. Figures</a></li>
+<li><a href="#_tables">6.3. Tables</a></li>
+<li><a href="#_special_characters">6.4. Special characters</a></li>
+</ul>
+</li>
+<li><a href="#_source_code">7. Source code</a>
+<ul class="sectlevel2">
+<li><a href="#_inline_literals">7.1. Inline literals</a></li>
+<li><a href="#_source_code_fragments">7.2. Source code fragments</a></li>
+<li><a href="#_source_code_snippets">7.3. Source code snippets</a></li>
+<li><a href="#_line_numbers_and_references">7.4. Line numbers and references</a></li>
+<li><a href="#_pipeline_artifacts_as_reference">7.5. Pipeline artifacts as reference</a></li>
+</ul>
+</li>
+<li><a href="#_related_topics">8. Related topics</a></li>
+</ul>
 </div>
-<div class="paragraph">
-<p>This guide is intended to help you writing content for ASAM projects.
-It provides you a set of hints and rules that make it easier to contribute concise and homogeneous content and documents to the projects.</p>
-</div>
-<div class="admonitionblock tip">
+<div id="top-xil-writing-guide" class="admonitionblock caution">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
-If you are using <em><a href="../abbreviations.html#_vscode" class="xref page">VSCode</a></em>, see the <a href="../tools/vscode/recommended_vscode_settings.html" class="xref page">ASAM recommended Visual Studio Code settings</a>.
+This page is still a DRAFT version (V1.4) and subject to change!
 </td>
 </tr>
 </table>
 </div>
-</div>
+<div class="paragraph lead">
+<p>This guide is intended to help you writing content for the ASAM XiL project.
+It provides you a set of hints and rules that make it easier to contribute concise and homogeneous content and documents to the project.</p>
 </div>
 <div class="sect1">
 <h2 id="_language"><a class="anchor" href="#_language"></a>1. Language</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_use_american_english_ae"><a class="anchor" href="#_use_american_english_ae"></a>1.1. Use american english (AE)</h3>
+<h3 id="_use_american_english_ae"><a class="anchor" href="#_use_american_english_ae"></a>1.1. Use American English (AE)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1050,8 +1105,8 @@ If you are using <em><a href="../abbreviations.html#_vscode" class="xref page">V
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">colour</span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">color</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">colour, behaviour</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">color, behavior</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">labelling</span></p></td>
@@ -1108,8 +1163,7 @@ should not</strong></mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><strong><em>Permission</em></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><mark><strong>may,<br>
-need not</strong></mark></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><mark><strong>may</strong></mark></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">"it is allowed to do/have and also allowed not to do/have"</p></td>
 </tr>
 <tr>
@@ -1271,7 +1325,7 @@ It is possible that the table will be simplified in the future.
 <td class="tableblock halign-center valign-top"><p class="tableblock">to</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">has the possibility</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">has the possibility to</span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">can</p></td>
 </tr>
 </tbody>
@@ -1339,10 +1393,8 @@ Avoid them.</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Press the key.
-After hitting the button, the pop-up appears.</span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">Press the key.
-After pressing the key, a pop-up appears.</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Press the <em>key</em>. After hitting the <em>button</em> the pop-up appears.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Press the <em>key</em>. After pressing the <em>key</em> a pop-up appears.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1379,6 +1431,53 @@ After pressing the key, a pop-up appears.</p></td>
 <table id="tab-osc2-writing-guide-precision" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 9. Precision matters</caption>
 <colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Information</th>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Essential: Talking about that specific car they own.</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The car they own is old.<br>
+The car which they own is old.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The car that they own is old.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional: The color of the car is not an essential information.</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The vehicle that is red drives down the road.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The vehicle, which is red, drives down the road.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_use_since_and_because_correctly"><a class="anchor" href="#_use_since_and_because_correctly"></a>3.4. Use 'since' and 'because' correctly</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Only use <em>'since'</em> to refer to a point in time.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Errors since startup.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Always use <em>'because'</em> to express reason.
+(<em>Since</em> can lead to ambiguity if used to express reason, see example.)</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-precision2" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 10. Since and because</caption>
+<colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
@@ -1390,12 +1489,9 @@ After pressing the key, a pop-up appears.</p></td>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The rule I follow</span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">The rule that I follow</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The vehicle that is red drives down the road.</span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">The vehicle, which is red, drives down the road.</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The system cannot calculate a result, <strong><em>since</em></strong> the data is missing.</span><br>
+(time duration or cause?)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The system cannot calculate a result, because the data is missing.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1410,43 +1506,154 @@ After pressing the key, a pop-up appears.</p></td>
 <div class="ulist">
 <ul>
 <li>
-<p>Stick to <strong>one spelling</strong> for a word that allows several spellings (e-mail, email, E-mail).</p>
+<p>Stick to <em>one spelling</em> for a word that allows several spellings.<br>
+(For example, <em>e-mail</em>, <em>email</em>, or <em>E-mail</em>.)</p>
 </li>
 <li>
-<p>Stick to <strong>one style</strong> to present information (steps always as numbered lists).</p>
+<p>Stick to <em>one style</em> to present information.<br>
+(For example, steps are always presented as a numbered list.)</p>
 </li>
 <li>
-<p>Stick to <strong>one formatting</strong> for a special purpose (first use of technical term: <em>italic</em>)</p>
+<p>Stick to <em>one formatting</em> for a special purpose.<br>
+(See <a href="#_typographic_conventions_for_xil">Typographic conventions for XiL</a> for more details.)</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_use_templates"><a class="anchor" href="#_use_templates"></a>4.2. Use templates</h3>
+<h3 id="_typographic_conventions_for_xil"><a class="anchor" href="#_typographic_conventions_for_xil"></a>4.2. Typographic conventions for XiL</h3>
+<div class="paragraph">
+<p>AsciiDoc offers markup characters for words and terms.
+Here is how to use them correctly <em>in the floating text</em> for XiL:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Adoc-templates are available for common types of topics.
-Use them to create consistent content.</p>
-</li>
-<li>
-<p>Each template contains instructions on how to use the template and sample text that has to be replaced.</p>
-</li>
-<li>
-<p>Currently available templates:</p>
+<p><em>Italic</em></p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#../template/generic_template.adoc">Generic</a></p>
+<p>Markup character: Underscore (_)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Example: <code>_term_</code></p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p><a href="#../template/task_template.adoc">Task</a></p>
+<p>Use italic in the following cases:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For glossary terms</p>
 </li>
 <li>
-<p><a href="#../template/uml_element_template.adoc">UML element</a></p>
+<p>For new terms</p>
 </li>
 <li>
-<p><a href="#../template/use_case_template.adoc">Use case</a></p>
+<p>To emphasize terms</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><em>Code elements</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Markup character: Backtick (\`)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Example: <code>`term`</code><br></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use code elements for:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Names of classes</p>
+</li>
+<li>
+<p>Names of attributes</p>
+</li>
+<li>
+<p>Names of parameters</p>
+</li>
+<li>
+<p>One-line code examples</p>
+</li>
+<li>
+<p>File names</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>For plural forms: Never add a plural <em>'-s'</em> to code element names. Use <em>"instances/elements/objects/types of &lt;name&gt;"</em> instead.</p>
+<table id="tab-xil-writing-guide-code-elements" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 11. Code elements plural forms</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Create six <code>MyVector</code><strong>s</strong>.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Create six instances of <code>MyVector</code>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>See <a href="#_source_code">Source code</a> for more details on source code.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><em>Bold</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Markup character: Asterisk (*)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Example: <code>*term*</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Do not use bold for terms in floating text.</p>
+</li>
+<li>
+<p>This markup is reserved for</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Structuring elements, like sub-headings that should not appear in the table of contents.</p>
+</li>
+<li>
+<p>Emphasis, for example single characters in formulae or tables.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -1502,11 +1709,49 @@ Use them to create consistent content.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_uppercase_and_lowercase"><a class="anchor" href="#_uppercase_and_lowercase"></a>4.5. Uppercase and lowercase</h3>
+<h3 id="_manual_line_breaks"><a class="anchor" href="#_manual_line_breaks"></a>4.5. Manual line breaks</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>In headings and captions, only the <strong>first word</strong> begins with an uppercase letter (sentence-style capitalization).</p>
+<p>Use manual line breaks sparingly.</p>
+</li>
+<li>
+<p>To force adoc to make a line break within a paragraph, end the line before the break with a space followed by a plus sign (` +`).</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">After this sentence a line break is needed. +
+This sentence appears on a new line.
+
+* Useful for lists +
+Detailed explanations begin in a new line after the main list element.</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>After this sentence a line break is needed.<br>
+This sentence appears on a new line.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Useful for lists<br>
+Detailed explanations begin in a new line after the main list element.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_uppercase_and_lowercase"><a class="anchor" href="#_uppercase_and_lowercase"></a>4.6. Uppercase and lowercase</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>In headings and captions only the <strong>first word</strong> begins with an uppercase letter (sentence-style capitalization).</p>
 </li>
 <li>
 <p><em>Exception</em>: <strong>Acronyms</strong> and <strong>proper names</strong> are spelled as is.</p>
@@ -1514,7 +1759,7 @@ Use them to create consistent content.</p>
 </ul>
 </div>
 <table id="tab-osc2-writing-guide-headings" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. Use of uppercase in headings and captions</caption>
+<caption class="title">Table 12. Use of uppercase in headings and captions</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1531,7 +1776,7 @@ Use them to create consistent content.</p>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Correct formatting of a heading</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Asam rules to follow</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">ASAM rules to follow</span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">ASAM rules to follow</p></td>
 </tr>
 <tr>
@@ -1542,14 +1787,144 @@ Use them to create consistent content.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_file_names"><a class="anchor" href="#_file_names"></a>4.6. File names</h3>
+<h3 id="_tags_aka_anchors"><a class="anchor" href="#_tags_aka_anchors"></a>4.7. Tags (aka anchors)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>All topics, figures, tables and code examples shall have a unique tag:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>[#top-&lt;uid&gt;]</code> for topics</p>
+</li>
+<li>
+<p><code>[#fig-&lt;uid&gt;]</code> for figures (images, diagrams, and so on)</p>
+</li>
+<li>
+<p><code>[#tab-&lt;uid&gt;]</code> for tables</p>
+</li>
+<li>
+<p><code>[#code-&lt;uid&gt;]</code> for source code blocks</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sections may also have a tag <code>[#sec-&lt;uid&gt;]</code> if a link to the section is needed.</p>
+</li>
+<li>
+<p>Use a semantically fitting string as <code>&lt;uid&gt;</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For the uid-string use a combination of:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>lowercase letters <code>a</code>-<code>z</code></p>
+</li>
+<li>
+<p>numbers <code>0</code>-<code>9</code></p>
+</li>
+<li>
+<p><code>###todo</code> as separators</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Some hints to create a unique id:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Add an abbreviation that corresponds to the name of the main document as part of the id.
+For example, add 'pg' for all anchors used in the _P_rogrammers _G_uide.</p>
+</li>
+<li>
+<p>For anchors for figures (<code>#fig-</code>) it is recommended to use a unique id that has a <em>relation to the figure name</em> (see also <a href="#_file_names_for_figures">File names for figures</a>).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Examples:
+[#top-pg-ees-port-introduction]
+[#fig-pg-overview22-diagram5]
+[#tab-pg-important-elements-of-can]
+[#code-pg-protocol-syntax-example1]
+[#sec-pg-important-section-to-be-linked-to]</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_indentation"><a class="anchor" href="#_indentation"></a>4.8. Indentation</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use four space characters per indentation level.</p>
+</li>
+<li>
+<p>Do not use tab characters.</p>
+</li>
+<li>
+<p>Use the following text editor settings:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Tab size: 4</strong></p>
+</li>
+<li>
+<p><strong>Insert spaces</strong></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-indentation" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 13. Four spaces indentation (spaces marked as '.')</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal text<br>
+<span class="line-through">&#8594;Level 1 indented text<br>
+&#8594;&#8594;Level 2 indented text</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal text<br>
+&#8230;&#8203;.Level 1 indented text<br>
+&#8230;&#8203;&#8230;&#8203;..Level 2 indented text</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_file_handling"><a class="anchor" href="#_file_handling"></a>5. File handling</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_file_names"><a class="anchor" href="#_file_names"></a>5.1. File names</h3>
 <div class="ulist">
 <ul>
 <li>
 <p>Use only <strong>lowercase</strong> for file and folder names.</p>
 </li>
 <li>
-<p>Use the underscore _ instead of 'space' in file and folder names.</p>
+<p>Use the underscore '###todo' instead of 'space' in file and folder names.</p>
 </li>
 <li>
 <p>Use <code>.adoc</code> as file ending for documents.</p>
@@ -1557,7 +1932,7 @@ Use them to create consistent content.</p>
 </ul>
 </div>
 <table id="tab-osc2-writing-guide-file-names" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Use of uppercase and underscores in file and folder names</caption>
+<caption class="title">Table 14. Use of uppercase and underscores in file and folder names</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1585,206 +1960,123 @@ Use them to create consistent content.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_indentation"><a class="anchor" href="#_indentation"></a>4.7. Indentation</h3>
+<h3 id="_file_names_for_figures"><a class="anchor" href="#_file_names_for_figures"></a>5.2. File names for figures</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Use four space characters per indentation level.</p>
-</li>
-<li>
-<p>Do not use tab characters.</p>
-</li>
-<li>
-<p>Use the following text editor settings:</p>
+<p>The <em>file name</em> of a figure shall be the same as the <em>caption</em> of this figure, with the following adaptions:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Tab size: 4</strong></p>
+<p>Use only <em>lowercase</em> letters for the file name.</p>
 </li>
 <li>
-<p><strong>Insert spaces</strong></p>
+<p>Use <code>###todo</code> as separators.</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
 </div>
-<table id="tab-osc2-writing-guide-indentation" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Four spaces indentation (spaces marked as '.')</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-center valign-top">No</th>
-<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Normal text<br>
-<span class="line-through">&#8594;Level 1 indented text<br>
-&#8594;&#8594;Level 2 indented text</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Normal text<br>
-&#8230;&#8203;.Level 1 indented text<br>
-&#8230;&#8203;&#8230;&#8203;..Level 2 indented text</p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p><strong>Example:</strong></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Figure headline:</strong><br>
+"Port definition interfaces of the XYZ framework configuration object model"</p>
+</div>
+<div class="paragraph">
+<p><strong>File name:</strong><br>
+###todo</p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_tags"><a class="anchor" href="#_tags"></a>4.8. Tags</h3>
+<h3 id="_file_formats"><a class="anchor" href="#_file_formats"></a>5.3. File formats</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>All topics, figures, tables and code examples shall have a unique tag.</p>
+<p><em>UML diagrams</em> must be provided as <em>PlantUML files</em> (<code>*.puml</code>).</p>
 </li>
 <li>
-<p>Sections may also have a tag if a link to the section is needed.</p>
+<p>Charts and other diagrams shall preferably be provided as <em>scalable vector graphics</em> (<code>*.svg</code>).
+Alternatively, <em>portable network graphics</em> (<code>*.png</code>) may also be used.</p>
 </li>
 <li>
-<p><em>Note:</em> If you cannot come up with a document-wide unique id, just add <code>[#tag-uid]</code>.
-This triggers a pipeline warning and the technical writer can help you.</p>
+<p>Do not use figure file formats other than PlantUML, SVG or PNG.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_directory_structure"><a class="anchor" href="#_directory_structure"></a>5.4. Directory structure</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Each adoc-file is placed in a separate folder that is named after the contained adoc-file.</p>
+</li>
+<li>
+<p>Use one file per topic for larger chapters.</p>
+</li>
+<li>
+<p>Image files are kept per adoc-file.
+They are stored in a sub-folder called "images" next to the adoc-file.</p>
 </li>
 </ul>
 </div>
 <div class="listingblock">
+<div class="title">Example directory structure</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">Examples:
-[#top-uid]
-[#fig-uid]
-[#tab-uid]
-[#code-uid]
-[#sec-uid]</code></pre>
-</div>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-You can generate a UUID using a generator like <a href="https://www.uuidgenerator.net/" class="bare">https://www.uuidgenerator.net/</a>.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_non_normative_sections"><a class="anchor" href="#_non_normative_sections"></a>4.9. Non-normative sections</h3>
-<div class="paragraph">
-<p>Text sections (paragraphs or blocks of text) in the documentation of a standard are considered <strong>normative</strong>.</p>
-</div>
-<div class="paragraph">
-<p>If some text sections should be considered as <strong>non-normative</strong> and only descriptive (for example, background information or examples), mark this sections deliberately as non-normative.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Non-normative sections shall be marked with the user-defined asciidoc role <em>non-normative</em>.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Put the role attribute <code>[.non-normative]</code> in front of single paragraphs or blocks to mark them as non-normative.</p>
-</li>
-<li>
-<p>Inside a normative section use <code>[.non-normative]#&lt;text&gt;#</code> to mark single text passages <code>&lt;text&gt;</code> as non-normative.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div id="cod-osc2-writing-guide-normative" class="listingblock">
-<div class="title">Example for normative and non-normative sections</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">This is a normative paragraph.
-
-[.non-normative]
-This is a descriptive, non-normative paragraph.
-
-====
-This is a normative block.
-====
-
-[.non-normative]
-====
-This is a descriptive block.
-====
-
-This is another normative paragraph.
-This sentence is normative.
-[.non-normative]#This sentence is non-normative.#
-This sentence is normative again.</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Roles can be combined using the following syntax: <code>[.&lt;first_role&gt;.&lt;second_role&gt;]</code>.</p>
-</li>
-</ul>
-</div>
-<div id="cod-osc2-writing-guide-normative2" class="listingblock">
-<div class="title">Example with multiple roles</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">[.important.non-normative]
-This is a descriptive, non-normative paragraph that is also marked with the important-role.</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Id and role attributes can be combined.<br>
-Use the long notation for easier reading: <code>[id=&lt;document_id&gt;, role=&lt;document_role&gt;]</code>.</p>
-</li>
-</ul>
-</div>
-<div id="cod-osc2-writing-guide-normative3" class="listingblock">
-<div class="title">Example with role and id combined</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">[id=top-doc-unique-id, role=non-normative]
-= Document title
-
-This is a descriptive, non-normative document.</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The actual format and style of non-normative sections depends on the entry in the CSS style sheet file that is used for rendering the text and is not coded in the adoc-file itself.</p>
-</li>
-</ul>
-</div>
-<div id="cod-osc2-writing-guide-css-example" class="listingblock">
-<div class="title">Example of a CSS entry for non-normative text</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.non-normative { font-style: italic; color: darkgreen; background: gold }</code></pre>
+<pre>├───food
+│   ├───fruit
+│   │   ├───apples
+│   │   │   ├───images
+│   │   │   │   ├───wellant.svg
+│   │   │   │   ├───golden_delicious.svg
+│   │   │   │   ├───gala.png
+│   │   │   └───apples.adoc
+│   │   │
+│   │   ├───berries
+│   │       ├───images
+│   │       │   ├───blueberries.png
+│   │       │   ├───gooseberries.svg
+│   │       │   ├───goji.svg
+│   │       ├───berries_introduction.adoc
+│   │       ├───berries_definitions.adoc
+│   │       └───berries_examples.adoc
+│   │
+│   └───vegetables
+│   │   ├───potatoes
+│   │   │   └───images
+│   │   │   │   └───...
+│   │   │   └───potatoes.adoc
+...</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_additional_elements"><a class="anchor" href="#_additional_elements"></a>5. Additional elements</h2>
+<h2 id="_additional_elements"><a class="anchor" href="#_additional_elements"></a>6. Additional elements</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_lists"><a class="anchor" href="#_lists"></a>5.1. Lists</h3>
+<h3 id="_lists"><a class="anchor" href="#_lists"></a>6.1. Lists</h3>
 <div class="ulist">
 <ul>
 <li>
 <p>Lists are a great way to present lots of similar information in a compact form.</p>
 </li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_numbered_lists"><a class="anchor" href="#_numbered_lists"></a>6.1.1. Numbered lists</h4>
+<div class="ulist">
+<ul>
 <li>
-<p>Use the same word/sentence structure for all list items.</p>
-</li>
-<li>
-<p>Use <strong>numbered lists</strong> (Asciidoc '<strong>.</strong>') for steps that require a specific order.</p>
-</li>
-<li>
-<p>Use <strong>bullet points</strong> (Asciidoc '<strong>*</strong>') for enumerations and elements that do not require a specific order.</p>
+<p>Use <strong>numbered lists</strong> (AsciiDoc <code><strong>.</strong></code>) for steps that require a specific order.</p>
 </li>
 </ul>
 </div>
@@ -1796,6 +2088,8 @@ This is a descriptive, non-normative document.</code></pre>
 . Third step</code></pre>
 </div>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1809,54 +2103,249 @@ This is a descriptive, non-normative document.</code></pre>
 </li>
 </ol>
 </div>
-<table id="tab-osc2-writing-guide-list-example" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. Bullet point list example 'ingredients'</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">No</th>
-<th class="tableblock halign-left valign-top"><mark>Yes</mark></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_bullet_point_lists"><a class="anchor" href="#_bullet_point_lists"></a>6.1.2. Bullet point lists</h4>
+<div class="ulist">
 <ul>
 <li>
-<p><span class="line-through">first 2 apples,</span><br></p>
-</li>
-<li>
-<p><span class="line-through">then one banana.</span><br></p>
-</li>
-<li>
-<p><span class="line-through">And you need an orange too!</span></p>
+<p>Use <strong>bullet points</strong> (AsciiDoc <code><strong>*</strong></code>) for enumerations and elements that do not require a specific order.</p>
 </li>
 </ul>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+</div>
+<div class="listingblock">
+<div class="title">A bullet point list example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">* Two apples
+* One banana
+* One orange</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
 <ul>
 <li>
-<p>two apples<br></p>
+<p>Two apples</p>
 </li>
 <li>
-<p>one banana<br></p>
+<p>One banana</p>
 </li>
 <li>
-<p>one orange</p>
+<p>One orange</p>
 </li>
 </ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lists_inside_lists"><a class="anchor" href="#_lists_inside_lists"></a>6.1.3. Lists inside lists</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>You can use lists inside lists and define several levels of sub-lists.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">A complex numbered list example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">. First step
+.. First sub-step
+.. Second sub-step
+... First step inside second sub-step
+... Second step inside second sub-step
+.. Third sub-step
+. Second step
+. Third step</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>First step</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>First sub-step</p>
+</li>
+<li>
+<p>Second sub-step</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>First step inside second sub-step</p>
+</li>
+<li>
+<p>Second step inside second sub-step</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Third sub-step</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Second step</p>
+</li>
+<li>
+<p>Third step</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">A complex bullet list example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">* Bullet one
+* Bullet two
+** Sub-bullet one
+** Sub-bullet two
+*** Sub-sub-bullet one
+** Sub-bullet three
+* Bullet three</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Bullet one</p>
+</li>
+<li>
+<p>Bullet two</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sub-bullet one</p>
+</li>
+<li>
+<p>Sub-bullet two</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sub-sub-bullet one</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sub-bullet three</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Bullet three</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_list_formatting_conventions"><a class="anchor" href="#_list_formatting_conventions"></a>6.1.4. List formatting conventions</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Introduce lists with complete sentences, ending with a colon.</p>
+</li>
+<li>
+<p>Start all list items with an uppercase letter.</p>
+</li>
+<li>
+<p>Ensure similar structure for all list items, for example, whole sentences vs. nouns.</p>
+</li>
+<li>
+<p>End sentences with a period.</p>
+</li>
+<li>
+<p>Do not use closing punctuation for single words, noun phrases, verbs, adjectives, etc.</p>
+</li>
+<li>
+<p>Do not write lists as a continuous sentence.</p>
+</li>
+<li>
+<p>In bulleted and numbered lists, end each list item with a period if the following applies:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Any item forms a complete sentence when combined with the list introduction that precedes the colon.</p>
+</li>
+<li>
+<p>Exception: Do not use periods if all items have three or fewer words or if the items are UI labels, headings,
+subheadings, or strings.</p>
+</li>
+<li>
+<p>Any item by itself is a complete sentence.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Do not use semicolons, commas, or conjunctions (like <em>'and'</em> or <em>'or'</em>) at the end of list items.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Examples of correctly formatted lists:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>My pets like the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>My cat likes to hunt in the fields.</p>
+</li>
+<li>
+<p>My dog is happy when we go out for a walk.</p>
+</li>
+<li>
+<p>My guinea pig wants to sleep all day.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>I like the following types of fruit:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Apples</p>
+</li>
+<li>
+<p>Bananas</p>
+</li>
+<li>
+<p>Cherries</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_figures"><a class="anchor" href="#_figures"></a>5.2. Figures</h3>
+<h3 id="_figures"><a class="anchor" href="#_figures"></a>6.2. Figures</h3>
 <div class="paragraph">
-<p>Figures, like pictures or drawings, may be used to illustrate complex facts.</p>
+<p>Figures - like images, pictures or drawings - may be used to illustrate complex facts.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1864,23 +2353,39 @@ This is a descriptive, non-normative document.</code></pre>
 <p>Preferred format: <code>.svg</code></p>
 </li>
 <li>
-<p>Figures are stored in a subfolder named <code>images</code> located inside the chapter folder.</p>
+<p>Alternative format: <code>.png</code></p>
 </li>
 <li>
-<p>Each figure shall have:</p>
+<p>Figures are stored in a sub-folder named <code>images</code> located inside the chapter folder.
+See also <a href="#_directory_structure">Directory structure</a>.</p>
+</li>
+<li>
+<p>The name of the image file shall match the anchor name (excluding the <code>fig-</code> prefix)</p>
+</li>
+<li>
+<p>The exact adherence to this syntax is absolutely necessary for the automatic generation of the list of figures at the end of the document.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_images"><a class="anchor" href="#_images"></a>6.2.1. Images</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>a tag</p>
+<p>Each image shall have:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A tag starting with <code>#fig-</code></p>
 </li>
 <li>
-<p>a caption</p>
+<p>A caption</p>
 </li>
 <li>
-<p>the link to the picture</p>
+<p>The <code>image::</code>-link to the picture</p>
 </li>
 <li>
-<p>an alternative text</p>
+<p>An alternative text</p>
 </li>
 </ul>
 </div>
@@ -1889,34 +2394,178 @@ This is a descriptive, non-normative document.</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">[#fig-uuid]
-.This is the caption of the figure
-image::logo.png[an alternative text]</code></pre>
+<pre class="highlightjs highlight"><code class="language-none hljs">[#fig-&lt;id&gt;]
+.&lt;caption&gt;
+image::&lt;filename&gt;[&lt;alternative text&gt;]</code></pre>
 </div>
 </div>
-<div id="fig-uuid" class="imageblock">
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
 <div class="content">
-<img src="../_images/logo.png" alt="an alternative text">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#fig-project-structure]
+.Overview of the project structure
+image::project-structure.svg[]</code></pre>
 </div>
-<div class="title">Figure 1. This is the caption of the figure</div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_tables"><a class="anchor" href="#_tables"></a>5.3. Tables</h3>
+<div class="sect3">
+<h4 id="_attribute_imagesdir"><a class="anchor" href="#_attribute_imagesdir"></a>6.2.2. Attribute 'imagesdir'</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Use tables if you have to present a huge amount of similar data in a very compressed form.</p>
+<p>Set the <code>:imagesdir:</code> only in the root adoc-file that compiles all the adoc-files into a single document (the so-called <em>mapping-file</em> <code>main.adoc</code>).</p>
+</li>
+<li>
+<p>With each include in the root document, the imagesdir must be set to the parent-folder of the images-folder of the included adoc-file.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Despite its name, the attribute <strong>:imagesdir:</strong> shall <em>not</em> contain the name of the images-folder itself, but the <strong>name of the parent-folder of the images-folder</strong>.</p>
+</div>
+<div class="paragraph">
+<p>This way, the images are displayed in an adoc-preview, even if only the sub-topic is opened. No need to open the main.doc all the time for image previews.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Example for main.adoc:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs"> :imagesdir: apples
+ include::apples/apples.adoc[leveloffset=+1]
+
+ :imagesdir: berries
+ include::berries/berries_introduction.adoc[leveloffset=+1]
+ include::berries/berries_definitions.adoc[leveloffset=+1]
+ include::berries/berries_examples.adoc[leveloffset=+1]
+
+or:
+
+ :workdir: apples
+ :imagesdir: {workdir}
+ include::{workdir}/apples.adoc[leveloffset=+1]
+ ...</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Do <em>not</em> set the attribute imagesdir in subordinated adoc-files.
+Paths in the image-macros are relative to the adoc file.
+The image-macros also work when previewing only a single subordinated adoc file.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_plantuml_diagrams"><a class="anchor" href="#_plantuml_diagrams"></a>6.2.3. PlantUML diagrams</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>PlantUML diagrams are included as a file.</p>
+</li>
+<li>
+<p>Each diagram shall have:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A tag starting with <code>#fig-</code></p>
+</li>
+<li>
+<p>A caption</p>
+</li>
+<li>
+<p>The block format identifier <code>[plantuml]</code></p>
+</li>
+<li>
+<p>The <code>include::</code>-link, surrounded by block markers <code>----</code></p>
+</li>
+<li>
+<p>An alternative text</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> [#fig-&lt;id&gt;]
+ .&lt;caption&gt;
+ [plantuml]
+ ----
+ include::&lt;filename.puml&gt;[]
+ ----</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> [#fig-root-package-class-diag]
+ .Class diagram for the root package
+ [plantuml]
+ ----
+ include::my-class-diagram.puml[class diagram for root package]
+ ----</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_attribute_plantuml_format"><a class="anchor" href="#_attribute_plantuml_format"></a>6.2.4. Attribute 'plantuml-format'</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The images generated from the PlantUML diagrams during the creation of the output document shall have SVG format.
+This is globally configured with the document attribute <code>:plantuml-format:</code> in the document header.</p>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#top-my-document]
+= My document
+:description: A generic document
+:revdate: 2020-03-13
+...
+:plantuml-format: svg</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tables"><a class="anchor" href="#_tables"></a>6.3. Tables</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use tables if you have to present a huge amount of similar data in a compressed form.</p>
 </li>
 <li>
 <p>A table shall have:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>a tag</p>
+<p>A tag</p>
 </li>
 <li>
-<p>a caption</p>
+<p>A caption</p>
 </li>
 </ul>
 </div>
@@ -1925,7 +2574,7 @@ image::logo.png[an alternative text]</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">[#tab-uuid]
+<pre class="highlightjs highlight"><code class="language-none hljs">[#tab-uid]
 .This is the caption of the table
 |===
 |cell 1_1 | cell 1_2 | cell 1_3
@@ -1934,8 +2583,10 @@ image::logo.png[an alternative text]</code></pre>
 |===</code></pre>
 </div>
 </div>
-<table id="tab-uuid" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 14. This is the caption of the table</caption>
+<div class="exampleblock">
+<div class="content">
+<table id="tab-uid" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 15. This is the caption of the table</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1960,8 +2611,116 @@ image::logo.png[an alternative text]</code></pre>
 </tbody>
 </table>
 </div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nested tables are also possible.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[cols="2,2a"]
+|===
+| col 1 | col 2
+| cell 1.1 | cell 1.2
+| cell 2.1 | cell 2.2
+[cols="1,1"]
+!===
+! n_col 1 ! n_col 2 ! n_c 11 ! n_c 12
+!===
+|===</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">col 1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>col 2</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 1.1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>cell 1.2</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 2.1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>cell 2.2</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n_c 1.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n_c 1.2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n_c 2.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n_c 2.2</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AsciiDoc offers a huge amount of attributes to build more complicated tables and to affect the style of tables.
+See <a href="https://docs.asciidoctor.org/asciidoc/latest/tables/table-ref/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/tables/table-ref/</a> for details.</p>
+</li>
+<li>
+<p>Some useful examples for table formatting:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Span cells by using the <em>span factor</em> and <em>span operator</em> of the cell specifier.<br>
+(Examples: <code>3+|</code>: Cell spans three columns, <code>.2+|</code>: Cell spans two rows.)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Using cell spans may cause border frame displaying issues. Use sparingly.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Adjust the column width with the column attribute <code>[cols="&lt;n&gt;,&lt;m&gt;"]</code>, using the numbers n and m to define the relative width between the columns.<br>
+(Example: <code>cols="2,4"</code>: Second column is twice as wide as the first one.)</p>
+</li>
+</ul>
+</div>
+</div>
 <div class="sect2">
-<h3 id="_special_characters"><a class="anchor" href="#_special_characters"></a>5.4. Special characters</h3>
+<h3 id="_special_characters"><a class="anchor" href="#_special_characters"></a>6.4. Special characters</h3>
 <div class="paragraph">
 <p>Sometimes you may need to display a character that is reserved for adoc-formatting.
 Here is how to do it.</p>
@@ -1977,9 +2736,18 @@ Use <code>&amp;lowbar;</code> to display an underscore.</p>
 Use <code>&amp;#35;</code> to display a pound sign.</p>
 </li>
 <li>
+<p><strong>Check mark (&#10004;)</strong><br>
+Use <code>&amp;#10004;</code> to display a check mark.</p>
+</li>
+<li>
 <p><strong>Protected space (&#160;)</strong><br>
 Use <code>{nbsp}</code> to define a space character is not used for automatic line breaks.<br>
 This is especially useful for value-unit-pairs like <code>5{nbsp}m/s</code> (5&#160;m/s) to ensure that value and unit are always in the same line of text.</p>
+</li>
+<li>
+<p><strong>Word joiner (&#8288;)</strong><br>
+Use <code>{wj}</code> to glue two words together.
+This is useful to enhance readability, for example when adding footnotes (<code>term{wj}footnote:[text]</code>).</p>
 </li>
 </ul>
 </div>
@@ -1987,7 +2755,7 @@ This is especially useful for value-unit-pairs like <code>5{nbsp}m/s</code> (5&#
 </div>
 </div>
 <div class="sect1">
-<h2 id="_source_code"><a class="anchor" href="#_source_code"></a>6. Source code</h2>
+<h2 id="_source_code"><a class="anchor" href="#_source_code"></a>7. Source code</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Consider one of the following possibilities if you want to add source code examples to an adoc topic.</p>
@@ -1995,24 +2763,24 @@ This is especially useful for value-unit-pairs like <code>5{nbsp}m/s</code> (5&#
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>You may use small bits of code as an <strong>inline literal</strong> directly inside your text.</p>
+<p>You may use small bits of code as an <a href="#_inline_literals"><strong>inline literal</strong></a> directly inside your text.</p>
 </li>
 <li>
-<p>You may add source code as a <strong>fragment</strong> from a source code file by reference.</p>
+<p>You may add source code as a <a href="#_source_code_fragments"><strong>fragment</strong></a> from a source code file by reference.</p>
 </li>
 <li>
-<p>You may copy and paste source code directly as a <strong>snippet</strong> into the adoc topic.</p>
+<p>You may copy and paste source code directly as a <a href="#_source_code_snippets"><strong>snippet</strong></a> into the adoc topic.</p>
 </li>
 </ol>
 </div>
 <div class="sect2">
-<h3 id="_inline_literals"><a class="anchor" href="#_inline_literals"></a>6.1. Inline literals</h3>
+<h3 id="_inline_literals"><a class="anchor" href="#_inline_literals"></a>7.1. Inline literals</h3>
 <div class="paragraph">
 <p>For very small bits of code using <strong>inline literals</strong> is the most convenient way to add source code examples.
 This type of including source code is especially useful if you want to highlight single code elements like methods or class names.</p>
 </div>
 <div class="sect3">
-<h4 id="_changes_in_the_adoc_file"><a class="anchor" href="#_changes_in_the_adoc_file"></a>6.1.1. Changes in the adoc file</h4>
+<h4 id="_changes_in_the_adoc_file"><a class="anchor" href="#_changes_in_the_adoc_file"></a>7.1.1. Changes in the adoc file</h4>
 <div class="paragraph">
 <p>Enclose the source code in a <strong>pair of pluses surrounded by a pair of backticks</strong>, like this:</p>
 </div>
@@ -2023,17 +2791,21 @@ This type of including source code is especially useful if you want to highlight
 </div>
 </div>
 <div class="sect3">
-<h4 id="_result"><a class="anchor" href="#_result"></a>6.1.2. Result</h4>
+<h4 id="_result"><a class="anchor" href="#_result"></a>7.1.2. Result</h4>
 <div class="paragraph">
 <p>The previous line looks like this as adoc output:</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Call the <code>source_example_func()</code> for the result.</p>
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="_source_code_fragments"><a class="anchor" href="#_source_code_fragments"></a>6.2. Source code fragments</h3>
+<h3 id="_source_code_fragments"><a class="anchor" href="#_source_code_fragments"></a>7.2. Source code fragments</h3>
 <div class="paragraph">
 <p>You can add source code as a <strong>fragment</strong> from a source code file if you would like to reference to the source code within the source code file.</p>
 </div>
@@ -2070,7 +2842,7 @@ This type of including source code is especially useful if you want to highlight
 <p>The example in the following subchapters uses the tag <code>exampleInclude</code> to add a code fragment.</p>
 </div>
 <div class="sect3">
-<h4 id="_changes_in_the_source_code_file"><a class="anchor" href="#_changes_in_the_source_code_file"></a>6.2.1. Changes in the source code file</h4>
+<h4 id="_changes_in_the_source_code_file"><a class="anchor" href="#_changes_in_the_source_code_file"></a>7.2.1. Changes in the source code file</h4>
 <div id="code-tags-in-source-file" class="listingblock">
 <div class="title">Tags for the inclusion of source code from a source code file</div>
 <div class="content">
@@ -2104,14 +2876,14 @@ In this example, the tag is named <code>exampleInclude</code>.</td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_changes_in_the_adoc_file_2"><a class="anchor" href="#_changes_in_the_adoc_file_2"></a>6.2.2. Changes in the adoc file</h4>
+<h4 id="_changes_in_the_adoc_file_2"><a class="anchor" href="#_changes_in_the_adoc_file_2"></a>7.2.2. Changes in the adoc file</h4>
 <div class="literalblock">
 <div class="content">
 <pre>[#code-example-code-block-tag]    <i class="conum" data-value="1"></i><b>(1)</b>
 .ASAM example code block included by tags    <i class="conum" data-value="2"></i><b>(2)</b>
 [source, osc2]    <i class="conum" data-value="3"></i><b>(3)</b>
 ----    <i class="conum" data-value="4"></i><b>(4)</b>
-include::&lt;path-to-file&gt;/examplecode.js[tags=exampleInclude]    <i class="conum" data-value="5"></i><b>(5)</b>
+include::resources/examplecode.js[tags=exampleInclude]    <i class="conum" data-value="5"></i><b>(5)</b>
 ----    <i class="conum" data-value="6"></i><b>(6)</b></pre>
 </div>
 </div>
@@ -2152,31 +2924,31 @@ For example, <code>osc2</code>, <code>xml</code>, or <code>java</code>.</td>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-For more information see the <a href="https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/" target="_blank" rel="noopener">Asciidoctor reference</a>.
+For more information see the <a href="https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/">Asciidoctor reference</a>.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_result_2"><a class="anchor" href="#_result_2"></a>6.2.3. Result</h4>
+<h4 id="_result_2"><a class="anchor" href="#_result_2"></a>7.2.3. Result</h4>
 <div class="paragraph">
 <p>This is how the reference looks like inside the adoc file:</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div id="code-example-code-block-tag" class="listingblock">
 <div class="title">ASAM example code block included by tags</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2">function lorem(ipsum, dolor = 1) {
-    const sit = ipsum == null ? 0 : ipsum.sit;
-    dolor = sit - amet(dolor);
-    return sit ? consectetur(ipsum, 0, dolor &lt; 0 ? 0 : dolor) : [];
-}</code></pre>
+<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2">Unresolved include directive in modules/compendium/pages/writing_guidelines/writing_guide_xil.adoc - include::resources/examplecode.js[]</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_source_code_snippets"><a class="anchor" href="#_source_code_snippets"></a>6.3. Source code snippets</h3>
+<h3 id="_source_code_snippets"><a class="anchor" href="#_source_code_snippets"></a>7.3. Source code snippets</h3>
 <div class="paragraph">
 <p>You can add source code as a <strong>snippet</strong> into your adoc documentation if you cannot or if you do not want to reference to the source code file.
 Be aware that you have to maintain two places (your original code and the snippet in the adoc) in case of future changes.</p>
@@ -2198,7 +2970,7 @@ Be aware that you have to maintain two places (your original code and the snippe
 </ol>
 </div>
 <div class="sect3">
-<h4 id="_changes_in_the_adoc_file_3"><a class="anchor" href="#_changes_in_the_adoc_file_3"></a>6.3.1. Changes in the adoc file</h4>
+<h4 id="_changes_in_the_adoc_file_3"><a class="anchor" href="#_changes_in_the_adoc_file_3"></a>7.3.1. Changes in the adoc file</h4>
 <div class="literalblock">
 <div class="content">
 <pre>[#code-example-code-block]    <i class="conum" data-value="1"></i><b>(1)</b>
@@ -2247,10 +3019,12 @@ For example, <code>osc2</code>, <code>xml</code>, or <code>java</code>.</td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_result_3"><a class="anchor" href="#_result_3"></a>6.3.2. Result</h4>
+<h4 id="_result_3"><a class="anchor" href="#_result_3"></a>7.3.2. Result</h4>
 <div class="paragraph">
 <p>This is how the correctly configured snippet looks like in the adoc file:</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div id="code-example-code-block" class="listingblock">
 <div class="title">ASAM example code block included in an asciidoc file</div>
 <div class="content">
@@ -2265,148 +3039,109 @@ For example, <code>osc2</code>, <code>xml</code>, or <code>java</code>.</td>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_source_code_type_osc2"><a class="anchor" href="#_source_code_type_osc2"></a>6.4. Source code type 'osc2'</h3>
-<div class="paragraph">
-<p>Use <mark>[source, osc2]</mark> as a source block identifier for fragments and snippets (see <a href="#code-example-code-block">example</a>) to define the language type as 'osc2'.
-This enables future automatic syntax highlighting.</p>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_review_process_and_draft_attribute"><a class="anchor" href="#_review_process_and_draft_attribute"></a>7. Review process and draft-attribute</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The project uses the adoc attribute <code>draft</code> to steer the review process.
-This FAQ helps you to manage the review and attribute handling.</p>
 </div>
 <div class="sect2">
-<h3 id="_purpose_of_the_draft_attribute"><a class="anchor" href="#_purpose_of_the_draft_attribute"></a>7.1. Purpose of the draft-attribute</h3>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Q1 What is this draft-attribute for?</dt>
-<dd>
-<p>New content on the master branch has to be marked with the <code>ifdef::draft[] - endif::draft[]</code> 'feature flag' mechanism.
-New content in this case means content in adoc files that is not already reviewed and agreed on, like newly merged text from a development branch.<br></p>
+<h3 id="_line_numbers_and_references"><a class="anchor" href="#_line_numbers_and_references"></a>7.4. Line numbers and references</h3>
 <div class="paragraph">
-<p>A typical adoc topic looks like this:</p>
+<p>You can refer to lines of code in two ways:</p>
 </div>
-</dd>
-</dl>
+<div class="ulist">
+<ul>
+<li>
+<p>Use callouts to refer to single lines.</p>
+</li>
+<li>
+<p>Use automatic line numbering.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_references_to_single_lines"><a class="anchor" href="#_references_to_single_lines"></a>7.4.1. References to single lines</h4>
+<div class="paragraph">
+<p>Use <em>Asciidoc callouts</em> to refer to lines of source code, for example to add a detailed explanation after the code block.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add a comment with a <em>reference number in angle brackets</em> at the end of the line in the source block:<br>
+ <code># &lt;x&gt;</code><br>
+(x = 1, 2, &#8230;&#8203;)<br>
+Marking the reference number as a comment allows users to copy-and-paste the code as working code.</p>
+</li>
+<li>
+<p><em>After</em> the source block repeat the number in angle brackets, followed by the explanation text.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Example:</strong></p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">  [#top-an-example-topic]
-  = Topic heading
-
-  ifdef::draft[]
-
-  Some content that is new or still needs
-  to be reviewed and agreed on.
-
-  endif::draft[]
-
-  Some other content that is already reviewed and
-  ready for being part of the standard documentation.</code></pre>
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[source, osc2, linenums]
+----
+A normal line
+A line with a callout # &lt;1&gt;
+Another normal line
+Another line with a callout # &lt;2&gt;
+----
+&lt;1&gt; The explanation for the first callout.
+&lt;2&gt; The explanation for the second callout.</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>When a review is started, a WG-Lead or a member of the CCB removes the draft-mechanism for the part that has to be reviewed in the review merge request.</p>
+<p><strong>Result:</strong></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2">A normal line
+A line with a callout <i class="conum" data-value="1"></i><b>(1)</b>
+Another normal line
+Another line with a callout <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_preview_configuration"><a class="anchor" href="#_preview_configuration"></a>7.2. Preview configuration</h3>
-<div class="paragraph">
-<p>Q2 I cannot see my content in the preview.
-What is wrong?::
-You may experience an empty preview in your editor when editing files that contain the mechanism.<br></p>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The explanation for the first callout.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>The explanation for the second callout.</td>
+</tr>
+</table>
 </div>
-<div class="paragraph">
-<p>+
-This is actually a good sign.
-The preview is working correctly and hides all parts marked as draft.<br></p>
 </div>
-<div class="paragraph">
-<p>+
-To make the parts visible again, you have to set the attribute <code>draft</code> for your preview window.</p>
+</div>
 </div>
 <div class="sect3">
-<h4 id="_visualstudiocode_with_asciidoc_extension"><a class="anchor" href="#_visualstudiocode_with_asciidoc_extension"></a>7.2.1. VisualStudioCode with asciidoc extension</h4>
+<h4 id="_automatic_line_numbering"><a class="anchor" href="#_automatic_line_numbering"></a>7.4.2. Automatic line numbering</h4>
+<div class="paragraph">
+<p>An automatic line numbering mechanism is also available, for example to refer to the code later in the text.</p>
+</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>In the Asciidoc extension settings go to <code>Preview:Attributes - Edit in settings.json</code>.</p>
+<p>Use <code>[source, osc2, linenums]</code> as a source block identifier to enable line numbering.</p>
 </li>
 <li>
-<p>In the settings.json add the <code>draft</code> attribute:</p>
-<div class="literalblock">
-<div class="content">
-<pre>"asciidoc.preview.attributes": {
-  "draft": ""
-}</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Save settings.json</p>
+<p>Later in the text use the anchor of the code example together with the line number to refer to the line:<br>
+<code>In &lt;&lt;code-uuid, name of the example&gt;&gt;, line x, ...</code></p>
 </li>
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_asciidocfx_preview"><a class="anchor" href="#_asciidocfx_preview"></a>7.2.2. AsciidocFX preview</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Go to <code>Settings</code> on the right hand side of the preview</p>
-</li>
-<li>
-<p>Go to the <code>Preview settings</code> tab</p>
-</li>
-<li>
-<p>Add an <code>Asciidoctor Attribute</code> by double-clicking an empty attribute line</p>
-</li>
-<li>
-<p>Add attribute <code>draft</code> with value <code>true</code></p>
-</li>
-<li>
-<p>Save the settings (small button on the lower left of the tab!)</p>
-</li>
-<li>
-<p>Reload the preview</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Other tools should have similar settings.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_gitlab_preview"><a class="anchor" href="#_gitlab_preview"></a>7.2.3. Gitlab preview</h4>
-<div class="paragraph">
-<p>The preview in Gitlab intentionally shows the release version of the files, meaning that the parts marked as draft are hidden.
-You can easily switch off the preview and view the source content by clicking on the display source-icon on top of the file window:</p>
-</div>
-<div id="fig-osc2-writing-guide-source-view" class="imageblock">
-<div class="content">
-<img src="../_images/source_view.png" alt="Source view icon location">
-</div>
-<div class="title">Figure 2. How to switch to source-view in Gitlab</div>
-</div>
-<div class="paragraph">
-<p>The icon next to it switches back to the preview.</p>
-</div>
-</div>
 </div>
 <div class="sect2">
-<h3 id="_pipeline_artifacts_as_reference"><a class="anchor" href="#_pipeline_artifacts_as_reference"></a>7.3. Pipeline artifacts as reference</h3>
+<h3 id="_pipeline_artifacts_as_reference"><a class="anchor" href="#_pipeline_artifacts_as_reference"></a>7.5. Pipeline artifacts as reference</h3>
 <div class="paragraph">
-<p>Q3 My preview looks fine.
-Why do I get feedback that something is not formatted correctly?::
-Please note that all the previews described in this chapter are just for your convenience.<br>
-<strong>The only reliable documents for reviews are the html-artifacts generated by the CI-pipeline!</strong><br>
-These artifacts are linked at the beginning of review merge requests.
+<p>Please note that any preview of a tool is just for your convenience.<br>
+<strong>The only reliable documents for reviews are the pdf-artifacts generated by the CI-pipeline!</strong><br>
+These artifacts are linked at the main Gitlab-page of the project.
 You can also download the artifacts directly from the pipeline result page.</p>
 </div>
 </div>
@@ -2418,57 +3153,15 @@ You can also download the artifacts directly from the pipeline result page.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>For a short introduction to Asciidoc, see the <a href="https://code.asam.net/simulation/resources/-/blob/master/asciidoc_tutorial/asciidoc_tutorial.adoc" class="bare">https://code.asam.net/simulation/resources/-/blob/master/asciidoc_tutorial/asciidoc_tutorial.adoc</a>.</p>
-</li>
-<li>
-<p>The <a href="https://code.asam.net/simulation/standard/openscenario-2.0/-/tree/master/Documentation/etc/templates">adoc-templates</a> can be found <a href="https://code.asam.net/simulation/standard/openscenario-2.0/-/tree/master/Documentation/etc/templates">here</a>.</p>
-</li>
-<li>
-<p>For a guide on how to format code examples see the <a href="https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc" class="bare">https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/coding_style_guide.adoc</a>.</p>
-</li>
-<li>
-<p>Topics for entities of the domain model can be automatically created if the UML diagrams contain specially formatted comments.<br>
-See the <a href="https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc" class="bare">https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/plantuml_documentation_guide.adoc</a> for more details.</p>
-</li>
-<li>
-<p>More information about the workflow and review process can be found in the <a href="https://code.asam.net/simulation/standard/openscenario-2.0/-/wikis/docs/general_guidelines/Workflow">Project Wiki</a>.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_contact_information"><a class="anchor" href="#_contact_information"></a>9. Contact information</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>If you have any questions and/or suggestions concerning this Writing guide for OpenSCENARIO 2 please contact <a href="mailto:andreas.muetsch@dxc.com">andreas.muetsch@dxc.com</a>.</p>
-</div>
-<div class="paragraph">
-<p>See also: <a href="https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/writing_guide.adoc" class="bare" target="_blank" rel="noopener">https://code.asam.net/simulation/standard/openscenario-2.0/-/blob/master/Documentation/etc/guides/writing_guide.adoc</a></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_related_topics_2"><a class="anchor" href="#_related_topics_2"></a>10. Related topics</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../definitions/information_architecture_requirements.html" class="xref page">Requirements of the information architecture</a></p>
-</li>
-<li>
-<p><a href="documentation_processes.html" class="xref page">Documentation processes</a></p>
-</li>
-<li>
-<p><a href="editorial_guide.html" class="xref page">Editorial guide</a></p>
+<p>For a short introduction to AsciiDoc, see the <a href="https://code.asam.net/simulation/resources/-/blob/master/asciidoc_tutorial/asciidoc_tutorial.adoc">AsciiDoc Guide</a>.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="plantuml_documentation_guide.html">PlantUML documentation guide</a></span>
-  <span class="next"><a href="writing_guide_xil.html">writing_guidelines/writing_guide_xil.adoc</a></span>
+  <span class="prev"><a href="writing_guide.html">Writing guide</a></span>
+  <span class="next"><a href="../../tooling/main.html">Tools overview</a></span>
 </nav>
 </article>
   </div>
@@ -2480,7 +3173,7 @@ See the <a href="https://code.asam.net/simulation/standard/openscenario-2.0/-/bl
 <script async src="../../../_/js/vendor/highlight.js"></script>
 <script src="../../../_/js/vendor/lunr.js"></script>
 <script src="../../../_/js/vendor/search.js" id="search-script"
-    data-base-path="../../.." data-page-path="/asamprojectguide/compendium/writing_guidelines/writing_guide.html"></script>
+    data-base-path="../../.." data-page-path="/asamprojectguide/compendium/writing_guidelines/writing_guide_xil.html"></script>
 <script async src="../../../_/../search-index.js"></script>
   </body>
 </html>
