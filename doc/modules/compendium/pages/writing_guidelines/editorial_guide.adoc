@@ -61,8 +61,8 @@ ASAM Writing Guide: 1.1. Use american english (AE)
 
 *Example*
 
-[#tab-155e4338-6dba-4a1e-a04d-8863228bf22f]
-.Use of a column as decimal separator
+[#tab-3dfef781-52e9-4f96-b28e-1e30c3a245b3]
+.Use of a comma as decimal separator
 [%header]
 |===
 |No                         |#Yes#
@@ -82,7 +82,7 @@ ISO/IEC Directives, Part 2, Sixth edition, 2011, 6.6.8 Representation of numbers
 
 *Example*
 
-[#tab-155e4338-6dba-4a1e-a04d-8863228bf22f]
+[#tab-34c76447-2bad-4430-8fb6-e68fa28ef6c7]
 .Use of a leading zero for values between -1 and 1
 [%header]
 |===
@@ -457,7 +457,7 @@ ASAM Writing Guide: 5.3. Tables
 
 *Example*
 
-[#tab-07cd91ec-32d0-4890-8276-cbadc0efc6b0]
+[#tab-ec0debde-c4ab-4ade-b06e-ee74758bef42]
 .Use of uppercase in the table header
 [%header]
 |===
