@@ -27,7 +27,7 @@ include::compendium:example$rules.csv[]
 
 == Basics
 
-This section contains editorial rules on the language.
+This section contains editorial rules on content and language.
 
 [#sec-ASM-49]
 === Use American English (ASM-49)
@@ -76,7 +76,7 @@ ISO/IEC Directives, Part 2, Sixth edition, 2011, 6.6.8 Representation of numbers
 
 
 [#sec-ASM-52]
-=== Use a leading zero for values between -1 and 1 (ASM-51)
+=== Use a leading zero for values between -1 and 1 (ASM-52)
 
 * A zero precedes the decimal separator in numeric values between -1 and 1.
 
