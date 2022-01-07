@@ -40,6 +40,15 @@ See also: xref:role-specific:gtm.adoc[]
 List Of Known Issues:: A public list of known issues related to a certain standard.
 The list is maintained by the xref:role-specific:standard_manager.adoc[].
 
+== ODR
+OpenDRIVE: Abbreviation for the Standard ASAM OpenDRIVE
+
+== OSC
+OpenSCENARIO: Abbreviation for the Standard ASAM OpenSCENARIO
+
+== OxO
+OpenXOntology: Abbreviation for the Standard ASAM OpenXOntology
+
 == TSC
 Technical Steering Committee:: {tsc-description}
 See also: xref:role-specific:tsc.adoc[].
@@ -50,5 +59,8 @@ Visual Studio Code:: xref:tooling:vscode.adoc[]
 == WG
 Workgroup:: A subgroup within a project dedicated to a specific topic.
 Consists of xref:role-specific:wg-member.adoc[workgroup members] and a xref:role-specific:wg-lead.adoc[workgroup lead].
+
+== WGL
+Workgroup Lead:: A member of the work group leading the progress and the members of this work group. xref:role-specific:wg-lead.adoc[workgroup lead].
 
 endif::[]
