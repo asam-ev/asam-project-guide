@@ -8,7 +8,7 @@ include::{abb}[]
 The purpose of the Development phase is to create a new version of the standard.
 
 // image::development_phase.png[title="The Development Phase"]
-image::asam-development-process-Development.drawio.svg[title="The Development Phase (simplified)",opts=interactive]
+image::asam-development-process-Development.svg[title="The Development Phase (simplified)",opts=interactive]
 
 image::project_setup.jpg[title="PLACEHOLDER - Project setup"]
 

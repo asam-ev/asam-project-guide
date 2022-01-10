@@ -2,7 +2,7 @@
 //tag::image[]
 
 // image::standardization:asam-development-process.png[]
-image::standardization:asam-development-process-Gesamt.drawio.svg[title="ASAM Development Process for Standards",opts=interactive]
+image::standardization:asam-development-process-Gesamt.svg[title="ASAM Development Process for Standards",opts=interactive]
 
 //end::image[]
 
