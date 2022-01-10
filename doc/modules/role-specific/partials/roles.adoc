@@ -1,7 +1,7 @@
 
 //tag::summary[]
 Within projects at __{asam}__, participant have one or more roles.
-Each of these roles has their own set of requirements, mandatory and/or {optional} tool, guidelines and how-tos, some of them shared between multiple roles.
+Each of these roles has their own set of requirements, mandatory and/or optional tool, guidelines and how-tos, some of them shared between multiple roles.
 //end::summary[]
 
 //tag::list_of_roles[]
