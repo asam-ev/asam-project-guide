@@ -33,7 +33,11 @@ This section contains editorial rules on content and language.
 === Use American English (ASM-49)
 
 * The default language is American English.
-* Use the Merriam Webster Dictonary to check for correct spelling. (https://www.merriam-webster.com/ )
+* Use the https://www.merriam-webster.com/[Merriam Webster Dictionary] to check for correct spelling.
+
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -59,6 +63,10 @@ ASAM Writing Guide: 1.1. Use american english (AE)
 * The decimal separator in numeric values is a comma: `,`
 * Do not use columns in numeric values.
 
+*Exceptions*
+
+There are no exceptions.
+
 *Example*
 
 [#tab-3dfef781-52e9-4f96-b28e-1e30c3a245b3]
@@ -79,6 +87,10 @@ ISO/IEC Directives, Part 2, Sixth edition, 2011, 6.6.8 Representation of numbers
 === Use a leading zero for values between -1 and 1 (ASM-52)
 
 * A zero precedes the decimal separator in numeric values between -1 and 1.
+
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -105,7 +117,7 @@ This section contains editorial rules on how to create headings.
 
 * In headings and captions, only the *first word* begins with an uppercase letter (sentence-style capitalization).
 
-*Exception*
+*Exceptions*
 
 *Acronyms* and *proper names* are spelled as is.
 
@@ -136,6 +148,10 @@ These editorial rules apply to lists:
 * The list items shall be a set of similarly structured items.
 For example, each item should be a noun or a phrase that starts with a verb.
 
+*Exceptions*
+
+There are no exceptions.
+
 *Example*
 
 ```
@@ -157,6 +173,10 @@ The outline of the road marking is described by the attributes @length and @spac
 * Use only asciidoc syntax to format lists.
 * Use either ordered or unordered lists (see <<#sec-ASM-10>>).
 
+*Exceptions*
+
+There are no exceptions.
+
 *Example*
 
 ```
@@ -175,7 +195,7 @@ Ordered list
 
 *Exceptions*
 
-n/a
+There are no exceptions.
 
 *Source*
 
@@ -186,6 +206,10 @@ n/a
 === Choose a suitable type of list (ASM-10)
 
 ==== Use a bulleted list for things that have something in common but do not need to appear in a particular order
+
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -202,6 +226,10 @@ The database owner can:
 Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists
 
 ==== Use a numbered list for sequential items (like a procedure) or prioritized items (like a top 10 list)
+
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -220,14 +248,6 @@ Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-co
 [#sec-ASM-5]
 === Start each list item in a list with an uppercase letter (ASM-5)
 
-*Example*
-
-```
-* This is the first sentence.
-* This is the second sentence.
-* This is the third sentence.
-```
-
 *Exceptions*
 
 If a list item starts with one of the following, do not use an uppercase letter:
@@ -239,12 +259,24 @@ For example: * `x` and `y`
 * URLs +
 For example: * http://www.asam.net
 
+*Example*
+
+```
+* This is the first sentence.
+* This is the second sentence.
+* This is the third sentence.
+```
+
 *Source*
 
 ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 
 [#sec-ASM-6]
 === Put a full stop at the end of a list item if it is a full sentence (ASM-6)
+
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -276,9 +308,13 @@ ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 
 
 * _"Only hit 'enter' after a period ('.'), but make sure to hit 'enter' after a period."_
 
+*Exceptions*
+
+There are no exceptions.
+
 *Example*
 
-Code
+[.underline]#Code#
 
 ```
 * This is the first sentence of the element.
@@ -287,7 +323,7 @@ This is the second sentence of the element.
 * This is the third element.
 ```
 
-Result
+[.underline]#Result#
 
 * This is the first sentence of the element.
 This is the second sentence of the element.
@@ -307,6 +343,10 @@ If an item in a list is not a full sentence, then do not put the following punct
 * Semicolons
 * Commas
 * Conjunctions like "and" or "or"
+
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -342,6 +382,10 @@ These rules apply to source code examples:
 In AsciiDoc, double backticks are used https://docs.asciidoctor.org/asciidoc/latest/text/monospace/#unconstrained[for text formatting in certain cases].
 Unfortunately, this causes poor wording and readability and therefore shall not be used.
 
+*Exceptions*
+
+There are no exceptions.
+
 *Example*
 
 [#tab-ce27729f-33c4-47b2-a579-e7a1c2434c3a]
@@ -364,7 +408,7 @@ ASAM Writing Guide: 6.1. Inline literals
 
 Use tables if you have to present a huge amount of similar data in a very compressed form.
 
-*Exception*
+*Exceptions*
 
 * If you have only one column in your table, turn the table into a list.
 
@@ -387,6 +431,10 @@ Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-co
 [#sec-ASM-45]
 === Use AsciiDoc syntax for tables (ASM-45)
 
+*Exceptions*
+
+There are no exceptions.
+
 *Example*
 
 ```
@@ -406,9 +454,11 @@ ASAM Writing Guide: 5.3. Tables
 https://docs.asciidoctor.org/asciidoc/latest/tables/build-a-basic-table/
 
 [#sec-ASM-46]
-=== Create a tag/ID with a UUID for every table (ASM-46)
+=== Create an ID with a UUID for every table (ASM-46)
 
-TODO: Writing guide: tag, AsciiDoctor o. h.: ID???
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -428,6 +478,10 @@ ASAM Writing Guide: 5.3. Tables
 
 [#sec-ASM-47]
 === Create a caption for every table (ASM-47)
+
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -451,7 +505,7 @@ ASAM Writing Guide: 5.3. Tables
 
 * In a cell in the header row of a table, only the *first word* begins with an uppercase letter (sentence-style capitalization).
 
-*Exception*
+*Exceptions*
 
 *Acronyms* and *proper names* are spelled as is.
 
@@ -475,16 +529,16 @@ ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 == Figures
 
-TODO: Terminology: Images or figures?
+TODO: Terminology: Images or figures? Image = file? Figure = rendering of AsciiDoc with image and caption?
 
 [#sec-ASM-xx]
 === Illustrate complex facts with figures (ASM-xx)
 
-TODO: Start rules with "use"? "Use figures to illustrate complex facts"?
-
 Figures, for example, pictures or drawings, may be used to illustrate complex facts.
 
-*Exception*
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -497,7 +551,7 @@ ASAM Writing Guide: 5.2. Figures
 
 SVG is the preferred format for images.
 
-*Exception*
+*Exceptions*
 
 If you cannot use an image with the file type SVG, use the file type PNG.
 
@@ -512,39 +566,33 @@ ASAM Writing Guide: 5.2. Figures
 
 *Exceptions*
 
-TODO: Add "There are no exceptions." to every rule without exceptions?
+There are no exceptions.
 
 *Example*
 
-TODO: ?
-
 *Source*
-
-TODO: ?
 
 [#sec-ASM-29]
 === Make sure that there are no unused images in the repository of the standard (ASM-29)
 
 *Exceptions*
 
-TODO: (Are there any exceptions where it makes sense to keep unused images?)
+There are no exceptions.
+
+TODO: (Are there any exceptions where it makes sense to keep unused images? Images are not only used in the User Guide but also the other deliverables.)
 
 *Example*
 
-TODO: ?
-
 *Source*
-
-TODO: ?
 
 [#sec-ASM-xx]
 === Use one folder "images" per chapter (ASM-)
 
-Subchapters use the same folder.
+Every chapter has an "images" folder that contains all the images of the chapter and the sections of the chapter.
 
-TODO: "Chapter" or "topic"?
+*Exceptions*
 
-*Exception*
+There are no exceptions.
 
 *Example*
 
@@ -565,12 +613,16 @@ standard/
 [#sec-ASM-xx]
 === Use AsciiDoc syntax for images (ASM-)
 
+*Exceptions*
+
+There are no exceptions.
+
 *Example*
 
 ```
 [#fig-56c849b0-a608-46a3-87be-d4d15a2d4ea3]
 .This is the caption of the figure
-image::logo.png[an alternative text]
+image::scenario.png[an alternative text]
 ```
 
 *Source*
@@ -580,16 +632,18 @@ ASAM Writing Guide: 5.2. Figures
 https://docs.asciidoctor.org/asciidoc/latest/macros/images/
 
 [#sec-ASM-xx]
-=== Create a tag/ID with a UUID for every figure (ASM-)
+=== Create an ID with a UUID for every figure (ASM-)
 
-TODO: Writing guide: tag, AsciiDoctor o. h.: ID???
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
 ```
 [#fig-ad5fd969-c02a-48fc-97dd-84228f630df6]
 .This is the caption of the figure
-image::logo.png[an alternative text]
+image::scenario.png[an alternative text]
 ```
 
 *Source*
@@ -599,12 +653,16 @@ ASAM Writing Guide: 5.2. Figures
 [#sec-ASM-xx]
 === Create a caption for every figure (ASM-)
 
+*Exceptions*
+
+There are no exceptions.
+
 *Example*
 
 ```
 [#fig-b4745bab-a439-4fda-97d2-3e79fc4c483e]
 .This is the caption of the figure
-image::logo.png[an alternative text]
+image::scenario.png[an alternative text]
 ```
 
 *Source*
@@ -614,7 +672,8 @@ ASAM Writing Guide: 5.2. Figures
 [#sec-ASM-xx]
 === Write an alternative text for every figure (ASM-)
 
-_TODO: How does the alternative text comply with the image numbering?_
+TODO: How does the alternative text comply with the image numbering?
+
 ```
 image::images/uml_notation.drawio.svg[1100]
 ```
@@ -623,13 +682,16 @@ image::images/uml_notation.drawio.svg[1100]
 image::images/uml_notation.drawio.svg[alternative text, 1100]
 ```
 
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
 ```
 [#fig-54f39ea2-f91f-4a20-bb13-7daec1800513]
 .This is the caption of the figure
-image::logo.png[an alternative text]
+image::scenario.png[an alternative text]
 ```
 
 *Source*
@@ -644,23 +706,24 @@ ASAM Writing Guide: 5.2. Figures
 The description shall not have an initial article.
 * The description shall not contain references to the placement of the image; for example, "before" or "below".
 
-*Exception*
+*Exceptions*
 
-Decorative images shall not have a description.
+Decorative images shall not have a description; for example, the ASAM logo.
 
 *Example*
 
-TODO: How to handle two-part examples?
-
-Code
+[.underline]#Code#
 
 ```
 <<fig-7558b905-679d-4fb9-affa-3b3b72025a18>> shows the offset of the center lane away from the road reference line.
 ```
 
-Result
+[.underline]#Result#
 
-Figure 58 shows the offset of the center lane away from the road reference line.
+[.underline]#Figure 58# shows the offset of the center lane away from the road reference line.
+
+* The number of the image, "figure 58", is automatically referenced.
+* The text "Figure 58" is shown as a link to the figure.
 
 *Source*
 
@@ -668,7 +731,9 @@ Figure 58 shows the offset of the center lane away from the road reference line.
 [#sec-ASM-xx]
 === Rule x (ASM-)
 
-*Exception*
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -678,7 +743,9 @@ Figure 58 shows the offset of the center lane away from the road reference line.
 [#sec-ASM-xx]
 === Rule x (ASM-)
 
-*Exception*
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
@@ -687,21 +754,23 @@ Figure 58 shows the offset of the center lane away from the road reference line.
 [#sec-ASM-xx]
 === Rule x (ASM-)
 
-*Exception*
+*Exceptions*
+
+There are no exceptions.
 
 *Example*
 
 *Source*
 
 == Combined Rules from writing guides /XIL
-[#sec-ASM-60 ]
+[#sec-ASM-60]
 === Verbs with a special meaning (shall, should, may, can) (ASM-60)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -720,14 +789,14 @@ Figure 58 shows the offset of the center lane away from the road reference line.
 ASAM Writing Guide: Verbs with a special meaning (shall, should, may, can)
 
 
-[#sec-ASM-61 ]
+[#sec-ASM-61]
 === Keep it short (ASM-61)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -746,14 +815,14 @@ ASAM Writing Guide: Verbs with a special meaning (shall, should, may, can)
 ASAM Writing Guide: Keep it short
 
 
-[#sec-ASM-62 ]
+[#sec-ASM-62]
 === Use present tense (ASM-62)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -772,14 +841,14 @@ ASAM Writing Guide: Keep it short
 ASAM Writing Guide: Use present tense
 
 
-[#sec-ASM-63 ]
+[#sec-ASM-63]
 === Use active voice (ASM-63)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -798,14 +867,14 @@ ASAM Writing Guide: Use present tense
 ASAM Writing Guide: Use active voice
 
 
-[#sec-ASM-64 ]
+[#sec-ASM-64]
 === Use simple constructs (ASM-64)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -824,14 +893,14 @@ ASAM Writing Guide: Use active voice
 ASAM Writing Guide: Use simple constructs
 
 
-[#sec-ASM-65 ]
+[#sec-ASM-65]
 === Do not use abbreviations (ASM-65)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -850,14 +919,14 @@ ASAM Writing Guide: Use simple constructs
 ASAM Writing Guide: Do not use abbreviations
 
 
-[#sec-ASM-66 ]
+[#sec-ASM-66]
 === Do not use synonyms (ASM-66)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -876,14 +945,14 @@ ASAM Writing Guide: Do not use abbreviations
 ASAM Writing Guide: Do not use synonyms
 
 
-[#sec-ASM-67 ]
+[#sec-ASM-67]
 === Avoid words that are not precise (ASM-67)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -902,14 +971,14 @@ ASAM Writing Guide: Do not use synonyms
 ASAM Writing Guide: Avoid words that are not precise
 
 
-[#sec-ASM-68 ]
+[#sec-ASM-68]
 === Use 'that' and 'which' correctly (ASM-68)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -928,14 +997,14 @@ ASAM Writing Guide: Avoid words that are not precise
 ASAM Writing Guide: Use 'that' and 'which' correctly
 
 
-[#sec-ASM-69 ]
+[#sec-ASM-69]
 === XIL: Use 'since' and 'because' correctly (ASM-69)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -954,14 +1023,14 @@ ASAM Writing Guide: Use 'that' and 'which' correctly
 ASAM Writing Guide: XIL: Use 'since' and 'because' correctly
 
 
-[#sec-ASM-70 ]
+[#sec-ASM-70]
 === Consistent formatting (ASM-70)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -980,14 +1049,14 @@ ASAM Writing Guide: XIL: Use 'since' and 'because' correctly
 ASAM Writing Guide: Consistent formatting
 
 
-[#sec-ASM-71 ]
+[#sec-ASM-71]
 === XIL: Typographic conventions for XiL (ASM-71)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1006,14 +1075,14 @@ ASAM Writing Guide: Consistent formatting
 ASAM Writing Guide: XIL: Typographic conventions for XiL
 
 
-[#sec-ASM-72 ]
+[#sec-ASM-72]
 === Use templates (ASM-72)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1032,14 +1101,14 @@ ASAM Writing Guide: XIL: Typographic conventions for XiL
 ASAM Writing Guide: Use templates
 
 
-[#sec-ASM-73 ]
+[#sec-ASM-73]
 === One sentence per line (ASM-73)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1058,14 +1127,14 @@ ASAM Writing Guide: Use templates
 ASAM Writing Guide: One sentence per line
 
 
-[#sec-ASM-74 ]
+[#sec-ASM-74]
 === Use paragraphs (ASM-74)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1084,14 +1153,14 @@ ASAM Writing Guide: One sentence per line
 ASAM Writing Guide: Use paragraphs
 
 
-[#sec-ASM-75 ]
+[#sec-ASM-75]
 === XIL: Use paragraphs (ASM-75)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1110,14 +1179,14 @@ ASAM Writing Guide: Use paragraphs
 ASAM Writing Guide: XIL: Use paragraphs
 
 
-[#sec-ASM-76 ]
+[#sec-ASM-76]
 === Uppercase and lowercase (ASM-76)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1136,14 +1205,14 @@ ASAM Writing Guide: XIL: Use paragraphs
 ASAM Writing Guide: Uppercase and lowercase
 
 
-[#sec-ASM-77 ]
-=== XIL: Tags (aka anchors) (ASM-77)
+[#sec-ASM-77]
+=== XIL: IDs (aka anchors) (ASM-77)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1162,14 +1231,14 @@ ASAM Writing Guide: Uppercase and lowercase
 ASAM Writing Guide: XIL: Tags (aka anchors)
 
 
-[#sec-ASM-78 ]
-=== Tags (ASM-78)
+[#sec-ASM-78]
+=== IDs (ASM-78)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1188,14 +1257,14 @@ ASAM Writing Guide: XIL: Tags (aka anchors)
 ASAM Writing Guide: Tags
 
 
-[#sec-ASM-79 ]
+[#sec-ASM-79]
 === Indentation (ASM-79)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1214,14 +1283,14 @@ ASAM Writing Guide: Tags
 ASAM Writing Guide: Indentation
 
 
-[#sec-ASM-80 ]
+[#sec-ASM-80]
 === File names (ASM-80)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1240,14 +1309,14 @@ ASAM Writing Guide: Indentation
 ASAM Writing Guide: File names
 
 
-[#sec-ASM-81 ]
+[#sec-ASM-81]
 === XIL: File names for figures (ASM-81)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1266,14 +1335,14 @@ ASAM Writing Guide: File names
 ASAM Writing Guide: XIL: File names for figures
 
 
-[#sec-ASM-82 ]
+[#sec-ASM-82]
 === File formats (ASM-82)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1292,14 +1361,14 @@ ASAM Writing Guide: XIL: File names for figures
 ASAM Writing Guide: File formats
 
 
-[#sec-ASM-83 ]
+[#sec-ASM-83]
 === Directory structure (ASM-83)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1318,14 +1387,14 @@ ASAM Writing Guide: File formats
 ASAM Writing Guide: Directory structure
 
 
-[#sec-ASM-84 ]
+[#sec-ASM-84]
 === Non-normative sections (ASM-84)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1344,14 +1413,14 @@ ASAM Writing Guide: Directory structure
 ASAM Writing Guide: Non-normative sections
 
 
-[#sec-ASM-85 ]
+[#sec-ASM-85]
 === Lists (ASM-85)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1370,14 +1439,14 @@ ASAM Writing Guide: Non-normative sections
 ASAM Writing Guide: Lists
 
 
-[#sec-ASM-86 ]
+[#sec-ASM-86]
 === XIL: Numbered lists (ASM-86)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1396,14 +1465,14 @@ ASAM Writing Guide: Lists
 ASAM Writing Guide: XIL: Numbered lists
 
 
-[#sec-ASM-87 ]
+[#sec-ASM-87]
 === XIL: Bullet point lists (ASM-87)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1422,14 +1491,14 @@ ASAM Writing Guide: XIL: Numbered lists
 ASAM Writing Guide: XIL: Bullet point lists
 
 
-[#sec-ASM-88 ]
+[#sec-ASM-88]
 === XIL: Lists inside lists (ASM-88)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1448,14 +1517,14 @@ ASAM Writing Guide: XIL: Bullet point lists
 ASAM Writing Guide: XIL: Lists inside lists
 
 
-[#sec-ASM-89 ]
+[#sec-ASM-89]
 === XIL: List formatting conventions (ASM-89)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1474,14 +1543,14 @@ ASAM Writing Guide: XIL: Lists inside lists
 ASAM Writing Guide: XIL: List formatting conventions
 
 
-[#sec-ASM-90 ]
+[#sec-ASM-90]
 === Figures (ASM-90)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1500,14 +1569,14 @@ ASAM Writing Guide: XIL: List formatting conventions
 ASAM Writing Guide: Figures
 
 
-[#sec-ASM-91 ]
+[#sec-ASM-91]
 === XIL: Images (ASM-91)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1526,14 +1595,14 @@ ASAM Writing Guide: Figures
 ASAM Writing Guide: XIL: Images
 
 
-[#sec-ASM-92 ]
+[#sec-ASM-92]
 === XIL: Attribute 'imagesdir' (ASM-92)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1552,14 +1621,14 @@ ASAM Writing Guide: XIL: Images
 ASAM Writing Guide: XIL: Attribute 'imagesdir'
 
 
-[#sec-ASM-93 ]
+[#sec-ASM-93]
 === XIL: PlantUML diagrams (ASM-93)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1578,14 +1647,14 @@ ASAM Writing Guide: XIL: Attribute 'imagesdir'
 ASAM Writing Guide: XIL: PlantUML diagrams
 
 
-[#sec-ASM-94 ]
+[#sec-ASM-94]
 === XIL: Attribute 'plantuml-format' (ASM-94)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1604,14 +1673,14 @@ ASAM Writing Guide: XIL: PlantUML diagrams
 ASAM Writing Guide: XIL: Attribute 'plantuml-format'
 
 
-[#sec-ASM-95 ]
+[#sec-ASM-95]
 === Tables (ASM-95)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1630,14 +1699,14 @@ ASAM Writing Guide: XIL: Attribute 'plantuml-format'
 ASAM Writing Guide: Tables
 
 
-[#sec-ASM-96 ]
+[#sec-ASM-96]
 === Special characters (ASM-96)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1656,14 +1725,14 @@ ASAM Writing Guide: Tables
 ASAM Writing Guide: Special characters
 
 
-[#sec-ASM-97 ]
+[#sec-ASM-97]
 === Source code (ASM-97)
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1682,7 +1751,7 @@ ASAM Writing Guide: Special characters
 ASAM Writing Guide: Source code
 
 
-[#sec-ASM-98 ]
+[#sec-ASM-98]
 === Inline literals (ASM-98 )
 Inline literals (ASM-  )
 ==== Changes in the adoc file (ASM-   )
@@ -1691,9 +1760,9 @@ Changes in the adoc file (ASM-  )
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1712,7 +1781,7 @@ Changes in the adoc file (ASM-  )
 ASAM Writing Guide: Result
 
 
-[#sec-ASM-99 ]
+[#sec-ASM-99]
 === Source code fragments (ASM-99 )
 Source code fragments
 ==== Changes in the source code file
@@ -1720,9 +1789,9 @@ Source code fragments
 ==== Result
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1737,7 +1806,7 @@ Source code fragments
 |===
 *Source*
 
-ASAM Writing Guide: Result					
+ASAM Writing Guide: Result
 
 [#sec-ASM-100]
 === Source code snippets (ASM-100)
@@ -1746,9 +1815,9 @@ ASAM Writing Guide: Result
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 [#tab-9869259b-1754-4da7-b269-442598564bf6]
@@ -1770,9 +1839,9 @@ ASAM Writing Guide: Result
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1796,9 +1865,9 @@ ASAM Writing Guide: Source code type 'osc2'
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1823,9 +1892,9 @@ ASAM Writing Guide: XIL: Line numbers and references
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1850,9 +1919,9 @@ ASAM Writing Guide: XIL: References to single lines
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1877,9 +1946,9 @@ ASAM Writing Guide: XIL: Automatic line numbering
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1904,9 +1973,9 @@ ASAM Writing Guide: Review process and draft-attribute
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1931,9 +2000,9 @@ ASAM Writing Guide: Purpose of the draft-attribute
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1958,9 +2027,9 @@ ASAM Writing Guide: Preview configuration
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -1985,9 +2054,9 @@ ASAM Writing Guide: VisualStudioCode with asciidoc extension
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -2012,9 +2081,9 @@ ASAM Writing Guide: AsciidocFX preview
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
@@ -2039,9 +2108,9 @@ ASAM Writing Guide: Gitlab preview
 
 * _description_
 
-*Exception*
+*Exceptions*
 
-* _exceptions_
+There are no exceptions.
 
 *Example*
 
