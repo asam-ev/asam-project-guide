@@ -1,0 +1,18 @@
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+{role-wg-member}
+
+ifndef::small[]
+image::standardization:proposal_phase_v2-Join_Workshop.svg[title="Join Proposal workshop",opts=interactive]
+endif::[]
+
+ifdef::small[]
+image::standardization:asam-development-process-ProposalWS.svg[title="Join Proposal workshop (small)",opts=interactive]
+endif::[]
+
+TODO
+
+If you are looking for more information on the proposal workshop, see the section <<Related topics>>.
+
