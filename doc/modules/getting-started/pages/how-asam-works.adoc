@@ -28,4 +28,4 @@ ASAM projects follow a defined development process.
 
 * A more detailed summary of the ASAM processes can be found in the xref:standardization:home.adoc[] of this guide.
 
-related::asam[]
+// related::asam[]

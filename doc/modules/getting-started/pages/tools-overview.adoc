@@ -26,4 +26,4 @@ include::tooling:partial$list-of-tools.adoc[tag = recommended]
 == Further tools
 For other tools typically used in ASAM projects, see https://www.asam.net/active-projects/resources/[window=_blank].
 
-related::tools-overview,mandatory,recommended[]
+// related::tools-overview,mandatory,recommended[]

@@ -11,4 +11,4 @@ The following table contains a list of all project roles and a short description
 
 include::role-specific:partial$roles.adoc[tag=list_of_roles]
 
-related::role[]
+// related::role[]
