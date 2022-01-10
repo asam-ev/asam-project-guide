@@ -50,7 +50,7 @@ For example, schemata definition files shall be commented.
 
 Further rules and guidelines for this project type are set forth in the document "GuidelinesForASAMCheckerTools".
 
-Upon request, __{asam}__ provides funding up to 100% of the project's required budget.
+Upon request, ASAM provides funding up to 100% of the project's required budget.
 
 Excluded are expenses for meeting participation and travel.
 
@@ -62,7 +62,7 @@ The following process steps are not mandatory and are skipped by default, unless
 * C: Review Phase
 
 When members propose the further development of a standard, for which an ASAM product exists, members must also propose the further development of this product, unless the pro-posed changes of the standard have no impact on the product.
-If the ASAM product shall not be further developed, then __{asam}__ shall publicly announce that the development of the product is discontinued.
+If the ASAM product shall not be further developed, then ASAM shall publicly announce that the development of the product is discontinued.
 
 ASAM products shall not compete with a member company's product business(non-competition clause).
 

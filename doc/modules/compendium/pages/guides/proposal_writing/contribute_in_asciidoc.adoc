@@ -21,7 +21,7 @@ All content is included through the files in the folder `subchapters`.
 
 == The GitLab workflow
 
-The repository-based approach of __{asam}__ for working on documents allows members to work in parallel on the same documents without the risk of overwriting each others changes without notice.
+The repository-based approach of ASAM for working on documents allows members to work in parallel on the same documents without the risk of overwriting each others changes without notice.
 
 Users **must** follow the xref:compendium:guides/workflow_tutorial.adoc[].
 

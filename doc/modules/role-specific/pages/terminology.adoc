@@ -58,11 +58,11 @@ See xref:compendium:open-source/asam_dco.adoc[].
 - Develop/maintain the ASAM Simulation roadmap
 
 - Strategic analysis
-  - Identify/initiate further __{asam}__ activities in Simulation
+  - Identify/initiate further ASAM activities in Simulation
   - Ensure no overlap of standards
   - Ensure alignment with external activities
 
-- Accelerate the __{asam}__ decision making process
+- Accelerate the ASAM decision making process
   - Pre-approval, final approval stays with __{tsc}__
 
 - Review and refine relevant processes

@@ -46,7 +46,7 @@ Some further rules apply for study projects:
 The minutes may be translated into the working language of the study group.
 * The project members use the ASAM IT infrastructure.
 
-Upon request, __{asam}__ provides funding for study projects up to the limit for small budget projects.
+Upon request, ASAM provides funding for study projects up to the limit for small budget projects.
 
 In case that a larger budget is required beyond the limit of a small budget project, then the project must be requested via the regular project proposal process, which consist of the process steps P2 Proposal Writing, P3 Proposal Submission, P4 Proposal Publication and P5 Proposal Decision by the __{tsc}__.
 
