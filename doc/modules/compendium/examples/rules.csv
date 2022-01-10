@@ -51,13 +51,62 @@ ASM-49,American English,-,-,draft
 ASM-50,Tables capitalization in header,-,-,draft
 ASM-51,Decimal separator,-,-,draft
 ASM-52,Leading zero,-,-,draft
-ASM-xx,Tables ,-,-,draft
-ASM-xx,Tables ,-,-,draft
-ASM-xx,Tables ,-,-,draft
-ASM-xx,Figures ,-,-,draft
-ASM-xx,Figures file type,-,-,draft
-ASM-xx,Figures ,-,-,draft
-ASM-xx,Figures ,-,-,draft
-ASM-xx,Figures ,-,-,draft
-ASM-xx,Figures ,-,-,draft
-ASM-xx,Figures ,-,-,draft
+ASM-53,Tables ,-,-,draft
+ASM-54,Tables ,-,-,draft
+ASM-55,Tables ,-,-,draft
+ASM-56,Figures ,-,-,draft
+ASM-57,Figures file type,-,-,draft
+ASM-58,Figures ,-,-,draft
+ASM-59,Figures ,-,-,draft
+ASM-60,Verbs with a special meaning (shall, should, may, can),<<sec-ASM-60>>,-,draft
+ASM-61,Keep it short,<<sec-ASM-61>>,-,draft
+ASM-62,Use present tense,<<sec-ASM-62>>,-,draft
+ASM-63,Use active voice,<<sec-ASM-63>>,-,draft
+ASM-64,Use simple constructs,<<sec-ASM-64>>,-,draft
+ASM-65,Do not use abbreviations,<<sec-ASM-65>>,-,draft
+ASM-66,Do not use synonyms,<<sec-ASM-66>>,-,draft
+ASM-67,Avoid words that are not precise,<<sec-ASM-67>>,-,draft
+ASM-68,Use 'that' and 'which' correctly,<<sec-ASM-68>>,-,draft
+ASM-69,XIL: Use 'since' and 'because' correctly,<<sec-ASM-69>>,-,draft
+ASM-70,Consistent formatting,<<sec-ASM-70>>,-,draft
+ASM-71,XIL: Typographic conventions for XiL,<<sec-ASM-71>>,-,draft
+ASM-72,Use templates,<<sec-ASM-72>>,-,draft
+ASM-73,One sentence per line,<<sec-ASM-73>>,-,draft
+ASM-74,Use paragraphs,<<sec-ASM-74>>,-,draft
+ASM-75,XIL: Use paragraphs,<<sec-ASM-75>>,-,draft
+ASM-76,Uppercase and lowercase,<<sec-ASM-76>>,-,draft
+ASM-77,XIL: Tags (aka anchors),<<sec-ASM-77>>,-,draft
+ASM-78,Tags,<<sec-ASM-78>>,-,draft
+ASM-79,Indentation,<<sec-ASM-79>>,-,draft
+ASM-80,File names,<<sec-ASM-80>>,-,draft
+ASM-81,XIL: File names for figures,<<sec-ASM-81>>,-,draft
+ASM-82,File formats,<<sec-ASM-82>>,-,draft
+ASM-83,Directory structure,<<sec-ASM-83>>,-,draft
+ASM-84,Non-normative sections,<<sec-ASM-84>>,-,draft
+ASM-85,Lists,<<sec-ASM-85>>,-,draft
+ASM-86,XIL: Numbered lists,<<sec-ASM-86>>,-,draft
+ASM-87,XIL: Bullet point lists,<<sec-ASM-87>>,-,draft
+ASM-88,XIL: Lists inside lists,<<sec-ASM-88>>,-,draft
+ASM-89,XIL: List formatting conventions,<<sec-ASM-89>>,-,draft
+ASM-90,Figures,<<sec-ASM-90>>,-,draft
+ASM-91,XIL: Images,<<sec-ASM-91>>,-,draft
+ASM-92,XIL: Attribute 'imagesdir',<<sec-ASM-92>>,-,draft
+ASM-93,XIL: PlantUML diagrams,<<sec-ASM-93>>,-,draft
+ASM-94,XIL: Attribute 'plantuml-format',<<sec-ASM-94>>,-,draft
+ASM-95,Tables,<<sec-ASM-95>>,-,draft
+ASM-96,Special characters,<<sec-ASM-96>>,-,draft
+ASM-97,Source code,<<sec-ASM-97>>,-,draft
+ASM-98,Inline literals,<<sec-ASM-98>>,-,draft
+ASM-99,Source code fragments,<<sec-ASM-99>>,-,draft
+ASM-100,Source code snippets,<<sec-ASM-100>>,-,draft
+ASM-101,Source code type 'osc2',<<sec-ASM-101>>,-,draft
+ASM-102,XIL: Line numbers and references,<<sec-ASM-102>>,-,draft
+ASM-103,XIL: References to single lines,<<sec-ASM-103>>,-,draft
+ASM-104,XIL: Automatic line numbering,<<sec-ASM-104>>,-,draft
+ASM-105,Review process and draft-attribute,<<sec-ASM-105>>,-,draft
+ASM-106,Purpose of the draft-attribute,<<sec-ASM-106>>,-,draft
+ASM-107,Preview configuration,<<sec-ASM-107>>,-,draft
+ASM-108,VisualStudioCode with asciidoc extension,<<sec-ASM-108>>,-,draft
+ASM-109,AsciidocFX preview,<<sec-ASM-109>>,-,draft
+ASM-110,Gitlab preview,<<sec-ASM-110>>,-,draft
+ASM-111,Pipeline artifacts as reference,<<sec-ASM-111>>,-,draft
