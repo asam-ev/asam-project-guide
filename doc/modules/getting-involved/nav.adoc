@@ -1,10 +1,9 @@
 * xref:home.adoc[]
 ** xref:new-idea.adoc[]
 ** xref:join_proposal_workshop.adoc[]
-** xref:development.adoc[Development]
-*** xref:development/01_workgroup_member.adoc[]
-*** xref:development/02_project_lead.adoc[]
-*** xref:development/03_service_provider.adoc[]
+** xref:become_workgroup_member.adoc[]
+** xref:become_project_lead.adoc[]
+** xref:become_service_provider.adoc[]
 ** xref:review_standard.adoc[]
 ** xref:webinar.adoc[]
 
