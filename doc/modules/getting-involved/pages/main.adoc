@@ -16,7 +16,7 @@ include::partial$module-description.adoc[]
 **If you are not an __{asam}__ member yet, see https://www.asam.net/about-asam/join-asam/[join ASAM on the ASAM website^].**
 ====
 
-You want to **propose an idea**, **join a proposal** or **define a new standard** at __{asam}__?
+You want to **propose an idea**, **join a proposal** or **define a new standard** at ASAM?
 The pages in this module got you covered.
 Alternatively, you can also https://www.asam.net/contact/[contact the ASAM office^] directly.
 
