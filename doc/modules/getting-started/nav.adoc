@@ -2,6 +2,7 @@
 ** xref:how-asam-works.adoc[]
 ** xref:processes-and-workflows-overview.adoc[]
 ** xref:project-types.adoc[]
+*** xref:standard-dev/standard_dev_types.adoc[]
 ** xref:current-projects.adoc[]
 ** xref:roles-overview.adoc[]
 ** xref:tools-overview.adoc[]
