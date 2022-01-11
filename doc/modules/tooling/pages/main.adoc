@@ -13,7 +13,7 @@ include::{abb}[]
 include::partial$module-description.adoc[]
 
 Tools mandatory for every member are hosted by __{asam}__ and can be accessed online and without local setup.
-An overview over these can be found under <<Mandatory Tools>>.
+An overview over these can be found under <<Infrastructure for Standard Development>>.
 Because of this, most participants in ASAM projects do not **require** dedicated software installations in order to be able to participate in the process.
 For information on how to work without any local setup, see **{no-installation}** .
 
@@ -23,8 +23,9 @@ For some of these, ASAM provides a recommended base setup, listed under <<Recomm
 
 NOTE: Since ASAM does not develope those tools, descriptions and information on how to install, set up and use them is kept as short as possible to minimize outdated information in this guide as much as possible.
 
-== Mandatory tools
+== Infrastructure for Standard Development
 TIP: Instead of installing software locally, ASAM supports **{no-installation}** for some roles.
+
 
 include::tooling:partial$list-of-tools.adoc[tag=mandatory]
 
