@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>ASAM Project Guide Link Concept :: ASAM Project Guide</title>
-    <link rel="prev" href="content_structure.html">
-    <link rel="next" href="used-keywords.html">
-    <meta name="description" content="Contains the (generated) link concept for the ASAM Project Guide.">
-    <meta name="keywords" content="linking,generated,project-guide,structure">
+    <title>Moving, renaming and deleting a page :: ASAM Project Guide</title>
+    <meta name="description" content="Describes what to do when a page is to be moved, renamed or deleted.">
+    <meta name="keywords" content="antora,guide,page">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -845,13 +843,13 @@
     <span class="nav-text">Structure</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="content_structure.html">Project Guide structure</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="link-concept.html">ASAM Project Guide Link Concept</a>
+    <a class="nav-link" href="../structure/content_structure.html">Project Guide structure</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="used-keywords.html">Used keywords In ASAM Project Guide</a>
+    <a class="nav-link" href="../structure/link-concept.html">ASAM Project Guide Link Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../structure/used-keywords.html">Used keywords In ASAM Project Guide</a>
   </li>
 </ul>
   </li>
@@ -860,20 +858,20 @@
     <span class="nav-text">Adding content</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../adding_content/add-new-module.html">Adding A New Module</a>
+    <a class="nav-link" href="add-new-module.html">Adding A New Module</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../adding_content/pages-vs-partials.html">Pages VS Partials</a>
+    <a class="nav-link" href="pages-vs-partials.html">Pages VS Partials</a>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../adding_content/add-a-page.html">Adding A Page</a>
+    <a class="nav-link" href="add-a-page.html">Adding A Page</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../adding_content/pages/add-task-page.html">Adding a Task page</a>
+    <a class="nav-link" href="pages/add-task-page.html">Adding a Task page</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../adding_content/pages/add-tool-page.html">Adding a Tool page</a>
+    <a class="nav-link" href="pages/add-tool-page.html">Adding a Tool page</a>
   </li>
 </ul>
   </li>
@@ -881,7 +879,7 @@
     <span class="nav-text">Moving/Renaming/Deleting A Page</span>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../adding_content/add-a-partial.html">Adding A Partial</a>
+    <a class="nav-link" href="add-a-partial.html">Adding A Partial</a>
   </li>
 </ul>
   </li>
@@ -954,79 +952,80 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../index.html">ASAM Project Guide</a></li>
-    <li><a href="../main.html">Working on the Project Guide</a></li>
-    <li>Structure</li>
-    <li><a href="link-concept.html">ASAM Project Guide Link Concept</a></li>
+    <li><a href="page_redirects.html">Moving, renaming and deleting a page</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/project-guide/pages/structure/link-concept.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/project-guide/pages/adding_content/page_redirects.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">ASAM Project Guide Link Concept</h1>
+<h1 class="page">Moving, renaming and deleting a page</h1>
 <div class="sect1">
-<h2 id="_graph"><a class="anchor" href="#_graph"></a>Graph</h2>
+<h2 id="_context"><a class="anchor" href="#_context"></a>Context</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_full"><a class="anchor" href="#_full"></a>Full</h3>
-<div class="imageblock kroki">
-<div class="content">
-<object type="image/svg+xml" data="../_images/diag-2f2ead363e4cbb09fc808e1afc9d538f0713fb4d.svg"><span class="alt">plantuml</span></object>
+<div class="paragraph">
+<p>Sometimes, pages need to be moved or files renamed.
+There are no restrictions on removing the file itself.
+However, the xref macro cannot follow these changes automatically.
+So, if a file is renamed (e.g. from "initial-file-name.adoc" to "new_file_name.adoc"), any cross reference to it will fail.
+Similarly, if the file is deleted, the link will lead to a dead end.</p>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_linked"><a class="anchor" href="#_linked"></a>Linked</h3>
-<div class="imageblock kroki">
-<div class="content">
-<object type="image/svg+xml" data="../_images/diag-332805375ae00a20e3309e960dddb13db44c9843.svg"><span class="alt">plantuml</span></object>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_unlinked"><a class="anchor" href="#_unlinked"></a>Unlinked</h3>
-<div class="imageblock kroki">
-<div class="content">
-<object type="image/svg+xml" data="../_images/diag-e7ad83ba97745e57790298b43bac54c91ac0e18a.svg"><span class="alt">plantuml</span></object>
-</div>
-</div>
+<div class="paragraph">
+<p>To prevent the need for having to replace all links pointing to this file, a so-called "page alias" can be assigned to the changed page or (in case the page is deleted) to a dead end collection page.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_list"><a class="anchor" href="#_list"></a>List</h2>
+<h2 id="_result"><a class="anchor" href="#_result"></a>Result</h2>
 <div class="sectionbody">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
-    TODO: true
-}</code></pre>
-</div>
+<div class="paragraph">
+<p>References to the previous page name are redirected to the new target.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_related_topics"><a class="anchor" href="#_related_topics"></a>Related topics</h2>
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p><a href="content_structure.html" class="xref page">Project Guide structure</a></p>
-</li>
-<li>
-<p><a href="used-keywords.html" class="xref page">Used keywords In ASAM Project Guide</a></p>
+<p>The page has previously existed and has to be moved, renamed or deleted</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
-<nav class="pagination">
-  <span class="prev"><a href="content_structure.html">Project Guide structure</a></span>
-  <span class="next"><a href="used-keywords.html">Used keywords In ASAM Project Guide</a></span>
-</nav>
+<div class="sect1">
+<h2 id="_how"><a class="anchor" href="#_how"></a>How</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the file that the cross references shall now point to.</p>
+</li>
+<li>
+<p>If not there yet, add the attribute "page-aliases" and add the old filename to it</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>If the file was moved to another module, also add the module</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If the original file was deleted, also remove it from the nav.adoc in the file&#8217;s original module</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>For more information, see the <a href="https://docs.antora.org/antora/latest/page/page-aliases/" target="_blank" rel="noopener">official documentation</a>.</p>
+</div>
+</div>
+</div>
 </article>
   </div>
 </main>
@@ -1037,7 +1036,7 @@
 <script async src="../../../_/js/vendor/highlight.js"></script>
 <script src="../../../_/js/vendor/lunr.js"></script>
 <script src="../../../_/js/vendor/search.js" id="search-script"
-    data-base-path="../../.." data-page-path="/asamprojectguide/project-guide/structure/link-concept.html"></script>
+    data-base-path="../../.." data-page-path="/asamprojectguide/project-guide/adding_content/page_redirects.html"></script>
 <script async src="../../../_/../search-index.js"></script>
   </body>
 </html>
