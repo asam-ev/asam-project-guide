@@ -24,7 +24,6 @@ For some of these, ASAM provides a recommended base setup, listed under <<Recomm
 NOTE: Since ASAM does not develope those tools, descriptions and information on how to install, set up and use them is kept as short as possible to minimize outdated information in this guide as much as possible.
 
 == Infrastructure for Standard Development
-TIP: Instead of installing software locally, __{asam}__ supports **{no-installation}** for some roles.
 TIP: Instead of installing software locally, ASAM supports **{no-installation}** for some roles.
 
 
