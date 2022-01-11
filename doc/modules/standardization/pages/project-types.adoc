@@ -14,6 +14,7 @@ __{asam}__ distinguishes between two types of development:
 image::project_types.png[]
 
 == Standard development
+include::partial$project_types/project-type-standard.adoc[tag=long]
 
 === New standard
 

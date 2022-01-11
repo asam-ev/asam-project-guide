@@ -34,7 +34,7 @@ See the links below for more detail
 For general information on how to write and format AsciiDoc content, see the official https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[Asciidoctor Syntax Quick Reference^].
 
 == ASAM-specific guide
-Besides the general syntax, __{asam}__ standards follow ASAM guidelines as well.
+Besides the general syntax, ASAM standards follow ASAM guidelines as well.
 These are listed below.
 
 // include::compendium:page$guides/asciidoc/headings.adoc[leveloffset=+1]

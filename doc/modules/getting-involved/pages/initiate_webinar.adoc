@@ -1,0 +1,25 @@
+= Initiate a webinar
+:description: Describes how to prepare an ASAM webinar.
+:keywords: webinar
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+{role-wg-member}
+
+== Context
+In order to gather feedback on project development and decisions from outside as well as to give an introduction to a standard to non-project-members, a project can decide to host a webinar.
+
+== Result
+A webinar is prepared and publicly announced through the ASAM channels.
+
+== Prerequisites
+* You must be a project member
+
+_List all preqrequisits for this artifact._
+
+== How
+_Describe the steps to perform this artifact._
+_If you have alternative ways, use subchapters._
+
+related::webinar[]

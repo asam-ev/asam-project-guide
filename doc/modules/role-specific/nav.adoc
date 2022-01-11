@@ -2,6 +2,7 @@
 ** xref:gtm.adoc[]
 ** xref:project-lead.adoc[]
 ** xref:wg-member.adoc[]
+** xref:wg-lead.adoc[]
 ** xref:reviewer.adoc[]
 ** xref:technical-writer.adoc[]
 ** xref:service-provider.adoc[]

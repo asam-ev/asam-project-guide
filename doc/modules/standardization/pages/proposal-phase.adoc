@@ -7,7 +7,7 @@ include::{abb}[]
 
 The purpose of the Proposal phase is to transfer ideas for standard development into a specific ASAM project proposal and to obtain a decision on the proposal.
 
-image::asam-development-process-Proposal.drawio.svg[title="The Proposal Phase (simplified)",opts=interactive]
+image::asam-development-process-Proposal.svg[title="The Proposal Phase (simplified)",opts=interactive]
 
 image::proposal_phase_v2-Proposal_Phase.svg[title="The Proposal Phase (expanded and interactive) as BPMN 2.0",opts=interactive]
 

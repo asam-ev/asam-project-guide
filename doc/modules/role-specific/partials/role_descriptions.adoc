@@ -21,7 +21,7 @@ If the project needs additional resources, a service provider can be hired, whic
 :technical-writer-description: Formats and writes the document(s) of the standard based on the provided input from the xref:role-specific:wg-member.adoc[WG members] in a formalized and standard-conform way. \
 If the project requires a technical writer, either the ASAM technical writer will fill this role or a xref:role-specific:service-provider.adoc[service provider] can be hired to fill that role.
 
-:standard-user-description: An ASAM Standard user is someone that is part of the __{asam}__ community but not involved in the project development at hand.
+:standard-user-description: An ASAM Standard user is someone that is part of the ASAM community but not involved in the project development at hand.
 
 :standard-manager-description: The manager at ASAM responsible for the standard.
 
