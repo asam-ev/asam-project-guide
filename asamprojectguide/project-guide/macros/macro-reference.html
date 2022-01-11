@@ -857,7 +857,7 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Adding content</span>
+    <span class="nav-text">Adding files</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../adding_content/add-new-module.html">Adding A New Module</a>
@@ -878,10 +878,34 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <span class="nav-text">Moving/Renaming/Deleting A Page</span>
+    <a class="nav-link" href="../adding_content/add-a-partial.html">Adding A Partial</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Add or change content</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/add-an-abbreviation.html">How to add a new abbreviation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../adding_content/add-a-partial.html">Adding A Partial</a>
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Working with roles</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_content/add-role-to-page.html">adding_content/add-role-to-page.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_content/add-new-role.html">adding_content/add-new-role.adoc</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/page_redirects.html">Moving, renaming and deleting a page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/interactive_diagrams.html">adding_content/interactive_diagrams.adoc</a>
   </li>
 </ul>
   </li>
@@ -900,9 +924,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../including.html">Including pages and partials</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <span class="nav-text">Cross-referencing</span>
   </li>
 </ul>
   </li>
@@ -968,19 +989,11 @@
 <article class="doc">
 <h1 class="page">Macro: reference</h1>
 <div class="sect1">
-<h2 id="_context"><a class="anchor" href="#_context"></a>Context</h2>
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Creates an automatically generated list with cross-references to (other) pages containing the listed keywords.
 Works similar to the macro <code>related</code> but does not add a subsection.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_result"><a class="anchor" href="#_result"></a>Result</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The page automatically links to all other pages containing the listed attributes, excluding pages containing the excluded attributes.</p>
 </div>
 </div>
 </div>
@@ -996,19 +1009,56 @@ Works similar to the macro <code>related</code> but does not add a subsection.</
 </div>
 </div>
 <div class="sect1">
-<h2 id="_how"><a class="anchor" href="#_how"></a>How</h2>
+<h2 id="_attributes"><a class="anchor" href="#_attributes"></a>Attributes</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Multiplicity</th>
+<th class="tableblock halign-left valign-top">Separator</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keyword</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">","</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be a keyword used in at least one other page to work correctly.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>Usage</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Add <code>reference::&lt;comma-separated-keywords&gt;[]</code> in an empty line and replace <code>&lt;comma-separated-keywords&gt;</code> with a comma-separated list of keywords you want to reference.
 You can exclude pages with certain other keywords by negating that keyword.
 To negate a keyword, use an exclamationmark (<code>!</code>) in front of it.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
+<div class="sectionbody">
 <div class="exampleblock">
 <div class="title">Example 1. Using the <code>reference</code> macro to include the keyword <code>hello</code> and exclude the keyword <code>world</code></div>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">related::hello,!world[]</code></pre>
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">reference::hello,!world[]</code></pre>
 </div>
 </div>
 </div>

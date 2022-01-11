@@ -7,7 +7,7 @@
     <link rel="prev" href="../special-macros.html">
     <link rel="next" href="macro-reference.html">
     <meta name="description" content="Describes the use of the macro &quot;pages&quot; in detail.">
-    <meta name="keywords" content="macro,asam,antora,custom,TODO">
+    <meta name="keywords" content="macro,asam,antora,custom">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -857,7 +857,7 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Adding content</span>
+    <span class="nav-text">Adding files</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../adding_content/add-new-module.html">Adding A New Module</a>
@@ -878,10 +878,34 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <span class="nav-text">Moving/Renaming/Deleting A Page</span>
+    <a class="nav-link" href="../adding_content/add-a-partial.html">Adding A Partial</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Add or change content</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/add-an-abbreviation.html">How to add a new abbreviation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../adding_content/add-a-partial.html">Adding A Partial</a>
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Working with roles</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_content/add-role-to-page.html">adding_content/add-role-to-page.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_content/add-new-role.html">adding_content/add-new-role.adoc</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/page_redirects.html">Moving, renaming and deleting a page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/interactive_diagrams.html">adding_content/interactive_diagrams.adoc</a>
   </li>
 </ul>
   </li>
@@ -900,9 +924,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../including.html">Including pages and partials</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <span class="nav-text">Cross-referencing</span>
   </li>
 </ul>
   </li>
@@ -967,9 +988,77 @@
 </aside>
 <article class="doc">
 <h1 class="page">Macro: pages</h1>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>TODO
-Also, write macro functions first!</p>
+<p>Creates an automatically generated list under a new section "Pages" with cross-references to (other) pages in the defined folder.
+If no folder is defined, the file&#8217;s folder is used instead.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>At least one asciidoc file that is not this file must be in the target folder.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_parameters"><a class="anchor" href="#_parameters"></a>Parameters</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 66.6668%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Argument(s)</th>
+<th class="tableblock halign-left valign-top">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Also include all sub-folders</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">relative-path-to-folder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path to the target folder relative to this file</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Add <code>page::[&lt;arguments&gt;]</code> in an empty line and replace <code>&lt;arguments&gt;</code> with a list of arguments, separated by "," (comma).
+If you add no arguments, the macro will list all other pages in the same folder as this file.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="title">Example 1. List all pages in the folder "my_folder" relative to the current file, but not its subfolders</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">page::[path=my_folder]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="../special-macros.html">Custom ASAM Antora Macros</a></span>
