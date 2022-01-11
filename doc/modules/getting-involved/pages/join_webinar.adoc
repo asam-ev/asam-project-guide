@@ -5,4 +5,28 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-Current webinars are listed on the https://www.asam.net/conferences-events/upcoming-events/[ASAM website^].
+TIP: Current webinars are listed on the https://www.asam.net/conferences-events/upcoming-events/[ASAM website^].
+
+== Context
+You are interested in a particular standard or project at ASAM but not directly invovled in it?
+A webinar is a great opportunity to get insight into the project or standard and give feedback or get some tips for its application.
+
+== Result
+You have successfully signed up for the webinar.
+
+== Prerequisites
+None
+
+== How
+. Go to the https://www.asam.net/conferences-events/upcoming-events/[ASAM website^] and find the webinar you are interested in
+. Access the "Registration" tab and fill out the form
+. ...
+
+//TODO: Fill out more steps and check if the previous ones are correct
+
+== Troubleshooting / Known Issues
+// OPTIONAL
+
+__If you have steps for this artifact where troubleshooting or known issues exist, add subchapters for each topic.__
+
+related::webinar[]
