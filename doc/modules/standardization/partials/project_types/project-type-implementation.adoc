@@ -1,17 +1,8 @@
 
 //tag::short[]
-An implementation project has the purpose to create a supplementary product that supports the implementation or application of an ASAM standard in the industry.
-The result of an implementation project can be a tool or source code.
-Examples for tools are checkers for file formats and __{api}__s, add-ons or plug-ins for de-facto standard IDEs (e.g. MATLAB, Simulink, Eclipse, etc.), importers, exporters or reference implementations.
-Source code is typically an implementation of the standard and can be used as a reference for sofware development or is directly used as compilable software components in COTS products.
-Source code shall ensure a high degree of standard-compliance and significantly reduce software development efforts at ASAM tool vendor companies, where otherwise each of the them would have to develop the software by themselves.
+An implementation project has the purpose to create a supplementary product to a standard that supports the implementation or application of an ASAM standard in the industry. +
+The result of an implementation project can be a tool or source code, such as checkers for file formats and __{api}__s, add-ons or plug-ins for de-facto standard IDEs (e.g. MATLAB, Simulink, Eclipse, etc.), importers, exporters or reference implementations.
 
-
-
-Deliverables of an implementation project have product-quality.
-They are professionally developed by a contractor in accordance with customary industry quality guidelines.
-A project group must always exist to define requirements for the product and review the results of the contractor's work.
-Funding for implementation projects can be up to 100% of the project's required budget.
 //end::short[]
 
 //tag::long[]
