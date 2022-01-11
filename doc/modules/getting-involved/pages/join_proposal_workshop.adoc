@@ -6,3 +6,4 @@
 include::standardization:partial$join_proposal_workshop.adoc[]
 
 related::proposal-workshop[]
+

@@ -2,7 +2,7 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-{role-wg-member}
+{role-wg-member} {role-standard-user}
 
 ifndef::small[]
 image::standardization:proposal_phase_v2-Join_Workshop.svg[title="Join Proposal workshop",opts=interactive]
@@ -12,7 +12,25 @@ ifdef::small[]
 image::standardization:asam-development-process-ProposalWS.svg[title="Join Proposal workshop (small)",opts=interactive]
 endif::[]
 
-TODO
+== Context
+You are interested in an upcoming project?
+The first major event after the xref:standardization:project-ideation.adoc[ideation phase] is the xref:standardization:proposal-phase.adoc#_p1_-_proposal_workshop[proposal workshop].
+Here, you will get a presentation on what the project's goal is and may give feedback on it.
+You can also sign up for a project participation, both for the xref:standardization:proposal-phase.adoc[proposal] and the xref:standardization:development-phase.adoc[development phase] (if the project is agreed upon by the {tsc})
 
-If you are looking for more information on the proposal workshop, see the section <<Related topics>>.
+== Result
+You have signed up for the selected proposal workshop.
+
+== Prerequisites
+None
+
+== How
+. Go to the https://www.asam.net/conferences-events/upcoming-events/[ASAM website^] and find the proposal workshop you are interested in
+. Access the "Registration" tab, fill out the form and send it to register
+
+== Troubleshooting / Known Issues
+// OPTIONAL
+
+__If you have steps for this artifact where troubleshooting or known issues exist, add subchapters for each topic.__
+
 
