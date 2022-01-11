@@ -36,3 +36,9 @@ PARTIALS_PATH = PARTIALS_NAME+PATH_DIVIDER
 TYPE_PARTIAL = "is_partial"
 TYPE_PAGE = "is_page"
 TYPE_UNKNOWN = "unknown"
+
+# Filenames And Paths
+USED_KEYWORDS_FILENAME = "used-keywords"
+USED_KEYWORDS_PATH = "../doc/modules/project-guide/pages/structure/"
+LINK_CONCEPT_FILENAME = "link-concept"
+LINK_CONCEPT_PATH = "../doc/modules/project-guide/examples/"

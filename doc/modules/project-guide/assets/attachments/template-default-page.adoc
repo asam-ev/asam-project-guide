@@ -6,6 +6,8 @@
 \include::partial$_attributes.adoc[]
 \include::{abb}[]
 
+//Remove the backslash in front of the includes before using the page
+
 //Add your content here
 
 //OPTIONAL: List all files in this folder or a relative path

@@ -1,32 +1,27 @@
 * xref:home.adoc[]
 ** Structure
-*** xref:content_structure.adoc[]
-*** xref:link-concept.adoc[]
-*** xref:used-keywords.adoc[]
+*** xref:structure/content_structure.adoc[]
+*** xref:structure/link-concept.adoc[]
+*** xref:structure/used-keywords.adoc[]
 ** Adding content
-*** xref:add-new-module.adoc[]
-*** xref:pages-vs-partials.adoc[]
-*** Pages
-**** xref:add-a-page.adoc[]
-***** xref:add-task-page.adoc[]
-***** xref:add-tool-page.adoc[]
-**** Moving/Renaming/Deleting A Page
-*** Partials
-**** xref:add-a-partial.adoc[]
+*** xref:adding_content/add-new-module.adoc[]
+*** xref:adding_content/pages-vs-partials.adoc[]
+*** xref:adding_content/add-a-page.adoc[]
+**** xref:adding_content/pages/add-task-page.adoc[]
+**** xref:adding_content/pages/add-tool-page.adoc[]
+*** Moving/Renaming/Deleting A Page
+*** xref:adding_content/add-a-partial.adoc[]
 ** Referencing And Including
 *** xref:images.adoc[]
 *** xref:examples.adoc[]
 *** xref:attachments.adoc[]
 *** xref:including.adoc[]
 *** Cross-referencing
-** Macros
-*** Asciidoctor
-*** Antora
-*** xref:special-macros.adoc[]
-**** xref:macros/macro-pages.adoc[]
-**** xref:macros/macro-reference.adoc[]
-**** xref:macros/macro-related.adoc[]
-** Working With Projects
-** Additional Infos
+** xref:special-macros.adoc[]
+*** xref:macros/macro-pages.adoc[]
+*** xref:macros/macro-reference.adoc[]
+*** xref:macros/macro-related.adoc[]
+// ** Working With Projects
+// ** Additional Infos
 
 // You may use links to pages or text for non-linked headers

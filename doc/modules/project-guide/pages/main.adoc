@@ -17,8 +17,4 @@ It also references particularities of Antora and links to important information 
 
 include::../nav.adoc[lines=2..-1]
 
-== See also
-
-reference::project-guide[]
-
 related::landing_page[]
