@@ -1,6 +1,11 @@
 
 :abb-link: xref:compendium:abbreviations.adoc#_
 
+// HOW TO:
+// To add a new abbreviation, you must:
+// - add the abbreviation as a new section (in the alphabetically correct position) and
+// - add a new abbreviation attribute that can be used in other pages.
+
 :api: {abb-link}api[API]
 :asam: {abb-link}asam[ASAM]
 :ccb: {abb-link}ccb[CCB]
@@ -8,9 +13,13 @@
 :dco: {abb-link}dco[DCO]
 :gtm: {abb-link}gtm[GTM]
 :loki: {abb-link}loki[LOKI]
+:odr: {abb-link}odr[ODR]
+:osc: {abb-link}osc[OSC]
+:oxo: {abb-link}oxo[OxO]
 :tsc: {abb-link}tsc[TSC]
 :vscode: {abb-link}vscode[VSCode]
 :wg: {abb-link}wg[WG]
+:wgl: {abb-link}wgl[WGL]
 
 ifdef::is_abbreviations[]
 
