@@ -43,15 +43,15 @@ xref:standardization:main.adoc[]
 |
 include::standardization:partial$module-description.adoc[]
 
-|{compendium-icon-norole} +
-xref:compendium:main.adoc[]
-|
-include::compendium:partial$module-description.adoc[]
-
 |{tools-icon-norole} +
 xref:tooling:main.adoc[]
 |
 include::tooling:partial$module-description.adoc[]
+
+|{compendium-icon-norole} +
+xref:compendium:main.adoc[]
+|
+include::compendium:partial$module-description.adoc[]
 
 |{project-guide-icon-norole} +
 xref:project-guide:main.adoc[]
