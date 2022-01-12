@@ -4,4 +4,77 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-TODO
+When organizing a proposal workshop a few things are needed as a prerequisite. 
+
+== Roles in the Proposal Process
+
+|===
+| Proposal Submitter        | The person who is responsible to drive the proposal.
+| Proposal Writing Team     | A small group of persons writing the project proposal.
+| Proposal Workshop Member  | An attendee of the proposal workshop
+| ASAM Office               | The employees of ASAM
+|===
+
+== Proposal prerequisite
+
+. Written Proposal
+. proposal submitter
+. at least three companies committing to the project
+
+== Timeline to a approved project proposal
+
+image::proposal_workshop_timeline.svg[]
+
+
+== Hosting a Proposal Workshop
+
+=== Face2Face Workshop
+
+|===
+|Duration| 1 - 2 days
+|Location| ASAM Event Location
+|===
+
+When organizing a face2face proposal workshop a meeting room needs to be reserved, depending on the amount of people.
+The following options are available at the ASAM Office
+
+|===
+|Room           | max Pax without Corona    | max Pax with Corona
+|Meeting Room   | 8                         | 4
+|Pavilion       | 30                        | 12
+|Audimax        | 60                        | 25
+|Saal           | 120                       | 40
+|===                        
+
+With the duration of at least 1 day catering is needed as well. All of this can be organized by the GTM 
+
+=== Online Workshop
+
+|===
+|Duration| 2 - 4 hours
+|Location| Microsoft Teams
+|===
+
+Due to the fact that online meetings are more straining than face2face meetings, experience shows that proposal workshops need to be streamlined to reduce the duration to max 4h.
+
+== Agenda template for a Proposal Workshop
+
+
+[header]
+|===
+| Time    | Duration    | Title                     | Responsible           | Comment
+| 9:00 am | 05 - 15 min | Arrival & Introduction    | ASAM                  | In the introduction the moderator welcomes the attendees and introduces the agenda
+| 9:15 am | 20 - 35 min | ASAM Introduction         | MD ASAM               | The Managing Director of ASAM gives an overview about ASAM and how ASAM works
+| 9:45 am | 20 - 45 min | Problem statement         | Proposal Submitter    | The proposal submitter presents the problem statement the project should solve, including use cases there the problem occurs
+|10:30 am | 05 - 15 min | Break                     | All                   |
+|10:45 am | 60 - 90 min | Presentation Block 1/2    | Workshop Member       | In this Block Proposal workshop members can present their take on the problem statement and how they would or do handle the issue in their company
+|12:15 pm | 45 - 60 min | Lunch Break               | All                   |
+| 1:00 pm | 30 - 60 min | Presentation Block 2/2    | Workshop Member       | In this Block Proposal workshop members can present their take on the problem statement and how they would or do handle the issue in their company
+| 2:00 pm | 30 - 60 min | Proposal Content          | Proposal Submitter    | The proposal submitter or a member of the writing team presents the technical content of the project proposal
+| 3:00 pm | 30 - 60 min | Discussion                | All                   | Discuss the technical content of the project proposal and collect feedback, that can be incorporated into the proposal
+| 4:00 pm | 15 - 30 min | Next Steps and Wrap up    | ASAM                 a| The ASAM Moderator starts the following information and estimates from the group
+
+                                                                                * min required commitment in days
+                                                                                * duration of the project in months
+                                                                                * project type (<link project types>)
+|===
