@@ -9,11 +9,11 @@ WARNING: This section needs approval by {tsc}.
 
 image::standardization:project_types.png[title="ASAM project types"]
 
-// TBD: Implementatoin Project still valid?
+// TBD: Implementation Project still valid?
 // TODO: Update image
 // TBD: Implementers forum relevant?
 // Project types need to be discussed by TSC first.
-// TODO: Format each project type as "description" and "goal"
+
 
 __{asam}__ has four defined project types, which further characterize the work to be done within the projects.
 They are:
