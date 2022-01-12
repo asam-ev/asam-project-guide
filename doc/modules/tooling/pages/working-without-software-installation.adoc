@@ -1,6 +1,6 @@
 = Working without software installation
 :description: Contains an overview over when and how working without any additional software installation is possible.
-:keywords: installation,software,online,gitlab,recommended
+:keywords: installation,software,online,gitlab,recommended,READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

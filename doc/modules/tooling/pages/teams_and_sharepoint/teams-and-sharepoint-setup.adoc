@@ -1,6 +1,6 @@
 = Setting up microsoft teams and sharepoint
 :description: Setup of MS Teams and sharepoint
-:keywords: setup,teams,sharepoint
+:keywords: setup,teams,sharepoint,TODO
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

@@ -1,6 +1,6 @@
 = Tools overview
 :description: Gives an overview over the mandatory and recommended tools most commonly used in ASAM projects.
-:keywords: overview,tools,landing_page,tools-overview
+:keywords: overview,tools,landing_page,tools-overview,READYFORREVIEW
 :no-installation: xref:working-without-software-installation.adoc[]
 :page-aliases: overview.adoc
 

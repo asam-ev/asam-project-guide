@@ -1,6 +1,6 @@
 = How to add a new abbreviation
 :description: Describes necessary steps to add a new abbreviation.
-:keywords: how-to, abbreviation, abbr
+:keywords: how-to, abbreviation, abbr, READYFORREVIEW
 :page-aliases: adding_content/add-an-abbreviation.adoc
 
 include::partial$_attributes.adoc[]

@@ -1,6 +1,6 @@
 = How to enter a new idea
 :description: Describes how to enter a new idea into the ideation process.
-:keywords: ideation, idea
+:keywords: ideation, idea, READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

@@ -1,6 +1,6 @@
 = How ASAM works
 :description: Links to the current contact page for ASAM Office members.
-:keywords: about, asam, new-here-content, organization
+:keywords: about, asam, new-here-content, organization, READYFORREVIEW
 :asam-orga: https://www.asam.net/about-asam/organization/
 
 include::partial$_attributes.adoc[]

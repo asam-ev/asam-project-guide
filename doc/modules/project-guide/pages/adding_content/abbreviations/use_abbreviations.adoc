@@ -1,6 +1,6 @@
 = Using abbreviations
 :description: Describes how to use a defined abbreviation.
-:keywords: how-to, abbreviation, abbr
+:keywords: how-to, abbreviation, abbr, READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

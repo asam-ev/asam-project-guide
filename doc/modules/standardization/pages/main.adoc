@@ -1,6 +1,6 @@
 = ASAM standardization process
 :description: The standardization process applied at ASAM. Contains the general process as well as specifics on the life cycle of a project.
-:keywords: standardization,landing_page
+:keywords: standardization,landing_page, READYFORREVIEW
 :page-aliases: home.adoc
 
 include::partial$_attributes.adoc[]

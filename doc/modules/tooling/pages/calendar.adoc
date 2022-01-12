@@ -1,6 +1,6 @@
 = OpenX Calendar
 :description: A summary page describing what the OpenX calendar is and where to find related information, guides etc.
-:keywords: openx-calendar,summary,tool,mandatory
+:keywords: openx-calendar,summary,tool,mandatory,READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

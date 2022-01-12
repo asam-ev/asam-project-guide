@@ -1,6 +1,6 @@
 = Create the first Proposal Draft
 :description: Describes how to create a new propsal draft.
-:keywords: proposal, draft
+:keywords: proposal, draft,READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

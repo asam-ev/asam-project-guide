@@ -12,6 +12,7 @@
 :cr: {abb-link}cr[CR]
 :dco: {abb-link}dco[DCO]
 :gtm: {abb-link}gtm[GTM]
+:ide: {abb-link}ide[IDE]
 :loki: {abb-link}loki[LOKI]
 :odr: {abb-link}odr[ODR]
 :osc: {abb-link}osc[OSC]
@@ -44,6 +45,9 @@ Developer Certificate of Origin:: The DCO is an attestation attached to every co
 == GTM
 ASAM Global Technology Manager:: {gtm-description}
 See also: xref:role-specific:gtm.adoc[]
+
+== IDE
+Integrated Development Environment:: A software application for developers that provides comprehensive facilities for software development, such as a source code editor, build automation tools and debugger.
 
 == LOKI
 List Of Known Issues:: A public list of known issues related to a certain standard.

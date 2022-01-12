@@ -1,6 +1,6 @@
-= Microsoft teams and sharepoint
+= Microsoft Teams and Sharepoint
 :description: A summary page describing what MS Teams and Sharepoint are and where to find related information, guides etc.
-:keywords: teams,sharepoint,summary,tool,mandatory
+:keywords: teams,sharepoint,summary,tool,mandatory,TODO
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -24,10 +24,10 @@ It can be accessed directly or through Teams, which is why all files that have b
 IMPORTANT: Project files such as chapters, specifications, or images intended for use in the standard are to be handled through GitLab instead! See xref:compendium:guides/standard_workflow.adoc[] for more information.
 
 
-== MS teams at ASAM
+== MS Teams at ASAM
 //TODO
 
-== MS sharepoint at ASAM
+== MS Sharepoint at ASAM
 //TODO
 
 == Content

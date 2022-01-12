@@ -1,6 +1,6 @@
 = Adding A Page
 :description: Explains how to add a new page to the Project Guide and what to look out for.
-:keywords: page,project-guide,new-content-guide
+:keywords: page,project-guide,new-content-guide, READYFORREVIEW
 :page_reason: default page
 :page_template_name: template-default-page.adoc
 :page_template_alt_name: default page template

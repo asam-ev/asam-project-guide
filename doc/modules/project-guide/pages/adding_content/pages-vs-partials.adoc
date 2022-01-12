@@ -1,6 +1,6 @@
 = Pages VS Partials
 :description: Describes the differences between pages and partials and when to use which.
-:keywords: page,partial,project-guide
+:keywords: page,partial,project-guide, READYFORREVIEW
 
 
 include::partial$_attributes.adoc[]
