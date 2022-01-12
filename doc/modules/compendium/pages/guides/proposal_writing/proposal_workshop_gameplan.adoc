@@ -23,7 +23,7 @@ When organizing a proposal workshop a few things are needed as a prerequisite.
 
 == Timeline to a approved project proposal
 
-image::proposal_workshop_timeline.svg[]
+image::compendium:proposal_workshop_timeline.svg[]
 
 
 == Hosting a Proposal Workshop
