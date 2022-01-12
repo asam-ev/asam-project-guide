@@ -5,6 +5,8 @@
 \include::partial$_attributes.adoc[]
 \include::{abb}[]
 
+//Remove the backslash in front of the includes before using the page
+
 {<toolname>-icon}
 
 Description for <Toolname>.

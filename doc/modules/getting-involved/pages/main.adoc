@@ -1,6 +1,6 @@
 = How to get involved
 :description: Landing page for information on how to get involved in ASAM projects.
-:keywords: landing_page,get-involved
+:keywords: landing_page,get-involved, READYFORREVIEW
 :page-aliases: home.adoc
 
 include::partial$_attributes.adoc[]

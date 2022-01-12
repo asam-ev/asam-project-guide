@@ -1,32 +1,34 @@
 * xref:home.adoc[]
 ** Structure
-*** xref:content_structure.adoc[]
-*** xref:link-concept.adoc[]
-*** xref:used-keywords.adoc[]
-** Adding content
-*** xref:add-new-module.adoc[]
-*** xref:pages-vs-partials.adoc[]
-*** Pages
-**** xref:add-a-page.adoc[]
-***** xref:add-task-page.adoc[]
-***** xref:add-tool-page.adoc[]
-**** Moving/Renaming/Deleting A Page
-*** Partials
-**** xref:add-a-partial.adoc[]
+*** xref:structure/content_structure.adoc[]
+*** xref:structure/link-concept.adoc[]
+*** xref:structure/used-keywords.adoc[]
+** Adding files
+*** xref:adding_content/add-new-module.adoc[]
+*** xref:adding_content/pages-vs-partials.adoc[]
+*** xref:adding_content/add-a-page.adoc[]
+**** xref:adding_content/pages/add-task-page.adoc[]
+**** xref:adding_content/pages/add-tool-page.adoc[]
+*** xref:adding_content/add-a-partial.adoc[]
+** Add or change content
+*** Abbreviations
+**** xref:adding_content/abbreviations/add-an-abbreviation.adoc[]
+**** xref:adding_content/abbreviations/use_abbreviations.adoc[]
+*** Working with roles
+**** xref:adding_content/add-role-to-page.adoc[]
+**** xref:adding_content/add-new-role.adoc[]
+*** xref:adding_content/page_redirects.adoc[]
+*** xref:adding_content/interactive_diagrams.adoc[]
 ** Referencing And Including
 *** xref:images.adoc[]
 *** xref:examples.adoc[]
 *** xref:attachments.adoc[]
 *** xref:including.adoc[]
-*** Cross-referencing
-** Macros
-*** Asciidoctor
-*** Antora
-*** xref:special-macros.adoc[]
-**** xref:macros/macro-pages.adoc[]
-**** xref:macros/macro-reference.adoc[]
-**** xref:macros/macro-related.adoc[]
-** Working With Projects
-** Additional Infos
+** xref:special-macros.adoc[]
+*** xref:macros/macro-pages.adoc[]
+*** xref:macros/macro-reference.adoc[]
+*** xref:macros/macro-related.adoc[]
+// ** Working With Projects
+// ** Additional Infos
 
 // You may use links to pages or text for non-linked headers

@@ -1,6 +1,6 @@
 = Current projects at ASAM
 :description: Links to the current projects page at ASAM.
-:keywords: projects, asam, new-here-content, ideation, standards
+:keywords: projects, asam, new-here-content, ideation, standards, READYFORREVIEW
 :asam-released: https://www.asam.net/standards/
 :asam-current: https://www.asam.net/active-projects/projects/
 :asam-proposal: https://www.asam.net/active-projects/proposals/

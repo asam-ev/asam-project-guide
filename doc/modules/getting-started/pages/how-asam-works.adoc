@@ -1,31 +1,19 @@
 = How ASAM works
 :description: Links to the current contact page for ASAM Office members.
-:keywords: about, asam, new-here-content, organization
+:keywords: about, asam, new-here-content, organization, READYFORREVIEW
 :asam-orga: https://www.asam.net/about-asam/organization/
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
 __{asam}__ is a standardization organization where experts from OEMs, Tier-1s, tool vendors, engineering service providers, and research institutes meet to commonly standardize development and test systems for the automotive industry.
-
-== The organization
-
-{asam-orga}[image:https://www.asam.net/index.php?eID=dumpFile&t=p&p=45037&token=7a818e902d4de269ab69f086d1ae100239999480[title="The ASAM Organization"] ^] +
-{asam-orga}[The ASAM organization^]
-
-The ASAM organization is built around its members.
 For more information, see the {asam-orga}[ASAM Website^].
 
-== ASAM statutes
-ASAM e.V. is built around statutes that define what ASAM is, what its objectives are and what 'membership' means and implies.
-It also specifies the organs and the management side of ASAM.
-The statutes are public and can be accessed through the https://www.asam.net/asam-statutes/[ASAM website^].
+{asam-orga}[image:https://www.asam.net/index.php?eID=dumpFile&t=p&p=45037&token=7a818e902d4de269ab69f086d1ae100239999480[title="The ASAM Organization"] ^] +
 
-== The project development process
+ASAM e.V. is built around https://www.asam.net/asam-statutes/[statutes^] that define what ASAM is, what its objectives are and what 'membership' means and implies.
+
 ASAM projects follow a defined development process.
-
-* For a general overview, see the xref:processes-and-workflows-overview.adoc[].
-
-* A more detailed summary of the ASAM processes can be found in the xref:standardization:home.adoc[] of this guide.
+For a general overview, see the xref:processes-and-workflows-overview.adoc[].
 
 // related::asam[]

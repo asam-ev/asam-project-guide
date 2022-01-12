@@ -1,6 +1,6 @@
 = Introduction
 :description: Introduction page for the Project Guide. Links to all information in the introduction section.
-:keywords: introduction, landing_page
+:keywords: introduction, landing_page, READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::compendium:partial$abbreviations.adoc[]

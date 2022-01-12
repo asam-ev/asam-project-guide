@@ -1,6 +1,6 @@
 = Issue resolution process
 :description: Describes the issue resolution process in the ASAM standardization in case a released standard has issues.
-:keywords: standardization
+:keywords: standardization,READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

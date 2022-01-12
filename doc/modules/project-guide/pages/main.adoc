@@ -1,6 +1,6 @@
 = Working on the Project Guide
 :description: Landing page for information on how to work on the ASAM Project Guide using Asciidoctor and Antora.
-:keywords: landing_page,project-guide
+:keywords: landing_page,project-guide, READYFORREVIEW
 :page-aliases: home.adoc
 
 include::partial$_attributes.adoc[]
@@ -16,9 +16,5 @@ It also references particularities of Antora and links to important information 
 == Content
 
 include::../nav.adoc[lines=2..-1]
-
-== See also
-
-reference::project-guide[]
 
 related::landing_page[]

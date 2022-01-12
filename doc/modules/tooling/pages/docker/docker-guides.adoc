@@ -1,6 +1,6 @@
 = Docker guide
 :description: A guide to using docker at ASAM
-:keywords: docker, guide
+:keywords: docker, guide,READYFORREVIEW
 :offset-value: leveloffset=+1
 
 include::partial$_attributes.adoc[]

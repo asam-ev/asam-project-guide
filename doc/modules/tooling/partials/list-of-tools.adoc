@@ -3,8 +3,8 @@
 
 include::tooling:partial$_attributes.adoc[]
 
-[#mandatory_tools_table]
-.Mandatory Tools
+[#collaborative_infrastructure]
+.Infrastructure to enable collaborative standard development
 [cols="^3s,8,^1,3"]
 [frame=none,grid=rows]
 

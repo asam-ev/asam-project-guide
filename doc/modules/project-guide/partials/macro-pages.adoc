@@ -1,4 +1,43 @@
+//tag::description[]
+Creates an automatically generated list under a new section "Pages" with cross-references to (other) pages in the defined folder.
+If no folder is defined, the file's folder is used instead.
+//end::description[]
 
-// tag::how[]
-TODO
-// end::how[]
+//tag::prerequisits[]
+At least one asciidoc file that is not this file must be in the target folder.
+//end::prerequisits[]
+
+//tag::parameters[]
+[cols="1,1,4"]
+|===
+|Parameter |Argument(s) |Note
+
+|all |- |Also include all sub-folders
+|path |relative-path-to-folder |Path to the target folder relative to this file
+
+|===
+//end::parameters[]
+
+//tag::attributes[]
+[cols="2,1,1,1,4"]
+|===
+|Attribute |Multiplicity |Separator |Type |Note
+
+|===
+//end::attributes[]
+
+//tag::how[]
+Add `page::[<arguments>]` in an empty line and replace `<arguments>` with a list of arguments, separated by "," (comma).
+If you add no arguments, the macro will list all other pages in the same folder as this file.
+//end::how[]
+
+//tag::example[]
+.List all pages in the folder "my_folder" relative to the current file, but not its subfolders
+====
+[source,asciidoc]
+----
+page::[path=my_folder]
+----
+====
+
+//end::example[]

@@ -1,8 +1,8 @@
 
-//tag::context[]
+//tag::description[]
 Creates an automatically generated list with cross-references to (other) pages containing the listed keywords.
 Works similar to the macro `related` but does not add a subsection.
-//end::context[]
+//end::description[]
 
 //tag::prerequisits[]
 In order to work as intended, you must label all pages you want to automatically cross-reference with the attribute `:keywords:` followed by a comma-separated list of keywords for that page.
@@ -10,16 +10,40 @@ In order to work as intended, you must label all pages you want to automatically
 Keywords **MUST NOT** start with an exclamation mark!
 //end::prerequisits[]
 
+//tag::parameters[]
+[cols="1,1"]
+|===
+|Parameter |Argument(s) |Note
+
+|===
+//end::parameters[]
+
+//tag::attributes[]
+[cols="2,1,1,1,4"]
+|===
+|Attribute |Multiplicity |Separator |Type |Note
+
+|Keyword
+|1..n
+|","
+|String
+|Must be a keyword used in at least one other page to work correctly.
+
+|===
+//end::attributes[]
+
 //tag::how[]
 Add `reference::<comma-separated-keywords>[]` in an empty line and replace `<comma-separated-keywords>` with a comma-separated list of keywords you want to reference.
 You can exclude pages with certain other keywords by negating that keyword.
 To negate a keyword, use an exclamationmark (`!`) in front of it.
+//end::how[]
 
+//tag::example[]
 .Using the `reference` macro to include the keyword `hello` and exclude the keyword `world`
 ====
 [source,asciidoc]
 ----
-related::hello,!world[]
+reference::hello,!world[]
 ----
 ====
-//end::how[]
+//end::example[]

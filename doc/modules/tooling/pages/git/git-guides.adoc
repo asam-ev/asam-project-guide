@@ -1,6 +1,6 @@
 = Git guides
 :description: Collection of guidelines for git.
-:keywords: git, guides
+:keywords: git, guides,READYFORREVIEW
 :offset-value: leveloffset=+1
 
 include::partial$_attributes.adoc[]

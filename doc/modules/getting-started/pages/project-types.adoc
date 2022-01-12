@@ -1,6 +1,6 @@
 = ASAM project types
 :description: Describes the different project types at ASAM for new members and interested parties.
-:keywords: projects, type, asam, new-here-content
+:keywords: projects, type, asam, new-here-content, READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
