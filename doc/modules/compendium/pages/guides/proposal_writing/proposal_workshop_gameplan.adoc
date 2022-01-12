@@ -60,7 +60,7 @@ Due to the fact that online meetings are more straining than face2face meetings,
 == Agenda template for a Proposal Workshop
 
 
-[header]
+[header cols="10,10,20,25,35"]
 |===
 | Time    | Duration    | Title                     | Responsible           | Comment
 | 9:00 am | 05 - 15 min | Arrival & Introduction    | ASAM                  | In the introduction the moderator welcomes the attendees and introduces the agenda
