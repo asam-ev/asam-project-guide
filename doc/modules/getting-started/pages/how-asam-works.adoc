@@ -1,6 +1,6 @@
 = How ASAM works
 :description: Links to the current contact page for ASAM Office members.
-:keywords: about, asam, new-here-content, organization, READYFORREVIEW
+:keywords: about, asam, new-here-content, organization, REVIEWED_OK
 :asam-orga: https://www.asam.net/about-asam/organization/
 
 include::partial$_attributes.adoc[]
@@ -13,7 +13,5 @@ For more information, see the {asam-orga}[ASAM Website^].
 
 ASAM e.V. is built around https://www.asam.net/asam-statutes/[statutes^] that define what ASAM is, what its objectives are and what 'membership' means and implies.
 
-ASAM projects follow a defined development process.
-For a general overview, see the xref:processes-and-workflows-overview.adoc[].
 
 // related::asam[]

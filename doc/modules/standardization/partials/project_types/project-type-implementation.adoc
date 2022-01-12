@@ -1,7 +1,8 @@
 
 //tag::short[]
-An implementation project has the purpose to create a supplementary product to a standard that supports the implementation or application of an ASAM standard in the industry. +
-The result of an implementation project can be a tool or source code, such as checkers for file formats and __{api}__s, add-ons or plug-ins for de-facto standard IDEs (e.g. MATLAB, Simulink, Eclipse, etc.), importers, exporters or reference implementations.
+[horizontal]
+Description:: An implementation project has the purpose to create a supplementary product to a standard that supports the implementation or application of an ASAM standard in the industry.
+Goal:: The result of an implementation project can be a tool or source code, such as checkers for file formats and __{api}__s, add-ons or plug-ins for de-facto standard IDEs (e.g. MATLAB, Simulink, Eclipse, etc.), importers, exporters or reference implementations.
 
 //end::short[]
 

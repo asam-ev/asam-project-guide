@@ -1,8 +1,9 @@
 
 
 //tag::short[]
-Standard development projects are the core of ASAM. +
-The goal is to create new standards and to update existing standards in accordance with the demands of ASAM members and market requirements.
+[horizontal]
+Description:: Standard development projects are the core of ASAM.
+Goal:: The goal is to create new standards and to update existing standards in accordance with the demands of ASAM members and market requirements.
 
 //end::short[]
 

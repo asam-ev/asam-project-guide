@@ -1,7 +1,8 @@
 
 //tag::short[]
-Concept projects have the purpose to prepare the further development of existing ASAM standards or to prepare the development of new ASAM standards, typically chosen when the envisioned standard is complex and requires significant resources to even develop a sound and solid project proposal. +
-The goals of concept projects are to propose specific content for ASAM standards and/or to provide justification for the usefulness, practicability and feasibility of the proposed content.
+[horizontal]
+Description:: Concept projects have the purpose to prepare the further development of existing ASAM standards or to prepare the development of new ASAM standards, typically chosen when the envisioned standard is complex and requires significant resources to even develop a sound and solid project proposal.
+Goal:: The goals of concept projects are to propose specific content for ASAM standards and/or to provide justification for the usefulness, practicability and feasibility of the proposed content.
 
 //end::short[]
 
