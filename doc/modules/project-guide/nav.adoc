@@ -11,7 +11,9 @@
 **** xref:adding_content/pages/add-tool-page.adoc[]
 *** xref:adding_content/add-a-partial.adoc[]
 ** Add or change content
-*** xref:adding_content/add-an-abbreviation.adoc[]
+*** Abbreviations
+**** xref:adding_content/abbreviations/add-an-abbreviation.adoc[]
+**** xref:adding_content/abbreviations/use_abbreviations.adoc[]
 *** Working with roles
 **** xref:adding_content/add-role-to-page.adoc[]
 **** xref:adding_content/add-new-role.adoc[]
