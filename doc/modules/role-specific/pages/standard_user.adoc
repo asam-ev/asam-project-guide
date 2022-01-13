@@ -1,6 +1,6 @@
 = Standard user
 :description: Summary and landing page for standad users.
-:keywords: role, role-landing-page
+:keywords: role, role-landing-page, READYFORREVIEW
 :page-partial:
 
 include::partial$_attributes.adoc[]
@@ -11,6 +11,7 @@ include::partial$_attributes.adoc[]
 Label:: {role-standard-user}
 
 == Responsibilites
+None
 
 === Issue resolution
 //tag::issue_resolution[]

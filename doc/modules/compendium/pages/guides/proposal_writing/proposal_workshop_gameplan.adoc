@@ -1,6 +1,6 @@
 = Proposal workshop gameplan
 :description: Contains the default gameplan for a proposal workshop.
-:keywords: proposal-workshop, gameplan
+:keywords: proposal-workshop, gameplan, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

@@ -1,6 +1,6 @@
 = Standard manager
 :description: Summary and landing page for standad manager.
-:keywords: role, role-landing-page
+:keywords: role, role-landing-page, TODO
 :page-partial:
 
 include::partial$_attributes.adoc[]
@@ -12,6 +12,7 @@ Label:: {role-standard-manager}
 
 
 == Responsibilities
+TODO
 
 === Issue resolution
 //tag::issue_resolution[]

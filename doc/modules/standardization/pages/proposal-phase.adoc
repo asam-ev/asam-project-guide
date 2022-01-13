@@ -1,6 +1,6 @@
 = The Proposal phase
 :description: Describes the Proposal phase in the ASAM development process for standards.
-:keywords: proposal,phase,standard,process,proposal-workshop
+:keywords: proposal,phase,standard,process,proposal-workshop, READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -31,25 +31,6 @@ include::partial$proposal-publication.adoc[tag=long]
 include::partial$proposal-decision.adoc[tag=long]
 
 
-== Pages
+pages::[]
 
-* xref:proposal/01_proposal_setup.adoc[]
-* xref:proposal/02_contributing.adoc[]
-* xref:proposal/03_proposal_workshop_preparation.adoc[]
-* xref:proposal/04_join_proposal_workshop.adoc[]
-
-== Related topics
-
-* xref:compendium:guides/proposal_writing/contribute_in_asciidoc.adoc[]
-* xref:compendium:guides/proposal_writing/contribute_with_issues.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_enrollment_list.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_executive_draft.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_join.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_proposal_document.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_setup_git.adoc[]
-* xref:compendium:guides/proposal_writing/proposal_guidelines.adoc[]
-* xref:compendium:guides/set_up_new_project.adoc[]
-* xref:compendium:templates/project_proposal.adoc[]
-* xref:proposal/01_proposal_setup.adoc[]
-* xref:proposal/02_contributing.adoc[]
-* xref:proposal/03_proposal_workshop_preparation.adoc[]
+related::proposal[]

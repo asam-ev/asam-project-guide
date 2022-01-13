@@ -1,6 +1,6 @@
 = Prepare a Proposal workshop
 :description: What to prepare for a proposal workshop.
-:keywords: proposal-workshop, proposal
+:keywords: proposal-workshop, proposal, TODO
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

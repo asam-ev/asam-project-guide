@@ -1,6 +1,6 @@
 = Project lead
 :description: Summary and landing page for project leads.
-:keywords: role, role-landing-page
+:keywords: role, role-landing-page, READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 

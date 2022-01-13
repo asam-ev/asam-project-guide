@@ -1,6 +1,6 @@
 = Technical Steering Committee Member
 :description: Summary and landing page for tsc member.
-:keywords: role, role-landing-page
+:keywords: role, role-landing-page, READYFORREVIEW
 :page-partial:
 
 include::partial$_attributes.adoc[]
