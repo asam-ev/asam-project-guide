@@ -1,6 +1,0 @@
-TODO
-
-Describe when and how to use roles in pages
-
-. Find the right role
-. Add it to your page
