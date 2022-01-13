@@ -2,8 +2,6 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-{role-wg-member} {role-standard-user}
-
 ifndef::small[]
 image::standardization:proposal_phase_v2-Join_Workshop.svg[title="Join Proposal workshop",opts=interactive]
 endif::[]
