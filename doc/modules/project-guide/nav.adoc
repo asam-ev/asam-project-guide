@@ -15,8 +15,8 @@
 **** xref:adding_content/abbreviations/add-an-abbreviation.adoc[]
 **** xref:adding_content/abbreviations/use_abbreviations.adoc[]
 *** Working with roles
-**** xref:adding_content/add-role-to-page.adoc[]
 **** xref:adding_content/add-new-role.adoc[]
+**** xref:adding_content/use_roles.adoc[]
 *** xref:adding_content/page_redirects.adoc[]
 *** xref:adding_content/interactive_diagrams.adoc[]
 ** Referencing And Including
