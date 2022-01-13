@@ -1,7 +1,7 @@
 [[top-partials]]
 = Reusing content
 :description: How-To for reusing content from other files.
-:keywords: asciidoc,reuse,include,how-to
+:keywords: asciidoc,reuse,include,how-to, READYFORREVIEW
 
 
 If you have a chunk of content that's repeated across different pages, you can easily write it once and reuse it across those pages.

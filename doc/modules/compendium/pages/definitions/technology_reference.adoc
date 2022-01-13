@@ -1,6 +1,6 @@
 = Technology reference
 :description: Definition of a technology reference.
-:keywords: definition,content-characterization,base-standard
+:keywords: definition,content-characterization,base-standard, READYFORREVIEW
 
 
 include::compendium:partial$_attributes.adoc[]

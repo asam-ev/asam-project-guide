@@ -1,6 +1,6 @@
 = Cover page
 :description: Describes the cover page template for ASAM standards.
-:keywords: template
+:keywords: template, READYFORREVIEW
 
 
 include::compendium:partial$_attributes.adoc[]

@@ -1,6 +1,6 @@
 = Base standard
 :description: Definition of a base standard.
-:keywords: definition,classification,base-standard
+:keywords: definition,classification,base-standard, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

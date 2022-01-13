@@ -1,6 +1,6 @@
 = How-to create an executive proposal draft
 :description: How-to for creating a new project proposal as executive draft
-:keywords: proposal, executive-draft
+:keywords: proposal, executive-draft, READYFORREVIEW
 :proposal-workshop: xref:standardization:proposal-phase.adoc#_p1_proposal_workshop[Proposal Workshop]
 
 include::compendium:partial$_attributes.adoc[]

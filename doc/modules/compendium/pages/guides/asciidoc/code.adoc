@@ -1,7 +1,6 @@
-[[top-code]]
 = How to include code blocks in ASAM documents
 :description: How-To for including code blocks in ASAM documents (standards).
-:keywords: asciidoc,code,how-to
+:keywords: asciidoc,code,how-to, READYFORREVIEW
 :reftext: Code and syntax highlighting
 
 

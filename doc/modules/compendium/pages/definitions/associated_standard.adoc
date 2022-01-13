@@ -1,6 +1,6 @@
 = Associated standard
 :description: Definition of an associated standard.
-:keywords: definition,classification,associated-standard
+:keywords: definition,classification,associated-standard, READYFORREVIEW
 
 
 include::compendium:partial$_attributes.adoc[]

@@ -1,6 +1,6 @@
 = Antora
 :description: Summary description of what Antora is.
-:keywords: antora
+:keywords: antora, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

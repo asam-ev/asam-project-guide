@@ -1,6 +1,6 @@
 = Compendium
 :description: Landing page for all automatically gathered knowledge pieces and content in this Project Guide.
-:keywords: landing_page,compendium
+:keywords: landing_page,compendium, READYFORREVIEW
 :page-aliases: home.adoc, main.adoc
 :adoc-exclude:
 

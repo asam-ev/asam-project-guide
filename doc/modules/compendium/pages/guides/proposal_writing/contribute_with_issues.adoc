@@ -1,6 +1,6 @@
 = How to contribute to a proposal through GitLab issues
 :description: Describes how one can participate in the creation of a proposal through GitLab issues.
-:keywords: proposal, gitlab, issue
+:keywords: proposal, gitlab, issue, TODO
 
 include::compendium:partial$_attributes.adoc[]
 

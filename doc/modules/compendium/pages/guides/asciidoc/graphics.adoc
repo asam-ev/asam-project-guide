@@ -1,7 +1,7 @@
 [[top-graphics]]
 = How to include graphics in ASAM documents
 :description: How-To for including graphics in ASAM documents (standards).
-:keywords: asciidoc,graphic,figure,how-to
+:keywords: asciidoc,graphic,figure,how-to, READYFORREVIEW
 :reftext: Graphics
 :drawio: xref:tooling:drawio.adoc[]
 

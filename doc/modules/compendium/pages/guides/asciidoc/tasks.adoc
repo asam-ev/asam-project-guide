@@ -1,7 +1,7 @@
 [[top-task-headings]]
 = How to work with task headings in ASAM documents
 :description: How-To for using task headings in ASAM documents (standards).
-:keywords: asciidoc,tasks,how-to
+:keywords: asciidoc,tasks,how-to, READYFORREVIEW
 :reftext: Task headings
 
 If you're explaining how to perform a task, you might include introductory information before you get to the steps.

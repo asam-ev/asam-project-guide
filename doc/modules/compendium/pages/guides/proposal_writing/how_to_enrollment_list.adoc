@@ -1,6 +1,6 @@
 = How-to add and include the enrollment list
 :description: How-to for adding and including the enrollment list in a project proposal.
-:keywords: proposal, enrollment
+:keywords: proposal, enrollment, TODO
 
 include::compendium:partial$_attributes.adoc[]
 
