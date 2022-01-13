@@ -1,0 +1,3 @@
+
+Filestage:: Webhosted tool for reviewing content and leaving comments on screenshots.
+For a guide on using Filestage, see xref:tooling:filestage/filestage_guides.adoc[].

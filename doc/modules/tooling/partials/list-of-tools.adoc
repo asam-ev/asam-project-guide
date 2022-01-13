@@ -38,6 +38,13 @@ It can be accessed directly or through Teams, which is why all files that have b
 |ASAM IT infrastructure
 |xref:tooling:teams-and-sharepoint.adoc[]
 
+|{filestage-icon-norole} +
+{filestage-url}[Filestage^]
+|Webhosted tool for reviewing content and leaving comments on screenshots.
+|ASAM IT infrastructure
+|xref:tooling:filestage.adoc[]
+
+
 |===
 
 // end::mandatory[]
