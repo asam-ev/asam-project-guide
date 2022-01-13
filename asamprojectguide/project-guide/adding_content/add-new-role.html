@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: ASAM Project Guide</title>
-    <link rel="prev" href="add-role-to-page.html">
-    <link rel="next" href="page_redirects.html">
+    <title>How to add a new role :: ASAM Project Guide</title>
+    <link rel="prev" href="abbreviations/use_abbreviations.html">
+    <link rel="next" href="use_roles.html">
+    <meta name="description" content="Describes necessary steps to add a new role and its label.">
+    <meta name="keywords" content="how-to, role, READYFORREVIEW">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -909,11 +911,11 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Working with roles</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="add-role-to-page.html">adding_content/add-role-to-page.adoc</a>
-  </li>
   <li class="nav-item is-current-page" data-depth="4">
-    <a class="nav-link" href="add-new-role.html">adding_content/add-new-role.adoc</a>
+    <a class="nav-link" href="add-new-role.html">How to add a new role</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="use_roles.html">Using roles</a>
   </li>
 </ul>
   </li>
@@ -994,7 +996,7 @@
     <li><a href="../main.html">Working on the Project Guide</a></li>
     <li>Add or change content</li>
     <li>Working with roles</li>
-    <li><a href="add-new-role.html">adding_content/add-new-role.adoc</a></li>
+    <li><a href="add-new-role.html">How to add a new role</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/project-guide/pages/adding_content/add-new-role.adoc">Edit this Page</a></div>
@@ -1004,28 +1006,97 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
+<h1 class="page">How to add a new role</h1>
+<div class="sect1">
+<h2 id="_context"><a class="anchor" href="#_context"></a>Context</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>TODO</p>
+<p>Roles are a way of structuring tasks within ASAM activities.
+Assigning pages or topics to roles makes it easier for people of that role to find the pages most relevant to them and their tasks.
+The use of role labels with automatic linking helps keep the effort of managing relationships between tasks and roles to a minimum.</p>
 </div>
 <div class="paragraph">
-<p>How to add new role in project guide that automatically links to pages.</p>
+<p>If a new role needs to be created, several steps are needed to set it up correctly so that it utilizes this system most efficiently.</p>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If you are looking for how to use an existing role on a page, see <a href="use_roles.html" class="xref page">Using roles</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_result"><a class="anchor" href="#_result"></a>Result</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A new role main page has been defined, an interactive role label created and linked.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>none</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how"><a class="anchor" href="#_how"></a>How</h2>
+<div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Create attribute in site.yml</p>
+<p>Add a new role main page to the module "role-specific" with the role name as filename</p>
 </li>
 <li>
-<p>Add new page in role-specific module</p>
+<p>Add a short role description of the new role to the partial "role_descriptions.adoc" in the "role-specific" module, using the following syntax:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">:&lt;role-name&gt;-description: &lt;description text&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>, where <code>&lt;role-name&gt;</code> is the role name chosen as the filename and <code>&lt;description text&gt;</code> contains the short description of this role</p>
+</div>
 </li>
 <li>
-<p>Add role attribute on all pages where relevant</p>
+<p>Add the new role to the table in the partial "roles.adoc" in the "role-specific" module, using the following syntax:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">| {role-&lt;role-name&gt;}
+| {&lt;role-name&gt;-description}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>, where <code>&lt;role-name&gt;</code> is the role name chosen as the filename</p>
+</div>
+</li>
+<li>
+<p>Add a new role label to the Project Guide&#8217;s "site.yml" under '## Defined role attributes', using the following syntax:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">role-&lt;role-name&gt;: 'xref:role-specific:&lt;role-name&gt;.adoc[&lt;role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:&lt;role-color&gt;;" &gt;&lt;FULL-ROLE-NAME&gt;&lt;/role&gt;]'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>, where <code>&lt;role-name&gt;</code> is the role name chosen as the filename, <code>&lt;role-color&gt;</code> is the hex-code for the intended color of the label and <code>&lt;FULL-ROLE-NAME&gt;</code> is the full name of the role in capital letters.</p>
+</div>
 </li>
 </ol>
 </div>
+</div>
+</div>
 <nav class="pagination">
-  <span class="prev"><a href="add-role-to-page.html">adding_content/add-role-to-page.adoc</a></span>
-  <span class="next"><a href="page_redirects.html">Moving, renaming and deleting a page</a></span>
+  <span class="prev"><a href="abbreviations/use_abbreviations.html">Using abbreviations</a></span>
+  <span class="next"><a href="use_roles.html">Using roles</a></span>
 </nav>
 </article>
   </div>

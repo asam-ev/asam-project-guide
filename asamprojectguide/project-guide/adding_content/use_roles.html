@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: ASAM Project Guide</title>
-    <link rel="prev" href="abbreviations/use_abbreviations.html">
-    <link rel="next" href="add-new-role.html">
+    <title>Using roles :: ASAM Project Guide</title>
+    <link rel="prev" href="add-new-role.html">
+    <link rel="next" href="page_redirects.html">
+    <meta name="description" content="Describes how to link a page to a role.">
+    <meta name="keywords" content="how-to, role, READYFORREVIEW">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -909,11 +911,11 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Working with roles</span>
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="4">
-    <a class="nav-link" href="add-role-to-page.html">adding_content/add-role-to-page.adoc</a>
-  </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="add-new-role.html">adding_content/add-new-role.adoc</a>
+    <a class="nav-link" href="add-new-role.html">How to add a new role</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="use_roles.html">Using roles</a>
   </li>
 </ul>
   </li>
@@ -994,35 +996,80 @@
     <li><a href="../main.html">Working on the Project Guide</a></li>
     <li>Add or change content</li>
     <li>Working with roles</li>
-    <li><a href="add-role-to-page.html">adding_content/add-role-to-page.adoc</a></li>
+    <li><a href="use_roles.html">Using roles</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/project-guide/pages/adding_content/add-role-to-page.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/main/doc/modules/project-guide/pages/adding_content/use_roles.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
+<h1 class="page">Using roles</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
-<p>TODO</p>
-</div>
-<div class="paragraph">
-<p>Describe when and how to use roles in pages</p>
+<p>Most task and instruction pages in this Project Guide are assigned to one or more roles.
+By assigning a role, the page is automatically linked to the corresponding role page(s), making it easier to find them for people of that role.
+The benefit of these role labels is that</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Find the right role</p>
+<p>they link to the role&#8217;s main page (the user can click on the label) and</p>
 </li>
 <li>
-<p>Add it to your page</p>
+<p>they are automatically listed on that role page.</p>
 </li>
 </ol>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+All available roles are defined in the file <code>site.yml</code> at root level of the repository.
+If you need to define a new role first, see <a href="add-new-role.html" class="xref page">How to add a new role</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In order to work with roles, just add the attribute of that role to that page:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add the attribute <code>{role-xyz}</code> to the page&#8217;s body, where <code>xyz</code> is the name of the role (e.g. gtm).</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recommendations"><a class="anchor" href="#_recommendations"></a>Recommendations</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>If the whole page relates to the role or roles, add the label right after the first empty line after the pages top includes, but before the first line of text.</p>
+</li>
+<li>
+<p>If only a section relates to a specific role, add that role after the section heading.</p>
+</li>
+<li>
+<p>If a page is relevant for multiple roles, add them in sequential lines (one role per line).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <nav class="pagination">
-  <span class="prev"><a href="abbreviations/use_abbreviations.html">Using abbreviations</a></span>
-  <span class="next"><a href="add-new-role.html">adding_content/add-new-role.adoc</a></span>
+  <span class="prev"><a href="add-new-role.html">How to add a new role</a></span>
+  <span class="next"><a href="page_redirects.html">Moving, renaming and deleting a page</a></span>
 </nav>
 </article>
   </div>
@@ -1034,7 +1081,7 @@
 <script async src="../../../_/js/vendor/highlight.js"></script>
 <script src="../../../_/js/vendor/lunr.js"></script>
 <script src="../../../_/js/vendor/search.js" id="search-script"
-    data-base-path="../../.." data-page-path="/asamprojectguide/project-guide/adding_content/add-role-to-page.html"></script>
+    data-base-path="../../.." data-page-path="/asamprojectguide/project-guide/adding_content/use_roles.html"></script>
 <script async src="../../../_/../search-index.js"></script>
   </body>
 </html>
