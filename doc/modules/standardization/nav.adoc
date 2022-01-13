@@ -18,4 +18,4 @@
 ** Working Model (workgroups)
 ** Issue-driven Workflow
 ** Reviews and Releases
-** ASAM Deliverables
+** xref:deliverables.adoc[]
