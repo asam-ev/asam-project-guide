@@ -25,7 +25,8 @@ Comprehensive and comprehensible feedback has been submitted to the project grou
 * Reviewer must be an ASAM member
 * Reviewer needs an https://www.asam.net/get-login/[ASAM website account^] +
 +
-NOTE: This is *not* your ASAM GitLab/GitHub account!
+NOTE: This is *not* your GitHub/ASAM GitLab account!
+
 * Documents must be in review
 
 == How
