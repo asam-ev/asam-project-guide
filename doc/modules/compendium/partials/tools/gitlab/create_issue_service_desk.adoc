@@ -11,8 +11,6 @@ If you cannot find it, send a request to mailto:info@asam.net[].
 IMPORTANT: Do not send your feedback directly to info@asam.net.
 Any project feedback sent to this address will be discarded.
 
-Use the xref:compendium:templates/review_feedback_template.adoc[] for your feedback to speed up the process.
-
 If the project uses Antora, the template is available through the Review button on the top of each page.
 
 TIP: Use the review button on the correct page to automatically add the page name and further meta information to your feedback.
