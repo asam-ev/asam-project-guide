@@ -1,0 +1,11 @@
+= Working with issues in a repository
+:description: TODO
+:keywords: TODO
+:page-aliases: guides/working_with_issues.adoc
+
+include::compendium:partial$_attributes.adoc[]
+
+
+include::compendium:partial$tools/gitlab/gitlab_add_comment.adoc[]
+
+include::compendium:partial$tools/gitlab/gitlab_create_issue.adoc[]

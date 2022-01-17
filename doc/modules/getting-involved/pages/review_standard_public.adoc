@@ -1,4 +1,4 @@
-= Review a standard (public)
+= Review a standard (public release candidate)
 :description: Describes how to review a standard.
 :keywords: review, TODO
 
@@ -13,12 +13,12 @@ include::{abb}[]
 
 == Context
 Standards creation requires constant reviewing of its content.
-Some projects receive a public review phase.
-In these, any person can participate without having to be an ASAM member.
+Some projects have a public release candidate.
+These can be reviewed by any person without having to be an ASAM member.
 
-If a document or documents enter the Public Review phase, it is announced through the https://www.asam.net/newsletter/[newsletter^] and the https://www.asam.net/active-projects/public-review/[ASAM website^].
+If a document or documents is released as a public release candidate, it is announced through the https://www.asam.net/newsletter/[newsletter^] and the https://www.asam.net/active-projects/public-review/[ASAM website^].
 
-This review occurs at the end of a standardization project.
+This review occurs at the end of a standardization project and is optional.
 
 This description is intended for all people interested in giving feedback for such a review document, independent of ASAM membership status.
 
@@ -26,16 +26,17 @@ This description is intended for all people interested in giving feedback for su
 Comprehensive and comprehensible feedback has been submitted to the project group on the review document(s).
 
 == Prerequisites
-* Documents must be in public review
+* Documents must be a public release candidate
 
 == How
 . Access the "Public Review" page (through the website or the newsletter)
 . Select the standard you would like to review to be forwarded to its review page
-.. If not logged in, a popup window will appear for you to log into your ASAM account first
 . Read through the document(s) carefully
-. Provide feedback on these through the integrated feedback tools
+. Provide feedback on the relevant page through the integrated feedback button or sending an email to the provided review address using the xref:compendium:templates/review_feedback_template.adoc[]
 
-ASAM uses the following feedback tools:
-include::tooling:partial$review_tools.adoc[]
+You can find more information on using GitLab Service Desk under xref:compendium:tools/gitlab/review_with_service_desk.adoc[].
+
+// ASAM uses the following feedback tools:
+// include::tooling:partial$review_tools.adoc[]
 
 // == Troubleshooting / Known Issues

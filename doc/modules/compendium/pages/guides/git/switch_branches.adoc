@@ -1,6 +1,7 @@
 = How to switch branches
 :description: A how-to for switching branches with git
 :keywords: git,gitlab,branch,vscode, TODO
+:page-aliases: guides/switch_branches.adoc
 
 include::compendium:partial$_attributes.adoc[]
 

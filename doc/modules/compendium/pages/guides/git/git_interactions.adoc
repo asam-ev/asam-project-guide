@@ -1,6 +1,7 @@
 = Git interactions
 :description: Summarizes important git interactions, such as commit, push and pull.
-:keywords: push,pull,commit,git
+:keywords: push,pull,commit,git, TODO
+:page-aliases: guides/git_interactions.adoc
 
 include::compendium:partial$_attributes.adoc[]
 
@@ -40,4 +41,5 @@ Now other project members will be able to review and comment on your changes
 
 Once everyone is happy with the changes, the merge request will be accepted and the changes made will be integrated with the master branch, deleting the originally merged branch and closing the request & associated issues.
 
-Only project members with the role of "maintainer" can accept merge requests onto the master branch - these are decided on in project meetings. Get in touch with an ASAM rep if you want to apply for this role.
+Only project members with the role of "maintainer" can accept merge requests onto the master branch - these are decided on in project meetings.
+Get in touch with an ASAM rep if you want to apply for this role.

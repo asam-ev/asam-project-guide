@@ -1,0 +1,36 @@
+= Standard review template
+:description: Contains the review feedback template used for GitLab and GitHub
+:keywords: review, feedback, TODO
+
+include::compendium:partial$_attributes.adoc[]
+
+== Template for manual use
+[source, md]
+----
+## Subject
+<Add title of topic>
+
+## Section
+<Add section here>
+
+## Description
+<Add feedback here>
+< Recommended: Add a screenshot of the part you want to comment on>
+
+## Suggestion
+< Add a suggestion or things you want to change after this>
+
+<!-- The following content was automatically added. DO NOT CHANGE -->
+| | |
+|---|---|
+| URL |  |
+| Page |  |
+| Module |  |
+
+----
+
+== Template for use in Antora
+[source,html]
+----
+hfref:mailto:<<replace-with-email-for-project>>?subject=Review%20feedback:%20%3Ctopic%20summary%3E&amp;body=%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20{{site.url}}{{page.url}}%20%7C%0D%0A%7C%20Page%20%7C%20{{page.title}}%20%7C%0D%0A%7C%20Module%20%7C%20{{page.module}}%20%7C
+----

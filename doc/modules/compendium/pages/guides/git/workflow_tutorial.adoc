@@ -1,6 +1,7 @@
 = Workflow tutorial for the projects using gitlab
 :description: A guide on the GitLab workflow for projects.
-:keywords: gitlab,workflow,tutorial
+:keywords: gitlab,workflow,tutorial, TODO
+:page-aliases: guides/workflow_tutorial.adoc
 
 include::compendium:partial$_attributes.adoc[]
 

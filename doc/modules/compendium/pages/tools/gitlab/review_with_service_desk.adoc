@@ -1,0 +1,18 @@
+= How to use GitLab service desk for reviews
+:description: TODO
+:keywords: TODO
+
+include::compendium:partial$_attributes.adoc[]
+
+{role-standard-user}
+{role-wg-member}
+
+include::compendium:partial$tools/gitlab/create_issue_service_desk.adoc[]
+
+Please format your feedback using the provided <<Standard review template>>.
+
+TIP: The <<Standard review template>> should be included in the provided review link already.
+If not, you can copy it from below to use it in your feedback email.
+You may replace any comment (`<!-- comment -\->`) in the template as needed.
+
+include::compendium:page$templates/review_feedback_template.adoc[leveloffset=+1]
