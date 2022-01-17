@@ -58,28 +58,28 @@ ASM-56,Figures ,-,-,draft
 ASM-57,Figures file type,-,-,draft
 ASM-58,Figures ,-,-,draft
 ASM-59,Figures ,-,-,draft
-ASM-60,Verbs with a special meaning (shall, should, may, can),<<sec-ASM-60>>,-,draft
-ASM-61,Keep it short,<<sec-ASM-61>>,-,draft
-ASM-62,Use present tense,<<sec-ASM-62>>,-,draft
-ASM-63,Use active voice,<<sec-ASM-63>>,-,draft
+ASM-60,Modal verb shall,<<sec-ASM-60>>,-,draft
+ASM-61,Short sentences,<<sec-ASM-61>>,-,draft
+ASM-62,Present tense,<<sec-ASM-62>>,-,draft
+ASM-63,Active voice,<<sec-ASM-63>>,-,draft
 ASM-64,Use simple constructs,<<sec-ASM-64>>,-,draft
-ASM-65,Do not use abbreviations,<<sec-ASM-65>>,-,draft
+ASM-65,Complete expressions,<<sec-ASM-65>>,-,draft
 ASM-66,Do not use synonyms,<<sec-ASM-66>>,-,draft
 ASM-67,Avoid words that are not precise,<<sec-ASM-67>>,-,draft
 ASM-68,Use 'that' and 'which' correctly,<<sec-ASM-68>>,-,draft
-ASM-69,XIL: Use 'since' and 'because' correctly,<<sec-ASM-69>>,-,draft
-ASM-70,Consistent formatting,<<sec-ASM-70>>,-,draft
-ASM-71,XIL: Typographic conventions for XiL,<<sec-ASM-71>>,-,draft
-ASM-72,Use templates,<<sec-ASM-72>>,-,draft
-ASM-73,One sentence per line,<<sec-ASM-73>>,-,draft
-ASM-74,Use paragraphs,<<sec-ASM-74>>,-,draft
-ASM-75,XIL: Use paragraphs,<<sec-ASM-75>>,-,draft
-ASM-76,Uppercase and lowercase,<<sec-ASM-76>>,-,draft
+ASM-69,Use 'since' for a point in time,<<sec-ASM-69>>,-,draft
+??ASM-70,Consistent formatting,<<sec-ASM-70>>,-,draft
+??ASM-71,XIL: Typographic conventions for XiL,<<sec-ASM-71>>,-,draft
+??ASM-72,Use templates,<<sec-ASM-72>>,-,draft
+--ASM-73,One sentence per line,<<sec-ASM-73>>,-,draft
+ASM-74,Use paragraphs for structure,<<sec-ASM-74>>,-,draft
+ASM-75,Use manual line breaks sparingly,<<sec-ASM-75>>,-,draft
+--ASM-76,Uppercase and lowercase,<<sec-ASM-76>>,-,draft
 ASM-77,XIL: IDs (aka anchors),<<sec-ASM-77>>,-,draft
 ASM-78,IDs,<<sec-ASM-78>>,-,draft
-ASM-79,Indentation,<<sec-ASM-79>>,-,draft
-ASM-80,File names,<<sec-ASM-80>>,-,draft
-ASM-81,XIL: File names for figures,<<sec-ASM-81>>,-,draft
+ASM-79,Indentation with four spaces,<<sec-ASM-79>>,-,draft
+ASM-80,Lowercase for file and folder names,<<sec-ASM-80>>,-,draft
+ASM-81,Caption as file name for figures,<<sec-ASM-81>>,-,draft
 ASM-82,File formats,<<sec-ASM-82>>,-,draft
 ASM-83,Directory structure,<<sec-ASM-83>>,-,draft
 ASM-84,Non-normative sections,<<sec-ASM-84>>,-,draft
@@ -110,3 +110,10 @@ ASM-108,VisualStudioCode with asciidoc extension,<<sec-ASM-108>>,-,draft
 ASM-109,AsciidocFX preview,<<sec-ASM-109>>,-,draft
 ASM-110,Gitlab preview,<<sec-ASM-110>>,-,draft
 ASM-111,Pipeline artifacts as reference,<<sec-ASM-111>>,-,draft
+ASM-112,Modal verb should,<<sec-ASM-112>>,-,draft
+ASM-113,Modal verb may,<<sec-ASM-113>>,-,draft
+ASM-114,Modal verb can,<<sec-ASM-114>>,-,draft
+ASM-115,Use 'which' correctly,<<sec-ASM-115>>,-,draft
+ASM-116,Use 'because' for a reason,<<sec-ASM-116>>,-,draft
+ASM-117,Underscore in file and folder names,<<sec-ASM-117>>,-,draft
+ASM-118,File extension adoc for documents,<<sec-ASM-118>>,-,draft
