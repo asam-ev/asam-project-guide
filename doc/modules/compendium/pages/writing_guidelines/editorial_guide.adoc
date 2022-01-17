@@ -9,7 +9,6 @@ include::compendium:partial$_attributes.adoc[]
 {role-technical-writer}
 {role-wg-member}
 
-
 This section contains the ASAM Editorial Guide for technical writers and workgroup members.
 It contains editorial rules for contributing content to a project in written form.
 
@@ -24,10 +23,10 @@ This section contains a list of the entire editorial rules.
 include::compendium:example$rules.csv[]
 |===
 
-
 == Basics
 
 This section contains editorial rules on content and language.
+
 
 [#sec-ASM-49]
 === Use American English (ASM-49)
@@ -73,9 +72,9 @@ There are no exceptions.
 .Use of a comma as decimal separator
 [%header]
 |===
-|No                         |#Yes#
-|[.line-through]#1,234.56#    |1234,56
-|[.line-through]#1,000#   |1000
+|No                        |#Yes#
+|[.line-through]#1,234.56# |1234,56
+|[.line-through]#1,000#    |1000
 |===
 
 *Source*
@@ -98,8 +97,8 @@ There are no exceptions.
 .Use of a leading zero for values between -1 and 1
 [%header]
 |===
-|No                         |#Yes#
-|[.line-through]#.5# |0,5
+|No                   |#Yes#
+|[.line-through]#.5#  |0,5
 |[.line-through]#-,7# |-0,7
 |===
 
@@ -107,10 +106,10 @@ There are no exceptions.
 
 ISO/IEC Directives, Part 2, Sixth edition, 2011, 6.6.8 Representation of numbers and numerical values
 
-
 == Headings
 
 This section contains editorial rules on how to create headings.
+
 
 [#sec-ASM-2]
 === Start headings with a capital letter (ASM-2)
@@ -141,6 +140,7 @@ ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 These editorial rules apply to lists:
 
+
 [#sec-ASM-8]
 === Use lists with similarly structured items for complex text (ASM-8)
 
@@ -166,6 +166,7 @@ The outline of the road marking is described by the attributes @length and @spac
 * ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 * Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists
 * Google Developer Documentation Style Guide: https://developers.google.com/style/lists
+
 
 [#sec-ASM-48]
 === Use AsciiDoc syntax for lists (ASM-48)
@@ -201,6 +202,7 @@ There are no exceptions.
 
 * https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/
 * https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/
+
 
 [#sec-ASM-10]
 === Choose a suitable type of list (ASM-10)
@@ -245,6 +247,7 @@ To sign on to a database:
 
 Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists
 
+
 [#sec-ASM-5]
 === Start each list item in a list with an uppercase letter (ASM-5)
 
@@ -271,6 +274,7 @@ For example: * http://www.asam.net
 
 ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 
+
 [#sec-ASM-6]
 === Put a full stop at the end of a list item if it is a full sentence (ASM-6)
 
@@ -282,9 +286,11 @@ There are no exceptions.
 
 [#tab-23063c34-07c7-4ecd-a797-ad8d715df052]
 .Use of full stops at the end of a list item
-[%header]
+[%header, col=2*]
 |===
-|No |#Yes#
+|No
+|#Yes#
+
 |[.line-through]#* This is the first sentence# +
 [.line-through]#* This is the second sentence# +
 [.line-through]#* This is the third sentence#
@@ -297,6 +303,7 @@ There are no exceptions.
 
 * ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4
 * Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation
+
 
 [#sec-ASM-9]
 === Just add one sentence per line (ASM-9)
@@ -334,6 +341,7 @@ This is the second sentence of the element.
 
 ASAM Writing Guide: 4.3. One sentence per line
 
+
 [#sec-ASM-11]
 === Do not put punctuation or conjunctions at the end of a list item if it is not a full sentence (ASM-11)
 
@@ -352,9 +360,11 @@ There are no exceptions.
 
 [#tab-a099df34-7296-42e1-bd7f-db180f84fe66]
 .Use of punctuation and conjunctions at the end of an item
-[%header]
+[%header, col=2*]
 |===
-|No |#Yes#
+|No
+|#Yes#
+
 |[.line-through]#* Common junctions,# +
 [.line-through]#* Direct junctions, and# +
 [.line-through]#* Virtual junctions.#
@@ -372,6 +382,7 @@ There are no exceptions.
 == Source code examples
 
 These rules apply to source code examples:
+
 
 [#sec-ASM-43]
 === Use backticks for inline literals (ASM-43)
@@ -392,8 +403,8 @@ There are no exceptions.
 .Use backticks for inline literals
 [%header]
 |===
-|No |#Yes#
-|[.line-through]#The example below shows the structure of an `++``Act``++`.#                             |The example below shows the structure of an `++`Act`++`.
+|No                                                                                                              |#Yes#
+|[.line-through]#The example below shows the structure of an `++``Act``++`.#                                     |The example below shows the structure of an `++`Act`++`.
 |[.line-through]#Movements of vehicles in `++``Act``++` are defined in the `++``ManeuverGroup``++ `` s section.# |Movements of vehicles in `++`Act`++` are defined in the `++`ManeuverGroup`++` section.
 |===
 
@@ -402,6 +413,7 @@ There are no exceptions.
 ASAM Writing Guide: 6.1. Inline literals
 
 == Tables
+
 
 [#sec-ASM-44]
 === Use tables to represent sets of related pieces of information (ASM-44)
@@ -428,6 +440,7 @@ Use tables if you have to present a huge amount of similar data in a very compre
 
 Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-content/tables
 
+
 [#sec-ASM-45]
 === Use AsciiDoc syntax for tables (ASM-45)
 
@@ -453,6 +466,7 @@ ASAM Writing Guide: 5.3. Tables
 
 https://docs.asciidoctor.org/asciidoc/latest/tables/build-a-basic-table/
 
+
 [#sec-ASM-46]
 === Create an ID with a UUID for every table (ASM-46)
 
@@ -475,6 +489,7 @@ There are no exceptions.
 *Source*
 
 ASAM Writing Guide: 5.3. Tables
+
 
 [#sec-ASM-47]
 === Create a caption for every table (ASM-47)
@@ -531,6 +546,7 @@ ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 TODO: Terminology: Images or figures? Image = file? Figure = rendering of AsciiDoc with image and caption?
 
+
 [#sec-ASM-xx]
 === Illustrate complex facts with figures (ASM-xx)
 
@@ -545,6 +561,7 @@ There are no exceptions.
 *Source*
 
 ASAM Writing Guide: 5.2. Figures
+
 
 [#sec-ASM-xx]
 === Use images with the file type SVG (ASM-)
@@ -561,6 +578,7 @@ If you cannot use an image with the file type SVG, use the file type PNG.
 
 ASAM Writing Guide: 5.2. Figures
 
+
 [#sec-ASM-28]
 === Make sure that all images included in the User Guide are shown correctly (ASM-28)
 
@@ -571,6 +589,7 @@ There are no exceptions.
 *Example*
 
 *Source*
+
 
 [#sec-ASM-29]
 === Make sure that there are no unused images in the repository of the standard (ASM-29)
@@ -584,6 +603,7 @@ TODO: (Are there any exceptions where it makes sense to keep unused images? Imag
 *Example*
 
 *Source*
+
 
 [#sec-ASM-xx]
 === Use one folder "images" per chapter (ASM-)
@@ -610,6 +630,7 @@ standard/
 
 *Source*
 
+
 [#sec-ASM-xx]
 === Use AsciiDoc syntax for images (ASM-)
 
@@ -631,6 +652,7 @@ ASAM Writing Guide: 5.2. Figures
 
 https://docs.asciidoctor.org/asciidoc/latest/macros/images/
 
+
 [#sec-ASM-xx]
 === Create an ID with a UUID for every figure (ASM-)
 
@@ -650,6 +672,7 @@ image::scenario.png[an alternative text]
 
 ASAM Writing Guide: 5.2. Figures
 
+
 [#sec-ASM-xx]
 === Create a caption for every figure (ASM-)
 
@@ -668,6 +691,7 @@ image::scenario.png[an alternative text]
 *Source*
 
 ASAM Writing Guide: 5.2. Figures
+
 
 [#sec-ASM-xx]
 === Write an alternative text for every figure (ASM-)
@@ -697,6 +721,7 @@ image::scenario.png[an alternative text]
 *Source*
 
 ASAM Writing Guide: 5.2. Figures
+
 
 [#sec-ASM-xx]
 === Write a description for each image (ASM-)
@@ -751,6 +776,7 @@ There are no exceptions.
 
 *Source*
 
+
 [#sec-ASM-xx]
 === Rule x (ASM-)
 
@@ -763,6 +789,7 @@ There are no exceptions.
 *Source*
 
 == Combined Rules from writing guides /XIL
+
 
 [#sec-ASM-60]
 ===  Use the modal verb _shall (not)_ to express a requirement (ASM-60)
@@ -777,14 +804,15 @@ There are no exceptions.
 .Use of modal verb _shall_
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#"it must have"#|it shall have
-|[.line-through]#"it is not allowed to do"#|it shall not do
+|No                                         |#Yes#
+|[.line-through]#"it must have"#            |it shall have
+|[.line-through]#"it is not allowed to do"# |it shall not do
 |===
 
 *Source*
 
 ASAM Writing Guide: Verbs with a special meaning (shall, should, may, can)
+
 
 [#sec-ASM-112]
 ===  Use the modal verb _should (not)_ to express a recommendation (ASM-112)
@@ -799,13 +827,14 @@ There are no exceptions.
 .Use of modal verb _should_
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#it is good practice to have#|it should have
+|No                                           |#Yes#
+|[.line-through]#it is good practice to have# |it should have
 |===
 
 *Source*
 
 ASAM Writing Guide: Verbs with a special meaning (shall, should, may, can)
+
 
 [#sec-ASM-113]
 ===  Use the modal verb _may (not)_ to express a permission (ASM-113)
@@ -820,13 +849,14 @@ There are no exceptions.
 .Use of modal verb _may_
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#it is not allowed to have#|it may not have
+|No                                         |#Yes#
+|[.line-through]#it is not allowed to have# |it may not have
 |===
 
 *Source*
 
 ASAM Writing Guide: Verbs with a special meaning (shall, should, may, can)
+
 
 [#sec-ASM-114]
 ===   Use the modal verb _can(not)_ to express a possibility (ASM-114)
@@ -841,8 +871,8 @@ There are no exceptions.
 .Use of modal verb _can_
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#it depends on some circumstances#|it can
+|No                                                |#Yes#
+|[.line-through]#it depends on some circumstances# |it can
 |===
 
 *Source*
@@ -853,7 +883,7 @@ ASAM Writing Guide: Verbs with a special meaning (shall, should, may, can)
 [#sec-ASM-61]
 === Write short sentences (ASM-61)
 
-Split long sentences into shorter sentences. 
+Split long sentences into shorter sentences.
 
 *Exceptions*
 
@@ -865,8 +895,8 @@ There are no exceptions.
 .Use of short sentences
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#Due to the fact that they were able to come to an agreement, a name changing of the file took place.#| They agree and rename the file.
+|No                                                                                                                    |#Yes#
+|[.line-through]#Due to the fact that they were able to come to an agreement, a name changing of the file took place.# |They agree and rename the file.
 |===
 
 *Source*
@@ -887,8 +917,8 @@ There are no exceptions.
 .Use of present tense
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#Variable x will contain the value.#|Variable x contains the value.
+|No                                                  |#Yes#
+|[.line-through]#Variable x will contain the value.# |Variable x contains the value.
 |===
 
 *Source*
@@ -911,8 +941,8 @@ There are no exceptions.
 .Use of active voice
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#The variable is set by the user.#|The user sets the variable.
+|No                                                |#Yes#
+|[.line-through]#The variable is set by the user.# |The user sets the variable.
 |===
 
 *Source*
@@ -935,9 +965,9 @@ There are no exceptions.
 .Use of simple phrases
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#in order to#|to
-|[.line-through]#has the possibility to#|can
+|No                                      |#Yes#
+|[.line-through]#in order to#            |to
+|[.line-through]#has the possibility to# |can
 |===
 
 *Source*
@@ -958,9 +988,9 @@ There are no exceptions.
 .Use of complete expressions instead of abbreviations
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#e.g.#|for example
-|[.line-through]#i.e.#|meaning
+|No                    |#Yes#
+|[.line-through]#e.g.# |for example
+|[.line-through]#i.e.# |meaning
 |===
 
 *Source*
@@ -983,8 +1013,8 @@ There are no exceptions.
 .Use of the same word for the same object or concept
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#Press and hold the key. Wait 2 seconds. Release the button. Push the button again.#|Press and hold the key. Wait 2 seconds. Release the key. Press the key again.
+|No                                                                                                  |#Yes#
+|[.line-through]#Press and hold the key. Wait 2 seconds. Release the button. Push the button again.# |Press and hold the key. Wait 2 seconds. Release the key. Press the key again.
 |===
 
 *Source*
@@ -1007,8 +1037,8 @@ There are no exceptions.
 .Use of concise phrases without unnecessary words
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#This is basically a good rule that actually helps very often.#|This is a good rule that helps.
+|No                                                                             |#Yes#
+|[.line-through]#This is basically a good rule that actually helps very often.# |This is a good rule that helps.
 |===
 
 *Source*
@@ -1031,14 +1061,9 @@ There are no exceptions.
 .Use of 'that' for essential information
 [%header, cols=2*a]
 |===
-|No
-|#Yes#
-
-|[.line-through]#The car they own is old.#
-|The car that they own is old.
-
-|[.line-through]#The car which they own is old.#
-|The car that they own is old.
+|No                                              |#Yes#
+|[.line-through]#The car they own is old.#       |The car that they own is old.
+|[.line-through]#The car which they own is old.# |The car that they own is old.
 |===
 
 *Source*
@@ -1061,8 +1086,8 @@ There are no exceptions.
 .Use of 'which' for unessential color information
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#The car that is red drives down the road.#|The car, which is red, drives down the road.
+|No                                                         |#Yes#
+|[.line-through]#The car that is red drives down the road.# |The car, which is red, drives down the road.
 |===
 
 *Source*
@@ -1083,8 +1108,8 @@ There are no exceptions.
 .Use of 'since' to refer to a point in time
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#The system cannot calculate a result because of yesterday's events.#|The system cannot calculate a result since yesterday.
+|No                                                                                   |#Yes#
+|[.line-through]#The system cannot calculate a result because of yesterday's events.# |The system cannot calculate a result since yesterday.
 |===
 
 *Source*
@@ -1105,8 +1130,8 @@ There are no exceptions.
 .Use of 'because' to refer to a reason
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#The system cannot calculate a result since yesterday.#|The system cannot calculate a result because of yesterday's events.
+|No                                                                     |#Yes#
+|[.line-through]#The system cannot calculate a result since yesterday.# |The system cannot calculate a result because of yesterday's events.
 |===
 
 *Source*
@@ -1155,7 +1180,7 @@ There are no exceptions.
 .caption
 [%header]
 |===
-|No|#Yes#
+|No                    |#Yes#
 |[.line-through]#false#|correct
 |[.line-through]#false#|correct
 |[.line-through]#false#|correct
@@ -1181,7 +1206,7 @@ There are no exceptions.
 .caption
 [%header]
 |===
-|No|#Yes#
+|No                    |#Yes#
 |[.line-through]#false#|correct
 |[.line-through]#false#|correct
 |[.line-through]#false#|correct
@@ -1196,6 +1221,7 @@ ASAM Writing Guide: Use templates
 === One sentence per line (ASM-73)
 
 Refer to <<#sec-ASM-9>>
+
 
 [#sec-ASM-74]
 === Use paragraphs to structure the text (ASM-74)
@@ -1213,8 +1239,8 @@ There are no exceptions.
 .Use of paragraphs to form units of meaning
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#This is a first thought. And this deepens the first thought. This is a second thought.#|This is a first thought. And this deepens the first thought.
+|No                                                                                                      |#Yes#
+|[.line-through]#This is a first thought. And this deepens the first thought. This is a second thought.# |This is a first thought. And this deepens the first thought.
 
  This is a second thought.
 |===
@@ -1235,11 +1261,14 @@ There are no exceptions.
 
 [#tab-9548c87d-2455-4867-ace6-8b45346de95e]
 .Use of manual line breaks
-[%header]
+[%header, col=2*]
 |===
-|No|#Yes#
+|No
+|#Yes#
+
 |[.line-through]#After this sentence a line break is needed.
-This sentence appears on a new line.#|After this sentence a line break is needed. + 
+This sentence appears on a new line.#
+|After this sentence a line break is needed. +
 This sentence appears on a new line.
 |===
 
@@ -1289,7 +1318,7 @@ There are no exceptions.
 .Use of a semantic ID for a section
 [%header]
 |===
-|No|#Yes#
+|No                                                            |#Yes#
 |[.line-through]#`[#sec-682fa239-bf8f-4531-a825-e9486372479b]`#|`[#sec-ASM-78]`
 |===
 
@@ -1313,9 +1342,11 @@ There are no exceptions.
 
 [#tab-17223b72-a10c-4053-be85-e1fd3340533b]
 .Use of four space characters per indention level (space characters marked as '.')
-[%header]
+[%header, col=2*]
 |===
-^|No ^|#Yes#
+|No
+|#Yes#
+
 |Normal text +
 [.line-through]#->Level 1 indented text +
 ->->Level 2 indented text#
@@ -1342,13 +1373,14 @@ There are no exceptions.
 .Use of lowercase in file names
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#ExampleFileName.ado#|example\\_file\\_name.adoc
+|No                                   |#Yes#
+|[.line-through]#ExampleFileName.ado# |example\\_file\\_name.adoc
 |===
 
 *Source*
 
 ASAM Writing Guide: File names
+
 
 [#sec-ASM-117]
 === Use underscore '__' instead of space '  ' in file and folder names (ASM-117)
@@ -1363,13 +1395,14 @@ There are no exceptions.
 .Use of underscore in file names
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#ExampleFileName.ado#|example_file_name.adoc
+|No                                   |#Yes#
+|[.line-through]#ExampleFileName.ado# |example_file_name.adoc
 |===
 
 *Source*
 
 ASAM Writing Guide: File names
+
 
 [#sec-ASM-118]
 === Use '.adoc' as file extension for documents (ASM-118)
@@ -1384,8 +1417,8 @@ There are no exceptions.
 .Use of .adoc as file extension
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#ExampleFileName.ado#|example\\_file\\_name.adoc
+|No                                   |#Yes#
+|[.line-through]#ExampleFileName.ado# |example\\_file\\_name.adoc
 |===
 
 *Source*
@@ -1408,8 +1441,8 @@ There are no exceptions.
 .Use of a caption as file name
 [%header]
 |===
-|No|#Yes#
-|[.line-through]#Use of caption as file name.svg#|use_of_a_caption_as_file_name.svg
+|No                                               |#Yes#
+|[.line-through]#Use of caption as file name.svg# |use_of_a_caption_as_file_name.svg
 |===
 
 *Source*
@@ -1498,8 +1531,8 @@ ASAM Writing Guide: Non-normative sections
 
 Refer to:
 
-* <<#sec-ASM-8>>, 
-* <<#sec-ASM-48>>, 
+* <<#sec-ASM-8>>,
+* <<#sec-ASM-48>>,
 * <<#sec-ASM-10>>
 
 *Source*
@@ -1830,6 +1863,7 @@ There are no exceptions.
 
 ASAM Writing Guide: Result
 
+
 [#sec-ASM-100]
 === Source code snippets (ASM-100)
 ==== Changes in the adoc file
@@ -1855,6 +1889,7 @@ There are no exceptions.
 *Source*
 
 ASAM Writing Guide: Result
+
 
 [#sec-ASM-101]
 === Source code type 'osc2' (ASM-101)
@@ -1911,7 +1946,6 @@ ASAM Writing Guide: XIL: Line numbers and references
 [#sec-ASM-103]
 === XIL: References to single lines (ASM-103)
 
-
 * _description_
 
 *Exceptions*
@@ -1937,7 +1971,6 @@ ASAM Writing Guide: XIL: References to single lines
 
 [#sec-ASM-104]
 === XIL: Automatic line numbering (ASM-104)
-
 
 * _description_
 
@@ -1965,7 +1998,6 @@ ASAM Writing Guide: XIL: Automatic line numbering
 [#sec-ASM-105]
 === Review process and draft-attribute (ASM-105)
 
-
 * _description_
 
 *Exceptions*
@@ -1991,7 +2023,6 @@ ASAM Writing Guide: Review process and draft-attribute
 
 [#sec-ASM-106]
 === Purpose of the draft-attribute (ASM-106)
-
 
 * _description_
 
@@ -2019,7 +2050,6 @@ ASAM Writing Guide: Purpose of the draft-attribute
 [#sec-ASM-107]
 === Preview configuration (ASM-107)
 
-
 * _description_
 
 *Exceptions*
@@ -2045,7 +2075,6 @@ ASAM Writing Guide: Preview configuration
 
 [#sec-ASM-108]
 === VisualStudioCode with asciidoc extension (ASM-108)
-
 
 * _description_
 
@@ -2073,7 +2102,6 @@ ASAM Writing Guide: VisualStudioCode with asciidoc extension
 [#sec-ASM-109]
 === AsciidocFX preview (ASM-109)
 
-
 * _description_
 
 *Exceptions*
@@ -2100,7 +2128,6 @@ ASAM Writing Guide: AsciidocFX preview
 [#sec-ASM-110]
 === Gitlab preview (ASM-110)
 
-
 * _description_
 
 *Exceptions*
@@ -2126,7 +2153,6 @@ ASAM Writing Guide: Gitlab preview
 
 [#sec-ASM-111]
 === Pipeline artifacts as reference !!! XIL: pdf-artifacts vs. html-artifacts (ASM-111)
-
 
 * _description_
 
