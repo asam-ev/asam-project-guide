@@ -16,4 +16,18 @@ An issue with the described problem and suggested solution is created.
 None
 
 == How
-include::compendium:partial$tools/gitlab/create_issue_service_desk.adoc[tag=steps]
+// include::compendium:partial$tools/gitlab/create_issue_service_desk.adoc[tag=steps]
+
+. Click the button "Submit feedback"
++
+image::compendium:submit_feedback_button.png[title='"Submit feedback" button in Antora project', role="thumb"]
+. Edit the title of the form
+. Select the relevant topics by replacing any `- [ ]` with `- [x]` in the "Prerequisits" section
+. Add a title of the topic to the secion "Summary"
+. If relevant, add the section name on that page to the section "Section"
+. Add a comprehensive and comprehensible description to the section "Description".
+Ideally, use screenshots to show what you mean more clearly
+. Add a suggested solution to the section "Suggestion"
++
+image::compendium:submit_form_github.png[title="The issue form for submitting feedback in GitHub"]
+. Click "Submit new issue"

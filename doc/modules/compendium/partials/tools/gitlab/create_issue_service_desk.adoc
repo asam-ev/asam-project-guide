@@ -18,6 +18,7 @@ TIP: Use the button on the correct page to automatically add the page name and f
 === How
 //tag::steps[]
 
+. If using Antora: Click the button "Submit feedback"
 . Add a title in the email.
 This will be the name of the issue you create.
 . Replace all `<text>` placeholders
