@@ -1,6 +1,6 @@
 = Write A Feature
 :description: Describes how to write a feature for a project with git.
-:keywords: git,gitlab,feature
+:keywords: git,gitlab,feature,TODO
 
 include::compendium:partial$_attributes.adoc[]
 

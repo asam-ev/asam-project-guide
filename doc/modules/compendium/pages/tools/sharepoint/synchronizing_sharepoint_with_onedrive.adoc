@@ -1,6 +1,6 @@
 = Synchronizing sharepoint with oneDrive
 :description:
-:keywords: sharepoint,synchronization,synch,onedrive
+:keywords: sharepoint,synchronization,synch,onedrive, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

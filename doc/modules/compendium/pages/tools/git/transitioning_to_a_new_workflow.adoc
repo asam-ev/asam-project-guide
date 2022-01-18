@@ -1,6 +1,6 @@
 = Transitioning to the new workflow
 :description: Describes how to transition to the new workflow (osc2 only!).
-:keywords: osc2-only
+:keywords: osc2-only,TODO
 
 include::compendium:partial$_attributes.adoc[]
 

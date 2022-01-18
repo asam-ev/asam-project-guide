@@ -1,6 +1,6 @@
 = Visual Studio Code interface
 :description: Describes the VSCode interface
-:keywords: ui,interface,vscode
+:keywords: ui,interface,vscode,TODO
 
 include::compendium:partial$_attributes.adoc[]
 

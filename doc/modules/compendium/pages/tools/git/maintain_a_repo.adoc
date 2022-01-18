@@ -1,6 +1,6 @@
 = Maintain A Repository
 :description: Describes best practices for how to maintain a repo with git/gitlab
-:keywords: git,gitlab,repo,repository
+:keywords: git,gitlab,repo,repository, TODO
 
 include::compendium:partial$_attributes.adoc[]
 

@@ -1,6 +1,6 @@
 = Starting a container from docker desktop
 :description: Run docker-compose from Desktop
-:keywords: docker,desktop
+:keywords: docker,desktop, READYFORREVIEW
 
 
 include::compendium:partial$_attributes.adoc[]

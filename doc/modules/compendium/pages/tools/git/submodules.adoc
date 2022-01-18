@@ -1,6 +1,6 @@
 = Submodules in git
 :description: Describes submodules and their usage in Git.
-:keywords: git,gitlab,submodule
+:keywords: git,gitlab,submodule, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

@@ -1,6 +1,6 @@
 = Running docker-Compose From Powershell
 :description: Run docker-compose from Powershell
-:keywords: docker,powershell
+:keywords: docker,powershell, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

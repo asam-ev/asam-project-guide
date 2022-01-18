@@ -1,6 +1,6 @@
 = Pulling A Submodule
 :description: Describes how a submodule can be pulled.
-:keywords: git,gitlab,submodule,pull
+:keywords: git,gitlab,submodule,pull, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

@@ -1,6 +1,6 @@
 = GitLab Terminology
 :description: Contains terminology on GitLab at ASAM.
-:keywords: terminology, gitlab
+:keywords: terminology, gitlab, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

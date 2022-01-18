@@ -1,6 +1,6 @@
 = Visual Studio Code command palette
 :description: A short introduction to the VSCode command palette.
-:keywords: vscode,command
+:keywords: vscode,command, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 
