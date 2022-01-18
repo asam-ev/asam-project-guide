@@ -1,19 +1,12 @@
 = Standard review template
 :description: Contains the review feedback template used for GitLab and GitHub
-:keywords: review, feedback, TODO
+:keywords: review, feedback, service-desk, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 
 == Template for manual use
-[source, md]
-----
+TIP: Use this if you want to add manually add a template to an email.
 
-include::compendium:attachment$review_form_template.md[]
+include::compendium:partial$templates/review_form_template.adoc[]
 
-----
-
-== Template for use in Antora
-[source,html]
-----
-hfref:mailto:<<replace-with-email-for-project>>?subject=Review%20feedback:%20%3Ctopic%20summary%3E&amp;body=%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20{{site.url}}{{page.url}}%20%7C%0D%0A%7C%20Page%20%7C%20{{page.title}}%20%7C%0D%0A%7C%20Module%20%7C%20{{page.module}}%20%7C%0D%20--%20
-----
+related::service-desk[]

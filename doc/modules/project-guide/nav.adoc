@@ -3,6 +3,7 @@
 *** xref:structure/content_structure.adoc[]
 *** xref:structure/link-concept.adoc[]
 *** xref:structure/used-keywords.adoc[]
+** xref:reviewing/create_issue_on_page.adoc[]
 ** Adding files
 *** xref:adding_content/add-new-module.adoc[]
 *** xref:adding_content/pages-vs-partials.adoc[]
@@ -11,6 +12,7 @@
 **** xref:adding_content/pages/add-tool-page.adoc[]
 *** xref:adding_content/add-a-partial.adoc[]
 ** Add or change content
+*** xref:reviewing/editing_pages.adoc[]
 *** Abbreviations
 **** xref:adding_content/abbreviations/add-an-abbreviation.adoc[]
 **** xref:adding_content/abbreviations/use_abbreviations.adoc[]

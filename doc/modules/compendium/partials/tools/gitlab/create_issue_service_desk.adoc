@@ -15,4 +15,17 @@ If the project uses Antora, the template is available through the "Submit feedba
 
 TIP: Use the button on the correct page to automatically add the page name and further meta information to your feedback.
 
+=== How
+//tag::steps[]
+
+. Add a title in the email.
+This will be the name of the issue you create.
+. Replace all `<text>` placeholders
++
+include::compendium:partial$templates/review_form_template.adoc[]
++
+. Send the email
+
+//end::steps[]
+
 //end::body[]

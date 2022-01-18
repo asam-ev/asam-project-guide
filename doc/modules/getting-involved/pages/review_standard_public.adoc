@@ -1,6 +1,6 @@
 = Review a standard (public release candidate)
 :description: Describes how to review a standard.
-:keywords: review, TODO
+:keywords: review, service-desk, READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

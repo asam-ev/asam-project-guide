@@ -1,0 +1,19 @@
+= Create an issue for a page
+:description: Describes how to directly create an issue from the respective Project Guide page.
+:keywords: gitlab, review, project-guide, service-desk, READYFORREVIEW
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+== Context
+If a page is not correct, the easiest way is to directly write the feedback from the page itself.
+To do so, you can use the provided "Submit feedback" button.
+
+== Result
+An issue with the described problem and suggested solution is created.
+
+== Prerequisites
+None
+
+== How
+include::compendium:partial$tools/gitlab/create_issue_service_desk.adoc[tag=steps]

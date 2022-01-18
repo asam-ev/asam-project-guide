@@ -1,6 +1,6 @@
 = How to use GitLab service desk for reviews
-:description: TODO
-:keywords: TODO
+:description: Describes how to use the service desk in GitLab for reviews.
+:keywords: gitlab, service-desk, review, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 
@@ -9,6 +9,6 @@ include::compendium:partial$_attributes.adoc[]
 
 include::compendium:partial$tools/gitlab/create_issue_service_desk.adoc[]
 
-If you want to send an email manually (i.e. not through the "Submit feedback" button), please format your feedback using the provided <<Standard review template>>.
+If you want to send an email manually (i.e. not through the "Submit feedback" button), please format your feedback using the provided <<standard-review-template>> (see example above).
 
-include::compendium:page$templates/review_feedback_template.adoc[leveloffset=+1]
+related::service-desk[]
