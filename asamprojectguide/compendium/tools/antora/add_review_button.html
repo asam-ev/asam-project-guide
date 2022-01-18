@@ -7,7 +7,7 @@
     <link rel="prev" href="../antora.html">
     <link rel="next" href="build_antora_locally.html">
     <meta name="description" content="Describes how to add a review button to an Antora project that creates an email with body for GitLab service desk.">
-    <meta name="keywords" content="antora,gitlab,service-desk, READYFORREVIEW">
+    <meta name="keywords" content="antora,gitlab,github,service-desk, READYFORREVIEW">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../_'</script>
@@ -38,7 +38,7 @@
         </div>
       </div>
         <div class="navbar-item is-hoverable">
-          <a class="navbar-item" href="mailto:code+common-asam-project-guide-63-issue-@asam.net?subject=Review%20feedback:%20%3Ctopic%20summary%3E&amp;body=%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20https://asam-ev.github.io/asam-project-guide/asamprojectguide/compendium/tools/antora/add_review_button.html%20%7C%0D%0A%7C%20Page%20%7C%20Add a review button to an Antora project%20%7C%0D%0A%7C%20Module%20%7C%20compendium%20%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+          <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/compendium/tools/antora/add_review_button.html+%7C%0D%0A%7C+Page+%7C+Add a review button to an Antora project+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
       </div>
     </div>
@@ -1014,24 +1014,74 @@
 <p>If a review is carried out on an Antora-based project, a button for submitting feedback needs to be integrated in the Antora UI.
 To do so, add the following content to the file "supplemental_ui/partials/header-content.hbs":</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="navbar-item is-hoverable"&gt;
-    &lt;a class="navbar-item" hfref="mailto:&lt;&lt;replace-with-email-for-project&gt;&gt;?subject=Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body=%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20{{site.url}}{{page.url}}%20%7C%0D%0A%7C%20Page%20%7C%20{{page.title}}%20%7C%0D%0A%7C%20Module%20%7C%20{{page.module}}%20%7C%0D%20--%20" title="Click here to submit feedback on this page"&gt;Submit feedback&lt;/a&gt; <i class="conum" data-value="1"></i><b>(1)</b>
-&lt;/div&gt;</code></pre>
-</div>
-</div>
 <div class="imageblock thumb">
 <div class="content">
 <img src="../../_images/submit_feedback_button.png" alt="submit feedback button">
 </div>
 <div class="title">Figure 1. "Submit feedback" button in Antora project</div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gitlab"><a class="anchor" href="#_gitlab"></a>GitLab</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Use this if your project issues are located in GitLab.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="navbar-item is-hoverable"&gt;
+    &lt;a class="navbar-item" href="mailto:&lt;&lt;replace-with-email-for-project&gt;&gt;?subject=Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body=%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20{{site.url}}{{page.url}}%20%7C%0D%0A%7C%20Page%20%7C%20{{page.title}}%20%7C%0D%0A%7C%20Module%20%7C%20{{page.module}}%20%7C%0D%20--%20" title="Click here to submit feedback on this page"&gt;Submit feedback&lt;/a&gt; <i class="conum" data-value="1"></i><b>(1)</b>
+&lt;/div&gt;</code></pre>
+</div>
+</div>
 <div class="colist arabic">
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
 <td>Replace <code>&lt;&lt;replace-with-email-for-project&gt;&gt;</code> with the service desk email address for this project.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_github"><a class="anchor" href="#_github"></a>GitHub</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Use this if your project issues are located in GitHub.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="navbar-item is-hoverable"&gt;
+    &lt;a class="navbar-item" href="&lt;&lt;project-url&gt;&gt;/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+{{site.url}}{{page.url}}+%7C%0D%0A%7C+Page+%7C+{{page.title}}+%7C%0D%0A%7C+Module+%7C+{{page.module}}+%7C" title="Click here to submit feedback on this page"&gt;Submit feedback&lt;/a&gt; <i class="conum" data-value="1"></i><b>(1)</b>
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Replace <code>&lt;&lt;project-url&gt;&gt;</code> with the url of the project repository on GitLab.
+NOTE: This is the url of the sources, <strong>not</strong> the url of the hosted pages!</td>
 </tr>
 </table>
 </div>
