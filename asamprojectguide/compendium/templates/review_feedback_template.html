@@ -7,7 +7,7 @@
     <link rel="prev" href="project_proposal.html">
     <link rel="next" href="../tools.html">
     <meta name="description" content="Contains the review feedback template used for GitLab and GitHub">
-    <meta name="keywords" content="review, feedback, TODO">
+    <meta name="keywords" content="review, feedback, service-desk, READYFORREVIEW">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -38,7 +38,7 @@
         </div>
       </div>
         <div class="navbar-item is-hoverable">
-          <a class="navbar-item" href="mailto:code+common-asam-project-guide-63-issue-@asam.net?subject=Review%20feedback:%20%3Ctopic%20summary%3E&amp;body=%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20https://asam-ev.github.io/asam-project-guide/asamprojectguide/compendium/templates/review_feedback_template.html%20%7C%0D%0A%7C%20Page%20%7C%20Standard review template%20%7C%0D%0A%7C%20Module%20%7C%20compendium%20%7C">Feedback form</a>
+          <a class="navbar-item" href="mailto:code+common-asam-project-guide-63-issue-@asam.net?subject=Review%20feedback:%20%3Ctopic%20summary%3E&amp;body=%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20https://asam-ev.github.io/asam-project-guide/asamprojectguide/compendium/templates/review_feedback_template.html%20%7C%0D%0A%7C%20Page%20%7C%20Standard review template%20%7C%0D%0A%7C%20Module%20%7C%20compendium%20%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
       </div>
     </div>
@@ -579,6 +579,9 @@
     <a class="nav-link" href="../tools/antora.html">Antora</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/antora/add_review_button.html">Add a review button to an Antora project</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../tools/antora/build_antora_locally.html">Build Antora on your local PC</a>
   </li>
 </ul>
@@ -854,6 +857,9 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../project-guide/reviewing/create_issue_on_page.html">Create an issue for a page</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Adding files</span>
 <ul class="nav-list">
@@ -884,6 +890,9 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Add or change content</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/reviewing/editing_pages.html">Artifact page name</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Abbreviations</span>
@@ -998,38 +1007,97 @@
 <div class="sect1">
 <h2 id="_template_for_manual_use"><a class="anchor" href="#_template_for_manual_use"></a>Template for manual use</h2>
 <div class="sectionbody">
-<div class="listingblock">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Use this if you want to add manually add a template to an email.
+</td>
+</tr>
+</table>
+</div>
+<div id="standard-review-template" class="listingblock">
+<div class="title">Standard review template</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-md hljs" data-lang="md">## Subject
-&lt;Add title of topic&gt;
+&lt;Add title of topic&gt; <i class="conum" data-value="1"></i><b>(1)</b>
 
 ## Section
-&lt;Add section here&gt;
+&lt;Add section here&gt;  <i class="conum" data-value="2"></i><b>(2)</b>
 
 ## Description
-&lt;Add feedback here&gt;
+&lt;Add feedback here&gt;  <i class="conum" data-value="3"></i><b>(3)</b>
 &lt; Recommended: Add a screenshot of the part you want to comment on&gt;
 
 ## Suggestion
-&lt; Add a suggestion or things you want to change after this&gt;
+&lt; Add a suggestion or things you want to change after this&gt; <i class="conum" data-value="4"></i><b>(4)</b>
 
-&lt;!-- The following content was automatically added. DO NOT CHANGE --&gt;
+&lt;!-- If added manually, please fill in the following table with URL = page url, Page = the name of the page. You can levae Module open --&gt;
 | | |
 |---|---|
-| URL |  |
-| Page |  |
-| Module |  |</code></pre>
+| URL |  | <i class="conum" data-value="5"></i><b>(5)</b>
+| Page |  | <i class="conum" data-value="6"></i><b>(6)</b>
+| Module |  | <i class="conum" data-value="7"></i><b>(7)</b></code></pre>
 </div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Name the topic the issue is referring to</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Add the section heading, if applicable</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Add a description for the issue.
+Describe it as detailed and precise as possible.
+Use images to support your issue and speed up the review process.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Add a suggested solution for your topic.
+Issues without a suggested solution will take longer or be ignored all together.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>If used manually, add the url of the page here</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>If used manually, add the name of the page here</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Optional: If used manually, add the module of the page here</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_template_for_use_in_antora"><a class="anchor" href="#_template_for_use_in_antora"></a>Template for use in Antora</h2>
+<h2 id="_related_topics"><a class="anchor" href="#_related_topics"></a>Related topics</h2>
 <div class="sectionbody">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">hfref:mailto:&lt;&lt;replace-with-email-for-project&gt;&gt;?subject=Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body=%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20{{site.url}}{{page.url}}%20%7C%0D%0A%7C%20Page%20%7C%20{{page.title}}%20%7C%0D%0A%7C%20Module%20%7C%20{{page.module}}%20%7C</code></pre>
-</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../tools/antora/add_review_button.html" class="xref page">Add a review button to an Antora project</a></p>
+</li>
+<li>
+<p><a href="../tools/gitlab/review_with_service_desk.html" class="xref page">How to use GitLab service desk for reviews</a></p>
+</li>
+<li>
+<p><a href="../../getting-involved/review_standard_public.html" class="xref page">Review a standard (public release candidate)</a></p>
+</li>
+<li>
+<p><a href="../../project-guide/reviewing/create_issue_on_page.html" class="xref page">Create an issue for a page</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
