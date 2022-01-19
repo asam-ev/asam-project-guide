@@ -2,7 +2,7 @@
 ** Structure
 *** xref:structure/content_structure.adoc[]
 *** xref:structure/link-concept.adoc[]
-*** xref:structure/used-keywords.adoc[]
+*** xref:structure/keywords-list.adoc[]
 ** xref:reviewing/create_issue_on_page.adoc[]
 ** Adding files
 *** xref:adding_content/add-new-module.adoc[]

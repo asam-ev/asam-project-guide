@@ -38,7 +38,7 @@ TYPE_PAGE = "is_page"
 TYPE_UNKNOWN = "unknown"
 
 # Filenames And Paths
-USED_KEYWORDS_FILENAME = "used-keywords"
-USED_KEYWORDS_PATH = "../doc/modules/project-guide/pages/structure/"
+USED_KEYWORDS_FILENAME = "0_used-keywords"
+USED_KEYWORDS_PATH = "../doc/modules/compendium/pages/"
 LINK_CONCEPT_FILENAME = "link-concept"
 LINK_CONCEPT_PATH = "../doc/modules/project-guide/examples/"
