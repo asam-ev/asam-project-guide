@@ -1,5 +1,5 @@
-= Add a review button to an Antora project
-:description: Describes how to add a review button to an Antora project that creates an email with body for GitLab Service Desk or GitHub issue url.
+= Add a feedback button to an Antora project
+:description: Describes how to add a feedback button to an Antora project that creates an email with body for GitLab Service Desk or GitHub issue url.
 :keywords: antora,gitlab,github,service-desk, review-button, READYFORREVIEW
 :any-button:
 

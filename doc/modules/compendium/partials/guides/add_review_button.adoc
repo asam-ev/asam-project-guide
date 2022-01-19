@@ -15,17 +15,17 @@
 If a review is carried out in an Antora-based project, a button for submitting feedback needs to be integrated in the Antora UI.
 
 ifdef::any-button[]
-This guide describes how to add the standard review button for both <<GitLab>> and <<GitHub>>.
+This guide describes how to add the standard feedback button for both <<GitLab>> and <<GitHub>>.
 endif::[]
 ifdef::gitlab-button[]
-This guide only describes how to add the standard review button for GitLab Service Desk.
+This guide only describes how to add the standard feedback button for GitLab Service Desk.
 endif::[]
 ifdef::github-button[]
-This guide only describes how to add the standard review button for GitHub.
+This guide only describes how to add the standard feedback button for GitHub.
 endif::[]
 
 == Result
-A review button that is accessible on every page is added to the Antora topbar and linked to the respective repository.
+A feedback button that is accessible on every page is added to the Antora topbar and linked to the respective repository.
 
 == Prerequisites
 ifdef::any-button[]

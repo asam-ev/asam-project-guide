@@ -1,5 +1,5 @@
-= Add a custom review button to an Antora project
-:description: Describes how to add a custom review button to an Antora project.
+= Add a custom feedback button to an Antora project
+:description: Describes how to add a custom feedback button to an Antora project.
 :keywords: antora,gitlab,github,service-desk, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
