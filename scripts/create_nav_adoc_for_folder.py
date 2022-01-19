@@ -62,6 +62,8 @@ def main(argv):
         for f in filenames:
             for type in filetypes:
                 if f.endswith(type) and not f[0]=="_" and not f in [x+".adoc" for x in dirnames] and not (dirpath.split("/")[-2] == "pages" and dirpath.split("/")[-3]+".adoc" == f):
+                    if f.find("button") >-1:
+                        print(f, f.find("button"))
                     list_entries.append(f)
                     break
 
@@ -84,11 +86,12 @@ def main(argv):
         # If in any subfolder
         else:
 
+
             content = F.add_subdirectories_to_main_file(created_files,parent_path+path_components[-2]+".adoc",list_entries,current_relative_path)
             for line in content:
                 temp_nav_content += "*"*current_level + line
 
-            index = nav_content.find(path_components[-2]+".adoc[]\n") + len(path_components[-2]+".adoc[]\n")
+            index = nav_content.find("/".join(path_components[:-1])+".adoc[]\n") + len("/".join(path_components[:-1])+".adoc[]\n")
             nav_content = nav_content[:index] + temp_nav_content + nav_content[index:]
 
     F.update_nav_adoc_file(path,nav_content)
