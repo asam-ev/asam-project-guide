@@ -1,3 +1,12 @@
+---
+name: Content feedback
+about: Template for leaving feedback on content
+title: 'Content feedback'
+labels: new
+assignees: ''
+
+---
+
 # Prerequisites
 
 This is in regards to:
