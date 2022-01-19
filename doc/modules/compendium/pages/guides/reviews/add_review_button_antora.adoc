@@ -1,0 +1,12 @@
+= Add review button to an Antora project
+:description: Describes how to add a review button to an Antora project for GitLab Service Desk.
+:keywords: antora,gitlab,service-desk, review-button, READYFORREVIEW
+:gitlab-button:
+
+include::compendium:partial$_attributes.adoc[]
+
+{role-gtm}
+
+include::compendium:partial$guides/add_review_button.adoc[tag=short]
+
+related::service-desk,!antora[]

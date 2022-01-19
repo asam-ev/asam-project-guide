@@ -1,16 +1,13 @@
 = Add a review button to an Antora project
-:description: Describes how to add a review button to an Antora project that creates an email with body for GitLab service desk.
-:keywords: antora,gitlab,github,service-desk, READYFORREVIEW
+:description: Describes how to add a review button to an Antora project that creates an email with body for GitLab Service Desk or GitHub issue url.
+:keywords: antora,gitlab,github,service-desk, review-button, READYFORREVIEW
+:any-button:
 
 include::compendium:partial$_attributes.adoc[]
 
 {role-gtm}
 
-
-If a review is carried out on an Antora-based project, a button for submitting feedback needs to be integrated in the Antora UI.
-To do so, add the following content to the file "supplemental_ui/partials/header-content.hbs":
-
-include::compendium:partial$review_template_button.adoc[tag=button]
+include::compendium:partial$guides/add_review_button.adoc[tag=short]
 
 
-related::service-desk[]
+related::service-desk,!antora[]
