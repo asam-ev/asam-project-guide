@@ -1,0 +1,100 @@
+# Prerequisites
+
+This is in regards to:
+
+- [ ] Title
+- [ ] Content: Text
+- [ ] Content: Image(s)
+- [ ] Formatting
+- [ ] Location in Project Guide
+- [ ] Obsolete
+
+# Subject
+<!-- <Add title of topic> -->
+
+# Section
+<!-- <Add section here>  -->
+
+# Description
+<!-- <Add feedback here> -->
+<!-- < Recommended: Add a screenshot of the part you want to comment on> -->
+
+# Suggestion
+<!-- < Add a suggestion or things you want to change after this> <4> -->
+
+<!-- If added manually, please fill in the following table with URL = page url, Page = the name of the page. You can levae Module open -->
+| | |
+|---|---|
+| URL |  |
+| Page |  |
+| Module |  |
+
+
+name: Content feedback
+description: A form for feedback on content in Project Guide
+title: "[Feedback]: "
+labels: ["new"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Prerequisites
+  - type: dropdown
+    id: topic
+    attributes:
+      label: This is in regards to
+      multiple: true
+      options:
+        - Title
+        - Content:: Text
+        - Content:: Image(s)
+        - Formatting
+        - Location in Project Guide
+        - Obsolete
+      validations:
+        required: true
+  - type: textarea
+    id: subject
+    attributes:
+      label: Subject
+      description: Add a title for your topic.
+      placeholder: Topic title
+      value: "Topic title"
+    validations:
+      required: true
+  - type: textarea
+    id: section
+    attributes:
+      label: Section
+      description: Add relevant section or sections here
+      render: shell
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Add a description and optional screenshots here
+      render: shell
+      validations:
+        required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestions
+      description: Add a suggested solution here
+      render: shell
+      validations:
+        required: true
+  - type: textarea
+    id: url
+    attributes:
+      label: URL
+      description: Add the page URL
+      render: shell
+      validations:
+        required: true
+  - type: textarea
+    id: page
+    attributes:
+      label: Page name
+      description: Add the name of the page
+      render: shell
