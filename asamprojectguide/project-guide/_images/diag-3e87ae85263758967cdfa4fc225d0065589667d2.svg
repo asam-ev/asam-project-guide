@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1183px" preserveAspectRatio="none" style="width:6166px;height:1183px;background:#FFFFFF;" version="1.1" viewBox="0 0 6166 1183" width="6166px" zoomAndPan="magnify"><defs><filter height="300%" id="f1f02hjvn5drkg" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[cd0ec11d3f1ae8c7bb9489a34c8aa92a]
+cluster standardization--><polygon fill="#50FF50" filter="url(#f1f02hjvn5drkg)" points="549,6,662,6,669,28.7999,1415,28.7999,1415,191,549,191,549,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="549" x2="669" y1="28.7999" y2="28.7999"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="107" x="553" y="21.9999">standardization</text><!--MD5=[6ae1dc9d91844fc0a0eeb05971ab330f]
+cluster ROOT--><polygon fill="#FFFF50" filter="url(#f1f02hjvn5drkg)" points="4367,6,4414,6,4421,28.7999,4477,28.7999,4477,94,4367,94,4367,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="4367" x2="4421" y1="28.7999" y2="28.7999"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="41" x="4371" y="21.9999">ROOT</text><!--MD5=[6512305487f19e190631bb8d271c9c4d]
+cluster tooling--><polygon fill="#FF50FF" filter="url(#f1f02hjvn5drkg)" points="1439,6,1494,6,1501,28.7999,2671,28.7999,2671,400,1439,400,1439,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="1439" x2="1501" y1="28.7999" y2="28.7999"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="49" x="1443" y="21.9999">tooling</text><!--MD5=[dbed38bd54099a236f433d766c6c7ffc]
+cluster project-guide--><polygon fill="#5050D0" filter="url(#f1f02hjvn5drkg)" points="16,215,114,215,121,237.7999,1415,237.7999,1415,691,16,691,16,215" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="121" y1="237.7999" y2="237.7999"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92" x="20" y="230.9999">project-guide</text><!--MD5=[d1afa6d614d9076e8c9abe53ff507705]
+cluster compendium--><polygon fill="#D0D050" filter="url(#f1f02hjvn5drkg)" points="2695,215,2792,215,2799,237.7999,6149,237.7999,6149,1176,2695,1176,2695,215" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="2695" x2="2799" y1="237.7999" y2="237.7999"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="91" x="2699" y="230.9999">compendium</text><!--MD5=[f2dffaa2651071ff225a0ae5ca8dbb99]
+entity f2_14--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="227" x="565.5" y="41"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="575.5" y="64.9999">project_types/other_projects.adoc</text><!--MD5=[d5aa93a7b154f2e8681b182f866a0eb5]
+entity f2_15--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="252" x="828" y="41"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="232" x="838" y="64.9999">project_types/standard_projects.adoc</text><!--MD5=[5e5c6425801153f973c88efe25122b25]
+entity f2_16--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="284" x="1115" y="41"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="1125" y="64.9999">proposal/04_join_proposal_workshop.adoc</text><!--MD5=[9a83df6de1ceebb5aa191c986e8afc8d]
+entity f2_18--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="230" x="565" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210" x="575" y="161.9999">proposal/01_proposal_setup.adoc</text><!--MD5=[2007fd94a1e4c2324128ee71d6d514ec]
+entity f2_19--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="334" x="830" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="314" x="840" y="161.9999">proposal/03_proposal_workshop_preparation.adoc</text><!--MD5=[3335c7afcc11ad7b179859ca6048f774]
+entity f3_1--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="77" x="4383.5" y="41"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="4393.5" y="64.9999">nav.adoc</text><!--MD5=[0ec88f088425b35a21c701cd1bbb3871]
+entity f4_12--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="209" x="1455.5" y="41"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="1465.5" y="64.9999">filestage/filestage_guides.adoc</text><!--MD5=[11cbe4c6ca4d80673745645b505cb002]
+entity f4_13--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="232" x="1700" y="41"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="212" x="1710" y="64.9999">docker/docker-best-practices.adoc</text><!--MD5=[699d79ebab1155a81d04f7eaccb557a2]
+entity f4_14--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="179" x="1967.5" y="41"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="1977.5" y="64.9999">docker/docker-setup.adoc</text><!--MD5=[3ca1f16048fcd302fba469a1e1ccaa87]
+entity f4_15--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="186" x="2182" y="41"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="2192" y="64.9999">docker/docker-guides.adoc</text><!--MD5=[fd02d653e385402faea2f564dffefd79]
+entity f4_16--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="172" x="1455" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="1465" y="161.9999">gitlab/gitlab-guides.adoc</text><!--MD5=[fb4abfc96e76215828697f3af4aa4382]
+entity f4_17--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="165" x="1662.5" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="1672.5" y="161.9999">gitlab/gitlab-setup.adoc</text><!--MD5=[9c1bd491091d940c8e211a29acf2c301]
+entity f4_18--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="375" x="1862.5" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="355" x="1872.5" y="161.9999">teams_and_sharepoint/teams-and-sharepoint-setup.adoc</text><!--MD5=[6cc038391010ad5292a4a41717a2d776]
+entity f4_19--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="382" x="2273" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="362" x="2283" y="161.9999">teams_and_sharepoint/teams-and-sharepoint-guides.adoc</text><!--MD5=[bc298a9da65ad558ae0af467d48c625e]
+entity f4_20--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="205" x="1454.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="1464.5" y="273.9999">calendar/calendar-setup.adoc</text><!--MD5=[3290064cfb863b582ca42cfaab3c7d47]
+entity f4_21--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="258" x="1695" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="1705" y="273.9999">calendar/calendar-best-practices.adoc</text><!--MD5=[fb10916841e4a26cf84e0ab0404e7ad1]
+entity f4_23--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="190" x="1988" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="1998" y="273.9999">vscode/vscode-guides.adoc</text><!--MD5=[44914770fa17fc9298e384cf05d9e23d]
+entity f4_25--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="186" x="2213" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="2223" y="273.9999">git/git_best_practices.adoc</text><!--MD5=[e8e6ba6d6f4f19d1525bbf2df84baa73]
+entity f4_27--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="134" x="1490" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="1500" y="370.9999">git/git-guides.adoc</text><!--MD5=[7e04e9ec150eddeed3547b4f801ed35b]
+entity f5_4--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="203" x="224.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="234.5" y="273.9999">macros/macro-reference.adoc</text><!--MD5=[81816859ec664024469ec16acbce7814]
+entity f5_5--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="184" x="463" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="473" y="273.9999">macros/macro-pages.adoc</text><!--MD5=[a898dc4937130acdf84ef709bd79e696]
+entity f5_6--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="188" x="682" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168" x="692" y="273.9999">macros/macro-related.adoc</text><!--MD5=[ed1a1023ddf9dd8f8a22f17b217ac2b3]
+entity f5_7--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="256" x="905" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="236" x="915" y="273.9999">reviewing/create_issue_on_page.adoc</text><!--MD5=[0066b2047565fac2351a374ebfe53123]
+entity f5_8--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="203" x="1196.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="1206.5" y="273.9999">reviewing/editing_pages.adoc</text><!--MD5=[3cda42ed939e503ba1342e415bc66714]
+entity f5_9--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="283" x="32.5" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="42.5" y="370.9999">adding_content/interactive_diagrams.adoc</text><!--MD5=[49a144d013b929b548ab2f334587ecae]
+entity f5_10--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="212" x="351" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="192" x="361" y="370.9999">adding_content/examples.adoc</text><!--MD5=[110627683d605d08255cbd1ae96eeeb8]
+entity f5_11--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="257" x="598.5" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="608.5" y="370.9999">adding_content/add-new-module.adoc</text><!--MD5=[51c274fd87e40d6885a1105ca3533ec5]
+entity f5_12--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="227" x="890.5" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="900.5" y="370.9999">adding_content/add-a-page.adoc</text><!--MD5=[6fdc150329b6eefacd9545ed355c19f1]
+entity f5_13--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="246" x="1153" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="1163" y="370.9999">adding_content/page_redirects.adoc</text><!--MD5=[679117ceea808a0b8bd4d31bfb0f70a3]
+entity f5_14--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="230" x="51" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210" x="61" y="467.9999">adding_content/attachments.adoc</text><!--MD5=[14d66a765efff2e1604af6e7adbd1b9c]
+entity f5_16--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="210" x="316" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="326" y="467.9999">adding_content/including.adoc</text><!--MD5=[88986e287c3f83515bc7fd9b7dedc61d]
+entity f5_17--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="198" x="561" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="571" y="467.9999">adding_content/images.adoc</text><!--MD5=[4fefb27e9c6e53a700ab1f5f95d6cf92]
+entity f5_18--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="235" x="794.5" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="804.5" y="467.9999">adding_content/add-a-partial.adoc</text><!--MD5=[12002116e3716ab7374ddce309bad020]
+entity f5_21--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="268" x="1065" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="1075" y="467.9999">adding_content/roles/add-new-role.adoc</text><!--MD5=[738802aa8a6367d5087f3e08f10ae221]
+entity f5_22--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="246" x="35" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="45" y="564.9999">adding_content/roles/use_roles.adoc</text><!--MD5=[d4e9b2aa54c8fc98e238e1d73c3a76e4]
+entity f5_23--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="287" x="316.5" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="267" x="326.5" y="564.9999">adding_content/pages/add-task-page.adoc</text><!--MD5=[4722dc8a0e1914720d05b55826594a19]
+entity f5_24--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="282" x="639" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="649" y="564.9999">adding_content/pages/add-tool-page.adoc</text><!--MD5=[3171af143c8db510620e5f4185cca442]
+entity f5_25--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="187" x="956.5" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="966.5" y="564.9999">structure/link-concept.adoc</text><!--MD5=[5cb4370b93cd0eb90e9deea7ce426ea1]
+entity f5_26--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="221" x="1178.5" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="1188.5" y="564.9999">structure/content_structure.adoc</text><!--MD5=[0f19cc10365c91e1fd0ea03cfc1029ec]
+entity f5_27--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="193" x="61.5" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="71.5" y="661.9999">structure/keywords-list.adoc</text><!--MD5=[afb0c24503cc1a1a93818b0b993d61a6]
+entity f7_1--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="77" x="2711.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="2721.5" y="273.9999">nav.adoc</text><!--MD5=[af1ea6755b966248853e4cae3d52dd0f]
+entity f7_4--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="219" x="2823.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="2833.5" y="273.9999">templates/project_proposal.adoc</text><!--MD5=[d8d2b15fcca76ea9469f00a1f45c9277]
+entity f7_5--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="280" x="3078" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="260" x="3088" y="273.9999">templates/review_feedback_template.adoc</text><!--MD5=[4ca6c5ec530c0d548d6f5f4ca9853477]
+entity f7_6--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="189" x="3393.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="3403.5" y="273.9999">templates/cover_page.adoc</text><!--MD5=[8fbba6cce457cf07fc6b6824501490c2]
+entity f7_7--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="180" x="3618" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="3628" y="273.9999">templates/directories.adoc</text><!--MD5=[3647c5a24867909337938b550b8bacf1]
+entity f7_8--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="261" x="3833.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="3843.5" y="273.9999">writing_guidelines/asciidoc_guide.adoc</text><!--MD5=[f925f28dfdc7cc08b55946136825daf1]
+entity f7_9--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="273" x="4129.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="253" x="4139.5" y="273.9999">writing_guidelines/writing_guide_xil.adoc</text><!--MD5=[f6f4b527bef240f8f7bac6f3c1b8bb45]
+entity f7_10--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="259" x="4437.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="239" x="4447.5" y="273.9999">writing_guidelines/editorial_guide.adoc</text><!--MD5=[0e171d26b2c2670b0e53878e55072e88]
+entity f7_12--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="252" x="4732" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="232" x="4742" y="273.9999">writing_guidelines/writing_guide.adoc</text><!--MD5=[59c529adf34d1d1fc5e54016edd9c7bb]
+entity f7_13--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="362" x="5019" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="342" x="5029" y="273.9999">writing_guidelines/plantuml_documentation_guide.adoc</text><!--MD5=[e1c1b94882a5ba7d2e9d87c878d32ada]
+entity f7_14--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="329" x="5416.5" y="250"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="309" x="5426.5" y="273.9999">writing_guidelines/documentation_processes.adoc</text><!--MD5=[a56c17f72599174477a1e9dba19bd37a]
+entity f7_15--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="234" x="2711" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214" x="2721" y="370.9999">definitions/format_description.adoc</text><!--MD5=[68128eb8f0774d91c091cbff87f479ae]
+entity f7_16--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="245" x="2980.5" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="2990.5" y="370.9999">definitions/status_of_document.adoc</text><!--MD5=[0a40fa37695f46bccf6c3c053cdb1ff3]
+entity f7_17--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="250" x="3261" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="230" x="3271" y="370.9999">definitions/associated_standard.adoc</text><!--MD5=[746559a15b2392671f5bcf1f71a0a4a7]
+entity f7_18--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="251" x="3546.5" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="231" x="3556.5" y="370.9999">definitions/technology_reference.adoc</text><!--MD5=[d9f539074dcdc94fe8d0f7198bb0dede]
+entity f7_19--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="298" x="3832" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="278" x="3842" y="370.9999">definitions/application_area_companion.adoc</text><!--MD5=[fe0c06695d198c680d5b59da2a8e0d58]
+entity f7_20--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="231" x="4164.5" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="4174.5" y="370.9999">definitions/protocol_definition.adoc</text><!--MD5=[5eabfaf673216e0d474701063293ff48]
+entity f7_21--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="228" x="4431" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="208" x="4441" y="370.9999">definitions/set_of_standards.adoc</text><!--MD5=[79b36f2ec351461c4a086d0c3a49d2c7]
+entity f7_22--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="298" x="4694" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="278" x="4704" y="370.9999">definitions/transport_layer_specification.adoc</text><!--MD5=[50fdd4d2a2ae5aa84103c4ec7a4f95fe]
+entity f7_23--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="357" x="5027.5" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="337" x="5037.5" y="370.9999">definitions/information_architecture_requirements.adoc</text><!--MD5=[314b76f3e4952612e867a1c1ba9acd94]
+entity f7_24--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="214" x="5420" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="5430" y="370.9999">definitions/base_standard.adoc</text><!--MD5=[dd8c6e434330e6145c0bed058eeee3fc]
+entity f7_25--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="139" x="5669.5" y="347"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="5679.5" y="370.9999">definitions/api.adoc</text><!--MD5=[c78524f62b740feffc1b9c01f199424f]
+entity f7_26--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="198" x="2727" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="2737" y="467.9999">open-source/asam_dco.adoc</text><!--MD5=[26504ddd6b67cfeea6f2163861ca60af]
+entity f7_28--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="281" x="2960.5" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="261" x="2970.5" y="467.9999">guides/accessing_compiled_artifacts.adoc</text><!--MD5=[92daef2f7532ed78b7824d85d2404fbe]
+entity f7_29--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="217" x="3276.5" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="3286.5" y="467.9999">guides/meeting_guidelines.adoc</text><!--MD5=[85fff22671779b9cfea1869be00df20f]
+entity f7_30--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="223" x="3528.5" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="3538.5" y="467.9999">guides/set_up_new_project.adoc</text><!--MD5=[691ee1fcdae327853db5064457eb6173]
+entity f7_31--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="216" x="3787" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="3797" y="467.9999">guides/standard_workflow.adoc</text><!--MD5=[a50a431e54c1673a0f3ae9617bb2d6e6]
+entity f7_32--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="315" x="4038.5" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="295" x="4048.5" y="467.9999">guides/reviews/add_review_button_antora.adoc</text><!--MD5=[dc2d3b8ebe3cbccd7fea2bb5fbc45629]
+entity f7_33--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="319" x="4388.5" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="299" x="4398.5" y="467.9999">guides/reviews/add_custom_review_button.adoc</text><!--MD5=[8a4158616056fabf7a20a589f74d15a3]
+entity f7_34--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="182" x="4743" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="4753" y="467.9999">guides/asciidoc/code.adoc</text><!--MD5=[742fa499b8499a426e2ab390d4fb5681]
+entity f7_35--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="215" x="4960.5" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="4970.5" y="467.9999">guides/asciidoc/roadmaps.adoc</text><!--MD5=[5b0a1620a8b2c6accd5040adc1e30bad]
+entity f7_38--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="206" x="5211" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="5221" y="467.9999">guides/asciidoc/formulas.adoc</text><!--MD5=[132b0e9fda56b941654792a3d859911c]
+entity f7_39--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="199" x="5452.5" y="444"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="5462.5" y="467.9999">guides/asciidoc/partials.adoc</text><!--MD5=[d33cad20272340311feb931cff39285f]
+entity f7_40--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="227" x="2711.5" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="2721.5" y="564.9999">guides/asciidoc/admonitions.adoc</text><!--MD5=[64eb726247ec1c5b776509831cbf7e2f]
+entity f7_41--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="186" x="2974" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="2984" y="564.9999">guides/asciidoc/tasks.adoc</text><!--MD5=[6ca31809141019086d81ff136f82b05f]
+entity f7_42--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="346" x="3195" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="326" x="3205" y="564.9999">guides/proposal_writing/contribute_with_issues.adoc</text><!--MD5=[42d2bec36c8eccae59e28def4abfc2b2]
+entity f7_43--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="343" x="3576.5" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="323" x="3586.5" y="564.9999">guides/proposal_writing/contribute_in_asciidoc.adoc</text><!--MD5=[9f347593606e8c2b0b245ff12292d199]
+entity f7_45--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="345" x="3954.5" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="325" x="3964.5" y="564.9999">guides/proposal_writing/how_to_enrollment_list.adoc</text><!--MD5=[327c726b4b964f4d0d257603b6428772]
+entity f7_46--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="278" x="4335" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="258" x="4345" y="564.9999">guides/proposal_writing/how_to_join.adoc</text><!--MD5=[f6cf25d5be8149a025e9ee3dd17e1aa8]
+entity f7_48--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="328" x="4648" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="308" x="4658" y="564.9999">guides/proposal_writing/proposal_guidelines.adoc</text><!--MD5=[b9945342f8e83d37af45ae6773df9945]
+entity f7_51--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="335" x="5011.5" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="315" x="5021.5" y="564.9999">guides/ideation/ideation_workshop_gameplan.adoc</text><!--MD5=[baa8cb633e7fe19d122df110abd08d2d]
+entity f7_52--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="246" x="5382" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="5392" y="564.9999">guides/git/working_with_issues.adoc</text><!--MD5=[0fb2a057a49ecaa1a88dd727d359f89c]
+entity f7_53--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="223" x="5663.5" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="5673.5" y="564.9999">guides/git/switch_branches.adoc</text><!--MD5=[257fd0194d40fa902518da0fdcb8ee95]
+entity f7_54--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="212" x="5921" y="541"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="192" x="5931" y="564.9999">guides/git/git_interactions.adoc</text><!--MD5=[edb32d610d21dd518603be5c677af260]
+entity f7_56--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="322" x="2721" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="302" x="2731" y="661.9999">implementers-forum/scenario_writers_guide.adoc</text><!--MD5=[fca3316122d43a5d4e8650ec635707b4]
+entity f7_57--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="277" x="3078.5" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="257" x="3088.5" y="661.9999">implementers-forum/feedback_guide.adoc</text><!--MD5=[6066d720789792918e9be7038cd2ae36]
+entity f7_58--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="174" x="3391" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="3401" y="661.9999">roles/call_for_offers.adoc</text><!--MD5=[1c4fbcbd231021b89f1d789e0f0e27e9]
+entity f7_59--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="217" x="3600.5" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="3610.5" y="661.9999">roles/project_lead_training.adoc</text><!--MD5=[f9b27f751e7cf8e0221bd67772a4ac18]
+entity f7_60--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="126" x="3853" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="3863" y="661.9999">tools/antora.adoc</text><!--MD5=[4fe9103fd38c55979fda0ace653bd9ae]
+entity f7_61--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="239" x="4014.5" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="219" x="4024.5" y="661.9999">tools/filestage/filestage_review.adoc</text><!--MD5=[c30468cb9ddf8b1ed3aa92f718b0fe5a]
+entity f7_62--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="281" x="4288.5" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="261" x="4298.5" y="661.9999">tools/docker/standard_docker_config.adoc</text><!--MD5=[cebe11d1949c63d4c8fa7e52578ee5f7]
+entity f7_64--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="201" x="4604.5" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="4614.5" y="661.9999">tools/docker/run_docker.adoc</text><!--MD5=[2f0cee663c19369b6165dae36c134d5b]
+entity f7_65--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="151" x="4840.5" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="4850.5" y="661.9999">tools/docker/wsl.adoc</text><!--MD5=[c7e6621b7c482d4cf223bcd82c8dbb48]
+entity f7_66--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="252" x="5027" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="232" x="5037" y="661.9999">tools/gitlab/cloning_a_repository.adoc</text><!--MD5=[72584969283e41af6b23bbe0abe0d29e]
+entity f7_67--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="246" x="5314" y="638"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="5324" y="661.9999">tools/gitlab/archiving_a_project.adoc</text><!--MD5=[549055820180c3b9b4db6eacaee49faf]
+entity f7_68--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="289" x="2738.5" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="2748.5" y="758.9999">tools/gitlab/create_branch_from_issue.adoc</text><!--MD5=[2da3a43a406c77a995cecc0fded12575]
+entity f7_69--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="223" x="3062.5" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="3072.5" y="758.9999">tools/gitlab/gitlab-ide_guide.adoc</text><!--MD5=[df4e2fc6365d989b9ab0261c6894bedb]
+entity f7_70--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="222" x="3321" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="3331" y="758.9999">tools/gitlab/branching_repo.adoc</text><!--MD5=[73be19fdb9e97e9328a13972a9241e93]
+entity f7_71--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="303" x="3578.5" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="283" x="3588.5" y="758.9999">tools/gitlab/branch_naming_conventions.adoc</text><!--MD5=[34b79515e144e9412f7411e353c65bd9]
+entity f7_72--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="298" x="3917" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="278" x="3927" y="758.9999">tools/gitlab/asam_issue_and_mr_labels.adoc</text><!--MD5=[cb5f0f55695017fb9c56ec62af97e8d1]
+entity f7_73--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="284" x="4250" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="4260" y="758.9999">tools/gitlab/review_with_service_desk.adoc</text><!--MD5=[259b6a564f4f3d0e308e935e5107159a]
+entity f7_74--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="201" x="4569.5" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="4579.5" y="758.9999">tools/gitlab/forking_repo.adoc</text><!--MD5=[56b9d8149df74e89574098a1330dd746]
+entity f7_75--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="236" x="4806" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="216" x="4816" y="758.9999">tools/gitlab/gitlab_terminology.adoc</text><!--MD5=[63c238dd704cbf238bf2a6388e2bcf86]
+entity f7_76--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="237" x="5077.5" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="5087.5" y="758.9999">tools/gitlab/commit_guidelines.adoc</text><!--MD5=[8b40cadb22ee67d31b2c14b2399d097d]
+entity f7_77--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="251" x="5349.5" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="231" x="5359.5" y="758.9999">tools/teams/receive_notifications.adoc</text><!--MD5=[50664d7b70ff491bfac6398de9faa74a]
+entity f7_78--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="237" x="5635.5" y="735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="5645.5" y="758.9999">tools/teams/email-notifications.adoc</text><!--MD5=[0aed1790baf49bc97168db3ef505e95e]
+entity f7_79--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="243" x="2762.5" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="2772.5" y="855.9999">tools/teams/polls_and_surveys.adoc</text><!--MD5=[6d45e39af0c7586d5e9cdae3f2fd96fa]
+entity f7_80--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="303" x="3040.5" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="283" x="3050.5" y="855.9999">tools/teams/teams-channel_file-structure.adoc</text><!--MD5=[25a3f5c6417dbbdca6a8956cd7f490fc]
+entity f7_81--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="262" x="3379" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="242" x="3389" y="855.9999">tools/teams/obtain_channel_email.adoc</text><!--MD5=[7d2f9297e39e674043bfc7d93dc2e247]
+entity f7_82--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="246" x="3676" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="3686" y="855.9999">tools/teams/meetings_in_teams.adoc</text><!--MD5=[cd64e16dc140fe0cd39d2a9bc047ec35]
+entity f7_83--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="248" x="3957" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="228" x="3967" y="855.9999">tools/antora/add_review_button.adoc</text><!--MD5=[2bc538a4db219c81fed2fc222b9e3882]
+entity f7_84--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="254" x="4240" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="4250" y="855.9999">tools/antora/build_antora_locally.adoc</text><!--MD5=[db3f7f4bec687394523c7fa481eb0885]
+entity f7_85--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="183" x="4529.5" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="4539.5" y="855.9999">tools/sharepoint/links.adoc</text><!--MD5=[f65f75e7c1f9fa37800c7b79756a5bfd]
+entity f7_86--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="407" x="4747.5" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="387" x="4757.5" y="855.9999">tools/sharepoint/synchronizing_sharepoint_with_onedrive.adoc</text><!--MD5=[bb57ad6e8fab97a50c874280121ffa07]
+entity f7_87--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="283" x="5189.5" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="5199.5" y="855.9999">tools/powershell/cloning_a_repository.adoc</text><!--MD5=[240cbfef0922db651ccf7802782c933c]
+entity f7_88--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="225" x="5507.5" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="5517.5" y="855.9999">tools/powershell/run_docker.adoc</text><!--MD5=[fcfb6df4a81b7b7c6956db48a8ecdee7]
+entity f7_89--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="268" x="5768" y="832"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="5778" y="855.9999">tools/powershell/powershell_basics.adoc</text><!--MD5=[4401a40175d7a436b95e0dc14f97e0de]
+entity f7_90--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="261" x="2758.5" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="2768.5" y="952.9999">tools/vscode/cloning_a_repository.adoc</text><!--MD5=[9ef066056db07f0de1484d79a4dacfc9]
+entity f7_91--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="203" x="3054.5" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="3064.5" y="952.9999">tools/vscode/run_docker.adoc</text><!--MD5=[cfc8cb20b5db7cec3c07f105bb3ee59d]
+entity f7_92--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="268" x="3293" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="3303" y="952.9999">tools/vscode/vscode_git-interaction.adoc</text><!--MD5=[9c2136e056cf5c7c9e30866a0cc6a937]
+entity f7_93--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="343" x="3596.5" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="323" x="3606.5" y="952.9999">tools/vscode/recommended_vscode_extensions.adoc</text><!--MD5=[0aea16fc7a07812cebf2529daa9bfe10]
+entity f7_95--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="286" x="3975" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="266" x="3985" y="952.9999">tools/vscode/vscode_install_extension.adoc</text><!--MD5=[5b202966f1cea05a7b53b1392055cdb5]
+entity f7_97--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="253" x="4296.5" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="233" x="4306.5" y="952.9999">tools/vscode/vscode_activity-bar.adoc</text><!--MD5=[a36c7c6454ff8e6af2e34d09e2c753c0]
+entity f7_98--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="237" x="4584.5" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="4594.5" y="952.9999">tools/vscode/vscode_interface.adoc</text><!--MD5=[c90e62a030148bb873aaf4259e7063fb]
+entity f7_100--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="179" x="4856.5" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="4866.5" y="952.9999">tools/git/submodules.adoc</text><!--MD5=[5b02555f5a76cce0b8c8f1159baa7847]
+entity f7_101--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="172" x="5071" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="5081" y="952.9999">tools/git/git_actions.adoc</text><!--MD5=[92d4d5378f4e5ab67f6c1b45407d46cb]
+entity f7_102--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="198" x="5278" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="5288" y="952.9999">tools/git/git_terminology.adoc</text><!--MD5=[3512b1465fa99381a84ecf15f4d310b7]
+entity f7_103--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="209" x="5511.5" y="929"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="5521.5" y="952.9999">tools/git/maintain_a_repo.adoc</text><!--MD5=[b5275d6a36070b3d83a8ba1a6be15a49]
+entity f7_104--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="201" x="2791.5" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="2801.5" y="1049.9999">tools/git/write_a_feature.adoc</text><!--MD5=[cf37fe690577c52e5c8cf5d186df048d]
+entity f7_105--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="204" x="3028" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="3038" y="1049.9999">tools/git/merge_requests.adoc</text><!--MD5=[2fc77e4efa909b468775123e4950c865]
+entity f7_106--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="143" x="3267.5" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="3277.5" y="1049.9999">tools/git/merge.adoc</text><!--MD5=[913b070180a72d01a75de4f19976d3bb]
+entity f7_107--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="209" x="3445.5" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="3455.5" y="1049.9999">tools/git/working_with_git.adoc</text><!--MD5=[dbaaf20db702bdc25b0ba6a41488c750]
+entity f7_108--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="310" x="3690" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="3700" y="1049.9999">tools/git/transitioning_to_a_new_workflow.adoc</text><!--MD5=[afbb04cead7e2e392941720ff7c1764d]
+entity f7_109--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="201" x="4035.5" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="4045.5" y="1049.9999">tools/git/merge_conflicts.adoc</text><!--MD5=[cb3dfc2cb6d650ea76bdfdd3fb16819a]
+entity f7_110--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="181" x="4271.5" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="4281.5" y="1049.9999">tools/git/review_code.adoc</text><!--MD5=[5f9a4c73566ed49c95a362e2345bbd7c]
+entity f7_111--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="218" x="4488" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="4498" y="1049.9999">tools/git/commit_guidelines.adoc</text><!--MD5=[e6483823e86c17b79595f2891ec7906e]
+entity f7_112--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="234" x="4741" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214" x="4751" y="1049.9999">tools/git/cloning_repo_tutorial.adoc</text><!--MD5=[a3c5e2f45d27978532a33c8d679ffa23]
+entity f7_113--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="356" x="5010" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="336" x="5020" y="1049.9999">tools/git/submodules/submodules_switch_version.adoc</text><!--MD5=[60237aaddeabe025b4f7f265190bbfb8]
+entity f7_114--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="282" x="5401" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="5411" y="1049.9999">tools/git/submodules/submodule_add.adoc</text><!--MD5=[14ec92ede54a1dd3b99c2d790c6fe740]
+entity f7_115--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="365" x="2710.5" y="1123"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="345" x="2720.5" y="1146.9999">tools/git/submodules/submodule_changing_remote.adoc</text><!--MD5=[2b0cf8c5c9158cd305dffeb47a54da0f]
+entity f7_116--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="294" x="3111" y="1123"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="274" x="3121" y="1146.9999">tools/git/submodules/submodule_delete.adoc</text><!--MD5=[5e5d72811e84737693d3343d17a6a26a]
+entity f7_117--><rect fill="#FEFECE" filter="url(#f1f02hjvn5drkg)" height="36.7999" style="stroke:#000000;stroke-width:1.5;" width="280" x="3440" y="1123"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="260" x="3450" y="1146.9999">tools/git/submodules/submodule_pull.adoc</text><!--MD5=[2cf751bb2c040ae9cec4160f2972e9b3]
+link f2_14 to f2_15--><!--MD5=[8dfe135b2287fa452d3a213ea04250ce]
+link f2_15 to f2_16--><!--MD5=[1dc21330188c4597aaa2deb822a1a39a]
+link f2_14 to f2_18--><!--MD5=[ed964961e7937d1b35a03f60a02a9b81]
+link f2_18 to f2_19--><!--MD5=[6de9b14041af2c291120848e2fe429c7]
+link f4_12 to f4_13--><!--MD5=[0dbe3005df24bb2059694e0f82d44cf7]
+link f4_13 to f4_14--><!--MD5=[22e1fa05c9738ae970bb1226ced88097]
+link f4_14 to f4_15--><!--MD5=[6be4dc5db719907d6ec8b1dafd23a6ff]
+link f4_12 to f4_16--><!--MD5=[e54d2ac2bb74c002a2c69a7cee64b62c]
+link f4_16 to f4_17--><!--MD5=[399a452c61fc9bb4de315af8147337a6]
+link f4_17 to f4_18--><!--MD5=[b350d7fb84cf082a2c26001af66bd6a1]
+link f4_18 to f4_19--><!--MD5=[f524f93c84936c99beb9b0c29cdd820d]
+link f4_16 to f4_20--><!--MD5=[f5f67322aa5b8866489b7e4ae7280637]
+link f4_20 to f4_21--><!--MD5=[44499ab31b35b2ea30f4340c4e290467]
+link f4_21 to f4_23--><!--MD5=[436544424026fd66316e432710c9c9a3]
+link f4_23 to f4_25--><!--MD5=[4d9c1c9e53d21ea0565e3c5c9bc99b5b]
+link f4_20 to f4_27--><!--MD5=[046fa0e654239b25ac9174d45cfd0ba7]
+link f5_4 to f5_5--><!--MD5=[d0d04b122277f140a0ca39e7daf5a1be]
+link f5_5 to f5_6--><!--MD5=[92c9cf6db7d05f4dae9b04e7a79daa14]
+link f5_6 to f5_7--><!--MD5=[783d4baaef5ae677100a4e81105340d5]
+link f5_7 to f5_8--><!--MD5=[f4191b66252ac8f8eaf05bdc69202f26]
+link f5_4 to f5_9--><!--MD5=[4d8be4d062268e312881f2c26a91dff3]
+link f5_9 to f5_10--><!--MD5=[1c0aa0b5af63cdd543143abc2da2dd79]
+link f5_10 to f5_11--><!--MD5=[613515838917165bde90f2e90ae61622]
+link f5_11 to f5_12--><!--MD5=[1579bb50de271d24275aedb23362e6b9]
+link f5_12 to f5_13--><!--MD5=[677724394c3f59554cdf97ed63307974]
+link f5_9 to f5_14--><!--MD5=[b86c2b10309f4f8f061d355db5cedd4e]
+link f5_14 to f5_16--><!--MD5=[ae148902ea7d387134c193236cf88c0e]
+link f5_16 to f5_17--><!--MD5=[7831e265e9460cd93b72af9ad8b0ce89]
+link f5_17 to f5_18--><!--MD5=[a2608718602a5e2a6d24f26a866b073f]
+link f5_18 to f5_21--><!--MD5=[e58c192b32a530d2e513e03bb4525b83]
+link f5_14 to f5_22--><!--MD5=[3a616634b0d5aa78d78e5d6e5ab68ae1]
+link f5_22 to f5_23--><!--MD5=[fc97b011e47dc5b9eccb2ed86f294332]
+link f5_23 to f5_24--><!--MD5=[86bcde572caf54849d46eb317e746d28]
+link f5_24 to f5_25--><!--MD5=[a66e8d7980acd9e2612abdcaf208ce57]
+link f5_25 to f5_26--><!--MD5=[b49c878578163b8851665967ffdb9f3a]
+link f5_22 to f5_27--><!--MD5=[bb05b2c39a913bc02559f00ff6bc48ac]
+link f7_1 to f7_4--><!--MD5=[6fb27a02b2719dc4b3eb9fd18a7063a9]
+link f7_4 to f7_5--><!--MD5=[4cba292c7f45aba19c6469c6fdd42271]
+link f7_5 to f7_6--><!--MD5=[2946812462cb6506ecfb6c56f6df0f7e]
+link f7_6 to f7_7--><!--MD5=[eae774d39f596d8dccc6ce4e85af8c97]
+link f7_7 to f7_8--><!--MD5=[bdbf6feb94787b38148947088e079a03]
+link f7_8 to f7_9--><!--MD5=[f363d304a5d58375158ab688f7602206]
+link f7_9 to f7_10--><!--MD5=[5b5d9ee48ba1afca5cb4447e481cd240]
+link f7_10 to f7_12--><!--MD5=[b806f4a0d2894072b2cda23fca889db1]
+link f7_12 to f7_13--><!--MD5=[ffb1218369844029dbe34e9829de4341]
+link f7_13 to f7_14--><!--MD5=[f2fce5f505c10b1adaaba6a57ffd3d77]
+link f7_1 to f7_15--><!--MD5=[d4ff16e5005b98078345b54d8d9f3578]
+link f7_15 to f7_16--><!--MD5=[138736a9b4df23ee748af58b3d08d390]
+link f7_16 to f7_17--><!--MD5=[2c5428b8c78bb082f8efb7652bfe7f3b]
+link f7_17 to f7_18--><!--MD5=[3278f74298fda603dceb662bd086e8d8]
+link f7_18 to f7_19--><!--MD5=[ca9912826c55cbce9cbb0c4d8f5b1d15]
+link f7_19 to f7_20--><!--MD5=[0ce3d3f7fdc341308238714c2606c834]
+link f7_20 to f7_21--><!--MD5=[14576b7eb2aa52e97d6404794d61d8cc]
+link f7_21 to f7_22--><!--MD5=[88131534a2b0a5e6dcdf0e0dcd5178fa]
+link f7_22 to f7_23--><!--MD5=[e7c695265c85f4c2f7a4c6741acc0d8f]
+link f7_23 to f7_24--><!--MD5=[80c0af91bafff5542b7dac099fc97523]
+link f7_24 to f7_25--><!--MD5=[f331b21e9b59252b42f8580c93d80367]
+link f7_15 to f7_26--><!--MD5=[ee8d7f66091ace9ec59cc42075f8dbf5]
+link f7_26 to f7_28--><!--MD5=[fd66ce69e6fbc0ab2fd896e6830a5802]
+link f7_28 to f7_29--><!--MD5=[9c036430af4b794a939515a211d7ec29]
+link f7_29 to f7_30--><!--MD5=[2db8688fba9396923db307e7d4cde800]
+link f7_30 to f7_31--><!--MD5=[43bbf82a456812c787a66475e6575aea]
+link f7_31 to f7_32--><!--MD5=[90989fb6d29a7ed35d063dc773780b56]
+link f7_32 to f7_33--><!--MD5=[d3492f1cd10344604636d34ac90934b0]
+link f7_33 to f7_34--><!--MD5=[a39d8e8f3f7cf777087f4b742eae2f4e]
+link f7_34 to f7_35--><!--MD5=[7c93f21b7ca54fb09143be174fc6a804]
+link f7_35 to f7_38--><!--MD5=[7dff4f52e9c094a5dbffe03731715122]
+link f7_38 to f7_39--><!--MD5=[561db38209c13caaf6875d85247ed9d5]
+link f7_26 to f7_40--><!--MD5=[67e9c5e4c3f39eaa2cf9c36c44cb152b]
+link f7_40 to f7_41--><!--MD5=[cf040a675ac22fde85c72b07b37d9db3]
+link f7_41 to f7_42--><!--MD5=[e16dbb3dd189d8d13298c98c13390e6a]
+link f7_42 to f7_43--><!--MD5=[b292b3d45e554a8c2da2433cd980a74d]
+link f7_43 to f7_45--><!--MD5=[398b4a0090a1c5b60294b1440f885b46]
+link f7_45 to f7_46--><!--MD5=[b4d8d36593b4b410945ca3d979b8bfee]
+link f7_46 to f7_48--><!--MD5=[d428855f1510e1d1cc8d9d753a7d4b89]
+link f7_48 to f7_51--><!--MD5=[dbf88b7b1c672d5b4e38bcd13830758f]
+link f7_51 to f7_52--><!--MD5=[c4b6f916becd4bfcea1804ff8d491010]
+link f7_52 to f7_53--><!--MD5=[f44a7c5e50c3ab23105c82d87234f8cb]
+link f7_53 to f7_54--><!--MD5=[e46b7dfb3b2cf24503354994d6cfe275]
+link f7_40 to f7_56--><!--MD5=[0cc8339fcb807f92d2fdde5c35453011]
+link f7_56 to f7_57--><!--MD5=[235481e7224471064c7e123dedfd1e8a]
+link f7_57 to f7_58--><!--MD5=[9d66b2e3224521552a875b8995ebcbe2]
+link f7_58 to f7_59--><!--MD5=[437cd7c26b511ccc349bb532ef7dc374]
+link f7_59 to f7_60--><!--MD5=[3baa224d3ec77cefe46daa5e83ce9ffe]
+link f7_60 to f7_61--><!--MD5=[26e4f1da52a820e70d8bea3f7360ca4e]
+link f7_61 to f7_62--><!--MD5=[e6c7f941aa98653161f6732e7f1cb5e9]
+link f7_62 to f7_64--><!--MD5=[1ed94d00ad0685567502d947ffbbc096]
+link f7_64 to f7_65--><!--MD5=[23b7929a69ae6fcbdaab94b1cef59465]
+link f7_65 to f7_66--><!--MD5=[68188541ad639553ceffe449a06b3a13]
+link f7_66 to f7_67--><!--MD5=[5602d8d8559df8784a755dc2fae7a2f9]
+link f7_56 to f7_68--><!--MD5=[67360f0047b26463af95a865ca08a45e]
+link f7_68 to f7_69--><!--MD5=[53b91b6dc92c590f25e6ca687c1421a5]
+link f7_69 to f7_70--><!--MD5=[fe49e0e8569eb5a8190181321ed480ac]
+link f7_70 to f7_71--><!--MD5=[aa857a95e7f186ee70d60e759f32d42c]
+link f7_71 to f7_72--><!--MD5=[7c852404f721a48bcaa20b954ec9b5bd]
+link f7_72 to f7_73--><!--MD5=[def91fbcc649a17ae96bfc11a68416a5]
+link f7_73 to f7_74--><!--MD5=[2e984d5d94b7cd6389a6223bc40e40cc]
+link f7_74 to f7_75--><!--MD5=[329aaa541a9d193bba7849b67f3fa336]
+link f7_75 to f7_76--><!--MD5=[76ee44f920fb940f2825db55edceaa06]
+link f7_76 to f7_77--><!--MD5=[590ae85815561e336efae9f8caa0b7f9]
+link f7_77 to f7_78--><!--MD5=[26c66851bc23409270985a6168c70fea]
+link f7_68 to f7_79--><!--MD5=[76a980bcf4fc1b587f37c234d29a56fa]
+link f7_79 to f7_80--><!--MD5=[471ac3bd722c5862127162283241fc9f]
+link f7_80 to f7_81--><!--MD5=[471ff19669bf5f61c6e99dacfef4ef49]
+link f7_81 to f7_82--><!--MD5=[04fa345167b661d6e6bf106750ec1872]
+link f7_82 to f7_83--><!--MD5=[13b34a46526152a0f179a0a93af5c917]
+link f7_83 to f7_84--><!--MD5=[6e2bb09c4a91052349cabc70e3914841]
+link f7_84 to f7_85--><!--MD5=[62dc8c8ac27e25515cea3a7b9687b9a0]
+link f7_85 to f7_86--><!--MD5=[1ea0ae5be2f9bf3ee9b43aa96cc062b3]
+link f7_86 to f7_87--><!--MD5=[9333141b265e608b95e58f0fb0c747cb]
+link f7_87 to f7_88--><!--MD5=[4821496b1caa4384f52de4116490b793]
+link f7_88 to f7_89--><!--MD5=[9c64370152706a693dbf1c0e8096985b]
+link f7_79 to f7_90--><!--MD5=[23c342f1dd3fb821d4a9ffef753cb156]
+link f7_90 to f7_91--><!--MD5=[f8284cabe3ea99e9d755e4b22f0e46d4]
+link f7_91 to f7_92--><!--MD5=[76588115e64a4be80f6e4b97f7a463ff]
+link f7_92 to f7_93--><!--MD5=[8a4f484800a17cc4dd4c25a27aaba8d2]
+link f7_93 to f7_95--><!--MD5=[d68706de05f79d21f5bca13f63e6d998]
+link f7_95 to f7_97--><!--MD5=[fa7cd241ce1648bafd22a87e058a2e27]
+link f7_97 to f7_98--><!--MD5=[12c18e0fa553eedde9d66e4220c76911]
+link f7_98 to f7_100--><!--MD5=[5aa8447c2b3df1cdb3299c307d5858a7]
+link f7_100 to f7_101--><!--MD5=[8c7800e7be0aa078691f1f2d151d67c1]
+link f7_101 to f7_102--><!--MD5=[a8033883a4e73fe50850fdba34a57a21]
+link f7_102 to f7_103--><!--MD5=[e5ff692bc8cee7a3ce2aa9cb4428d76e]
+link f7_90 to f7_104--><!--MD5=[0d027ebc17b1e1ef27ff9f8770e1a291]
+link f7_104 to f7_105--><!--MD5=[0d585e248195484deadf2b22edd941cb]
+link f7_105 to f7_106--><!--MD5=[d033597b6267eb5d898d3925927259a1]
+link f7_106 to f7_107--><!--MD5=[9d371ef6dd7e749db9aaf2f71d3add4c]
+link f7_107 to f7_108--><!--MD5=[99425ddbdc4f1d6f7f6c0bb0c85ce2fb]
+link f7_108 to f7_109--><!--MD5=[8c7026a23c63521ef95ff190e42223d9]
+link f7_109 to f7_110--><!--MD5=[3b405280372db8e3da116c5bb12da099]
+link f7_110 to f7_111--><!--MD5=[f331b95dd5692e419f97feb96d5c5c92]
+link f7_111 to f7_112--><!--MD5=[c7318b380c235801d5f4dd68d3fa901a]
+link f7_112 to f7_113--><!--MD5=[3d69a7ccadf9c7dc2f6b73b810de51f8]
+link f7_113 to f7_114--><!--MD5=[8c221dfb59a621c5904da0d1de6c2734]
+link f7_104 to f7_115--><!--MD5=[5b21e71c26835a744a8919c26f2f0802]
+link f7_115 to f7_116--><!--MD5=[1a179b2365ea1fcaf108d8315defa589]
+link f7_116 to f7_117--><!--MD5=[163eee22f1df970d17407cf3791ba663]
+link f2_16 to f4_12--><!--MD5=[4ffce1715ca15e97f9aabdf937fd44e7]
+link f2_18 to f5_4--><!--MD5=[b3c842fc53d69cea3b6e6c446dd7c36c]
+link f5_8 to f7_1--><!--MD5=[0ee0dbb2089fe5260519f9332cf65838]
+@startuml
+package standardization #50ff50 {
+rectangle "project_types/other_projects.adoc" as f2_14
+rectangle "project_types/standard_projects.adoc" as f2_15
+rectangle "proposal/04_join_proposal_workshop.adoc" as f2_16
+rectangle "proposal/01_proposal_setup.adoc" as f2_18
+rectangle "proposal/03_proposal_workshop_preparation.adoc" as f2_19
+}
+package ROOT #ffff50 {
+rectangle "nav.adoc" as f3_1
+}
+package tooling #ff50ff {
+rectangle "filestage/filestage_guides.adoc" as f4_12
+rectangle "docker/docker-best-practices.adoc" as f4_13
+rectangle "docker/docker-setup.adoc" as f4_14
+rectangle "docker/docker-guides.adoc" as f4_15
+rectangle "gitlab/gitlab-guides.adoc" as f4_16
+rectangle "gitlab/gitlab-setup.adoc" as f4_17
+rectangle "teams_and_sharepoint/teams-and-sharepoint-setup.adoc" as f4_18
+rectangle "teams_and_sharepoint/teams-and-sharepoint-guides.adoc" as f4_19
+rectangle "calendar/calendar-setup.adoc" as f4_20
+rectangle "calendar/calendar-best-practices.adoc" as f4_21
+rectangle "vscode/vscode-guides.adoc" as f4_23
+rectangle "git/git_best_practices.adoc" as f4_25
+rectangle "git/git-guides.adoc" as f4_27
+}
+package project-guide #5050d0 {
+rectangle "macros/macro-reference.adoc" as f5_4
+rectangle "macros/macro-pages.adoc" as f5_5
+rectangle "macros/macro-related.adoc" as f5_6
+rectangle "reviewing/create_issue_on_page.adoc" as f5_7
+rectangle "reviewing/editing_pages.adoc" as f5_8
+rectangle "adding_content/interactive_diagrams.adoc" as f5_9
+rectangle "adding_content/examples.adoc" as f5_10
+rectangle "adding_content/add-new-module.adoc" as f5_11
+rectangle "adding_content/add-a-page.adoc" as f5_12
+rectangle "adding_content/page_redirects.adoc" as f5_13
+rectangle "adding_content/attachments.adoc" as f5_14
+rectangle "adding_content/including.adoc" as f5_16
+rectangle "adding_content/images.adoc" as f5_17
+rectangle "adding_content/add-a-partial.adoc" as f5_18
+rectangle "adding_content/roles/add-new-role.adoc" as f5_21
+rectangle "adding_content/roles/use_roles.adoc" as f5_22
+rectangle "adding_content/pages/add-task-page.adoc" as f5_23
+rectangle "adding_content/pages/add-tool-page.adoc" as f5_24
+rectangle "structure/link-concept.adoc" as f5_25
+rectangle "structure/content_structure.adoc" as f5_26
+rectangle "structure/keywords-list.adoc" as f5_27
+}
+package compendium #d0d050 {
+rectangle "nav.adoc" as f7_1
+rectangle "templates/project_proposal.adoc" as f7_4
+rectangle "templates/review_feedback_template.adoc" as f7_5
+rectangle "templates/cover_page.adoc" as f7_6
+rectangle "templates/directories.adoc" as f7_7
+rectangle "writing_guidelines/asciidoc_guide.adoc" as f7_8
+rectangle "writing_guidelines/writing_guide_xil.adoc" as f7_9
+rectangle "writing_guidelines/editorial_guide.adoc" as f7_10
+rectangle "writing_guidelines/writing_guide.adoc" as f7_12
+rectangle "writing_guidelines/plantuml_documentation_guide.adoc" as f7_13
+rectangle "writing_guidelines/documentation_processes.adoc" as f7_14
+rectangle "definitions/format_description.adoc" as f7_15
+rectangle "definitions/status_of_document.adoc" as f7_16
+rectangle "definitions/associated_standard.adoc" as f7_17
+rectangle "definitions/technology_reference.adoc" as f7_18
+rectangle "definitions/application_area_companion.adoc" as f7_19
+rectangle "definitions/protocol_definition.adoc" as f7_20
+rectangle "definitions/set_of_standards.adoc" as f7_21
+rectangle "definitions/transport_layer_specification.adoc" as f7_22
+rectangle "definitions/information_architecture_requirements.adoc" as f7_23
+rectangle "definitions/base_standard.adoc" as f7_24
+rectangle "definitions/api.adoc" as f7_25
+rectangle "open-source/asam_dco.adoc" as f7_26
+rectangle "guides/accessing_compiled_artifacts.adoc" as f7_28
+rectangle "guides/meeting_guidelines.adoc" as f7_29
+rectangle "guides/set_up_new_project.adoc" as f7_30
+rectangle "guides/standard_workflow.adoc" as f7_31
+rectangle "guides/reviews/add_review_button_antora.adoc" as f7_32
+rectangle "guides/reviews/add_custom_review_button.adoc" as f7_33
+rectangle "guides/asciidoc/code.adoc" as f7_34
+rectangle "guides/asciidoc/roadmaps.adoc" as f7_35
+rectangle "guides/asciidoc/formulas.adoc" as f7_38
+rectangle "guides/asciidoc/partials.adoc" as f7_39
+rectangle "guides/asciidoc/admonitions.adoc" as f7_40
+rectangle "guides/asciidoc/tasks.adoc" as f7_41
+rectangle "guides/proposal_writing/contribute_with_issues.adoc" as f7_42
+rectangle "guides/proposal_writing/contribute_in_asciidoc.adoc" as f7_43
+rectangle "guides/proposal_writing/how_to_enrollment_list.adoc" as f7_45
+rectangle "guides/proposal_writing/how_to_join.adoc" as f7_46
+rectangle "guides/proposal_writing/proposal_guidelines.adoc" as f7_48
+rectangle "guides/ideation/ideation_workshop_gameplan.adoc" as f7_51
+rectangle "guides/git/working_with_issues.adoc" as f7_52
+rectangle "guides/git/switch_branches.adoc" as f7_53
+rectangle "guides/git/git_interactions.adoc" as f7_54
+rectangle "implementers-forum/scenario_writers_guide.adoc" as f7_56
+rectangle "implementers-forum/feedback_guide.adoc" as f7_57
+rectangle "roles/call_for_offers.adoc" as f7_58
+rectangle "roles/project_lead_training.adoc" as f7_59
+rectangle "tools/antora.adoc" as f7_60
+rectangle "tools/filestage/filestage_review.adoc" as f7_61
+rectangle "tools/docker/standard_docker_config.adoc" as f7_62
+rectangle "tools/docker/run_docker.adoc" as f7_64
+rectangle "tools/docker/wsl.adoc" as f7_65
+rectangle "tools/gitlab/cloning_a_repository.adoc" as f7_66
+rectangle "tools/gitlab/archiving_a_project.adoc" as f7_67
+rectangle "tools/gitlab/create_branch_from_issue.adoc" as f7_68
+rectangle "tools/gitlab/gitlab-ide_guide.adoc" as f7_69
+rectangle "tools/gitlab/branching_repo.adoc" as f7_70
+rectangle "tools/gitlab/branch_naming_conventions.adoc" as f7_71
+rectangle "tools/gitlab/asam_issue_and_mr_labels.adoc" as f7_72
+rectangle "tools/gitlab/review_with_service_desk.adoc" as f7_73
+rectangle "tools/gitlab/forking_repo.adoc" as f7_74
+rectangle "tools/gitlab/gitlab_terminology.adoc" as f7_75
+rectangle "tools/gitlab/commit_guidelines.adoc" as f7_76
+rectangle "tools/teams/receive_notifications.adoc" as f7_77
+rectangle "tools/teams/email-notifications.adoc" as f7_78
+rectangle "tools/teams/polls_and_surveys.adoc" as f7_79
+rectangle "tools/teams/teams-channel_file-structure.adoc" as f7_80
+rectangle "tools/teams/obtain_channel_email.adoc" as f7_81
+rectangle "tools/teams/meetings_in_teams.adoc" as f7_82
+rectangle "tools/antora/add_review_button.adoc" as f7_83
+rectangle "tools/antora/build_antora_locally.adoc" as f7_84
+rectangle "tools/sharepoint/links.adoc" as f7_85
+rectangle "tools/sharepoint/synchronizing_sharepoint_with_onedrive.adoc" as f7_86
+rectangle "tools/powershell/cloning_a_repository.adoc" as f7_87
+rectangle "tools/powershell/run_docker.adoc" as f7_88
+rectangle "tools/powershell/powershell_basics.adoc" as f7_89
+rectangle "tools/vscode/cloning_a_repository.adoc" as f7_90
+rectangle "tools/vscode/run_docker.adoc" as f7_91
+rectangle "tools/vscode/vscode_git-interaction.adoc" as f7_92
+rectangle "tools/vscode/recommended_vscode_extensions.adoc" as f7_93
+rectangle "tools/vscode/vscode_install_extension.adoc" as f7_95
+rectangle "tools/vscode/vscode_activity-bar.adoc" as f7_97
+rectangle "tools/vscode/vscode_interface.adoc" as f7_98
+rectangle "tools/git/submodules.adoc" as f7_100
+rectangle "tools/git/git_actions.adoc" as f7_101
+rectangle "tools/git/git_terminology.adoc" as f7_102
+rectangle "tools/git/maintain_a_repo.adoc" as f7_103
+rectangle "tools/git/write_a_feature.adoc" as f7_104
+rectangle "tools/git/merge_requests.adoc" as f7_105
+rectangle "tools/git/merge.adoc" as f7_106
+rectangle "tools/git/working_with_git.adoc" as f7_107
+rectangle "tools/git/transitioning_to_a_new_workflow.adoc" as f7_108
+rectangle "tools/git/merge_conflicts.adoc" as f7_109
+rectangle "tools/git/review_code.adoc" as f7_110
+rectangle "tools/git/commit_guidelines.adoc" as f7_111
+rectangle "tools/git/cloning_repo_tutorial.adoc" as f7_112
+rectangle "tools/git/submodules/submodules_switch_version.adoc" as f7_113
+rectangle "tools/git/submodules/submodule_add.adoc" as f7_114
+rectangle "tools/git/submodules/submodule_changing_remote.adoc" as f7_115
+rectangle "tools/git/submodules/submodule_delete.adoc" as f7_116
+rectangle "tools/git/submodules/submodule_pull.adoc" as f7_117
+}
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
