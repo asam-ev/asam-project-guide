@@ -1067,29 +1067,22 @@ Git can also interface directly with <em><a href="../../compendium/abbreviations
 The following sections describe each part of this setup sequentially.</p>
 </div>
 <div class="sect2">
-<h3 id="_install_git_on_your_computer"><a class="anchor" href="#_install_git_on_your_computer"></a>Install git on your computer</h3>
+<h3 id="_install_git"><a class="anchor" href="#_install_git"></a>Install git</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><a href="https://git-scm.com/download/win">Download Git</a></p>
+<p>If you are unsure if git is installed, you can check by entering the following in a shell window and confirming:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">git --version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If a git version is returned, git is already installed on your system.</p>
+</div>
 </li>
 <li>
-<p>Follow the installation instructions on screen.
-The installation routine requires many settings.
-You can leave most to all on their default value.</p>
-<div class="paragraph">
-<p><em><strong>OPTIONAL</strong>: If you would like to use <a href="../../compendium/abbreviations.html#_vscode" class="xref page">VSCode</a> as your standard Git editor, follow the optional instructions below.</em></p>
-</div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Select "Use Visual Studio Code as Git&#8217;s default editor" from the drop-down menu.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/select-vscode-for-git.png" alt="select vscode for git" title="Use Visual Studio Code as Git&#8217;s default editor"></span></p>
-</div>
-</li>
-</ol>
-</div>
+<p>If git is not installed, follow the instructions on <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener">how to install git</a></p>
 </li>
 </ol>
 </div>
@@ -1103,7 +1096,7 @@ To make sure your commits match your name and email details, a one time configur
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Open a <a href="../../compendium/tools/powershell/powershell_basics.html" class="xref page">PowerShell</a> window</p>
+<p>Open a shell or terminal (e.g. <a href="../../compendium/tools/powershell/powershell_basics.html" class="xref page">PowerShell</a>) window</p>
 </li>
 <li>
 <p>Execute the following command and replace the entries <em>"FIRST_NAME</em>, <em>LAST_NAME"</em>  accordingly:</p>
@@ -1113,11 +1106,11 @@ To make sure your commits match your name and email details, a one time configur
 </div>
 </div>
 <div class="exampleblock">
-<div class="title">Example 1. Setting your git user name</div>
+<div class="title">Example 1. Setting git user name for Max Mustermann</div>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git config --global user.name Philip Windecker</code></pre>
+<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git config --global user.name Max Mustermann</code></pre>
 </div>
 </div>
 </div>
@@ -1131,11 +1124,11 @@ To make sure your commits match your name and email details, a one time configur
 </div>
 </div>
 <div class="exampleblock">
-<div class="title">Example 2. Setting your email</div>
+<div class="title">Example 2. Setting email for Max Mustermann working at company</div>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git config --global user.email philip.windecker@avenyr.de</code></pre>
+<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">git config --global user.email max.mustermann@company.com</code></pre>
 </div>
 </div>
 </div>
@@ -1164,41 +1157,7 @@ If no error is returned, the configuration step has been successful.
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>In a <a href="../../compendium/tools/powershell/powershell_basics.html" class="xref page">PowerShell</a> window, enter the following:</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-The <a href="../../compendium/tools/powershell/powershell_basics.html" class="xref page">PowerShell</a> window should be opened in your user folder (Windows).
-Usually, if you open it through right-click on the Windows button, this should be the case.
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">ssh-keygen -t ed25519 -C "YourEmail@address.com"</code></pre>
-</div>
-</div>
-<div class="exampleblock">
-<div class="title">Example 3. Generating the ssh key pair</div>
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">ssh-keygen -t ed25519 -C "philip.windecker@avenyr.de"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>Confirm the suggested path with Enter.</p>
-</li>
-<li>
-<p>Type in a passphrase and confirm with Enter, or just confirm without a passphrase.</p>
+<p>Generate an SSH key pair following the <a href="https://docs.gitlab.com/ee/ssh/#generate-an-ssh-key-pair" target="_blank" rel="noopener">official instructions</a>.</p>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1213,34 +1172,39 @@ Entering a passphrase is optional and leads to additional steps every time you c
 </div>
 </li>
 <li>
-<p>Copy the created public key to the Windows clipboard:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-git hljs" data-lang="git">Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard</code></pre>
-</div>
-</div>
+<p>Add the generated SSH public key to your GitLab account by following <a href="https://docs.gitlab.com/ee/ssh/#add-an-ssh-key-to-your-gitlab-account" target="_blank" rel="noopener">these instructions</a>.</p>
 </li>
 <li>
-<p>Edit your <a href="https://code.asam.net/-/profile" target="_blank" rel="noopener">profile in GitLab</a></p>
+<p><a href="https://docs.gitlab.com/ee/ssh/#verify-that-you-can-connect" target="_blank" rel="noopener">Verify that you can connect</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting_known_issues"><a class="anchor" href="#_troubleshooting_known_issues"></a>Troubleshooting / Known Issues</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_i_cannot_click_next_after_selecting_visual_studio_code_as_gits_default_editor_during_installation"><a class="anchor" href="#_i_cannot_click_next_after_selecting_visual_studio_code_as_gits_default_editor_during_installation"></a>I cannot click "Next" after selecting Visual Studio Code as Git&#8217;s default editor during installation</h3>
 <div class="paragraph">
-<p><span class="image"><img src="../_images/access-gitlab-account-config.png" alt="access gitlab account config" title="Edit user profile in GitLab"></span></p>
+<p>If you cannot click "Next", make sure Visual Studio Code is already installed.
+Return to the previous step and continue again.
+Now, the "next" button should be active.</p>
 </div>
-</li>
-<li>
-<p>Open the settings "SSH Keys" on the left</p>
+</div>
+<div class="sect2">
+<h3 id="_my_ssh_keys_are_not_working"><a class="anchor" href="#_my_ssh_keys_are_not_working"></a>My SSH keys are not working</h3>
 <div class="paragraph">
-<p><span class="image"><img src="../_images/open-ssh-settings.png" alt="open ssh settings" title="Open the 'SSH Keys' settings"></span></p>
+<p>Make sure that the ssh-agent is running:</p>
 </div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a shell or terminal window</p>
 </li>
 <li>
-<p>Add the generated key to the <a href="https://code.asam.net/profile/keys" target="_blank" rel="noopener">SSH window in GitLab</a> - Paste the key copied in step 2, give it a title and then click "Add Key"</p>
-<div class="paragraph">
-<div class="title">Confirmation screen after SSH key has been entered in GitLab</div>
-<p><span class="image"><img src="../_images/confirm-ssh-key.png" alt="confirm ssh key" title="Window shown after SHS key has been entered and confirmed"></span></p>
-</div>
-</li>
-<li>
-<p>In your <a href="../../compendium/tools/powershell/powershell_basics.html" class="xref page">PowerShell</a> window, type the following command, hit Enter, and check the status:</p>
+<p>Type the following command, hit Enter, and check the status:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">Get-Service ssh-agent</code></pre>
@@ -1257,7 +1221,26 @@ Entering a passphrase is optional and leads to additional steps every time you c
 </div>
 </li>
 <li>
-<p>If it is "Disabled": Activate the SSH Agent</p>
+<p>If the StartType is "Disabled", activate the SSH Agent.
+See <a href="#_my_ssh_agent_is_deactivated">My SSH agent is deactivated</a>.<br>
+Continue here after your SSH agent has bee activated.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Enter the following command and hit Enter</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">Start-Service ssh-agent</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_my_ssh_agent_is_deactivated"><a class="anchor" href="#_my_ssh_agent_is_deactivated"></a>My SSH agent is deactivated</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1271,10 +1254,10 @@ If you do not have these, request support from your IT department.
 </tr>
 </table>
 </div>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Open another <a href="../../compendium/tools/powershell/powershell_basics.html" class="xref page">PowerShell</a> window (with <strong>Administration</strong> rights)</p>
+<p>Open a shell or terminal window with <strong>Administration</strong> rights</p>
 </li>
 <li>
 <p>Set the SSH Agent to start manually by typing the following command and hitting Enter:</p>
@@ -1284,101 +1267,7 @@ If you do not have these, request support from your IT department.
 </div>
 </div>
 </li>
-<li>
-<p>Close the PowerShell window with administration rights</p>
-</li>
 </ol>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Return to the other PowerShell window</p>
-</li>
-<li>
-<p>Enter the following command and hit Enter</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">Start-Service ssh-agent</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>To add your generated private key to the SSH Agent, enter</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">ssh-add $HOME/.ssh/id_ed25519</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-If you chose a different folder or filename, you may need to change the path ("~/.ssh/") and/or the filename ("id_ed25519") accordingly.
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-If the ~ is not recognised, replace "~" with "$HOME".
-</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>Establish a connection to the GitLab by entering the following line and confirming with Enter:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">ssh -T code.asam.net</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>If this is the first connection through ssh, you will see a prompt stating that the authenticity of host 'code.asam.net' can&#8217;t be established.</p>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/add-known-host.png" alt="Add GitLab to known hosts">
-</div>
-</div>
-</li>
-<li>
-<p>Enter 'yes' and confirm with enter</p>
-</li>
-<li>
-<p>You will be prompted to enter your password, but this step is not required.
-Cancel the connection by typing <code>ctrl</code>+<code>c</code>.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_troubleshooting_known_issues"><a class="anchor" href="#_troubleshooting_known_issues"></a>Troubleshooting / Known Issues</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_i_cannot_click_next_after_selecting_visual_studio_code_as_gits_default_editor"><a class="anchor" href="#_i_cannot_click_next_after_selecting_visual_studio_code_as_gits_default_editor"></a>I cannot click "Next" after selecting Visual Studio Code as Git&#8217;s default editor</h3>
-<div class="paragraph">
-<p>If you cannot click "Next", make sure Visual Studio Code is already installed.
-Return to the previous step and continue again.
-Now, the "next" button should be active.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_i_cannot_copy_the_key_using_the_provided_command"><a class="anchor" href="#_i_cannot_copy_the_key_using_the_provided_command"></a>I cannot copy the key using the provided command</h3>
-<div class="paragraph">
-<p>Open the file you created in a text editor and copy the whole text manually.</p>
 </div>
 </div>
 <div class="sect2">
