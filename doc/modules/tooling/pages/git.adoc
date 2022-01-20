@@ -3,7 +3,7 @@
 :keywords: git,summary,tool,recommended,READYFORREVIEW
 :page-layout: responsible
 :page-responsible-name: Stefan Cyliax
-:page-responsible-contact: stefan.cyliax@asam.net
+:page-responsible-contact: stefan.cyliax(at)asam.net
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

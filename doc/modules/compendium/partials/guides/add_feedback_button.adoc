@@ -46,11 +46,11 @@ ifdef::github-button[]
 :button-attributes: tag=github
 endif::[]
 
-include::compendium:partial$review_template_button.adoc[{button-attributes}]
+include::compendium:partial$feedback_template_button.adoc[{button-attributes}]
 
 == Troubleshooting / Known Issues
 === I want to add more features or a different template to my button
-See xref:compendium:guides/reviews/add_custom_review_button.adoc[].
+See xref:compendium:guides/reviews/add_custom_feedback_button.adoc[].
 
 //end::short[]
 
@@ -76,14 +76,14 @@ You can use an encoder like https://www.url-encode-decode.com/[this one^] to enc
 == Syntax of a button
 Each UI button follows this syntax:
 
-include::compendium:partial$review_template_button.adoc[tag=syntax]
+include::compendium:partial$feedback_template_button.adoc[tag=syntax]
 
 == Create an email button
 TIP: This is usually used for GitLab.
 
 To create an email button, the `href` attribute must start with:
 
-include::compendium:partial$review_template_button.adoc[tag=mailto]
+include::compendium:partial$feedback_template_button.adoc[tag=mailto]
 
 . Add any number of supported https://css-tricks.com/snippets/html/mailto-links/[mailto attributes^], separated by `&`
 . Optional: Add the `text` attribute to the element for tooltips or other supported https://www.w3schools.com/tags/tag_a.asp[<a>-tag attributes^]
@@ -92,7 +92,7 @@ include::compendium:partial$review_template_button.adoc[tag=mailto]
 == Create a GitHub issue link
 To create a page link, the `href` attribute must start with:
 
-include::compendium:partial$review_template_button.adoc[tag=page-link]
+include::compendium:partial$feedback_template_button.adoc[tag=page-link]
 
 . Add any number of supported https://docs.github.com/en/enterprise-server@3.1/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-url-query[GitHub URL attributes^]
 . Optional: Add the `text` attribute to the element for tooltips or other supported https://www.w3schools.com/tags/tag_a.asp[<a>-tag attributes^]
