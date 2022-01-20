@@ -2,6 +2,8 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{add-file-icon}
+
 == Context
 In order to make documented {page_reason}s easier to understand, it is necessary to have a standard format for {page_reason}s in which they are written.
 For this purpose, the xref:project-guide:attachment${page_template_name}[{page_template_name}] file was created.

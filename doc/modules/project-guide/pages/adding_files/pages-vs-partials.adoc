@@ -1,10 +1,13 @@
 = Pages VS Partials
 :description: Describes the differences between pages and partials and when to use which.
 :keywords: page,partial,project-guide, READYFORREVIEW
+:page-aliases: adding_content/pages-vs-partials.adoc
 
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
+
+{add-file-icon}
 
 AsciiDoc files in Antora have different meaning depending on their location in the folder structure.
 The following table shows the relation to the location for Antora.

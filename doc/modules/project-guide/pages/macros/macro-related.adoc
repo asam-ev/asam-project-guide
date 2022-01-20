@@ -5,6 +5,8 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{special-macros-icon}
+
 == Description
 include::partial$macro-related.adoc[tag=description]
 

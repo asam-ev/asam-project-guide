@@ -5,6 +5,8 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{special-macros-icon}
+
 Antora and Asciidoctor already provide a rich set of features and macros.
 However, not all functions that __{asam}__ requires for an efficient and partially automated content structuring are present by default.
 For this reason, some additional scripts were created that can be executed locally or in the pipeline when building the Project Guide.

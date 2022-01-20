@@ -1,17 +1,17 @@
 * xref:home.adoc[]
-** Structure
+** xref:structure.adoc[]
 *** xref:structure/content_structure.adoc[]
 *** xref:structure/link-concept.adoc[]
 *** xref:structure/keywords-list.adoc[]
-** xref:reviewing/create_issue_on_page.adoc[]
-** Adding files
-*** xref:adding_content/add-new-module.adoc[]
-*** xref:adding_content/pages-vs-partials.adoc[]
-*** xref:adding_content/add-a-page.adoc[]
-**** xref:adding_content/pages/add-task-page.adoc[]
-**** xref:adding_content/pages/add-tool-page.adoc[]
-*** xref:adding_content/add-a-partial.adoc[]
-** Add or change content
+** xref:add_files.adoc[]
+*** xref:adding_files/add-new-module.adoc[]
+*** xref:adding_files/pages-vs-partials.adoc[]
+*** xref:adding_files/add-a-page.adoc[]
+**** xref:adding_files/pages/add-task-page.adoc[]
+**** xref:adding_files/pages/add-tool-page.adoc[]
+*** xref:adding_files/add-a-partial.adoc[]
+** xref:changing_content.adoc[]
+*** xref:reviewing/create_issue_on_page.adoc[]
 *** xref:reviewing/editing_pages.adoc[]
 *** Abbreviations
 **** xref:adding_content/abbreviations/add-an-abbreviation.adoc[]
@@ -21,7 +21,7 @@
 **** xref:adding_content/roles/use_roles.adoc[]
 *** xref:adding_content/page_redirects.adoc[]
 *** xref:adding_content/interactive_diagrams.adoc[]
-** Referencing And Including
+** xref:ref-include.adoc[]
 *** xref:adding_content/images.adoc[]
 *** xref:adding_content/examples.adoc[]
 *** xref:adding_content/attachments.adoc[]

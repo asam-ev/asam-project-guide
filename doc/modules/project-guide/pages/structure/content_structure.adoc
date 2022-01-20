@@ -7,6 +7,8 @@ include::partial$_attributes.adoc[]
 include::ROOT:partial$_attributes.adoc[]
 include::{abb}[]
 
+{structure-icon}
+
 This is the Project Guide structure concept.
 It summarizes the concept behind the actual structure braodly.
 

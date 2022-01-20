@@ -5,6 +5,7 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{special-macros-icon}
 
 == Description
 include::partial$macro-pages.adoc[tag=description]

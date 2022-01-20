@@ -1,1 +1,10 @@
-include::compendium:page$0_used-keywords.adoc[]
+= Keyword list
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+{structure-icon}
+
+The list of used keywords is now located in the compendium.
+
+Link: xref:compendium:0_used-keywords.adoc[].

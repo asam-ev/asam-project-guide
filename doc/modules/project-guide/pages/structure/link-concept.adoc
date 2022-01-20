@@ -5,6 +5,8 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{structure-icon}
+
 == Graph
 
 === Full

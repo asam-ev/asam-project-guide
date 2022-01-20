@@ -5,6 +5,8 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{changes-icon}
+
 == Context
 Sometimes, pages need to be moved or files renamed.
 There are no restrictions on removing the file itself.

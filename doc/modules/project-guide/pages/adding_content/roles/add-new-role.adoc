@@ -6,6 +6,8 @@ include::partial$_attributes.adoc[]
 include::{abb}[]
 
 
+{changes-icon}
+
 == Context
 Roles are a way of structuring tasks within ASAM activities.
 Assigning pages or topics to roles makes it easier for people of that role to find the pages most relevant to them and their tasks.

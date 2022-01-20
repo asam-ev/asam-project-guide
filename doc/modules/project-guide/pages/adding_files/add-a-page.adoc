@@ -4,8 +4,11 @@
 :page_reason: default page
 :page_template_name: template-default-page.adoc
 :page_template_alt_name: default page template
+:page-aliases: adding_content/add-a-page.adoc
 
 include::partial$standard_page_creation.adoc[]
+
+
 
 [NOTE]
 ====

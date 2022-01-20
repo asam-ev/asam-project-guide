@@ -6,6 +6,7 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{changes-icon}
 
 == Context
 To make text shorter and easier to read, you can use abbreviations.

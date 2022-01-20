@@ -5,6 +5,8 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+{changes-icon}
+
 == Context
 If a page is not correct, the easiest way is to directly write the feedback from the page itself.
 To do so, you can use the provided "Submit feedback" button.
