@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Working on the Project Guide :: ASAM Project Guide</title>
     <link rel="prev" href="../compendium/writing_guidelines/writing_guide_xil.html">
-    <link rel="next" href="structure/content_structure.html">
+    <link rel="next" href="structure.html">
     <meta name="description" content="Landing page for information on how to work on the ASAM Project Guide using Asciidoctor and Antora.">
     <meta name="keywords" content="landing_page,project-guide, READYFORREVIEW">
     <meta name="generator" content="Antora 3.0.0-rc.1">
@@ -855,7 +855,7 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Structure</span>
+    <a class="nav-link" href="structure.html">Structure</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="structure/content_structure.html">Project Guide structure</a>
@@ -864,44 +864,44 @@
     <a class="nav-link" href="structure/link-concept.html">ASAM Project Guide Link Concept</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="structure/keywords-list.html">Used keywords In ASAM Project Guide</a>
+    <a class="nav-link" href="structure/keywords-list.html">Keyword list</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="add_files.html">Adding files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_files/add-new-module.html">Adding A New Module</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_files/pages-vs-partials.html">Pages VS Partials</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="adding_files/add-a-page.html">Adding A Page</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="adding_files/pages/add-task-page.html">Adding a Task page</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="adding_files/pages/add-tool-page.html">Adding a Tool page</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_files/add-a-partial.html">Adding A Partial</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="changing_content.html">Add/change content</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reviewing/create_issue_on_page.html">Create an issue for a page</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Adding files</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="adding_content/add-new-module.html">Adding A New Module</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="adding_content/pages-vs-partials.html">Pages VS Partials</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="adding_content/add-a-page.html">Adding A Page</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="adding_content/pages/add-task-page.html">Adding a Task page</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="adding_content/pages/add-tool-page.html">Adding a Tool page</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="adding_content/add-a-partial.html">Adding A Partial</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Add or change content</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reviewing/editing_pages.html">Artifact page name</a>
   </li>
@@ -939,7 +939,7 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Referencing And Including</span>
+    <a class="nav-link" href="ref-include.html">Referencing/including</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="adding_content/images.html">Using images</a>
@@ -1017,7 +1017,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="main.html" class="xref page"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/3240/3240850.png" alt="Project Guide" width="120"></span></a></p>
+<p><a href="main.html" class="xref page"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/1705/1705243.png" alt="Project Guide" width="120"></span></a></p>
 </div>
 <div class="paragraph">
 <p>This module collects information on how to work on the ASAM Project Guide.
@@ -1029,135 +1029,32 @@ It also references particularities of Antora and links to important information 
 <div class="sect1">
 <h2 id="_content"><a class="anchor" href="#_content"></a>Content</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Structure</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="structure/content_structure.html" class="xref page">Project Guide structure</a></p>
-</li>
-<li>
-<p><a href="structure/link-concept.html" class="xref page">ASAM Project Guide Link Concept</a></p>
-</li>
-<li>
-<p><a href="structure/keywords-list.html" class="xref page">Used keywords In ASAM Project Guide</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a href="reviewing/create_issue_on_page.html" class="xref page">Create an issue for a page</a></p>
-</li>
-<li>
-<p>Adding files</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="adding_content/add-new-module.html" class="xref page">Adding A New Module</a></p>
-</li>
-<li>
-<p><a href="adding_content/pages-vs-partials.html" class="xref page">Pages VS Partials</a></p>
-</li>
-<li>
-<p><a href="adding_content/add-a-page.html" class="xref page">Adding A Page</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="adding_content/pages/add-task-page.html" class="xref page">Adding a Task page</a></p>
-</li>
-<li>
-<p><a href="adding_content/pages/add-tool-page.html" class="xref page">Adding a Tool page</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a href="adding_content/add-a-partial.html" class="xref page">Adding A Partial</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Add or change content</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="reviewing/editing_pages.html" class="xref page">Artifact page name</a></p>
-</li>
-<li>
-<p>Abbreviations</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="adding_content/abbreviations/add-an-abbreviation.html" class="xref page">How to add a new abbreviation</a></p>
-</li>
-<li>
-<p><a href="adding_content/abbreviations/use_abbreviations.html" class="xref page">Using abbreviations</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Working with roles</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="adding_content/roles/add-new-role.html" class="xref page">How to add a new role</a></p>
-</li>
-<li>
-<p><a href="adding_content/roles/use_roles.html" class="xref page">Using roles</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a href="adding_content/page_redirects.html" class="xref page">Moving, renaming and deleting a page</a></p>
-</li>
-<li>
-<p><a href="adding_content/interactive_diagrams.html" class="xref page">Creating interactive diagrams</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Referencing And Including</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="adding_content/images.html" class="xref page">Using images</a></p>
-</li>
-<li>
-<p><a href="adding_content/examples.html" class="xref page">Using examples</a></p>
-</li>
-<li>
-<p><a href="adding_content/attachments.html" class="xref page">Using attachments</a></p>
-</li>
-<li>
-<p><a href="adding_content/including.html" class="xref page">Including pages and partials</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a href="special-macros.html" class="xref page">Custom ASAM Antora Macros</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="macros/macro-pages.html" class="xref page">Macro: pages</a></p>
-</li>
-<li>
-<p><a href="macros/macro-reference.html" class="xref page">Macro: reference</a></p>
-</li>
-<li>
-<p><a href="macros/macro-related.html" class="xref page">Macro: related</a></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-none grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="structure.html" class="xref page"><span class="image"><img src="https://cdn-icons-png.flaticon.com/512/849/849924.png" alt="849924" width="80"></span> Structure</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="add_files.html" class="xref page"><span class="image"><img src="https://cdn-icons-png.flaticon.com/512/2311/2311991.png" alt="2311991" width="80"></span> Adding files</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="changing_content.html" class="xref page"><span class="image"><img src="https://cdn-icons-png.flaticon.com/512/1388/1388394.png" alt="1388394" width="80"></span> Add/change content</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-none grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="ref-include.html" class="xref page"><span class="image"><img src="https://cdn-icons-png.flaticon.com/512/6567/6567676.png" alt="6567676" width="80"></span> Referencing/including</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="special-macros.html" class="xref page"><span class="image"><img src="https://cdn-icons-png.flaticon.com/512/4354/4354565.png" alt="4354565" width="80"></span> Custom ASAM Antora macros</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
@@ -1189,7 +1086,7 @@ It also references particularities of Antora and links to important information 
 </div>
 <nav class="pagination">
   <span class="prev"><a href="../compendium/writing_guidelines/writing_guide_xil.html">writing_guidelines/writing_guide_xil.adoc</a></span>
-  <span class="next"><a href="structure/content_structure.html">Project Guide structure</a></span>
+  <span class="next"><a href="structure.html">Structure</a></span>
 </nav>
 </article>
   </div>
