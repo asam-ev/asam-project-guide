@@ -1,7 +1,7 @@
 ID,Short_Description,Link_to_Project_Guide,Link_to_Test,Status
-ASM-1,No fixed versioning,-,-,draft
-ASM-2,Heading case,<<sec-ASM-2>>,-,draft
-ASM-3,Heading punctuation,-,-,draft
+ASM-1,No fixed versioning,-,-,approved
+ASM-2,Heading case,<<sec-ASM-2>>,-,approved
+ASM-3,Heading punctuation,-,-,approved
 ASM-4,Heading numbering,-,-,draft
 ASM-5,List capitalization,<<sec-ASM-5>>,-,draft
 ASM-6,List punctuation,<<sec-ASM-6>>,-,draft
@@ -10,11 +10,11 @@ ASM-8,List content,<<sec-ASM-8>>,-,draft
 ASM-9,List one sentence per line,<<sec-ASM-9>>,-,draft
 ASM-10,List type,<<sec-ASM-10>>,-,draft
 ASM-11,List end of element,<<sec-ASM-11>>,-,draft
-ASM-12,Image anchor fig-,-,-,draft
-ASM-13,Table anchor tab-,-,-,draft
-ASM-14,Code anchor code-,-,-,draft
+ASM-12,Image anchor fig-,-,-,approved
+ASM-13,Table anchor tab-,-,-,approved
+ASM-14,Code anchor code-,-,-,approved
 ASM-15,xrefstyle short,-,-,draft
-ASM-16,Anchor syntax [#anchor],-,-,draft
+ASM-16,Anchor syntax [#anchor],-,-,approved
 ASM-17,General spellcheck,-,-,draft
 ASM-18,LOF created automatically,-,-,draft
 ASM-19,LOT created automatically,-,-,draft
@@ -22,12 +22,12 @@ ASM-20,No Trailing whitespaces,-,-,draft
 ASM-21,Modal verbs,-,-,draft
 ASM-22,Standard ASAM Chapter structure,-,-,draft
 ASM-23,Document extension .adoc,-,-,draft
-ASM-24,Two blank lines,-,-,draft
-ASM-25,One sentence per line,-,-,draft
+ASM-24,Two blank lines,-,-,to be discussed
+ASM-25,One sentence per line,-,-,approved
 ASM-26,No empty chapters,-,-,draft
 ASM-27,No unused chapters,-,-,draft
 ASM-28,Included images shown,-,-,draft
-ASM-29,No unused images,-,-,draft
+ASM-29,No unused images,-,-,approved
 ASM-30,Filenames lowercase,-,-,draft
 ASM-31,Standard disclaimer,-,-,draft
 ASM-32,Standard License,-,-,draft
@@ -47,10 +47,10 @@ ASM-45,Tables AsciiDoc syntax,-,-,draft
 ASM-46,Tables IDs,-,-,draft
 ASM-47,Create a title/caption for every table,-,-,draft
 ASM-48,List use asciidoc syntax,-,-,draft
-ASM-49,American English,-,-,draft
+ASM-49,American English,-,-,approved
 ASM-50,Tables capitalization in header,-,-,draft
-ASM-51,Decimal separator,-,-,draft
-ASM-52,Leading zero,-,-,draft
+ASM-51,Decimal separator,-,-,to be discussed
+ASM-52,Leading zero,-,-,approved
 ASM-53,Tables ,-,-,draft
 ASM-54,Tables ,-,-,draft
 ASM-55,Tables ,-,-,draft
