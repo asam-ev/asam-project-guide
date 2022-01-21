@@ -4,9 +4,6 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-TIP: If you have https://tortoisegit.org/[TortoiseGit^] installed, you can also do this through the TortoiseGit UI.
-See the https://tortoisegit.org/docs/tortoisegit/tgit-dug-submodules.html[TortoiseGit Tutorial on Submodules^] for more information.
-
 When a certain version of the submodule is needed, go into the submodule and checkout the needed version.
 
 .Full example for update versiono of a submodule (for asciidoc-resources)
