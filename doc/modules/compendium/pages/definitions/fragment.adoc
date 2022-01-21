@@ -1,0 +1,5 @@
+= Fragment
+:description: Defines the term 'fragment' as used by ASAM.
+:keywords: fragment, TODO
+
+TODO - create definition of term fragment
