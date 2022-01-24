@@ -4,4 +4,4 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-inclue::compendium:partial$tools/gitlab/branching_repo.adoc[]
+include::compendium:partial$tools/gitlab/branching_repo.adoc[]
