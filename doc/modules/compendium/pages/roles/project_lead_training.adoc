@@ -1,7 +1,18 @@
 = Project lead training
-:description: TODO
-:keywords: TODO
+:description: Change when the page changes. Leads a few tips for leading meetings, which is one of the main tasks of the project manager. 
+:keywords: role,project-lead,training,meeting-moderation
 
 {role-project-lead}
 
+== Content
+
+== Meeting moderation requirements
+- Moderator must be neutral
+- Moderator must have technical competence in the standard#s subject matter
+
+== Meeting moderation best practices
+- 
+
+
 TODO
+
