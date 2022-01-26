@@ -4,7 +4,7 @@
 :toc:
 
 
-CAUTION: This page is still a DRAFT version (V1.4) and subject to change!
+CAUTION: This page is still a DRAFT version (V1.6) and subject to change!
 
 
 [.lead]
@@ -246,6 +246,29 @@ Here is how to use them correctly _in the floating text_ for XiL:
 *** Structuring elements, like sub-headings that should not appear in the table of contents.
 *** Emphasis, for example single characters in formulae or tables.
 
+=== Punctuation marks
+
+Asciidoc renderers take care of a typographically correct output.
+Therefore it is sufficient to use the following characters for punctuation marks:
+
+* Quotation marks
+** Use normal double quotation marks `+++"+++` (ASCII #34, Unicode U+0022). +
+The character can be found on the keyboard (Shift-2).
+** Never use single quotation marks.
+
+* Apostrophes
+** Use normal apostrophes `+++'+++` (ASCII #39, Unicode U+0027). +
+The character can be found on the keyboard (Shift-&#35;).
+
+* Hyphen
+** Use the minus sign `-` (ASCII #45, Unicode U+002D) for hyphen. +
+The character can be found on the keyboard (-).
+
+* Dashes
+** Use the minus sign `-` (ASCII #45, Unicode U+002D) for dashes. +
+The character can be found on the keyboard (-).
+
+Do _not_ use other typographic characters like rounded quotation marks, en-dashes and so on.
 
 ////
 
@@ -824,6 +847,53 @@ NOTE: Using cell spans may cause border frame displaying issues. Use sparingly.
 ** Adjust the column width with the column attribute `[cols="<n>,<m>"]`, using the numbers n and m to define the relative width between the columns. +
 (Example: `cols="2,4"`: Second column is twice as wide as the first one.)
 
+=== References
+
+* The format of references in the text is fixed and depends on the type of element the reference points to:
++
+[#tab-osc2-writing-guide-types-of-references]
+.Types of references and their format
+[%header, cols="5,10,10", align="right"]
+|===
+^|Type
+^|No
+^|#Yes#
+|Table
+|[.line-through]#See *Table-Name* +
+See following table#
+|See *Table x*
+|Figure
+|[.line-through]#See *Figure-Name* +
+See follwing figure#
+|See *Figure x*
+|Chapter
+|[.line-through]#See Chapter *x.y* +
+See Chapter *Chapter-Name* +
+See Section *x.y* +
+See Section *Chapter-Name* +
+See *x.y Chapter-Name* +
+See *x.y*#
+|See *Chapter-Name*
+|Appendix
+|
+|See *Appendix-Name*
+|Bibliography
+|
+|See *[x]*
+|===
+
+
+* Use `xref:<tag>[{<style>}]` for references.
+** `<tag>` The destination tag.
+** `<style>` Type-specific style for the reference:
+*** `fig-style` Reference to figure
+*** `tab-style` Reference to table
+*** `top-style` Reference to chapter
+*** `sec-style` Reference to other destinations
+* Examples
+** `+++See xref:top-an-important-chapter[{top-style}] for details.+++`
+** `+++See xref:fig-a-nice-figure[{fig-style}] for details.+++`
+
 
 === Special characters
 
@@ -842,6 +912,12 @@ This is especially useful for value-unit-pairs like `+5{nbsp}m/s+` (5{nbsp}m/s) 
 * *Word joiner ({wj})* +
 Use `+{wj}+` to glue two words together.
 This is useful to enhance readability, for example when adding footnotes (`+term{wj}footnote:[text]+`).
+
+=== Control elements for PDF-renderer
+
+* A *page break* can be forced using `<<<`.
+Use sparingly.
+* The *page orientation* can be specified by using the roles `[.portrait]` and `[.landscape]`.
 
 == Source code
 
