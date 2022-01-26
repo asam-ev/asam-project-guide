@@ -16,12 +16,12 @@ ASM-14,Code anchor code-,-,-,approved
 ASM-15,xrefstyle short,-,-,draft
 ASM-16,Anchor syntax [#anchor],-,-,approved
 ASM-17,General spellcheck,-,-,draft
-ASM-18,LOF created automatically,-,-,draft
-ASM-19,LOT created automatically,-,-,draft
-ASM-20,No Trailing whitespaces,-,-,draft
-ASM-21,Modal verbs,-,-,draft
+ASM-18,LOF created automatically,-,-,approved
+ASM-19,LOT created automatically,-,-,approved
+ASM-20,No Trailing whitespaces,-,-,approved
+ASM-21,Modal verbs,-,-,to be discussed
 ASM-22,Standard ASAM Chapter structure,-,-,draft
-ASM-23,Document extension .adoc,-,-,draft
+ASM-23,Document extension .adoc,-,-,approved
 ASM-24,Two blank lines,-,-,to be discussed
 ASM-25,One sentence per line,-,-,approved
 ASM-26,No empty chapters,-,-,draft
@@ -31,14 +31,14 @@ ASM-29,No unused images,-,-,approved
 ASM-30,Filenames lowercase,-,-,draft
 ASM-31,Standard disclaimer,-,-,draft
 ASM-32,Standard License,-,-,draft
-ASM-33,No Oxford commas ,-,-,draft
+ASM-33,No Oxford commas ,-,-,to be discussed
 ASM-34,Repository contains LICENSE,-,-,draft
 ASM-35,Repository contains contact persons,-,-,draft
 ASM-36,Repository contains roadmap,-,-,draft
 ASM-37,No broken internal links,-,-,draft
 ASM-38,No broken external links,-,-,draft
 ASM-39,Mapping file defines structure,-,-,draft
-ASM-40,Mapping file named main.adoc,-,-,draft
+ASM-40,Mapping file named main.adoc,-,-,approved
 ASM-41,Deliverable naming,-,-,draft
 ASM-42,List order,-,-,draft
 ASM-43,Backticks,<<sec-ASM-43>>,-,draft
