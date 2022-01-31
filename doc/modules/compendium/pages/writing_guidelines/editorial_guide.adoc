@@ -79,7 +79,7 @@ There are no exceptions.
 
 *Source*
 
-ISO/IEC Directives, Part 2, Sixth edition, 2011, 6.6.8 Representation of numbers and numerical values
+ISO/IEC Directives, Part 2, Principles and rules for the structure and drafting of ISO and IEC documents, 9th edition, 2021, 9.1 Representation of numbers and numerical values
 
 
 [#sec-ASM-52]
@@ -104,7 +104,7 @@ There are no exceptions.
 
 *Source*
 
-ISO/IEC Directives, Part 2, Sixth edition, 2011, 6.6.8 Representation of numbers and numerical values
+ISO/IEC Directives, Part 2, Principles and rules for the structure and drafting of ISO and IEC documents, 9th edition, 2021, 9.1 Representation of numbers and numerical values
 
 == Headings
 
@@ -138,7 +138,7 @@ ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 == Lists
 
-These editorial rules apply to lists:
+This section contains editorial rules on how to create lists:
 
 
 [#sec-ASM-8]
@@ -218,8 +218,8 @@ There are no exceptions.
 ```
 The database owner can:
 
-* Create and delete a database.
-* Add, delete, or modify a document.
+* Create and delete a database
+* Add, delete, or modify a document
 * Add, delete, or modify any information in the database
 ```
 
@@ -288,15 +288,14 @@ There are no exceptions.
 .Use of full stops at the end of a list item
 [%header, col=2*]
 |===
-|No
-|#Yes#
+|No |#Yes#
 
 |[.line-through]#* This is the first sentence# +
 [.line-through]#* This is the second sentence# +
 [.line-through]#* This is the third sentence#
 |* This is the first sentence. +
-* This is the second sentence. +
-* This is the third sentence.
+pass:[*] This is the second sentence. +
+pass:[*] This is the third sentence.
 |===
 
 *Source*
@@ -362,15 +361,14 @@ There are no exceptions.
 .Use of punctuation and conjunctions at the end of an item
 [%header, col=2*]
 |===
-|No
-|#Yes#
+|No |#Yes#
 
 |[.line-through]#* Common junctions,# +
 [.line-through]#* Direct junctions, and# +
 [.line-through]#* Virtual junctions.#
 |* Common junctions +
-* Direct junctions +
-* Virtual junctions
+pass:[*] Direct junctions +
+pass:[*] Virtual junctions
 |===
 
 *Source*
