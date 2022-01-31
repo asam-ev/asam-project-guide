@@ -79,3 +79,5 @@ antora:
       keywords:
         filename: "1_keywords.adoc"
         module: "compendium"
+      add_to_navigation: true
+      unlisted_pages_heading: Orphans
