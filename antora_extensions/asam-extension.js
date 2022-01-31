@@ -181,17 +181,28 @@ function findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywor
             modulePages.sort((a,b) => {
                 let relA = a.out.dirname
                 let relB = b.out.dirname
+                let isDebug = a.src.stem === "tools" || b.src.stem === "tools" ? true : false
+                isDebug = false
 
                 if (relA < relB)
                 {
+                    if (isDebug) {
+                        console.log([relA,relB,"relA<relB",a.src.stem,b.src.stem])
+                    }
                     return -1;
                 }
                 if (relA > relB)
                 {
+                    if (isDebug) {
+                        console.log([relA,relB,"relA>relB",a.src.stem,b.src.stem])
+                    }
                     return 1;
                 }
                 if (relA === relB)
                 {
+                    if (isDebug) {
+                        console.log([relA,relB,"relA === relB",a.src.stem,b.src.stem])
+                    }
                     let nameA = a.src.stem
                     let nameB = b.src.stem
                     // console.log(a.out.dirname)
@@ -325,7 +336,10 @@ function replaceRelatedMacro( page, pageContent, line, macroResult, heading, key
     var content = resultValues.newLine
     resultValues.attributes.split(",").forEach((el) => {
         const elTrimmed = el.trim()
-        if (keywordPageMap.has(elTrimmed)) {
+        if (elTrimmed.startsWith("!")) {
+
+        }
+        else if (keywordPageMap.has(elTrimmed)) {
             keywordPageMap.get(elTrimmed).forEach((keywordPage) => {
                 if (!exclusionSet.has(keywordPage)) {
                     const moduleName = keywordPage.src.module
@@ -517,11 +531,11 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
             // console.log(relativePath)
             // console.log(page.src.relative)
             if (Object.keys(folderFiles).indexOf(relativePath)<0) {
+
                 let folderName = relativePath
-                const end = folderName.lastIndexOf("/")
-                if (end > 0) {
-                    const start = Math.max(folderName.lastIndexOf("/",end-1),0)
-                    folderName = folderName.slice(start,end)
+                const start = folderName.lastIndexOf("/")
+                if (start > 0) {
+                    folderName = folderName.slice(start+1)
                 }
                 let content = new Array(
                     "= "+capitalizeFirstLetter(folderName).replace("_"," "),
@@ -531,9 +545,19 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
                     "pages::[]"
                 )
                 folderName = folderName+".adoc"
-                // console.log([folderName,relativePath])
-                let newFile = createNewVirtualFile( contentCatalog, folderName, relativePath, module, component, version, content.join("\n"), base )
-                folderFiles[relativePath]=newFile
+                // console.log("searching: " + relativePath+"/"+folderName)
+                // for (let page of pages) {
+                //     console.log(page.src.relative)
+                // }
+                if(pages.findIndex((element,index) => {
+                    if(element.src.relative === relativePath+"/"+folderName) {
+                        return true
+                    }
+                }) === -1)
+                {
+                    let newFile = createNewVirtualFile( contentCatalog, folderName, relativePath, module, component, version, content.join("\n"), base )
+                    folderFiles[relativePath]=newFile
+                }
             }
         }
     })
