@@ -75,3 +75,7 @@ asciidoc:
 antora:
   extensions:
     - require: '@antora/antora-lunr-extension'
+    - require: './antora_extensions/asam-extension.js'
+      keywords:
+        filename: "1_keywords.adoc"
+        module: "compendium"
