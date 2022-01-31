@@ -520,7 +520,7 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
                 let folderName = relativePath
                 const end = folderName.lastIndexOf("/")
                 if (end > 0) {
-                    const start = max(folderName.lastIndexOf("/",end-1),0)
+                    const start = Math.max(folderName.lastIndexOf("/",end-1),0)
                     folderName = folderName.slice(start,end)
                 }
                 let content = new Array(
