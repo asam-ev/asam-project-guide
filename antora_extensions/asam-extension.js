@@ -24,8 +24,7 @@ module.exports.register = function ({ config }) {
     this
     //   Replace content
       .on('contentClassified', ({ contentCatalog }) => {
-        // console.log("Reacting on contentClassified")
-        // console.log("Generating keywordPageMap and rolePageMap")
+        console.log("Reacting on contentClassified")
         contentCatalog.getComponents().forEach(({ versions }) => {
             versions.forEach(({ name: component, version, url: defaultUrl }) => {
 
@@ -103,23 +102,19 @@ const updateMapEntry = (inputMap, key, addedValue) => {
 function generateMapForRegEx(re,pages,exclusive=false) {
     var generatedMap = new Map;
     for (let page of pages.filter((page) => page.out)) {
-    // console.log(page.path)
         var results = []
         for (var line of page.contents.toString().split("\n")) {
             const result = re.exec(line);
             if (result) {
-                // console.log(result)
                 results.push(result)
                 if (exclusive) {
                     break;
                 }
             }
         }
-        // console.log(results)
         if (results) {
             for (let entry of results) {
                 const split_results = entry[1].split(",")
-                // console.log(results)
                 for (let keyword of split_results) {
                     const keywordTrimmed = keyword.trim()
                     if (generatedMap.has(keywordTrimmed)) {
@@ -133,7 +128,6 @@ function generateMapForRegEx(re,pages,exclusive=false) {
 
         }
     }
-    // console.log(generatedMap)
     return (generatedMap)
 
 }
@@ -165,13 +159,10 @@ function findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywor
                 const macroResult = re.exec(line)
 
                 if (macroResult) {
-                    // console.log("Found macroResult: ")
-                    // console.log(macroResult)
-                    // console.log(macro)
                     var newContent = ""
                     switch (macro) {
                         case "role":
-                            pageContent = replaceRoleRelatedMacro(page, pageContent, line, macroResult, heading, rolePageMap, logger)
+                            pageContent = replaceRoleRelatedMacro(page, pageContent, line, macroResult, heading, rolePageMap, keywordPageMap,logger)
                             break;
                         case "related":
                             newContent = replaceRelatedMacro(page, pageContent, line, macroResult, heading, keywordPageMap, macrosRegEx)
@@ -196,7 +187,7 @@ function findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywor
 
 }
 
-function replaceRoleRelatedMacro( page, pageContent, line, macroResult, heading, rolePageMap, logger ) {
+function replaceRoleRelatedMacro( page, pageContent, line, macroResult, heading, rolePageMap, keywordPageMap, logger ) {
     var resultValues = parseCustomXrefMacro(macroResult, line, heading)
     var exclusionSet = excludeSelf(page)
     var content = ""
@@ -210,13 +201,13 @@ function replaceRoleRelatedMacro( page, pageContent, line, macroResult, heading,
         const elTrimmed = el.trim()
         if (rolePageMap.has(elTrimmed)) {
             rolePageMap.get(elTrimmed).forEach((rolePage) => {
-                let pageRelevant = true
+                var pageRelevant = true
                 if (resultValues.parameters) {
                     pageRelevant = false
                     const keywords = getAllKeywordsAsArray(rolePage)
                     if (keywords) {
-                        for (var k of resultValues.parameters.split(",")) {
-                            if (keywords[1].split(",").indexOf(k)>-1) {
+                        for (var k of resultValues.parameters.split(",").map(x => x.trim())) {
+                            if (keywords[1].split(",").map(x => x.trim()).indexOf(k)>-1) {
                                 pageRelevant = true
                             }
                         }
@@ -244,8 +235,6 @@ function replaceRelatedMacro( page, pageContent, line, macroResult, heading, key
     var resultValues = parseCustomXrefMacro(macroResult, line, heading)
     var exclusionSet = excludeSelf(page)
     exclusionSet = excludeNegatedAttributes(exclusionSet, resultValues.attributes, keywordPageMap)
-    // console.log("exclusionSet")
-    // console.log(exclusionSet)
     var content = resultValues.newLine
     resultValues.attributes.split(",").forEach((el) => {
         const elTrimmed = el.trim()
@@ -277,7 +266,7 @@ function replaceRelatedMacro( page, pageContent, line, macroResult, heading, key
 }
 
 function replaceReferenceMacro( page, pageContent, line, macroResult, heading, keywordPageMap ) {
-    return (replaceReferenceMacro(page, pageContent, line, macroResult, heading, keywordPageMap))
+    return (replaceRelatedMacro(page, pageContent, line, macroResult, heading, keywordPageMap))
 }
 
 function replacePagesMacro( page, pageContent, line, macroResult, heading, pages ) {
@@ -306,7 +295,6 @@ function replacePagesMacro( page, pageContent, line, macroResult, heading, pages
     }
     const childPagesArray = getChildPagesOfPath(pages, targetPath, doAll)
 
-    // console.log(childPagesArray)
     for (let child of childPagesArray) {
         if (!exclusionSet.has(child)) {
             const moduleName = child.src.module;
@@ -315,11 +303,8 @@ function replacePagesMacro( page, pageContent, line, macroResult, heading, pages
             content = content.concat("\n",addNewBulletPoint(linkText))
         }
     }
-
-
     pageContent.splice(pageContent.indexOf(line),1,content)
 
-    // console.log(pageContent)
     return(pageContent)
 }
 
@@ -360,7 +345,6 @@ function getAllKeywordsAsArray( page ) {
     var res;
     for (let line of content) {
         res = re.exec(line)
-        // console.log(line)
         if (res){
             break;
         }
@@ -372,22 +356,13 @@ function getAllKeywordsAsArray( page ) {
 
 function getAllOccurencesForRegEx( page, re ) {
     var content = page.contents.toString()
-    // console.log("content")
-    // console.log(content)
     var m;
     var results = new Array();
-
-    // console.log(re)
-    // console.log(re.exec(content))
     do {
         m = re.exec(content)
         if (m) {
             results.push(m)
-            // console.log("found m")
-            // console.log(m)
         }
-        // console.log("found m")
-        // console.log(m)
     } while(m)
 
     return (results)
@@ -417,17 +392,11 @@ function getChildPagesOfPath( pages, path, doAll=false ) {
     }
     else {
         pages.forEach((page) => {
-            // console.log(page.dirname)
-            // console.log(path)
-            // console.log(page.dirname===path)
             if (page.dirname === path) {
                 childPages.push(page)
             }
         })
     }
-
-    // console.log(path)
-    // console.log(childPages)
 
     return (childPages);
 
@@ -441,8 +410,6 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
         let relativePath = ""
         if (page.src.basename !== page.src.relative) {
             relativePath = page.src.relative.replace("/"+page.src.basename,"")
-            // console.log("relativePath",relativePath)
-            // console.log(page.src.relative)
             while (true) {
                 if (!relativePath) {
                     return false
@@ -455,10 +422,8 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
                     }
                     let parentPath = relativePath.slice(0,relativePath.lastIndexOf(folderName))
                     parentPath = parentPath.endsWith("/") ? parentPath.slice(0,-1) : parentPath
-                    // console.log(folderName)
                     const folderFileName = folderName+".adoc"
 
-                    // console.log("parentPath",parentPath)
                     if(pages.findIndex((element,index) => {
                         if(element.src.relative === parentPath+"/"+folderFileName) {
                             return true
@@ -471,13 +436,10 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
                             "",
                             `pages::[path=${folderName}]`
                         )
-                        // console.log(content)
                         let newFile = createNewVirtualFile( contentCatalog, folderFileName, parentPath, module, component, version, content.join("\n"), base )
                         folderFiles[relativePath]=newFile
                     }
                     const relativePathNew = relativePath.replace("/"+folderName,"")
-                    // console.log("old path",relativePath)
-                    // console.log("new path",relativePathNew)
                     if (relativePathNew === relativePath) {
                         return false
                     }
@@ -491,7 +453,6 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
             }
         }
     })
-    // console.log(folderFiles)
     return (Array.from(Object.values(folderFiles)))
 }
 
@@ -499,7 +460,7 @@ function createKeywordsOverviewPage( contentCatalog, pages, keywordPageMap, targ
     const standardContent = new Array(
         "= Used keywords In ASAM Project Guide",
         ":description: Automatically generated overview over all keywords used throughout this Project Guide.",
-        ":keywords: generated,keywords,link-concept,structure",
+        ":keywords: generated,keywords,keyword-overview-page,link-concept,structure",
         ":page-partial:",
         "",
         "This page is an automatically generated list of all keywords used throught this Project Guide.",
@@ -521,13 +482,10 @@ function createKeywordsOverviewPage( contentCatalog, pages, keywordPageMap, targ
         }
         standardContent.push("=== "+entry[0])
         for (let value of entry[1]) {
-            // console.log(value)
             if (value.src.basename === targetName && value.src.relative === targetPath && value.src.module === targetModule) {
                 continue;
             }
             standardContent.push("* xref:"+value.src.module+":"+value.src.relative+"[]")
-            // console.log(value.src.path)
-            // console.log(value.base)
         }
         standardContent.push("")
     }
@@ -535,7 +493,6 @@ function createKeywordsOverviewPage( contentCatalog, pages, keywordPageMap, targ
     const relative = targetPath === "" ? targetName : targetPath+"/"+targetName
     let existingFile = contentCatalog.findBy({component: component, version: version, module: targetModule, relative: relative})
     if (existingFile.length) {
-        // console.log("file exists")
         existingFile[0].contents = Buffer.from(standardContent.join("\n"))
         return pages
 
@@ -556,7 +513,6 @@ function createNewVirtualFile( contentCatalog, filename, path, module, component
     if (typeof content === 'string' || content instanceof String){
         content = Buffer.from(content)
     }
-    // console.log([path, path+filename, content])
     let typeFolder;
     let mediaType
     switch(type){
@@ -574,12 +530,9 @@ function createNewVirtualFile( contentCatalog, filename, path, module, component
     }
     let newFile = new File({ base: base, path: "modules/"+module+typeFolder+path+filename, contents: content, mediaType: mediaType})
     let moduleRootPath = path=== "/" ? ".." : path.replace(/([^//])*/,"..")+".."
-    // console.log(["REPLACING: ",path,moduleRootPath])
     newFile.src = {}
     Object.assign(newFile.src, { path: newFile.path, basename: newFile.basename, stem: newFile.stem, extname: newFile.extname, family: type, relative: path+filename, mediaType: 'text/asciidoc', component: component, version: version, module: module, moduleRootPath: moduleRootPath })
-    // const rel = contentCatalog.resolvePage()
 
-    // console.log(newFile.src)
     contentCatalog.addFile(newFile)
     return (newFile)
 }
@@ -594,7 +547,6 @@ function replaceAutonavMacro( contentCatalog, pages, nav, component, version ) {
     let modulePages = pages.filter(page => page.src.module === moduleName)
 
     let addedVirtualPages = createVirtualFilesForFolders(contentCatalog,component,version,moduleName,modulePages,modulePath)
-    // console.log(addedVirtualPages)
     modulePages = [...modulePages,...addedVirtualPages]
     pages = [...pages,...addedVirtualPages]
 
