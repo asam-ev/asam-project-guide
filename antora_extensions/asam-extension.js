@@ -31,17 +31,18 @@ module.exports.register = function ({ config }) {
 
                 let pages = contentCatalog.findBy({ component, version, family: 'page'})
                 const navFiles = contentCatalog.findBy({ component, version, family: 'nav'})
-                const keywordPageMap = getKeywordPageMapForPages(pages)
+                let keywordPageMap = getKeywordPageMapForPages(pages)
                 const rolePageMap = getRolePageMapForPages(pages)
-
 
                 let targetPath = config.keywords.path ? config.keywords.path : ""
                 let targetModule = config.keywords.module ? config.keywords.module : "ROOT"
                 let targetName = config.keywords.filename ? config.keywords.filename : "0_used-keywords.adoc"
 
-                // Add use of config here
                 pages = createKeywordsOverviewPage(contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version)
-                findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywordPageMap, rolePageMap, macrosRegEx, macrosHeadings, logger, component, version )
+                keywordPageMap = getKeywordPageMapForPages(pages)
+                pages = findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywordPageMap, rolePageMap, macrosRegEx, macrosHeadings, logger, component, version )
+                keywordPageMap = getKeywordPageMapForPages(pages)
+                pages = createKeywordsOverviewPage(contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version)
             })
         })
       })
@@ -150,96 +151,7 @@ function findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywor
             }
         }
         if (result) {
-            // console.log(nav.contents.toString())
-            // console.log(result)
-            const modulePath = nav.dirname+"/pages"
-            const moduleName = nav.src.module
-            let modulePages = pages.filter(page => page.src.module === moduleName)
-
-            // console.log(typeof modulePages) //object
-
-            let addedVirtualPages = createVirtualFilesForFolders(contentCatalog,component,version,moduleName,modulePages,modulePath)
-            modulePages = [...modulePages,...addedVirtualPages]
-            pages = [...pages,...addedVirtualPages]
-
-            let moduleStartPage = modulePages[0].basename
-            const rootLevelPages = modulePages.filter(x => x.src.moduleRootPath === "..").map(x => x.stem)
-
-            if (rootLevelPages.indexOf(moduleName) > 0) {
-                // console.log(["FOUND: ",rootLevelPages.indexOf(moduleName),moduleName, rootLevelPages])
-                moduleStartPage = moduleName+".adoc"
-            }
-            else if (rootLevelPages.indexOf("index") > 0){
-                moduleStartPage = "index.adoc"
-            }
-            else if (rootLevelPages.indexOf("main") > 0){
-                moduleStartPage = "main.adoc"
-            }
-
-            let navBody = ["* xref:"+moduleStartPage+"[]"]
-
-            modulePages.sort((a,b) => {
-                let relA = a.out.dirname
-                let relB = b.out.dirname
-                let isDebug = a.src.stem === "tools" || b.src.stem === "tools" ? true : false
-                isDebug = false
-
-                if (relA < relB)
-                {
-                    if (isDebug) {
-                        console.log([relA,relB,"relA<relB",a.src.stem,b.src.stem])
-                    }
-                    return -1;
-                }
-                if (relA > relB)
-                {
-                    if (isDebug) {
-                        console.log([relA,relB,"relA>relB",a.src.stem,b.src.stem])
-                    }
-                    return 1;
-                }
-                if (relA === relB)
-                {
-                    if (isDebug) {
-                        console.log([relA,relB,"relA === relB",a.src.stem,b.src.stem])
-                    }
-                    let nameA = a.src.stem
-                    let nameB = b.src.stem
-                    // console.log(a.out.dirname)
-                    // const startIndex = a.out.dirname.lastIndexOf("/")+1
-                    // let folderName = a.out.dirname.slice(startIndex)
-
-                    if (pageIsFolderFile(a)) {
-                        return -1;
-                    }
-                    if (pageIsFolderFile(b)) {
-                        return 1;
-                    }
-                    if (nameA > nameB)
-                    {
-                        return 1
-                    }
-                    return -1
-                }
-            })
-            modulePages.forEach( (page) => {
-                let currentLevel = 2
-                let moduleRootPath = page.src.moduleRootPath
-                if (moduleRootPath.indexOf("/")>-1 && !pageIsFolderFile(page)) {
-                    currentLevel = 1 + moduleRootPath.split("/").length
-                }
-                else if (moduleRootPath.indexOf("/")>-1) {
-                    currentLevel = moduleRootPath.split("/").length
-                }
-                // Add xref to page based on level to navBody
-
-                let line = "*".repeat(currentLevel) + " xref:"+page.src.relative+"[]"
-
-                if (page.src.relative !== moduleStartPage)  {
-                    navBody.push(line)
-                }
-            })
-            nav.contents = Buffer.from(navBody.join("\n"))
+            pages = replaceAutonavMacro(contentCatalog, pages, nav, component, version)
         }
     }
 
@@ -280,6 +192,7 @@ function findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywor
         //     re.exec(pageContent)
         // }
     }
+    return pages
 
 }
 
@@ -528,35 +441,52 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
         let relativePath = ""
         if (page.src.basename !== page.src.relative) {
             relativePath = page.src.relative.replace("/"+page.src.basename,"")
-            // console.log(relativePath)
+            // console.log("relativePath",relativePath)
             // console.log(page.src.relative)
-            if (Object.keys(folderFiles).indexOf(relativePath)<0) {
-
-                let folderName = relativePath
-                const start = folderName.lastIndexOf("/")
-                if (start > 0) {
-                    folderName = folderName.slice(start+1)
+            while (true) {
+                if (!relativePath) {
+                    return false
                 }
-                let content = new Array(
-                    "= "+capitalizeFirstLetter(folderName).replace("_"," "),
-                    ":description: Auto-generated folder page",
-                    ":keywords: generated, autonav",
-                    "",
-                    "pages::[]"
-                )
-                folderName = folderName+".adoc"
-                // console.log("searching: " + relativePath+"/"+folderName)
-                // for (let page of pages) {
-                //     console.log(page.src.relative)
-                // }
-                if(pages.findIndex((element,index) => {
-                    if(element.src.relative === relativePath+"/"+folderName) {
-                        return true
+                if (Object.keys(folderFiles).indexOf(relativePath) < 0) {
+                    let folderName = relativePath
+                    const start = folderName.lastIndexOf("/")
+                    if (start > 0) {
+                        folderName = folderName.slice(start+1)
                     }
-                }) === -1)
-                {
-                    let newFile = createNewVirtualFile( contentCatalog, folderName, relativePath, module, component, version, content.join("\n"), base )
-                    folderFiles[relativePath]=newFile
+                    let parentPath = relativePath.slice(0,relativePath.lastIndexOf(folderName))
+                    parentPath = parentPath.endsWith("/") ? parentPath.slice(0,-1) : parentPath
+                    // console.log(folderName)
+                    const folderFileName = folderName+".adoc"
+
+                    // console.log("parentPath",parentPath)
+                    if(pages.findIndex((element,index) => {
+                        if(element.src.relative === parentPath+"/"+folderFileName) {
+                            return true
+                        }
+                    }) === -1) {
+                        let content = new Array(
+                            "= "+capitalizeFirstLetter(folderName).replace("_"," "),
+                            ":description: Auto-generated folder page",
+                            ":keywords: generated, autonav",
+                            "",
+                            `pages::[path=${folderName}]`
+                        )
+                        // console.log(content)
+                        let newFile = createNewVirtualFile( contentCatalog, folderFileName, parentPath, module, component, version, content.join("\n"), base )
+                        folderFiles[relativePath]=newFile
+                    }
+                    const relativePathNew = relativePath.replace("/"+folderName,"")
+                    // console.log("old path",relativePath)
+                    // console.log("new path",relativePathNew)
+                    if (relativePathNew === relativePath) {
+                        return false
+                    }
+                    else {
+                        relativePath = relativePathNew
+                    }
+                }
+                else {
+                    return false
                 }
             }
         }
@@ -578,13 +508,6 @@ function createKeywordsOverviewPage( contentCatalog, pages, keywordPageMap, targ
         "== List of keywords",
         ""
     )
-    // console.log(keywordPageMap)
-
-    // TEST
-    targetModule = "compendium"
-    // END TEST
-
-    // console.log(keywordPageMap.entries())
     let myBase;
     for (let entry of [...keywordPageMap.entries()].sort()) {
         let val = entry[1].entries().next().value[0]
@@ -608,9 +531,20 @@ function createKeywordsOverviewPage( contentCatalog, pages, keywordPageMap, targ
         }
         standardContent.push("")
     }
-    // console.log(standardContent)
-    let newFile = createNewVirtualFile(contentCatalog, targetName, targetPath, targetModule, component, version, standardContent.join("\n"),myBase)
-    return [...pages,newFile]
+
+    const relative = targetPath === "" ? targetName : targetPath+"/"+targetName
+    let existingFile = contentCatalog.findBy({component: component, version: version, module: targetModule, relative: relative})
+    if (existingFile.length) {
+        // console.log("file exists")
+        existingFile[0].contents = Buffer.from(standardContent.join("\n"))
+        return pages
+
+    }
+    else {
+        let newFile = createNewVirtualFile(contentCatalog, targetName, targetPath, targetModule, component, version, standardContent.join("\n"),myBase)
+        return [...pages,newFile]
+    }
+
 
 }
 
@@ -652,4 +586,58 @@ function createNewVirtualFile( contentCatalog, filename, path, module, component
 
 function pageIsFolderFile( page ) {
     return (page.src.stem === page.out.dirname.slice(page.out.dirname.lastIndexOf("/")+1))
+}
+
+function replaceAutonavMacro( contentCatalog, pages, nav, component, version ) {
+    const modulePath = nav.dirname+"/pages"
+    const moduleName = nav.src.module
+    let modulePages = pages.filter(page => page.src.module === moduleName)
+
+    let addedVirtualPages = createVirtualFilesForFolders(contentCatalog,component,version,moduleName,modulePages,modulePath)
+    // console.log(addedVirtualPages)
+    modulePages = [...modulePages,...addedVirtualPages]
+    pages = [...pages,...addedVirtualPages]
+
+    let moduleStartPage = modulePages[0].basename
+    const rootLevelPages = modulePages.filter(x => x.src.moduleRootPath === "..").map(x => x.stem)
+
+    if (rootLevelPages.indexOf(moduleName) > 0) {
+        moduleStartPage = moduleName+".adoc"
+    }
+    else if (rootLevelPages.indexOf("index") > 0){
+        moduleStartPage = "index.adoc"
+    }
+    else if (rootLevelPages.indexOf("main") > 0){
+        moduleStartPage = "main.adoc"
+    }
+
+    let navBody = ["* xref:"+moduleStartPage+"[]"]
+
+    modulePages.sort((a,b) => {
+        var relA = a.src.path.replace(".adoc","").split("/")
+        var relB = b.src.path.replace(".adoc","").split("/")
+        var l = Math.max(relA.length, relB.length)
+        for (var i = 0; i < l; i += 1) {
+            if (!(i in relA)) return -1
+            if (!(i in relB)) return 1
+            if (relA[i] > relB[i]) return +1
+            if (relA[i] < relB[i]) return -1
+        }
+    })
+
+    modulePages.forEach( (page) => {
+        let currentLevel = 2
+        let moduleRootPath = page.src.moduleRootPath
+        if (moduleRootPath.indexOf("/")>-1 ) {
+            currentLevel = 1 + moduleRootPath.split("/").length
+        }
+
+        let line = "*".repeat(currentLevel) + " xref:"+page.src.relative+"[]"
+
+        if (page.src.relative !== moduleStartPage)  {
+            navBody.push(line)
+        }
+    })
+    nav.contents = Buffer.from(navBody.join("\n"))
+    return pages
 }
