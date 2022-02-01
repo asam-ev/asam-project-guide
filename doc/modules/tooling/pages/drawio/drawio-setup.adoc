@@ -46,7 +46,7 @@ The only option to add the library is to download a copy and add it manually.
 . Install the drawio extensions in __{vscode}__
 . Check out the {library-repo}[asset library repository^]
 . In Visual Studio Code, access the extension settings for Draw.io Integration and open the settings.json file
-. Below the line with `"hediet.vscode-drawio.local-storage"`, add the following lines and replace `\<<filepath/filename>>` with the path to the downloaded library file (.xml):
+. Add the following lines and replace `\<<filepath/filename>>` with the path to the downloaded library file (.xml):
 +
 [source,json]
 ----
@@ -60,6 +60,7 @@ The only option to add the library is to download a copy and add it manually.
 ----
 +
 NOTE: Remove the comma after the last braket ("]") if there is no other line before the closing curly bracket ("}").
+. Activate the library from any drawio file through "More Shapes...", selecting the ASAM Standard Library and confirming the selection
 
 
 image::drawio-import-library-vscode.gif[title=Import ASAM Draw.io library into VSCode extension.]
