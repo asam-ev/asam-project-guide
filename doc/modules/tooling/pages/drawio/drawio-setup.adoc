@@ -36,6 +36,8 @@ Draw.io can be used either locally (through the dedicated app <<Draw.io App (Des
 
 image::drawio-import-library.gif[title=Import ASAM Draw.io library into Desktop.]
 
+==== Draw.io VSCode extension
+
 include::compendium:partial$vscode/drawio.adoc[]
 
 NOTE: At this time, the VS Code extension does not provide url links to libraries.
