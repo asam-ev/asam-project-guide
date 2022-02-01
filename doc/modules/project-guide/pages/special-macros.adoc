@@ -1,6 +1,6 @@
-= Custom ASAM Antora Macros
+= Custom ASAM Antora extension
 :description: Lists all custom macros used throughout the Project Guide that require special scripts by ASAM to be processed correctly.
-:keywords: macro,script,asam,custom,project-guide, READYFORREVIEW
+:keywords: macro,extension,antora,asam,custom,project-guide, READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -9,23 +9,150 @@ include::{abb}[]
 
 Antora and Asciidoctor already provide a rich set of features and macros.
 However, not all functions that __{asam}__ requires for an efficient and partially automated content structuring are present by default.
-For this reason, some additional scripts were created that can be executed locally or in the pipeline when building the Project Guide.
+For this reason, an Antora extension was created.
 
-This page collects all those macros and explains what they do and how to use them.
+This page collects all the features of this extension, such as the custom macros, and explains what they do and how to use them.
 Each macro also has a detailed instructions page with more details.
 
-== The "related" Macro
+== Added features
+The ASAM Antora extension adds the following features to Antora:
+
+* Support for the <<ASAM Antora macros>>
+* Identifying and (optional) listing <<Orphan pages>>
+* Creating a <<Keyword-overview page>>
+
+NOTE: All following examples assume the extension is located under "./antora_extensions", where "." is the location of the "site.yml" file (the Antora playbook).
+
+== General configuration
+The following table describes general configuration on using the extension:
+
+|===
+|Attribute |Description |Default |Example
+
+|id
+|Defines an id by witch the extension can be specifically called from the CLI.
+|none
+|`id: asam-extension`
+
+|enabled
+|De-/activates this extension by default.
+If deactivated, the extension must be explicitely called from the CLI.
+Only relevant in combination with `id`.
+|true
+|`enabled: false`
+|===
+
+.Example
+====
+[source,yaml]
+----
+- id: asam-extensions
+  enabled: false
+  require: './antora_extensions/asam-extension.js'
+----
+====
+
+== Orphan pages
+The ASAM Antora extension finds all pages not listed in any nav.adoc and puts a warning in the console output.
+If configured, these pages can also automatically be listed under a separated navigation entry (e.g. "orphans") at the end of the Antora document.
+
+The following table lists the supported attributes as well as their default values:
+
+|===
+|Attribute |Description |Default |Example
+
+|add_to_navigation
+|De-/activates collecting and adding the orphan files under a new name in the navigation tree.
+|false
+|`add_to_navigation: true`
+
+|unlisted_pages_heading
+|Defines the name in the navigation tree under which the orphan pages are collected.
+|"Unlisted Pages"
+|`unlisted_pages_heading: Orphans`
+|===
+
+.Example
+====
+[source,yaml]
+----
+- require: './antora_extensions/asam-extension.js'
+  add_to_navigation: true
+  unlisted_pages_heading: Orphans
+----
+====
+
+
+== Keyword-overview page
+The ASAM Antora extension generates an overview page that lists all keywords used in the Antora pages.
+The location and the (virtual) filename can be configured in the site.yml (Antora playbook).
+These configuration must all be added under `keywords:`
+
+NOTE: The keyword page will be added in all versions and components with the same name and at the same location!
+
+The following table lists the supported attributes as well as their default values:
+
+|===
+|Attribute |Description |Default |Example
+
+|filename
+|The name of the virtual file that is created to contain the list of used keywords.
+Must end with ".adoc"!
+This name can be used for `xref` or `include`.
+|"0_used-keywords.adoc"
+|`filename: "1_keywords.adoc`
+
+|module
+|The module where the file is supposed to be added.
+Make sure that the module exists, as the created page will otherwise be an orphan.
+|"ROOT"
+|`module: "compendium"`
+
+|path
+|The path within the module where the file is to be located.
+Separator is "/" and MUST ONLY be used between folders (no leading or trailing separator!).
+|""
+|`path: "keywords_path"`
+|===
+
+.Example
+====
+[source,yaml]
+----
+- require: './antora_extensions/asam-extension.js'
+  keywords:
+    filename: "1_keywords.adoc"
+    module: "compendium"
+----
+====
+
+See:
+reference::keyword-overview-page[]
+
+== ASAM Antora macros
+IMPORTANT: ASAM macros are not supported in partials as they are replaced through Antora rather than Asciidoctor, but partials are included by Asciidoctor at a later stage.
+
+=== The "related" macro
 include::partial$macro-related.adoc[tag="how"]
 
 See: xref:macros/macro-related.adoc[]
 
-== The "reference" Macro
+=== The "reference" macro
 include::partial$macro-reference.adoc[tag=how]
 
 See: xref:macros/macro-reference.adoc[]
 
-== The "pages" Macro
+=== The "pages" macro
 include::partial$macro-pages.adoc[tag=how]
 
 See: xref:macros/macro-pages.adoc[]
 
+=== The "role_related" macro
+include::partial$macro-role_related.adoc[tag=how]
+
+See: xref:macros/macro-role_related.adoc[]
+
+=== The "autonav" macro
+include::partial$macro-autonav.adoc[tag=how]
+
+See: xref:macros/macro-autonav.adoc[]

@@ -1,7 +1,7 @@
 * xref:home.adoc[]
 ** xref:structure.adoc[]
 *** xref:structure/content_structure.adoc[]
-*** xref:structure/link-concept.adoc[]
+// *** xref:structure/link-concept.adoc[]
 *** xref:structure/keywords-list.adoc[]
 ** xref:add_files.adoc[]
 *** xref:adding_files/add-new-module.adoc[]
@@ -30,6 +30,8 @@
 *** xref:macros/macro-pages.adoc[]
 *** xref:macros/macro-reference.adoc[]
 *** xref:macros/macro-related.adoc[]
+*** xref:macros/macro-role_related.adoc[]
+*** xref:macros/macro-autonav.adoc[]
 // ** Working With Projects
 // ** Additional Infos
 

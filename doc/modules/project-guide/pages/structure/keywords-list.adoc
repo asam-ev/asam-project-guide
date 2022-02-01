@@ -7,4 +7,5 @@ include::{abb}[]
 
 The list of used keywords is now located in the compendium.
 
-Link: xref:compendium:0_used-keywords.adoc[].
+Link:
+reference::keyword-overview-page[]

@@ -8,7 +8,9 @@
 
 include::partial$standard_page_creation.adoc[]
 
-
+TIP: You can exclude a page from Antora through its name.
+If the filename starts with a dot ("."), Antora ignores it. +
+If the filename starts with an underscore ("_"), Antora does not publish it but adds it to its internal content catalog (i.e. it is aware of it).
 
 [NOTE]
 ====
