@@ -9,3 +9,5 @@ include::compendium:partial$_attributes.adoc[]
 include::compendium:partial$tools/gitlab/gitlab_add_comment.adoc[]
 
 include::compendium:partial$tools/gitlab/gitlab_create_issue.adoc[]
+
+include::compendium:partial$tools/gitlab/ticket_triage.adoc[]

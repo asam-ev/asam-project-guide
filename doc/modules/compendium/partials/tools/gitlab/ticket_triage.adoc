@@ -1,0 +1,8 @@
+
+== Issue triage - managing unedited issues
+
+//tag::body[]
+
+image::compendium:ticket_triage.drawio.svg[]
+
+//end::body[]
