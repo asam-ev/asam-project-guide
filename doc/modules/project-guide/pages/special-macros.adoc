@@ -14,6 +14,8 @@ For this reason, an Antora extension was created.
 This page collects all the features of this extension, such as the custom macros, and explains what they do and how to use them.
 Each macro also has a detailed instructions page with more details.
 
+TIP: For more information on how to write an Antora extension, see https://docs.antora.org/antora/latest/extend/extensions/[the official extension guide] and check out the relevant https://gitlab.com/antora/antora/-/tree/main/packages[package repositories], particularly their `devdocs` folders.
+
 == Added features
 The ASAM Antora extension adds the following features to Antora:
 
@@ -156,3 +158,5 @@ See: xref:macros/macro-role_related.adoc[]
 include::partial$macro-autonav.adoc[tag=how]
 
 See: xref:macros/macro-autonav.adoc[]
+
+
