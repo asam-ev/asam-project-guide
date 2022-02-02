@@ -31,7 +31,7 @@ ASM-29,No unused images,-,-,approved
 ASM-30,Filenames lowercase,-,-,draft
 ASM-31,Standard disclaimer,-,-,draft
 ASM-32,Standard License,-,-,draft
-ASM-33,No Oxford commas ,-,-,to be discussed
+ASM-33,Use Oxford commas ,-,-,approved
 ASM-34,Repository contains LICENSE,-,-,draft
 ASM-35,Repository contains contact persons,-,-,draft
 ASM-36,Repository contains roadmap,-,-,draft
@@ -49,7 +49,7 @@ ASM-47,Create a title/caption for every table,-,-,draft
 ASM-48,List use asciidoc syntax,-,-,draft
 ASM-49,American English,-,-,approved
 ASM-50,Tables capitalization in header,-,-,draft
-ASM-51,Decimal separator,-,-,to be discussed
+ASM-51,Use point as decimal separator,-,-,approved
 ASM-52,Leading zero,-,-,approved
 ASM-53,Tables ,-,-,draft
 ASM-54,Tables ,-,-,draft
