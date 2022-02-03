@@ -1313,24 +1313,29 @@ ASAM Writing Guide: XIL: Tags (aka anchors)
 
 
 [#sec-ASM-78]
-=== Insert a unique ID for topics, figures, tables, source code and sections (ASM-78)
+=== Insert a unique ID for topics, figures, tables, source code, and sections (ASM-78)
 
-* `[#top-<uid>]` for topics
+Insert a unique ID according to the following patterns:
 
-* `[#fig-<uid>]` for figures (images, diagrams, and so on)
-
-* `[#tab-<uid>]` for tables
-
-* `[#code-<uid>]` for source code blocks
-
-* `[#sec-<uid>]` for sections
-
-
-NOTE: Where to use a semantic ID and where a UUID? What are allowed characters in IDs anyway? How about a Regex for a valid ID production: [a-zA-Z0-9_-]
+[#tab-a0bf23cc-3f35-4f3a-9788-6436c90d29b3]
+.List of patterns for unique IDs
+[%header]
+|===
+|Pattern | usage | optional/required | comment
+|`[#code-<uid>]` | source code blocks | optional | Only use if source code is referenced.
+|`[#fig-<uid>]` | figures (images, diagrams, and so on) | required | -
+|`[#map-<uid>]` | map files | optional | Only use for map_[...].adoc files.
+|`[#sec-<uid>]` | sections | optional | Only use if section is referenced.
+|`[#tab-<uid>]` | tables | required | -
+|`[#top-<uid>]` | topics | required | -
+|===
 
 *Exceptions*
 
-Insert the unique ID for a section only if the section is referenced elsewhere.
+If you do not know how to use unique IDs, insert `[#tag-uid]` as a placeholder.
+The placeholder will trigger a pipeline warning so that the technical writer can help with creating a unique ID.
+
+NOTE: Where to use a semantic ID and where a UUID? What are allowed characters in IDs anyway? How about a Regex for a valid ID production: [a-zA-Z0-9_-]
 
 *Example*
 
@@ -1345,8 +1350,6 @@ Insert the unique ID for a section only if the section is referenced elsewhere.
 *Source*
 
 ASAM Writing Guide: Tags
-
-
 
 
 [#sec-ASM-80]
