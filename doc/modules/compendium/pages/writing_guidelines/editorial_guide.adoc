@@ -94,6 +94,31 @@ Use them to create consistent content.
 
 This section contains editorial rules on content and language.
 
+[#sec-ASM-33]
+=== Use an Oxford comma (ASM-33)
+
+* Use a comma before a conjunction in an enumeration.
+* Separate also the last noun in a list from the rest of the list using a comma.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-f9a4e619-dca7-4d5e-bd65-500de2cb261e]
+.Use an Oxford comma
+[%header]
+|===
+|No                                                                                                                                         |#Yes#
+|[.line-through]#Unless stated otherwise, all examples, figures and descriptions in this specification assume there is right-hand traffic.# |Unless stated otherwise, all examples, figures, and descriptions in this specification assume there is right-hand traffic.
+|[.line-through]#Pages, colors, traces are all copied from the display.#                                                                    |Pages, colors, and traces are all copied from the display.
+|===
+
+*Source*
+
+tekom English for Non-Native Writers, 2. updated edition, Rule EN_S 610, S. 76, Place a Comma in Front of Conjunctions in Enumerations
+
 
 [#sec-ASM-49]
 === Use American English (ASM-49)
@@ -476,9 +501,9 @@ ASAM Writing Guide: XIL: Use 'since' and 'because' correctly
 This section contains editorial rules on how to write down numeric values.
 
 [#sec-ASM-51]
-=== Use a comma as decimal separator (ASM-51)
+=== Use a point as decimal separator (ASM-51)
 
-* The decimal separator in numeric values is a comma: `,`
+* The decimal separator in numeric values is a point `.` to mark the boundary in a number between the integral and fractional parts of a decimal number.
 * Do not use columns in numeric values.
 
 *Exceptions*
@@ -488,17 +513,20 @@ There are no exceptions.
 *Example*
 
 [#tab-3dfef781-52e9-4f96-b28e-1e30c3a245b3]
-.Use of a comma as decimal separator
+.Use of a point as decimal separator
 [%header]
 |===
 |No                        |#Yes#
-|[.line-through]#1,234.56# |1234,56
-|[.line-through]#1,000#    |1000
+|[.line-through]#2.543,24# |2543.24
+|[.line-through]#1.000#    |1000
 |===
+
+ISO/IEC Directives, Part 2, Principles and rules for the structure and drafting of ISO and IEC documents, 9th edition, 2021, 9.1 Representation of numbers and numerical values defines the comma as decimal separator.
+In ASAM standards the point is used as decimal separator because a point is the decimal separator in programming languages and the most English speaking countries.
 
 *Source*
 
-ISO/IEC Directives, Part 2, Principles and rules for the structure and drafting of ISO and IEC documents, 9th edition, 2021, 9.1 Representation of numbers and numerical values
+ASAM specific rule
 
 
 [#sec-ASM-52]
@@ -517,13 +545,13 @@ There are no exceptions.
 [%header]
 |===
 |No                   |#Yes#
-|[.line-through]#.5#  |0,5
-|[.line-through]#-,7# |-0,7
+|[.line-through]#.5#  |0.5
+|[.line-through]#-.7# |-0.7
 |===
 
 *Source*
 
-ISO/IEC Directives, Part 2, Principles and rules for the structure and drafting of ISO and IEC documents, 9th edition, 2021, 9.1 Representation of numbers and numerical values
+ASAM specific rule
 
 
 == Headings
@@ -533,7 +561,7 @@ This section contains editorial rules on how to create headings.
 ////
 TODO: When to use a heading?
 
-TODO: How to format a heading using asciidoc? 
+TODO: How to format a heading using asciidoc?
 ////
 
 [#sec-ASM-2]
