@@ -1423,6 +1423,8 @@ ASAM Writing Guide: File names
 
 Apply the rules for file names on the caption.
 
+NOTE: Name all images according to the naming convention: fig_[name_of_image].drawio.svg (not "fig-[...]" as previously planned).
+
 *Exceptions*
 
 There are no exceptions.
