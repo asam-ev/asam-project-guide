@@ -2,6 +2,7 @@
 ** xref:structure.adoc[]
 *** xref:structure/content_structure.adoc[]
 // *** xref:structure/link-concept.adoc[]
+*** xref:structure/versioning_concept.adoc[]
 *** xref:structure/keywords-list.adoc[]
 ** xref:add_files.adoc[]
 *** xref:adding_files/add-new-module.adoc[]

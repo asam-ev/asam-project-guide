@@ -1,0 +1,9 @@
+= Project Guide versioning concept
+:description: Describes the versioning concept of the Project Guide.
+:keywords: antora,structure,project-guide,versioning, TODO
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+image::versioning_concept.drawio.svg[alt="Versioning concept"]
+
