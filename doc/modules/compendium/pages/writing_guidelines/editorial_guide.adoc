@@ -406,7 +406,8 @@ ASAM Writing Guide: Verbs with a special meaning (shall, should, may, can)
 [#sec-ASM-68]
 === Use 'that' for essential information (ASM-68)
 
-Use 'that' to insert essential information.
+* Use 'that' to insert essential information.
+* Do not use commas.
 
 *Exceptions*
 
@@ -418,9 +419,10 @@ There are no exceptions.
 .Use of 'that' for essential information
 [%header, cols=2*a]
 |===
-|No                                              |#Yes#
-|[.line-through]#The car they own is old.#       |The car that they own is old.
-|[.line-through]#The car which they own is old.# |The car that they own is old.
+|No                                               |#Yes#
+|[.line-through]#The car they own is old.#        |The car that they own is old.
+|[.line-through]#The car which they own is old.#  |The car that they own is old.
+|[.line-through]#The car, that they own, is old.# |The car that they own is old.
 |===
 
 *Source*
@@ -431,7 +433,8 @@ ASAM Writing Guide: Use 'that' and 'which' correctly
 [#sec-ASM-115]
 === Use 'which' for additional information (ASM-115)
 
-Use 'which' to insert additional information, that can be left out.
+* Use 'which' to insert additional information that can be left out.
+* Use commas.
 
 *Exceptions*
 
@@ -443,8 +446,9 @@ There are no exceptions.
 .Use of 'which' for unessential color information
 [%header]
 |===
-|No                                                         |#Yes#
-|[.line-through]#The car that is red drives down the road.# |The car, which is red, drives down the road.
+|No                                                          |#Yes#
+|[.line-through]#The car that is red drives down the road.#  |The car, which is red, drives down the road.
+|[.line-through]#The car which is red drives down the road.# |The car, which is red, drives down the road.
 |===
 
 *Source*
