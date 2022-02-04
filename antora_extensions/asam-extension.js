@@ -28,20 +28,24 @@ module.exports.register = function ({ config }) {
         contentCatalog.getComponents().forEach(({ versions }) => {
             versions.forEach(({ name: component, version, url: defaultUrl }) => {
 
+                let targetPath = config.keywords && config.keywords.path ? config.keywords.path : ""
+                let targetModule = config.keywords && config.keywords.module ? config.keywords.module : "ROOT"
+                let targetName = config.keywords && config.keywords.filename ? config.keywords.filename : "0_used-keywords.adoc"
+
+                let useKeywords = config.keywords ? true : false
+
+                let keywordOverviewPageRequested = config.keywords && config.keywords.createOverview && useKeywords ? true : false
+
                 let pages = contentCatalog.findBy({ component, version, family: 'page'})
                 const navFiles = contentCatalog.findBy({ component, version, family: 'nav'})
-                let keywordPageMap = getKeywordPageMapForPages(pages)
+                let keywordPageMap = getKeywordPageMapForPages(useKeywords,pages)
                 const rolePageMap = getRolePageMapForPages(pages)
 
-                let targetPath = config.keywords.path ? config.keywords.path : ""
-                let targetModule = config.keywords.module ? config.keywords.module : "ROOT"
-                let targetName = config.keywords.filename ? config.keywords.filename : "0_used-keywords.adoc"
-
-                pages = createKeywordsOverviewPage(contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version)
-                keywordPageMap = getKeywordPageMapForPages(pages)
+                pages = createKeywordsOverviewPage(keywordOverviewPageRequested, contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version)
+                keywordPageMap = getKeywordPageMapForPages(useKeywords,pages)
                 pages = findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywordPageMap, rolePageMap, macrosRegEx, macrosHeadings, logger, component, version )
-                keywordPageMap = getKeywordPageMapForPages(pages)
-                pages = createKeywordsOverviewPage(contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version)
+                keywordPageMap = getKeywordPageMapForPages(useKeywords,pages)
+                pages = createKeywordsOverviewPage(keywordOverviewPageRequested, contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version)
             })
         })
       })
@@ -81,8 +85,11 @@ items.forEach((item) => {
 return accum
 }
 
-function getKeywordPageMapForPages (pages = {}) {
+function getKeywordPageMapForPages (useKeywords, pages = {}) {
 
+    if (!useKeywords) {
+        return (new Map())
+    }
     var re = new RegExp("^\s*:keywords:(.*)")
     var keywordMap = generateMapForRegEx(re,pages,true)
     return keywordMap
@@ -145,7 +152,9 @@ function findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywor
             }
         }
         if (result) {
-            pages = replaceAutonavMacro(contentCatalog, pages, nav, component, version)
+            const findModuleMainPage = result[2].split(",").indexOf("none") > -1 ? false : true
+
+            pages = replaceAutonavMacro(contentCatalog, pages, nav, component, version, findModuleMainPage)
         }
     }
 
@@ -411,11 +420,14 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
         if (page.src.basename !== page.src.relative) {
             relativePath = page.src.relative.replace("/"+page.src.basename,"")
             while (true) {
-                if (!relativePath) {
+                if (!relativePath ) {
                     return false
                 }
                 if (Object.keys(folderFiles).indexOf(relativePath) < 0) {
                     let folderName = relativePath
+                    if (folderName.startsWith("_") || folderName.startsWith(".")) {
+                        return false;
+                    }
                     const start = folderName.lastIndexOf("/")
                     if (start > 0) {
                         folderName = folderName.slice(start+1)
@@ -425,7 +437,7 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
                     const folderFileName = folderName+".adoc"
 
                     if(pages.findIndex((element,index) => {
-                        if(element.src.relative === parentPath+"/"+folderFileName) {
+                        if(element.src.relative === parentPath+"/"+folderFileName || element.src.relative === folderFileName) {
                             return true
                         }
                     }) === -1) {
@@ -456,7 +468,10 @@ function createVirtualFilesForFolders( contentCatalog, component, version, modul
     return (Array.from(Object.values(folderFiles)))
 }
 
-function createKeywordsOverviewPage( contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version ) {
+function createKeywordsOverviewPage( keywordOverviewPageRequested, contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version ) {
+    if (!keywordOverviewPageRequested) {
+        return pages
+    }
     const standardContent = new Array(
         "= Used keywords In ASAM Project Guide",
         ":description: Automatically generated overview over all keywords used throughout this Project Guide.",
@@ -541,7 +556,7 @@ function pageIsFolderFile( page ) {
     return (page.src.stem === page.out.dirname.slice(page.out.dirname.lastIndexOf("/")+1))
 }
 
-function replaceAutonavMacro( contentCatalog, pages, nav, component, version ) {
+function replaceAutonavMacro( contentCatalog, pages, nav, component, version, findModuleMainPage=true ) {
     const modulePath = nav.dirname+"/pages"
     const moduleName = nav.src.module
     let modulePages = pages.filter(page => page.src.module === moduleName)
@@ -553,17 +568,20 @@ function replaceAutonavMacro( contentCatalog, pages, nav, component, version ) {
     let moduleStartPage = modulePages[0].basename
     const rootLevelPages = modulePages.filter(x => x.src.moduleRootPath === "..").map(x => x.stem)
 
-    if (rootLevelPages.indexOf(moduleName) > 0) {
+    if (rootLevelPages.indexOf(moduleName) > -1) {
         moduleStartPage = moduleName+".adoc"
     }
-    else if (rootLevelPages.indexOf("index") > 0){
-        moduleStartPage = "index.adoc"
+    else if (rootLevelPages.indexOf("index") > -1){
+        moduleStartPage = rootLevelPages[rootLevelPages.indexOf("index")]
     }
-    else if (rootLevelPages.indexOf("main") > 0){
+    else if (rootLevelPages.indexOf("main") > -1){
         moduleStartPage = "main.adoc"
     }
 
-    let navBody = ["* xref:"+moduleStartPage+"[]"]
+    let navBody = [""]
+    if (findModuleMainPage) {
+        navBody = ["* xref:"+moduleStartPage+"[]"]
+    }
 
     modulePages.sort((a,b) => {
         var relA = a.src.path.replace(".adoc","").split("/")
@@ -578,18 +596,22 @@ function replaceAutonavMacro( contentCatalog, pages, nav, component, version ) {
     })
 
     modulePages.forEach( (page) => {
-        let currentLevel = 2
+        let currentLevel = findModuleMainPage ? 2 : 1
         let moduleRootPath = page.src.moduleRootPath
         if (moduleRootPath.indexOf("/")>-1 ) {
-            currentLevel = 1 + moduleRootPath.split("/").length
+            currentLevel = currentLevel-1 + moduleRootPath.split("/").length
         }
 
         let line = "*".repeat(currentLevel) + " xref:"+page.src.relative+"[]"
 
-        if (page.src.relative !== moduleStartPage)  {
+        if ((page.src.relative !== moduleStartPage || !findModuleMainPage) && isPublishableFile(page))  {
             navBody.push(line)
         }
     })
     nav.contents = Buffer.from(navBody.join("\n"))
     return pages
+}
+
+function isPublishableFile( page ) {
+    return (page.src.relative.indexOf("/_") < 0 && page.src.relative.indexOf("/.") < 0 && !page.src.relative.startsWith("_") && !page.src.relative.startsWith("."))
 }

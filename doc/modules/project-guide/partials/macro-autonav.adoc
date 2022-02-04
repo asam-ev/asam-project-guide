@@ -12,6 +12,11 @@ The module contains at least one page.
 |===
 |Parameter |Argument(s) |Note
 
+| none
+|nA
+| If set, the module main page is not searched.
+Instead, all pages are listed one level higher than usual.
+
 |===
 //end::parameters[]
 
