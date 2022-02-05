@@ -117,3 +117,5 @@ ASM-115,Use 'which' correctly,<<sec-ASM-115>>,-,draft
 ASM-116,Use 'because' for a reason,<<sec-ASM-116>>,-,draft
 ASM-117,Underscore in file and folder names,<<sec-ASM-117>>,-,draft
 ASM-118,File extension adoc for documents,<<sec-ASM-118>>,-,draft
+ASM-119,Standard names,<<sec-ASM-119>>,-,draft
+ASM-120,Standard name variable,<<sec-ASM-120>>,-,draft

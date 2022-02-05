@@ -500,6 +500,55 @@ There are no exceptions.
 ASAM Writing Guide: XIL: Use 'since' and 'because' correctly
 
 
+[#sec-ASM-119]
+=== Use the full name of ASAM standards (ASM-119)
+
+Always use the full name of ASAM standards.
+Do not use abbreviations.
+
+*Exceptions*
+
+If you refer to the *standard you are working on*, see <<#sec-ASM-120>>.
+
+*Example*
+
+[#tab-40e63cc3-f488-40ee-aab4-3489db11cc79]
+.Use the full name of ASAM standards
+[%header]
+|===
+|No|#Yes#
+|[.line-through]#OpenDRIVE#|ASAM OpenDRIVE
+|[.line-through]#OS#|ASAM OpenSCENARIO
+|===
+
+*Source*
+
+ASAM specific rule
+
+
+[#sec-ASM-120]
+=== Use the variable `{THIS_STANDARD}` to refer to the standard you are working on (ASM-120)
+
+*Exceptions*
+
+If you are writing about *other standards*, see <<#sec-ASM-119>>.
+
+*Example*
+
+[.underline]#Code#
+
+In `{THIS_STANDARD}`, all roads contain lanes.
+
+[.underline]#Result#
+
+In ASAM OpenDRIVE, all roads contain lanes.
+
+*Source*
+
+* ASAM specific rule
+* https://asciidoctor.org/docs/asciidoc-recommended-practices/#document-attributes-i-e-variables
+
+
 == Numbers
 
 This section contains editorial rules on how to write down numeric values.
