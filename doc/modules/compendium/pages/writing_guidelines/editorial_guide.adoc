@@ -549,6 +549,34 @@ In ASAM OpenDRIVE, all roads contain lanes.
 * https://asciidoctor.org/docs/asciidoc-recommended-practices/#document-attributes-i-e-variables
 
 
+[#sec-ASM-122]
+=== Write out conjunctions (ASM-122)
+
+* Write out conjunctions.
+This improves the understandability.
+* Do not use a slash (`++/++`) for two or more conjunctions.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-2d0a6c5b-7cdf-478a-b94d-157f22d8e950]
+.Write out conjunctions
+[%header]
+|===
+|No|#Yes#
+|[.line-through]lateral and/or longitudinal#                              | lateral, longitudinal, or both
+|[.line-through]#segment continuity, tangent and/or curvature continuity# | segment continuity, tangent, curvature continuity, or all of them
+
+|===
+
+*Source*
+
+-
+
+
 == Numbers
 
 This section contains editorial rules on how to write down numeric values.
