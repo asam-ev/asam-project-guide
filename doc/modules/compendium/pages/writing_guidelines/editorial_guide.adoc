@@ -1365,8 +1365,8 @@ There are no exceptions.
 .Use of lowercase in file names
 [%header]
 |===
-|No                                   |#Yes#
-|[.line-through]#ExampleFileName.ado# |example\\_file\\_name.adoc
+|No                                    |#Yes#
+|[.line-through]#ExampleFileName.adoc# |example_file_name.adoc
 |===
 
 *Source*
@@ -1375,7 +1375,7 @@ ASAM Writing Guide: File names
 
 
 [#sec-ASM-117]
-=== Use underscore '__' instead of space '  ' in file and folder names (ASM-117)
+=== Use underscore '_' instead of space ' ' in file and folder names (ASM-117)
 
 *Exceptions*
 
@@ -1387,8 +1387,8 @@ There are no exceptions.
 .Use of underscore in file names
 [%header]
 |===
-|No                                   |#Yes#
-|[.line-through]#ExampleFileName.ado# |example_file_name.adoc
+|No                                      |#Yes#
+|[.line-through]#Example File Name.adoc# |example_file_name.adoc
 |===
 
 *Source*
