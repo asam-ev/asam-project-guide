@@ -856,6 +856,51 @@ a|[source, xml]
 ASAM Writing Guide: Indentation
 
 
+[#sec-ASM-121]
+=== Mark up ASAM XML elements (ASM-121)
+
+* For XML elements, use the name of the element in angle brackets (`++<>++`) and backticks (`++``++`), and afterwards the word "element" or "elements".
+* For attributes, use the at symbol (`++@++`) and the name of the element.
+Optional: Use the words "attribute" or "attributes".
+* Do not use the plural of the name of XML elements or attributes.
+
+*Exceptions*
+
+In ASAM OpenSCENARIO, use the following highlighting:
+
+* For XML elements, use the name of the element in backticks (`++``++`).
+Optional: Use the words "element" or "elements".
+* For XML attributes, use the name of the attribute in backticks (`++``++`).
+Optional: Use the words "attribute" or "attributes".
+* Do not use the plural of the name of XML elements or attributes.
+
+*Example*
+
+[#tab-290d36d7-08a5-4aac-9ba2-7e60db7d448a]
+.Mark up ASAM XML elements
+[%header]
+|===
+|No|#Yes#
+|[.line-through]#road mark element#  |`<roadMark>` element
+|[.line-through]#``<roadMark>``s#    |`<roadMark>` elements
+|[.line-through]#type#               |@type
+|[.line-through]#`<type>` attribute# |@type attribute
+|[.line-through]#``<type>``s#        |@type attributes
+|===
+
+[.underline]#Code#
+
+++`++<roadMark>++`++ element
+
+[.underline]#Result#
+
+`<roadMark>` element
+
+*Source*
+
+ASAM specific rule
+
+
 == Lists
 
 This section contains editorial rules on how to create lists.
