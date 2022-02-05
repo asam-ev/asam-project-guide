@@ -120,6 +120,32 @@ There are no exceptions.
 tekom English for Non-Native Writers, 2. updated edition, Rule EN_S 610, S. 76, Place a Comma in Front of Conjunctions in Enumerations
 
 
+[#sec-ASM-123]
+=== Add a comma after introductory phrases (ASM-123)
+
+Add a comma after introductory phrases, for example, prepositional phrases and infinitive phrases.
+This improves the readability and understandability of sentences.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-a4d8a86e-b5a6-4593-94ea-656bff21b8d2]
+.Add a comma after introductory phrases
+[%header]
+|===
+|No|#Yes#
+|[.line-through]#In the ASAM OpenSCENARIO data model these types are used:#                               |In the ASAM OpenSCENARIO data model, these types are used:
+|[.line-through]#To find the mismatches we propagate the expected type backwards through the expression.# |To find the mismatches, we propagate the expected type backwards through the expression.
+|===
+
+*Source*
+
+-
+
+
 [#sec-ASM-49]
 === Use American English (ASM-49)
 
