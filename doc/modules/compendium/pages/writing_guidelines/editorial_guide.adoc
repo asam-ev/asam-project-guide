@@ -632,7 +632,7 @@ ASAM Writing Guide: Use paragraphs
 * Insert a line break after each sentence.
 * Do not add manual line breaks inside sentences.
 
-*Instruction*
+*Instructions*
 
 * _"Only hit 'enter' after a period ('.'), but make sure to hit 'enter' after a period."_
 
@@ -666,6 +666,74 @@ ASAM Writing Guide: 4.3. One sentence per line
 == Source code and literals
 
 This section contains editorial rules on how to write down source code.
+
+[#sec-ASM-xx]
+=== Use AsciiDoc syntax for source code snippets (ASM-xx)
+
+If you cannot or do not want to reference a source code file, you can add source code as a snippet to your AsciiDoc file.
+In case of future changes, be aware that you have to maintain two places: your original source code and the snippet in the AsciiDoc file.
+
+*Instructions*
+
+To add source code snippets:
+
+. Copy the part of source code you want to use as a snippet.
+. Paste the snippet into your AsciiDoc file.
+. Insert the following information:
+    * an ID (refer to <<#sec-ASM-78>>)
+    * a caption
+    * additional information as comma-separated values with spaces
+    * delimiters
+
+The following additional information shall or may be used:
+
+* Always use `source`.
+* Add the source code language for syntax highlighting. For example, `osc2`, `xml`, or `java`.
+* Always use `linenums`.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[.underline]#Code#
+
+```
+[#code-1e787b21-eb85-4582-9763-6c2319770928]
+[source, xml, linenums]
+----
+<junction name="" id="1">
+    <connection id="0" incomingRoad="2" connectingRoad="4" contactPoint="start">
+        <laneLink from="-1" to="-1"/>
+    </connection>
+    <connection id="1" incomingRoad="3" connectingRoad="5" contactPoint="start">
+        <laneLink from="-1" to="-1"/>
+    </connection>
+</junction>
+----
+```
+
+[.underline]#Result#
+
+[#code-1e787b21-eb85-4582-9763-6c2319770928]
+[source, xml, linenums]
+----
+<junction name="" id="1">
+    <connection id="0" incomingRoad="2" connectingRoad="4" contactPoint="start">
+        <laneLink from="-1" to="-1"/>
+    </connection>
+    <connection id="1" incomingRoad="3" connectingRoad="5" contactPoint="start">
+        <laneLink from="-1" to="-1"/>
+    </connection>
+</junction>
+----
+
+*Source*
+
+* ASAM Writing Guide: 6.3. Source code snippets
+* https://docs.asciidoctor.org/asciidoc/latest/verbatim/source-blocks/
+
 
 [#sec-ASM-43]
 === Use backticks for inline literals (ASM-43)
