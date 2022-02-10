@@ -923,9 +923,10 @@ Optional: Use the words "attribute" or "attributes".
 In ASAM OpenSCENARIO, use the following highlighting:
 
 * For XML elements, use the name of the element in backticks (`++``++`).
-Optional: Use the words "element" or "elements".
+Optional: Use the words "instance" or "instances".
 * For XML attributes, use the name of the attribute in backticks (`++``++`).
 Optional: Use the words "attribute" or "attributes".
+* For values, use double quotation marks (" ").
 * Do not use the plural of the name of XML elements or attributes.
 
 *Example*
