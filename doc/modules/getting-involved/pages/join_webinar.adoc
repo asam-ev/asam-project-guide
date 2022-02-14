@@ -10,7 +10,7 @@ include::{abb}[]
 TIP: Current webinars are listed on the https://www.asam.net/conferences-events/upcoming-events/[ASAM website^].
 
 == Context
-You are interested in a particular standard or project at ASAM but not directly involved in it?
+You are interested in a particular standard or project at ASAM but not directly involved in it? +
 A webinar is a great opportunity to get insight into the project or standard and give feedback or get some tips for its application.
 
 == Result
@@ -20,8 +20,8 @@ You have successfully signed up for the webinar.
 None
 
 == How
-. Go to the https://www.asam.net/conferences-events/upcoming-events/[ASAM website^] and find the webinar you are interested in
-. Access the "Registration" tab, fill out the form and send it to register
+. Go to the https://www.asam.net/conferences-events/upcoming-events/[ASAM website^] and find the webinar you are interested in.
+. Access the "Registration" tab, fill out the form and send it to register.
 +
 You will receive a confirmation email if your registration was successful.
 
@@ -29,7 +29,7 @@ You will receive a confirmation email if your registration was successful.
 == Troubleshooting / Known Issues
 === I cannot find the event online, but I know it exists
 If you want to join a webinar but cannot find the event on the website, you can also contact mailto:info@asam.net[ASAM office] directly.
-Please consider this as a last resort to fall back to only in case you cannot find the information diretly.
+Please consider this as a last resort to fall back to only in case you cannot find the information.
 
 
 related::webinar[]

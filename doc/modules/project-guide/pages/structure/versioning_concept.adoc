@@ -5,5 +5,6 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+.The Project Guide versioning concept
 image::versioning_concept.drawio.svg[alt="Versioning concept"]
 
