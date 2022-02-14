@@ -32,12 +32,16 @@ If you add no arguments, the macro will list all other pages in the same folder 
 //end::how[]
 
 //tag::example[]
-.List all pages in the folder "my_folder" relative to the current file, but not its subfolders
+.List all pages in the folder "my_folder" relative to the current file but not its subfolders
 ====
 [source,asciidoc]
 ----
-page::[path=my_folder]
+pages::[path=my_folder]
 ----
+====
+
+====
+image::pages_macro.png[title='The macro "pages" applied to the folder "my_folder", which contains eleven files.', float="left"]
 ====
 
 //end::example[]

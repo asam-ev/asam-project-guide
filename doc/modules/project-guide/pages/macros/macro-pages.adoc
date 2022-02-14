@@ -1,6 +1,6 @@
 = Macro: pages
 :description: Describes the use of the macro "pages" in detail.
-:keywords: macro,asam,antora,custom, READYFORREVIEW
+:keywords: macro,asam,antora,custom, REVIEWED_TODO
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
