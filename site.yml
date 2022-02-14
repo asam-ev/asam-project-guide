@@ -7,8 +7,8 @@ site:
 content:
   sources:
     - url: .
-      branches: HEAD,baseline_*,open*
-      # branches: HEAD
+      # branches: HEAD,baseline_*,open*
+      branches: HEAD
       tags: open*
       start_path: doc
       edit_url: 'https://github.com/asam-ev/asam-project-guide/blob/{refname}/{path}'
