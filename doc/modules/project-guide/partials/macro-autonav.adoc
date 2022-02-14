@@ -1,6 +1,12 @@
 //tag::description[]
+include::partial$virtual_files.adoc[]
+
 If added as a comment line to a nav.adoc file, replaces the files content with an automatically generated pages summary containing all pages and folders in the module.
 The path structure is preserved and files and folders are sorted in alphabetical order (capital letters before small letters).
+
+For each folder, the extension checks if a file with the same name on the level of the folder exists.
+If not, a new virtual file with the name of the folder plus ".adoc" is generated and the xref:extensions/macro-pages.adoc["Pages" macro] added to its content.
+
 //end::description[]
 
 //tag::prerequisits[]
@@ -29,11 +35,12 @@ Instead, all pages and folders are listed one level higher (i.e. all root level 
 //end::attributes[]
 
 //tag::how[]
-* If the module has one main page, add `//autonav::[]` without parameters in an empty line in the relevant nav.adoc file.
+IMPORTANT: This ONLY works in nav.adoc files, not in regular pages or partials!
+The macro must also always be used as a comment (similarly to the Asciidoctor macro "tag").
+
+* If the module has a main page, add `//autonav::[]` without parameters in an empty line in the relevant nav.adoc file.
 * If the module has no main page, add `//autonav::[none]` in an empty line in the relevant nav.adoc file.
 
-For each folder, the extension checks if a file with the same name on the level of the folder exists.
-If not, a new virtual file with the name of the folder plus ".adoc" is generated and the xref:macros/macro-pages.adoc["Pages" macro] added to its content.
 
 [NOTE]
 ====
@@ -44,9 +51,6 @@ The macro uses the following rules to determine the main page of a module:
 * Else if there is a file named "main.adoc" on root level, use this as the main page.
 * Else use the first page in the alphabetically sorted list.
 ====
-
-IMPORTANT: This ONLY works in nav.adoc files, not in regular pages or partials!
-The macro must also always be used as a comment (similarly to the Asciidoctor macro "tag").
 
 //end::how[]
 

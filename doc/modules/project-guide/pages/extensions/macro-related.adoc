@@ -1,6 +1,7 @@
 = Macro: related
 :description: Describes the use of the macro "related" in detail.
-:keywords: macro,asam,antora,custom, READYFORREVIEW
+:keywords: macro,asam,antora,custom, REVIEWED_TODO
+:page-aliases: macros/macro-related.adoc
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

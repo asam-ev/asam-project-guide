@@ -1,0 +1,22 @@
+= Pipeline: Sequential numbering
+:description: Describes the use of the macro "Sequential numbering" in detail.
+:keywords: pipeline,asam,antora,asciidoctor,custom, READYFORREVIEW
+
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+{special-macros-icon}
+
+== Description
+include::partial$pipeline-sequential_sectnums.adoc[tag=description]
+
+== Configuration
+include::partial$pipeline-sequential_sectnums.adoc[tag=configuration]
+
+
+== Usage
+include::partial$pipeline-sequential_sectnums.adoc[tag=how]
+
+== Example
+include::partial$pipeline-sequential_sectnums.adoc[tag="example"]
+
