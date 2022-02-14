@@ -35,5 +35,5 @@ You will receive a confirmation email if your registration was successful.
 == Troubleshooting / Known Issues
 === I cannot find the event online, but I know it exists
 If you want to join a project proposal but cannot find the event on the website, you can also contact mailto:info@asam.net[ASAM office] directly.
-Please consider this as a last resort to fall back to only in case you cannot find the information diretly.
+Please consider this as a last resort to fall back to only in case you cannot find the information.
 

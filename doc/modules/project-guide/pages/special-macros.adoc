@@ -1,6 +1,6 @@
 = Custom ASAM Antora extension
 :description: Lists all custom macros used throughout the Project Guide that require special scripts by ASAM to be processed correctly.
-:keywords: macro,extension,antora,asam,custom,project-guide, READYFORREVIEW
+:keywords: macro,extension,antora,asam,custom,project-guide, REVIEWED_TODO
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -32,7 +32,7 @@ The following table describes general configuration on using the extension:
 |Attribute |Description |Default |Example
 
 |id
-|Defines an id by witch the extension can be specifically called from the CLI.
+|Defines an id by which the extension can be specifically called from the CLI.
 |none
 |`id: asam-extension`
 
@@ -44,7 +44,7 @@ Only relevant in combination with `id`.
 |`enabled: false`
 |===
 
-.Example
+.General configuration for ASAM Antora extensions in site.yml
 ====
 [source,yaml]
 ----
@@ -74,7 +74,7 @@ The following table lists the supported attributes as well as their default valu
 |`unlisted_pages_heading: Orphans`
 |===
 
-.Example
+.Using the "orphan pages" extension feature
 ====
 [source,yaml]
 ----
@@ -88,6 +88,10 @@ The following table lists the supported attributes as well as their default valu
 == Keyword-overview page
 The ASAM Antora extension generates an overview page that lists all keywords used in the Antora pages.
 The location and the (virtual) filename can be configured in the site.yml (Antora playbook).
+
+NOTE: Antora works with virtual files.
+See https://docs.antora.org/antora/latest/organize-content-files/#antoras-virtual-filesystem[Antora's virtual filesystem^].
+
 These configuration must all be added under `keywords:`
 
 NOTE: The keyword page will be added in all versions and components with the same name and at the same location!
@@ -117,7 +121,7 @@ Separator is "/" and MUST ONLY be used between folders (no leading or trailing s
 |`path: "keywords_path"`
 |===
 
-.Example
+.Using the "Keyword-overview page" extension feature
 ====
 [source,yaml]
 ----

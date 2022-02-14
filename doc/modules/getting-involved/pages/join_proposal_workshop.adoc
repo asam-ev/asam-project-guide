@@ -1,6 +1,6 @@
 = Join a Proposal workshop
 :description: Describes how to join a proposal workshop
-:keywords: proposal-workshop, READYFORREVIEW
+:keywords: proposal-workshop, REVIEWED_OK
 :small:
 
 {role-standard-user}
