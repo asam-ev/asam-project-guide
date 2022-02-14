@@ -7,7 +7,7 @@
     <link rel="prev" href="adding_content/including.html">
     <link rel="next" href="macros/macro-pages.html">
     <meta name="description" content="Lists all custom macros used throughout the Project Guide that require special scripts by ASAM to be processed correctly.">
-    <meta name="keywords" content="macro,extension,antora,asam,custom,project-guide, READYFORREVIEW">
+    <meta name="keywords" content="macro,extension,antora,asam,custom,project-guide, REVIEWED_TODO">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../_/css/site.css">
     <script>var uiRootPath = '../../_'</script>
@@ -1118,7 +1118,7 @@ All following examples assume the extension is located under "./antora_extension
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Defines an id by witch the extension can be specifically called from the CLI.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defines an id by which the extension can be specifically called from the CLI.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">none</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>id: asam-extension</code></p></td>
 </tr>
@@ -1133,7 +1133,7 @@ Only relevant in combination with <code>id</code>.</p></td>
 </tbody>
 </table>
 <div class="exampleblock">
-<div class="title">Example 1. Example</div>
+<div class="title">Example 1. General configuration for ASAM Antora extensions in site.yml</div>
 <div class="content">
 <div class="listingblock">
 <div class="content">
@@ -1187,7 +1187,7 @@ If configured, these pages can also automatically be listed under a separated na
 </tbody>
 </table>
 <div class="exampleblock">
-<div class="title">Example 2. Example</div>
+<div class="title">Example 2. Using the "orphan pages" extension feature</div>
 <div class="content">
 <div class="listingblock">
 <div class="content">
@@ -1205,8 +1205,23 @@ If configured, these pages can also automatically be listed under a separated na
 <div class="sectionbody">
 <div class="paragraph">
 <p>The ASAM Antora extension generates an overview page that lists all keywords used in the Antora pages.
-The location and the (virtual) filename can be configured in the site.yml (Antora playbook).
-These configuration must all be added under <code>keywords:</code></p>
+The location and the (virtual) filename can be configured in the site.yml (Antora playbook).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Antora works with virtual files.
+See <a href="https://docs.antora.org/antora/latest/organize-content-files/#antoras-virtual-filesystem" target="_blank" rel="noopener">Antora&#8217;s virtual filesystem</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>These configuration must all be added under <code>keywords:</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1264,7 +1279,7 @@ Separator is "/" and MUST ONLY be used between folders (no leading or trailing s
 </tbody>
 </table>
 <div class="exampleblock">
-<div class="title">Example 3. Example</div>
+<div class="title">Example 3. Using the "Keyword-overview page" extension feature</div>
 <div class="content">
 <div class="listingblock">
 <div class="content">
