@@ -39,11 +39,13 @@ To negate a keyword, use an exclamationmark (`!`) in front of it.
 //end::how[]
 
 //tag::example[]
-.Using the `related` macro to include the keyword `hello` and exclude the keyword `world`
+The following example shows a list of all pages in a new section "Related" with the keyword "pipeline" that do not contain the keyword "asciidoctor".
+
+.Using the `related` macro to include the keyword `pipeline` and exclude the keyword `asciidoctor`
 ====
 [source,asciidoc]
 ----
-related::hello,!world[]
+related::pipeline,!asciidoctor[]
 ----
 ====
 //end::example[]

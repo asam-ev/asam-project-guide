@@ -1,6 +1,6 @@
 = Macro: related
 :description: Describes the use of the macro "related" in detail.
-:keywords: macro,asam,antora,custom, REVIEWED_TODO
+:keywords: macro,asam,antora,custom, READYFORREVIEW
 :page-aliases: macros/macro-related.adoc
 
 include::partial$_attributes.adoc[]
@@ -23,3 +23,7 @@ include::partial$macro-related.adoc[tag=how]
 == Example
 include::partial$macro-related.adoc[tag="example"]
 
+**Result**:
+====
+related::pipeline,!asciidoctor[]
+====
