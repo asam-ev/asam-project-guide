@@ -1,5 +1,5 @@
 //tag::description[]
-Creates an automatically generated list under a new section "Pages" with cross-references to (other) pages in the defined folder.
+This macro creates cross-references under the section "Pages" at the macro location to all pages (with or without nested folders) in a given folder relative to the file with the macro.
 If no folder is defined, the file's folder is used instead.
 //end::description[]
 
@@ -32,6 +32,22 @@ If you add no arguments, the macro will list all other pages in the same folder 
 //end::how[]
 
 //tag::example[]
+Assuming the following folder structure:
+
+[source]
+----
+this_page.adoc
+other_page.adoc
+my_folder/
+├── ignored_subfolder/
+|   └── ignored_file_in_subfolder.adoc
+├── 01_proposal_setup.adoc
+├── 02_contributing.adoc
+├── 03_proposal_workshop_preparation.adoc
+└── 04_join_proposal_workshop.adoc
+----
+, the example below shows the result for applying the macro with the path set to "my_folder".
+
 .List all pages in the folder "my_folder" relative to the current file but not its subfolders
 ====
 [source,asciidoc]

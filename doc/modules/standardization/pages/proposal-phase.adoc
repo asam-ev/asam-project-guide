@@ -31,6 +31,6 @@ include::partial$proposal-publication.adoc[tag=long]
 include::partial$proposal-decision.adoc[tag=long]
 
 
-pages::[]
+pages::[path=proposal]
 
 related::proposal[]
