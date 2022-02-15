@@ -1,5 +1,5 @@
 = How to contribute to a proposal directly in AsciiDoc files
-:description: Describes how one can participate in the creation of a proposal through directly entering content in the appropriate asciidoc files.
+:description: Describes how one can participate in the creation of a proposal through directly entering content in the appropriate AsciiDoc files.
 :keywords: proposal, asciidoc, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]

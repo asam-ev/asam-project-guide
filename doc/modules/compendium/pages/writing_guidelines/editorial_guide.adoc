@@ -154,7 +154,7 @@ The outline of the road marking is described by the attributes @length and @spac
 [#sec-ASM-48]
 === Use AsciiDoc syntax for lists (ASM-48)
 
-* Use only asciidoc syntax to format lists.
+* Use only AsciiDoc syntax to format lists.
 * Use either ordered or unordered lists (see <<#sec-ASM-10>>).
 
 *Example*

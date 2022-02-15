@@ -3,7 +3,7 @@ const File = require('./file')
 // const classifyContent = require('@antora/content-classifier')
 
 module.exports.register = function ({ config }) {
-    const { addToNavigation, unlistedPagesHeading = 'Unlisted Pages' } = config
+    const { numberedTitles, addToNavigation, unlistedPagesHeading = 'Unlisted Pages' } = config
     const logger = this.require('@antora/logger').get('unlisted-pages-extension')
     const macrosRegEx = new Array(
         { macro: "role", re: /^\s*role_related::(.*)\[(.*)\]\n?/ },
@@ -31,13 +31,12 @@ module.exports.register = function ({ config }) {
                 let targetPath = config.keywords && config.keywords.path ? config.keywords.path : ""
                 let targetModule = config.keywords && config.keywords.module ? config.keywords.module : "ROOT"
                 let targetName = config.keywords && config.keywords.filename ? config.keywords.filename : "0_used-keywords.adoc"
-
                 let useKeywords = config.keywords ? true : false
 
                 let keywordOverviewPageRequested = config.keywords && config.keywords.createOverview && useKeywords ? true : false
 
                 let pages = contentCatalog.findBy({ component, version, family: 'page'})
-                const navFiles = contentCatalog.findBy({ component, version, family: 'nav'})
+                let navFiles = contentCatalog.findBy({ component, version, family: 'nav'})
                 let keywordPageMap = getKeywordPageMapForPages(useKeywords,pages)
                 const rolePageMap = getRolePageMapForPages(pages)
 
@@ -46,6 +45,12 @@ module.exports.register = function ({ config }) {
                 pages = findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywordPageMap, rolePageMap, macrosRegEx, macrosHeadings, logger, component, version )
                 keywordPageMap = getKeywordPageMapForPages(useKeywords,pages)
                 pages = createKeywordsOverviewPage(keywordOverviewPageRequested, contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version)
+
+                navFiles = contentCatalog.findBy({ component, version, family: 'nav'})
+
+                if (numberedTitles) {
+                    generatePageNumberBasedOnNavigation(pages, navFiles)
+                }
             })
         })
       })
@@ -380,10 +385,11 @@ function getAllOccurencesForRegEx( page, re ) {
 function excludeNegatedAttributes( exclusionSet = new Set(), attributes, keywordPageMap ) {
     const attributesArray = attributes.split(",").filter(attr => attr.trim().startsWith("!"))
     for (let attr of attributesArray) {
-        let attrPages;
+        let attrPage;
+        attr = attr.slice(1)
         if (keywordPageMap.has(attr)) {
-            attrPages = keywordPageMap.get(attr)
-            exclusionSet = new Set([...exclusionSet,...attrPages])
+            attrPage = keywordPageMap.get(attr)
+            exclusionSet = new Set([...exclusionSet,...attrPage])
         }
     }
     return (exclusionSet)
@@ -614,4 +620,42 @@ function replaceAutonavMacro( contentCatalog, pages, nav, component, version, fi
 
 function isPublishableFile( page ) {
     return (page.src.relative.indexOf("/_") < 0 && page.src.relative.indexOf("/.") < 0 && !page.src.relative.startsWith("_") && !page.src.relative.startsWith("."))
+}
+
+function generatePageNumberBasedOnNavigation(pages, navFiles) {
+    let chapterIndex = "0."
+    navFiles.forEach(nav => {
+        for (let line of nav._contents.toString().split("\n")) {
+            const indexOfXref = line.indexOf("xref:")
+            if (indexOfXref > 0) {
+                const endOfXref = line.indexOf("[")
+                const targetFile = line.slice(indexOfXref+5,endOfXref)
+                let foundPage = pages.filter(x => x.src.relative === targetFile)
+                if (foundPage) {
+                    const level = line.lastIndexOf("*",indexOfXref) + 1
+                    let chapterElements = chapterIndex.split(".")
+                    const currentChapterIndexLength = chapterElements.length - 1
+
+                    if (currentChapterIndexLength < level) {
+                        for (let i in [...Array(level-currentChapterIndexLength)]) {
+                            chapterElements.splice(-1,0,"1")
+                        }
+                    }
+                    else {
+                        chapterElements[level-1] = (parseInt(chapterElements[level-1]) + 1).toString()
+                        if (currentChapterIndexLength > level) {
+                            chapterElements = chapterElements.slice(0,level).concat([""])
+                        }
+                    }
+                    chapterIndex = chapterElements.join(".")
+
+                    let newContent = foundPage[0]._contents.toString().split("\n")
+                    newContent.splice(1,0,":titleoffset: "+ chapterIndex)
+                    foundPage[0]._contents = Buffer.from(newContent.join("\n"))
+
+                }
+            }
+
+        }
+    })
 }

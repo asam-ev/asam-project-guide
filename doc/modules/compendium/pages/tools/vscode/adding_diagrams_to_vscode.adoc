@@ -40,7 +40,7 @@ To do this:
 NOTE: Access to this global setting is only available if you have currently are in an AsciiDoc file in __{vscode}__.
 Otherwise, the setting will not show up.
 
-.Opening asciidoc preview security settings
+.Opening AsciiDoc preview security settings
 image::plantuml_1.png[]
 
 .Allowing insecure content
