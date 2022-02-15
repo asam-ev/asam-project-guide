@@ -14,7 +14,7 @@
 *** xref:release-phase.adoc[]
 ** xref:project-setup.adoc[]
 ** xref:creation-of-standards.adoc[]
-** xref:issue-resolution.adoc[]
+// ** xref:issue-resolution.adoc[]
 ** Working Model (workgroups)
 ** Issue-driven Workflow
 ** Reviews and Releases
