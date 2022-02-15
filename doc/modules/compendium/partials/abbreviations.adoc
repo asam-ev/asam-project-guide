@@ -54,13 +54,13 @@ List Of Known Issues:: A public list of known issues related to a certain standa
 The list is maintained by the xref:role-specific:standard_manager.adoc[].
 
 == ODR
-OpenDRIVE: Abbreviation for the Standard ASAM OpenDRIVE
+OpenDRIVE:: Abbreviation for the Standard ASAM OpenDRIVE
 
 == OSC
-OpenSCENARIO: Abbreviation for the Standard ASAM OpenSCENARIO
+OpenSCENARIO:: Abbreviation for the Standard ASAM OpenSCENARIO
 
 == OxO
-OpenXOntology: Abbreviation for the Standard ASAM OpenXOntology
+OpenXOntology:: Abbreviation for the Standard ASAM OpenXOntology
 
 == TSC
 Technical Steering Committee:: {tsc-description}
