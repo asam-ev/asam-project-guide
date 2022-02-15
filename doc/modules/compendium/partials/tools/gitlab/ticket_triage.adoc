@@ -9,6 +9,17 @@ These issues have to be maintained to keep an overview and to get a benefit from
 Experience has shown that unmaintained issues result in an unclear repository and therefore the open tasks cannot be clearly identified.
 Therefore, a process has been defined to get rid of unprocessed issues.
 
+[NOTE]
+====
+A clean issue contains the following things:
+
+- active milestone
+- backlog or active_isse label
+- assignee
+- workgroup label
+
+====
+
 image::compendium:ticket_triage.drawio.svg[]
 
 //end::body[]
