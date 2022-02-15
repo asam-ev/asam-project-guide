@@ -18,17 +18,35 @@ It also references particularities of Antora and links to important information 
 
 // include::../nav.adoc[lines=2..-1]
 
-[cols="1,1,1" frame=none]
+[cols="^1h,4",frame=none, grid=rows, stripes=hover]
 |===
 
-|{structure-icon-norole}
-|{add-file-icon-norole}
-|{changes-icon-norole}
-|===
-[cols="1,1" frame=none]
-|===
-|{ref-include-icon-norole}
-|{special-macros-icon-norole}
+|{structure-icon-norole} +
+xref:structure.adoc[]
+|Contains information on structural concepts and content in the Project Guide.
+
+
+|{add-file-icon-norole} +
+xref:add_files.adoc[]
+|Contains instructions and specifics on adding new files to the Project Guide.
+This mainly concerns new modules, pages, and partials.
+It also covers the difference between pages and partials in Antora.
+
+|{changes-icon-norole} +
+xref:changing_content.adoc[]
+|Contains instructions and specifics on changing existing content in the Project Guide as well as the review feature.
+Besides giving a short introduction in some Antora features, this part covers Project Guide specific activities.
+Some of them are how to use the abbreviation feature and how to work with the role labels.
+
+|{ref-include-icon-norole} +
+xref:ref-include.adoc[]
+|Contains an overview over Antora features and Project Guide specifics on how to include or reference content.
+This covers both internal and external links (xref, link etc.) as well as using non-AsciiDoc files in Antora and the Project Guide in particular.
+It also defines how pages and partials can be included and why pages are handled differently in Antora.
+
+|{special-macros-icon-norole} +
+xref:asam_extensions.adoc[]
+|Contains a summary of the Antora and Asciidoctor extensions by ASAM and covers how to use each of them.
 
 |===
 

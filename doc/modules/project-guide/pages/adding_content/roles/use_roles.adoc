@@ -11,8 +11,9 @@ Most task and instruction pages in this Project Guide are assigned to one or mor
 By assigning a role, the page is automatically linked to the corresponding role page(s), making it easier to find them for people of that role.
 The benefit of these role labels is that
 
-. they link to the role's main page (the user can click on the label) and
-. they are automatically listed on that role page.
+. they link to the role's main page (the user can click on the label),
+. they are automatically listed on that role page, and
+. they can be listed on any page with the xref:extensions/macro-role_related.adoc[].
 
 TIP: All available roles are defined in the file `site.yml` at root level of the repository.
 If you need to define a new role first, see xref:adding_content/roles/add-new-role.adoc[].
