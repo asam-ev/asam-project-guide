@@ -1,6 +1,6 @@
 = How to get involved
 :description: Landing page for information on how to get involved in ASAM projects.
-:keywords: landing_page,get-involved, READYFORREVIEW
+:keywords: landing_page,get-involved, TODO
 :page-aliases: home.adoc
 
 include::partial$_attributes.adoc[]
@@ -27,5 +27,8 @@ For some activities, an ASAM membership is required. +
 ====
 
 == Content
+
+// idea: Add image that guides through the process with a timeline
+// TODO: Wait on feedback from restructuring
 
 include::../nav.adoc[lines=2..-1]
