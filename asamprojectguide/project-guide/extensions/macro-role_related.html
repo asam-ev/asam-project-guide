@@ -7,7 +7,7 @@
     <link rel="prev" href="macro-related.html">
     <link rel="next" href="macro-autonav.html">
     <meta name="description" content="Describes the use of the macro &quot;role_related&quot; in detail.">
-    <meta name="keywords" content="macro,asam,antora,custom, REVIEWED_TODO">
+    <meta name="keywords" content="macro,asam,antora,custom, READYFORREVIEW">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -1062,7 +1062,7 @@
 <h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>At least one other asciidoc file with the relevant role label.</p>
+<p>At least one other AsciiDoc file with the relevant role label.</p>
 </div>
 </div>
 </div>
@@ -1119,7 +1119,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">keyword</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">nA</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A list of keywords to filter the relevant pages, separated by "," (comma).
-If at least one keyword is given, the heading "== Role-related topics" will be omitted!</p></td>
+If at least one keyword is given, the heading "== Role-related topics" is omitted and only pages containing both the specified role(s) AND the keyword(s) are listed!</p></td>
 </tr>
 </tbody>
 </table>
@@ -1136,6 +1136,9 @@ If at least one keyword is given, the heading "== Role-related topics" will be o
 <div class="sect1">
 <h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>In this example, all pages in the documentation that contain both the role label "gtm" and the keyword "proposal" are listed.</p>
+</div>
 <div class="exampleblock">
 <div class="title">Example 1. List all pages with the role "gtm" that also contain the keyword "proposal"</div>
 <div class="content">
@@ -1143,6 +1146,29 @@ If at least one keyword is given, the heading "== Role-related topics" will be o
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">role_related::gtm[proposal]</code></pre>
 </div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Result</strong></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../compendium/guides/set_up_new_project.html" class="xref page">How to set up a new project</a></p>
+</li>
+<li>
+<p><a href="../../standardization/proposal/03_proposal_workshop_preparation.html" class="xref page">Prepare a Proposal workshop</a></p>
+</li>
+<li>
+<p><a href="../../compendium/guides/proposal_writing/how_to_enrollment_list.html" class="xref page">How-to add and include the enrollment list</a></p>
+</li>
+<li>
+<p><a href="../../compendium/guides/proposal_writing/how_to_setup_git.html" class="xref page">Project Proposal setup</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
