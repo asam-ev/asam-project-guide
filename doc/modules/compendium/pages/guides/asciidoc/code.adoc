@@ -32,7 +32,7 @@ function lorem(ipsum, dolor = 1) { // <2>
 <2> Caption of the code block
 <3> Caption of the code block
 
-Then you can use the tags `+exampleInclude+` to include the fragement in the asciidoc documentation.
+Then you can use the tags `+exampleInclude+` to include the fragement in the AsciiDoc documentation.
 
 ....
 [[code-example-code-block-tag]]  // <1>

@@ -1,5 +1,5 @@
 = How to comment and review adoc files
-:description: A how-to for commenting asciidoc files
+:description: A how-to for commenting AsciiDoc files
 :keywords: asciidoc,comment,gitlab,vscode, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
