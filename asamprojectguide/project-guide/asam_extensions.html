@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Custom ASAM Antora/Asciidoctor extensions :: ASAM Project Guide</title>
     <link rel="prev" href="adding_content/including.html">
-    <link rel="next" href="extensions/macro-pages.html">
+    <link rel="next" href="extensions/pipeline-orphan_pages.html">
     <meta name="description" content="Lists all custom macros used throughout the Project Guide that require special scripts by ASAM to be processed correctly.">
     <meta name="keywords" content="macro,extension,antora,asam,custom,project-guide, READYFORREVIEW">
     <meta name="generator" content="Antora 3.0.0-rc.1">
@@ -963,6 +963,15 @@
     <a class="nav-link" href="asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-keyword_overview.html">Pipeline: Keyword page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-sequential_sectnums.html">Pipeline: Sequential numbering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="extensions/macro-pages.html">Macro: pages</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -976,15 +985,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="extensions/macro-autonav.html">Macro: autonav</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="extensions/pipeline-keyword_overview.html">Pipeline: Keyword page</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="extensions/pipeline-sequential_sectnums.html">Pipeline: Sequential numbering</a>
   </li>
 </ul>
   </li>
@@ -1162,8 +1162,13 @@ Only relevant in combination with <code>id</code>.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_orphan_pages"><a class="anchor" href="#_orphan_pages"></a>Orphan pages</h2>
+<h2 id="_pipeline_features"><a class="anchor" href="#_pipeline_features"></a>Pipeline features</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>The following sections describe features directly applied through the pipeline.</p>
+</div>
+<div class="sect2">
+<h3 id="_orphan_pages"><a class="anchor" href="#_orphan_pages"></a>Orphan pages</h3>
 <div class="paragraph">
 <p>The ASAM Antora extension finds all pages not listed in any nav.adoc and puts a warning in the console output.
 If configured, these pages can also automatically be listed under a separated navigation entry (e.g. "orphans") at the end of the Antora document.</p>
@@ -1172,10 +1177,8 @@ If configured, these pages can also automatically be listed under a separated na
 <p>For more details, see <a href="extensions/pipeline-orphan_pages.html" class="xref page">Pipeline: Orphan pages</a>.</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_keyword_overview_page"><a class="anchor" href="#_keyword_overview_page"></a>Keyword-overview page</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_keyword_overview_page"><a class="anchor" href="#_keyword_overview_page"></a>Keyword-overview page</h3>
 <div class="paragraph">
 <p>The ASAM Antora extension generates an overview page that lists all keywords used in the Antora pages.
 The location and the (virtual) filename can be configured in the site.yml (Antora playbook).</p>
@@ -1192,10 +1195,8 @@ To see the result of the applied pipeline feature, see</p>
 </ul>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_page_numbering"><a class="anchor" href="#_page_numbering"></a>Page numbering</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_page_numbering"><a class="anchor" href="#_page_numbering"></a>Page numbering</h3>
 <div class="paragraph">
 <p>The ASAM Antora extension, in combination with the sectnumsoffset_antora extension for Asciidoctor, creates sequential page and section numbers in Antora.<br>
 To use this feature, add <code>numbered_titles: true</code> to the Antora extension configuration.
@@ -1209,6 +1210,7 @@ Example: <code>:titleoffset: 2.3.</code> would set the page number to "2.3." and
 </div>
 <div class="paragraph">
 <p>For more details, see <a href="extensions/pipeline-sequential_sectnums.html" class="xref page">Pipeline: Sequential numbering</a></p>
+</div>
 </div>
 </div>
 </div>
@@ -1440,7 +1442,7 @@ antora:
 </div>
 <nav class="pagination">
   <span class="prev"><a href="adding_content/including.html">Including pages and partials</a></span>
-  <span class="next"><a href="extensions/macro-pages.html">Macro: pages</a></span>
+  <span class="next"><a href="extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a></span>
 </nav>
 </article>
   </div>
