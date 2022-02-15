@@ -60,14 +60,16 @@ Only relevant in combination with `id`.
 ----
 ====
 
+== Pipeline features
+The following sections describe features directly applied through the pipeline.
 
-== Orphan pages
+=== Orphan pages
 include::partial$pipeline-orphan_pages.adoc[tag=description]
 
 For more details, see xref:extensions/pipeline-orphan_pages.adoc[].
 
 
-== Keyword-overview page
+=== Keyword-overview page
 include::partial$pipeline-keyword_overview.adoc[tag=description]
 
 For more details, see xref:extensions/pipeline-keyword_overview.adoc[]. +
@@ -75,7 +77,7 @@ To see the result of the applied pipeline feature, see
 reference::keyword-overview-page[]
 
 
-== Page numbering
+=== Page numbering
 include::partial$pipeline-sequential_sectnums.adoc[tag=how]
 
 For more details, see xref:extensions/pipeline-sequential_sectnums.adoc[]
