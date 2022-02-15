@@ -249,9 +249,6 @@ function replaceRelatedMacro( page, pageContent, line, macroResult, heading, key
     var resultValues = parseCustomXrefMacro(macroResult, line, heading)
     var exclusionSet = excludeSelf(page)
     exclusionSet = excludeNegatedAttributes(exclusionSet, resultValues.attributes, keywordPageMap)
-    if (exclusionSet && page.src.stem === "macro-related") {
-        console.log(page.src.stem, exclusionSet)
-    }
     var content = resultValues.newLine
     resultValues.attributes.split(",").forEach((el) => {
         const elTrimmed = el.trim()
@@ -392,9 +389,6 @@ function excludeNegatedAttributes( exclusionSet = new Set(), attributes, keyword
         attr = attr.slice(1)
         if (keywordPageMap.has(attr)) {
             attrPage = keywordPageMap.get(attr)
-            if ([...exclusionSet][0].src.stem === "macro-related") {
-                console.log(attrPage)
-            }
             exclusionSet = new Set([...exclusionSet,...attrPage])
         }
     }
