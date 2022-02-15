@@ -14,7 +14,7 @@ Therefore, a process has been defined to get rid of unprocessed issues.
 A clean issue contains the following things:
 
 - active milestone
-- backlog or active_isse label
+- backlog or active_issue label
 - assignee
 - workgroup label
 
