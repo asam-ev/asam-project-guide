@@ -2,6 +2,7 @@
 :description: Summarizes the proposed general structure of the Project Guide.
 :keywords: antora,structure,project-guide
 :structure: project-guide:example$structure.puml
+:page-aliases: structure/content_structure.adoc
 
 include::partial$_attributes.adoc[]
 include::ROOT:partial$_attributes.adoc[]
