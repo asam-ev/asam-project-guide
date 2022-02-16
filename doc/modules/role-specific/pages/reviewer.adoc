@@ -9,6 +9,19 @@ include::partial$_attributes.adoc[]
 [horizontal,role=right]
 Label:: {role-reviewer}
 
-TODO: Description
+== Description
+* TODO
+
+== Requirements
+* TODO
+
+== Responsibilities
+* TODO
+
+== Instructional pages for this role
+TODO
+
+=== Proposal phase
+role_related::reviewer[proposal]
 
 role_related::reviewer[]

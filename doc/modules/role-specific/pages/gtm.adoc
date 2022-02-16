@@ -4,12 +4,25 @@
 
 include::partial$_attributes.adoc[]
 
+{gtm-description}
+
 [horizontal,role=right]
 Label:: {role-gtm}
 
-{gtm-description}
 
-== Proposal phase
+== Description
+* TODO
+
+== Requirements
+* TODO
+
+== Responsibilities
+* TODO
+
+== Instructional pages for this role
+TODO
+
+=== Proposal phase
 role_related::gtm[proposal]
 
 role_related::gtm[]
