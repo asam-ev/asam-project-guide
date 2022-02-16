@@ -9,7 +9,7 @@ image::compendium:code-spell-checker-example-2.png[alt="Example 2 for Code Spell
 image::compendium:code-spell-checker-example-3.png[alt="Example 3 for Code Spell Checker"]
 
 
-The extension also lets you search for all available anchors in the repository or current file and offers a jump-to option.
+The spell checker handles standard text as well as CamelCase.
 
 .Code Spell Checker (id: streetsidesoftware.code-spell-checker)
 image::compendium:code-spell-checker.png[]
