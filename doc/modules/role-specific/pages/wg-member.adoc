@@ -9,9 +9,19 @@ include::partial$_attributes.adoc[]
 [horizontal,role=right]
 Label:: {role-wg-member}
 
-TODO: Description
+== Description
+* TODO
 
-== Proposal phase
+== Requirements
+* TODO
+
+== Responsibilities
+* TODO
+
+== Instructional pages for this role
+TODO
+
+=== Proposal phase
 role_related::wg-member[proposal]
 
 role_related::wg-member[]

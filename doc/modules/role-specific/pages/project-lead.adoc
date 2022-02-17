@@ -1,6 +1,6 @@
 = Project lead
 :description: Summary and landing page for project leads.
-:keywords: role, role-landing-page, READYFORREVIEW
+:keywords: role, role-landing-page, REVIEWED_TODO
 
 include::partial$_attributes.adoc[]
 
@@ -10,18 +10,19 @@ include::partial$_attributes.adoc[]
 Label:: {role-project-lead}
 
 == Description
-- Elected by and originating from the group of project members.
-- Named in Project Proposal
+* Elected by and originating from the group of project members.
+* Named in Project Proposal
 
 == Requirements
-- Must be a project member.
-- Can be the idea giver, but does not have to.
-- Must complete the xref:compendium:roles/project_lead_training.adoc[]
+* Must be a project member.
+* Must have completed the xref:compendium:roles/project_lead_training.adoc[]
 
 == Responsibilities
-- Project management, meeting organization and alignment with ASAM office
+* Project management, meeting organization and alignment with ASAM office
+* TODO
 
-== Involvements
+== Instructional pages for this role
+TODO
 
 === Proposal phase
 role_related::project-lead[proposal]

@@ -9,6 +9,7 @@ include::{abb}[]
 
 Filestage is a webtool for reviewing documents online.
 
+
 == Filestage at ASAM
 __{asam}__ requires using Filestage for:
 
@@ -17,9 +18,12 @@ __{asam}__ requires using Filestage for:
 
 == Content
 
-[cols="1"]
+
+[cols="^1h,4",frame=none, grid=rows, stripes=hover]
 |===
-|xref:filestage/filestage_guides.adoc[image:{guide-image}[width=120,title="Filestage Guides"] Filestage Guides]
+
+|xref:filestage/filestage_guides.adoc[image:{guide-image}[width=120,title="Filestage Guides"]]
+|Filestage Guides
 
 |===
 

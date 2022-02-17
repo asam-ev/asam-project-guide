@@ -1,8 +1,10 @@
 = Compendium
 :description: Landing page for all automatically gathered knowledge pieces and content in this Project Guide.
-:keywords: landing_page,compendium, READYFORREVIEW
+:keywords: landing_page,compendium, TODO
 :page-aliases: home.adoc, main.adoc
 :adoc-exclude:
+
+// Requires input from restructuring discussions for finalization
 
 include::compendium:partial$_attributes.adoc[]
 include::ROOT:partial$_attributes.adoc[]
@@ -14,7 +16,7 @@ They are listed in alphabetical order and clustered by type. +
 Here, guides and instructions are gathered.
 
 
-Other main topics:
+**Other main topics**:
 
 * If you are looking for a general overview over __{asam}__ and its structure, see xref:getting-started:main.adoc[].
 * See xref:getting-involved:home.adoc[] for information on participating in ASAM standardization.

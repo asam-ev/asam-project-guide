@@ -9,6 +9,18 @@ include::partial$_attributes.adoc[]
 [horizontal,role=right]
 Label:: {role-wg-lead}
 
-TODO: Description
+== Description
+* TODO
+
+== Requirements
+* TODO
+
+== Responsibilities
+* TODO
+
+== Instructional pages for this role
+TODO
+
+
 
 role_related::wg-lead[]

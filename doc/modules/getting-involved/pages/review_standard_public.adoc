@@ -1,6 +1,6 @@
 = Review a standard (public release candidate)
 :description: Describes how to review a standard.
-:keywords: review, service-desk, READYFORREVIEW
+:keywords: review, service-desk, REVIEWED_OK
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -12,7 +12,7 @@ include::{abb}[]
 // - public reviews: public and open review -->
 
 == Context
-Standards creation requires constant reviewing of its content.
+Standardization requires constant reviewing of its documents.
 Some projects have a public release candidate.
 These can be reviewed by any person without having to be an ASAM member.
 

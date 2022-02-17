@@ -28,14 +28,15 @@
 *** xref:adding_content/attachments.adoc[]
 *** xref:adding_content/including.adoc[]
 ** xref:asam_extensions.adoc[]
+*** xref:extensions/pipeline-orphan_pages.adoc[]
+*** xref:extensions/pipeline-keyword_overview.adoc[]
+*** xref:extensions/pipeline-sequential_sectnums.adoc[]
 *** xref:extensions/macro-pages.adoc[]
 *** xref:extensions/macro-reference.adoc[]
 *** xref:extensions/macro-related.adoc[]
 *** xref:extensions/macro-role_related.adoc[]
 *** xref:extensions/macro-autonav.adoc[]
-*** xref:extensions/pipeline-orphan_pages.adoc[]
-*** xref:extensions/pipeline-keyword_overview.adoc[]
-*** xref:extensions/pipeline-sequential_sectnums.adoc[]
+
 // ** Working With Projects
 // ** Additional Infos
 

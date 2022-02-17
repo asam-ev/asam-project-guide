@@ -26,11 +26,18 @@ __{asam}__ recommends using Git for working on a repository locally:
 
 == Content
 
-[cols="1,1,1"]
+
+[cols="^1h,4",frame=none, grid=rows, stripes=hover]
 |===
-|xref:git/git-setup.adoc[image:{setup-image}[width=120,title="GitLab Setup"] Git Setup]
-|xref:git/git-guides.adoc[image:{guide-image}[width=120,title="GitLab Guides"] Git Guides]
-|xref:git/git_best_practices.adoc[image:{best-practices-image}[width=120,title="Git Best Practices"] Git Best Practices]
+
+|xref:git/git-setup.adoc[image:{setup-image}[width=120,title="GitLab Setup"]]
+|Git Setup
+
+|xref:git/git-guides.adoc[image:{guide-image}[width=120,title="GitLab Guides"]]
+|Git Guides
+
+|xref:git/git_best_practices.adoc[image:{best-practices-image}[width=120,title="Git Best Practices"]]
+|Git Best Practices
 
 |===
 

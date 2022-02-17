@@ -25,10 +25,15 @@ __{asam}__ recommends using Visual Studio Code (__{vscode}__) for local text doc
 
 == Content
 
-[cols="1,1"]
+
+[cols="^1h,4",frame=none, grid=rows, stripes=hover]
 |===
-|xref:vscode/vscode-setup.adoc[image:{setup-image}[width=120,title="GitLab Setup"] Visual Studio Code Setup]
-|xref:vscode/vscode-guides.adoc[image:{guide-image}[width=120,title="GitLab Guides"] Visual Studio Code Guides]
+
+|xref:vscode/vscode-setup.adoc[image:{setup-image}[width=120,title="GitLab Setup"]]
+|Visual Studio Code Setup
+
+|xref:vscode/vscode-guides.adoc[image:{guide-image}[width=120,title="GitLab Guides"]]
+|Visual Studio Code Guides
 
 |===
 
