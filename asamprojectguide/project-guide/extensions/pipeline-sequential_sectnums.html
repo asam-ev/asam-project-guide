@@ -999,6 +999,8 @@
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../standardization/issue-resolution.html">Issue resolution process</a>
   </li>
+  <li class="nav-item" data-depth="1">
+  </li>
 </ul>
   </li>
 </ul>
@@ -1110,6 +1112,32 @@ The <code>sectnums</code> attribute must be set on each page where the extension
 <p>The order can also be manually changed by adding the attributes <code>:sectnumoffset:</code> and/or <code>:titleoffset:</code> to the page or a section therein.
 When using a manual override, the offset must be defined as <code>&lt;number&gt;(.&lt;number&gt;.(&#8230;&#8203;))</code>.<br>
 Example: <code>:titleoffset: 2.3.</code> would set the page number to "2.3." and the first section therein to "2.3.1".</p>
+</div>
+<div class="paragraph">
+<p>In addition to that, some general actions can be added as attributes in the navigation files.</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+<code>:start-level:</code>
+</td>
+<td class="hdlist2">
+<p>Defines the level in the bullet point list from which on the sequential numbers are added.
+By default, this is set to 1, meaning that every item starting with "*" or higher will be included.
+If set to a higher number, page title numbers will only be added from that level onward.
+For example, if it is set to 3, all bullet points "\*" and "*\*" will be excluded and counting starts with the first element of "*\*\*".</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+<code>:reset-level-offset:</code>
+</td>
+<td class="hdlist2">
+<p>Resets the counter back to the start value.</p>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
