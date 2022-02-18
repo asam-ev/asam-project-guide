@@ -19,6 +19,15 @@ The `sectnums` attribute must be set on each page where the extension shall appl
 The order can also be manually changed by adding the attributes `:sectnumoffset:` and/or `:titleoffset:` to the page or a section therein.
 When using a manual override, the offset must be defined as `<number>(.<number>.(...))`. +
 Example: `:titleoffset: 2.3.` would set the page number to "2.3." and the first section therein to "2.3.1".
+
+In addition to that, some general actions can be added as attributes in the navigation files.
+
+[horizontal]
+`:start-level:`:: Defines the level in the bullet point list from which on the sequential numbers are added.
+By default, this is set to 1, meaning that every item starting with "\*" or higher will be included.
+If set to a higher number, page title numbers will only be added from that level onward.
+For example, if it is set to 3, all bullet points "\*" and "\*\*" will be excluded and counting starts with the first element of "\*\*\*".
+`:reset-level-offset:`:: Resets the counter back to the start value.
 //end::how[]
 
 //tag::prerequisits[]
