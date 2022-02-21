@@ -94,57 +94,6 @@ Use them to create consistent content.
 
 This section contains editorial rules on content and language.
 
-[#sec-ASM-33]
-=== Use an Oxford comma (ASM-33)
-
-* Use a comma before a conjunction in an enumeration.
-* Separate also the last noun in a list from the rest of the list using a comma.
-
-*Exceptions*
-
-There are no exceptions.
-
-*Example*
-
-[#tab-f9a4e619-dca7-4d5e-bd65-500de2cb261e]
-.Use an Oxford comma
-[%header]
-|===
-|No                                                                                                                                         |#Yes#
-|[.line-through]#Unless stated otherwise, all examples, figures and descriptions in this specification assume there is right-hand traffic.# |Unless stated otherwise, all examples, figures, and descriptions in this specification assume there is right-hand traffic.
-|[.line-through]#Pages, colors, traces are all copied from the display.#                                                                    |Pages, colors, and traces are all copied from the display.
-|===
-
-*Source*
-
-tekom English for Non-Native Writers, 2. updated edition, Rule EN_S 610, S. 76, Place a Comma in Front of Conjunctions in Enumerations
-
-
-[#sec-ASM-123]
-=== Add a comma after introductory phrases (ASM-123)
-
-Add a comma after introductory phrases, for example, prepositional phrases and infinitive phrases.
-This improves the readability and understandability of sentences.
-
-*Exceptions*
-
-There are no exceptions.
-
-*Example*
-
-[#tab-a4d8a86e-b5a6-4593-94ea-656bff21b8d2]
-.Add a comma after introductory phrases
-[%header]
-|===
-|No|#Yes#
-|[.line-through]#In the ASAM OpenSCENARIO data model these types are used:#                               |In the ASAM OpenSCENARIO data model, these types are used:
-|[.line-through]#To find the mismatches we propagate the expected type backwards through the expression.# |To find the mismatches, we propagate the expected type backwards through the expression.
-|===
-
-*Source*
-
--
-
 
 [#sec-ASM-49]
 === Use American English (ASM-49)
@@ -218,6 +167,58 @@ There are no exceptions.
 *Source*
 
 ASAM Writing Guide: Use active voice
+
+
+[#sec-ASM-33]
+=== Use an Oxford comma (ASM-33)
+
+* Use a comma before a conjunction in an enumeration.
+* Separate also the last noun in a list from the rest of the list using a comma.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-f9a4e619-dca7-4d5e-bd65-500de2cb261e]
+.Use an Oxford comma
+[%header]
+|===
+|No                                                                                                                                         |#Yes#
+|[.line-through]#Unless stated otherwise, all examples, figures and descriptions in this specification assume there is right-hand traffic.# |Unless stated otherwise, all examples, figures, and descriptions in this specification assume there is right-hand traffic.
+|[.line-through]#Pages, colors, traces are all copied from the display.#                                                                    |Pages, colors, and traces are all copied from the display.
+|===
+
+*Source*
+
+tekom English for Non-Native Writers, 2. updated edition, Rule EN_S 610, S. 76, Place a Comma in Front of Conjunctions in Enumerations
+
+
+[#sec-ASM-123]
+=== Add a comma after introductory phrases (ASM-123)
+
+Add a comma after introductory phrases, for example, prepositional phrases and infinitive phrases.
+This improves the readability and understandability of sentences.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-a4d8a86e-b5a6-4593-94ea-656bff21b8d2]
+.Add a comma after introductory phrases
+[%header]
+|===
+|No|#Yes#
+|[.line-through]#In the ASAM OpenSCENARIO data model these types are used:#                               |In the ASAM OpenSCENARIO data model, these types are used:
+|[.line-through]#To find the mismatches we propagate the expected type backwards through the expression.# |To find the mismatches, we propagate the expected type backwards through the expression.
+|===
+
+*Source*
+
+-
 
 
 [#sec-ASM-64]
@@ -316,6 +317,33 @@ There are no exceptions.
 ASAM Writing Guide: Do not use abbreviations
 
 
+[#sec-ASM-122]
+=== Write out conjunctions (ASM-122)
+
+* Write out conjunctions.
+This improves the understandability.
+* Do not use a slash (`++/++`) for two or more conjunctions.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-2d0a6c5b-7cdf-478a-b94d-157f22d8e950]
+.Write out conjunctions
+[%header]
+|===
+|No                                                                       |#Yes#
+|[.line-through]lateral and/or longitudinal#                              |lateral, longitudinal, or both
+|[.line-through]#segment continuity, tangent and/or curvature continuity# |segment continuity, tangent, curvature continuity, or all of them
+|===
+
+*Source*
+
+-
+
+
 [#sec-ASM-66]
 === Do not use synonyms (ASM-66)
 
@@ -386,7 +414,9 @@ ASAM Writing Guide: Verbs with a special meaning (shall, should, may, can)
 
 
 [#sec-ASM-113]
-=== Use the modal verb _may (not)_ to express a permission (ASM-113)
+=== Use the modal verb _may_ to express a permission (ASM-113)
+
+Do not use _may not_ because the meaning does not match in the context of a permission.
 
 *Exceptions*
 
@@ -398,8 +428,9 @@ There are no exceptions.
 .Use of modal verb _may_
 [%header]
 |===
-|No                                         |#Yes#
-|[.line-through]#it is not allowed to have# |it may not have
+|No                                     |#Yes#
+|[.line-through]#it is allowed to have# |it may have
+|[.line-through]#it may not have#       |it shall not have
 |===
 
 *Source*
@@ -575,12 +606,10 @@ In ASAM OpenDRIVE, all roads contain lanes.
 * https://asciidoctor.org/docs/asciidoc-recommended-practices/#document-attributes-i-e-variables
 
 
-[#sec-ASM-122]
-=== Write out conjunctions (ASM-122)
+[#sec-ASM-20]
+=== No trailing whitespace (ASM-20)
 
-* Write out conjunctions.
-This improves the understandability.
-* Do not use a slash (`++/++`) for two or more conjunctions.
+* Eliminate any spaces or tabs at each end of line.
 
 *Exceptions*
 
@@ -588,19 +617,17 @@ There are no exceptions.
 
 *Example*
 
-[#tab-2d0a6c5b-7cdf-478a-b94d-157f22d8e950]
-.Write out conjunctions
+[#tab-e829db29-94c8-492d-bbf3-8fb6adb9489d]
+.caption
 [%header]
 |===
-|No|#Yes#
-|[.line-through]lateral and/or longitudinal#                              | lateral, longitudinal, or both
-|[.line-through]#segment continuity, tangent and/or curvature continuity# | segment continuity, tangent, curvature continuity, or all of them
-
+|No                                                                                   |#Yes#
+|[.line-through]#``This is wrong with whitespace.   &nbsp;&nbsp;&nbsp;         [EOL]``#|``This is correct.[EOL]``
 |===
 
 *Source*
 
--
+ASAM specific rule
 
 
 == Numbers
@@ -667,9 +694,57 @@ This section contains editorial rules on how to create headings.
 
 ////
 TODO: When to use a heading?
-
-TODO: How to format a heading using asciidoc?
 ////
+
+
+[#sec-ASM-85]
+=== Use AsciiDoc syntax for Headings (ASM-85)
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-c31c8b36-520d-448a-9ffd-024bcd2fe035]
+.Use of AsciiDoc syntax for headings
+[%header]
+|===
+|No                                         |#Yes#
+|[.line-through]#`+++*1 Heading*+++`#       |`+++= Heading (level 1)+++`
+|[.line-through]#`+++*1.1 Heading*+++`#     |`+++== Heading (level 2)+++`
+|[.line-through]#`+++*1.1.1 Heading*+++`#   |`+++=== Heading (level 3)+++`
+|[.line-through]#`+++*1.1.1.1 Heading*+++`# |`+++==== Heading (level 4)+++`
+|===
+
+*Source*
+
+https://docs.asciidoctor.org/asciidoc/latest/sections/titles-and-levels/
+
+
+[#sec-ASM-86]
+=== Use maximum level 4 for headings (ASM-86)
+
+Restructure the document to avoid headings with levels greater 4.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-cb041007-e95a-4b35-b47d-6c8b088cf6e2]
+.Use of maximum level 4 for headings
+[%header]
+|===
+|No                                     |#Yes#
+|[.line-through]#`+++===== Heading+++`# |`+++==== Heading (level 4)+++` +
+                                         `+++==== Heading (level 4)+++`
+|===
+
+*Source*
+
+ASAM specific rule
 
 [#sec-ASM-2]
 === Start headings with a capital letter (ASM-2)
@@ -697,6 +772,56 @@ TODO: How to format a heading using asciidoc?
 ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 
+[#sec-ASM-3]
+=== End headings without punctuation (ASM-3)
+
+* Do not use any punctuation at the end of a heading.
+
+*Exceptions*
+
+*Example*
+
+[#tab-9c6af567-6781-43f5-a1c9-42175582879e]
+.Use of punctuation in headings
+[%header]
+|===
+|No                                                    |#Yes#
+|[.line-through]#Wrong punctuation in a heading.#      |Correct heading without punctuation
+|[.line-through]#Is punctuation allowed in a heading?# |Headings shall not use punctuation
+|===
+
+*Source*
+
+ASAM specific rule
+
+
+[#sec-ASM-4]
+=== Leave headings without numbering (ASM-3)
+
+* Do not use any numbering in combination with a heading.
+* Headings are numbered automatically.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-170721a6-1e06-419e-8716-a51eda20c774]
+.Use of numbering in headings
+[%header]
+|===
+|No                                                               |#Yes#
+|[.line-through]#``+++== 13. Wrong numbering in a heading+++``#   |``+++== Correct heading without numbering+++``
+|[.line-through]#``+++=== 14.3 Wrong numbering in a heading+++``# |``+++=== Correct heading without numbering+++``
+|[.line-through]#``+++==== 14.3.a) Wrong numbering in a heading+++``# |``+++==== Correct heading without numbering+++``
+|===
+
+*Source*
+
+ASAM specific rule
+
+
 == Paragraphs
 
 This section contains editorial rules on how to create paragraphs.
@@ -706,7 +831,7 @@ This section contains editorial rules on how to create paragraphs.
 === Use paragraphs to structure the text (ASM-74)
 
 Use a a new paragraph for each new thought or statement.
-Insert an empty line to create a new paragraph.
+Insert an empty line in between to create a new paragraph.
 
 *Exceptions*
 
@@ -719,18 +844,17 @@ There are no exceptions.
 [%header]
 |===
 |No                                                                                                      |#Yes#
-|[.line-through]#This is a first thought. And this deepens the first thought. This is a second thought.# |This is a first thought. And this deepens the first thought.
+|[.line-through]#This is a first thought in the first paragraph. And this deepens the first thought. This is a second thought in the following paragraph.# |This is a first thought in the first paragraph. And this deepens the first thought.
 
- This is a second thought.
+This is a second thought in the following paragraph
 |===
 
 *Source*
 
 ASAM Writing Guide: Use paragraphs
 
-
 [#sec-ASM-9]
-=== Just add one sentence per line (ASM-9)
+=== Just add one sentence per line in lists(ASM-9)
 
 * Insert a line break after each sentence.
 * Do not add manual line breaks inside sentences.
@@ -766,12 +890,133 @@ This is the second sentence of the element.
 ASAM Writing Guide: 4.3. One sentence per line
 
 
+[#sec-ASM-71]
+=== Use of italic markup (ASM-71)
+
+Use italic in the following cases:
+
+* For glossary terms
+* For new terms
+* To emphasize terms
+
+Markup character: Underscore (_)
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-a6e4326c-a900-4af3-8fc1-f935f119f587]
+.Use of italic markup
+[%header]
+|===
+|No                    |#Yes#
+|[.line-through]#false#|`+++_term_+++`
+|===
+
+*Source*
+
+ASAM Writing Guide: Typographic conventions for XiL
+
+
+[#sec-ASM-72]
+=== Use of bold markup (ASM-72)
+
+Use bold in the following cases:
+
+* sub-headings that shall not appear in the table of contents
+* single characters in formulae or tables
+
+Do not use bold for terms in continuous text.
+
+Markup character: Asterisk (*)
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-ad208ac2-619a-4a12-b381-8e4935ce3452]
+.Use of bold markup
+[%header]
+|===
+|No                    |#Yes#
+|[.line-through]#false#|`+++*term*+++`
+|===
+
+*Source*
+
+ASAM Writing Guide: Typographic conventions for XiL
+
+
+[#sec-ASM-73]
+=== Use of code markup (ASM-73)
+
+Use code in the following cases:
+
+* attributes
+* parameters
+* one-line code examples
+* file names
+
+Markup character: grave accent U+0060 (\`)
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-f3fb86db-ea0b-40b9-8abb-c3a1f390adba]
+.Use of code markup
+[%header]
+|===
+|No                    |#Yes#
+|[.line-through]#false#|`+++`term`+++`
+|[.line-through]#false#|correct
+|[.line-through]#false#|correct
+|===
+
+*Source*
+
+
 == Source code and literals
 
 This section contains editorial rules on how to write down source code.
 
-[#sec-ASM-xx]
-=== Use AsciiDoc syntax for source code snippets (ASM-xx)
+
+[#sec-ASM-14]
+=== Create an anchor with an UUID for a referenced code block (ASM-14)
+
+The code block anchor consists of `[#`, the string `code-`, a following UUID, and `]`.
+
+*Exceptions*
+
+If you do not know how to use unique IDs, insert `[#tag-uid]` as a placeholder.
+The placeholder will trigger a pipeline warning so that the technical writer can help with creating a unique ID.
+
+*Example*
+
+```
+[#code-7a608cac-62b9-4992-8079-d382a55128b2]
+[source, xml, linenums]
+----
+<OpenDRIVE xmlns="https://code.asam.net/simulation/standard/opendrive_schema/">
+...
+</OpenDRIVE>
+----
+```
+
+*Source*
+
+* ASAM Writing Guide: Tags
+* ASAM Writing Guide: 6.2. Source code fragments
+
+
+[#sec-ASM-88]
+=== Use AsciiDoc syntax for source code snippets (ASM-88)
 
 If you cannot or do not want to reference a source code file, you can add source code as a snippet to your AsciiDoc file.
 In case of future changes, be aware that you have to maintain two places: your original source code and the snippet in the AsciiDoc file.
@@ -839,12 +1084,12 @@ There are no exceptions.
 
 
 [#sec-ASM-43]
-=== Use backticks for inline literals (ASM-43)
+=== Use a single grave accent before and after inline literals (ASM-43)
 
-* Use pairs of single backticks (`++`++`) for inline literals.
-* Do not use pairs of double backticks (`++``++`).
+* Use a single grave accent U+0060, also called backtick, (`++`++`) before and after inline literals.
+* Do not use pairs of double grave accents (`++``++`).
 
-In AsciiDoc, double backticks are used https://docs.asciidoctor.org/asciidoc/latest/text/monospace/#unconstrained[for text formatting in certain cases].
+In AsciiDoc, double grave accents are used https://docs.asciidoctor.org/asciidoc/latest/text/monospace/#unconstrained[for text formatting in certain cases].
 Unfortunately, this causes poor wording and readability and therefore shall not be used.
 
 *Exceptions*
@@ -854,7 +1099,7 @@ There are no exceptions.
 *Example*
 
 [#tab-ce27729f-33c4-47b2-a579-e7a1c2434c3a]
-.Use backticks for inline literals
+.Use a single grave accent before and after inline literals
 [%header]
 |===
 |No                                                                                                              |#Yes#
@@ -870,7 +1115,7 @@ ASAM Writing Guide: 6.1. Inline literals
 [#sec-ASM-79]
 === Use four space characters per indentation level for source code blocks (ASM-79)
 
-Do not use tab characters.
+* Do not use tab characters.
 
 *Exceptions*
 
@@ -958,7 +1203,11 @@ ASAM specific rule
 
 == Lists
 
-This section contains editorial rules on how to create lists.
+This section contains editorial rules on how to create lists:
+
+* <<#sec-ASM-8>>,
+* <<#sec-ASM-48>>,
+* <<#sec-ASM-10>>
 
 
 [#sec-ASM-8]
@@ -991,7 +1240,7 @@ The outline of the road marking is described by the attributes @length and @spac
 [#sec-ASM-48]
 === Use AsciiDoc syntax for lists (ASM-48)
 
-* Use only asciidoc syntax to format lists.
+* Use only AsciiDoc syntax to format lists.
 * Use either ordered or unordered lists (see <<#sec-ASM-10>>).
 
 *Exceptions*
@@ -1024,6 +1273,47 @@ There are no exceptions.
 * https://docs.asciidoctor.org/asciidoc/latest/lists/ordered/
 
 
+[#sec-ASM-25]
+=== Just add one sentence per line (ASM-25)
+
+* Insert a line break after each sentence.
+* Do not add manual line breaks inside sentences.
+
+*Instructions*
+
+* _"Only hit 'enter' after a period ('.'), but make sure to hit 'enter' after a period."_
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[.underline]#Code#
+
+```
+This is the first sentence.
+This is the second sentence.
+This is the third sentence.
+```
+
+[.underline]#Result#
+
+This is the first sentence
+This is the second sentence.
+This is the third sentence.
+
+*Source*
+
+ASAM Writing Guide: 4.3. One sentence per line
+
+
+
+Refer to:
+
+* <<#sec-ASM-8>>,
+* <<#sec-ASM-48>>,
+* <<#sec-ASM-10>>
 
 [#sec-ASM-10]
 === Choose a suitable type of list (ASM-10)
@@ -1220,12 +1510,15 @@ ASAM Writing Guide: 5.3. Tables
 https://docs.asciidoctor.org/asciidoc/latest/tables/build-a-basic-table/
 
 
-[#sec-ASM-46]
-=== Create an ID with a UUID for every table (ASM-46)
+[#sec-ASM-13]
+=== Create an anchor with an UUID every table (ASM-13)
+
+The table anchor consists of `[#`, the string `tab-`, a following UUID, and `]`.
 
 *Exceptions*
 
-There are no exceptions.
+If you do not know how to use unique IDs, insert `[#tag-uid]` as a placeholder.
+The placeholder will trigger a pipeline warning so that the technical writer can help with creating a unique ID.
 
 *Example*
 
@@ -1297,11 +1590,11 @@ ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 == Figures
 
-TODO: Terminology: Images or figures? Image = file? Figure = rendering of AsciiDoc with image and caption?
+// TODO: Terminology: Images or figures? Image = file? Figure = rendering of AsciiDoc with image and caption?
 
 
-[#sec-ASM-xx]
-=== Illustrate complex facts with figures (ASM-xx)
+[#sec-ASM-56]
+=== Illustrate complex facts with figures (ASM-56)
 
 Figures, for example, pictures or drawings, may be used to illustrate complex facts.
 
@@ -1316,14 +1609,14 @@ There are no exceptions.
 ASAM Writing Guide: 5.2. Figures
 
 
-[#sec-ASM-xx]
-=== Use images with the file type SVG (ASM-)
+[#sec-ASM-57]
+=== Use figures with the file type SVG (ASM-57)
 
-SVG is the preferred format for images.
+SVG is the preferred format for figures.
 
 *Exceptions*
 
-If you cannot use an image with the file type SVG, use the file type PNG.
+If you cannot use an figures with the file type SVG, use the file type PNG.
 
 *Example*
 
@@ -1333,7 +1626,7 @@ ASAM Writing Guide: 5.2. Figures
 
 
 [#sec-ASM-28]
-=== Make sure that all images included in the User Guide are shown correctly (ASM-28)
+=== Make sure that all figures included in the User Guide are shown correctly (ASM-28)
 
 *Exceptions*
 
@@ -1345,23 +1638,24 @@ There are no exceptions.
 
 
 [#sec-ASM-29]
-=== Make sure that there are no unused images in the repository of the standard (ASM-29)
+=== Make sure that there are no unused figures in the repository of the standard (ASM-29)
 
 *Exceptions*
 
 There are no exceptions.
 
-TODO: (Are there any exceptions where it makes sense to keep unused images? Images are not only used in the User Guide but also the other deliverables.)
+// TODO: (Are there any exceptions where it makes sense to keep unused images? Images are not only used in the User Guide but also the other deliverables.)
 
 *Example*
 
 *Source*
+//TODO: Name source
 
 
-[#sec-ASM-xx]
-=== Use one folder "images" per chapter (ASM-)
+[#sec-ASM-92]
+=== Use one folder "images" per chapter (ASM-92)
 
-Every chapter has an "images" folder that contains all the images of the chapter and the sections of the chapter.
+Every chapter has an "images" folder that contains all the figures of the chapter and the sections of the chapter.
 
 *Exceptions*
 
@@ -1384,8 +1678,10 @@ standard/
 *Source*
 
 
-[#sec-ASM-xx]
-=== Use AsciiDoc syntax for images (ASM-)
+[#sec-ASM-87]
+=== Use AsciiDoc syntax for figures (ASM-87)
+
+Use the AsciiDoc syntax for figures for images, diagrams, and so on.
 
 *Exceptions*
 
@@ -1406,12 +1702,16 @@ ASAM Writing Guide: 5.2. Figures
 https://docs.asciidoctor.org/asciidoc/latest/macros/images/
 
 
-[#sec-ASM-xx]
-=== Create an ID with a UUID for every figure (ASM-)
+
+[#sec-ASM-12]
+=== Create an anchor with an UUID for every figure (ASM-12)
+
+The figure anchor consists of `[#`, the string `fig-`, a following UUID, and `]`.
 
 *Exceptions*
 
-There are no exceptions.
+If you do not know how to use unique IDs, insert `[#tag-uid]` as a placeholder.
+The placeholder will trigger a pipeline warning so that the technical writer can help with creating a unique ID.
 
 *Example*
 
@@ -1426,8 +1726,8 @@ image::scenario.png[an alternative text]
 ASAM Writing Guide: 5.2. Figures
 
 
-[#sec-ASM-xx]
-=== Create a caption for every figure (ASM-)
+[#sec-ASM-58]
+=== Create a caption for every figure (ASM-58)
 
 *Exceptions*
 
@@ -1445,11 +1745,11 @@ image::scenario.png[an alternative text]
 
 ASAM Writing Guide: 5.2. Figures
 
-
+////
 [#sec-ASM-xx]
-=== Write an alternative text for every figure (ASM-)
+=== Write an alternative text for every figure (ASM-xx)
 
-TODO: How does the alternative text comply with the image numbering?
+// TODO: How does the alternative text comply with the image numbering?
 
 ```
 image::images/uml_notation.drawio.svg[1100]
@@ -1474,19 +1774,19 @@ image::scenario.png[an alternative text]
 *Source*
 
 ASAM Writing Guide: 5.2. Figures
+////
 
+[#sec-ASM-59]
+=== Write a description for each figure (ASM-59)
 
-[#sec-ASM-xx]
-=== Write a description for each image (ASM-)
-
-* The description shall be below the image.
+* The description shall be below the figure.
 * The description shall start with "[Reference to figure] shows".
 The description shall not have an initial article.
-* The description shall not contain references to the placement of the image; for example, "before" or "below".
+* The description shall not contain references to the placement of the figure; for example, "before" or "below".
 
 *Exceptions*
 
-Decorative images shall not have a description; for example, the ASAM logo.
+Decorative figures shall not have a description; for example, the ASAM logo.
 
 *Example*
 
@@ -1500,33 +1800,25 @@ Decorative images shall not have a description; for example, the ASAM logo.
 
 [.underline]#Figure 58# shows the offset of the center lane away from the road reference line.
 
-* The number of the image, "figure 58", is automatically referenced.
+* The number of the figure, "figure 58", is automatically referenced.
 * The text "Figure 58" is shown as a link to the figure.
 
 *Source*
 
 
+[#sec-ASM-16]
+=== Anchor syntax [#anchor] (ASM-16)
 
+Every anchor consists of `[#`, the string for the anchor type, a following UUID, and `]`.
 
-== Combined Rules from writing guides /XIL
+*Exceptions*
 
-
-
-
-[#sec-ASM-76]
-=== Uppercase and lowercase (ASM-76)
-
-Refer to <<#sec-ASM-50>>
-
-
-[#sec-ASM-77]
-=== XIL: IDs (aka anchors) (ASM-77)
-
-Refer to <<#sec-ASM-78>>
+If you do not know how to use unique IDs, insert `uid` as a placeholder.
+The placeholder will trigger a pipeline warning so that the technical writer can help with creating a unique ID.
 
 *Source*
 
-ASAM Writing Guide: XIL: Tags (aka anchors)
+ASAM Writing Guide: Tags
 
 
 [#sec-ASM-78]
@@ -1538,13 +1830,13 @@ Insert a unique ID according to the following patterns:
 .List of patterns for unique IDs
 [%header]
 |===
-|Pattern | usage | optional/required | comment
-|`[#code-<uid>]` | source code blocks | optional | Only use if source code is referenced.
-|`[#fig-<uid>]` | figures (images, diagrams, and so on) | required | -
-|`[#map-<uid>]` | map files | optional | Only use for map_[...].adoc files.
-|`[#sec-<uid>]` | sections | optional | Only use if section is referenced.
-|`[#tab-<uid>]` | tables | required | -
-|`[#top-<uid>]` | topics | required | -
+|Pattern         | Usage                                 | Optional/required | Comment
+|`[#code-<uid>]` | source code blocks                    | optional          | Only use if source code is referenced.
+|`[#fig-<uid>]`  | figures (images, diagrams, and so on) | required          | -
+|`[#map-<uid>]`  | map files                             | optional          | Only use for map_[...].adoc files.
+|`[#sec-<uid>]`  | sections                              | optional          | Only use if section is referenced.
+|`[#tab-<uid>]`  | tables                                | required          | -
+|`[#top-<uid>]`  | topics                                | required          | -
 |===
 
 *Exceptions*
@@ -1552,7 +1844,7 @@ Insert a unique ID according to the following patterns:
 If you do not know how to use unique IDs, insert `[#tag-uid]` as a placeholder.
 The placeholder will trigger a pipeline warning so that the technical writer can help with creating a unique ID.
 
-NOTE: Where to use a semantic ID and where a UUID? What are allowed characters in IDs anyway? How about a Regex for a valid ID production: [a-zA-Z0-9_-]
+// NOTE: Where to use a semantic ID and where a UUID? What are allowed characters in IDs anyway? How about a Regex for a valid ID production: [a-zA-Z0-9_-]
 
 *Example*
 
@@ -1567,6 +1859,29 @@ NOTE: Where to use a semantic ID and where a UUID? What are allowed characters i
 *Source*
 
 ASAM Writing Guide: Tags
+
+
+[#sec-ASM-1]
+=== No fixed versioning (ASM-1)
+
+Do not include version information in the content or in names of files or folders or UML models
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-05a17f73-4687-4e58-92c9-1269b89ccd7f]
+.Use of constant file names
+[%header]
+|===
+|No                                    |#Yes#
+|[.line-through]#example_file_name_v3.adoc# |example_file_name.adoc
+|[.line-through]#Referenced Standard V 1.2.34.3# |Referenced Standard
+|===
+
+*Source*
 
 
 [#sec-ASM-80]
@@ -1613,8 +1928,8 @@ There are no exceptions.
 ASAM Writing Guide: File names
 
 
-[#sec-ASM-118]
-=== Use '.adoc' as file extension for documents (ASM-118)
+[#sec-ASM-23]
+=== Use '.adoc' as file extension for documents (ASM-23)
 
 *Exceptions*
 
@@ -1640,7 +1955,7 @@ ASAM Writing Guide: File names
 
 Apply the rules for file names on the caption.
 
-NOTE: Name all images according to the naming convention: fig_[name_of_image].drawio.svg (not "fig-[...]" as previously planned).
+// NOTE: Name all images according to the naming convention: fig_[name_of_image].drawio.svg (not "fig-[...]" as previously planned).
 
 *Exceptions*
 
@@ -1673,8 +1988,8 @@ For pixel-based graphics, portable network graphics (*.png) may be used.
 ASAM Writing Guide: File formats
 
 
-[#sec-ASM-119]
-=== Use PlantUML (*.puml) for UML diagrams (ASM-119)
+[#sec-ASM-93]
+=== Use PlantUML (*.puml) for UML diagrams (ASM-93)
 
 *Exceptions*
 
@@ -1736,43 +2051,12 @@ There are no exceptions.
 
 ASAM Writing Guide: Non-normative sections
 
-
-[#sec-ASM-85]
-=== Lists (ASM-85)
-
-Refer to:
-
-* <<#sec-ASM-8>>,
-* <<#sec-ASM-48>>,
-* <<#sec-ASM-10>>
-
-*Source*
-
-ASAM Writing Guide: Lists
+// TODO: Missing rule ASM-18: LOF created automatically
+// TODO: Missing rule ASM-19: LOT created automatically
 
 
-[#sec-ASM-86]
-=== XIL: Numbered lists (ASM-86)
-
-Refer to <<#sec-ASM-10>>
-
-*Source*
-
-ASAM Writing Guide: XIL: Numbered lists
-
-
-[#sec-ASM-87]
-=== XIL: Bullet point lists (ASM-87)
-
-Refer to <<#sec-ASM-10>>
-
-*Source*
-
-ASAM Writing Guide: XIL: Bullet point lists
-
-
-[#sec-ASM-88]
-=== XIL: Lists inside lists (ASM-88)
+[#sec-ASM-xx]
+=== XIL: Lists inside lists (ASM-xx)
 
 * _description_
 
@@ -1874,7 +2158,7 @@ There are no exceptions.
 
 ASAM Writing Guide: XIL: Images
 
-
+////
 [#sec-ASM-92]
 === XIL: Attribute 'imagesdir' (ASM-92)
 
@@ -1899,32 +2183,8 @@ There are no exceptions.
 *Source*
 
 ASAM Writing Guide: XIL: Attribute 'imagesdir'
+////
 
-
-[#sec-ASM-93]
-=== XIL: PlantUML diagrams (ASM-93)
-
-* _description_
-
-*Exceptions*
-
-There are no exceptions.
-
-*Example*
-
-[#tab-849ffea0-c4e2-43d7-837f-94f96a516f42]
-.caption
-[%header]
-|===
-|No|#Yes#
-|[.line-through]#false#|correct
-|[.line-through]#false#|correct
-|[.line-through]#false#|correct
-|===
-
-*Source*
-
-ASAM Writing Guide: XIL: PlantUML diagrams
 
 
 [#sec-ASM-94]
@@ -2285,7 +2545,7 @@ ASAM Writing Guide: Preview configuration
 
 
 [#sec-ASM-108]
-=== VisualStudioCode with asciidoc extension (ASM-108)
+=== VisualStudioCode with AsciiDoc extension (ASM-108)
 
 * _description_
 
@@ -2307,7 +2567,7 @@ There are no exceptions.
 
 *Source*
 
-ASAM Writing Guide: VisualStudioCode with asciidoc extension
+ASAM Writing Guide: VisualStudioCode with AsciiDoc extension
 
 
 [#sec-ASM-109]
@@ -2347,7 +2607,7 @@ There are no exceptions.
 
 *Example*
 
-[#tab-a6e4326c-a900-4af3-8fc1-f935f119f587]
+[#tab-0bc4c965-8163-48e8-8e3b-177ea90c4d5f]
 .caption
 [%header]
 |===
