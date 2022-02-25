@@ -3,7 +3,7 @@ const File = require('./file')
 // const classifyContent = require('@antora/content-classifier')
 
 module.exports.register = function ({ config }) {
-    const { numberedTitles, addToNavigation, unlistedPagesHeading = 'Unlisted Pages' } = config
+    const { numberedTitles, sectionNumberStyle, addToNavigation, unlistedPagesHeading = 'Unlisted Pages' } = config
     const logger = this.require('@antora/logger').get('unlisted-pages-extension')
     const macrosRegEx = new Array(
         { macro: "role", re: /^\s*role_related::(.*)\[(.*)\]\n?/ },
@@ -17,7 +17,7 @@ module.exports.register = function ({ config }) {
         { macro: "role", heading: "== Role-related topics\n\n" },
         { macro: "related", heading: "== Related topics\n\n" },
         { macro: "reference", heading: "" },
-        { macro: "pages", heading: "== Pages\n\n" },
+        { macro: "pages", heading: "== Pages\n:pagesmacro:\n\n" },
         { macro: "autonav", heading: "" }
     )
 
@@ -27,29 +27,38 @@ module.exports.register = function ({ config }) {
         console.log("Reacting on contentClassified")
         contentCatalog.getComponents().forEach(({ versions }) => {
             versions.forEach(({ name: component, version, url: defaultUrl }) => {
-
                 let targetPath = config.keywords && config.keywords.path ? config.keywords.path : ""
                 let targetModule = config.keywords && config.keywords.module ? config.keywords.module : "ROOT"
                 let targetName = config.keywords && config.keywords.filename ? config.keywords.filename : "0_used-keywords.adoc"
                 let useKeywords = config.keywords ? true : false
-
                 let keywordOverviewPageRequested = config.keywords && config.keywords.createOverview && useKeywords ? true : false
-
                 let pages = contentCatalog.findBy({ component, version, family: 'page'})
                 let navFiles = contentCatalog.findBy({ component, version, family: 'nav'})
                 let keywordPageMap = getKeywordPageMapForPages(useKeywords,pages)
                 const rolePageMap = getRolePageMapForPages(pages)
-
+                let anchorPageMap = getAnchorPageMapForPages(pages, navFiles)
                 pages = createKeywordsOverviewPage(keywordOverviewPageRequested, contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version)
                 keywordPageMap = getKeywordPageMapForPages(useKeywords,pages)
                 pages = findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywordPageMap, rolePageMap, macrosRegEx, macrosHeadings, logger, component, version )
                 keywordPageMap = getKeywordPageMapForPages(useKeywords,pages)
                 pages = createKeywordsOverviewPage(keywordOverviewPageRequested, contentCatalog, pages, keywordPageMap, targetPath, targetName, targetModule, component, version)
-
                 navFiles = contentCatalog.findBy({ component, version, family: 'nav'})
 
                 if (numberedTitles) {
-                    generatePageNumberBasedOnNavigation(pages, navFiles)
+                    const style = sectionNumberStyle ? sectionNumberStyle : "default"
+                    let appendixCaption = "Appendix"
+                    let appendixOffset = 0
+                    const componentAttributes = contentCatalog.getComponents().filter(x => x.name === component)[0].asciidoc.attributes
+                    if (Object.keys(componentAttributes).indexOf("appendix-caption") > -1) {
+                        appendixCaption = componentAttributes["appendix-caption"]
+                    }
+                    if (Object.keys(componentAttributes).indexOf("appendix-offset") > -1) {
+                        appendixOffset = componentAttributes["appendix-offset"]
+                    }
+                    generatePageNumberBasedOnNavigation(pages, navFiles, style, appendixCaption, appendixOffset)
+                }
+                if (anchorPageMap.size > 0) {
+                    pages = findAndReplaceLocalReferencesToGlobalAnchors( anchorPageMap, pages )
                 }
             })
         })
@@ -91,7 +100,6 @@ return accum
 }
 
 function getKeywordPageMapForPages (useKeywords, pages = {}) {
-
     if (!useKeywords) {
         return (new Map())
     }
@@ -137,11 +145,9 @@ function generateMapForRegEx(re,pages,exclusive=false) {
                     }
                 }
             }
-
         }
     }
     return (generatedMap)
-
 }
 
 function findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywordPageMap, rolePageMap, macrosRegEx, macrosHeadings, logger, component, version) {
@@ -171,7 +177,6 @@ function findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywor
                 const re = entry.re
                 const heading = macrosHeadings.find(x => x.macro === macro).heading
                 const macroResult = re.exec(line)
-
                 if (macroResult) {
                     var newContent = ""
                     switch (macro) {
@@ -187,15 +192,11 @@ function findAndReplaceCustomASAMMacros( contentCatalog, pages, navFiles, keywor
                         case "pages":
                             newContent = replacePagesMacro(page, pageContent, line, macroResult, heading, pages)
                             break;
-
                     }
                 }
             }
         }
         page.contents = Buffer.from(pageContent.join("\n"))
-        // for (let re of macrosRegEx) {
-        //     re.exec(pageContent)
-        // }
     }
     return pages
 
@@ -238,10 +239,8 @@ function replaceRoleRelatedMacro( page, pageContent, line, macroResult, heading,
         else {
             logger.warn("Role not found")
         }
-
     })
     pageContent.splice(pageContent.indexOf(line),1,content)
-
     return (pageContent)
 }
 
@@ -253,7 +252,6 @@ function replaceRelatedMacro( page, pageContent, line, macroResult, heading, key
     resultValues.attributes.split(",").forEach((el) => {
         const elTrimmed = el.trim()
         if (elTrimmed.startsWith("!")) {
-
         }
         else if (keywordPageMap.has(elTrimmed)) {
             keywordPageMap.get(elTrimmed).forEach((keywordPage) => {
@@ -272,10 +270,8 @@ function replaceRelatedMacro( page, pageContent, line, macroResult, heading, key
             console.log(exclusionSet)
             console.log(keywordPageMap.keys())
         }
-
     })
     pageContent.splice(pageContent.indexOf(line),1,content)
-
     return (pageContent)
 }
 
@@ -288,7 +284,6 @@ function replacePagesMacro( page, pageContent, line, macroResult, heading, pages
     var exclusionSet = excludeSelf(page)
     const parameterArray = resultValues.parameters.split(",")
     var content = resultValues.newLine
-
     var doAll = false
     var targetPath = page.dirname
     for (let par of parameterArray) {
@@ -317,8 +312,8 @@ function replacePagesMacro( page, pageContent, line, macroResult, heading, pages
             content = content.concat("\n",addNewBulletPoint(linkText))
         }
     }
+    content += "\n"
     pageContent.splice(pageContent.indexOf(line),1,content)
-
     return(pageContent)
 }
 
@@ -328,10 +323,8 @@ function parseCustomXrefMacro( macroResult, line, heading ) {
     resultValues.parameters = macroResult[2]
     resultValues.indexStart = macroResult.index
     resultValues.indexStop = line.indexOf("]",resultValues.indexStart) +1
-
     const newLine = line.substring(0,resultValues.indexStart) + heading + " "+ line.substring(resultValues.indexStop)
     resultValues.newLine = newLine
-
     return resultValues
 }
 
@@ -348,7 +341,6 @@ function findAllOccurrencesOfCustomMacroInPage( page, macro, macrosRegEx ) {
     const re = macrosRegEx.filter(entry => {
         return (entry.macro === macro)
     }).re
-
     return(getAllOccurencesForRegEx(page, re))
 }
 
@@ -378,7 +370,6 @@ function getAllOccurencesForRegEx( page, re ) {
             results.push(m)
         }
     } while(m)
-
     return (results)
 }
 
@@ -397,7 +388,6 @@ function excludeNegatedAttributes( exclusionSet = new Set(), attributes, keyword
 
 function getChildPagesOfPath( pages, path, doAll=false ) {
     var childPages = new Array();
-
     if (doAll) {
         pages.forEach((page) => {
             if (page.dirname.indexOf(path) >-1) {
@@ -412,15 +402,12 @@ function getChildPagesOfPath( pages, path, doAll=false ) {
             }
         })
     }
-
     return (childPages);
-
 }
 
 function createVirtualFilesForFolders( contentCatalog, component, version, module, pages, modulePath ) {
     var folderFiles = new Object()
     const base = pages[0].base
-
     pages.forEach((page) => {
         let relativePath = ""
         if (page.src.basename !== page.src.relative) {
@@ -497,7 +484,6 @@ function createKeywordsOverviewPage( keywordOverviewPageRequested, contentCatalo
         if (targetPath !== "" && !targetPath.endsWith("/")){
             targetPath = targetPath+"/"
         }
-
         if (entry[1].size === 1 && val.src.relative === targetPath+targetName && val.src.module === targetModule) {
             continue;
         }
@@ -510,20 +496,16 @@ function createKeywordsOverviewPage( keywordOverviewPageRequested, contentCatalo
         }
         standardContent.push("")
     }
-
     const relative = targetPath === "" ? targetName : targetPath+"/"+targetName
     let existingFile = contentCatalog.findBy({component: component, version: version, module: targetModule, relative: relative})
     if (existingFile.length) {
         existingFile[0].contents = Buffer.from(standardContent.join("\n"))
         return pages
-
     }
     else {
         let newFile = createNewVirtualFile(contentCatalog, targetName, targetPath, targetModule, component, version, standardContent.join("\n"),myBase)
         return [...pages,newFile]
     }
-
-
 }
 
 function capitalizeFirstLetter(string) {
@@ -553,7 +535,6 @@ function createNewVirtualFile( contentCatalog, filename, path, module, component
     let moduleRootPath = path=== "/" ? ".." : path.replace(/([^//])*/,"..")+".."
     newFile.src = {}
     Object.assign(newFile.src, { path: newFile.path, basename: newFile.basename, stem: newFile.stem, extname: newFile.extname, family: type, relative: path+filename, mediaType: 'text/asciidoc', component: component, version: version, module: module, moduleRootPath: moduleRootPath })
-
     contentCatalog.addFile(newFile)
     return (newFile)
 }
@@ -607,9 +588,7 @@ function replaceAutonavMacro( contentCatalog, pages, nav, component, version, fi
         if (moduleRootPath.indexOf("/")>-1 ) {
             currentLevel = currentLevel-1 + moduleRootPath.split("/").length
         }
-
         let line = "*".repeat(currentLevel) + " xref:"+page.src.relative+"[]"
-
         if ((page.src.relative !== moduleStartPage || !findModuleMainPage) && isPublishableFile(page))  {
             navBody.push(line)
         }
@@ -622,40 +601,605 @@ function isPublishableFile( page ) {
     return (page.src.relative.indexOf("/_") < 0 && page.src.relative.indexOf("/.") < 0 && !page.src.relative.startsWith("_") && !page.src.relative.startsWith("."))
 }
 
-function generatePageNumberBasedOnNavigation(pages, navFiles) {
-    let chapterIndex = "0."
+function generatePageNumberBasedOnNavigation(pages, navFiles, styleSettings, appendixCaption, appendixOffset) {
+    const reStartLevel = /:start-level: ([0-9]*)/;
+    const reResetLevelOffset = /:reset-level-offset:/;
+
+    let currentRole = "default"
+    let generateNumbers = true
+    const style = styleSettings.toLowerCase()
+    let chapterIndex = setStartingChapterIndex(style,"0")
+    let imageIndex = 0,
+        tableIndex = 0
+    navFiles.sort((a,b) => {
+        return a.nav.index - b.nav.index
+    })
     navFiles.forEach(nav => {
+        const navContentSum = nav._contents.toString()
+        let content = navContentSum.split("\n")
+        if (navContentSum.match(reResetLevelOffset)) {
+            chapterIndex = setStartingChapterIndex(style,"0")
+        }
+        let startLevel = navContentSum.match(reStartLevel) && navContentSum.match(reStartLevel)[1] ? navContentSum.match(reStartLevel)[1] : 1
         for (let line of nav._contents.toString().split("\n")) {
-            const indexOfXref = line.indexOf("xref:")
-            if (indexOfXref > 0) {
-                const endOfXref = line.indexOf("[")
-                const targetFile = line.slice(indexOfXref+5,endOfXref)
-                let foundPage = pages.filter(x => x.src.relative === targetFile)
-                if (foundPage) {
-                    const level = line.lastIndexOf("*",indexOfXref) + 1
-                    let chapterElements = chapterIndex.split(".")
-                    const currentChapterIndexLength = chapterElements.length - 1
+            let hasChanged = false;
+            [generateNumbers, content, hasChanged] = checkForSectnumsAttribute(content,line,generateNumbers)
+            if (hasChanged) {continue;}
+            [currentRole, content, hasChanged] = checkForRoleInLine(content, line, currentRole)
+            if (hasChanged) {continue;}
 
-                    if (currentChapterIndexLength < level) {
-                        for (let i in [...Array(level-currentChapterIndexLength)]) {
-                            chapterElements.splice(-1,0,"1")
-                        }
-                    }
-                    else {
-                        chapterElements[level-1] = (parseInt(chapterElements[level-1]) + 1).toString()
-                        if (currentChapterIndexLength > level) {
-                            chapterElements = chapterElements.slice(0,level).concat([""])
-                        }
-                    }
-                    chapterIndex = chapterElements.join(".")
+            switch (currentRole) {
+                case "abstract":
+                    currentRole = "default";
+                    break;
+                case "appendix":
+                    [content, chapterIndex, imageIndex, tableIndex, generateNumbers,currentRole] = handleAppendix(nav, pages,content, line, generateNumbers, startLevel, chapterIndex, imageIndex, tableIndex, style, appendixCaption, appendixOffset);
+                    break;
+                case "glossary":
+                    currentRole = "default";
+                    break;
+                case "bibliography":
+                    [currentRole, imageIndex, tableIndex] = handleBibliography(nav, pages, line, imageIndex, tableIndex)
+                    break;
+                case "index":
+                    currentRole = "default";
+                    break;
+                case "preface":
+                    [currentRole, imageIndex, tableIndex]  = handlePreface(nav, pages, line, imageIndex, tableIndex)
+                    break;
+                case "default":
+                    [content, chapterIndex, imageIndex, tableIndex, generateNumbers,currentRole] = tryApplyingPageAndSectionNumberValuesToPage(nav, pages,content, line, generateNumbers, startLevel, chapterIndex, imageIndex, tableIndex, style)
+                    break;
+            }
+        }
+        nav._contents = Buffer.from(content.join("\n"))
+    })
+}
 
-                    let newContent = foundPage[0]._contents.toString().split("\n")
-                    newContent.splice(1,0,":titleoffset: "+ chapterIndex)
-                    foundPage[0]._contents = Buffer.from(newContent.join("\n"))
+function setStartingChapterIndex( style, value ) {
+    return style === "iso" ? value : value+"."
+}
 
+function tryApplyingPageAndSectionNumberValuesToPage( nav, pages, content, line, generateNumbers, startLevel, chapterIndex, imageIndex, tableIndex, style, option="default", appendixCaption="" ) {
+    let newImageIndex = imageIndex
+    let newTableIndex = tableIndex
+    let numberOfLevelTwoSections = 0
+    const indexOfXref = line.indexOf("xref:")
+    const level = indexOfXref > 0 ? line.lastIndexOf("*",indexOfXref) + 1 : line.lastIndexOf("*") + 1
+    const targetLevel = level - startLevel + 1
+    // Execute only if either a cross reference or a bullet point was found
+    if (indexOfXref > 0 || level >= startLevel) {
+        // Execute if no xref was found
+        if (indexOfXref <= 0) {
+            if (!generateNumbers) {
+                return [content, chapterIndex, newImageIndex, newTableIndex, !generateNumbers,"default"]
+            }
+            chapterIndex = determineNextChapterIndex(targetLevel, chapterIndex, style)
+            const changedLine = line.slice(0,level) + " " + chapterIndex + line.slice(level)
+            content[content.indexOf(line)] = changedLine
+        }
+        // Execute if xref was found
+        else if (level >= startLevel) {
+            let expectedNavtitleIndex = 0
+            let expectedReftextIndex = 0
+            let number
+            let foundPage = determinePageForXrefInLine(line, indexOfXref, pages, nav)
+            // Only execute if at least one matching page was found
+            if (foundPage.length > 0) {
+                let page = foundPage[0]
+                if (!generateNumbers) {
+                    unsetSectnumsAttributeInFile(page)
+                    let [a,b,c] = updateImageAndTableIndex(pages, page, imageIndex, tableIndex)
+                    return [content, chapterIndex, a, b,!generateNumbers, "default"]
+                }
+                chapterIndex = determineNextChapterIndex(targetLevel, chapterIndex, style, appendixCaption)
+                addTitleoffsetAttributeToPage( page, chapterIndex)
+                let [a,b,c] = updateImageAndTableIndex(pages, page, imageIndex, tableIndex)
+                newImageIndex = a
+                newTableIndex = b
+                numberOfLevelTwoSections = c
+                let [newContent, indexOfTitle, indexOfNavtitle, indexOfReftext] = getPageContentForExtensionFeatures(page)
+                if (appendixCaption) {
+                    const targetIndex = style === "iso" ? chapterIndex.split(".") : chapterIndex.split(".").slice(0,-1)
+                    newContent.splice(indexOfTitle+2,0,":titleprefix: "+ appendixCaption+" "+targetIndex.join(".")+":")
+                }
+                if (option !== "default") {
+                    newContent.splice(indexOfTitle,0,"["+option+"]")
+                    expectedNavtitleIndex += 1
+                    expectedReftextIndex += 1
+                    option = "default"
+                }
+                if (indexOfNavtitle > expectedNavtitleIndex) {
+                    const index = newContent[indexOfNavtitle].indexOf(":navtitle:") + ":navtitle:".length + 1
+                    newContent[indexOfNavtitle] = newContent[indexOfNavtitle].slice(0,index) + chapterIndex + " " + newContent[indexOfNavtitle].slice(index)
+                }
+                if (indexOfReftext > expectedReftextIndex) {
+                    const index = newContent[indexOfReftext].indexOf(":reftext:") + ":reftext:".length + 1
+                    newContent[indexOfReftext] = newContent[indexOfReftext].slice(0,index) + chapterIndex + " " + newContent[indexOfReftext].slice(index)
+                }
+                page._contents = Buffer.from(newContent.join("\n"))
+                const newIndex = style === "iso" ? chapterIndex +"."+ (numberOfLevelTwoSections-1) : chapterIndex + (numberOfLevelTwoSections-1) +"."
+                chapterIndex = determineNextChapterIndex(targetLevel+1, newIndex, style, appendixCaption)
+            }
+        }
+    }
+    return [content, chapterIndex, newImageIndex, newTableIndex,generateNumbers, option]
+}
+
+function determinePageForXrefInLine(line, indexOfXref, pages, nav) {
+    const endOfXref = line.indexOf("[")
+    const targetFile = line.slice(indexOfXref + 5, endOfXref)
+    let foundPage = pages.filter(x => x.src.relative === targetFile && x.src.module === nav.src.module)
+    return foundPage
+}
+
+function determineNextChapterIndex( targetLevel, chapterIndex="0.", style, appendixCaption="" ) {
+    let chapterElements = chapterIndex.split(".")
+    if (style !== "iso") {chapterElements.pop()}
+    const currentChapterIndexLength = Math.max(1,chapterElements.length)
+    if (appendixCaption) {
+        if (targetLevel === 1) {
+            if (isNaN(parseInt(chapterElements[0]))) {
+                chapterElements[0] = String.fromCharCode(chapterElements[0].charCodeAt(0) + 1)
+            }
+            else {
+                chapterElements[0] = "A"
+            }
+        }
+    }
+    // Add 1s to the end if the current number is shorter than the target number
+    if (currentChapterIndexLength < targetLevel) {
+        for (let i in [...Array(targetLevel-currentChapterIndexLength)]) {
+            chapterElements.splice(-1,0,"1")
+        }
+    }
+    else {
+        // Increase if the targetlevel is a number (letters are increased above)
+        if (!isNaN(parseInt(chapterElements[targetLevel-1]))) {
+            chapterElements[targetLevel-1] = (parseInt(chapterElements[targetLevel-1]) + 1).toString()
+        }
+        // Cut all elements beyond the target
+        if (currentChapterIndexLength > targetLevel) {
+            chapterElements = chapterElements.slice(0,targetLevel)
+        }
+    }
+    if (style !== "iso") {
+        chapterElements.push("")
+    }
+    chapterIndex = chapterElements.join(".")
+    return chapterIndex
+}
+
+function getAnchorsFromPage( pages, page ) {
+    var re = /\[\[([^\],]+)(,([^\]]*))?\]\]|\[#([^\]]*)\]|anchor:([^\[]+)\[/
+    var resultMap = new Map
+    var results = []
+    let ignoreLine = false
+    for (var line of page.contents.toString().split("\n")) {
+        if (line.indexOf("ifndef::") > -1 && line.indexOf("use-antora-rules") > -1) {
+            ignoreLine = true
+        }
+        else if (ignoreLine && line.indexOf("endif::") > -1) {
+            ignoreLine = false
+        }
+        if (ignoreLine) {continue;}
+        const includeSearchResult = line.match(/^\s*include::([^\[]+)\[(leveloffset=\+(\d+))?\]/)
+        if (includeSearchResult && includeSearchResult.length > 0) {
+            const targetPage = determineTargetPageFromIncludeMacro ( pages, page, includeSearchResult[1] )
+            if (targetPage) {
+                const partialAnchorMap = getAnchorsFromPage(pages,targetPage)
+                resultMap = addOrUpdateAnchorMapEntry( resultMap, partialAnchorMap, page )
+            }
+        }
+        else {
+            const result = re.exec(line);
+            if (result) {
+                results.push(result)
+            }
+        }
+    }
+    if (results) {
+        for (let entry of results) {
+            const e1 = entry[1]
+            const e2 = entry[4]
+            const e3 = entry[5]
+
+            const resultValue = e1 ? e1 : e2 ? e2 : e3
+            if (resultMap.has(resultValue)) {
+                resultMap = updateMapEntry(resultMap,resultValue,page)
+            }
+            else {
+                resultMap.set(resultValue, new Set([page]))
+            }
+        }
+    }
+    return resultMap
+}
+
+function getAnchorPageMapForPages( pages, navFiles ) {
+    var anchorMap = new Map;
+    for (let page of pages.filter((page) => page.out)) {
+        let hasPriority = false
+        for (let nav of navFiles) {
+            if (nav.contents.toString().indexOf(page.src.relative) > -1) {
+                hasPriority = true;
+                break;
+            }
+        }
+        let updateMap = getAnchorsFromPage(pages, page)
+        if (updateMap && updateMap.size > 0) {
+            if (hasPriority) {
+                anchorMap = addOrUpdateAnchorMapEntry(updateMap,anchorMap)
+            }
+            else {
+                anchorMap = addOrUpdateAnchorMapEntry(anchorMap, updateMap)
+            }
+        }
+    }
+    return anchorMap
+}
+
+function addOrUpdateAnchorMapEntry( anchorMap, updateMap, overridePage = null ) {
+    for (let key of updateMap.keys()) {
+        if (overridePage) {
+            updateMap.set(key, new Set([overridePage]))
+        }
+        if (anchorMap.has(key)) {
+            const mergedSet = new Set([...anchorMap.get(key),...updateMap.get(key)])
+            anchorMap = anchorMap.set(key, mergedSet)
+        }
+        else {
+            anchorMap.set(key,updateMap.get(key))
+        }
+    }
+    return anchorMap
+}
+
+function findAndReplaceLocalReferencesToGlobalAnchors( anchorMap, pages ) {
+    if (anchorMap.size === 0) {return pages}
+    const re = /<<([^>,]+)(,\s*([^>]+))?>>/g
+    const reAlt = /xref:{1,2}#([^\[]+)\[(([^\]]*))\]/gm
+    pages.forEach(page => {
+        let content = page.contents.toString()
+        let references = [...content.matchAll(re)]
+        const referencesAlt = [...content.matchAll(reAlt)]
+        if (references.length < 1 ) {references = referencesAlt}
+        else {
+            if (referencesAlt.length > 0) {references = references + referencesAlt}
+        }
+        references.forEach(ref => {
+            if (anchorMap.get(ref[1])) {
+                const referencePage = [...anchorMap.get(ref[1])][0]
+                if (page !== referencePage) {
+                    let [autoAltText, altLink] = getReferenceNameFromSource( pages, referencePage, ref[1] )
+                    const altText = ref[3] ? ref[3] : autoAltText
+                    const anchorLink = altLink ? altLink : ref[1]
+                    const replacementXref = "xref:"+referencePage.src.component+":"+referencePage.src.module+":"+referencePage.src.relative+"#"+anchorLink+"["+altText+"]"
+                    content = content.replace(ref[0],replacementXref)
                 }
             }
+        })
+        page.contents = Buffer.from(content)
+    })
+    return pages
+}
 
+function getReferenceNameFromSource( pages, page, anchor ) {
+    const reSectionEqualSigns = /^\s*(=+)\s+(.*)$/m
+    const reCaptionLabel = /^\.(\S.+)$/m
+    const reAnchorType = /([^-\]]+)-?[^\]]*/m
+
+    let content =page.contents.toString()
+    const resultAnchorType = anchor.match(reAnchorType)
+    const indexOfAnchor = content.indexOf(anchor)
+    const resultForNextHeading = content.slice(indexOfAnchor).match(reSectionEqualSigns)
+    // const resultForPreviousHeading = content.slice(0,indexOfAnchor).match(reSectionEqualSigns)
+    const resultNextCaption = content.slice(indexOfAnchor).match(reCaptionLabel)
+    // Use special anchor formats: sec, top, fig, tab, ...
+    let result
+    let returnValue = ""
+    let altLink
+
+    if (resultAnchorType){
+        switch (resultAnchorType[1]) {
+            case "fig":
+                // console.log("found figure: ", anchor);
+                result = resultNextCaption
+                // console.log(result[1])
+                break;
+            case "tab":
+                // console.log("found table: ", anchor);
+                result = resultNextCaption
+                // console.log(result[1])
+                break;
+            case "top":
+                // console.log("found top anchor: ", anchor)
+                returnValue = getAltTextFromTitle( page, content )
+                break;
+            case "sec":
+                result = resultForNextHeading
+                const pageNumber = getAltNumberFromTitle(page,content)
+                let relativeSectionNumber = getRelativeSectionNumberWithIncludes(pages,page,result[1].split("=").length-1,anchor)
+                if (relativeSectionNumber.length > 1){
+                    relativeSectionNumber[0]=""
+                    returnValue = "Section " + pageNumber+relativeSectionNumber.join(".")
+                }
+                else {
+                    returnValue = "Section " + pageNumber
+                }
+                break;
+            default:
+                console.log("non-standard anchor type detected: ", anchor)
+                returnValue = getAltTextFromTitle( page, content )
+                break;
+        }
+    }
+    else {
+        returnValue = getAltTextFromTitle( page, content )
+    }
+    return ([returnValue, altLink])
+}
+
+function getRelativeSectionNumberWithIncludes(pages,page,targetSectionLevel,startText="") {
+    let currentTargetSectionLevel = targetSectionLevel
+    let relativeIndex = startText ? [1] : [0]
+    let content = page.contents.toString()
+    if (startText){
+        const indexType1 = content.indexOf("[#"+startText+"]")
+        const indexType2 = content.indexOf("[["+startText+"]]")
+        if (indexType1 > -1) {
+            content = content.slice(0,indexType1);
+        }
+        else if(indexType2 > -1) {
+            content = content.slice(0,indexType2)
+        }
+    }
+    const reSectionStart = /^(=+)\s[^\n]+/
+    content.split("\n").reverse().forEach(line => {
+        const sectionSearchResult = line.match(reSectionStart)
+        const includeSearchResult = line.match(/^\s*include::([^\[]+)\[(leveloffset=\+(\d+))?\]/)
+        if (includeSearchResult && includeSearchResult.length > 0) {
+            const leveloffset = includeSearchResult[3] ? targetSectionLevel - includeSearchResult[3] : targetSectionLevel
+            if (leveloffset > 0)
+            {
+                const targetPage = determineTargetPageFromIncludeMacro ( pages, page, includeSearchResult[1] )
+                if (targetPage){
+                    let includedSectionNumbers = getRelativeSectionNumberWithIncludes(pages,targetPage,leveloffset)
+                    for (let i in includedSectionNumbers) {
+                        relativeIndex[i] += includedSectionNumbers[i]
+                    }
+                }
+            }
+        }
+        if (sectionSearchResult && sectionSearchResult.length > 0) {
+            const foundSectionLevel = sectionSearchResult[1].split("=").length - 1
+            if (foundSectionLevel === currentTargetSectionLevel) {
+                relativeIndex[0] = relativeIndex[0] + 1
+            }
+            else if(foundSectionLevel === currentTargetSectionLevel - 1) {
+                relativeIndex.reverse()
+                relativeIndex.push(1)
+                relativeIndex.reverse()
+                currentTargetSectionLevel = foundSectionLevel
+            }
+            // else {console.log("irrelevant section")}
         }
     })
+    return relativeIndex
+}
+
+function getAltTextFromTitle( page, content ) {
+    const re1 = /:titleprefix:\s*([^\n]+)/m
+    const re2 = /:titleoffset:\s*([^\n]+)/m
+    const re3 = /^=\s+([^\n\r]+)/m
+
+    let returnValue
+    let result = content.match(re1)
+    if (!result || result.length <=1) {
+        result = content.match(re2)
+    }
+    const resultAlt = content.match(re3)
+    if (result && result.length > 1) {
+        returnValue = "Section "+result[1]
+    }
+    else {
+        returnValue = resultAlt && resultAlt.length > 1 ? resultAlt[1] : page.src.stem
+    }
+    return returnValue
+}
+
+function getAltNumberFromTitle( page, content ) {
+    let value = getAltTextFromTitle(page,content)
+    return value.split(" ")[1]
+}
+
+function checkForSectnumsAttribute( content, line, previousValue=true ) {
+    const reSectnums = /^\s*:sectnums(!)?:/;
+    const result = line.match(reSectnums)
+    let returnValue;
+    let hasChanged = false
+    if (result) {
+        returnValue = result[1] ? false : true
+        hasChanged = true
+        content.splice(content.indexOf(line),1)
+    }
+    else {
+        returnValue = previousValue
+    }
+    return [returnValue, content, hasChanged]
+}
+
+function checkForRoleInLine( content, line, currentRole ) {
+    const reRoles = /^\s*\[([^\]]+)\]/;
+    const result = line.match(reRoles)
+    const returnValue = result ? result[1] : currentRole
+    const hasChanged = result ? true : false
+    if (result) {
+        content.splice(content.indexOf(line),1)
+    }
+    return [returnValue, content, hasChanged]
+}
+
+function getPageContentForExtensionFeatures( page ) {
+    const contentSum = page.contents.toString()
+    let newContent = contentSum.split("\n")
+    let indexOfTitle = 0
+    let indexOfNavtitle = -1
+    let indexOfReftext = -1
+    for(let line of newContent) {
+        // Find title
+        if (line.startsWith("= ")) {
+            indexOfTitle = newContent.indexOf(line)
+        }
+        // Find level 2 sections
+        // Find optional attribute :navtitle:
+        else if (line.startsWith(":navtitle:")) {
+            indexOfNavtitle = newContent.indexOf(line)
+        }
+        // Find optional attribute :reftext:
+        else if (line.startsWith(":reftext:")) {
+            indexOfReftext = newContent.indexOf(line)
+        }
+    }
+    return [newContent, indexOfTitle, indexOfNavtitle, indexOfReftext]
+}
+
+function handlePreface( nav, pages,line,imageIndex, tableIndex ) {
+    const indexOfXref = line.indexOf("xref:")
+    let page = determinePageForXrefInLine(line, indexOfXref, pages, nav)[0]
+    unsetSectnumsAttributeInFile(page)
+    let [newImageIndex,newTableIndex] = updateImageAndTableIndex(pages, page, imageIndex, tableIndex)
+    addSpecialSectionTypeToPage(page, "preface")
+    return ["default", newImageIndex, newTableIndex]
+}
+
+function handleAppendix( nav, pages, content, line, generateNumbers, startLevel, chapterIndex, imageIndex, tableIndex, style, appendixCaption, appendixOffset ) {
+    const appendixStartLevel = isNaN(parseInt(startLevel)+parseInt(appendixOffset)) ? startLevel : (parseInt(startLevel)+parseInt(appendixOffset)).toString()
+    return tryApplyingPageAndSectionNumberValuesToPage(nav, pages,content, line, generateNumbers, appendixStartLevel, chapterIndex, imageIndex, tableIndex, style, "appendix", appendixCaption)
+}
+
+function handleBibliography(nav, pages, line, imageIndex, tableIndex) {
+    const indexOfXref = line.indexOf("xref:")
+    let bibliographyPage = determinePageForXrefInLine(line, indexOfXref, pages, nav)
+    let page = bibliographyPage[0]
+    unsetSectnumsAttributeInFile(page)
+    let [newImageIndex,newTableIndex] = updateImageAndTableIndex(pages, page, imageIndex, tableIndex)
+    addSpecialSectionTypeToPage(page, "bibliography")
+    return ["default", newImageIndex, newTableIndex]
+}
+
+function addAttributeWithValueToPage( page, pageContent, indexOfTitle, attribute, value, unset=false ) {
+    const attr = unset ? ":"+attribute+"!: "+value : ":"+attribute+": "+value.toString()
+    pageContent.splice(indexOfTitle+1,0,attr)
+    page.contents = Buffer.from(pageContent.join("\n"))
+}
+
+function unsetSectnumsAttributeInFile( page ) {
+    let [newContent, indexOfTitle, indexOfNavtitle, indexOfReftext] = getPageContentForExtensionFeatures(page)
+    addAttributeWithValueToPage( page, newContent, indexOfTitle, "sectnums", "", true)
+}
+
+function addTitleoffsetAttributeToPage( page, value) {
+    let [newContent, indexOfTitle, indexOfNavtitle, indexOfReftext] = getPageContentForExtensionFeatures(page)
+    addAttributeWithValueToPage(page, newContent, indexOfTitle, "titleoffset", value)
+}
+
+function addImageOffsetAttributeToPage( page, value ) {
+    let [newContent, indexOfTitle, indexOfNavtitle, indexOfReftext] = getPageContentForExtensionFeatures(page)
+    addAttributeWithValueToPage(page, newContent, indexOfTitle, "imageoffset", value)
+}
+
+function addTableOffsetAttributeToPage( page, value ) {
+    let [newContent, indexOfTitle, indexOfNavtitle, indexOfReftext] = getPageContentForExtensionFeatures(page)
+    addAttributeWithValueToPage(page, newContent, indexOfTitle, "tableoffset", value)
+}
+
+function updateImageAndTableIndex(pages, page, imageIndex=0, tableIndex=0){
+    let newImageIndex = imageIndex
+    let newTableIndex = tableIndex
+    addImageOffsetAttributeToPage(page, newImageIndex)
+    addTableOffsetAttributeToPage(page, newTableIndex)
+    let [numberOfLevelTwoSections, numberOfImages, numberOfTables] = getIncludedPagesContentForExtensionFeatures(pages, page)
+    newImageIndex += parseInt(numberOfImages)
+    newTableIndex += parseInt(numberOfTables)
+    return ([newImageIndex,newTableIndex,numberOfLevelTwoSections])
+}
+
+function addSpecialSectionTypeToPage( page, specialSectionType ){
+    let [newContent, indexOfTitle, indexOfNavtitle, indexOfReftext] = getPageContentForExtensionFeatures(page)
+    newContent.splice(indexOfTitle+1,0,"["+specialSectionType+"]")
+    page.contents = Buffer.from(newContent.join("\n"))
+}
+
+function getIncludedPagesContentForExtensionFeatures( pages, page, leveloffset=0 ) {
+    const contentSum = page.contents.toString()
+    let newContent = contentSum.split("\n")
+    let numberOfLevelTwoSections = 0
+    let numberOfImages = 0
+    let numberOfTables = 0.
+    let ignoreLine = false
+    for(let line of newContent) {
+        // Find level 2 sections
+        if (line.indexOf("ifndef::") > -1 && line.indexOf("use-antora-rules") > -1) {
+            ignoreLine = true
+        }
+        else if (ignoreLine && line.indexOf("endif::") > -1) {
+            ignoreLine = false
+        }
+        if (!ignoreLine)
+        {
+            if ((leveloffset === 0 && line.startsWith("== ")) || (leveloffset === 1 && line.startsWith("= "))) {
+                numberOfLevelTwoSections += 1
+            }
+            else if (line.match(/^:pagesmacro:/)) {
+                numberOfLevelTwoSections -= 1
+            }
+            else if (line.match(/^\s*include::/)) {
+                const re = /^\s*include::([^\[]+)\[(leveloffset=\+(\d+))?/
+                let result = line.match(re)
+                const includePath = result[1].split("/")
+                const includeLeveloffset = result[3] ? parseInt(result[3]) + leveloffset : leveloffset
+                let currentPath = page.out.dirname.split("/")
+                includePath.forEach(part => {
+                    if (part === "..") {currentPath = currentPath.slice(0,-1)}
+                    else if (part ===".") {}
+                    else {currentPath.push(part)}
+                })
+                const targetPath = currentPath.join("/")
+                if (pages.filter(page => page.out.dirname +"/"+ page.src.basename === targetPath).length > 0) {
+                    let includedPage = pages.filter(page => page.out.dirname +"/"+ page.src.basename === targetPath)[0]
+                    let [numberOfLevelTwoSectionsIncluded, numberOfImagesIncluded, numberOfTablesIncluded] = getIncludedPagesContentForExtensionFeatures(pages, includedPage, includeLeveloffset)
+                    numberOfLevelTwoSections += numberOfLevelTwoSectionsIncluded
+                    numberOfImages += numberOfImagesIncluded
+                    numberOfTables += numberOfTablesIncluded
+                }
+            }
+            else {
+                const reFigures = /\[#fig-[^\]]+\]/g
+                if ([...line.matchAll(reFigures)].length > 0) {
+                    numberOfImages += [...line.matchAll(reFigures)].length
+                }
+                const reTables = /\[#tab-[^\]]+\]/g
+                if ([...line.matchAll(reTables)].length > 0) {
+                    numberOfTables += [...line.matchAll(reTables)].length
+                }
+            }
+        }
+    }
+    return [numberOfLevelTwoSections, numberOfImages, numberOfTables]
+}
+
+function determineTargetPageFromIncludeMacro ( pages, thisPage, includePath ) {
+    if (!Array.isArray(includePath)) {
+        includePath = includePath.split("/")
+    }
+    let currentPath = thisPage.out.dirname.split("/")
+    includePath.forEach(part => {
+        if (part === "..") {currentPath = currentPath.slice(0,-1)}
+        else if (part ===".") {}
+        else {currentPath.push(part)}
+    })
+    const targetPath = currentPath.join("/")
+    let includedPage = pages.filter(page => page.out && page.out.dirname +"/"+ page.src.basename === targetPath)[0]
+    return includedPage
 }
