@@ -1,0 +1,3238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: ASAM Project Guide</title>
+    <link rel="prev" href="writing_guide.html">
+    <link rel="next" href="../../project-guide/main.html">
+    <meta name="generator" content="Antora 3.0.0-rc.1">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+    <script>var uiRootPath = '../../../../_'</script>
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../_/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../_/img/favicon-16x16.png">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+           –
+          Restructuring</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
+        <div class="navbar-item is-hoverable">
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/restructure/compendium/writing_guidelines/writing_guide_xil.html+%7C%0D%0A%7C+Page+%7C++%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="body">
+<div class="nav-container" data-component="asamprojectguide" data-version="restructure">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">ASAM Project Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-started/main.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-started/how-asam-works.html">How ASAM works</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-started/processes-and-workflows-overview.html">Processes and workflows - overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-started/project-types.html">ASAM project types</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-started/current-projects.html">Current projects at ASAM</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-started/roles-overview.html">Roles at ASAM - overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-started/tools-overview.html">Standard tools - overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-started/asam-contacts.html">ASAM contacts</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/main.html">How to get involved</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/new-idea.html">How to enter a new idea</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/join_proposal_workshop.html">Join a Proposal workshop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/become_workgroup_member.html">Become a workgroup member</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/become_project_lead.html">Become a project lead</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/become_service_provider.html">Become a service provider</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/review_standard_asam.html">Review a standard (ASAM member review)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/review_standard_public.html">Review a standard (public release candidate)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/initiate_webinar.html">Initiate a webinar</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/join_webinar.html">Join a webinar</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../role-specific/main.html">ASAM roles</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/gtm.html">ASAM global technology manager</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/project-lead.html">Project lead</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/wg-member.html">Workgroup member</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/wg-lead.html">Workgroup lead</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/reviewer.html">Reviewer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/technical-writer.html">Technical writer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/service-provider.html">Service provider</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/standard_manager.html">Standard manager</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/standard_user.html">Standard user</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Other</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../role-specific/terminology.html">Role terminology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../role-specific/tsc.html">Technical Steering Committee Member</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../role-specific/standard_expert-group.html">Standard expert group</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../standardization/main.html">ASAM standardization process</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../standardization/project-types.html">Project types</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../standardization/project_types/standard_projects.html">Standard development projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../standardization/project_types/other_projects.html">Other project types</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../standardization/asam-development-process.html">ASAM development process for standards</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../standardization/project-ideation.html">The Project Ideation phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../standardization/proposal-phase.html">The Proposal phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../standardization/proposal/01_proposal_setup.html">Create the first Proposal Draft</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../standardization/proposal/02_contributing.html">Contributing to a Project Proposal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../standardization/proposal/03_proposal_workshop_preparation.html">Prepare a Proposal workshop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../standardization/proposal/04_join_proposal_workshop.html">Join a Proposal workshop (extended description)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../standardization/development-phase.html">The Development phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../standardization/review-phase.html">The Review phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../standardization/release-phase.html">The Release phase</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../standardization/project-setup.html">Project setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../standardization/creation-of-standards.html">Creation of standards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Working Model (workgroups)</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Issue-driven Workflow</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Reviews and Releases</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../standardization/deliverables.html">ASAM Deliverables</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/main.html">Tools overview</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../tooling/working-without-software-installation.html">Working without software installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/gitlab.html">GitLab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/gitlab/gitlab-setup.html">Setting up your ASAM GitLab Account</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/gitlab/gitlab-guides.html">GitLab Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/calendar.html">OpenX Calendar</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/calendar/calendar-setup.html">Setting up the openX Calendar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/teams-and-sharepoint.html">Microsoft Teams and Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/teams_and_sharepoint/teams-and-sharepoint-setup.html">Setting up microsoft teams and sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/teams_and_sharepoint/teams-and-sharepoint-guides.html">Microsoft teams and sharepoint guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/filestage.html">Filestage</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/filestage/filestage_guides.html">Filestage guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/vscode/vscode-setup.html">Setting up Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/vscode/vscode-guides.html">Visual Studio Code guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/git/git-setup.html">Setting up git</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/git/git-guides.html">Git guides</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/git/git_best_practices.html">Git best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/drawio/drawio-setup.html">Setting up draw.io</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/docker/docker-setup.html">Setting up docker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/docker/docker-guides.html">Docker guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/docker/docker-best-practices.html">Docker best practices</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium.html">Compendium</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1_keywords.html">Used keywords In ASAM Project Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../abbreviations.html">Abbreviations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../definitions.html">Definitions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/api.html">Application programming interface</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/application_area_companion.html">Application area companion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/associated_standard.html">Associated standard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/base_standard.html">Base standard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/format_description.html">Format description</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/fragment.html">Fragment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/information_architecture_requirements.html">Requirements of the information architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/protocol_definition.html">Protocol definitions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/set_of_standards.html">Set of standards</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/status_of_document.html">Status of documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/technology_reference.html">Technology reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../definitions/transport_layer_specification.html">Transport layer specification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../guides.html">Guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../guides/accessing_compiled_artifacts.html">Accessing compiled artifacts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../guides/asciidoc.html">Asciidoc</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/asciidoc/admonitions.html">Admonitions: Notes, tips, etc.</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/asciidoc/code.html">Code and syntax highlighting</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/asciidoc/commenting.html">How to comment and review adoc files</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/asciidoc/formulas.html">How to include formulas in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/asciidoc/graphics.html">Graphics</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/asciidoc/partials.html">Reusing content</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/asciidoc/roadmaps.html">How to create roadmaps in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/asciidoc/tasks.html">Task headings</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../guides/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/git/git_interactions.html">Git interactions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/git/switch_branches.html">How to switch branches</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/git/workflow_tutorial.html">Workflow tutorial for the projects using gitlab</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/git/working_with_issues.html">Working with issues in a repository</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../guides/ideation.html">Ideation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/ideation/ideation_workshop_gameplan.html">Ideation workshop gameplan</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../guides/meeting_guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../guides/platforms_at_asam.html">Platforms used at ASAM</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../guides/proposal_writing.html">Proposal writing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/proposal_writing/contribute_in_asciidoc.html">How to contribute to a proposal directly in AsciiDoc files</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/proposal_writing/contribute_with_issues.html">How to contribute to a proposal through GitLab issues</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/proposal_writing/how_to_enrollment_list.html">How-to add and include the enrollment list</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/proposal_writing/how_to_executive_draft.html">How-to create an executive proposal draft</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/proposal_writing/how_to_join.html">How to enroll for a project proposal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/proposal_writing/how_to_proposal_document.html">How-to create a project proposal document</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/proposal_writing/how_to_setup_git.html">Project Proposal setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/proposal_writing/proposal_guidelines.html">Proposal writing guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/proposal_writing/proposal_workshop_gameplan.html">Proposal workshop gameplan</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../guides/reviews.html">Reviews</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/reviews/add_custom_feedback_button.html">Add a custom feedback button to an Antora project</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../guides/reviews/add_feedback_button.html">Add a feedback button to an Antora project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../guides/set_up_new_project.html">How to set up a new project</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../guides/standard_workflow.html">ASAM standard workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../implementers-forum.html">Implementers-forum</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../implementers-forum/feedback_guide.html">Feedback guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../implementers-forum/scenario_writers_guide.html">OSC2 Scenario Writing Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../open-source.html">Open-source</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../open-source/asam_dco.html">ASAM developer certification of origin for open source projects</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../roles.html">Roles</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../roles/call_for_offers.html">Call for offers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../roles/project_lead_training.html">Project lead training</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../templates.html">Templates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../templates/cover_page.html">Cover page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../templates/directories.html">Directories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../templates/project_proposal.html">Template for project proposals (AsciiDoc)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../templates/review_feedback_template.html">Standard review template</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools.html">Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/antora.html">Antora</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/antora/build_antora_locally.html">Build Antora on your local PC</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/docker/docker_for_asciidoc.html">How to use docker for asciidoctor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/docker/run_docker.html">Starting a container from docker desktop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/docker/standard_docker_config.html">Standard docker compose yAML</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/docker/wsl.html">Windows subsystem for linux (WSL)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/filestage.html">Filestage</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/filestage/filestage_review.html">Doing a review on Filestage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/cloning_repo_tutorial.html">Cloning A Repository With Git</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/commit_guidelines.html">Git commit guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/git_actions.html">Git actions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/git_terminology.html">Git terminology</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/maintain_a_repo.html">Maintain A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/merge.html">Merge a branch</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/merge_conflicts.html">Merge conflicts: Preventing And Resolving</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/merge_requests.html">Merge requests</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/review_code.html">Review code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/git/submodules.html">Submodules in git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodule_add.html">Adding A New Submodule To A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodule_changing_remote.html">Changing remote for a submodule</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodule_delete.html">Removing A Submodule From A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodule_pull.html">Pulling A Submodule</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodules_switch_version.html">Switching to a specific submodule version</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/transitioning_to_a_new_workflow.html">Transitioning to the new workflow</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/working_with_git.html">Working with git</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/write_a_feature.html">Write A Feature</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/gitlab.html">Gitlab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/archiving_a_project.html">How to archive a project on GitLab</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/asam_issue_and_mr_labels.html">ASAM issue and merge request labels</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/branch_naming_conventions.html">Branch naming conventions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/branching_repo.html">Creating a branch</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/cloning_a_repository.html">Cloning A Repository Using GitLab To Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/commit_guidelines.html">ASAM commit guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/create_branch_from_issue.html">Create development branch from issues</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/forking_repo.html">Forking from repository</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/gitlab-ide_guide.html">GitLab IDE Guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/gitlab_terminology.html">GitLab Terminology</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/review_with_service_desk.html">How to use GitLab service desk for reviews</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/powershell.html">Powershell</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/powershell/cloning_a_repository.html">Cloning A Repository Using Git Bash / Powershell</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/powershell/powershell_basics.html">Microsoft PowerShell Basics</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/powershell/run_docker.html">Running docker-Compose From Powershell</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/sharepoint.html">Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/sharepoint/links.html">Sharepoint link summary</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/sharepoint/synchronizing_sharepoint_with_onedrive.html">Synchronizing sharepoint with oneDrive</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/teams.html">Teams</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/email-notifications.html">Email notifications from microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/meetings_in_teams.html">Meetings in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/obtain_channel_email.html">Obtain the email address of a channel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/polls_and_surveys.html">Polls &amp; Surveys</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/receive_notifications.html">Receiving notifications in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/teams-channel_file-structure.html">Teams channels file structure</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/vscode.html">Vscode</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/adding_diagrams_to_vscode.html">Adding VSCode Support For Diagrams With Kroki</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/cloning_a_repository.html">Cloning A Repository Using Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/recommended_vscode_extensions.html">Recommended Visual Studio Code extensions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/recommended_vscode_settings.html">ASAM recommended Visual Studio Code settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/run_docker.html">Running docker-Compose From VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_activity-bar.html">Visual Studio Code activity bar</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_command-palette.html">Visual Studio Code command palette</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_git-interaction.html">Interacting with git through Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_install_extension.html">Install extensions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_interface.html">Visual Studio Code interface</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../writing_guidelines.html">Writing guidelines</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="asciidoc_guide.html">AsciiDoc Guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="coding_style_guide.html">The openSCENARIO2 coding style guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="documentation_processes.html">Documentation processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="editorial_guide.html">Editorial guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="plantuml_documentation_guide.html">PlantUML documentation guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="writing_guide.html">Writing guide</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="writing_guide_xil.html">writing_guidelines/writing_guide_xil.adoc</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../project-guide/main.html">Working on the Project Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../project-guide/structure.html">Structure</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/structure/01_content_structure.html">Project Guide structure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/structure/02_versioning_concept.html">Project Guide versioning concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/structure/03_keywords-list.html">Keyword list</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../project-guide/add_files.html">Adding files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/adding_files/add-new-module.html">Adding A New Module</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/adding_files/pages-vs-partials.html">Pages VS Partials</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../project-guide/adding_files/add-a-page.html">Adding A Page</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../project-guide/adding_files/pages/add-task-page.html">Adding a Task page</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../project-guide/adding_files/pages/add-tool-page.html">Adding a Tool page</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/adding_files/add-a-partial.html">Adding A Partial</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../project-guide/changing_content.html">Add/change content</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/reviewing/create_issue_on_page.html">Create an issue for a page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/reviewing/editing_pages.html">Artifact page name</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Abbreviations</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../project-guide/adding_content/abbreviations/add-an-abbreviation.html">How to add a new abbreviation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../project-guide/adding_content/abbreviations/use_abbreviations.html">Using abbreviations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Working with roles</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../project-guide/adding_content/roles/add-new-role.html">How to add a new role</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../project-guide/adding_content/roles/use_roles.html">Using roles</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/adding_content/page_redirects.html">Moving, renaming and deleting a page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/adding_content/interactive_diagrams.html">Creating interactive diagrams</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../project-guide/ref-include.html">Referencing/including</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/adding_content/images.html">Using images</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/adding_content/examples.html">Using examples</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/adding_content/attachments.html">Using attachments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/adding_content/including.html">Including pages and partials</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../project-guide/asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/extensions/pipeline-keyword_overview.html">Pipeline: Keyword page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/extensions/pipeline-sequential_sectnums.html">Pipeline: Sequential numbering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/extensions/macro-pages.html">Macro: pages</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/extensions/macro-reference.html">Macro: reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/extensions/macro-related.html">Macro: related</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/extensions/macro-role_related.html">Macro: role_related</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../project-guide/extensions/macro-autonav.html">Macro: autonav</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../credits.html">Credits</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../standardization/issue-resolution.html">Issue resolution process</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Guide</span>
+    <span class="version">Restructuring</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../index.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">Restructuring</a>
+        </li>
+        <li class="version">
+          <a href="../../../index.html">baseline</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">ASAM Project Guide</a></li>
+    <li><a href="../compendium.html">Compendium</a></li>
+    <li><a href="../writing_guidelines.html">Writing guidelines</a></li>
+    <li><a href="writing_guide_xil.html">writing_guidelines/writing_guide_xil.adoc</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">Restructuring</button>
+  <div class="version-menu">
+    <a class="version is-current" href="writing_guide_xil.html">Restructuring</a>
+    <a class="version" href="../../../compendium/writing_guidelines/writing_guide_xil.html">baseline</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/restructuring_concept_development/doc/modules/compendium/pages/writing_guidelines/writing_guide_xil.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_language">1. Language</a>
+<ul class="sectlevel2">
+<li><a href="#_use_american_english_ae">1.1. Use American English (AE)</a></li>
+<li><a href="#_verbs_with_a_special_meaning_shall_should_may_can">1.2. Verbs with a special meaning (shall, should, may, can)</a></li>
+<li><a href="#_keep_it_short">1.3. Keep it short</a></li>
+<li><a href="#_use_present_tense">1.4. Use present tense</a></li>
+<li><a href="#_use_active_voice">1.5. Use active voice</a></li>
+</ul>
+</li>
+<li><a href="#_keep_it_simple">2. Keep it simple</a>
+<ul class="sectlevel2">
+<li><a href="#_use_simple_constructs">2.1. Use simple constructs</a></li>
+<li><a href="#_do_not_use_abbreviations">2.2. Do not use abbreviations</a></li>
+</ul>
+</li>
+<li><a href="#_be_precise">3. Be precise</a>
+<ul class="sectlevel2">
+<li><a href="#_do_not_use_synonyms">3.1. Do not use synonyms</a></li>
+<li><a href="#_avoid_words_that_are_not_precise">3.2. Avoid words that are not precise</a></li>
+<li><a href="#_use_that_and_which_correctly">3.3. Use 'that' and 'which' correctly</a></li>
+<li><a href="#_use_since_and_because_correctly">3.4. Use 'since' and 'because' correctly</a></li>
+</ul>
+</li>
+<li><a href="#_formatting">4. Formatting</a>
+<ul class="sectlevel2">
+<li><a href="#_consistent_formatting">4.1. Consistent formatting</a></li>
+<li><a href="#_typographic_conventions_for_xil">4.2. Typographic conventions for XiL</a></li>
+<li><a href="#_one_sentence_per_line">4.3. One sentence per line</a></li>
+<li><a href="#_use_paragraphs">4.4. Use paragraphs</a></li>
+<li><a href="#_manual_line_breaks">4.5. Manual line breaks</a></li>
+<li><a href="#_uppercase_and_lowercase">4.6. Uppercase and lowercase</a></li>
+<li><a href="#_tags_aka_anchors">4.7. Tags (aka anchors)</a></li>
+<li><a href="#_indentation">4.8. Indentation</a></li>
+</ul>
+</li>
+<li><a href="#_file_handling">5. File handling</a>
+<ul class="sectlevel2">
+<li><a href="#_file_names">5.1. File names</a></li>
+<li><a href="#_file_names_for_figures">5.2. File names for figures</a></li>
+<li><a href="#_file_formats">5.3. File formats</a></li>
+<li><a href="#_directory_structure">5.4. Directory structure</a></li>
+</ul>
+</li>
+<li><a href="#_additional_elements">6. Additional elements</a>
+<ul class="sectlevel2">
+<li><a href="#_lists">6.1. Lists</a></li>
+<li><a href="#_figures">6.2. Figures</a></li>
+<li><a href="#_tables">6.3. Tables</a></li>
+<li><a href="#_special_characters">6.4. Special characters</a></li>
+</ul>
+</li>
+<li><a href="#_source_code">7. Source code</a>
+<ul class="sectlevel2">
+<li><a href="#_inline_literals">7.1. Inline literals</a></li>
+<li><a href="#_source_code_fragments">7.2. Source code fragments</a></li>
+<li><a href="#_source_code_snippets">7.3. Source code snippets</a></li>
+<li><a href="#_line_numbers_and_references">7.4. Line numbers and references</a></li>
+<li><a href="#_pipeline_artifacts_as_reference">7.5. Pipeline artifacts as reference</a></li>
+</ul>
+</li>
+<li><a href="#_related_topics">8. Related topics</a></li>
+</ul>
+</div>
+<div id="top-xil-writing-guide" class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+This page is still a DRAFT version (V1.4) and subject to change!
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph lead">
+<p>This guide is intended to help you writing content for the ASAM XiL project.
+It provides you a set of hints and rules that make it easier to contribute concise and homogeneous content and documents to the project.</p>
+</div>
+<div class="sect1">
+<h2 id="_language"><a class="anchor" href="#_language"></a>1. Language</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_use_american_english_ae"><a class="anchor" href="#_use_american_english_ae"></a>1.1. Use American English (AE)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use "English (US)" (ISO: <strong>en-US</strong>) as a language setting in your text editor.</p>
+</li>
+<li>
+<p>Mnemonic: -or, -l, -yze, -er</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-ae" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. American English</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">colour, behaviour</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">color, behavior</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">labelling</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">labeling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">analyse</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">analyze</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">centre</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">center</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_verbs_with_a_special_meaning_shall_should_may_can"><a class="anchor" href="#_verbs_with_a_special_meaning_shall_should_may_can"></a>1.2. Verbs with a special meaning (shall, should, may, can)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use these modal verbs to express the level of obligation:</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-modal-verbs" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Proper modal verbs</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Level of obligation</th>
+<th class="tableblock halign-center valign-top">Verb to use</th>
+<th class="tableblock halign-center valign-top">Colloquial meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><em>Requirement</em></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><mark><strong>shall,<br>
+shall not</strong></mark></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">mandatory statement,<br>
+"it must do/have",<br>
+"it is not allowed to do/have"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><em>Recommendation</em></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><mark><strong>should,<br>
+should not</strong></mark></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">"it is good/bad practice to do/have"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><em>Permission</em></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><mark><strong>may</strong></mark></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">"it is allowed to do/have and also allowed not to do/have"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><em>Possibility</em></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><mark><strong>can,<br>
+cannot</strong></mark></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">"it depends on some circumstances if or if not"</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The differences between these verbs are subtle and sometimes difficult to grasp.
+The table <a href="writing_guide.html#tab-osc2-writing-guide-modal-verbs" class="xref page">with modal verbs</a> is based on ISO guidelines but currently under discussion.
+It is possible that the table will be simplified in the future.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_keep_it_short"><a class="anchor" href="#_keep_it_short"></a>1.3. Keep it short</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Write short sentences.</p>
+</li>
+<li>
+<p>If sentences get too long, consider splitting them up into shorter sentences.</p>
+</li>
+<li>
+<p>Keep headings short (only one line).</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-shortness" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Shortness is key</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">3.1 Hints on how to maintain the printer</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3.1 Printer maintenance</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Due to the fact that they were able to come to an agreement, a name changing of the file took place.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The file was renamed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_use_present_tense"><a class="anchor" href="#_use_present_tense"></a>1.4. Use present tense</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Present tense is easy to understand.</p>
+</li>
+<li>
+<p>Present tense is the preferred tense to express technical facts.</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-tense" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Present tense</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Chapter X will describe the details.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Chapter X describes the details.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_use_active_voice"><a class="anchor" href="#_use_active_voice"></a>1.5. Use active voice</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Active voice is easier to understand than passive voice.</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-voice" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. Passive voice and active voice</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The variable is set by the user.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The user sets the variable.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The car is driven to the garage by me.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I drive the car to the garage.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_keep_it_simple"><a class="anchor" href="#_keep_it_simple"></a>2. Keep it simple</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_use_simple_constructs"><a class="anchor" href="#_use_simple_constructs"></a>2.1. Use simple constructs</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Simple constructs require fewer words and are easier to read.</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-constructs" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. Simple constructs</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">in order to</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">to</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">has the possibility to</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">can</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_do_not_use_abbreviations"><a class="anchor" href="#_do_not_use_abbreviations"></a>2.2. Do not use abbreviations</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Some less common abbreviations may confuse the reader.
+Avoid them.</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-abbreviations" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 7. No abbreviations</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">e.g.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">for example</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">i.e.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">meaning</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_be_precise"><a class="anchor" href="#_be_precise"></a>3. Be precise</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_do_not_use_synonyms"><a class="anchor" href="#_do_not_use_synonyms"></a>3.1. Do not use synonyms</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Stick to the same word for an element or concept.</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-consistency" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 8. Use words consistently</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Press the <em>key</em>. After hitting the <em>button</em> the pop-up appears.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Press the <em>key</em>. After pressing the <em>key</em> a pop-up appears.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_avoid_words_that_are_not_precise"><a class="anchor" href="#_avoid_words_that_are_not_precise"></a>3.2. Avoid words that are not precise</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Do not use words like "<span class="line-through">basically</span>", "<span class="line-through">actually</span>", "<span class="line-through">very</span>", "<span class="line-through">practically</span>", &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_that_and_which_correctly"><a class="anchor" href="#_use_that_and_which_correctly"></a>3.3. Use 'that' and 'which' correctly</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <strong>'that'</strong> and <strong>'which'</strong> to express the information level:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>'that'</em></strong> adds essential information, no commas are used.</p>
+</li>
+<li>
+<p><strong><em>'which'</em></strong> adds information that can be left out, commas are used.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-precision" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 9. Precision matters</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Information</th>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Essential: Talking about that specific car they own.</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The car they own is old.<br>
+The car which they own is old.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The car that they own is old.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional: The color of the car is not an essential information.</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The vehicle that is red drives down the road.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The vehicle, which is red, drives down the road.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_use_since_and_because_correctly"><a class="anchor" href="#_use_since_and_because_correctly"></a>3.4. Use 'since' and 'because' correctly</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Only use <em>'since'</em> to refer to a point in time.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Errors since startup.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Always use <em>'because'</em> to express reason.
+(<em>Since</em> can lead to ambiguity if used to express reason, see example.)</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-precision2" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 10. Since and because</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">The system cannot calculate a result, <strong><em>since</em></strong> the data is missing.</span><br>
+(time duration or cause?)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The system cannot calculate a result, because the data is missing.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_formatting"><a class="anchor" href="#_formatting"></a>4. Formatting</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_consistent_formatting"><a class="anchor" href="#_consistent_formatting"></a>4.1. Consistent formatting</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Stick to <em>one spelling</em> for a word that allows several spellings.<br>
+(For example, <em>e-mail</em>, <em>email</em>, or <em>E-mail</em>.)</p>
+</li>
+<li>
+<p>Stick to <em>one style</em> to present information.<br>
+(For example, steps are always presented as a numbered list.)</p>
+</li>
+<li>
+<p>Stick to <em>one formatting</em> for a special purpose.<br>
+(See <a href="#_typographic_conventions_for_xil">Typographic conventions for XiL</a> for more details.)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_typographic_conventions_for_xil"><a class="anchor" href="#_typographic_conventions_for_xil"></a>4.2. Typographic conventions for XiL</h3>
+<div class="paragraph">
+<p>AsciiDoc offers markup characters for words and terms.
+Here is how to use them correctly <em>in the floating text</em> for XiL:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Italic</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Markup character: Underscore (_)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Example: <code>_term_</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use italic in the following cases:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For glossary terms</p>
+</li>
+<li>
+<p>For new terms</p>
+</li>
+<li>
+<p>To emphasize terms</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><em>Code elements</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Markup character: Backtick (\`)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Example: <code>`term`</code><br></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use code elements for:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Names of classes</p>
+</li>
+<li>
+<p>Names of attributes</p>
+</li>
+<li>
+<p>Names of parameters</p>
+</li>
+<li>
+<p>One-line code examples</p>
+</li>
+<li>
+<p>File names</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>For plural forms: Never add a plural <em>'-s'</em> to code element names. Use <em>"instances/elements/objects/types of &lt;name&gt;"</em> instead.</p>
+<table id="tab-xil-writing-guide-code-elements" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 11. Code elements plural forms</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Create six <code>MyVector</code><strong>s</strong>.</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Create six instances of <code>MyVector</code>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>See <a href="#_source_code">Source code</a> for more details on source code.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><em>Bold</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Markup character: Asterisk (*)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Example: <code>*term*</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Do not use bold for terms in floating text.</p>
+</li>
+<li>
+<p>This markup is reserved for</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Structuring elements, like sub-headings that should not appear in the table of contents.</p>
+</li>
+<li>
+<p>Emphasis, for example single characters in formulae or tables.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_one_sentence_per_line"><a class="anchor" href="#_one_sentence_per_line"></a>4.3. One sentence per line</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Insert a line break after each sentence.</p>
+</li>
+<li>
+<p>No manual line breaks inside sentences.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#8658; <em>"Only hit 'enter' after a period ('.'), but make sure to hit 'enter' after a period."</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">1 This is the first sentence.
+2 This is the second sentence.
+3 This is the third sentence.</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_paragraphs"><a class="anchor" href="#_use_paragraphs"></a>4.4. Use paragraphs</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use paragraphs to structure your text.</p>
+</li>
+<li>
+<p>A new thought or statement requires a new paragraph.</p>
+</li>
+<li>
+<p>An empty line creates a new paragraph.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">1 This is the first sentence of the first paragraph.
+2 This is the second sentence of the first paragraph.
+3
+4 This is the first sentence of the second paragraph.</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_manual_line_breaks"><a class="anchor" href="#_manual_line_breaks"></a>4.5. Manual line breaks</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use manual line breaks sparingly.</p>
+</li>
+<li>
+<p>To force adoc to make a line break within a paragraph, end the line before the break with a space followed by a plus sign (` +`).</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">After this sentence a line break is needed. +
+This sentence appears on a new line.
+
+* Useful for lists +
+Detailed explanations begin in a new line after the main list element.</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>After this sentence a line break is needed.<br>
+This sentence appears on a new line.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Useful for lists<br>
+Detailed explanations begin in a new line after the main list element.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_uppercase_and_lowercase"><a class="anchor" href="#_uppercase_and_lowercase"></a>4.6. Uppercase and lowercase</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>In headings and captions only the <strong>first word</strong> begins with an uppercase letter (sentence-style capitalization).</p>
+</li>
+<li>
+<p><em>Exception</em>: <strong>Acronyms</strong> and <strong>proper names</strong> are spelled as is.</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-headings" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 12. Use of uppercase in headings and captions</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Wrong Formatting of a Heading</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Correct formatting of a heading</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">ASAM rules to follow</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">ASAM rules to follow</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Scope of OpenScenario</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Scope of OpenSCENARIO</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_tags_aka_anchors"><a class="anchor" href="#_tags_aka_anchors"></a>4.7. Tags (aka anchors)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>All topics, figures, tables and code examples shall have a unique tag:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>[#top-&lt;uid&gt;]</code> for topics</p>
+</li>
+<li>
+<p><code>[#fig-&lt;uid&gt;]</code> for figures (images, diagrams, and so on)</p>
+</li>
+<li>
+<p><code>[#tab-&lt;uid&gt;]</code> for tables</p>
+</li>
+<li>
+<p><code>[#code-&lt;uid&gt;]</code> for source code blocks</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sections may also have a tag <code>[#sec-&lt;uid&gt;]</code> if a link to the section is needed.</p>
+</li>
+<li>
+<p>Use a semantically fitting string as <code>&lt;uid&gt;</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For the uid-string use a combination of:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>lowercase letters <code>a</code>-<code>z</code></p>
+</li>
+<li>
+<p>numbers <code>0</code>-<code>9</code></p>
+</li>
+<li>
+<p><code>###todo</code> as separators</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Some hints to create a unique id:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Add an abbreviation that corresponds to the name of the main document as part of the id.
+For example, add 'pg' for all anchors used in the _P_rogrammers _G_uide.</p>
+</li>
+<li>
+<p>For anchors for figures (<code>#fig-</code>) it is recommended to use a unique id that has a <em>relation to the figure name</em> (see also <a href="#_file_names_for_figures">File names for figures</a>).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Examples:
+[#top-pg-ees-port-introduction]
+[#fig-pg-overview22-diagram5]
+[#tab-pg-important-elements-of-can]
+[#code-pg-protocol-syntax-example1]
+[#sec-pg-important-section-to-be-linked-to]</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_indentation"><a class="anchor" href="#_indentation"></a>4.8. Indentation</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use four space characters per indentation level.</p>
+</li>
+<li>
+<p>Do not use tab characters.</p>
+</li>
+<li>
+<p>Use the following text editor settings:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Tab size: 4</strong></p>
+</li>
+<li>
+<p><strong>Insert spaces</strong></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-indentation" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 13. Four spaces indentation (spaces marked as '.')</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal text<br>
+<span class="line-through">&#8594;Level 1 indented text<br>
+&#8594;&#8594;Level 2 indented text</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal text<br>
+&#8230;&#8203;.Level 1 indented text<br>
+&#8230;&#8203;&#8230;&#8203;..Level 2 indented text</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_file_handling"><a class="anchor" href="#_file_handling"></a>5. File handling</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_file_names"><a class="anchor" href="#_file_names"></a>5.1. File names</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use only <strong>lowercase</strong> for file and folder names.</p>
+</li>
+<li>
+<p>Use the underscore '###todo' instead of 'space' in file and folder names.</p>
+</li>
+<li>
+<p>Use <code>.adoc</code> as file ending for documents.</p>
+</li>
+</ul>
+</div>
+<table id="tab-osc2-writing-guide-file-names" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 14. Use of uppercase and underscores in file and folder names</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">ExampleFileName.adoc</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">example_file_name.adoc</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Another file name.adoc</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">another_file_name.adoc</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="line-through">Writing_guide.adoc</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">writing_guide.adoc</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_file_names_for_figures"><a class="anchor" href="#_file_names_for_figures"></a>5.2. File names for figures</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The <em>file name</em> of a figure shall be the same as the <em>caption</em> of this figure, with the following adaptions:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use only <em>lowercase</em> letters for the file name.</p>
+</li>
+<li>
+<p>Use <code>###todo</code> as separators.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Example:</strong></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Figure headline:</strong><br>
+"Port definition interfaces of the XYZ framework configuration object model"</p>
+</div>
+<div class="paragraph">
+<p><strong>File name:</strong><br>
+###todo</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_file_formats"><a class="anchor" href="#_file_formats"></a>5.3. File formats</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><em>UML diagrams</em> must be provided as <em>PlantUML files</em> (<code>*.puml</code>).</p>
+</li>
+<li>
+<p>Charts and other diagrams shall preferably be provided as <em>scalable vector graphics</em> (<code>*.svg</code>).
+Alternatively, <em>portable network graphics</em> (<code>*.png</code>) may also be used.</p>
+</li>
+<li>
+<p>Do not use figure file formats other than PlantUML, SVG or PNG.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_directory_structure"><a class="anchor" href="#_directory_structure"></a>5.4. Directory structure</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Each adoc-file is placed in a separate folder that is named after the contained adoc-file.</p>
+</li>
+<li>
+<p>Use one file per topic for larger chapters.</p>
+</li>
+<li>
+<p>Image files are kept per adoc-file.
+They are stored in a sub-folder called "images" next to the adoc-file.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">Example directory structure</div>
+<div class="content">
+<pre>├───food
+│   ├───fruit
+│   │   ├───apples
+│   │   │   ├───images
+│   │   │   │   ├───wellant.svg
+│   │   │   │   ├───golden_delicious.svg
+│   │   │   │   ├───gala.png
+│   │   │   └───apples.adoc
+│   │   │
+│   │   ├───berries
+│   │       ├───images
+│   │       │   ├───blueberries.png
+│   │       │   ├───gooseberries.svg
+│   │       │   ├───goji.svg
+│   │       ├───berries_introduction.adoc
+│   │       ├───berries_definitions.adoc
+│   │       └───berries_examples.adoc
+│   │
+│   └───vegetables
+│   │   ├───potatoes
+│   │   │   └───images
+│   │   │   │   └───...
+│   │   │   └───potatoes.adoc
+...</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_additional_elements"><a class="anchor" href="#_additional_elements"></a>6. Additional elements</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_lists"><a class="anchor" href="#_lists"></a>6.1. Lists</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Lists are a great way to present lots of similar information in a compact form.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_numbered_lists"><a class="anchor" href="#_numbered_lists"></a>6.1.1. Numbered lists</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <strong>numbered lists</strong> (AsciiDoc <code><strong>.</strong></code>) for steps that require a specific order.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">A numbered list example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">. First step
+. Second step
+. Third step</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>First step</p>
+</li>
+<li>
+<p>Second step</p>
+</li>
+<li>
+<p>Third step</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_bullet_point_lists"><a class="anchor" href="#_bullet_point_lists"></a>6.1.2. Bullet point lists</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <strong>bullet points</strong> (AsciiDoc <code><strong>*</strong></code>) for enumerations and elements that do not require a specific order.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">A bullet point list example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">* Two apples
+* One banana
+* One orange</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Two apples</p>
+</li>
+<li>
+<p>One banana</p>
+</li>
+<li>
+<p>One orange</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lists_inside_lists"><a class="anchor" href="#_lists_inside_lists"></a>6.1.3. Lists inside lists</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>You can use lists inside lists and define several levels of sub-lists.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">A complex numbered list example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">. First step
+.. First sub-step
+.. Second sub-step
+... First step inside second sub-step
+... Second step inside second sub-step
+.. Third sub-step
+. Second step
+. Third step</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>First step</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>First sub-step</p>
+</li>
+<li>
+<p>Second sub-step</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>First step inside second sub-step</p>
+</li>
+<li>
+<p>Second step inside second sub-step</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Third sub-step</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Second step</p>
+</li>
+<li>
+<p>Third step</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">A complex bullet list example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">* Bullet one
+* Bullet two
+** Sub-bullet one
+** Sub-bullet two
+*** Sub-sub-bullet one
+** Sub-bullet three
+* Bullet three</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Bullet one</p>
+</li>
+<li>
+<p>Bullet two</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sub-bullet one</p>
+</li>
+<li>
+<p>Sub-bullet two</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sub-sub-bullet one</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sub-bullet three</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Bullet three</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_list_formatting_conventions"><a class="anchor" href="#_list_formatting_conventions"></a>6.1.4. List formatting conventions</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Introduce lists with complete sentences, ending with a colon.</p>
+</li>
+<li>
+<p>Start all list items with an uppercase letter.</p>
+</li>
+<li>
+<p>Ensure similar structure for all list items, for example, whole sentences vs. nouns.</p>
+</li>
+<li>
+<p>End sentences with a period.</p>
+</li>
+<li>
+<p>Do not use closing punctuation for single words, noun phrases, verbs, adjectives, etc.</p>
+</li>
+<li>
+<p>Do not write lists as a continuous sentence.</p>
+</li>
+<li>
+<p>In bulleted and numbered lists, end each list item with a period if the following applies:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Any item forms a complete sentence when combined with the list introduction that precedes the colon.</p>
+</li>
+<li>
+<p>Exception: Do not use periods if all items have three or fewer words or if the items are UI labels, headings,
+subheadings, or strings.</p>
+</li>
+<li>
+<p>Any item by itself is a complete sentence.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Do not use semicolons, commas, or conjunctions (like <em>'and'</em> or <em>'or'</em>) at the end of list items.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Examples of correctly formatted lists:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>My pets like the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>My cat likes to hunt in the fields.</p>
+</li>
+<li>
+<p>My dog is happy when we go out for a walk.</p>
+</li>
+<li>
+<p>My guinea pig wants to sleep all day.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>I like the following types of fruit:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Apples</p>
+</li>
+<li>
+<p>Bananas</p>
+</li>
+<li>
+<p>Cherries</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_figures"><a class="anchor" href="#_figures"></a>6.2. Figures</h3>
+<div class="paragraph">
+<p>Figures - like images, pictures or drawings - may be used to illustrate complex facts.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Preferred format: <code>.svg</code></p>
+</li>
+<li>
+<p>Alternative format: <code>.png</code></p>
+</li>
+<li>
+<p>Figures are stored in a sub-folder named <code>images</code> located inside the chapter folder.
+See also <a href="#_directory_structure">Directory structure</a>.</p>
+</li>
+<li>
+<p>The name of the image file shall match the anchor name (excluding the <code>fig-</code> prefix)</p>
+</li>
+<li>
+<p>The exact adherence to this syntax is absolutely necessary for the automatic generation of the list of figures at the end of the document.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_images"><a class="anchor" href="#_images"></a>6.2.1. Images</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Each image shall have:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A tag starting with <code>#fig-</code></p>
+</li>
+<li>
+<p>A caption</p>
+</li>
+<li>
+<p>The <code>image::</code>-link to the picture</p>
+</li>
+<li>
+<p>An alternative text</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#fig-&lt;id&gt;]
+.&lt;caption&gt;
+image::&lt;filename&gt;[&lt;alternative text&gt;]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#fig-project-structure]
+.Overview of the project structure
+image::project-structure.svg[]</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_attribute_imagesdir"><a class="anchor" href="#_attribute_imagesdir"></a>6.2.2. Attribute 'imagesdir'</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Set the <code>:imagesdir:</code> only in the root adoc-file that compiles all the adoc-files into a single document (the so-called <em>mapping-file</em> <code>main.adoc</code>).</p>
+</li>
+<li>
+<p>With each include in the root document, the imagesdir must be set to the parent-folder of the images-folder of the included adoc-file.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Despite its name, the attribute <strong>:imagesdir:</strong> shall <em>not</em> contain the name of the images-folder itself, but the <strong>name of the parent-folder of the images-folder</strong>.</p>
+</div>
+<div class="paragraph">
+<p>This way, the images are displayed in an adoc-preview, even if only the sub-topic is opened. No need to open the main.doc all the time for image previews.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Example for main.adoc:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs"> :imagesdir: apples
+ include::apples/apples.adoc[leveloffset=+1]
+
+ :imagesdir: berries
+ include::berries/berries_introduction.adoc[leveloffset=+1]
+ include::berries/berries_definitions.adoc[leveloffset=+1]
+ include::berries/berries_examples.adoc[leveloffset=+1]
+
+or:
+
+ :workdir: apples
+ :imagesdir: {workdir}
+ include::{workdir}/apples.adoc[leveloffset=+1]
+ ...</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Do <em>not</em> set the attribute imagesdir in subordinated adoc-files.
+Paths in the image-macros are relative to the adoc file.
+The image-macros also work when previewing only a single subordinated adoc file.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_plantuml_diagrams"><a class="anchor" href="#_plantuml_diagrams"></a>6.2.3. PlantUML diagrams</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>PlantUML diagrams are included as a file.</p>
+</li>
+<li>
+<p>Each diagram shall have:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A tag starting with <code>#fig-</code></p>
+</li>
+<li>
+<p>A caption</p>
+</li>
+<li>
+<p>The block format identifier <code>[plantuml]</code></p>
+</li>
+<li>
+<p>The <code>include::</code>-link, surrounded by block markers <code>----</code></p>
+</li>
+<li>
+<p>An alternative text</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> [#fig-&lt;id&gt;]
+ .&lt;caption&gt;
+ [plantuml]
+ ----
+ include::&lt;filename.puml&gt;[]
+ ----</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> [#fig-root-package-class-diag]
+ .Class diagram for the root package
+ [plantuml]
+ ----
+ include::my-class-diagram.puml[class diagram for root package]
+ ----</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_attribute_plantuml_format"><a class="anchor" href="#_attribute_plantuml_format"></a>6.2.4. Attribute 'plantuml-format'</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The images generated from the PlantUML diagrams during the creation of the output document shall have SVG format.
+This is globally configured with the document attribute <code>:plantuml-format:</code> in the document header.</p>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#top-my-document]
+= My document
+:description: A generic document
+:revdate: 2020-03-13
+...
+:plantuml-format: svg</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tables"><a class="anchor" href="#_tables"></a>6.3. Tables</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use tables if you have to present a huge amount of similar data in a compressed form.</p>
+</li>
+<li>
+<p>A table shall have:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A tag</p>
+</li>
+<li>
+<p>A caption</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[#tab-uid]
+.This is the caption of the table
+|===
+|cell 1_1 | cell 1_2 | cell 1_3
+|cell 2_1 | cell 2_2 | cell 2_3
+|cell 3_1 | cell 3_2 | cell 3_3
+|===</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<table id="tab-uid" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 15. This is the caption of the table</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 1_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 1_2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 1_3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 2_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 2_2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 2_3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 3_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 3_2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 3_3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nested tables are also possible.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[cols="2,2a"]
+|===
+| col 1 | col 2
+| cell 1.1 | cell 1.2
+| cell 2.1 | cell 2.2
+[cols="1,1"]
+!===
+! n_col 1 ! n_col 2 ! n_c 11 ! n_c 12
+!===
+|===</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">col 1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>col 2</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 1.1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>cell 1.2</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cell 2.1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>cell 2.2</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n_c 1.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n_c 1.2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n_c 2.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n_c 2.2</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AsciiDoc offers a huge amount of attributes to build more complicated tables and to affect the style of tables.
+See <a href="https://docs.asciidoctor.org/asciidoc/latest/tables/table-ref/" class="bare">https://docs.asciidoctor.org/asciidoc/latest/tables/table-ref/</a> for details.</p>
+</li>
+<li>
+<p>Some useful examples for table formatting:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Span cells by using the <em>span factor</em> and <em>span operator</em> of the cell specifier.<br>
+(Examples: <code>3+|</code>: Cell spans three columns, <code>.2+|</code>: Cell spans two rows.)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Using cell spans may cause border frame displaying issues. Use sparingly.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Adjust the column width with the column attribute <code>[cols="&lt;n&gt;,&lt;m&gt;"]</code>, using the numbers n and m to define the relative width between the columns.<br>
+(Example: <code>cols="2,4"</code>: Second column is twice as wide as the first one.)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_special_characters"><a class="anchor" href="#_special_characters"></a>6.4. Special characters</h3>
+<div class="paragraph">
+<p>Sometimes you may need to display a character that is reserved for adoc-formatting.
+Here is how to do it.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Underscore (&lowbar;)</strong><br>
+Use <code>&amp;lowbar;</code> to display an underscore.</p>
+</li>
+<li>
+<p><strong>Pound sign (&#35;)</strong><br>
+Use <code>&amp;#35;</code> to display a pound sign.</p>
+</li>
+<li>
+<p><strong>Check mark (&#10004;)</strong><br>
+Use <code>&amp;#10004;</code> to display a check mark.</p>
+</li>
+<li>
+<p><strong>Protected space (&#160;)</strong><br>
+Use <code>{nbsp}</code> to define a space character is not used for automatic line breaks.<br>
+This is especially useful for value-unit-pairs like <code>5{nbsp}m/s</code> (5&#160;m/s) to ensure that value and unit are always in the same line of text.</p>
+</li>
+<li>
+<p><strong>Word joiner (&#8288;)</strong><br>
+Use <code>{wj}</code> to glue two words together.
+This is useful to enhance readability, for example when adding footnotes (<code>term{wj}footnote:[text]</code>).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_source_code"><a class="anchor" href="#_source_code"></a>7. Source code</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Consider one of the following possibilities if you want to add source code examples to an adoc topic.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>You may use small bits of code as an <a href="#_inline_literals"><strong>inline literal</strong></a> directly inside your text.</p>
+</li>
+<li>
+<p>You may add source code as a <a href="#_source_code_fragments"><strong>fragment</strong></a> from a source code file by reference.</p>
+</li>
+<li>
+<p>You may copy and paste source code directly as a <a href="#_source_code_snippets"><strong>snippet</strong></a> into the adoc topic.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_inline_literals"><a class="anchor" href="#_inline_literals"></a>7.1. Inline literals</h3>
+<div class="paragraph">
+<p>For very small bits of code using <strong>inline literals</strong> is the most convenient way to add source code examples.
+This type of including source code is especially useful if you want to highlight single code elements like methods or class names.</p>
+</div>
+<div class="sect3">
+<h4 id="_changes_in_the_adoc_file"><a class="anchor" href="#_changes_in_the_adoc_file"></a>7.1.1. Changes in the adoc file</h4>
+<div class="paragraph">
+<p>Enclose the source code in a <strong>pair of pluses surrounded by a pair of backticks</strong>, like this:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Call the `+source_example_func()+` for the result.</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_result"><a class="anchor" href="#_result"></a>7.1.2. Result</h4>
+<div class="paragraph">
+<p>The previous line looks like this as adoc output:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Call the <code>source_example_func()</code> for the result.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_source_code_fragments"><a class="anchor" href="#_source_code_fragments"></a>7.2. Source code fragments</h3>
+<div class="paragraph">
+<p>You can add source code as a <strong>fragment</strong> from a source code file if you would like to reference to the source code within the source code file.</p>
+</div>
+<div class="paragraph">
+<p>There are several advantages of using fragments:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You do not need to copy the source code into the documentation.</p>
+</li>
+<li>
+<p>You are referencing to the single point of truth, which is the source code file.</p>
+</li>
+<li>
+<p>If you apply changes to the source code file, these changes are automatically applied to your documentation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Follow these steps to add source code fragments to your documentation:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add source comment tags at the beginning and the end of the part of code you want to use in your code block.</p>
+</li>
+<li>
+<p>Use this tag to include the fragment into the adoc documentation.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The example in the following subchapters uses the tag <code>exampleInclude</code> to add a code fragment.</p>
+</div>
+<div class="sect3">
+<h4 id="_changes_in_the_source_code_file"><a class="anchor" href="#_changes_in_the_source_code_file"></a>7.2.1. Changes in the source code file</h4>
+<div id="code-tags-in-source-file" class="listingblock">
+<div class="title">Tags for the inclusion of source code from a source code file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2">[...]
+// tag::exampleInclude[]    <i class="conum" data-value="1"></i><b>(1)</b> <i class="conum" data-value="2"></i><b>(2)</b>
+function lorem(ipsum, dolor = 1) {
+    const sit = ipsum == null ? 0 : ipsum.sit;
+    dolor = sit - amet(dolor);
+    return sit ? consectetur(ipsum, 0, dolor &lt; 0 ? 0 : dolor) : [];
+}
+// end::exampleInclude[]    <i class="conum" data-value="3"></i><b>(3)</b>
+[...]</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>To indicate the start of a tagged region in the source code file, insert a comment line in the source code.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Assign a name to the tag directive.
+In this example, the tag is named <code>exampleInclude</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Insert another comment line where you want the tagged region to end.</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_changes_in_the_adoc_file_2"><a class="anchor" href="#_changes_in_the_adoc_file_2"></a>7.2.2. Changes in the adoc file</h4>
+<div class="literalblock">
+<div class="content">
+<pre>[#code-example-code-block-tag]    <i class="conum" data-value="1"></i><b>(1)</b>
+.ASAM example code block included by tags    <i class="conum" data-value="2"></i><b>(2)</b>
+[source, osc2]    <i class="conum" data-value="3"></i><b>(3)</b>
+----    <i class="conum" data-value="4"></i><b>(4)</b>
+include::resources/examplecode.js[tags=exampleInclude]    <i class="conum" data-value="5"></i><b>(5)</b>
+----    <i class="conum" data-value="6"></i><b>(6)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Insert an anchor for the code block
+You can reference this anchor using xref:asamprojectguide:compendium:writing_guidelines/writing_guide.adoc#code-example-code-block-tag[Writing guide]</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Insert a caption for the code block.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Define the source code language for code highlighting.
+For example, <code>osc2</code>, <code>xml</code>, or <code>java</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Insert a code block delimiter.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Directly include the source code within the source code file with a tag marking fragment.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Insert a code block delimiter.</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For more information see the <a href="https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/">Asciidoctor reference</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_result_2"><a class="anchor" href="#_result_2"></a>7.2.3. Result</h4>
+<div class="paragraph">
+<p>This is how the reference looks like inside the adoc file:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div id="code-example-code-block-tag" class="listingblock">
+<div class="title">ASAM example code block included by tags</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2">Unresolved include directive in modules/compendium/pages/writing_guidelines/writing_guide_xil.adoc - include::resources/examplecode.js[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_source_code_snippets"><a class="anchor" href="#_source_code_snippets"></a>7.3. Source code snippets</h3>
+<div class="paragraph">
+<p>You can add source code as a <strong>snippet</strong> into your adoc documentation if you cannot or if you do not want to reference to the source code file.
+Be aware that you have to maintain two places (your original code and the snippet in the adoc) in case of future changes.</p>
+</div>
+<div class="paragraph">
+<p>Follow these steps to use source code as a snippet:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Copy the part of source code you want to use as a snippet.</p>
+</li>
+<li>
+<p>Paste the snippet into your adoc file.</p>
+</li>
+<li>
+<p>Insert an anchor, a caption, the highlighting info and delimiters as shown in the following subchapter.</p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="_changes_in_the_adoc_file_3"><a class="anchor" href="#_changes_in_the_adoc_file_3"></a>7.3.1. Changes in the adoc file</h4>
+<div class="literalblock">
+<div class="content">
+<pre>[#code-example-code-block]    <i class="conum" data-value="1"></i><b>(1)</b>
+.ASAM example code block included in an asciidoc file    <i class="conum" data-value="2"></i><b>(2)</b>
+[source, osc2]    <i class="conum" data-value="3"></i><b>(3)</b>
+----    <i class="conum" data-value="4"></i><b>(4)</b>
+&lt;ParameterDeclarations&gt;    <i class="conum" data-value="5"></i><b>(5)</b>
+  &lt;ParameterDeclaration name="$HostVehicle" parameterType="string" value="car_white"/&gt;
+  &lt;ParameterDeclaration name="$TargetVehicle" parameterType="string" value="car_red"/&gt;
+  &lt;ParameterDeclaration name="$EgoStartS" parameterType="double" value="50"/&gt;
+  &lt;ParameterDeclaration name="$HeadwayTime_LaneChange" parameterType="double" value="0.4"/&gt;
+  &lt;ParameterDeclaration name="$HeadwayTime_Brake" parameterType="double" value="1.0"/&gt;
+&lt;/ParameterDeclarations&gt;
+----    <i class="conum" data-value="6"></i><b>(6)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Insert an anchor for the code block.
+Reference this anchor using xref:asamprojectguide:compendium:writing_guidelines/writing_guide.adoc#code-example-code-block[Writing guide]</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Insert a caption for the code block.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Define the source code language for code highlighting.
+For example, <code>osc2</code>, <code>xml</code>, or <code>java</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Insert a code block delimiter.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Insert the code block.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Insert a code block delimiter.</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_result_3"><a class="anchor" href="#_result_3"></a>7.3.2. Result</h4>
+<div class="paragraph">
+<p>This is how the correctly configured snippet looks like in the adoc file:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div id="code-example-code-block" class="listingblock">
+<div class="title">ASAM example code block included in an asciidoc file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2">&lt;ParameterDeclarations&gt;
+  &lt;ParameterDeclaration name="$HostVehicle" parameterType="string" value="car_white"/&gt;
+  &lt;ParameterDeclaration name="$TargetVehicle" parameterType="string" value="car_red"/&gt;
+  &lt;ParameterDeclaration name="$EgoStartS" parameterType="double" value="50"/&gt;
+  &lt;ParameterDeclaration name="$HeadwayTime_LaneChange" parameterType="double" value="0.4"/&gt;
+  &lt;ParameterDeclaration name="$HeadwayTime_Brake" parameterType="double" value="1.0"/&gt;
+&lt;/ParameterDeclarations&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_line_numbers_and_references"><a class="anchor" href="#_line_numbers_and_references"></a>7.4. Line numbers and references</h3>
+<div class="paragraph">
+<p>You can refer to lines of code in two ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use callouts to refer to single lines.</p>
+</li>
+<li>
+<p>Use automatic line numbering.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_references_to_single_lines"><a class="anchor" href="#_references_to_single_lines"></a>7.4.1. References to single lines</h4>
+<div class="paragraph">
+<p>Use <em>Asciidoc callouts</em> to refer to lines of source code, for example to add a detailed explanation after the code block.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add a comment with a <em>reference number in angle brackets</em> at the end of the line in the source block:<br>
+ <code># &lt;x&gt;</code><br>
+(x = 1, 2, &#8230;&#8203;)<br>
+Marking the reference number as a comment allows users to copy-and-paste the code as working code.</p>
+</li>
+<li>
+<p><em>After</em> the source block repeat the number in angle brackets, followed by the explanation text.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Example:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[source, osc2, linenums]
+----
+A normal line
+A line with a callout # &lt;1&gt;
+Another normal line
+Another line with a callout # &lt;2&gt;
+----
+&lt;1&gt; The explanation for the first callout.
+&lt;2&gt; The explanation for the second callout.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Result:</strong></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2">A normal line
+A line with a callout <i class="conum" data-value="1"></i><b>(1)</b>
+Another normal line
+Another line with a callout <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The explanation for the first callout.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>The explanation for the second callout.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_automatic_line_numbering"><a class="anchor" href="#_automatic_line_numbering"></a>7.4.2. Automatic line numbering</h4>
+<div class="paragraph">
+<p>An automatic line numbering mechanism is also available, for example to refer to the code later in the text.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use <code>[source, osc2, linenums]</code> as a source block identifier to enable line numbering.</p>
+</li>
+<li>
+<p>Later in the text use the anchor of the code example together with the line number to refer to the line:<br>
+<code>In &lt;&lt;code-uuid, name of the example&gt;&gt;, line x, ...</code></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pipeline_artifacts_as_reference"><a class="anchor" href="#_pipeline_artifacts_as_reference"></a>7.5. Pipeline artifacts as reference</h3>
+<div class="paragraph">
+<p>Please note that any preview of a tool is just for your convenience.<br>
+<strong>The only reliable documents for reviews are the pdf-artifacts generated by the CI-pipeline!</strong><br>
+These artifacts are linked at the main Gitlab-page of the project.
+You can also download the artifacts directly from the pipeline result page.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_related_topics"><a class="anchor" href="#_related_topics"></a>8. Related topics</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>For a short introduction to AsciiDoc, see the <a href="https://code.asam.net/simulation/resources/-/blob/master/asciidoc_tutorial/asciidoc_tutorial.adoc">AsciiDoc Guide</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="writing_guide.html">Writing guide</a></span>
+  <span class="next"><a href="../../project-guide/main.html">Working on the Project Guide</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+</footer>
+<script src="../../../../_/js/site.js"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/vendor/search.js" id="search-script"
+    data-base-path="../../../.." data-page-path="/asamprojectguide/restructure/compendium/writing_guidelines/writing_guide_xil.html"></script>
+<script async src="../../../../_/../search-index.js"></script>
+  </body>
+</html>
