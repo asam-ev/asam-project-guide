@@ -1,5 +1,5 @@
 = Pipeline: Sequential numbering
-:description: Describes the use of the macro "Sequential numbering" in detail.
+:description: Describes the use of the pipeline extension "Sequential numbering" in detail.
 :keywords: pipeline,asam,antora,asciidoctor,custom, REVIEWED_OK
 
 include::partial$_attributes.adoc[]
@@ -9,6 +9,9 @@ include::{abb}[]
 
 == Description
 include::partial$pipeline-sequential_sectnums.adoc[tag=description]
+
+== Prerequisits
+include::partial$pipeline-sequential_sectnums.adoc[tag=prerequisits]
 
 == Configuration
 include::partial$pipeline-sequential_sectnums.adoc[tag=configuration]

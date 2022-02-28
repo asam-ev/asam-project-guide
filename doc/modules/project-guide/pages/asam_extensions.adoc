@@ -78,33 +78,56 @@ reference::keyword-overview-page[]
 
 
 === Page numbering
-include::partial$pipeline-sequential_sectnums.adoc[tag=how]
+include::partial$pipeline-sequential_sectnums.adoc[tag=description]
 
-For more details, see xref:extensions/pipeline-sequential_sectnums.adoc[]
+For more details, see xref:extensions/pipeline-sequential_sectnums.adoc[].
+
+
+=== Sequential figure and table numbers
+include::partial$pipeline-sequential_figs_tables.adoc[tag=description]
+
+For more details, see xref:extensions/pipeline-sequential_figs_tables.adoc[].
+
+
+=== ISO-2145 style section numbers
+include::partial$pipeline-iso_style.adoc[tag=description]
+
+For more details, see xref:extensions/pipeline-iso_style.adoc[].
+
+
+=== Convert local to global page references
+include::partial$pipeline-global_anchor_replacement.adoc[tag=description]
+
+For more details, see xref:extensions/pipeline-global_anchor_replacement.adoc[].
 
 
 == ASAM Antora macros
 IMPORTANT: ASAM macros are not supported in partials as they are replaced through Antora rather than Asciidoctor, but partials are included by Asciidoctor at a later stage.
+
 
 === The "related" macro
 include::partial$macro-related.adoc[tag="how"]
 
 See: xref:macros/macro-related.adoc[]
 
+
 === The "reference" macro
 include::partial$macro-reference.adoc[tag=how]
 
 See: xref:macros/macro-reference.adoc[]
+
 
 === The "pages" macro
 include::partial$macro-pages.adoc[tag=how]
 
 See: xref:macros/macro-pages.adoc[]
 
+
 === The "role_related" macro
 include::partial$macro-role_related.adoc[tag=how]
 
 See: xref:macros/macro-role_related.adoc[]
+
 
 === The "autonav" macro
 include::partial$macro-autonav.adoc[tag=how]

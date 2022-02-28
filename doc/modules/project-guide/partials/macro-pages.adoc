@@ -1,6 +1,9 @@
 //tag::description[]
 This macro creates cross-references under the section "Pages" at the macro location to all pages (with or without nested folders) in a given folder relative to the file with the macro.
 If no folder is defined, the file's folder is used instead.
+
+In addition to this replacement, an attribute `:pagemacro:` is automatically set so that the section numbering feature will exclude this section title automatically.
+This helps other Antora extensions to identify this particular section header in order to act on it differently.
 //end::description[]
 
 //tag::prerequisits[]

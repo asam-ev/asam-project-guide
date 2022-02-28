@@ -6,6 +6,7 @@ The location and the (virtual) filename can be configured in the site.yml (Antor
 
 //tag::how[]
 include::partial$virtual_files.adoc[]
+
 To generate a keywords-overview page, the ASAM Antora extension must contain the 'keywords' attribute.
 All other supported attributes for this feature are optional.
 The only requirement is that they must all be added under `keywords:`.
@@ -15,6 +16,8 @@ NOTE: The keyword page will be added in all versions and components with the sam
 //end::how[]
 
 //tag::configuration[]
+IMPORTANT: All attributes must be added under the attribute "keywords".
+
 The following table lists the supported attributes as well as their default values:
 
 |===
