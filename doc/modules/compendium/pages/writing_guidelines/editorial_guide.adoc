@@ -109,9 +109,9 @@ There are no exceptions.
 
 [#tab-155e4338-6dba-4a1e-a04d-8863228bf22f]
 .Use of American English
-[%header]
 |===
 |No                         |#Yes#
+
 |[.line-through]#colour#    |color
 |[.line-through]#labelling# |labeling
 |[.line-through]#analyse#   |analyze
@@ -134,9 +134,9 @@ There are no exceptions.
 
 [#tab-9f708405-0e00-4c78-8d25-60913e1ca382]
 .Use of present tense
-[%header]
 |===
 |No                                                  |#Yes#
+
 |[.line-through]#Variable x will contain the value.# |Variable x contains the value.
 |===
 
@@ -158,9 +158,9 @@ There are no exceptions.
 
 [#tab-4b87ef05-4461-4a27-8a68-b559b011b3ad]
 .Use of active voice
-[%header]
 |===
 |No                                                |#Yes#
+
 |[.line-through]#The variable is set by the user.# |The user sets the variable.
 |===
 
@@ -183,11 +183,14 @@ There are no exceptions.
 
 [#tab-f9a4e619-dca7-4d5e-bd65-500de2cb261e]
 .Use an Oxford comma
-[%header]
 |===
-|No                                                                                                                                         |#Yes#
-|[.line-through]#Unless stated otherwise, all examples, figures and descriptions in this specification assume there is right-hand traffic.# |Unless stated otherwise, all examples, figures, and descriptions in this specification assume there is right-hand traffic.
-|[.line-through]#Pages, colors, traces are all copied from the display.#                                                                    |Pages, colors, and traces are all copied from the display.
+|No |#Yes#
+
+|[.line-through]#Unless stated otherwise, all examples, figures and descriptions in this specification assume there is right-hand traffic.#
+|Unless stated otherwise, all examples, figures, and descriptions in this specification assume there is right-hand traffic.
+
+|[.line-through]#Pages, colors, traces are all copied from the display.#
+|Pages, colors, and traces are all copied from the display.
 |===
 
 *Source*
@@ -209,11 +212,14 @@ There are no exceptions.
 
 [#tab-a4d8a86e-b5a6-4593-94ea-656bff21b8d2]
 .Add a comma after introductory phrases
-[%header]
 |===
 |No|#Yes#
-|[.line-through]#In the ASAM OpenSCENARIO data model these types are used:#                               |In the ASAM OpenSCENARIO data model, these types are used:
-|[.line-through]#To find the mismatches we propagate the expected type backwards through the expression.# |To find the mismatches, we propagate the expected type backwards through the expression.
+
+|[.line-through]#In the ASAM OpenSCENARIO data model these types are used:#
+|In the ASAM OpenSCENARIO data model, these types are used:
+
+|[.line-through]#To find the mismatches we propagate the expected type backwards through the expression.#
+|To find the mismatches, we propagate the expected type backwards through the expression.
 |===
 
 *Source*
@@ -234,9 +240,9 @@ There are no exceptions.
 
 [#tab-04f8b906-00ea-4672-991b-c343ce3d9580]
 .Use of simple phrases
-[%header]
 |===
 |No                                      |#Yes#
+
 |[.line-through]#in order to#            |to
 |[.line-through]#has the possibility to# |can
 |===
@@ -259,10 +265,11 @@ There are no exceptions.
 
 [#tab-59ab0c65-c030-4472-b5e4-b9c191207bb6]
 .Use of concise phrases without unnecessary words
-[%header]
 |===
-|No                                                                             |#Yes#
-|[.line-through]#This is basically a good rule that actually helps very often.# |This is a good rule that helps.
+|No |#Yes#
+
+|[.line-through]#This is basically a good rule that actually helps very often.#
+|This is a good rule that helps.
 |===
 
 *Source*
@@ -283,10 +290,11 @@ There are no exceptions.
 
 [#tab-74bad49b-c014-45b0-8ca6-acf1388c0d25]
 .Use of short sentences
-[%header]
 |===
-|No                                                                                                                    |#Yes#
-|[.line-through]#Due to the fact that they were able to come to an agreement, a name changing of the file took place.# |They agree and rename the file.
+|No |#Yes#
+
+|[.line-through]#Due to the fact that they were able to come to an agreement, a name changing of the file took place.#
+|They agree and rename the file.
 |===
 
 *Source*
@@ -305,9 +313,9 @@ There are no exceptions.
 
 [#tab-e6df5db5-49dd-4800-abbf-4f700490e784]
 .Use of complete expressions instead of abbreviations
-[%header]
 |===
 |No                    |#Yes#
+
 |[.line-through]#e.g.# |for example
 |[.line-through]#i.e.# |meaning
 |===
@@ -332,11 +340,14 @@ There are no exceptions.
 
 [#tab-2d0a6c5b-7cdf-478a-b94d-157f22d8e950]
 .Write out conjunctions
-[%header]
 |===
-|No                                                                       |#Yes#
-|[.line-through]lateral and/or longitudinal#                              |lateral, longitudinal, or both
-|[.line-through]#segment continuity, tangent and/or curvature continuity# |segment continuity, tangent, curvature continuity, or all of them
+|No |#Yes#
+
+|[.line-through]lateral and/or longitudinal#
+|lateral, longitudinal, or both
+
+|[.line-through]#segment continuity, tangent and/or curvature continuity#
+|segment continuity, tangent, curvature continuity, or all of them
 |===
 
 *Source*
@@ -357,10 +368,16 @@ There are no exceptions.
 
 [#tab-3c5f2d52-ac68-4bd4-bd16-dff352ff32a3]
 .Use of the same word for the same object or concept
-[%header]
 |===
-|No                                                                                                  |#Yes#
-|[.line-through]#Press and hold the key. Wait 2 seconds. Release the button. Push the button again.# |Press and hold the key. Wait 2 seconds. Release the key. Press the key again.
+|No |#Yes#
+
+|[.line-through]#Press and hold the key.
+Wait 2 seconds. Release the button.
+Push the button again.#
+|Press and hold the key.
+Wait 2 seconds.
+Release the key.
+Press the key again.
 |===
 
 *Source*
@@ -379,9 +396,9 @@ There are no exceptions.
 
 [#tab-11fd8302-7bd7-473a-b076-6c94aed47578]
 .Use of modal verb _shall_
-[%header]
 |===
 |No                                         |#Yes#
+
 |[.line-through]#"it must have"#            |it shall have
 |[.line-through]#"it is not allowed to do"# |it shall not do
 |===
@@ -402,9 +419,9 @@ There are no exceptions.
 
 [#tab-284c4ade-9cf1-45b8-a096-085d510df2eb]
 .Use of modal verb _should_
-[%header]
 |===
 |No                                           |#Yes#
+
 |[.line-through]#it is good practice to have# |it should have
 |===
 
@@ -426,9 +443,9 @@ There are no exceptions.
 
 [#tab-39ae0c0b-7b71-4d35-8ac9-e84435677e6f]
 .Use of modal verb _may_
-[%header]
 |===
 |No                                     |#Yes#
+
 |[.line-through]#it is allowed to have# |it may have
 |[.line-through]#it may not have#       |it shall not have
 |===
@@ -449,7 +466,6 @@ There are no exceptions.
 
 [#tab-d046a235-7015-4155-a773-560b17a14689]
 .Use of modal verb _can_
-[%header]
 |===
 |No                                                |#Yes#
 |[.line-through]#it depends on some circumstances# |it can
@@ -474,9 +490,9 @@ There are no exceptions.
 
 [#tab-2b4c349e-b23d-44df-a91e-72b8514fde2a]
 .Use of 'that' for essential information
-[%header, cols=2*a]
 |===
 |No                                               |#Yes#
+
 |[.line-through]#The car they own is old.#        |The car that they own is old.
 |[.line-through]#The car which they own is old.#  |The car that they own is old.
 |[.line-through]#The car, that they own, is old.# |The car that they own is old.
@@ -501,11 +517,14 @@ There are no exceptions.
 
 [#tab-118074b9-ecad-420f-9e56-c1b9b573f008]
 .Use of 'which' for unessential color information
-[%header]
 |===
-|No                                                          |#Yes#
-|[.line-through]#The car that is red drives down the road.#  |The car, which is red, drives down the road.
-|[.line-through]#The car which is red drives down the road.# |The car, which is red, drives down the road.
+|No |#Yes#
+
+|[.line-through]#The car that is red drives down the road.#
+|The car, which is red, drives down the road.
+
+|[.line-through]#The car which is red drives down the road.#
+|The car, which is red, drives down the road.
 |===
 
 *Source*
@@ -524,10 +543,11 @@ There are no exceptions.
 
 [#tab-d291de3e-ec7a-4008-a5bf-601f10853292]
 .Use of 'since' to refer to a point in time
-[%header]
 |===
-|No                                                                                   |#Yes#
-|[.line-through]#The system cannot calculate a result because of yesterday's events.# |The system cannot calculate a result since yesterday.
+|No |#Yes#
+
+|[.line-through]#The system cannot calculate a result because of yesterday's events.#
+|The system cannot calculate a result since yesterday.
 |===
 
 *Source*
@@ -546,9 +566,9 @@ There are no exceptions.
 
 [#tab-6f38a8a5-43ec-477c-a7dc-7d796a0556c0]
 .Use of 'because' to refer to a reason
-[%header]
 |===
 |No                                                                     |#Yes#
+
 |[.line-through]#The system cannot calculate a result since yesterday.# |The system cannot calculate a result because of yesterday's events.
 |===
 
@@ -565,22 +585,22 @@ Do not use abbreviations.
 
 *Exceptions*
 
-If you refer to the *standard you are working on*, see <<#sec-ASM-120>>.
+If you refer to the _standard you are working on_, see <<#sec-ASM-120>>.
 
 *Example*
 
 [#tab-40e63cc3-f488-40ee-aab4-3489db11cc79]
 .Use the full name of ASAM standards
-[%header]
 |===
-|No|#Yes#
-|[.line-through]#OpenDRIVE#|ASAM OpenDRIVE
-|[.line-through]#OS#|ASAM OpenSCENARIO
+|No                         |#Yes#
+
+|[.line-through]#OpenDRIVE# |ASAM OpenDRIVE
+|[.line-through]#OS#        |ASAM OpenSCENARIO
 |===
 
 *Source*
 
-ASAM specific rule
+ASAM specific rule.
 
 
 [#sec-ASM-120]
@@ -602,7 +622,7 @@ In ASAM OpenDRIVE, all roads contain lanes.
 
 *Source*
 
-* ASAM specific rule
+* ASAM specific rule.
 * https://asciidoctor.org/docs/asciidoc-recommended-practices/#document-attributes-i-e-variables
 
 
@@ -618,16 +638,17 @@ There are no exceptions.
 *Example*
 
 [#tab-e829db29-94c8-492d-bbf3-8fb6adb9489d]
-.caption
-[%header]
+.No trailing whitespace before the end of line (`[EOL]`).
 |===
-|No                                                                                   |#Yes#
-|[.line-through]#``This is wrong with whitespace.   &nbsp;&nbsp;&nbsp;         [EOL]``#|``This is correct.[EOL]``
+|No |#Yes#
+
+|[.line-through]#``This is wrong with whitespace.   &nbsp;&nbsp;&nbsp;         [EOL]``#
+|``This is correct.[EOL]``
 |===
 
 *Source*
 
-ASAM specific rule
+ASAM specific rule.
 
 
 == Numbers
@@ -648,9 +669,9 @@ There are no exceptions.
 
 [#tab-3dfef781-52e9-4f96-b28e-1e30c3a245b3]
 .Use of a point as decimal separator
-[%header]
 |===
 |No                        |#Yes#
+
 |[.line-through]#2.543,24# |2543.24
 |[.line-through]#1.000#    |1000
 |===
@@ -660,7 +681,7 @@ In ASAM standards the point is used as decimal separator because a point is the 
 
 *Source*
 
-ASAM specific rule
+ASAM specific rule.
 
 
 [#sec-ASM-52]
@@ -676,16 +697,16 @@ There are no exceptions.
 
 [#tab-34c76447-2bad-4430-8fb6-e68fa28ef6c7]
 .Use of a leading zero for values between -1 and 1
-[%header]
 |===
 |No                   |#Yes#
+
 |[.line-through]#.5#  |0.5
 |[.line-through]#-.7# |-0.7
 |===
 
 *Source*
 
-ASAM specific rule
+ASAM specific rule.
 
 
 == Headings
@@ -708,9 +729,9 @@ There are no exceptions.
 
 [#tab-c31c8b36-520d-448a-9ffd-024bcd2fe035]
 .Use of AsciiDoc syntax for headings
-[%header]
 |===
 |No                                         |#Yes#
+
 |[.line-through]#`+++*1 Heading*+++`#       |`+++= Heading (level 1)+++`
 |[.line-through]#`+++*1.1 Heading*+++`#     |`+++== Heading (level 2)+++`
 |[.line-through]#`+++*1.1.1 Heading*+++`#   |`+++=== Heading (level 3)+++`
@@ -725,7 +746,7 @@ https://docs.asciidoctor.org/asciidoc/latest/sections/titles-and-levels/
 [#sec-ASM-86]
 === Use maximum level 4 for headings (ASM-86)
 
-Restructure the document to avoid headings with levels greater 4.
+Restructure the document to avoid headings with levels greater than 4.
 
 *Exceptions*
 
@@ -735,33 +756,35 @@ There are no exceptions.
 
 [#tab-cb041007-e95a-4b35-b47d-6c8b088cf6e2]
 .Use of maximum level 4 for headings
-[%header]
 |===
-|No                                     |#Yes#
-|[.line-through]#`+++===== Heading+++`# |`+++==== Heading (level 4)+++` +
-                                         `+++==== Heading (level 4)+++`
+|No |#Yes#
+
+|[.line-through]#`+++===== Heading (level 5)+++`#
+|`+++==== Heading (level 4)+++`
+
+`+++==== Heading (level 4)+++`
 |===
 
 *Source*
 
-ASAM specific rule
+ASAM specific rule.
 
 [#sec-ASM-2]
 === Start headings with a capital letter (ASM-2)
 
-* In headings and captions, only the *first word* begins with an uppercase letter (sentence-style capitalization).
+* In headings and captions, only the _first word_ begins with an uppercase letter (sentence-style capitalization).
 
 *Exceptions*
 
-*Acronyms* and *proper names* are spelled as is.
+_Acronyms_ and _proper names_ are spelled as is.
 
 *Example*
 
 [#tab-07cd91ec-32d0-4890-8276-cbadc0efc6b0]
 .Use of uppercase in headings and captions
-[%header]
 |===
 |No                                             |#Yes#
+
 |[.line-through]#Wrong Formatting of a Heading# |Correct formatting of a heading
 |[.line-through]#Asam rules to follow#          |ASAM rules to follow
 |[.line-through]#Scope of OpenScenario#         |Scope of ASAM OpenSCENARIO
@@ -783,16 +806,16 @@ ASAM Writing Guide: 4.5. Uppercase and lowercase
 
 [#tab-9c6af567-6781-43f5-a1c9-42175582879e]
 .Use of punctuation in headings
-[%header]
 |===
 |No                                                    |#Yes#
+
 |[.line-through]#Wrong punctuation in a heading.#      |Correct heading without punctuation
 |[.line-through]#Is punctuation allowed in a heading?# |Headings shall not use punctuation
 |===
 
 *Source*
 
-ASAM specific rule
+ASAM specific rule.
 
 
 [#sec-ASM-4]
@@ -809,17 +832,22 @@ There are no exceptions.
 
 [#tab-170721a6-1e06-419e-8716-a51eda20c774]
 .Use of numbering in headings
-[%header]
 |===
-|No                                                               |#Yes#
-|[.line-through]#``+++== 13. Wrong numbering in a heading+++``#   |``+++== Correct heading without numbering+++``
-|[.line-through]#``+++=== 14.3 Wrong numbering in a heading+++``# |``+++=== Correct heading without numbering+++``
-|[.line-through]#``+++==== 14.3.a) Wrong numbering in a heading+++``# |``+++==== Correct heading without numbering+++``
+|No |#Yes#
+
+|[.line-through]#``+++== 13. Wrong numbering in a heading+++``#
+|``+++== Correct heading without numbering+++``
+
+|[.line-through]#``+++=== 14.3 Wrong numbering in a heading+++``#
+|``+++=== Correct heading without numbering+++``
+
+|[.line-through]#``+++==== 14.3.a) Wrong numbering in a heading+++``#
+|``+++==== Correct heading without numbering+++``
 |===
 
 *Source*
 
-ASAM specific rule
+ASAM specific rule.
 
 
 == Paragraphs
@@ -841,12 +869,15 @@ There are no exceptions.
 
 [#tab-f7b97b12-a01f-47e1-8eaa-41883cb8d5a8]
 .Use of paragraphs to form units of meaning
-[%header]
-|===
-|No                                                                                                      |#Yes#
-|[.line-through]#This is a first thought in the first paragraph. And this deepens the first thought. This is a second thought in the following paragraph.# |This is a first thought in the first paragraph. And this deepens the first thought.
 
-This is a second thought in the following paragraph
+|===
+|No |#Yes#
+
+|[.line-through]#This is a first thought in the first paragraph. And this deepens the first thought. This is a second thought in the following paragraph.#
+|This is a first thought in the first paragraph.
+And this deepens the first thought.
+
+This is a second thought in the following paragraph.
 |===
 
 *Source*
@@ -909,10 +940,10 @@ There are no exceptions.
 
 [#tab-a6e4326c-a900-4af3-8fc1-f935f119f587]
 .Use of italic markup
-[%header]
 |===
-|No                    |#Yes#
-|[.line-through]#false#|`+++_term_+++`
+|No                     |#Yes#
+
+|[.line-through]#false# |`+++_term_+++`
 |===
 
 *Source*
@@ -940,10 +971,10 @@ There are no exceptions.
 
 [#tab-ad208ac2-619a-4a12-b381-8e4935ce3452]
 .Use of bold markup
-[%header]
 |===
-|No                    |#Yes#
-|[.line-through]#false#|`+++*term*+++`
+|No                     |#Yes#
+
+|[.line-through]#false# |`+++*term*+++`
 |===
 
 *Source*
@@ -971,12 +1002,10 @@ There are no exceptions.
 
 [#tab-f3fb86db-ea0b-40b9-8abb-c3a1f390adba]
 .Use of code markup
-[%header]
 |===
-|No                    |#Yes#
-|[.line-through]#false#|`+++`term`+++`
-|[.line-through]#false#|correct
-|[.line-through]#false#|correct
+|No                     |#Yes#
+
+|[.line-through]#false# |`+++`term`+++`
 |===
 
 *Source*
@@ -1100,11 +1129,14 @@ There are no exceptions.
 
 [#tab-ce27729f-33c4-47b2-a579-e7a1c2434c3a]
 .Use a single grave accent before and after inline literals
-[%header]
 |===
-|No                                                                                                              |#Yes#
-|[.line-through]#The example below shows the structure of an `++``Act``++`.#                                     |The example below shows the structure of an `++`Act`++`.
-|[.line-through]#Movements of vehicles in `++``Act``++` are defined in the `++``ManeuverGroup``++ `` s section.# |Movements of vehicles in `++`Act`++` are defined in the `++`ManeuverGroup`++` section.
+|No |#Yes#
+
+|[.line-through]#The example below shows the structure of an `++``Act``++`.#
+|The example below shows the structure of an `++`Act`++`.
+
+|[.line-through]#Movements of vehicles in `++``Act``++` are defined in the `++``ManeuverGroup``++ `` s section.#
+|Movements of vehicles in `++`Act`++` are defined in the section `++`ManeuverGroup`++`.
 |===
 
 *Source*
@@ -1125,10 +1157,8 @@ There are no exceptions.
 
 [#tab-17223b72-a10c-4053-be85-e1fd3340533b]
 .Use of four space characters per indention level (space characters marked as '.')
-
-[%header, col=*,*]
 |===
-|No                                                                |#Yes#
+|No |#Yes#
 
 |Normal text +
 [.line-through]#->Level 1 indented text +
@@ -1136,23 +1166,64 @@ There are no exceptions.
 |Normal text +
 ....Level 1 indented text +
 ........Level 2 indented text
+
 a|[source, xml]
-----
 <planView>
-..<geometry x="-0.014" y="-0.055" hdg="2.88" length="95.89" s="0.0">
+..<geometry x="-0.014"
+............y="-0.055"
+............hdg="2.88"
+............length="95.89"
+............s="0.0">
 ....<arc curvature="-0.000490572"/>
-----
 a|[source, xml]
-----
 <planView>
-....<geometry x="-0.014" y="-0.055" hdg="2.88" length="95.89" s="0.0">
+....<geometry x="-0.014"
+..............y="-0.055"
+..............hdg="2.88"
+..............length="95.89"
+..............s="0.0">
 ........<arc curvature="-0.000490572"/>
-----
 |===
 
 *Source*
 
 ASAM Writing Guide: Indentation
+
+[#sec-ASM-XX]
+=== Indent XML attributes in examples (ASM-XX)
+
+* If XML attributes in examples lead to extra long lines, insert line breaks and indent the XML attributes to form a column under the first XML attribute.
+* Place one XML attribute per line.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+[#tab-4bcfeb0d-373c-47c3-8b0b-286cbcd6c4a2]
+.Indent XML attributes in extra long lines (space characters used for indention marked as '.')
+|===
+|No |#Yes#
+
+a|[source, xml]
+<planView>
+....<geometry x="-0.014" y="-0.055" hdg="2.88" length="95.89" s="0.0">
+........<arc curvature="-0.000490572"/>
+a|[source, xml]
+<planView>
+....<geometry x="-0.014"
+..............y="-0.055"
+..............hdg="2.88"
+..............length="95.89"
+..............s="0.0">
+........<arc curvature="-0.000490572"/>
+|===
+
+*Source*
+
+ASAM Writing Guide: Indentation
+
 
 
 [#sec-ASM-121]
@@ -1178,9 +1249,9 @@ Optional: Use the words "attribute" or "attributes".
 
 [#tab-290d36d7-08a5-4aac-9ba2-7e60db7d448a]
 .Mark up ASAM XML elements
-[%header]
 |===
-|No|#Yes#
+|No                                  |#Yes#
+
 |[.line-through]#road mark element#  |`<roadMark>` element
 |[.line-through]#``<roadMark>``s#    |`<roadMark>` elements
 |[.line-through]#type#               |@type
@@ -1198,7 +1269,7 @@ Optional: Use the words "attribute" or "attributes".
 
 *Source*
 
-ASAM specific rule
+ASAM specific rule.
 
 
 == Lists
@@ -1399,16 +1470,17 @@ There are no exceptions.
 
 [#tab-23063c34-07c7-4ecd-a797-ad8d715df052]
 .Use of full stops at the end of a list item
-[%header, col=2*]
 |===
 |No |#Yes#
 
-|[.line-through]#* This is the first sentence# +
-[.line-through]#* This is the second sentence# +
-[.line-through]#* This is the third sentence#
-|* This is the first sentence. +
-pass:[*] This is the second sentence. +
-pass:[*] This is the third sentence.
+a|
+* [.line-through]#This is the first sentence#
+* [.line-through]#This is the second sentence#
+* [.line-through]#This is the third sentence#
+a|
+* This is the first sentence.
+* This is the second sentence.
+* This is the third sentence.
 |===
 
 *Source*
@@ -1435,16 +1507,17 @@ There are no exceptions.
 
 [#tab-a099df34-7296-42e1-bd7f-db180f84fe66]
 .Use of punctuation and conjunctions at the end of an item
-[%header, col=2*]
 |===
 |No |#Yes#
 
-|[.line-through]#* Common junctions,# +
-[.line-through]#* Direct junctions, and# +
-[.line-through]#* Virtual junctions.#
-|* Common junctions +
-pass:[*] Direct junctions +
-pass:[*] Virtual junctions
+a|
+* [.line-through]#Common junctions,#
+* [.line-through]#Direct junctions, and#
+* [.line-through]#Virtual junctions.#
+a|
+* Common junctions
+* Direct junctions
+* Virtual junctions
 |===
 
 *Source*
@@ -1487,21 +1560,78 @@ Microsoft Style Guide: https://docs.microsoft.com/en-us/style-guide/scannable-co
 [#sec-ASM-45]
 === Use AsciiDoc syntax for tables (ASM-45)
 
+* Indent in AsciiDoc cell content in columns under the table header, if the lines are short enough.
+* If the lines are too long, write one cell per line.
+
 *Exceptions*
 
 There are no exceptions.
 
 *Example*
 
+_Code_
+
 ```
 [#tab-69612353-0fb1-496b-81d6-e42bc07940da]
-.This is the caption of the table
+.This is the caption of the table with short lines
 |===
+|Head 1   |Head 2   |Head 3
+
+|cell 1_1 |cell 1_2 |cell 1_3
+|cell 2_1 |cell 2_2 |cell 2_3
+|cell 3_1 |cell 3_2 |cell 3_3
+|===
+```
+
+```
+[#tab-4c824f78-b3ce-4d16-a19b-c3732d066917]
+.This is the caption of the table with long lines
+|===
+|Head 1 |Head 2 |Head 3
+
+|cell 1_1 with a very long line in the content
+|cell 1_2
+|cell 1_3
+
+|cell 2_1
+|cell 2_2 with a very long line in the content
+|cell 2_3
+
+|cell 3_1
+|cell 3_2
+|cell 3_3 with a very long line in the content
+|===
+```
+
+_Result_
+
+[#tab-69612353-0fb1-496b-81d6-e42bc07940da]
+.This is the caption of the table with short lines
+|===
+|Head 1   | Head 2   | Head 3
+
 |cell 1_1 | cell 1_2 | cell 1_3
 |cell 2_1 | cell 2_2 | cell 2_3
 |cell 3_1 | cell 3_2 | cell 3_3
 |===
-```
+
+[#tab-4c824f78-b3ce-4d16-a19b-c3732d066917]
+.This is the caption of the table with long lines
+|===
+|Head 1 |Head 2 |Head 3
+
+|cell 1_1 with a very long line in the content
+|cell 1_2
+|cell 1_3
+
+|cell 2_1
+|cell 2_2 with a very long line in the content
+|cell 2_3
+
+|cell 3_1
+|cell 3_2
+|cell 3_3 with a very long line in the content
+|===
 
 *Source*
 
@@ -1564,19 +1694,19 @@ ASAM Writing Guide: 5.3. Tables
 [#sec-ASM-50]
 === Start text in the table header with a capital letter (ASM-50)
 
-* In a cell in the header row of a table, only the *first word* begins with an uppercase letter (sentence-style capitalization).
+* In a cell in the header row of a table, only the _first word_ begins with an uppercase letter (sentence-style capitalization).
 
 *Exceptions*
 
-*Acronyms* and *proper names* are spelled as is.
+_Acronyms_ and _proper names_ are spelled as is.
 
 *Example*
 
 [#tab-ec0debde-c4ab-4ade-b06e-ee74758bef42]
 .Use of uppercase in the table header
-[%header]
 |===
 |no                                             |#Yes#
+
 |[.line-through]#Wrong Formatting of a Heading# |Correct formatting of a heading
 |[.line-through]#Asam rules to follow#          |ASAM rules to follow
 |[.line-through]#Scope of OpenScenario#         |Scope of ASAM OpenSCENARIO
@@ -1604,6 +1734,8 @@ There are no exceptions.
 
 *Example*
 
+There is no example.
+
 *Source*
 
 ASAM Writing Guide: 5.2. Figures
@@ -1620,6 +1752,8 @@ If you cannot use an figures with the file type SVG, use the file type PNG.
 
 *Example*
 
+There is no example.
+
 *Source*
 
 ASAM Writing Guide: 5.2. Figures
@@ -1633,6 +1767,8 @@ ASAM Writing Guide: 5.2. Figures
 There are no exceptions.
 
 *Example*
+
+There is no example.
 
 *Source*
 
@@ -1648,14 +1784,16 @@ There are no exceptions.
 
 *Example*
 
+There is no example.
+
 *Source*
 //TODO: Name source
 
 
 [#sec-ASM-92]
-=== Use one folder "images" per chapter (ASM-92)
+=== Use one folder _images_ per chapter (ASM-92)
 
-Every chapter has an "images" folder that contains all the figures of the chapter and the sections of the chapter.
+Every chapter has an _images_ folder that contains all the figures of the chapter and the sections of the chapter.
 
 *Exceptions*
 
@@ -1664,7 +1802,7 @@ There are no exceptions.
 *Example*
 
 ```
-standard/
+content/
 ├── ...
 ├── 07_geometry/
 │   ├── images/
@@ -1677,6 +1815,7 @@ standard/
 
 *Source*
 
+ASAM specific rule.
 
 [#sec-ASM-87]
 === Use AsciiDoc syntax for figures (ASM-87)
@@ -1781,7 +1920,7 @@ ASAM Writing Guide: 5.2. Figures
 
 * The description shall be below the figure.
 * The description shall start with "[Reference to figure] shows".
-The description shall not have an initial article.
+  The description shall not have an initial article.
 * The description shall not contain references to the placement of the figure; for example, "before" or "below".
 
 *Exceptions*
@@ -1822,21 +1961,21 @@ ASAM Writing Guide: Tags
 
 
 [#sec-ASM-78]
-=== Insert a unique ID for topics, figures, tables, source code, and sections (ASM-78)
+=== Insert a unique ID in the anchors for topics, figures, tables, source code, and sections (ASM-78)
 
 Insert a unique ID according to the following patterns:
 
 [#tab-a0bf23cc-3f35-4f3a-9788-6436c90d29b3]
 .List of patterns for unique IDs
-[%header]
 |===
-|Pattern         | Usage                                 | Optional/required | Comment
-|`[#code-<uid>]` | source code blocks                    | optional          | Only use if source code is referenced.
-|`[#fig-<uid>]`  | figures (images, diagrams, and so on) | required          | -
-|`[#map-<uid>]`  | map files                             | optional          | Only use for map_[...].adoc files.
-|`[#sec-<uid>]`  | sections                              | optional          | Only use if section is referenced.
-|`[#tab-<uid>]`  | tables                                | required          | -
-|`[#top-<uid>]`  | topics                                | required          | -
+|Pattern         |Usage                                 |Optional/required |Comment
+
+|`[#code-<uid>]` |source code blocks                    |optional          |Only use if source code is referenced.
+|`[#fig-<uid>]`  |figures (images, diagrams, and so on) |required          |-
+|`[#map-<uid>]`  |map files                             |optional          |Only use for map_[...].adoc files.
+|`[#sec-<uid>]`  |sections                              |optional          |Only use if section is referenced.
+|`[#tab-<uid>]`  |tables                                |required          |-
+|`[#top-<uid>]`  |topics                                |required          |-
 |===
 
 *Exceptions*
@@ -1844,15 +1983,15 @@ Insert a unique ID according to the following patterns:
 If you do not know how to use unique IDs, insert `[#tag-uid]` as a placeholder.
 The placeholder will trigger a pipeline warning so that the technical writer can help with creating a unique ID.
 
-// NOTE: Where to use a semantic ID and where a UUID? What are allowed characters in IDs anyway? How about a Regex for a valid ID production: [a-zA-Z0-9_-]
+// TODO: Where to use a semantic ID and where a UUID? What are allowed characters in IDs anyway? How about a Regex for a valid ID production: [a-zA-Z0-9_-]
 
 *Example*
 
 [#tab-682fa239-bf8f-4531-a825-e9485372479b]
 .Use of a semantic ID for a section
-[%header]
 |===
 |No                                                            |#Yes#
+
 |[.line-through]#`[#sec-682fa239-bf8f-4531-a825-e9486372479b]`#|`[#sec-ASM-78]`
 |===
 
@@ -1874,10 +2013,10 @@ There are no exceptions.
 
 [#tab-05a17f73-4687-4e58-92c9-1269b89ccd7f]
 .Use of constant file names
-[%header]
 |===
-|No                                    |#Yes#
-|[.line-through]#example_file_name_v3.adoc# |example_file_name.adoc
+|No                                              |#Yes#
+
+|[.line-through]#example_file_name_v3.adoc#      |example_file_name.adoc
 |[.line-through]#Referenced Standard V 1.2.34.3# |Referenced Standard
 |===
 
@@ -1895,9 +2034,9 @@ There are no exceptions.
 
 [#tab-cb96bd0c-8dde-4df1-9e77-1d7d553303eb]
 .Use of lowercase in file names
-[%header]
 |===
 |No                                    |#Yes#
+
 |[.line-through]#ExampleFileName.adoc# |example_file_name.adoc
 |===
 
@@ -1917,9 +2056,9 @@ There are no exceptions.
 
 [#tab-c7b9f7ca-49da-4e9e-afc0-feb33e8158ac]
 .Use of underscore in file names
-[%header]
 |===
 |No                                      |#Yes#
+
 |[.line-through]#Example File Name.adoc# |example_file_name.adoc
 |===
 
@@ -1939,9 +2078,9 @@ There are no exceptions.
 
 [#tab-7e8d6e0e-7049-4872-9bb9-b3fbe4d02f11]
 .Use of .adoc as file extension
-[%header]
 |===
 |No                                   |#Yes#
+
 |[.line-through]#ExampleFileName.ado# |example\\_file\\_name.adoc
 |===
 
@@ -1965,9 +2104,9 @@ There are no exceptions.
 
 [#tab-5e5fce22-64a4-4adb-9653-4658b1966198]
 .Use of a caption as file name
-[%header]
 |===
 |No                                               |#Yes#
+
 |[.line-through]#Use of caption as file name.svg# |use_of_a_caption_as_file_name.svg
 |===
 
@@ -2051,8 +2190,44 @@ There are no exceptions.
 
 ASAM Writing Guide: Non-normative sections
 
-// TODO: Missing rule ASM-18: LOF created automatically
-// TODO: Missing rule ASM-19: LOT created automatically
+[#sec-ASM-18]
+=== List of figures is created automatically (ASM-18)
+
+* The AsciiDoc pipeline renders automatically a complete _list of figures_.
+* Do not create a list of figures manually.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+There is no example.
+
+*Source*
+
+ASAM specific rule.
+
+
+[#sec-ASM-19]
+=== List of tables is created automatically (ASM-19)
+
+* The AsciiDoc pipeline renders automatically a complete _list of tables_.
+* Do not create a list of tables manually.
+
+*Exceptions*
+
+There are no exceptions.
+
+*Example*
+
+There is no example.
+
+*Source*
+
+ASAM specific rule.
+
+
 
 
 [#sec-ASM-xx]
