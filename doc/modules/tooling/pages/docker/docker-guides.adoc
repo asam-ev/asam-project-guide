@@ -13,7 +13,5 @@ For the default docker-compose.yml needed to easily create the html result of a 
 
 include::compendium:page$tools/vscode/run_docker.adoc[{offset-value}]
 
-include::compendium:page$tools/powershell/run_docker.adoc[{offset-value}]
-
 include::compendium:page$tools/docker/run_docker.adoc[{offset-value}]
 
