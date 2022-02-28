@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Pipeline: Sequential numbering :: ASAM Project Guide</title>
     <link rel="prev" href="pipeline-keyword_overview.html">
-    <link rel="next" href="macro-pages.html">
-    <meta name="description" content="Describes the use of the macro &quot;Sequential numbering&quot; in detail.">
+    <link rel="next" href="pipeline-sequential_figs_tables.html">
+    <meta name="description" content="Describes the use of the pipeline extension &quot;Sequential numbering&quot; in detail.">
     <meta name="keywords" content="pipeline,asam,antora,asciidoctor,custom, REVIEWED_OK">
     <meta name="generator" content="Antora 3.0.0-rc.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
@@ -738,9 +738,6 @@
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../compendium/tools/powershell/powershell_basics.html">Microsoft PowerShell Basics</a>
   </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/tools/powershell/run_docker.html">Running docker-Compose From Powershell</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
@@ -970,6 +967,15 @@
     <a class="nav-link" href="pipeline-sequential_sectnums.html">Pipeline: Sequential numbering</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pipeline-sequential_figs_tables.html">Pipeline: Sequential figure and table numbers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pipeline-iso_style.html">Pipeline: ISO-2145 style section and page numbering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pipeline-global_anchor_replacement.html">Pipeline: Local to global anchor replacement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="macro-pages.html">Macro: pages</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -999,8 +1005,6 @@
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../standardization/issue-resolution.html">Issue resolution process</a>
-  </li>
-  <li class="nav-item" data-depth="1">
   </li>
 </ul>
   </li>
@@ -1076,6 +1080,35 @@ Depending on how the standard is structured, sections may be sections in pages o
 <p>To fulfill this requirement, the "Page numbering" extension features were implemented.
 These consist of an Antora part (responsible for the navigation structure and sequential numbering over all files) and an Asciidoctor part (responsible for applying the determined page offset on all level two ("== ") sections on each page).</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Due to the similarity in its topics, the Asciidoctor extension is also responsible for <a href="pipeline-sequential_figs_tables.html" class="xref page">sequential figure and table numbers</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisits"><a class="anchor" href="#_prerequisits"></a>Prerequisits</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Only pages with the attribute <code>sectnums</code> are considered: set it per page or apply globally/per component</p>
+</li>
+<li>
+<p>All relevant pages are in the navigation tree</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1148,6 +1181,40 @@ For example, if it is set to 3, all bullet points "\*" and "*\*" will be exclude
 <p>Resets the counter back to the start value.</p>
 </td>
 </tr>
+<tr>
+<td class="hdlist1">
+<code>:sectnums!:</code>
+</td>
+<td class="hdlist2">
+<p>Deactivate section numbers for the next bullet point.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+<code>[preface]</code>
+</td>
+<td class="hdlist2">
+<p>Disables section and title numbers for the next bullet point in the list and adds the <code>[preface]</code> role to the referenced page, if possible.
+Note that this has no immediate effect since <code>[preface]</code> is not supported in the document type article that is mandatory for Antora!</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+<code>[appendix]</code>
+</td>
+<td class="hdlist2">
+<p>Sets section and title numbers to start with capital letters.
+Page titles get a prefix of <code>{appendix-caption} {appendix-letter}: `, where `{appendix-caption}</code> is the chosen Asciidoctor <a href="https://docs.asciidoctor.org/asciidoc/latest/sections/appendix/#caption" target="_blank" rel="noopener">appendix caption</a> (default: "Appendix") and <code>{appendix-letter}</code> the next available letter in the alphabet for the appendix (start value: "A").</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+<code>[bibliography]</code>
+</td>
+<td class="hdlist2">
+<p>Disables section and title numbers for the next bullet point in the list and adds the <code>[bibliography]</code> role to the referenced page, if possible.</p>
+</td>
+</tr>
 </table>
 </div>
 </div>
@@ -1191,7 +1258,7 @@ antora:
 </div>
 <nav class="pagination">
   <span class="prev"><a href="pipeline-keyword_overview.html">Pipeline: Keyword page</a></span>
-  <span class="next"><a href="macro-pages.html">Macro: pages</a></span>
+  <span class="next"><a href="pipeline-sequential_figs_tables.html">Pipeline: Sequential figure and table numbers</a></span>
 </nav>
 </article>
   </div>

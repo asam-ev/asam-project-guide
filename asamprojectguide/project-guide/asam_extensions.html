@@ -738,9 +738,6 @@
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../compendium/tools/powershell/powershell_basics.html">Microsoft PowerShell Basics</a>
   </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../compendium/tools/powershell/run_docker.html">Running docker-Compose From Powershell</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
@@ -970,6 +967,15 @@
     <a class="nav-link" href="extensions/pipeline-sequential_sectnums.html">Pipeline: Sequential numbering</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-sequential_figs_tables.html">Pipeline: Sequential figure and table numbers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-iso_style.html">Pipeline: ISO-2145 style section and page numbering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-global_anchor_replacement.html">Pipeline: Local to global anchor replacement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="extensions/macro-pages.html">Macro: pages</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -999,8 +1005,6 @@
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../standardization/issue-resolution.html">Issue resolution process</a>
-  </li>
-  <li class="nav-item" data-depth="1">
   </li>
 </ul>
   </li>
@@ -1211,44 +1215,85 @@ To see the result of the applied pipeline feature, see</p>
 <div class="sect2">
 <h3 id="_page_numbering"><a class="anchor" href="#_page_numbering"></a>Page numbering</h3>
 <div class="paragraph">
-<p>The ASAM Antora extension, in combination with the sectnumsoffset_antora extension for Asciidoctor, creates sequential page and section numbers in Antora.<br>
-To use this feature, add <code>numbered_titles: true</code> to the Antora extension configuration.
-The <code>sectnums</code> attribute must be set on each page where the extension shall apply the sequential numbering.
-<code>sectnums</code> can also be defined per component (in the component&#8217;s "antora.yml") or globally (in the site&#8217;s "site.yml"), depending on the use-case.</p>
+<p>By default, Antora does not support sequential page numbering.
+However, standards at ASAM require to have numbered sections and chapters.
+In Antora, these chapters correspond to pages.
+Depending on how the standard is structured, sections may be sections in pages or even be their own pages.</p>
 </div>
 <div class="paragraph">
-<p>The order can also be manually changed by adding the attributes <code>:sectnumoffset:</code> and/or <code>:titleoffset:</code> to the page or a section therein.
-When using a manual override, the offset must be defined as <code>&lt;number&gt;(.&lt;number&gt;.(&#8230;&#8203;))</code>.<br>
-Example: <code>:titleoffset: 2.3.</code> would set the page number to "2.3." and the first section therein to "2.3.1".</p>
+<p>To fulfill this requirement, the "Page numbering" extension features were implemented.
+These consist of an Antora part (responsible for the navigation structure and sequential numbering over all files) and an Asciidoctor part (responsible for applying the determined page offset on all level two ("== ") sections on each page).</p>
 </div>
-<div class="paragraph">
-<p>In addition to that, some general actions can be added as attributes in the navigation files.</p>
-</div>
-<div class="hdlist">
+<div class="admonitionblock note">
 <table>
 <tr>
-<td class="hdlist1">
-<code>:start-level:</code>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
 </td>
-<td class="hdlist2">
-<p>Defines the level in the bullet point list from which on the sequential numbers are added.
-By default, this is set to 1, meaning that every item starting with "*" or higher will be included.
-If set to a higher number, page title numbers will only be added from that level onward.
-For example, if it is set to 3, all bullet points "\*" and "*\*" will be excluded and counting starts with the first element of "*\*\*".</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-<code>:reset-level-offset:</code>
-</td>
-<td class="hdlist2">
-<p>Resets the counter back to the start value.</p>
+<td class="content">
+<div class="paragraph">
+<p>Due to the similarity in its topics, the Asciidoctor extension is also responsible for <a href="extensions/pipeline-sequential_figs_tables.html" class="xref page">sequential figure and table numbers</a>.</p>
+</div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>For more details, see <a href="extensions/pipeline-sequential_sectnums.html" class="xref page">Pipeline: Sequential numbering</a></p>
+<p>For more details, see <a href="extensions/pipeline-sequential_sectnums.html" class="xref page">Pipeline: Sequential numbering</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sequential_figure_and_table_numbers"><a class="anchor" href="#_sequential_figure_and_table_numbers"></a>Sequential figure and table numbers</h3>
+<div class="paragraph">
+<p>Since Asciidoctor counts all images and tables only within each page, their caption numbers start at 1 on every new Antora page by default.
+In case of standards, these numbers must be sequential (and unique) within each standard, not each page.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Due to the similarity in its topics, the Asciidoctor extension is also responsible for <a href="extensions/pipeline-sequential_sectnums.html" class="xref page">sequential section numbers and page titles</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="extensions/pipeline-sequential_figs_tables.html" class="xref page">Pipeline: Sequential figure and table numbers</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_iso_2145_style_section_numbers"><a class="anchor" href="#_iso_2145_style_section_numbers"></a>ISO-2145 style section numbers</h3>
+<div class="paragraph">
+<p>By default, section numbers in Asciidoctor have a trailing dot (".").
+To be in line with <a href="https://en.wikipedia.org/wiki/ISO_2145" target="_blank" rel="noopener">ISO 2145</a>, sections in standards have to be numbered without this trailing dot.
+The Antora extension in combination with the 'sectnums_to_iso' extension for Asciidoctor address this problem.</p>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="extensions/pipeline-iso_style.html" class="xref page">Pipeline: ISO-2145 style section and page numbering</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_convert_local_to_global_page_references"><a class="anchor" href="#_convert_local_to_global_page_references"></a>Convert local to global page references</h3>
+<div class="paragraph">
+<p>Using Asciidoctor, it is typical to create one main file and include content from separate files.
+With this approach, each section or chapter can be managed separately while still compiling everything into a single final document.
+However, in Antora these sections or chapters stay separate in most cases since the idea is to be able to access them individually and independently.</p>
+</div>
+<div class="paragraph">
+<p>When working with documents originally intended for a single-file-inclusion strategy, local references that only work if other files are also included will not work for the individual pages in Antora.
+To circumvent this problem, the ASAM Antora extensions analyze all pages and try to find the source file of the reference.
+If the content is included in multiple pages, pages in the navigation structured are prioritized over unlisted pages.</p>
+</div>
+<div class="paragraph">
+<p>Note, however, that this approach has limitations and should only be used if switching to a more Antora-native approach is too difficult!</p>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="extensions/pipeline-global_anchor_replacement.html" class="xref page">Pipeline: Local to global anchor replacement</a>.</p>
 </div>
 </div>
 </div>

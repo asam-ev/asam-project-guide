@@ -738,9 +738,6 @@
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../compendium/tools/powershell/powershell_basics.html">Microsoft PowerShell Basics</a>
   </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/tools/powershell/run_docker.html">Running docker-Compose From Powershell</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
@@ -970,6 +967,15 @@
     <a class="nav-link" href="pipeline-sequential_sectnums.html">Pipeline: Sequential numbering</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pipeline-sequential_figs_tables.html">Pipeline: Sequential figure and table numbers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pipeline-iso_style.html">Pipeline: ISO-2145 style section and page numbering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pipeline-global_anchor_replacement.html">Pipeline: Local to global anchor replacement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="macro-pages.html">Macro: pages</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -999,8 +1005,6 @@
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../standardization/issue-resolution.html">Issue resolution process</a>
-  </li>
-  <li class="nav-item" data-depth="1">
   </li>
 </ul>
   </li>
@@ -1075,6 +1079,18 @@ The location and the (virtual) filename can be configured in the site.yml (Antor
 <div class="sect1">
 <h2 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h2>
 <div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+All attributes must be added under the attribute "keywords".
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>The following table lists the supported attributes as well as their default values:</p>
 </div>
@@ -1132,12 +1148,14 @@ Separator is "/" and MUST ONLY be used between folders (no leading or trailing s
 <td class="content">
 Antora works with virtual files.
 See <a href="https://docs.antora.org/antora/latest/organize-content-files/#antoras-virtual-filesystem" target="_blank" rel="noopener">Antora&#8217;s virtual filesystem</a>.
-To generate a keywords-overview page, the ASAM Antora extension must contain the 'keywords' attribute.
-All other supported attributes for this feature are optional.
-The only requirement is that they must all be added under <code>keywords:</code>.
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>To generate a keywords-overview page, the ASAM Antora extension must contain the 'keywords' attribute.
+All other supported attributes for this feature are optional.
+The only requirement is that they must all be added under <code>keywords:</code>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
