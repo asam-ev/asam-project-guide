@@ -5,10 +5,8 @@ display_version: Restructuring
 prerelease: -restructure
 start_page: ROOT:index.adoc
 nav:
-- modules/getting-started/nav.adoc
+- modules/concepts/nav.adoc
 - modules/getting-involved/nav.adoc
 - modules/role-specific/nav.adoc
-- modules/standardization/nav.adoc
 - modules/tooling/nav.adoc
 - modules/compendium/nav.adoc
-- modules/project-guide/nav.adoc

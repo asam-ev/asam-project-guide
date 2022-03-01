@@ -3,6 +3,7 @@
 :keywords: landing_page,compendium, TODO
 :page-aliases: home.adoc, main.adoc
 :adoc-exclude:
+:compendium:
 
 // Requires input from restructuring discussions for finalization
 
@@ -13,7 +14,8 @@ include::ROOT:partial$_attributes.adoc[]
 
 The **Compendium** contains the content fragments not specific to one of the main topics.
 They are listed in alphabetical order and clustered by type. +
-Here, guides and instructions are gathered.
+Here, guides and instructions are gathered. +
+include::ROOT:partial$landing_page_referral.adoc[]
 
 
 **Other main topics**:

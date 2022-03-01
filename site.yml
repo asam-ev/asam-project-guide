@@ -2,7 +2,7 @@ site:
   title: ASAM Project Guide
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://asam-ev.github.io/asam-project-guide/
-  start_page: master@asamprojectguide::index.adoc
+  start_page: asamprojectguide::index.adoc
 
 content:
   sources:
@@ -11,6 +11,12 @@ content:
       branches: HEAD, restructuring_*
       tags: open*
       start_path: doc
+      edit_url: 'https://github.com/asam-ev/asam-project-guide/blob/{refname}/{path}'
+    - url: .
+      # branches: HEAD,baseline_*,open*
+      branches: HEAD, restructuring_*
+      tags: open*
+      start_path: guide
       edit_url: 'https://github.com/asam-ev/asam-project-guide/blob/{refname}/{path}'
 
 ui:
@@ -51,21 +57,24 @@ asciidoc:
 
     # tag::roles[]
     ## Defined role attributes
-    role-reviewer: 'xref:role-specific:reviewer.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FA8072;" >REVIEWER</role>]'
-    role-wg-member: 'xref:role-specific:wg-member.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#BDB76B;" >WG MEMBER</role>]'
-    role-wg-lead: 'xref:role-specific:wg-lead.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#14BCCD;" >WG LEAD</role>]'
-    role-technical-writer: 'xref:role-specific:technical-writer.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#D8BFD8;" >TECHNICAL WRITER</role>]'
-    role-project-lead: 'xref:role-specific:project-lead.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#6A5ACD;" >PROJECT LEAD</role>]'
-    role-gtm: 'xref:role-specific:gtm.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#32CD32;" >GTM</role>]'
-    role-service-provider: 'xref:role-specific:service-provider.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FFDEAD;" >SERVICE PROVIDER</role>]'
-    role-standard-user: 'xref:role-specific:standard_user.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CD853F;" >STANDARD USER</role>]'
-    role-standard-manager: 'xref:role-specific:standard_manager.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#DEB887;" >STANDARD MANAGER</role>]'
+    role-reviewer: 'xref:role-specific:reviewer.adoc[<role style="background:#FA8072;" >REVIEWER</role>]'
+    role-wg-member: 'xref:role-specific:wg-member.adoc[<role style="background:#BDB76B;" >WG MEMBER</role>]'
+    role-wg-lead: 'xref:role-specific:wg-lead.adoc[<role style="background:#14BCCD;" >WG LEAD</role>]'
+    role-technical-writer: 'xref:role-specific:technical-writer.adoc[<role style="background:#D8BFD8;" >TECHNICAL WRITER</role>]'
+    role-project-lead: 'xref:role-specific:project-lead.adoc[<role style="background:#6A5ACD;" >PROJECT LEAD</role>]'
+    role-gtm: 'xref:role-specific:gtm.adoc[<role style="background:#32CD32;" >GTM</role>]'
+    role-service-provider: 'xref:role-specific:service-provider.adoc[<role style="background:#FFDEAD;" >SERVICE PROVIDER</role>]'
+    role-standard-user: 'xref:role-specific:standard_user.adoc[<role style="background:#CD853F;" >STANDARD USER</role>]'
+    role-standard-manager: 'xref:role-specific:standard_manager.adoc[<role style="background:#DEB887;" >STANDARD MANAGER</role>]'
+    role-idea-giver: '<role style="background:LightGray;">Idea Giver</role>'
+    role-tsc-member: '<role style="background:LightGray;">TSC Member</role>'
+    role-member: '<role style="background:LightGray;">ASAM Member</role>'
     # end::roles[]
 
     ## Labels
-    mandatory: '<label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CA4444;" >MANDATORY</label>'
-    recommended: '<label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#E69138;" >RECOMMENDED</label>'
-    optional: '<label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#76A5AF;" >OPTIONAL</label>'
+    mandatory: '<label class="mandatory"/>'
+    recommended: '<label class="recommended"/>'
+    optional: '<label class="optional"/>'
 
   extensions:
   - asciidoctor-kroki

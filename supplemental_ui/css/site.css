@@ -137,6 +137,52 @@ a:active {
     background-color: none
 }
 
+role {
+    color:black;
+    font-weight: bold;
+    font-size: 14px;
+    width: 500px;
+    height: 100px;
+    border-radius: 25px;
+    margin: 10px 2px;
+    padding: 5px 15px;
+    border: 2px solid #000
+}
+
+label {
+    color:black;
+    font-weight: bold;
+    font-size: 14px;
+    width:140px;
+    height:40px;
+    border-radius: 5px;
+    margin:6px 2px;
+    padding:5px 8   px;
+    border:2px solid #000
+}
+
+label.mandatory {
+    background:#CA4444;
+}
+label.mandatory:after {
+    content: "MANDATORY"
+}
+
+label.recommended {
+    background: #E69138;
+}
+label.recommended:after {
+    content: "RECOMMENDED"
+}
+
+label.optional {
+    background:#76A5AF;
+}
+
+label.optional:after {
+    content: "OPTIONAL"
+}
+
 code,
 kbd,
 pre {
