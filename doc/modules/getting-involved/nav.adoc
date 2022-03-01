@@ -1,6 +1,7 @@
 * xref:main.adoc[]
 ** xref:enter_new_idea.adoc[]
 ** xref:proposal_phase.adoc[]
+*** xref:proposal/proposal_document.adoc[]
 *** xref:proposal/03_proposal_workshop_preparation.adoc[]
 *** xref:proposal/04_join_proposal_workshop.adoc[]
 *** xref:proposal/02_contributing.adoc[]

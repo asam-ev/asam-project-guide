@@ -1,6 +1,6 @@
-= The proposal phase
+= The Proposal Phase
 :description: Describes the Proposal phase in the ASAM development process for standards.
-:keywords: proposal,phase,standard,process,proposal-workshop, READYFORREVIEW
+:keywords: proposal,phase,standard,process,proposal-workshop
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
@@ -37,9 +37,11 @@ image::proposal_phase_v2-Proposal_Phase.svg[title="The proposal phase in detail"
 The following sections summarize the steps described above.
 If you want to learn more about how to participate in this phase, check out the pages in this chapter or follow the links in the relevant section on this page.
 
+== Proposal Phase Timeline
+
 :sectnums:
 
-== Create a first proposal draft
+== Create A First Proposal Draft
 Before the proposal is first presented to interested parties in the Proposal Workshop, an initial draft must be created that can be discussed properly.
 
 This is the responsibility of the Idea Giver together with the currently invested partner companies.
