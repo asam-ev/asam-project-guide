@@ -1,6 +1,6 @@
 = Standard Tools Overview
 :description: Links to the current contact page for ASAM Office members.
-:keywords: tools, asam, new-here-content, REVIEWED_OK
+:keywords: tools, asam, concept
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
