@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Macro: reference :: ASAM Project Guide</title>
+    <link rel="prev" href="macro-pages.html">
+    <link rel="next" href="macro-related.html">
+    <meta name="description" content="Describes the use of the macro &quot;reference&quot; in detail.">
+    <meta name="keywords" content="macro,asam,antora,custom, REVIEWED_OK">
+    <meta name="generator" content="Antora 3.0.0-rc.1">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+<link rel="icon" type="image/png" sizes="32x32" href="../../../_/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../_/img/favicon-16x16.png">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+           –
+          Restructuring</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
+        <div class="navbar-item is-hoverable">
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/restructure/extensions/macro-reference.html+%7C%0D%0A%7C+Page+%7C+Macro: reference+%7C%0D%0A%7C+Module+%7C+ROOT+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="body">
+<div class="nav-container" data-component="asamprojectguide-editing" data-version="restructure">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../main.html">Editing the ASAM Project Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../main.html">Working on the Project Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../structure.html">Structure</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../structure/01_content_structure.html">Project Guide structure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../structure/02_versioning_concept.html">Project Guide versioning concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../structure/03_keywords-list.html">Keyword list</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../add_files.html">Adding files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_files/add-new-module.html">Adding A New Module</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_files/pages-vs-partials.html">Pages VS Partials</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../adding_files/add-a-page.html">Adding A Page</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_files/pages/add-task-page.html">Adding a Task page</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_files/pages/add-tool-page.html">Adding a Tool page</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_files/add-a-partial.html">Adding A Partial</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../changing_content.html">Add/change content</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../reviewing/create_issue_on_page.html">Create an issue for a page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../reviewing/editing_pages.html">Artifact page name</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Abbreviations</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_content/abbreviations/add-an-abbreviation.html">How to add a new abbreviation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_content/abbreviations/use_abbreviations.html">Using abbreviations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Working with roles</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_content/roles/add-new-role.html">How to add a new role</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../adding_content/roles/use_roles.html">Using roles</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/page_redirects.html">Moving, renaming and deleting a page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/interactive_diagrams.html">Creating interactive diagrams</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../ref-include.html">Referencing/including</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/images.html">Using images</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/examples.html">Using examples</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/attachments.html">Using attachments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/including.html">Including pages and partials</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pipeline-orphan_pages.html">Pipeline: Orphan pages</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pipeline-keyword_overview.html">Pipeline: Keyword page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pipeline-sequential_sectnums.html">Pipeline: Sequential numbering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="macro-pages.html">Macro: pages</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="macro-reference.html">Macro: reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="macro-related.html">Macro: related</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="macro-role_related.html">Macro: role_related</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="macro-autonav.html">Macro: autonav</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../compendium/1_keywords.html">Used keywords In ASAM Project Guide</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Editing the ASAM Project Guide</span>
+    <span class="version">Restructuring</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../asamprojectguide/restructure/index.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../asamprojectguide/restructure/index.html">Restructuring</a>
+        </li>
+        <li class="version">
+          <a href="../../../asamprojectguide/index.html">baseline</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../main.html">Editing the ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../main.html">Restructuring</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../asamprojectguide/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../main.html">Editing the ASAM Project Guide</a></li>
+    <li><a href="../main.html">Working on the Project Guide</a></li>
+    <li><a href="../asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a></li>
+    <li><a href="macro-reference.html">Macro: reference</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/restructuring_concept_development/guide/modules/ROOT/pages/extensions/macro-reference.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Macro: reference</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/extensions/macro-reference.adoc - include::compendium:partial$abbreviations.adoc[]</p>
+</div>
+<div class="paragraph">
+<p><a href="../asam_extensions.html" class="xref page"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/4354/4354565.png" alt="4354565" width="120"></span></a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Creates an automatically generated list with cross-references to (other) pages containing the listed keywords.
+Works similar to the macro <code>related</code> but does not add a subsection.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to work as intended, you must label all pages you want to automatically cross-reference with the attribute <code>:keywords:</code> followed by a comma-separated list of keywords for that page.</p>
+</div>
+<div class="paragraph">
+<p>Keywords <strong>MUST NOT</strong> start with an exclamation mark!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attributes"><a class="anchor" href="#_attributes"></a>Attributes</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Multiplicity</th>
+<th class="tableblock halign-left valign-top">Separator</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keyword</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">","</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be a keyword used in at least one other page to work correctly.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Add <code>reference::&lt;comma-separated-keywords&gt;[]</code> in an empty line and replace <code>&lt;comma-separated-keywords&gt;</code> with a comma-separated list of keywords you want to reference.
+You can exclude pages with certain other keywords by negating that keyword.
+To negate a keyword, use an exclamationmark (<code>!</code>) in front of it.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following example shows a list of all pages with the keyword "pipeline" that do not contain the keyword "asciidoctor".</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 1. Using the <code>reference</code> macro to include the keyword <code>pipeline</code> and exclude the keyword <code>asciidoctor</code></div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">reference::pipeline,!asciidoctor[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Result</strong>:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="pipeline-keyword_overview.html" class="xref page">Pipeline: Keyword page</a></p>
+</li>
+<li>
+<p><a href="pipeline-orphan_pages.html" class="xref page">Pipeline: Orphan pages</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="macro-pages.html">Macro: pages</a></span>
+  <span class="next"><a href="macro-related.html">Macro: related</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/vendor/search.js" id="search-script"
+    data-base-path="../../.." data-page-path="/asamprojectguide-editing/restructure/extensions/macro-reference.html"></script>
+<script async src="../../../_/../search-index.js"></script>
+  </body>
+</html>
