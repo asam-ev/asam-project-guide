@@ -5,23 +5,20 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-====
-[cols="1,5", frame=none, grid = rows]
+[cols="1,5", grid = rows]
 |===
 h|Involved roles
-a| * {role-idea-giver}
-* {role-wg-member}
+a| * {role-wg-member}
 * {role-gtm}
 
 h| Step
 | TODO
 
 |===
-====
 
 NOTE: This page covers identifying the need for service providers in a project. +
-If you are looking for how a service provider is selcted, see xref:eengage_service_provider.adoc[]. +
-If you are a service provider looking for information on your role, refer to the xref:role-specific:service-provider.adoc[Service Provider Role Description].
+If you are looking for how a service provider is selected, see xref:engage_service_provider.adoc[]. +
+If you are a service provider looking for information on your role, refer to the xref:role-specific:service-provider.adoc[Service Provider role description].
 
 == Context
 

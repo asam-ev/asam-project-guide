@@ -29,6 +29,7 @@ Users **must** follow the xref:compendium:guides/workflow_tutorial.adoc[].
 include::compendium:partial$asciidoc.adoc[]
 
 Users **must** follow these guidelines:
+
 * xref:compendium:writing_guidelines/asciidoc_guide.adoc[]
 * xref:compendium:writing_guidelines/writing_guide.adoc[]
 * xref:compendium:writing_guidelines/editorial_guide.adoc[]

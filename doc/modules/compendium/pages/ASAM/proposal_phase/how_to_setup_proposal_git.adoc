@@ -1,16 +1,27 @@
-= Project Proposal setup
+= How-To: Project Proposal Setup
 :description: Describes how to set up a new project proposal.
-:keywords: proposal, setup, TODO
+:keywords: proposal, setup
+:compendium:
 
 include::compendium:partial$_attributes.adoc[]
 
+//tag::body[]
 //tag::roles[]
-{role-gtm}
+[cols="1,5", grid = rows]
+|===
+h|Involved roles
+a| * {role-gtm}
+
+ifdef::compendium[]
+h| Phase
+| xref:getting-involved:proposal_phase.adoc#_the_proposal_phase[image:compendium:asam/project_lifecycle-proposal.svg[]]
+endif::[]
+
+h| Step
+| image:compendium:asam/proposal_phase_v2-proposal_setup.svg[]
+
+|===
 //end::roles[]
-
-TIP: For information on the proposal phase, see xref:standardization:proposal-phase.adoc[].
-
-TODO: Add image with highlighted step here.
 
 == Context
 The basis for collaboration at ASAM is GitLab.
@@ -20,7 +31,7 @@ In order for project members and the project lead to work on their respective pr
 A new proposal repository has been created and the link been provided to all current project members.
 
 == Prerequisites
-* The idea has been proposed and approved in the xref:standardization:project-ideation.adoc[Ideation Phase].
+* The idea has been proposed and approved in the xref:getting-involved:ideation_phase.adoc#_the_ideation_phase[Ideation Phase].
 
 == How
 
@@ -31,3 +42,5 @@ NOTE: If this is an evolution of an existing standard, use the existing subgroup
 . Rename the forked project to `<THIS_STANDARD> Proposal`, where `<THIS_STANDARD>` is the target name of the standard.
 . Add all current project members and the project lead (ideagiver) to the subgroup.
 . Send a mail with the link to the new project to the group, informing them that the repository is now ready for use.
+
+//end::body[]

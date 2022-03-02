@@ -1,6 +1,6 @@
-= Proposal workshop gameplan
+= Proposal Workshop Gameplan
 :description: Contains the default gameplan for a proposal workshop.
-:keywords: proposal-workshop, gameplan, READYFORREVIEW
+:keywords: proposal-workshop, proposal, gameplan
 
 include::compendium:partial$_attributes.adoc[]
 
@@ -8,7 +8,7 @@ include::compendium:partial$_attributes.adoc[]
 
 When organizing a proposal workshop, a few things are needed as prerequisites.
 
-== Roles in the proposal process
+== Roles In The Proposal Process
 
 [cols="1,3"]
 |===
@@ -30,12 +30,6 @@ h| ASAM office
 . Written proposal
 . Proposal submitter is declared
 . At least three companies committing to the project
-
-== Timeline to an approved project proposal
-
-image::compendium:proposal_workshop_timeline.drawio.svg[]
-// Disucssion: Should this image be moved to the standardization module instead?
-// Or is this actually better suited for the Compendium?
 
 == Hosting a proposal workshop
 
@@ -91,6 +85,7 @@ Due to the fact that online meetings are more straining than face-to-face meetin
 
 == Agenda template for a proposal workshop
 
+//tag::agenda_example[]
 
 [cols="10,10,20,25,35"]
 |===
@@ -160,3 +155,5 @@ a| The ASAM moderator starts the following information and estimates with the gr
 * the duration of the project in months
 * the xref:standardization:project-types.adoc[project type]
 |===
+
+//end::agenda_example[]

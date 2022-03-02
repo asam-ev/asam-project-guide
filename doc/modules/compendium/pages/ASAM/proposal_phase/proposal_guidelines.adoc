@@ -1,0 +1,60 @@
+= Proposal Contribution Guidelines
+:description: Contains a list of guidelines for proposal contribution that project members need to follow.
+:keywords: proposal, guideline, TODO
+:numbered:
+
+include::compendium:partial$_attributes.adoc[]
+
+//tag::body[]
+
+//tag::roles[]
+[cols="1,5", grid = rows]
+|===
+h|Involved roles
+a| * {role-wg-member}
+* {role-project-lead}
+
+ifdef::compendium[]
+h| Phase
+| xref:getting-involved:proposal_phase.adoc#_the_proposal_phase[image:compendium:asam/project_lifecycle-proposal.svg[]]
+endif::[]
+
+h| Step
+| image:getting-involved:proposal_phase_v2-proposal_writing.svg[]
+
+|===
+//end::roles[]
+
+== Content Definition
+=== Gather Topics In Issues
+{recommended}
+
+Use issues to collect topics and tasks for the proposal writing. +
+If this is an evolution of an existing ASAM standard, consider collecting and using backlog issues from the previous project.
+
+For more information on how to work with issues regarding the proposal writing, see xref:compendium:ASAM/doc-as-code/contribute_with_issues.adoc[]
+
+=== Use issue templates
+{mandatory}
+
+When working with issues, use the provided issue templates in the proposal repository.
+Each issue template contains a description (as comments) on when to use them and what content to add where.
+
+=== Label issues correctly
+{mandatory}
+
+When working with issues, make sure that each issues related to the proposal phase contains the label `Proposal`.
+
+NOTE: If you use the <<Use issue templates,issue templates>> provided in the proposal repository, the label is automatically assigned.
+
+== Document Writing
+If you contribute by writing in the AsciiDoc files directly, read and apply the rules layed out in the xref:compendium:writing_guidelines/editorial_guide.adoc[].
+
+
+
+
+include::compendium:page$ASAM/doc-as-code/contribute_with_issues.adoc[leveloffset=+1, tags=!roles]
+
+include::compendium:page$ASAM/doc-as-code/contribute_in_asciidoc.adoc[leveloffset=+1, tags=!roles]
+
+//end::body[]

@@ -5,6 +5,9 @@
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
+NOTE: This page describes the expected content of the Project Proposal document.
+Click xref:proposal/02_contributing.adoc[here] to learn more about how you can contribute to it directly.
+
 
 The Project Proposal is an https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc document^] laying out the proposed project for a new standard / version of a released standard. +
 The Project Proposal template is located in the https://code.asam.net/common/templates/proposal-template[ASAM GitLab^], where you can find more information on its structure and default content.
@@ -49,9 +52,11 @@ The Project Timeline must contain milestones for each <<Project Deliverables,Pro
 * Presentation at TSC
 * Target release date
 
+include::getting-involved:partial$milestone_plan_duration.adoc[]
+
 == Project Deliverables
-The proposal must specify the deliverables it intends to hand over to ASAM at the end of the project.
-Typically, this is a document for the standard plus an optional list of supplemental documents or models that will accompany the main document.
+The proposal must define the deliverables it intends to hand over to ASAM at the end of the project.
+include::compendium:page$ASAM/deliverables.adoc[leveloffset=+1, tag=body]
 
 == Project Structure
 The proposal must specify the expected working groups and their designated leads. +
