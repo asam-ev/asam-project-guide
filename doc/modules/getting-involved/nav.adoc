@@ -1,5 +1,7 @@
 * xref:main.adoc[]
 ** xref:ideation_phase.adoc[]
+*** xref:ideation/enter_new_idea.adoc[]
+*** xref:ideation/developing_an_idea.adoc[]
 ** xref:proposal_phase.adoc[]
 *** xref:proposal/proposal_document.adoc[]
 *** xref:proposal/01_setup.adoc[]

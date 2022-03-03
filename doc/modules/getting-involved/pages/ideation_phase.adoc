@@ -1,4 +1,4 @@
-= Submitting An Idea
+= Ideation Phase
 :description: Describes how to enter a new idea into the ideation process.
 :keywords: ideation, idea
 
@@ -19,7 +19,26 @@ h| Project phase
 |===
 ====
 
-== The Ideation Phase
+== Getting Started Immediately
+
+// [cols="1,2"]
+// |===
+// |**xref:ideation/enter_new_idea.adoc[]**
+// | Start here to learn how you can enter an idea at ASAM.
+
+// |**xref:ideation/developing_an_idea.adoc[]**
+// | Start here if you want to further develop an idea you previously entered.
+// |===
+
+[horizontal]
+xref:ideation/enter_new_idea.adoc[]:: Start here to learn how you can enter an idea at ASAM.
+xref:ideation/developing_an_idea.adoc[]:: Start here if you want to further develop an idea you previously entered.
+
+// TODO: Shortcuts for quick access (getting started immediately)
+// TODO: Separate instructional pages from descriptive pages
+// TODO: Rename page to phase and phase to Process overview
+
+== Process Overview
 
 [horizontal]
 Info page:: https://www.asam.net/active-projects/ideation/how-it-works/[window=_blank]
@@ -37,55 +56,4 @@ Technical experts from all over the globe can post concepts and ideas, receive f
 
 image::compendium:asam/ideation_phase-ideation_phase.svg[title="The ideation phase in detail"]
 
-
-== Entering An Idea
-
-include::compendium:page$ASAM/phase-01_ideation/enter_new_idea.adoc[leveloffset=+1,tags=body]
-
-
-== Developing The Idea
-
-When enough interest is raised (subject to suitable market relevance) but the idea requires more concept work before it can transition to the xref:proposal_phase.adoc[Proposal phase], ASAM will host an <<The Ideation Workshop,Ideation Workshop>> to further develop the topic.
-If required, an ideation project is being set up that will meet regularly.
-
-While the idea is being developed and fleshed out, the Idea Giver must gather enough project participants to be able to transition the idea to the proposal phase.
-
-
-=== The Ideation Workshop
-[cols="1,5", grid = rows]
-|===
-h|Responsible
-|{role-idea-giver}
-h|Involved
-| {role-member}, {role-gtm}
-
-h| Step
-| image:compendium:asam/ideation_phase-ideation_workshop.svg[]
-
-h| TL;DR
-| TODO
-|===
-
-xref:compendium:ASAM/phase-01_ideation/ideation_workshop_gameplan.adoc[]
-
-TODO
-
-=== Ideation Projects
-
-TODO
-
-=== Requirements For Transition To Proposal Phase
-* The idea has been accepted by ASAM
-* A first draft of the proposed idea has been set up ("Basis for Proposal")
-* The minimum number of required participants has been reached or surpassed
-
-[NOTE]
-====
-include::partial$minimum_required_participants_proposal.adoc[]
-====
-
-
-== What Happens Next?
-Once all requirements are met (content and number of participants) and the idea is accepted by ASAM, the project transitions to the xref:getting-involved:proposal_phase.adoc[proposal phase].
-The final goal is to transfer the idea into the regular xref:development_phase.adoc[Standard Development Process].
 
