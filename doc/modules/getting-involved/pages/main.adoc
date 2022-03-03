@@ -23,12 +23,7 @@ However, the labels do not act as prerequisites or requirements.
 If restrictions apply, they are listed separately.
 ====
 
-[IMPORTANT]
-====
-For some activities, an ASAM membership is required.
-You can identify if you need to be a member by checking the listed roles on each page. +
-**If you consider becoming an ASAM member to join a project, see https://www.asam.net/about-asam/join-asam/[join ASAM on the ASAM website^].**
-====
+include::partial$asam_membership.adoc[]
 
 image::compendium:asam/project_lifecycle-v2.svg[alt=The project lifecycle at ASAM, title=The project lifecycle at ASAM]
 
@@ -51,8 +46,8 @@ a| Before developing a standard, the project must first be proposed to and accep
 In this phase, the general scope of the project is specified, companies can enroll for it, and the budget is determined. +
 Click the icon to learn about the Proposal Phase and how to participate in it.
 
-h|xref:participating.adoc[image:compendium:asam/project_lifecycle-standard.svg[]] +
-xref:participating.adoc[Standard Development]
+h|xref:development_phase.adoc[image:compendium:asam/project_lifecycle-standard.svg[]] +
+xref:development_phase.adoc[Standard Development]
 a|If a proposal is accepted, the project enters the development phase.
 This is where the content and specifications of a standard and its (optional) supplemental documents are created, refined, and discussed. +
 Click the icon to learn about how to participate in developing a standard at ASAM.

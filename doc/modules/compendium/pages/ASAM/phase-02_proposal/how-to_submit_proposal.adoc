@@ -7,10 +7,11 @@ include::compendium:partial$_attributes.adoc[]
 //tag::body[]
 [cols="1,5", grid = rows]
 |===
-h|Involved roles
-a| * {role-idea-giver}
-* {role-wg-member}
-* {role-gtm}
+h|Responsible
+| {role-proposal-submitter}
+
+h|Involved
+| {role-wg-member}, {role-gtm}
 
 ifdef::compendium[]
 h| Phase
@@ -20,6 +21,8 @@ endif::[]
 h| Step
 | image:compendium:asam/proposal_phase_v2-proposal_submission.svg[]
 
+h|TL;DR
+a| * TODO
 |===
 
 == Context

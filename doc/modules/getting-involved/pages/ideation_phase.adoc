@@ -1,4 +1,4 @@
-= Submitting An Idea (Standard Or Activity)
+= Submitting An Idea
 :description: Describes how to enter a new idea into the ideation process.
 :keywords: ideation, idea
 
@@ -35,12 +35,12 @@ Standardization requires three components:
 To make sure that these requirements are met, ASAM has launched this https://www.asam.net/active-projects/ideation/how-it-works/[ideation platform^]. +
 Technical experts from all over the globe can post concepts and ideas, receive feedback, and drive new standardization topics.
 
-image::compendium:asam/proposal_phase_v2-ideation_phase.svg[title="The ideation phase in detail"]
+image::compendium:asam/ideation_phase-ideation_phase.svg[title="The ideation phase in detail"]
 
 
 == Entering An Idea
 
-include::compendium:page$ASAM/ideation_phase/enter_new_idea.adoc[leveloffset=+1,tags=body]
+include::compendium:page$ASAM/phase-01_ideation/enter_new_idea.adoc[leveloffset=+1,tags=body]
 
 
 == Developing The Idea
@@ -54,17 +54,19 @@ While the idea is being developed and fleshed out, the Idea Giver must gather en
 === The Ideation Workshop
 [cols="1,5", grid = rows]
 |===
-h|Involved roles
-a| * {role-idea-giver}
-* {role-member}
-* {role-gtm}
+h|Responsible
+|{role-idea-giver}
+h|Involved
+| {role-member}, {role-gtm}
 
 h| Step
-| image:compendium:asam/proposal_phase_v2-ideation_workshop.svg[]
+| image:compendium:asam/ideation_phase-ideation_workshop.svg[]
 
+h| TL;DR
+| TODO
 |===
 
-xref:compendium:ASAM/ideation_phase/ideation_workshop_gameplan.adoc[]
+xref:compendium:ASAM/phase-01_ideation/ideation_workshop_gameplan.adoc[]
 
 TODO
 

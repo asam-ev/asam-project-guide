@@ -8,10 +8,11 @@ include::compendium:partial$_attributes.adoc[]
 
 [cols="1,5", grid = rows]
 |===
-h|Involved roles
-a| * {role-standard-user}
-* {role-member}
-* {role-gtm}
+h|Responsible
+| {role-member} / {role-standard-user}
+
+h|Involved
+| {role-gtm}
 
 ifdef::compendium[]
 h| Phase
@@ -20,6 +21,9 @@ endif::[]
 
 h| Step
 | image:compendium:asam/proposal_phase_v2-proposal_workshop.svg[]
+
+h|TL;DR
+a| * Sign up through the https://www.asam.net/conferences-events/upcoming-events/[ASAM website^]
 
 |===
 

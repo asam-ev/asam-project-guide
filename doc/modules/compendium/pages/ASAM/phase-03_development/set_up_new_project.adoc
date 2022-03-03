@@ -1,4 +1,4 @@
-= How to set up a new project
+= How-To: Set Up A Project
 :description: Describes how to set up a new ASAM standardization project.
 :keywords: how-to, TODO, proposal
 

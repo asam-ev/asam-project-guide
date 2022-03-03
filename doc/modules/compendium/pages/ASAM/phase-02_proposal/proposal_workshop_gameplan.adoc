@@ -4,9 +4,27 @@
 
 include::compendium:partial$_attributes.adoc[]
 
-{role-project-lead}
+[cols="1,5", grid = rows]
+|===
+h|Responsible
+| {role-gtm}
 
-When organizing a proposal workshop, a few things are needed as prerequisites.
+h|Involved
+| {role-idea-giver}, {role-wg-member}
+
+ifdef::compendium[]
+h| Phase
+| xref:getting-involved:proposal_phase.adoc#_the_proposal_phase[image:compendium:asam/project_lifecycle-proposal.svg[]]
+endif::[]
+
+h| Step
+| image:compendium:asam/proposal_phase_v2-organize_proposal_workshop.svg[]
+
+h|TL;DR
+a| * TODO
+|===
+
+When organizing a Proposal Workshop, a few things are needed as prerequisites.
 
 == Roles In The Proposal Process
 
@@ -153,7 +171,7 @@ a| The ASAM moderator starts the following information and estimates with the gr
 
 * the minimum required commitment in days
 * the duration of the project in months
-* the xref:standardization:project-types.adoc[project type]
+* the xref:concepts:project_    types.adoc[project type]
 |===
 
 //end::agenda_example[]

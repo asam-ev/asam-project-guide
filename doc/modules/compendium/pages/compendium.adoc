@@ -24,7 +24,7 @@ include::ROOT:partial$landing_page_referral.adoc[]
 * The xref:role-specific:home.adoc[] part collects typical tasks and important topics by ASAM roles.
 * If you want to learn more about the processes used in ASAM standardization, see xref:standardization:home.adoc[].
 * For instructions, guides and other topics on supported tools, see xref:tooling:overview.adoc[].
-* Topics concerning this Project Guide and how to work on it are gathere in xref:project-guide:home.adoc[].
+* Topics concerning this Project Guide and how to work on it are gathered in xref:project-guide:home.adoc[].
 
 
 

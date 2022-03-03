@@ -6,11 +6,11 @@ include::partial$_attributes.adoc[]
 include::{abb}[]
 
 NOTE: This page describes the expected content of the Project Proposal document.
-Click xref:proposal/02_contributing.adoc[here] to learn more about how you can contribute to it directly.
+Click xref:proposal/02_contributing.adoc[**here**] to learn more about how you can contribute to it directly.
 
 
 The Project Proposal is an https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc document^] laying out the proposed project for a new standard / version of a released standard. +
-The Project Proposal template is located in the https://code.asam.net/common/templates/proposal-template[ASAM GitLab^], where you can find more information on its structure and default content.
+The https://code.asam.net/common/templates/proposal-template[**Project Proposal template**^] is located in the ASAM GitLab, where you can find more information on its structure and default content.
 
 Each proposal must cover the following topics:
 

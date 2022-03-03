@@ -8,8 +8,11 @@ include::compendium:partial$_attributes.adoc[]
 
 [cols="1,5", grid = rows]
 |===
-h|Involved roles
-a| * {role-standard-user} -> {role-idea-giver}
+h|Responsible
+|{role-standard-user} -> {role-idea-giver}
+
+h|Involved
+| {role-gtm}
 
 ifdef::compendium[]
 h| Phase
@@ -17,8 +20,10 @@ h| Phase
 endif::[]
 
 h| Step
-| image:compendium:asam/proposal_phase_v2-ideation_propose.svg[]
+| image:compendium:asam/ideation_phase-ideation_propose.svg[]
 
+h| TL;DR
+a| * TODO
 |===
 
 == Context

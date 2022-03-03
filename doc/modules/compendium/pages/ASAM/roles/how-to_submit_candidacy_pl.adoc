@@ -8,8 +8,11 @@ include::compendium:partial$_attributes.adoc[]
 
 [cols="1,5", grid = rows]
 |===
-h|Involved roles
-a| * {role-wg-member} -> {role-project-lead}
+h|Responsible
+|{role-wg-member} -> {role-project-lead}
+
+h|Involved
+|{role-gtm}
 
 ifdef::compendium[]
 h| Phase
@@ -18,6 +21,9 @@ endif::[]
 
 h| Step
 | TODO
+
+h|TL;DR
+a| * TODO
 
 |===
 

@@ -1,4 +1,4 @@
-= Engaging service providers for projects
+= Engaging Service Providers
 :description: Describes how to engage one or more service providers for a project.
 :keywords: service-provider
 
@@ -12,9 +12,10 @@ h|Involved roles
 a| * {role-project-lead}
 * {role-gtm}
 * {role-member}
+* {role-service-provider}
 
 h| Project phase
-| TODO
+| xref:getting-involved:development_phase.adoc#_the_development_phase[image:compendium:asam/project_lifecycle-standard.svg[]]
 
 |===
 ====

@@ -1,25 +1,8 @@
-= Become a project lead
+= Become Project Lead
 :description: Describes how to become a project lead and where to find more information.
 :keywords: project-lead, TODO
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
-|===
-|Target Role|Eligible|Requirements|Motivation|When|Summary|Tasks
-
-|{role-project-lead}
-|{role-wg-member}
-a|* Commitment to project declared
-* Candidacy submitted
-| To lead the direction of activities of a project.
-| xref:proposal_phase.adoc#_the_proposal_phase[]
-| The project responsible and main content coordinator of a project.
-a| * Coordinating project activities
-* Prioritizing project activities
-* Synchronization with Working Group Leads
-
-|===
-
-Each project lead must fulfill a list of requirements.
-See the xref:compendium:roles/project_lead_training.adoc[] for more information on the training for becoming a project lead.
+include::compendium:page$ASAM/roles/how-to_become_pl.adoc[tag=body]

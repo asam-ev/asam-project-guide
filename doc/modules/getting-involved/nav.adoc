@@ -15,7 +15,7 @@
 *** xref:signing_up/become_project_lead.adoc[]
 *** xref:signing_up/become_workgroup_lead.adoc[]
 *** xref:signing_up/further_roles.adoc[]
-** xref:participating.adoc[]
+** xref:development_phase.adoc[]
 ***
 
 

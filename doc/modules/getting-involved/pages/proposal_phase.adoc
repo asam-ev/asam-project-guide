@@ -1,4 +1,4 @@
-= Participating In A Project Proposal
+= Participating In A Proposal
 :description: Describes the Proposal phase in the ASAM development process for standards.
 :keywords: proposal,phase,standard,process,proposal-workshop
 

@@ -10,7 +10,7 @@ IMPORTANT: If a member intends to commit a work effort of less than 50% of the a
 The member or the office can escalate the issue to the {tsc}.
 
 == Who Can Sign Up
-To participate in a project and shape its content directly, you must be an ASAM member.
+include::partial$asam_membership.adoc[]
 
 
 == When To Sign Up

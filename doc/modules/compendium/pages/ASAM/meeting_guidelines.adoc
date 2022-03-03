@@ -1,10 +1,10 @@
-= Meeting guidelines
+= Meeting Guidelines
 :description: TODO
 :keywords: TODO
 
 include::compendium:partial$_attributes.adoc[]
 
-== Whom to invite?
+== Whom To Invite?
 - While the project is still in the early phase, people will likely be moving around in groups
 - Send the invite to those emails registered for the group; additionally, CC the following:
   - The project lead and the ASAM representative.
@@ -18,7 +18,7 @@ Its location is described in the xref:compendium:tools/teams/teams-channel_file-
 // TODO: find correct link and information supposed to go here.
 // TODO: write the full meaning of "WP"
 
-== Setting up a meeting
+== Setting Up A Meeting
 - If you have a Teams license, you can setup a Teams meeting directly.
 See xref:compendium:tools/teams/meetings_in_teams.adoc[].
 - Otherwise, feel free to use whatever solution you or your company normally use.
