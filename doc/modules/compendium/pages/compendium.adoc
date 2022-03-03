@@ -3,7 +3,6 @@
 :keywords: landing_page,compendium, TODO
 :page-aliases: home.adoc, main.adoc
 :adoc-exclude:
-:compendium:
 
 // Requires input from restructuring discussions for finalization
 

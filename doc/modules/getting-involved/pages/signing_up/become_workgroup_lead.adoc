@@ -1,5 +1,41 @@
-= Become a workgroup lead
+= Become A Workgroup Lead
 :description: Describes how to become a lead of a workgroup and where to find more information.
 :keywords: workgroup-lead, TODO
 
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+|===
+|Target Role|Eligible|Requirements|Motivation|When|Summary|Tasks
+
+|{role-wg-lead}
+|{role-wg-member}
+a|* Commitment to project declared
+| To lead the direction of activities in a specific section of a project.
+| xref:proposal_phase.adoc#_the_proposal_phase[]
+| A coordinator and leader for a working group in a project.
+a| * Coordinating working group activities
+* Prioritizing working group topics
+* Synchronization with Project Lead
+
+|===
+
+== Context
+TODO
+
+== Responsibilities
+The Workgroup Lead is responsible for
+
+*
+
+== Prerequisites
+TODO
+
+== When
+Typically, a Workgroup Lead is selected during the Kickoff Workshop in the xref:development_phase.adoc[Standard Development Phase].
+
+== How
+TODO
+
+== Frequently Asked Questions
 TODO

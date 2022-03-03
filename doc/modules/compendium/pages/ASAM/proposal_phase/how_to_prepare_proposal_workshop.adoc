@@ -1,7 +1,6 @@
 = How-To: Prepare A Proposal Workshop
 :description: Describes how to prepare a Proposal Workshop.
 :keywords: proposal, proposal-workshop
-:compendium:
 
 include::compendium:partial$_attributes.adoc[]
 

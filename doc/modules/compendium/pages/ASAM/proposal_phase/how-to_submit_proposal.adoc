@@ -1,7 +1,8 @@
 = How-To: Submit A Project Proposal
 :description: Describes how to submit a Project Proposal.
 :keywords: proposal
-:compendium:
+
+include::compendium:partial$_attributes.adoc[]
 
 //tag::body[]
 [cols="1,5", grid = rows]

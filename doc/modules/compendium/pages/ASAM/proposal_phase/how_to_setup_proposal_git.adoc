@@ -1,7 +1,6 @@
 = How-To: Project Proposal Setup
 :description: Describes how to set up a new project proposal.
 :keywords: proposal, setup
-:compendium:
 
 include::compendium:partial$_attributes.adoc[]
 

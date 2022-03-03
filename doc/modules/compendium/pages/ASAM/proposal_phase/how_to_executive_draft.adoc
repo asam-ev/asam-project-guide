@@ -1,7 +1,6 @@
 = How-To: Create An Executive Proposal Draft
 :description: How-to for creating a new project proposal as executive draft
 :keywords: proposal, executive-draft, READYFORREVIEW
-:compendium:
 
 include::compendium:partial$_attributes.adoc[]
 

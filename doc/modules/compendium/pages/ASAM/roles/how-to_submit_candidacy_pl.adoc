@@ -1,7 +1,6 @@
 = How-To: Submit Candidacy For Project Lead
 :description: Describes how to submit a candidacy for Project Lead.
 :keywords: proposal, project-lead
-:compendium:
 
 include::compendium:partial$_attributes.adoc[]
 
@@ -32,6 +31,8 @@ Consequently, a project may only move from Proposal phase to Standard Developmen
 In most cases, the Idea Giver is the one elected Project Lead, but this is not a requirement.
 
 
+include::role-specific:partial$role_responsibilities.adoc[tag=project-lead]
+
 == Result
 You have submitted your candidacy for the role of Project Lead.
 
@@ -42,6 +43,12 @@ You have submitted your candidacy for the role of Project Lead.
 
 == How
 TODO
+
+
+== What Happens Next
+The Project Lead is officially decided at the beginning of the project, if the Proposal has been approved by the TSC.
+If there is more than one candidate, the project will then decide on the Project Lead.
+Otherwise, the single candidate is just confirmed formally by the project.
 
 
 See also xref:role-specific:project-lead.adoc[].

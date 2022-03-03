@@ -1,7 +1,6 @@
 = How-To: Join A Proposal Workshop
 :description: Describes how to join a Proposal Workshop.
 :keywords: proposal, proposal-workshop
-:compendium:
 
 include::compendium:partial$_attributes.adoc[]
 
