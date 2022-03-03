@@ -1,4 +1,4 @@
-= Participating In A Proposal
+= Proposal Phase
 :description: Describes the Proposal phase in the ASAM development process for standards.
 :keywords: proposal,phase,standard,process,proposal-workshop
 
@@ -22,7 +22,20 @@ h| Project phase
 |===
 ====
 
-== The Proposal Phase
+== Getting Started Immediately
+
+[horizontal]
+xref:proposal/03_proposal_workshop_preparation.adoc[]:: Start here to learn how you prepare a Proposal Workshop.
+xref:proposal/04_join_proposal_workshop.adoc[]:: Start here to learn how to join a scheduled Proposal Workshop.
+xref:proposal/02_contributing.adoc[]:: Start here to learn how to contribute as a participant of a project Proposal.
+xref:proposal/submit_candidacy.adoc[]:: Start here to learn how you can submit a candidacy for Project Lead.
+xref:proposal/submit_proposal.adoc[]:: Start here to learn what to do in order to submit a project Proposal for review by the __{tsc}__.
+
+// TODO: Shortcuts for quick access (getting started immediately)
+// TODO: Separate instructional pages from descriptive pages
+// TODO: Rename page to phase and phase to Process overview
+
+== Process Overview
 The purpose of the proposal phase is to transfer xref:ideation_phase.adoc[ideas for a standard development project] into an ASAM project proposal and to obtain a decision on it.
 
 In this phase, the idea is further analyzed, central requirements are formulated, the expected effort quantified, and the timeline defined.
