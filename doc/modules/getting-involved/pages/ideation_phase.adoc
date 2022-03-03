@@ -21,15 +21,6 @@ h| Project phase
 
 == Getting Started Immediately
 
-// [cols="1,2"]
-// |===
-// |**xref:ideation/enter_new_idea.adoc[]**
-// | Start here to learn how you can enter an idea at ASAM.
-
-// |**xref:ideation/developing_an_idea.adoc[]**
-// | Start here if you want to further develop an idea you previously entered.
-// |===
-
 [horizontal]
 xref:ideation/enter_new_idea.adoc[]:: Start here to learn how you can enter an idea at ASAM.
 xref:ideation/developing_an_idea.adoc[]:: Start here if you want to further develop an idea you previously entered.

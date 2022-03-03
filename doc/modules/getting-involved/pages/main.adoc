@@ -1,4 +1,4 @@
-= ASAM Lifecycle Guide
+= Guide Through The Project Lifecycle
 :description: Landing page for information on how to get involved in ASAM projects.
 :keywords: landing_page,get-involved
 :lifecylce:
@@ -27,8 +27,19 @@ include::partial$asam_membership.adoc[]
 
 image::compendium:asam/project_lifecycle-v2.svg[alt=The project lifecycle at ASAM, title=The project lifecycle at ASAM]
 
+The ASAM project lifecycle consists of six main phases:
+
+* Ideation
+* Proposal
+* Standard Development
+* Review
+* Release
+* Public
 
 == Content
+The following table contains links to the content of this part.
+An entry in the table corresponds to either a phase of the project lifecycle or a transcendent topic applicable to multiple phases.
+Click the respective link to learn more about each topic.
 
 [cols="^1,5", frame=none, grid=rows]
 |===
