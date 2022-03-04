@@ -1,5 +1,7 @@
 * xref:main.adoc[]
 ** xref:project_types.adoc[]
 ** xref:roles-overview.adoc[]
+** xref:project_phases.adoc[]
 ** xref:doc-as-code.adoc[]
 *** xref:tools-overview.adoc[]
+*** xref:pipeline_details.adoc[]

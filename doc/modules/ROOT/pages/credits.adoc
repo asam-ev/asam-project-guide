@@ -92,6 +92,15 @@ a| image::https://cdn-icons-png.flaticon.com/512/860/860794.png[width=40]
 <a href="https://www.flaticon.com/free-icons/calendar" title="calendar icons">Calendar icons created by Becris - Flaticon</a>
 +++
 
+a| image::https://cdn-icons-png.flaticon.com/512/4229/4229111.png[width=40]
+|+++
+<a href="https://www.flaticon.com/free-icons/concept" title="concept icons">Concept icons created by Freepik - Flaticon</a>
++++
+
+a| image::https://cdn-icons-png.flaticon.com/512/4149/4149677.png[width=40]
+|+++
+<a href="https://www.flaticon.com/free-icons/process" title="process icons">Process icons created by Freepik - Flaticon</a>
++++
 |===
 
 // Template

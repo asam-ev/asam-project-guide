@@ -1,4 +1,4 @@
-= Guide Through The Project Lifecycle
+= ASAM's Project Processes
 :description: Landing page for information on how to get involved in ASAM projects.
 :keywords: landing_page,get-involved
 :lifecylce:
@@ -29,12 +29,12 @@ image::compendium:asam/project_lifecycle-v2.svg[alt=The project lifecycle at ASA
 
 The ASAM project lifecycle consists of six main phases:
 
-* Ideation
-* Proposal
-* Standard Development
-* Review
-* Release
-* Public
+* xref:ideation_phase.adoc[**Ideation**]
+* xref:proposal_phase.adoc[**Proposal**]
+* xref:development_phase.adoc[**Standard Development**]
+* xref:review_phase.adoc[**Review**]
+* xref:release_phase.adoc[**Release**]
+* xref:public_phase.adoc[**Public**]
 
 == Content
 The following table contains links to the content of this part.
@@ -56,6 +56,12 @@ xref:proposal_phase.adoc[Proposal]
 a| Before developing a standard, the project must first be proposed to and accepted by ASAM.
 In this phase, the general scope of the project is specified, companies can enroll for it, and the budget is determined. +
 Click the icon to learn about the Proposal Phase and how to participate in it.
+
+h|xref:signing_up.adoc[image:https://cdn-icons-png.flaticon.com/512/495/495499.png[width=100]] +
+xref:signing_up.adoc[Signing up]
+a|To participate in a Standard Development project, you must first enroll for the project and commit to it.
+Project commitment has to be announced in the Proposal Phase and is specified explicitly in the xref:proposal/proposal_document.adoc#_commitments[Proposal Document]. +
+Click the icon to learn about how to join a project and take over specific roles.
 
 h|xref:development_phase.adoc[image:compendium:asam/project_lifecycle-standard.svg[]] +
 xref:development_phase.adoc[Standard Development]

@@ -2,6 +2,7 @@
 ** xref:ideation_phase.adoc[]
 *** xref:ideation/enter_new_idea.adoc[]
 *** xref:ideation/developing_an_idea.adoc[]
+*** xref:ideation/raising_interest.adoc[]
 ** xref:proposal_phase.adoc[]
 *** xref:proposal/proposal_document.adoc[]
 *** xref:proposal/01_setup.adoc[]
@@ -11,14 +12,13 @@
 *** xref:proposal/submit_candidacy.adoc[]
 *** xref:proposal/need_for_service_providers.adoc[]
 *** xref:proposal/submit_proposal.adoc[]
-** xref:engage_service_provider.adoc[]
 ** xref:signing_up.adoc[]
 *** xref:signing_up/become_workgroup_member.adoc[]
 *** xref:signing_up/become_project_lead.adoc[]
 *** xref:signing_up/become_workgroup_lead.adoc[]
 *** xref:signing_up/further_roles.adoc[]
 ** xref:development_phase.adoc[]
-***
+*** xref:engage_service_provider.adoc[]
 
 
 

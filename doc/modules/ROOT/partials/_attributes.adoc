@@ -9,14 +9,17 @@
 :tools-icon-norole: xref:{tools-xref}[image:{tools-image}[alt= Tools, width={width-small}]]
 
 //getting-started
-:getting-started-image: https://cdn-icons-png.flaticon.com/512/495/495499.png
-:getting-started-xref: getting-started:main.adoc
+// :getting-started-image: https://cdn-icons-png.flaticon.com/512/495/495499.png
+:getting-started-image: https://cdn-icons-png.flaticon.com/512/4229/4229111.png
+:getting-started-xref: concepts:main.adoc
 :getting-started-icon: xref:{getting-started-xref}[image:{getting-started-image}[alt= Introduction, width={width-large}, role=right]]
 :getting-started-icon-norole: xref:{getting-started-xref}[image:{getting-started-image}[alt= Introduction, width={width-small}]]
 
 //getting-involved
-:getting-involved-image: https://cdn-icons-png.flaticon.com/512/3100/3100232.png
-:getting-involved-xref: getting-involved:home.adoc
+// :getting-involved-image: https://cdn-icons-png.flaticon.com/512/3100/3100232.png
+// :getting-involved-image: https://cdn-icons-png.flaticon.com/512/1375/1375136.png
+:getting-involved-image: https://cdn-icons-png.flaticon.com/512/4149/4149677.png
+:getting-involved-xref: getting-involved:main.adoc
 :getting-involved-icon: xref:{getting-involved-xref}[image:{getting-involved-image}[alt= Get involved, width={width-large}, role=right]]
 :getting-involved-icon-norole: xref:{getting-involved-xref}[image:{getting-involved-image}[alt= Get involved, width={width-small}]]
 

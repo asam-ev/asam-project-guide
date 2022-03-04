@@ -18,36 +18,52 @@ image::compendium:asam/project_types.png[title="ASAM project types"]
 __{asam}__ has four defined project types, which further characterize the work to be done within the projects.
 They are:
 
-* <<Standard development project>>
-* <<Implementation project>>
-* <<Concept project>>
-* <<Study project>>
-
-For a more in-depth summary, see xref:standardization:project-types.adoc[].
+* <<Standard Development>>
+* <<Concept>>
+* <<Study>>
+* <<Implementation>>
 
 
 
-== Standard development project
-include::standardization:partial$project_types/project-type-standard.adoc[tag=short]
 
-For more, see xref:standardization:project_types/standard_projects.adoc[Standard development].
+== Standard Development
+include::compendium:partial$project_types/project-type-standard.adoc[tag=short]
 
-== Implementation project
-include::standardization:partial$project_types/project-type-implementation.adoc[tag=short]
+=== New Standard
+include::compendium:partial$project_types/project-type-new-std-dev.adoc[tag=table]
 
-For more, see xref:standardization:project_types/other_projects.adoc#_implementation_project[Implementation project].
+include::compendium:partial$project_types/project-type-new-std-dev.adoc[tag=short]
 
-== Concept project
-include::standardization:partial$project_types/project-type-concept.adoc[tag=short]
+=== Major Version Update
+include::compendium:partial$project_types/project-type-major.adoc[tag=table]
 
-For more, see xref:standardization:project_types/other_projects.adoc#_concept_project[Concept project].
+include::compendium:partial$project_types/project-type-major.adoc[tag=short]
 
-== Study project
-include::standardization:partial$project_types/project-type-study.adoc[tag=short]
+=== Minor Version Update
+include::compendium:partial$project_types/project-type-minor.adoc[tag=table]
 
-For more, see xref:standardization:project_types/other_projects.adoc#_study_project[Study project].
+include::compendium:partial$project_types/project-type-minor.adoc[tag=short]
 
 
-== Related topics
 
-* xref:standardization:project-types.adoc[]
+== Concept
+include::compendium:partial$project_types/project-type-concept.adoc[tag=table]
+
+include::compendium:partial$project_types/project-type-concept.adoc[tag=short]
+
+
+
+== Study
+include::compendium:partial$project_types/project-type-study.adoc[tag=table]
+
+include::compendium:partial$project_types/project-type-study.adoc[tag=short]
+
+
+
+== Implementation
+include::compendium:partial$project_types/project-type-implementation.adoc[tag=table]
+
+include::compendium:partial$project_types/project-type-implementation.adoc[tag=short]
+
+
+

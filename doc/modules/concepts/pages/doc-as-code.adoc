@@ -2,6 +2,10 @@
 :description: Gives an introduction for the concept of documentation-as-code.
 :keywords: concept
 
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
+
 The concept of Documentation as Code (or Doc as Code) refers to using the same tools for documentation as for writing (software) code. +
 Typically, this involves
 
@@ -32,4 +36,12 @@ ASAM uses https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc^] for it
 TODO
 
 == Process Automation
-TODO
+ASAM projects typically automate the following steps:
+
+* Convert AsciiDoc files to html and pdf using https://asciidoctor.org/[Asciidoctor^]
+* https://en.wikipedia.org/wiki/Lint_(software)[Linting^] and testing documents for rules defined in the xref:compendium:writing_guidelines/editorial_guide.adoc[] and returning found errors
+* Publishing results as pipeline artifacts for downloads or distribution
+* Running project-specific scripts for additional features, such as converting uml diagrams to AsciiDoc files
+
+
+For more information on the standard ASAM pipeline, see xref:pipeline_details.adoc[].

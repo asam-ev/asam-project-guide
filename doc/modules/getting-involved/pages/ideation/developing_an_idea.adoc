@@ -2,6 +2,9 @@
 :description: Describes how an idea can be developed at ASAM.
 :keywords: ideation, workshop
 
+include::partial$_attributes.adoc[]
+include::{abb}[]
+
 When enough interest is raised (subject to suitable market relevance) but the idea requires more concept work before it can transition to the xref:proposal_phase.adoc[Proposal phase], ASAM will host an <<The Ideation Workshop,Ideation Workshop>> to further develop the topic.
 If required, an ideation project is being set up that will meet regularly.
 

@@ -22,7 +22,7 @@ If a new standard replaces a deprecated standard, then the new standard cannot h
 [cols="1h,1"]
 |===
 |Purpose
-|
+| Create a new standard.
 
 |Version
 | 1.0.0
