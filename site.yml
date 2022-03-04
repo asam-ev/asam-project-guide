@@ -81,6 +81,7 @@ asciidoc:
   - asciidoctor-kroki
   - '@djencks/asciidoctor-mathjax'
 #   - asciidoctor-diagram
+  - './antora_extensions/tabs-block/extension.js'
 
 # end::asciidoctor[]
 

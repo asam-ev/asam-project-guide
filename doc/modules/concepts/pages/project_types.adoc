@@ -29,21 +29,30 @@ They are:
 == Standard Development
 include::compendium:partial$project_types/project-type-standard.adoc[tag=short]
 
-=== New Standard
+[tabs]
+====
+New Standard::
++
+--
 include::compendium:partial$project_types/project-type-new-std-dev.adoc[tag=table]
 
 include::compendium:partial$project_types/project-type-new-std-dev.adoc[tag=short]
-
-=== Major Version Update
+--
+Major Version Update::
++
+--
 include::compendium:partial$project_types/project-type-major.adoc[tag=table]
 
 include::compendium:partial$project_types/project-type-major.adoc[tag=short]
-
-=== Minor Version Update
+--
+Minor Version Update::
++
+--
 include::compendium:partial$project_types/project-type-minor.adoc[tag=table]
 
 include::compendium:partial$project_types/project-type-minor.adoc[tag=short]
-
+--
+====
 
 
 == Concept
