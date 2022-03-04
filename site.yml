@@ -53,6 +53,8 @@ asciidoc:
     # Configuration for feedback button. The button is defined in the header-content.hbs in ./supplemental_ui/partials
     page-feedbackurl: https://github.com/asam-ev/asam-project-guide/issues/new
     page-feedbacktype: github
+    figure-caption: false
+    table-caption: false
 
 
     # tag::roles[]
