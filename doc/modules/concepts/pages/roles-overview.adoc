@@ -9,6 +9,8 @@ include::role-specific:partial$roles.adoc[tag=summary]
 
 The following table contains a list of all project roles and a short description for them.
 
-include::role-specific:partial$roles.adoc[tag=list_of_roles]
+// include::role-specific:partial$roles.adoc[tag=list_of_roles]
+
+include::role-specific:partial$roles.adoc[tag=tabs]
 
 // related::role[]
