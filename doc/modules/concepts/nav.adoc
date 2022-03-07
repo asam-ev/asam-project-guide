@@ -1,4 +1,5 @@
-* xref:main.adoc[]
+include::../ROOT/partials/_attributes.adoc[]
+* {getting-started-nav-icon}
 ** xref:project_types.adoc[]
 ** xref:roles-overview.adoc[]
 ** xref:project_phases.adoc[]
