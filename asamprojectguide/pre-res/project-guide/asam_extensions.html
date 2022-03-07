@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Custom ASAM Antora/Asciidoctor extensions :: ASAM Project Guide</title>
+    <link rel="prev" href="adding_content/including.html">
+    <link rel="next" href="extensions/pipeline-orphan_pages.html">
+    <meta name="description" content="Lists all custom macros used throughout the Project Guide that require special scripts by ASAM to be processed correctly.">
+    <meta name="keywords" content="macro,extension,antora,asam,custom,project-guide, REVIEWED_OK">
+    <meta name="generator" content="Antora 3.0.0-rc.1">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+<link rel="icon" type="image/png" sizes="32x32" href="../../../_/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../_/img/favicon-16x16.png">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+           –
+          Pre-Restructuring</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
+        <div class="navbar-item is-hoverable">
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/pre-res/project-guide/asam_extensions.html+%7C%0D%0A%7C+Page+%7C+Custom ASAM Antora/Asciidoctor extensions+%7C%0D%0A%7C+Module+%7C+project-guide+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="body">
+<div class="nav-container" data-component="asamprojectguide" data-version="pre-res">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ASAM Project Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../getting-started/main.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/how-asam-works.html">How ASAM works</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/processes-and-workflows-overview.html">Processes and workflows - overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/project-types.html">ASAM project types</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/current-projects.html">Current projects at ASAM</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/roles-overview.html">Roles at ASAM - overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/tools-overview.html">Standard tools - overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/asam-contacts.html">ASAM contacts</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../getting-involved/main.html">How to get involved</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/new-idea.html">How to enter a new idea</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/join_proposal_workshop.html">Join a Proposal workshop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/become_workgroup_member.html">Become a workgroup member</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/become_project_lead.html">Become a project lead</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/become_service_provider.html">Become a service provider</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/review_standard_asam.html">Review a standard (ASAM member review)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/review_standard_public.html">Review a standard (public release candidate)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/initiate_webinar.html">Initiate a webinar</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-involved/join_webinar.html">Join a webinar</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../role-specific/main.html">ASAM roles</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/gtm.html">ASAM global technology manager</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/project-lead.html">Project lead</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/wg-member.html">Workgroup member</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/wg-lead.html">Workgroup lead</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/reviewer.html">Reviewer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/technical-writer.html">Technical writer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/service-provider.html">Service provider</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/standard_manager.html">Standard manager</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-specific/standard_user.html">Standard user</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Other</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../role-specific/terminology.html">Role terminology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../role-specific/tsc.html">Technical Steering Committee Member</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../role-specific/standard_expert-group.html">Standard expert group</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../standardization/main.html">ASAM standardization process</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../standardization/project-types.html">Project types</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../standardization/project_types/standard_projects.html">Standard development projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../standardization/project_types/other_projects.html">Other project types</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../standardization/asam-development-process.html">ASAM development process for standards</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../standardization/project-ideation.html">The Project Ideation phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../standardization/proposal-phase.html">The Proposal phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../standardization/proposal/01_proposal_setup.html">Create the first Proposal Draft</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../standardization/proposal/02_contributing.html">Contributing to a Project Proposal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../standardization/proposal/03_proposal_workshop_preparation.html">Prepare a Proposal workshop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../standardization/proposal/04_join_proposal_workshop.html">Join a Proposal workshop (extended description)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../standardization/development-phase.html">The Development phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../standardization/review-phase.html">The Review phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../standardization/release-phase.html">The Release phase</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../standardization/project-setup.html">Project setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../standardization/creation-of-standards.html">Creation of standards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Working Model (workgroups)</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Issue-driven Workflow</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Reviews and Releases</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../standardization/deliverables.html">ASAM Deliverables</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/main.html">Tools overview</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tooling/working-without-software-installation.html">Working without software installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/gitlab.html">GitLab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/gitlab/gitlab-setup.html">Setting up your ASAM GitLab Account</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/gitlab/gitlab-guides.html">GitLab Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/calendar.html">OpenX Calendar</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/calendar/calendar-setup.html">Setting up the openX Calendar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/teams-and-sharepoint.html">Microsoft Teams and Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/teams_and_sharepoint/teams-and-sharepoint-setup.html">Setting up microsoft teams and sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/teams_and_sharepoint/teams-and-sharepoint-guides.html">Microsoft teams and sharepoint guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/filestage.html">Filestage</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/filestage/filestage_guides.html">Filestage guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/vscode/vscode-setup.html">Setting up Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/vscode/vscode-guides.html">Visual Studio Code guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/git/git-setup.html">Setting up git</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/git/git-guides.html">Git guides</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/git/git_best_practices.html">Git best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/drawio/drawio-setup.html">Setting up draw.io</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/docker/docker-setup.html">Setting up docker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/docker/docker-guides.html">Docker guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/docker/docker-best-practices.html">Docker best practices</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/compendium.html">Compendium</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../compendium/1_keywords.html">Used keywords In ASAM Project Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../compendium/abbreviations.html">Abbreviations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/definitions.html">Definitions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/api.html">Application programming interface</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/application_area_companion.html">Application area companion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/associated_standard.html">Associated standard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/base_standard.html">Base standard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/format_description.html">Format description</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/fragment.html">Fragment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/information_architecture_requirements.html">Requirements of the information architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/protocol_definition.html">Protocol definitions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/set_of_standards.html">Set of standards</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/status_of_document.html">Status of documents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/technology_reference.html">Technology reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/definitions/transport_layer_specification.html">Transport layer specification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/guides.html">Guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/accessing_compiled_artifacts.html">Accessing compiled artifacts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/guides/asciidoc.html">Asciidoc</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/asciidoc/admonitions.html">Admonitions: Notes, tips, etc.</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/asciidoc/code.html">Code and syntax highlighting</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/asciidoc/commenting.html">How to comment and review adoc files</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/asciidoc/formulas.html">How to include formulas in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/asciidoc/graphics.html">Graphics</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/asciidoc/partials.html">Reusing content</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/asciidoc/roadmaps.html">How to create roadmaps in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/asciidoc/tasks.html">Task headings</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/guides/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/git/git_interactions.html">Git interactions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/git/switch_branches.html">How to switch branches</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/git/workflow_tutorial.html">Workflow tutorial for the projects using gitlab</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/git/working_with_issues.html">Working with issues in a repository</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/guides/ideation.html">Ideation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/ideation/ideation_workshop_gameplan.html">Ideation workshop gameplan</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/meeting_guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/platforms_at_asam.html">Platforms used at ASAM</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/guides/proposal_writing.html">Proposal writing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/contribute_in_asciidoc.html">How to contribute to a proposal directly in AsciiDoc files</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/contribute_with_issues.html">How to contribute to a proposal through GitLab issues</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/how_to_enrollment_list.html">How-to add and include the enrollment list</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/how_to_executive_draft.html">How-to create an executive proposal draft</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/how_to_join.html">How to enroll for a project proposal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/how_to_proposal_document.html">How-to create a project proposal document</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/how_to_setup_git.html">Project Proposal setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/proposal_guidelines.html">Proposal writing guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/proposal_writing/proposal_workshop_gameplan.html">Proposal workshop gameplan</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/guides/reviews.html">Reviews</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/reviews/add_custom_feedback_button.html">Add a custom feedback button to an Antora project</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/guides/reviews/add_feedback_button.html">Add a feedback button to an Antora project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/set_up_new_project.html">How to set up a new project</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/guides/standard_workflow.html">ASAM standard workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/implementers-forum.html">Implementers-forum</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/implementers-forum/feedback_guide.html">Feedback guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/implementers-forum/scenario_writers_guide.html">OSC2 Scenario Writing Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/open-source.html">Open-source</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/open-source/asam_dco.html">ASAM developer certification of origin for open source projects</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/roles.html">Roles</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/roles/call_for_offers.html">Call for offers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/roles/project_lead_training.html">Project lead training</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/templates.html">Templates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/templates/cover_page.html">Cover page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/templates/directories.html">Directories</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/templates/project_proposal.html">Template for project proposals (AsciiDoc)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/templates/review_feedback_template.html">Standard review template</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools.html">Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/antora.html">Antora</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/antora/build_antora_locally.html">Build Antora on your local PC</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/docker/docker_for_asciidoc.html">How to use docker for asciidoctor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/docker/run_docker.html">Starting a container from docker desktop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/docker/standard_docker_config.html">Standard docker compose yAML</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/docker/wsl.html">Windows subsystem for linux (WSL)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/filestage.html">Filestage</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/filestage/filestage_review.html">Doing a review on Filestage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/cloning_repo_tutorial.html">Cloning A Repository With Git</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/commit_guidelines.html">Git commit guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/git_actions.html">Git actions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/git_terminology.html">Git terminology</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/maintain_a_repo.html">Maintain A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/merge.html">Merge a branch</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/merge_conflicts.html">Merge conflicts: Preventing And Resolving</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/merge_requests.html">Merge requests</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/review_code.html">Review code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/git/submodules.html">Submodules in git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodule_add.html">Adding A New Submodule To A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodule_changing_remote.html">Changing remote for a submodule</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodule_delete.html">Removing A Submodule From A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodule_pull.html">Pulling A Submodule</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../compendium/tools/git/submodules/submodules_switch_version.html">Switching to a specific submodule version</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/transitioning_to_a_new_workflow.html">Transitioning to the new workflow</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/working_with_git.html">Working with git</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/git/write_a_feature.html">Write A Feature</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/gitlab.html">Gitlab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/archiving_a_project.html">How to archive a project on GitLab</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/asam_issue_and_mr_labels.html">ASAM issue and merge request labels</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/branch_naming_conventions.html">Branch naming conventions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/branching_repo.html">Creating a branch</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/cloning_a_repository.html">Cloning A Repository Using GitLab To Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/commit_guidelines.html">ASAM commit guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/create_branch_from_issue.html">Create development branch from issues</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/forking_repo.html">Forking from repository</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/gitlab-ide_guide.html">GitLab IDE Guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/gitlab_terminology.html">GitLab Terminology</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/review_with_service_desk.html">How to use GitLab service desk for reviews</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/powershell.html">Powershell</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/powershell/cloning_a_repository.html">Cloning A Repository Using Git Bash / Powershell</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/powershell/powershell_basics.html">Microsoft PowerShell Basics</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/sharepoint.html">Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/sharepoint/links.html">Sharepoint link summary</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/sharepoint/synchronizing_sharepoint_with_onedrive.html">Synchronizing sharepoint with oneDrive</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/teams.html">Teams</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/teams/email-notifications.html">Email notifications from microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/teams/meetings_in_teams.html">Meetings in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/teams/obtain_channel_email.html">Obtain the email address of a channel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/teams/polls_and_surveys.html">Polls &amp; Surveys</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/teams/receive_notifications.html">Receiving notifications in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/teams/teams-channel_file-structure.html">Teams channels file structure</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/tools/vscode.html">Vscode</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/adding_diagrams_to_vscode.html">Adding VSCode Support For Diagrams With Kroki</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/cloning_a_repository.html">Cloning A Repository Using Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/recommended_vscode_extensions.html">Recommended Visual Studio Code extensions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/recommended_vscode_settings.html">ASAM recommended Visual Studio Code settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/run_docker.html">Running docker-Compose From VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/vscode_activity-bar.html">Visual Studio Code activity bar</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/vscode_command-palette.html">Visual Studio Code command palette</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/vscode_git-interaction.html">Interacting with git through Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/vscode_install_extension.html">Install extensions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/vscode/vscode_interface.html">Visual Studio Code interface</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/writing_guidelines.html">Writing guidelines</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/asciidoc_guide.html">AsciiDoc Guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/coding_style_guide.html">The openSCENARIO2 coding style guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/documentation_processes.html">Documentation processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/editorial_guide.html">Editorial guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/plantuml_documentation_guide.html">PlantUML documentation guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/writing_guide.html">Writing guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/writing_guidelines/writing_guide_xil.html">writing_guidelines/writing_guide_xil.adoc</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="main.html">Working on the Project Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="structure.html">Structure</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="structure/01_content_structure.html">Project Guide structure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="structure/02_versioning_concept.html">Project Guide versioning concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="structure/03_keywords-list.html">Keyword list</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="add_files.html">Adding files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_files/add-new-module.html">Adding A New Module</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_files/pages-vs-partials.html">Pages VS Partials</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="adding_files/add-a-page.html">Adding A Page</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="adding_files/pages/add-task-page.html">Adding a Task page</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="adding_files/pages/add-tool-page.html">Adding a Tool page</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_files/add-a-partial.html">Adding A Partial</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="changing_content.html">Add/change content</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reviewing/create_issue_on_page.html">Create an issue for a page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reviewing/editing_pages.html">Artifact page name</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Abbreviations</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="adding_content/abbreviations/add-an-abbreviation.html">How to add a new abbreviation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="adding_content/abbreviations/use_abbreviations.html">Using abbreviations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Working with roles</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="adding_content/roles/add-new-role.html">How to add a new role</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="adding_content/roles/use_roles.html">Using roles</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_content/page_redirects.html">Moving, renaming and deleting a page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_content/interactive_diagrams.html">Creating interactive diagrams</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ref-include.html">Referencing/including</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_content/images.html">Using images</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_content/examples.html">Using examples</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_content/attachments.html">Using attachments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="adding_content/including.html">Including pages and partials</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-keyword_overview.html">Pipeline: Keyword page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-sequential_sectnums.html">Pipeline: Sequential numbering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-sequential_figs_tables.html">Pipeline: Sequential figure and table numbers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-iso_style.html">Pipeline: ISO-2145 style section and page numbering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/pipeline-global_anchor_replacement.html">Pipeline: Local to global anchor replacement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/macro-pages.html">Macro: pages</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/macro-reference.html">Macro: reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/macro-related.html">Macro: related</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/macro-role_related.html">Macro: role_related</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="extensions/macro-autonav.html">Macro: autonav</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../credits.html">Credits</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../standardization/issue-resolution.html">Issue resolution process</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Guide</span>
+    <span class="version">Pre-Restructuring</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">Pre-Restructuring</a>
+        </li>
+        <li class="version">
+          <a href="../../index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../asamprojectguide-editing/main.html">Editing the ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../asamprojectguide-editing/main.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">ASAM Project Guide</a></li>
+    <li><a href="main.html">Working on the Project Guide</a></li>
+    <li><a href="asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">Pre-Restructuring</button>
+  <div class="version-menu">
+    <a class="version is-current" href="asam_extensions.html">Pre-Restructuring</a>
+    <a class="version is-missing" href="../../index.html">latest</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/pre-restructuring/content/modules/project-guide/pages/asam_extensions.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Custom ASAM Antora/Asciidoctor extensions</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="asam_extensions.html" class="xref page"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/4354/4354565.png" alt="4354565" width="120"></span></a></p>
+</div>
+<div class="paragraph">
+<p>Antora and Asciidoctor already provide a rich set of features and macros.
+However, not all functions that <em><a href="../compendium/abbreviations.html#_asam" class="xref page">ASAM</a></em> requires for an efficient and partially automated content structuring are present by default.
+For this reason, an Antora extension and an Asciidoctor extension were created.</p>
+</div>
+<div class="paragraph">
+<p>This page collects all the features of this extension, such as the custom macros, and explains what they do and how to use them.
+Each macro also has a detailed instructions page with more details.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+For more information on how to write an Antora extension, see <a href="https://docs.antora.org/antora/latest/extend/extensions/">the official extension guide</a> and check out the relevant <a href="https://gitlab.com/antora/antora/-/tree/main/packages">package repositories</a>, particularly their <code>devdocs</code> folders.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The source repository of the ASAM extensions is <a href="https://code.asam.net/common/asam-antora-extensions" class="bare">https://code.asam.net/common/asam-antora-extensions</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_added_features"><a class="anchor" href="#_added_features"></a>Added features</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The ASAM Antora extension adds the following features to Antora:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Support for the <a href="#_asam_antora_macros">ASAM Antora macros</a></p>
+</li>
+<li>
+<p>Identifying and (optional) listing <a href="#_orphan_pages">Orphan pages</a></p>
+</li>
+<li>
+<p>Creating a <a href="#_keyword_overview_page">Keyword-overview page</a></p>
+</li>
+<li>
+<p>Sequential <a href="#_page_numbering">page and section numbers</a> in Antora</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+All following examples assume the extension is located under "./antora_extensions", where "." is the location of the "site.yml" file (the <a href="https://docs.antora.org/antora/latest/playbook/" target="_blank" rel="noopener">Antora playbook</a>).
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_general_configuration"><a class="anchor" href="#_general_configuration"></a>General configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following table describes general configuration on using the extension:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defines an id by which the extension can be specifically called from the CLI.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">none</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>id: asam-extension</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enabled</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De-/activates this extension by default.
+If deactivated, the extension must be explicitely called from the CLI.
+Only relevant in combination with <code>id</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>enabled: false</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="exampleblock">
+<div class="title">Example 1. General configuration for ASAM Antora extensions in site.yml</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">- id: asam-extensions
+  enabled: false
+  require: './antora_extensions/asam-extension.js'</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pipeline_features"><a class="anchor" href="#_pipeline_features"></a>Pipeline features</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following sections describe features directly applied through the pipeline.</p>
+</div>
+<div class="sect2">
+<h3 id="_orphan_pages"><a class="anchor" href="#_orphan_pages"></a>Orphan pages</h3>
+<div class="paragraph">
+<p>The ASAM Antora extension finds all pages not listed in any nav.adoc and puts a warning in the console output.
+If configured, these pages can also automatically be listed under a separated navigation entry (e.g. "orphans") at the end of the Antora document.</p>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="extensions/pipeline-orphan_pages.html" class="xref page">Pipeline: Orphan pages</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_keyword_overview_page"><a class="anchor" href="#_keyword_overview_page"></a>Keyword-overview page</h3>
+<div class="paragraph">
+<p>The ASAM Antora extension generates an overview page that lists all keywords used in the Antora pages.
+The location and the (virtual) filename can be configured in the site.yml (Antora playbook).</p>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="extensions/pipeline-keyword_overview.html" class="xref page">Pipeline: Keyword page</a>.<br>
+To see the result of the applied pipeline feature, see</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../compendium/1_keywords.html" class="xref page">Used keywords In ASAM Project Guide</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_page_numbering"><a class="anchor" href="#_page_numbering"></a>Page numbering</h3>
+<div class="paragraph">
+<p>By default, Antora does not support sequential page numbering.
+However, standards at ASAM require to have numbered sections and chapters.
+In Antora, these chapters correspond to pages.
+Depending on how the standard is structured, sections may be sections in pages or even be their own pages.</p>
+</div>
+<div class="paragraph">
+<p>To fulfill this requirement, the "Page numbering" extension features were implemented.
+These consist of an Antora part (responsible for the navigation structure and sequential numbering over all files) and an Asciidoctor part (responsible for applying the determined page offset on all level two ("== ") sections on each page).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Due to the similarity in its topics, the Asciidoctor extension is also responsible for <a href="extensions/pipeline-sequential_figs_tables.html" class="xref page">sequential figure and table numbers</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="extensions/pipeline-sequential_sectnums.html" class="xref page">Pipeline: Sequential numbering</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sequential_figure_and_table_numbers"><a class="anchor" href="#_sequential_figure_and_table_numbers"></a>Sequential figure and table numbers</h3>
+<div class="paragraph">
+<p>Since Asciidoctor counts all images and tables only within each page, their caption numbers start at 1 on every new Antora page by default.
+In case of standards, these numbers must be sequential (and unique) within each standard, not each page.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Due to the similarity in its topics, the Asciidoctor extension is also responsible for <a href="extensions/pipeline-sequential_sectnums.html" class="xref page">sequential section numbers and page titles</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="extensions/pipeline-sequential_figs_tables.html" class="xref page">Pipeline: Sequential figure and table numbers</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_iso_2145_style_section_numbers"><a class="anchor" href="#_iso_2145_style_section_numbers"></a>ISO-2145 style section numbers</h3>
+<div class="paragraph">
+<p>By default, section numbers in Asciidoctor have a trailing dot (".").
+To be in line with <a href="https://en.wikipedia.org/wiki/ISO_2145" target="_blank" rel="noopener">ISO 2145</a>, sections in standards have to be numbered without this trailing dot.
+The Antora extension in combination with the 'sectnums_to_iso' extension for Asciidoctor address this problem.</p>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="extensions/pipeline-iso_style.html" class="xref page">Pipeline: ISO-2145 style section and page numbering</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_convert_local_to_global_page_references"><a class="anchor" href="#_convert_local_to_global_page_references"></a>Convert local to global page references</h3>
+<div class="paragraph">
+<p>Using Asciidoctor, it is typical to create one main file and include content from separate files.
+With this approach, each section or chapter can be managed separately while still compiling everything into a single final document.
+However, in Antora these sections or chapters stay separate in most cases since the idea is to be able to access them individually and independently.</p>
+</div>
+<div class="paragraph">
+<p>When working with documents originally intended for a single-file-inclusion strategy, local references that only work if other files are also included will not work for the individual pages in Antora.
+To circumvent this problem, the ASAM Antora extensions analyze all pages and try to find the source file of the reference.
+If the content is included in multiple pages, pages in the navigation structured are prioritized over unlisted pages.</p>
+</div>
+<div class="paragraph">
+<p>Note, however, that this approach has limitations and should only be used if switching to a more Antora-native approach is too difficult!</p>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="extensions/pipeline-global_anchor_replacement.html" class="xref page">Pipeline: Local to global anchor replacement</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_asam_antora_macros"><a class="anchor" href="#_asam_antora_macros"></a>ASAM Antora macros</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+ASAM macros are not supported in partials as they are replaced through Antora rather than Asciidoctor, but partials are included by Asciidoctor at a later stage.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_the_related_macro"><a class="anchor" href="#_the_related_macro"></a>The "related" macro</h3>
+<div class="paragraph">
+<p>Add <code>related::&lt;comma-separated-keywords&gt;[]</code> in an empty line and replace <code>&lt;comma-separated-keywords&gt;</code> with a comma-separated list of keywords you want to reference.
+You can exclude pages with certain other keywords by negating that keyword.
+To negate a keyword, use an exclamationmark (<code>!</code>) in front of it.</p>
+</div>
+<div class="paragraph">
+<p>See: <a href="extensions/macro-related.html" class="xref page">Macro: related</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_reference_macro"><a class="anchor" href="#_the_reference_macro"></a>The "reference" macro</h3>
+<div class="paragraph">
+<p>Add <code>reference::&lt;comma-separated-keywords&gt;[]</code> in an empty line and replace <code>&lt;comma-separated-keywords&gt;</code> with a comma-separated list of keywords you want to reference.
+You can exclude pages with certain other keywords by negating that keyword.
+To negate a keyword, use an exclamationmark (<code>!</code>) in front of it.</p>
+</div>
+<div class="paragraph">
+<p>See: <a href="extensions/macro-reference.html" class="xref page">Macro: reference</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_pages_macro"><a class="anchor" href="#_the_pages_macro"></a>The "pages" macro</h3>
+<div class="paragraph">
+<p>Add <code>page::[&lt;arguments&gt;]</code> in an empty line and replace <code>&lt;arguments&gt;</code> with a list of arguments, separated by "," (comma).
+If you add no arguments, the macro will list all other pages in the same folder as this file.</p>
+</div>
+<div class="paragraph">
+<p>See: <a href="extensions/macro-pages.html" class="xref page">Macro: pages</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_role_related_macro"><a class="anchor" href="#_the_role_related_macro"></a>The "role_related" macro</h3>
+<div class="paragraph">
+<p>Add <code>role_related::&lt;attributes&gt;[&lt;parameters&gt;]</code> in an empty line and replace <code>&lt;attributes&gt;</code> with a list of role labels, separated by "," (comma), and <code>&lt;parameters&gt;</code> with an (optional) list of limiting keywords, separated by "," (comma).</p>
+</div>
+<div class="paragraph">
+<p>See: <a href="extensions/macro-role_related.html" class="xref page">Macro: role_related</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_autonav_macro"><a class="anchor" href="#_the_autonav_macro"></a>The "autonav" macro</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This ONLY works in nav.adoc files, not in regular pages or partials!
+The macro must also always be used as a comment (similarly to the Asciidoctor macro "tag").
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the module has a main page, add <code>//autonav::[]</code> without parameters in an empty line in the relevant nav.adoc file.</p>
+</li>
+<li>
+<p>If the module has no main page, add <code>//autonav::[none]</code> in an empty line in the relevant nav.adoc file.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The macro uses the following rules to determine the main page of a module:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If there is a file named like the module on root level, use this as the main page.</p>
+</li>
+<li>
+<p>Else if there is a file named "index.adoc" on root level, use this as the main page.</p>
+</li>
+<li>
+<p>Else if there is a file named "main.adoc" on root level, use this as the main page.</p>
+</li>
+<li>
+<p>Else use the first page in the alphabetically sorted list.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>See: <a href="extensions/macro-autonav.html" class="xref page">Macro: autonav</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sources"><a class="anchor" href="#_sources"></a>Sources</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The source code can be found in the <a href="https://code.asam.net/common/asam-antora-extensions" target="_blank" rel="noopener">ASAM GitLab repository</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example_the_project_guide_antora_playbook"><a class="anchor" href="#_example_the_project_guide_antora_playbook"></a>Example: The Project Guide Antora playbook</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The application of pipeline extensions can be seen in the Project Guide&#8217;s "site.yml" file.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yml hljs" data-lang="yml">../../../../site.yml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source file in repository: <a href="https://github.com/asam-ev/asam-project-guide/blob/main/site.yml">site.yml on GitHub</a></p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="adding_content/including.html">Including pages and partials</a></span>
+  <span class="next"><a href="extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/vendor/search.js" id="search-script"
+    data-base-path="../../.." data-page-path="/asamprojectguide/pre-res/project-guide/asam_extensions.html"></script>
+<script async src="../../../_/../search-index.js"></script>
+  </body>
+</html>
