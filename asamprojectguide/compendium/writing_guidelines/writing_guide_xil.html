@@ -1095,12 +1095,13 @@
 <ul class="sectlevel2">
 <li><a href="#_consistent_formatting">4.1. Consistent formatting</a></li>
 <li><a href="#_typographic_conventions_for_xil">4.2. Typographic conventions for XiL</a></li>
-<li><a href="#_one_sentence_per_line">4.3. One sentence per line</a></li>
-<li><a href="#_use_paragraphs">4.4. Use paragraphs</a></li>
-<li><a href="#_manual_line_breaks">4.5. Manual line breaks</a></li>
-<li><a href="#_uppercase_and_lowercase">4.6. Uppercase and lowercase</a></li>
-<li><a href="#_tags_aka_anchors">4.7. Tags (aka anchors)</a></li>
-<li><a href="#_indentation">4.8. Indentation</a></li>
+<li><a href="#_punctuation_marks">4.3. Punctuation marks</a></li>
+<li><a href="#_one_sentence_per_line">4.4. One sentence per line</a></li>
+<li><a href="#_use_paragraphs">4.5. Use paragraphs</a></li>
+<li><a href="#_manual_line_breaks">4.6. Manual line breaks</a></li>
+<li><a href="#_uppercase_and_lowercase">4.7. Uppercase and lowercase</a></li>
+<li><a href="#_tags_aka_anchors">4.8. Tags (aka anchors)</a></li>
+<li><a href="#_indentation">4.9. Indentation</a></li>
 </ul>
 </li>
 <li><a href="#_file_handling">5. File handling</a>
@@ -1116,7 +1117,9 @@
 <li><a href="#_lists">6.1. Lists</a></li>
 <li><a href="#_figures">6.2. Figures</a></li>
 <li><a href="#_tables">6.3. Tables</a></li>
-<li><a href="#_special_characters">6.4. Special characters</a></li>
+<li><a href="#_references">6.4. References</a></li>
+<li><a href="#_special_characters">6.5. Special characters</a></li>
+<li><a href="#_control_elements_for_pdf_renderer">6.6. Control elements for PDF-renderer</a></li>
 </ul>
 </li>
 <li><a href="#_source_code">7. Source code</a>
@@ -1138,7 +1141,7 @@
 <i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
-This page is still a DRAFT version (V1.4) and subject to change!
+This page is still a DRAFT version (V1.6) and subject to change!
 </td>
 </tr>
 </table>
@@ -1733,7 +1736,68 @@ Here is how to use them correctly <em>in the floating text</em> for XiL:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_one_sentence_per_line"><a class="anchor" href="#_one_sentence_per_line"></a>4.3. One sentence per line</h3>
+<h3 id="_punctuation_marks"><a class="anchor" href="#_punctuation_marks"></a>4.3. Punctuation marks</h3>
+<div class="paragraph">
+<p>Asciidoc renderers take care of a typographically correct output.
+Therefore it is sufficient to use the following characters for punctuation marks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Quotation marks</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use normal double quotation marks <code>"</code> (ASCII #34, Unicode U+0022).<br>
+The character can be found on the keyboard (Shift-2).</p>
+</li>
+<li>
+<p>Never use single quotation marks.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Apostrophes</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use normal apostrophes <code>'</code> (ASCII #39, Unicode U+0027).<br>
+The character can be found on the keyboard (Shift-&#35;).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Hyphen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the minus sign <code>-</code> (ASCII #45, Unicode U+002D) for hyphen.<br>
+The character can be found on the keyboard (-).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dashes</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the minus sign <code>-</code> (ASCII #45, Unicode U+002D) for dashes.<br>
+The character can be found on the keyboard (-).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Do <em>not</em> use other typographic characters like rounded quotation marks, en-dashes and so on.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_one_sentence_per_line"><a class="anchor" href="#_one_sentence_per_line"></a>4.4. One sentence per line</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1756,7 +1820,7 @@ Here is how to use them correctly <em>in the floating text</em> for XiL:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_use_paragraphs"><a class="anchor" href="#_use_paragraphs"></a>4.4. Use paragraphs</h3>
+<h3 id="_use_paragraphs"><a class="anchor" href="#_use_paragraphs"></a>4.5. Use paragraphs</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1780,7 +1844,7 @@ Here is how to use them correctly <em>in the floating text</em> for XiL:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_manual_line_breaks"><a class="anchor" href="#_manual_line_breaks"></a>4.5. Manual line breaks</h3>
+<h3 id="_manual_line_breaks"><a class="anchor" href="#_manual_line_breaks"></a>4.6. Manual line breaks</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1818,7 +1882,7 @@ Detailed explanations begin in a new line after the main list element.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_uppercase_and_lowercase"><a class="anchor" href="#_uppercase_and_lowercase"></a>4.6. Uppercase and lowercase</h3>
+<h3 id="_uppercase_and_lowercase"><a class="anchor" href="#_uppercase_and_lowercase"></a>4.7. Uppercase and lowercase</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1858,7 +1922,7 @@ Detailed explanations begin in a new line after the main list element.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_tags_aka_anchors"><a class="anchor" href="#_tags_aka_anchors"></a>4.7. Tags (aka anchors)</h3>
+<h3 id="_tags_aka_anchors"><a class="anchor" href="#_tags_aka_anchors"></a>4.8. Tags (aka anchors)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1934,7 +1998,7 @@ For example, add 'pg' for all anchors used in the _P_rogrammers _G_uide.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_indentation"><a class="anchor" href="#_indentation"></a>4.8. Indentation</h3>
+<h3 id="_indentation"><a class="anchor" href="#_indentation"></a>4.9. Indentation</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2791,7 +2855,108 @@ Using cell spans may cause border frame displaying issues. Use sparingly.
 </div>
 </div>
 <div class="sect2">
-<h3 id="_special_characters"><a class="anchor" href="#_special_characters"></a>6.4. Special characters</h3>
+<h3 id="_references"><a class="anchor" href="#_references"></a>6.4. References</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The format of references in the text is fixed and depends on the type of element the reference points to:</p>
+<table id="tab-osc2-writing-guide-types-of-references" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 16. Types of references and their format</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Type</th>
+<th class="tableblock halign-center valign-top">No</th>
+<th class="tableblock halign-center valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Table</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">See <strong>Table-Name</strong><br>
+See following table</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See <strong>Table x</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Figure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">See <strong>Figure-Name</strong><br>
+See follwing figure</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See <strong>Figure x</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chapter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">See Chapter <strong>x.y</strong><br>
+See Chapter <strong>Chapter-Name</strong><br>
+See Section <strong>x.y</strong><br>
+See Section <strong>Chapter-Name</strong><br>
+See <strong>x.y Chapter-Name</strong><br>
+See <strong>x.y</strong></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See <strong>Chapter-Name</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Appendix</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See <strong>Appendix-Name</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bibliography</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See <strong>[x]</strong></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Use <code>xref:&lt;tag&gt;[{&lt;style&gt;}]</code> for references.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>&lt;tag&gt;</code> The destination tag.</p>
+</li>
+<li>
+<p><code>&lt;style&gt;</code> Type-specific style for the reference:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>fig-style</code> Reference to figure</p>
+</li>
+<li>
+<p><code>tab-style</code> Reference to table</p>
+</li>
+<li>
+<p><code>top-style</code> Reference to chapter</p>
+</li>
+<li>
+<p><code>sec-style</code> Reference to other destinations</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Examples</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>See xref:top-an-important-chapter[{top-style}] for details.</code></p>
+</li>
+<li>
+<p><code>See xref:fig-a-nice-figure[{fig-style}] for details.</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_special_characters"><a class="anchor" href="#_special_characters"></a>6.5. Special characters</h3>
 <div class="paragraph">
 <p>Sometimes you may need to display a character that is reserved for adoc-formatting.
 Here is how to do it.</p>
@@ -2819,6 +2984,20 @@ This is especially useful for value-unit-pairs like <code>5{nbsp}m/s</code> (5&#
 <p><strong>Word joiner (&#8288;)</strong><br>
 Use <code>{wj}</code> to glue two words together.
 This is useful to enhance readability, for example when adding footnotes (<code>term{wj}footnote:[text]</code>).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_control_elements_for_pdf_renderer"><a class="anchor" href="#_control_elements_for_pdf_renderer"></a>6.6. Control elements for PDF-renderer</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>A <strong>page break</strong> can be forced using <code>&lt;&lt;&lt;</code>.
+Use sparingly.</p>
+</li>
+<li>
+<p>The <strong>page orientation</strong> can be specified by using the roles <code>[.portrait]</code> and <code>[.landscape]</code>.</p>
 </li>
 </ul>
 </div>
