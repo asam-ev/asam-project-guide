@@ -7,6 +7,12 @@ Depending on how the standard is structured, sections may be sections in pages o
 
 To fulfill this requirement, the "Page numbering" extension features were implemented.
 These consist of an Antora part (responsible for the navigation structure and sequential numbering over all files) and an Asciidoctor part (responsible for applying the determined page offset on all level two ("== ") sections on each page).
+
+[NOTE]
+====
+Due to the similarity in its topics, the Asciidoctor extension is also responsible for xref:project-guide:extensions/pipeline-sequential_figs_tables.adoc[sequential figure and table numbers].
+====
+
 //end::description[]
 
 
@@ -28,11 +34,18 @@ By default, this is set to 1, meaning that every item starting with "\*" or high
 If set to a higher number, page title numbers will only be added from that level onward.
 For example, if it is set to 3, all bullet points "\*" and "\*\*" will be excluded and counting starts with the first element of "\*\*\*".
 `:reset-level-offset:`:: Resets the counter back to the start value.
+`:sectnums!:`:: Deactivate section numbers for the next bullet point.
+`[preface]`:: Disables section and title numbers for the next bullet point in the list and adds the `[preface]` role to the referenced page, if possible.
+Note that this has no immediate effect since `[preface]` is not supported in the document type article that is mandatory for Antora!
+`[appendix]`:: Sets section and title numbers to start with capital letters.
+Page titles get a prefix of `\{appendix-caption} \{appendix-letter}: `, where `\{appendix-caption}` is the chosen Asciidoctor https://docs.asciidoctor.org/asciidoc/latest/sections/appendix/#caption[appendix caption^] (default: "Appendix") and `\{appendix-letter}` the next available letter in the alphabet for the appendix (start value: "A").
+`[bibliography]`:: Disables section and title numbers for the next bullet point in the list and adds the `[bibliography]` role to the referenced page, if possible.
 //end::how[]
 
 //tag::prerequisites[]
 * Only pages with the attribute `sectnums` are considered: set it per page or apply globally/per component
-//end::prerequisites[]
+* All relevant pages are in the navigation tree
+//end::prerequisits[]
 
 //tag::configuration[]
 The following table lists the supported attributes as well as their default values:

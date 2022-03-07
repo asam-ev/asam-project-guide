@@ -13,7 +13,6 @@ content:
       start_path: doc
       edit_url: 'https://github.com/asam-ev/asam-project-guide/blob/{refname}/{path}'
     - url: .
-      # branches: HEAD,baseline_*,open*
       branches: restructuring_*
       tags: open*
       start_path: guide
