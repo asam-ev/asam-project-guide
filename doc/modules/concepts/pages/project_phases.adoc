@@ -1,4 +1,4 @@
-= Project Phase Diagrams
+= Notation In Project Phase Diagrams
 :description: An explanatory page for the project phase diagrams.
 :keywords: diagrams, phase, concept
 
@@ -6,25 +6,15 @@ include::partial$_attributes.adoc[]
 include::{abb}[]
 
 == Introduction
-This Project Guide uses a variation of https://www.omg.org/spec/BPMN/2.0/[BPMN 2.0^] diagrams to describe the ASAM Project Phases in detail.
+This Project Guide uses a variation of https://www.omg.org/spec/BPMN/2.0/[BPMN 2.0^] diagrams to describe the ASAM Project Phases.
 The diagrams contain information on
 
 * the sequence of actions
 * input and output documents
 * initiating (responsible) and receiving (involved) actors in actions
 
-To reduce the size of the diagrams, some changes compared to the original BPMN language were implemented:
-
-* Loop returns may lead to an action directly rather than a loop connection point
-
-== Legend
-<<fig-bpmn-legend>> contains the legend applicable to all BPMN-style diagrams throughout the Project Guide.
-
-[#fig-bpmn-legend]
-image::compendium:asam/asam_phases_legend-legend.svg[title=Legend for BPMN-style diagrams in Project Guide]
-
-
-
+The diagrams in the Project Guide are not simplified for readability.
+They are a formal and complete representation of the respective project phase or step.
 
 == Example
 <<fig-bpmn-example>> shows an example based on the Ideation Phase.
@@ -46,3 +36,14 @@ In the example above, one child page would cover the activity of how to propose 
 NOTE: Disregarding the idea is not depicted explicitly.
 This can happen between most steps and, therefore, is kept out of the "default way" for clarity's sake. +
 The same is true for all BPMN-style diagrams throughout this Guide.
+
+
+== Legend
+To reduce the size of the diagrams, some changes compared to the original BPMN language were implemented:
+
+* Loop returns may lead to an action directly rather than a loop connection point
+
+<<fig-bpmn-legend>> contains the legend applicable to all BPMN-style diagrams throughout the Project Guide.
+
+[#fig-bpmn-legend]
+image::compendium:asam/asam_phases_legend-legend.svg[title=Legend for BPMN-style diagrams in Project Guide]
