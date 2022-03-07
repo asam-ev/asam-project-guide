@@ -911,6 +911,9 @@
         <li class="version is-current is-latest">
           <a href="../../../index.html">Restructuring</a>
         </li>
+        <li class="version">
+          <a href="../../../../index.html">baseline</a>
+        </li>
       </ul>
     </li>
     <li class="component">
@@ -929,7 +932,7 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../../index.html" class="home-link"></a>
+  <a href="../../../../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../../index.html">ASAM Project Guide</a></li>
@@ -939,6 +942,13 @@
     <li><a href="workflow_tutorial.html">Workflow tutorial for the projects using gitlab</a></li>
   </ul>
 </nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">Restructuring</button>
+  <div class="version-menu">
+    <a class="version is-current" href="workflow_tutorial.html">Restructuring</a>
+    <a class="version" href="../../../../compendium/guides/git/workflow_tutorial.html">baseline</a>
+  </div>
+</div>
   <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide/blob/restructuring_concept_development/doc/modules/compendium/pages/guides/git/workflow_tutorial.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
@@ -950,12 +960,12 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="../../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a>
-<a href="../../../role-specific/project-lead.html" class="xref page"><role style="background:#6A5ACD;" >PROJECT LEAD</role></a>
-<a href="../../../role-specific/wg-member.html" class="xref page"><role style="background:#BDB76B;" >WG MEMBER</role></a>
-<a href="../../../role-specific/wg-lead.html" class="xref page"><role style="background:#14BCCD;" >WG LEAD</role></a>
-<a href="../../../role-specific/technical-writer.html" class="xref page"><role style="background:#D8BFD8;" >TECHNICAL WRITER</role></a>
-<a href="../../../role-specific/service-provider.html" class="xref page"><role style="background:#FFDEAD;" >SERVICE PROVIDER</role></a></p>
+<p><a href="../../../role-specific/gtm.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#32CD32;" >GTM</role></a>
+<a href="../../../role-specific/project-lead.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#6A5ACD;" >PROJECT LEAD</role></a>
+<a href="../../../role-specific/wg-member.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#BDB76B;" >WG MEMBER</role></a>
+<a href="../../../role-specific/wg-lead.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#14BCCD;" >WG LEAD</role></a>
+<a href="../../../role-specific/technical-writer.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#D8BFD8;" >TECHNICAL WRITER</role></a>
+<a href="../../../role-specific/service-provider.html" class="xref page"><role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FFDEAD;" >SERVICE PROVIDER</role></a></p>
 </div>
 <div class="paragraph">
 <p>In this tutorial, we will go through the workflow we want to use to create project documents in GitLab.</p>
@@ -987,7 +997,7 @@ For the tools supported by <em><a href="../../abbreviations.html#_asam" class="x
 <h2 id="_create_development_branch"><a class="anchor" href="#_create_development_branch"></a>1. Create development branch</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><label class="mandatory"/></p>
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CA4444;" >MANDATORY</label></p>
 </div>
 <div class="paragraph">
 <p>Each topic must be developed in a separate development branch before it is merged to main when ready.
@@ -1012,7 +1022,7 @@ See <a href="../../tools/gitlab/branch_naming_conventions.html" class="xref page
 <div class="sect2">
 <h3 id="_create_development_branch_from_issue"><a class="anchor" href="#_create_development_branch_from_issue"></a>1.1. Create development branch from issue</h3>
 <div class="paragraph">
-<p><label class="recommended"/></p>
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#E69138;" >RECOMMENDED</label></p>
 </div>
 <div class="paragraph">
 <p>The recommended way of working is by using issues.</p>
@@ -1084,7 +1094,7 @@ Please keep the documentation for the progress short and simple.</p>
 <div class="sect2">
 <h3 id="_create_development_branch_manually"><a class="anchor" href="#_create_development_branch_manually"></a>1.2. Create development branch manually</h3>
 <div class="paragraph">
-<p><label class="optional"/></p>
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#76A5AF;" >OPTIONAL</label></p>
 </div>
 <div class="paragraph">
 <p>Alternatively, you can create your branch manually, either through GitLab or locally (if set up).</p>
@@ -1099,7 +1109,7 @@ Two options are highlighted below.</p>
 <div class="content">
 <img src="../../_images/create-a-branch.png" alt="create a branch">
 </div>
-<div class="title">Create a new branch in <em><a href="../../abbreviations.html#_vscode" class="xref page">VSCode</a></em></div>
+<div class="title">Figure 1. Create a new branch in <em><a href="../../abbreviations.html#_vscode" class="xref page">VSCode</a></em></div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1139,7 +1149,7 @@ You need to push it before it is also on the remote.</p>
 <div class="content">
 <img src="../../_images/workflow_tut_step1.png" alt="img1" width="1100">
 </div>
-<div class="title">select the dropdown menu for new branch</div>
+<div class="title">Figure 2. select the dropdown menu for new branch</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1152,7 +1162,7 @@ You need to push it before it is also on the remote.</p>
 <div class="content">
 <img src="../../_images/workflow_tut_step2.png" alt="img2" width="1100">
 </div>
-<div class="title">create name for new branch</div>
+<div class="title">Figure 3. create name for new branch</div>
 </div>
 </li>
 <li>
@@ -1188,7 +1198,7 @@ You need to push it before it is also on the remote.</p>
 <h2 id="_work_in_your_development_branch"><a class="anchor" href="#_work_in_your_development_branch"></a>2. Work in your development branch</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><label class="mandatory"/></p>
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CA4444;" >MANDATORY</label></p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1212,7 +1222,7 @@ See the guide on <a href="git_interactions.html" class="xref page">Git interacti
 <h2 id="_merge_all_changes_back_to_the_main_branch"><a class="anchor" href="#_merge_all_changes_back_to_the_main_branch"></a>3. Merge all changes back to the main branch</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><label class="mandatory"/></p>
+<p><label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CA4444;" >MANDATORY</label></p>
 </div>
 <div class="paragraph">
 <p>After you are done with your work, create a "merge request" to the <code>main</code> branch.
