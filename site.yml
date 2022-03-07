@@ -6,17 +6,17 @@ site:
 
 content:
   sources:
-    - url: .
+    - url: https://github.com/asam-ev/asam-project-guide-content.git
       # branches: HEAD,baseline_*,open*
-      branches: HEAD, restructuring_*
-      tags: open*
-      start_path: doc
-      edit_url: 'https://github.com/asam-ev/asam-project-guide/blob/{refname}/{path}'
-    - url: .
-      branches: restructuring_*
-      tags: open*
+      branches: main, pre-restructuring
+      tags: open*, v*
+      start_path: content
+      edit_url: 'https://github.com/asam-ev/asam-project-guide-content/blob/{refname}/{path}'
+    - url: https://github.com/asam-ev/asam-project-guide-content.git
+      branches: main
+      tags: v*
       start_path: guide
-      edit_url: 'https://github.com/asam-ev/asam-project-guide/blob/{refname}/{path}'
+      edit_url: 'https://github.com/asam-ev/asam-project-guide-content/blob/{refname}/{path}'
 
 ui:
   bundle:
