@@ -1,6 +1,6 @@
 = Contributing to a Project Proposal
 :description: Summarizes steps for contributing to a project proposal
-:keywords: proposal
+:keywords: proposal,READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 

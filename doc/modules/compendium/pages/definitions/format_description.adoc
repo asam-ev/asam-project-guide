@@ -1,6 +1,6 @@
 = Format description
 :description: Definition of a format description.
-:keywords: definition,content-characterization,base-standard
+:keywords: definition,content-characterization,base-standard, READYFORREVIEW
 
 
 include::compendium:partial$_attributes.adoc[]

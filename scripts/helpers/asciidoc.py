@@ -645,7 +645,7 @@ class AsciiDocContent:
         sorted_linked_files = sorted(linked_files, key=lambda d: d['module'])
         return content_list,sorted_linked_files
 
-    def create_linking_concept(self, output_filename = "link-concept", output_path = "../doc/modules/project-guide/examples/"):
+    def create_linking_concept(self, output_filename = C.LINK_CONCEPT_FILENAME, output_path = C.LINK_CONCEPT_PATH):
         all_files = []
         linked_files = []
         unlinked_files = []
@@ -721,10 +721,11 @@ class AsciiDocContent:
             file.write(output_graph_full)
 
 
-    def write_attributes_to_file(self,output_filename = "used-keywords", output_path = "../doc/modules/project-guide/pages/"):
+    def write_attributes_to_file(self,output_filename = C.USED_KEYWORDS_FILENAME, output_path = C.USED_KEYWORDS_PATH):
         content = ["= Used keywords In ASAM Project Guide"]
         content.append(":description: Automatically generated overview over all keywords used throughout this Project Guide.")
         content.append(":keywords: generated,keywords,link-concept,structure")
+        content.append(":page-partial:")
         content.append("")
         content.append("This page is an automatically generated list of all keywords used throught this Project Guide.")
         content.append("Every keyword has its own subsection and contains a link to each page as well as the original filename, path and module in the repository.")

@@ -1,6 +1,6 @@
 = Working with git
 :description: Describes the standard way of working with git.
-:keywords: git,worklfow
+:keywords: git,worklfow,TODO
 
 include::compendium:partial$_attributes.adoc[]
 

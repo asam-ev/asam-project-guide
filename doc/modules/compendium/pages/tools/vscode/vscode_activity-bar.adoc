@@ -1,6 +1,6 @@
 = Visual Studio Code activity bar
 :description: Describes the VSCode activity bar
-:keywords: ui,activity-bar,vscode
+:keywords: ui,activity-bar,vscode, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

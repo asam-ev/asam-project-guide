@@ -1,6 +1,6 @@
 = Status of documents
 :description: Describes what the status of a standardization document is.
-:keywords: definition
+:keywords: definition, READYFORREVIEW
 
 
 include::compendium:partial$_attributes.adoc[]

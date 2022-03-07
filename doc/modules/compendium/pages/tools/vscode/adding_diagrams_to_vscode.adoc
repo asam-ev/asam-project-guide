@@ -1,6 +1,6 @@
 = Adding VSCode Support For Diagrams With Kroki
 :description: Describes how to add support for diagrams with kroki in VSCode.
-:keywords: vscode,kroki,diagrams
+:keywords: vscode,kroki,diagrams, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 
@@ -40,7 +40,7 @@ To do this:
 NOTE: Access to this global setting is only available if you have currently are in an AsciiDoc file in __{vscode}__.
 Otherwise, the setting will not show up.
 
-.Opening asciidoc preview security settings
+.Opening AsciiDoc preview security settings
 image::plantuml_1.png[]
 
 .Allowing insecure content

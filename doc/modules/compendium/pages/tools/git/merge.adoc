@@ -1,6 +1,6 @@
 = Merge a branch
 :description: Describes what a merge is and how to best merge content with git.
-:keywords: git,gitlab,merge,rebase,squash,fetch
+:keywords: git,gitlab,merge,rebase,squash,fetch, TODO
 
 include::compendium:partial$_attributes.adoc[]
 

@@ -9,6 +9,8 @@
 ** xref:teams-and-sharepoint.adoc[]
 *** xref:teams_and_sharepoint/teams-and-sharepoint-setup.adoc[]
 *** xref:teams_and_sharepoint/teams-and-sharepoint-guides.adoc[]
+** xref:filestage.adoc[]
+*** xref:filestage/filestage_guides.adoc[]
 ** xref:vscode.adoc[]
 *** xref:vscode/vscode-setup.adoc[]
 *** xref:vscode/vscode-guides.adoc[]

@@ -1,47 +1,14 @@
 = Project types
 :description: Summary of all project types at ASAM.
-:keywords: project-types,standardization
+:keywords: project-types,standardization,READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
 __{asam}__ distinguishes between two types of development:
 
-* <<Standard development>>
-* <<Other project types>>
+* xref:project_types/standard_projects.adoc[]
+* xref:project_types/other_projects.adoc[]
 
 .Project types
 image::project_types.png[]
-
-== Standard development
-
-=== New standard
-
-include::partial$project_types/project-type-new-std-dev.adoc[tag=long]
-
-=== Major version development
-
-include::partial$project_types/project-type-major.adoc[tag=long]
-
-=== Minor version development
-
-include::partial$project_types/project-type-minor.adoc[tag=long]
-
-=== Revision version development
-
-include::partial$project_types/project-type-revision.adoc[tag=long]
-
-
-== Other project types
-
-=== Concept project
-
-include::partial$project_types/project-type-concept.adoc[tag=long]
-
-=== Implementation project
-
-include::partial$project_types/project-type-implementation.adoc[tag=long]
-
-==== Study project
-
-include::partial$project_types/project-type-study.adoc[tag=long]

@@ -29,18 +29,18 @@ def main(argv):
 
 
     if do_test:
-        asam_macro_replacement()
-        nav_adoc_creation()
-        cleanup()
+        # asam_macro_replacement()
+        # nav_adoc_creation()
+        # cleanup()
         exit(0)
 
     if do_start:
-        asam_macro_replacement()
-        nav_adoc_creation()
+        # asam_macro_replacement()
+        # nav_adoc_creation()
         run_docker_compose()
 
     if do_finish:
-        cleanup()
+        # cleanup()
         open_project_guide()
         print("BUILD DONE")
 

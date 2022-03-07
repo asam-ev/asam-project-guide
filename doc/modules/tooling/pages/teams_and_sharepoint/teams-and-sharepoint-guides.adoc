@@ -1,6 +1,6 @@
 = Microsoft teams and sharepoint guide
 :description:
-:keywords: teams,sharepoint,guide
+:keywords: teams,sharepoint,guide,READYFORREVIEW
 :offset_value: leveloffset=+2
 
 include::partial$_attributes.adoc[]
@@ -9,9 +9,9 @@ include::{abb}[]
 {sharepoint-icon}
 {teams-icon}
 
-TODO: write description
+This page contains guides and best-practices for <<Microsoft Teams>> and <<Sharepoint>>.
 
-== Microsoft teams
+== Microsoft Teams
 include::compendium:page$tools/teams/teams-channel_file-structure.adoc[{offset_value}]
 
 include::compendium:page$tools/teams/receive_notifications.adoc[{offset_value}]

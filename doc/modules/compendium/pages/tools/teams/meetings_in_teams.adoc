@@ -1,6 +1,6 @@
 = Meetings in microsoft teams
 :description: Plan and participate in meetings directly through MS Teams
-:keywords: artifact,teams,meetings
+:keywords: artifact,teams,meetings, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

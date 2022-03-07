@@ -1,20 +1,11 @@
 
 //tag::short[]
-Concept projects have the purpose to prepare the further development of existing ASAM standards or to prepare the development of new ASAM standards.
-The goals of concept projects are to propose specific content for ASAM standards and/or to provide justification for the usefulness, practicability and feasibility of the proposed content.
-For this purpose, a concept project can include:
-
-* a feasibility study
-* a requirements evaluation
-* a technology survey
-* the development of a prototype
-* performance benchmarks.
+[horizontal]
+Description:: Concept projects have the purpose to prepare the further development of existing ASAM standards or to prepare the development of new ASAM standards.
+They are typically chosen when the envisioned standard is complex and requires significant resources to even develop a sound and solid project proposal.
+Goal:: The goals of concept projects are to propose specific content for ASAM standards and/or to provide justification for the usefulness, practicability, and feasibility of the proposed content.
 
 //end::short[]
-
-Concept projects are typically chosen, when a standard development project shall lead the market (not follow the market) and hence create new interfaces or methodologies that do not yet exist. Concept projects are also the right choice, when the content of the envisioned standard is complex and requires significant resources to even develop a sound and solid project proposal.
-
-The minimum deliverable of a concept project is a concept paper. __{asam}__ supports concept projects with funds of up to 75% of the total required project budget.
 
 //tag::long[]
 Concept projects have the purpose to prepare the further development of existing ASAM standards or to prepare the development of new ASAM standards.
@@ -36,7 +27,7 @@ The minimum deliverable of a concept project must be a concept paper.
 The paper shall include the findings of the project group and proposals for ASAM standards.
 Proposals for ASAM standards shall be as specific as possible.
 Ideally, the concept project documents their proposals in a copy & past ready format, as it could be taken over into the respective ASAM standard.
-Upon request, __{asam}__ provides funding for concept projects up to 75% of the total required project budget.Concept projects are carried out via the standard development process.
+Upon request, ASAM provides funding for concept projects up to 75% of the total required project budget.Concept projects are carried out via the standard development process.
 The following process steps are not mandatory and are skipped by default, unless otherwise decided by the __{tsc}__ or the project group:
 
 * P1: Proposal Workshop

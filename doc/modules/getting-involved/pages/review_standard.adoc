@@ -1,8 +1,0 @@
-= Review a standard
-:description: Describes how to review a standard.
-:keywords: review
-
-include::partial$_attributes.adoc[]
-include::{abb}[]
-
-{role-reviewer}

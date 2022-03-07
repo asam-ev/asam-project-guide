@@ -1,23 +1,22 @@
 site:
   title: ASAM Project Guide
   # the 404 page and sitemap files only get generated when the url property is set
-  # TODO: This has to be changed to the actual hosting
   url: https://asam-ev.github.io/asam-project-guide/
-  start_page: asamprojectguide::index.adoc
+  start_page: master@asamprojectguide::index.adoc
+
 content:
   sources:
     - url: .
-      branches: HEAD
+      # branches: HEAD,baseline_*,open*
+      branches: HEAD, restructuring_*
       tags: open*
       start_path: doc
       edit_url: 'https://github.com/asam-ev/asam-project-guide/blob/{refname}/{path}'
-
-
-# ui:
-#   bundle:
-#     url: ./antora_ui_bundle/bundled/ui-bundle.zip
-#     snapshot: true
-#   supplemental_files: /usr/local/share/.config/yarn/global/node_modules/antora-lunr/supplemental_ui
+    - url: .
+      branches: restructuring_*
+      tags: open*
+      start_path: guide
+      edit_url: 'https://github.com/asam-ev/asam-project-guide/blob/{refname}/{path}'
 
 ui:
   bundle:
@@ -33,6 +32,7 @@ output:
 runtime:
   fetch: true
 
+# tag::asciidoctor[]
 asciidoc:
   attributes:
     page-pagination: true
@@ -46,10 +46,15 @@ asciidoc:
     allow-uri-read: true
     # use SVG unless otherwise specified
     kroki-default-format: svg
-    # Make SVG inline so that we can get interactive (can be overridden by schema with "opts=none")
+    # Make SVG inline so that we can get interactive actions (can be overridden by schema with "opts=none")
     kroki-default-options: interactive
+    credits: 'xref:ROOT:credits.adoc[]'
+    # Configuration for feedback button. The button is defined in the header-content.hbs in ./supplemental_ui/partials
+    page-feedbackurl: https://github.com/asam-ev/asam-project-guide/issues/new
+    page-feedbacktype: github
 
 
+    # tag::roles[]
     ## Defined role attributes
     role-reviewer: 'xref:role-specific:reviewer.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FA8072;" >REVIEWER</role>]'
     role-wg-member: 'xref:role-specific:wg-member.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#BDB76B;" >WG MEMBER</role>]'
@@ -60,6 +65,7 @@ asciidoc:
     role-service-provider: 'xref:role-specific:service-provider.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#FFDEAD;" >SERVICE PROVIDER</role>]'
     role-standard-user: 'xref:role-specific:standard_user.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CD853F;" >STANDARD USER</role>]'
     role-standard-manager: 'xref:role-specific:standard_manager.adoc[<role style="color:black;font-weight: bold;width:500px;height:100px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#DEB887;" >STANDARD MANAGER</role>]'
+    # end::roles[]
 
     ## Labels
     mandatory: '<label style="color:black;font-weight: bold;width:140px;height:40px;border-radius: 25px;margin:10px 2px;padding:5px 15px;border:2px solid #000;background:#CA4444;" >MANDATORY</label>'
@@ -71,6 +77,18 @@ asciidoc:
   - '@djencks/asciidoctor-mathjax'
 #   - asciidoctor-diagram
 
+# end::asciidoctor[]
+
+
+# tag::antora[]
 antora:
   extensions:
     - require: '@antora/antora-lunr-extension'
+    - require: './antora_extensions/asam-extension.js'
+      keywords:
+        filename: "1_keywords.adoc"
+        module: "compendium"
+        createOverview: true
+      add_to_navigation: true
+      unlisted_pages_heading: Orphans
+  # end::antora[]

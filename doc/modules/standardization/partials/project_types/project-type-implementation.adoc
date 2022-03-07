@@ -1,17 +1,10 @@
 
 //tag::short[]
-An implementation project has the purpose to create a supplementary product that supports the implementation or application of an ASAM standard in the industry.
-The result of an implementation project can be a tool or source code.
-Examples for tools are checkers for file formats and __{api}__s, add-ons or plug-ins for de-facto standard IDEs (e.g. MATLAB, Simulink, Eclipse, etc.), importers, exporters or reference implementations.
-Source code is typically an implementation of the standard and can be used as a reference for sofware development or is directly used as compilable software components in COTS products.
-Source code shall ensure a high degree of standard-compliance and significantly reduce software development efforts at ASAM tool vendor companies, where otherwise each of the them would have to develop the software by themselves.
+[horizontal]
+Description:: An implementation project has the purpose to create a supplementary product to a standard that supports the implementation or application of an ASAM standard in the industry.
+Goal:: The result of an implementation project can be a tool or source code, such as checkers for file formats and __{api}__s, add-ons or plug-ins for commonly used __{ide}__s, importers, exporters or reference implementations.
+NOTE: Promoting specific commercial tools shall be avoided.
 
-
-
-Deliverables of an implementation project have product-quality.
-They are professionally developed by a contractor in accordance with customary industry quality guidelines.
-A project group must always exist to define requirements for the product and review the results of the contractor's work.
-Funding for implementation projects can be up to 100% of the project's required budget.
 //end::short[]
 
 //tag::long[]
@@ -50,7 +43,7 @@ For example, schemata definition files shall be commented.
 
 Further rules and guidelines for this project type are set forth in the document "GuidelinesForASAMCheckerTools".
 
-Upon request, __{asam}__ provides funding up to 100% of the project's required budget.
+Upon request, ASAM provides funding up to 100% of the project's required budget.
 
 Excluded are expenses for meeting participation and travel.
 
@@ -62,7 +55,7 @@ The following process steps are not mandatory and are skipped by default, unless
 * C: Review Phase
 
 When members propose the further development of a standard, for which an ASAM product exists, members must also propose the further development of this product, unless the pro-posed changes of the standard have no impact on the product.
-If the ASAM product shall not be further developed, then __{asam}__ shall publicly announce that the development of the product is discontinued.
+If the ASAM product shall not be further developed, then ASAM shall publicly announce that the development of the product is discontinued.
 
 ASAM products shall not compete with a member company's product business(non-competition clause).
 

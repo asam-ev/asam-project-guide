@@ -1,5 +1,7 @@
 * xref:home.adoc[]
 ** xref:project-types.adoc[]
+*** xref:project_types/standard_projects.adoc[]
+*** xref:project_types/other_projects.adoc[]
 ** xref:asam-development-process.adoc[]
 *** xref:project-ideation.adoc[]
 *** xref:proposal-phase.adoc[]
@@ -12,8 +14,8 @@
 *** xref:release-phase.adoc[]
 ** xref:project-setup.adoc[]
 ** xref:creation-of-standards.adoc[]
-** xref:issue-resolution.adoc[]
+// ** xref:issue-resolution.adoc[]
 ** Working Model (workgroups)
 ** Issue-driven Workflow
 ** Reviews and Releases
-** ASAM Deliverables
+** xref:deliverables.adoc[]

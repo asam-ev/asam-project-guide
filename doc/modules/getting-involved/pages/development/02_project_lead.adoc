@@ -1,9 +1,0 @@
-= Become a project lead
-:description: Describes how to become a project lead and where to find more information.
-:keywords: project-lead
-
-include::partial$_attributes.adoc[]
-include::{abb}[]
-
-{role-project-lead}
-

@@ -1,6 +1,6 @@
 = Teams channels file structure
 :description: Describes the standard teams channel structure at ASAM.
-:keywords: teams,channel,file-structure
+:keywords: teams,channel,file-structure, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 

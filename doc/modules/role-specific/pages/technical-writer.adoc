@@ -1,6 +1,6 @@
 = Technical writer
 :description: Summary and landing page for technical writers.
-:keywords: role, role-landing-page
+:keywords: role, role-landing-page, TODO
 
 include::partial$_attributes.adoc[]
 
@@ -10,7 +10,17 @@ include::partial$_attributes.adoc[]
 Label:: {role-technical-writer}
 
 
-TODO: Add description and summary.
+== Description
+* TODO
+
+== Requirements
+* TODO
+
+== Responsibilities
+* TODO
+
+== Instructional pages for this role
+TODO
 
 
 

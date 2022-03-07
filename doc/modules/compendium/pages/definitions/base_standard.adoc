@@ -1,7 +1,6 @@
 = Base standard
 :description: Definition of a base standard.
-:keywords: definition,classification,base-standard
-
+:keywords: definition,classification,base-standard, READYFORREVIEW
 
 include::compendium:partial$_attributes.adoc[]
 
@@ -12,7 +11,7 @@ Typically, a base standard is
 
 * A xref:compendium:definitions/format_description.adoc[] (data structure) **or**
 * A xref:compendium:definitions/protocol_definition.adoc[] **or**
-* An xref:compendium:definitions/api.adoc[]
+* An {api}
 
 and has the following properties:
 

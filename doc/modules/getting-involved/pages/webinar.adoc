@@ -1,8 +1,0 @@
-= Join a webinar
-:description: Describes how to join an ASAM webinar.
-:keywords: webinar
-
-include::partial$_attributes.adoc[]
-include::{abb}[]
-
-Current webinars are listed on the https://www.asam.net/conferences-events/upcoming-events/[ASAM website^].

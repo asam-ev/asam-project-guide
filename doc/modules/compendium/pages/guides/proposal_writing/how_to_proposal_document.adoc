@@ -1,6 +1,6 @@
 = How-to create a project proposal document
 :description: How-to for creating a new project proposal from an executive draft
-:keywords: proposal, document
+:keywords: proposal, document, TODO
 :proposal-workshop: xref:standardization:proposal-phase.adoc#_p1_proposal_workshop[Proposal Workshop]
 
 include::compendium:partial$_attributes.adoc[]

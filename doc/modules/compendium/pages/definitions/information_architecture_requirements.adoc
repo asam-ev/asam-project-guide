@@ -1,6 +1,6 @@
 = Requirements of the information architecture
 :description: Summarizes the requirements (agreed and in discussion) regarding the information architecture
-:keywords: requirements,information-architecture,writing_guide
+:keywords: requirements,information-architecture,writing_guide,TODO
 
 include::compendium:partial$_attributes.adoc[]
 

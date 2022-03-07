@@ -1,6 +1,6 @@
 = How to get involved
 :description: Landing page for information on how to get involved in ASAM projects.
-:keywords: landing_page,get-involved
+:keywords: landing_page,get-involved, TODO
 :page-aliases: home.adoc
 
 include::partial$_attributes.adoc[]
@@ -11,15 +11,24 @@ include::ROOT:partial$_attributes.adoc[]
 
 include::partial$module-description.adoc[]
 
+You want to **propose an idea**, **join a proposal** or **develop a new standard** at __{asam}__?
+The pages in this module got you covered.
+Alternatively, you may also https://www.asam.net/contact/[contact the ASAM office^] directly.
+
+Some of the following pages are mainly intended for particular xref:getting-started:roles-overview.adoc[roles at ASAM].
+These pages have the relevant role labels at the top.
+However, the labels do not act as prerequisits or requirements.
+If restrictions apply, they are listed separately.
+
 [IMPORTANT]
 ====
-**If you are not an __{asam}__ member yet, see https://www.asam.net/about-asam/join-asam/[join ASAM on the ASAM website^].**
+For some activities, an ASAM membership is required. +
+**If you consider becoming an ASAM member to join a project, see https://www.asam.net/about-asam/join-asam/[join ASAM on the ASAM website^].**
 ====
 
-You want to **propose an idea**, **join a proposal** or **define a new standard** at __{asam}__?
-The pages in this module got you covered.
-Alternatively, you can also https://www.asam.net/contact/[contact the ASAM office^] directly.
-
 == Content
+
+// idea: Add image that guides through the process with a timeline
+// TODO: Wait on feedback from restructuring
 
 include::../nav.adoc[lines=2..-1]

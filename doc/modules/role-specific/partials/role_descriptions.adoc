@@ -1,5 +1,11 @@
 
-:gtm-description: A GTM is an ASAM employee focussed on coordinating project processes and the background work behind a project.
+:gtm-short-name-replacement: {gtm}
+
+ifdef::is_abbreviations[]
+:gtm-short-name-replacement: GTM
+endif::[]
+
+:gtm-description: A {gtm-short-name-replacement} (Global Technology Manager) is an ASAM employee focussed on coordinating project processes and the background work behind a project.
 
 :project-member-description: An xref:role-specific:standard_user.adoc[ASAM User] that is involved directly in the development of an ASAM standard. \
 Every project needs project members from at least three (3) different companies. \
@@ -21,7 +27,7 @@ If the project needs additional resources, a service provider can be hired, whic
 :technical-writer-description: Formats and writes the document(s) of the standard based on the provided input from the xref:role-specific:wg-member.adoc[WG members] in a formalized and standard-conform way. \
 If the project requires a technical writer, either the ASAM technical writer will fill this role or a xref:role-specific:service-provider.adoc[service provider] can be hired to fill that role.
 
-:standard-user-description: An ASAM Standard user is someone that is part of the __{asam}__ community but not involved in the project development at hand.
+:standard-user-description: An ASAM Standard user is someone that is part of the ASAM community but not involved in the project development at hand.
 
 :standard-manager-description: The manager at ASAM responsible for the standard.
 

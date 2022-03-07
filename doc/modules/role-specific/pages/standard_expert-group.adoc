@@ -1,7 +1,8 @@
 = Standard expert group
 :description: Describes a standard expert group (member) from ASAM project view.
-:keywords: role
+:keywords: role, READYFORREVIEW
 :page-partial:
+:draft:
 
 //tag::default[]
 include::partial$_attributes.adoc[]
@@ -9,6 +10,16 @@ include::partial$_attributes.adoc[]
 // {role-standard-expert-group}
 //end::default[]
 
+== Description
+* TODO
+
+== Requirements
+* TODO
+
+== Responsibilities
+* TODO
+
+ifndef::draft[]
 == Issue resolution
 //tag::issue_resolution[]
 
@@ -39,3 +50,4 @@ The Standard Expert Group shall consist of at least three members.
 If the number of mem-bers drops below this limit, then the Standard Manager reports this to the __{tsc}__.
 The __{tsc}__ decides upon next steps.
 //end::issue_resolution[]
+endif::[]

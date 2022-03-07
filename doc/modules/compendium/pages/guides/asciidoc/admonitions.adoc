@@ -1,7 +1,6 @@
-[[top-admonitions]]
 = How to highlight topics with admonitions ASAM documents
 :description: How-To for using admonitions in ASAM documents (standards).
-:keywords: asciidoc,admonitions,note,tip,warning,important,how-to
+:keywords: asciidoc,admonitions,note,tip,warning,important,how-to, READYFORREVIEW
 :reftext: Admonitions: Notes, tips, etc.
 
 You might want to draw attention to certain statements by creating notes or tips - so-called https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#admonitions[admonitions^].

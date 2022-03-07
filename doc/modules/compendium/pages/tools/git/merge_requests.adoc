@@ -1,6 +1,6 @@
 = Merge requests
 :description: Summarizes how merge requests work and how to best approach them.
-:keywords: git,gitlab,merge,merge-request,review
+:keywords: git,gitlab,merge,merge-request,review,TODO
 
 include::compendium:partial$_attributes.adoc[]
 

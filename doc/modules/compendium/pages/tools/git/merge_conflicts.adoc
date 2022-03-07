@@ -1,6 +1,6 @@
 = Merge conflicts: Preventing And Resolving
 :description: Describes how merge conflicts can be resolved with git and how to avoid them ahead of time.
-:keywords: git,gitlab,merge,conflict
+:keywords: git,gitlab,merge,conflict, TODO
 
 include::compendium:partial$_attributes.adoc[]
 

@@ -1,7 +1,7 @@
 [[top-roadmap]]
 = How to create roadmaps in ASAM documents
 :description: How-To for creating roadmaps in ASAM documents (standards).
-:keywords: asciidoc,roadmap,how-to
+:keywords: asciidoc,roadmap,how-to, READYFORREVIEW
 
 
 include::compendium:partial$_attributes.adoc[]

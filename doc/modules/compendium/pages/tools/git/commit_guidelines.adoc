@@ -1,6 +1,6 @@
 = Git commit guidelines
 :description: Referal page to GitLab Commit Guidelines
-:keywords: git,commit,guidelines
+:keywords: git,commit,guidelines, TODO
 
 include::compendium:partial$_attributes.adoc[]
 

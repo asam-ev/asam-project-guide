@@ -1,6 +1,6 @@
 = Proposal writing guidelines
 :description: Contains a list of proposal writing guidelines that project members need to follow.
-:keywords: proposal, guideline
+:keywords: proposal, guideline, TODO
 :numbered:
 
 include::compendium:partial$_attributes.adoc[]

@@ -1,6 +1,6 @@
-= Deliverables
+= ASAM Deliverables
 :description: Summarizes the expected deliverables for ASAM projects.
-:keywords: deliverable,standardization
+:keywords: deliverable,standardization, TODO
 
 include::partial$_attributes.adoc[]
 include::{abb}[]

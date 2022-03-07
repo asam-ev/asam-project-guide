@@ -1,6 +1,6 @@
 = Setting up docker
 :description: A summary page describing how to set up docker
-:keywords: docker,setup,task,fragment,docker-setup
+:keywords: docker,setup,task,fragment,docker-setup,READYFORREVIEW
 :page-partial:
 
 include::partial$_attributes.adoc[]

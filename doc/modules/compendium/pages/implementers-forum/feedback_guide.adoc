@@ -62,7 +62,7 @@ But please be spare with such issues and also try to put connected topics into t
 https://code.asam.net/simulation/standard/openscenario-2.0/-/issues?label_name%5B%5D=GeneralFeedback[Link to the list of issues for general feedback^].
 
 
-== Feedback to oSC2 Feature List (Excel Table)
+== Feedback to OSC2 Feature List (Excel Table)
 Add your feedback as comment to the respective gitLab issue https://code.asam.net/simulation/standard/openscenario-2.0/-/issues/245[Collect feedback to OSC2.0 feature list^].
 
 

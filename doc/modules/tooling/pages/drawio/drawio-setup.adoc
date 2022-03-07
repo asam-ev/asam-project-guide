@@ -1,6 +1,6 @@
 = Setting up draw.io
 :description: How to set up drawio for ASAM projects.
-:keywords: task,fragment,setup,drawio, drawio-setup
+:keywords: task,fragment,setup,drawio, drawio-setup,READYFORREVIEW
 :library-repo: https://code.asam.net/common/asam-graphic-library/
 
 include::partial$_attributes.adoc[]
@@ -12,11 +12,11 @@ include::{abb}[]
 == Context
 __{asam}__ uses Draw.io for creating custom diagrams for standards and documentation.
 The user can choose to use the {drawio-url}[**web access**] (**recommended**) or install the software locally.
-__{asam}__ provides a custom Draw.io library which contains custom standard image elements and visualization structures that can be reused in new diagrams.
-To be able to access the ASAM asset library, follow the instructions below.
+ASAM provides a {library-repo}[custom Draw.io library] which contains custom standard image elements and visualization structures that can be reused in new diagrams.
+To be able to access the {library-repo}[ASAM asset library], follow the instructions below.
 
 == Result
-The user can access Draw.io with the ASAM library connected to create and edit diagrams.
+The user can access Draw.io with the ASAM asset library connected to create and edit diagrams.
 
 == Prerequisites
 * Local Setup (__{vscode}__): xref:vscode.adoc[] is installed
@@ -36,6 +36,8 @@ Draw.io can be used either locally (through the dedicated app <<Draw.io App (Des
 
 image::drawio-import-library.gif[title=Import ASAM Draw.io library into Desktop.]
 
+==== Draw.io VSCode extension
+
 include::compendium:partial$vscode/drawio.adoc[]
 
 NOTE: At this time, the VS Code extension does not provide url links to libraries.
@@ -44,7 +46,7 @@ The only option to add the library is to download a copy and add it manually.
 . Install the drawio extensions in __{vscode}__
 . Check out the {library-repo}[asset library repository^]
 . In Visual Studio Code, access the extension settings for Draw.io Integration and open the settings.json file
-. Below the line with `"hediet.vscode-drawio.local-storage"`, add the following lines and replace `\<<filepath/filename>>` with the path to the downloaded library file (.xml):
+. Add the following lines and replace `\<<filepath/filename>>` with the path to the downloaded library file (.xml):
 +
 [source,json]
 ----
@@ -58,6 +60,7 @@ The only option to add the library is to download a copy and add it manually.
 ----
 +
 NOTE: Remove the comma after the last braket ("]") if there is no other line before the closing curly bracket ("}").
+. Activate the library from any drawio file through "More Shapes...", selecting the ASAM Standard Library and confirming the selection
 
 
 image::drawio-import-library-vscode.gif[title=Import ASAM Draw.io library into VSCode extension.]

@@ -1,7 +1,8 @@
 = Standard manager
 :description: Summary and landing page for standad manager.
-:keywords: role, role-landing-page
+:keywords: role, role-landing-page, TODO
 :page-partial:
+:draft:
 
 include::partial$_attributes.adoc[]
 
@@ -11,8 +12,16 @@ include::partial$_attributes.adoc[]
 Label:: {role-standard-manager}
 
 
-== Responsibilities
+== Description
+* TODO
 
+== Requirements
+* TODO
+
+== Responsibilities
+* TODO
+
+ifndef::draft[]
 === Issue resolution
 //tag::issue_resolution[]
 Each ASAM standard has an appointed Standard Manager.
@@ -36,5 +45,18 @@ If there are no volunteers available among ASAM members and if the ASAM Office s
 
 The minimum tenure for the Standard Manager shall be one year.
 //end::issue_resolution[]
+//endif::[]
+
+
+== Instructional pages for this role
+TODO
+
+=== Proposal phase
+role_related::gtm[proposal]
+
+role_related::gtm[]
+
 
 role_related::standard-manager[]
+
+

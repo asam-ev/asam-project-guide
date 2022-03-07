@@ -1,13 +1,13 @@
 = The Proposal phase
 :description: Describes the Proposal phase in the ASAM development process for standards.
-:keywords: proposal,phase,standard,process,proposal-workshop
+:keywords: proposal,phase,standard,process,proposal-workshop, READYFORREVIEW
 
 include::partial$_attributes.adoc[]
 include::{abb}[]
 
 The purpose of the Proposal phase is to transfer ideas for standard development into a specific ASAM project proposal and to obtain a decision on the proposal.
 
-image::asam-development-process-Proposal.drawio.svg[title="The Proposal Phase (simplified)",opts=interactive]
+image::asam-development-process-Proposal.svg[title="The Proposal Phase (simplified)",opts=interactive]
 
 image::proposal_phase_v2-Proposal_Phase.svg[title="The Proposal Phase (expanded and interactive) as BPMN 2.0",opts=interactive]
 
@@ -31,25 +31,6 @@ include::partial$proposal-publication.adoc[tag=long]
 include::partial$proposal-decision.adoc[tag=long]
 
 
-== Pages
+pages::[path=proposal]
 
-* xref:proposal/01_proposal_setup.adoc[]
-* xref:proposal/02_contributing.adoc[]
-* xref:proposal/03_proposal_workshop_preparation.adoc[]
-* xref:proposal/04_join_proposal_workshop.adoc[]
-
-== Related topics
-
-* xref:compendium:guides/proposal_writing/contribute_in_asciidoc.adoc[]
-* xref:compendium:guides/proposal_writing/contribute_with_issues.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_enrollment_list.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_executive_draft.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_join.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_proposal_document.adoc[]
-* xref:compendium:guides/proposal_writing/how_to_setup_git.adoc[]
-* xref:compendium:guides/proposal_writing/proposal_guidelines.adoc[]
-* xref:compendium:guides/set_up_new_project.adoc[]
-* xref:compendium:templates/project_proposal.adoc[]
-* xref:proposal/01_proposal_setup.adoc[]
-* xref:proposal/02_contributing.adoc[]
-* xref:proposal/03_proposal_workshop_preparation.adoc[]
+related::proposal[]

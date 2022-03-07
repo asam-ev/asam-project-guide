@@ -1,6 +1,8 @@
 
 //tag::short[]
-A new standard is developed from the outset. There is no predecessor in the ASAM standard portfolio, or the predecessor has been declared as 'depricated'. A new ASAM standard can be a transfer from another organization or an extension of a standard from another standardization organization.
+A new standard is developed from the outset.
+There is no predecessor in the ASAM standard portfolio, or the predecessor has been declared as 'depricated'.
+A new ASAM standard can be a transfer from another organization or an extension of a standard from another standardization organization.
 //end::short[]
 
 //tag::long[]
@@ -12,7 +14,8 @@ The development project meets one of the following criteria:
 * A predecessor in the ASAM standard portfolio was deprecated and a new standard in the same technology area shall be developed from scratch.
 * The new standard is an extension, substitution or parallel development of a standard from another standardization organization.
 
-A new ASAM standard gets the version number "1.0.0".If a new standard replaces a deprecated standard, then the new standard cannot have the same name than the deprecated standard.
+A new ASAM standard gets the version number "1.0.0".
+If a new standard replaces a deprecated standard, then the new standard cannot have the same name than the deprecated standard.
 
 //tag::table[]
 .Summary

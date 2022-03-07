@@ -33,13 +33,13 @@
 :standardization-icon-norole: xref:{standardization-xref}[image:{standardization-image}[alt= Standardization, width={width-small}]]
 
 //compendium
-:compendium-image: https://cdn-icons-png.flaticon.com/512/6091/6091684.png
+:compendium-image: https://cdn-icons-png.flaticon.com/512/1945/1945958.png
 :compendium-xref: compendium:home.adoc
 :compendium-icon: xref:{compendium-xref}[image:{compendium-image}[alt= Compendium, width={width-large}, role=right]]
 :compendium-icon-norole: xref:{compendium-xref}[image:{compendium-image}[alt= Compendium, width={width-small}]]
 
 //project-guide
-:project-guide-image: https://cdn-icons-png.flaticon.com/512/3240/3240850.png
+:project-guide-image: https://cdn-icons-png.flaticon.com/512/1705/1705243.png
 :project-guide-xref: project-guide:home.adoc
 :project-guide-icon: xref:{project-guide-xref}[image:{project-guide-image}[alt= Project Guide, width={width-large}, role=right]]
 :project-guide-icon-norole: xref:{project-guide-xref}[image:{project-guide-image}[alt= Project Guide, width={width-small}]]

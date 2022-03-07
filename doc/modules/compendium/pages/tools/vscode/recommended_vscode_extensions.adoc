@@ -1,6 +1,6 @@
 = Recommended Visual Studio Code extensions
-:description: A collecteion of recommended VSCode extensions
-:keywords: vscode,extensions,gitlab,asciidoc,drawio,docker
+:description: A collection of recommended VSCode extensions
+:keywords: vscode,extensions,gitlab,asciidoc,drawio,docker, READYFORREVIEW
 :lookup: compendium:partial$vscode
 
 include::compendium:partial$_attributes.adoc[]
@@ -16,14 +16,6 @@ Then, click on the Install-Button.
 
 include::{lookup}/asciidoctor.adoc[]
 
-== Git graph
-
-include::{lookup}/git-graph.adoc[]
-
-== GitLens
-
-include::{lookup}/gitlens.adoc[]
-
 == Comment anchors
 
 include::{lookup}/comment-anchors.adoc[]
@@ -31,6 +23,18 @@ include::{lookup}/comment-anchors.adoc[]
 == Draw.io
 
 include::{lookup}/drawio.adoc[]
+
+== Code Spell Checker
+
+include::{lookup}/code-spell-checker.adoc[]
+
+== Git graph
+
+include::{lookup}/git-graph.adoc[]
+
+== GitLens
+
+include::{lookup}/gitlens.adoc[]
 
 == Docker
 

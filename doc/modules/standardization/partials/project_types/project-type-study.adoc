@@ -1,13 +1,8 @@
 
 //tag::short[]
-Study projects provide members an organizational structure to study or analyze specific aspects of ASAM standards in a collaborative way.
-Study projects have the overall goal to enhance the understanding of ASAM standards, to promote their application in member companies and to create change requests for the further development of ASAM standards.
-This project type is specifically intended for members in regions, where ASAM standards are not well known.
-
-Study projects have no expected deliverables other than a final report.
-The standard development process does not apply for study projects in case that either no budget or a small budget is needed.
-Study projects are open to all ASAM members, i.e. also to members in a 'passive' membership class.
-__{asam}__ may provides funding up to the limit for small budget projects.
+[horizontal]
+Description:: Study projects provide members, an organizational structure to study or analyze specific aspects of ASAM standards in a collaborative way.
+Goal:: These projects have the overall goal to enhance the understanding of ASAM standards, to promote their application in member companies, and to create change requests for the further development of ASAM standards.
 //end::short[]
 
 //tag::long[]
@@ -46,7 +41,7 @@ Some further rules apply for study projects:
 The minutes may be translated into the working language of the study group.
 * The project members use the ASAM IT infrastructure.
 
-Upon request, __{asam}__ provides funding for study projects up to the limit for small budget projects.
+Upon request, ASAM provides funding for study projects up to the limit for small budget projects.
 
 In case that a larger budget is required beyond the limit of a small budget project, then the project must be requested via the regular project proposal process, which consist of the process steps P2 Proposal Writing, P3 Proposal Submission, P4 Proposal Publication and P5 Proposal Decision by the __{tsc}__.
 

@@ -1,7 +1,0 @@
-TODO
-
-How to add new role in project guide that automatically links to pages.
-
-. Create attribute in site.yml
-. Add new page in role-specific module
-. Add role attribute on all pages where relevant

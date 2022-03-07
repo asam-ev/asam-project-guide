@@ -1,11 +1,11 @@
 = Starting a container from docker desktop
 :description: Run docker-compose from Desktop
-:keywords: docker,desktop
+:keywords: docker,desktop, READYFORREVIEW
 
 
 include::compendium:partial$_attributes.adoc[]
 
-NOTE: This works if the container was already created through either using the <<Running Docker-Compose From VSCode,VSCode method>> or the <<Running Docker-Compose From Powershell,Powershell method>>.
+NOTE: This only works if the container was already created.
 
 . Open Docker Desktop (if you already started it, it may be in the system tray)
 . Go to "Containers/Apps" and select your container from the list

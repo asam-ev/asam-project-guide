@@ -3,19 +3,21 @@ name: ASAM Project Guide build
 on:
   # create: # new branches or tags
   # release: # new releases
-  # pull_request: 
+  # pull_request:
   push: # on push
-    branches: [ main ]
+    branches:
+    - main
+    - 'restructuring_**'
   # schedule: # periodic - needed because some of the content is from the other repos
   #   - cron:  '30 5,20 * * *' # twice per day, in the morning and evening.
   workflow_dispatch: # manual trigger
 
-jobs: 
+jobs:
   build:
     name: Build the ASAM project guide and deploy it to gh-pages
     runs-on: ubuntu-20.04
-    
-    services: 
+
+    services:
       kroki:
         image: yuzutech/kroki:0.15.1
         env:
@@ -29,28 +31,13 @@ jobs:
 
 
     steps:
-    
+
     # checkout repo into folder guide. This is done to match the setup for the local build in docker-compose
     - name: Checkout
       uses: actions/checkout@v2
       with:
         path: repo
-
-    # setup python        
-    - name: Setup Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.7'
-
-    # run python script macro replacement
-    - name: run python script macro replacement
-      working-directory: repo/scripts
-      run: python asam_antora_macros.py -p doc/modules
-
-    # run python script macro replacement
-    - name: run python script create nav for folder
-      working-directory: repo/scripts
-      run: python create_nav_adoc_for_folder.py -p doc/modules/compendium/pages/ --module
+        fetch-depth: 0 # test if depth in fetch history is required
 
     # build site
     - name: Generate site
@@ -59,9 +46,11 @@ jobs:
         entrypoint: sh
         args: repo/run-build.sh
 
+
     # deploy to gh-pages
-    - name: deploy to gh-pages if push to main branch
-      if: ${{ github.ref == 'refs/heads/main' }}
+    # - name: deploy to gh-pages if push to main branch
+    - name: deploy to gh-pages after success
+      # if: ${{ github.ref == 'refs/heads/main' }}
       uses:  peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

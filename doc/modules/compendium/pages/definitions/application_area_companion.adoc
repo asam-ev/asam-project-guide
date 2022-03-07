@@ -1,6 +1,6 @@
 = Application area companion
 :description: Definition of an application area companion.
-:keywords: definition,content-characterization,associated-standard
+:keywords: definition,content-characterization,associated-standard, READYFORREVIEW
 
 
 include::compendium:partial$_attributes.adoc[]
