@@ -14,7 +14,10 @@ https://asam-ev.github.io/asam-project-guide[ASAM Project Guide (Link)]
 
 == Building locally
 To build the Project Guide locally, check out this repository.
-Next, check out the https://github.com/asam-ev/asam-project-guide-content[content repository^] to a new subfolder (e.g. "contents").
-In order for the generator to use the local sources, edit the 'site.yml' so that each `url` attribute under `content`/`sources` points to that folder (e.g. `./contents`). +
+Next, check out the https://github.com/asam-ev/asam-project-guide-content[content repository^] to a new subfolder (e.g. "asam-project-guide-content").
+In order for the generator to use the local sources, edit the 'site.yml' so that each `url` attribute under `content`/`sources` points to that folder (e.g. `./asam-project-guide-content`). +
 If you also want to include specific branches and/or tags (or exclude them), change the other settings accordingly.
 For more information on how the 'site.yml' works, see https://docs.antora.org/antora/latest/playbook/set-up-playbook/[the official Antora documentation].
+
+IMPORTANT: IF YOU USE THIS REPO TO BUILD LOCALLY, DO NOT PUSH CHANGES RELATED TO THAT TO REMOTE.
+Make sure only to commit and push changes that are relevant for remote as well, as otherwise the build pipeline will break.
