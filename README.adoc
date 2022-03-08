@@ -1,67 +1,20 @@
-= ASAM Project Guide
+= ASAM Project Guide - Generator
 
 image::https://github.com/asam-ev/asam-project-guide/actions/workflows/site-build.yml/badge.svg?branch=main[link=https://github.com/asam-ev/asam-project-guide/actions/workflows/site-build.yml]
 
 ****
-IMPORTANT: This guide is a work in progress and subject to change!
+IMPORTANT: This repository contains the generator and general setup for Antora in context of the Project Guide.
+It does not contain the content itself!
+This can be found https://github.com/asam-ev/asam-project-guide-content[here] instead.
 ****
 
 Hosted version available at:
 https://asam-ev.github.io/asam-project-guide[ASAM Project Guide (Link)]
 
----
-Includes: Standard template, manuals, guidelines, build + test, resources.
-All standard are written after one version of the ASAM Project Guide.
 
----
-
-
-
-== Chapter structure draft
-
-. Introduction
-. Overview
-
-// WG Member
-. ASAM general process of a project (ASAM Project Handbook, wiki)
-.. General standard development
-.. Working Model (workgroups)
-.. Issue-driven workflow
-.. Review, Release
-. Deliverables of ASAM standards (standard documentation, user guide, UML model, examples, what shall not be included (e.g. implementation, tool))
-
-. Standard Tools
-.. VSCode
-.. GitLab
-.. git
-.. local build asciidoctor
-
-
-// Project Lead
-. Project Lead Guide
-
-// Technical Writer
-. Editorial Guide (Redaktionleitfaden)
-.. Asciidoc syntax reference/conventions
-.. Writing Rules, Spelling
-.. Checklist for technical writer
-.. Document types
-... Document structure
-... Fragment types
-.. Terminology concept
-
-
-// ASAM Office
-. Handling repos
-. Pipeline internals
-. Release Process & Tagging & gitattributes
-. GitLab Workflow and Branching
-
-
-Standard Template
-
----
-
-include::./doc/modules/ROOT/pages/antora/Build-Antora-Locally.adoc[leveloffset=+1]
-
----
+== Building locally
+To build the Project Guide locally, check out this repository.
+Next, check out the https://github.com/asam-ev/asam-project-guide-content[content repository^] to a new subfolder (e.g. "contents").
+In order for the generator to use the local sources, edit the 'site.yml' so that each `url` attribute under `content`/`sources` points to that folder (e.g. `./contents`). +
+If you also want to include specific branches and/or tags (or exclude them), change the other settings accordingly.
+For more information on how the 'site.yml' works, see https://docs.antora.org/antora/latest/playbook/set-up-playbook/[the official Antora documentation].
