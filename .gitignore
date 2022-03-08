@@ -10,4 +10,6 @@ link-concept.puml
 *.pyc
 .vscode/settings.json
 
+asam-project-guide-content/
+
 ui-bundle/
