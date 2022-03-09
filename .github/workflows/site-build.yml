@@ -7,7 +7,7 @@ on:
   push: # on push
     branches:
     - main
-    - 'restructuring_**'
+#     - 'restructuring_**'
   schedule: # periodic - needed because some of the content is from the other repos
     - cron:  '30 5,20 * * *' # twice per day, in the morning and evening.
   workflow_dispatch: # manual trigger
@@ -36,7 +36,7 @@ jobs:
 
     # checkout repo into folder guide. This is done to match the setup for the local build in docker-compose
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: repo
         fetch-depth: 0 # test if depth in fetch history is required
