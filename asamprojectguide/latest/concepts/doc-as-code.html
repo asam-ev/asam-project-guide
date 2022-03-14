@@ -64,7 +64,7 @@
     <a class="nav-link" href="project_phases.html">ASAM Project Phases</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#project_lifecycle.adoc">project_lifecycle.adoc</a>
+    <a class="nav-link" href="project_lifecycle.html">ASAM Project Lifecycle</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="roles-overview.html">Roles Overview</a>
@@ -159,7 +159,7 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../getting-involved/development_phase.html">Participating In A Project</a>
+    <a class="nav-link" href="../getting-involved/development_phase.html">Development Phase</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../getting-involved/engage_service_provider.html">Engaging service providers for projects</a>
@@ -921,8 +921,6 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Orphans</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../asam-contacts.html">Contacts</a>
@@ -930,9 +928,12 @@
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../credits.html">Credits</a>
   </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="asam-contacts.html">ASAM Contacts</a>
+</ul>
   </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../getting-involved/enter_new_idea.html">Submit a new idea for a standard or activity at ASAM</a>
   </li>
@@ -1069,12 +1070,109 @@
 </aside>
 <article class="doc">
 <h1 class="page">Documentation As Code</h1>
-<div id="preamble">
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>All standards in the ASAM Simulation domain follow the concept of Documentation as Code (Doc-as-Code).
-This concept refers to using the same tools for documentation as for writing (software) code.<br>
-ASAM employs this concept in the following ways:</p>
+<p>Many newer projects at ASAM follow the concept of Documentation as Code (Doc-as-Code).<br>
+This concept refers to using the same tools and methods for documentation (or standardization) as for writing (software) code.
+The main benefit of this concept is the separation of content and text in documents from its layout rules and publishing.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>NOT to be confused with the Dog-as-Code concept!!!</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>           __
+  \ ______/ V`-,
+   }        /~~
+  /_)^ --,r'
+ |b      |b</pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_concept"><a class="anchor" href="#_concept"></a>Concept</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As described, the general concept is to use established tools and processes from software development and apply them in the creation of documents.</p>
+</div>
+<div class="sect2">
+<h3 id="_asciidoc"><a class="anchor" href="#_asciidoc"></a>AsciiDoc</h3>
+<div class="paragraph">
+<p>At ASAM, the central aspect of this concept is the usage of <a href="https://en.wikipedia.org/wiki/Plain_text" target="_blank" rel="noopener">plain text</a> documents with a <a href="https://en.wikipedia.org/wiki/Markup_language" target="_blank" rel="noopener">semantic markup language</a> in creating standards and other documents, particularly the free <a href="https://asciidoc-py.github.io/index.html" target="_blank" rel="noopener">AsciiDoc format</a>.
+Its main benefit is the separation of content from style and layout rules, making it possible to specify general layout settings in a separate set of files and instructions for consistency over multiple projects.
+Writers also get the benefit of being able to focus on content first, handing of the layouting to other people.</p>
+</div>
+<div class="paragraph">
+<p>Another benefit is that AsciiDoc files can be opened and edited with any type of text editor, making it a platform-agnostic format.
+Different people can write content independent of the operating system on their work devices or requiring specific software licenses.</p>
+</div>
+<div class="paragraph">
+<p>Finally, the content is decoupled from the target output, making it easy to generate different types of documentation from the same source files, such as single-file PDFs as well as multi-page online documentation in html.
+It is even possible to generate multiple types of output in the same process.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If you want to learn more about AsciiDoc and how to use its powers in writing technical documents, see the official <a href="https://docs.asciidoctor.org/asciidoc/latest/" target="_blank" rel="noopener"><strong>AsciiDoc Language Documentation</strong></a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_versioning_and_repositories"><a class="anchor" href="#_versioning_and_repositories"></a>Versioning And Repositories</h3>
+<div class="paragraph">
+<p>Besides the separation of source text and publication files, using tool-supported document versioning is another main aspect in the Doc-as-Code.
+ASAM projects employing Doc-as-Code use the software <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> for this purpose.<br>
+It allows for working on different parts, features, or versions of a project separately whilst also providing the necessary features for merging all changes that were made on these different versions again later.
+As this works best with plain text documents, it goes extremely well together with the plain text markup approach to document writing explained above.</p>
+</div>
+<div class="paragraph">
+<p>Content is stored in so-called repositories.
+These repositories also contain some files with information about the history and current state of the content.
+These repository information is updated and used by Git and usually needs not to be changed by users manually.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If you want to learn more about Git itself, ASAM recommends online introductions and tutorials such as <a href="https://rogerdudler.github.io/git-guide/" target="_blank" rel="noopener">this one</a>.
+Additionally, you can find more information on using Git at ASAM in the <a href="../tooling/git.html" class="xref page">tooling section^</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gitlab_and_github"><a class="anchor" href="#_gitlab_and_github"></a>GitLab and GitHub</h3>
+<div class="paragraph">
+<p>The work on standards is of collaborative nature.
+Online repository platforms like GitLab and GitHub support this by providing features for commenting and reviewing content changes as well as issue boards for creating and tracking topics.<br>
+Each project decides independently of each other on which platform it will use.</p>
+</div>
+<div class="paragraph">
+<p>ASAM employs this concept in the following ways:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1086,6 +1184,7 @@ ASAM employs this concept in the following ways:</p>
 </div>
 <div class="paragraph">
 <p>Different projects may use different tools or versions of the same tools, but the central ideas stay the same.</p>
+</div>
 </div>
 </div>
 </div>
