@@ -3,7 +3,7 @@ version: "2"
 services:
 
   antora:
-    image: ghcr.io/asam-ev/project-guide-docker:latest
+    image: ghcr.io/asam-ev/project-guide-docker:3
     volumes:
       - .:/usr/src/app/repo #has to match WORKSPACE defined in Dockerfile + folder from package.json "docker-build"
     depends_on:
