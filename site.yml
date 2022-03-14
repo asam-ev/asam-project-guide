@@ -23,7 +23,7 @@ content:
 ui:
   bundle:
     # url: ./ui-bundle.zip
-    url: https://code.asam.net/common/style-resources/-/raw/master/antora/ui-bundle_project-guide.zip?inline=false
+    url: https://code.asam.net/common/style-resources/-/raw/master/antora/ui-bundle.zip?inline=false
     snapshot: true
   supplemental_files: ./supplemental_ui
 
