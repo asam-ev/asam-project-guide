@@ -10,12 +10,13 @@ role {
   label {
     color: #000;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
+    font-style: italic;
     width: 140px;
     height: 40px;
     border-radius: 5px;
     margin: 6px 2px;
-    padding: 5px 8 px;
+    padding: 3px 8px;
     border: 2px solid #000;
   }
   label.mandatory {

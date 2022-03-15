@@ -59,13 +59,13 @@
     <a class="nav-link" href="main.html">Concepts</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="project_types.html">ASAM Project Types</a>
+    <a class="nav-link" href="project_types.html">Project Types</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="project_phases.html">ASAM Project Phases</a>
+    <a class="nav-link" href="project_phases.html">Project Phases</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="project_lifecycle.html">ASAM Project Lifecycle</a>
+    <a class="nav-link" href="project_lifecycle.html">Project Lifecycle</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="roles-overview.html">Roles Overview</a>
@@ -234,7 +234,7 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../tooling/gitlab.html">GitLab</a>
+    <a class="nav-link" href="../tooling/gitlab.html">Remote Repository Platforms</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../tooling/gitlab/gitlab-setup.html">Setting up your ASAM GitLab Account</a>
@@ -1108,10 +1108,24 @@ The main benefit of this concept is the separation of content and text in docume
 <h2 id="_concept"><a class="anchor" href="#_concept"></a>Concept</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>As described, the general concept is to use established tools and processes from software development and apply them in the creation of documents.</p>
+<p>As described in the introduction, the general concept is to use established tools and processes from software development and apply them in the creation of documents.
+At ASAM, the main aspects of this concept are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Writing documents in <a href="#sec-plain-text-markup">plain text markup</a></p>
+</li>
+<li>
+<p>Using <a href="#sec-versioning-repo">repositories with version control systems</a></p>
+</li>
+<li>
+<p>Collaborating on projects through <a href="#sec-online-collaboration">online repository platforms</a></p>
+</li>
+</ul>
 </div>
 <div class="sect2">
-<h3 id="_asciidoc"><a class="anchor" href="#_asciidoc"></a>AsciiDoc</h3>
+<h3 id="sec-plain-text-markup"><a class="anchor" href="#sec-plain-text-markup"></a>Plain Text Content Files</h3>
 <div class="paragraph">
 <p>At ASAM, the central aspect of this concept is the usage of <a href="https://en.wikipedia.org/wiki/Plain_text" target="_blank" rel="noopener">plain text</a> documents with a <a href="https://en.wikipedia.org/wiki/Markup_language" target="_blank" rel="noopener">semantic markup language</a> in creating standards and other documents, particularly the free <a href="https://asciidoc-py.github.io/index.html" target="_blank" rel="noopener">AsciiDoc format</a>.
 Its main benefit is the separation of content from style and layout rules, making it possible to specify general layout settings in a separate set of files and instructions for consistency over multiple projects.
@@ -1125,6 +1139,36 @@ Different people can write content independent of the operating system on their 
 <p>Finally, the content is decoupled from the target output, making it easy to generate different types of documentation from the same source files, such as single-file PDFs as well as multi-page online documentation in html.
 It is even possible to generate multiple types of output in the same process.</p>
 </div>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset1_asciidoc-source-file"></a>AsciiDoc source file</p>
+</li>
+<li>
+<p><a id="tabset1_rendered-output"></a>Rendered output</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset1_asciidoc-source-file">
+<div class="imageblock">
+<div class="content">
+<img src="_images/asciidoc_example.png" alt="asciidoc example">
+</div>
+<div class="title">Figure 1. ASAM Foreword section in AsciiDoc (source)</div>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_rendered-output">
+<div class="imageblock">
+<div class="content">
+<img src="_images/asciidoc_example-output.png" alt="asciidoc example output">
+</div>
+<div class="title">Figure 2. The same Foreword section rendered by Asciidoctor and Antora in HTML (rich output)</div>
+</div>
+</div>
+</div>
+</div>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1132,14 +1176,15 @@ It is even possible to generate multiple types of output in the same process.</p
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-If you want to learn more about AsciiDoc and how to use its powers in writing technical documents, see the official <a href="https://docs.asciidoctor.org/asciidoc/latest/" target="_blank" rel="noopener"><strong>AsciiDoc Language Documentation</strong></a>.
+If you want to learn more about AsciiDoc and how to use its powers in writing technical documents, see the official <a href="https://docs.asciidoctor.org/asciidoc/latest/" target="_blank" rel="noopener"><strong>AsciiDoc Language Documentation</strong></a> and the <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/">Asciidoctor Writers Guide</a>.<br>
+Specific ASAM writing styles and rules can be found in the <a href="../compendium/writing_guidelines/editorial_guide.html" class="xref page"><strong>Editorial Guide</strong></a>.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_versioning_and_repositories"><a class="anchor" href="#_versioning_and_repositories"></a>Versioning And Repositories</h3>
+<h3 id="sec-versioning-repo"><a class="anchor" href="#sec-versioning-repo"></a>Versioning And Repositories</h3>
 <div class="paragraph">
 <p>Besides the separation of source text and publication files, using tool-supported document versioning is another main aspect in the Doc-as-Code.
 ASAM projects employing Doc-as-Code use the software <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> for this purpose.<br>
@@ -1147,9 +1192,34 @@ It allows for working on different parts, features, or versions of a project sep
 As this works best with plain text documents, it goes extremely well together with the plain text markup approach to document writing explained above.</p>
 </div>
 <div class="paragraph">
-<p>Content is stored in so-called repositories.
-These repositories also contain some files with information about the history and current state of the content.
-These repository information is updated and used by Git and usually needs not to be changed by users manually.</p>
+<p>Content is stored in so-called repositories that each consist of one or more branches.
+At ASAM, there usually is one main branch (called "main" or (outdated) "master") and possibly one or more feature branches.
+The central branch (also called the "trunk") acts as the agreed or released "official" state of the repository, whereas the feature branches contain the current development topics.<br>
+Each feature branch targets a single aspect of development, for example the language specification.
+Once the development in a feature branch has advanced enough, it&#8217;s changes are merged back into the trunk.
+This is done through a so-called Merge Request (MR), sometimes called a Pull Request (PR) instead.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/example-repo-workflow.drawio.svg" alt="example repo workflow.drawio">
+</div>
+<div class="title">Figure 3. Repository workflow and branching example.</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The strategy of having one main branch (trunk) and develop changes in separate branches is called trunk-based development and the quasi-standard of modern software development.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>These repositories also contain some files with information about the history and current state of the content.
+The repository information is updated and used by Git and usually needs not to be changed by users manually.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1158,98 +1228,59 @@ These repository information is updated and used by Git and usually needs not to
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-If you want to learn more about Git itself, ASAM recommends online introductions and tutorials such as <a href="https://rogerdudler.github.io/git-guide/" target="_blank" rel="noopener">this one</a>.
-Additionally, you can find more information on using Git at ASAM in the <a href="../tooling/git.html" class="xref page">tooling section^</a>.
+If you want to learn more about Git itself, ASAM recommends online introductions and tutorials such as <a href="https://rogerdudler.github.io/git-guide/" target="_blank" rel="noopener"><strong>this one</strong></a>.
+Additionally, you can find more information on using Git and working with repositories at ASAM in the <a href="../tooling/git.html" class="xref page">tooling section</a>.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_gitlab_and_github"><a class="anchor" href="#_gitlab_and_github"></a>GitLab and GitHub</h3>
+<h3 id="sec-online-collaboration"><a class="anchor" href="#sec-online-collaboration"></a>Online Collaboration</h3>
 <div class="paragraph">
-<p>The work on standards is of collaborative nature.
-Online repository platforms like GitLab and GitHub support this by providing features for commenting and reviewing content changes as well as issue boards for creating and tracking topics.<br>
-Each project decides independently of each other on which platform it will use.</p>
+<p>The work on standards, particularly at ASAM, is of collaborative nature:
+People from different companies companies join in a project to develope something together.
+The idea is to create something that will be adapted and used not just by a single company but a majority of the target industry.<br>
+Online repository platforms like GitLab and GitHub support the collaboration by providing features for commenting and reviewing content changes as well as issue boards for creating and tracking topics.
+In addition to that, they also integrate the same versioning and repository aspects described in the <a href="#sec-versioning-repo">section above</a>.</p>
 </div>
 <div class="paragraph">
-<p>ASAM employs this concept in the following ways:</p>
+<p>Using online collabartion platforms with repository support provide multiple benefits:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Standards are created as plain text
-*</p>
+<p>They typically provide online editors for content, so users can choose to participate in projects <a href="../tooling/working-without-software-installation.html" class="xref page">without having to install software</a> (besides any standard web browser)</p>
+</li>
+<li>
+<p>Merge Requests (Pull Requests) can be reviewed and commented on with a side-by-side preview in the browser (diff view)</p>
+</li>
+<li>
+<p>They act as central repository location for the project(s) that can be accessed from anywhere (provided the user has sufficient rights), so all involved people always have access to the latest submitted changes</p>
+</li>
+<li>
+<p>They enable central automation steps through <a href="pipeline_details.html" class="xref page">CI/CD pipelines</a>, for example automated writing rules checks on a document after it was updated</p>
+</li>
+<li>
+<p>Integrated issue boards for keeping track of tasks, found problems, discussion topics, etc.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>Different projects may use different tools or versions of the same tools, but the central ideas stay the same.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/issue_example.png" alt="issue example">
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_issue_tracking"><a class="anchor" href="#_issue_tracking"></a>Issue Tracking</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Issues are open topics and found bugs collected in a central system.<br>
-ASAM uses <a href="../tooling/gitlab.html" class="xref page">GitLab</a> (self-hosted) and <a href="#tooling:github.adoc" class="xref unresolved">tooling:github.adoc</a> (cloud) for different projects.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_version_control_system"><a class="anchor" href="#_version_control_system"></a>Version Control System</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>A version control system keeps track of changes in a file system.<br>
-ASAM uses <a href="../tooling/git.html" class="xref page">Git</a> and some remote solution (either <a href="../tooling/gitlab.html" class="xref page">GitLab</a> or <a href="#tooling:github.adoc" class="xref unresolved">tooling:github.adoc</a>).</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_plain_text_markup"><a class="anchor" href="#_plain_text_markup"></a>Plain Text Markup</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>A plain text markup language that separates the writing from the publishing.
-This means that the content (the "writing") and its styling and layout (the "publishing") are not defined simultaneously (like in Microsoft Word) but applied through specified rules.
-Typical examples are the languages Markdown, LaTeX, and AsciiDoc.<br>
-ASAM uses <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/" target="_blank" rel="noopener">AsciiDoc</a> for its documents.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_reviews"><a class="anchor" href="#_reviews"></a>Reviews</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>TODO</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_process_automation"><a class="anchor" href="#_process_automation"></a>Process Automation</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>ASAM projects typically automate the following steps:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Convert AsciiDoc files to html and pdf using <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor</a></p>
-</li>
-<li>
-<p><a href="https://en.wikipedia.org/wiki/Lint_(software)" target="_blank" rel="noopener">Linting</a> and testing documents for rules defined in the <a href="../compendium/writing_guidelines/editorial_guide.html" class="xref page">Editorial guide</a> and returning found errors</p>
-</li>
-<li>
-<p>Publishing results as pipeline artifacts for downloads or distribution</p>
-</li>
-<li>
-<p>Running project-specific scripts for additional features, such as converting uml diagrams to AsciiDoc files</p>
-</li>
-</ul>
+<div class="title">Figure 4. Example for a topic discussion through the GitLab issue board in a project</div>
 </div>
 <div class="paragraph">
-<p>For more information on the standard ASAM pipeline, see <a href="pipeline_details.html" class="xref page">Automation Pipelines At ASAM</a>.</p>
+<p>ASAM currently supports projects on both its internal GitLab instance as well as on the public GitHub.
+Each project can decide independently which platform it will use.
+GitLab is the most commonly used platform right now at ASAM.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>The following pages give a more detailed view on some of the aspects above.</p>
+</div>
 </div>
 </div>
 </div>

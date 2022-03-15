@@ -59,13 +59,13 @@
     <a class="nav-link" href="main.html">Concepts</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="project_types.html">ASAM Project Types</a>
+    <a class="nav-link" href="project_types.html">Project Types</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="project_phases.html">ASAM Project Phases</a>
+    <a class="nav-link" href="project_phases.html">Project Phases</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="project_lifecycle.html">ASAM Project Lifecycle</a>
+    <a class="nav-link" href="project_lifecycle.html">Project Lifecycle</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="roles-overview.html">Roles Overview</a>
@@ -234,7 +234,7 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../tooling/gitlab.html">GitLab</a>
+    <a class="nav-link" href="../tooling/gitlab.html">Remote Repository Platforms</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../tooling/gitlab/gitlab-setup.html">Setting up your ASAM GitLab Account</a>
@@ -1072,8 +1072,36 @@
 </aside>
 <article class="doc" variant="wide">
     <h1 class="page">Automation Pipelines At ASAM</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
 <p>TODO</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_process_automation"><a class="anchor" href="#_process_automation"></a>Process Automation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ASAM projects typically automate the following steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Convert AsciiDoc files to html and pdf using <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Lint_(software)" target="_blank" rel="noopener">Linting</a> and testing documents for rules defined in the <a href="../compendium/writing_guidelines/editorial_guide.html" class="xref page">Editorial guide</a> and returning found errors</p>
+</li>
+<li>
+<p>Publishing results as pipeline artifacts for downloads or distribution</p>
+</li>
+<li>
+<p>Running project-specific scripts for additional features, such as converting uml diagrams to AsciiDoc files</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="tools-overview.html">Standard Tools Overview</a></span>
