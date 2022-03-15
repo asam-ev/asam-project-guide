@@ -1,17 +1,15 @@
 role {
     color: #000;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
-    width: 500px;
-    height: 100px;
     border-radius: 25px;
-    margin: 10px 2px;
-    padding: 5px 15px;
+    padding: 3px 10px;
     border: 2px solid #000;
+    white-space: nowrap;
   }
   label {
     color: #000;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     width: 140px;
     height: 40px;
@@ -991,7 +989,7 @@ role {
     margin: 1.5rem 0 0;
   }
   .doc table.tableblock * {
-    margin-top: 1.5rem;
+    margin-top: .5rem;
   }
   .doc p.tableblock p.tableblock {
     margin-top: 0.5rem;
