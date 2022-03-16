@@ -359,10 +359,10 @@
     <a class="nav-link" href="../../compendium/ASAM/doc-as-code.html">Doc-as-code</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/ASAM/doc-as-code/contribute_in_asciidoc.html">How to contribute to a proposal directly in AsciiDoc files</a>
+    <a class="nav-link" href="../../compendium/ASAM/doc-as-code/contribute_in_asciidoc.html">Contributing In AsciiDoc Files</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/ASAM/doc-as-code/contribute_with_issues.html">How to contribute to a proposal through GitLab issues</a>
+    <a class="nav-link" href="../../compendium/ASAM/doc-as-code/contribute_with_issues.html">Contributing Through Issues</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../compendium/ASAM/doc-as-code/standard_workflow.html">ASAM standard workflows</a>
@@ -422,7 +422,7 @@
     <a class="nav-link" href="../../compendium/ASAM/phase-02_proposal/how_to_setup_proposal_git.html">How-To: Project Proposal Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/ASAM/phase-02_proposal/proposal_guidelines.html">Proposal Contribution Guidelines</a>
+    <a class="nav-link" href="../../compendium/ASAM/phase-02_proposal/proposal_guidelines.html">Contribution Guidelines For Issues (Proposal Phase)</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../compendium/ASAM/phase-02_proposal/proposal_workshop_gameplan.html">Proposal Workshop Gameplan</a>
@@ -1099,7 +1099,16 @@
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
-<p>TODO</p>
+<p>All participants contribute content through issues</p>
+</li>
+<li>
+<p>Issues are transferred to AsciiDoc files by dedicated writers</p>
+</li>
+<li>
+<p>Before the Proposal Workshop, a complete project and feature description must be present</p>
+</li>
+<li>
+<p>After the workshop, the Proposal is finalized by including the feedback from the Workshop, defining the timeline, adding the list of participants, and calculating the proposed budget.</p>
 </li>
 </ul>
 </div></div></td>
@@ -1114,7 +1123,7 @@
 <div class="paragraph">
 <p>The Project Proposal is a written document that is submitted to the <em><a href="../../compendium/abbreviations.html#_tsc" class="xref page">TSC</a></em> for project approval before any project at ASAM may start.<br>
 All committed participants (the Idea Giver, the Proposal Submitter, and all prospective Workgroup Members) can participate in writing the proposal document (the Proposal Submitter actually has to participate in the <a href="#_finalizing_the_proposal">finalization step</a>).<br>
-See <a href="proposal_document.html" class="xref page">The Proposal Document</a> for more information on the document and its intended contents.</p>
+See <strong><a href="proposal_document.html" class="xref page">The Proposal Document</a></strong> for more information on the document and its intended contents.</p>
 </div>
 </div>
 </div>
@@ -1122,187 +1131,61 @@ See <a href="proposal_document.html" class="xref page">The Proposal Document</a>
 <h2 id="_how_to_contribute"><a class="anchor" href="#_how_to_contribute"></a>How To Contribute</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <em>Simulation</em> domain at <em><a href="../../compendium/abbreviations.html#_asam" class="xref page">ASAM</a></em> uses a repository-based standardization approach built around <a href="https://code.asam.net" target="_blank" rel="noopener">GitLab</a>.<br>
-Proposals, concept papers and standards are written as AsciiDoc files.
-All project content is stored, organized, versioned and discussed through a repository on <a href="https://code.asam.net" target="_blank" rel="noopener">GitLab</a>, which is provided by ASAM.
-The GitLab pipeline creates the required final documents, typically as <code>.html</code> or as <code>.pdf</code>.</p>
+<p>The <em>Simulation</em> domain at ASAM uses the <a href="../../concepts/doc-as-code.html" class="xref page">Documentation As Code</a> concept for its projects.<br>
+All documents are written as AsciiDoc files.</p>
 </div>
 <div class="paragraph">
-<p>To contribute to a Project Proposal, project members can either <a href="#_content_definition">contribute through GitLab issues</a> or <a href="#_how_to_contribute_to_a_proposal_directly_in_asciidoc_files">contribute directly in AsciiDoc</a>.
+<p>To contribute to a Project Proposal, project members can either <a href="#_contributing_through_issues">contribute through GitLab issues</a> or <a href="#Contributing In AsciiDoc">contribute directly in AsciiDoc</a>.
 However, at least one person must transfer all content to the AsciiDoc file eventually.<br>
 Both ways of contribution can be performed <a href="../../tooling/working-without-software-installation.html" class="xref page">without software installation</a> directly through the respective web interface.
-If you prefer to work on your local computer, ASAM recommends using <a href="../../tooling/git.html" class="xref page">Git</a> and <a href="../../tooling/vscode.html" class="xref page">Visual Studio Code</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_proposal_contribution_guidelines"><a class="anchor" href="#_proposal_contribution_guidelines"></a>Proposal Contribution Guidelines</h2>
-<div class="sectionbody">
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-All writers shall follow these guidelines when writing for the Proposal document.
-</td>
-</tr>
-</table>
+If you prefer to work on your local computer, see the <a href="../../tooling/main.html#_recommended_tools" class="xref page">list of recommended tools</a>.</p>
 </div>
 <div class="sect2">
-<h3 id="_content_definition"><a class="anchor" href="#_content_definition"></a>Content Definition</h3>
-<div class="paragraph">
-<p>To write a proposal document, its content shall be defined in a way that every participant can contribute and give feedback.<br>
-Participants gather content for sections in issues in the proposal repository and discuss them there.
-The results can then be transferred to the target document in AsciiDoc form.</p>
-</div>
-<div class="sect3">
-<h4 id="_gather_topics_in_issues"><a class="anchor" href="#_gather_topics_in_issues"></a>Gather Topics In Issues</h4>
-<div class="paragraph">
-<p><label class="recommended"/></p>
-</div>
-<div class="paragraph">
-<p>Use issues to collect topics and tasks for the proposal writing.<br>
-If this is an evolution of an existing ASAM standard, consider collecting and using backlog issues from the previous project first.</p>
-</div>
-<div class="paragraph">
-<p>The name of the issue shall correspond to the respective section.</p>
-</div>
-<div class="exampleblock">
-<div class="title">Example 1. Topic issue for a proposal&#8217;s Executive Summary</div>
-<div class="content">
-<div class="imageblock">
-<div class="content">
-<img src="../../compendium/_images/asam/proposal_issue_example.png" alt="proposal issue example">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_use_issue_templates"><a class="anchor" href="#_use_issue_templates"></a>Use Issue Templates</h4>
+<h3 id="_contributing_through_issues"><a class="anchor" href="#_contributing_through_issues"></a>Contributing Through Issues</h3>
 <div class="paragraph">
 <p><label class="mandatory"/></p>
 </div>
 <div class="paragraph">
-<p>When working with issues, use the provided issue templates in the proposal repository.
-Each issue template contains a description (as comments) on when to use them and what content to add where.</p>
-</div>
-<div class="exampleblock">
-<div class="title">Example 2. Creating an issue from a template</div>
-<div class="content">
-<div class="imageblock">
-<div class="content">
-<img src="../../compendium/_images/asam/issue_template_example.png" alt="issue template example">
+<p>The content of a Proposal document shall be drafted and discussed through issues in the project&#8217;s issue board.<br>
+ASAM provides guidelines on how to contribute through issues on the page <strong><a href="../../compendium/ASAM/phase-02_proposal/proposal_guidelines.html" class="xref page">Contribution Guidelines For Issues (Proposal Phase)</a></strong>.
+All participants must follow these guidelines.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_contributing_directly_in_asciidoc"><a class="anchor" href="#_contributing_directly_in_asciidoc"></a>Contributing Directly In AsciiDoc</h3>
+<div class="paragraph">
+<p><label class="optional"/></p>
+</div>
+<div class="paragraph">
+<p>The project may decide to contribute directly in AsciiDoc as well.
+However, content shall still be discussed and updated in issues as described in <a href="#_contributing_through_issues">Contributing Through Issues</a>.</p>
+</div>
+<div class="paragraph">
+<p>When writing AsciiDoc, writers must follow the guidelines described in <strong><a href="../../compendium/ASAM/doc-as-code/contribute_in_asciidoc.html" class="xref page">Contributing In AsciiDoc Files</a></strong> as well as the <a href="#_asam_editorial_guide">ASAM Editorial Guide</a>.</p>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_label_issues_correctly"><a class="anchor" href="#_label_issues_correctly"></a>Label Issues Correctly</h4>
+<div class="sect2">
+<h3 id="_transferring_content_to_asciidoc"><a class="anchor" href="#_transferring_content_to_asciidoc"></a>Transferring Content To AsciiDoc</h3>
 <div class="paragraph">
 <p><label class="mandatory"/></p>
 </div>
 <div class="paragraph">
-<p>When working with issues, make sure that each issues related to the proposal phase contains the label <code>Proposal</code>.
-This helps with separating issues from the proposal phase later when transferring content to the standardization repository.</p>
+<p>The content that is defined in the project&#8217;s issues must be transferred to AsciiDoc eventually.
+ASAM recommends that the project defines one or more writers responsible for this task.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-If you use the <a href="#Use issue templates">issue templates</a> provided in the proposal repository, the label may be automatically assigned already.
-</td>
-</tr>
-</table>
-</div>
-<div class="exampleblock">
-<div class="title">Example 3. Assigning the proposal label</div>
-<div class="content">
-<div class="imageblock">
-<div class="content">
-<img src="../../compendium/_images/asam/proposal_issue_label.png" alt="proposal issue label">
-</div>
-</div>
-</div>
-</div>
+<div class="paragraph">
+<p>When writing AsciiDoc, writers must follow the guidelines described in <strong><a href="../../compendium/ASAM/doc-as-code/contribute_in_asciidoc.html" class="xref page">Contributing In AsciiDoc Files</a></strong> as well as the <a href="#_asam_editorial_guide">ASAM Editorial Guide</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_how_to_contribute_to_a_proposal_directly_in_asciidoc_files"><a class="anchor" href="#_how_to_contribute_to_a_proposal_directly_in_asciidoc_files"></a>How to contribute to a proposal directly in AsciiDoc files</h3>
-<div class="paragraph">
-<p>The most direct way of contributing to a project is by creating and editing the AsciiDoc files.
-However, in order for a consistent workflow and optimal use of the automation steps set up by <em><a href="../../compendium/abbreviations.html#_asam" class="xref page">ASAM</a></em>, users must first familiarize themselves with the instructions on <a href="#_the_gitlab_workflow">GitLab</a> and <a href="#_writing_content_in_asciidoc">AsciiDoc</a> and follow them.
-This ensures that all projects work the same way and deliver the same high level of quality that is expected from an ASAM standard.</p>
-</div>
-<div class="paragraph">
-<p>Each project proposal has the same base structure which is described and explained in the <code>README.adoc</code> file at root level of the repository.
-Consider the correct document before adding new content to a file.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-Do <strong>not</strong> edit the <code>main.adoc</code> file directly!
-All content is included through the files in the folder <code>subchapters</code>.
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_the_gitlab_workflow"><a class="anchor" href="#_the_gitlab_workflow"></a>The GitLab workflow</h4>
-<div class="paragraph">
-<p>The repository-based approach of ASAM for working on documents allows members to work in parallel on the same documents without the risk of overwriting each others changes without notice.</p>
-</div>
-<div class="paragraph">
-<p>Users <strong>must</strong> follow the <a href="../../compendium/guides/git/workflow_tutorial.html" class="xref page">Workflow tutorial for the projects using gitlab</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_writing_content_in_asciidoc"><a class="anchor" href="#_writing_content_in_asciidoc"></a>Writing content in AsciiDoc</h4>
-<div class="paragraph">
-<p>All Simulation domain standards at <em><a href="../../compendium/abbreviations.html#_asam" class="xref page">ASAM</a></em> are written using the <a href="https://asciidoc.org/" target="_blank" rel="noopener">AsciiDoc</a> format.
-AsciiDoc is a mature, plain-text writing format for authoring notes, articles, documentation, books, ebooks, web pages, slide decks, blog posts, man pages and more.</p>
-</div>
-<div class="paragraph">
-<p>You write an AsciiDoc document the same way you would write a normal text document.
-There are no markup tags or weird format notations.
-AsciiDoc files are designed to be viewed, edited and printed directly or translated to other presentation formats.</p>
-</div>
-<div class="paragraph">
-<p>Users <strong>must</strong> follow these guidelines:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../../compendium/writing_guidelines/asciidoc_guide.html" class="xref page">AsciiDoc Guide</a></p>
-</li>
-<li>
-<p><a href="../../compendium/writing_guidelines/writing_guide.html" class="xref page">Writing guide</a></p>
-</li>
-<li>
-<p><a href="../../compendium/writing_guidelines/editorial_guide.html" class="xref page">Editorial guide</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_asam_editorial_guide"><a class="anchor" href="#_asam_editorial_guide"></a>ASAM Editorial Guide</h2>
-<div class="sectionbody">
+<h3 id="_asam_editorial_guide"><a class="anchor" href="#_asam_editorial_guide"></a>ASAM Editorial Guide</h3>
 <div class="paragraph">
 <p>ASAM provides an Editorial Guide containing the writing guidelines applicable to all ASAM documents.
-The current version of the Editorial Guide is located in the <a href="../../compendium/writing_guidelines/editorial_guide.html" class="xref page"><strong>Project Guide Compendium</strong></a>.</p>
+The current version of the Editorial Guide is located in the <a href="../../compendium/writing_guidelines/editorial_guide.html#_basics" class="xref page"><strong>Project Guide Compendium</strong></a>.</p>
+</div>
+<div class="paragraph">
+<p>The Editorial Guide is <strong>mandatory</strong> for all users writing directly in AsciiDoc and <strong>recommended</strong> for users contributing content through issues.</p>
+</div>
 </div>
 </div>
 </div>
