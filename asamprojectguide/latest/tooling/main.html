@@ -103,7 +103,7 @@
     <a class="nav-link" href="../getting-involved/ideation/enter_new_idea.html">Entering An Idea</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../getting-involved/ideation/developing_an_idea.html">Developing The Idea</a>
+    <a class="nav-link" href="../getting-involved/ideation/developing_an_idea.html">Ideation Workshop</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../getting-involved/ideation/raising_interest.html">Gathering Participants For A Project Proposal</a>
@@ -144,6 +144,9 @@
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../getting-involved/signing_up.html">Signing Up For Projects</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../getting-involved/signing_up/enroll_for_ideation.html">Enroll During Ideation Phase</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../getting-involved/signing_up/become_workgroup_member.html">Become A Workgroup Member</a>
   </li>
@@ -245,17 +248,17 @@
     <a class="nav-link" href="main.html">Tools Overview</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="working-without-software-installation.html">Working without software installation</a>
+    <a class="nav-link" href="working-without-software-installation.html">Working Online</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="remote_repo.html">Remote Repository Platforms</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="gitlab/gitlab-setup.html">Setting up your ASAM GitLab Account</a>
+    <a class="nav-link" href="remote_repo/remote_repo_setup.html">Setting Up Your Repository Account</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="gitlab/gitlab-guides.html">GitLab Guides</a>
+    <a class="nav-link" href="remote_repo/remote_repo_guides.html">Guides For Remote Repositories</a>
   </li>
 </ul>
   </li>
@@ -388,6 +391,9 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/ASAM/hosting_workshops.html">Hosting Workshops</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../compendium/ASAM/implementers-forum.html">Implementers-forum</a>
 <ul class="nav-list">
@@ -409,6 +415,9 @@
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../compendium/ASAM/phase-01_ideation.html">Phase-01 ideation</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/ASAM/phase-01_ideation/how-to__enroll_for_ideation.html">How-To: Enroll During Ideation Phase</a>
+  </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../compendium/ASAM/phase-01_ideation/how-to__enter_new_idea.html">How-To: Enter An Idea</a>
   </li>
@@ -833,6 +842,9 @@
     <a class="nav-link" href="../compendium/tools/gitlab/gitlab_terminology.html">GitLab Terminology</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/tools/gitlab/how-to__gitlab-setup.html">How-To: Setting Up Your Repository Account</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../compendium/tools/gitlab/review_with_service_desk.html">How to use GitLab service desk for reviews</a>
   </li>
 </ul>
@@ -1046,34 +1058,6 @@
 <p><strong>Find help on setting up your work environment for ASAM projects.</strong><br>
 This part contains setup instructions and guides for all mandatory and recommended tools.</p>
 </div>
-<div class="paragraph">
-<p>Tools mandatory for every member are hosted by <em><a href="../compendium/abbreviations.html#_asam" class="xref page">ASAM</a></em> and can be accessed online and without local setup.
-An overview over these can be found under <a href="#_infrastructure_for_standard_development">Infrastructure for Standard Development</a>.
-Because of this, most participants in ASAM projects do not <strong>require</strong> dedicated software installations in order to be able to participate in the process.
-For information on how to work without any local setup, see <strong><a href="working-without-software-installation.html" class="xref page">Working without software installation</a></strong> .</p>
-</div>
-<div class="paragraph">
-<p>Depending on your role at ASAM, some tasks may require local software installation or may benefit from one.
-In some cases, you may decide whether you would like to use the provided online tools or interface with them through a local setup.
-For some of these, ASAM provides a recommended base setup, listed under <a href="#recommended_tools_table">Recommended Tools</a>.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Since ASAM does not develope those tools, descriptions and information on how to install, set up and use them is kept as short as possible to minimize outdated information in this guide as much as possible.
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_infrastructure_for_standard_development"><a class="anchor" href="#_infrastructure_for_standard_development"></a>Infrastructure for Standard Development</h2>
-<div class="sectionbody">
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1081,11 +1065,26 @@ Since ASAM does not develope those tools, descriptions and information on how to
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Instead of installing software locally, ASAM supports <strong><a href="working-without-software-installation.html" class="xref page">Working without software installation</a></strong> for some roles.
+Most roles can contribute by <strong><a href="working-without-software-installation.html" class="xref page">Working Online</a></strong>.
 </td>
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>Tools on these pages are separated into mandatory infrastructure and recommended tools.<br>
+<a href="#_infrastructure_for_standard_development"><strong>Mandatory infrastructure</strong></a> contains everything that is mandatory for every project.
+These platforms and tools are often hosted by ASAM and always accessible online.<br>
+<a href="#_recommended_tools"><strong>Recommended tools</strong></a> are tools that in provide additional features beyond their online equivalent and can be beneficial for certain users.
+ASAM provides helpful guides and tips here.</p>
+</div>
+<div class="paragraph">
+<p>It also is a central aspect of ASAM&#8217;s concept of <a href="#concepts:doc-as-code">[concepts:doc-as-code]</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_infrastructure_for_standard_development"><a class="anchor" href="#_infrastructure_for_standard_development"></a>Infrastructure For Standard Development</h2>
+<div class="sectionbody">
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1098,7 +1097,7 @@ Click the icon to access the Project Guide&#8217;s tool info page.
 </tr>
 </table>
 </div>
-<table id="collaborative_infrastructure" class="tableblock frame-none grid-rows stretch">
+<table id="collaborative_infrastructure" class="tableblock frame-none grid-rows stripes-hover stretch">
 <caption class="title">Table 1. Infrastructure to enable collaborative standard development</caption>
 <colgroup>
 <col style="width: 25%;">
@@ -1150,7 +1149,7 @@ It can be accessed directly or through Teams, which is why all files that have b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_recommended_tools"><a class="anchor" href="#_recommended_tools"></a>Recommended tools</h2>
+<h2 id="_recommended_tools"><a class="anchor" href="#_recommended_tools"></a>Recommended Tools</h2>
 <div class="sectionbody">
 <div class="admonitionblock tip">
 <table>
@@ -1164,7 +1163,7 @@ Click the icon to access the Project Guide&#8217;s tool info page.
 </tr>
 </table>
 </div>
-<table id="recommended_tools_table" class="tableblock frame-none grid-rows stretch">
+<table id="recommended_tools_table" class="tableblock frame-none grid-rows stripes-hover stretch">
 <caption class="title">Table 2. Recommended Tools</caption>
 <colgroup>
 <col style="width: 25%;">
@@ -1251,7 +1250,7 @@ This part contains an alphabetically sorted collection of instructions, template
 </div>
 <nav class="pagination">
   <span class="prev"><a href="../role-specific/standard_expert-group.html">Standard expert group</a></span>
-  <span class="next"><a href="working-without-software-installation.html">Working without software installation</a></span>
+  <span class="next"><a href="working-without-software-installation.html">Working Online</a></span>
 </nav>
 </article>
   </div>
