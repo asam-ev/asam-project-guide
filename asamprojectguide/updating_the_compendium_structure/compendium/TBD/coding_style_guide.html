@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>The openSCENARIO2 coding style guide :: ASAM Project Guide</title>
+    <link rel="prev" href="../TBD.html">
+    <link rel="next" href="creation-of-standards.html">
+    <meta name="description" content="Summary of (osc2) coding styles and guideline on how to use them.">
+    <meta name="keywords" content="coding, style-guide, osc2">
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+<link rel="stylesheet" href="../../../../_/css/extra.css">
+    <script>var uiRootPath = '../../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+           –
+          updating_the_compendium_structure-dev</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
+        <div class="navbar-item is-hoverable">
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/updating_the_compendium_structure/compendium/TBD/coding_style_guide.html+%7C%0D%0A%7C+Page+%7C+The openSCENARIO2 coding style guide+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="body">
+<div class="nav-container" data-component="asamprojectguide" data-version="updating_the_compendium_structure">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">ASAM Project Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../concepts/main.html">Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/project_types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/project_phases.html">Project Phases</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/project_lifecycle.html">Exemplary Project Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/roles-overview.html">Roles Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/diagram_notations.html">Notation In Project Phase Diagrams</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../concepts/doc-as-code.html">Documentation As Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../concepts/tools-overview.html">Standard Tools Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../concepts/pipeline_details.html">Automation Pipelines At ASAM</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/main.html">ASAM&#8217;s Project Processes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/ideation_phase.html">Ideation Phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/ideation/enter_new_idea.html">Entering An Idea</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/ideation/developing_an_idea.html">Ideation Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/ideation/raising_interest.html">Gathering Participants For A Project Proposal</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/proposal_phase.html">Proposal Phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/phase_details.html">Proposal Phase Details</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/proposal_document.html">The Proposal Document</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/setup.html">Project Proposal Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/proposal_workshop_preparation.html">Prepare A Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/join_proposal_workshop.html">Join A Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/proposal_writing.html">Writing A Project Proposal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/submit_candidacy.html">Submit Your Candidacy As A Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/need_for_service_providers.html">Identify The Need For Service Providers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/submit_proposal.html">Submit A Proposal</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/signing_up.html">Signing Up For Projects</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/signing_up/enroll_for_ideation.html">Enroll During Ideation Phase</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/signing_up/become_workgroup_member.html">Become A Workgroup Member</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/signing_up/become_project_lead.html">Become Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/signing_up/become_workgroup_lead.html">Become Workgroup Lead</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/signing_up/further_roles.html">Further roles in ASAM projects</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/development_phase.html">Development Phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/engage_service_provider.html">Engaging Service Providers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/review_phase.html">The Review phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/review/review_standard_asam.html">Review a standard (ASAM member review)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/review/review_standard_public.html">Review a standard (public release candidate)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/release_phase.html">The Release phase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../role-specific/main.html">ASAM Roles</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/gtm.html">ASAM global technology manager</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/project-lead.html">Project lead</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/wg-member.html">Workgroup member</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/wg-lead.html">Workgroup lead</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/reviewer.html">Reviewer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/technical-writer.html">Technical writer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/service-provider.html">Service provider</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/standard_manager.html">Standard manager</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../role-specific/standard_user.html">Standard user</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Other</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../role-specific/terminology.html">Role terminology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../role-specific/tsc.html">Technical Steering Committee Member</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../role-specific/standard_expert-group.html">Standard expert group</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/main.html">Tools Overview</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../tooling/working-without-software-installation.html">Working Online</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/remote_repo.html">Remote Repository Platforms</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_setup.html">Setting Up Your Repository Account</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_guides.html">Guides For Remote Repositories</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/calendar.html">OpenX Calendar</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/calendar/calendar-setup.html">Setting Up The OpenX Calendar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/teams-and-sharepoint.html">Microsoft Teams And Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/teams_and_sharepoint/teams-and-sharepoint-setup.html">Setting Up Microsoft Teams And Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/teams_and_sharepoint/teams-and-sharepoint-guides.html">Microsoft Teams And Sharepoint Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/filestage.html">Filestage</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/filestage/filestage_guides.html">Filestage Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../tooling/recommended_tools.html">Recommended Tools</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/vscode/vscode-setup.html">Setting Up Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/vscode/vscode-guides.html">Visual Studio Code Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/git/git-setup.html">Setting Up Git</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/git/git-guides.html">Git Guides</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/git/git_best_practices.html">Git Best Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/drawio/drawio-setup.html">Setting Up Draw.io</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/drawio/drawio-guides.html">Draw.io Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/docker/docker-setup.html">Setting Up Docker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/docker/docker-guides.html">Docker Guides</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/docker/docker-best-practices.html">Docker Best Practices</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium.html">Compendium</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1_keywords.html">Used keywords In ASAM Project Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../TBD.html">TBD</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="coding_style_guide.html">The openSCENARIO2 coding style guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="creation-of-standards.html">Creation of standards</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="filestage_review.html">Doing a review on Filestage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="git_interactions.html">Git interactions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="issue-resolution.html">OLD - Issue resolution process</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="run_docker.html">Starting a container from docker desktop</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../abbreviations.html">Abbreviations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../new_structure.html">New structure</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../new_structure/Definitions.html">Definitions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/api.html">Application programming interface</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/application_area_companion.html">Application area companion</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/associated_standard.html">Associated standard</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/base_standard.html">Base standard</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/call_for_offers.html">Call For Offers</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/deliverables.html">ASAM Deliverables</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/format_description.html">Format description</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/fragment.html">Fragment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/information_architecture_requirements.html">Requirements of the information architecture</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/protocol_definition.html">Protocol definitions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/set_of_standards.html">Set of standards</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/status_of_document.html">Status of documents</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/technology_reference.html">Technology reference</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/transport_layer_specification.html">Transport layer specification</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Definitions/wsl.html">Windows subsystem for linux (WSL)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../new_structure/Guidelines.html">Guidelines</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/asciidoc_guide.html">AsciiDoc Guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/asset_rules.html">Conventions For Images</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/commit_guidelines.html">Commit Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/contribute_in_asciidoc.html">Contributing In AsciiDoc Files</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/contribute_with_issues.html">Contributing Through Issues</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/documentation_processes.html">Documentation processes</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/editorial_guide.html">Editorial guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/feedback_guide.html">Feedback guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/graphics_requirements.html">Requirements For Graphic Assets</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/hosting_workshops.html">Hosting Workshops</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/issue_and_mr_labels.html">Issue And Merge Request Labels</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/meeting_guidelines.html">Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/meeting_moderation.html">Meeting Moderation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/merge-pull_requests.html">Merge/Pull Requests</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/merge_conflicts.html">Merge Conflicts: Preventing And Resolving</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/plantuml_documentation_guide.html">PlantUML Documentation Guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/project_lead_training.html">Project Lead Training</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/proposal_phase_contribution_guidelines.html">Proposal Phase Contribution Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/ticket_triage.html">Ticket Triage Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/trunk_workflow.html">Trunk Workflow For Remote Repositories</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/writing_guide.html">Writing guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Guidelines/writing_guide_xil.html">new_structure/Guidelines/writing_guide_xil.adoc</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../new_structure/How-Tos.html">How-Tos</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__access_compiled_artifacts.html">How-To: Access Compiled Artifacts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__active_draft_section_preview.html">How-To: Activate Draft Section Preview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__asciidoc-admonitions.html">Admonitions: Notes, tips, etc.</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__asciidoc-code.html">Code and syntax highlighting</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__asciidoc-commenting.html">How to comment and review adoc files</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__asciidoc-formulas.html">How to include formulas in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__asciidoc-graphics.html">Graphics</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__asciidoc-partials.html">Reusing content</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__asciidoc-roadmaps.html">How to create roadmaps in ASAM documents</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__asciidoc-tasks.html">Task headings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__become_pl.html">How-To: Become Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__become_wg_lead.html">How-To: Become Working Group Lead</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__become_wg_member.html">How-To: Become Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__build_antora_locally.html">How-To: Build Antora Locally</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__change_asset_library_content.html">How-To: Edit Draw.io Asset Library</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__docker_for_asciidoc.html">How to use docker for asciidoctor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__enroll_for_ideation.html">How-To: Enroll During Ideation Phase</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__enrollment_list.html">How-To: Add The Enrollment List</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__enter_new_idea.html">How-To: Enter An Idea</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__executive_draft.html">How-To: Create An Executive Proposal Draft</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__identify_need_for_sp.html">How-To: Identify The Need For Service Providers</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__join_proposal_workshop.html">How-To: Join A Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__mark_parts_as_draft.html">How-To: Mark Passages As Draft</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__prepare_proposal_workshop.html">How-To: Prepare A Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__proposal_writing.html">How-To: Create A Project Proposal Document</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__review_standard_asam.html">How-To: Review a standard (ASAM member review)</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__review_standard_public.html">How-To: Review a standard (public release candidate)</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__set_up_new_development_project.html">How-To: Set Up A Project</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__setup_proposal_git.html">How-To: Project Proposal Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__setup_standard_docker_config.html">Standard docker compose yAML</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__submit_candidacy_pl.html">How-To: Submit Candidacy For Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__submit_proposal.html">How-To: Submit A Project Proposal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/How-Tos/how-to__switch_branches.html">How-To: Switch Branches</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../new_structure/Templates.html">Templates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Templates/add_custom_feedback_button.html">Add a custom feedback button to an Antora project</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Templates/asam_dco.html">ASAM developer certification of origin for open source projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Templates/cover_page.html">Cover Page</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Templates/directories.html">Directories</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Templates/ideation_workshop_gameplan.html">Ideation Workshop Gameplan</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Templates/proposal_workshop_gameplan.html">Proposal Workshop Gameplan</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../new_structure/Templates/review_feedback_template.html">Standard review template</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools.html">Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tools/antora.html">Antora</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/cloning_repo_tutorial.html">Cloning A Repository With Git</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/git_actions.html">Git actions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/git_terminology.html">Git terminology</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/merge.html">Merge a branch</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/review_code.html">Review code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/git/submodules.html">Submodules in git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodule_add.html">Adding A New Submodule To A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodule_changing_remote.html">Changing remote for a submodule</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodule_delete.html">Removing A Submodule From A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodule_pull.html">Pulling A Submodule</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tools/git/submodules/submodules_switch_version.html">Switching to a specific submodule version</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/working_with_git.html">Working with git</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/git/write_a_feature.html">Write A Feature</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/github.html">Github</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/github/how-to__github-setup.html">How-To: Setting Up Your GitHub Account</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/gitlab.html">Gitlab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/branch_naming_conventions.html">Branch Naming Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/branching_repo.html">Creating a branch</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/cloning_a_repository.html">How-To: Clone A Repository Using GitLab To Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/create_branch_from_issue.html">Create development branch from issues</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/forking_repo.html">Forking from repository</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/gitlab_terminology.html">GitLab Terminology</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/how-to__gitlab-setup.html">How-To: Setting Up Your GitLab Account</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/gitlab/review_with_service_desk.html">How to use GitLab service desk for reviews</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/powershell.html">Powershell</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/powershell/cloning_a_repository.html">Cloning A Repository Using Git Bash / Powershell</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/powershell/powershell_basics.html">Microsoft PowerShell Basics</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/sharepoint.html">Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/sharepoint/links.html">Sharepoint link summary</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/sharepoint/synchronizing_sharepoint_with_onedrive.html">Synchronizing sharepoint with oneDrive</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/teams.html">Teams</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/email-notifications.html">Email notifications from microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/meetings_in_teams.html">Meetings in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/obtain_channel_email.html">Obtain the email address of a channel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/polls_and_surveys.html">Polls &amp; Surveys</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/receive_notifications.html">Receiving notifications in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/teams/teams-channel_file-structure.html">Teams channels file structure</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tools/vscode.html">Vscode</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/adding_diagrams_to_vscode.html">Adding VSCode Support For Diagrams With Kroki</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/cloning_a_repository.html">Cloning A Repository Using Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/recommended_vscode_extensions.html">Recommended Visual Studio Code extensions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/recommended_vscode_settings.html">ASAM recommended Visual Studio Code settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/run_docker.html">Running docker-Compose From VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_activity-bar.html">Visual Studio Code activity bar</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_command-palette.html">Visual Studio Code command palette</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_git-interaction.html">Interacting with git through Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_install_extension.html">Install extensions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tools/vscode/vscode_interface.html">Visual Studio Code interface</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../asam-contacts.html">Contacts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../credits.html">Credits</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../getting-involved/proposal_phase-copy.html">Proposal Phase</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../getting-involved/development/creation-of-standards.html">Creation of standards</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../getting-involved/tbd/initiate_webinar.html">Initiate a webinar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../getting-involved/tbd/join_webinar.html">Join a webinar</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Guide</span>
+    <span class="version">updating_the_compendium_structure-dev</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../index.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">updating_the_compendium_structure-dev</a>
+        </li>
+        <li class="version">
+          <a href="../../../pre-res/index.html">Pre-Restructuring</a>
+        </li>
+        <li class="version">
+          <a href="../../../latest/index.html">latest-dev</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../asamprojectguide-editing/main.html">Editing the ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../asamprojectguide-editing/main.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../latest/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">ASAM Project Guide</a></li>
+    <li><a href="../compendium.html">Compendium</a></li>
+    <li><a href="../TBD.html">TBD</a></li>
+    <li><a href="coding_style_guide.html">The openSCENARIO2 coding style guide</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">updating_the_compendium_structure-dev</button>
+  <div class="version-menu">
+    <a class="version is-current" href="coding_style_guide.html">updating_the_compendium_structure-dev</a>
+    <a class="version is-missing" href="../../../pre-res/index.html">Pre-Restructuring</a>
+    <a class="version is-missing" href="../../../latest/index.html">latest-dev</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/updating_the_compendium_structure/content/modules/compendium/pages/TBD/coding_style_guide.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc" variant="wide">
+    <h1 class="page">The openSCENARIO2 coding style guide</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This coding style guide is intended to help you writing source code in the OpenSCENARIO 2.x domain specific language in a uniform way.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This guide focuses on uniform formatting and naming for source code.
+It does neither contain best-practices nor is it a reference for the language.</p>
+</div>
+<div class="paragraph">
+<p>You should follow the recommendations in this document in the following cases:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>You are a <em>scenario developer</em> writing fully functional scenarios for real use.</p>
+</li>
+<li>
+<p>You are a <em>writer of documentation</em> and want to add code examples (snippets) to your adoc document.<br>
+In this case you should mark your code examples as a <code>[source, osc2]</code> source block as described in the <a href="#compendium:writing_guidelines/writing_guide.adoc" class="xref unresolved">compendium:writing_guidelines/writing_guide.adoc</a>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>By following the recommendations in this guide your code becomes easy-to-understand for you and other users.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_formatting"><a class="anchor" href="#_formatting"></a>2. Formatting</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_indentation"><a class="anchor" href="#_indentation"></a>2.1. Indentation</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <strong>four space characters</strong> per indentation level.</p>
+</li>
+<li>
+<p>Do <em>not</em> use tab characters.</p>
+</li>
+<li>
+<p>Use the following text editor settings:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Tab size: 4</strong></p>
+</li>
+<li>
+<p><strong>Insert spaces</strong></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+For support in Visual Studio Code, see <a href="../tools/vscode/recommended_vscode_settings.html#_indentations" class="xref page">Indentations</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_encoding"><a class="anchor" href="#_encoding"></a>2.2. Encoding</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <strong>UTF-8</strong> as encoding.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_whitespace"><a class="anchor" href="#_whitespace"></a>2.3. Whitespace</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+For support in Visual Studio Code, see <a href="../tools/vscode/recommended_vscode_settings.html#_automatic_removal_of_spaces_after_periods" class="xref page">Automatic Whitespace Removal</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Whitespace characters provide better readability when used in the correct places.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use only <strong>space characters</strong> as whitespace.</p>
+</li>
+<li>
+<p>Replace tabs with four spaces as described in <a href="#_indentation">Indentation</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The correct use of space characters within osc2 source code is as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>One space</strong> <em>after</em> a <strong>comma</strong> (, in argument lists and other lists)</p>
+</li>
+<li>
+<p><strong>One space</strong> <em>after</em> a <strong>colon</strong> (for example, for inheritance)</p>
+</li>
+<li>
+<p><strong>One space</strong> <em>before and after</em> a <strong>keyword</strong></p>
+</li>
+<li>
+<p><strong>One space</strong> <em>before and after</em> an <strong>operator</strong></p>
+</li>
+<li>
+<p><strong>No spaces</strong> <em>before and after</em> <strong>brackets and braces</strong> (for example, in function calls or for indexing)</p>
+</li>
+<li>
+<p><strong>No space</strong> between value and unit</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following code snippet shows some examples of the correct use of space characters.</p>
+</div>
+<div id="code-coding-style-guide-correct-use-of-space" class="listingblock">
+<div class="title">Correct use of space characters</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2">func(arg[1], arg2)
+if x == 4: print x, y
+foo == [x, y, z]
+func(1)
+abc[key] = lst[index]
+i = i + 1
+actor bus: car(category: bus):
+   keep(width == 1.8m)
+   keep(length == 4.5m)
+
+swerve_story: serial:
+    side_vehicle.drive() with:
+        path(s_side_vehicle)
+        keep_speed()
+    with:
+        until (top.time &gt; 5sec)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_comments"><a class="anchor" href="#_comments"></a>2.4. Comments</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Single lines of comments and inline comments can be added using <strong>'pound' symbol (&#35;)</strong>.</p>
+<div class="literalblock">
+<div class="content">
+<pre># This is a single line comment.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>i = i + 42  # This is an inline comment</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Blocks of comments can be simulated by using several single lines of comments.</p>
+<div class="literalblock">
+<div class="content">
+<pre># This is a block of comments example.
+# The following call to foo is commented out
+# Reason: see issue xyz
+# More explanation here...
+#
+# foo()</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_line_breaks"><a class="anchor" href="#_line_breaks"></a>2.5. Line breaks</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Consider breaking up statements that are too long to fit into one line.<br>
+Use the line continuation special character <strong>'backslash' (\)</strong> for marking the continuation.</p>
+<div class="literalblock">
+<div class="content">
+<pre>This is a line of text that is too long for a single \
+line, so continue after the backslash in a new line.</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_naming"><a class="anchor" href="#_naming"></a>3. Naming</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Naming conventions are a widely discussed topic with great influence on readability influenced by fashion changes, habit and personal taste.</p>
+</div>
+<div class="paragraph">
+<p>Here are the recommendations valid for naming conventions in OpenSCENARIO 2.x source code.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock note thumb">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The naming style is not finally decided.<br>
+Use <a href="#_use_snake_case_only">Use <em>snake_case</em> only</a> until further notice!
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_snake_case_only"><a class="anchor" href="#_use_snake_case_only"></a>3.1. Use <em>snake_case</em> only</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <strong><em>snake_case</em></strong> (aka <em>lowercase_with_underscore</em>) for all source code elements that are not keywords.</p>
+</li>
+</ul>
+</div>
+<div id="code-coding-style-guide-example" class="listingblock">
+<div class="title">Example for correctly formatted code</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2"># 1: Define an actor
+actor car_group:
+     average_distance: length
+     number_of_cars: uint
+
+# 2: Define a road element struct
+struct geometric_road: road_element:
+    min_radius: length
+    max_radius: length
+    side: av_side
+
+# 3: Define a scenario
+scenario dut.traverse_junction_at_yield:
+    s: road_with_sign with(sign_type: yield)
+    do dut.car.traverse_junction() with: ...
+
+# 4: Define a containing scenario
+scenario dut.mix_three_dangers:
+     weather_kind: weather_kind
+     keep(weather_kind != clear)
+     do mix:
+         cut_in_and_slow()
+         traverse_junction_at_yield()
+         weather(kind: weather_kind)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_single_character_names"><a class="anchor" href="#_single_character_names"></a>3.2. Single character names</h3>
+<div class="paragraph">
+<p>Do not use the following characters as single character names because they can be easily misread as zero (0) or one (1):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>No single lowercase <em>'el'</em> (l)</p>
+</li>
+<li>
+<p>No single uppercase <em>'eye'</em> (I)</p>
+</li>
+<li>
+<p>No single lowercase <em>'oh'</em> (o)</p>
+</li>
+<li>
+<p>No single uppercase <em>'oh'</em> (O)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example"><a class="anchor" href="#_example"></a>4. Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here is a more complex example showing all the rules.</p>
+</div>
+<div id="code-coding-style-guide-example-big" class="listingblock">
+<div class="title">Example for correctly formatted code in OpenSCENARIO 2.x</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-osc2 hljs" data-lang="osc2">scenario slower_large_vehicle_in_adjacent_lane
+    ego_vehicle: vehicle with:
+        keep(p_vehicle_model == APTIV_ego_vehicle)
+    v1: vehicle with:
+        keep(vehicle_category == Bus)
+        keep(p_vehicle_model == BlueBird_Vision_2014)
+        keep(p_vehicle_model.Color == Blue)
+
+    ego_model: ego_vehicle.p_vehicle_model
+    ego_route: ego_vehicle.route
+    v1_model: v1.p_vehicle_model
+    v1_route: v1.route
+
+    ego_start_speed: speed
+    ego_start_distance: length
+    v1_start_speed: speed
+    v1_start_distance: length
+
+    simulation_platform_choice: string
+    simulation_time_threshold_reached: time
+    ego_ttc_threshold: time
+    ego_distance_to_bias: length
+    lane_choice: string
+    ego_lane: lane
+    map: file_path
+
+    keep(map == "/maps/example.xodr")
+
+    simple_3_lane_road_01: lane_section
+    lane1^: lane
+    lane2^: lane
+    lane3^: lane
+
+    simple_3_lane_road_01.lanes = [lane1^, lane2^, lane3^]
+    keep(simple_2_lane_road_01 == map.road(id:"1").*lane_section(s:"0"))
+    lane3^ = rightmost_lane(map.*right)
+    keep(lane2^ -[:LEFT_OF]-&gt; lane3^)
+    keep(lane1^ -[:LEFT_OF]-&gt; lane2^)
+
+    # Logic Parameter Syntax
+    keep(ego_lane in: { if: lane_choice == "Left" THEN: SET ego_lane = "lane1^",
+                        if: lane_choice == "Right" THEN: SET ego_lane = "lane3^"})
+
+    keep(ego_model == APTIV_ego_vehicle)
+    keep(ego_route == ego_drive_left)
+    keep(v1_model == BlueBird_Vision_2014)
+    keep(v1_route == v1_drive)
+
+    keep(ego_start_speed == 80.46719999999999 [kph])
+    keep(ego_start_distance == 5 [m])
+    keep(v1_start_speed == 48.28032 [kph])
+    keep(v1_start_distance == 55.0 [m])
+
+    keep(simulation_platform_choice == "CarMaker")
+    keep(simulation_time_threshold_reached == 120 [s])
+    keep(ego_ttc_threshold == 1 [s])
+    keep(ego_distance_to_bias == 1 [m])
+    keep(lane_choice == "Left")
+
+    # Relationship Syntax
+    keep(v1_start_speed -[:SLOWER_THAN]-&gt; ego_start_speed)
+
+    def distance_between_ego_vehicle_and_v1(vehicle, vehicle) -&gt; length is external "kpi.py"
+    def get_ttc_with_vehicle_to_vehicle(vehicle, vehicle, string) -&gt; time is external "kpi_TTC.py"
+
+    !ego_speed: speed = ego_vehicle.speed
+    !ego_end_of_road: Position = ego_vehicle.end_of_road
+    !ego_off_road: Position = ego_vehicle.off_road
+    !simulation_time: time = simulation.time
+    !ego_vehicle_lane: lane = ego_vehicle.lane
+    !ego_collision_monitor: integer = sensor.collision.v.fr1.count
+
+    !ego_ttc_with_v1: time = sample(ego_vehicle.get_ttc_with_vehicle_to_vehicle(ego_vehicle:vehicle, v1:vehicle, [simulation_platform_choice]))
+    !ego_distance_to_v1: length = sample(distance_between_egoVehicle_and_v1(v1:vehicle, ego_vehicle:vehicle, [simulation_platform_choice]))
+
+    event observation_complete is(one_of(@end_conditions))
+
+    event ego_ttc_threshold_reached1 is(!ego_ttc_with_v1 &lt; ego_ttc_threshold)
+    event ego_close_to_v1 is(!ego_distance_to_v1 &lt; ego_distance_to_bias)
+
+    event end_conditions[1] is(!ego_end_of_road &gt; 0)
+    event end_conditions[2] is(!ego_off_road &gt; 0)
+    event end_conditions[3] is(!simulation_time &gt; [simulation_time_threshold_reached])
+    event end_conditions[4] is(!ego_collision_monitor &gt; 0)
+    event end_conditions[5] is((ego_vehicle.s_road - v1.s_road) &gt; 40)
+
+    do parallel():
+        ego_init_drive_01: ego_vehicle.drive(ego_route) with:
+            position(at_distance: ego_start_distance, beyond_start_of: ego_route)
+            speed(at_speed: ego_start_speed)
+            at(at:start)
+        v1_init_drive_01: v1.drive(v1_route) with:
+            position(at_distance: v1_start_distance, ahead_of: ego_vehicle)
+            speed(at_speed: v1_start_speed)
+            at(at:start)
+            until(@observation_complete)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_related_topics"><a class="anchor" href="#_related_topics"></a>5. Related topics</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>If you cannot find a recommendation for your source code formatting or naming problem in this document, follow the <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">Style Guide for Python Code (PEP 8)</a>.</p>
+</li>
+<li>
+<p>For more information about creating documentation with adoc-topics check out the <a href="#writing_guidelines/writing_guide.adoc" class="xref unresolved">writing_guidelines/writing_guide.adoc</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../TBD.html">TBD</a></span>
+  <span class="next"><a href="creation-of-standards.html">Creation of standards</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../../_/js/site.js"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

@@ -395,7 +395,10 @@
     <a class="nav-link" href="../../compendium/ASAM/doc-as-code/contribute_with_issues.html">Contributing Through Issues</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/ASAM/doc-as-code/standard_workflow.html">ASAM standard workflows</a>
+    <a class="nav-link" href="../../compendium/ASAM/doc-as-code/ticket_triage.html">Issue triage - managing unedited issues</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/ASAM/doc-as-code/trunk_workflow.html">Trunk Workflow For Remote Repositories</a>
   </li>
 </ul>
   </li>
@@ -620,13 +623,7 @@
     <a class="nav-link" href="../../compendium/guides/git/git_interactions.html">Git interactions</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/guides/git/switch_branches.html">How to switch branches</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/guides/git/workflow_tutorial.html">Workflow Tutorial For Projects Using GitLab</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/guides/git/working_with_issues.html">Working With Issues In Repositories</a>
+    <a class="nav-link" href="../../compendium/guides/git/how-to__switch_branches.html">How-To: Switch Branches</a>
   </li>
 </ul>
   </li>
@@ -842,13 +839,13 @@
     <a class="nav-link" href="../../compendium/tools/gitlab/asam_issue_and_mr_labels.html">ASAM issue and merge request labels</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/tools/gitlab/branch_naming_conventions.html">Branch naming conventions</a>
+    <a class="nav-link" href="../../compendium/tools/gitlab/branch_naming_conventions.html">Branch Naming Conventions</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../compendium/tools/gitlab/branching_repo.html">Creating a branch</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/tools/gitlab/cloning_a_repository.html">Cloning A Repository Using GitLab To Visual Studio Code</a>
+    <a class="nav-link" href="../../compendium/tools/gitlab/cloning_a_repository.html">How-To: Clone A Repository Using GitLab To Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../compendium/tools/gitlab/commit_guidelines.html">ASAM commit guidelines</a>
@@ -858,9 +855,6 @@
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../compendium/tools/gitlab/forking_repo.html">Forking from repository</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../../compendium/tools/gitlab/gitlab-ide_guide.html">GitLab IDE Guide</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../compendium/tools/gitlab/gitlab_terminology.html">GitLab Terminology</a>
@@ -1028,9 +1022,12 @@
   </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../../../pre-res/index.html">ASAM Project Guide</a>
+      <a class="title" href="../../../updating_the_compendium_structure/index.html">ASAM Project Guide</a>
       <ul class="versions">
         <li class="version is-latest">
+          <a href="../../../updating_the_compendium_structure/index.html">updating_the_compendium_structure-dev</a>
+        </li>
+        <li class="version">
           <a href="../../../pre-res/index.html">Pre-Restructuring</a>
         </li>
         <li class="version is-current">
@@ -1066,6 +1063,7 @@
 <div class="page-versions">
   <button class="version-menu-toggle" title="Show other versions of page">latest-dev</button>
   <div class="version-menu">
+    <a class="version" href="../../../updating_the_compendium_structure/tooling/remote_repo/remote_repo_guides.html">updating_the_compendium_structure-dev</a>
     <a class="version is-missing" href="../../../pre-res/index.html">Pre-Restructuring</a>
     <a class="version is-current" href="remote_repo_guides.html">latest-dev</a>
   </div>
@@ -1078,6 +1076,8 @@
 </aside>
 <article class="doc" variant="wide">
     <h1 class="page">Guides For Remote Repositories</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
 <p><a href="../remote_repo.html" class="xref page"><span class="image right"><img src="../_images/remote.png" alt="Remote Repository Icon" width="80" title="&#8594;Home&#8592;"></span></a></p>
 </div>
@@ -1085,9 +1085,6 @@
 <ol class="arabic">
 <li>
 <p>Participate with issues</p>
-</li>
-<li>
-<p>issue rules and labels</p>
 </li>
 <li>
 <p>The trunk strategy</p>
@@ -1108,6 +1105,1193 @@
 <p>accessing artifacts</p>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_contributing_through_issues"><a class="anchor" href="#_contributing_through_issues"></a>Contributing Through Issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="../../role-specific/wg-member.html" class="xref page"><role style="background:#BDB76B;" >WG MEMBER</role></a>
+<a href="../../role-specific/project-lead.html" class="xref page"><role style="background:#6A5ACD;" >PROJECT LEAD</role></a></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If you want to contribute more directly, see <a href="../../compendium/ASAM/doc-as-code/contribute_in_asciidoc.html" class="xref page">Contributing In AsciiDoc Files</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_make_discussions_accessible"><a class="anchor" href="#_make_discussions_accessible"></a>Make Discussions Accessible</h3>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>It must be possible for every project member to contribute to and give feedback on the content of a Proposal document directly.
+For this purpose, all content discussions shall happen through issues in a project&#8217;s issue board.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gather_topics_in_issues"><a class="anchor" href="#_gather_topics_in_issues"></a>Gather Topics In Issues</h3>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>If your project is on ASAM GitLab, see the <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#create-an-issue" target="_blank" rel="noopener">GitLab instructions</a> for creating issues.<br>
+If your project is on GitHub, see the <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue" target="_blank" rel="noopener">GitHub instructions</a> for creating issues.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">PROPOSAL</dt>
+<dd>
+<p>Participants shall gather content for sections in issues in the proposal repository and discuss them there.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>If the Proposal is for an update of an existing ASAM standard, consider collecting and using backlog issues from the previous project first.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">DEVELOPMENT</dt>
+<dd>
+<p>Every topic shall have its own issue.</p>
+</dd>
+</dl>
+</div>
+<div class="sect3">
+<h4 id="_sub_issues"><a class="anchor" href="#_sub_issues"></a>Sub-issues</h4>
+<div class="paragraph">
+<p><strong>DEVELOPMENT only</strong></p>
+</div>
+<div class="paragraph">
+<p><label class="recommended"/></p>
+</div>
+<div class="paragraph">
+<p>If a topic is too complex for a single issue, sub-issues shall be created.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_closing_issues_and_sub_issues"><a class="anchor" href="#_closing_issues_and_sub_issues"></a>Closing Issues And Sub-issues</h4>
+<div class="paragraph">
+<p><strong>DEVELOPMENT only</strong></p>
+</div>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>An issue with sub-issues shall only be closed if all its sub-issues have been closed.<br>
+If an issue has a branch, the issue shall not be closed before the branch has been merged or closed.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_issue_naming"><a class="anchor" href="#_issue_naming"></a>Issue Naming</h3>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">PROPOSAL</dt>
+<dd>
+<p>The name of the issue shall correspond to the respective section.</p>
+</dd>
+</dl>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/asam/proposal_issue_example.png" alt="proposal issue example">
+</div>
+<div class="title">Figure 1. Topic issue for a proposal&#8217;s Executive Summary</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">DEVELOPMENT</dt>
+<dd>
+<p>The name of the issue shall follow the <a href="../../compendium/tools/gitlab/branch_naming_conventions.html" class="xref page">Branch Naming Conventions</a>.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_issue_templates"><a class="anchor" href="#_use_issue_templates"></a>Use Issue Templates</h3>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>Issues shall be created using the provided issue templates in the repository.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Each issue template contains a description (as comments) on when to use them and what content to add where.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/asam/issue_template_example.png" alt="issue template example">
+</div>
+<div class="title">Figure 2. Creating an issue from a template</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_label_issues_correctly"><a class="anchor" href="#_label_issues_correctly"></a>Label Issues Correctly</h3>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>If your project is on ASAM GitLab, see the <a href="https://docs.gitlab.com/ee/user/project/labels.html#assign-and-unassign-labels" target="_blank" rel="noopener">GitLab instructions</a> for assigning labels.<br>
+If your project is on GitHub, see the <a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels#applying-a-label" target="_blank" rel="noopener">GitHub instructions</a> for assigning labels.</p>
+</div>
+<div class="paragraph">
+<p>The use of issue labels is required for filtering and sorting issues more efficiently.
+Every project must follow the provided <a href="../../compendium/tools/gitlab/asam_issue_and_mr_labels.html" class="xref page">list of issue labels</a>.<br>
+If a project wants to use additional custom labels for extra filter options, it may do so as long as each label is documented in the project documentation an accessible to each project member.</p>
+</div>
+<div class="paragraph">
+<p>Each issue shall be labeled according to the appropriate project labeling schema.</p>
+</div>
+<div class="paragraph">
+<p>For project proposals, all issues related to the proposal shall be labeled <code>Proposal</code>.</p>
+</div>
+<div class="paragraph">
+<p>This helps with separating issues from the proposal phase later when transferring content to the standardization repository.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_issue_discussions"><a class="anchor" href="#_issue_discussions"></a>Issue Discussions</h3>
+<div class="paragraph">
+<p>Issues are discussed and resolved through <a href="#_comments">comments</a> and <a href="#_replies">replies</a> to an issue.</p>
+</div>
+<div class="sect3">
+<h4 id="_content"><a class="anchor" href="#_content"></a>Content</h4>
+<div class="paragraph">
+<p>The issue content (body) contains the definition of the issue.</p>
+</div>
+<div class="paragraph">
+<p>In the case of a feature or chapter description, it contains the current content of that chapter.
+It shall always be up-to-date and contain the latest discussed and approved version.<br>
+In the case of a question or a bug, it contains the initial topic.
+In the latter case, the content shall only be updated to correct mistakes therein.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_comments"><a class="anchor" href="#_comments"></a>Comments</h4>
+<div class="paragraph">
+<p>If your project is on ASAM GitLab, see the <a href="https://docs.gitlab.com/ee/user/discussions/" target="_blank" rel="noopener">GitLab instructions</a> for commenting.<br>
+If your project is on GitHub, see the <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart#communicating" target="_blank" rel="noopener">GitHub instructions</a> for communication on issues.</p>
+</div>
+<div class="paragraph">
+<p>A comment to an issue is a new topic that is independent from any previous comment.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Before you add a new comment to an issue, make sure it is not a duplicate (i.e. the same or a similar comment already exists) and that it is not supposed to be a <a href="#_replies">reply</a>!
+Failure to do so will prevent efficient project progress.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_replies"><a class="anchor" href="#_replies"></a>Replies</h4>
+<div class="paragraph">
+<p>If your project is on ASAM GitLab, see the <a href="https://docs.gitlab.com/ee/user/discussions/#create-a-thread-by-replying-to-a-standard-comment" target="_blank" rel="noopener">GitLab instructions</a> for replies (aka "starting a thread").<br>
+If your project is on GitHub, see the <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart#communicating" target="_blank" rel="noopener">GitHub instructions</a> for communication on issues.</p>
+</div>
+<div class="paragraph">
+<p>A reply is a comment created as a reply to a previous comment.
+In the issue, it is a child comment to the previous one and listed in relation to it.</p>
+</div>
+<div class="paragraph">
+<p>If you want to reply to a previous comment, make sure to create a reply, not a new comment!</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_closing_issues"><a class="anchor" href="#_closing_issues"></a>Closing Issues</h3>
+<div class="paragraph">
+<p>An issues shall be closed once its discussion is resolved.
+Possible reasons:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The questions of the issue have been answered</p>
+</li>
+<li>
+<p>The bug has been fixed and the fixes have been reviewed and merged</p>
+</li>
+<li>
+<p>The feature has been developed, reviewed, and merged</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It is best practice to close an issue immediately after one of the closing conditions has been met.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, an issue may also be closed without resolution if</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>it has become obsolete</p>
+</li>
+<li>
+<p>it is a duplicate (i.e. another issue deals with the same topic already)</p>
+</li>
+<li>
+<p>it has not been worked on for a long period of time (see <a href="#_the_issue_triage">The Issue Triage</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_issue_triage"><a class="anchor" href="#_the_issue_triage"></a>The Issue Triage</h3>
+<div class="paragraph">
+<p>ASAM has defined a process for closing outdated issues.
+This is called the "Issue Triage" or "Ticket Triage".<br>
+See <a href="../../compendium/ASAM/doc-as-code/ticket_triage.html" class="xref page">Issue triage - managing unedited issues</a> for more details.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reopening_issues"><a class="anchor" href="#_reopening_issues"></a>Reopening Issues</h3>
+<div class="paragraph">
+<p>Closed issues can be reopened if they have become relevant again, there have been new developments directly impacting this specific issue, or the issue has been closed by accident and has not actually been finished yet.</p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_trunk_workflow_for_remote_repositories"><a class="anchor" href="#_trunk_workflow_for_remote_repositories"></a>Trunk Workflow For Remote Repositories</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a>
+<a href="../../role-specific/project-lead.html" class="xref page"><role style="background:#6A5ACD;" >PROJECT LEAD</role></a>
+<a href="../../role-specific/wg-member.html" class="xref page"><role style="background:#BDB76B;" >WG MEMBER</role></a>
+<a href="../../role-specific/wg-lead.html" class="xref page"><role style="background:#14BCCD;" >WG LEAD</role></a>
+<a href="../../role-specific/technical-writer.html" class="xref page"><role style="background:#D8BFD8;" >TECHNICAL WRITER</role></a>
+<a href="../../role-specific/service-provider.html" class="xref page"><role style="background:#FFDEAD;" >SERVICE PROVIDER</role></a></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Never work on the master branch, always create your own <a href="#Create development branch">development branch</a>!
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_the_trunk"><a class="anchor" href="#_the_trunk"></a>The Trunk</h3>
+<div class="paragraph">
+<p>This branch can only be merged to by the ASAM office or the project&#8217;s Change Control Board (CCB).
+Unless indicated by a clear git tag, all commits are considered to be part of a release candidate.</p>
+</div>
+<div class="paragraph">
+<p>Users <strong>MAY</strong> branch off the trunk for more focused development work.
+These branches <strong>SHOULD</strong> be short-lived (&lt;2 weeks) and regularly merged back.
+These branches <strong>MAY</strong> be squashed and <strong>MUST</strong> be merged via fast-forward merge (enabled by default).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_workflow_overview"><a class="anchor" href="#_workflow_overview"></a>Workflow Overview</h3>
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="../_images/diag-a0bc9156cce4a0abdbc40e2248c0f640de1dcb1c.svg"><span class="alt">Workflow Stages</span></object>
+</div>
+<div class="title">Figure 3. Workflow Stages</div>
+</div>
+<div class="sect3">
+<h4 id="_initial_setup"><a class="anchor" href="#_initial_setup"></a>Initial setup</h4>
+<div class="paragraph">
+<p><strong>Who: WG Leads</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create issues that map to the features in the project list</p>
+</li>
+<li>
+<p>Assign the issues to the correct milestone: <code>/milestone &lt;milestone&gt;</code></p>
+</li>
+<li>
+<p>Assign the issues to a responsible: <code>/assign @&lt;user&gt;</code></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_analysis"><a class="anchor" href="#_analysis"></a>Analysis</h4>
+<div class="paragraph">
+<p><strong>Who: Issue Assignee</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Coordinate &amp; drive the preparation of a proposal for addressing the issue.
+Either via comments or in further meetings.</p>
+</li>
+<li>
+<p><code>/label ~Analysis</code> to indicate this issue is being looked at and discussed.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implementation"><a class="anchor" href="#_implementation"></a>Implementation</h4>
+<div class="paragraph">
+<p><strong>Who: Issue Assignee</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Once a proposal is ready to be implemented, begin submitting work via commits to the develop branch</p>
+</li>
+<li>
+<p>[OPTIONAL] An assignee MAY create a separate branch off of <em>develop</em> to make it easier to keep development separate.
+Such a branch SHOULD be short-lived (no more than 2 weeks) to ensure progress and direction are visible to project members and that it is not too out of sync with other activities.</p>
+</li>
+<li>
+<p>Change the issue status <code>/label ~Implementation</code> to indicate that a proposal is being implemented for this issue</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_review"><a class="anchor" href="#_review"></a>Review</h4>
+<div class="paragraph">
+<p><strong>Who: WG Lead</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Review implementation progress of issue in WG meetings</p>
+</li>
+<li>
+<p>Once the group agrees that the feature is complete:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>[PREREQUISITE] If a feature branch was created, it MUST have been merged to develop</p>
+</li>
+<li>
+<p>Change the issue status <code>/label ~ProjectReview</code></p>
+</li>
+<li>
+<p>Create a new branch from develop</p>
+</li>
+<li>
+<p>Remove the encapsulating draft feature flag from the content (make sure that all other content remains within the draft flag) and commit the change.</p>
+</li>
+<li>
+<p>Open a MR to develop, add a comment to request review by the whole project and the implementers forum: <code>/request_review @all</code>.
+The MR MUST include document subsection number(s) being reviewed and a link to the lines of source code to be reviewed.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Who: All project members &amp; Implementers Forum</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Submit feedback on the changes directly in the MR</p>
+<div class="ulist">
+<ul>
+<li>
+<p>General Feedback: Submit a comment on the MR</p>
+</li>
+<li>
+<p>Content specific: Start a review in the changes tab of the MR</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+To start a review, write a comment on a diff as normal under the Changes tab in a merge request, and then select Start a review.
+Click <a href="https://docs.gitlab.com/ee/user/discussions/#starting-a-review" target="_blank" rel="noopener">here</a> for more information.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the review feedback requires further development work, the process restarts from the <a href="#IMPLEMENTATION">[IMPLEMENTATION]</a> stage</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="ReviewExample.gif" alt="ReviewExample">
+</div>
+<div class="title">Figure 4. A demo of a review</div>
+</div>
+<div class="paragraph">
+<p><strong>Who: CCB</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If there are no unresolved comments or threads after two weeks the CCB ends the review.</p>
+</li>
+<li>
+<p>The MR is assigned to the service provider for integration</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><code>/assign @amuetsch</code></p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_integration"><a class="anchor" href="#_integration"></a>Integration</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The service provider (SP) refines the content in the MR:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Change status to <code>/label ~Integration</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>The content is adjusted to adhere to ASAM style and writing conventions</p>
+</li>
+<li>
+<p>General editorial rewrites to ensure homogeneity of content</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Questions on content should be addressed to the original issue assignee who will be responsible for ensuring a satisfactory resolution.
+In the case that questions lead to significant changes to the content, the MR is reopened for review on resolution.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>On completion of the integration:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Create a 2nd MR from the review branch to release (same MR title)</p>
+</li>
+<li>
+<p>Add <code>/label ~CCBReview</code> to both MRs</p>
+</li>
+<li>
+<p>Both MRs MUST be set to squash commits with fast-forward merging (default).</p>
+</li>
+<li>
+<p>Squash commit message MUST adhere to the commit conventions</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_merge"><a class="anchor" href="#_merge"></a>Merge</h4>
+<div class="paragraph">
+<p><strong>Who: CCB</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>CCB performs a final review of the integrated content</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Is the original content still correctly represented?</p>
+</li>
+<li>
+<p>Are all guidelines &amp; conventions maintained?</p>
+</li>
+<li>
+<p>Are all discussions resolved?</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>CCB merges the MRs to <code>develop</code> and <code>release</code></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_development_branch"><a class="anchor" href="#_create_development_branch"></a>Create Development Branch</h3>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>Each topic must be developed in a separate development branch before it is merged to main when ready.
+Please keep in mind to change only few files at once in one branch to minimize the chance for <a href="../../compendium/tools/git/merge_conflicts.html" class="xref page">merge conflicts</a> to occur.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Give the branch a significant name that describes its intensions.
+See <a href="../../compendium/tools/gitlab/branch_naming_conventions.html" class="xref page">Branch Naming Conventions</a> for branch name conventions at ASAM.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you want to switch the branch you are viewing and working on, see <a href="#compendium:guides/how-to__switch_branches.adoc" class="xref unresolved">compendium:guides/how-to__switch_branches.adoc</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="_create_branch_from_issue"><a class="anchor" href="#_create_branch_from_issue"></a>Create Branch From Issue</h4>
+<div class="paragraph">
+<p><label class="recommended"/></p>
+</div>
+<div class="paragraph">
+<p>The recommended way of working is by using issues.</p>
+</div>
+<div class="paragraph">
+<p>The general idea is: Whenever an issue is opened, a branch is created with it.
+Thus, it is possible to work on the issue in an individual branch and merge that branch back to <code>main</code> after the issue is done.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create an issue, using one of the available templates.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/workflow_tut_issue1.png" alt="create_issue" width="1100" height="create issue">
+</div>
+</div>
+</li>
+<li>
+<p>Fill out the neccessary fields.
+Keep the size of the issue reasonable, for example by trying to have it cover about 8 hours of work.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/workflow_tut_issue2.png" alt="define_issue" width="1100" height="define issue">
+</div>
+</div>
+</li>
+<li>
+<p>Open your issue and create your branch from it.
+Follow the <a href="../../compendium/tools/gitlab/branch_naming_conventions.html" class="xref page">Branch Naming Conventions</a> for the branch name.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/workflow_tut_issue_branch.png" alt="create_branch" width="1100" height="create branch from issue">
+</div>
+</div>
+</li>
+<li>
+<p>Now, the ticket is created and we can start working on the issue.
+When working on the issue, document your progress to be able to know when the task is done.
+Please keep the documentation for the progress short and simple.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/workflow_tut_issue3.png" alt="work_on_issue" width="1100" height="work on issue">
+</div>
+</div>
+</li>
+<li>
+<p>If there are open points that need to be discussed with the group, start a new thread in the issue so others can reply to your suggestion or question</p>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/workflow_tut_issue4.png" alt="start_thread" width="1100" height="start thread">
+</div>
+</div>
+<div class="paragraph">
+<p>A thread in an issue looks like the image below.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/workflow_tut_issue5.png" alt="thread" width="1100" height="thread">
+</div>
+</div>
+</li>
+<li>
+<p>As soon as the issue is done, create a merge request for the branch to start an internal review.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_create_development_branch_manually"><a class="anchor" href="#_create_development_branch_manually"></a>Create Development Branch Manually</h4>
+<div class="paragraph">
+<p><label class="optional"/></p>
+</div>
+<div class="paragraph">
+<p>Alternatively, you can create your branch manually, either through GitLab or locally (if set up).</p>
+</div>
+<div class="paragraph">
+<p>There a many ways to create a branch in the git process.
+Two options are highlighted below.</p>
+</div>
+<div class="sect4">
+<h5 id="_option_1_using_visual_studio_code"><a class="anchor" href="#_option_1_using_visual_studio_code"></a>Option 1: Using Visual Studio Code</h5>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="create-a-branch.png" alt="create a branch">
+</div>
+<div class="title">Figure 5. Create a new branch in <em><a href="../../compendium/abbreviations.html#_vscode" class="xref page">VSCode</a></em></div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click on the branch icon on the bottom left</p>
+</li>
+<li>
+<p>Click on "Create New Branch"</p>
+</li>
+<li>
+<p>Enter a new <a href="../../compendium/tools/gitlab/branch_naming_conventions.html" class="xref page">valid</a> branch name and confirm with Enter</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You are automatically switched to the new branch.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>This is a local branch</strong>.
+You need to push it before it is also on the remote.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_option_2_in_gitlab"><a class="anchor" href="#_option_2_in_gitlab"></a>Option 2: In GitLab</h5>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/workflow_tut_step1.png" alt="img1" width="1100">
+</div>
+<div class="title">Figure 6. select the dropdown menu for new branch</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open an issue for which you want to create a new branch</p>
+</li>
+<li>
+<p>Select "Create branch" from the dropdown menu</p>
+<div class="imageblock">
+<div class="content">
+<img src="../../compendium/_images/workflow_tut_step2.png" alt="img2" width="1100">
+</div>
+<div class="title">Figure 7. create name for new branch</div>
+</div>
+</li>
+<li>
+<p>Enter a new <a href="../../compendium/tools/gitlab/branch_naming_conventions.html" class="xref page">valid</a> branch name</p>
+</li>
+<li>
+<p>Click "Create branch"</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The branch is now created on remote.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>You need to check out this branch locally as this only creates the branch on the server.</strong></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_work_in_development_branch"><a class="anchor" href="#_work_in_development_branch"></a>Work In Development Branch</h3>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If you are using the <a href="#compendium:tools/gitlab/gitlab-ide_guide.adoc" class="xref unresolved">Gitlab IDE</a>, you can edit the files directly in your browser.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you are using a local setup, you can pull, change, stage, commit and push through Git.
+See the guide on <a href="../../compendium/guides/git/git_interactions.html" class="xref page">Git interactions</a> for further information on how to work with a repository.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_commits_conventions"><a class="anchor" href="#_commits_conventions"></a>Commits Conventions</h3>
+<div class="paragraph">
+<p>The Commit Message Convention can be found <a href="../../compendium/tools/gitlab/commit_guidelines.html" class="xref page">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mark_content_as_draft"><a class="anchor" href="#_mark_content_as_draft"></a>Mark Content As Draft</h3>
+<div class="paragraph">
+<p>If a file contains content that is merged although not completely ready yet, use the feature flag 'draft' to mark the section or instructions in draft mode.<br>
+This allows us to have both a draft document and a reviewed document from the same source through just adding or removing the <code>draft</code> attribute in the build pipeline.</p>
+</div>
+<div class="paragraph">
+<p>To convert content to reviewed (i.e. non draft) content, the encapsulating ifdef statement simply needs to be removed (everything that is not in the square brackets).</p>
+</div>
+<div class="paragraph">
+<p>These flags SHOULD only be modified by WG Leads, the CCB or the ASAM office.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 1. Using 'draft' to exclude the line "(I think&#8230;&#8203;)" from the following passage</div>
+<div class="content">
+<div class="paragraph">
+<p>You shall not pass!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_merge_request"><a class="anchor" href="#_create_merge_request"></a>Create Merge Request</h3>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>After you are done with your work, create a "merge request" (or "pull request").<br>
+You should always merge back into the branch you branched from: if you branched from the <code>main</code> branch, you merge back to it.
+If you branched from another feature branch, you merge back to that feature branch.</p>
+</div>
+<div class="paragraph">
+<p>This is described in <a href="../../compendium/tools/git/merge.html" class="xref page">Merge a branch</a>.</p>
+</div>
+<div class="paragraph">
+<p>It is recommended to only merge a development branch once all issues related to it are closed.
+Each merge request must be reviewed internally with a simple review before it is allowed to be merged into <code>main</code> in order to minimize mistakes slipping through.</p>
+</div>
+<div class="paragraph">
+<p>Once a branch is merged into <code>main</code>, its changes are now offical and applied.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_general_tips"><a class="anchor" href="#_general_tips"></a>General Tips</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Code snippets</code> are <a href="https://code.asam.net/help/user/project/quick_actions" target="_blank" rel="noopener">GitLab quick actions</a> that can be used directly in comments.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_forking_from_repository"><a class="anchor" href="#_forking_from_repository"></a>Forking from repository</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Creating a fork "clones" the repository into your profile, allowing you to make changes without having to interact with the main repository.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The procedure is the same on code.asam.net (gitlab) and on github.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_forking_step_by_step"><a class="anchor" href="#_forking_step_by_step"></a>Forking step-by-Step</h3>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="forking-a-repo.gif" alt="forking a repo">
+</div>
+<div class="title">Figure 8. Forking a repo</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select "Fork" from the top of the repository page</p>
+</li>
+<li>
+<p>Select yourself from the list of users</p>
+</li>
+<li>
+<p>Wait for the forking process to finish</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Once you see your name in the url of the repository, the forking is complete.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_creating_a_pull_request_from_a_fork"><a class="anchor" href="#_creating_a_pull_request_from_a_fork"></a>Creating A Pull Request From A Fork</h3>
+<div class="paragraph">
+<p>To submit the changes you make in your fork back to the original repository, submit a Merge/Pull request as normal in the main repository, making sure to select your fork.</p>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="creating-a-pr-from-a-fork.gif" alt="creating a pr from a fork">
+</div>
+<div class="title">Figure 9. Creating a PR from a fork</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access the original repository</p>
+</li>
+<li>
+<p>Click on "Pull requests"</p>
+</li>
+<li>
+<p>Click on "New pull request"</p>
+</li>
+<li>
+<p>Click "compare across forks"</p>
+</li>
+<li>
+<p>Select your fork from the list</p>
+</li>
+<li>
+<p>Click on "Create pull request"</p>
+</li>
+</ol>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_merge_requests"><a class="anchor" href="#_merge_requests"></a>Merge requests</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_merge_commit_strategy"><a class="anchor" href="#_merge_commit_strategy"></a>Merge commit strategy</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>History of commits in a PR must be clean prior to merge</p>
+</li>
+<li>
+<p>Commit messages to a protected or master branch must adhere to conventional commits specification</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Repositories allow fast-forward merges only (<code>--ff-only</code>) and squash commits by default.
+This means we do not have a merge commit and that all commits are squashed.</p>
+</div>
+<div class="paragraph">
+<p>For squash commits with one commit, the commit message is taken directly (squash does not take place).
+For actual squashes the commit messages are taken from:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The first multi-line commit message in the merge.</p>
+</li>
+<li>
+<p>The merge request’s title if no multi-line commit message is found.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Squash commits is enabled by default but can be turned off, we do not always want to squash.
+This is to make sure that for those times that people create multiple unrelated changes in one branch we can still add them to the history.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mergepull_request_review"><a class="anchor" href="#_mergepull_request_review"></a>Merge/Pull Request Review</h3>
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="../_images/diag-ef30ea743875045992440b8fee04e2afb72dcb49.svg"><span class="alt">Diagram</span></object>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Pull/Merge request opened</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Technical discussion in comments</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Initial review by CCB, includes technical alignment with other activities in and outside of the project</p>
+</li>
+<li>
+<p>When a PR is ready for a review the CCB assigns it to a reviewer(s)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This could be a group in an ASAM project, an expert in the CCB or a participating service provider (e.g. for editorial review)</p>
+</li>
+<li>
+<p>On approval by the reviewers the PR/MR is assigned the ~ReadyForCCBReview label</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Final review &amp; merge by CCB - includes ensuring clear commit history that adheres to <a href="../../compendium/tools/gitlab/commit_guidelines.html" class="xref page">ASAM commit guidelines</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Discussion highlights and final decisions need to be documented in PRs/issues</p>
+</li>
+<li>
+<p>If necessary, further participants will be invited to CCB for more discussion (e.g. if a decision is needed on a PR or issue)</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Discussion and feedback takes place via comments in the PR
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_change_management"><a class="anchor" href="#_change_management"></a>Change management</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Auto-generated changelog included in release based on <strong>correctly</strong> formatted commits</p>
+</li>
+<li>
+<p>Manual summary included in spec - overview of important changes in the new version</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_milestone_management"><a class="anchor" href="#_milestone_management"></a>Milestone management</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>For now - milestones as defined in the proposal roadmap - this might be subject to change as the project develops</p>
+</li>
+<li>
+<p>PRs to be assigned to a milestone by PR creator</p>
+</li>
+<li>
+<p>CCB to review the milestone assignment</p>
+</li>
+<li>
+<p>This must relate the change type (breaking change, backwards compatible, bug) to the release types (major/minor/maintenance)</p>
+</li>
+<li>
+<p>For now, we will work with one master.
+Should we have many PRs targeting a future release we might implement multiple "development" branches for the different versions.
+(Only when necessary)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_topics"><a class="anchor" href="#_related_topics"></a>Related topics</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../compendium/tools/git/merge.html" class="xref page">Merge a branch</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/merge_conflicts.html" class="xref page">Merge conflicts: Preventing And Resolving</a></p>
+</li>
+<li>
+<p><a href="../git.html" class="xref page">Git</a></p>
+</li>
+<li>
+<p><a href="../git/git-guides.html" class="xref page">Git Guides</a></p>
+</li>
+<li>
+<p><a href="../git/git-setup.html" class="xref page">Setting Up Git</a></p>
+</li>
+<li>
+<p><a href="../git/git_best_practices.html" class="xref page">Git Best Practices</a></p>
+</li>
+<li>
+<p><a href="../../compendium/guides/git/git_interactions.html" class="xref page">Git interactions</a></p>
+</li>
+<li>
+<p><a href="../../compendium/guides/git/how-to__switch_branches.html" class="xref page">How-To: Switch Branches</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/cloning_repo_tutorial.html" class="xref page">Cloning A Repository With Git</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/commit_guidelines.html" class="xref page">Git commit guidelines</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/git_actions.html" class="xref page">Git actions</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/git_terminology.html" class="xref page">Git terminology</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/maintain_a_repo.html" class="xref page">Maintain A Repository</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/merge.html" class="xref page">Merge a branch</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/merge_conflicts.html" class="xref page">Merge conflicts: Preventing And Resolving</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/review_code.html" class="xref page">Review code</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/submodules.html" class="xref page">Submodules in git</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/working_with_git.html" class="xref page">Working with git</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/write_a_feature.html" class="xref page">Write A Feature</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/gitlab/branching_repo.html" class="xref page">Creating a branch</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/powershell/cloning_a_repository.html" class="xref page">Cloning A Repository Using Git Bash / Powershell</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/vscode/cloning_a_repository.html" class="xref page">Cloning A Repository Using Visual Studio Code</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/vscode/vscode_git-interaction.html" class="xref page">Interacting with git through Visual Studio Code</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/submodules/submodule_add.html" class="xref page">Adding A New Submodule To A Repository</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/submodules/submodule_changing_remote.html" class="xref page">Changing remote for a submodule</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/submodules/submodule_delete.html" class="xref page">Removing A Submodule From A Repository</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/submodules/submodule_pull.html" class="xref page">Pulling A Submodule</a></p>
+</li>
+<li>
+<p><a href="../../compendium/tools/git/submodules/submodules_switch_version.html" class="xref page">Switching to a specific submodule version</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_accessing_compiled_artifacts"><a class="anchor" href="#_accessing_compiled_artifacts"></a>Accessing compiled artifacts</h2>
+<div class="sectionbody">
+<div class="imageblock unresolved">
+<div class="content">
+<img src="downloading_artifacts.gif" alt="downloading artifacts">
+</div>
+<div class="title">Figure 10. This gif demonstrates how to access compiled html artifacts for other commits or branches</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access <em>Repository</em> &#8594; <em>Branches</em></p>
+</li>
+<li>
+<p>Select the pipeline for the branch that you&#8217;d like to access</p>
+</li>
+<li>
+<p>Retrieve the compiled artifacts</p>
+</li>
+</ol>
+</div>
+</div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="remote_repo_setup.html">Setting Up Your Repository Account</a></span>
