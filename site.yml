@@ -8,7 +8,7 @@ content:
   sources:
     - url: https://github.com/asam-ev/asam-project-guide-content.git
     # - url: ./asam-project-guide-content
-      branches: main, pre-restructuring
+      branches: main, pre-restructuring, updating_the_compendium_structure
       # branches: main
       tags: open*, v*
       start_path: content
