@@ -2,6 +2,10 @@
     border-radius: 1rem;
 }
 
+.doc .title {
+    font-weight: 600;
+}
+
 i.fa[class^='icon-'],
 i.fa[class*=' icon-']::before {
     content: "";
@@ -29,4 +33,19 @@ i.fa.icon-warning::before {
 
 i.fa.icon-caution::before {
     background: no-repeat url("../img/caution.svg");
+}
+
+.doc.red {
+    color: red
+}
+.doc.green {
+    color: green
+}
+.doc.blue {
+    color: blue
+}
+.doc.yellow,
+.span.yellow,
+.code.yellow {
+    color: yellow
 }
