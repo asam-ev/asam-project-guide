@@ -760,6 +760,18 @@
     <a class="nav-link" href="../../compendium/Terminology/information_architecture_requirements.html">Requirements of the information architecture</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__concept.html">[Project Type] Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__implementation.html">[Project Type] Implementation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__standard.html">[Project Type] Standard Development</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__study.html">[Project Type] Study</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/Terminology/protocol_definition.html">Protocol definitions</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -940,13 +952,12 @@ See <strong><a href="proposal_document.html" class="xref page">The Proposal Docu
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-You must first complete the <a href="../../tooling/working-without-software-installation.html#_minimum_required_setup" class="xref page"><strong>Minimum Required Setup</strong></a> before you can participate in and contribute to any project.
+You must first complete the <a href="../../tooling/working-without-software-installation.html#_minimum_required_setup" class="xref page"><strong>Minimum Required Setup</strong></a> before you can participate in and contribute to any project.<br>
+Participation in the creation of a Project Proposal follows the central <a href="../../compendium/Guidelines/workflow__trunk.html" class="xref page"><strong>Trunk-based Workflow</strong></a> at ASAM.
+If you want to learn more about this workflow, click the link.
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>Unresolved include directive in modules/getting-involved/pages/proposal/proposal_writing.adoc - include::compendium:partial$conventions/git-based_workflow.adoc[]</p>
 </div>
 <div class="paragraph">
 <p>To contribute to a Project Proposal, project members can either <a href="#_contributing_through_issues">contribute through GitLab issues</a> or <a href="#Contributing In AsciiDoc">contribute directly in AsciiDoc</a>.
@@ -961,7 +972,7 @@ If you prefer to work on your local computer, see the <a href="../../tooling/mai
 </div>
 <div class="paragraph">
 <p>The content of a Proposal document shall be drafted and discussed through issues in the project&#8217;s issue board.<br>
-ASAM provides guidelines on how to contribute through issues on the page <strong><a href="#compendium:ASAM/phase-02_proposal/proposal_guidelines.adoc" class="xref unresolved">compendium:ASAM/phase-02_proposal/proposal_guidelines.adoc</a></strong>.
+ASAM provides guidelines on how to contribute through issues on the page <strong><a href="../../compendium/Guidelines/proposal_phase_contribution_guidelines.html" class="xref page">Proposal Phase Contribution Guidelines</a></strong>.
 All participants must follow these guidelines.</p>
 </div>
 </div>
@@ -975,7 +986,7 @@ All participants must follow these guidelines.</p>
 However, content shall still be discussed and updated in issues as described in <a href="#_contributing_through_issues">Contributing Through Issues</a>.</p>
 </div>
 <div class="paragraph">
-<p>When writing AsciiDoc, writers must follow the guidelines described in <strong><a href="#compendium:ASAM/doc-as-code/workflow__contribute_in_asciidoc.adoc" class="xref unresolved">compendium:ASAM/doc-as-code/workflow__contribute_in_asciidoc.adoc</a></strong> as well as the <a href="#_asam_editorial_guide">ASAM Editorial Guide</a>.</p>
+<p>When writing AsciiDoc, writers must follow the guidelines described in <strong><a href="../../compendium/Guidelines/workflow__contribute_in_asciidoc.html" class="xref page">Contributing In AsciiDoc Files</a></strong> as well as the <a href="#_asam_editorial_guide">ASAM Editorial Guide</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -988,7 +999,7 @@ However, content shall still be discussed and updated in issues as described in 
 ASAM recommends that the project defines one or more writers responsible for this task.</p>
 </div>
 <div class="paragraph">
-<p>When writing AsciiDoc, writers must follow the guidelines described in <strong><a href="#compendium:ASAM/doc-as-code/workflow__contribute_in_asciidoc.adoc" class="xref unresolved">compendium:ASAM/doc-as-code/workflow__contribute_in_asciidoc.adoc</a></strong> as well as the <a href="#_asam_editorial_guide">ASAM Editorial Guide</a>.</p>
+<p>When writing AsciiDoc, writers must follow the guidelines described in <strong><a href="../../compendium/Guidelines/workflow__contribute_in_asciidoc.html" class="xref page">Contributing In AsciiDoc Files</a></strong> as well as the <a href="#_asam_editorial_guide">ASAM Editorial Guide</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -998,7 +1009,7 @@ ASAM recommends that the project defines one or more writers responsible for thi
 The current version of the Editorial Guide is located in the <a href="../../compendium/Guidelines/editorial_guide.html#_basics" class="xref page"><strong>Project Guide Compendium</strong></a>.</p>
 </div>
 <div class="paragraph">
-<p>The Editorial Guide is <strong>mandatory</strong> for all users writing directly in AsciiDoc and <strong>recommended</strong> for users contributing content through issues.</p>
+<p>The Editorial Guide is <strong>mandatory</strong> for all Technical Writers and <strong>recommended</strong> for users contributing content through issues.</p>
 </div>
 </div>
 </div>
@@ -1006,8 +1017,184 @@ The current version of the Editorial Guide is located in the <a href="../../comp
 <div class="sect1">
 <h2 id="_writing_the_proposal_draft"><a class="anchor" href="#_writing_the_proposal_draft"></a>Writing The Proposal Draft</h2>
 <div class="sectionbody">
+<table class="tableblock frame-all grid-rows stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Responsible</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><role style="background:LightGray;">Idea Giver</role></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Involved</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/wg-member.html" class="xref page"><role style="background:#BDB76B;" >WG MEMBER</role></a>, <a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Step</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/proposal_phase_v2-proposal_writing_draft.svg" alt="proposal phase v2 proposal writing draft"></span></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">TL;DR</p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Write the Motivation section</p>
+</li>
+<li>
+<p>Define use cases</p>
+</li>
+<li>
+<p>Refer to known existing standards</p>
+</li>
+<li>
+<p>Fill in all technical chapters</p>
+</li>
+<li>
+<p>Discuss and optimize together with ASAM Office</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The ASAM Office assists the writer(s) by giving advice with respect to ASAM guideline and best practices.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_context"><a class="anchor" href="#_context"></a>Context</h3>
 <div class="paragraph">
-<p>Unresolved include directive in modules/getting-involved/pages/proposal/proposal_writing.adoc - include::compendium:page$ASAM/phase-02_proposal/how-to__proposal_writing.adoc[]</p>
+<p>In case a new project is proposed, the first step is to create an Executive Draft for internal analysis.<br>
+Based on this draft, a rough Proposal Draft is then created that contains further details needed for the Proposal Workshop.
+This Proposal Draft is later further expanded and detailed until it is ready for submission to the TSC.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The more details you add initially, the easier it is for ASAM to understand and support your proposal and the deeper and more focussed the discussions in the workshops will be.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_result"><a class="anchor" href="#_result"></a>Result</h3>
+<div class="paragraph">
+<p>A valid Project Proposal is created that can be brought to decision by the TSC.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The final Project Proposal document is generated based on Asciidoc files, but the initial executive draft may be a Word document.
+For proposal submission, the proposal document must be converted into the appropriate Asciidoc structure.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The idea has been proposed and approved in the <a href="../ideation_phase.html" class="xref page">Ideation Phase</a>.</p>
+</li>
+<li>
+<p>The proposal needs at least three (3) partner companies.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how"><a class="anchor" href="#_how"></a>How</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access the project&#8217;s online repository through the link provided by your <a href="../../compendium/2_Abbreviations.html#_gtm" class="xref page">GTM</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Optionally, check out the project repository or download the <a href="https://code.asam.net/common/templates/proposal-template" target="_blank" rel="noopener">Executive Draft template</a> and edit the AsciiDoc files directly.<br></p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+You must update the content of each chapter&#8217;s issue regardless of if you write in the AsciiDoc files directly or not!
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Fill in the default structure as follows (in the respective issues):</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Add a comprehensive 'Executive Summary' outlining the general idea of the proposed project</p>
+</li>
+<li>
+<p>Describe the reasons for this proposed project in the 'Motivation' section</p>
+</li>
+<li>
+<p>Define a set of (initial) use cases in the 'Use Cases' section</p>
+</li>
+<li>
+<p>(OPTIONAL) If you know of other standards this proposal relates to (ASAM or other), list them in the 'Relations to Other Standards or Organizations' section</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>(OPTIONAL) Create an initial structure for the section 'Technical Content' and fill write as much project specific content as possible</p>
+</li>
+<li>
+<p>Discuss and optimize the document with your <a href="../../compendium/2_Abbreviations.html#_gtm" class="xref page">GTM</a></p>
+</li>
+<li>
+<p>Transfer the issues' content to the project&#8217;s AsciiDoc files.
+The GTM will support you with this task, if needed.
+Note that you do not need to render the document manually.
+The repository&#8217;s pipeline will create the required documents as artifacts automatically when the changes are committed and pushed to the trunk.
+See <a href="../../compendium/How-Tos/how-to__access_compiled_artifacts.html" class="xref page">How-To: Access Compiled Artifacts</a> to learn more about pipeline artifacts and how you can access them.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The sections 'Project Resources' and 'Project Plan' will be filled out at a later stage and do not need to be edited in this draft.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>

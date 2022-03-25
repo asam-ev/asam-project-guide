@@ -760,6 +760,18 @@
     <a class="nav-link" href="../../compendium/Terminology/information_architecture_requirements.html">Requirements of the information architecture</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__concept.html">[Project Type] Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__implementation.html">[Project Type] Implementation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__standard.html">[Project Type] Standard Development</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__study.html">[Project Type] Study</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/Terminology/protocol_definition.html">Protocol definitions</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -875,8 +887,110 @@
 </aside>
 <article class="doc" variant="wide">
     <h1 class="page">Project Proposal Setup</h1>
+<div id="preamble">
+<div class="sectionbody">
+<table class="tableblock frame-all grid-rows stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Responsible</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Involved</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><role style="background:LightGray;">Idea Giver</role>, <a href="../../role-specific/wg-member.html" class="xref page"><role style="background:#BDB76B;" >WG MEMBER</role></a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Step</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/proposal_phase_v2-proposal_setup.svg" alt="proposal phase v2 proposal setup"></span></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">TL;DR</p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Create new subgroup in <a href="https://code.asam.net/simulation" target="_blank" rel="noopener"><strong>Simulation</strong></a> and add members</p>
+</li>
+<li>
+<p>Fork the <a href="https://code.asam.net/common/templates/proposal-template" target="_blank" rel="noopener"><strong>proposal template repository</strong></a></p>
+</li>
+<li>
+<p>Inform members</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_context"><a class="anchor" href="#_context"></a>Context</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Unresolved include directive in modules/getting-involved/pages/proposal/setup.adoc - include::compendium:page$ASAM/phase-02_proposal/how-to__setup_proposal_git.adoc[]</p>
+<p>The basis for collaboration at ASAM is GitLab.
+In order for project members and the project lead to work on their respective project, a new repository has to be created.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_result"><a class="anchor" href="#_result"></a>Result</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A new proposal repository has been created and the link been provided to all current project members.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>The idea has been proposed and approved in the <a href="../ideation_phase.html#_the_ideation_phase" class="xref page">Ideation Phase</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how"><a class="anchor" href="#_how"></a>How</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In case of a new standard, <a href="https://docs.gitlab.com/ee/user/group/subgroups/#creating-a-subgroup" target="_blank" rel="noopener">create a new subgroup</a> in the group <a href="https://code.asam.net/simulation" target="_blank" rel="noopener"><strong>Simulation</strong></a> with the target name of the standard.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If this is an evolution of an existing standard, use the existing subgroup instead
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p><a href="#compendium:tools/gitlab/forking_repo.adoc" class="xref unresolved">Fork</a> the latest version of the <a href="https://code.asam.net/common/templates/proposal-template" target="_blank" rel="noopener"><strong>proposal template repository</strong></a> into this subgroup.</p>
+</li>
+<li>
+<p>Rename the forked project to <code>&lt;THIS_STANDARD&gt; Proposal</code>, where <code>&lt;THIS_STANDARD&gt;</code> is the target name of the standard.</p>
+</li>
+<li>
+<p>Add all current proposal members to the subgroup.</p>
+</li>
+<li>
+<p>Send a mail with the link to the new project to the proposal members, informing them that the repository is now ready for use.</p>
+</li>
+</ol>
+</div>
+</div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="proposal_document.html">The Proposal Document</a></span>

@@ -760,6 +760,18 @@
     <a class="nav-link" href="../../compendium/Terminology/information_architecture_requirements.html">Requirements of the information architecture</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__concept.html">[Project Type] Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__implementation.html">[Project Type] Implementation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__standard.html">[Project Type] Standard Development</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Terminology/project-type__study.html">[Project Type] Study</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/Terminology/protocol_definition.html">Protocol definitions</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -1004,7 +1016,81 @@ However, the timeline should still be realistic with the knowledge available dur
 <div class="sectionbody">
 <div class="paragraph">
 <p>The proposal must define the deliverables it intends to hand over to ASAM at the end of the project.
-Unresolved include directive in modules/getting-involved/pages/proposal/proposal_document.adoc - include::compendium:page$ASAM/deliverables.adoc[]</p>
+:leveloffset: +1</p>
+</div>
+<div class="paragraph">
+<p>The deliverables of a standard package consist of standard documents and other files.
+A standard package consists of at least one base standard.
+Other deliverable items, as listed on this page, are optional.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_standard_documents"><a class="anchor" href="#_standard_documents"></a>Standard Documents</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Base Standard</dt>
+<dd>
+<p>A base standard contains all fundamental specifications such as abstract object models, syntax definitions and functional behavior descriptions.
+It uses a problem- or task-oriented notation, such as UML or BNF.
+A base standard is technology- and implementation-independent.
+Each ASAM standard consists of one base standard document.
+Some base standards at <em><a href="../../compendium/2_Abbreviations.html#_asam" class="xref page">ASAM</a></em> are split-up into two documents, which is the Reference Guide, which contains all formal specifications of the standard in a reference-book style, and the User&#8217;s Guide, which further specifies the application of the standard.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>All other standard documents within a standard package are associated to the base standard, and are of one of the following types:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Companion Standard</dt>
+<dd>
+<p>The notion of companion standard is typically used for application- or device-specific extensions of a base standard.</p>
+</dd>
+<dt class="hdlist1">Technology Reference</dt>
+<dd>
+<p>Technology references map the abstract specifications of the base standard to specific technologies, e.g. programming langages or data-base implementations.</p>
+</dd>
+<dt class="hdlist1">Transport Layer Specification</dt>
+<dd>
+<p>Transport layer specifications are similar to technology references, as they also provide a technology mapping.
+The notion of transport layer specification is used in the area of communication technologies.
+They provide a mapping of the base standard to specific protocol- or bus-technologies.
+The transport layer abstracts access of higher application layers to the lower layers of the communication system.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_files"><a class="anchor" href="#_other_files"></a>Other Files</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Model Files</dt>
+<dd>
+<p>Model files typically contain the object model of the standard.
+A typical example of a model file in ASAM standards are UML models created with the tool "Enterprise Architect" (.ea).</p>
+</dd>
+<dt class="hdlist1">Schema files</dt>
+<dd>
+<p>Schema files define the formal structure and syntax of text files.
+They are used for automated schema validation.
+Typical examples of schema files are XML definition files (.xsd) or Google protocol buffers definition files (.proto).</p>
+</dd>
+<dt class="hdlist1">Interface definition files</dt>
+<dd>
+<p>Interface definition files define programmatic interfaces, such as <em><a href="../../compendium/2_Abbreviations.html#_api" class="xref page">API</a></em>s (Application Programming Interface).
+They are used for automatic code generation of the standardized interface for specific programming languages.
+A typical example of an interface definition file is the Interface Description Language file (.idl).</p>
+</dd>
+<dt class="hdlist1">Example files</dt>
+<dd>
+<p>Example files demonstrate a typical and standard-compliant implementation of the standard.</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>

@@ -760,6 +760,18 @@
     <a class="nav-link" href="../Terminology/information_architecture_requirements.html">Requirements of the information architecture</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Terminology/project-type__concept.html">[Project Type] Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Terminology/project-type__implementation.html">[Project Type] Implementation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Terminology/project-type__standard.html">[Project Type] Standard Development</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Terminology/project-type__study.html">[Project Type] Study</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Terminology/protocol_definition.html">Protocol definitions</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -875,6 +887,8 @@
 </aside>
 <article class="doc" variant="wide">
     <h1 class="page">Proposal Phase Contribution Guidelines</h1>
+<div id="preamble">
+<div class="sectionbody">
 <table class="tableblock frame-all grid-rows stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -904,8 +918,283 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_make_discussions_accessible"><a class="anchor" href="#_make_discussions_accessible"></a>1. Make Discussions Accessible</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Guidelines/proposal_phase_contribution_guidelines.adoc - include::compendium:page$ASAM/doc-as-code/workflow__contribute_with_issues.adoc[]</p>
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>It must be possible for every project member to contribute to and give feedback on the content of a Proposal document directly.
+For this purpose, all content discussions shall happen through issues in a project&#8217;s issue board.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gather_topics_in_issues"><a class="anchor" href="#_gather_topics_in_issues"></a>2. Gather Topics In Issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>If your project is on ASAM GitLab, see the <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#create-an-issue" target="_blank" rel="noopener">GitLab instructions</a> for creating issues.<br>
+If your project is on GitHub, see the <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue" target="_blank" rel="noopener">GitHub instructions</a> for creating issues.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A clean issue contains the following things:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>active milestone</p>
+</li>
+<li>
+<p><code>BACKLOG</code> or <code>ACTIVE_ISSUE</code> label</p>
+</li>
+<li>
+<p>assignee</p>
+</li>
+<li>
+<p>workgroup label</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Participants shall gather content for sections in issues in the proposal repository and discuss them there.</p>
+</div>
+<div class="paragraph">
+<p>If the Proposal is for an update of an existing ASAM standard, consider collecting and using backlog issues from the previous project first.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_use_issue_templates"><a class="anchor" href="#_use_issue_templates"></a>3. Use Issue Templates</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>Issues shall be created using the provided issue templates in the repository.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Each issue template contains a description (as comments) on when to use them and what content to add where.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/asam/issue_template_example.png" alt="issue template example">
+</div>
+<div class="title">Figure 1. Creating an issue from a template</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_define_issue_name"><a class="anchor" href="#_define_issue_name"></a>4. Define Issue Name</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>The name of the issue shall correspond to the respective section.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/asam/proposal_issue_example.png" alt="proposal issue example">
+</div>
+<div class="title">Figure 2. Topic issue for a proposal&#8217;s Executive Summary</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_label_issues_correctly"><a class="anchor" href="#_label_issues_correctly"></a>5. Label Issues Correctly</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>The use of issue labels is required for filtering and sorting issues more efficiently.
+Each issue and merge/pull request must apply labels as defined in <a href="repo__issue_and_mr_labels.html" class="xref page">Issue And Merge Request Labels</a>.<br>
+A project may also have project-specific labels in addition to the official ones, specified directly in the project group.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_discuss_issue"><a class="anchor" href="#_discuss_issue"></a>6. Discuss Issue</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="#_content">Content</a> of issues is discussed and resolved through <a href="#_comments">comments</a> and <a href="#_replies">replies</a> to previous comments.</p>
+</div>
+<div class="sect2">
+<h3 id="_content"><a class="anchor" href="#_content"></a>6.1. Content</h3>
+<div class="paragraph">
+<p>The issue content (body) contains the definition of the issue.</p>
+</div>
+<div class="paragraph">
+<p>In the case of a feature or chapter description, it contains the current content of that chapter.
+It shall always be up-to-date and contain the latest discussed and approved version.<br>
+In the case of a question or a bug, it contains the initial topic.
+In the latter case, the content shall only be updated to correct mistakes therein.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_comments"><a class="anchor" href="#_comments"></a>6.2. Comments</h3>
+<div class="paragraph">
+<p>A comment to an issue is a new topic that is independent from any previous comment.</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+GitLab
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.gitlab.com/ee/user/discussions/" target="_blank" rel="noopener">GitLab instructions for commenting</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+GitHub
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart#communicating" target="_blank" rel="noopener">GitHub instructions for commenting</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Before you add a new comment to an issue, make sure it is not a duplicate (i.e. the same or a similar comment already exists) and that it is not supposed to be a <a href="#_replies">reply</a>!
+Failure to do so will prevent efficient project progress.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_replies"><a class="anchor" href="#_replies"></a>6.3. Replies</h3>
+<div class="paragraph">
+<p>A reply is a comment created as a reply to a previous comment.
+In the issue, it is a child comment to the previous one and listed in relation to it.</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+GitLab
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.gitlab.com/ee/user/discussions/#create-a-thread-by-replying-to-a-standard-comment" target="_blank" rel="noopener">GitLab instructions for threads/replies</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+GitHub
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart#communicating" target="_blank" rel="noopener">GitHub instructions for communication</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If you want to reply to a previous comment, make sure to create a reply, not a new comment!
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_close_issues"><a class="anchor" href="#_close_issues"></a>7. Close Issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An issues shall be closed once its discussion is resolved.
+Possible reasons:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The questions of the issue have been answered</p>
+</li>
+<li>
+<p>The bug has been fixed and the fixes have been reviewed and merged</p>
+</li>
+<li>
+<p>The feature has been developed, reviewed, and merged</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It is best practice to close an issue immediately after one of the closing conditions has been met.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, an issue may also be closed without resolution if</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>it has become obsolete</p>
+</li>
+<li>
+<p>it is a duplicate (i.e. another issue deals with the same topic already)</p>
+</li>
+<li>
+<p>it has not been worked on for a long period of time (see <a href="#_the_issue_triage">The Issue Triage</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_issue_triage"><a class="anchor" href="#_the_issue_triage"></a>8. The Issue Triage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ASAM has defined a process for closing outdated issues.
+This is called the "Issue Triage" or "Ticket Triage".<br>
+See <a href="workflow__ticket_triage.html" class="xref page">Ticket Triage</a> for more details.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reopening_issues"><a class="anchor" href="#_reopening_issues"></a>9. Reopening Issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Closed issues can be reopened if they have become relevant again, there have been new developments directly impacting this specific issue, or the issue has been closed by accident and has not actually been finished yet.</p>
+</div>
+</div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="project_lead_training.html">[] Project Lead Training</a></span>
