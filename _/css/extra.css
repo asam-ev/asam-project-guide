@@ -1,3 +1,26 @@
+
+span.green {
+    color: darkgreen;
+}
+span.red {
+    color: red;
+}
+span.blue {
+    color: blue;
+}
+span.yellow {
+    color: #CCCC00;
+}
+span.purple {
+    color: purple;
+}
+span.orange {
+    color: orange;
+}
+span.brown {
+    color: brown;
+}
+
 .doc .admonitionblock .icon {
     border-radius: 1rem;
 }
