@@ -43,7 +43,6 @@ asciidoc:
     hide-uri-scheme:
     kroki-server-url: 'http://kroki:8000'
     kroki-fetch-diagram: ""
-    abb: asamprojectguide:compendium:partial$abbreviations.adoc
     # Allow URI read to retrieve SVG on compilation
     allow-uri-read: true
     # use SVG unless otherwise specified
