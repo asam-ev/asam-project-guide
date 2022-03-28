@@ -70,6 +70,7 @@ asciidoc:
     role-tsc-member: '<role style="background:LightGray;">TSC Member</role>'
     role-member: '<role style="background:LightGray;">ASAM Member</role>'
     role-proposal-submitter: '<role style="background:LightGray;">Proposal Submitter</role>'
+    role-ccb: '<role style="background:LightGray;">CCB Member</role>'
     # end::roles[]
 
     ## Labels
