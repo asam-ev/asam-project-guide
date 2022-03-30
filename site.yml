@@ -25,7 +25,14 @@ ui:
     # url: ./ui-bundle.zip
     url: https://code.asam.net/common/style-resources/-/raw/master/antora/ui-bundle.zip?inline=false
     snapshot: true
-  supplemental_files: ./supplemental_ui
+  supplemental_files:
+  - path: ./supplemental_ui
+    contents: |
+      static_files:
+      - favicon.ico
+      - favicon-16x16.png
+      - favicon-32x32.png
+
 
 output:
   clean: true
