@@ -10,7 +10,6 @@
     <meta name="keywords" content="standard,READYFORREVIEW">
     <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
-<link rel="stylesheet" href="../../../../_/css/extra.css">
     <script>var uiRootPath = '../../../../_'</script>
   </head>
   <body class="article">
@@ -23,6 +22,11 @@
            –
           updating_the_compendium_structure-dev</a>
       </div>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -31,11 +35,7 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <div class="navbar-item">
-        <div class="search-field">
-          <input id="search-input" class="search-input" type="search" placeholder="Search">
-        </div>
-      </div>
+        <a class="navbar-item" href="#">Home</a>
         <div class="navbar-item is-hoverable">
                   <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/updating_the_compendium_structure/getting-involved/development/creation-of-standards.html+%7C%0D%0A%7C+Page+%7C+Creation of standards+%7C%0D%0A%7C+Module+%7C+getting-involved+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
@@ -43,7 +43,6 @@
     </div>
   </nav>
 </header>
-
 <div class="body">
 <div class="nav-container" data-component="asamprojectguide" data-version="updating_the_compendium_structure">
   <aside class="nav">
@@ -190,13 +189,13 @@
     <a class="nav-link" href="phase_details-cycle.html">Development Phase Details&#8201;&#8212;&#8201;Development Cycle</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="cycle_planning.html">Development Cycle - Planning</a>
+    <a class="nav-link" href="cycle_planning.html">Development Cycle&#8201;&#8212;&#8201;Planning</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="cycle_development.html">Development Cycle - Development</a>
+    <a class="nav-link" href="cycle_development.html">Development Cycle&#8201;&#8212;&#8201;Development</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="cycle_review.html">Development Cycle - Review</a>
+    <a class="nav-link" href="cycle_review.html">Development Cycle&#8201;&#8212;&#8201;Review</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="tsc_controlling_meeting.html">TSC Controlling Meeting</a>
@@ -523,10 +522,7 @@
     <a class="nav-link" href="../../compendium/How-Tos/how-to-active_draft_section_preview.html">How-To: Activate Draft Section Preview</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-add_custom_feedback_button.html">Add a custom feedback button to an Antora project</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-add_custom_feedback_button_1.html">Add a custom feedback button to an Antora project</a>
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-add_custom_feedback_button.html">How-To: Add Feedback Button In Antora Project</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/How-Tos/how-to-adding_diagrams_to_vscode.html">How-To: Adding VSCode Support For Diagrams With Kroki</a>
@@ -550,16 +546,16 @@
     <a class="nav-link" href="../../compendium/How-Tos/how-to-clone_a_repository_gitlab-vscode.html">How-To: Clone A Repository Using GitLab To Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-clone_a_repository_terminal.html">Cloning A Repository Using Git Bash / Powershell</a>
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-clone_a_repository_terminal.html">How-To: ClonE A Repository Using Git Bash / Powershell</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-cloning_a_repository_vscode.html">How-To: Cloning A Repository Using Visual Studio Code</a>
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-clone_a_repository_vscode.html">How-To: Clone A Repository Using Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-cloning_repo_tutorial.html">How-To: Cloning A Repository With Git</a>
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-cloning_repo_tutorial.html">How-To: Cloning A Repository</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-create_branch_from_issue.html">How-To: Create development branch from issues</a>
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-create_branch_from_issue.html">How-To: Create Development Branch From Issues</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/How-Tos/how-to-create_new_branch.html">How-To: Create A Branch</a>
@@ -571,10 +567,10 @@
     <a class="nav-link" href="../../compendium/How-Tos/how-to-cycle_planning_wg-level.html">How-To: Work-group-level Planning</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-docker_for_asciidoc.html">How-To: Use Docker For Asciidoctor</a>
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-cycle_review.html">How-To: Cycle Review</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-docker_for_asciidoc_1.html">How-To: Use Docker For Asciidoctor</a>
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-docker_for_asciidoc.html">How-To: Use Docker For Asciidoctor</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/How-Tos/how-to-email-notifications.html">How-To: Email notifications from microsoft teams</a>
@@ -613,7 +609,7 @@
     <a class="nav-link" href="../../compendium/How-Tos/how-to-mark_parts_as_draft.html">How-To: Mark Passages As Draft</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-meetings_in_teams.html">How-To: Meetings in microsoft teams</a>
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-meetings_in_teams.html">How-To: Meetings In Microsoft Teams</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/How-Tos/how-to-merge.html">How-To: Merge a branch</a>
@@ -655,10 +651,13 @@
     <a class="nav-link" href="../../compendium/How-Tos/how-to-set_up_new_development_project.html">How-To: Set Up A Project</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-setup_development_git.html">How-To: Project Development Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/How-Tos/how-to-setup_proposal_git.html">How-To: Project Proposal Setup</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/How-Tos/how-to-setup_standard_docker_config.html">Standard Docker Compose YAML</a>
+    <a class="nav-link" href="../../compendium/How-Tos/how-to-setup_standard_docker_config.html">How-To: Standard Docker Compose YAML</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/How-Tos/how-to-submit_candidacy_pl.html">How-To: Submit Candidacy For Project Lead</a>
@@ -754,7 +753,7 @@
     <a class="nav-link" href="../../compendium/Templates.html">Templates</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Templates/asam_dco.html">ASAM developer certification of origin for open source projects</a>
+    <a class="nav-link" href="../../compendium/Templates/asam_dco.html">ASAM Developer Certification Of Origin For Open Source Projects</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/Templates/cover_page.html">Cover Page</a>
@@ -772,7 +771,7 @@
     <a class="nav-link" href="../../compendium/Templates/proposal_workshop_gameplan.html">Proposal Workshop Gameplan</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Templates/review_feedback_template.html">Standard review template</a>
+    <a class="nav-link" href="../../compendium/Templates/review_feedback_template.html">Standard Review Template</a>
   </li>
 </ul>
   </li>
@@ -781,16 +780,16 @@
     <a class="nav-link" href="../../compendium/Terminology.html">Terminology</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Terminology/api.html">Application programming interface</a>
+    <a class="nav-link" href="../../compendium/Terminology/api.html">Application Programming Interface</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Terminology/application_area_companion.html">Application area companion</a>
+    <a class="nav-link" href="../../compendium/Terminology/application_area_companion.html">Application Area Companion</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Terminology/associated_standard.html">Associated standard</a>
+    <a class="nav-link" href="../../compendium/Terminology/associated_standard.html">Associated Standard</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Terminology/base_standard.html">Base standard</a>
+    <a class="nav-link" href="../../compendium/Terminology/base_standard.html">Base Standard</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/Terminology/call_for_offers.html">Call For Offers</a>
@@ -808,10 +807,10 @@
     <a class="nav-link" href="../../compendium/Terminology/fragment.html">Fragment</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Terminology/git_actions.html">Git actions</a>
+    <a class="nav-link" href="../../compendium/Terminology/git_actions.html">Git Actions</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Terminology/git_terminology.html">Git terminology</a>
+    <a class="nav-link" href="../../compendium/Terminology/git_terminology.html">Git Terminology</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/Terminology/gitlab_terminology.html">GitLab Terminology</a>
@@ -844,13 +843,13 @@
     <a class="nav-link" href="../../compendium/Terminology/status_of_document.html">Status Of Documents</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Terminology/technology_reference.html">Technology reference</a>
+    <a class="nav-link" href="../../compendium/Terminology/technology_reference.html">Technology Reference</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/Terminology/transport_layer_specification.html">Transport Layer Specification</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/Terminology/wsl.html">Windows subsystem for linux (WSL)</a>
+    <a class="nav-link" href="../../compendium/Terminology/wsl.html">Windows Subsystem For Linux (WSL)</a>
   </li>
 </ul>
   </li>
@@ -960,14 +959,17 @@
 <h2 id="_classification_of_standards"><a class="anchor" href="#_classification_of_standards"></a>Classification of standards</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>There are two types of standards: <a href="#_base_standard">Base standards</a> and <a href="#_associated_standard">associated standards</a>.</p>
+<p>There are two types of standards: <a href="#Base standard">Base standards</a> and <a href="#Associated standard">associated standards</a>.</p>
 </div>
 <div class="paragraph">
 <p>Standards can consist of several parts.
-These parts are independent (e.g. <a href="#_technology_reference">technology references</a>) and must each individually comply with the <a href="#_structure_of_standards">basic document structure for ASAM standards</a>.</p>
+These parts are independent (e.g. <a href="#Technology reference">technology references</a>) and must each individually comply with the <a href="#_structure_of_standards">basic document structure for ASAM standards</a>.</p>
 </div>
 <div class="sect2">
-<h3 id="_base_standard"><a class="anchor" href="#_base_standard"></a>Base standard</h3>
+<h3 id="_base_standard"><a class="anchor" href="#_base_standard"></a>Base Standard</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
 <div class="paragraph">
 <p>A base standard defines the syntax, abstract models, and functionality for general use.
 A base standard is defined in a technology-independent form.
@@ -1008,11 +1010,14 @@ Typically, a base standard is</p>
 </div>
 <div class="paragraph">
 <p>There are platform- and technology-specific mapping rules for each base standard.
-These are defined in <a href="../../compendium/Terminology/technology_reference.html" class="xref page">Technology reference</a> as independent parts of the base standard.</p>
+These are defined in <a href="../../compendium/Terminology/technology_reference.html" class="xref page">Technology Reference</a> as independent parts of the base standard.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_associated_standard"><a class="anchor" href="#_associated_standard"></a>Associated standard</h3>
+<h3 id="_associated_standard"><a class="anchor" href="#_associated_standard"></a>Associated Standard</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
 <div class="paragraph">
 <p>An associated standard always refers to a base standard.
 These are examples of associated standards:</p>
@@ -1020,7 +1025,7 @@ These are examples of associated standards:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../../compendium/Terminology/application_area_companion.html" class="xref page">Application area companion</a></p>
+<p><a href="../../compendium/Terminology/application_area_companion.html" class="xref page">Application Area Companion</a></p>
 </li>
 <li>
 <p><a href="../../compendium/Terminology/transport_layer_specification.html" class="xref page">Transport Layer Specification</a></p>
@@ -1042,16 +1047,16 @@ These are examples of associated standards:</p>
 <p><a href="#_format_description">Format description</a></p>
 </li>
 <li>
-<p><a href="#_application_programming_interface">API</a></p>
+<p><a href="#Application programming interface">API</a></p>
 </li>
 <li>
 <p><a href="#_protocol_definitions">Protocol definitions</a></p>
 </li>
 <li>
-<p><a href="#_technology_reference">Technology reference</a></p>
+<p><a href="#Technology reference">[Technology reference]</a></p>
 </li>
 <li>
-<p><a href="#_application_area_companion">Application area companion</a></p>
+<p><a href="#Application area companion">[Application area companion]</a></p>
 </li>
 <li>
 <p><a href="#Transport layer specification">[Transport layer specification]</a>.</p>
@@ -1061,11 +1066,17 @@ These are examples of associated standards:</p>
 <div class="sect2">
 <h3 id="_set_of_standards"><a class="anchor" href="#_set_of_standards"></a>Set Of Standards</h3>
 <div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
+<div class="paragraph">
 <p>A "<strong>set of standards</strong>" is a special form comprising different elements in one standard.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_format_description"><a class="anchor" href="#_format_description"></a>Format description</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
 <div class="paragraph">
 <p>A format description standard defines the syntax and semantics of a file format to exchange data.
 Currently these standards are defined in XML, but older standards, such as ASAM MCD-2 MC (ASAP2), still use proprietary ASCII formats.
@@ -1073,7 +1084,10 @@ There are also binary description standards, for example, to store measurement d
 </div>
 </div>
 <div class="sect2">
-<h3 id="_application_programming_interface"><a class="anchor" href="#_application_programming_interface"></a>Application programming interface</h3>
+<h3 id="_application_programming_interface"><a class="anchor" href="#_application_programming_interface"></a>Application Programming Interface</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
 <div class="paragraph">
 <p>An application programming interface (<em><a href="../../compendium/2_Abbreviations.html#_api" class="xref page">API</a></em>) is the interface that a computer system, library or application provides in order to allow requests for service to be made of it by other com-puter programs, and/or to allow data to be exchanged between them.
 An API allows software components to communicate with one another.</p>
@@ -1082,13 +1096,19 @@ An API allows software components to communicate with one another.</p>
 <div class="sect2">
 <h3 id="_protocol_definitions"><a class="anchor" href="#_protocol_definitions"></a>Protocol definitions</h3>
 <div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
+<div class="paragraph">
 <p>A protocol definition defines the syntax, semantics, and synchronization of communication.
 A communications protocol is a system of digital message formats and rules for exchanging the messages in or between computer systems.
 A protocol may have a formal description.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_technology_reference"><a class="anchor" href="#_technology_reference"></a>Technology reference</h3>
+<h3 id="_technology_reference"><a class="anchor" href="#_technology_reference"></a>Technology Reference</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
 <div class="paragraph">
 <p>A technology reference specifies the technology-dependent interpretation of the generic standard as mapping rules.
 If these mapping rules are complied with, the deliverables are technology-specific implementations of standards that are suitable for a specific implemen-tation platform and native programming languages.
@@ -1096,7 +1116,10 @@ These technology references are typically available for base standards and compa
 </div>
 </div>
 <div class="sect2">
-<h3 id="_application_area_companion"><a class="anchor" href="#_application_area_companion"></a>Application area companion</h3>
+<h3 id="_application_area_companion"><a class="anchor" href="#_application_area_companion"></a>Application Area Companion</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
 <div class="paragraph">
 <p>An application area companion is an associated extension of a base standard for a specific type of device or a specific application area.
 A companion uses the syntax and the abstract models of the base standard.
@@ -1105,6 +1128,9 @@ Companion standards describe models for application fields (application-specific
 </div>
 <div class="sect2">
 <h3 id="_transport_layer_specification"><a class="anchor" href="#_transport_layer_specification"></a>Transport Layer Specification</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
 <div class="paragraph">
 <p>A transport layer specification details, for example, how a generic protocol definition is to be interpreted using a concrete physical layer.
 The transport layer provides uniform access to the application-oriented layers, so that the application-oriented layers do not have to take the properties of the communication network into account.</p>
@@ -1123,6 +1149,9 @@ Rules for designing graphics, tables, source text, headings, etc. are included.<
 </div>
 <div class="sect2">
 <h3 id="_cover_page"><a class="anchor" href="#_cover_page"></a>Cover Page</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/1375/1375170.png" alt="1375170" width="80"></span></p>
+</div>
 <div class="paragraph">
 <p>The cover page uses field functions that can be modified via the document properties.</p>
 </div>
@@ -1173,11 +1202,17 @@ The relationship to the document name can be indicated only by the market name s
 <div class="sect2">
 <h3 id="_status_of_documents"><a class="anchor" href="#_status_of_documents"></a>Status Of Documents</h3>
 <div class="paragraph">
+<p><span class="image right"><img src="../../compendium/_images/icons/term.svg" alt="term" width="80"></span></p>
+</div>
+<div class="paragraph">
 <p>The draft number is counted up during the development of new versions. Before the release, the release candidate appears for review. The date is updated accordingly in all versions</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_directories"><a class="anchor" href="#_directories"></a>Directories</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/1375/1375170.png" alt="1375170" width="80"></span></p>
+</div>
 <div class="paragraph">
 <p>Depending on the content, there is a</p>
 </div>

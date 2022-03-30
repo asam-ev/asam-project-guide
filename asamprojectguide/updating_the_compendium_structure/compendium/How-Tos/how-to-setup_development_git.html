@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Add a custom feedback button to an Antora project :: ASAM Project Guide</title>
-    <link rel="prev" href="how-to-add_custom_feedback_button.html">
-    <link rel="next" href="how-to-adding_diagrams_to_vscode.html">
-    <meta name="description" content="Describes how to add a custom feedback button to an Antora project.">
-    <meta name="keywords" content="antora,gitlab,github,service-desk, feedback, feedback-button, READYFORREVIEW">
+    <title>How-To: Project Development Setup :: ASAM Project Guide</title>
+    <link rel="prev" href="how-to-set_up_new_development_project.html">
+    <link rel="next" href="how-to-setup_proposal_git.html">
+    <meta name="description" content="Describes how to set up a new development project.">
+    <meta name="keywords" content="development, setup">
     <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
-<link rel="stylesheet" href="../../../../_/css/extra.css">
     <script>var uiRootPath = '../../../../_'</script>
   </head>
   <body class="article">
@@ -23,6 +22,11 @@
            –
           updating_the_compendium_structure-dev</a>
       </div>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -31,19 +35,14 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <div class="navbar-item">
-        <div class="search-field">
-          <input id="search-input" class="search-input" type="search" placeholder="Search">
-        </div>
-      </div>
+        <a class="navbar-item" href="#">Home</a>
         <div class="navbar-item is-hoverable">
-                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/updating_the_compendium_structure/compendium/How-Tos/how-to-add_custom_feedback_button_1.html+%7C%0D%0A%7C+Page+%7C+Add a custom feedback button to an Antora project+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/updating_the_compendium_structure/compendium/How-Tos/how-to-setup_development_git.html+%7C%0D%0A%7C+Page+%7C+How-To: Project Development Setup+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
       </div>
     </div>
   </nav>
 </header>
-
 <div class="body">
 <div class="nav-container" data-component="asamprojectguide" data-version="updating_the_compendium_structure">
   <aside class="nav">
@@ -190,13 +189,13 @@
     <a class="nav-link" href="../../getting-involved/development/phase_details-cycle.html">Development Phase Details&#8201;&#8212;&#8201;Development Cycle</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../getting-involved/development/cycle_planning.html">Development Cycle - Planning</a>
+    <a class="nav-link" href="../../getting-involved/development/cycle_planning.html">Development Cycle&#8201;&#8212;&#8201;Planning</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../getting-involved/development/cycle_development.html">Development Cycle - Development</a>
+    <a class="nav-link" href="../../getting-involved/development/cycle_development.html">Development Cycle&#8201;&#8212;&#8201;Development</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../getting-involved/development/cycle_review.html">Development Cycle - Review</a>
+    <a class="nav-link" href="../../getting-involved/development/cycle_review.html">Development Cycle&#8201;&#8212;&#8201;Review</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../getting-involved/development/tsc_controlling_meeting.html">TSC Controlling Meeting</a>
@@ -523,10 +522,7 @@
     <a class="nav-link" href="how-to-active_draft_section_preview.html">How-To: Activate Draft Section Preview</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to-add_custom_feedback_button.html">Add a custom feedback button to an Antora project</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="how-to-add_custom_feedback_button_1.html">Add a custom feedback button to an Antora project</a>
+    <a class="nav-link" href="how-to-add_custom_feedback_button.html">How-To: Add Feedback Button In Antora Project</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="how-to-adding_diagrams_to_vscode.html">How-To: Adding VSCode Support For Diagrams With Kroki</a>
@@ -550,16 +546,16 @@
     <a class="nav-link" href="how-to-clone_a_repository_gitlab-vscode.html">How-To: Clone A Repository Using GitLab To Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to-clone_a_repository_terminal.html">Cloning A Repository Using Git Bash / Powershell</a>
+    <a class="nav-link" href="how-to-clone_a_repository_terminal.html">How-To: ClonE A Repository Using Git Bash / Powershell</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to-cloning_a_repository_vscode.html">How-To: Cloning A Repository Using Visual Studio Code</a>
+    <a class="nav-link" href="how-to-clone_a_repository_vscode.html">How-To: Clone A Repository Using Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to-cloning_repo_tutorial.html">How-To: Cloning A Repository With Git</a>
+    <a class="nav-link" href="how-to-cloning_repo_tutorial.html">How-To: Cloning A Repository</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to-create_branch_from_issue.html">How-To: Create development branch from issues</a>
+    <a class="nav-link" href="how-to-create_branch_from_issue.html">How-To: Create Development Branch From Issues</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="how-to-create_new_branch.html">How-To: Create A Branch</a>
@@ -571,10 +567,10 @@
     <a class="nav-link" href="how-to-cycle_planning_wg-level.html">How-To: Work-group-level Planning</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to-docker_for_asciidoc.html">How-To: Use Docker For Asciidoctor</a>
+    <a class="nav-link" href="how-to-cycle_review.html">How-To: Cycle Review</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to-docker_for_asciidoc_1.html">How-To: Use Docker For Asciidoctor</a>
+    <a class="nav-link" href="how-to-docker_for_asciidoc.html">How-To: Use Docker For Asciidoctor</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="how-to-email-notifications.html">How-To: Email notifications from microsoft teams</a>
@@ -613,7 +609,7 @@
     <a class="nav-link" href="how-to-mark_parts_as_draft.html">How-To: Mark Passages As Draft</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to-meetings_in_teams.html">How-To: Meetings in microsoft teams</a>
+    <a class="nav-link" href="how-to-meetings_in_teams.html">How-To: Meetings In Microsoft Teams</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="how-to-merge.html">How-To: Merge a branch</a>
@@ -654,11 +650,14 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="how-to-set_up_new_development_project.html">How-To: Set Up A Project</a>
   </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="how-to-setup_development_git.html">How-To: Project Development Setup</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="how-to-setup_proposal_git.html">How-To: Project Proposal Setup</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to-setup_standard_docker_config.html">Standard Docker Compose YAML</a>
+    <a class="nav-link" href="how-to-setup_standard_docker_config.html">How-To: Standard Docker Compose YAML</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="how-to-submit_candidacy_pl.html">How-To: Submit Candidacy For Project Lead</a>
@@ -754,7 +753,7 @@
     <a class="nav-link" href="../Templates.html">Templates</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Templates/asam_dco.html">ASAM developer certification of origin for open source projects</a>
+    <a class="nav-link" href="../Templates/asam_dco.html">ASAM Developer Certification Of Origin For Open Source Projects</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Templates/cover_page.html">Cover Page</a>
@@ -772,7 +771,7 @@
     <a class="nav-link" href="../Templates/proposal_workshop_gameplan.html">Proposal Workshop Gameplan</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Templates/review_feedback_template.html">Standard review template</a>
+    <a class="nav-link" href="../Templates/review_feedback_template.html">Standard Review Template</a>
   </li>
 </ul>
   </li>
@@ -781,16 +780,16 @@
     <a class="nav-link" href="../Terminology.html">Terminology</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Terminology/api.html">Application programming interface</a>
+    <a class="nav-link" href="../Terminology/api.html">Application Programming Interface</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Terminology/application_area_companion.html">Application area companion</a>
+    <a class="nav-link" href="../Terminology/application_area_companion.html">Application Area Companion</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Terminology/associated_standard.html">Associated standard</a>
+    <a class="nav-link" href="../Terminology/associated_standard.html">Associated Standard</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Terminology/base_standard.html">Base standard</a>
+    <a class="nav-link" href="../Terminology/base_standard.html">Base Standard</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Terminology/call_for_offers.html">Call For Offers</a>
@@ -808,10 +807,10 @@
     <a class="nav-link" href="../Terminology/fragment.html">Fragment</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Terminology/git_actions.html">Git actions</a>
+    <a class="nav-link" href="../Terminology/git_actions.html">Git Actions</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Terminology/git_terminology.html">Git terminology</a>
+    <a class="nav-link" href="../Terminology/git_terminology.html">Git Terminology</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Terminology/gitlab_terminology.html">GitLab Terminology</a>
@@ -844,13 +843,13 @@
     <a class="nav-link" href="../Terminology/status_of_document.html">Status Of Documents</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Terminology/technology_reference.html">Technology reference</a>
+    <a class="nav-link" href="../Terminology/technology_reference.html">Technology Reference</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Terminology/transport_layer_specification.html">Transport Layer Specification</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Terminology/wsl.html">Windows subsystem for linux (WSL)</a>
+    <a class="nav-link" href="../Terminology/wsl.html">Windows Subsystem For Linux (WSL)</a>
   </li>
 </ul>
   </li>
@@ -931,48 +930,95 @@
     <li><a href="../../index.html">ASAM Project Guide</a></li>
     <li><a href="../compendium.html">Compendium</a></li>
     <li><a href="../How-Tos.html">How-Tos</a></li>
-    <li><a href="how-to-add_custom_feedback_button_1.html">Add a custom feedback button to an Antora project</a></li>
+    <li><a href="how-to-setup_development_git.html">How-To: Project Development Setup</a></li>
   </ul>
 </nav>
 <div class="page-versions">
   <button class="version-menu-toggle" title="Show other versions of page">updating_the_compendium_structure-dev</button>
   <div class="version-menu">
-    <a class="version is-current" href="how-to-add_custom_feedback_button_1.html">updating_the_compendium_structure-dev</a>
+    <a class="version is-current" href="how-to-setup_development_git.html">updating_the_compendium_structure-dev</a>
     <a class="version is-missing" href="../../../pre-res/index.html">Pre-Restructuring</a>
     <a class="version is-missing" href="../../../latest/index.html">latest-dev</a>
   </div>
 </div>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/updating_the_compendium_structure/content/modules/compendium/pages/How-Tos/how-to-add_custom_feedback_button_1.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/updating_the_compendium_structure/content/modules/compendium/pages/How-Tos/how-to-setup_development_git.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc" variant="wide">
-    <h1 class="page">Add a custom feedback button to an Antora project</h1>
+    <h1 class="page">How-To: Project Development Setup</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p>
+<p><span class="image right"><img src="../_images/icons/how-to.jpg" alt="how to" width="80"></span></p>
 </div>
+<table class="tableblock frame-all grid-rows stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Responsible</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Involved</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/wg-member.html" class="xref page"><role style="background:#BDB76B;" >WG MEMBER</role></a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Phase</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../getting-involved/development_phase.html#_process_overview" class="xref page"><span class="image"><img src="../_images/asam/project_lifecycle-development.svg" alt="project lifecycle development"></span></a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Step</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="../_images/asam/development_phase-repo_setup.svg" alt="development phase repo setup"></span></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">TL;DR</p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Fork the <a href="https://code.asam.net/common/templates/standard-template" target="_blank" rel="noopener"><strong>standard template repository</strong></a> as "&lt;project-name&gt; &lt;type-suffix&gt;"</p>
+</li>
+<li>
+<p>If necessary, update project-name subgroup members</p>
+</li>
+<li>
+<p>Inform members</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_context"><a class="anchor" href="#_context"></a>Context</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If a review is carried out in an Antora-based project, a button for submitting feedback needs to be integrated in the Antora UI.</p>
-</div>
-<div class="paragraph">
-<p>This guide describes how to add the standard feedback button for both <a href="#_gitlab">GitLab</a> and <a href="#_github">GitHub</a>.</p>
+<p>The basis for most development projects at ASAM is GitLab.
+However, some projects may choose to use GitHub instead.
+The basic procedure stays the same, independent of the platform that is used.<br>
+In order for project members and the Project Lead to work on their respective project, a new development repository has to be created.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_result"><a class="anchor" href="#_result"></a>Result</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>A feedback button that is accessible on every page is added to the Antora topbar and linked to the respective repository.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A new repository in the existing project subgroup has been created and the link been provided to all current project members.</p>
+</li>
+<li>
+<p>The repository name is "&lt;project-name&gt; &lt;type-suffix&gt;", where "&lt;project-name&gt;" is the name of the project (e.g. "OpenDRIVE") and "&lt;type-suffix&gt;" is the current <a href="../../concepts/project_types.html" class="xref page">project type</a> (e.g. "Standard").</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -982,7 +1028,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>(Only for GitLab) <a href="https://docs.gitlab.com/ee/user/project/service_desk.html" target="_blank" rel="noopener">Service Desk</a> must be set up</p>
+<p>The idea has been proposed and approved in the <a href="../../getting-involved/ideation_phase.html#_process_overview" class="xref page">Ideation Phase</a>.</p>
 </li>
 </ul>
 </div>
@@ -991,257 +1037,41 @@
 <div class="sect1">
 <h2 id="_how"><a class="anchor" href="#_how"></a>How</h2>
 <div class="sectionbody">
-<div class="imageblock thumb">
-<div class="content">
-<img src="../_images/submit_feedback_button.png" alt="submit feedback button">
-</div>
-<div class="title">Figure 1. "Submit feedback" button in Antora project</div>
-</div>
-<div class="sect2">
-<h3 id="_gitlab"><a class="anchor" href="#_gitlab"></a>GitLab</h3>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Use this if your project issues are located in GitLab.
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="navbar-item is-hoverable"&gt;
-    &lt;a class="navbar-item" href="mailto:&lt;&lt;replace-with-email-for-project&gt;&gt;?subject=Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body=%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20{{site.url}}{{page.url}}%20%7C%0D%0A%7C%20Page%20%7C%20{{page.title}}%20%7C%0D%0A%7C%20Module%20%7C%20{{page.module}}%20%7C%0D%20--%20" title="Click here to submit feedback on this page" target="_blank"&gt;Submit feedback&lt;/a&gt; <i class="conum" data-value="1"></i><b>(1)</b>
-&lt;/div&gt;</code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Replace <code>&lt;&lt;replace-with-email-for-project&gt;&gt;</code> with the service desk email address for this project.</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_github"><a class="anchor" href="#_github"></a>GitHub</h3>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Use this if your project issues are located in GitHub.
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="navbar-item is-hoverable"&gt;
-    &lt;a class="navbar-item" href="&lt;&lt;project-url&gt;&gt;/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+{{site.url}}{{page.url}}+%7C%0D%0A%7C+Page+%7C+{{page.title}}+%7C%0D%0A%7C+Module+%7C+{{page.module}}+%7C" title="Click here to submit feedback on this page" target="_blank"&gt;Submit feedback&lt;/a&gt; <i class="conum" data-value="1"></i><b>(1)</b>
-&lt;/div&gt;</code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Replace <code>&lt;&lt;project-url&gt;&gt;</code> with the url of the project repository on GitLab.
-NOTE: This is the url of the sources, <strong>not</strong> the url of the hosted pages!</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_troubleshooting_known_issues"><a class="anchor" href="#_troubleshooting_known_issues"></a>Troubleshooting / Known Issues</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_i_want_to_add_more_features_or_a_different_template_to_my_button"><a class="anchor" href="#_i_want_to_add_more_features_or_a_different_template_to_my_button"></a>I want to add more features or a different template to my button</h3>
-<div class="paragraph">
-<p>See <a href="how-to-add_custom_feedback_button.html" class="xref page">Add a custom feedback button to an Antora project</a>.</p>
-</div>
-<div class="paragraph">
-<p>This guide describes how to create a button for sending reviews with a custom body using the "supplemental_ui/partials/header-content.hbs" file.
-It also explains the basic syntax of a button and links to external references for available attributes.</p>
-</div>
-<div class="paragraph">
-<p>The outline of the idea is:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Add a button to the header supplemental</p>
-</li>
-<li>
-<p>Point the href to your target url (email or page)</p>
-</li>
-<li>
-<p>Add the required parameters like title and body after a <code>?</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>What parameters are available depends on your target.
-For example, for the <a href="https://docs.gitlab.com/ee/user/project/service_desk.html" target="_blank" rel="noopener">GitLab Service Desk</a>, you must add the issue template in text-form as <a href="https://css-tricks.com/snippets/html/mailto-links/#aa-adding-body-text" target="_blank" rel="noopener">body</a> here.
-For the <a href="https://docs.github.com/en/enterprise-server@3.1/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-url-query" target="_blank" rel="noopener">GitHub URL query</a>, you can choose to either append a <code>template</code> file (markdown) or add the it directly as <code>body</code>.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-The href attribute value must be a valid url, i.e. be <a href="https://www.w3schools.com/tags/ref_urlencode.ASP" target="_blank" rel="noopener">url encoded</a>.
-You can use an encoder like <a href="https://www.url-encode-decode.com/" target="_blank" rel="noopener">this one</a> to encode your body.
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_syntax_of_a_button"><a class="anchor" href="#_syntax_of_a_button"></a>Syntax of a button</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Each UI button follows this syntax:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;a class="navbar-item" href="target?attribute1=value1;attribute2=value2;..." title="Tooltip text" target="_blank"&gt;Button name&lt;/a&gt;</code></pre>
-</div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">target</dt>
-<dd>
-<p>the location the button leads to (e.g. email address, page url)</p>
-</dd>
-<dt class="hdlist1">attribute1,2, &#8230;&#8203;</dt>
-<dd>
-<p>attribute passed on to the target (supported types depend on target)</p>
-</dd>
-<dt class="hdlist1">value1,2, &#8230;&#8203;</dt>
-<dd>
-<p>value assigned to the corresponding target</p>
-</dd>
-<dt class="hdlist1">Tooltip text</dt>
-<dd>
-<p>the text displayed when the user hovers over the button with their mouse</p>
-</dd>
-<dt class="hdlist1">Button name</dt>
-<dd>
-<p>the text printed on the button</p>
-</dd>
-</dl>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_create_an_email_button"><a class="anchor" href="#_create_an_email_button"></a>Create an email button</h2>
-<div class="sectionbody">
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-This is usually used for GitLab.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>To create an email button, the <code>href</code> attribute must start with:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">mailto:&lt;&lt;replace-with-email-for-project&gt;&gt; <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Replace <code>&lt;&lt;replace-with-email-for-project&gt;&gt;</code> with the service desk email address for this project.
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Add any number of supported <a href="https://css-tricks.com/snippets/html/mailto-links/" target="_blank" rel="noopener">mailto attributes</a>, separated by <code>&amp;</code></p>
-</li>
+<p>If this is the first time this <a href="../../concepts/project_types.html" class="xref page">project type</a> is used for this project:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
-<p>Optional: Add the <code>text</code> attribute to the element for tooltips or other supported <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" rel="noopener">&lt;a&gt;-tag attributes</a></p>
-</li>
-<li>
-<p>Add the label of the button (see <a href="#_syntax_of_a_button">Syntax of a button</a>)</p>
-</li>
-</ol>
-</div></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_create_a_github_issue_link"><a class="anchor" href="#_create_a_github_issue_link"></a>Create a GitHub issue link</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To create a page link, the <code>href</code> attribute must start with:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;&lt;project-url&gt;&gt;/issues/new <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Replace <code>&lt;&lt;project-url&gt;&gt;</code> with the url of the project repository on GitLab.
-NOTE: This is the url of the sources, <strong>not</strong> the url of the hosted pages!
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add any number of supported <a href="https://docs.github.com/en/enterprise-server@3.1/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-url-query" target="_blank" rel="noopener">GitHub URL attributes</a></p>
-</li>
-<li>
-<p>Optional: Add the <code>text</code> attribute to the element for tooltips or other supported <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" rel="noopener">&lt;a&gt;-tag attributes</a></p>
-</li>
-<li>
-<p>Add the label of the button (see <a href="#_syntax_of_a_button">Syntax of a button</a>)</p>
-</li>
-</ol>
-</div></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_related_topics"><a class="anchor" href="#_related_topics"></a>Related topics</h2>
-<div class="sectionbody">
+<p><a href="how-to-forking_repo.html" class="xref page">Fork</a> the latest version of the <a href="https://code.asam.net/common/templates/standard-template" target="_blank" rel="noopener"><strong>standard template repository</strong></a> into the existing subgroup for the project.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="how-to-add_custom_feedback_button.html" class="xref page">Add a custom feedback button to an Antora project</a></p>
+<p>The structure of the repository is explained in the included README</p>
 </li>
 </ul>
+</div>
+</li>
+<li>
+<p>Rename the forked project to "&lt;project-name&gt; &lt;type-suffix&gt;", where "&lt;project-name&gt;" is the name of the project (e.g. "OpenDRIVE") and "&lt;type-suffix&gt;" is the current <a href="../../concepts/project_types.html" class="xref page">project type</a> (e.g. "Standard").</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Update the assigned members of the subgroup according to the currently enrolled members.</p>
+</li>
+<li>
+<p>Send a mail with the link to the new project to the proposal members, informing them that the repository is now ready for use.</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="how-to-add_custom_feedback_button.html">Add a custom feedback button to an Antora project</a></span>
-  <span class="next"><a href="how-to-adding_diagrams_to_vscode.html">How-To: Adding VSCode Support For Diagrams With Kroki</a></span>
+  <span class="prev"><a href="how-to-set_up_new_development_project.html">How-To: Set Up A Project</a></span>
+  <span class="next"><a href="how-to-setup_proposal_git.html">How-To: Project Proposal Setup</a></span>
 </nav>
 </article>
   </div>
