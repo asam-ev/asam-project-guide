@@ -6,19 +6,19 @@ site:
 
 content:
   sources:
-    # - url: https://github.com/asam-ev/asam-project-guide-content.git
-    - url: ./asam-project-guide-content
-      branches: updating_the_compendium_structure
+    - url: https://github.com/asam-ev/asam-project-guide-content.git
+    # - url: ./asam-project-guide-content
+      branches: main, pre-restructuring, updating_the_compendium_structure
       # branches: main
       tags: open*, v*
       start_path: content
       edit_url: 'https://github.com/asam-ev/asam-project-guide-content/blob/{refname}/{path}'
-    # - url: https://github.com/asam-ev/asam-project-guide-content.git
+    - url: https://github.com/asam-ev/asam-project-guide-content.git
     # - url: ./asam-project-guide-content
-    #   branches: main
-    #   tags: v*
-    #   start_path: guide
-    #   edit_url: 'https://github.com/asam-ev/asam-project-guide-content/blob/{refname}/{path}'
+      branches: main
+      tags: v*
+      start_path: guide
+      edit_url: 'https://github.com/asam-ev/asam-project-guide-content/blob/{refname}/{path}'
 
 ui:
   bundle:
