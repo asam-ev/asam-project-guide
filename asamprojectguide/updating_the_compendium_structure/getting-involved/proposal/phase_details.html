@@ -10,7 +10,10 @@
     <meta name="keywords" content="proposal">
     <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
-    <script>var uiRootPath = '../../../../_'</script>
+<script type="text/javascript" src="../../../../_/js/modal.js" defer></script>
+<link rel="stylesheet" href="../../../../_/css/modal.css">
+<link rel="stylesheet" href="../../../../_/css/extra.css">    <script>var uiRootPath = '../../../../_'</script>
+<link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -22,11 +25,6 @@
            –
           updating_the_compendium_structure-dev</a>
       </div>
-      <div class="navbar-item search hide-for-print">
-        <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs">
-        </div>
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -35,7 +33,11 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
         <div class="navbar-item is-hoverable">
                   <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/updating_the_compendium_structure/getting-involved/proposal/phase_details.html+%7C%0D%0A%7C+Page+%7C+Proposal Phase Details+%7C%0D%0A%7C+Module+%7C+getting-involved+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
@@ -43,6 +45,7 @@
     </div>
   </nav>
 </header>
+
 <div class="body">
 <div class="nav-container" data-component="asamprojectguide" data-version="updating_the_compendium_structure">
   <aside class="nav">
@@ -81,6 +84,31 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../concepts/pipeline_details.html">Automation Pipelines At ASAM</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/main.html">Start Contributing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../tooling/working-without-software-installation.html">Working Online</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/remote_repo.html">Remote Repository Platforms</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_setup.html">Setting Up Your Repository Account</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_guides.html">Guides For Remote Repositories</a>
   </li>
 </ul>
   </li>
@@ -280,112 +308,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/main.html">Tools Overview</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../tooling/working-without-software-installation.html">Working Online</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/remote_repo.html">Remote Repository Platforms</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_setup.html">Setting Up Your Repository Account</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_guides.html">Guides For Remote Repositories</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/calendar.html">OpenX Calendar</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/calendar/calendar-setup.html">Setting Up The OpenX Calendar</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/teams-and-sharepoint.html">Microsoft Teams And Sharepoint</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/teams_and_sharepoint/teams-and-sharepoint-setup.html">Setting Up Microsoft Teams And Sharepoint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/teams_and_sharepoint/teams-and-sharepoint-guides.html">Microsoft Teams And Sharepoint Guides</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../tooling/recommended_tools.html">Recommended Tools</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/vscode.html">Visual Studio Code</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/vscode/vscode-setup.html">Setting Up Visual Studio Code</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/vscode/vscode-guides.html">Visual Studio Code Guides</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/git.html">Git</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/git/git-setup.html">Setting Up Git</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/git/git-guides.html">Git Guides</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/git/git_best_practices.html">Git Best Practices</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/drawio.html">Draw.io</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/drawio/drawio-setup.html">Setting Up Draw.io</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/drawio/drawio-guides.html">Draw.io Guides</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/docker.html">Docker</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/docker/docker-setup.html">Setting Up Docker</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/docker/docker-guides.html">Docker Guides</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/docker/docker-best-practices.html">Docker Best Practices</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../../compendium/compendium.html">Compendium</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -451,6 +373,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/Guidelines/coordination-wg_meeting_guidelines.html">[Coordination] Work Group Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Guidelines/deliverables.html">[] ASAM Deliverables</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/Guidelines/editorial_guide.html">Editorial guide</a>
@@ -705,12 +630,6 @@
     <a class="nav-link" href="../../compendium/TBD/base_standard.html">Base Standard</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/coding_style_guide.html">The openSCENARIO2 coding style guide</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/deliverables.html">ASAM Deliverables</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/TBD/documentation_processes.html">Documentation Processes</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -718,21 +637,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/TBD/filestage_review.html">Doing a review on Filestage</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/git_interactions.html">Git interactions</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/how-to-set_up_new_development_project.html">How-To: Set Up A Project</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/issue-resolution.html">OLD - Issue resolution process</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/links.html">Sharepoint link summary</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/powershell_basics.html">Microsoft PowerShell Basics</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/TBD/project-type-concept.html">[Project Type] Concept</a>
@@ -745,21 +649,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../compendium/TBD/project-type-study.html">[Project Type] Study</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/run_docker.html">Starting a container from docker desktop</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/vscode_activity-bar.html">Visual Studio Code activity bar</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/vscode_command-palette.html">Visual Studio Code command palette</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/vscode_interface.html">Visual Studio Code interface</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../compendium/TBD/writing_guide_xil.html">TBD/writing_guide_xil.adoc</a>
   </li>
 </ul>
   </li>
@@ -787,6 +676,93 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium/Tools.html">Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium/Tools/calendar.html">OpenX Calendar</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/calendar/calendar-setup.html">Setting Up The OpenX Calendar</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium/Tools/docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/docker/docker-best-practices.html">Docker Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/docker/docker-guides.html">Docker Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/docker/docker-setup.html">Setting Up Docker</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium/Tools/drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/drawio/drawio-guides.html">Draw.io Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/drawio/drawio-setup.html">Setting Up Draw.io</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium/Tools/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/git/git-guides.html">Git Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/git/git-setup.html">Setting Up Git</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/git/git_best_practices.html">Git Best Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../compendium/Tools/teams-and-sharepoint.html">Microsoft Teams And Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium/Tools/teams_and_sharepoint.html">Teams and_sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/teams_and_sharepoint/teams-and-sharepoint-guides.html">Microsoft Teams And Sharepoint Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/teams_and_sharepoint/teams-and-sharepoint-setup.html">Setting Up Microsoft Teams And Sharepoint</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium/Tools/vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/vscode/vscode-guides.html">Visual Studio Code Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../compendium/Tools/vscode/vscode-setup.html">Setting Up Visual Studio Code</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
 </ul>
   </li>
 </ul>
@@ -805,6 +781,9 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Orphans</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../tooling/recommended_tools.html">Recommended Tools</a>
+  </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../development/creation-of-standards.html">Creation of standards</a>
   </li>
@@ -855,7 +834,7 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../../latest/index.html" class="home-link"></a>
+  <a href="../../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../index.html">ASAM Project Guide</a></li>
@@ -884,47 +863,25 @@
 <h2 id="_phase_diagram"><a class="anchor" href="#_phase_diagram"></a>Phase Diagram</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The figure <a href="#fig-proposal-phase-diagram-detailed">The Proposal phase in detail, using the ASAM Project Phase Notation</a> shows the Proposal phase in full detail.
+<p>The figure <a href="#fig-proposal-phase-diagram-detailed">[fig-proposal-phase-diagram-detailed]</a> shows the Proposal phase in full detail.
 Each step is explained shortly under <a href="#_proposal_phase_steps">Proposal Phase Steps</a>.</p>
 </div>
-<div id="fig-proposal-phase-diagram-detailed" class="imageblock">
+<div id="modal_image" class="imageblock">
 <div class="content">
 <img src="../../compendium/_images/asam/proposal_phase_v2-proposal_phase.svg" alt="proposal phase v2 proposal phase">
 </div>
 <div class="title">Figure 1. The Proposal phase in detail, using the <a href="../../concepts/diagram_notations.html" class="xref page">ASAM Project Phase Notation</a></div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_proposal_phase_timeline"><a class="anchor" href="#_proposal_phase_timeline"></a>Proposal Phase Timeline</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The typical proposal phase timeline consists of</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>8-12 weeks for creating the draft</p>
-</li>
-<li>
-<p>1 day of Proposal Workshop (announced 4-6 weeks ahead of time)</p>
-</li>
-<li>
-<p>1-4 weeks of finalizing the draft and enrollment</p>
-</li>
-<li>
-<p>proposal publication</p>
-</li>
-<li>
-<p>proposal review, presentation, and project decision</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../compendium/_images/asam/proposal_phase_timeline.drawio.svg" alt="proposal phase timeline.drawio">
-</div>
-<div class="title">Figure 2. Typical Proposal phase timeline</div>
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
 </div>
 </div>
 </div>
@@ -943,16 +900,13 @@ Each step is explained shortly under <a href="#_proposal_phase_steps">Proposal P
 <p><a href="#_draft_creation">Draft Creation</a></p>
 </li>
 <li>
-<p><a href="#_enrollment_process">Enrollment Process</a></p>
-</li>
-<li>
 <p><a href="#_proposal_workshop_preparation">Proposal Workshop Preparation</a></p>
 </li>
 <li>
 <p><a href="#_proposal_workshop">Proposal Workshop</a></p>
 </li>
 <li>
-<p><a href="#_electing_a_submitter">Electing A Submitter</a></p>
+<p><a href="#_enrollment_process">Enrollment Process</a></p>
 </li>
 <li>
 <p><a href="#_finalizing_the_proposal">Finalizing The Proposal</a></p>
@@ -1031,41 +985,6 @@ See <a href="setup.html" class="xref page">Project Proposal Setup</a>.</p>
 </div>
 <div class="paragraph">
 <p>See <a href="proposal_writing.html" class="xref page">Writing A Project Proposal</a>.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_enrollment_process"><a class="anchor" href="#_enrollment_process"></a>Enrollment Process</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 21.4285%;">
-<col style="width: 7.1428%;">
-<col style="width: 71.4287%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/proposal_phase_v2-enrollment.svg" alt="proposal phase v2 enrollment"></span></p></td>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Purpose</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To enroll participants in the planned project.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><role style="background:LightGray;">ASAM Member</role></p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Involved</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Interested parties can start to <a href="../../compendium/How-Tos/how-to-enroll_for_development.html" class="xref page">enroll</a> for the proposed project in parallel to the other Proposal Phase activities.<br>
-See <a href="../signing_up.html" class="xref page">Signing Up For Projects</a> for available options during this process and more detail information on it.<br>
-Additionally, you can <a href="submit_candidacy.html" class="xref page">apply for the role of Project Lead</a>.</p>
-</div>
-<div class="paragraph">
-<p>For more information on the enrollment list, see <a href="../../compendium/How-Tos/how-to-enrollment_list.html" class="xref page">How-To: Add The Enrollment List</a> in the Compendium.<br>
-For more information on how to enroll for the Development phase, see <a href="../../compendium/How-Tos/how-to-enroll_for_development.html" class="xref page">How-To: Enroll For Project Development</a> in the Compendium.</p>
 </div>
 <hr>
 </div>
@@ -1188,7 +1107,7 @@ During the Workshop, the <a href="need_for_service_providers.html" class="xref p
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_electing_a_submitter"><a class="anchor" href="#_electing_a_submitter"></a>Electing A Submitter</h3>
+<h3 id="_enrollment_process"><a class="anchor" href="#_enrollment_process"></a>Enrollment Process</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 21.4285%;">
@@ -1197,13 +1116,13 @@ During the Workshop, the <a href="need_for_service_providers.html" class="xref p
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/proposal_phase_v2-submitter_election.svg" alt="proposal phase v2 submitter election"></span></p></td>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/proposal_phase_v2-enrollment.svg" alt="proposal phase v2 enrollment"></span></p></td>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Purpose</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To (s)elect a Proposal Submitter.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To enroll participants in the planned project.</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><role style="background:LightGray;">Idea Giver</role>, <a href="../../role-specific/wg-member.html" class="xref page"><role style="background:#BDB76B;" >WG MEMBER</role></a> &#8594; <role style="background:LightGray;">Proposal Submitter</role></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><role style="background:LightGray;">ASAM Member</role></p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Involved</p></th>
@@ -1212,11 +1131,13 @@ During the Workshop, the <a href="need_for_service_providers.html" class="xref p
 </tbody>
 </table>
 <div class="paragraph">
-<p>The project participants elect one of their midst to be responsible for submitting and presenting the Proposal to the TSC.
-If the group cannot decide, the GTM will select one participant to take over that role.</p>
+<p>Interested parties can start to <a href="../../compendium/How-Tos/how-to-enroll_for_development.html" class="xref page">enroll</a> for the proposed project in parallel to the other Proposal Phase activities.<br>
+See <a href="../signing_up.html" class="xref page">Signing Up For Projects</a> for available options during this process and more detail information on it.<br>
+Additionally, you can <a href="submit_candidacy.html" class="xref page">apply for the role of Project Lead</a>.</p>
 </div>
 <div class="paragraph">
-<p>The election of the submitter may happen during the Proposal Workshop.</p>
+<p>For more information on the enrollment list, see <a href="../../compendium/How-Tos/how-to-enrollment_list.html" class="xref page">How-To: Add The Enrollment List</a> in the Compendium.<br>
+For more information on how to enroll for the Development phase, see <a href="../../compendium/How-Tos/how-to-enroll_for_development.html" class="xref page">How-To: Enroll For Project Development</a> in the Compendium.</p>
 </div>
 <hr>
 </div>

@@ -10,7 +10,10 @@
     <meta name="keywords" content="asciidoc,reuse,include,how-to, READYFORREVIEW">
     <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
-    <script>var uiRootPath = '../../../../_'</script>
+<script type="text/javascript" src="../../../../_/js/modal.js" defer></script>
+<link rel="stylesheet" href="../../../../_/css/modal.css">
+<link rel="stylesheet" href="../../../../_/css/extra.css">    <script>var uiRootPath = '../../../../_'</script>
+<link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -22,11 +25,6 @@
            –
           updating_the_compendium_structure-dev</a>
       </div>
-      <div class="navbar-item search hide-for-print">
-        <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs">
-        </div>
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -35,7 +33,11 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
         <div class="navbar-item is-hoverable">
                   <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/updating_the_compendium_structure/compendium/Guidelines/asciidoc-reuse_content.html+%7C%0D%0A%7C+Page+%7C+Reuse Content+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
@@ -43,6 +45,7 @@
     </div>
   </nav>
 </header>
+
 <div class="body">
 <div class="nav-container" data-component="asamprojectguide" data-version="updating_the_compendium_structure">
   <aside class="nav">
@@ -81,6 +84,31 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../concepts/pipeline_details.html">Automation Pipelines At ASAM</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/main.html">Start Contributing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../tooling/working-without-software-installation.html">Working Online</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tooling/remote_repo.html">Remote Repository Platforms</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_setup.html">Setting Up Your Repository Account</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_guides.html">Guides For Remote Repositories</a>
   </li>
 </ul>
   </li>
@@ -280,112 +308,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/main.html">Tools Overview</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../tooling/working-without-software-installation.html">Working Online</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/remote_repo.html">Remote Repository Platforms</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_setup.html">Setting Up Your Repository Account</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/remote_repo/remote_repo_guides.html">Guides For Remote Repositories</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/calendar.html">OpenX Calendar</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/calendar/calendar-setup.html">Setting Up The OpenX Calendar</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/teams-and-sharepoint.html">Microsoft Teams And Sharepoint</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/teams_and_sharepoint/teams-and-sharepoint-setup.html">Setting Up Microsoft Teams And Sharepoint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/teams_and_sharepoint/teams-and-sharepoint-guides.html">Microsoft Teams And Sharepoint Guides</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../tooling/recommended_tools.html">Recommended Tools</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/vscode.html">Visual Studio Code</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/vscode/vscode-setup.html">Setting Up Visual Studio Code</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/vscode/vscode-guides.html">Visual Studio Code Guides</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/git.html">Git</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/git/git-setup.html">Setting Up Git</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/git/git-guides.html">Git Guides</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/git/git_best_practices.html">Git Best Practices</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/drawio.html">Draw.io</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/drawio/drawio-setup.html">Setting Up Draw.io</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/drawio/drawio-guides.html">Draw.io Guides</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../tooling/docker.html">Docker</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/docker/docker-setup.html">Setting Up Docker</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/docker/docker-guides.html">Docker Guides</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/docker/docker-best-practices.html">Docker Best Practices</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../compendium.html">Compendium</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -451,6 +373,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="coordination-wg_meeting_guidelines.html">[Coordination] Work Group Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="deliverables.html">[] ASAM Deliverables</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="editorial_guide.html">Editorial guide</a>
@@ -705,12 +630,6 @@
     <a class="nav-link" href="../TBD/base_standard.html">Base Standard</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/coding_style_guide.html">The openSCENARIO2 coding style guide</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/deliverables.html">ASAM Deliverables</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../TBD/documentation_processes.html">Documentation Processes</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -718,21 +637,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../TBD/filestage_review.html">Doing a review on Filestage</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/git_interactions.html">Git interactions</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/how-to-set_up_new_development_project.html">How-To: Set Up A Project</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/issue-resolution.html">OLD - Issue resolution process</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/links.html">Sharepoint link summary</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/powershell_basics.html">Microsoft PowerShell Basics</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../TBD/project-type-concept.html">[Project Type] Concept</a>
@@ -745,21 +649,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../TBD/project-type-study.html">[Project Type] Study</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/run_docker.html">Starting a container from docker desktop</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/vscode_activity-bar.html">Visual Studio Code activity bar</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/vscode_command-palette.html">Visual Studio Code command palette</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/vscode_interface.html">Visual Studio Code interface</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../TBD/writing_guide_xil.html">TBD/writing_guide_xil.adoc</a>
   </li>
 </ul>
   </li>
@@ -787,6 +676,93 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Tools.html">Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Tools/calendar.html">OpenX Calendar</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/calendar/calendar-setup.html">Setting Up The OpenX Calendar</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Tools/docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/docker/docker-best-practices.html">Docker Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/docker/docker-guides.html">Docker Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/docker/docker-setup.html">Setting Up Docker</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Tools/drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/drawio/drawio-guides.html">Draw.io Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/drawio/drawio-setup.html">Setting Up Draw.io</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Tools/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/git/git-guides.html">Git Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/git/git-setup.html">Setting Up Git</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/git/git_best_practices.html">Git Best Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Tools/teams-and-sharepoint.html">Microsoft Teams And Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Tools/teams_and_sharepoint.html">Teams and_sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/teams_and_sharepoint/teams-and-sharepoint-guides.html">Microsoft Teams And Sharepoint Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/teams_and_sharepoint/teams-and-sharepoint-setup.html">Setting Up Microsoft Teams And Sharepoint</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Tools/vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/vscode/vscode-guides.html">Visual Studio Code Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/vscode/vscode-setup.html">Setting Up Visual Studio Code</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
 </ul>
   </li>
 </ul>
@@ -805,6 +781,9 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Orphans</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../tooling/recommended_tools.html">Recommended Tools</a>
+  </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../getting-involved/development/creation-of-standards.html">Creation of standards</a>
   </li>
@@ -855,7 +834,7 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../../latest/index.html" class="home-link"></a>
+  <a href="../../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../index.html">ASAM Project Guide</a></li>
