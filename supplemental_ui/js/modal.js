@@ -18,6 +18,16 @@ function setModalImageZoom() {
 	modalImg.width = modalImg.naturalWidth * modalImageZoom;
 }
 
+function openImageModal(img){
+    var imageSize = [img.naturalWidth,img.naturalHeight]
+    var zoom = 1.0;
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    modalImg.naturalHeight	= img.naturalHeight;
+    modalImg.naturalWidth	= img.naturalWidth;
+    setModalImageZoom();
+}
+
 var modal = document.createElement('div');
 modal.className = "modal";
 modal.id = "imageModal";
@@ -51,15 +61,8 @@ document.body.appendChild(modal);
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var imgBlocks = document.getElementsByClassName("imageblock")
 for (var block of imgBlocks) {
-    var img =block.getElementsByTagName("img")[0]
-
-    img.onclick = function(){
-        var imageSize = [img.naturalWidth,img.naturalHeight]
-		var zoom = 1.0;
-		modal.style.display = "block";
-        modalImg.src = this.src;
-		modalImg.naturalHeight	= img.naturalHeight;
-		modalImg.naturalWidth	= img.naturalWidth;
-		setModalImageZoom();
+    var img = block.getElementsByTagName("img")[0];
+    if (img) {
+		img.setAttribute("onclick","openImageModal(this);");
     }
 }
