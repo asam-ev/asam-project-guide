@@ -72,3 +72,12 @@ i.fa.icon-caution::before {
 .code.yellow {
     color: yellow
 }
+
+.doc div.tabset .content .tab-pane table.tableblock * .admonitionblock * tr *{
+	margin-top: 0;
+}
+
+.doc div.tabset .content .tab-pane table.tableblock * .admonitionblock table {
+	margin-top: 1.5rem;
+}
+

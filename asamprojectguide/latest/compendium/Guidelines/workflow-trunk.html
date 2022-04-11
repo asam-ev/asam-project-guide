@@ -101,19 +101,10 @@
     <a class="nav-link" href="../../contributing/main.html">Start Contributing</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../contributing/working-without-software-installation.html">Working Online</a>
+    <a class="nav-link" href="../../contributing/account_setup.html">Remote Repository Account Setup</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../contributing/remote_repo.html">Remote Repository Platforms</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../contributing/remote_repo/remote_repo_setup.html">Setting Up Your Repository Account</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../contributing/remote_repo/remote_repo_guides.html">Guides For Remote Repositories</a>
-  </li>
-</ul>
+    <a class="nav-link" href="../../contributing/central_project_guidelines.html">Central Project Guidelines</a>
   </li>
 </ul>
   </li>
@@ -675,7 +666,7 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../Tools.html">Tools</a>
+    <a class="nav-link" href="../Tools.html">Tools For Advanced Users</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
@@ -728,6 +719,18 @@
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../Tools/git/git_best_practices.html">Git Best Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Tools/remote_repo.html">Remote Repository Platforms</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/remote_repo/remote_repo_guides.html">Guides For Remote Repositories</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/remote_repo/remote_repo_setup.html">Setting Up Your Repository Account</a>
   </li>
 </ul>
   </li>
@@ -932,8 +935,31 @@ The role listed at the top of each section is the one responsible for it.</p>
 <p>You may also want to check out ASAM&#8217;s <a href="repo-issue_and_mr_labels.html#_status_labels" class="xref page"><strong>list of status labels</strong></a>.</p>
 </div>
 <hr>
-<div class="sect2">
-<h3 id="_initial_setup"><a class="anchor" href="#_initial_setup"></a>Initial Setup</h3>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset1_initial-setup"></a>Initial Setup</p>
+</li>
+<li>
+<p><a id="tabset1_analysis"></a>Analysis</p>
+</li>
+<li>
+<p><a id="tabset1_implementation"></a>Implementation</p>
+</li>
+<li>
+<p><a id="tabset1_review"></a>Review</p>
+</li>
+<li>
+<p><a id="tabset1_integration"></a>Integration</p>
+</li>
+<li>
+<p><a id="tabset1_merge"></a>Merge</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset1_initial-setup">
 <div class="hdlist">
 <table>
 <tr>
@@ -995,10 +1021,8 @@ These have the same requirements and steps as those created at the beginning</p>
 </tr>
 </table>
 </div>
-<hr>
 </div>
-<div class="sect2">
-<h3 id="_analysis"><a class="anchor" href="#_analysis"></a>Analysis</h3>
+<div class="tab-pane" aria-labelledby="tabset1_analysis">
 <div class="hdlist">
 <table>
 <tr>
@@ -1056,10 +1080,8 @@ Tips
 </tr>
 </table>
 </div>
-<hr>
 </div>
-<div class="sect2">
-<h3 id="_implementation"><a class="anchor" href="#_implementation"></a>Implementation</h3>
+<div class="tab-pane" aria-labelledby="tabset1_implementation">
 <div class="hdlist">
 <table>
 <tr>
@@ -1170,15 +1192,14 @@ This way, the Merge/Pull Request (and its branch) cannot be concluded by acciden
 </tr>
 </table>
 </div>
-<hr>
 </div>
-<div class="sect2">
-<h3 id="_review"><a class="anchor" href="#_review"></a>Review</h3>
+<div class="tab-pane" aria-labelledby="tabset1_review">
 <div class="paragraph">
-<p>The Review stage consists of the <a href="#_internal_review">Internal Review</a> and the <a href="#_change_control_board_review">Change Control Board Review</a></p>
+<p>The Review stage consists of the <a href="#Internal Review">[Internal Review]</a> and the <a href="#Change Control Board Review">[Change Control Board Review]</a></p>
 </div>
-<div class="sect3">
-<h4 id="_internal_review"><a class="anchor" href="#_internal_review"></a>Internal Review</h4>
+<div class="paragraph">
+<p><strong>Internal Review</strong><br></p>
+</div>
 <div class="hdlist">
 <table>
 <tr>
@@ -1223,7 +1244,7 @@ Click <a href="https://docs.gitlab.com/ee/user/discussions/#starting-a-review" t
 </div>
 </li>
 <li>
-<p>If the review feedback requires further development work, the process restarts from the <a href="#_implementation">Implementation</a> stage</p>
+<p>If the review feedback requires further development work, the process restarts from the <a href="#Implementation">[Implementation]</a> stage</p>
 </li>
 </ol>
 </div>
@@ -1245,9 +1266,9 @@ Tips
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p><strong>Change Control Board Review</strong><br></p>
 </div>
-<div class="sect3">
-<h4 id="_change_control_board_review"><a class="anchor" href="#_change_control_board_review"></a>Change Control Board Review</h4>
 <div class="hdlist">
 <table>
 <tr>
@@ -1269,7 +1290,7 @@ Steps
 <p>If there are no unresolved comments or threads after two weeks, the CCB ends the review</p>
 </li>
 <li>
-<p>The Merge/Pull Request is assigned to the Service Provider for <a href="#_integration">Integration</a></p>
+<p>The Merge/Pull Request is assigned to the Service Provider for <a href="#Integration">[Integration]</a></p>
 </li>
 </ol>
 </div>
@@ -1277,11 +1298,8 @@ Steps
 </tr>
 </table>
 </div>
-<hr>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_integration"><a class="anchor" href="#_integration"></a>Integration</h3>
+<div class="tab-pane" aria-labelledby="tabset1_integration">
 <div class="hdlist">
 <table>
 <tr>
@@ -1354,10 +1372,8 @@ In the case that questions lead to significant changes to the content, the MR is
 </tr>
 </table>
 </div>
-<hr>
 </div>
-<div class="sect2">
-<h3 id="_merge"><a class="anchor" href="#_merge"></a>Merge</h3>
+<div class="tab-pane" aria-labelledby="tabset1_merge">
 <div class="hdlist">
 <table>
 <tr>
@@ -1395,7 +1411,7 @@ Steps
 </div>
 </li>
 <li>
-<p>If the review is not passed, return to <a href="#_integration">Integration</a></p>
+<p>If the review is not passed, return to <a href="#Integration">[Integration]</a></p>
 </li>
 <li>
 <p>If the review is passed and the CCB can merge, the CCB merges the Merge/Pull Request back to the trunk</p>
@@ -1432,6 +1448,8 @@ Tips
 </td>
 </tr>
 </table>
+</div>
+</div>
 </div>
 </div>
 </div>
