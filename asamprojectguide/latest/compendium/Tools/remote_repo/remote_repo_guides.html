@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../../../_/css/site.css">
 <script type="text/javascript" src="../../../../../_/js/modal.js" defer></script>
 <link rel="stylesheet" href="../../../../../_/css/modal.css">
+<link rel="stylesheet" href="../../../../../_/css/flipcard.css">
 <link rel="stylesheet" href="../../../../../_/css/extra.css">    <script>var uiRootPath = '../../../../../_'</script>
 <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
@@ -104,7 +105,7 @@
     <a class="nav-link" href="../../../contributing/account_setup.html">Remote Repository Account Setup</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../../contributing/central_project_guidelines.html">Central Project Guidelines</a>
+    <a class="nav-link" href="../../../contributing/project_guidelines_intro.html">Project Guidelines Introduction</a>
   </li>
 </ul>
   </li>
@@ -861,10 +862,8 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_general_workflows"><a class="anchor" href="#_general_workflows"></a>General Workflows</h2>
+<h2 id="_trunk_based_remote_repositories"><a class="anchor" href="#_trunk_based_remote_repositories"></a>Trunk-based Remote Repositories</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_trunk_based_remote_repositories"><a class="anchor" href="#_trunk_based_remote_repositories"></a>Trunk-based Remote Repositories</h3>
 <div class="paragraph">
 <p><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/3078/3078895.png" alt="3078895" width="80"></span></p>
 </div>
@@ -880,29 +879,25 @@ Never work on the trunk directly&#8201;&#8212;&#8201;always create your own <a h
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h4>
+<div class="sect2">
+<h3 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h3>
 <div class="paragraph">
-<p>The trunk-based workflow is an established development approach.
-Its central idea is that there is a single central branch (also known as "trunk") that contains the official and reviewed state of a project.<br>
-Usually, this trunk is protected so that users cannot directly commit and push changes to it.
+<p>A trunk-based repository is a repository that has a single central branch (the "trunk").
+This trunk contains the official and reviewed state of a project.<br>
+Users cannot commit and push changes to this specific branch directly.
 Instead, all changes on the repository&#8217;s content are made in development or feature branches.
-These can either be branched off of the trunk or from another feature branch.</p>
+These can either be branched off of the trunk or from another feature branch.
+Once ready, a branch is merged back into its parent branch (which may be the trunk or another feature branch).</p>
 </div>
 <div class="paragraph">
-<p>Once all changes are ready, the branch is merged back into either its parent branch (which may be the trunk or another feature branch) or directly to the trunk (if its parent is another feature branch).
-ASAM recommends always merging back to the parent branch.</p>
+<p>The benefit of this approach is that each repository&#8217;s trunk contains the latest official state or version.
+Mistakes and unfinished changes to parts of it only have an impact on the branch where they happen.</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_the_trunk"><a class="anchor" href="#_the_trunk"></a>The Trunk</h3>
 <div class="paragraph">
-<p>The benefit of this approach is that each repository&#8217;s trunk contains the latest reviewed (and possibly released) version.
-Mistakes and unfinished changes to parts of it only have an impact on the branch where they happen.<br>
-The approach also relies on <a href="../../Guidelines/repo-merge-pull_requests.html" class="xref page">Merge/Pull Request</a> which provide better tools and options for reviews than a direct push to the trunk would.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_the_trunk"><a class="anchor" href="#_the_trunk"></a>The Trunk</h4>
-<div class="paragraph">
-<p>This branch can only be merged to by the ASAM office or the project&#8217;s Change Control Board (CCB).
+<p>The central branch ("trunk") can only be merged to by the ASAM office, the Project Lead, or the project&#8217;s Change Control Board (CCB).
 Unless indicated by a clear git tag, all commits are considered to be part of a release candidate.</p>
 </div>
 <div class="paragraph">
@@ -911,8 +906,8 @@ These branches <strong>SHOULD</strong> be short-lived (&lt;2 weeks) and regularl
 These branches <strong>MAY</strong> be squashed and <strong>MUST</strong> be merged via fast-forward merge (enabled by default).</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_workflow_overview"><a class="anchor" href="#_workflow_overview"></a>Workflow Overview</h4>
+<div class="sect2">
+<h3 id="_workflow_overview"><a class="anchor" href="#_workflow_overview"></a>Workflow Overview</h3>
 <div class="paragraph">
 <p>Developing content for ASAM standards is focussed around the concept of <a href="../../Guidelines/workflow-contribute_with_issues.html" class="xref page">contributing through issues</a>.
 The following sections describe this workflow in more detail.</p>
@@ -1451,8 +1446,10 @@ Tips
 <hr>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_contributing_through_issues"><a class="anchor" href="#_contributing_through_issues"></a>Contributing Through Issues</h3>
+</div>
+<div class="sect1">
+<h2 id="_contributing_through_issues"><a class="anchor" href="#_contributing_through_issues"></a>Contributing Through Issues</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>You can contribute to ASAM projects directly through issues.
 These issues can be created and managed in the respective Remote Repository of the project.</p>
@@ -1462,8 +1459,10 @@ These issues can be created and managed in the respective Remote Repository of t
 </div>
 <hr>
 </div>
-<div class="sect2">
-<h3 id="_ticket_triage"><a class="anchor" href="#_ticket_triage"></a>Ticket Triage</h3>
+</div>
+<div class="sect1">
+<h2 id="_ticket_triage"><a class="anchor" href="#_ticket_triage"></a>Ticket Triage</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Projects may get so big, that issues are created and forgotten without ever being finished.
 To prevent unnecessary and obsolete issues bogging up the repository, ASAM employs a Ticket Triage workflow.</p>
@@ -1473,431 +1472,27 @@ To prevent unnecessary and obsolete issues bogging up the repository, ASAM emplo
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
 <h2 id="_specific_guidelines"><a class="anchor" href="#_specific_guidelines"></a>Specific Guidelines</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_make_changes_in_a_repository"><a class="anchor" href="#_make_changes_in_a_repository"></a>Make Changes In A Repository</h3>
-<div class="paragraph">
-<p><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/4727/4727488.png" alt="4727488" width="80"></span></p>
-</div>
-<div class="sect3">
-<h4 id="_git_workflow"><a class="anchor" href="#_git_workflow"></a>Git Workflow</h4>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-It is best practice to check for changes on remote before changing files locally and before pushing changes to remote.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The Git workflow for making changes is a 4 step process:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../_images/git-workflow.svg" alt="Git Workflow">
-</div>
-<div class="title">Figure 2. Git Workflow</div>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Make the changes in your working copy.</p>
-</li>
-<li>
-<p>Add files from the working copy to the staging area (<code>git add</code>).</p>
-</li>
-<li>
-<p>Commit staged files to your local repo (<code>git commit</code>).</p>
-<div class="paragraph">
-<p>Make sure to adhere to the <a href="../../Guidelines/repo-commit_conventions.html" class="xref page">Commit Message Conventions</a>.</p>
-</div>
-</li>
-<li>
-<p>Push to a remote repository (<code>git push</code>).</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_further_read"><a class="anchor" href="#_further_read"></a>Further Read</h4>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://git-scm.com/docs/gittutorial" class="bare" target="_blank" rel="noopener">https://git-scm.com/docs/gittutorial</a></p>
+<p><a href="../../Guidelines/repo-make_changes.html" class="xref page">Make Changes In A Repository</a></p>
+</li>
+<li>
+<p><a href="../../Guidelines/repo-merge-pull_requests.html" class="xref page">Merge/Pull Requests</a></p>
+</li>
+<li>
+<p><a href="../../Guidelines/repo-merge_conflicts.html" class="xref page">Merge Conflicts: Preventing And Resolving</a></p>
+</li>
+<li>
+<p><a href="../../Guidelines/repo-submodules.html" class="xref page">Submodules</a></p>
+</li>
+<li>
+<p><a href="../../How-Tos/how-to-access_compiled_artifacts.html" class="xref page">How-To: Access Compiled Artifacts</a></p>
 </li>
 </ul>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_mergepull_requests"><a class="anchor" href="#_mergepull_requests"></a>Merge/Pull Requests</h3>
-<div class="paragraph">
-<p><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/4727/4727488.png" alt="4727488" width="80"></span></p>
-</div>
-<div class="sect3">
-<h4 id="_introduction_2"><a class="anchor" href="#_introduction_2"></a>Introduction</h4>
-<div class="paragraph">
-<p>A Merge or Pull Requests (MRs) are the way you merge content changes from a development or feature branch back into the <a href="../../Guidelines/workflow-trunk.html#_the_trunk" class="xref page">trunk</a> or another branch.
-They provide the project team the opportunity to review changes before they are applied and made public/official.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_merge_commit_strategy"><a class="anchor" href="#_merge_commit_strategy"></a>Merge Commit Strategy</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>History of commits in a MR must be <a href="https://medium.com/@catalinaturlea/clean-git-history-a-step-by-step-guide-eefc0ad8696d" target="_blank" rel="noopener">clean</a> prior to merge</p>
-</li>
-<li>
-<p>Commit messages to a protected branch or the trunk must adhere to the <a href="../../Guidelines/repo-commit_conventions.html" class="xref page">Commit Message Conventions</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>ASAM repositories allow <a href="https://docs.gitlab.com/ee/user/project/merge_requests/fast_forward_merge.html" target="_blank" rel="noopener">fast-forward merges</a> only (<code>--ff-only</code>) and <a href="https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html" target="_blank" rel="noopener">squash commits</a> by default.
-This means commits do not have to be merged manually and all commits are squashed automatically.</p>
-</div>
-<div class="paragraph">
-<p>For squash commits with one commit, the commit message is taken directly (squash does not take place).<br>
-For actual squashes the commit messages are taken from:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>The first multi-line commit message in the merge.</p>
-</li>
-<li>
-<p>The merge request’s title if no multi-line commit message is found.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Squash commits is enabled by default but can be turned off.
-This is to make sure that in case multiple unrelated changes occurred in one branch, they can still be all added to the history.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_dealing_with_merge_conflicts"><a class="anchor" href="#_dealing_with_merge_conflicts"></a>Dealing With Merge Conflicts</h4>
-<div class="paragraph">
-<p>See <a href="../../Guidelines/repo-merge_conflicts.html" class="xref page">Merge Conflicts: Preventing And Resolving</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_mergepull_request_review"><a class="anchor" href="#_mergepull_request_review"></a>Merge/Pull Request Review</h4>
-<div class="paragraph">
-<p>Merge/Pull Requests are reviewed by the project team in sequential steps.
-See the <a href="../../Guidelines/workflow-trunk.html#_review" class="xref page">Trunk Workflow</a> page for more information on these reviews</p>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_merge_conflicts_preventing_and_resolving"><a class="anchor" href="#_merge_conflicts_preventing_and_resolving"></a>Merge Conflicts: Preventing And Resolving</h3>
-<div class="paragraph">
-<p><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/4727/4727488.png" alt="4727488" width="80"></span></p>
-</div>
-<div class="sect3">
-<h4 id="_introduction_3"><a class="anchor" href="#_introduction_3"></a>Introduction</h4>
-<div class="paragraph">
-<p>A merge conflict occurs when multiple different changes (usually made by different users) are to be merged and some or all of the changes contradict each other.
-For example, if user A deletes a section in their copy and user B adds a new paragraph to it instead, the merging tool does not know whether to keep the section and add the changes made by user B or to delete it like user A did.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_avoiding_merge_conflicts"><a class="anchor" href="#_avoiding_merge_conflicts"></a>Avoiding Merge Conflicts</h4>
-<div class="paragraph">
-<p>One way of avoiding merge conflicts is to keep the TTL (time to live) of branches short.
-ASAM recommends a TTL of &#8656; 2 weeks.<br>
-If the branch lives longer than expected, merge the parent branch (the trunk or original feature branch) into your branch once in a while.
-Alternatively, you can also rebase your branch to the parent branch again.
-This way you can solve the conflicts in your branch.</p>
-</div>
-<div class="paragraph">
-<p>For more information on the differences between merging and rebasing, see <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" target="_blank" rel="noopener">Merging vs. Rebasing</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_resolving_merge_conflicts"><a class="anchor" href="#_resolving_merge_conflicts"></a>Resolving Merge Conflicts</h4>
-<div class="paragraph">
-<p>Once you create a merge request, your remote repository will tell you if there are merge conflicts.
-It leads you through the conflicting parts and lets you choose if your new or the old content is to be merged.</p>
-</div>
-<div class="paragraph">
-<p>Another option is to merge locally.
-You can use <a href="../git.html" class="xref page">Git</a> or <a href="../vscode.html" class="xref page">Visual Studio Code</a> for this.
-These tools also provide options to view conflicting changes and help you resolve them.</p>
-</div>
-<div class="paragraph">
-<p>After you have removed the conflicts, you can create a new commit to your branch that includes the fixes to resolve the conflict in the Merge/Pull Request.</p>
-</div>
-<div class="paragraph">
-<p>Make sure to adhere to the <a href="../../Guidelines/repo-commit_conventions.html" class="xref page">Commit Message Conventions</a>.</p>
-</div>
-<div class="paragraph">
-<p>For more information, see</p>
-</div>
-<div class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Git
-</td>
-<td class="hdlist2">
-<p><a href="https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts" class="bare">https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts</a></p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-GitLab
-</td>
-<td class="hdlist2">
-<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/conflicts.html" class="bare">https://docs.gitlab.com/ee/user/project/merge_requests/conflicts.html</a></p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-GitHub
-</td>
-<td class="hdlist2">
-<p><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github" class="bare">https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github</a></p>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_submodules"><a class="anchor" href="#_submodules"></a>Submodules</h3>
-<div class="paragraph">
-<p><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/4727/4727488.png" alt="4727488" width="80"></span></p>
-</div>
-<div class="sect3">
-<h4 id="_what_are_submodules"><a class="anchor" href="#_what_are_submodules"></a>What are submodules</h4>
-<div class="paragraph">
-<p>Submodules are a way to include other repositories within your repository.
-This way, you do not need to copy identical content from another repository and risk getting out of synch with changes in said external repository.
-Simplified, a submodule is a pointer to another repository in a specific (!) version.
-This pointer is part of the repository.<br>
-For further information, see the <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">official documentation</a>.</p>
-</div>
-<div class="paragraph">
-<p>This page give an overview over how to handle submodules in ASAM projects.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-If you are not setting up or responsible for a git repository, you only need to know how to <a href="../../How-Tos/how-to-submodule_pull.html" class="xref page">pull a previously set up submodule in git</a>.
-For this you only need to know: <code>git submodule update --init</code>. See below for details.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_git_submodule_usage"><a class="anchor" href="#_git_submodule_usage"></a>Git submodule usage</h4>
-<div class="paragraph">
-<p>ASAM uses submodules to include reuse resources in all repositories, e.g. document style configuration.
-The submodule has to be added to the repository during setup of the repository.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_related_topics"><a class="anchor" href="#_related_topics"></a>Related topics</h4>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../../How-Tos/how-to-submodule_add.html" class="xref page">How-To: Adding A New Submodule To A Repository</a></p>
-</li>
-<li>
-<p><a href="../../How-Tos/how-to-submodule_changing_remote.html" class="xref page">How-To: Changing remote for a submodule</a></p>
-</li>
-<li>
-<p><a href="../../How-Tos/how-to-submodule_delete.html" class="xref page">How-To: Removing A Submodule From A Repository</a></p>
-</li>
-<li>
-<p><a href="../../How-Tos/how-to-submodule_pull.html" class="xref page">How-To: Pulling A Submodule</a></p>
-</li>
-<li>
-<p><a href="../../How-Tos/how-to-submodules_switch_version.html" class="xref page">How-To: Switching to a specific submodule version</a></p>
-</li>
-</ul>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_how_to_access_compiled_artifacts"><a class="anchor" href="#_how_to_access_compiled_artifacts"></a>How-To: Access Compiled Artifacts</h3>
-<div class="paragraph">
-<p><span class="image right"><img src="../../_images/icons/how-to.jpg" alt="how to" width="80"></span></p>
-</div>
-<div class="paragraph">
-<p>The description on this page currently only covers GitLab.
-However, steps are similar at GitHub.</p>
-</div>
-<div class="tabset is-loading">
-<div class="ulist tabs">
-<ul>
-<li>
-<p><a id="tabset2_download-from-pipeline"></a>Download From Pipeline</p>
-</li>
-<li>
-<p><a id="tabset2_download-from-merge-pull-request"></a>Download From Merge/Pull Request</p>
-</li>
-</ul>
-</div>
-<div class="content">
-<div class="tab-pane" aria-labelledby="tabset2_download-from-pipeline">
-<div class="imageblock">
-<div class="content">
-<img src="../../_images/artifact_download_ci.png" alt="artifact download ci">
-</div>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Access <em>Repository</em> &#8594; <em>Branches</em></p>
-</li>
-<li>
-<p>Select the pipeline for the branch that you&#8217;d like to access</p>
-</li>
-<li>
-<p>Retrieve the compiled artifacts</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The example shows how to retrieve the uml2adoc artifacts</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="tab-pane" aria-labelledby="tabset2_download-from-merge-pull-request">
-<div class="imageblock">
-<div class="content">
-<img src="../../_images/artifact_download_mr.png" alt="artifact download mr">
-</div>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Access <em>Repository</em> &#8594; <em>Merge requests</em></p>
-</li>
-<li>
-<p>Select the Merge/Pull Request that you&#8217;d like to access</p>
-</li>
-<li>
-<p>Retrieve the compiled artifacts</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The example shows how to retrieve the uml2adoc artifacts</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_how_to_forking_from_repositories"><a class="anchor" href="#_how_to_forking_from_repositories"></a>How-To: Forking From Repositories</h3>
-<div class="paragraph">
-<p><span class="image right"><img src="../../_images/icons/how-to.jpg" alt="how to" width="80"></span></p>
-</div>
-<div class="paragraph">
-<p>Creating a fork "clones" the repository into your profile, allowing you to make changes without having to interact with the main repository.
-This is particularly useful if you want to create an independent copy.<br>
-However, it is strongly recommended to NOT fork a project repository to develope features and merge the fork back later!
-Use branches to do so (<a href="../../How-Tos/how-to-create_branch_from_issue.html" class="xref page">How-To: Create Development Branch From Issues</a>).</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-The procedure is the same on <a href="https://code.asam.net" target="_blank" rel="noopener">GitLab</a> and on GitHub.
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_forking_steps"><a class="anchor" href="#_forking_steps"></a>Forking Steps</h4>
-<div class="imageblock">
-<div class="content">
-<img src="../../_images/forking-a-repo.gif" alt="forking a repo">
-</div>
-<div class="title">Figure 3. Forking a repo</div>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Select "Fork" from the top of the repository page</p>
-</li>
-<li>
-<p>Select yourself from the list of users</p>
-</li>
-<li>
-<p>Wait for the forking process to finish</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Once you see your name in the url of the repository, the forking is complete.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_creating_a_pull_request_from_a_fork"><a class="anchor" href="#_creating_a_pull_request_from_a_fork"></a>Creating A Pull Request From A Fork</h4>
-<div class="paragraph">
-<p>To submit the changes you make in your fork back to the original repository, submit a <a href="../../Guidelines/repo-merge-pull_requests.html" class="xref page">Merge/Pull Request</a> as normal in the main repository, making sure to select your fork.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../_images/creating-a-pr-from-a-fork.gif" alt="creating a pr from a fork">
-</div>
-<div class="title">Figure 4. Creating a PR from a fork</div>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Access the original repository</p>
-</li>
-<li>
-<p>Click on "Pull requests"</p>
-</li>
-<li>
-<p>Click on "New pull request"</p>
-</li>
-<li>
-<p>Click "compare across forks"</p>
-</li>
-<li>
-<p>Select your fork from the list</p>
-</li>
-<li>
-<p>Click on "Create pull request"</p>
-</li>
-</ol>
-</div>
-</div>
 </div>
 </div>
 </div>
