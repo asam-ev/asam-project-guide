@@ -1,31 +1,34 @@
 // Get the modal
 
 var modalImageZoom = 1.0;
+const zoomStepSize = 0.2;
+const maxZoom = 10.0;
+const minZoom = 0.1;
+var startWidth = 100;
+var startHeight = 100;
 
 function changeZoom(direction) {
 	if (direction === "+") {
-		modalImageZoom = Math.min(10.0,modalImageZoom + 0.1);
+		modalImageZoom = Math.min(maxZoom,modalImageZoom + zoomStepSize);
 		setModalImageZoom();
 	}
 	else if (direction === "-") {
-		modalImageZoom = Math.max(modalImageZoom-0.1,0.1);
+		modalImageZoom = Math.max(modalImageZoom-zoomStepSize,minZoom);
 		setModalImageZoom();
 	}
 }
 
 function setModalImageZoom() {
-	modalImg.height = modalImg.naturalHeight * modalImageZoom;
-	modalImg.width = modalImg.naturalWidth * modalImageZoom;
+	modalImg.height = startHeight * modalImageZoom;
+	modalImg.width = startWidth * modalImageZoom;
 }
 
 function openImageModal(img){
-    var imageSize = [img.naturalWidth,img.naturalHeight]
-    var zoom = 1.0;
     modal.style.display = "block";
-    modalImg.src = img.src;
-    modalImg.naturalHeight	= img.naturalHeight;
-    modalImg.naturalWidth	= img.naturalWidth;
-    setModalImageZoom();
+	modalImg.src = img.src;
+	startWidth = window.innerWidth;
+	startHeight = modalImg.naturalHeight / modalImg.naturalWidth * startWidth;
+	setModalImageZoom();
 }
 
 var modal = document.createElement('div');
