@@ -23,6 +23,7 @@ span.brown {
 
 .doc .admonitionblock .icon {
     border-radius: 1rem;
+    left: 10px;
 }
 
 .doc .title {
