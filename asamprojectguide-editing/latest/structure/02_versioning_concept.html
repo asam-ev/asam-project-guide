@@ -285,15 +285,130 @@ Each project is displayed as an Antora version.</p>
 <img src="../_images/versioning_concept-git.svg" alt="versioning concept git">
 </div>
 </div>
+<div class="paragraph">
+<p>All released versions exist on the branch 'main'.
+Each new release must be tagged with <code>v&lt;x&gt;.&lt;y&gt;.&lt;z&gt;</code>, where <code>&lt;x&gt;</code>, <code>&lt;y&gt;</code>, and <code>&lt;z&gt;</code> are numbers.
+Version numbers follow the <a href="https://semver.org/" target="_blank" rel="noopener">Semantic Versioning rules</a>.</p>
+</div>
+<div class="paragraph">
+<p>Development happens on the branch 'dev'.
+This branch must be marked as "prerelease" during development.
+No tags may be created on the 'dev' branch.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Make sure to remove the <code>prerelease</code> attribute in the antora.yml before merging the dev changes back to main.
+Alternatively, do not merge the antora.yml.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In case project-specific guides are required, a project may request a specific branch for content on the Project Guide.
+If the request is accepted, the project&#8217;s branch name will be 'open-x', where 'x' is the name of the project.<br>
+Example: project 'OpenNEWSTANDARD' &#8594; branch name: 'open-newstandard'.</p>
+</div>
+<div class="paragraph">
+<p>No tags may be created on any project-specific branch.</p>
+</div>
+<div class="paragraph">
+<p>If important changes happen on the main branch that should impact the project as well, these changes shall be cherry-picked.
+Likewise, if a project concludes, its content is reviewed and approved updates from it shall be cherry-picked onto the 'dev' branch (and later be merged onto the 'main' branch).</p>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_mapping_in_antora"><a class="anchor" href="#_mapping_in_antora"></a>Mapping In Antora</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Antora can take content from different repositories, branches, and/or tags, and combine them in one single generate.
+In case of the ASAM Project Guide, the generator takes a single content repository and uses its two main folders to generate its content.
+However, the generator selects only a single branch+version combination from the 'guide' folder.
+In contrast to that, it takes multiple branches and tags from the 'content' folder.</p>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/versioning_concept-mapping.svg" alt="versioning concept mapping">
 </div>
+</div>
+<div class="paragraph">
+<p>The figure above illustrates the applied mapping:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The latest tagged version (in the example: v1.2.1) on the main branch gets the reference name 'latest' automatically</p>
+</li>
+<li>
+<p>All other tagged versions on main are displayed with their tag name</p>
+</li>
+<li>
+<p>The latest commit on main is also used for the "Editing the ASAM Project Guide" component</p>
+</li>
+<li>
+<p>The latest commit on the dev branch is used as pre-release version named "dev"</p>
+</li>
+<li>
+<p>The latest commit on any open-x branch is used for the corresponding "version" of the Specific Project Guide component</p>
+</li>
+<li>
+<p>All content on the branches 'main' and 'dev' use the component <code>asamprojectguide</code></p>
+</li>
+<li>
+<p>All project-specific branches shall use the component <code>specificguides</code></p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The following rules are applied using git information:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>tag with 'v&lt;x&gt;.&lt;y&gt;.&lt;z&gt;' &#8594; version: x.y.z</p>
+</li>
+<li>
+<p>branch == 'open-*' &#8594; version: open*</p>
+</li>
+<li>
+<p>branch == 'dev' &#8594; version: dev</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following must be specified by the branch maintainer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>prerelease for 'dev'-branch (set to <code>true</code>)</p>
+</li>
+<li>
+<p>component name for open* branches (set to <code>specificguides</code>)</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Branches are not added automatically in Antora.
+Every branch that the Guide officially supports has to be added in the <a href="https://github.com/asam-ev/asam-project-guide/blob/main/site.yml" target="_blank" rel="noopener">site.yml</a>.
+Tags, however, are applied automatically as long as they follow the specified syntax: <code>v&lt;x&gt;.&lt;y&gt;.&lt;z&gt;</code>, where <code>&lt;x&gt;</code>, <code>&lt;y&gt;</code>, and <code>&lt;z&gt;</code> are numbers.<br>
+Example: v1.0.0</p>
 </div>
 </div>
 </div>
@@ -309,6 +424,29 @@ This is displayed in the figure below.</p>
 <img src="../_images/versioning_concept-structure.svg" alt="Repositories' structure">
 </div>
 <div class="title">Figure 1. Involved repositories in the Project Guide generation</div>
+</div>
+<div class="sect2">
+<h3 id="_content_repository"><a class="anchor" href="#_content_repository"></a>Content Repository</h3>
+<div class="paragraph">
+<p>The content repository contains, as the name suggests, the content of the Project Guide.
+The repository mainly consists of two folders, 'content' and 'guide'.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">'content'</dt>
+<dd>
+<p>This folder contains all the ASAM Project Guide content.
+This is where everything intended for project participants and interested ASAM members is located.
+The generator takes this folder and, depending on the git reference (tag or branch), labels its version automatically.
+Note that, according to the <a href="#_mapping_in_antora">Mapping In Antora</a>, the component for project-specific branches has to be <code>specificguides</code>, whereas the standard Guide content is <code>asamprojectguide</code>.</p>
+</dd>
+<dt class="hdlist1">'guide'</dt>
+<dd>
+<p>This folder contains all instructions and information on how to edit and maintain the Project Guide itself, including this page.
+Only one version of it may ever be available: the latest commit on the branch main or on dev (main by default)!</p>
+</dd>
+</dl>
+</div>
 </div>
 </div>
 </div>
