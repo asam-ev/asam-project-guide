@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pages VS Partials :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/latest/adding_files/pages-vs-partials.html">
+    <link rel="prev" href="add-new-module.html">
+    <link rel="next" href="add-a-page.html">
+    <meta name="description" content="Describes the differences between pages and partials and when to use which.">
+    <meta name="keywords" content="page,partial,project-guide, READYFORREVIEW">
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<script type="text/javascript" src="../../../_/js/modal.js" defer></script>
+<link rel="stylesheet" href="../../../_/css/modal.css">
+<link rel="stylesheet" href="../../../_/css/flipcard.css">
+<link rel="stylesheet" href="../../../_/css/extra.css">    <script>var uiRootPath = '../../../_'</script>
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+           –
+          latest</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
+        <div class="navbar-item is-hoverable">
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/latest/adding_files/pages-vs-partials.html+%7C%0D%0A%7C+Page+%7C+Pages VS Partials+%7C%0D%0A%7C+Module+%7C+ROOT+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="body">
+<div class="nav-container" data-component="asamprojectguide-editing" data-version="latest">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../main.html">Editing the ASAM Project Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../structure.html">Structure</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../structure/01_content_structure.html">Project Guide structure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../structure/02_versioning_concept.html">Project Guide Versioning Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../structure/03_keywords-list.html">Keyword list</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../add_files.html">Adding files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="add-new-module.html">Adding A New Module</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="pages-vs-partials.html">Pages VS Partials</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="add-a-page.html">Adding A Page</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pages/add-task-page.html">Adding a Task page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pages/add-tool-page.html">Adding a Tool page</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="add-a-partial.html">Adding A Partial</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../changing_content.html">Add/change content</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../reviewing/create_issue_on_page.html">Create an issue for a page</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../reviewing/editing_pages.html">Artifact page name</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adding_content/editorial_rules.html">Editorial rules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Working with roles</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/roles/add-new-role.html">How to add a new role</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../adding_content/roles/use_roles.html">Using roles</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adding_content/page_redirects.html">Moving, renaming and deleting a page</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adding_content/interactive_diagrams.html">Creating interactive diagrams</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../ref-include.html">Referencing/including</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adding_content/images.html">Using images</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adding_content/examples.html">Using examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adding_content/attachments.html">Using attachments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adding_content/including.html">Including pages and partials</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/pipeline-keyword_overview.html">Pipeline: Keyword page</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/pipeline-sequential_sectnums.html">Pipeline: Sequential numbering</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/pipeline-sequential_figs_tables.html">Pipeline: Sequential figure and table numbers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/pipeline-iso_style.html">Pipeline: ISO-2145 style section and page numbering</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/pipeline-global_anchor_replacement.html">Pipeline: Local to global anchor replacement</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/macro-pages.html">Macro: pages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/macro-reference.html">Macro: reference</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/macro-related.html">Macro: related</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/macro-role_related.html">Macro: role_related</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../extensions/macro-autonav.html">Macro: autonav</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../compendium/1_keywords.html">Used keywords In ASAM Project Guide</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Editing the ASAM Project Guide</span>
+    <span class="version">latest</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../asamprojectguide/latest/index.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version">
+          <a href="../../../asamprojectguide/index.html">pre-restructuring</a>
+        </li>
+        <li class="version is-latest">
+          <a href="../../../asamprojectguide/latest/index.html">latest</a>
+        </li>
+        <li class="version">
+          <a href="../../../asamprojectguide/editorial_guide_rework/index.html">editorial_guide_rework</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../main.html">Editing the ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../main.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../asamprojectguide/latest/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../main.html">Editing the ASAM Project Guide</a></li>
+    <li><a href="../add_files.html">Adding files</a></li>
+    <li><a href="pages-vs-partials.html">Pages VS Partials</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/main/guide/modules/ROOT/pages/adding_files/pages-vs-partials.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc" variant="wide">
+    <h1 class="page">Pages VS Partials</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="../add_files.html" class="xref page"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/2311/2311991.png" alt="2311991" width="120"></span></a></p>
+</div>
+<div class="paragraph">
+<p>AsciiDoc files in Antora have different meaning depending on their location in the folder structure.
+The following table shows the relation to the location for Antora.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Relation between location and interpretation of .adoc files in Antora</caption>
+<colgroup>
+<col style="width: 23.0769%;">
+<col style="width: 7.6923%;">
+<col style="width: 23.0769%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Location</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">HTML</th>
+<th class="tableblock halign-left valign-top">Headlines</th>
+<th class="tableblock halign-left valign-top">include</th>
+<th class="tableblock halign-left valign-top">xref</th>
+<th class="tableblock halign-left valign-top">link</th>
+<th class="tableblock halign-left valign-top">macros</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>modules/&lt;module&gt;/pages (+ subfolders)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Content page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Full pages for viewing in documentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><span class="green">yes</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><span class="green">yes</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><span class="yellow">yes (with attribute)</span></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><span class="green">yes</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><span class="green">yes</span></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>modules/&lt;module&gt;/partials</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Content fragment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Includable text passages without their own page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><span class="yellow">yes (ONLY when included)</span></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><span class="green">yes</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>modules/&lt;module&gt;/examples</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For rendering in examples and source code elements</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><span class="green">yes</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><span class="yellow">yes (some)</span></em></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>modules/&lt;module&gt;/assets/attachments</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For downloads through links</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><span class="yellow">yes (better: use example!)</span></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><span class="green">yes</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>modules/&lt;module&gt;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navigation file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nav-tree for sidebar (must be referenced explicitely)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><span class="yellow">yes (in navbar)</span></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><span class="yellow">yes (only outgoing!)</span></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><span class="green">yes</span></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>else</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is not used</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em><strong><span class="red">no</span></strong></em></strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_when_to_use_a_page"><a class="anchor" href="#_when_to_use_a_page"></a>When to use a page</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A page is located in the "pages" folder (or a subfolder therein) of a module.</p>
+</div>
+<div class="paragraph">
+<p>Each page is rendered into an html by the Antora build pipeline and is accessible through direct link or (if set up) cross-references or the sidebar.</p>
+</div>
+<div class="paragraph">
+<p>It can also be found using the search function.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pages <strong>SHALL</strong> be used for <strong>content</strong> that users shall be able to <strong>search and access directly</strong>.</p>
+</li>
+<li>
+<p>It <strong>SHALL</strong> also be used in case the content is supposed to have one or more <strong>section headers</strong>.</p>
+</li>
+<li>
+<p><strong>DO NOT</strong> use <strong>tags</strong> in pages.
+Instead, use partials.</p>
+</li>
+<li>
+<p>Pages <strong>MUST</strong> contain a <strong>title</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For more information on page requirements, see <a href="add-a-page.html" class="xref page">Adding A Page</a>.</p>
+</div>
+<div class="paragraph">
+<p>For more information on how Antora handles pages in general, see <a href="https://docs.antora.org/antora/2.1/page/#standard" target="_blank" rel="noopener">Standard Pages In Antora</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_when_to_use_a_partial"><a class="anchor" href="#_when_to_use_a_partial"></a>When to use a partial</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A partial is located in the "partials" folder (or a subfolder therein) of a module.</p>
+</div>
+<div class="paragraph">
+<p>Partials are not rendered into hmls by the Antora build pipeline.
+Instead, they can be included in pages and only be rendered in those.</p>
+</div>
+<div class="paragraph">
+<p>Partials also do not support all macros, particularly the <a href="../asam_extensions.html" class="xref page">ASAM macros</a> are not applied.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Partials <strong>SHALL</strong> be used for <strong>reusable content</strong> that is included in <strong>at least two separate files</strong>.</p>
+</li>
+<li>
+<p>Partials <strong>MAY</strong> be sectioned with <strong>tags</strong>.</p>
+</li>
+<li>
+<p><strong>DO NOT</strong> use a <strong>title</strong> or <strong>section headings</strong> in partials.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For more information on partials requirements, see <a href="add-a-partial.html" class="xref page">Adding A Partial</a>.</p>
+</div>
+<div class="paragraph">
+<p>For more information on how Antora handles partials in general, see <a href="https://docs.antora.org/antora/2.1/page/#partial" target="_blank" rel="noopener">Reusable Partial Pages In Antora</a>.</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="add-new-module.html">Adding A New Module</a></span>
+  <span class="next"><a href="add-a-page.html">Adding A Page</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>
