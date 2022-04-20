@@ -464,9 +464,6 @@
     <a class="nav-link" href="../../How-Tos/how-to-build_antora_locally.html">How-To: Build Antora Locally</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../How-Tos/how-to-change_asset_library_content.html">How-To: Edit Draw.io Asset Library</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../How-Tos/how-to-clone_a_repository_gitlab-vscode.html">How-To: Clone A Repository Using GitLab To Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -495,6 +492,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../How-Tos/how-to-docker_for_asciidoc.html">How-To: Use Docker For Asciidoctor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../How-Tos/how-to-edit_asam_graphics_library.html">How-To: Edit The ASAM Graphics Library</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../How-Tos/how-to-email-notifications.html">How-To: Email notifications from microsoft teams</a>
@@ -901,12 +901,30 @@ To be able to access the <a href="https://code.asam.net/common/asam-graphic-libr
 <h2 id="_how"><a class="anchor" href="#_how"></a>How</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Draw.io can be used either locally (through the dedicated app <a href="#_draw_io_app_desktop">Draw.io Deskop</a> or through the <a href="#VSCode Extension">VS Code Extension</a>) or with the <a href="#_remote_setup">web app</a>.</p>
+<p>Draw.io can be used either locally (through the dedicated app 'Draw.io Desktop' or through the 'Visual Studio Code Extension') or online through the Draw.io web app.</p>
 </div>
-<div class="sect2">
-<h3 id="_local_setup"><a class="anchor" href="#_local_setup"></a>Local Setup</h3>
-<div class="sect3">
-<h4 id="_draw_io_app_desktop"><a class="anchor" href="#_draw_io_app_desktop"></a>Draw.io App (Desktop)</h4>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset1_remote-setup"></a>Remote Setup</p>
+</li>
+<li>
+<p><a id="tabset1_draw-io-desktop-app"></a>Draw.io Desktop App</p>
+</li>
+<li>
+<p><a id="tabset1_draw-io-vscode-extension"></a>Draw.io VSCode Extension</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset1_remote-setup">
+<div class="paragraph">
+<p><strong>The use of Draw.io through the web browser does not require any setup.</strong><br>
+Just use the provided <a href="https://app.diagrams.net/?splash=0&amp;clibs=Uhttps%3A%2F%2Fcode.asam.net%2Fcommon%2Fasam-graphic-library%2F-%2Fraw%2Fmaster%2FASAM_graphics_library.xml" target="_blank" rel="noopener"><strong>link</strong></a>.</p>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_draw-io-desktop-app">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -933,8 +951,7 @@ To be able to access the <a href="https://code.asam.net/common/asam-graphic-libr
 <div class="title">Figure 1. Import ASAM Draw.io library into Desktop.</div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_draw_io_vscode_extension"><a class="anchor" href="#_draw_io_vscode_extension"></a>Draw.io VSCode Extension</h4>
+<div class="tab-pane" aria-labelledby="tabset1_draw-io-vscode-extension">
 <div class="paragraph">
 <p>The Draw.io extension for Visual Sudio Code allows for easy creation and assisted editing of drawio and other files supported by Draw.io within Visual Studio Code.
 For shortcuts and tips, see the documentation of the extension.
@@ -1021,12 +1038,6 @@ Remove the comma after the last braket ("]") if there is no other line before th
 <div class="title">Figure 3. Import ASAM Draw.io library into VSCode extension.</div>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_remote_setup"><a class="anchor" href="#_remote_setup"></a>Remote Setup</h3>
-<div class="paragraph">
-<p>The use of Draw.io through the web browser does not require any setup.
-Just use the provided <a href="https://app.diagrams.net/?splash=0&amp;clibs=Uhttps%3A%2F%2Fcode.asam.net%2Fcommon%2Fasam-graphic-library%2F-%2Fraw%2Fmaster%2FASAM_graphics_library.xml" target="_blank" rel="noopener">link</a>.</p>
 </div>
 </div>
 </div>
