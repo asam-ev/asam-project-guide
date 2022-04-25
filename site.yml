@@ -64,7 +64,7 @@ asciidoc:
     # tag::roles[]
     ## Defined role attributes
     role-reviewer: 'xref:role-specific:reviewer.adoc[<role style="background:#FA8072;" >REVIEWER</role>]'
-    role-wg-member: 'xref:role-specific:wg-member.adoc[<role style="background:#BDB76B;" >WG MEMBER</role>]'
+    role-project-participant: 'xref:role-specific:project-participant.adoc[<role style="background:#BDB76B;" >PROJECT PARTICIPANT</role>]'
     role-wg-lead: 'xref:role-specific:wg-lead.adoc[<role style="background:#14BCCD;" >WG LEAD</role>]'
     role-technical-writer: 'xref:role-specific:technical-writer.adoc[<role style="background:#D8BFD8;" >TECHNICAL WRITER</role>]'
     role-project-lead: 'xref:role-specific:project-lead.adoc[<role style="background:#6A5ACD;" >PROJECT LEAD</role>]'
