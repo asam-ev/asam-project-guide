@@ -479,6 +479,10 @@ function createKeywordsOverviewPage( keywordOverviewPageRequested, contentCatalo
     )
     let myBase;
     for (let entry of [...keywordPageMap.entries()].sort()) {
+        if (entry[0].trim() === "") {
+            console.log("skipped entry ",entry[0])
+            continue;
+        }
         let val = entry[1].entries().next().value[0]
         myBase = val.base
         if (targetPath !== "" && !targetPath.endsWith("/")){
