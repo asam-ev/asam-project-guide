@@ -8,7 +8,7 @@
     <link rel="prev" href="../add_files.html">
     <link rel="next" href="pages-vs-partials.html">
     <meta name="description" content="Describes how to add a new module to the ASAM Project Guide so that it contains all importantn infos and structures by default for Antora to build correctly.">
-    <meta name="keywords" content="antora,guide,module,new-content-guide">
+    <meta name="keywords" content="guide,new_content">
     <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
 <script type="text/javascript" src="../../../_/js/modal.js" defer></script>
@@ -68,6 +68,9 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../structure/03_keywords-list.html">Keyword list</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../compendium/1_keywords.html">Used keywords In ASAM Project Guide</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
@@ -81,16 +84,7 @@
     <a class="nav-link" href="pages-vs-partials.html">Pages vs partials</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="add-a-page.html">Adding a page</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="pages/add-task-page.html">Adding a task page</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="pages/add-tool-page.html">Adding a tool page</a>
-  </li>
-</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="add-a-partial.html">Adding a partial</a>
@@ -102,55 +96,40 @@
     <a class="nav-link" href="../changing_content.html">Add/change content</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../reviewing/create_issue_on_page.html">Create an issue for a page</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../reviewing/editing_pages.html">Artifact page name</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../adding_content/editorial_rules.html">Editorial rules</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Working with roles</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../adding_content/roles/add-new-role.html">How to add a new role</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../adding_content/roles/use_roles.html">Using roles</a>
-  </li>
-</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../adding_content/page_redirects.html">Moving, renaming and deleting a page</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../adding_content/interactive_diagrams.html">Creating interactive diagrams</a>
+    <a class="nav-link" href="../adding_content/using_tabs.html">Using tabulated content</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adding_content/use_roles.html">Using roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adding_content/add-new-role.html">How to add a new role</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../ref-include.html">Referencing/including</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../gather_feedback.html">Gathering feedback</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../ref-include/images.html">Using images</a>
+    <a class="nav-link" href="../reviewing/create_issue_on_page.html">Create an issue for a page</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../ref-include/examples.html">Using examples</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../ref-include/attachments.html">Using attachments</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../ref-include/including.html">Including pages and partials</a>
+    <a class="nav-link" href="../reviewing/editing_pages.html">Editing a page directly</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a>
+    <a class="nav-link" href="../asam_extensions.html">Custom ASAM features</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a>
@@ -186,15 +165,6 @@
     <a class="nav-link" href="../extensions/macro-autonav.html">Macro: autonav</a>
   </li>
 </ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Orphans</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../compendium/1_keywords.html">Used keywords In ASAM Project Guide</a>
   </li>
 </ul>
   </li>
@@ -265,15 +235,24 @@
 Each module is a distinct collection of content, targeted at providing information in an optimized way for the given target group.</p>
 </div>
 <div class="paragraph">
-<p>Two types of modules exist:
-* content hosts
-* content aggregators</p>
+<p>Two types of modules exist:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>content hosts</p>
+</li>
+<li>
+<p>content aggregators</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>A <strong>content host</strong> is a module where (most) source content files lie.
-Examples are the "tooling" module and the "compendium" modules.<br>
-A <strong>content aggregator</strong> is a module where some header content is located, but the main information is included from another (host) module.
-Examples are the "role-specific" and the "getting-involved" modules.</p>
+An example is the "compendium" module.<br>
+A <strong>content aggregator</strong> is a module where pages are mostly empty.
+The main information is included from another (host) module.
+An example is the "role-specific" module.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -375,12 +354,6 @@ The position in the list reflects the order of the modules in Antora&#8217;s sid
 </li>
 <li>
 <p><a href="add-a-partial.html" class="xref page">Adding a partial</a></p>
-</li>
-<li>
-<p><a href="pages/add-task-page.html" class="xref page">Adding a task page</a></p>
-</li>
-<li>
-<p><a href="pages/add-tool-page.html" class="xref page">Adding a tool page</a></p>
 </li>
 </ul>
 </div>

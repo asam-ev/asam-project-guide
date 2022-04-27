@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Custom ASAM Antora/Asciidoctor extensions :: ASAM Project Guide</title>
+    <title>Custom ASAM features :: ASAM Project Guide</title>
     <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/latest/asam_extensions.html">
-    <link rel="prev" href="ref-include/including.html">
+    <link rel="prev" href="reviewing/editing_pages.html">
     <link rel="next" href="extensions/pipeline-orphan_pages.html">
     <meta name="description" content="Lists all custom macros used throughout the Project Guide that require special scripts by ASAM to be processed correctly.">
-    <meta name="keywords" content="macro,extension,antora,asam,custom,project-guide">
+    <meta name="keywords" content="macro,custom,project-guide">
     <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../_/css/site.css">
 <script type="text/javascript" src="../../_/js/modal.js" defer></script>
@@ -41,7 +41,7 @@
         </div>
       </div>
         <div class="navbar-item is-hoverable">
-                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/latest/asam_extensions.html+%7C%0D%0A%7C+Page+%7C+Custom ASAM Antora/Asciidoctor extensions+%7C%0D%0A%7C+Module+%7C+ROOT+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/latest/asam_extensions.html+%7C%0D%0A%7C+Page+%7C+Custom ASAM features+%7C%0D%0A%7C+Module+%7C+ROOT+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
       </div>
     </div>
@@ -68,6 +68,9 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="structure/03_keywords-list.html">Keyword list</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compendium/1_keywords.html">Used keywords In ASAM Project Guide</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
@@ -81,16 +84,7 @@
     <a class="nav-link" href="adding_files/pages-vs-partials.html">Pages vs partials</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="adding_files/add-a-page.html">Adding a page</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="adding_files/pages/add-task-page.html">Adding a task page</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="adding_files/pages/add-tool-page.html">Adding a tool page</a>
-  </li>
-</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="adding_files/add-a-partial.html">Adding a partial</a>
@@ -102,55 +96,40 @@
     <a class="nav-link" href="changing_content.html">Add/change content</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="reviewing/create_issue_on_page.html">Create an issue for a page</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="reviewing/editing_pages.html">Artifact page name</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="adding_content/editorial_rules.html">Editorial rules</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Working with roles</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="adding_content/roles/add-new-role.html">How to add a new role</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="adding_content/roles/use_roles.html">Using roles</a>
-  </li>
-</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="adding_content/page_redirects.html">Moving, renaming and deleting a page</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="adding_content/interactive_diagrams.html">Creating interactive diagrams</a>
+    <a class="nav-link" href="adding_content/using_tabs.html">Using tabulated content</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="adding_content/use_roles.html">Using roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="adding_content/add-new-role.html">How to add a new role</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="ref-include.html">Referencing/including</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="gather_feedback.html">Gathering feedback</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ref-include/images.html">Using images</a>
+    <a class="nav-link" href="reviewing/create_issue_on_page.html">Create an issue for a page</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ref-include/examples.html">Using examples</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ref-include/attachments.html">Using attachments</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ref-include/including.html">Including pages and partials</a>
+    <a class="nav-link" href="reviewing/editing_pages.html">Editing a page directly</a>
   </li>
 </ul>
   </li>
   <li class="nav-item is-current-page" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a>
+    <a class="nav-link" href="asam_extensions.html">Custom ASAM features</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a>
@@ -186,15 +165,6 @@
     <a class="nav-link" href="extensions/macro-autonav.html">Macro: autonav</a>
   </li>
 </ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Orphans</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="compendium/1_keywords.html">Used keywords In ASAM Project Guide</a>
   </li>
 </ul>
   </li>
@@ -238,7 +208,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="main.html">Editing the ASAM Project Guide</a></li>
-    <li><a href="asam_extensions.html">Custom ASAM Antora/Asciidoctor extensions</a></li>
+    <li><a href="asam_extensions.html">Custom ASAM features</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/main/guide/modules/ROOT/pages/asam_extensions.adoc">Edit this Page</a></div>
@@ -248,7 +218,7 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc" variant="wide">
-    <h1 class="page">Custom ASAM Antora/Asciidoctor extensions</h1>
+    <h1 class="page">Custom ASAM features</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
@@ -278,38 +248,17 @@ For more information on how to write an Antora extension, see <a href="https://d
 <div class="paragraph">
 <p>The source repository of the ASAM extensions is <a href="https://code.asam.net/common/asam-antora-extensions" class="bare">https://code.asam.net/common/asam-antora-extensions</a>.</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_added_features"><a class="anchor" href="#_added_features"></a>Added features</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>The ASAM Antora extension adds the following features to Antora:</p>
+<p>All following examples assume the extension is located under "./antora_extensions", where "." is the location of the "site.yml" file (the <a href="https://docs.antora.org/antora/latest/playbook/" target="_blank" rel="noopener">Antora playbook</a>).</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Support for the <a href="#_asam_antora_macros">ASAM Antora macros</a></p>
-</li>
-<li>
-<p>Identifying and (optional) listing <a href="#_orphan_pages">Orphan pages</a></p>
-</li>
-<li>
-<p>Creating a <a href="#_keyword_overview_page">Keyword-overview page</a></p>
-</li>
-<li>
-<p>Sequential <a href="#_page_numbering">page and section numbers</a> in Antora</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-All following examples assume the extension is located under "./antora_extensions", where "." is the location of the "site.yml" file (the <a href="https://docs.antora.org/antora/latest/playbook/" target="_blank" rel="noopener">Antora playbook</a>).
+Most extensions are not fully supported in partials, particularly those depending on Asciidoctor features like "include"!
 </td>
 </tr>
 </table>
@@ -324,14 +273,14 @@ All following examples assume the extension is located under "./antora_extension
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
+<col style="width: 14.2857%;">
+<col style="width: 42.8571%;">
+<col style="width: 14.2857%;">
+<col style="width: 28.5715%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-right valign-top">Attribute</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Default</th>
 <th class="tableblock halign-left valign-top">Example</th>
@@ -339,18 +288,24 @@ All following examples assume the extension is located under "./antora_extension
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">id</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Defines an id by which the extension can be specifically called from the CLI.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">none</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>id: asam-extension</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">enabled</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">enabled</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">De-/activates this extension by default.
 If deactivated, the extension must be explicitely called from the CLI.
 Only relevant in combination with <code>id</code>.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>enabled: false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">require</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Describes the location of the extension.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">none</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>require: './antora_extensions/asam-extension.js'</code></p></td>
 </tr>
 </tbody>
 </table>
@@ -360,7 +315,6 @@ Only relevant in combination with <code>id</code>.</p></td>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">- id: asam-extensions
-  enabled: false
   require: './antora_extensions/asam-extension.js'</code></pre>
 </div>
 </div>
@@ -372,10 +326,35 @@ Only relevant in combination with <code>id</code>.</p></td>
 <h2 id="_pipeline_features"><a class="anchor" href="#_pipeline_features"></a>Pipeline features</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The following sections describe features directly applied through the pipeline.</p>
+<p>The following sections describe features directly applied through the pipeline.<br>
+These are features that typically are relevant to the whole site.
+They enact general rules or features, or they collect information about all content.</p>
 </div>
-<div class="sect2">
-<h3 id="_orphan_pages"><a class="anchor" href="#_orphan_pages"></a>Orphan pages</h3>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset1_orphan-pages"></a>Orphan pages</p>
+</li>
+<li>
+<p><a id="tabset1_keyword-overview-page"></a>Keyword-overview page</p>
+</li>
+<li>
+<p><a id="tabset1_page-numbering"></a>Page numbering</p>
+</li>
+<li>
+<p><a id="tabset1_sequential-figure-and-table-numbers"></a>Sequential figure and table numbers</p>
+</li>
+<li>
+<p><a id="tabset1_iso-2145-style-section-numbers"></a>ISO-2145 style section numbers</p>
+</li>
+<li>
+<p><a id="tabset1_convert-local-to-global-page-references"></a>Convert local to global page references</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset1_orphan-pages">
 <div class="paragraph">
 <p>The ASAM Antora extension finds all pages not listed in any nav.adoc and puts a warning in the console output.
 If configured, these pages can also automatically be listed under a separated navigation entry (e.g. "orphans") at the end of the Antora document.</p>
@@ -384,8 +363,7 @@ If configured, these pages can also automatically be listed under a separated na
 <p>For more details, see <a href="extensions/pipeline-orphan_pages.html" class="xref page">Pipeline: Orphan pages</a>.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_keyword_overview_page"><a class="anchor" href="#_keyword_overview_page"></a>Keyword-overview page</h3>
+<div class="tab-pane" aria-labelledby="tabset1_keyword-overview-page">
 <div class="paragraph">
 <p>The ASAM Antora extension generates an overview page that lists all keywords used in the Antora pages.
 The location and the (virtual) filename can be configured in the site.yml (Antora playbook).</p>
@@ -402,8 +380,7 @@ To see the result of the applied pipeline feature, see</p>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_page_numbering"><a class="anchor" href="#_page_numbering"></a>Page numbering</h3>
+<div class="tab-pane" aria-labelledby="tabset1_page-numbering">
 <div class="paragraph">
 <p>By default, Antora does not support sequential page numbering.
 However, standards at ASAM require to have numbered sections and chapters.
@@ -432,8 +409,7 @@ These consist of an Antora part (responsible for the navigation structure and se
 <p>For more details, see <a href="extensions/pipeline-sequential_sectnums.html" class="xref page">Pipeline: Sequential numbering</a>.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_sequential_figure_and_table_numbers"><a class="anchor" href="#_sequential_figure_and_table_numbers"></a>Sequential figure and table numbers</h3>
+<div class="tab-pane" aria-labelledby="tabset1_sequential-figure-and-table-numbers">
 <div class="paragraph">
 <p>Since Asciidoctor counts all images and tables only within each page, their caption numbers start at 1 on every new Antora page by default.
 In case of standards, these numbers must be sequential (and unique) within each standard, not each page.</p>
@@ -456,19 +432,17 @@ In case of standards, these numbers must be sequential (and unique) within each 
 <p>For more details, see <a href="extensions/pipeline-sequential_figs_tables.html" class="xref page">Pipeline: Sequential figure and table numbers</a>.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_iso_2145_style_section_numbers"><a class="anchor" href="#_iso_2145_style_section_numbers"></a>ISO-2145 style section numbers</h3>
+<div class="tab-pane" aria-labelledby="tabset1_iso-2145-style-section-numbers">
 <div class="paragraph">
 <p>By default, section numbers in Asciidoctor have a trailing dot (".").
 To be in line with <a href="https://en.wikipedia.org/wiki/ISO_2145" target="_blank" rel="noopener">ISO 2145</a>, sections in standards have to be numbered without this trailing dot.
-The Antora extension in combination with the 'sectnums_to_iso' extension for Asciidoctor address this problem.</p>
+The Antora extension, in combination with the 'sectnums_to_iso' extension for Asciidoctor, addresses this problem.</p>
 </div>
 <div class="paragraph">
 <p>For more details, see <a href="extensions/pipeline-iso_style.html" class="xref page">Pipeline: ISO-2145 style section and page numbering</a>.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_convert_local_to_global_page_references"><a class="anchor" href="#_convert_local_to_global_page_references"></a>Convert local to global page references</h3>
+<div class="tab-pane" aria-labelledby="tabset1_convert-local-to-global-page-references">
 <div class="paragraph">
 <p>Using Asciidoctor, it is typical to create one main file and include content from separate files.
 With this approach, each section or chapter can be managed separately while still compiling everything into a single final document.
@@ -488,64 +462,70 @@ If the content is included in multiple pages, pages in the navigation structured
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_asam_antora_macros"><a class="anchor" href="#_asam_antora_macros"></a>ASAM Antora macros</h2>
 <div class="sectionbody">
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-ASAM macros are not supported in partials as they are replaced through Antora rather than Asciidoctor, but partials are included by Asciidoctor at a later stage.
-</td>
-</tr>
-</table>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset2_related"></a>related</p>
+</li>
+<li>
+<p><a id="tabset2_reference"></a>reference</p>
+</li>
+<li>
+<p><a id="tabset2_pages"></a>pages</p>
+</li>
+<li>
+<p><a id="tabset2_role_related"></a>role_related</p>
+</li>
+<li>
+<p><a id="tabset2_autonav"></a>autonav</p>
+</li>
+</ul>
 </div>
-<div class="sect2">
-<h3 id="_the_related_macro"><a class="anchor" href="#_the_related_macro"></a>The "related" macro</h3>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset2_related">
 <div class="paragraph">
 <p>Add <code>related::&lt;comma-separated-keywords&gt;[]</code> in an empty line and replace <code>&lt;comma-separated-keywords&gt;</code> with a comma-separated list of keywords you want to reference.
 You can exclude pages with certain other keywords by negating that keyword.
-To negate a keyword, use an exclamationmark (<code>!</code>) in front of it.</p>
+To negate a keyword, use an exclamation mark (<code>!</code>) in front of it.</p>
 </div>
 <div class="paragraph">
-<p>See: <a href="extensions/macro-related.html" class="xref page">Macro: related</a></p>
+<p>For more details, see <a href="extensions/macro-related.html" class="xref page">Macro: related</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_the_reference_macro"><a class="anchor" href="#_the_reference_macro"></a>The "reference" macro</h3>
+<div class="tab-pane" aria-labelledby="tabset2_reference">
 <div class="paragraph">
 <p>Add <code>reference::&lt;comma-separated-keywords&gt;[]</code> in an empty line and replace <code>&lt;comma-separated-keywords&gt;</code> with a comma-separated list of keywords you want to reference.
 You can exclude pages with certain other keywords by negating that keyword.
-To negate a keyword, use an exclamationmark (<code>!</code>) in front of it.</p>
+To negate a keyword, use an exclamation mark (<code>!</code>) in front of it.</p>
 </div>
 <div class="paragraph">
-<p>See: <a href="extensions/macro-reference.html" class="xref page">Macro: reference</a></p>
+<p>For more details, see <a href="extensions/macro-reference.html" class="xref page">Macro: reference</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_the_pages_macro"><a class="anchor" href="#_the_pages_macro"></a>The "pages" macro</h3>
+<div class="tab-pane" aria-labelledby="tabset2_pages">
 <div class="paragraph">
 <p>Add <code>page::[&lt;arguments&gt;]</code> in an empty line and replace <code>&lt;arguments&gt;</code> with a list of arguments, separated by "," (comma).
 If you add no arguments, the macro will list all other pages in the same folder as this file.</p>
 </div>
 <div class="paragraph">
-<p>See: <a href="extensions/macro-pages.html" class="xref page">Macro: pages</a></p>
+<p>For more details, see <a href="extensions/macro-pages.html" class="xref page">Macro: pages</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_the_role_related_macro"><a class="anchor" href="#_the_role_related_macro"></a>The "role_related" macro</h3>
+<div class="tab-pane" aria-labelledby="tabset2_role_related">
 <div class="paragraph">
 <p>Add <code>role_related::&lt;attributes&gt;[&lt;parameters&gt;]</code> in an empty line and replace <code>&lt;attributes&gt;</code> with a list of role labels, separated by "," (comma), and <code>&lt;parameters&gt;</code> with an (optional) list of limiting keywords, separated by "," (comma).</p>
 </div>
 <div class="paragraph">
-<p>See: <a href="extensions/macro-role_related.html" class="xref page">Macro: role_related</a></p>
+<p>For more details, see <a href="extensions/macro-role_related.html" class="xref page">Macro: role_related</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_the_autonav_macro"><a class="anchor" href="#_the_autonav_macro"></a>The "autonav" macro</h3>
+<div class="tab-pane" aria-labelledby="tabset2_autonav">
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -600,13 +580,15 @@ The macro must also always be used as a comment (similarly to the Asciidoctor ma
 </table>
 </div>
 <div class="paragraph">
-<p>See: <a href="extensions/macro-autonav.html" class="xref page">Macro: autonav</a></p>
+<p>For more details, see <a href="extensions/macro-autonav.html" class="xref page">Macro: autonav</a></p>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_sources"><a class="anchor" href="#_sources"></a>Sources</h2>
+<h2 id="_source_repository"><a class="anchor" href="#_source_repository"></a>Source repository</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The source code can be found in the <a href="https://code.asam.net/common/asam-antora-extensions" target="_blank" rel="noopener">ASAM GitLab repository</a>.</p>
@@ -614,18 +596,18 @@ The macro must also always be used as a comment (similarly to the Asciidoctor ma
 </div>
 </div>
 <div class="sect1">
-<h2 id="_example_the_project_guide_antora_playbook"><a class="anchor" href="#_example_the_project_guide_antora_playbook"></a>Example: The Project Guide Antora playbook</h2>
+<h2 id="_including_asam_extensions_in_a_project"><a class="anchor" href="#_including_asam_extensions_in_a_project"></a>Including ASAM extensions in a project</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>The application of pipeline extensions can be seen in the Project Guide&#8217;s "site.yml" file.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yml hljs" data-lang="yml">../../../../site.yml</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Source file in repository: <a href="https://github.com/asam-ev/asam-project-guide/blob/main/site.yml">site.yml on GitHub</a></p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To use the provided ASAM extensions in an ASAM project, add the <a href="https://code.asam.net/common/asam-antora-extensions.git" target="_blank" rel="noopener">extension repository git</a> as submodule to your project.
+It is recommended to switch to <code>master</code> for the submodule and update regularly to ensure that always the latest version is used!</p>
+</li>
+<li>
+<p>Add the <a href="#_general_configuration">general configuration</a> to your project&#8217;s site.yml, according to where the extensions have been checked out into</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -672,7 +654,7 @@ The macro must also always be used as a comment (similarly to the Asciidoctor ma
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="ref-include/including.html">Including pages and partials</a></span>
+  <span class="prev"><a href="reviewing/editing_pages.html">Editing a page directly</a></span>
   <span class="next"><a href="extensions/pipeline-orphan_pages.html">Pipeline: Orphan pages</a></span>
 </nav>
 </article>
