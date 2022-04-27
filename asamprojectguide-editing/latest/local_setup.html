@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Add/change content :: ASAM Project Guide</title>
-    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/latest/changing_content.html">
-    <link rel="prev" href="adding_files/add-a-partial.html">
-    <link rel="next" href="adding_content/editorial_rules.html">
-    <meta name="description" content="Collects all pages on including or referencing content in Antora.">
-    <meta name="keywords" content="project-guide">
+    <title>Build the Project Guide locally :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/latest/local_setup.html">
+    <link rel="prev" href="compendium/1_keywords.html">
+    <link rel="next" href="add_files.html">
+    <meta name="description" content="Describes recommended steps to build the ASAM Project Guide locally.">
     <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../_/css/site.css">
 <script type="text/javascript" src="../../_/js/modal.js" defer></script>
@@ -41,7 +40,7 @@
         </div>
       </div>
         <div class="navbar-item is-hoverable">
-                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/latest/changing_content.html+%7C%0D%0A%7C+Page+%7C+Add/change content+%7C%0D%0A%7C+Module+%7C+ROOT+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide-editing/latest/local_setup.html+%7C%0D%0A%7C+Page+%7C+Build the Project Guide locally+%7C%0D%0A%7C+Module+%7C+ROOT+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
       </div>
     </div>
@@ -73,7 +72,7 @@
   </li>
 </ul>
   </li>
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="local_setup.html">Build the Project Guide locally</a>
   </li>
   <li class="nav-item" data-depth="1">
@@ -94,7 +93,7 @@
   </li>
 </ul>
   </li>
-  <li class="nav-item is-current-page" data-depth="1">
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="changing_content.html">Add/change content</a>
 <ul class="nav-list">
@@ -211,47 +210,106 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="main.html">Editing the ASAM Project Guide</a></li>
-    <li><a href="changing_content.html">Add/change content</a></li>
+    <li><a href="local_setup.html">Build the Project Guide locally</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/main/guide/modules/ROOT/pages/changing_content.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/main/guide/modules/ROOT/pages/local_setup.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc" variant="wide">
-    <h1 class="page">Add/change content</h1>
+    <h1 class="page">Build the Project Guide locally</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/1388/1388394.png" alt="1388394" width="120"></span></a></p>
+<p><a href="#"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/2482/2482695.png" alt="2482695" width="120"></span></a></p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_context"><a class="anchor" href="#_context"></a>Context</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>The following pages describe how to add or change content in files.</p>
+<p>When editing the Project Guide, it may be beneficial to run the build process locally.
+This way, changes can be inspected before they are made public.</p>
 </div>
-<div class="admonitionblock note">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_result"><a class="anchor" href="#_result"></a>Result</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A local setup is created to build the Project Guide locally using Antora.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>User can access both the <a href="https://github.com/asam-ev/asam-project-guide/" target="_blank" rel="noopener">generator</a> and the <a href="https://github.com/asam-ev/asam-project-guide-content" target="_blank" rel="noopener">content</a> repository</p>
+</li>
+<li>
+<p>The prerequisites of <a href="../../asamprojectguide/latest/compendium/How-Tos/build_antora_locally.html#_prerequisites" class="xref page">Build Antora locally</a> in the Project Guide are fulfilled</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how"><a class="anchor" href="#_how"></a>How</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Check out the <a href="https://github.com/asam-ev/asam-project-guide.git" target="_blank" rel="noopener">generator repository</a></p>
+</li>
+<li>
+<p>Next, check out the <a href="https://github.com/asam-ev/asam-project-guide-content.git" target="_blank" rel="noopener">content repository</a> inside the checked out generator repository</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This guide assumes the content is checked out into the folder 'asam-project-guide-content' directly on root of the generator repository.
+If this is not the case, update the paths in the site.yml accordingly!</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If you are using Visual Studio Code and would like to add both repositories to the integrated source control, follow these steps as well</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>If one or both of the repositories above have already been added to source control, remove them from there</p>
+</li>
+<li>
+<p>Next, add the content repository to VSCode first</p>
+</li>
+<li>
+<p>Finally, add the generator repository to VSCode.
+This way, VSCode&#8217;s source control should now contain both repositories</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>To build, follow the instructions from <a href="../../asamprojectguide/latest/compendium/How-Tos/build_antora_locally.html#_how" class="xref page">Build Antora locally</a> in the Project Guide</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Content that is linked to or included from somewhere else is described in <a href="ref-include.html" class="xref page">Referencing/including</a>.
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-You can exclude a page from Antora through its name.
-If the filename starts with a dot ("."), Antora ignores it.<br>
-If the filename starts with an underscore ("_"), Antora does not publish it but adds it to its internal content catalog (i.e. it is aware of it).
+Remember to revert changes made to the site.yml for local building before checking in other changes to that file.
+Otherwise, the GitHub pipeline will not be able to build the site!
 </td>
 </tr>
 </table>
@@ -259,32 +317,20 @@ If the filename starts with an underscore ("_"), Antora does not publish it but 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_pages"><a class="anchor" href="#_pages"></a>Pages</h2>
+<h2 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>Troubleshooting</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="adding_content/editorial_rules.html" class="xref page">Editorial rules</a></p>
-</li>
-<li>
-<p><a href="adding_content/page_redirects.html" class="xref page">Moving, renaming and deleting a page</a></p>
-</li>
-<li>
-<p><a href="adding_content/using_tabs.html" class="xref page">Using tabulated content</a></p>
-</li>
-<li>
-<p><a href="adding_content/use_roles.html" class="xref page">Using roles</a></p>
-</li>
-<li>
-<p><a href="adding_content/add-new-role.html" class="xref page">How to add a new role</a></p>
-</li>
-</ul>
+<div class="sect2">
+<h3 id="_in_vscode_my_folder_structure_keeps_closing_randomly_or_when_i_switch_windows"><a class="anchor" href="#_in_vscode_my_folder_structure_keeps_closing_randomly_or_when_i_switch_windows"></a>In VSCode, my folder structure keeps closing randomly or when I switch windows</h3>
+<div class="paragraph">
+<p>This, unfortunately, is a side effect of the workaround for adding a nested repository to VSCode&#8217;s source control.
+If you do not need the source control for the content repository or the generator repository, only add the relevant one to source control.</p>
+</div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="adding_files/add-a-partial.html">Adding a partial</a></span>
-  <span class="next"><a href="adding_content/editorial_rules.html">Editorial rules</a></span>
+  <span class="prev"><a href="compendium/1_keywords.html">Used keywords In ASAM Project Guide</a></span>
+  <span class="next"><a href="add_files.html">Adding files</a></span>
 </nav>
 </article>
   </div>
