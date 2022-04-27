@@ -73,7 +73,7 @@ asciidoc:
     role-standard-user: 'xref:role-specific:standard_user.adoc[<role style="background:#CD853F;" >STANDARD USER</role>]'
     role-standard-manager: 'xref:role-specific:standard_manager.adoc[<role style="background:#DEB887;" >STANDARD MANAGER</role>]'
     role-idea-giver: '<role style="background:LightGray;">Idea Giver</role>'
-    role-tsc-member: '<role style="background:LightGray;">TSC Member</role>'
+    role-tsc-member: 'xref:role-specific:tsc.adoc[<role style="background:#006EA2; color:white;">TSC MEMBER</role>]'
     role-member: '<role style="background:LightGray;">ASAM Member</role>'
     role-ccb: '<role style="background:LightGray;">CCB Member</role>'
     # end::roles[]

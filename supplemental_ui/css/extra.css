@@ -1,3 +1,31 @@
+.doc h1, .doc h2, .doc  h3:not(.sect2:first-child h3), .doc h4:not(.sect3:first-child h4), .doc h5:not(.sect4:first-child h5), .doc h6:not(.sect5:first-child h6) {
+    margin-top: 2.5rem !important;
+}
+
+
+.openblock.non-normative {
+    border: 0.15rem solid #5d5d5d;
+    background: #F2F4F4;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}
+
+.doc .openblock.non-normative .title{
+	text-transform: uppercase;
+	background: #217ee7;
+	color: #fff;
+    top: 0;
+    font-size: 0.83333rem;
+    padding: 0 0.5rem;
+    height: 1.25rem;
+	display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+.doc div.non-normative div.content div:nth-child(1){
+	margin-top: 0;
+}
 
 span.green {
     color: darkgreen;
@@ -21,6 +49,7 @@ span.brown {
     color: brown;
 }
 
+.doc .openblock.non-normative .title,
 .doc .admonitionblock .icon {
     border-radius: 1rem;
     left: 10px;
@@ -30,6 +59,8 @@ span.brown {
     font-weight: 600;
 }
 
+/* Removes the title content for non-normative automatically and adds icon space! */
+.doc .openblock.non-normative .title::before,
 i.fa[class^='icon-'],
 i.fa[class*=' icon-']::before {
     content: "";
@@ -39,6 +70,13 @@ i.fa[class*=' icon-']::before {
     margin-left: -0.5rem;
 }
 
+/* Overwrites the title content for non-normative automatically! */
+.doc .openblock.non-normative .title::after {
+	content="NON-NORMATIVE";
+}
+
+/* Assigns the "i" as icon for non-normative! */
+.doc .openblock.non-normative .title::before,
 i.fa.icon-note::before {
     background: no-repeat url("../img/note.svg");
 }
