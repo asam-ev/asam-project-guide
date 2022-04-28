@@ -881,22 +881,22 @@
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#sec-ASM-14">Create an anchor with an UUID for a referenced code block (ASM-14)</a></p>
+<p><a href="#sec-ASM-43">Use a single backtick before and after inline literals (ASM-43)</a></p>
+</li>
+<li>
+<p><a href="#sec-ASM-121">Mark up ASAM XML elements (ASM-121)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-88">Use AsciiDoc syntax for source code snippets (ASM-88)</a></p>
 </li>
 <li>
-<p><a href="#sec-ASM-43">Use a single backtick before and after inline literals (ASM-43)</a></p>
+<p><a href="#sec-ASM-14">Create an anchor with an UUID for a referenced code block (ASM-14)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-79">Use four space characters per indentation level for source code blocks (ASM-79)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-53">Indent XML attributes in examples (ASM-53)</a></p>
-</li>
-<li>
-<p><a href="#sec-ASM-121">Mark up ASAM XML elements (ASM-121)</a></p>
 </li>
 </ul>
 </div>
@@ -918,6 +918,9 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
+<div class="paragraph">
+<p><span class="underline">Code</span></p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-none hljs">[#code-7a608cac-62b9-4992-8079-d382a55128b2]
@@ -927,6 +930,16 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 ...
 &lt;/OpenDRIVE&gt;
 ----</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="underline">Result</span></p>
+</div>
+<div id="code-7a608cac-62b9-4992-8079-d382a55128b2" class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;OpenDRIVE xmlns="https://code.asam.net/simulation/standard/opendrive_schema/"&gt;
+...
+&lt;/OpenDRIVE&gt;</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1086,6 +1099,18 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
+<div class="paragraph">
+<p><span class="underline">Code</span></p>
+</div>
+<div class="paragraph">
+<p><code>`term`</code></p>
+</div>
+<div class="paragraph">
+<p><span class="underline">Result</span></p>
+</div>
+<div class="paragraph">
+<p><code>term</code></p>
+</div>
 <table id="tab-ce27729f-33c4-47b2-a579-e7a1c2434c3a" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 1. Use a single backtick before and after inline literals</caption>
 <colgroup>
@@ -1101,11 +1126,11 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">The example below shows the structure of an <code>``Act``</code>.</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The example below shows the structure of an <code>`Act`</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The example below shows the structure of an <code>Act</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">Movements of vehicles in <code>``Act``</code> are defined in the <code>``ManeuverGroup`` `</code> s section.</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Movements of vehicles in <code>`Act`</code> are defined in the section <code>`ManeuverGroup`</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Movements of vehicles in <code>Act</code> are defined in the section <code>ManeuverGroup</code>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1149,14 +1174,6 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Normal text<br>
-<span class="line-through">&#8594;Level 1 indented text<br>
-&#8594;&#8594;Level 2 indented text</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Normal text<br>
-&#8230;&#8203;.Level 1 indented text<br>
-&#8230;&#8203;&#8230;&#8203;..Level 2 indented text</p></td>
-</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
@@ -1301,6 +1318,18 @@ Optional: Use the words "attribute" or "attributes".</p>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
+<div class="paragraph">
+<p><span class="underline">Code</span></p>
+</div>
+<div class="paragraph">
+<p>`&lt;roadMark&gt;` element</p>
+</div>
+<div class="paragraph">
+<p><span class="underline">Result</span></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;roadMark&gt;</code> element</p>
+</div>
 <table id="tab-290d36d7-08a5-4aac-9ba2-7e60db7d448a" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 4. Mark up ASAM XML elements</caption>
 <colgroup>
@@ -1336,18 +1365,6 @@ Optional: Use the words "attribute" or "attributes".</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p><span class="underline">Code</span></p>
-</div>
-<div class="paragraph">
-<p>`&lt;roadMark&gt;` element</p>
-</div>
-<div class="paragraph">
-<p><span class="underline">Result</span></p>
-</div>
-<div class="paragraph">
-<p><code>&lt;roadMark&gt;</code> element</p>
-</div>
 <div class="paragraph">
 <p><strong>Source</strong></p>
 </div>

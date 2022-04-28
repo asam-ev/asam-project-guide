@@ -881,134 +881,12 @@
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#sec-ASM-16">Anchor syntax [#anchor] (ASM-16)</a></p>
-</li>
-<li>
-<p><a href="#sec-ASM-78">Insert a unique ID in the anchors for topics, figures, tables, source code, and sections (ASM-78)</a></p>
-</li>
-<li>
 <p><a href="#sec-ASM-81">File names for figures (ASM-81)</a></p>
-</li>
-<li>
-<p><a href="#sec-ASM-93">[sec-ASM-93]</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-84">Non-normative sections (ASM-84)</a></p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="sec-ASM-16"><a class="anchor" href="#sec-ASM-16"></a>Anchor syntax [#anchor] (ASM-16)</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Every anchor consists of <code>[#</code>, the string for the anchor type, a following UUID, and <code>]</code>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Exceptions</strong></p>
-</div>
-<div class="paragraph">
-<p>If you do not know how to use unique IDs, insert <code>uid</code> as a placeholder.
-The placeholder will trigger a pipeline warning so that the technical writer can help with creating a unique ID.</p>
-</div>
-<div class="paragraph">
-<p><strong>Source</strong></p>
-</div>
-<div class="paragraph">
-<p>ASAM Writing Guide: Tags</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="sec-ASM-78"><a class="anchor" href="#sec-ASM-78"></a>Insert a unique ID in the anchors for topics, figures, tables, source code, and sections (ASM-78)</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Insert a unique ID according to the following patterns:</p>
-</div>
-<table id="tab-a0bf23cc-3f35-4f3a-9788-6436c90d29b3" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. List of patterns for unique IDs</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Pattern</th>
-<th class="tableblock halign-left valign-top">Usage</th>
-<th class="tableblock halign-left valign-top">Optional/required</th>
-<th class="tableblock halign-left valign-top">Comment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[#code-&lt;uid&gt;]</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">source code blocks</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Only use if source code is referenced.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[#fig-&lt;uid&gt;]</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">figures (images, diagrams, and so on)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">required</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[#sec-&lt;uid&gt;]</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sections</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Only use if section is referenced.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[#tab-&lt;uid&gt;]</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tables</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">required</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[#top-&lt;uid&gt;]</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">topics</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">required</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p><strong>Exceptions</strong></p>
-</div>
-<div class="paragraph">
-<p>If you do not know how to use unique IDs, insert <code>[#tag-uid]</code> as a placeholder.
-The placeholder will trigger a pipeline warning so that the technical writer can help with creating a unique ID.</p>
-</div>
-<div class="paragraph">
-<p><strong>Example</strong></p>
-</div>
-<table id="tab-682fa239-bf8f-4531-a825-e9485372479b" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. Use of a semantic ID for a section</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">No</th>
-<th class="tableblock halign-left valign-top"><mark>Yes</mark></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through"><code>[#sec-682fa239-bf8f-4531-a825-e9486372479b]</code></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[#sec-ASM-78]</code></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p><strong>Source</strong></p>
-</div>
-<div class="paragraph">
-<p>ASAM Writing Guide: Tags</p>
 </div>
 </div>
 </div>
@@ -1058,7 +936,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-65a63cb0-e39c-4459-9551-2ca7ebb79ffd" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. caption</caption>
+<caption class="title">Table 1. caption</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
