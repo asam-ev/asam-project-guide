@@ -97,7 +97,34 @@
     return hits
   }
 
+   //   CUSTOM ASAM ADAPTION
+  // Sorts the results first by component, then by version, then by score
+  function sortResultsByComponentAndVersion(result, store) {
+    result.sort((a,b) => {
+        var A = store[a.ref.split("-")[0]]
+        var B = store[b.ref.split("-")[0]]
+        if(A.component != B.component) {
+            if (A.component < B.component) {
+                return -1;
+            }
+            return 1;
+        }
+        if(A.version != B.version) {
+            if (A.version > B.version) {
+                return -1;
+            }
+            return 1;
+        }
+        return b.score - a.score;
+    })
+  }
+//   END CUSTOM ASAM ADAPTION
+
   function createSearchResult (result, store, searchResultDataset) {
+    // CUSTOM INSERT
+    sortResultsByComponentAndVersion(result,store)
+    var usedComponentVersionConfigs = []
+    // END CUSTOM INSERT
     result.forEach(function (item) {
       var ids = item.ref.split('-')
       var docId = ids[0]
@@ -109,6 +136,19 @@
           return String(item.id) === titleId
         })[0]
       }
+      //   CUSTOM INSERT
+      var componentVersion = {component: doc.component, version: doc.version};
+      if (usedComponentVersionConfigs.filter(e => e.component === componentVersion.component && e.version === componentVersion.version).length === 0) {
+          usedComponentVersionConfigs.push(componentVersion)
+          var searchResultComponentVersion = document.createElement('div')
+          searchResultComponentVersion.classList.add('search-result-item')
+          var componentVersionElement = document.createElement('strong')
+          componentVersionElement.classList.add('search-result-component-version')
+          componentVersionElement.innerText = componentVersion.component + " \u2014 " + componentVersion.version;
+          searchResultComponentVersion.appendChild(componentVersionElement)
+          searchResultDataset.appendChild(searchResultComponentVersion)
+        }
+    //   END CUSTOM INSERT
       var metadata = item.matchData.metadata
       var hits = highlightHit(metadata, sectionTitle, doc)
       searchResultDataset.appendChild(createSearchResultItem(doc, sectionTitle, item, hits))
