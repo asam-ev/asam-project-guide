@@ -890,28 +890,31 @@
 <p><a href="#sec-ASM-76">Use proper names (ASM-76)</a></p>
 </li>
 <li>
-<p><a href="#sec-ASM-120">Use the variable <code>{THIS_STANDARD}</code> to refer to the standard you are working on (ASM-120)</a></p>
-</li>
-<li>
 <p><a href="#sec-ASM-1">Do not include version information (ASM-1)</a></p>
 </li>
 <li>
-<p><a href="#sec-ASM-80">Use lowercase in names for files and folders (ASM-80)</a></p>
+<p><a href="#sec-ASM-80">Use lowercase letters in names for files and folders (ASM-80)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-117">Use underscore '_' in file and folder names (ASM-117)</a></p>
 </li>
 <li>
-<p><a href="#sec-ASM-23">Use '.adoc' as file extension for text documents (ASM-23)</a></p>
+<p><a href="#sec-ASM-54">Use AsciiDoc syntax for text documents (ASM-54)</a></p>
 </li>
 <li>
-<p><a href="#sec-ASM-54">Use AsciiDoc syntax for text documents (ASM-54)</a></p>
+<p><a href="#sec-ASM-23">Use '.adoc' as file extension for text documents (ASM-23)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-20">Delete trailing whitespace characters (ASM-20)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-24">Keep one blank line at the end of file (ASM-24)</a></p>
+</li>
+<li>
+<p><a href="#sec-ASM-120">Use the variable <code>{THIS_STANDARD}</code> to refer to the standard you are working on (ASM-120)</a></p>
+</li>
+<li>
+<p><a href="#sec-ASM-70">Aim for consistency (ASM-70)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-16">Anchor syntax [#anchor] (ASM-16)</a></p>
@@ -927,6 +930,9 @@
 </li>
 <li>
 <p><a href="#sec-ASM-38">Check for broken external references (ASM-38)</a></p>
+</li>
+<li>
+<p><a href="#sec-ASM-41">Check the automatic generated name of the deliverable (ASM-41)</a></p>
 </li>
 </ul>
 </div>
@@ -1150,7 +1156,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="sec-ASM-80"><a class="anchor" href="#sec-ASM-80"></a>Use lowercase in names for files and folders (ASM-80)</h2>
+<h2 id="sec-ASM-80"><a class="anchor" href="#sec-ASM-80"></a>Use lowercase letters in names for files and folders (ASM-80)</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Exceptions</strong></p>
@@ -1162,7 +1168,7 @@
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-cb96bd0c-8dde-4df1-9e77-1d7d553303eb" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Use lowercase in names for files and folders</caption>
+<caption class="title">Table 5. Use lowercase letters in names for files and folders</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1348,14 +1354,7 @@
 <p>Eliminate any spaces or tabs at each end of line.</p>
 </li>
 <li>
-<p>Check the settings of the text editor to automatically insert a blank line at the end of the file:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../Guidelines/vscode-recommended_vscode_settings.html#_automatic_removal_of_spaces_after_periods" class="xref page">Settings for Visual Studio Code</a></p>
-</li>
-</ul>
-</div>
+<p>Check the settings of the text editor to automatically insert a blank line at the end of the file.</p>
 </li>
 </ul>
 </div>
@@ -1438,6 +1437,62 @@
 </div>
 </div>
 <div class="sect1">
+<h2 id="sec-ASM-70"><a class="anchor" href="#sec-ASM-70"></a>Aim for consistency (ASM-70)</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Stick to <em>one spelling</em> for a word that allows several spellings.</p>
+</li>
+<li>
+<p>Stick to <em>one formatting</em> of terms for a special purpose, for example only the first appearance.</p>
+</li>
+<li>
+<p>Stick to <em>one style</em> to present information in the appropriate form, for example an ordered list for steps.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Exceptions</strong></p>
+</div>
+<div class="paragraph">
+<p>There are no exceptions.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<table id="tab-fd9957af-2f23-41ef-bc8a-3a08ad5f93fd" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 10. Use of consistency in spelling and formatting.</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">No</th>
+<th class="tableblock halign-left valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">e-mail, email</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In ASAM OpenDRIVE, the road network is represented by <span class="line-through"><code>&lt;road&gt;</code></span> elements. Each <span class="line-through"><strong>road</strong></span> runs along one road reference line. A <span class="line-through"><em>road</em></span> shall have at least one lane with a width larger than 0.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In ASAM OpenDRIVE, the road network is represented by <code>&lt;road&gt;</code> elements. Each road runs along one road reference line. A road shall have at least one lane with a width larger than 0.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM specific rule.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="sec-ASM-16"><a class="anchor" href="#sec-ASM-16"></a>Anchor syntax [#anchor] (ASM-16)</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -1465,7 +1520,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p>Insert a unique ID according to the following patterns:</p>
 </div>
 <table id="tab-a0bf23cc-3f35-4f3a-9788-6436c90d29b3" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. List of patterns for unique IDs</caption>
+<caption class="title">Table 11. List of patterns for unique IDs</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -1524,7 +1579,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-682fa239-bf8f-4531-a825-e9485372479b" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Use of a semantic ID for a section</caption>
+<caption class="title">Table 12. Use of a semantic ID for a section</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1566,7 +1621,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-fd9957af-2f23-41ef-bc8a-3a08ad5f93fd" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Use of short style for cross references.</caption>
+<caption class="title">Table 13. Use of short style for cross references.</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">

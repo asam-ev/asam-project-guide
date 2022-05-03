@@ -1414,9 +1414,9 @@ It contains editorial rules for contributing content to a project in written for
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">??ASM-70</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASM-70</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Consistent formatting</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-70">[sec-ASM-70]</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-70">Aim for consistency (ASM-70)</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
 </tr>
@@ -1486,7 +1486,7 @@ It contains editorial rules for contributing content to a project in written for
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ASM-80</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lowercase for file and folder names</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-80">Use lowercase in names for files and folders (ASM-80)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-80">Use lowercase letters in names for files and folders (ASM-80)</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
 </tr>
@@ -1820,28 +1820,31 @@ It contains editorial rules for contributing content to a project in written for
 <p><a href="#sec-ASM-76">Use proper names (ASM-76)</a></p>
 </li>
 <li>
-<p><a href="#sec-ASM-120">Use the variable <code>{THIS_STANDARD}</code> to refer to the standard you are working on (ASM-120)</a></p>
-</li>
-<li>
 <p><a href="#sec-ASM-1">Do not include version information (ASM-1)</a></p>
 </li>
 <li>
-<p><a href="#sec-ASM-80">Use lowercase in names for files and folders (ASM-80)</a></p>
+<p><a href="#sec-ASM-80">Use lowercase letters in names for files and folders (ASM-80)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-117">Use underscore '_' in file and folder names (ASM-117)</a></p>
 </li>
 <li>
-<p><a href="#sec-ASM-23">Use '.adoc' as file extension for text documents (ASM-23)</a></p>
+<p><a href="#sec-ASM-54">Use AsciiDoc syntax for text documents (ASM-54)</a></p>
 </li>
 <li>
-<p><a href="#sec-ASM-54">Use AsciiDoc syntax for text documents (ASM-54)</a></p>
+<p><a href="#sec-ASM-23">Use '.adoc' as file extension for text documents (ASM-23)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-20">Delete trailing whitespace characters (ASM-20)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-24">Keep one blank line at the end of file (ASM-24)</a></p>
+</li>
+<li>
+<p><a href="#sec-ASM-120">Use the variable <code>{THIS_STANDARD}</code> to refer to the standard you are working on (ASM-120)</a></p>
+</li>
+<li>
+<p><a href="#sec-ASM-70">Aim for consistency (ASM-70)</a></p>
 </li>
 <li>
 <p><a href="#sec-ASM-16">Anchor syntax [#anchor] (ASM-16)</a></p>
@@ -1857,6 +1860,9 @@ It contains editorial rules for contributing content to a project in written for
 </li>
 <li>
 <p><a href="#sec-ASM-38">Check for broken external references (ASM-38)</a></p>
+</li>
+<li>
+<p><a href="#sec-ASM-41">Check the automatic generated name of the deliverable (ASM-41)</a></p>
 </li>
 </ul>
 </div>
@@ -2070,7 +2076,7 @@ It contains editorial rules for contributing content to a project in written for
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-80"><a class="anchor" href="#sec-ASM-80"></a>2.5. Use lowercase in names for files and folders (ASM-80)</h3>
+<h3 id="sec-ASM-80"><a class="anchor" href="#sec-ASM-80"></a>2.5. Use lowercase letters in names for files and folders (ASM-80)</h3>
 <div class="paragraph">
 <p><strong>Exceptions</strong></p>
 </div>
@@ -2081,7 +2087,7 @@ It contains editorial rules for contributing content to a project in written for
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-cb96bd0c-8dde-4df1-9e77-1d7d553303eb" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Use lowercase in names for files and folders</caption>
+<caption class="title">Table 5. Use lowercase letters in names for files and folders</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2257,14 +2263,7 @@ It contains editorial rules for contributing content to a project in written for
 <p>Eliminate any spaces or tabs at each end of line.</p>
 </li>
 <li>
-<p>Check the settings of the text editor to automatically insert a blank line at the end of the file:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="Guidelines/vscode-recommended_vscode_settings.html#_automatic_removal_of_spaces_after_periods" class="xref page">Settings for Visual Studio Code</a></p>
-</li>
-</ul>
-</div>
+<p>Check the settings of the text editor to automatically insert a blank line at the end of the file.</p>
 </li>
 </ul>
 </div>
@@ -2344,7 +2343,61 @@ It contains editorial rules for contributing content to a project in written for
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-16"><a class="anchor" href="#sec-ASM-16"></a>2.12. Anchor syntax [#anchor] (ASM-16)</h3>
+<h3 id="sec-ASM-70"><a class="anchor" href="#sec-ASM-70"></a>2.12. Aim for consistency (ASM-70)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Stick to <em>one spelling</em> for a word that allows several spellings.</p>
+</li>
+<li>
+<p>Stick to <em>one formatting</em> of terms for a special purpose, for example only the first appearance.</p>
+</li>
+<li>
+<p>Stick to <em>one style</em> to present information in the appropriate form, for example an ordered list for steps.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Exceptions</strong></p>
+</div>
+<div class="paragraph">
+<p>There are no exceptions.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<table id="tab-fd9957af-2f23-41ef-bc8a-3a08ad5f93fd" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 10. Use of consistency in spelling and formatting.</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">No</th>
+<th class="tableblock halign-left valign-top"><mark>Yes</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">e-mail, email</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In ASAM OpenDRIVE, the road network is represented by <span class="line-through"><code>&lt;road&gt;</code></span> elements. Each <span class="line-through"><strong>road</strong></span> runs along one road reference line. A <span class="line-through"><em>road</em></span> shall have at least one lane with a width larger than 0.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In ASAM OpenDRIVE, the road network is represented by <code>&lt;road&gt;</code> elements. Each road runs along one road reference line. A road shall have at least one lane with a width larger than 0.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM specific rule.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-16"><a class="anchor" href="#sec-ASM-16"></a>2.13. Anchor syntax [#anchor] (ASM-16)</h3>
 <div class="paragraph">
 <p>Every anchor consists of <code>[#</code>, the string for the anchor type, a following UUID, and <code>]</code>.</p>
 </div>
@@ -2363,12 +2416,12 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-78"><a class="anchor" href="#sec-ASM-78"></a>2.13. Insert a unique ID in the anchors for topics, figures, tables, source code, and sections (ASM-78)</h3>
+<h3 id="sec-ASM-78"><a class="anchor" href="#sec-ASM-78"></a>2.14. Insert a unique ID in the anchors for topics, figures, tables, source code, and sections (ASM-78)</h3>
 <div class="paragraph">
 <p>Insert a unique ID according to the following patterns:</p>
 </div>
 <table id="tab-a0bf23cc-3f35-4f3a-9788-6436c90d29b3" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. List of patterns for unique IDs</caption>
+<caption class="title">Table 11. List of patterns for unique IDs</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -2427,7 +2480,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-682fa239-bf8f-4531-a825-e9485372479b" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Use of a semantic ID for a section</caption>
+<caption class="title">Table 12. Use of a semantic ID for a section</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2453,7 +2506,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-15"><a class="anchor" href="#sec-ASM-15"></a>2.14. Use short style for cross references (ASM-15)</h3>
+<h3 id="sec-ASM-15"><a class="anchor" href="#sec-ASM-15"></a>2.15. Use short style for cross references (ASM-15)</h3>
 <div class="paragraph">
 <p>Cross references use the short style which contains of the fixed text "Sect. " and the chapter number of the target.</p>
 </div>
@@ -2467,7 +2520,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-fd9957af-2f23-41ef-bc8a-3a08ad5f93fd" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Use of short style for cross references.</caption>
+<caption class="title">Table 13. Use of short style for cross references.</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2497,7 +2550,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-37"><a class="anchor" href="#sec-ASM-37"></a>2.15. Check for broken internal references (ASM-37)</h3>
+<h3 id="sec-ASM-37"><a class="anchor" href="#sec-ASM-37"></a>2.16. Check for broken internal references (ASM-37)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2528,7 +2581,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-38"><a class="anchor" href="#sec-ASM-38"></a>2.16. Check for broken external references (ASM-38)</h3>
+<h3 id="sec-ASM-38"><a class="anchor" href="#sec-ASM-38"></a>2.17. Check for broken external references (ASM-38)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2559,7 +2612,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-41"><a class="anchor" href="#sec-ASM-41"></a>2.17. Check the automatic generated name of the deliverable (ASM-41)</h3>
+<h3 id="sec-ASM-41"><a class="anchor" href="#sec-ASM-41"></a>2.18. Check the automatic generated name of the deliverable (ASM-41)</h3>
 <div class="paragraph">
 <p>The name of the deliverable consists of the following parts:</p>
 </div>
@@ -2631,6 +2684,9 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p><a href="#sec-ASM-22">Use generic ASAM standard chapter structure (ASM-22)</a></p>
 </li>
 <li>
+<p><a href="#sec-ASM-83">Use generic ASAM standard directory structure (ASM-83)</a></p>
+</li>
+<li>
 <p><a href="#sec-ASM-40">Name the mapping file index.adoc (ASM-40)</a></p>
 </li>
 <li>
@@ -2671,17 +2727,18 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p>The first chapter with standard specific heading and content is chapter 6.</p>
 </div>
 <div class="paragraph">
-<p>The amount of annexes is also standard specific.</p>
+<p>The amount of annexes is also standard specific.
+An annex can be either <em>normative</em> or <em>non-normative</em>, which is noted in parentheses in the name of the annex.</p>
 </div>
 <div class="paragraph">
-<p>The generic chapter structure and headings are as follows, the brackets comment on the content:</p>
+<p>The generic chapter structure and headings are as follows, the parentheses comment on the content:</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-none hljs">Foreword (fixed content)
 Introduction (standard specific content)
     Overview (standard specific content)
-    Conventions and notations (fixed content)
+    Conventions and notations (standard specific content)
     Deliverables (standard specific content)
 1. Scope (standard specific content)
 2. Normative references (standard specific content)
@@ -2690,11 +2747,11 @@ Introduction (standard specific content)
 5. Backward compatibility (standard specific content)
 6. (First standard specific heading and content)
 Annexes (optional standard specific content)
-    Annex A: (standard specific heading) (optional standard specific content)
-    Annex B: (standard specific heading) (optional standard specific content)
+    Annex A (normative|non-normative): (standard specific heading) (optional standard specific content)
+    Annex B (normative|non-normative): (standard specific heading) (optional standard specific content)
 Bibliography (standard specific content)
-List of figures (automatically generated content)
-List of tables (automatically generated content)</code></pre>
+List of figures (content is generated automatically)
+List of tables (content is generated automatically)</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3261,7 +3318,7 @@ In alteration to the regular https://www.asam.net/license[license terms], ASAM a
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-155e4338-6dba-4a1e-a04d-8863228bf22f" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. Use of American English</caption>
+<caption class="title">Table 14. Use of American English</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3344,7 +3401,7 @@ In alteration to the regular https://www.asam.net/license[license terms], ASAM a
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-9f708405-0e00-4c78-8d25-60913e1ca382" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 14. Use of present tense</caption>
+<caption class="title">Table 15. Use of present tense</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3384,7 +3441,7 @@ In alteration to the regular https://www.asam.net/license[license terms], ASAM a
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-4b87ef05-4461-4a27-8a68-b559b011b3ad" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 15. Use of active voice</caption>
+<caption class="title">Table 16. Use of active voice</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3431,7 +3488,7 @@ In alteration to the regular https://www.asam.net/license[license terms], ASAM a
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-f9a4e619-dca7-4d5e-bd65-500de2cb261e" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 16. Use an Oxford comma</caption>
+<caption class="title">Table 17. Use an Oxford comma</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3476,7 +3533,7 @@ This improves the readability and understandability of sentences.</p>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-a4d8a86e-b5a6-4593-94ea-656bff21b8d2" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 17. Add a comma after introductory phrases</caption>
+<caption class="title">Table 18. Add a comma after introductory phrases</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3520,7 +3577,7 @@ This improves the readability and understandability of sentences.</p>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-04f8b906-00ea-4672-991b-c343ce3d9580" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 18. Use of simple phrases</caption>
+<caption class="title">Table 19. Use of simple phrases</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3564,7 +3621,7 @@ This improves the readability and understandability of sentences.</p>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-59ab0c65-c030-4472-b5e4-b9c191207bb6" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 19. Use of concise phrases without unnecessary words</caption>
+<caption class="title">Table 20. Use of concise phrases without unnecessary words</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3604,7 +3661,7 @@ This improves the readability and understandability of sentences.</p>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-74bad49b-c014-45b0-8ca6-acf1388c0d25" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 20. Use of short sentences</caption>
+<caption class="title">Table 21. Use of short sentences</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3641,7 +3698,7 @@ This improves the readability and understandability of sentences.</p>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-e6df5db5-49dd-4800-abbf-4f700490e784" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 21. Use of complete expressions instead of abbreviations</caption>
+<caption class="title">Table 22. Use of complete expressions instead of abbreviations</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3693,7 +3750,7 @@ This improves the understandability.</p>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-2d0a6c5b-7cdf-478a-b94d-157f22d8e950" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 22. Write out conjunctions</caption>
+<caption class="title">Table 23. Write out conjunctions</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3737,7 +3794,7 @@ This improves the understandability.</p>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-3c5f2d52-ac68-4bd4-bd16-dff352ff32a3" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 23. Use of the same word for the same object or concept</caption>
+<caption class="title">Table 24. Use of the same word for the same object or concept</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3825,7 +3882,7 @@ They are given for the information of the user.
 <p><span class="underline">Result</span></p>
 </div>
 <table id="tab-2c6c7726-0a24-493c-a645-9c38d4d2504d" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 24. Verbal forms for expressions of provisions</caption>
+<caption class="title">Table 25. Verbal forms for expressions of provisions</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 15%;">
@@ -3888,7 +3945,7 @@ They are given for the information of the user.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-11fd8302-7bd7-473a-b076-6c94aed47578" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 25. Use of modal verb <em>shall</em></caption>
+<caption class="title">Table 26. Use of modal verb <em>shall</em></caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3929,7 +3986,7 @@ They are given for the information of the user.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-284c4ade-9cf1-45b8-a096-085d510df2eb" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 26. Use of modal verb <em>should</em></caption>
+<caption class="title">Table 27. Use of modal verb <em>should</em></caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3969,7 +4026,7 @@ They are given for the information of the user.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-39ae0c0b-7b71-4d35-8ac9-e84435677e6f" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 27. Use of modal verb <em>may</em></caption>
+<caption class="title">Table 28. Use of modal verb <em>may</em></caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4010,7 +4067,7 @@ They are given for the information of the user.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-d046a235-7015-4155-a773-560b17a14689" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 28. Use of modal verb <em>can</em></caption>
+<caption class="title">Table 29. Use of modal verb <em>can</em></caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4057,7 +4114,7 @@ They are given for the information of the user.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-2b4c349e-b23d-44df-a91e-72b8514fde2a" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 29. Use of 'that' for essential information</caption>
+<caption class="title">Table 30. Use of 'that' for essential information</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4112,7 +4169,7 @@ They are given for the information of the user.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-118074b9-ecad-420f-9e56-c1b9b573f008" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 30. Use of 'which' for unessential color information</caption>
+<caption class="title">Table 31. Use of 'which' for unessential color information</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4153,7 +4210,7 @@ They are given for the information of the user.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-d291de3e-ec7a-4008-a5bf-601f10853292" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 31. Use of 'since' to refer to a point in time</caption>
+<caption class="title">Table 32. Use of 'since' to refer to a point in time</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4190,7 +4247,7 @@ They are given for the information of the user.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-6f38a8a5-43ec-477c-a7dc-7d796a0556c0" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 32. Use of 'because' to refer to a reason</caption>
+<caption class="title">Table 33. Use of 'because' to refer to a reason</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4255,7 +4312,7 @@ They are given for the information of the user.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-3dfef781-52e9-4f96-b28e-1e30c3a245b3" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 33. Use of a point as decimal separator</caption>
+<caption class="title">Table 34. Use of a point as decimal separator</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4307,7 +4364,7 @@ In ASAM standards the point is used as decimal separator because a point is the 
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-34c76447-2bad-4430-8fb6-e68fa28ef6c7" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 34. Use of a leading zero for values between -1 and 1</caption>
+<caption class="title">Table 35. Use of a leading zero for values between -1 and 1</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4375,7 +4432,7 @@ In ASAM standards the point is used as decimal separator because a point is the 
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-c31c8b36-520d-448a-9ffd-024bcd2fe035" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 35. Use of AsciiDoc syntax for headings</caption>
+<caption class="title">Table 36. Use of AsciiDoc syntax for headings</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4427,7 +4484,7 @@ In ASAM standards the point is used as decimal separator because a point is the 
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-cb041007-e95a-4b35-b47d-6c8b088cf6e2" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 36. Use of maximum level 4 for headings</caption>
+<caption class="title">Table 37. Use of maximum level 4 for headings</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4472,7 +4529,7 @@ In ASAM standards the point is used as decimal separator because a point is the 
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-07cd91ec-32d0-4890-8276-cbadc0efc6b0" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 37. Use of uppercase in headings and captions</caption>
+<caption class="title">Table 38. Use of uppercase in headings and captions</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4521,7 +4578,7 @@ In ASAM standards the point is used as decimal separator because a point is the 
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-9c6af567-6781-43f5-a1c9-42175582879e" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 38. Use of punctuation in headings</caption>
+<caption class="title">Table 39. Use of punctuation in headings</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4572,7 +4629,7 @@ In ASAM standards the point is used as decimal separator because a point is the 
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-170721a6-1e06-419e-8716-a51eda20c774" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 39. Use of numbering in headings</caption>
+<caption class="title">Table 40. Use of numbering in headings</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4657,7 +4714,7 @@ In ASAM standards the point is used as decimal separator because a point is the 
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-f7b97b12-a01f-47e1-8eaa-41883cb8d5a8" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 40. Use of paragraphs to form units of meaning</caption>
+<caption class="title">Table 41. Use of paragraphs to form units of meaning</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5171,7 +5228,7 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 <p><code>term</code></p>
 </div>
 <table id="tab-ce27729f-33c4-47b2-a579-e7a1c2434c3a" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 41. Use a single backtick before and after inline literals</caption>
+<caption class="title">Table 42. Use a single backtick before and after inline literals</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5219,7 +5276,7 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-17223b72-a10c-4053-be85-e1fd3340533b" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 42. Use of four space characters per indention level (space characters marked as '.')</caption>
+<caption class="title">Table 43. Use of four space characters per indention level (space characters marked as '.')</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5286,7 +5343,7 @@ Unfortunately, this causes poor wording and readability and therefore shall not 
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-4bcfeb0d-373c-47c3-8b0b-286cbcd6c4a2" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 43. Indent XML attributes in extra long lines (space characters used for indention marked as '.')</caption>
+<caption class="title">Table 44. Indent XML attributes in extra long lines (space characters used for indention marked as '.')</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5384,7 +5441,7 @@ Optional: Use the words "attribute" or "attributes".</p>
 <p><code>&lt;roadMark&gt;</code> element</p>
 </div>
 <table id="tab-290d36d7-08a5-4aac-9ba2-7e60db7d448a" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 44. Mark up ASAM XML elements</caption>
+<caption class="title">Table 45. Mark up ASAM XML elements</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5500,7 +5557,7 @@ For example, each item should be a noun or a phrase that starts with a verb.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4</p>
+<p>ASD-STE100 (2021, issue 8, ASD Simplified Technical English, ASD-STE100, is a Copyright and a Trade Mark of ASD, Brussels, Belgium): Rule 4.3 Use a vertical list for complex text, page 1-4-4</p>
 </li>
 <li>
 <p>Microsoft Style Guide: <a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/lists" class="bare">https://docs.microsoft.com/en-us/style-guide/scannable-content/lists</a></p>
@@ -5728,7 +5785,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <p><strong>Source</strong></p>
 </div>
 <div class="paragraph">
-<p>ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4</p>
+<p>ASD-STE100 (2021, issue 8, ASD Simplified Technical English, ASD-STE100, is a Copyright and a Trade Mark of ASD, Brussels, Belgium): Rule 4.3 Use a vertical list for complex text, page 1-4-4</p>
 </div>
 </div>
 <div class="sect2">
@@ -5743,7 +5800,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-23063c34-07c7-4ecd-a797-ad8d715df052" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 45. Use of full stops at the end of a list item</caption>
+<caption class="title">Table 46. Use of full stops at the end of a list item</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5791,7 +5848,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <div class="ulist">
 <ul>
 <li>
-<p>ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4</p>
+<p>ASD-STE100 (2021, issue 8, ASD Simplified Technical English, ASD-STE100, is a Copyright and a Trade Mark of ASD, Brussels, Belgium): Rule 4.3 Use a vertical list for complex text, page 1-4-4</p>
 </li>
 <li>
 <p>Microsoft Style Guide: <a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation" class="bare">https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation</a></p>
@@ -5830,7 +5887,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-a099df34-7296-42e1-bd7f-db180f84fe66" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 46. Use of punctuation and conjunctions at the end of an item</caption>
+<caption class="title">Table 47. Use of punctuation and conjunctions at the end of an item</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5878,7 +5935,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <div class="ulist">
 <ul>
 <li>
-<p>ASD-STE100 (2021, issue 8): Rule 4.3 Use a vertical list for complex text, page 1-4-4</p>
+<p>ASD-STE100 (2021, issue 8, ASD Simplified Technical English, ASD-STE100, is a Copyright and a Trade Mark of ASD, Brussels, Belgium): Rule 4.3 Use a vertical list for complex text, page 1-4-4</p>
 </li>
 <li>
 <p>Microsoft Style Guide: <a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation" class="bare">https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#punctuation</a></p>
@@ -5901,7 +5958,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-c275d6be-703e-4eaa-8588-6a39d58e148a" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 47. Logical order of list items</caption>
+<caption class="title">Table 48. Logical order of list items</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5969,7 +6026,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-4a01fe25-76ca-4e88-a45f-ba1ffcc6a62a" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 48. Incomplete lists</caption>
+<caption class="title">Table 49. Incomplete lists</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6148,7 +6205,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 <p><em>Result</em></p>
 </div>
 <table id="tab-69612353-0fb1-496b-81d6-e42bc07940da" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 49. This is the caption of the table with short lines</caption>
+<caption class="title">Table 50. This is the caption of the table with short lines</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6180,7 +6237,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </tbody>
 </table>
 <table id="tab-4c824f78-b3ce-4d16-a19b-c3732d066917" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 50. This is the caption of the table with long lines</caption>
+<caption class="title">Table 51. This is the caption of the table with long lines</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6304,7 +6361,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-ec0debde-c4ab-4ade-b06e-ee74758bef42" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 51. Use of uppercase in the table header</caption>
+<caption class="title">Table 52. Use of uppercase in the table header</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6756,7 +6813,7 @@ The description shall not have an initial article.</p>
 <p><strong>Example</strong></p>
 </div>
 <table id="tab-65a63cb0-e39c-4459-9551-2ca7ebb79ffd" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 52. caption</caption>
+<caption class="title">Table 53. caption</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
