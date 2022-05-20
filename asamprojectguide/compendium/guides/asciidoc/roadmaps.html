@@ -1177,11 +1177,22 @@ gantt <i class="conum" data-value="5"></i><b>(5)</b>
 <div class="paragraph">
 <p>See the result in <a href="#fig-example-roadmap">example roadmap</a>.</p>
 </div>
-<div id="fig-example-roadmap" class="imageblock kroki">
+<div id="fig-example-roadmap" class="listingblock kroki-error">
+<div class="title">example roadmap</div>
 <div class="content">
-<object type="image/svg+xml" data="../../_images/diag-ea89a2dad353bb992d869ac8ebbbb36f8df76a56.svg"><span class="alt">example roadmap</span></object>
+<pre>gantt
+	title OpenSCENARIO 1.X Project Plan - Updated 2021-02
+	dateFormat  YYYY-MM-DD
+
+    section V1.1.0
+        New features and fixes:a1, 2020-06-01, 2021-01-01
+        Review: crit, a2,  after a1, 2021-03-07
+        Release: crit, a3,after a2, 2021-03-17
+
+    section &gt;1.1.0
+        Prepare new features for next Project: after a3,2021-06-11
+        Migration path 1.x - 2.0: 2021-04-01, 2021-06-15</pre>
 </div>
-<div class="title">Figure 1. example roadmap</div>
 </div>
 </div>
 </div>
