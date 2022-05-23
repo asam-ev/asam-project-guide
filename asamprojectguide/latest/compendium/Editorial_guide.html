@@ -1020,7 +1020,7 @@ It contains editorial rules for contributing content to a project in written for
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ASM-9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">List one sentence per line</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-9">Just add one sentence per line in lists (ASM-9)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-9">[sec-ASM-9]</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rejected</p></td>
@@ -4940,6 +4940,9 @@ And this deepens the first thought.</p>
 <li>
 <p>Do not add manual line breaks inside sentences.</p>
 </li>
+<li>
+<p>Apply this rule on paragraphs and list items.</p>
+</li>
 </ul>
 </div>
 <div class="paragraph">
@@ -4968,16 +4971,35 @@ And this deepens the first thought.</p>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-none hljs">This is the first sentence.
 This is the second sentence.
-This is the third sentence.</code></pre>
+This is the third sentence.
+
+* This is the first sentence of the element.
+This is the second sentence of the element.
+* This is the second element.
+* This is the third element.</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p><span class="underline">Result</span></p>
 </div>
 <div class="paragraph">
-<p>This is the first sentence
+<p>This is the first sentence.
 This is the second sentence.
 This is the third sentence.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>This is the first sentence of the element.
+This is the second sentence of the element.</p>
+</li>
+<li>
+<p>This is the second element.</p>
+</li>
+<li>
+<p>This is the third element.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><strong>Source</strong></p>
@@ -5866,32 +5888,11 @@ Ordered list
 <p><strong>Source</strong></p>
 </div>
 <div class="paragraph">
-<p>Microsoft Style Guide: <a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists" class="bare">https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#numbered-lists</a></p>
+<p>Microsoft Style Guide: <a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists" class="bare">https://docs.microsoft.com/en-us/style-guide/scannable-content/lists#bulleted-lists</a></p>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="sec-ASM-9"><a class="anchor" href="#sec-ASM-9"></a>9.4. Just add one sentence per line in lists (ASM-9)</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Insert a line break after each sentence.</p>
-</li>
-<li>
-<p>Do not add manual line breaks inside sentences.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Instructions</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><em>"Only hit 'enter' after a period ('.'), but make sure to hit 'enter' after a period."</em></p>
-</li>
-</ul>
-</div>
+<div class="sect3">
+<h4 id="_use_a_description_list_for_terms_and_definitions_or_abbreviations_and_the_full_forms"><a class="anchor" href="#_use_a_description_list_for_terms_and_definitions_or_abbreviations_and_the_full_forms"></a>9.3.3. Use a description list for terms and definitions or abbreviations and the full forms</h4>
 <div class="paragraph">
 <p><strong>Exceptions</strong></p>
 </div>
@@ -5906,38 +5907,38 @@ Ordered list
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">* This is the first sentence of the element.
-This is the second sentence of the element.
-* This is the second element.
-* This is the third element.</code></pre>
+<pre class="highlightjs highlight"><code class="language-none hljs">ASAM::
+Association for Standardization of Automation and Measuring Systems
+
+XML::
+Extensible Markup Language</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p><span class="underline">Result</span></p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>This is the first sentence of the element.
-This is the second sentence of the element.</p>
-</li>
-<li>
-<p>This is the second element.</p>
-</li>
-<li>
-<p>This is the third element.</p>
-</li>
-</ul>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">ASAM</dt>
+<dd>
+<p>Association for Standardization of Automation and Measuring Systems</p>
+</dd>
+<dt class="hdlist1">XML</dt>
+<dd>
+<p>Extensible Markup Language</p>
+</dd>
+</dl>
 </div>
 <div class="paragraph">
 <p><strong>Source</strong></p>
 </div>
 <div class="paragraph">
-<p>ASAM Writing Guide: 4.3. One sentence per line</p>
+<p>ASAM specific rule.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-5"><a class="anchor" href="#sec-ASM-5"></a>9.5. Start each list item in a list with an uppercase letter (ASM-5)</h3>
+<h3 id="sec-ASM-5"><a class="anchor" href="#sec-ASM-5"></a>9.4. Start each list item in a list with an uppercase letter (ASM-5)</h3>
 <div class="paragraph">
 <p><strong>Exceptions</strong></p>
 </div>
@@ -5978,7 +5979,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-6"><a class="anchor" href="#sec-ASM-6"></a>9.6. Put a full stop at the end of a list item if it is a full sentence (ASM-6)</h3>
+<h3 id="sec-ASM-6"><a class="anchor" href="#sec-ASM-6"></a>9.5. Put a full stop at the end of a list item if it is a full sentence (ASM-6)</h3>
 <div class="paragraph">
 <p><strong>Exceptions</strong></p>
 </div>
@@ -6046,7 +6047,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-11"><a class="anchor" href="#sec-ASM-11"></a>9.7. Do not put punctuation or conjunctions at the end of a list item if it is not a full sentence (ASM-11)</h3>
+<h3 id="sec-ASM-11"><a class="anchor" href="#sec-ASM-11"></a>9.6. Do not put punctuation or conjunctions at the end of a list item if it is not a full sentence (ASM-11)</h3>
 <div class="paragraph">
 <p>If an item in a list is not a full sentence, then do not put the following punctuation or conjunctions:</p>
 </div>
@@ -6136,7 +6137,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-42"><a class="anchor" href="#sec-ASM-42"></a>9.8. Put the list items in a logical order (ASM-42)</h3>
+<h3 id="sec-ASM-42"><a class="anchor" href="#sec-ASM-42"></a>9.7. Put the list items in a logical order (ASM-42)</h3>
 <div class="paragraph">
 <p><strong>Exceptions</strong></p>
 </div>
@@ -6191,7 +6192,7 @@ For example: * <a href="http://www.asam.net" class="bare">http://www.asam.net</a
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-7"><a class="anchor" href="#sec-ASM-7"></a>9.9. Check if a list is complete (ASM-7)</h3>
+<h3 id="sec-ASM-7"><a class="anchor" href="#sec-ASM-7"></a>9.8. Check if a list is complete (ASM-7)</h3>
 <div class="paragraph">
 <p>Check if lists are complete:</p>
 </div>
