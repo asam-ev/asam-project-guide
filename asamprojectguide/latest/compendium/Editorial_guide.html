@@ -1642,9 +1642,9 @@ It contains editorial rules for contributing content to a project in written for
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">??ASM-90</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Figures</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASM-90</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fonts in figures</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#sec-ASM-90">Use defined fonts in figures (ASM-90)</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft</p></td>
@@ -6604,6 +6604,9 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <p><a href="#sec-ASM-57">Use figures with the file type SVG (ASM-57)</a></p>
 </li>
 <li>
+<p><a href="#sec-ASM-90">Use defined fonts in figures (ASM-90)</a></p>
+</li>
+<li>
 <p><a href="#sec-ASM-28">Make sure that all included figures are shown correctly (ASM-28)</a></p>
 </li>
 <li>
@@ -6675,7 +6678,23 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-28"><a class="anchor" href="#sec-ASM-28"></a>11.3. Make sure that all included figures are shown correctly (ASM-28)</h3>
+<h3 id="sec-ASM-90"><a class="anchor" href="#sec-ASM-90"></a>11.3. Use defined fonts in figures (ASM-90)</h3>
+<div class="paragraph">
+<p>The defined fonts for use in figures are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>normal text and labels &#8594; sans serif font &#8594; Calibri</p>
+</li>
+<li>
+<p>mathematical content with formulae and numbers &#8594; optimized font &#8594; Cambria Math</p>
+</li>
+<li>
+<p>special &#8594; monospace font &#8594; Consolas</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><strong>Exceptions</strong></p>
 </div>
@@ -6691,9 +6710,12 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <div class="paragraph">
 <p><strong>Source</strong></p>
 </div>
+<div class="paragraph">
+<p>ASAM specific rule.</p>
+</div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-29"><a class="anchor" href="#sec-ASM-29"></a>11.4. Make sure that there are no unused figures in the repository of the standard (ASM-29)</h3>
+<h3 id="sec-ASM-28"><a class="anchor" href="#sec-ASM-28"></a>11.4. Make sure that all included figures are shown correctly (ASM-28)</h3>
 <div class="paragraph">
 <p><strong>Exceptions</strong></p>
 </div>
@@ -6709,9 +6731,33 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 <div class="paragraph">
 <p><strong>Source</strong></p>
 </div>
+<div class="paragraph">
+<p>ASAM specific rule.</p>
+</div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-92"><a class="anchor" href="#sec-ASM-92"></a>11.5. Use one folder <em>images</em> per chapter (ASM-92)</h3>
+<h3 id="sec-ASM-29"><a class="anchor" href="#sec-ASM-29"></a>11.5. Make sure that there are no unused figures in the repository of the standard (ASM-29)</h3>
+<div class="paragraph">
+<p><strong>Exceptions</strong></p>
+</div>
+<div class="paragraph">
+<p>There are no exceptions.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="paragraph">
+<p>There is no example.</p>
+</div>
+<div class="paragraph">
+<p><strong>Source</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM specific rule.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec-ASM-92"><a class="anchor" href="#sec-ASM-92"></a>11.6. Use one folder <em>images</em> per chapter (ASM-92)</h3>
 <div class="paragraph">
 <p>Every chapter has an <em>images</em> folder that contains all the figures of the chapter and the sections of the chapter.</p>
 </div>
@@ -6745,7 +6791,7 @@ The placeholder will trigger a pipeline warning so that the technical writer can
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-87"><a class="anchor" href="#sec-ASM-87"></a>11.6. Use AsciiDoc syntax for figures (ASM-87)</h3>
+<h3 id="sec-ASM-87"><a class="anchor" href="#sec-ASM-87"></a>11.7. Use AsciiDoc syntax for figures (ASM-87)</h3>
 <div class="paragraph">
 <p>Use the AsciiDoc syntax for figures to include images, diagrams, and other graphics.</p>
 </div>
@@ -6776,7 +6822,7 @@ image::scenario.png[an alternative text]</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-12"><a class="anchor" href="#sec-ASM-12"></a>11.7. Create an anchor with an UUID for every figure (ASM-12)</h3>
+<h3 id="sec-ASM-12"><a class="anchor" href="#sec-ASM-12"></a>11.8. Create an anchor with an UUID for every figure (ASM-12)</h3>
 <div class="paragraph">
 <p>The figure anchor consists of <code>[#</code>, the string <code>fig-</code>, a following UUID, and <code>]</code>.</p>
 </div>
@@ -6805,7 +6851,7 @@ image::scenario.png[an alternative text]</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-58"><a class="anchor" href="#sec-ASM-58"></a>11.8. Create a caption for every figure (ASM-58)</h3>
+<h3 id="sec-ASM-58"><a class="anchor" href="#sec-ASM-58"></a>11.9. Create a caption for every figure (ASM-58)</h3>
 <div class="paragraph">
 <p>Use the caption to express the essence of the figure.</p>
 </div>
@@ -6833,7 +6879,7 @@ image::scenario.png[an alternative text]</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-118"><a class="anchor" href="#sec-ASM-118"></a>11.9. Write an alternative text for every figure with defined size (ASM-118)</h3>
+<h3 id="sec-ASM-118"><a class="anchor" href="#sec-ASM-118"></a>11.10. Write an alternative text for every figure with defined size (ASM-118)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -6887,7 +6933,7 @@ image::images/uml_notation.drawio.svg[img, 1100]</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec-ASM-59"><a class="anchor" href="#sec-ASM-59"></a>11.10. Write a description for each figure (ASM-59)</h3>
+<h3 id="sec-ASM-59"><a class="anchor" href="#sec-ASM-59"></a>11.11. Write a description for each figure (ASM-59)</h3>
 <div class="ulist">
 <ul>
 <li>
