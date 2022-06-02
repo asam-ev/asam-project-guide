@@ -45,7 +45,8 @@ jobs:
     - name: Generate site
       uses: docker://ghcr.io/asam-ev/project-guide-docker:4
       with:
-        entrypoint: repo/run-build.sh
+        entrypoint: sh
+        args: repo/run-build.sh
 
 
     # deploy to gh-pages
