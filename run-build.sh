@@ -3,4 +3,5 @@
 # It copies the cached node-modules from the container to the runner workspace and then triggers the build using npm
 
 cp -r /usr/src/repo/. /github/workspace/.
+cd /usr/src/repo
 exec antora --stacktrace --fetch --clean site.yml
