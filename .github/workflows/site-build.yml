@@ -46,7 +46,7 @@ jobs:
       uses: docker://ghcr.io/asam-ev/project-guide-docker:4
       with:
         entrypoint: sh
-        args: repo/run-build.sh
+        args: repo/antora --stacktrace --fetch --clean site.yml
 
 
     # deploy to gh-pages
