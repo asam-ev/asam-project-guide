@@ -35,16 +35,17 @@ jobs:
     steps:
 
     # checkout repo into folder guide. This is done to match the setup for the local build in docker-compose
-#     - name: Checkout
-#       uses: actions/checkout@v3
-#       with:
-#         path: repo
-#         fetch-depth: 0 # test if depth in fetch history is required
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        path: repo
+        fetch-depth: 0 # test if depth in fetch history is required
 
     # build site
     - name: Generate site
       uses: docker://ghcr.io/asam-ev/project-guide-docker:4
       with:
+        volume: /usr/src/repo
         entrypoint: antora --stacktrace --fetch --clean site.yml
 
 
