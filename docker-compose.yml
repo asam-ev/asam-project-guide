@@ -3,15 +3,15 @@ version: "2"
 services:
 
   antora:
-    image: ghcr.io/asam-ev/project-guide-docker:3
+    image: ghcr.io/asam-ev/project-guide-docker:4
     volumes:
-      - .:/usr/src/app/repo #has to match WORKSPACE defined in Dockerfile + folder from package.json "docker-build"
+      - .:/usr/src/repo #has to match WORKSPACE defined in Dockerfile + folder from package.json "docker-build"
     depends_on:
       - kroki
       - blockdiag
       - mermaid
-    entrypoint: npm run docker-build
     # entrypoint: /bin/bash
+    entrypoint: antora --stacktrace --fetch --clean site.yml
 
 
   kroki:

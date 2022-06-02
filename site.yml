@@ -95,7 +95,7 @@ asciidoc:
 # tag::antora[]
 antora:
   extensions:
-    - require: '@antora/antora-lunr-extension'
+    - require: '@antora/lunr-extension'
     - require: './antora_extensions/asam-extension.js'
       keywords:
         filename: "1_keywords.adoc"

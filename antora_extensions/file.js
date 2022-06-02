@@ -1,6 +1,6 @@
 'use strict'
 
-const Vinyl = require('vinyl')
+const Vinyl = require('/usr/src/app/node_modules/vinyl')
 
 class File extends Vinyl {
   get path () {
