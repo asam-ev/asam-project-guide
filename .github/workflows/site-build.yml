@@ -45,8 +45,7 @@ jobs:
     - name: Generate site
       uses: docker://ghcr.io/asam-ev/project-guide-docker:4
       with:
-        volume: /usr/src/repo
-        entrypoint: antora --stacktrace --fetch --clean site.yml
+        entrypoint: repo/run-build.sh
 
 
     # deploy to gh-pages
