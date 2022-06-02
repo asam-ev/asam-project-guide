@@ -4,6 +4,6 @@
 
 cp -r /usr/src/repo/. /github/workspace/.
 ls
-cd /usr/src/repo
+cd repo
 ls
 exec antora --stacktrace --fetch --clean site.yml
