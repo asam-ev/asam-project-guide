@@ -894,9 +894,7 @@ Typically, a new project will come with these already set up.
 If not, the project group shall ensure that they are created at the beginning of the project.</p>
 </div>
 <div class="paragraph">
-<p>Some labels only apply to certain phases.
-These are listed after the <a href="#_general_labels">General labels</a> section.<br>
-All labels apply to both issues and merge/pull requests.</p>
+<p>All labels apply to both issues and merge/pull requests.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -963,11 +961,7 @@ These can be accessed by any project in this organization or group.</p>
 <div class="sect2">
 <h3 id="_type_labels"><a class="anchor" href="#_type_labels"></a>1.1. Type labels</h3>
 <div class="paragraph">
-<p><em>(automatically assigned in issue templates)</em></p>
-</div>
-<div class="paragraph">
-<p>These labels state the issue type.<br>
-Each issue shall be assigned <strong>ONE</strong> of:</p>
+<p>Type labels display the intended field of the issue. Type labels are static and never change.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -982,34 +976,53 @@ Each issue shall be assigned <strong>ONE</strong> of:</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #428BCA; color: white">Feature</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Proposals which enhance the standard or add additional features.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:Bug}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates an issue that contains contradictions or errors in the standard.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #8E44AD; color:white">Bug</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Contradictions or errors in the standard.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:DocumentationCleanUp}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates an issue that contains general structural and editorial changes for the whole documentation.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #D1D100; color:black">GeneralQuestion</label></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:FeatureImprovment}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates tasks that further improve or correct existing features of the standard and/or project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:GeneralQuestion}</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">General questions about the documentation, work-flow or anything related to the standard.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #A295D6; color:black">Build</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Any issue relevant to the repository infrastructure, CI, or document tool chains.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:InternalReview}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that the issue was created during and as a result of the internal project review phase.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #A8D695; color:black">Concept</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An issue that is being detailed out through expert discussion and offline work:</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:NewFeature}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates a proposals which enhance the standard or add additional features.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:PublicReview}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that the issue was created during and as a result of the public project review phase.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:ReleaseBlocker}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates tasks that shall be solved in order to release the document/project.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:RepositoryInfrastructure}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that the issue deals with a topic related to the repository infrastructure such as CI, builds, document toolchain or similar.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isType:UML}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that the issue deals with an UML related topic.</p></td>
 </tr>
 </tbody>
 </table>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_variant_labels"><a class="anchor" href="#_variant_labels"></a>1.2. Variant labels</h3>
+<h3 id="_status_labels"><a class="anchor" href="#_status_labels"></a>1.2. Status labels</h3>
 <div class="paragraph">
-<p>Add these when using the <label style="background: #428BCA; color: white">Feature</label> label to denote the type of Feature.<br>
-Each Feature issue shall be assigned <strong>ONE</strong> of:</p>
+<p>Status labels reflect the current phase of an issue. Status labels can change. Old status label shall be removed.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1024,26 +1037,34 @@ Each Feature issue shall be assigned <strong>ONE</strong> of:</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: Red; color: white">MAJOR</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Contains backwards incompatible changes.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isStatus:Duplicate}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This issue has already been raised or was already solved in another issue.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #F0AD4E; color: white">MINOR</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Contains backwards compatible changes.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isStatus:InProgress}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that the work on the issue has already begun and is ongoing.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #69D100; color: white">PATCH</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Contains backwards compatible bug fixes.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isStatus:NotInProgress}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that the work on the issue has already begun and is ongoing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isStatus:ReadyForServiceProvider}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This issue is ready for the service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isStatus:WontBeFixed}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that the task described in the issue will not be solved.</p></td>
 </tr>
 </tbody>
 </table>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_status_labels"><a class="anchor" href="#_status_labels"></a>1.3. Status labels</h3>
+<h3 id="_requirement_labels"><a class="anchor" href="#_requirement_labels"></a>1.3. Requirement labels</h3>
 <div class="paragraph">
-<p>These labels state the current status of the issue.<br>
-Each issue shall be assigned <strong>ONE</strong> of:</p>
+<p>Requirement labels indicate an action to be fulfilled by the involved parties.<br>
+Requirement labels can change. Old Requirement labels shall be removed.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1058,46 +1079,45 @@ Each issue shall be assigned <strong>ONE</strong> of:</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: Purple; color: white">Analysis</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An issue or MR that needs expert analysis to determine what to do next.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{requires:CCBReview}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that the concept of this issue and a matching merge request is ready for review by the CCB.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #AD8D43; color:white">Implementation</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An issue or MR that has a concise concept that is ready to be implemented (either in the form of technical documentation, code writing or model development).</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{requires:Clarification}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that this issue needs a clarification by an expert.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #009966; color:white">InternalReview</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TBD</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{requires:ConceptualWork}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that this issue needs conceptual work by an expert or an expert group.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: Red; color:white">NeedsCCBReview</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates that the concept in an issue is ready for review by the CCB or a MR is ready for merge by a CCB member.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{requires:DocumentationWork}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that this issue needs a change of the documentation which has to be implemented by a project member.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: SteelBlue; color:white">Documentation (Editorial Changes)</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Issue only impacts the specification documentation and has no impact on the model or code.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{requires:Example}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that the issue needs an example to illustrate or test a section in the document which has to be implemented by a project member.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #D10069; color:white">ReadyToMerge</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This MR has been reviewed and approved and is ready to merge.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{requires:Merge}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label indicates that this issue or a merge request is approved by the CCB and should be merged by a project member with the necessary rights.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: Blue; color:white">Duplicate</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This issue has already been raised or was already solved.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{requires:MergeRequest}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This tag indicates that this topic has a concise concept that is ready to be implemented in a merge request (either in the form of technical documentation, writing code, or model development).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: #FFECDB; color:black">WontFix</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This is most likely not going to be addressed.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{requires:Test}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This label identifies tasks that need to be tested before they can be closed or the next step can be taken. This could be done with an example.</p></td>
 </tr>
 </tbody>
 </table>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_relevance_labels"><a class="anchor" href="#_relevance_labels"></a>1.4. Relevance labels</h3>
+<h3 id="_relation_labels"><a class="anchor" href="#_relation_labels"></a>1.4. Relation labels</h3>
 <div class="paragraph">
-<p>These labels state the relevance of the issue for the current phase.<br>
-Each issue <strong>that has not been resolved yet</strong> shall be assigned <strong>ONE</strong> of:</p>
+<p>Relation labels display relations to <strong>external</strong> projects.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1112,12 +1132,45 @@ Each issue <strong>that has not been resolved yet</strong> shall be assigned <st
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><label style="background: Green; color: white">ACTIVE_ISSUE</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The issue is currently being worked on and relevant to the current milestone.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{isRelated:EditorialGuide}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This issue is related to the ASAM Editorial Guide.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><label style="background: Grey; color: white">BACKLOG</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The issue is postponed to a later milestone or phase.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{isRelated:OpenXOntology}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This issue is related to the OpenXOntology Standard.</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_effort_labels"><a class="anchor" href="#_effort_labels"></a>1.5. Effort labels</h3>
+<div class="paragraph">
+<p>Effort labels reflect the expected workload. Based on the expectations of the work group.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Label</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{hasEffort:High}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Effort labels reflect the expected workload. Based on the expectations of the work group.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{hasEffort:Low}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Effort labels reflect the expected workload. Based on the expectations of the work group.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{hasEffort:Medium}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Effort labels reflect the expected workload. Based on the expectations of the work group.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1137,78 +1190,9 @@ The following sections contain some suggestions for project-specific labels.</p>
 <div class="paragraph">
 <p>If a project wants to use additional custom labels for extra filter options, each label must be documented in the project documentation and be accessible to each project member.</p>
 </div>
-<div class="sect2">
-<h3 id="_type_labels_2"><a class="anchor" href="#_type_labels_2"></a>2.1. Type labels</h3>
-<div class="paragraph">
-<p>Projects typically do not need to define additional type labels.
-However, if the need arises, ASAM suggests the following naming schema and rules for custom type labels:</p>
-</div>
-<div class="listingblock">
-<div class="title">Suggested type label schema</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">T-'Type'</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>, where 'Type' is the new type in <em>CamelCase</em>.</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Rules</dt>
-<dd>
-<div class="ulist">
-<ul>
-<li>
-<p>Remove spaces ("HardwareQuestions" instead of "Hardware Questions")</p>
-</li>
-</ul>
-</div>
-</dd>
-<dt class="hdlist1">Example</dt>
-<dd>
-<p>A new type 'Hardware Questions' would be <code>T-HardwareQuestions</code>.</p>
-</dd>
-</dl>
-</div>
 <hr>
-</div>
 <div class="sect2">
-<h3 id="_status_labels_2"><a class="anchor" href="#_status_labels_2"></a>2.2. Status labels</h3>
-<div class="paragraph">
-<p>Projects typically do not need to define additional status labels.
-However, if the need arises, ASAM suggests the following naming schema and rules for custom status labels:</p>
-</div>
-<div class="listingblock">
-<div class="title">Suggested status label schema</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">S-'Status'</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>, where 'Status' is the new status in <em>CamelCase</em>.</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Rules</dt>
-<dd>
-<div class="ulist">
-<ul>
-<li>
-<p>Remove spaces ("WaitingForClarification" instead of "Waiting For Clarification")</p>
-</li>
-</ul>
-</div>
-</dd>
-<dt class="hdlist1">Example</dt>
-<dd>
-<p>A new type 'Waiting For Clarification' would be <code>S-WaitingForClarification</code>.</p>
-</dd>
-</dl>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_groupcategory_labels"><a class="anchor" href="#_groupcategory_labels"></a>2.3. Group/category labels</h3>
+<h3 id="_workgroup_labels"><a class="anchor" href="#_workgroup_labels"></a>2.1. Workgroup labels</h3>
 <div class="paragraph">
 <p>All ASAM projects have their individual work packages clustered into groups or categories.
 These labels are defined individually for each project and should be used to categorize issues.</p>
@@ -1224,9 +1208,9 @@ These labels are defined individually for each project and should be used to cat
 <p>ASAM suggest the following naming schema for group/category labels:</p>
 </div>
 <div class="listingblock">
-<div class="title">Suggested group label schema</div>
+<div class="title">Suggested workgroup label schema</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">'group-name'-'topic'</code></pre>
+<pre class="highlightjs highlight"><code class="language-none hljs">'isWorkgroup':'Workgroup'</code></pre>
 </div>
 </div>
 <div class="dlist">
@@ -1236,56 +1220,14 @@ These labels are defined individually for each project and should be used to cat
 <div class="ulist">
 <ul>
 <li>
-<p>Remove spaces ("TopLevel" instead of "Top Level")</p>
+<p>Remove spaces ("Domain Model" instead of "DomainModel")</p>
 </li>
 </ul>
 </div>
 </dd>
 <dt class="hdlist1">Example</dt>
 <dd>
-<p>An issue label for the group Domain Model Experts (DME) concerning the definition of Power Actions would be <code>DME-PowerActions</code>.</p>
-</dd>
-</dl>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_work_package_labels"><a class="anchor" href="#_work_package_labels"></a>2.4. Work package labels</h3>
-<div class="paragraph">
-<p>All ASAM projects have work items assigned to smaller work packages (that are then also assigned to a group or category).
-These labels are defined individually for each project and should be used to further categorize issues.</p>
-</div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>An issue can have multiple Group and Work Package labels provided that it is relevant to more than one of these.</p>
-</div>
-</blockquote>
-</div>
-<div class="paragraph">
-<p>ASAM suggest the following naming schema for work package labels:</p>
-</div>
-<div class="listingblock">
-<div class="title">Suggested work package label schema</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">'work-package'-'topic'</code></pre>
-</div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Rules</dt>
-<dd>
-<div class="ulist">
-<ul>
-<li>
-<p>Remove spaces ("TopLevel" instead of "Top Level")</p>
-</li>
-</ul>
-</div>
-</dd>
-<dt class="hdlist1">Example</dt>
-<dd>
-<p>An issue label for the work package Domain Model (DM) concerning the definition of Actions would be <code>DM-Actions</code>.</p>
+<p>An issue label for the group Domain Model (DomainModel) would be 'isWorkgroup:DomainModel'</p>
 </dd>
 </dl>
 </div>
@@ -1319,7 +1261,7 @@ Note that these come with the template repository and typically need not be adde
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: Grey; color: white">PROPOSAL</label></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{isPhase:Proposal}</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Denotes that this issue is relevant for the Proposal document.</p></td>
 </tr>
 </tbody>
@@ -1328,40 +1270,7 @@ Note that these come with the template repository and typically need not be adde
 </div>
 </div>
 <div class="sect1">
-<h2 id="_review_phase_labels"><a class="anchor" href="#_review_phase_labels"></a>4. Review phase labels</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><label class="mandatory"/></p>
-</div>
-<div class="paragraph">
-<p>This part contains all labels specific to the Review phase.</p>
-</div>
-<div class="paragraph">
-<p>Each issue created during the review shall be assigned:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 85.7143%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-right valign-top">Label</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><label style="background: Red; color: white">Review</label></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This is an issue that was created as part of a project review phase.</p></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_milestones"><a class="anchor" href="#_milestones"></a>5. Milestones</h2>
+<h2 id="_milestones"><a class="anchor" href="#_milestones"></a>4. Milestones</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Milestones specify target dates and development phases for topics.
