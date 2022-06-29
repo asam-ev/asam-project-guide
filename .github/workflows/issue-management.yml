@@ -3,8 +3,8 @@ name: Auto Assign to Project(s)
 on:
   issues:
     types: [opened, labeled]
-  pull_request:
-    types: [opened, labeled]
+  # pull_request:
+  #   types: [opened, labeled]
   issue_comment:
     types: [created]
 env:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Assign to One Project
     steps:
-    - name: Assign NEW issues to project Project Guide Kanban
+    - name: Assign NEW issues with "Content feedback" name to project Project Guide Kanban
       uses: srggrs/assign-one-project-github-action@1.3.1
       if: github.event.action == 'opened' && contains(github.event.issue.title, 'Content feedback')
       with:
@@ -33,18 +33,8 @@ jobs:
       with:
         project: 'https://github.com/asam-ev/asam-project-guide/projects/3'
 
-    - name: Move issues with label "blocked" to blocked column
-      uses: srggrs/assign-one-project-github-action@1.3.1
-      if: contains(github.event.issue.labels.*.name, 'blocked')
-      with:
-        column_name: "Blocked"
-
-
-    # - name: Assign issues and pull requests with `bug` label to project 3
+    # - name: Move issues with label "blocked" to blocked column
     #   uses: srggrs/assign-one-project-github-action@1.3.1
-    #   if: |
-    #     contains(github.event.issue.labels.*.name, 'bug') ||
-    #     contains(github.event.pull_request.labels.*.name, 'bug')
+    #   if: contains(github.event.issue.labels.*.name, 'blocked')
     #   with:
-    #     project: 'https://github.com/srggrs/assign-one-project-github-action/projects/3'
-    #     column_name: 'Labeled'
+    #     column_name: "Blocked"
