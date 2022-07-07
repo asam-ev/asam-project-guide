@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc Guide :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/project_introduction/compendium/Guidelines/asciidoc_guide.html">
+    <link rel="prev" href="asciidoc-writing_guide.html">
+    <link rel="next" href="coordination-ccb_meeting_guidelines.html">
+    <meta name="description" content="An overview over AsciiDoc and how it works.">
+    <meta name="keywords" content="asciidoc, guide, doc-as-code">
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+<script type="text/javascript" src="../../../../_/js/modal.js" defer></script>
+<link rel="stylesheet" href="../../../../_/css/modal.css">
+<link rel="stylesheet" href="../../../../_/css/flipcard.css">
+<link rel="stylesheet" href="../../../../_/css/extra.css">    <script>var uiRootPath = '../../../../_'</script>
+<link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+           –
+          project_introduction</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
+        <div class="navbar-item is-hoverable">
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/project_introduction/compendium/Guidelines/asciidoc_guide.html+%7C%0D%0A%7C+Page+%7C+AsciiDoc Guide+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="body">
+<div class="nav-container" data-component="projectintroduction" data-version="project_introduction">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">ASAM Project Introduction</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../concepts/main.html">Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/project_types.html">Project types</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/project_phases.html">Project phases</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/project_lifecycle.html">Exemplary project lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/creation-of-standards.html">Creation of standards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/roles-overview.html">Roles overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../concepts/doc-as-code.html">Documentation as Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../concepts/pipeline_details.html">Automation pipelines at ASAM</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../contributing/main.html">Start contributing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/account_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/contribution_workflow.html">Contribution workflow</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/main.html">ASAM&#8217;s project processes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/ideation_phase.html">Ideation phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/ideation/enter_new_idea.html">Entering an idea</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/ideation/developing_an_idea.html">Ideation Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/ideation/raising_interest.html">Gathering participants for a Project Proposal</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/proposal_phase.html">Proposal phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/phase_details.html">Proposal phase details</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/proposal_document.html">The Proposal document</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/setup.html">Project Proposal setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/proposal_workshop_preparation.html">Prepare a Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/join_proposal_workshop.html">Join a Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/proposal_writing.html">Writing a Project Proposal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/submit_candidacy.html">Submit your candidacy as a Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/need_for_service_providers.html">Identify the need for Service Providers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/submit_proposal.html">Submit a Proposal</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/signing_up.html">Signing up for projects</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/signing_up/become_project_lead.html">Become Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/signing_up/become_workgroup_lead.html">Become Workgroup Lead</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/development_phase.html">Development phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/phase_details-setup.html">Development phase details&#8201;&#8212;&#8201;Setup Step</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/kick-off_workshop_preparation.html">Prepare a Kick-off Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/kick-off_workshop.html">Kick-off Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/project_setup.html">Project setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/engage_service_provider.html">Engaging Service Providers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/phase_details-cycle.html">Development phase details&#8201;&#8212;&#8201;Development Cycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/cycle_planning.html">Development cycle&#8201;&#8212;&#8201;Planning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/cycle_development.html">Development cycle&#8201;&#8212;&#8201;Development</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/cycle_review.html">Development cycle&#8201;&#8212;&#8201;Review</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/tsc_controlling_meeting.html">TSC Controlling Meeting</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/cgsim_controlling_meeting.html">CGSim Controlling Meeting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/review_phase.html">Review phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/review/review_standard_asam.html">Review a standard (ASAM member review)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/review/review_standard_public.html">Review a standard (public release candidate)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/release_phase.html">Release phase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../asam-contacts.html">Contacts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../credits.html">Credits</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../normation_test_page.html">Test page for normative vs non-normative</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide.html">Editorial guide</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools.html">Tools for advanced users</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../compendium.html">Compendium</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/ccb-member.html">Change Control Board member</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/gtm.html">ASAM Global Technology Manager</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/main.html">ASAM roles</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/project-lead.html">Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/project-participant.html">Project Participant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/reviewer.html">Reviewer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/service-provider.html">Service Provider</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/standard_expert-group.html">Standard Expert Group</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/standard_manager.html">Standard Manager</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/standard_user.html">Standard User</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/technical-writer.html">Technical Writer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/terminology.html">Role terminology</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/tsc.html">Technical Steering Committee member</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/wg-lead.html">Workgroup Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/01_basics.html">Basics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/02_structure.html">Structure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/03_language.html">Language</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/04_numbers.html">Numbers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/05_headings.html">Headings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/06_paragraphs.html">Paragraphs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/07_source_code.html">Source code and literals</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/08_lists.html">Lists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/09_tables.html">Tables</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/10_figures.html">Figures</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/11_undefined.html">Undefined</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-admonitions.html">[AsciiDoc] Admonitions For Highlighting Topics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-commenting.html">[AsciiDoc] Comment And Review adoc Files</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-formulas.html">[AsciiDoc] Formulas</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-graphics.html">[AsciiDoc] Graphics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-include_code.html">[AsciiDoc] Include Code Blocks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-reuse_content.html">[AsciiDoc] Reuse Content</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-roadmaps.html">[AsciiDoc] Roadmaps</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-tasks.html">[AsciiDoc] Task Headings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-writing_guide.html">[AsciiDoc] Writing Guide</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="asciidoc_guide.html">[AsciiDoc] AsciiDoc Guide</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-ccb_meeting_guidelines.html">[Coordination] Change Control Board Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-full-project_meeting_guidelines.html">[Coordination] Full Project Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-general_meeting_guidelines.html">[Coordination] General Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-hosting_workshops.html">[Coordination] Hosting Workshops</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-meeting_logistics.html">[Coordination] Meeting Logistics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-meeting_moderation.html">[Coordination] Meeting Moderation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-teams-channel_file-structure.html">[Coordination] Teams Channels File Structure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-wg-lead_meeting_guidelines.html">[Coordination] Work Group Lead Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-wg_meeting_guidelines.html">[Coordination] Work Group Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="deliverables.html">[] ASAM Deliverables</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="diagram_notations.html">[] Notation In Project Phase Diagrams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="graphic_assets_requirements_and_conventions.html">[] Graphic Assets Requirements And Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plantuml_documentation_guide.html">[] PlantUML Documentation Guide</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project_lead_training.html">[] Project Lead Training</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="proposal_phase_contribution_guidelines.html">[] Proposal Phase Contribution Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-branch_naming_conventions.html">[Repository] Branch Naming Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-commit_conventions.html">[Repository] Commit Message Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-issue_and_mr_labels.html">[Repository] Issue And Merge Request Labels</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-issue_naming_conventions.html">[Repository] Issue Naming Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-make_changes.html">[Repository] Make Changes In A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-merge-pull_requests.html">[Repository] Merge/Pull Requests</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-merge_conflicts.html">[Repository] Merge Conflicts: Preventing And Resolving</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-submodules.html">[Repository] Submodules</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-tags.html">[Repository] Tags In Repositories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="vscode-recommended_vscode_extensions.html">[VSCode] Recommended Visual Studio Code Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="vscode-recommended_vscode_settings.html">[VSCode] Recommended Visual Studio Code Settings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow-contribute_in_asciidoc.html">[Workflow] Contributing In AsciiDoc Files</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow-contribute_with_issues.html">[Workflow] Contributing Through Issues</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow-ticket_triage.html">[Workflow] Ticket Triage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow-trunk.html">[Workflow] Trunk-based Remote Repositories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/access_compiled_artifacts.html">Access compiled artifacts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/active_draft_section_preview.html">Activate draft section preview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/add_custom_feedback_button.html">Add feedback button in Antora project</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/adding_diagrams_to_vscode.html">Adding VSCode support for diagrams with Kroki</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/become_pl.html">Become Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/become_wg_lead.html">Become Working Group Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/build_antora_locally.html">Build Antora locally</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/clone_a_repository_gitlab-vscode.html">Clone a repository using GitLab to Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/clone_a_repository_terminal.html">Clone a repository using Git bash / Powershell</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/clone_a_repository_vscode.html">Clone a repository using Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/cloning_repo_tutorial.html">Cloning a repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/create_branch_from_issue.html">Create development branch from issues</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/create_new_branch.html">Create a branch</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/cycle_planning_project-level.html">Project-level Planning</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/cycle_planning_wg-level.html">Work-group-level Planning</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/cycle_review.html">Cycle review</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/docker_for_asciidoc.html">Use Docker for Asciidoctor</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/edit_asam_graphics_library.html">Edit The ASAM Graphics Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/email-notifications.html">Email notifications from microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/enroll_for_development.html">Enroll for project development</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/enroll_for_ideation.html">Enroll during Ideation phase</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/enrollment_list.html">Add the enrollment list</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/enter_new_idea.html">Enter an idea</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/executive_draft.html">Create an executive Proposal draft</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/forking_repo.html">Forking from repositories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/github-setup.html">Setting up your GitHub account</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/gitlab-setup.html">Setting up your GitLab account</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/identify_need_for_sp.html">Identify the need for Service Providers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/join_proposal_workshop.html">Join a Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/mark_parts_as_draft.html">Mark passages as draft</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/meetings_in_teams.html">Meetings in Microsoft Teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/merge.html">Merge a branch</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/obtain_channel_email.html">Obtain the email address of a channel</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/polls_and_surveys.html">Polls &amp; surveys with Microsoft Teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/prepare_kick-off_workshop.html">Prepare a Kick-off Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/prepare_proposal_workshop.html">Prepare a Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/proposal_writing.html">Create a project&#8217;s Proposal document</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/receive_notifications.html">Receiving notifications in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/review_code.html">Review code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/review_standard_asam.html">Review a standard (ASAM member review)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/review_standard_public.html">Review a standard (public release candidate)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/review_with_gitlab_service_desk.html">Use GitLab Service Desk for reviews</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/run_docker.html">Running Docker-Compose from Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/setup_development_git.html">Setup project development repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/setup_proposal_git.html">Setup project proposal repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/setup_standard_docker_config.html">Standard Docker-Compose YAML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submit_candidacy_pl.html">Submit candidacy for Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submit_proposal.html">Submit a Project Proposal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodule_add.html">Adding a new submodule to a repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodule_changing_remote.html">Changing remote for a submodule</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodule_delete.html">Removing a submodule from a repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodule_pull.html">Pulling a submodule</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodules_switch_version.html">Switching to a specific submodule version</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/switch_branches.html">Switch branches</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/synchronizing_sharepoint_with_onedrive.html">Synchronizing sharepoint with oneDrive</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/vscode_git-interaction.html">Interacting with git through Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/vscode_install_extension.html">Install VScode Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/write_a_feature.html">Write a feature</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/documentation_processes.html">Documentation processes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/feedback_guide.html">Feedback guide</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/filestage_review.html">Doing a review on Filestage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/project-type-concept.html">[Project Type] Concept</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/project-type-implementation.html">[Project Type] Implementation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/project-type-standard.html">[Project Type] Standard Development</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/project-type-study.html">[Project Type] Study</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/asam_dco.html">ASAM Developer Certification Of Origin For Open Source Projects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/directories.html">Directories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/ideation_workshop_gameplan.html">Ideation Workshop gameplan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/kick-off_workshop_gameplan.html">Kick-off Workshop Gameplan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/proposal_workshop_gameplan.html">Proposal Workshop gameplan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/review_feedback_template.html">Standard Review template</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/calendar.html">OpenX Calendar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/docker.html">Docker</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/drawio.html">Draw.io</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/git.html">Git</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/remote_repo.html">Remote repository platforms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/teams_and_sharepoint.html">Microsoft Teams and Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/vscode.html">Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../getting-involved/tbd/initiate_webinar.html">Initiate a webinar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../getting-involved/tbd/join_webinar.html">Join a webinar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/calendar/calendar-setup.html">Setting up the OpenX calendar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/docker/docker-best-practices.html">Docker best practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/docker/docker-guides.html">Docker guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/docker/docker-setup.html">Setting up Docker</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/drawio/drawio-guides.html">Draw.io guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/drawio/drawio-setup.html">Setting up Draw.io</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/git/git-guides.html">Git guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/git/git-setup.html">Setting up Git</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/git/git_best_practices.html">Git best practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/remote_repo/remote_repo_guides.html">Guides for remote repositories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/remote_repo/remote_repo_setup.html">Setting up your repository account</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/teams_and_sharepoint/teams_and_sharepoint-guides.html">Microsoft Teams and Sharepoint guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/teams_and_sharepoint/teams_and_sharepoint-setup.html">Setting up Microsoft Teams and Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/vscode/vscode-guides.html">Visual Studio Code guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/vscode/vscode-setup.html">Setting up Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../1_keywords.html">Used keywords In ASAM Project Guide</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Introduction</span>
+    <span class="version">project_introduction</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../../asamprojectguide/latest/index.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version">
+          <a href="../../../../asamprojectguide/index.html">pre-restructuring</a>
+        </li>
+        <li class="version is-latest">
+          <a href="../../../../asamprojectguide/latest/index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../index.html">ASAM Project Introduction</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">project_introduction</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../asamprojectguide-editing/latest/main.html">Editing the ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../asamprojectguide-editing/latest/main.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../asamprojectguide/latest/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">ASAM Project Introduction</a></li>
+    <li>Orphans</li>
+    <li><a href="asciidoc_guide.html">[AsciiDoc] AsciiDoc Guide</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Guidelines/asciidoc_guide.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc" variant="wide">
+    <h1 class="page">AsciiDoc Guide</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image right"><img src="../_images/icons/asciidoc.png" alt="asciidoc" width="80"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="../../role-specific/technical-writer.html" class="xref page"><role style="background:#D8BFD8;" >TECHNICAL WRITER</role></a>
+<a href="../../role-specific/project-lead.html" class="xref page"><role style="background:#6A5ACD;" >PROJECT LEAD</role></a>
+<a href="../../role-specific/project-participant.html" class="xref page"><role style="background:#BDB76B;" >PROJECT PARTICIPANT</role></a></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+See <a href="asciidoc-writing_guide.html" class="xref page">Writing Guide</a> for ASAM-specific writing style guidelines.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The content of this page is intended to provide a quick overview over the most used features of AsciiDoc.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Main advantages of using AsciiDoc</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Can be edited in any text editor or using the remote repository&#8217;s Web IDE</p>
+</li>
+<li>
+<p>Focus on content, not on formatting!</p>
+</li>
+<li>
+<p>Versionable and diffable – i.e. we can tell who did what, when, and where!</p>
+</li>
+<li>
+<p>In the end, we can deliver an interactive html instead of a static pdf</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>If you want to learn more about AsciiDoc, see the following links:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/" target="_blank" rel="noopener">Quick reference</a></p>
+</li>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/" target="_blank" rel="noopener">User manual</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Besides the general syntax, ASAM standards follow specific ASAM guidelines for AsciiDoc.
+These are listed below.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_graphics"><a class="anchor" href="#_graphics"></a>Graphics</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For most cases, <a href="../Tools/drawio.html" class="xref page">Draw.io</a> shall be used.
+It&#8217;s a possibility to generate graphics with a powerful tool that can be included directly, without a intermediate image format.
+See <a href="#top-drawio">DrawIO</a> for usage.</p>
+</div>
+<div class="paragraph">
+<p>Im some cases, PlantUMl is used to model the relationships.
+See <a href="#top-plantuml">PlantUML</a> for usage.</p>
+</div>
+<div class="sect2">
+<h3 id="top-drawio"><a class="anchor" href="#top-drawio"></a>DrawIO</h3>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset1_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset1_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset1_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>[[fig-example-drawio]] <i class="conum" data-value="1"></i><b>(1)</b>
+.example graphic <i class="conum" data-value="2"></i><b>(2)</b>
+image::examplegraphic.drawio.svg[image] <i class="conum" data-value="3"></i><b>(3)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Anchor for the graphic. Reference this anchor using &lt;&lt;fig-example-drawio&gt;&gt;</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Graphic caption</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Include of actual graphic</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_result">
+<div id="fig-example-drawio" class="imageblock">
+<div class="content">
+<img src="../_images/examplegraphic.drawio.svg" alt="image">
+</div>
+<div class="title">Figure 1. example graphic</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="top-plantuml"><a class="anchor" href="#top-plantuml"></a>PlantUML</h3>
+<div class="paragraph">
+<p>PlantUML can be defined in the AsciiDoc file directly or included as a separate file.</p>
+</div>
+<div class="sect3">
+<h4 id="_defined_in_asciidoc"><a class="anchor" href="#_defined_in_asciidoc"></a>Defined in AsciiDoc</h4>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset2_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset2_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset2_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>[[fig-example-plantuml-code]] <i class="conum" data-value="1"></i><b>(1)</b>
+.PlantUML - defined in AsciiDoc <i class="conum" data-value="2"></i><b>(2)</b>
+[plantuml, svg] <i class="conum" data-value="3"></i><b>(3)</b>
+---- <i class="conum" data-value="4"></i><b>(4)</b>
+package "UML Class Diagram" <i class="conum" data-value="5"></i><b>(5)</b>
+{
+    abstract OSC20
+    interface PhysicalObject
+
+    interface TrafficParticipant
+    entity Vehicle{}
+
+	enum IntendedInfrastructure {
+	driving
+	sidewalk
+	biking
+    }
+
+    class dynamicLimits{
+        maxSpeed
+        maxAcceleration
+        maxDeceleration
+}
+
+OSC20 &lt;|-- PhysicalObject <i class="conum" data-value="6"></i><b>(6)</b>
+PhysicalObject &lt;|-- TrafficParticipant
+TrafficParticipant &lt;|-- Vehicle
+TrafficParticipant &lt;|-- Person
+TrafficParticipant &lt;|-- Animal
+
+'TrafficParticipant
+TrafficParticipant -- IntendedInfrastructure
+TrafficParticipant -- dynamicLimits
+----</pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Anchor for the graphic. Reference this anchor using &lt;&lt;fig-example-plantuml-code&gt;&gt;</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Graphic caption</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Include of actual graphic</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Delimiter for code block</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For Usage of the PlantUML language, see the <a href="https://plantuml.com/">PlantUML Documentation</a>.</p>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset2_result">
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="../_images/diag-3d851e1bb1c60842542dfeb65a9913bcd34b0032.svg"><span class="alt">PlantUML - defined in AsciiDoc</span></object>
+</div>
+<div class="title">Figure 2. PlantUML - defined in AsciiDoc</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_included_from_file"><a class="anchor" href="#_included_from_file"></a>Included from file</h4>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset3_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset3_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset3_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>[[fig-example-plantuml-file]] <i class="conum" data-value="1"></i><b>(1)</b>
+.PlantUML - included from file <i class="conum" data-value="2"></i><b>(2)</b>
+[plantuml, svg] <i class="conum" data-value="3"></i><b>(3)</b>
+---- <i class="conum" data-value="4"></i><b>(4)</b>
+include::../resources/ExamplePlantUML.plantuml[] <i class="conum" data-value="5"></i><b>(5)</b>
+----</pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Anchor for the graphic. Reference this anchor using &lt;&lt;fig-example-plantuml-file&gt;&gt;</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Graphic caption</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Include of actual graphic</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Delimiter for code block</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>include of the code file</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset3_result">
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="../_images/diag-40ddf5c9726ecf68e7bca703a55c0b089d16f2e7.svg"><span class="alt">PlantUML - included from file</span></object>
+</div>
+<div class="title">Figure 3. PlantUML - included from file</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_images_with_links"><a class="anchor" href="#_images_with_links"></a>Images with links</h3>
+<div class="paragraph">
+<p>You can add a link to an image so it acts like a "button."</p>
+</div>
+<div class="paragraph">
+<p><strong>Syntax</strong></p>
+</div>
+<div class="paragraph">
+<p>Use one of the following syntax when adding your image:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>image:&lt;file_name&gt;.&lt;ext&gt;[alt=&lt;text&gt;,link=&lt;url&gt;,window=_blank]
+xref:path-to-file/file.adoc[image:&lt;file_name&gt;.&lt;ext&gt;[alt=&lt;text&gt;]&lt;Link name&gt;^]
+&lt;url&gt;[image:&lt;file_name&gt;.&lt;ext&gt;[alt=&lt;text&gt;]&lt;Link name&gt;^]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>"window=_blank" opens the link in a new browser tab (or window).
+The addition of "^" at the end of the link name does the same in a shorthand version.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset4_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset4_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset4_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>image:logo.png[alt=A button titled ASAM Home,link=https://asam.net,window=_blank]</pre>
+</div>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset4_result">
+<div class="paragraph">
+<p><span class="image"><a class="image" href="https://asam.net" target="_blank" rel="noopener"><img src="../_images/logo.png" alt="A button titled ASAM Home"></a></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_admonitions"><a class="anchor" href="#_admonitions"></a>Admonitions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You might want to draw attention to certain statements by creating notes or tips - so-called <a href="https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#admonitions" target="_blank" rel="noopener">admonitions</a>.</p>
+</div>
+<div class="paragraph">
+<p>Use each of these sparingly.
+You don&#8217;t want to create pages that are full of notes and tips.
+They become less meaningful if you do.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s what each of these looks like when the AsciiDoc content is turned into HTML:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This is a note.
+It includes extra info that a reader might need to know.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Here&#8217;s a tip.
+A tip provides useful information that can help a user do something or understand something.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This is important information that the reader must be aware of so they don&#8217;t do something that they shouldn&#8217;t.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+A caution advises the reader to act carefully.
+Use this in rare circumstances.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+And this is a warning that informs of danger or harm.
+This one should be used very rarely, as well.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re authoring new content, you&#8217;ll want to review this section for some nitty-gritty details.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tasks"><a class="anchor" href="#_tasks"></a>Tasks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you&#8217;re explaining how to perform a task, you might include introductory information before you get to the steps.
+And you might need to say what to do after completing the steps.
+If you do, it&#8217;s best to organize that information using headers, which enables scanning.</p>
+</div>
+<div class="paragraph">
+<p>Use the following headings as needed:</p>
+</div>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset5_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset5_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset5_asciidoc">
+<div class="listingblock">
+<div class="content">
+<pre>.What you'll need
+
+_The information the user needs to complete the task._
+
+.About this task
+
+_Some extra contextual info the user might need to know about this task._
+
+.Steps
+
+_The individual steps to complete the task._
+
+.What's next?
+
+_What the user should do next._</pre>
+</div>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset5_result">
+<div class="paragraph">
+<div class="title">What you&#8217;ll need</div>
+<p><em>The information the user needs to complete the task.</em></p>
+</div>
+<div class="paragraph">
+<div class="title">About this task</div>
+<p><em>Some extra contextual info the user might need to know about this task.</em></p>
+</div>
+<div class="paragraph">
+<div class="title">Steps</div>
+<p><em>The individual steps to complete the task.</em></p>
+</div>
+<div class="paragraph">
+<div class="title">What&#8217;s next?</div>
+<p><em>What the user should do next.</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Each of these should include a <code>.</code> right before the text, like so:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>.What you'll need
+.About this task
+.Steps
+.What's next?</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This syntax applies bold text in a larger font.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_include_code"><a class="anchor" href="#_include_code"></a>Include code</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section shows how to include code blocks in an ASAM standard. In the standard case, a fragment direcly from a source code file is included, to not have duplicated code in the document. This is shown in chapter <a href="#Code as fragment from source code file">[Code as fragment from source code file]</a>.</p>
+</div>
+<div class="paragraph">
+<p>In some cases, e.g. examples, it is also possible to direcly include code in the documentation. This is shown in chapter <a href="#_code_as_snippet_in_document">Code as snippet in document</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_use_code_fragments_from_file"><a class="anchor" href="#_use_code_fragments_from_file"></a>Use code fragments from file</h3>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset6_source-file"></a>Source file</p>
+</li>
+<li>
+<p><a id="tabset6_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset6_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset6_source-file">
+<div id="code-tags-in-source-file" class="listingblock">
+<div class="title">Tags for including source code file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">[...]
+function lorem(ipsum, dolor = 1) { <i class="conum" data-value="2"></i><b>(2)</b>
+    const sit = ipsum == null ? 0 : ipsum.sit;
+    dolor = sit - amet(dolor);
+    return sit ? consectetur(ipsum, 0, dolor &lt; 0 ? 0 : dolor) : [];
+}
+[...]</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Anchor for code block. Reference this anchor using &lt;&lt;code-example-code-block&gt;&gt;</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Caption of the code block</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Caption of the code block</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset6_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>[[code-example-code-block-tag]]  <i class="conum" data-value="1"></i><b>(1)</b>
+.ASAM example code block using tags <i class="conum" data-value="2"></i><b>(2)</b>
+[source,js]  <i class="conum" data-value="3"></i><b>(3)</b>
+---- <i class="conum" data-value="4"></i><b>(4)</b>
+\include::../resources/examplecode.js[tags=exampleInclude] <i class="conum" data-value="5"></i><b>(5)</b>
+---- <i class="conum" data-value="6"></i><b>(6)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Anchor for code block. Reference this anchor using &lt;&lt;code-example-code-block-tag&gt;&gt;</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Caption of the code block</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Sets code highlighting. Possible options: xml, java, ..</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Code block delimiter</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Directly include source code file with tag marking fragment</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Code block delimiter</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For more information, see the <a href="https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/">Asciidoctor reference</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset6_result">
+<div id="code-example-code-block-tag" class="listingblock">
+<div class="title">ASAM example code block</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">function lorem(ipsum, dolor = 1) {
+    const sit = ipsum == null ? 0 : ipsum.sit;
+    dolor = sit - amet(dolor);
+    return sit ? consectetur(ipsum, 0, dolor &lt; 0 ? 0 : dolor) : [];
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_code_as_snippet_in_document"><a class="anchor" href="#_code_as_snippet_in_document"></a>Code as snippet in document</h3>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset7_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset7_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset7_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>[[code-example-code-block]]  <i class="conum" data-value="1"></i><b>(1)</b>
+.ASAM example code block <i class="conum" data-value="2"></i><b>(2)</b>
+[source,xml]  <i class="conum" data-value="3"></i><b>(3)</b>
+---- <i class="conum" data-value="4"></i><b>(4)</b>
+&lt;ParameterDeclarations&gt; <i class="conum" data-value="5"></i><b>(5)</b>
+  &lt;ParameterDeclaration name="$HostVehicle" parameterType="string" value="car_white"/&gt;
+  &lt;ParameterDeclaration name="$TargetVehicle" parameterType="string" value="car_red"/&gt;
+  &lt;ParameterDeclaration name="$EgoStartS" parameterType="double" value="50"/&gt;
+  &lt;ParameterDeclaration name="$HeadwayTime_LaneChange" parameterType="double" value="0.4"/&gt;
+  &lt;ParameterDeclaration name="$HeadwayTime_Brake" parameterType="double" value="1.0"/&gt;
+&lt;/ParameterDeclarations&gt;
+---- <i class="conum" data-value="6"></i><b>(6)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Anchor for code block. Reference this anchor using &lt;&lt;code-example-code-block&gt;&gt;</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Caption of the code block</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Sets code highlighting. Possible options: xml, java, ..</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Actual Codeblock</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Code block delimiter</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Code block delimiter</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset7_result">
+<div id="code-example-code-block" class="listingblock">
+<div class="title">ASAM example direct include code block</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;ParameterDeclarations&gt;
+  &lt;ParameterDeclaration name="$HostVehicle" parameterType="string" value="car_white"/&gt;
+  &lt;ParameterDeclaration name="$TargetVehicle" parameterType="string" value="car_red"/&gt;
+  &lt;ParameterDeclaration name="$EgoStartS" parameterType="double" value="50"/&gt;
+  &lt;ParameterDeclaration name="$HeadwayTime_LaneChange" parameterType="double" value="0.4"/&gt;
+  &lt;ParameterDeclaration name="$HeadwayTime_Brake" parameterType="double" value="1.0"/&gt;
+&lt;/ParameterDeclarations&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_code_syntax_highlighting"><a class="anchor" href="#_code_syntax_highlighting"></a>Code &amp; Syntax Highlighting</h3>
+<div class="paragraph">
+<p>For inline code, enclose it with ` to apply monospace font.</p>
+</div>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset8_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset8_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset8_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>You must set `volume show -is-encrypted true` before it works.</pre>
+</div>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset8_result">
+<div class="paragraph">
+<p>You must set <code>volume show -is-encrypted true</code> before it works.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>For code blocks: the html in the square brackets tells the compiler that this is html source code for source highlighting.</p>
+</div>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset9_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset9_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset9_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>[source, html]
+----
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+----</pre>
+</div>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset9_result">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_formulas"><a class="anchor" href="#_formulas"></a>Formulas</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section shows how to include formulas in an ASAM standard.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+This is not final. The anchor does not work as expected.
+</td>
+</tr>
+</table>
+</div>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset10_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset10_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset10_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>[[example-formula]] <i class="conum" data-value="1"></i><b>(1)</b>
+.ASAM example formula <i class="conum" data-value="2"></i><b>(2)</b>
+[latexmath] <i class="conum" data-value="3"></i><b>(3)</b>
+++++ <i class="conum" data-value="4"></i><b>(4)</b>
+T(t_{d}) = ((C_{11}(t_{d}) \wedge C_{12}(t_{d})) \vee (C_{21}(t_{d}) \wedge C_{22}(t_{d}) \wedge C_{23}(t_{d})) \vee (C_{31}(t_{d}))) <i class="conum" data-value="5"></i><b>(5)</b>
+++++ <i class="conum" data-value="6"></i><b>(6)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Anchor for formula. Reference this anchor using &lt;&lt;example-formula&gt;&gt;</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Caption for formula</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Option for definition of formual. We use <code>latexmath</code></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Code block delimiter</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Actual formula as latexmath</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Code block delimiter</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset10_result">
+<div class="stemblock">
+  <div class="content halign-center valign-middle" style="padding-top: 1rem">
+<svg style="vertical-align: -0.566ex; overflow: visible;" xmlns="http://www.w3.org/2000/svg" width="69.831ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 30865.3 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></g><g data-mml-node="mo" transform="translate(704,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(1093,0)"><g data-mml-node="mi"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="TeXAtom" transform="translate(394,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g><g data-mml-node="mo" transform="translate(1904.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2571.5,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mo" transform="translate(3627.3,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mo" transform="translate(4016.3,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(4405.3,0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="TeXAtom" transform="translate(748,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(500,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(5910.4,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(6299.4,0)"><g data-mml-node="mi"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="TeXAtom" transform="translate(394,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g><g data-mml-node="mo" transform="translate(7111.1,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(7722.3,0)"><path data-c="2227" d="M318 591Q325 598 333 598Q344 598 348 591Q349 590 414 445T545 151T611 -4Q609 -22 591 -22Q588 -22 586 -21T581 -20T577 -17T575 -13T572 -9T570 -4L333 528L96 -4Q87 -20 80 -21Q78 -22 75 -22Q57 -22 55 -4Q55 2 120 150T251 444T318 591Z"></path></g><g data-mml-node="msub" transform="translate(8611.5,0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="TeXAtom" transform="translate(748,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(10116.6,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(10505.6,0)"><g data-mml-node="mi"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="TeXAtom" transform="translate(394,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g><g data-mml-node="mo" transform="translate(11317.3,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(11706.3,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(12317.5,0)"><path data-c="2228" d="M55 580Q56 587 61 592T75 598Q86 598 96 580L333 48L570 580Q579 596 586 597Q588 598 591 598Q609 598 611 580Q611 574 546 426T415 132T348 -15Q343 -22 333 -22T318 -15Q317 -14 252 131T121 425T55 580Z"></path></g><g data-mml-node="mo" transform="translate(13206.7,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(13595.7,0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="TeXAtom" transform="translate(748,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(500,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(15100.9,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(15489.9,0)"><g data-mml-node="mi"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="TeXAtom" transform="translate(394,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g><g data-mml-node="mo" transform="translate(16301.5,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(16912.8,0)"><path data-c="2227" d="M318 591Q325 598 333 598Q344 598 348 591Q349 590 414 445T545 151T611 -4Q609 -22 591 -22Q588 -22 586 -21T581 -20T577 -17T575 -13T572 -9T570 -4L333 528L96 -4Q87 -20 80 -21Q78 -22 75 -22Q57 -22 55 -4Q55 2 120 150T251 444T318 591Z"></path></g><g data-mml-node="msub" transform="translate(17802,0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="TeXAtom" transform="translate(748,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(19307.1,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(19696.1,0)"><g data-mml-node="mi"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="TeXAtom" transform="translate(394,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g><g data-mml-node="mo" transform="translate(20507.8,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(21119,0)"><path data-c="2227" d="M318 591Q325 598 333 598Q344 598 348 591Q349 590 414 445T545 151T611 -4Q609 -22 591 -22Q588 -22 586 -21T581 -20T577 -17T575 -13T572 -9T570 -4L333 528L96 -4Q87 -20 80 -21Q78 -22 75 -22Q57 -22 55 -4Q55 2 120 150T251 444T318 591Z"></path></g><g data-mml-node="msub" transform="translate(22008.2,0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="TeXAtom" transform="translate(748,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" transform="translate(500,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(23513.3,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(23902.3,0)"><g data-mml-node="mi"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="TeXAtom" transform="translate(394,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g><g data-mml-node="mo" transform="translate(24714,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(25103,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(25714.3,0)"><path data-c="2228" d="M55 580Q56 587 61 592T75 598Q86 598 96 580L333 48L570 580Q579 596 586 597Q588 598 591 598Q609 598 611 580Q611 574 546 426T415 132T348 -15Q343 -22 333 -22T318 -15Q317 -14 252 131T121 425T55 580Z"></path></g><g data-mml-node="mo" transform="translate(26603.5,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(26992.5,0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="TeXAtom" transform="translate(748,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(500,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(28497.6,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(28886.6,0)"><g data-mml-node="mi"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="TeXAtom" transform="translate(394,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g><g data-mml-node="mo" transform="translate(29698.3,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(30087.3,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(30476.3,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_roadmaps"><a class="anchor" href="#_roadmaps"></a>Roadmaps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section shows how to include roadmaps in an ASAM standard.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Asciidoc preview in VSCode renders the roadmap but does not apply the correct theme ("neutral"). Reason is unclear.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Asciidoctor can render mermaid with '-r asciidoctor-diagram' when 'mmdc' is installed. But currently it is not possible to install 'mmdc' in the standard asciidoctor docker image (based on alpine)
+</td>
+</tr>
+</table>
+</div>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset11_asciidoc"></a>AsciiDoc</p>
+</li>
+<li>
+<p><a id="tabset11_result"></a>Result</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset11_asciidoc">
+<div class="literalblock">
+<div class="content">
+<pre>[[fig-example-roadmap]] <i class="conum" data-value="1"></i><b>(1)</b>
+.example roadmap <i class="conum" data-value="2"></i><b>(2)</b>
+[mermaid, theme="neutral"]  <i class="conum" data-value="3"></i><b>(3)</b>
+---- <i class="conum" data-value="4"></i><b>(4)</b>
+gantt <i class="conum" data-value="5"></i><b>(5)</b>
+	title OpenSCENARIO 1.X Project Plan - Updated 2021-02 <i class="conum" data-value="6"></i><b>(6)</b>
+	dateFormat  YYYY-MM-DD
+
+    section V1.1.0
+        New features and fixes:a1, 2020-06-01, 2021-01-01 <i class="conum" data-value="7"></i><b>(7)</b>
+        Review: crit, a2,  after a1, 2021-03-07 <i class="conum" data-value="8"></i><b>(8)</b>
+        Release: crit, a3,after a2, 2021-03-17
+
+    section &gt;1.1.0
+        Prepare new features for next Project: after a3,2021-06-11
+        Migration path 1.x - 2.0: 2021-04-01, 2021-06-15
+---- <i class="conum" data-value="9"></i><b>(9)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Anchor for code block. Reference this anchor using &lt;&lt;fig-example-roadmap&gt;&gt;</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Caption of the roadmap</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Config for the following diagram definition</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Code block delimiter</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Diagram is of type gantt</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Title of the roadmap</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Entries are definied with Name: start date, end date. 'a1' is a optional and used for later reference</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Entries can be configured. In this case 'crit' is a highlighting. Also note the reference to 'a1'</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="9"></i><b>9</b></td>
+<td>Code block delimiter</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You can use the <a href="https://mermaid-js.github.io/mermaid-live-editor">Mermaid Live Editor</a> for creating the diagram code block.</p>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset11_result">
+<div id="fig-example-roadmap" class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="../_images/diag-ea89a2dad353bb992d869ac8ebbbb36f8df76a56.svg"><span class="alt">example roadmap</span></object>
+</div>
+<div class="title">Figure 4. example roadmap</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reuse_content"><a class="anchor" href="#_reuse_content"></a>Reuse content</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you have a chunk of content that&#8217;s repeated across different pages, you can easily write it once and reuse it across those pages.
+Reuse is possible from within the same repository and across repositories.
+In the files where you&#8217;d like to reuse content:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If you&#8217;re reusing the content from within the <em>same</em> repository, use the following syntax on a line by itself:</p>
+<div class="literalblock">
+<div class="content">
+<pre>include::&lt;filename&gt;.adoc[]</pre>
+</div>
+</div>
+</li>
+<li>
+<p>If you&#8217;re reusing the content in a <em>different</em> repository, use the following syntax on a line by itself:</p>
+<div class="literalblock">
+<div class="content">
+<pre>include::&lt;FILE_RAW_URL&gt;[]</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If you want to learn more about the include directive, <a href="https://asciidoctor.org/docs/user-manual/#include-directive" target="_blank" rel="noopener">check out the AsciiDoctor User Manual</a>.</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="asciidoc-writing_guide.html">[AsciiDoc] Writing Guide</a></span>
+  <span class="next"><a href="coordination-ccb_meeting_guidelines.html">[Coordination] Change Control Board Meeting Guidelines</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<script src="../../../../_/js/site.js"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>

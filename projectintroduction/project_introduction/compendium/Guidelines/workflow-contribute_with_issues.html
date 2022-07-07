@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contributing through issues :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/project_introduction/compendium/Guidelines/workflow-contribute_with_issues.html">
+    <link rel="prev" href="workflow-contribute_in_asciidoc.html">
+    <link rel="next" href="workflow-ticket_triage.html">
+    <meta name="description" content="Describes how to contribute through issues.">
+    <meta name="keywords" content="proposal, gitlab, issue, doc-as-code">
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+<script type="text/javascript" src="../../../../_/js/modal.js" defer></script>
+<link rel="stylesheet" href="../../../../_/css/modal.css">
+<link rel="stylesheet" href="../../../../_/css/flipcard.css">
+<link rel="stylesheet" href="../../../../_/css/extra.css">    <script>var uiRootPath = '../../../../_'</script>
+<link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+           –
+          project_introduction</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="search-field">
+          <input id="search-input" class="search-input" type="search" placeholder="Search">
+        </div>
+      </div>
+        <div class="navbar-item is-hoverable">
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/project_introduction/compendium/Guidelines/workflow-contribute_with_issues.html+%7C%0D%0A%7C+Page+%7C+Contributing through issues+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="body">
+<div class="nav-container" data-component="projectintroduction" data-version="project_introduction">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">ASAM Project Introduction</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../concepts/main.html">Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/project_types.html">Project types</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/project_phases.html">Project phases</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/project_lifecycle.html">Exemplary project lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/creation-of-standards.html">Creation of standards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../concepts/roles-overview.html">Roles overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../concepts/doc-as-code.html">Documentation as Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../concepts/pipeline_details.html">Automation pipelines at ASAM</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../contributing/main.html">Start contributing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/account_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/contribution_workflow.html">Contribution workflow</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/main.html">ASAM&#8217;s project processes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/ideation_phase.html">Ideation phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/ideation/enter_new_idea.html">Entering an idea</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/ideation/developing_an_idea.html">Ideation Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/ideation/raising_interest.html">Gathering participants for a Project Proposal</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/proposal_phase.html">Proposal phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/phase_details.html">Proposal phase details</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/proposal_document.html">The Proposal document</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/setup.html">Project Proposal setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/proposal_workshop_preparation.html">Prepare a Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/join_proposal_workshop.html">Join a Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/proposal_writing.html">Writing a Project Proposal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/submit_candidacy.html">Submit your candidacy as a Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/need_for_service_providers.html">Identify the need for Service Providers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/proposal/submit_proposal.html">Submit a Proposal</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/signing_up.html">Signing up for projects</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/signing_up/become_project_lead.html">Become Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/signing_up/become_workgroup_lead.html">Become Workgroup Lead</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/development_phase.html">Development phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/phase_details-setup.html">Development phase details&#8201;&#8212;&#8201;Setup Step</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/kick-off_workshop_preparation.html">Prepare a Kick-off Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/kick-off_workshop.html">Kick-off Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/project_setup.html">Project setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/engage_service_provider.html">Engaging Service Providers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/phase_details-cycle.html">Development phase details&#8201;&#8212;&#8201;Development Cycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/cycle_planning.html">Development cycle&#8201;&#8212;&#8201;Planning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/cycle_development.html">Development cycle&#8201;&#8212;&#8201;Development</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/cycle_review.html">Development cycle&#8201;&#8212;&#8201;Review</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/tsc_controlling_meeting.html">TSC Controlling Meeting</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/development/cgsim_controlling_meeting.html">CGSim Controlling Meeting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../getting-involved/review_phase.html">Review phase</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/review/review_standard_asam.html">Review a standard (ASAM member review)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../getting-involved/review/review_standard_public.html">Review a standard (public release candidate)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/release_phase.html">Release phase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../asam-contacts.html">Contacts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../credits.html">Credits</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../normation_test_page.html">Test page for normative vs non-normative</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide.html">Editorial guide</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools.html">Tools for advanced users</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../compendium.html">Compendium</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/ccb-member.html">Change Control Board member</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/gtm.html">ASAM Global Technology Manager</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/main.html">ASAM roles</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/project-lead.html">Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/project-participant.html">Project Participant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/reviewer.html">Reviewer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/service-provider.html">Service Provider</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/standard_expert-group.html">Standard Expert Group</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/standard_manager.html">Standard Manager</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/standard_user.html">Standard User</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/technical-writer.html">Technical Writer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/terminology.html">Role terminology</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/tsc.html">Technical Steering Committee member</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../role-specific/wg-lead.html">Workgroup Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/01_basics.html">Basics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/02_structure.html">Structure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/03_language.html">Language</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/04_numbers.html">Numbers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/05_headings.html">Headings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/06_paragraphs.html">Paragraphs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/07_source_code.html">Source code and literals</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/08_lists.html">Lists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/09_tables.html">Tables</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/10_figures.html">Figures</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Editorial_guide/11_undefined.html">Undefined</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-admonitions.html">[AsciiDoc] Admonitions For Highlighting Topics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-commenting.html">[AsciiDoc] Comment And Review adoc Files</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-formulas.html">[AsciiDoc] Formulas</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-graphics.html">[AsciiDoc] Graphics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-include_code.html">[AsciiDoc] Include Code Blocks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-reuse_content.html">[AsciiDoc] Reuse Content</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-roadmaps.html">[AsciiDoc] Roadmaps</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-tasks.html">[AsciiDoc] Task Headings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc-writing_guide.html">[AsciiDoc] Writing Guide</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoc_guide.html">[AsciiDoc] AsciiDoc Guide</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-ccb_meeting_guidelines.html">[Coordination] Change Control Board Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-full-project_meeting_guidelines.html">[Coordination] Full Project Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-general_meeting_guidelines.html">[Coordination] General Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-hosting_workshops.html">[Coordination] Hosting Workshops</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-meeting_logistics.html">[Coordination] Meeting Logistics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-meeting_moderation.html">[Coordination] Meeting Moderation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-teams-channel_file-structure.html">[Coordination] Teams Channels File Structure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-wg-lead_meeting_guidelines.html">[Coordination] Work Group Lead Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coordination-wg_meeting_guidelines.html">[Coordination] Work Group Meeting Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="deliverables.html">[] ASAM Deliverables</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="diagram_notations.html">[] Notation In Project Phase Diagrams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="graphic_assets_requirements_and_conventions.html">[] Graphic Assets Requirements And Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plantuml_documentation_guide.html">[] PlantUML Documentation Guide</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project_lead_training.html">[] Project Lead Training</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="proposal_phase_contribution_guidelines.html">[] Proposal Phase Contribution Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-branch_naming_conventions.html">[Repository] Branch Naming Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-commit_conventions.html">[Repository] Commit Message Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-issue_and_mr_labels.html">[Repository] Issue And Merge Request Labels</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-issue_naming_conventions.html">[Repository] Issue Naming Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-make_changes.html">[Repository] Make Changes In A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-merge-pull_requests.html">[Repository] Merge/Pull Requests</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-merge_conflicts.html">[Repository] Merge Conflicts: Preventing And Resolving</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-submodules.html">[Repository] Submodules</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="repo-tags.html">[Repository] Tags In Repositories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="vscode-recommended_vscode_extensions.html">[VSCode] Recommended Visual Studio Code Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="vscode-recommended_vscode_settings.html">[VSCode] Recommended Visual Studio Code Settings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow-contribute_in_asciidoc.html">[Workflow] Contributing In AsciiDoc Files</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="workflow-contribute_with_issues.html">[Workflow] Contributing Through Issues</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow-ticket_triage.html">[Workflow] Ticket Triage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow-trunk.html">[Workflow] Trunk-based Remote Repositories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/access_compiled_artifacts.html">Access compiled artifacts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/active_draft_section_preview.html">Activate draft section preview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/add_custom_feedback_button.html">Add feedback button in Antora project</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/adding_diagrams_to_vscode.html">Adding VSCode support for diagrams with Kroki</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/become_pl.html">Become Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/become_wg_lead.html">Become Working Group Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/build_antora_locally.html">Build Antora locally</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/clone_a_repository_gitlab-vscode.html">Clone a repository using GitLab to Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/clone_a_repository_terminal.html">Clone a repository using Git bash / Powershell</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/clone_a_repository_vscode.html">Clone a repository using Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/cloning_repo_tutorial.html">Cloning a repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/create_branch_from_issue.html">Create development branch from issues</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/create_new_branch.html">Create a branch</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/cycle_planning_project-level.html">Project-level Planning</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/cycle_planning_wg-level.html">Work-group-level Planning</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/cycle_review.html">Cycle review</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/docker_for_asciidoc.html">Use Docker for Asciidoctor</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/edit_asam_graphics_library.html">Edit The ASAM Graphics Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/email-notifications.html">Email notifications from microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/enroll_for_development.html">Enroll for project development</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/enroll_for_ideation.html">Enroll during Ideation phase</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/enrollment_list.html">Add the enrollment list</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/enter_new_idea.html">Enter an idea</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/executive_draft.html">Create an executive Proposal draft</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/forking_repo.html">Forking from repositories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/github-setup.html">Setting up your GitHub account</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/gitlab-setup.html">Setting up your GitLab account</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/identify_need_for_sp.html">Identify the need for Service Providers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/join_proposal_workshop.html">Join a Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/mark_parts_as_draft.html">Mark passages as draft</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/meetings_in_teams.html">Meetings in Microsoft Teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/merge.html">Merge a branch</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/obtain_channel_email.html">Obtain the email address of a channel</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/polls_and_surveys.html">Polls &amp; surveys with Microsoft Teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/prepare_kick-off_workshop.html">Prepare a Kick-off Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/prepare_proposal_workshop.html">Prepare a Proposal Workshop</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/proposal_writing.html">Create a project&#8217;s Proposal document</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/receive_notifications.html">Receiving notifications in microsoft teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/review_code.html">Review code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/review_standard_asam.html">Review a standard (ASAM member review)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/review_standard_public.html">Review a standard (public release candidate)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/review_with_gitlab_service_desk.html">Use GitLab Service Desk for reviews</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/run_docker.html">Running Docker-Compose from Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/setup_development_git.html">Setup project development repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/setup_proposal_git.html">Setup project proposal repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/setup_standard_docker_config.html">Standard Docker-Compose YAML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submit_candidacy_pl.html">Submit candidacy for Project Lead</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submit_proposal.html">Submit a Project Proposal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodule_add.html">Adding a new submodule to a repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodule_changing_remote.html">Changing remote for a submodule</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodule_delete.html">Removing a submodule from a repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodule_pull.html">Pulling a submodule</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/submodules_switch_version.html">Switching to a specific submodule version</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/switch_branches.html">Switch branches</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/synchronizing_sharepoint_with_onedrive.html">Synchronizing sharepoint with oneDrive</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/vscode_git-interaction.html">Interacting with git through Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/vscode_install_extension.html">Install VScode Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../How-Tos/write_a_feature.html">Write a feature</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/documentation_processes.html">Documentation processes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/feedback_guide.html">Feedback guide</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/filestage_review.html">Doing a review on Filestage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/project-type-concept.html">[Project Type] Concept</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/project-type-implementation.html">[Project Type] Implementation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/project-type-standard.html">[Project Type] Standard Development</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../TBD/project-type-study.html">[Project Type] Study</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/asam_dco.html">ASAM Developer Certification Of Origin For Open Source Projects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/directories.html">Directories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/ideation_workshop_gameplan.html">Ideation Workshop gameplan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/kick-off_workshop_gameplan.html">Kick-off Workshop Gameplan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/proposal_workshop_gameplan.html">Proposal Workshop gameplan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Templates/review_feedback_template.html">Standard Review template</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/calendar.html">OpenX Calendar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/docker.html">Docker</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/drawio.html">Draw.io</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/git.html">Git</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/remote_repo.html">Remote repository platforms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/teams_and_sharepoint.html">Microsoft Teams and Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/vscode.html">Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../getting-involved/tbd/initiate_webinar.html">Initiate a webinar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../getting-involved/tbd/join_webinar.html">Join a webinar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/calendar/calendar-setup.html">Setting up the OpenX calendar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/docker/docker-best-practices.html">Docker best practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/docker/docker-guides.html">Docker guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/docker/docker-setup.html">Setting up Docker</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/drawio/drawio-guides.html">Draw.io guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/drawio/drawio-setup.html">Setting up Draw.io</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/git/git-guides.html">Git guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/git/git-setup.html">Setting up Git</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/git/git_best_practices.html">Git best practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/remote_repo/remote_repo_guides.html">Guides for remote repositories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/remote_repo/remote_repo_setup.html">Setting up your repository account</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/teams_and_sharepoint/teams_and_sharepoint-guides.html">Microsoft Teams and Sharepoint guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/teams_and_sharepoint/teams_and_sharepoint-setup.html">Setting up Microsoft Teams and Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/vscode/vscode-guides.html">Visual Studio Code guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Tools/vscode/vscode-setup.html">Setting up Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../1_keywords.html">Used keywords In ASAM Project Guide</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Introduction</span>
+    <span class="version">project_introduction</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../../asamprojectguide/latest/index.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version">
+          <a href="../../../../asamprojectguide/index.html">pre-restructuring</a>
+        </li>
+        <li class="version is-latest">
+          <a href="../../../../asamprojectguide/latest/index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../index.html">ASAM Project Introduction</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">project_introduction</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../asamprojectguide-editing/latest/main.html">Editing the ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../asamprojectguide-editing/latest/main.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../asamprojectguide/latest/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">ASAM Project Introduction</a></li>
+    <li>Orphans</li>
+    <li><a href="workflow-contribute_with_issues.html">[Workflow] Contributing Through Issues</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Guidelines/workflow-contribute_with_issues.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc" variant="wide">
+    <h1 class="page">Contributing through issues</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/3078/3078895.png" alt="3078895" width="80"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="../../role-specific/project-participant.html" class="xref page"><role style="background:#BDB76B;" >PROJECT PARTICIPANT</role></a>
+<a href="../../role-specific/wg-lead.html" class="xref page"><role style="background:#14BCCD;" >WG LEAD</role></a>
+<a href="../../role-specific/project-lead.html" class="xref page"><role style="background:#6A5ACD;" >PROJECT LEAD</role></a>
+<role style="background:LightGray;">Idea Giver</role></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This is relevant to <strong>ALL</strong> project members!
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This page describes how project participants can contribute to a project through issues.
+This is the most common way of content contribution and does not require deeper knowledge of AsciiDoc or specific tools.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If you want to contribute more directly, see <a href="workflow-contribute_in_asciidoc.html" class="xref page">Contributing in AsciiDoc files</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_make_discussions_accessible"><a class="anchor" href="#_make_discussions_accessible"></a>1. Make discussions accessible</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>It must be possible for every project member to contribute to and give feedback on the content of a Proposal document directly.
+For this purpose, all content discussions shall happen through issues in a project&#8217;s issue board.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gather_topics_in_issues"><a class="anchor" href="#_gather_topics_in_issues"></a>2. Gather topics in issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>If your project is on ASAM GitLab, see the <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#create-an-issue" target="_blank" rel="noopener">GitLab instructions</a> for creating issues.<br>
+If your project is on GitHub, see the <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue" target="_blank" rel="noopener">GitHub instructions</a> for creating issues.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A clean issue contains the following things:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>active milestone</p>
+</li>
+<li>
+<p>assignee</p>
+</li>
+<li>
+<p>labels</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">PROPOSAL</dt>
+<dd>
+<p>Participants shall gather content for sections in issues in the proposal repository and discuss them there.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>If the Proposal is for an update of an existing ASAM standard, consider collecting and using backlog issues from the previous project first.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">DEVELOPMENT</dt>
+<dd>
+<p>Every topic shall have its own issue.</p>
+</dd>
+</dl>
+</div>
+<div class="sect2">
+<h3 id="_sub_issues"><a class="anchor" href="#_sub_issues"></a>2.1. Sub-issues</h3>
+<div class="paragraph">
+<p><strong>DEVELOPMENT only</strong></p>
+</div>
+<div class="paragraph">
+<p><label class="recommended"/></p>
+</div>
+<div class="paragraph">
+<p>If a topic is too complex for a single issue, sub-issues shall be created.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_closing_issues_and_sub_issues"><a class="anchor" href="#_closing_issues_and_sub_issues"></a>2.2. Closing issues and sub-issues</h3>
+<div class="paragraph">
+<p><strong>DEVELOPMENT only</strong></p>
+</div>
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>An issue with sub-issues shall only be closed if all its sub-issues have been closed.<br>
+If an issue has a branch, the issue shall not be closed before the branch has been merged or closed.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_use_issue_templates"><a class="anchor" href="#_use_issue_templates"></a>3. Use issue templates</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>Issues shall be created using the provided issue templates in the repository.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Each issue template contains a description (as comments) on when to use them and what content to add where.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/asam/issue_template_example.png" alt="issue template example">
+</div>
+<div class="title">Figure 1. Creating an issue from a template</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_define_issue_name"><a class="anchor" href="#_define_issue_name"></a>4. Define issue name</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">PROPOSAL</dt>
+<dd>
+<p>The name of the issue shall correspond to the respective section.</p>
+</dd>
+</dl>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/asam/proposal_issue_example.png" alt="proposal issue example">
+</div>
+<div class="title">Figure 2. Topic issue for a proposal&#8217;s Executive Summary</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">DEVELOPMENT</dt>
+<dd>
+<p>The name of the issue shall follow the <a href="repo-branch_naming_conventions.html" class="xref page">Branch naming conventions</a>.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_label_issues_correctly"><a class="anchor" href="#_label_issues_correctly"></a>5. Label issues correctly</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><label class="mandatory"/></p>
+</div>
+<div class="paragraph">
+<p>The use of issue labels is required for filtering and sorting issues more efficiently.
+Each issue and merge/pull request must apply labels as defined in <a href="repo-issue_and_mr_labels.html" class="xref page">Issue and merge request labels</a>.<br>
+A project may also have project-specific labels in addition to the official ones, specified directly in the project group.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_discuss_issue"><a class="anchor" href="#_discuss_issue"></a>6. Discuss issue</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="#_content">Content</a> of issues is discussed and resolved through <a href="#_comments">comments</a> and <a href="#_replies">replies</a> to previous comments.</p>
+</div>
+<div class="sect2">
+<h3 id="_content"><a class="anchor" href="#_content"></a>6.1. Content</h3>
+<div class="paragraph">
+<p>The issue content (body) contains the definition of the issue.</p>
+</div>
+<div class="paragraph">
+<p>In the case of a feature or chapter description, it contains the current content of that chapter.
+It shall always be up-to-date and contain the latest discussed and approved version.<br>
+In the case of a question or a bug, it contains the initial topic.
+In the latter case, the content shall only be updated to correct mistakes therein.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_comments"><a class="anchor" href="#_comments"></a>6.2. Comments</h3>
+<div class="paragraph">
+<p>A comment to an issue is a new topic that is independent from any previous comment.</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+GitLab
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.gitlab.com/ee/user/discussions/" target="_blank" rel="noopener">GitLab instructions for commenting</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+GitHub
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart#communicating" target="_blank" rel="noopener">GitHub instructions for commenting</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Before you add a new comment to an issue, make sure it is not a duplicate (i.e. the same or a similar comment already exists) and that it is not supposed to be a <a href="#_replies">reply</a>!
+Failure to do so will prevent efficient project progress.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_replies"><a class="anchor" href="#_replies"></a>6.3. Replies</h3>
+<div class="paragraph">
+<p>A reply is a comment created as a reply to a previous comment.
+In the issue, it is a child comment to the previous one and listed in relation to it.</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+GitLab
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.gitlab.com/ee/user/discussions/#create-a-thread-by-replying-to-a-standard-comment" target="_blank" rel="noopener">GitLab instructions for threads/replies</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+GitHub
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart#communicating" target="_blank" rel="noopener">GitHub instructions for communication</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If you want to reply to a previous comment, make sure to create a reply, not a new comment!
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_close_issues"><a class="anchor" href="#_close_issues"></a>7. Close issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An issues shall be closed once its discussion is resolved.
+Possible reasons:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The questions of the issue have been answered</p>
+</li>
+<li>
+<p>The bug has been fixed and the fixes have been reviewed and merged</p>
+</li>
+<li>
+<p>The feature has been developed, reviewed, and merged</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It is best practice to close an issue immediately after one of the closing conditions has been met.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, an issue may also be closed without resolution if</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>it has become obsolete</p>
+</li>
+<li>
+<p>it is a duplicate (i.e. another issue deals with the same topic already)</p>
+</li>
+<li>
+<p>it has not been worked on for a long period of time (see <a href="#_the_issue_triage">The issue triage</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_issue_triage"><a class="anchor" href="#_the_issue_triage"></a>8. The issue triage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ASAM has defined a process for closing outdated issues.
+This is called the "Issue Triage" or "Ticket Triage".<br>
+See <a href="workflow-ticket_triage.html" class="xref page">Ticket triage</a> for more details.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reopening_issues"><a class="anchor" href="#_reopening_issues"></a>9. Reopening issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Closed issues can be reopened if they have become relevant again, there have been new developments directly impacting this specific issue, or the issue has been closed by accident and has not actually been finished yet.</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="workflow-contribute_in_asciidoc.html">[Workflow] Contributing In AsciiDoc Files</a></span>
+  <span class="next"><a href="workflow-ticket_triage.html">[Workflow] Ticket Triage</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<script src="../../../../_/js/site.js"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+  </body>
+</html>
