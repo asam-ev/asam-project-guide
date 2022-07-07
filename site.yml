@@ -3,6 +3,7 @@ site:
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://asam-ev.github.io/asam-project-guide/
   start_page: latest@asamprojectguide::index.adoc # Replace "latest" with the last released version, e.g. 1.0.0
+  # start_page: latest@projectintroduction::index.adoc # Replace "latest" with the last released version, e.g. 1.0.0
 
 # urls: # Activate this once the first release version goes live!!!
 #   latest_version_segment_strategy: redirect:to
@@ -13,7 +14,7 @@ content:
   sources:
     - url: https://github.com/asam-ev/asam-project-guide-content.git
     # - url: ./asam-project-guide-content
-      branches: main, pre-restructuring
+      branches: main, pre-restructuring, project_introduction
       # branches: main
       tags: v*
       start_path: content
