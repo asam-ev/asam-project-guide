@@ -6,7 +6,7 @@
     <title>Contribution workflow :: ASAM Project Guide</title>
     <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/project_introduction/contributing/contribution_workflow.html">
     <link rel="prev" href="account_setup.html">
-    <link rel="next" href="../getting-involved/development_phase.html">
+    <link rel="next" href="editorial_guide.html">
     <meta name="description" content="Explains the basic contribution workflows.">
     <meta name="keywords" content="basics">
     <meta name="generator" content="Antora 3.0.1">
@@ -69,13 +69,7 @@
     <a class="nav-link" href="../concepts/roles-overview.html">Roles overview</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../concepts/doc-as-code.html">Documentation as Code</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../concepts/pipeline_details.html">Automation pipelines at ASAM</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -92,6 +86,18 @@
   </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="contribution_workflow.html">Contribution workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="editorial_guide.html">Editorial guide information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="labels.html">Issue and merge request labels</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="issue_naming.html">Issue naming conventions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="branch_naming_conventions.html">Branch naming conventions</a>
   </li>
 </ul>
   </li>
@@ -377,7 +383,7 @@
     <a class="nav-link" href="../compendium/Guidelines/workflow-ticket_triage.html">[Workflow] Ticket Triage</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../compendium/Guidelines/workflow-trunk.html">[Workflow] Trunk-based Remote Repositories</a>
+    <a class="nav-link" href="../compendium/Guidelines/workflow-trunk.html">[Workflow] Remote repositories</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../compendium/How-Tos/access_compiled_artifacts.html">Access compiled artifacts</a>
@@ -789,19 +795,9 @@
 </aside>
 <article class="doc" variant="wide">
     <h1 class="page">Contribution workflow</h1>
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="../role-specific/project-participant.html" class="xref page"><role style="background:#BDB76B;" >PROJECT PARTICIPANT</role></a></p>
-</div>
-</div>
-</div>
 <div class="sect1">
-<h2 id="_trunk_based_remote_repositories"><a class="anchor" href="#_trunk_based_remote_repositories"></a>Trunk-based Remote Repositories</h2>
+<h2 id="_remote_repositories"><a class="anchor" href="#_remote_repositories"></a>Remote repositories</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/3078/3078895.png" alt="3078895" width="80"></span></p>
-</div>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -809,7 +805,7 @@
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Never work on the trunk directly&#8201;&#8212;&#8201;always create your own <a href="#Create development branch">development branch</a>!
+Never work on the trunk directly&#8201;&#8212;&#8201;always work in <a href="#Create development branch">separate branches</a>!
 </td>
 </tr>
 </table>
@@ -819,9 +815,9 @@ Never work on the trunk directly&#8201;&#8212;&#8201;always create your own <a h
 <div class="paragraph">
 <p>A trunk-based repository is a repository that has a single central branch (the "trunk").
 This trunk contains the official and reviewed state of a project.<br>
-Users cannot commit and push changes to this specific branch directly.
-Instead, all changes on the repository&#8217;s content are made in development or feature branches.
-These can either be branched off of the trunk or from another feature branch.
+Users are not allowed to commit and push changes to this specific branch directly.
+Instead, all changes on the repository&#8217;s content are made in child branches.
+These can either be branched off of the trunk or from another branch.
 Once ready, a branch is merged back into its parent branch (which may be the trunk or another feature branch).</p>
 </div>
 <div class="paragraph">
@@ -836,7 +832,7 @@ Mistakes and unfinished changes to parts of it only have an impact on the branch
 Unless indicated by a clear git tag, all commits are considered to be part of a release candidate.</p>
 </div>
 <div class="paragraph">
-<p>Users <strong>MAY</strong> branch off the trunk for more focused development work.<br>
+<p>Changes <strong>MUST</strong> be added through branches created from the trunk or another branch.<br>
 These branches <strong>SHOULD</strong> be short-lived (&lt;2 weeks) and regularly merged back.<br>
 These branches <strong>MAY</strong> be squashed and <strong>MUST</strong> be merged via fast-forward merge (enabled by default).</p>
 </div>
@@ -858,7 +854,7 @@ The following sections describe this workflow in more detail.</p>
 The role listed at the top of each section is the one responsible for it.</p>
 </div>
 <div class="paragraph">
-<p>You may also want to check out ASAM&#8217;s <a href="../compendium/Guidelines/repo-issue_and_mr_labels.html#_status_labels" class="xref page"><strong>list of status labels</strong></a>.</p>
+<p>You may also want to check out ASAM&#8217;s <a href="labels.html" class="xref page"><strong>list of labels</strong></a>.</p>
 </div>
 <hr>
 <div class="tabset is-loading">
@@ -1389,72 +1385,248 @@ Tips
 <p>You can contribute to ASAM projects directly through issues.
 These issues can be created and managed in the respective Remote Repository of the project.</p>
 </div>
+<div class="sect2">
+<h3 id="_make_discussions_accessible"><a class="anchor" href="#_make_discussions_accessible"></a>Make discussions accessible</h3>
 <div class="paragraph">
-<p>For more information, see <a href="../compendium/Guidelines/workflow-contribute_with_issues.html" class="xref page">Contributing through issues</a> in the Compendium.</p>
+<p>It must be possible for every project member to contribute to and give feedback on the content of a Proposal document directly.
+For this purpose, all content discussions shall happen through issues in a project&#8217;s issue board.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gather_topics_in_issues"><a class="anchor" href="#_gather_topics_in_issues"></a>Gather topics in issues</h3>
+<div class="paragraph">
+<p>If your project is on ASAM GitLab, see the <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#create-an-issue" target="_blank" rel="noopener">GitLab instructions</a> for creating issues.<br>
+If your project is on GitHub, see the <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue" target="_blank" rel="noopener">GitHub instructions</a> for creating issues.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A clean issue contains the following things:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>active milestone</p>
+</li>
+<li>
+<p>assignee</p>
+</li>
+<li>
+<p>labels</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Every topic shall have its own issue.</p>
+</div>
+<div class="sect3">
+<h4 id="_sub_issues"><a class="anchor" href="#_sub_issues"></a>Sub-issues</h4>
+<div class="paragraph">
+<p>If a topic is too complex for a single issue, sub-issues shall be created.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_closing_issues_and_sub_issues"><a class="anchor" href="#_closing_issues_and_sub_issues"></a>Closing issues and sub-issues</h4>
+<div class="paragraph">
+<p>An issue with sub-issues shall only be closed if all its sub-issues have been closed.<br>
+If an issue has a branch, the issue shall not be closed before the branch has been merged or closed.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_issue_templates"><a class="anchor" href="#_use_issue_templates"></a>Use issue templates</h3>
+<div class="paragraph">
+<p>Issues shall be created using the provided issue templates in the repository.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Each issue template contains a description (as comments) on when to use them and what content to add where.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../compendium/_images/asam/issue_template_example.png" alt="issue template example">
+</div>
+<div class="title">Figure 2. Creating an issue from a template</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_define_issue_name"><a class="anchor" href="#_define_issue_name"></a>Define issue name</h3>
+<div class="paragraph">
+<p>The name of the issue shall follow the <a href="branch_naming_conventions.html" class="xref page">Branch naming conventions</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_label_issues_correctly"><a class="anchor" href="#_label_issues_correctly"></a>Label issues correctly</h3>
+<div class="paragraph">
+<p>The use of issue labels is required for filtering and sorting issues more efficiently.
+Each issue and merge/pull request must apply labels as defined in <a href="labels.html" class="xref page">Issue and merge request labels</a>.<br>
+A project may also have project-specific labels in addition to the official ones, specified directly in the project group.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_discuss_issue"><a class="anchor" href="#_discuss_issue"></a>Discuss issue</h3>
+<div class="paragraph">
+<p>The <a href="#_content">Content</a> of issues is discussed and resolved through <a href="#_comments">comments</a> and <a href="#_replies">replies</a> to previous comments.</p>
+</div>
+<div class="sect3">
+<h4 id="_content"><a class="anchor" href="#_content"></a>Content</h4>
+<div class="paragraph">
+<p>The issue content (body) contains the definition of the issue.</p>
+</div>
+<div class="paragraph">
+<p>In the case of a feature or chapter description, it contains the current content of that chapter.
+It shall always be up-to-date and contain the latest discussed and approved version.<br>
+In the case of a question or a bug, it contains the initial topic.
+In the latter case, the content shall only be updated to correct mistakes therein.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_comments"><a class="anchor" href="#_comments"></a>Comments</h4>
+<div class="paragraph">
+<p>A comment to an issue is a new topic that is independent from any previous comment.</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+GitLab
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.gitlab.com/ee/user/discussions/" target="_blank" rel="noopener">GitLab instructions for commenting</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+GitHub
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart#communicating" target="_blank" rel="noopener">GitHub instructions for commenting</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Before you add a new comment to an issue, make sure it is not a duplicate (i.e. the same or a similar comment already exists) and that it is not supposed to be a <a href="#_replies">reply</a>!
+Failure to do so will prevent efficient project progress.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_replies"><a class="anchor" href="#_replies"></a>Replies</h4>
+<div class="paragraph">
+<p>A reply is a comment created as a reply to a previous comment.
+In the issue, it is a child comment to the previous one and listed in relation to it.</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+GitLab
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.gitlab.com/ee/user/discussions/#create-a-thread-by-replying-to-a-standard-comment" target="_blank" rel="noopener">GitLab instructions for threads/replies</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+GitHub
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart#communicating" target="_blank" rel="noopener">GitHub instructions for communication</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If you want to reply to a previous comment, make sure to create a reply, not a new comment!
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_close_issues"><a class="anchor" href="#_close_issues"></a>Close issues</h3>
+<div class="paragraph">
+<p>An issues shall be closed once its discussion is resolved.
+Possible reasons:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The questions of the issue have been answered</p>
+</li>
+<li>
+<p>The bug has been fixed and the fixes have been reviewed and merged</p>
+</li>
+<li>
+<p>The feature has been developed, reviewed, and merged</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It is best practice to close an issue immediately after one of the closing conditions has been met.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, an issue may also be closed without resolution if</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>it has become obsolete</p>
+</li>
+<li>
+<p>it is a duplicate (i.e. another issue deals with the same topic already)</p>
+</li>
+<li>
+<p>it has not been worked on for a long period of time (see <a href="#The issue triage">[The issue triage]</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reopening_issues"><a class="anchor" href="#_reopening_issues"></a>Reopening issues</h3>
+<div class="paragraph">
+<p>Closed issues can be reopened if they have become relevant again, there have been new developments directly impacting this specific issue, or the issue has been closed by accident and has not actually been finished yet.</p>
 </div>
 <hr>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_ticket_triage"><a class="anchor" href="#_ticket_triage"></a>Ticket triage</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Projects may get so big that issues are created and forgotten without ever being finished.
-To prevent unnecessary and obsolete issues bogging up the repository, ASAM employs a Ticket Triage workflow.</p>
-</div>
-<div class="paragraph">
-<p>For more information, see <a href="../compendium/Guidelines/workflow-ticket_triage.html" class="xref page">Ticket triage</a> in the Compendium.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_specific_guidelines"><a class="anchor" href="#_specific_guidelines"></a>Specific guidelines</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../compendium/Guidelines/repo-make_changes.html" class="xref page">Make changes in a repository</a></p>
-</li>
-<li>
-<p><a href="../compendium/Guidelines/repo-merge-pull_requests.html" class="xref page">Merge/pull requests</a></p>
-</li>
-<li>
-<p><a href="../compendium/Guidelines/repo-merge_conflicts.html" class="xref page">Merge conflicts: preventing and resolving</a></p>
-</li>
-<li>
-<p><a href="../compendium/Guidelines/repo-submodules.html" class="xref page">Submodules</a></p>
-</li>
-<li>
-<p><a href="../compendium/How-Tos/access_compiled_artifacts.html" class="xref page">Access compiled artifacts</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_conventions"><a class="anchor" href="#_conventions"></a>Conventions</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../compendium/Guidelines/repo-branch_naming_conventions.html" class="xref page">Branch naming conventions</a></p>
-</li>
-<li>
-<p><a href="../compendium/Guidelines/repo-commit_conventions.html" class="xref page">Commit message conventions</a></p>
-</li>
-<li>
-<p><a href="../compendium/Guidelines/repo-issue_and_mr_labels.html" class="xref page">Issue and merge request labels</a></p>
-</li>
-<li>
-<p><a href="../compendium/Guidelines/repo-issue_naming_conventions.html" class="xref page">Issue naming conventions</a></p>
-</li>
-</ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="account_setup.html">Setup</a></span>
-  <span class="next"><a href="../getting-involved/development_phase.html">Development phase</a></span>
+  <span class="next"><a href="editorial_guide.html">Editorial guide information</a></span>
 </nav>
 </article>
   </div>

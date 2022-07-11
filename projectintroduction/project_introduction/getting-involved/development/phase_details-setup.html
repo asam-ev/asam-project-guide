@@ -69,13 +69,7 @@
     <a class="nav-link" href="../../concepts/roles-overview.html">Roles overview</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../../concepts/doc-as-code.html">Documentation as Code</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../concepts/pipeline_details.html">Automation pipelines at ASAM</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -92,6 +86,18 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../contributing/contribution_workflow.html">Contribution workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/editorial_guide.html">Editorial guide information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/labels.html">Issue and merge request labels</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/issue_naming.html">Issue naming conventions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/branch_naming_conventions.html">Branch naming conventions</a>
   </li>
 </ul>
   </li>
@@ -377,7 +383,7 @@
     <a class="nav-link" href="../../compendium/Guidelines/workflow-ticket_triage.html">[Workflow] Ticket Triage</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../compendium/Guidelines/workflow-trunk.html">[Workflow] Trunk-based Remote Repositories</a>
+    <a class="nav-link" href="../../compendium/Guidelines/workflow-trunk.html">[Workflow] Remote repositories</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../compendium/How-Tos/access_compiled_artifacts.html">Access compiled artifacts</a>
@@ -804,7 +810,7 @@ Each sub-step is then further detailed on its respective page.</p>
 <div class="title">Figure 1. The Development phase&#8217;s setup step in detail, using the <a href="../../compendium/Guidelines/diagram_notations.html" class="xref page">ASAM Project Phase Notation</a></div>
 </div>
 <div class="paragraph">
-<p>At the beginning of the Development phase, the project team gets together for a <a href="#_kick_off_workshop">Kick-off Workshop</a>.
+<p>At the beginning of the Development phase, the project team gets together for a Kick-off Workshop.
 Here, the team decides on key topics of the project and also elects the Project Lead.<br>
 In parallel to that, the GTM sets up the repository and the mailing list for the project.
 After the workshop has happened, the repository is updated with the outcomes from it.</p>
@@ -812,264 +818,6 @@ After the workshop has happened, the repository is updated with the outcomes fro
 <div class="paragraph">
 <p>If the project has requested budget for one or more Service Providers, a call for offer is issued, potential Service Providers present their offers, and the project decides on whom to contract.
 After the Service Provider or Providers have been chosen, they receive an onboarding.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_development_phase_setup_sub_steps"><a class="anchor" href="#_development_phase_setup_sub_steps"></a>Development phase setup sub-Steps</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The Development phase consists of the following steps, which are explained in detail in their own sections:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#_prepare_kick_off_workshop">Prepare Kick-off Workshop</a></p>
-</li>
-<li>
-<p><a href="#_kick_off_workshop">Kick-off Workshop</a></p>
-</li>
-<li>
-<p><a href="#_set_up_project_repository">Set up project repository</a></p>
-</li>
-<li>
-<p><a href="#_set_up_mailing_lists">Set up mailing lists</a></p>
-</li>
-<li>
-<p><a href="#_update_repository_after_kick_off_workshop">Update repository after Kick-off Workshop</a></p>
-</li>
-<li>
-<p><a href="#_engage_service_providers">Engage Service Providers</a></p>
-</li>
-</ul>
-</div>
-<hr>
-<div class="sect2">
-<h3 id="_prepare_kick_off_workshop"><a class="anchor" href="#_prepare_kick_off_workshop"></a>Prepare Kick-off Workshop</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 21.4285%;">
-<col style="width: 7.1428%;">
-<col style="width: 71.4287%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/development_phase-kick-off_preparation.svg" alt="development phase kick off preparation"></span></p></td>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Purpose</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To prepare the kick-off workshop for the Development phase.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Involved</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/project-participant.html" class="xref page"><role style="background:#BDB76B;" >PROJECT PARTICIPANT</role></a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Prepare the Kick-off Workshop for the Development phase at least 2 weeks ahead of time.<br>
-See <a href="kick-off_workshop_preparation.html" class="xref page">Prepare a Kick-off Workshop</a>.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_kick_off_workshop"><a class="anchor" href="#_kick_off_workshop"></a>Kick-off Workshop</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 21.4285%;">
-<col style="width: 7.1428%;">
-<col style="width: 71.4287%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/development_phase-kick-off.svg" alt="development phase kick off"></span></p></td>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Purpose</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To define all project-specific definitions and elect a Project Lead as well as all WG Leads.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Involved</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/project-participant.html" class="xref page"><role style="background:#BDB76B;" >PROJECT PARTICIPANT</role></a><br>
-&#8594; <a href="../../role-specific/project-lead.html" class="xref page"><role style="background:#6A5ACD;" >PROJECT LEAD</role></a><br>
-&#8594; <a href="../../role-specific/wg-lead.html" class="xref page"><role style="background:#14BCCD;" >WG LEAD</role></a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>This workshop&#8217;s goal is to define all central aspects, particularly regarding organization and processes, and elect the Project Lead for the project.<br>
-See <a href="kick-off_workshop.html" class="xref page">Kick-off Workshop</a>.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_set_up_project_repository"><a class="anchor" href="#_set_up_project_repository"></a>Set up project repository</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 21.4285%;">
-<col style="width: 7.1428%;">
-<col style="width: 71.4287%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/development_phase-repo_setup.svg" alt="development phase repo setup"></span></p></td>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Purpose</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To set up the repository of the project so that the project members can start working on it.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Involved</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/project-participant.html" class="xref page"><role style="background:#BDB76B;" >PROJECT PARTICIPANT</role></a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>In parallel to the workshop preparation and execution, the GTM sets up the project&#8217;s repository.
-This is done using a template repository for new projects or using the previous one for version updates or revisions.<br>
-See <a href="project_setup.html" class="xref page">Project setup</a>.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_set_up_mailing_lists"><a class="anchor" href="#_set_up_mailing_lists"></a>Set up mailing lists</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 21.4285%;">
-<col style="width: 7.1428%;">
-<col style="width: 71.4287%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/development_phase-mailing_list.svg" alt="development phase mailing list"></span></p></td>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Purpose</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To prepare the project&#8217;s mailing list.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Involved</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/project-participant.html" class="xref page"><role style="background:#BDB76B;" >PROJECT PARTICIPANT</role></a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>The GTM takes the list of enrolled members, creates a new <a href="../../compendium/Tools/teams_and_sharepoint.html" class="xref page">MS Teams</a> channel for the project (if it does not exist yet), creates a related Sharepoint folder, and adds all participants to that channel and folder.<br>
-The channel can then also be used as a mailing list.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_update_repository_after_kick_off_workshop"><a class="anchor" href="#_update_repository_after_kick_off_workshop"></a>Update repository after Kick-off Workshop</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 21.4285%;">
-<col style="width: 7.1428%;">
-<col style="width: 71.4287%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/development_phase-repo_update.svg" alt="development phase repo update"></span></p></td>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Purpose</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To incorporate the results from the Kick-off Workshop into the project&#8217;s repository.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/project-lead.html" class="xref page"><role style="background:#6A5ACD;" >PROJECT LEAD</role></a>,
-<a href="../../role-specific/wg-lead.html" class="xref page"><role style="background:#14BCCD;" >WG LEAD</role></a>,
-<role style="background:LightGray;">CCB Member</role></p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Involved</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>The Project Lead takes the output from the Kick-off Workshop and incorporates it into the previously setup repository.
-In particular, they assign the correct roles and rights and update any descriptions or README related to users and roles.<br>
-To do so, the GTM supports them by granting them the rights to maintain the repository.
-Additionally, the GTM may support with technical problems and questions regarding the used remote repository platform.</p>
-</div>
-<div class="paragraph">
-<p>The following topics need to be updated:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Milestones</p>
-</li>
-<li>
-<p>Create Issues for all known topics</p>
-</li>
-<li>
-<p>Assign milestones and labels to issues</p>
-</li>
-<li>
-<p>Update timeline in README in repository</p>
-</li>
-<li>
-<p>Set up or update CI pipeline, if necessary</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>After having assigned the correct roles, the Project Lead may delegate specific tasks to the WG Leads and/or the appointed CCB members.<br>
-For more information on this step, see the <a href="../../compendium/Guidelines/workflow-trunk.html#_initial_setup" class="xref page">Initial Step</a> of the Trunk-based workflow in the Compendium.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_engage_service_providers"><a class="anchor" href="#_engage_service_providers"></a>Engage Service Providers</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 21.4285%;">
-<col style="width: 7.1428%;">
-<col style="width: 71.4287%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><span class="image"><img src="../../compendium/_images/asam/development_phase-engage_sp.svg" alt="development phase engage sp"></span></p></td>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Purpose</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To select and contract one or more Service Providers.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/project-lead.html" class="xref page"><role style="background:#6A5ACD;" >PROJECT LEAD</role></a>,
-<a href="../../role-specific/project-participant.html" class="xref page"><role style="background:#BDB76B;" >PROJECT PARTICIPANT</role></a></p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Involved</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../role-specific/gtm.html" class="xref page"><role style="background:#32CD32;" >GTM</role></a>,
-<a href="../../role-specific/service-provider.html" class="xref page"><role style="background:#FFDEAD;" >SERVICE PROVIDER</role></a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-This is a multi-step task.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>In case the project requested budget for support through Service Providers, the project must issue a call for offer, review received offers, select one or more Service Providers, and introduce them to the project after the contracts have been signed.<br>
-See <a href="engage_service_provider.html" class="xref page">Engaging Service Providers</a>.</p>
-</div>
-<hr>
 </div>
 </div>
 </div>
