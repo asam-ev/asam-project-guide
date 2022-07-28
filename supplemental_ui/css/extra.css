@@ -120,3 +120,6 @@ i.fa.icon-caution::before {
 	margin-top: 1.5rem;
 }
 
+.doc table.tableblock * i.fa {
+    margin-top: 0;
+}
