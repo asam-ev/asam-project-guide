@@ -87,7 +87,8 @@ asciidoc:
   extensions:
   - asciidoctor-kroki
   - '@djencks/asciidoctor-mathjax'
-  - './antora_extensions/tabs-block/extension.js'
+  - './asam-antora-extensions/asam-asciidoctor_extensions-registered.js'
+  - './asam-antora-extensions/asam-asciidoctor_extensions.js'
 #   - asciidoctor-diagram
 
 # end::asciidoctor[]
@@ -97,7 +98,7 @@ asciidoc:
 antora:
   extensions:
     - require: '@antora/lunr-extension'
-    - require: './antora_extensions/asam-extension.js'
+    - require: './asam-antora-extensions/asam-antora_extension.js'
       keywords:
         filename: "1_keywords.adoc"
         module: "compendium"
