@@ -16,3 +16,6 @@
 [submodule "Build"]
 	path = Build
 	url = ../build.git
+[submodule "asam-antora-extensions"]
+	path = asam-antora-extensions
+	url = https://code.asam.net/common/asam-antora-extensions
