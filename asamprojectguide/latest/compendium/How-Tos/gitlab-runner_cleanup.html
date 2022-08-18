@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Setting up your GitLab account :: ASAM Project Guide</title>
-    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/How-Tos/gitlab-setup.html">
-    <link rel="prev" href="gitlab-runner_cleanup.html">
-    <link rel="next" href="identify_need_for_sp.html">
-    <meta name="description" content="How to setup your ASAM account.">
-    <meta name="keywords" content="setup,gitlab, github,account">
+    <title>GitLab runner cleanup :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/How-Tos/gitlab-runner_cleanup.html">
+    <link rel="prev" href="github-setup.html">
+    <link rel="next" href="gitlab-setup.html">
+    <meta name="description" content="Describes how to clean up a gitlab runner.">
+    <meta name="keywords" content="gitlab, runner">
     <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <script type="text/javascript" src="../../../../_/js/modal.js" defer></script>
@@ -41,7 +41,7 @@
         </div>
       </div>
         <div class="navbar-item is-hoverable">
-                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/How-Tos/gitlab-setup.html+%7C%0D%0A%7C+Page+%7C+Setting up your GitLab account+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+                  <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/How-Tos/gitlab-runner_cleanup.html+%7C%0D%0A%7C+Page+%7C+GitLab runner cleanup+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
       </div>
     </div>
@@ -502,10 +502,10 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="github-setup.html">Setting up your GitHub account</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="gitlab-runner_cleanup.html">GitLab runner cleanup</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="3">
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="gitlab-setup.html">Setting up your GitLab account</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -826,202 +826,71 @@
     <li><a href="../../index.html">ASAM Project Guide</a></li>
     <li><a href="../compendium.html">Compendium</a></li>
     <li><a href="../How-Tos.html">How-Tos</a></li>
-    <li><a href="gitlab-setup.html">Setting up your GitLab account</a></li>
+    <li><a href="gitlab-runner_cleanup.html">GitLab runner cleanup</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/main/content/modules/compendium/pages/How-Tos/gitlab-setup.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/main/content/modules/compendium/pages/How-Tos/gitlab-runner_cleanup.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc" variant="wide">
-    <h1 class="page">Setting up your GitLab account</h1>
-<div id="preamble">
-<div class="sectionbody">
+    <h1 class="page">GitLab runner cleanup</h1>
 <div class="paragraph">
 <p><span class="image right"><img src="../_images/icons/how-to.jpg" alt="how to" width="80"></span></p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_context"><a class="anchor" href="#_context"></a>Context</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>All specification-related documents are stored and updated in the project&#8217;s remote (or online) repository.<br>
-This GitLab instance is hosted and managed directly by ASAM.
-The GTM will create the account and the user must then set it up.</p>
+<p>Old docker images on the gitlab runner or any docker based CI server need to be regularly removed to prevent them using up too much space.
+Manually this can be done by `ssh`ing onto the server, then running:</p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">`sudo docker image prune -af`</code></pre>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_result"><a class="anchor" href="#_result"></a>Result</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The user has activated their repository account and can access the correct project repositories.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Account created by the ASAM office.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_how"><a class="anchor" href="#_how"></a>How</h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Follow the link in the GitLab account creation email sent by "GitLab &lt;code@asam.net&gt;" to set your password.</p>
-</li>
-<li>
-<p>Log in with your account using the <span class="image"><img src="../_images/gitlab-standard-login-button.png" alt="gitlab standard login button" title="Standard Button"></span> access.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/gitlab-standard-login.png" alt="gitlab standard login" title="Standard Login"></span></p>
 </div>
 <div class="paragraph">
-<p>You will be prompted to upload an SSH key.
-See <a href="../Tools/git/git-setup.html#_optional_ssh_key_pair" class="xref page">how to setup secure SSH connection</a> for instructions on generating and uploading the SSH keys.
-<strong>This is only required IF you use git locally in addition to GitLab.</strong></p>
+<p>As of 19.08.22, a cronjob has been installed that does this regularly.
+A cronjob like this is installed as follows:</p>
 </div>
-</li>
-</ol>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-The "ASAM SVN" login is deprecated and will be removed in the future.
-</td>
-</tr>
-</table>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">cd /etc/cron.daily
+sudo nano docker-prune</code></pre>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_troubleshooting_known_issues"><a class="anchor" href="#_troubleshooting_known_issues"></a>Troubleshooting / Known Issues</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_i_have_not_received_a_mail_from_gitlab"><a class="anchor" href="#_i_have_not_received_a_mail_from_gitlab"></a>I have not received a mail from "GitLab"</h3>
 <div class="paragraph">
-<p>Ask the ASAM office to support you by creating your GitLab account.</p>
+<p>Paste in the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">#!/bin/bash
+docker system prune -af  --filter "until=$((30*24))h"</code></pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_i_forgot_my_password_and_cannot_use_the_login_anymore"><a class="anchor" href="#_i_forgot_my_password_and_cannot_use_the_login_anymore"></a>I forgot my password and cannot use the login anymore</h3>
 <div class="paragraph">
-<p>Click <b class="button">Forgot your password?</b> and follow the instructions.</p>
+<p>Once you&#8217;ve added the command, hit <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>O</kbd></span> and then <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>X</kbd></span> to save and close the file.<br>
+Now that we&#8217;ve created the file we need to tell the operating system that it needs to be executable with the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">sudo chmod +x /etc/cron.daily/docker-prune</code></pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="no-access"><a class="anchor" href="#no-access"></a>I cannot access my project&#8217;s repository</h3>
 <div class="paragraph">
-<p>Ask the ASAM office to grant you the correct rights according to your role in the project.</p>
+<p>Docker will now execute this command on a daily basis.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_i_cannot_access_the_common_group"><a class="anchor" href="#_i_cannot_access_the_common_group"></a>I cannot access the "Common" group</h3>
 <div class="paragraph">
-<p>See <a href="#no-access">I cannot access my project&#8217;s repository</a>.</p>
+<p>If you want to test out to see if it will execute correctly next time the cronjob runs, you can force the daily Cron register to run with the following command:</p>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_related_topics"><a class="anchor" href="#_related_topics"></a>Related topics</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../Guidelines/asciidoc-commenting.html" class="xref page">Comment and review adoc files</a></p>
-</li>
-<li>
-<p><a href="../Guidelines/repo-issue_and_mr_labels.html" class="xref page">Issue and merge request labels</a></p>
-</li>
-<li>
-<p><a href="../Guidelines/repo-submodules.html" class="xref page">Submodules</a></p>
-</li>
-<li>
-<p><a href="../Guidelines/vscode-recommended_vscode_extensions.html" class="xref page">Recommended Visual Studio Code extensions</a></p>
-</li>
-<li>
-<p><a href="../Guidelines/workflow-contribute_with_issues.html" class="xref page">Contributing through issues</a></p>
-</li>
-<li>
-<p><a href="access_compiled_artifacts.html" class="xref page">Access compiled artifacts</a></p>
-</li>
-<li>
-<p><a href="add_custom_feedback_button.html" class="xref page">Add feedback button in Antora project</a></p>
-</li>
-<li>
-<p><a href="clone_a_repository_gitlab-vscode.html" class="xref page">Clone a repository using GitLab to Visual Studio Code</a></p>
-</li>
-<li>
-<p><a href="create_branch_from_issue.html" class="xref page">Create development branch from issues</a></p>
-</li>
-<li>
-<p><a href="create_new_branch.html" class="xref page">Create a branch</a></p>
-</li>
-<li>
-<p><a href="gitlab-runner_cleanup.html" class="xref page">GitLab runner cleanup</a></p>
-</li>
-<li>
-<p><a href="merge.html" class="xref page">Merge a branch</a></p>
-</li>
-<li>
-<p><a href="review_code.html" class="xref page">Review code</a></p>
-</li>
-<li>
-<p><a href="review_with_gitlab_service_desk.html" class="xref page">Use GitLab Service Desk for reviews</a></p>
-</li>
-<li>
-<p><a href="submodule_add.html" class="xref page">Adding a new submodule to a repository</a></p>
-</li>
-<li>
-<p><a href="submodule_changing_remote.html" class="xref page">Changing remote for a submodule</a></p>
-</li>
-<li>
-<p><a href="submodule_delete.html" class="xref page">Removing a submodule from a repository</a></p>
-</li>
-<li>
-<p><a href="submodule_pull.html" class="xref page">Pulling a submodule</a></p>
-</li>
-<li>
-<p><a href="submodules_switch_version.html" class="xref page">Switching to a specific submodule version</a></p>
-</li>
-<li>
-<p><a href="switch_branches.html" class="xref page">Switch branches</a></p>
-</li>
-<li>
-<p><a href="write_a_feature.html" class="xref page">Write a feature</a></p>
-</li>
-<li>
-<p><a href="../Tools/remote_repo.html" class="xref page">Remote repository platforms</a></p>
-</li>
-<li>
-<p><a href="../Tools/remote_repo/remote_repo_guides.html" class="xref page">Guides for remote repositories</a></p>
-</li>
-<li>
-<p><a href="../Tools/remote_repo/remote_repo_setup.html" class="xref page">Setting up your repository account</a></p>
-</li>
-</ul>
-</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">run-parts /etc/cron.daily</code></pre>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="gitlab-runner_cleanup.html">GitLab runner cleanup</a></span>
-  <span class="next"><a href="identify_need_for_sp.html">Identify the need for Service Providers</a></span>
+  <span class="prev"><a href="github-setup.html">Setting up your GitHub account</a></span>
+  <span class="next"><a href="gitlab-setup.html">Setting up your GitLab account</a></span>
 </nav>
 </article>
   </div>
