@@ -9,7 +9,7 @@ on:
     - main
 #     - 'restructuring_**'
 #  schedule: # periodic - needed because some of the content is from the other repos
-#    - cron:  '30 5,20 * * *' # twice per day, in the morning and evening.
+#     - cron:  '30 5,20 * * *' # twice per day, in the morning and evening.
   workflow_dispatch: # manual trigger
   repository_dispatch: #api trigger
     types: [content-update]
