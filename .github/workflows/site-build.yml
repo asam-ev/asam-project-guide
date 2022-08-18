@@ -52,7 +52,7 @@ jobs:
 #         cat .gitmodules
 #         git submodule init 
 #         git submodule update
-        run: git clone https://asam-antora-extensions:$ASAM_ANTORA_EXTENSIONS@code.asam.net/common/asam-antora-extensions.git
+      run: git clone https://asam-antora-extensions:$ASAM_ANTORA_EXTENSIONS@code.asam.net/common/asam-antora-extensions.git
         
 
     # build site
