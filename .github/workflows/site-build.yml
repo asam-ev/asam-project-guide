@@ -39,17 +39,19 @@ jobs:
       uses: actions/checkout@v3
       with:
         path: repo
+        submodules: 'true'
+        token: ${{ secrets.ASAM_ANTORA_EXTENSIONS }}
         fetch-depth: 0 # test if depth in fetch history is required
         
-    - name: Submodules
-      working-directory: repo
-      env: 
-        ASAM_ANTORA_EXTENSIONS: ${{ secrets.ASAM_ANTORA_EXTENSIONS }}
-      run: |
-        sed -i "s/https\:\/\/code.asam.net\/common\/asam-antora-extensions/https\:\/\/asam-antora-extensions\:$ASAM_ANTORA_EXTENSIONS\@code.asam.net\/commmon\/asam-antora-extensions/" .gitmodules 
-        cat .gitmodules
-        git submodule init 
-        git submodule update
+#     - name: Submodules
+#       working-directory: repo
+#       env: 
+#         ASAM_ANTORA_EXTENSIONS: ${{ secrets.ASAM_ANTORA_EXTENSIONS }}
+#       run: |
+#         sed -i "s/https\:\/\/code.asam.net\/common\/asam-antora-extensions/https\:\/\/asam-antora-extensions\:$ASAM_ANTORA_EXTENSIONS\@code.asam.net\/commmon\/asam-antora-extensions/" .gitmodules 
+#         cat .gitmodules
+#         git submodule init 
+#         git submodule update
 
     # build site
     - name: Generate site
