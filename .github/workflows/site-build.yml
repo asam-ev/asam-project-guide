@@ -45,7 +45,10 @@ jobs:
       working-directory: repo
       env: 
         ASAM_ANTORA_EXTENSIONS: ${{ secrets.ASAM_ANTORA_EXTENSIONS }}
-      run: "sed 's/https\:\/\/code.asam.net\/common\/asam-antora-extensions/https\:\/\/$ASAM_ANTORA_EXTENSIONS\@code.asam.net\/commmon\/asam-antora-extensions/' .gitmodules && git submodule init && git submodule update"
+      run: |
+        sed 's/https\:\/\/code.asam.net\/common\/asam-antora-extensions/https\:\/\/$ASAM_ANTORA_EXTENSIONS\@code.asam.net\/commmon\/asam-antora-extensions/' .gitmodules 
+        git submodule init 
+        git submodule update
 
     # build site
     - name: Generate site
