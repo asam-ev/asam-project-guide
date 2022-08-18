@@ -46,7 +46,7 @@ jobs:
       env: 
         ASAM_ANTORA_EXTENSIONS: ${{ secrets.ASAM_ANTORA_EXTENSIONS }}
       run: |
-        sed -i 's/https\:\/\/code.asam.net\/common\/asam-antora-extensions/https\:\/\/asam-antora-extensions\:$ASAM_ANTORA_EXTENSIONS\@code.asam.net\/commmon\/asam-antora-extensions/' .gitmodules 
+        sed -i "s/https\:\/\/code.asam.net\/common\/asam-antora-extensions/https\:\/\/asam-antora-extensions\:$ASAM_ANTORA_EXTENSIONS\@code.asam.net\/commmon\/asam-antora-extensions/" .gitmodules 
         cat .gitmodules
         git submodule init 
         git submodule update
