@@ -86,7 +86,6 @@ asciidoc:
 
   extensions:
   - asciidoctor-kroki
-  - '@djencks/asciidoctor-mathjax'
   - './asam-antora-extensions/asam-asciidoctor_extensions-registered.js'
   - './asam-antora-extensions/asam-asciidoctor_extensions.js'
 #   - asciidoctor-diagram
