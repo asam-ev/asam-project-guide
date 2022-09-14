@@ -69,6 +69,9 @@
     <a class="nav-link" href="../../contributing/contribution_workflow.html">Contribution workflow</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/issue_contribution.html">Contributing with issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../contributing/editorial_guide.html">Editorial guide information</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -87,7 +90,16 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../getting-involved/development_phase.html">Development phase</a>
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Development phase</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/development_phase_structure.html">Development phase structure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/development_phase_meetings.html">Development phase meetings</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -810,7 +822,7 @@
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Phase</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../getting-involved/development_phase.html#_process_overview" class="xref page"><span class="image"><img src="../_images/asam/project_lifecycle-development.svg" alt="project lifecycle development"></span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#getting-involved:development_phase.adoc#_process_overview" class="xref unresolved"><span class="image"><img src="../_images/asam/project_lifecycle-development.svg" alt="project lifecycle development"></span></a></p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Step</p></th>
@@ -824,7 +836,7 @@
 <p>Fork the <a href="https://code.asam.net/common/templates/standard-template" target="_blank" rel="noopener"><strong>standard template repository</strong></a> as "&lt;project-name&gt; &lt;type-suffix&gt;"</p>
 </li>
 <li>
-<p>If necessary, update project-name sub-group members</p>
+<p>If necessary, update project-name Sub-group members</p>
 </li>
 <li>
 <p>Inform members</p>
@@ -853,7 +865,7 @@ In order for project members and the Project Lead to work on their respective pr
 <div class="ulist">
 <ul>
 <li>
-<p>A new repository in the existing project sub-group has been created and the link been provided to all current project members.</p>
+<p>A new repository in the existing project Sub-group has been created and the link been provided to all current project members.</p>
 </li>
 <li>
 <p>The repository name is "&lt;project-name&gt; &lt;type-suffix&gt;", where "&lt;project-name&gt;" is the name of the project (e.g. "OpenDRIVE") and "&lt;type-suffix&gt;" is the current <a href="../../concepts/project_types.html" class="xref page">project type</a> (e.g. "Standard").</p>
@@ -896,7 +908,7 @@ In order to be able to fork a project into a group, you must be a member with su
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p><a href="forking_repo.html" class="xref page">Fork</a> the latest version of the <a href="https://code.asam.net/common/templates/standard-template" target="_blank" rel="noopener"><strong>standard template repository</strong></a> into the existing sub-group for the project.</p>
+<p><a href="forking_repo.html" class="xref page">Fork</a> the latest version of the <a href="https://code.asam.net/common/templates/standard-template" target="_blank" rel="noopener"><strong>standard template repository</strong></a> into the existing Sub-group for the project.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -928,7 +940,7 @@ Also, make sure to set the "Target project" for Merge Requests to "This project"
 </div>
 </li>
 <li>
-<p>Update the assigned members of the sub-group according to the currently enrolled members.
+<p>Update the assigned members of the Sub-group according to the currently enrolled members.
 Tip: Use <a href="https://code.asam.net/internal/gitlab-member-management/-/blob/master/create_users_and_update_group_members_from_csv.py" target="_blank" rel="noopener">this python script</a> to automate the process based on an exported csv from the Project participants list.
 This only works for GitLab, though.</p>
 </li>

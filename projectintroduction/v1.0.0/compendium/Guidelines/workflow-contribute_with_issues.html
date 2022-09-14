@@ -69,6 +69,9 @@
     <a class="nav-link" href="../../contributing/contribution_workflow.html">Contribution workflow</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../contributing/issue_contribution.html">Contributing with issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../contributing/editorial_guide.html">Editorial guide information</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -87,7 +90,16 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../getting-involved/development_phase.html">Development phase</a>
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Development phase</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/development_phase_structure.html">Development phase structure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../getting-involved/development_phase_meetings.html">Development phase meetings</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -842,10 +854,6 @@ For this purpose, all content discussions shall happen through issues in a proje
 <div class="sect1">
 <h2 id="_gather_topics_in_issues"><a class="anchor" href="#_gather_topics_in_issues"></a>2 Gather topics in issues</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>If your project is on ASAM GitLab, see the <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#create-an-issue" target="_blank" rel="noopener">GitLab instructions</a> for creating issues.<br>
-If your project is on GitHub, see the <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue" target="_blank" rel="noopener">GitHub instructions</a> for creating issues.</p>
-</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -872,6 +880,10 @@ If your project is on GitHub, see the <a href="https://docs.github.com/en/issues
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>If your project is on ASAM GitLab, see the <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#create-an-issue" target="_blank" rel="noopener">GitLab instructions</a> for creating issues.<br>
+If your project is on GitHub, see the <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue" target="_blank" rel="noopener">GitHub instructions</a> for creating issues.</p>
 </div>
 <div class="dlist">
 <dl>
@@ -953,11 +965,24 @@ A project may also have project-specific labels in addition to the official ones
 <h2 id="_discuss_issue"><a class="anchor" href="#_discuss_issue"></a>5 Discuss issue</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <a href="#_content">Content</a> of issues is discussed and resolved through <a href="#_comments">comments</a> and <a href="#_replies">replies</a> to previous comments.</p>
+<p>The <strong>content</strong> of issues is discussed and resolved through <strong>comments</strong> and <strong>replies</strong> to previous comments.</p>
 </div>
-<div class="sect2">
-<h3 id="_content"><a class="anchor" href="#_content"></a>5.1 Content</h3>
-<div class="paragraph">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Content</th>
+<th class="tableblock halign-left valign-top">Comments</th>
+<th class="tableblock halign-left valign-top">Replies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>The issue content (body) contains the definition of the issue.</p>
 </div>
 <div class="paragraph">
@@ -965,11 +990,8 @@ A project may also have project-specific labels in addition to the official ones
 It shall always be up-to-date and contain the latest discussed and approved version.<br>
 In the case of a question or a bug, it contains the initial topic.
 In the latter case, the content shall only be updated to correct mistakes therein.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_comments"><a class="anchor" href="#_comments"></a>5.2 Comments</h3>
-<div class="paragraph">
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>A comment to an issue is a new topic that is independent from any previous comment.</p>
 </div>
 <div class="hdlist">
@@ -999,16 +1021,13 @@ GitHub
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Before you add a new comment to an issue, make sure it is not a duplicate (i.e. the same or a similar comment already exists) and that it is not supposed to be a <a href="#_replies">reply</a>!
+Before you add a new comment to an issue, make sure it is not a duplicate (i.e. the same or a similar comment already exists) and that it is not supposed to be a <a href="#Replies">reply</a>!
 Failure to do so will prevent efficient project progress.
 </td>
 </tr>
 </table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_replies"><a class="anchor" href="#_replies"></a>5.3 Replies</h3>
-<div class="paragraph">
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>A reply is a comment created as a reply to a previous comment.
 In the issue, it is a child comment to the previous one and listed in relation to it.</p>
 </div>
@@ -1043,8 +1062,10 @@ If you want to reply to a previous comment, make sure to create a reply, not a n
 </td>
 </tr>
 </table>
-</div>
-</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
