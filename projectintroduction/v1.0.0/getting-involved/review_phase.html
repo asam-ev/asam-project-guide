@@ -341,6 +341,9 @@
     <a class="nav-link" href="../compendium/Guidelines/repo-issue_naming_conventions.html">[Repository] Issue Naming Conventions</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../compendium/Guidelines/repo-make_changes.html">[Repository] Make Changes In A Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../compendium/Guidelines/repo-merge-pull_requests.html">[Repository] Merge/Pull Requests</a>
   </li>
   <li class="nav-item" data-depth="1">
@@ -357,9 +360,6 @@
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../compendium/Guidelines/vscode-recommended_vscode_settings.html">[VSCode] Recommended Visual Studio Code Settings</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../compendium/Guidelines/repo-make_changes.html">[Repository] Make Changes In A Repository</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../compendium/Guidelines/workflow-contribute_in_asciidoc.html">[Workflow] Contributing In AsciiDoc Files</a>
@@ -832,10 +832,10 @@ Involved roles
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
-<p>New Standard</p>
+<p>Major Version Update</p>
 </li>
 <li>
-<p>Major Version Update</p>
+<p>Minor Version Update</p>
 </li>
 </ul>
 </div></div></td>
@@ -893,6 +893,17 @@ The Review phase is a dedicated "final" review phase before publication.
 </div>
 </div>
 <div class="sect1">
+<h2 id="_review_phase_timeline"><a class="anchor" href="#_review_phase_timeline"></a>Review phase timeline</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../compendium/_images/asam/review_phase_timeline.drawio.svg" alt="review phase timeline.drawio">
+</div>
+<div class="title">Figure 2. The Review phase timeline</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_project_group_review"><a class="anchor" href="#_project_group_review"></a>Project group review</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
@@ -920,7 +931,7 @@ The Review phase is a dedicated "final" review phase before publication.
 The Project Group reviews the deliverables and provides feedback.</p>
 </div>
 <div class="paragraph">
-<p>The default review period for outside reviews is 3 weeks.</p>
+<p>The default review period for outside reviews is 3 weeks.<br></p>
 </div>
 <div class="paragraph">
 <p>If a project groups has reasons to skip the project group review entirely, it must get approval from the ASAM Office Responsible, the Project Lead, and the ASAM CTO first.</p>
@@ -969,7 +980,8 @@ The project group has full authority to decide, how to handle a comment, e.g. to
 </div>
 <div class="paragraph">
 <p>The default feedback implementation period for group reviews is 2 weeks.
-If no major setbacks have been identified, the outside review is started.</p>
+If no major setbacks have been identified, the outside review is started.
+Otherwise, the project will do another group review.</p>
 </div>
 </div>
 </div>
@@ -988,17 +1000,20 @@ If no major setbacks have been identified, the outside review is started.</p>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Project group</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Project Lead</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Involved</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">none</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Office</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>The Project Leader is responsible for delivering the draft document(s) in a format which is usable in the ASAM IT infrastructure for document reviews.
+<p>The Project Lead is responsible for delivering the draft document(s) in a format which is usable in the ASAM IT infrastructure for document reviews.
 Changes to the prior version shall be marked in the draft documents or documented in a separate changelog, with clear references to the draft documents.</p>
+</div>
+<div class="paragraph">
+<p>The Office publishes the start of the outside review process via newsletter and <a href="https://www.asam.net/active-projects/public-review/">ASAM website</a>, and provides additional information, such as a brief description of the changes in the standard, review process steps and the review deadline.</p>
 </div>
 <div class="paragraph">
 <p>Outside reviews are mandatory for development projects of major versions.<br>
@@ -1036,17 +1051,14 @@ However, each of the provided deliverables still has to be feature-complete.
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Responsible</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Office</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Members</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Involved</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Members, project group</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Office Responsible, project group</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>The Office publishes the start of the outside review process via newsletter and <a href="https://www.asam.net/active-projects/public-review/">ASAM website</a>, and provides additional information, such as a brief description of the changes in the standard, review process steps and the review deadline.</p>
-</div>
 <div class="paragraph">
 <p>The Office provides an IT solution for carrying out the outside review of the draft.
 The Office provides technical support for reviewers and ensures that review feedback is accessible to the project group members in a timely manner.</p>
