@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Setting up the OpenX calendar :: ASAM Project Guide</title>
-    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/calendar/calendar-setup.html">
-    <link rel="prev" href="calendar-best-practices.html">
-    <link rel="next" href="../docker.html">
-    <meta name="description" content="How to import the shared OpenX calendar.">
-    <meta name="keywords" content="setup,openx-calendar">
+    <title>Docker&#8201;&#8212;&#8201;Guides :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/docker/02_docker_guides.html">
+    <link rel="prev" href="01_docker_setup.html">
+    <link rel="next" href="03_docker_best-practices.html">
+    <meta name="description" content="A guide to using docker at ASAM">
+    <meta name="keywords" content="docker, guide">
     <meta name="generator" content="Antora 3.1.0">
     <link rel="stylesheet" href="../../../../../_/css/site.css">
 <script type="text/javascript" src="../../../../../_/js/modal.js" defer></script>
@@ -41,7 +41,7 @@
         <div class="navbar-end">
           <a class="navbar-item" href="#">To top</a>
           <div class="navbar-item is-hoverable">
-                    <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/calendar/calendar-setup.html+%7C%0D%0A%7C+Page+%7C+Setting up the OpenX calendar+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+                    <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/docker/02_docker_guides.html+%7C%0D%0A%7C+Page+%7C+Docker&amp;#8201;&amp;#8212;&amp;#8201;Guides+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
     <a class="nav-link" href="../../../tour_guide/meetings/guidelines.html">Meeting guidelines</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../../tour_guide/meetings/participation.html">Participating in meetings</a>
+    <a class="nav-link" href="../../../tour_guide/meetings/decisions_and_escalations.html">Decisions and escalations</a>
   </li>
 </ul>
   </li>
@@ -117,10 +117,10 @@
     <a class="nav-link" href="../calendar.html">OpenX Calendar</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+    <a class="nav-link" href="../calendar/01_calendar_setup.html">Setup</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="4">
-    <a class="nav-link" href="calendar-setup.html">Setting up the OpenX calendar</a>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../calendar/02_calendar_best-practices.html">Best practices</a>
   </li>
 </ul>
   </li>
@@ -129,13 +129,13 @@
     <a class="nav-link" href="../docker.html">Docker</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../docker/docker-best-practices.html">Docker best practices</a>
+    <a class="nav-link" href="01_docker_setup.html">Setup</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="02_docker_guides.html">Guides</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../docker/docker-guides.html">Docker guides</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../docker/docker-setup.html">Setting up Docker</a>
+    <a class="nav-link" href="03_docker_best-practices.html">Best practices</a>
   </li>
 </ul>
   </li>
@@ -144,10 +144,10 @@
     <a class="nav-link" href="../drawio.html">Draw.io</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../drawio/drawio-guides.html">Draw.io guides</a>
+    <a class="nav-link" href="../drawio/01_drawio_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../drawio/drawio-setup.html">Setting up Draw.io</a>
+    <a class="nav-link" href="../drawio/02_drawio_guides.html">Guides</a>
   </li>
 </ul>
   </li>
@@ -156,13 +156,13 @@
     <a class="nav-link" href="../git.html">Git</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../git/git-guides.html">Git guides</a>
+    <a class="nav-link" href="../git/01_git_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../git/git-setup.html">Setting up Git</a>
+    <a class="nav-link" href="../git/02_git_guides.html">Guides</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../git/git_best_practices.html">Git best practices</a>
+    <a class="nav-link" href="../git/03_git_best_practices.html">Best practices</a>
   </li>
 </ul>
   </li>
@@ -171,22 +171,22 @@
     <a class="nav-link" href="../remote_repo.html">Remote repository platforms</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../remote_repo/remote_repo_guides.html">Guides for remote repositories</a>
+    <a class="nav-link" href="../remote_repo/01_remote_repo_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../remote_repo/remote_repo_setup.html">Setting up your repository account</a>
+    <a class="nav-link" href="../remote_repo/02_remote_repo_guides.html">Guides</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../sharepoint.html">Microsoft Teams and Sharepoint</a>
+    <a class="nav-link" href="../sharepoint.html">Microsoft Sharepoint</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../sharepoint/sharepoint-guides.html">Microsoft Teams and Sharepoint guides</a>
+    <a class="nav-link" href="../sharepoint/01_sharepoint_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../sharepoint/sharepoint-setup.html">Setting up Microsoft Teams and Sharepoint</a>
+    <a class="nav-link" href="../sharepoint/02_sharepoint_guides.html">Guides</a>
   </li>
 </ul>
   </li>
@@ -195,10 +195,16 @@
     <a class="nav-link" href="../vscode.html">Visual Studio Code</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../vscode/vscode-guides.html">Visual Studio Code guides</a>
+    <a class="nav-link" href="../vscode/01_vscode_setup.html">Setting up Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../vscode/vscode-setup.html">Setting up Visual Studio Code</a>
+    <a class="nav-link" href="../vscode/02_vscode_guides.html">Visual Studio Code guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/03_vscode_recommended_settings.html">[VSCode] Recommended Visual Studio Code Settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/04_vscode_recommended_extensions.html">[VSCode] Recommended Visual Studio Code Extensions</a>
   </li>
 </ul>
   </li>
@@ -277,121 +283,154 @@
     <li><a href="../../../index.html">ASAM Project Introduction</a></li>
     <li><a href="../../compendium.html">Compendium</a></li>
     <li><a href="../../Tools.html">Tools for advanced users</a></li>
-    <li><a href="../calendar.html">OpenX Calendar</a></li>
-    <li><a href="calendar-setup.html">Setting up the OpenX calendar</a></li>
+    <li><a href="../docker.html">Docker</a></li>
+    <li><a href="02_docker_guides.html">Guides</a></li>
   </ul>
 </nav>
 <div class="page-versions">
   <button class="version-menu-toggle" title="Show other versions of page">1.1.0</button>
   <div class="version-menu">
-    <a class="version is-current" href="calendar-setup.html">1.1.0</a>
-    <a class="version" href="../../../../1.0.0/compendium/Tools/calendar/calendar-setup.html">1.0.0</a>
+    <a class="version is-current" href="02_docker_guides.html">1.1.0</a>
+    <a class="version is-missing" href="../../../../1.0.0/index.html">1.0.0</a>
   </div>
 </div>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Tools/calendar/calendar-setup.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Tools/docker/02_docker_guides.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc" variant="wide">
-    <h1 class="page">Setting up the OpenX calendar</h1>
+    <h1 class="page">Docker&#8201;&#8212;&#8201;Guides</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Tools/calendar/calendar-setup.adoc - include::contributing:partial$_attributes.adoc[]</p>
-</div>
-<div class="paragraph">
-<p>{calendar-icon-page}</p>
-</div>
-<div class="paragraph">
-<p><a href="#role-specific:sg-lead.adoc" class="xref unresolved"><role style="background:#14BCCD;" >SUBGROUP LEAD</role></a>
-<a href="#role-specific:project-lead.adoc" class="xref unresolved"><role style="background:#6A5ACD;" >PROJECT LEAD</role></a></p>
+<p><a href="../docker.html" class="xref page"><span class="image right"><img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker" width="80" title="&#8594;Home&#8592;"></span></a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_context"><a class="anchor" href="#_context"></a>Context</h2>
+<h2 id="_running_docker_compose_from_visual_studio_code"><a class="anchor" href="#_running_docker_compose_from_visual_studio_code"></a>Running Docker-Compose from Visual Studio Code</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>All OpenX projects share a calendar under the email address of {openx-calendar-mail}.
-<strong>This MUST be included on all meetings taking place for the projects to make sure it is up to date.</strong></p>
-</li>
-<li>
-<p>Every project&#8217;s MS Teams group has a tab in the <em>General</em> channel called <strong><em>Calendar</em></strong> where you can refer to it.</p>
-</li>
-<li>
-<p><strong>The OpenX calendar can be {calendar-url}[viewed online,window=_blank] as well.</strong></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_result"><a class="anchor" href="#_result"></a>Result</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The user has activated their ASAM GitLab account and can access the correct project repositories.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>none</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_how"><a class="anchor" href="#_how"></a>How</h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Copy the <a href="https://outlook.office365.com/owa/calendar/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.ics"><strong>ics link</strong></a> to you clipboard</p>
-</li>
-<li>
-<p>Follow the instructions for your calendar type:</p>
-</li>
-</ol>
-</div>
-<table id="Calendar-Installation-Instructions" class="tableblock frame-none grid-cols stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock important">
+<table>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><a href="https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c" target="_blank" rel="noopener"><span class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg" alt="Microsoft Office Outlook %282018%E2%80%93present%29" width="80" title="Outlook / Exchange Online"></span></a></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><a href="https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&amp;hl=en" target="_blank" rel="noopener"><span class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg" alt="Google Calendar icon %282020%29" width="80" title="Subscribing with Google Calendar"></span></a></strong></p></td>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The docker daemon must be running in the background before you can run docker commands from VSCode. To start the deamon, either have Docker Desktop automatically start with Windows or start it manually.
+</td>
 </tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><a href="https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c" target="_blank" rel="noopener">Subscribing with Outlook / Exchange Online</a></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><a href="https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&amp;hl=en" target="_blank" rel="noopener">Subscribing with Google</a></strong></p></td>
-</tr>
-</tbody>
 </table>
 </div>
+<div class="paragraph">
+<p>You can run Docker-Compose directly from within <a href="../vscode.html" class="xref page">Visual Studio Code (VSCode)</a> if you have added the docker extensions.
+VSCode will automatically ask you if it finds a .yml file in your project workspace.
+Otherwise, you can get it through the usual way of finding and installing extensions:</p>
+</div>
+<div class="paragraph">
+<p>The Docker extension lets you directly interact with Docker through Visual Studio Code.
+You can run, for example, the docker-compose.yml directly without having to open a console or using Docker Desktop.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/docker_ext.png" alt="Search and find the extension 'Docker'">
+</div>
+<div class="title">Figure 1. Docker (id: ms-azuretools.vscode-docker)</div>
+</div>
+<div class="paragraph">
+<p>To run Docker-Compose on your docker-compose.yml, right-click on the file in your workspace and select <b class="button">Compose Up</b> from the menu.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/vscode-compose-up.png" alt="vscode compose up">
+</div>
+<div class="title">Figure 2. Run "Compose Up" from the context menu</div>
+</div>
+</div>
 </div>
 <div class="sect1">
-<h2 id="_troubleshooting_known_issues"><a class="anchor" href="#_troubleshooting_known_issues"></a>Troubleshooting / Known Issues</h2>
+<h2 id="_build_with_the_antora_image"><a class="anchor" href="#_build_with_the_antora_image"></a>Build with the Antora image</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_i_cannot_subscribe_using_the_provided_link"><a class="anchor" href="#_i_cannot_subscribe_using_the_provided_link"></a>I cannot subscribe using the provided link</h3>
 <div class="paragraph">
-<p>Make sure you use the <a href="https://outlook.office365.com/owa/calendar/1e9807ec9a8f420fb5b010cd17f4ef0b@asam.net/dd82caebcf5a4c51b22c5eb9a0b220ea3378152309461979582/calendar.ics"><strong>ics link</strong></a>, not the web url.
-Subscribing requires an ics link or file.
-The web url ({calendar-url}[link,window=_blank]) is <strong>ONLY</strong> for viewing the calendar online without subscribing to it.</p>
+<p>ASAM provides a custom Antora image under <code>ghcr.io/asam-ev/project-guide-docker</code>.
+Note that all ASAM projects using Antora also require read access to the ASAM UI repository as well as the ASAM Antora extensions repository.</p>
+</div>
+<div class="paragraph">
+<p>Project generator repositories at ASAM usually come with a build script.
+It is located in the "scripts" folder and runs on python 3.</p>
+</div>
+<div class="paragraph">
+<p>To build a project using the python build script, run that script.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">python .\build</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By default, this will also open the result afterwards (in Chrome).
+You can pass parameters such as "-s" (only build) and "-f" (only open).
+For a complete overview, run</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">python .\build -h</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To quickly build a checked-out project locally without the python script, open a terminal where your project&#8217;s 'site.yml' and the respective 'docker-compose-local.yml' are located and run the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker-compose -f docker-compose-local.yml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If your project does not have a 'docker-compose-local.yml' file but only a 'docker-compose.yml', run the following instead:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker-compose up -d</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_build_with_the_asciidoctor_image"><a class="anchor" href="#_build_with_the_asciidoctor_image"></a>Build with the Asciidoctor image</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>All new projects using .adoc files will be Antora projects.
+However, if you need to create an Asciidoctor output instead, check if your project comes with a "local_build_tools" folder that includes a "compose.yml" file.<br>
+If not, create said folder.
+Then, add a file named "compose.yml" with the following content:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yml hljs" data-lang="yml">version: "2"
+
+services:
+  asciidoctor:
+    image: asciidoctor/docker-asciidoctor
+    volumes:
+      - ../:/documents
+    entrypoint: asciidoctor --failure-level WARN -r asciidoctor-kroki -a mathjax -r asciidoctor-bibtex --trace content/index.adoc -o local_build_tools/HTML_content_local_build.html</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To create the build, open a terminal in the 'local_build_tools' folder and run the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker-compose up -d</code></pre>
 </div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="calendar-best-practices.html">OpenX Calendar - Best Practices</a></span>
-  <span class="next"><a href="../docker.html">Docker</a></span>
+  <span class="prev"><a href="01_docker_setup.html">Setup</a></span>
+  <span class="next"><a href="03_docker_best-practices.html">Best practices</a></span>
 </nav>
 </article>
   </div>

@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Git best practices :: ASAM Project Guide</title>
-    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/git/git_best_practices.html">
-    <link rel="prev" href="git-setup.html">
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/git/03_git_best_practices.html">
+    <link rel="prev" href="02_git_guides.html">
     <link rel="next" href="../remote_repo.html">
     <meta name="description" content="Contains best practices for using git.">
-    <meta name="keywords" content="git, best-practices,repository,repo,feature,commit">
+    <meta name="keywords" content="git, best-practices,feature,commit">
     <meta name="generator" content="Antora 3.1.0">
     <link rel="stylesheet" href="../../../../../_/css/site.css">
 <script type="text/javascript" src="../../../../../_/js/modal.js" defer></script>
@@ -41,7 +41,7 @@
         <div class="navbar-end">
           <a class="navbar-item" href="#">To top</a>
           <div class="navbar-item is-hoverable">
-                    <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/git/git_best_practices.html+%7C%0D%0A%7C+Page+%7C+Git best practices+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+                    <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/git/03_git_best_practices.html+%7C%0D%0A%7C+Page+%7C+Git best practices+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
     <a class="nav-link" href="../../../tour_guide/meetings/guidelines.html">Meeting guidelines</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../../tour_guide/meetings/participation.html">Participating in meetings</a>
+    <a class="nav-link" href="../../../tour_guide/meetings/decisions_and_escalations.html">Decisions and escalations</a>
   </li>
 </ul>
   </li>
@@ -117,10 +117,10 @@
     <a class="nav-link" href="../calendar.html">OpenX Calendar</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../calendar/calendar-best-practices.html">OpenX Calendar - Best Practices</a>
+    <a class="nav-link" href="../calendar/01_calendar_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../calendar/calendar-setup.html">Setting up the OpenX calendar</a>
+    <a class="nav-link" href="../calendar/02_calendar_best-practices.html">Best practices</a>
   </li>
 </ul>
   </li>
@@ -129,13 +129,13 @@
     <a class="nav-link" href="../docker.html">Docker</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../docker/docker-best-practices.html">Docker best practices</a>
+    <a class="nav-link" href="../docker/01_docker_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../docker/docker-guides.html">Docker guides</a>
+    <a class="nav-link" href="../docker/02_docker_guides.html">Guides</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../docker/docker-setup.html">Setting up Docker</a>
+    <a class="nav-link" href="../docker/03_docker_best-practices.html">Best practices</a>
   </li>
 </ul>
   </li>
@@ -144,10 +144,10 @@
     <a class="nav-link" href="../drawio.html">Draw.io</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../drawio/drawio-guides.html">Draw.io guides</a>
+    <a class="nav-link" href="../drawio/01_drawio_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../drawio/drawio-setup.html">Setting up Draw.io</a>
+    <a class="nav-link" href="../drawio/02_drawio_guides.html">Guides</a>
   </li>
 </ul>
   </li>
@@ -156,13 +156,13 @@
     <a class="nav-link" href="../git.html">Git</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="git-guides.html">Git guides</a>
+    <a class="nav-link" href="01_git_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="git-setup.html">Setting up Git</a>
+    <a class="nav-link" href="02_git_guides.html">Guides</a>
   </li>
   <li class="nav-item is-current-page" data-depth="4">
-    <a class="nav-link" href="git_best_practices.html">Git best practices</a>
+    <a class="nav-link" href="03_git_best_practices.html">Best practices</a>
   </li>
 </ul>
   </li>
@@ -171,22 +171,22 @@
     <a class="nav-link" href="../remote_repo.html">Remote repository platforms</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../remote_repo/remote_repo_guides.html">Guides for remote repositories</a>
+    <a class="nav-link" href="../remote_repo/01_remote_repo_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../remote_repo/remote_repo_setup.html">Setting up your repository account</a>
+    <a class="nav-link" href="../remote_repo/02_remote_repo_guides.html">Guides</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../sharepoint.html">Microsoft Teams and Sharepoint</a>
+    <a class="nav-link" href="../sharepoint.html">Microsoft Sharepoint</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../sharepoint/sharepoint-guides.html">Microsoft Teams and Sharepoint guides</a>
+    <a class="nav-link" href="../sharepoint/01_sharepoint_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../sharepoint/sharepoint-setup.html">Setting up Microsoft Teams and Sharepoint</a>
+    <a class="nav-link" href="../sharepoint/02_sharepoint_guides.html">Guides</a>
   </li>
 </ul>
   </li>
@@ -195,10 +195,16 @@
     <a class="nav-link" href="../vscode.html">Visual Studio Code</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../vscode/vscode-guides.html">Visual Studio Code guides</a>
+    <a class="nav-link" href="../vscode/01_vscode_setup.html">Setting up Visual Studio Code</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../vscode/vscode-setup.html">Setting up Visual Studio Code</a>
+    <a class="nav-link" href="../vscode/02_vscode_guides.html">Visual Studio Code guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/03_vscode_recommended_settings.html">[VSCode] Recommended Visual Studio Code Settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/04_vscode_recommended_extensions.html">[VSCode] Recommended Visual Studio Code Extensions</a>
   </li>
 </ul>
   </li>
@@ -278,17 +284,17 @@
     <li><a href="../../compendium.html">Compendium</a></li>
     <li><a href="../../Tools.html">Tools for advanced users</a></li>
     <li><a href="../git.html">Git</a></li>
-    <li><a href="git_best_practices.html">Git best practices</a></li>
+    <li><a href="03_git_best_practices.html">Best practices</a></li>
   </ul>
 </nav>
 <div class="page-versions">
   <button class="version-menu-toggle" title="Show other versions of page">1.1.0</button>
   <div class="version-menu">
-    <a class="version is-current" href="git_best_practices.html">1.1.0</a>
-    <a class="version" href="../../../../1.0.0/compendium/Tools/git/git_best_practices.html">1.0.0</a>
+    <a class="version is-current" href="03_git_best_practices.html">1.1.0</a>
+    <a class="version is-missing" href="../../../../1.0.0/index.html">1.0.0</a>
   </div>
 </div>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Tools/git/git_best_practices.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Tools/git/03_git_best_practices.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
@@ -296,11 +302,10 @@
 </aside>
 <article class="doc" variant="wide">
     <h1 class="page">Git best practices</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Tools/git/git_best_practices.adoc - include::contributing:partial$_attributes.adoc[]</p>
-</div>
-<div class="paragraph">
-<p>{git-icon-page}</p>
+<p><a href="../git.html" class="xref page"><span class="image right"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png" alt="Git" width="80" title="&#8594;Home&#8592;"></span></a></p>
 </div>
 <div class="paragraph">
 <p>This is a guide for programming with version control.</p>
@@ -318,17 +323,193 @@
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_write_a_feature"><a class="anchor" href="#_write_a_feature"></a>Write a feature</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Tools/git/git_best_practices.adoc - include::compendium:page$How-Tos/write_a_feature.adoc[]</p>
+<p>Create a local feature branch based off <code>main</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git checkout main
+git pull
+git checkout -b &lt;branch-name&gt;</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Tools/git/git_best_practices.adoc - include::compendium:page$How-Tos/review_code.adoc[]</p>
+<p>Rebase frequently to incorporate upstream changes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git fetch origin
+git rebase origin/main</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Tools/git/git_best_practices.adoc - include::compendium:page$How-Tos/merge.adoc[]</p>
+<p>Resolve conflicts.
+When feature is complete and tests pass, stage the changes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git add --all</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When you&#8217;ve staged the changes, commit them.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git status
+git commit --verbose</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Write a <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" target="_blank" rel="noopener">good commit message</a>.
+Example format:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Present-tense summary under 50 characters</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>More information about commit (under 72 characters).</p>
+</li>
+<li>
+<p>More information about commit (under 72 characters).</p>
+<div class="literalblock">
+<div class="content">
+<pre>http://project.management-system.com/ticket/123</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you&#8217;ve created more than one commit, <a href="https://help.github.com/articles/about-git-rebase/" target="_blank" rel="noopener">use <code>git rebase</code> interactively</a> to squash them into cohesive commits with good messages:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git rebase -i origin/main</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Share your branch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git push origin &lt;branch-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Submit a <a href="https://help.github.com/articles/using-pull-requests/" target="_blank" rel="noopener">GitHub pull request</a>.</p>
+</div>
+<div class="paragraph">
+<p>Ask for a code review in the project&#8217;s chat room.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_review_code"><a class="anchor" href="#_review_code"></a>Review code</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A team member other than the author reviews the pull request.
+They follow Code Review guidelines to avoid miscommunication.</p>
+</div>
+<div class="paragraph">
+<p>They make comments and ask questions directly on lines of code in the GitHub web interface or in the project&#8217;s chat room.</p>
+</div>
+<div class="paragraph">
+<p>For changes which they can make themselves, they check out the branch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git checkout &lt;branch-name&gt;
+./bin/setup
+git diff staging/main..HEAD</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>They make small changes right in the branch, test the feature on their machine, run tests, commit, and push.</p>
+</div>
+<div class="paragraph">
+<p>When satisfied, they comment on the pull request <code>Ready to merge.</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_merge_a_branch"><a class="anchor" href="#_merge_a_branch"></a>Merge a branch</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Rebase interactively.
+Squash commits like "Fix whitespace" into one or a small number of valuable commit(s).
+Edit commit messages to reveal intent.
+Run tests.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git fetch origin
+git rebase -i origin/main</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Force push your branch.
+This allows GitHub to automatically close your pull request and mark it as merged when your commit(s) are pushed to <code>main</code>.
+It also makes it possible to <a href="http://stackoverflow.com/a/17819027" target="_blank" rel="noopener">find the pull request</a> that brought in your changes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git push --force-with-lease origin &lt;branch-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>View a list of new commits.
+View changed files.
+Merge branch into <code>main</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git log origin/main..&lt;branch-name&gt;
+git diff --stat origin/main
+git checkout main
+git merge &lt;branch-name&gt; --ff-only
+git push</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Delete your remote feature branch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git push origin --delete &lt;branch-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Delete your local feature branch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git branch --delete &lt;branch-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TODO
+image::compendium:workflow_tut_step3.png[img4, 1100,title="merge request"]</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/workflow_tut_step4.png" alt="img5" width="1100">
+</div>
+<div class="title">Figure 1. merge request options</div>
+</div>
+</div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="git-setup.html">Setting up Git</a></span>
+  <span class="prev"><a href="02_git_guides.html">Guides</a></span>
   <span class="next"><a href="../remote_repo.html">Remote repository platforms</a></span>
 </nav>
 </article>

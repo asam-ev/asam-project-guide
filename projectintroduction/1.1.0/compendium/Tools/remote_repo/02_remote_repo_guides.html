@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guides for remote repositories :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/remote_repo/02_remote_repo_guides.html">
+    <link rel="prev" href="01_remote_repo_setup.html">
+    <link rel="next" href="../sharepoint.html">
+    <meta name="description" content="Collects all types of important GitLab guides">
+    <meta name="keywords" content="guide,gitlab">
+    <meta name="generator" content="Antora 3.1.0">
+    <link rel="stylesheet" href="../../../../../_/css/site.css">
+<script type="text/javascript" src="../../../../../_/js/modal.js" defer></script>
+<link rel="stylesheet" href="../../../../../_/css/modal.css">
+<link rel="stylesheet" href="../../../../../_/css/flipcard.css">
+<link rel="stylesheet" href="../../../../../_/css/extra.css">
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>    <script>var uiRootPath = '../../../../../_'</script>
+<link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+           –
+          1.1.0</a>
+      </div>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+    </div>
+    <div class="navbar-item menu hide-for-print">
+      <div id="topbar-nav" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">To top</a>
+          <div class="navbar-item is-hoverable">
+                    <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/remote_repo/02_remote_repo_guides.html+%7C%0D%0A%7C+Page+%7C+Guides for remote repositories+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="projectintroduction" data-version="1.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../index.html">ASAM Project Introduction</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../tour_guide/index.html">Guided tour</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../tour_guide/meetings.html">Project meetings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/types.html">Meeting types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/decisions_and_escalations.html">Decisions and escalations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../tour_guide/sharepoint.html">Project Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../tour_guide/contribution.html">Contribution workflow</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/contribution/contribute_with_issues.html">Contribute with issues</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/contribution/issue_implementation.html">Contribution workflow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../tour_guide/advanced_tools.html">Tools overview for advanced users</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../tour_guide/summary.html">Guide summary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium.html">Compendium</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../Tools.html">Tools for advanced users</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../calendar.html">OpenX Calendar</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../calendar/01_calendar_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../calendar/02_calendar_best-practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docker/01_docker_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docker/02_docker_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docker/03_docker_best-practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../drawio/01_drawio_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../drawio/02_drawio_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../git/01_git_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../git/02_git_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../git/03_git_best_practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../remote_repo.html">Remote repository platforms</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="01_remote_repo_setup.html">Setup</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="02_remote_repo_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sharepoint.html">Microsoft Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../sharepoint/01_sharepoint_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../sharepoint/02_sharepoint_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/01_vscode_setup.html">Setting up Visual Studio Code</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/02_vscode_guides.html">Visual Studio Code guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/03_vscode_recommended_settings.html">[VSCode] Recommended Visual Studio Code Settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/04_vscode_recommended_extensions.html">[VSCode] Recommended Visual Studio Code Extensions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../asam-contacts.html">Contacts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../credits.html">Credits</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../normation_test_page.html">Test page for normative vs non-normative</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Introduction</span>
+    <span class="version">1.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../../../asamprojectguide/latest/index.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../asamprojectguide/latest/index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../../index.html">ASAM Project Introduction</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">1.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../../1.0.0/index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../asamprojectguide-editing/latest/main.html">Editing the ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../asamprojectguide-editing/latest/main.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../../asamprojectguide/latest/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">ASAM Project Introduction</a></li>
+    <li><a href="../../compendium.html">Compendium</a></li>
+    <li><a href="../../Tools.html">Tools for advanced users</a></li>
+    <li><a href="../remote_repo.html">Remote repository platforms</a></li>
+    <li><a href="02_remote_repo_guides.html">Guides</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">1.1.0</button>
+  <div class="version-menu">
+    <a class="version is-current" href="02_remote_repo_guides.html">1.1.0</a>
+    <a class="version is-missing" href="../../../../1.0.0/index.html">1.0.0</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Tools/remote_repo/02_remote_repo_guides.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc" variant="wide">
+    <h1 class="page">Guides for remote repositories</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="../remote_repo.html" class="xref page"><span class="image right"><img src="../../_images/remote.png" alt="Remote Repository Icon" width="80" title="&#8594;Home&#8592;"></span></a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_make_changes_in_a_repository"><a class="anchor" href="#_make_changes_in_a_repository"></a>Make changes in a repository</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_git_workflow"><a class="anchor" href="#_git_workflow"></a>Git workflow</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+It is best practice to check for changes on remote before changing files locally and before pushing changes to remote.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The Git workflow for making changes is a 4 step process:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/git-workflow.svg" alt="Git Workflow">
+</div>
+<div class="title">Figure 1. Git workflow</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make the changes in your working copy.</p>
+</li>
+<li>
+<p>Add files from the working copy to the staging area (<code>git add</code>).</p>
+</li>
+<li>
+<p>Commit staged files to your local repo (<code>git commit</code>).</p>
+</li>
+<li>
+<p>Push to a remote repository (<code>git push</code>).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_further_read"><a class="anchor" href="#_further_read"></a>Further read</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://git-scm.com/docs/gittutorial" class="bare" target="_blank" rel="noopener">https://git-scm.com/docs/gittutorial</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mergepull_requests"><a class="anchor" href="#_mergepull_requests"></a>Merge/pull requests</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A Merge or Pull Requests (MRs) are the way you merge content changes from a development or feature branch back into the trunk or another branch.
+They provide the project team the opportunity to review changes before they are applied and made public/official.</p>
+</div>
+<div class="sect2">
+<h3 id="_merge_commit_strategy"><a class="anchor" href="#_merge_commit_strategy"></a>Merge commit strategy</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>History of commits in a MR must be <a href="https://medium.com/@catalinaturlea/clean-git-history-a-step-by-step-guide-eefc0ad8696d" target="_blank" rel="noopener">clean</a> prior to merge</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ASAM repositories allow <a href="https://docs.gitlab.com/ee/user/project/merge_requests/fast_forward_merge.html" target="_blank" rel="noopener">fast-forward merges</a> only (<code>--ff-only</code>) and <a href="https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html" target="_blank" rel="noopener">squash commits</a> by default.
+This means commits do not have to be merged manually and all commits are squashed automatically.</p>
+</div>
+<div class="paragraph">
+<p>For squash commits with one commit, the commit message is taken directly (squash does not take place).<br>
+For actual squashes the commit messages are taken from:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The first multi-line commit message in the merge.</p>
+</li>
+<li>
+<p>The merge request’s title if no multi-line commit message is found.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Squash commits is enabled by default but can be turned off.
+This is to make sure that in case multiple unrelated changes occurred in one branch, they can still be all added to the history.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mergepull_request_review"><a class="anchor" href="#_mergepull_request_review"></a>Merge/pull request review</h3>
+<div class="paragraph">
+<p>Merge/Pull Requests are reviewed by the project team in sequential steps.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_merge_conflicts_preventing_and_resolving"><a class="anchor" href="#_merge_conflicts_preventing_and_resolving"></a>Merge conflicts: preventing and resolving</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A merge conflict occurs when multiple different changes (usually made by different users) are to be merged and some or all of the changes contradict each other.
+For example, if user A deletes a section in their copy and user B adds a new paragraph to it instead, the merging tool does not know whether to keep the section and add the changes made by user B or to delete it like user A did.</p>
+</div>
+<div class="sect2">
+<h3 id="_avoiding_merge_conflicts"><a class="anchor" href="#_avoiding_merge_conflicts"></a>Avoiding merge conflicts</h3>
+<div class="paragraph">
+<p>One way of avoiding merge conflicts is to keep the TTL (time to live) of branches short.
+ASAM recommends a TTL of &#8656; 2 weeks.<br>
+If the branch lives longer than expected, merge the parent branch (the trunk or original feature branch) into your branch once in a while.
+Alternatively, you can also rebase your branch to the parent branch again.
+This way you can solve the conflicts in your branch.</p>
+</div>
+<div class="paragraph">
+<p>For more information on the differences between merging and rebasing, see <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" target="_blank" rel="noopener">Merging vs. Rebasing</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_resolving_merge_conflicts"><a class="anchor" href="#_resolving_merge_conflicts"></a>Resolving merge conflicts</h3>
+<div class="paragraph">
+<p>Once you create a merge request, your remote repository will tell you if there are merge conflicts.
+It leads you through the conflicting parts and lets you choose if your new or the old content is to be merged.</p>
+</div>
+<div class="paragraph">
+<p>Another option is to merge locally.
+You can use <a href="../git.html" class="xref page">Git</a> or <a href="../vscode.html" class="xref page">Visual Studio Code</a> for this.
+These tools also provide options to view conflicting changes and help you resolve them.</p>
+</div>
+<div class="paragraph">
+<p>After you have removed the conflicts, you can create a new commit to your branch that includes the fixes to resolve the conflict in the Merge/Pull Request.</p>
+</div>
+<div class="paragraph">
+<p>For more information, see</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Git
+</td>
+<td class="hdlist2">
+<p><a href="https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts" class="bare">https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+GitLab
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/conflicts.html" class="bare">https://docs.gitlab.com/ee/user/project/merge_requests/conflicts.html</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+GitHub
+</td>
+<td class="hdlist2">
+<p><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github" class="bare">https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github</a></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_access_compiled_artifacts"><a class="anchor" href="#_access_compiled_artifacts"></a>Access compiled artifacts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This description only covers GitLab.
+However, steps are similar at GitHub.</p>
+</div>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset1_download-from-pipeline"></a>Download from pipeline</p>
+</li>
+<li>
+<p><a id="tabset1_download-from-merge-pull-request"></a>Download From merge/pull request</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset1_download-from-pipeline">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/artifact_download_ci.png" alt="artifact download ci">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access <span class="menuseq"><b class="menu">Repository</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Branches</b></span></p>
+</li>
+<li>
+<p>Select the pipeline for the branch that you&#8217;d like to access</p>
+</li>
+<li>
+<p>Retrieve the compiled artifacts</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The example shows how to retrieve the uml2adoc artifacts</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_download-from-merge-pull-request">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/artifact_download_mr.png" alt="artifact download mr">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access <span class="menuseq"><b class="menu">Repository</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Merge requests</b></span></p>
+</li>
+<li>
+<p>Select the Merge/Pull Request that you&#8217;d like to access</p>
+</li>
+<li>
+<p>Retrieve the compiled artifacts</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The example shows how to retrieve the uml2adoc artifacts</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="01_remote_repo_setup.html">Setup</a></span>
+  <span class="next"><a href="../sharepoint.html">Microsoft Sharepoint</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<script src="../../../../../_/js/site.js"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Visual Studio Code guides :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/vscode/02_vscode_guides.html">
+    <link rel="prev" href="01_vscode_setup.html">
+    <link rel="next" href="03_vscode_recommended_settings.html">
+    <meta name="description" content="A guide for VSCode explaining basic ui and usability topics.">
+    <meta name="keywords" content="guide, vscode">
+    <meta name="generator" content="Antora 3.1.0">
+    <link rel="stylesheet" href="../../../../../_/css/site.css">
+<script type="text/javascript" src="../../../../../_/js/modal.js" defer></script>
+<link rel="stylesheet" href="../../../../../_/css/modal.css">
+<link rel="stylesheet" href="../../../../../_/css/flipcard.css">
+<link rel="stylesheet" href="../../../../../_/css/extra.css">
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>    <script>var uiRootPath = '../../../../../_'</script>
+<link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+           –
+          1.1.0</a>
+      </div>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+    </div>
+    <div class="navbar-item menu hide-for-print">
+      <div id="topbar-nav" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">To top</a>
+          <div class="navbar-item is-hoverable">
+                    <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/vscode/02_vscode_guides.html+%7C%0D%0A%7C+Page+%7C+Visual Studio Code guides+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="projectintroduction" data-version="1.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../index.html">ASAM Project Introduction</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../tour_guide/index.html">Guided tour</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../tour_guide/meetings.html">Project meetings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/types.html">Meeting types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/decisions_and_escalations.html">Decisions and escalations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../tour_guide/sharepoint.html">Project Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../tour_guide/contribution.html">Contribution workflow</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/contribution/contribute_with_issues.html">Contribute with issues</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/contribution/issue_implementation.html">Contribution workflow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../tour_guide/advanced_tools.html">Tools overview for advanced users</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../tour_guide/summary.html">Guide summary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium.html">Compendium</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../Tools.html">Tools for advanced users</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../calendar.html">OpenX Calendar</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../calendar/01_calendar_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../calendar/02_calendar_best-practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docker/01_docker_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docker/02_docker_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docker/03_docker_best-practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../drawio/01_drawio_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../drawio/02_drawio_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../git/01_git_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../git/02_git_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../git/03_git_best_practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../remote_repo.html">Remote repository platforms</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../remote_repo/01_remote_repo_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../remote_repo/02_remote_repo_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sharepoint.html">Microsoft Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../sharepoint/01_sharepoint_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../sharepoint/02_sharepoint_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="01_vscode_setup.html">Setting up Visual Studio Code</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="02_vscode_guides.html">Visual Studio Code guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="03_vscode_recommended_settings.html">[VSCode] Recommended Visual Studio Code Settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="04_vscode_recommended_extensions.html">[VSCode] Recommended Visual Studio Code Extensions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../asam-contacts.html">Contacts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../credits.html">Credits</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../normation_test_page.html">Test page for normative vs non-normative</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Introduction</span>
+    <span class="version">1.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../../../asamprojectguide/latest/index.html">ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../asamprojectguide/latest/index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../../index.html">ASAM Project Introduction</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">1.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../../1.0.0/index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../asamprojectguide-editing/latest/main.html">Editing the ASAM Project Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../asamprojectguide-editing/latest/main.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../../asamprojectguide/latest/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">ASAM Project Introduction</a></li>
+    <li><a href="../../compendium.html">Compendium</a></li>
+    <li><a href="../../Tools.html">Tools for advanced users</a></li>
+    <li><a href="../vscode.html">Visual Studio Code</a></li>
+    <li><a href="02_vscode_guides.html">Visual Studio Code guides</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">1.1.0</button>
+  <div class="version-menu">
+    <a class="version is-current" href="02_vscode_guides.html">1.1.0</a>
+    <a class="version is-missing" href="../../../../1.0.0/index.html">1.0.0</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Tools/vscode/02_vscode_guides.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc" variant="wide">
+    <h1 class="page">Visual Studio Code guides</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="../vscode.html" class="xref page"><span class="image right"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png" alt="Visual Studio Code" width="80" title="&#8594;Home&#8592;"></span></a></p>
+</div>
+<div class="paragraph">
+<p>Visual Studio Code is a powerful code and text editor that can be highly individualized and adapted to the task at hand using the existing extensions for it.</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/compendium/pages/Tools/vscode/02_vscode_guides.adoc - include::compendium:page$How-Tos/vscode_install_extension.adoc[]</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_recommended_visual_studio_code_extensions"><a class="anchor" href="#_recommended_visual_studio_code_extensions"></a>Recommended Visual Studio Code extensions</h3>
+<div class="paragraph">
+<p><a href="https://code.visualstudio.com/download" target="_blank" rel="noopener"><span class="image right"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/240px-Visual_Studio_Code_1.35_icon.svg.png" alt="Visual Studio Code" width="120" title="Visual Studio Code Page"></span></a></p>
+</div>
+<div class="paragraph">
+<p>VSCode is already without extensions very powerful and user friendly.
+One thing that can make the VSCode experience even better are the extensions.
+There is a list of extensions we recommend that will make your life contributing to the ASAM standards way easier.</p>
+</div>
+<div class="paragraph">
+<p>Installing an extension is really easy, just enter the extension menu, search for the desired extension.
+Then, click on the <b class="button">Install</b> button.</p>
+</div>
+<div class="sect3">
+<h4 id="_asciidoc"><a class="anchor" href="#_asciidoc"></a>AsciiDoc</h4>
+<div class="paragraph">
+<p>The AsciiDoc extension will add the syntax the AsciiDoc interpreter to VSCode so you can use the preview feature and have syntax highlighting.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/asciidoc_ext.png" alt="asciidoc ext">
+</div>
+<div class="title">Figure 1. AsciiDoc (id: asciidoctor.asciidoctor-vscode)</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_comment_anchors"><a class="anchor" href="#_comment_anchors"></a>Comment anchors</h4>
+<div class="paragraph">
+<p>The Comment Anchor extension provides you with the ability of adding highlighted keywords to the raw text.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/comment_anchor_example.PNG" alt="comment anchor example">
+</div>
+<div class="title">Figure 2. Comment Anchors examples</div>
+</div>
+<div class="paragraph">
+<p>The extension also lets you search for all available anchors in the repository or current file and offers a jump-to option.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/commentanchor_ext.PNG" alt="commentanchor ext">
+</div>
+<div class="title">Figure 3. Comment Anchors (id: exodiusstudios.comment-anchors)</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_draw_io"><a class="anchor" href="#_draw_io"></a>Draw.io</h4>
+<div class="paragraph">
+<p>The Draw.io extension for Visual Studio Code allows for easy creation and assisted editing of drawio and other files supported by Draw.io within Visual Studio Code.
+For shortcuts and tips, see the documentation of the extension.
+You can access this documentation when you click on the extension in the marketplace.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/drawio_ext.png" alt="Search and find the extension 'Draw.io Integration'">
+</div>
+<div class="title">Figure 4. Draw.io Integration (id: hediet.vscode-drawio)</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The Draw.io extension does not support remote custom libraries as of now.
+For this reason, it is recommended to create and make larger edits to drawio files through the web app.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_code_spell_checker"><a class="anchor" href="#_code_spell_checker"></a>Code Spell Checker</h4>
+<div class="paragraph">
+<p>The Code Spell Checker extension provides you with the ability of spell checking in Visual Studio Code.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/code-spell-checker-example-1.png" alt="Example 1 for Code Spell Checker">
+</div>
+<div class="title">Figure 5. Code Spell Checker example 1</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/code-spell-checker-example-2.png" alt="Example 2 for Code Spell Checker">
+</div>
+<div class="title">Figure 6. Code Spell Checker example 2</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/code-spell-checker-example-3.png" alt="Example 3 for Code Spell Checker">
+</div>
+<div class="title">Figure 7. Code Spell Checker example 3</div>
+</div>
+<div class="paragraph">
+<p>The spell checker handles standard text as well as CamelCase.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/code-spell-checker.png" alt="code spell checker">
+</div>
+<div class="title">Figure 8. Code Spell Checker (id: streetsidesoftware.code-spell-checker)</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_git_graph"><a class="anchor" href="#_git_graph"></a>Git graph</h4>
+<div class="paragraph">
+<p>The Git Graph extension is a great tool navigating the branches in the git repository and provides a great overview.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/gitgraph_ext.PNG" alt="gitgraph ext">
+</div>
+<div class="title">Figure 9. Git Graph (id: mhutchie.git-graph)</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_gitlens"><a class="anchor" href="#_gitlens"></a>GitLens</h4>
+<div class="paragraph">
+<p>The GitLens Extension is a great extension to follow up on all the changes made to the documents within the repository.
+Gitlens provides:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Repository Overview</p>
+</li>
+<li>
+<p>File History</p>
+</li>
+<li>
+<p>Line History</p>
+</li>
+<li>
+<p>Commit Comparison</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/gitlens_ext.PNG" alt="gitlens ext">
+</div>
+<div class="title">Figure 10. GitLens&#8201;&#8212;&#8201;Git supercharged (id: eamodio.gitlens)</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_docker"><a class="anchor" href="#_docker"></a>Docker</h4>
+<div class="paragraph">
+<p>The Docker extension lets you directly interact with Docker through Visual Studio Code.
+You can run, for example, the docker-compose.yml directly without having to open a console or using Docker Desktop.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/docker_ext.png" alt="Search and find the extension 'Docker'">
+</div>
+<div class="title">Figure 11. Docker (id: ms-azuretools.vscode-docker)</div>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/compendium/pages/Tools/vscode/02_vscode_guides.adoc - include::compendium:page$Guidelines/vscode-recommended_vscode_settings.adoc[]</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="01_vscode_setup.html">Setting up Visual Studio Code</a></span>
+  <span class="next"><a href="03_vscode_recommended_settings.html">[VSCode] Recommended Visual Studio Code Settings</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<script src="../../../../../_/js/site.js"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+  </body>
+</html>
