@@ -2,6 +2,16 @@
     margin-top: 2.5rem !important;
 }
 
+.doc > h1.page:nth-child(2) {
+    font-size: 2rem;
+    margin: 1rem 0 1.5rem 0 !important;
+}
+
+@media screen and (min-width: 769px)
+{.doc > h1.page:nth-child(2) {
+    margin-top: 2.5rem;
+}}
+
 
 .openblock.non-normative {
     border: 0.15rem solid #5d5d5d;
