@@ -1,0 +1,9 @@
+{{#if (eq page.attributes.width-limit "none")}}
+<article class="doc" variant="wide">
+    {{> progress_article-content}}
+</article>
+{{else}}
+<article class="doc">
+    {{> progress_article-content}}
+</article>
+{{/if}}
