@@ -72,7 +72,7 @@
     <a class="nav-link" href="meetings/guidelines.html">Meeting guidelines</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="meetings/polls_votes.html">Polls and voting</a>
+    <a class="nav-link" href="meetings/polls_votes.html">Project voting</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="meetings/decisions_and_escalations.html">Decisions and escalations</a>
@@ -318,12 +318,16 @@
 <h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Developing content for ASAM standards is focussed around the concept of contributing with issues.
-The following sections describe this workflow in more detail.</p>
+<p>Developing content for ASAM standards is focused around the concept of <a href="contribution/contribute_with_issues.html" class="xref page">contributing with issues</a>.<br>
+The following sections describe this workflow in more detail.
+Note that the workflow starts when an issue is assigned to someone.
+Whether the issue is created with an assignee or assigned by someone from the project later is irrelevant.<br>
+How an unassigned issue is assigned and by whom is out-of-scope for this workflow.
+The project group may define their own workflow and responsibilities for that.</p>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-a01dd48a53f3f9fdb69a82a410f7f37d3ba1e6b3.svg"><span class="alt">Workflow stages</span></object>
+<object type="image/svg+xml" data="_images/diag-0780f54462763a6edfc205f33e39ff4d91b837bc.svg"><span class="alt">Workflow stages</span></object>
 </div>
 <div class="title">Figure 1. Workflow stages</div>
 </div>
@@ -335,9 +339,6 @@ The role listed at the top of each section is the one responsible for it.</p>
 <div class="tabset is-loading">
 <div class="ulist tabs">
 <ul>
-<li>
-<p><a id="tabset1_initial-setup"></a>Initial setup</p>
-</li>
 <li>
 <p><a id="tabset1_analysis"></a>Analysis</p>
 </li>
@@ -356,62 +357,6 @@ The role listed at the top of each section is the one responsible for it.</p>
 </ul>
 </div>
 <div class="content">
-<div class="tab-pane" aria-labelledby="tabset1_initial-setup">
-<div class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Who
-</td>
-<td class="hdlist2">
-<p><a href="#role-specific:sg-lead.adoc" class="xref unresolved"><role style="background:#14BCCD;" >SUBGROUP LEAD</role></a></p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Steps
-</td>
-<td class="hdlist2">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Create issues that map to the features in the project list</p>
-</li>
-<li>
-<p>Assign the issues to the correct <code>&lt;milestone&gt;</code></p>
-</li>
-<li>
-<p>Assign the issues to a responsible with <code>@&lt;user&gt;</code></p>
-</li>
-</ol>
-</div>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Tips
-</td>
-<td class="hdlist2">
-<div class="ulist">
-<ul>
-<li>
-<p>Avoid including files in source control that are specific to your development
-machine or process &#8594; set up <a href="https://git-scm.com/docs/gitignore" target="_blank" rel="noopener">.gitignore</a> accordingly</p>
-</li>
-<li>
-<p>Create sub-issues in case an issue contains too much content for a short-lived implementation</p>
-</li>
-<li>
-<p>It may be necessary to create new issues during development as well, as new knowledge and information comes up.
-These have the same requirements and steps as those created at the beginning</p>
-</li>
-</ul>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
 <div class="tab-pane" aria-labelledby="tabset1_analysis">
 <div class="hdlist">
 <table>
@@ -451,6 +396,33 @@ Do this either directly via comments or in further meetings, adding the results 
 </div>
 </li>
 </ol>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Issue is a duplicate</dt>
+<dd>
+<p>&#8594; CLOSED (Duplicate)</p>
+</dd>
+<dt class="hdlist1">Issue is rejected</dt>
+<dd>
+<p>&#8594; CLOSED (Rejected)</p>
+</dd>
+<dt class="hdlist1">Issue can or will not be fixed</dt>
+<dd>
+<p>&#8594; CLOSED (Won&#8217;t fix)</p>
+</dd>
+<dt class="hdlist1">Issue analysis complete</dt>
+<dd>
+<p>&#8594; IMPLEMENTATION (Analyzed)</p>
+</dd>
+</dl>
 </div>
 </td>
 </tr>
@@ -502,6 +474,25 @@ Steps
 <p>Once the group agrees that the feature is complete, request a review by the whole project</p>
 </li>
 </ol>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Issue requires more analysis or should be rejected</dt>
+<dd>
+<p>&#8594; ANALYSIS (Analysis required)</p>
+</dd>
+<dt class="hdlist1">Issue is completely implemented</dt>
+<dd>
+<p>&#8594; REVIEW (Done)</p>
+</dd>
+</dl>
 </div>
 </td>
 </tr>
@@ -611,6 +602,25 @@ Steps
 </div>
 </td>
 </tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Implementation insufficient</dt>
+<dd>
+<p>&#8594; IMPLEMENTATION (Review NOK)</p>
+</dd>
+<dt class="hdlist1">Implementation accepted</dt>
+<dd>
+<p>&#8594; INTEGRATION (Review OK)</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
 </table>
 </div>
 </div>
@@ -679,6 +689,29 @@ In the case that questions lead to significant changes to the content, the MR is
 </div>
 </li>
 </ol>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Issue is rejected</dt>
+<dd>
+<p>&#8594; CLOSED (Rejected)</p>
+</dd>
+<dt class="hdlist1">Issue can or will not be fixed</dt>
+<dd>
+<p>&#8594; CLOSED (Won&#8217;t fix)</p>
+</dd>
+<dt class="hdlist1">Integration complete</dt>
+<dd>
+<p>&#8594; MERGE (Done)</p>
+</dd>
+</dl>
 </div>
 </td>
 </tr>
@@ -756,6 +789,25 @@ Tips
 <p>Delete local and remote feature branches after merging.</p>
 </li>
 </ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Integration insufficient</dt>
+<dd>
+<p>&#8594; INTEGRATION (Review NOK)</p>
+</dd>
+<dt class="hdlist1">Integration accepted</dt>
+<dd>
+<p>&#8594; CLOSED (Review OK)</p>
+</dd>
+</dl>
 </div>
 </td>
 </tr>
