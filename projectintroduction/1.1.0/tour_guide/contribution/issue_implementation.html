@@ -40,6 +40,7 @@
       <div id="topbar-nav" class="navbar-menu">
         <div class="navbar-end">
           <a class="navbar-item" href="#">To top</a>
+          <a class="navbar-item" href=""></a>
           <div class="navbar-item is-hoverable">
                     <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/tour_guide/contribution/issue_implementation.html+%7C%0D%0A%7C+Page+%7C+Issue implementation+%7C%0D%0A%7C+Module+%7C+tour_guide+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
           </div>
@@ -338,19 +339,7 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-Never work on the trunk directly&#8201;&#8212;&#8201;always work in separate branches!
-</td>
-</tr>
-</table>
-</div>
-<div class="sect1">
+<td class="tableblock halign-left valign-top"><div class="content"><div class="sect1">
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -368,6 +357,18 @@ Once ready, a branch is merged back into its parent branch (which may be the tru
 <p>The benefit of this approach is that each repository&#8217;s trunk contains the latest official state or version.
 Mistakes and unfinished changes to parts of it only have an impact on the branch where they happen.</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Never work on the trunk directly&#8201;&#8212;&#8201;always work in separate branches!
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -375,7 +376,8 @@ Mistakes and unfinished changes to parts of it only have an impact on the branch
 <div class="sectionbody">
 <div class="paragraph">
 <p>The central branch ("trunk") can only be merged to by the ASAM office, the Project Lead, or the project&#8217;s Change Control Board (CCB).
-Unless indicated by a clear git tag, all commits are considered to be part of a release candidate.</p>
+Tags on this specific branch represent the respective releases.
+These tags use <a href="https://semver.org/lang/de/" target="_blank" rel="noopener">semantic versioning</a>.</p>
 </div>
 <div class="paragraph">
 <p>Changes <strong>MUST</strong> be added through branches created from the trunk or another branch.<br>
@@ -400,13 +402,22 @@ These branches <strong>MAY</strong> be squashed and <strong>MUST</strong> be mer
 </div>
 </li>
 <li>
-<p>Change the issue status label to <label style="background: Red; color: white">requires:ConceptualWork</label> to indicate that a proposal is being implemented for this issue</p>
+<p>Change the issue status label to <label style="background: Red; color: white">requires:MergeRequest</label> to indicate that a proposal is being implemented for this issue</p>
 </li>
 <li>
 <p>Begin submitting work via commits to the develop branch</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Involved project participants review and comment changes through the associated Pull/Merge Request.
+These comments work identically to those described in <a href="contribute_with_issues.html#_discuss_issues" class="xref page">"discuss issues"</a></p>
+</li>
+</ol>
+</div>
 </li>
 <li>
-<p>Review implementation progress of issue with <a href="#role-specific:sg-lead.adoc" class="xref unresolved"><role style="background:#14BCCD;" >SUBGROUP LEAD</role></a> and the other <a href="#role-specific:project-participant.adoc" class="xref unresolved"><role style="background:#BDB76B;" >PROJECT PARTICIPANT</role></a> in Subgroup meetings</p>
+<p>Review implementation progress of issue with the Subgroup Lead and the other project participants in Subgroup meetings.
+Discussions and their results are documented in the Pull/Merge Request</p>
 </li>
 <li>
 <p>Once the group agrees that the feature is complete:</p>
@@ -416,32 +427,16 @@ These branches <strong>MAY</strong> be squashed and <strong>MUST</strong> be mer
 <p>Change the issue status label to <label style="background: Red; color: white">requires:CCBReview</label></p>
 </li>
 <li>
-<p>If changes were marked as draft, remove the encapsulating draft feature flag from the content (make sure that all other content remains within the draft flag) and commit the change.</p>
+<p>If the Merge/Pull Request is set to "Draft:", remove the draft flag from the Merge/Pull Request name</p>
 </li>
 <li>
-<p>If there is no Merge/Pull Request for this branch yet, create one</p>
-</li>
-<li>
-<p>If a Merge/Pull Request exists and is set to "Draft:", remove the draft flag from the Merge/Pull Request name</p>
-</li>
-<li>
-<p>Add a comment to the Merge/Pull Request to ask for a review by the whole project and the implementers forum: <code>/request_review @all</code>.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The MR MUST include document subsection number(s) being reviewed and a link to the lines of source code to be reviewed.</p>
+<p>Add a comment to the Merge/Pull Request to ask for a review by the whole project: <code>/request_review @all</code>.</p>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Tips</dt>
-</dl>
-</div>
-</li>
-<li>
-<p>If at any point during the implementation the group decides the issue has become irrelevant or cannot be implemented, the status label is changed to <label style="background: Blue; color:white">isStatus:WontBeFixed</label> and the issue is closed (as well as any related branches and Merge/Pull Requests)</p>
-</li>
-<li>
-<p>Issue branches SHOULD be short-lived (no more than 2 weeks) to ensure progress and direction are visible to project members and that it is not too out of sync with other activities.</p>
-</li>
+<dd>
+<div class="ulist">
+<ul>
 <li>
 <p>If a branch cannot be short-lived, rebase frequently to incorporate upstream changes.</p>
 </li>
@@ -461,6 +456,9 @@ This way, the Merge/Pull Request (and its branch) cannot be concluded by acciden
 </div>
 </li>
 </ul>
+</div>
+</dd>
+</dl>
 </div>
 </li>
 </ol>

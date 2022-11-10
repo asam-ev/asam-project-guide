@@ -40,6 +40,7 @@
       <div id="topbar-nav" class="navbar-menu">
         <div class="navbar-end">
           <a class="navbar-item" href="#">To top</a>
+          <a class="navbar-item" href=""></a>
           <div class="navbar-item is-hoverable">
                     <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/tour_guide/contribution/contribute_with_issues.html+%7C%0D%0A%7C+Page+%7C+Contribute with issues+%7C%0D%0A%7C+Module+%7C+tour_guide+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
           </div>
@@ -324,8 +325,10 @@ These issues can be created and managed in the respective Remote Repository of t
 <h2 id="_make_discussions_accessible"><a class="anchor" href="#_make_discussions_accessible"></a>Make discussions accessible</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>It must be possible for every project member to contribute to and give feedback on the content of a Proposal document directly.
-For this purpose, all content discussions shall happen through issues in a project&#8217;s issue board.</p>
+<p>It must be possible for every project member to contribute to and give feedback on the topic of discussion directly.
+For this purpose, all content discussions shall happen through issues in a project&#8217;s issue board.
+This also applies to discussion results from some subgroup meetings.
+The output of a discussion pertaining to any topic should be documented in its respective issue.</p>
 </div>
 </div>
 </div>
@@ -351,7 +354,7 @@ For this purpose, all content discussions shall happen through issues in a proje
 <p>assignee</p>
 </li>
 <li>
-<p>labels</p>
+<p>applicable labels</p>
 </li>
 </ul>
 </div>
@@ -367,15 +370,16 @@ If your project is on GitHub, see the <a href="https://docs.github.com/en/issues
 <p>Every topic shall have its own issue.</p>
 </div>
 <div class="sect2">
-<h3 id="_sub_issues"><a class="anchor" href="#_sub_issues"></a>Sub-issues</h3>
+<h3 id="_linked_related_issue"><a class="anchor" href="#_linked_related_issue"></a>Linked related issue</h3>
 <div class="paragraph">
-<p>If a topic is too complex for a single issue, sub-issues shall be created.</p>
+<p>If a topic is too complex for a single issue, linked related issues shall be created from this topic issue.
+Make sure they are linked correctly.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_closing_issues_and_sub_issues"><a class="anchor" href="#_closing_issues_and_sub_issues"></a>Closing issues and sub-issues</h3>
+<h3 id="_closing_issues_and_linked_related_issue"><a class="anchor" href="#_closing_issues_and_linked_related_issue"></a>Closing issues and linked related issue</h3>
 <div class="paragraph">
-<p>An issue with sub-issues shall only be closed if all its sub-issues have been closed.<br>
+<p>An open issue with linked related issues shall only be closed if all its linked related issues have been closed.<br>
 If an issue has a branch, the issue shall not be closed before the branch has been merged or closed.</p>
 </div>
 </div>
@@ -413,7 +417,18 @@ Each issue template contains a description (as comments) on when to use them and
 <div class="paragraph">
 <p>The use of issue labels is required for filtering and sorting issues more efficiently.
 Each issue and merge/pull request must apply general domain labels defined by ASAM.<br>
-A project may also have project-specific labels in addition to the official ones, specified directly in the project group.</p>
+A project may also have project-specific labels in addition to the default ones, specified directly in the project group.</p>
+</div>
+<div class="sect2">
+<h3 id="_introduce_project_specific_labels"><a class="anchor" href="#_introduce_project_specific_labels"></a>Introduce project-specific labels</h3>
+<div class="paragraph">
+<p>A group may introduce project-specific labels on top of the official ASAM ones that provide further filter options.
+If custom labels are introduced, the group must document these labels by providing a exhaustive label description with the label (i.e. in the GitLab/GitHub label).
+Additionally, the project may add the current label definitions in their project&#8217;s README in their repository.</p>
+</div>
+<div class="paragraph">
+<p>The documentation shall follow the project&#8217;s general documentation rules and language.</p>
+</div>
 </div>
 </div>
 </div>
@@ -442,13 +457,12 @@ A project may also have project-specific labels in addition to the official ones
 <p>The issue content (body) contains the definition of the issue.</p>
 </div>
 <div class="paragraph">
-<p>In the case of a feature or chapter description, it contains the current content of that chapter.
-It shall always be up-to-date and contain the latest discussed and approved version.<br>
-In the case of a question or a bug, it contains the initial topic.
-In the latter case, the content shall only be updated to correct mistakes therein.</p>
+<p>In the case of a feature, it contains the proposed content/change.<br>
+In the case of a question or a bug, it contains the initial topic.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>A comment to an issue is a new topic that is independent from any previous comment.</p>
+<p>A comment to an issue is a new topic that is independent from any previous comment.
+A user comments on the issue to partake in the discussion of this topic.</p>
 </div>
 <div class="hdlist">
 <table>
@@ -485,7 +499,8 @@ Failure to do so will prevent efficient project progress.
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>A reply is a comment created as a reply to a previous comment.
-In the issue, it is a child comment to the previous one and listed in relation to it.</p>
+It creates a thread.
+To continue the discussion, reply on the thread.</p>
 </div>
 <div class="hdlist">
 <table>
@@ -528,8 +543,8 @@ If you want to reply to a previous comment, make sure to create a reply, not a n
 <h2 id="_close_issues"><a class="anchor" href="#_close_issues"></a>Close issues</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>An issues shall be closed once its discussion is resolved.
-Possible reasons:</p>
+<p>An issue shall be closed once its discussion is resolved or the issue has been dismissed.<br>
+Possible resolutions:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -553,7 +568,7 @@ Possible reasons:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>it has become obsolete</p>
+<p>it has become obsolete and/or will not be fixed</p>
 </li>
 <li>
 <p>it is a duplicate (i.e. another issue deals with the same topic already)</p>
@@ -566,7 +581,8 @@ Possible reasons:</p>
 <h2 id="_reopen_issues"><a class="anchor" href="#_reopen_issues"></a>Reopen issues</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Closed issues can be reopened if they have become relevant again, there have been new developments directly impacting this specific issue, or the issue has been closed by accident and has not actually been finished yet.</p>
+<p>Issues shall not be reopened!
+If an issues has been closed by accident or has become relevant for other reasons again, a related issue shall be created instead.</p>
 </div>
 </div>
 </div>
