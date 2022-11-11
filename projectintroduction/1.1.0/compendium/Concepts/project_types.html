@@ -123,9 +123,6 @@
     <a class="nav-link" href="doc-as-code.html">Documentation as Code</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="document_types.html">Document types of a standard</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="project_lifecycle.html">Exemplary project lifecycle</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -334,18 +331,6 @@
     <h1 class="page">Project types</h1>
 <div id="preamble">
 <div class="sectionbody">
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-This section needs approval by TSC.
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
 <p><a href="#" class="right"><span class="image"><img src="../_images/Concepts/types_icon.png" alt="types icon" width="120"></span></a></p>
 </div>
@@ -357,24 +342,7 @@ This section needs approval by TSC.
 <div class="paragraph">
 <p>ASAM developes its products and results in projects.
 Different result types require different approaches and conditions.
-For this reason, ASAM defines four project types, which further characterize the work to be done within the projects.<br>
-They are:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#_concept">Concept</a></p>
-</li>
-<li>
-<p><a href="#_standard_development">Standard development</a></p>
-</li>
-<li>
-<p><a href="#_study">Study</a></p>
-</li>
-<li>
-<p><a href="#_implementation">Implementation</a></p>
-</li>
-</ul>
+For this reason, ASAM defines four project types, which further characterize the work to be done within the projects.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -382,6 +350,11 @@ They are:</p>
 </div>
 <div class="title">Figure 1. ASAM project types overview</div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>A new project can be triggered by either a new idea, a previous Concept Paper, or a previously released Standard.
 The intended output of each project type is a document.</p>
@@ -408,78 +381,232 @@ The intended output of each project type is a document.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_concept"><a class="anchor" href="#_concept"></a>Concept</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Concepts/project_types.adoc - include::compendium:page$TBD/project-type-concept.adoc[]</p>
-</div>
-<div class="paragraph">
-<p>For more details, see <a href="#compendium:TBD/project-type-concept.adoc" class="xref unresolved">compendium:TBD/project-type-concept.adoc</a> in the Compendium.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_standard_development"><a class="anchor" href="#_standard_development"></a>Standard development</h2>
+<h2 id="_details"><a class="anchor" href="#_details"></a>Details</h2>
 <div class="sectionbody">
 <div class="tabset is-loading">
 <div class="ulist tabs">
 <ul>
 <li>
-<p><a id="tabset1_major-version-update"></a>Major version update</p>
+<p><a id="tabset1_concept"></a>Concept</p>
 </li>
 <li>
-<p><a id="tabset1_minor-version-update"></a>Minor version update</p>
+<p><a id="tabset1_standard-development"></a>Standard development</p>
 </li>
 <li>
-<p><a id="tabset1_maintenance"></a>Maintenance</p>
+<p><a id="tabset1_study"></a>Study</p>
+</li>
+<li>
+<p><a id="tabset1_implementation"></a>Implementation</p>
 </li>
 </ul>
 </div>
 <div class="content">
-<div class="tab-pane" aria-labelledby="tabset1_major-version-update">
-<div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Concepts/project_types.adoc - include::compendium:page$TBD/project-type-standard.adoc[]</p>
+<div class="tab-pane" aria-labelledby="tabset1_concept">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Description
+</td>
+<td class="hdlist2">
+<p>Concept projects have the purpose to prepare the further development of existing ASAM standards or to prepare the development of new ASAM standards.
+They are typically chosen when the envisioned standard is complex and requires significant resources to even develop a sound and solid project proposal.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Goal
+</td>
+<td class="hdlist2">
+<p>The goals of concept projects are to propose specific content for ASAM standards and/or to provide justification for the usefulness, practicability, and feasibility of the proposed content.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Repository suffix
+</td>
+<td class="hdlist2">
+<p>Concept</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Output
+</td>
+<td class="hdlist2">
+<p>Concept Paper</p>
+</td>
+</tr>
+</table>
 </div>
 </div>
-<div class="tab-pane" aria-labelledby="tabset1_minor-version-update">
-<div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Concepts/project_types.adoc - include::compendium:page$TBD/project-type-standard.adoc[]</p>
+<div class="tab-pane" aria-labelledby="tabset1_standard-development">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Description
+</td>
+<td class="hdlist2">
+<p>Standard development projects are the core of ASAM.
+In these, the project group defines the content of an ASAM standard (new or updated).<br>
+In accordance with the concept of <a href="https://semver.org/" target="_blank" rel="noopener">semantic versioning</a>, a standard development project may be one of the following:</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Major</dt>
+<dd>
+<p>Major version developments of ASAM standards introduce significant (i.e. compatibility breaking) changes to the standard.
+A completely new standard is also considered to be a major version development.<br>
+The number of major version releases meets the pattern:
+"X.0.0".</p>
+</dd>
+<dt class="hdlist1">Minor</dt>
+<dd>
+<p>Minor version developments of ASAM standards introduce significant feature changes that do not break backwards compatibility.<br>
+The number of minor version releases meets the pattern:
+"Y.X.0".</p>
+</dd>
+<dt class="hdlist1">Maintenance</dt>
+<dd>
+<p>Maintenance version developments of ASAM standards resolve technical issues of the standard.
+Examples are correcting errors, removing ambiguities, adding clarifications to existing descriptions, making editorial improvements, or changing examples.
+Maintenance versions may not introduce new features.<br>
+The number of minor version releases meets the pattern:
+"Z.Y.X".</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Goal
+</td>
+<td class="hdlist2">
+<p>The goal is to create new standards and to update existing standards in accordance with the demands of ASAM members and market requirements.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Repository suffix
+</td>
+<td class="hdlist2">
+<p>Standard</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Output
+</td>
+<td class="hdlist2">
+<p>Standard and (optionally) supplemental material</p>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+All variants use the same repository suffix.
+</td>
+</tr>
+</table>
 </div>
 </div>
-<div class="tab-pane" aria-labelledby="tabset1_maintenance">
-<div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Concepts/project_types.adoc - include::compendium:page$TBD/project-type-standard.adoc[]</p>
+<div class="tab-pane" aria-labelledby="tabset1_study">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Description
+</td>
+<td class="hdlist2">
+<p>Study projects provide members, an organizational structure to study or analyze specific aspects of ASAM standards in a collaborative way.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Goal
+</td>
+<td class="hdlist2">
+<p>These projects have the overall goal to enhance the understanding of ASAM standards, to promote their application in member companies, and to create change requests for the further development of ASAM standards.
+This project type is specifically intended for members in regions, where ASAM standards are not well known.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Repository suffix
+</td>
+<td class="hdlist2">
+<p>Study</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Output
+</td>
+<td class="hdlist2">
+<p>Study Report</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_implementation">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Description
+</td>
+<td class="hdlist2">
+<p>Implementation projects have the purpose to create a supplementary product to a standard that supports the implementation or application of an ASAM standard in the industry.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Goal
+</td>
+<td class="hdlist2">
+<p>The goal of an implementation project is to create a tool or source code, such as checkers for file formats and APIs, add-ons or plug-ins for commonly used IDEs, importers, exporters or reference implementations.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Promoting specific commercial tools shall be avoided.
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Repository suffix
+</td>
+<td class="hdlist2">
+<p>Implementation</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Output
+</td>
+<td class="hdlist2">
+<p><strong>TODO</strong></p>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
-</div>
-<div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Concepts/project_types.adoc - include::compendium:page$TBD/project-type-standard.adoc[]</p>
-</div>
-<div class="paragraph">
-<p>For more details, see <a href="#compendium:TBD/project-type-standard.adoc" class="xref unresolved">compendium:TBD/project-type-standard.adoc</a> in the Compendium.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_study"><a class="anchor" href="#_study"></a>Study</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Concepts/project_types.adoc - include::compendium:page$TBD/project-type-study.adoc[]</p>
-</div>
-<div class="paragraph">
-<p>For more details, see <a href="#compendium:TBD/project-type-study.adoc" class="xref unresolved">compendium:TBD/project-type-study.adoc</a> in the Compendium.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_implementation"><a class="anchor" href="#_implementation"></a>Implementation</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Concepts/project_types.adoc - include::compendium:page$TBD/project-type-implementation.adoc[]</p>
-</div>
-<div class="paragraph">
-<p>For more details, see <a href="#compendium:TBD/project-type-implementation.adoc" class="xref unresolved">compendium:TBD/project-type-implementation.adoc</a> in the Compendium.</p>
 </div>
 </div>
 </div>
