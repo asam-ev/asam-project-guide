@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Docker :: ASAM Project Guide</title>
-    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/docker.html">
-    <link rel="prev" href="calendar/02_calendar_best-practices.html">
-    <link rel="next" href="docker/01_docker_setup.html">
-    <meta name="description" content="A summary page describing what Docker is and where to find related information, guides etc.">
-    <meta name="keywords" content="docker,summary,tool,recommended, doc-as-code">
+    <title>Issue implementation :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Project%20guidelines/issue_implementation.html">
+    <link rel="prev" href="guidelines.html">
+    <link rel="next" href="meeting_types.html">
     <meta name="generator" content="Antora 3.1.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <script type="text/javascript" src="../../../../_/js/modal.js" defer></script>
@@ -42,7 +40,7 @@
           <a class="navbar-item" href="#">To top</a>
           <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide-content/issues?q&#x3D;is%3Aopen+is%3Aissue">Issue overview</a>
           <div class="navbar-item is-hoverable">
-                    <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide-content/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Tools/docker.html+%7C%0D%0A%7C+Page+%7C+Docker+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+                    <a class="navbar-item" href="https://github.com/asam-ev/asam-project-guide-content/issues/new?labels=new;title=Content+feedback:+;body=%23+Prerequisites%0D%0A%0D%0AThis+is+in+regards+to%3A%0D%0A%0D%0A-+%5B+%5D+Title%0D%0A-+%5B+%5D+Content%3A+Text%0D%0A-+%5B+%5D+Content%3A+Image%28s%29%0D%0A-+%5B+%5D+Formatting%0D%0A-+%5B+%5D+Location+in+Project+Guide%0D%0A-+%5B+%5D+Obsolete%0D%0A%0D%0A%23+Subject%0D%0A%3C%21--+%3CAdd+title+of+topic%3E+--%3E%0D%0A%0D%0A%23+Section%0D%0A%3C%21--+%3CAdd+section+here%3E++--%3E%0D%0A%0D%0A%23+Description%0D%0A%3C%21--+%3CAdd+feedback+here%3E+--%3E%0D%0A%3C%21--+%3C+Recommended%3A+Add+a+screenshot+of+the+part+you+want+to+comment+on%3E+--%3E%0D%0A%0D%0A%23+Suggestion%0D%0A%3C%21--+%3C+Add+a+suggestion+or+things+you+want+to+change+after+this%3E+--%3E%0D%0A%0D%0A%3C%21--+If+added+manually%2C+please+fill+in+the+following+table+with+URL+%3D+page+url%2C+Page+%3D+the+name+of+the+page.+You+can+leave+Module+open+--%3E%0D%0A%7C+%7C+%7C%0D%0A%7C---%7C---%7C%0D%0A%7C+URL+%7C+https://asam-ev.github.io/asam-project-guide/projectintroduction/1.1.0/compendium/Project%20guidelines/issue_implementation.html+%7C%0D%0A%7C+Page+%7C+Issue implementation+%7C%0D%0A%7C+Module+%7C+compendium+%7C" title="Click here to submit feedback on this page">Submit feedback</a>
           </div>
         </div>
       </div>
@@ -141,25 +139,25 @@
     <a class="nav-link" href="../Project%20guidelines.html">Project guidelines</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Project%20guidelines/contribute_with_issues.html">Contribute with issues</a>
+    <a class="nav-link" href="contribute_with_issues.html">Contribute with issues</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Project%20guidelines/contribution.html">Contribution workflow</a>
+    <a class="nav-link" href="contribution.html">Contribution workflow</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Project%20guidelines/decisions_and_escalations.html">Decisions and escalations</a>
+    <a class="nav-link" href="decisions_and_escalations.html">Decisions and escalations</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Project%20guidelines/guidelines.html">Meeting guidelines</a>
+    <a class="nav-link" href="guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="issue_implementation.html">Issue implementation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Project%20guidelines/issue_implementation.html">Issue implementation</a>
+    <a class="nav-link" href="meeting_types.html">Meeting types</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Project%20guidelines/meeting_types.html">Meeting types</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Project%20guidelines/polls_votes.html">Polls and voting guidelines</a>
+    <a class="nav-link" href="polls_votes.html">Polls and voting guidelines</a>
   </li>
 </ul>
   </li>
@@ -169,97 +167,97 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="calendar.html">OpenX Calendar</a>
+    <a class="nav-link" href="../Tools/calendar.html">OpenX Calendar</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="calendar/01_calendar_setup.html">Setup</a>
+    <a class="nav-link" href="../Tools/calendar/01_calendar_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="calendar/02_calendar_best-practices.html">Best practices</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item is-current-page" data-depth="3">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="docker.html">Docker</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="docker/01_docker_setup.html">Setup</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="docker/02_docker_guides.html">Guides</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="docker/03_docker_best-practices.html">Best practices</a>
+    <a class="nav-link" href="../Tools/calendar/02_calendar_best-practices.html">Best practices</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="drawio.html">Draw.io</a>
+    <a class="nav-link" href="../Tools/docker.html">Docker</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="drawio/01_drawio_setup.html">Setup</a>
+    <a class="nav-link" href="../Tools/docker/01_docker_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="drawio/02_drawio_guides.html">Guides</a>
+    <a class="nav-link" href="../Tools/docker/02_docker_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/docker/03_docker_best-practices.html">Best practices</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="git.html">Git</a>
+    <a class="nav-link" href="../Tools/drawio.html">Draw.io</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="git/01_git_setup.html">Setup</a>
+    <a class="nav-link" href="../Tools/drawio/01_drawio_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="git/02_git_guides.html">Guides</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="git/03_git_best_practices.html">Best practices</a>
+    <a class="nav-link" href="../Tools/drawio/02_drawio_guides.html">Guides</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="remote_repo.html">Remote repository platforms</a>
+    <a class="nav-link" href="../Tools/git.html">Git</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="remote_repo/01_remote_repo_setup.html">Setup</a>
+    <a class="nav-link" href="../Tools/git/01_git_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="remote_repo/02_remote_repo_guides.html">Guides</a>
+    <a class="nav-link" href="../Tools/git/02_git_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/git/03_git_best_practices.html">Best practices</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="sharepoint.html">Microsoft Sharepoint</a>
+    <a class="nav-link" href="../Tools/remote_repo.html">Remote repository platforms</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="sharepoint/01_sharepoint_setup.html">Setup</a>
+    <a class="nav-link" href="../Tools/remote_repo/01_remote_repo_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="sharepoint/02_sharepoint_guides.html">Guides</a>
+    <a class="nav-link" href="../Tools/remote_repo/02_remote_repo_guides.html">Guides</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="vscode.html">Visual Studio Code</a>
+    <a class="nav-link" href="../Tools/sharepoint.html">Microsoft Sharepoint</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="vscode/01_vscode_setup.html">Setup</a>
+    <a class="nav-link" href="../Tools/sharepoint/01_sharepoint_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="vscode/02_vscode_guides.html">Guides</a>
+    <a class="nav-link" href="../Tools/sharepoint/02_sharepoint_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Tools/vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/vscode/01_vscode_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="vscode/03_vscode_recommended_settings.html">Recommended settings</a>
+    <a class="nav-link" href="../Tools/vscode/02_vscode_guides.html">Guides</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="vscode/04_vscode_recommended_extensions.html">Recommended extensions</a>
+    <a class="nav-link" href="../Tools/vscode/03_vscode_recommended_settings.html">Recommended settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Tools/vscode/04_vscode_recommended_extensions.html">Recommended extensions</a>
   </li>
 </ul>
   </li>
@@ -337,106 +335,199 @@
   <ul>
     <li><a href="../../index.html">ASAM Project Introduction</a></li>
     <li><a href="../compendium.html">Compendium</a></li>
-    <li><a href="../Tools.html">Tools for advanced users</a></li>
-    <li><a href="docker.html">Docker</a></li>
+    <li><a href="../Project%20guidelines.html">Project guidelines</a></li>
+    <li><a href="issue_implementation.html">Issue implementation</a></li>
   </ul>
 </nav>
 <div class="page-versions">
   <button class="version-menu-toggle" title="Show other versions of page">1.1.0</button>
   <div class="version-menu">
-    <a class="version is-current" href="docker.html">1.1.0</a>
-    <a class="version" href="../../../1.0.0/compendium/Tools/docker.html">1.0.0</a>
+    <a class="version is-current" href="issue_implementation.html">1.1.0</a>
+    <a class="version is-missing" href="../../../1.0.0/index.html">1.0.0</a>
   </div>
 </div>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Tools/docker.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/project_introduction/content/modules/compendium/pages/Project%20guidelines/issue_implementation.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc" variant="wide">
-    <h1 class="page">Docker</h1>
+    <h1 class="page">Issue implementation</h1>
 <div id="preamble">
 <div class="sectionbody">
-<div class="admonitionblock tip">
+<div class="paragraph">
+<p><a href="../../tour_guide/index.html" class="xref page"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/4295/4295914.png" alt="Introduction" width="80"></span></a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset1_simulation-domain"></a>Simulation domain</p>
+</li>
+<li>
+<p><a id="tabset1_classic-domain"></a>Classic domain</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset1_simulation-domain">
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Projects in the Simulation domain use trunk-based repositories in either GitLab or GitHub.</p>
+</div>
+<div class="paragraph">
+<p>A trunk-based repository is a repository that has a single central branch (the "trunk").
+This trunk contains the official and reviewed state of a project.<br>
+Users are not allowed to commit and push changes to this specific branch directly.
+Instead, all changes on the repository&#8217;s content are made in child branches.
+These can either be branched off of the trunk or from another branch.
+Once ready, a branch is merged back into its parent branch (which may be the trunk or another feature branch).</p>
+</div>
+<div class="paragraph">
+<p>The benefit of this approach is that each repository&#8217;s trunk contains the latest official state or version.
+Mistakes and unfinished changes to parts of it only have an impact on the branch where they happen.</p>
+</div>
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Click the tool&#8217;s icon on the right to access the tool&#8217;s download page.
+Never work on the trunk directly&#8201;&#8212;&#8201;always work in separate branches!
 </td>
 </tr>
 </table>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_trunk"><a class="anchor" href="#_the_trunk"></a>The trunk</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p><a href="https://docs.docker.com/get-docker/" target="_blank" rel="noopener"><span class="image right"><img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker" width="120" title="Docker Page"></span></a></p>
+<p>The central branch ("trunk") can only be merged to by the ASAM office, the Project Lead, or the project&#8217;s Change Control Board (CCB).
+Tags on this specific branch represent the respective releases.
+These tags use <a href="https://semver.org/" target="_blank" rel="noopener">semantic versioning</a>.</p>
 </div>
 <div class="paragraph">
-<p>Docker is a platform where you use so-called containers to run applications in an encapsulated environment.
-With this, you do not need to install and configure software, programming languages etc: just download and use a pre-configured container that has all the relevant configuration already built in.
-From the docker homepage:</p>
-</div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>Docker is an open platform for developing, shipping, and running applications.
-Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
-With Docker, you can manage your infrastructure in the same ways you manage your applications.
-By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.</p>
-</div>
-</blockquote>
-</div>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="https://docs.docker.com/get-started/overview/#docker-architecture" target="_blank" rel="noopener"><img src="https://docs.docker.com/engine/images/architecture.svg" alt="architecture"></a>
-</div>
-<div class="title">Figure 1. The Docker <a href="https://docs.docker.com/get-started/overview/#docker-architecture">architecture</a></div>
+<p>Changes <strong>MUST</strong> be added through branches created from the trunk or another branch.<br>
+These branches <strong>SHOULD</strong> be short-lived (&lt;2 weeks) and regularly merged back.<br>
+These branches <strong>MAY</strong> be squashed and <strong>MUST</strong> be merged via fast-forward merge (enabled by default).</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_docker_at_asam"><a class="anchor" href="#_docker_at_asam"></a>Docker at ASAM</h2>
+<h2 id="_implementing_issues"><a class="anchor" href="#_implementing_issues"></a>Implementing issues</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>For Asciidoctor and Antora, Docker can be used to run a pre-configured setup for creating output locally.
-This removes the need to upload adoc files and use the build pipeline for every change you want to see.<br>
-To render a project&#8217;s documentation without having to upload it, use Docker Compose with a correctly defined docker-compose.yml file.</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Once an issue can be implemented, the issue&#8217;s assignee creates a branch with an associated Merge or Pull Request from the issue.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Each branch must have a parent issue and each issue may have zero or one child branches</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>For information on what YAML/yml means, see <a href="https://de.wikipedia.org/wiki/YAML" target="_blank" rel="noopener">YAML on Wikipedia</a></p>
+</li>
+<li>
+<p>Change the issue status label to <label style="background: Red; color: white">requires:MergeRequest</label> to indicate that a proposal is being implemented for this issue</p>
+</li>
+<li>
+<p>Begin submitting work via commits to the develop branch</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Involved project participants review and comment changes through the associated Pull/Merge Request.
+These comments work identically to those described in <a href="../../tour_guide/contribution/contribute_with_issues.html#_discuss_issues" class="xref page">"discuss issues"</a></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Review implementation progress of issue with the Subgroup Lead and the other project participants in Subgroup meetings.
+Discussions and their results are documented in the Pull/Merge Request</p>
+</li>
+<li>
+<p>Once the group agrees that the feature is complete:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Change the issue status label to <label style="background: Red; color: white">requires:CCBReview</label></p>
+</li>
+<li>
+<p>If the Merge/Pull Request is set to "Draft:", remove the draft flag from the Merge/Pull Request name</p>
+</li>
+<li>
+<p>Add a comment to the Merge/Pull Request to ask for a review by the whole project: <code>/request_review @all</code>.</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Tips</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>If a branch cannot be short-lived, rebase frequently to incorporate upstream changes.</p>
+</li>
+<li>
+<p>Create branches directly from the issue to ensure the branch is linked to the issue.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This also provides the option to set up the related Merge/Pull Request right away.
+This way, the Merge/Pull Request (and its branch) are already accessible through the parent issue.</p>
+</li>
+<li>
+<p>Adding "DRAFT: " in front of a Merge/Pull Request&#8217;s name marks it as not ready for merge and disables the "Merge" button.
+This way, the Merge/Pull Request (and its branch) cannot be concluded by accident.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_content"><a class="anchor" href="#_content"></a>Content</h2>
-<div class="sectionbody">
-<table class="tableblock frame-none grid-rows stripes-hover stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-center valign-top"><p class="tableblock"><a href="docker/01_docker_setup.html" class="xref page"><span class="image"><img src="https://cdn-icons-png.flaticon.com/128/4411/4411634.png" alt="4411634" width="120" title="Docker setup"></span></a></p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Docker Setup</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-center valign-top"><p class="tableblock"><a href="docker/02_docker_guides.html" class="xref page"><span class="image"><img src="https://cdn-icons-png.flaticon.com/512/2618/2618595.png" alt="2618595" width="120" title="Docker guides"></span></a></p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Docker Guides</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-center valign-top"><p class="tableblock"><a href="docker/03_docker_best-practices.html" class="xref page"><span class="image"><img src="https://cdn-icons-png.flaticon.com/512/2996/2996987.png" alt="2996987" width="120" title="Docker best practices"></span></a></p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Docker Best Practices</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
 </div>
+<div class="tab-pane" aria-labelledby="tabset1_classic-domain">
+<div class="paragraph">
+<p>TODO</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="calendar/02_calendar_best-practices.html">Best practices</a></span>
-  <span class="next"><a href="docker/01_docker_setup.html">Setup</a></span>
+  <span class="prev"><a href="guidelines.html">Meeting guidelines</a></span>
+  <span class="next"><a href="meeting_types.html">Meeting types</a></span>
 </nav>
 </article>
   </div>
