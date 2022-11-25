@@ -14,7 +14,7 @@ content:
   sources:
     - url: https://github.com/asam-ev/asam-project-guide-content.git
     # - url: ./asam-project-guide-content
-      branches: [main, project_introduction]
+      branches: [main]
       # branches: project_introduction
       tags: v*
       start_path: content
