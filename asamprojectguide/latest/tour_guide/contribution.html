@@ -364,45 +364,57 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>Developing content for ASAM standards is focused around the concept of <a href="contribution/contribute_with_issues.html" class="xref page">contributing with issues</a>.<br>
-The following sections describe this workflow in more detail.
-Note that the workflow starts when an issue is assigned to someone.
-Whether the issue is created with an assignee or assigned by someone from the project later is irrelevant.<br>
-How an unassigned issue is assigned and by whom is out-of-scope for this workflow.
-The project group may define their own workflow and responsibilities for that.</p>
+The following sections describe this workflow in more detail.</p>
 </div>
-<div class="imageblock kroki">
+<div class="imageblock">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-0780f54462763a6edfc205f33e39ff4d91b837bc.svg"><span class="alt">Workflow stages</span></object>
+<img src="_images/workflow/asam_contribution_workflow-StateDiagram.drawio.svg" alt="asam contribution workflow StateDiagram.drawio">
 </div>
-<div class="title">Figure 1. Workflow stages</div>
-</div>
-<div class="paragraph">
-<p>Each stage is described in more detail in the sections below.
-The role listed at the top of each section is the one responsible for it.</p>
+<div class="title">Figure 1. ASAM Contribution Workflow</div>
 </div>
 <hr>
+<div class="paragraph">
+<p>Each state is described in more detail in the sections below.
+The role listed at the top of each section is the one responsible for it.</p>
+</div>
+<div class="paragraph">
+<p><strong>DoR</strong> stands for <strong>Definition of Ready</strong>.
+It describes the requirements an incoming issue must meet.
+If DoR are specified but not met, the issue is immediately reset to the previous state (including the assignee).<br>
+<strong>DoD</strong> stands for <strong>Definition of Done</strong>.
+It describes the requirements that must be met for an issue to be allowed to exit this state.</p>
+</div>
 <div class="tabset is-loading">
 <div class="ulist tabs">
 <ul>
 <li>
-<p><a id="tabset1_analysis"></a>Analysis</p>
+<p><a id="tabset1_new"></a>New</p>
 </li>
 <li>
-<p><a id="tabset1_implementation"></a>Implementation</p>
+<p><a id="tabset1_classified"></a>Classified</p>
 </li>
 <li>
-<p><a id="tabset1_review"></a>Review</p>
+<p><a id="tabset1_accepted"></a>Accepted</p>
 </li>
 <li>
-<p><a id="tabset1_integration"></a>Integration</p>
+<p><a id="tabset1_in-progress"></a>In Progress</p>
 </li>
 <li>
-<p><a id="tabset1_merge"></a>Merge</p>
+<p><a id="tabset1_implemented"></a>Implemented</p>
+</li>
+<li>
+<p><a id="tabset1_reviewed"></a>Reviewed</p>
+</li>
+<li>
+<p><a id="tabset1_integrated"></a>Integrated</p>
+</li>
+<li>
+<p><a id="tabset1_ready-for-merge"></a>Ready for Merge</p>
 </li>
 </ul>
 </div>
 <div class="content">
-<div class="tab-pane" aria-labelledby="tabset1_analysis">
+<div class="tab-pane" aria-labelledby="tabset1_new">
 <div class="hdlist">
 <table>
 <tr>
@@ -410,37 +422,52 @@ The role listed at the top of each section is the one responsible for it.</p>
 Who
 </td>
 <td class="hdlist2">
-<p>Assignee</p>
+<p><a href="#_workflow_manager">Workflow Manager</a></p>
 </td>
 </tr>
 <tr>
 <td class="hdlist1">
-Steps
+State Label
 </td>
 <td class="hdlist2">
-<div class="olist arabic">
-<ol class="arabic">
+<p><label style="background: Blue; color:white">isState:New</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
 <li>
-<p>Assign the label <label style="background: Red; color: white">requires:Clarification</label> to indicate this issue is being looked at and discussed.</p>
+<p>Categorize the issue (i.e. assign the issue type)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the issue is a duplicate, assign <label style="background: Grey; color:black">resolutionType:Duplicate</label> and close the issue</p>
 </li>
 <li>
-<p>Coordinate and drive the preparation of a proposal for addressing the issue.
-Do this either directly via comments or in further meetings, adding the results to the comments later.</p>
+<p>Otherwise, assign the correct type (one of: <label style="background: #428BCA; color: white">isType:Feature</label>, <label style="background: #428BCA; color: white">isType:Bug</label>, <label style="background: #428BCA; color: white">isType:Documenatation</label>)</p>
 </li>
-<li>
-<p>If the analysis shows the issue is a duplicate to another issue in the same project:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Assign the label <label style="background: Blue; color:white">isStatus:Duplicate</label> and assign the Subgroup Lead</p>
-</li>
-<li>
-<p>The SG Lead reviews the issue and either closes it (if it is a duplicate) or changes the status back to <label style="background: Red; color: white">requires:Clarification</label> and the assignee back to the original issue assignee</p>
-</li>
-</ol>
+</ul>
 </div>
 </li>
-</ol>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoD
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Issue type assigned OR resolutionType set</p>
+</li>
+</ul>
 </div>
 </td>
 </tr>
@@ -453,42 +480,232 @@ Transitions
 <dl>
 <dt class="hdlist1">Issue is a duplicate</dt>
 <dd>
-<p>&#8594; CLOSED (Duplicate)</p>
+<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)</p>
 </dd>
-<dt class="hdlist1">Issue is rejected</dt>
+<dt class="hdlist1">Type assigned</dt>
 <dd>
-<p>&#8594; CLOSED (Rejected)</p>
-</dd>
-<dt class="hdlist1">Issue can or will not be fixed</dt>
-<dd>
-<p>&#8594; CLOSED (Won&#8217;t fix)</p>
-</dd>
-<dt class="hdlist1">Issue analysis complete</dt>
-<dd>
-<p>&#8594; IMPLEMENTATION (Analyzed)</p>
+<p>&#8594; CLASSIFIED</p>
 </dd>
 </dl>
-</div>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Tips
-</td>
-<td class="hdlist2">
-<div class="ulist">
-<ul>
-<li>
-<p>If analysis shows an issue to contain too many steps, create linked related issues to split the topic up further for faster content implementation</p>
-</li>
-</ul>
 </div>
 </td>
 </tr>
 </table>
 </div>
 </div>
-<div class="tab-pane" aria-labelledby="tabset1_implementation">
+<div class="tab-pane" aria-labelledby="tabset1_classified">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p>Relevant lead (Project Lead or Subgroup Lead)</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:Classified</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Discuss the issue</p>
+</li>
+<li>
+<p>Decide whether to accept it or not</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoR
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Valid type is assigned</p>
+</li>
+<li>
+<p>Issue is assigned to relevant lead</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoD
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Group decision on issue is documented</p>
+</li>
+<li>
+<p>If rejected, <label style="background: Grey; color:black">resolutionType:Rejected</label> is assigned</p>
+</li>
+<li>
+<p>If duplicate, <label style="background: Grey; color:black">resolutionType:Duplicate</label> is assigned</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Issue is a duplicate</dt>
+<dd>
+<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)</p>
+</dd>
+<dt class="hdlist1">Issue is rejected</dt>
+<dd>
+<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Rejected</label>)</p>
+</dd>
+<dt class="hdlist1">Issue is accepted</dt>
+<dd>
+<p>&#8594; ACCEPTED</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_accepted">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p>Relevant lead (Project Lead or Subgroup Lead)</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:Accepted</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Assign the issue to a group member</p>
+</li>
+<li>
+<p>Check if the issue needs to be split into multiple sub-issues (making it a parent issue)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If it needs to be split, each sub-issue enters state ACCEPTED immediately</p>
+</li>
+<li>
+<p>Each sub-issue applies the remaining workflow individually</p>
+</li>
+<li>
+<p>A parent issue may only be closed if all its sub-issues have been closed</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Define the issue&#8217;s priority</p>
+</li>
+<li>
+<p>Set a <a href="#_due_dates">due date</a> for the solution (should not exceed 4 weeks of development)</p>
+</li>
+<li>
+<p>Optional: Assign to corresponding milestone</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoR
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Acceptance is documented in issue</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoD
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Solution developer assigned</p>
+</li>
+<li>
+<p>If necessary, split into sub-issues</p>
+</li>
+<li>
+<p>Due date set</p>
+</li>
+<li>
+<p>Issue requirements specified</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Prioritized</dt>
+<dd>
+<p>&#8594; IN PROGRESS</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_in-progress">
 <div class="hdlist">
 <table>
 <tr>
@@ -501,24 +718,79 @@ Who
 </tr>
 <tr>
 <td class="hdlist1">
-Steps
+State Label
 </td>
 <td class="hdlist2">
-<div class="olist arabic">
-<ol class="arabic">
+<p><label style="background: Blue; color:white">isState:InProgress</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
 <li>
-<p>Once a proposal is ready to be implemented, follow the steps as layed out in <a href="contribution/issue_implementation.html" class="xref page">Issue implementation</a></p>
+<p>Develop a solution together with relevant group (see <a href="contribution/issue_implementation.html" class="xref page">Issue implementation</a>)</p>
 </li>
 <li>
-<p>Implement the topics of that issue</p>
+<p>Create a Merge/Pull Request</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In case of strong dependencies to another issue, add the issue number to the request description and the changes to that Merge/Pull Request instead</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>Review implementation progress of issue with the Subgroup Lead and the other project participants in Subgroup meetings</p>
+<p>Review changes within involved group</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoR
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Solution developer assigned</p>
 </li>
 <li>
-<p>Once the group agrees that the feature is complete, request a review by the whole project</p>
+<p>Created sub-issues linked, if any</p>
 </li>
-</ol>
+<li>
+<p>Due date set</p>
+</li>
+<li>
+<p>Issue requirements specified</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoD
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Requirements in the issue description are met</p>
+</li>
+<li>
+<p>All affected artifacts of the standard are covered</p>
+</li>
+<li>
+<p>Complete solution included in Merge/Pull Request</p>
+</li>
+</ul>
 </div>
 </td>
 </tr>
@@ -529,13 +801,9 @@ Transitions
 <td class="hdlist2">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Issue requires more analysis or should be rejected</dt>
+<dt class="hdlist1">Solution developed</dt>
 <dd>
-<p>&#8594; ANALYSIS (Analysis required)</p>
-</dd>
-<dt class="hdlist1">Issue is completely implemented</dt>
-<dd>
-<p>&#8594; REVIEW (Done)</p>
+<p>&#8594; IMPLEMENTED</p>
 </dd>
 </dl>
 </div>
@@ -544,13 +812,7 @@ Transitions
 </table>
 </div>
 </div>
-<div class="tab-pane" aria-labelledby="tabset1_review">
-<div class="paragraph">
-<p>The Review stage consists of the <strong>Internal review</strong> and the <strong>Change Control Board review</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Internal review</strong><br></p>
-</div>
+<div class="tab-pane" aria-labelledby="tabset1_implemented">
 <div class="hdlist">
 <table>
 <tr>
@@ -558,92 +820,113 @@ Transitions
 Who
 </td>
 <td class="hdlist2">
-<p>All project participants</p>
+<p>Project Lead</p>
 </td>
 </tr>
 <tr>
 <td class="hdlist1">
-Steps
+State Label
 </td>
 <td class="hdlist2">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Submit feedback on the changes directly in the Merge/Pull Request</p>
-<div class="ulist">
-<ul>
-<li>
-<p>General feedback: Submit a comment on the Merge/Pull Request</p>
-</li>
-<li>
-<p>Content specific feedback: Start a review in the changes tab of the Merge/Pull Request</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-To start a review, write a comment on a diff as normal under the 'Changes' tab in a Merge/Pull Request and then select 'Start a review'.<br>
-Click <a href="https://docs.gitlab.com/ee/user/discussions/#starting-a-review" target="_blank" rel="noopener">here</a> for more information.
-</td>
-</tr>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>If the review feedback requires further development work, the process restarts from the <strong>Implementation</strong> stage</p>
-</li>
-</ol>
-</div>
+<p><label style="background: Blue; color:white">isState:Implemented</label></p>
 </td>
 </tr>
 <tr>
 <td class="hdlist1">
-Tips
+Actions
 </td>
 <td class="hdlist2">
 <div class="ulist">
 <ul>
 <li>
-<p>Technical discussion happen in comments</p>
+<p>Update issue&#8217;s due date for review (should not exceed 2 weeks)</p>
+</li>
+<li>
+<p>Ask project group for review</p>
+</li>
+<li>
+<p>Put issue on the next agenda</p>
+</li>
+<li>
+<p>Group reviews solution and documents feedback in Merge/Pull Request</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Each reviewer documents their feedback in Merge/Pull Request</p>
+<div class="ulist">
+<ul>
+<li>
+<p>General feedback: as comment on Merge/Pull Request</p>
+</li>
+<li>
+<p>Specific feedback: as review in changes tab</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Identified minor corrections are implemented directly in collaboration between reviewers and solution developer</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Discuss review results in group meeting</p>
+</li>
+<li>
+<p>Accept or reject solution and document decision in issue</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Identified major corrections lead to rejection of solution</p>
+</li>
+<li>
+<p>If accepted, appoint an <a href="#_integrator">Integrator</a> (responsible for integrating the solution) and an <a href="#_integration_reviewer">Integration Reviewer</a> (responsible for reviewing the integration)</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
 </td>
 </tr>
-</table>
-</div>
-<div class="paragraph">
-<p><strong>Change Control Board review</strong><br></p>
-</div>
-<div class="hdlist">
-<table>
 <tr>
 <td class="hdlist1">
-Who
+DoR
 </td>
 <td class="hdlist2">
-<p>CCB</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Project Lead assigned</p>
+</li>
+<li>
+<p>Relevant Merge/Pull Request linked in issue</p>
+</li>
+</ul>
+</div>
 </td>
 </tr>
 <tr>
 <td class="hdlist1">
-Steps
+DoD
 </td>
 <td class="hdlist2">
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
-<p>If there are no unresolved comments or threads after two weeks, the CCB ends the review</p>
+<p>Solution reviewed</p>
 </li>
 <li>
-<p>The Merge/Pull Request is assigned to the Service Provider for <strong>Integration</strong></p>
+<p>Feedback documented in Merge/Pull Request</p>
 </li>
-</ol>
+<li>
+<p>Decision (accepted/rejected) documented</p>
+</li>
+<li>
+<p>If accepted: <a href="#_integrator">Integrator</a> assigned</p>
+</li>
+</ul>
 </div>
 </td>
 </tr>
@@ -654,13 +937,13 @@ Transitions
 <td class="hdlist2">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Implementation insufficient</dt>
+<dt class="hdlist1">Solution accepted</dt>
 <dd>
-<p>&#8594; IMPLEMENTATION (Review NOK)</p>
+<p>&#8594; REVIEWED</p>
 </dd>
-<dt class="hdlist1">Implementation accepted</dt>
+<dt class="hdlist1">Solution rejected</dt>
 <dd>
-<p>&#8594; INTEGRATION (Review OK)</p>
+<p>&#8594; IN PROGRESS</p>
 </dd>
 </dl>
 </div>
@@ -669,7 +952,7 @@ Transitions
 </table>
 </div>
 </div>
-<div class="tab-pane" aria-labelledby="tabset1_integration">
+<div class="tab-pane" aria-labelledby="tabset1_reviewed">
 <div class="hdlist">
 <table>
 <tr>
@@ -677,63 +960,77 @@ Transitions
 Who
 </td>
 <td class="hdlist2">
-<p>Service Provider</p>
+<p><a href="#_integrator">Integrator</a></p>
 </td>
 </tr>
 <tr>
 <td class="hdlist1">
-Steps
+State Label
 </td>
 <td class="hdlist2">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>The Service Provider changes the status label to <label style="background: Red; color: white">requires:DocumentationWork</label></p>
-</li>
-<li>
-<p>The Service Provider refines the content in the Merge/Pull Request</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>The content is adjusted to adhere to ASAM style and writing conventions</p>
-</li>
-<li>
-<p>General editorial rewrites to ensure homogeneity of content</p>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-Questions on content should be addressed to the original issue assignee who will be responsible for ensuring a satisfactory resolution.
-In the case that questions lead to significant changes to the content, the MR is reopened for review on resolution.
+<p><label style="background: Blue; color:white">isState:Reviewed</label></p>
 </td>
 </tr>
-</table>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>On completion of the integration:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Set the status label of the Merge/Pull Request to <label style="background: Red; color: white">requires:CCBReview</label></p>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
 <div class="ulist">
 <ul>
 <li>
-<p>Set to squash commits with <a href="https://www.tutorialspoint.com/what-is-a-fast-forward-merge-in-git" target="_blank" rel="noopener">fast-forward merging</a> (default).</p>
+<p>Refine content and apply ASAM Editorial Guide</p>
+</li>
+<li>
+<p>If relevant, apply project-specific writing rules and guidelines</p>
+</li>
+<li>
+<p>Document any questions in the issue</p>
+</li>
+<li>
+<p>Clarify minor questions with solution developer</p>
+</li>
+<li>
+<p>If any major questions arise, change state back to Implemented</p>
 </li>
 </ul>
 </div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoR
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_integrator">Integrator</a> assigned</p>
 </li>
-</ol>
+</ul>
 </div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoD
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Solution completely integrated</p>
 </li>
-</ol>
+<li>
+<p>Checked against ASAM Editorial Guide</p>
+</li>
+<li>
+<p>Relevant pipelines pass</p>
+</li>
+<li>
+<p>All questions documented as comments in issue</p>
+</li>
+</ul>
 </div>
 </td>
 </tr>
@@ -744,17 +1041,13 @@ Transitions
 <td class="hdlist2">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Issue is rejected</dt>
+<dt class="hdlist1">Solution implemented</dt>
 <dd>
-<p>&#8594; CLOSED (Rejected)</p>
+<p>&#8594; INTEGRATED</p>
 </dd>
-<dt class="hdlist1">Issue can or will not be fixed</dt>
+<dt class="hdlist1">Major questions</dt>
 <dd>
-<p>&#8594; CLOSED (Won&#8217;t fix)</p>
-</dd>
-<dt class="hdlist1">Integration complete</dt>
-<dd>
-<p>&#8594; MERGE (Done)</p>
+<p>&#8594; IMPLEMENTED</p>
 </dd>
 </dl>
 </div>
@@ -763,7 +1056,7 @@ Transitions
 </table>
 </div>
 </div>
-<div class="tab-pane" aria-labelledby="tabset1_merge">
+<div class="tab-pane" aria-labelledby="tabset1_integrated">
 <div class="hdlist">
 <table>
 <tr>
@@ -771,18 +1064,26 @@ Transitions
 Who
 </td>
 <td class="hdlist2">
-<p>CCB</p>
+<p><a href="#_integration_reviewer">Integration Reviewer</a></p>
 </td>
 </tr>
 <tr>
 <td class="hdlist1">
-Steps
+State Label
 </td>
 <td class="hdlist2">
-<div class="olist arabic">
-<ol class="arabic">
+<p><label style="background: Blue; color:white">isState:Integrated</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
 <li>
-<p>CCB performs a final review of the integrated content</p>
+<p>Review the integration</p>
 <div class="ulist">
 <ul>
 <li>
@@ -801,37 +1102,51 @@ Steps
 </div>
 </li>
 <li>
-<p>If the review is not passed, return to <strong>Integration</strong></p>
+<p>Add feedback as comments on Merge/Pull Request</p>
 </li>
 <li>
-<p>If the review is passed and the CCB can merge, the CCB merges the Merge/Pull Request back to the trunk</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<p>Add verdict as comment in issue</p>
+<div class="ulist">
+<ul>
 <li>
-<p>The CCB removes the status label and closes the linked issue</p>
+<p>If accepted, assign issue to the <a href="#_workflow_manager">Workflow Manager</a></p>
 </li>
-</ol>
+</ul>
 </div>
 </li>
-<li>
-<p>If the review is passed but the CCB may not merge, the CCB changes the status label to <label style="background: Red; color: white">requires:Merge</label></p>
-</li>
-</ol>
+</ul>
 </div>
 </td>
 </tr>
 <tr>
 <td class="hdlist1">
-Tips
+DoR
 </td>
 <td class="hdlist2">
 <div class="ulist">
 <ul>
 <li>
-<p>Use a <a href="https://help.github.com/articles/using-pull-requests/" target="_blank" rel="noopener">pull request</a> for code reviews.</p>
+<p><a href="#Integraton Reviewer">[Integraton Reviewer]</a> assigned</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoD
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Solution reviewed</p>
 </li>
 <li>
-<p>Delete local and remote feature branches after merging.</p>
+<p>Feedback provided in Merge/Pull Request, if relevant</p>
+</li>
+<li>
+<p>Verdict documented in issue</p>
 </li>
 </ul>
 </div>
@@ -844,13 +1159,13 @@ Transitions
 <td class="hdlist2">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Integration insufficient</dt>
+<dt class="hdlist1">Integration OK</dt>
 <dd>
-<p>&#8594; INTEGRATION (Review NOK)</p>
+<p>&#8594; READYFORMERGE</p>
 </dd>
-<dt class="hdlist1">Integration accepted</dt>
+<dt class="hdlist1">Integration NOK</dt>
 <dd>
-<p>&#8594; CLOSED (Review OK)</p>
+<p>&#8594; REVIEWED</p>
 </dd>
 </dl>
 </div>
@@ -859,6 +1174,178 @@ Transitions
 </table>
 </div>
 </div>
+<div class="tab-pane" aria-labelledby="tabset1_ready-for-merge">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p><a href="#_workflow_manager">Workflow Manager</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:ReadyForMerge</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Merge the assigned Merge/Pull Request</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If any major merge conflicts arise, document conflict, reassign it to the <a href="#_integration_reviewer">Integration Reviewer</a>, and change back to the previous state</p>
+</li>
+<li>
+<p>If the merge completes successfully, close the Merge/Pull Request and the associated issue(s)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoR
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_workflow_manager">Workflow Manager</a> assigned</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+DoD
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Branch merged</p>
+</li>
+<li>
+<p>In case of merge conflicts: conflict documented in Merge/Pull Request</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Merged</dt>
+<dd>
+<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>)</p>
+</dd>
+<dt class="hdlist1">Merge Conflict</dt>
+<dd>
+<p>&#8594; INTEGRATED</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_due_dates"><a class="anchor" href="#_due_dates"></a>Due dates</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The due date in issues shall be used to indicate the expected finalization date for the development of the solution.
+This date marks the point at which the solution can be reviewed and, ideally, accepted for integration.<br>
+It is important to note that the development of the solution does not include its implementation!
+<strong>Make sure that there is at least 4 weeks of time after the due date to integrate it before any final deadline of the project.</strong></p>
+</div>
+<div class="paragraph">
+<p>ASAM recommends that each issues takes no more than 4 weeks to create a solution for it.
+This means that issues where the solution is expected to be more complex should be split into multiple smaller ones, each with an expected resolution time of 4 weeks or less.</p>
+</div>
+<div class="paragraph">
+<p>When scheduling an issue, set its due date according to the issue&#8217;s estimate.
+If an issue is split into multiple sub-issues, assign due dates for the issue as well as the sub-issues.
+In this case, the due date of the issue itself may exceed the 4 week recommendation.
+However, the sub-issues should then stick to that limit.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generic_roles"><a class="anchor" href="#_generic_roles"></a>Generic roles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The workflow contains some generic roles that each project may implement differently.</p>
+</div>
+<div class="sect2">
+<h3 id="_workflow_manager"><a class="anchor" href="#_workflow_manager"></a>Workflow Manager</h3>
+<div class="paragraph">
+<p>The role "<strong>Workflow Manager</strong>" is an abstract role.
+Each project decides how and whom to assign it to.<br>
+Typical examples are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Project Lead</p>
+</li>
+<li>
+<p>Office Responsible</p>
+</li>
+<li>
+<p>Subgroup leads, if available</p>
+</li>
+<li>
+<p>Change Control Board (CCB) representative, if defined</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Typically, the Workflow Manager is experienced with using remote repositories.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_integrator"><a class="anchor" href="#_integrator"></a>Integrator</h3>
+<div class="paragraph">
+<p>The Integrator is responsible for integrating the developed solution into the standard.
+Their task is to make sure the writing style is kept consistent and the ASAM editorial rules are met.</p>
+</div>
+<div class="paragraph">
+<p>The Integrator may be a service provider tasked with documentation efforts in the project.
+Alternatively, the Integrator may be the Office Responsible or a member of the project group.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_integration_reviewer"><a class="anchor" href="#_integration_reviewer"></a>Integration Reviewer</h3>
+<div class="paragraph">
+<p>The Integration Reviewer is responsible for reviewing the integrated solution created by the <a href="#_integrator">Integrator</a>.<br>
+They may be an individual or a group.
+Typically, this is also the <a href="#_workflow_manager">Workflow Manager</a>.
+In the case that a project has a defined Change Control Board, it shall take on this role.</p>
 </div>
 </div>
 </div>
