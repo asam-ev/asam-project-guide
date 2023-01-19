@@ -2,6 +2,7 @@
 *.adoc1
 *.adoc2
 site/
+site_local.yml
 0_used-keywords.adoc
 used-attributes.adoc
 link-concept-full.puml
