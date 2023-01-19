@@ -1,0 +1,28 @@
+version: "2"
+
+services:
+
+  antora:
+    image: ghcr.io/asam-ev/project-guide-docker:4
+    volumes:
+      - .:/usr/src/repo #has to match WORKSPACE defined in Dockerfile + folder from package.json "docker-build"
+    depends_on:
+      - kroki
+      - blockdiag
+      - mermaid
+    entrypoint: antora --stacktrace --fetch --clean site_local.yml
+    # entrypoint: /bin/bash
+
+
+  kroki:
+    image: yuzutech/kroki:0.15.1
+    environment:
+      - KROKI_MAX_URI_LENGTH=20000
+      - KROKI_BLOCKDIAG_HOST=blockdiag
+      - KROKI_MERMAID_HOST=mermaid
+
+  blockdiag:
+    image: yuzutech/kroki-blockdiag:0.15.1
+
+  mermaid:
+    image: yuzutech/kroki-mermaid:0.15.1
