@@ -56,9 +56,9 @@ asciidoc:
     kroki-default-options: interactive
     credits: 'xref:ROOT:credits.adoc[]'
     # Configuration for feedback button. The button is defined in the header-content.hbs in ./supplemental_ui/partials
-    page-feedbackurl: https://github.com/asam-ev/asam-project-guide-content/issues/new
-    page-feedbacktype: github
-    page-issuelist: https://github.com/asam-ev/asam-project-guide-content/issues?q=is%3Aopen+is%3Aissue
+    page-feedbackurl: https://github.com/asam-ev/asam-project-guide-content/issues/new@
+    page-feedbacktype: github@
+    page-issuelist: https://github.com/asam-ev/asam-project-guide-content/issues?q=is%3Aopen+is%3Aissue@
 
     ## Labels
     mandatory: '<label class="mandatory"/>'
