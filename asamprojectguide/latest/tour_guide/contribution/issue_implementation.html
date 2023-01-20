@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Issue implementation :: ASAM Project Guide</title>
+    <title>Solution development :: ASAM Project Guide</title>
     <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/tour_guide/contribution/issue_implementation.html">
     <link rel="prev" href="contribute_with_issues.html">
     <link rel="next" href="../advanced_tools.html">
@@ -37,7 +37,7 @@
       <div id="topbar-nav" class="navbar-menu">
         <a class="navbar-item" href="#">To top</a>
         <div class="navbar-item is-hoverable">
-              <a class="navbar-item" href="mailto:info@asam.net??subject&#x3D;Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body&#x3D;%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/tour_guide/contribution/issue_implementation.html%20%7C%0D%0A%7C%20Page%20%7C%20Issue implementation%20%7C%0D%0A%7C%20Module%20%7C%20tour_guide%20%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+              <a class="navbar-item" href="mailto:info@asam.net?subject&#x3D;Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body&#x3D;%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/tour_guide/contribution/issue_implementation.html%20%7C%0D%0A%7C%20Page%20%7C%20Solution development%20%7C%0D%0A%7C%20Module%20%7C%20tour_guide%20%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
       </div>
     </div>
@@ -83,10 +83,10 @@
     <a class="nav-link" href="../contribution.html">Contribution workflow</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="contribute_with_issues.html">Contribute with issues</a>
+    <a class="nav-link" href="contribute_with_issues.html">The use of issues</a>
   </li>
   <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="issue_implementation.html">Issue implementation</a>
+    <a class="nav-link" href="issue_implementation.html">Solution development</a>
   </li>
 </ul>
   </li>
@@ -324,7 +324,7 @@
     <li><a href="../../index.html">ASAM Project Guide</a></li>
     <li><a href="../index.html">Guided tour</a></li>
     <li><a href="../contribution.html">Contribution workflow</a></li>
-    <li><a href="issue_implementation.html">Issue implementation</a></li>
+    <li><a href="issue_implementation.html">Solution development</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/main/content/modules/tour_guide/pages/contribution/issue_implementation.adoc">Edit this Page</a></div>
@@ -339,7 +339,7 @@
     <img src="../../../../asamprojectguide/latest/tour_guide/_images/progress_bar_simple-implementation.svg" style="width:100%;" id="progress_bar">
   </div>
 </div>
-<h1 class="page">Issue implementation</h1>
+<h1 class="page">Solution development</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
@@ -373,7 +373,7 @@
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Projects in the Simulation domain use trunk-based repositories in either GitLab or GitHub.</p>
+<p>Projects at ASAM use trunk-based repositories.</p>
 </div>
 <div class="paragraph">
 <p>A trunk-based repository is a repository that has a single central branch (the "trunk").
@@ -406,8 +406,8 @@ Never work on the trunk directly&#8201;&#8212;&#8201;always work in separate bra
 <div class="sectionbody">
 <div class="paragraph">
 <p>The central branch ("trunk") can only be merged to by the ASAM office, the Project Lead, or the project&#8217;s Change Control Board (CCB).
-Tags on this specific branch represent the respective releases.
-These tags use <a href="https://semver.org/" target="_blank" rel="noopener">semantic versioning</a>.</p>
+Tags are used to identify fixed states of the repository, including official releases and other versions where the project deems it necessary.
+Version-based tags use <a href="https://semver.org/" target="_blank" rel="noopener">semantic versioning</a>.</p>
 </div>
 <div class="paragraph">
 <p>Changes <strong>MUST</strong> be added through branches created from the trunk or another branch.<br>
@@ -426,41 +426,32 @@ These branches <strong>MAY</strong> be squashed and <strong>MUST</strong> be mer
 <div class="ulist">
 <ul>
 <li>
-<p>Each branch must have a parent issue and each issue may have zero or one child branches</p>
+<p>Each branch must have a parent issue and each issue may have zero or one child branches.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Change the issue status label to <label style="background: Red; color: white">requires:MergeRequest</label> to indicate that a proposal is being implemented for this issue</p>
-</li>
-<li>
-<p>Begin submitting work via commits to the develop branch</p>
+<p>Begin submitting work via commits to the branch.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p>Involved project participants review and comment changes through the associated Pull/Merge Request.
-These comments work identically to those described in <a href="contribute_with_issues.html#_discuss_issues" class="xref page">"discuss issues"</a></p>
+These comments work identically to those described in <a href="contribute_with_issues.html#_discuss_issues" class="xref page">"discuss issues"</a>.</p>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>Review implementation progress of issue with the Subgroup Lead and the other project participants in Subgroup meetings.
+<p>Review implementation progress of issue with other project participants in Subgroup or project meetings.
 Discussions and their results are documented in the Pull/Merge Request</p>
 </li>
 <li>
-<p>Once the group agrees that the feature is complete:</p>
+<p>Once the group agrees that the feature is complete, the issue state transitions to <label style="background: Blue; color:white">isState:Implemented</label>.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Change the issue status label to <label style="background: Red; color: white">requires:CCBReview</label></p>
-</li>
-<li>
 <p>If the Merge/Pull Request is set to "Draft:", remove the draft flag from the Merge/Pull Request name</p>
-</li>
-<li>
-<p>Add a comment to the Merge/Pull Request to ask for a review by the whole project: <code>/request_review @all</code>.</p>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Tips</dt>
@@ -512,7 +503,7 @@ This way, the Merge/Pull Request (and its branch) cannot be concluded by acciden
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="contribute_with_issues.html">Contribute with issues</a></span>
+  <span class="prev"><a href="contribute_with_issues.html">The use of issues</a></span>
   <span class="next"><a href="../advanced_tools.html">Tools overview for advanced users</a></span>
 </nav>
 </article>
