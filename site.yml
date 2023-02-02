@@ -59,6 +59,7 @@ asciidoc:
     page-feedbackurl: https://github.com/asam-ev/asam-project-guide-content/issues/new@
     page-feedbacktype: github@
     page-issuelist: https://github.com/asam-ev/asam-project-guide-content/issues?q=is%3Aopen+is%3Aissue@
+    listing-caption: Code
 
     ## Labels
     mandatory: '<label class="mandatory"/>'
