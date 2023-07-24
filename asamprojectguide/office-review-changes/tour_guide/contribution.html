@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contribution workflow :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide/office-review-changes/tour_guide/contribution.html">
+    <link rel="prev" href="sharepoint.html">
+    <link rel="next" href="contribution/contribute_with_issues.html">
+    <meta name="description" content="Explains the basic contribution workflows.">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+          
+          office-review-changes</a>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item search hide-for-print">
+          <div id="search-field" class="field">
+            <input id="search-input" type="text" placeholder="Search the docs">
+          </div>
+      </div>
+      <div id="topbar-nav" class="navbar-menu">
+        <a class="navbar-item" href="#">To top</a>
+        <div class="navbar-item is-hoverable">
+              <a class="navbar-item" href="mailto:info@asam.net?subject&#x3D;Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body&#x3D;%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20https://asam-ev.github.io/asam-project-guide/asamprojectguide/office-review-changes/tour_guide/contribution.html%20%7C%0D%0A%7C%20Page%20%7C%20Contribution workflow%20%7C%0D%0A%7C%20Module%20%7C%20tour_guide%20%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="asamprojectguide" data-version="office-review-changes">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">ASAM Project Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Guided tour</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#tool_setup.adoc">tool_setup.adoc</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="meetings.html">Project meetings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="meetings/types.html">Meeting types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="meetings/guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="meetings/meeting_notes.html">Meeting notes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#meetings/polls_votes.adoc">meetings/polls_votes.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="meetings/decisions_and_escalations.html">Decision making</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="sharepoint.html">Project Sharepoint</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="contribution.html">Contribution workflow</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="contribution/contribute_with_issues.html">The use of issues</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="contribution/issue_implementation.html">Solution development</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="advanced_tools.html">Tools overview for advanced users</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="summary.html">Guide summary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/compendium.html">Compendium</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Concepts.html">Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Concepts/deliverables.html">ASAM Deliverables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Concepts/doc-as-code.html">Documentation as Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Concepts/participation_types.html">Participation types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Concepts/project_lifecycle.html">Exemplary project lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Concepts/project_phases.html">Project phases</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Concepts/project_types.html">Project types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Concepts/roles-overview.html">Roles overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Project%20guidelines.html">Project guidelines</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/contribute_with_issues.html">Contribute with issues</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/contribution.html">Contribution workflow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/decisions_and_escalations.html">Decisions and escalations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/issue_implementation.html">Issue implementation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/meeting_notes.html">Meeting notes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/meeting_types.html">Meeting types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/polls_votes.html">Polls and voting guidelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Tools.html">Tools for advanced users</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Tools/calendar.html">OpenX Calendar</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/calendar/01_calendar_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/calendar/02_calendar_best-practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Tools/docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/docker/01_docker_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/docker/02_docker_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/docker/03_docker_best-practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Tools/drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/drawio/01_drawio_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/drawio/02_drawio_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Tools/git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/git/01_git_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/git/02_git_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/git/03_git_best_practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Tools/remote_repo.html">DevOps platforms</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/remote_repo/01_remote_repo_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/remote_repo/02_remote_repo_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Tools/sharepoint.html">Microsoft Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/sharepoint/01_sharepoint_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/sharepoint/02_sharepoint_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../compendium/Tools/vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/vscode/01_vscode_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/vscode/02_vscode_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/vscode/03_vscode_recommended_settings.html">Recommended settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../compendium/Tools/vscode/04_vscode_recommended_extensions.html">Recommended extensions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../asam-contacts.html">Contacts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../credits.html">Credits</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Orphans</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../normation_test_page.html">Test page for normative vs non-normative</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Guide</span>
+    <span class="version">office-review-changes</span>
+  </div>
+  <ul class="components">
+        <li class="component is-current">
+          <a class="title" href="../index.html">ASAM Project Guide</a>
+          <ul class="versions">
+            <li class="version is-current is-latest">
+              <a href="../index.html">office-review-changes</a>
+            </li>        
+            <li class="version">
+              <a href="../../latest/index.html">latest</a>
+            </li>        
+        </ul>
+      </li>
+        <li class="component">
+          <a class="title" href="../../../asamprojectguide-editing/latest/main.html">Editing the ASAM Project Guide</a>
+          <ul class="versions">
+            <li class="version is-latest">
+              <a href="../../../asamprojectguide-editing/latest/main.html">latest</a>
+            </li>        
+        </ul>
+      </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../latest/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">ASAM Project Guide</a></li>
+    <li><a href="#tool_setup.adoc">tool_setup.adoc</a></li>
+    <li><a href="contribution.html">Contribution workflow</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">office-review-changes</button>
+  <div class="version-menu">
+    <a class="version is-current" href="contribution.html">office-review-changes</a>
+    <a class="version" href="../../latest/tour_guide/contribution.html">latest</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/office-review-changes/content/modules/tour_guide/pages/contribution.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc" variant="wide">
+    <h1 class="page">Contribution workflow</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="index.html" class="xref page"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/4295/4295914.png" alt="Introduction" width="80"></span></a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Developing content for ASAM standards is focused around the concept of <a href="contribution/contribute_with_issues.html" class="xref page">contributing with issues</a>.<br>
+The following sections describe this workflow in more detail.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/workflow/asam_contribution_workflow-StateDiagram.drawio.svg" alt="asam contribution workflow StateDiagram.drawio">
+</div>
+<div class="title">Figure 1. ASAM contribution workflow</div>
+</div>
+<hr>
+<div class="paragraph">
+<p>Each state in the workflow is described in more detail in the sections below.
+The role listed at the top of each section is the one responsible for it.</p>
+</div>
+<div class="paragraph">
+<p><strong>DoR</strong> stands for <strong>Definition of Ready</strong>.
+It describes the requirements an incoming issue must meet.
+If DoR are specified but not met, the issue is immediately reset to the previous state (including the assignee).<br>
+<strong>DoD</strong> stands for <strong>Definition of Done</strong>.
+It describes the requirements that must be met for an issue to be allowed to exit this state.</p>
+</div>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset1_new"></a>New</p>
+</li>
+<li>
+<p><a id="tabset1_classified"></a>Classified</p>
+</li>
+<li>
+<p><a id="tabset1_accepted"></a>Accepted</p>
+</li>
+<li>
+<p><a id="tabset1_in-progress"></a>In Progress</p>
+</li>
+<li>
+<p><a id="tabset1_implemented"></a>Implemented</p>
+</li>
+<li>
+<p><a id="tabset1_reviewed"></a>Reviewed</p>
+</li>
+<li>
+<p><a id="tabset1_integrated"></a>Integrated</p>
+</li>
+<li>
+<p><a id="tabset1_ready-for-merge"></a>Ready for Merge</p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset1_new">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+What
+</td>
+<td class="hdlist2">
+<p>A new issue that needs to be classified to a type.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p><a href="#_workflow_manager">Workflow Manager</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:New</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Categorize the issue (i.e. assign the issue type)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the issue has been raised previously or was solved in another issue, assign <label style="background: Grey; color:black">resolutionType:Duplicate</label> and close the issue</p>
+</li>
+<li>
+<p>Otherwise, assign the correct type (one of):</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Bug
+</td>
+<td class="hdlist2">
+<p>An issue that contains contradictions or errors in the standard.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+NewFeature
+</td>
+<td class="hdlist2">
+<p>An issue that adds new features to the project.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+FeatureImprovement
+</td>
+<td class="hdlist2">
+<p>An issue that amends or improves existing features.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Editorial
+</td>
+<td class="hdlist2">
+<p>An issue that contains general structural and editorial changes for the whole documentation.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Infrastructure
+</td>
+<td class="hdlist2">
+<p>An issue related to the repository infrastructure such as CI, builds, document toolchain or similar.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Question
+</td>
+<td class="hdlist2">
+<p>General questions about the project, work-flow or anything related to the standard as well as support requests.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+MeetingMinutes
+</td>
+<td class="hdlist2">
+<p>An issue documenting meeting minutes for an ASAM meeting. On starting, a project shall define the location of all meeting minutes for the project. This is either in a project sharepoint or in the issue list. Meeting minutes shall be kept for each official project meeting.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Issue is a duplicate</dt>
+<dd>
+<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)</p>
+</dd>
+<dt class="hdlist1">Type assigned</dt>
+<dd>
+<p>&#8594; CLASSIFIED</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_classified">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+What
+</td>
+<td class="hdlist2">
+<p>An issue that has a type and that needs to be accepted by the group.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p>Relevant lead (project lead or subgroup lead)</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:Classified</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Decide whether to address the issue or not</p>
+</li>
+<li>
+<p>If the issue is accepted, it is assigned to a release milestone</p>
+</li>
+<li>
+<p>If rejected, <label style="background: Grey; color:black">resolutionType:Rejected</label> is assigned</p>
+</li>
+<li>
+<p>If duplicate, <label style="background: Grey; color:black">resolutionType:Duplicate</label> is assigned</p>
+</li>
+<li>
+<p>If accepted, a release milestone is assigned</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Issue is a duplicate</dt>
+<dd>
+<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)</p>
+</dd>
+<dt class="hdlist1">Issue is rejected</dt>
+<dd>
+<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Rejected</label>)</p>
+</dd>
+<dt class="hdlist1">Issue is accepted</dt>
+<dd>
+<p>&#8594; ACCEPTED</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_accepted">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+What
+</td>
+<td class="hdlist2">
+<p>An issue that has been accepted by the group, which needs to be assigned to a responsible, given a due date and needs a clear specification of requirements to be fulfilled.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p>Relevant lead (Project Lead or Subgroup Lead)</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:Accepted</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Assign the issue to a group member</p>
+</li>
+<li>
+<p>Check if the issue needs to be split into multiple sub-issues (making it a parent issue)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If it needs to be split, each sub-issue enters state ACCEPTED immediately</p>
+</li>
+<li>
+<p>Each sub-issue applies the remaining workflow individually</p>
+</li>
+<li>
+<p>A parent issue may only be closed if all its sub-issues have been closed</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Set a <a href="#_due_dates">due date</a> for the solution (should not exceed 4 weeks of development)</p>
+</li>
+<li>
+<p>Clear specification of requirements to be fulfilled by a solution</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Prioritized</dt>
+<dd>
+<p>&#8594; IN PROGRESS</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_in-progress">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+What
+</td>
+<td class="hdlist2">
+<p>An issue that is assigned a responsible, has a due date and clear requirements, which now needs to be implemented in a solution.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p>Solution developer (assignee)</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:InProgress</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Develop a solution together with relevant group (solution team, see <a href="contribution/issue_implementation.html" class="xref page">Solution development</a>)</p>
+</li>
+<li>
+<p>Document the solution by creating a merge/pull request. Some projects do not yet use the DevOps platforms of ASAM. In this case the solution location is to be agreed on by the project on start.</p>
+</li>
+<li>
+<p>Monitor and discuss developments within solution team</p>
+<div class="ulist">
+<ul>
+<li>
+<p>On solution completion, set a due date for review (should not exceed 2 weeks)</p>
+</li>
+<li>
+<p>Inform project lead and/or CCB of issue review</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Solution developed</dt>
+<dd>
+<p>&#8594; IMPLEMENTED</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_implemented">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+What
+</td>
+<td class="hdlist2">
+<p>An issue that has a solution in an associated merge request or document, which is ready to be reviewed by the group.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p>The project lead shall be the process owner and responsible for initiating and ending the review. They may delegate these process to a CCB if present, but this shall be clearly defined within the project.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:Implemented</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Perform issue review</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Issue on the next agenda for the next project or CCB meeting</p>
+</li>
+<li>
+<p>Project group or CCB reviews solution and documents their feedback:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>General feedback: as comment on Merge/Pull Request</p>
+</li>
+<li>
+<p>Specific feedback: as review in changes tab</p>
+</li>
+<li>
+<p>If the solution is documented otherwise, the use of comments in the document is recommended</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Identified minor corrections are implemented directly in collaboration between reviewers and solution developer</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Discuss review results in group meeting</p>
+</li>
+<li>
+<p>Accept or reject solution and document decision in issue</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Identified major corrections lead to rejection of solution</p>
+</li>
+<li>
+<p>If accepted, appoint an <a href="#_integrator">Integrator</a> (responsible for integrating the solution) and an <a href="#_integration_reviewer">Integration Reviewer</a> (responsible for reviewing the integration)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Solution accepted</dt>
+<dd>
+<p>&#8594; REVIEWED</p>
+</dd>
+<dt class="hdlist1">Solution rejected</dt>
+<dd>
+<p>&#8594; IN PROGRESS</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_reviewed">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+What
+</td>
+<td class="hdlist2">
+<p>An issue that has a been accepted by the group, has an assigned integrator, which is ready to be integrated into the standard or project.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p><a href="#_integrator">Integrator</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:Reviewed</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Refine content and apply ASAM Editorial Guide</p>
+</li>
+<li>
+<p>Document any questions in the issue</p>
+</li>
+<li>
+<p>Clarify minor questions with solution developer</p>
+</li>
+<li>
+<p>If any major questions arise, change state back to Implemented</p>
+</li>
+<li>
+<p>When integrated (and if applicable), remove the "Draft:" flag from the Merge Request</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Solution implemented</dt>
+<dd>
+<p>&#8594; INTEGRATED</p>
+</dd>
+<dt class="hdlist1">Major questions</dt>
+<dd>
+<p>&#8594; IMPLEMENTED</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_integrated">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+What
+</td>
+<td class="hdlist2">
+<p>An issue that has been integrated and has an integration reviewer, which is ready to be checked and all open comments are resolved.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p><a href="#_integration_reviewer">Integration Reviewer</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:Integrated</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p>Review the integration</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Is the original content still correctly represented?</p>
+</li>
+<li>
+<p>Are all discussions resolved?</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Add feedback as comments</p>
+</li>
+<li>
+<p>Add verdict as comment in issue</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If accepted, assign issue to the <a href="#_workflow_manager">Workflow Manager</a></p>
+</li>
+<li>
+<p>If accepted (and if applicable), approve the merge request</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Integration OK</dt>
+<dd>
+<p>&#8594; READYFORMERGE</p>
+</dd>
+<dt class="hdlist1">Integration NOK</dt>
+<dd>
+<p>&#8594; REVIEWED</p>
+</dd>
+<dt class="hdlist1">Integration OK</dt>
+<dd>
+<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>) Note: This is only applicable for projects that do not use a docs-as-code workflow.</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_ready-for-merge">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+What
+</td>
+<td class="hdlist2">
+<p>An issue that has been integrated and is assigned to the workflow manager, which is ready to be merged.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Who
+</td>
+<td class="hdlist2">
+<p><a href="#_workflow_manager">Workflow Manager</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+State Label
+</td>
+<td class="hdlist2">
+<p><label style="background: Blue; color:white">isState:ReadyForMerge</label></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Actions
+</td>
+<td class="hdlist2">
+<p><strong>Note that this is only applicable to projects with a docs-as-code workflow</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Merge the assigned Merge/Pull Request</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If any major merge conflicts arise, document conflict, reassign it to the <a href="#_integration_reviewer">Integration Reviewer</a>, and change back to the previous state</p>
+</li>
+<li>
+<p>If the merge completes successfully, close the Merge/Pull Request and the associated issue(s)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Transitions
+</td>
+<td class="hdlist2">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Merged</dt>
+<dd>
+<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>)</p>
+</dd>
+<dt class="hdlist1">Merge Conflict</dt>
+<dd>
+<p>&#8594; INTEGRATED</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_due_dates"><a class="anchor" href="#_due_dates"></a>Due dates</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The due date in issues shall be used to indicate the expected finalization date for the development of the solution.
+This date marks the point at which the solution can be reviewed and, ideally, accepted for integration.</p>
+</div>
+<div class="paragraph">
+<p>ASAM recommends that solution development for issues is scoped to require no more than 4 weeks.
+This means that issues where the solution is expected to be more complex should be split into multiple smaller ones, each with an expected resolution time of 4 weeks or less.</p>
+</div>
+<div class="paragraph">
+<p>If an issue is split into multiple sub-issues, assign due dates for the issue as well as the sub-issues.
+In this case, the due date of the issue itself may exceed the 4 week recommendation.
+However, the sub-issues should then stick to that limit.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generic_roles"><a class="anchor" href="#_generic_roles"></a>Generic roles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The workflow contains some generic roles that each project may implement differently.</p>
+</div>
+<div class="sect2">
+<h3 id="_workflow_manager"><a class="anchor" href="#_workflow_manager"></a>Workflow Manager</h3>
+<div class="paragraph">
+<p>The role "<strong>Workflow Manager</strong>" is an abstract role.
+Each project decides how and whom to assign it to.<br>
+Typical examples are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Project Lead</p>
+</li>
+<li>
+<p>Office Responsible</p>
+</li>
+<li>
+<p>Subgroup leads, if available</p>
+</li>
+<li>
+<p>Change Control Board (CCB) representative, if defined</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Typically, the Workflow Manager is experienced with using remote repositories.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_integrator"><a class="anchor" href="#_integrator"></a>Integrator</h3>
+<div class="paragraph">
+<p>The Integrator is responsible for integrating the developed solution into the standard.
+Their task is to make sure the writing style is kept consistent and the <a href="https://internal.pages.asam.net/asam-editorial-guide/editorial-guide-generator/editorialguide-asciidoc/1.0.0/Editorial_guide.html">ASAM editorial rules</a> are met.</p>
+</div>
+<div class="paragraph">
+<p>The Integrator may be a service provider tasked with documentation efforts in the project.
+Alternatively, the Integrator may be the Office Responsible or a member of the project group.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_integration_reviewer"><a class="anchor" href="#_integration_reviewer"></a>Integration Reviewer</h3>
+<div class="paragraph">
+<p>The Integration Reviewer is responsible for reviewing the integrated solution created by the <a href="#_integrator">Integrator</a>.<br>
+They may be an individual or a group, for example a CCB.
+Typically, this is also the <a href="#_workflow_manager">Workflow Manager</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="sharepoint.html">Project Sharepoint</a></span>
+  <span class="next"><a href="contribution/contribute_with_issues.html">The use of issues</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../_/js/vendor/highlightjs-line-numbers.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>
