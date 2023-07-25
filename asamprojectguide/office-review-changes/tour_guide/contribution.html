@@ -64,7 +64,7 @@
     <a class="nav-link" href="meetings/guidelines.html">Meeting guidelines</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="meetings/meeting_notes.html">Meeting notes</a>
+    <a class="nav-link" href="meetings/meeting_notes.html">Meeting minutes</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="meetings/decisions_and_escalations.html">Decision making</a>
@@ -260,15 +260,6 @@
   </li>
 </ul>
   </li>
-  <li class="nav-item" data-depth="0">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Orphans</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../normation_test_page.html">Test page for normative vs non-normative</a>
-  </li>
-</ul>
-  </li>
 </ul>
   </nav>
 </div>
@@ -328,13 +319,6 @@
 </aside>
 <article class="doc" variant="wide">
     <h1 class="page">Contribution workflow</h1>
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="index.html" class="xref page"><span class="image right"><img src="https://cdn-icons-png.flaticon.com/512/4295/4295914.png" alt="Introduction" width="80"></span></a></p>
-</div>
-</div>
-</div>
 <div class="sect1">
 <h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
 <div class="sectionbody">
@@ -391,38 +375,39 @@ It describes the requirements that must be met for an issue to be allowed to exi
 </div>
 <div class="content">
 <div class="tab-pane" aria-labelledby="tabset1_new">
-<div class="hdlist">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
 <tr>
-<td class="hdlist1">
-What
-</td>
-<td class="hdlist2">
+<th class="tableblock halign-left valign-top">Topic</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>A new issue that needs to be classified to a type.</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Who
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><a href="#_workflow_manager">Workflow Manager</a></p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-State Label
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><label style="background: Blue; color:white">isState:New</label></p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Actions
-</td>
-<td class="hdlist2">
-<div class="ulist">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p>Categorize the issue (i.e. assign the issue type)</p>
@@ -433,125 +418,89 @@ Actions
 </li>
 <li>
 <p>Otherwise, assign the correct type (one of):</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Bug
-</td>
-<td class="hdlist2">
-<p>An issue that contains contradictions or errors in the standard.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-NewFeature
-</td>
-<td class="hdlist2">
-<p>An issue that adds new features to the project.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-FeatureImprovement
-</td>
-<td class="hdlist2">
-<p>An issue that amends or improves existing features.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Editorial
-</td>
-<td class="hdlist2">
-<p>An issue that contains general structural and editorial changes for the whole documentation.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Infrastructure
-</td>
-<td class="hdlist2">
-<p>An issue related to the repository infrastructure such as CI, builds, document toolchain or similar.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Question
-</td>
-<td class="hdlist2">
-<p>General questions about the project, work-flow or anything related to the standard as well as support requests.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-MeetingMinutes
-</td>
-<td class="hdlist2">
-<p>An issue documenting meeting minutes for an ASAM meeting. On starting, a project shall define the location of all meeting minutes for the project. This is either in a project sharepoint or in the issue list. Meeting minutes shall be kept for each official project meeting.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Transitions
-</td>
-<td class="hdlist2">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Issue is a duplicate</dt>
+<dt class="hdlist1">Bug</dt>
 <dd>
-<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)</p>
+<p>An issue that contains contradictions or errors in the standard.</p>
 </dd>
-<dt class="hdlist1">Type assigned</dt>
+<dt class="hdlist1">NewFeature</dt>
 <dd>
-<p>&#8594; CLASSIFIED</p>
+<p>An issue that adds new features to the project.</p>
+</dd>
+<dt class="hdlist1">FeatureImprovement</dt>
+<dd>
+<p>An issue that amends or improves existing features.</p>
+</dd>
+<dt class="hdlist1">Editorial</dt>
+<dd>
+<p>An issue that contains general structural and editorial changes for the whole documentation.</p>
+</dd>
+<dt class="hdlist1">Infrastructure</dt>
+<dd>
+<p>An issue related to the repository infrastructure such as CI, builds, document toolchain or similar.</p>
+</dd>
+<dt class="hdlist1">Question</dt>
+<dd>
+<p>General questions about the project, work-flow or anything related to the standard as well as support requests.</p>
+</dd>
+<dt class="hdlist1">MeetingMinutes</dt>
+<dd>
+<p>An issue documenting meeting minutes for an ASAM meeting. On starting, a project shall define the location of all meeting minutes for the project. This is either in a project sharepoint or in the issue list. Meeting minutes shall be kept for each official project meeting.</p>
 </dd>
 </dl>
 </div>
-</td>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)
+Type assigned::&#8594; CLASSIFIED</p>
+</div></div></td>
+</tr>
+</tbody>
 </table>
 </div>
-</div>
 <div class="tab-pane" aria-labelledby="tabset1_classified">
-<div class="hdlist">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
 <tr>
-<td class="hdlist1">
-What
-</td>
-<td class="hdlist2">
+<th class="tableblock halign-left valign-top">Topic</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>An issue that has a type and that needs to be accepted by the group.</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Who
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Relevant lead (project lead or subgroup lead)</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-State Label
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">State label</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><label style="background: Blue; color:white">isState:Classified</label></p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Actions
-</td>
-<td class="hdlist2">
-<div class="ulist">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p>Decide whether to address the issue or not</p>
@@ -569,68 +518,53 @@ Actions
 <p>If accepted, a release milestone is assigned</p>
 </li>
 </ul>
-</div>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Transitions
-</td>
-<td class="hdlist2">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Issue is a duplicate</dt>
-<dd>
-<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)</p>
-</dd>
-<dt class="hdlist1">Issue is rejected</dt>
-<dd>
-<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Rejected</label>)</p>
-</dd>
-<dt class="hdlist1">Issue is accepted</dt>
-<dd>
-<p>&#8594; ACCEPTED</p>
-</dd>
-</dl>
-</div>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)
+Issue is rejected::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Rejected</label>)
+Issue is accepted::&#8594; ACCEPTED</p>
+</div></div></td>
 </tr>
+</tbody>
 </table>
 </div>
-</div>
 <div class="tab-pane" aria-labelledby="tabset1_accepted">
-<div class="hdlist">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
 <tr>
-<td class="hdlist1">
-What
-</td>
-<td class="hdlist2">
+<th class="tableblock halign-left valign-top">Topic</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>An issue that has been accepted by the group, which needs to be assigned to a responsible, given a due date and needs a clear specification of requirements to be fulfilled.</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Who
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Relevant lead (Project Lead or Subgroup Lead)</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-State Label
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><label style="background: Blue; color:white">isState:Accepted</label></p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Actions
-</td>
-<td class="hdlist2">
-<div class="ulist">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p>Assign the issue to a group member</p>
@@ -658,60 +592,51 @@ Actions
 <p>Clear specification of requirements to be fulfilled by a solution</p>
 </li>
 </ul>
-</div>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Transitions
-</td>
-<td class="hdlist2">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Prioritized</dt>
-<dd>
-<p>&#8594; IN PROGRESS</p>
-</dd>
-</dl>
-</div>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Prioritized::&#8594; IN PROGRESS</p>
+</div></div></td>
 </tr>
+</tbody>
 </table>
 </div>
-</div>
 <div class="tab-pane" aria-labelledby="tabset1_in-progress">
-<div class="hdlist">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
 <tr>
-<td class="hdlist1">
-What
-</td>
-<td class="hdlist2">
+<th class="tableblock halign-left valign-top">Topic</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>An issue that is assigned a responsible, has a due date and clear requirements, which now needs to be implemented in a solution.</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Who
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Solution developer (assignee)</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-State Label
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><label style="background: Blue; color:white">isState:InProgress</label></p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Actions
-</td>
-<td class="hdlist2">
-<div class="ulist">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p>Develop a solution together with relevant group (solution team, see <a href="contribution/issue_implementation.html" class="xref page">Solution development</a>)</p>
@@ -733,373 +658,216 @@ Actions
 </div>
 </li>
 </ul>
-</div>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Transitions
-</td>
-<td class="hdlist2">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Solution developed</dt>
-<dd>
-<p>&#8594; IMPLEMENTED</p>
-</dd>
-</dl>
-</div>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Solution developed::&#8594; IMPLEMENTED</p>
+</div></div></td>
 </tr>
+</tbody>
 </table>
-</div>
 </div>
 <div class="tab-pane" aria-labelledby="tabset1_implemented">
-<div class="hdlist">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
 <tr>
-<td class="hdlist1">
-What
-</td>
-<td class="hdlist2">
+<th class="tableblock halign-left valign-top">Topic</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>An issue that has a solution in an associated merge request or document, which is ready to be reviewed by the group.</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Who
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>The project lead shall be the process owner and responsible for initiating and ending the review. They may delegate these process to a CCB if present, but this shall be clearly defined within the project.</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-State Label
-</td>
-<td class="hdlist2">
-<p><label style="background: Blue; color:white">isState:Implemented</label></p>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><label style="background: Blue; color:white">isState:Implemented</label>
+Actions::
+* Perform issue review
+<strong> Issue on the next agenda for the next project or CCB meeting
+</strong> Project group or CCB reviews solution and documents their feedback:
+<strong>* General feedback: as comment on Merge/Pull Request
+</strong>* Specific feedback: as review in changes tab
+<strong>* If the solution is documented otherwise, the use of comments in the document is recommended
+</strong> Identified minor corrections are implemented directly in collaboration between reviewers and solution developer
+* Discuss review results in group meeting
+* Accept or reject solution and document decision in issue
+<strong> Identified major corrections lead to rejection of solution
+</strong> If accepted, appoint an <a href="#_integrator">Integrator</a> (responsible for integrating the solution) and an <a href="#_integration_reviewer">Integration Reviewer</a> (responsible for reviewing the integration)</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Actions
-</td>
-<td class="hdlist2">
-<div class="ulist">
-<ul>
-<li>
-<p>Perform issue review</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Issue on the next agenda for the next project or CCB meeting</p>
-</li>
-<li>
-<p>Project group or CCB reviews solution and documents their feedback:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>General feedback: as comment on Merge/Pull Request</p>
-</li>
-<li>
-<p>Specific feedback: as review in changes tab</p>
-</li>
-<li>
-<p>If the solution is documented otherwise, the use of comments in the document is recommended</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Identified minor corrections are implemented directly in collaboration between reviewers and solution developer</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Discuss review results in group meeting</p>
-</li>
-<li>
-<p>Accept or reject solution and document decision in issue</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Identified major corrections lead to rejection of solution</p>
-</li>
-<li>
-<p>If accepted, appoint an <a href="#_integrator">Integrator</a> (responsible for integrating the solution) and an <a href="#_integration_reviewer">Integration Reviewer</a> (responsible for reviewing the integration)</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Solution accepted::&#8594; REVIEWED
+Solution rejected::&#8594; IN PROGRESS</p>
+</div></div></td>
 </tr>
-<tr>
-<td class="hdlist1">
-Transitions
-</td>
-<td class="hdlist2">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Solution accepted</dt>
-<dd>
-<p>&#8594; REVIEWED</p>
-</dd>
-<dt class="hdlist1">Solution rejected</dt>
-<dd>
-<p>&#8594; IN PROGRESS</p>
-</dd>
-</dl>
-</div>
-</td>
-</tr>
+</tbody>
 </table>
-</div>
 </div>
 <div class="tab-pane" aria-labelledby="tabset1_reviewed">
-<div class="hdlist">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
 <tr>
-<td class="hdlist1">
-What
-</td>
-<td class="hdlist2">
+<th class="tableblock halign-left valign-top">Topic</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>An issue that has a been accepted by the group, has an assigned integrator, which is ready to be integrated into the standard or project.</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Who
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><a href="#_integrator">Integrator</a></p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-State Label
-</td>
-<td class="hdlist2">
-<p><label style="background: Blue; color:white">isState:Reviewed</label></p>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><label style="background: Blue; color:white">isState:Reviewed</label>
+Actions::
+* Refine content and apply ASAM Editorial Guide
+* Document any questions in the issue
+* Clarify minor questions with solution developer
+* If any major questions arise, change state back to Implemented
+* When integrated (and if applicable), remove the "Draft:" flag from the Merge Request</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Actions
-</td>
-<td class="hdlist2">
-<div class="ulist">
-<ul>
-<li>
-<p>Refine content and apply ASAM Editorial Guide</p>
-</li>
-<li>
-<p>Document any questions in the issue</p>
-</li>
-<li>
-<p>Clarify minor questions with solution developer</p>
-</li>
-<li>
-<p>If any major questions arise, change state back to Implemented</p>
-</li>
-<li>
-<p>When integrated (and if applicable), remove the "Draft:" flag from the Merge Request</p>
-</li>
-</ul>
-</div>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Solution implemented::&#8594; INTEGRATED
+Major questions::&#8594; IMPLEMENTED</p>
+</div></div></td>
 </tr>
-<tr>
-<td class="hdlist1">
-Transitions
-</td>
-<td class="hdlist2">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Solution implemented</dt>
-<dd>
-<p>&#8594; INTEGRATED</p>
-</dd>
-<dt class="hdlist1">Major questions</dt>
-<dd>
-<p>&#8594; IMPLEMENTED</p>
-</dd>
-</dl>
-</div>
-</td>
-</tr>
+</tbody>
 </table>
-</div>
 </div>
 <div class="tab-pane" aria-labelledby="tabset1_integrated">
-<div class="hdlist">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
 <tr>
-<td class="hdlist1">
-What
-</td>
-<td class="hdlist2">
+<th class="tableblock halign-left valign-top">Topic</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>An issue that has been integrated and has an integration reviewer, which is ready to be checked and all open comments are resolved.</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Who
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><a href="#_integration_reviewer">Integration Reviewer</a></p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-State Label
-</td>
-<td class="hdlist2">
-<p><label style="background: Blue; color:white">isState:Integrated</label></p>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><label style="background: Blue; color:white">isState:Integrated</label>
+Actions::
+* Review the integration
+<strong> Is the original content still correctly represented?
+</strong> Are all discussions resolved?
+* Add feedback as comments
+* Add verdict as comment in issue
+<strong> If accepted, assign issue to the <a href="#_workflow_manager">Workflow Manager</a>
+</strong> If accepted (and if applicable), approve the merge request</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Actions
-</td>
-<td class="hdlist2">
-<div class="ulist">
-<ul>
-<li>
-<p>Review the integration</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Is the original content still correctly represented?</p>
-</li>
-<li>
-<p>Are all discussions resolved?</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Add feedback as comments</p>
-</li>
-<li>
-<p>Add verdict as comment in issue</p>
-<div class="ulist">
-<ul>
-<li>
-<p>If accepted, assign issue to the <a href="#_workflow_manager">Workflow Manager</a></p>
-</li>
-<li>
-<p>If accepted (and if applicable), approve the merge request</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Integration OK::&#8594; READYFORMERGE
+Integration NOK::&#8594; REVIEWED
+Integration OK::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>) Note: This is only applicable for projects that do not use a docs-as-code workflow.</p>
+</div></div></td>
 </tr>
-<tr>
-<td class="hdlist1">
-Transitions
-</td>
-<td class="hdlist2">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Integration OK</dt>
-<dd>
-<p>&#8594; READYFORMERGE</p>
-</dd>
-<dt class="hdlist1">Integration NOK</dt>
-<dd>
-<p>&#8594; REVIEWED</p>
-</dd>
-<dt class="hdlist1">Integration OK</dt>
-<dd>
-<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>) Note: This is only applicable for projects that do not use a docs-as-code workflow.</p>
-</dd>
-</dl>
-</div>
-</td>
-</tr>
+</tbody>
 </table>
-</div>
 </div>
 <div class="tab-pane" aria-labelledby="tabset1_ready-for-merge">
-<div class="hdlist">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
 <tr>
-<td class="hdlist1">
-What
-</td>
-<td class="hdlist2">
+<th class="tableblock halign-left valign-top">Topic</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>An issue that has been integrated and is assigned to the workflow manager, which is ready to be merged.</p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Who
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><a href="#_workflow_manager">Workflow Manager</a></p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-State Label
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><label style="background: Blue; color:white">isState:ReadyForMerge</label></p>
-</td>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Actions
-</td>
-<td class="hdlist2">
-<p><strong>Note that this is only applicable to projects with a docs-as-code workflow</strong></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Merge the assigned Merge/Pull Request</p>
-<div class="ulist">
-<ul>
-<li>
-<p>If any major merge conflicts arise, document conflict, reassign it to the <a href="#_integration_reviewer">Integration Reviewer</a>, and change back to the previous state</p>
-</li>
-<li>
-<p>If the merge completes successfully, close the Merge/Pull Request and the associated issue(s)</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Note that this is only applicable to projects with a docs-as-code workflow</strong>
+* Merge the assigned Merge/Pull Request
+<strong> If any major merge conflicts arise, document conflict, reassign it to the <a href="#_integration_reviewer">Integration Reviewer</a>, and change back to the previous state
+</strong> If the merge completes successfully, close the Merge/Pull Request and the associated issue(s)</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="hdlist1">
-Transitions
-</td>
-<td class="hdlist2">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Merged</dt>
-<dd>
-<p>&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>)</p>
-</dd>
-<dt class="hdlist1">Merge Conflict</dt>
-<dd>
-<p>&#8594; INTEGRATED</p>
-</dd>
-</dl>
-</div>
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Merged::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>)
+Merge Conflict::&#8594; INTEGRATED</p>
+</div></div></td>
 </tr>
+</tbody>
 </table>
-</div>
 </div>
 </div>
 </div>
