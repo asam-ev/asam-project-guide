@@ -460,7 +460,7 @@ It describes the requirements that must be met for an issue to be allowed to exi
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)
+<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)<br>
 Type assigned::&#8594; CLASSIFIED</p>
 </div></div></td>
 </tr>
@@ -523,8 +523,8 @@ Type assigned::&#8594; CLASSIFIED</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)
-Issue is rejected::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Rejected</label>)
+<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)<br>
+Issue is rejected::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Rejected</label>)<br>
 Issue is accepted::&#8594; ACCEPTED</p>
 </div></div></td>
 </tr>
@@ -567,7 +567,7 @@ Issue is accepted::&#8594; ACCEPTED</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
-<p>Assign the issue to a group member</p>
+<p>Assign the issue to a project participant &#8594; the solution responsible</p>
 </li>
 <li>
 <p>Check if the issue needs to be split into multiple sub-issues (making it a parent issue)</p>
@@ -625,7 +625,7 @@ Issue is accepted::&#8594; ACCEPTED</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Solution developer (assignee)</p>
+<p>Solution responsible (issue assignee)</p>
 </div></div></td>
 </tr>
 <tr>
@@ -691,31 +691,68 @@ Issue is accepted::&#8594; ACCEPTED</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>The project lead shall be the process owner and responsible for initiating and ending the review. They may delegate these process to a CCB if present, but this shall be clearly defined within the project.</p>
+<p>Workflow manager</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><label style="background: Blue; color:white">isState:Implemented</label>
-Actions::
-* Perform issue review
-<strong> Issue on the next agenda for the next project or CCB meeting
-</strong> Project group or CCB reviews solution and documents their feedback:
-<strong>* General feedback: as comment on Merge/Pull Request
-</strong>* Specific feedback: as review in changes tab
-<strong>* If the solution is documented otherwise, the use of comments in the document is recommended
-</strong> Identified minor corrections are implemented directly in collaboration between reviewers and solution developer
-* Discuss review results in group meeting
-* Accept or reject solution and document decision in issue
-<strong> Identified major corrections lead to rejection of solution
-</strong> If accepted, appoint an <a href="#_integrator">Integrator</a> (responsible for integrating the solution) and an <a href="#_integration_reviewer">Integration Reviewer</a> (responsible for reviewing the integration)</p>
+<p><label style="background: Blue; color:white">isState:Implemented</label></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Perform solution review</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Project group or delegated subgroup reviews solution and documents their feedback:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>General feedback: as comment on Merge/Pull Request</p>
+</li>
+<li>
+<p>Specific feedback: as review in changes tab</p>
+</li>
+<li>
+<p>If the solution is documented otherwise, the use of comments in the document is recommended</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Identified minor corrections are implemented directly in collaboration between reviewers and solution responsible</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Discuss review results in project group meeting</p>
+</li>
+<li>
+<p>Accept or reject solution and document decision in issue</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Identified major corrections lead to rejection of solution</p>
+</li>
+<li>
+<p>If accepted, appoint and assign solution to an <a href="#_integrator">Integrator</a> (responsible for integrating the solution)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Solution accepted::&#8594; REVIEWED
+<p>Solution accepted::&#8594; REVIEWED<br>
 Solution rejected::&#8594; IN PROGRESS</p>
 </div></div></td>
 </tr>
@@ -750,19 +787,38 @@ Solution rejected::&#8594; IN PROGRESS</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><label style="background: Blue; color:white">isState:Reviewed</label>
-Actions::
-* Refine content and apply ASAM Editorial Guide
-* Document any questions in the issue
-* Clarify minor questions with solution developer
-* If any major questions arise, change state back to Implemented
-* When integrated (and if applicable), remove the "Draft:" flag from the Merge Request</p>
+<p><label style="background: Blue; color:white">isState:Reviewed</label></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Refine content and apply ASAM Editorial Guide</p>
+</li>
+<li>
+<p>Document any questions in the issue</p>
+</li>
+<li>
+<p>Clarify minor questions with solution responsible</p>
+</li>
+<li>
+<p>If any major questions arise, change state back to Implemented</p>
+</li>
+<li>
+<p>When integrated (and if applicable), remove the "Draft:" flag from the Merge Request</p>
+</li>
+<li>
+<p>Assign to the solution responsible of the ticket</p>
+</li>
+</ul>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Solution implemented::&#8594; INTEGRATED
+<p>Solution implemented::&#8594; INTEGRATED<br>
 Major questions::&#8594; IMPLEMENTED</p>
 </div></div></td>
 </tr>
@@ -785,13 +841,13 @@ Major questions::&#8594; IMPLEMENTED</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>An issue that has been integrated and has an integration reviewer, which is ready to be checked and all open comments are resolved.</p>
+<p>An issue that has been integrated, is assigned to the solution responsible, which is ready to be checked and all open comments are resolved.</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="#_integration_reviewer">Integration Reviewer</a></p>
+<p>Solution responsible</p>
 </div></div></td>
 </tr>
 <tr>
@@ -811,8 +867,8 @@ Actions::
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Integration OK::&#8594; READYFORMERGE
-Integration NOK::&#8594; REVIEWED
+<p>Integration OK::&#8594; READYFORMERGE<br>
+Integration NOK::&#8594; REVIEWED<br>
 Integration OK::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>) Note: This is only applicable for projects that do not use a docs-as-code workflow.</p>
 </div></div></td>
 </tr>
@@ -862,7 +918,7 @@ Integration OK::&#8594; CLOSED (<label style="background: Grey; color:black">res
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Merged::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>)
+<p>Merged::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>)<br>
 Merge Conflict::&#8594; INTEGRATED</p>
 </div></div></td>
 </tr>
