@@ -333,17 +333,6 @@ The following sections describe this workflow in more detail.</p>
 <div class="title">Figure 1. ASAM contribution workflow</div>
 </div>
 <hr>
-<div class="paragraph">
-<p>Each state in the workflow is described in more detail in the sections below.
-The role listed at the top of each section is the one responsible for it.</p>
-</div>
-<div class="paragraph">
-<p><strong>DoR</strong> stands for <strong>Definition of Ready</strong>.
-It describes the requirements an incoming issue must meet.
-If DoR are specified but not met, the issue is immediately reset to the previous state (including the assignee).<br>
-<strong>DoD</strong> stands for <strong>Definition of Done</strong>.
-It describes the requirements that must be met for an issue to be allowed to exit this state.</p>
-</div>
 <div class="tabset is-loading">
 <div class="ulist tabs">
 <ul>
@@ -380,12 +369,6 @@ It describes the requirements that must be met for an issue to be allowed to exi
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Topic</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
@@ -406,7 +389,22 @@ It describes the requirements that must be met for an issue to be allowed to exi
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)<br>
+Type assigned::&#8594; CLASSIFIED</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions that must be taken prior to state transition</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -457,13 +455,6 @@ It describes the requirements that must be met for an issue to be allowed to exi
 </ul>
 </div></div></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)<br>
-Type assigned::&#8594; CLASSIFIED</p>
-</div></div></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -473,12 +464,6 @@ Type assigned::&#8594; CLASSIFIED</p>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Topic</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
@@ -499,7 +484,23 @@ Type assigned::&#8594; CLASSIFIED</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)<br>
+Issue is rejected::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Rejected</label>)<br>
+Issue is accepted::&#8594; ACCEPTED</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions that must be taken prior to state transition</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -520,14 +521,6 @@ Type assigned::&#8594; CLASSIFIED</p>
 </ul>
 </div></div></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Issue is a duplicate::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Duplicate</label>)<br>
-Issue is rejected::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Rejected</label>)<br>
-Issue is accepted::&#8594; ACCEPTED</p>
-</div></div></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -537,17 +530,11 @@ Issue is accepted::&#8594; ACCEPTED</p>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Topic</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>An issue that has been accepted by the group, which needs to be assigned to a responsible, given a due date and needs a clear specification of requirements to be fulfilled.</p>
+<p>An issue that has been accepted by the project group, which needs to be assigned to a responsible, given a due date and needs a clear specification of requirements to be fulfilled.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -563,14 +550,28 @@ Issue is accepted::&#8594; ACCEPTED</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Prioritized::&#8594; IN PROGRESS</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions that must be taken prior to state transition</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p>Assign the issue to a project participant &#8594; the solution responsible</p>
 </li>
 <li>
-<p>Check if the issue needs to be split into multiple sub-issues (making it a parent issue)</p>
+<p>Check if the issue needs to be split into multiple sub-issues or tasks (making it a parent issue)</p>
 <div class="ulist">
 <ul>
 <li>
@@ -594,12 +595,6 @@ Issue is accepted::&#8594; ACCEPTED</p>
 </ul>
 </div></div></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Prioritized::&#8594; IN PROGRESS</p>
-</div></div></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -609,12 +604,6 @@ Issue is accepted::&#8594; ACCEPTED</p>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Topic</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
@@ -635,7 +624,21 @@ Issue is accepted::&#8594; ACCEPTED</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Solution developed::&#8594; IMPLEMENTED</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions that must be taken prior to state transition</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -645,25 +648,15 @@ Issue is accepted::&#8594; ACCEPTED</p>
 <p>Document the solution by creating a merge/pull request. Some projects do not yet use the DevOps platforms of ASAM. In this case the solution location is to be agreed on by the project on start.</p>
 </li>
 <li>
-<p>Monitor and discuss developments within solution team</p>
-<div class="ulist">
-<ul>
+<p>Coordinate, monitor and discuss developments within solution team</p>
+</li>
 <li>
 <p>On solution completion, set a due date for review (should not exceed 2 weeks)</p>
 </li>
 <li>
-<p>Inform project lead and/or CCB of issue review</p>
+<p>Inform project lead and any relevant subgroups of issue review</p>
 </li>
 </ul>
-</div>
-</li>
-</ul>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Solution developed::&#8594; IMPLEMENTED</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -675,12 +668,6 @@ Issue is accepted::&#8594; ACCEPTED</p>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Topic</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
@@ -701,7 +688,22 @@ Issue is accepted::&#8594; ACCEPTED</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Solution accepted::&#8594; REVIEWED<br>
+Solution rejected::&#8594; IN PROGRESS</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions that must be taken prior to state transition</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -749,13 +751,6 @@ Issue is accepted::&#8594; ACCEPTED</p>
 </ul>
 </div></div></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Solution accepted::&#8594; REVIEWED<br>
-Solution rejected::&#8594; IN PROGRESS</p>
-</div></div></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -765,12 +760,6 @@ Solution rejected::&#8594; IN PROGRESS</p>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Topic</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
@@ -791,7 +780,22 @@ Solution rejected::&#8594; IN PROGRESS</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Solution implemented::&#8594; INTEGRATED<br>
+Major questions::&#8594; IMPLEMENTED</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions that must be taken prior to state transition</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -815,13 +819,6 @@ Solution rejected::&#8594; IN PROGRESS</p>
 </ul>
 </div></div></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Solution implemented::&#8594; INTEGRATED<br>
-Major questions::&#8594; IMPLEMENTED</p>
-</div></div></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -831,12 +828,6 @@ Major questions::&#8594; IMPLEMENTED</p>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Topic</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
@@ -853,15 +844,7 @@ Major questions::&#8594; IMPLEMENTED</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">State Label</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><label style="background: Blue; color:white">isState:Integrated</label>
-Actions::
-* Review the integration
-<strong> Is the original content still correctly represented?
-</strong> Are all discussions resolved?
-* Add feedback as comments
-* Add verdict as comment in issue
-<strong> If accepted, assign issue to the <a href="#_workflow_manager">Workflow Manager</a>
-</strong> If accepted (and if applicable), approve the merge request</p>
+<p><label style="background: Blue; color:white">isState:Integrated</label></p>
 </div></div></td>
 </tr>
 <tr>
@@ -874,6 +857,50 @@ Integration OK::&#8594; CLOSED (<label style="background: Grey; color:black">res
 </tr>
 </tbody>
 </table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions that must be taken prior to state transition</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Review the integration</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Is the original content still correctly represented?</p>
+</li>
+<li>
+<p>Are all discussions resolved?</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Add feedback as comments</p>
+</li>
+<li>
+<p>Add verdict as comment in issue</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If accepted, assign issue to the <a href="#_workflow_manager">Workflow Manager</a></p>
+</li>
+<li>
+<p>If accepted (and if applicable), approve the merge request</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="tab-pane" aria-labelledby="tabset1_ready-for-merge">
 <table class="tableblock frame-all grid-all stretch">
@@ -881,12 +908,6 @@ Integration OK::&#8594; CLOSED (<label style="background: Grey; color:black">res
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Topic</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">What</p></td>
@@ -907,19 +928,41 @@ Integration OK::&#8594; CLOSED (<label style="background: Grey; color:black">res
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Actions</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Note that this is only applicable to projects with a docs-as-code workflow</strong>
-* Merge the assigned Merge/Pull Request
-<strong> If any major merge conflicts arise, document conflict, reassign it to the <a href="#_integration_reviewer">Integration Reviewer</a>, and change back to the previous state
-</strong> If the merge completes successfully, close the Merge/Pull Request and the associated issue(s)</p>
-</div></div></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Transitions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Merged::&#8594; CLOSED (<label style="background: Grey; color:black">resolutionType:Fixed</label>)<br>
 Merge Conflict::&#8594; INTEGRATED</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actions that must be taken prior to state transition</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Note that this is only applicable to projects with a docs-as-code workflow</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Merge the assigned Merge/Pull Request</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If any major merge conflicts arise, these are to be documented and the ticket is reassigned to the Solution Responsible, and change back to the previous state</p>
+</li>
+<li>
+<p>If the merge completes successfully, close the Merge/Pull Request and the associated issue(s)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div></div></td>
 </tr>
 </tbody>
@@ -989,14 +1032,6 @@ Their task is to make sure the writing style is kept consistent and the <a href=
 <div class="paragraph">
 <p>The Integrator may be a service provider tasked with documentation efforts in the project.
 Alternatively, the Integrator may be the Office Responsible or a member of the project group.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_integration_reviewer"><a class="anchor" href="#_integration_reviewer"></a>Integration Reviewer</h3>
-<div class="paragraph">
-<p>The Integration Reviewer is responsible for reviewing the integrated solution created by the <a href="#_integrator">Integrator</a>.<br>
-They may be an individual or a group, for example a CCB.
-Typically, this is also the <a href="#_workflow_manager">Workflow Manager</a>.</p>
 </div>
 </div>
 </div>
