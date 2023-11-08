@@ -82,15 +82,15 @@
     <a class="nav-link" href="contribution/contribute_with_issues.html">The use of issues</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="contribution/issue_list.html">Label overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="contribution/issue_implementation.html">Solution development</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="advanced_tools.html">Tools overview for advanced users</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="summary.html">Guide summary</a>
   </li>
 </ul>
   </li>
@@ -112,21 +112,21 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../compendium/Concepts/doc-as-code.html">Documentation as Code</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../compendium/Concepts/project_phases.html">Project phases</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../compendium/Concepts/project_types.html">Project types</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../compendium/Concepts/roles-overview.html">Roles overview</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../compendium/Project%20guidelines.html">Project guidelines</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/01_project_terms.html">Project terms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/02_project_types.html">Project types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../compendium/Project%20guidelines/03_project_phases.html">Project phases</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../compendium/Project%20guidelines/contribute_with_issues.html">Contribute with issues</a>
   </li>
@@ -157,9 +157,6 @@
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../compendium/Tools.html">Tools for advanced users</a>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../compendium/Tools/calendar.html">OpenX Calendar</a>
-  </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../compendium/Tools/docker.html">Docker</a>
@@ -247,16 +244,6 @@
 </ul>
   </li>
 </ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../asam-contacts.html">Contacts</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../credits.html">Credits</a>
   </li>
 </ul>
   </li>
@@ -379,7 +366,7 @@ The following sections describe this workflow in more detail.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="#_workflow_manager">Workflow Manager</a></p>
+<p><a href="#Workflow Manager">[Workflow Manager]</a></p>
 </div></div></td>
 </tr>
 <tr>
@@ -418,31 +405,31 @@ Type assigned::&#8594; CLASSIFIED</p>
 <p>Otherwise, assign the correct type (one of):</p>
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Bug</dt>
+<dt class="hdlist1"><label style="background: #428BCA; color: white">isType:Bug</label></dt>
 <dd>
 <p>An issue that contains contradictions or errors in the standard.</p>
 </dd>
-<dt class="hdlist1">NewFeature</dt>
+<dt class="hdlist1"><label style="background: #428BCA; color: white">isType:Feature</label></dt>
 <dd>
 <p>An issue that adds new features to the project.</p>
 </dd>
-<dt class="hdlist1">FeatureImprovement</dt>
+<dt class="hdlist1">{isTypeFeatureImprovment-label}</dt>
 <dd>
 <p>An issue that amends or improves existing features.</p>
 </dd>
-<dt class="hdlist1">Editorial</dt>
+<dt class="hdlist1"><label style="background: #428BCA; color: white">isType:Editorial</label></dt>
 <dd>
 <p>An issue that contains general structural and editorial changes for the whole documentation.</p>
 </dd>
-<dt class="hdlist1">Infrastructure</dt>
+<dt class="hdlist1"><label style="background: #428BCA; color: white">isType:Infrastructure</label></dt>
 <dd>
 <p>An issue related to the repository infrastructure such as CI, builds, document toolchain or similar.</p>
 </dd>
-<dt class="hdlist1">Question</dt>
+<dt class="hdlist1"><label style="background: #428BCA; color: white">isType:Question</label></dt>
 <dd>
 <p>General questions about the project, work-flow or anything related to the standard as well as support requests.</p>
 </dd>
-<dt class="hdlist1">MeetingMinutes</dt>
+<dt class="hdlist1"><label style="background: #428BCA; color: white">isType:MeetingMinutes</label></dt>
 <dd>
 <p>An issue documenting meeting minutes for an ASAM meeting. On starting, a project shall define the location of all meeting minutes for the project. This is either in a project sharepoint or in the issue list. Meeting minutes shall be kept for each official project meeting.</p>
 </dd>
@@ -569,6 +556,19 @@ Issue is accepted::&#8594; ACCEPTED</p>
 <ul>
 <li>
 <p>Assign the issue to a project participant &#8594; the solution responsible</p>
+</li>
+<li>
+<p>Define a solution team within the issue description. This may be either of:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>a project subgroup - assign the respective label of the subgroup to the issue.</p>
+</li>
+<li>
+<p>an unstructured group of project participants, specific to this issue - the names of these participants shall be documented in the issue description.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>Check if the issue needs to be split into multiple sub-issues or tasks (making it a parent issue)</p>
@@ -743,7 +743,7 @@ Solution rejected::&#8594; IN PROGRESS</p>
 <p>Identified major corrections lead to rejection of solution</p>
 </li>
 <li>
-<p>If accepted, appoint and assign solution to an <a href="#_integrator">Integrator</a> (responsible for integrating the solution)</p>
+<p>If accepted, appoint and assign solution to an <a href="#Integrator">[Integrator]</a> (responsible for integrating the solution)</p>
 </li>
 </ul>
 </div>
@@ -770,7 +770,7 @@ Solution rejected::&#8594; IN PROGRESS</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="#_integrator">Integrator</a></p>
+<p><a href="#Integrator">[Integrator]</a></p>
 </div></div></td>
 </tr>
 <tr>
@@ -888,7 +888,7 @@ Integration OK::&#8594; CLOSED (<label style="background: Grey; color:black">res
 <div class="ulist">
 <ul>
 <li>
-<p>If accepted, assign issue to the <a href="#_workflow_manager">Workflow Manager</a></p>
+<p>If accepted, assign issue to the <a href="#Workflow Manager">[Workflow Manager]</a></p>
 </li>
 <li>
 <p>If accepted (and if applicable), approve the merge request</p>
@@ -918,7 +918,7 @@ Integration OK::&#8594; CLOSED (<label style="background: Grey; color:black">res
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Who</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="#_workflow_manager">Workflow Manager</a></p>
+<p><a href="#Workflow Manager">[Workflow Manager]</a></p>
 </div></div></td>
 </tr>
 <tr>
@@ -987,52 +987,6 @@ This means that issues where the solution is expected to be more complex should 
 <p>If an issue is split into multiple sub-issues, assign due dates for the issue as well as the sub-issues.
 In this case, the due date of the issue itself may exceed the 4 week recommendation.
 However, the sub-issues should then stick to that limit.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_generic_roles"><a class="anchor" href="#_generic_roles"></a>Generic roles</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The workflow contains some generic roles that each project may implement differently.</p>
-</div>
-<div class="sect2">
-<h3 id="_workflow_manager"><a class="anchor" href="#_workflow_manager"></a>Workflow Manager</h3>
-<div class="paragraph">
-<p>The role "<strong>Workflow Manager</strong>" is an abstract role.
-Each project decides how and whom to assign it to.<br>
-Typical examples are:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Project Lead</p>
-</li>
-<li>
-<p>Office Responsible</p>
-</li>
-<li>
-<p>Subgroup leads, if available</p>
-</li>
-<li>
-<p>Change Control Board (CCB) representative, if defined</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Typically, the Workflow Manager is experienced with using remote repositories.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_integrator"><a class="anchor" href="#_integrator"></a>Integrator</h3>
-<div class="paragraph">
-<p>The Integrator is responsible for integrating the developed solution into the standard.
-Their task is to make sure the writing style is kept consistent and the <a href="https://internal.pages.asam.net/asam-editorial-guide/editorial-guide-generator/editorialguide-asciidoc/1.0.0/Editorial_guide.html">ASAM editorial rules</a> are met.</p>
-</div>
-<div class="paragraph">
-<p>The Integrator may be a service provider tasked with documentation efforts in the project.
-Alternatively, the Integrator may be the Office Responsible or a member of the project group.</p>
-</div>
 </div>
 </div>
 </div>

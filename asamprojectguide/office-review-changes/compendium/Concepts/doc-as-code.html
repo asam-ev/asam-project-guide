@@ -6,7 +6,7 @@
     <title>Documentation as Code :: ASAM Project Guide</title>
     <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide/office-review-changes/compendium/Concepts/doc-as-code.html">
     <link rel="prev" href="deliverables.html">
-    <link rel="next" href="project_phases.html">
+    <link rel="next" href="../Project%20guidelines.html">
     <meta name="description" content="Gives an introduction for the concept of documentation-as-code.">
     <meta name="keywords" content="concept, doc-as-code">
     <meta name="generator" content="Antora 3.1.3">
@@ -83,15 +83,15 @@
     <a class="nav-link" href="../../tour_guide/contribution/contribute_with_issues.html">The use of issues</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tour_guide/contribution/issue_list.html">Label overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../tour_guide/contribution/issue_implementation.html">Solution development</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../tour_guide/advanced_tools.html">Tools overview for advanced users</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../tour_guide/summary.html">Guide summary</a>
   </li>
 </ul>
   </li>
@@ -113,21 +113,21 @@
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="doc-as-code.html">Documentation as Code</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="project_phases.html">Project phases</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="project_types.html">Project types</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="roles-overview.html">Roles overview</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../Project%20guidelines.html">Project guidelines</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Project%20guidelines/01_project_terms.html">Project terms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Project%20guidelines/02_project_types.html">Project types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Project%20guidelines/03_project_phases.html">Project phases</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Project%20guidelines/contribute_with_issues.html">Contribute with issues</a>
   </li>
@@ -158,9 +158,6 @@
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../Tools.html">Tools for advanced users</a>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Tools/calendar.html">OpenX Calendar</a>
-  </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../Tools/docker.html">Docker</a>
@@ -248,16 +245,6 @@
 </ul>
   </li>
 </ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../asam-contacts.html">Contacts</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../credits.html">Credits</a>
   </li>
 </ul>
   </li>
@@ -391,11 +378,21 @@ They provide tools for viewing changes, making collaboration particularly easy.<
 </div>
 <div class="content">
 <div class="tab-pane" aria-labelledby="tabset1_asciidoc-source-file">
-<div class="imageblock">
+<div class="listingblock">
 <div class="content">
-<img src="../_images/Concepts/asciidoc_example.png" alt="asciidoc example">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[#top-a3744269-489e-44bb-8c94-ca8759d3df7c]
+= Foreword
+
+ASAM e.V. (Association for Standardization of Automation and Measuring Systems) is a non-profit organization that promotes standardization of tool chains in automotive development and testing.
+Our members are international car manufacturers, suppliers, tool vendors, engineering service providers, and research institutes.
+ASAM standards are developed by experts from our member companies and are based on real use cases.
+ASAM is the legal owner of these standards and is responsible for their distribution and marketing.
+
+ASAM standards span a wide range of use cases in automotive development, test, and validation.
+They define file formats, data models, protocols, and interfaces.
+The standards enable easy exchange of data and tools within and across tool chains.
+They are applied worldwide.</code></pre>
 </div>
-<div class="title">Figure 1. ASAM Foreword section in AsciiDoc (source)</div>
 </div>
 </div>
 <div class="tab-pane" aria-labelledby="tabset1_rendered-output">
@@ -403,7 +400,7 @@ They provide tools for viewing changes, making collaboration particularly easy.<
 <div class="content">
 <img src="../_images/Concepts/asciidoc_example-output.png" alt="asciidoc example output">
 </div>
-<div class="title">Figure 2. The same Foreword section rendered by Asciidoctor and Antora in HTML (rich output)</div>
+<div class="title">Figure 1. The same Foreword section rendered by Asciidoctor and Antora in HTML (rich output)</div>
 </div>
 </div>
 </div>
@@ -419,20 +416,21 @@ It allows for working on different parts, features, or versions of a project sep
 With Git, all of these can be merged again later.</p>
 </div>
 <div class="paragraph">
-<p>Content is stored in so-called repositories.
-Each repository consist of one or more branches.
-At ASAM, there usually is one main branch (called "main" or (outdated) "master") and possibly one or more feature branches.
-The central branch (also called the "trunk") acts as the agreed or released "official" state of the repository.<br>
-When changes need to be made, they are added through branches created from this trunk.
+<p>Content is stored in repositories.
+Each repository consists of one or more branches.
+At ASAM, there is one main branch (also called trunk) and possibly one or more feature branches.</p>
+</div>
+<div class="paragraph">
+<p>When changes need to be made, they are added through branches created from the trunk.
 Each child branch targets a single aspect of development.
-Once the development in a child branch has advanced enough, its changes are merged back into the trunk.
-This is done through a so-called Merge Request (MR), sometimes also called a Pull Request (PR).</p>
+Once the development in a child branch is complete, its changes are merged back into the trunk.
+This is done through a Merge Request (MR) in GitLab, or a Pull Request (PR) in GitHub.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/Concepts/example-repo-workflow.drawio.svg" alt="example repo workflow.drawio">
 </div>
-<div class="title">Figure 3. Repository workflow and branching example.</div>
+<div class="title">Figure 2. Repository workflow and branching example.</div>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -441,7 +439,7 @@ This is done through a so-called Merge Request (MR), sometimes also called a Pul
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-If you want to learn more about Git itself, ASAM recommends online introductions and tutorials such as <a href="https://rogerdudler.github.io/git-guide/" target="_blank" rel="noopener"><strong>this one</strong></a>.
+If you want to learn more about Git itself, ASAM recommends online introductions and tutorials such as <a href="https://rogerdudler.github.io/git-guide/" target="_blank" rel="noopener"><strong>Git-Guide, R. Dudler</strong></a>.
 </td>
 </tr>
 </table>
@@ -450,12 +448,6 @@ If you want to learn more about Git itself, ASAM recommends online introductions
 </div>
 <div class="sect2">
 <h3 id="sec-online-collaboration"><a class="anchor" href="#sec-online-collaboration"></a>Online collaboration</h3>
-<div class="paragraph">
-<p>The work on standards, particularly at ASAM, is of collaborative nature:
-People from different companies join in a project to develop something together.<br>
-Online repository platforms like GitLab and GitHub support the collaboration by providing features for commenting and reviewing content changes as well as issue boards for creating and tracking topics.
-In addition to that, they also integrate the same versioning and repository aspects described in the <a href="#sec-versioning-repo">section above</a>.</p>
-</div>
 <div class="paragraph">
 <p>Using online collaboration platforms with repository support has multiple benefits:</p>
 </div>
@@ -485,7 +477,7 @@ In addition to that, they also integrate the same versioning and repository aspe
 <div class="content">
 <img src="../_images/Concepts/issue_example.drawio.svg" alt="issue example.drawio">
 </div>
-<div class="title">Figure 4. Example for a topic discussion through the GitLab issue board in a project</div>
+<div class="title">Figure 3. Example for a topic discussion through the GitLab issue board in a project</div>
 </div>
 <div class="paragraph">
 <p>ASAM currently supports projects on both its internal GitLab instance as well as on the public GitHub.
@@ -502,7 +494,7 @@ ASAM projects typically automate the following steps:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Convert AsciiDoc files to html using <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor</a> or <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a></p>
+<p>Publish AsciiDoc files using <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor</a> or <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a></p>
 </li>
 <li>
 <p><a href="https://en.wikipedia.org/wiki/Lint_(software)" target="_blank" rel="noopener">Linting</a> and testing documents for rules defined in the ASAM editorial guide and returning found errors</p>
@@ -531,7 +523,7 @@ If you want to learn more about pipelines, see <a href="https://docs.gitlab.com/
 </div>
 <nav class="pagination">
   <span class="prev"><a href="deliverables.html">ASAM Deliverables</a></span>
-  <span class="next"><a href="project_phases.html">Project phases</a></span>
+  <span class="next"><a href="../Project%20guidelines.html">Project guidelines</a></span>
 </nav>
 </article>
   </div>
