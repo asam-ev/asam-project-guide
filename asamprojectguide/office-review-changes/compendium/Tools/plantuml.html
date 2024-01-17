@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Meeting notes :: ASAM Project Guide</title>
-    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide/office-review-changes/compendium/Project%20guidelines/meeting_notes.html">
-    <link rel="prev" href="issue_implementation.html">
-    <link rel="next" href="meeting_types.html">
+    <title>PlantUML :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide/office-review-changes/compendium/Tools/plantuml.html">
+    <link rel="prev" href="git/03_git_best_practices.html">
+    <link rel="next" href="remote_repo.html">
+    <meta name="description" content="A summary page describing what PlantUML is and where to find related information, guides etc.">
+    <meta name="keywords" content="plantUML,summary,tool,recommended, doc-as-code">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../_'</script>
@@ -32,7 +34,7 @@
       <div id="topbar-nav" class="navbar-menu">
         <a class="navbar-item" href="#">To top</a>
         <div class="navbar-item is-hoverable">
-              <a class="navbar-item" href="mailto:info@asam.net?subject&#x3D;Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body&#x3D;%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20https://asam-ev.github.io/asam-project-guide/asamprojectguide/office-review-changes/compendium/Project%20guidelines/meeting_notes.html%20%7C%0D%0A%7C%20Page%20%7C%20Meeting notes%20%7C%0D%0A%7C%20Module%20%7C%20compendium%20%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+              <a class="navbar-item" href="mailto:info@asam.net?subject&#x3D;Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body&#x3D;%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20https://asam-ev.github.io/asam-project-guide/asamprojectguide/office-review-changes/compendium/Tools/plantuml.html%20%7C%0D%0A%7C%20Page%20%7C%20PlantUML%20%7C%0D%0A%7C%20Module%20%7C%20compendium%20%7C" title="Click here to submit feedback on this page">Submit feedback</a>
         </div>
       </div>
     </div>
@@ -52,6 +54,9 @@
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../../tour_guide/index.html">Guided tour</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../tour_guide/tools.html">Tool overview</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../../tour_guide/meetings.html">Project meetings</a>
@@ -89,7 +94,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../tour_guide/advanced_tools.html">Tools overview for advanced users</a>
+    <a class="nav-link" href="../../tour_guide/advanced_tools.html">Tools for advanced users</a>
   </li>
 </ul>
   </li>
@@ -103,52 +108,64 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../Concepts.html">Concepts</a>
+    <a class="nav-link" href="../Development.html">Development</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Concepts/deliverables.html">ASAM Deliverables</a>
+    <a class="nav-link" href="../Development/contribute_with_issues.html">Contribute with issues</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Concepts/doc-as-code.html">Documentation as Code</a>
+    <a class="nav-link" href="../Development/contribution.html">Contribution workflow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Development/decisions_and_escalations.html">Decisions and escalations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Development/doc-as-code.html">Documentation as Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Development/guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Development/issue_implementation.html">Issue implementation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Development/meeting_notes.html">Meeting notes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Development/meeting_types.html">Meeting types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Development/polls_votes.html">Polls and voting guidelines</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../Project%20guidelines.html">Project guidelines</a>
+    <a class="nav-link" href="../Projects.html">Projects</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="01_project_terms.html">Project terms</a>
+    <a class="nav-link" href="../Projects/01_project_terms.html">Project roles &amp; structure</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="02_project_types.html">Project types</a>
+    <a class="nav-link" href="../Projects/02_project_types.html">Project types</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="03_project_phases.html">Project phases</a>
+    <a class="nav-link" href="../Projects/03_project_phases.html">Project phases</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Standards.html">Standards</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Standards/01_standard_versioning.html">Versioning of standards</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="contribute_with_issues.html">Contribute with issues</a>
+    <a class="nav-link" href="../Standards/04_Types_of_standard.html">Classification of Standards</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="contribution.html">Contribution workflow</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="decisions_and_escalations.html">Decisions and escalations</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="guidelines.html">Meeting guidelines</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="issue_implementation.html">Issue implementation</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="meeting_notes.html">Meeting notes</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="meeting_types.html">Meeting types</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="polls_votes.html">Polls and voting guidelines</a>
+    <a class="nav-link" href="../Standards/deliverables.html">ASAM Deliverables</a>
   </li>
 </ul>
   </li>
@@ -158,85 +175,88 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../Tools/docker.html">Docker</a>
+    <a class="nav-link" href="docker.html">Docker</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/docker/01_docker_setup.html">Setup</a>
+    <a class="nav-link" href="docker/01_docker_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/docker/02_docker_guides.html">Guides</a>
+    <a class="nav-link" href="docker/02_docker_guides.html">Guides</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/docker/03_docker_best-practices.html">Best practices</a>
+    <a class="nav-link" href="docker/03_docker_best-practices.html">Best practices</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../Tools/drawio.html">Draw.io</a>
+    <a class="nav-link" href="drawio.html">Draw.io</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/drawio/01_drawio_setup.html">Setup</a>
+    <a class="nav-link" href="drawio/01_drawio_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/drawio/02_drawio_guides.html">Guides</a>
+    <a class="nav-link" href="drawio/02_drawio_guides.html">Guides</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../Tools/git.html">Git</a>
+    <a class="nav-link" href="git.html">Git</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/git/01_git_setup.html">Setup</a>
+    <a class="nav-link" href="git/01_git_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/git/02_git_guides.html">Guides</a>
+    <a class="nav-link" href="git/02_git_guides.html">Guides</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/git/03_git_best_practices.html">Best practices</a>
+    <a class="nav-link" href="git/03_git_best_practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="plantuml.html">PlantUML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="remote_repo.html">DevOps platforms</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="remote_repo/01_remote_repo_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="remote_repo/02_remote_repo_guides.html">Guides</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../Tools/remote_repo.html">DevOps platforms</a>
+    <a class="nav-link" href="sharepoint.html">Microsoft Sharepoint</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/remote_repo/01_remote_repo_setup.html">Setup</a>
+    <a class="nav-link" href="sharepoint/01_sharepoint_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/remote_repo/02_remote_repo_guides.html">Guides</a>
+    <a class="nav-link" href="sharepoint/02_sharepoint_guides.html">Guides</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../Tools/sharepoint.html">Microsoft Sharepoint</a>
+    <a class="nav-link" href="vscode.html">Visual Studio Code</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/sharepoint/01_sharepoint_setup.html">Setup</a>
+    <a class="nav-link" href="vscode/01_vscode_setup.html">Setup</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/sharepoint/02_sharepoint_guides.html">Guides</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../Tools/vscode.html">Visual Studio Code</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/vscode/01_vscode_setup.html">Setup</a>
+    <a class="nav-link" href="vscode/02_vscode_guides.html">Guides</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/vscode/02_vscode_guides.html">Guides</a>
+    <a class="nav-link" href="vscode/03_vscode_recommended_settings.html">Recommended settings</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/vscode/03_vscode_recommended_settings.html">Recommended settings</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../Tools/vscode/04_vscode_recommended_extensions.html">Recommended extensions</a>
+    <a class="nav-link" href="vscode/04_vscode_recommended_extensions.html">Recommended extensions</a>
   </li>
 </ul>
   </li>
@@ -287,31 +307,74 @@
   <ul>
     <li><a href="../../index.html">ASAM Project Guide</a></li>
     <li><a href="../compendium.html">Compendium</a></li>
-    <li><a href="../Project%20guidelines.html">Project guidelines</a></li>
-    <li><a href="meeting_notes.html">Meeting notes</a></li>
+    <li><a href="../Tools.html">Tools for advanced users</a></li>
+    <li><a href="plantuml.html">PlantUML</a></li>
   </ul>
 </nav>
 <div class="page-versions">
   <button class="version-menu-toggle" title="Show other versions of page">office-review-changes</button>
   <div class="version-menu">
-    <a class="version is-current" href="meeting_notes.html">office-review-changes</a>
-    <a class="version" href="../../../latest/compendium/Project%20guidelines/meeting_notes.html">latest</a>
+    <a class="version is-current" href="plantuml.html">office-review-changes</a>
+    <a class="version is-missing" href="../../../latest/index.html">latest</a>
   </div>
 </div>
-  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/office-review-changes/content/modules/compendium/pages/Project%20guidelines/meeting_notes.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/office-review-changes/content/modules/compendium/pages/Tools/plantuml.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc" variant="wide">
-    <h1 class="page">Meeting notes</h1>
+    <h1 class="page">PlantUML</h1>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Click the tool&#8217;s icon on the right to access the tool&#8217;s download page.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
-<p>Unresolved include directive in modules/compendium/pages/Project guidelines/meeting_notes.adoc - include::tour_guide:page$meetings/meeting_minutes.adoc[]</p>
+<p>PlantUML is a tool that allows users to create diagrams from a plain text language. It is particularly useful for designing and visualizing software architecture but can also be used for other types of diagrams such as sequence diagrams, use case diagrams, class diagrams, activity diagrams, component diagrams, state diagrams, object diagrams, and deployment diagrams.</p>
+</div>
+<div class="paragraph">
+<p>The key features of PlantUML include:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Plain Text Descriptions</strong>: Diagrams are defined using a simple and intuitive language. This makes it easy to create and modify diagrams without needing complex graphical tools.</p>
+</li>
+<li>
+<p><strong>Version Control Friendly</strong>: Since diagrams are described in text, they can be easily version-controlled alongside software code, providing a history of changes and facilitating collaboration.</p>
+</li>
+<li>
+<p><strong>Wide Range of Diagram Types</strong>: PlantUML supports various types of UML diagrams, as well as other diagrams like Gantt charts and mind maps.</p>
+</li>
+<li>
+<p><strong>Integration</strong>: It can be integrated into various software tools like wikis, forums, and IDEs (Integrated Development Environments) for easier access and usage.</p>
+</li>
+<li>
+<p><strong>Automation</strong>: PlantUML allows for automation in generating diagrams, which is particularly useful in large projects where diagrams need to be updated frequently.</p>
+</li>
+<li>
+<p><strong>Export Formats</strong>: Diagrams can be exported to different formats such as PNG, SVG, and ASCII art.</p>
+</li>
+<li>
+<p><strong>Open Source</strong>: PlantUML is open source, allowing users to modify or extend its capabilities according to their needs.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Overall, PlantUML is a powerful tool for developers and teams who want to document and visualize their software architecture and workflows efficiently and collaboratively.</p>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="issue_implementation.html">Issue implementation</a></span>
-  <span class="next"><a href="meeting_types.html">Meeting types</a></span>
+  <span class="prev"><a href="git/03_git_best_practices.html">Best practices</a></span>
+  <span class="next"><a href="remote_repo.html">DevOps platforms</a></span>
 </nav>
 </article>
   </div>
