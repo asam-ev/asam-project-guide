@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git best practices :: ASAM Project Guide</title>
+    <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/Tools/git/03_git_best_practices.html">
+    <link rel="prev" href="02_git_guides.html">
+    <link rel="next" href="../plantuml.html">
+    <meta name="description" content="Contains best practices for using git.">
+    <meta name="keywords" content="git, best-practices,feature,commit">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../../../_/css/site.css">
+    <script>var uiRootPath = '../../../../../_'</script>
+<link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="asam_logo"></div>
+        <a href="https://asam-ev.github.io/asam-project-guide">ASAM Project Guide
+          
+          latest</a>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item search hide-for-print">
+          <div id="search-field" class="field">
+            <input id="search-input" type="text" placeholder="Search the docs">
+          </div>
+      </div>
+      <div id="topbar-nav" class="navbar-menu">
+        <a class="navbar-item" href="#">To top</a>
+        <div class="navbar-item is-hoverable">
+              <a class="navbar-item" href="mailto:info@asam.net?subject&#x3D;Review%20feedback:%20%3Ctopic%20summary%3E&amp;amp;body&#x3D;%23%23%20Subject%0D%0A%3CAdd%20title%20of%20topic%3E%0D%0A%0D%0A%23%23%20Section%20%0D%0A%3CAdd%20section%20here%3E%0D%0A%0D%0A%23%23%20Description%20%0D%0A%3CAdd%20feedback%20here%3E%0D%0A%3C%20Recommended%3A%20Add%20a%20screenshot%20of%20the%20part%20you%20want%20to%20comment%20on%3E%0D%0A%0D%0A%23%23%20Suggestion%0D%0A%3C%20Add%20a%20suggestion%20or%20things%20you%20want%20to%20change%20after%20this%3E%0D%0A%0D%0A%3C%21--%20The%20following%20content%20was%20automatically%20added.%20DO%20NOT%20CHANGE%20--%3E%0D%0A%7C%20%7C%20%7C%0D%0A%7C---%7C---%7C%0D%0A%7C%20URL%20%7C%20https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/Tools/git/03_git_best_practices.html%20%7C%0D%0A%7C%20Page%20%7C%20Git best practices%20%7C%0D%0A%7C%20Module%20%7C%20compendium%20%7C" title="Click here to submit feedback on this page">Submit feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="asamprojectguide" data-version="latest">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../index.html">ASAM Project Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../tour_guide/index.html">Guided tour</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../tour_guide/tools.html">Tool overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../tour_guide/meetings.html">Project meetings</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/types.html">Meeting types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/meeting_notes.html">Meeting minutes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/meetings/decisions_and_escalations.html">Decision making</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../tour_guide/sharepoint.html">Project Sharepoint</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../tour_guide/contribution.html">Contribution workflow</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/contribution/contribute_with_issues.html">The use of issues</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/contribution/issue_list.html">Label overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tour_guide/contribution/issue_implementation.html">Solution development</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../tour_guide/advanced_tools.html">Tools for advanced users</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../compendium.html">Compendium</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../Development.html">Development</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/contribute_with_issues.html">Contribute with issues</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/contribution.html">Contribution workflow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/decisions_and_escalations.html">Decisions and escalations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/doc-as-code.html">Documentation as Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/guidelines.html">Meeting guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/issue_implementation.html">Issue implementation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/meeting_notes.html">Meeting notes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/meeting_types.html">Meeting types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/milestones_and_planning.html">Milestones and planning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Development/polls_votes.html">Polls and voting guidelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../Projects.html">Projects</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Projects/01_project_terms.html">Project roles &amp; structure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Projects/01a_project_tsc.html">ASAM TSC</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Projects/02_project_types.html">Project types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Projects/03_project_phases.html">Project phases</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../Standards.html">Standards</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Standards/01_standard_versioning.html">Versioning of standards</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Standards/04_Types_of_standard.html">Classification of Standards</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Standards/deliverables.html">Parts of a standard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../Tools.html">Tools for advanced users</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../docker.html">Docker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docker/01_docker_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docker/02_docker_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docker/03_docker_best-practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../drawio.html">Draw.io</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../drawio/01_drawio_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../drawio/02_drawio_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../git.html">Git</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="01_git_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="02_git_guides.html">Guides</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="03_git_best_practices.html">Best practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../plantuml.html">PlantUML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../remote_repo.html">DevOps platforms</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../remote_repo/01_remote_repo_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../remote_repo/02_remote_repo_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sharepoint.html">Microsoft Sharepoint</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../sharepoint/01_sharepoint_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../sharepoint/02_sharepoint_guides.html">Guides</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../vscode.html">Visual Studio Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/01_vscode_setup.html">Setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/02_vscode_guides.html">Guides</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/03_vscode_recommended_settings.html">Recommended settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vscode/04_vscode_recommended_extensions.html">Recommended extensions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASAM Project Guide</span>
+    <span class="version">latest</span>
+  </div>
+  <ul class="components">
+        <li class="component is-current">
+          <a class="title" href="../../../index.html">ASAM Project Guide</a>
+          <ul class="versions">
+            <li class="version is-current is-latest">
+              <a href="../../../index.html">latest</a>
+            </li>        
+        </ul>
+      </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">ASAM Project Guide</a></li>
+    <li><a href="../../compendium.html">Compendium</a></li>
+    <li><a href="../../Tools.html">Tools for advanced users</a></li>
+    <li><a href="../git.html">Git</a></li>
+    <li><a href="03_git_best_practices.html">Best practices</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/asam-ev/asam-project-guide-content/blob/main/content/modules/compendium/pages/Tools/git/03_git_best_practices.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc" variant="wide">
+    <h1 class="page">Git best practices</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="../git.html" class="xref page"><span class="image right"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/240px-Git_icon.svg.png" alt="Git" width="80" title="&#8594;Home&#8592;"></span></a></p>
+</div>
+<div class="paragraph">
+<p>This is a guide for programming with version control.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Avoid merge commits by using a <a href="https://help.github.com/articles/about-git-rebase/" target="_blank" rel="noopener">rebase workflow</a>.</p>
+</li>
+<li>
+<p><a href="https://www.git-tower.com/learn/git/faq/git-squash" target="_blank" rel="noopener">Squash</a> multiple trivial commits into a single commit.</p>
+</li>
+<li>
+<p>Write a <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" target="_blank" rel="noopener">good commit message</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_write_a_feature"><a class="anchor" href="#_write_a_feature"></a>Write a feature</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create a local feature branch based off <code>main</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git checkout main
+git pull
+git checkout -b &lt;branch-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Rebase frequently to incorporate upstream changes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git fetch origin
+git rebase origin/main</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Resolve conflicts.
+When feature is complete and tests pass, stage the changes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git add --all</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When you&#8217;ve staged the changes, commit them.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git status
+git commit --verbose</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Write a <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" target="_blank" rel="noopener">good commit message</a>.
+Example format:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Present-tense summary under 50 characters</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>More information about commit (under 72 characters).</p>
+</li>
+<li>
+<p>More information about commit (under 72 characters).</p>
+<div class="literalblock">
+<div class="content">
+<pre>http://project.management-system.com/ticket/123</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you&#8217;ve created more than one commit, <a href="https://help.github.com/articles/about-git-rebase/" target="_blank" rel="noopener">use <code>git rebase</code> interactively</a> to squash them into cohesive commits with good messages:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git rebase -i origin/main</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Share your branch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git push origin &lt;branch-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Submit a <a href="https://help.github.com/articles/using-pull-requests/" target="_blank" rel="noopener">GitHub pull request</a>.</p>
+</div>
+<div class="paragraph">
+<p>Ask for a code review in the project&#8217;s chat room.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_review_code"><a class="anchor" href="#_review_code"></a>Review code</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A team member other than the author reviews the pull request.
+They follow Code Review guidelines to avoid miscommunication.</p>
+</div>
+<div class="paragraph">
+<p>They make comments and ask questions directly on lines of code in the GitHub web interface or in the project&#8217;s chat room.</p>
+</div>
+<div class="paragraph">
+<p>For changes which they can make themselves, they check out the branch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git checkout &lt;branch-name&gt;
+./bin/setup
+git diff staging/main..HEAD</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>They make small changes right in the branch, test the feature on their machine, run tests, commit, and push.</p>
+</div>
+<div class="paragraph">
+<p>When satisfied, they comment on the pull request <code>Ready to merge.</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_merge_a_branch"><a class="anchor" href="#_merge_a_branch"></a>Merge a branch</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Rebase interactively.
+Squash commits like "Fix whitespace" into one or a small number of valuable commit(s).
+Edit commit messages to reveal intent.
+Run tests.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git fetch origin
+git rebase -i origin/main</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Force push your branch.
+This allows GitHub to automatically close your pull request and mark it as merged when your commit(s) are pushed to <code>main</code>.
+It also makes it possible to <a href="http://stackoverflow.com/a/17819027" target="_blank" rel="noopener">find the pull request</a> that brought in your changes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git push --force-with-lease origin &lt;branch-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>View a list of new commits.
+View changed files.
+Merge branch into <code>main</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git log origin/main..&lt;branch-name&gt;
+git diff --stat origin/main
+git checkout main
+git merge &lt;branch-name&gt; --ff-only
+git push</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Delete your remote feature branch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git push origin --delete &lt;branch-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Delete your local feature branch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">git branch --delete &lt;branch-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TODO
+image::compendium:gitlab/workflow_tut_step3.png[img4, 1100,title="merge request"]</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/gitlab/workflow_tut_step4.png" alt="img5" width="1100">
+</div>
+<div class="title">Figure 1. merge request options</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="02_git_guides.html">Guides</a></span>
+  <span class="next"><a href="../plantuml.html">PlantUML</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../../../_/js/site.js" data-ui-root-path="../../../../../_"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../../_/js/vendor/highlightjs-line-numbers.js"></script>
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+  </body>
+</html>
