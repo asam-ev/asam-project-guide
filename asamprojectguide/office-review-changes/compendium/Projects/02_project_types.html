@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Project types :: ASAM Project Guide</title>
     <link rel="canonical" href="https://asam-ev.github.io/asam-project-guide/asamprojectguide/office-review-changes/compendium/Projects/02_project_types.html">
-    <link rel="prev" href="01_project_terms.html">
+    <link rel="prev" href="01a_project_tsc.html">
     <link rel="next" href="03_project_phases.html">
     <meta name="description" content="Describes the different project types at ASAM for new members and interested parties.">
     <meta name="keywords" content="project, type, asam, concept">
@@ -135,6 +135,9 @@
     <a class="nav-link" href="../Development/meeting_types.html">Meeting types</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Development/milestones_and_planning.html">Milestones and planning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Development/polls_votes.html">Polls and voting guidelines</a>
   </li>
 </ul>
@@ -145,6 +148,9 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="01_project_terms.html">Project roles &amp; structure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="01a_project_tsc.html">ASAM TSC</a>
   </li>
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="02_project_types.html">Project types</a>
@@ -339,7 +345,7 @@
 <p><strong>Study projects</strong> provide members an organizational structure to study or analyze specific aspects of ASAM standards or technology sectors in a collaborative way.</p>
 </li>
 <li>
-<p><strong>Implementation project</strong>, the output is software, tooling or reference implementations to support the use and adoption of one or more standards.</p>
+<p><strong>Implementation project</strong>, the output is software or tooling to support the use and adoption of one or more standards.</p>
 </li>
 </ul>
 </div>
@@ -391,7 +397,7 @@ The goals of concept projects are:</p>
 <p>The minimum deliverable of a concept project must be a concept paper.
 The paper shall include the findings of the project group and proposals for ASAM standards.
 Proposals for ASAM standards shall be as specific as possible.
-Ideally, the concept project documents their proposals in a copy-paste ready format, as it could be taken over into the respective ASAM standard.</p>
+Ideally, the concept project documents their proposals in a copy-paste ready format, as it could be taken over into the respective proposal for a standardization activity.</p>
 </div>
 <div class="paragraph">
 <p>Upon request, ASAM provides funding for concept projects up to 75% of the total required project budget.</p>
@@ -418,13 +424,13 @@ Link to the concept paper template to be added.
 </div>
 <div class="paragraph">
 <p>ASAM provides funding for standard development projects up to 25% of the total required project budget.
-Each standard may have only one development project at a time.</p>
+Each standard shall have only one development project at a time.</p>
 </div>
 <div class="paragraph">
 <p>For more detail on versioning, see <a href="../Standards/01_standard_versioning.html" class="xref page">standard versioning</a>.</p>
 </div>
 <div class="paragraph">
-<p>ASAM distinguishes between two types of standard development project.</p>
+<p>ASAM distinguishes between two types of standard development project, Future Version Development and Maintenance.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -433,7 +439,7 @@ Each standard may have only one development project at a time.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Link to the standard templates to be added.
+Templates for specification documents: <a href="https://code.asam.net/common/templates/standard-template">Antora</a> / <a href="https://asamev.sharepoint.com/:w:/g/ETcjM7wqdrFHo6wUU1egoacBxvcD3CXoSVcsQVP6kqIkFg?e=zCQPa0">Word</a>.
 </td>
 </tr>
 </table>
@@ -441,7 +447,8 @@ Link to the standard templates to be added.
 <div class="sect2">
 <h3 id="_future_version_development_fvd"><a class="anchor" href="#_future_version_development_fvd"></a>Future version development (FVD)</h3>
 <div class="paragraph">
-<p>Development of new, major or minor versions of standards.
+<p>Development of major or minor versions of standards, including.
+New standards are treated as major version development (version 1.0.0).
 The new version of a standard(s) is defined by the project during its development and approved by the TSC.</p>
 </div>
 </div>
@@ -472,31 +479,23 @@ They meet one or more of the following criteria:</p>
 </div>
 <div class="paragraph">
 <p>It is expected that the implementation of the new version will require low development or migration efforts by tool vendors and end users.
-Revisions cannot include new features.
+Maintenance project shall not include new features.
 The only exception is, that a new feature has been forgotten in an earlier release of the standard and is absolutely required for a functional and meaningful standard.
-A new revision version of an ASAM standard shall be backward-compatible to its immediate predecessor version.
-The only exception is, that the correction of an error or the removal of an ambiguity cannot be reasonably solved in any other way than breaking the backward compatibility.
-An exception requires approval from the TSC and must be documented in the standard.
-Revision development projects may be converted to a minor or major version development project during the course of the project term, if backward-compatibility issues turn out to be too severe or new features need to be added.
-The TSC has to approve this change of project type.
-Only those ASAM members, who were actively involved in development of the preceding major or minor version, can participate in the revision development project.
-Revision projects are limited to a life cycle of up to 18 months.</p>
+A new revision version of an ASAM standard shall be backward-compatible to its immediate predecessor version.</p>
 </div>
 <div class="paragraph">
-<p>Unlike other project types, the paid service provider for a revision project can be contracted without a public request for quotation.
-The service provider is confirmed by the TSC and is appointed before the project starts. The project leader and the service provider must be employees from different companies.</p>
+<p>The only exception is, that the correction of an error or the removal of an ambiguity cannot be reasonably solved in any other way than breaking the backward compatibility.
+An exception requires approval from the TSC and must be documented in the standard.
+Maintenance development projects may be converted to a FVD project during the course of the project term, if backward-compatibility issues turn out to be too severe or new features need to be added.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-See here for the template for a new standard document.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>The TSC has to approve this change of project type.
+Only those ASAM members, who were actively involved in development of the preceding major or minor version, can participate in the maintenance development project.
+Maintenance projects are limited to a life cycle of up to 18 months.</p>
+</div>
+<div class="paragraph">
+<p>Unlike other project types, the paid service provider for a maintenance project can be contracted without a public request for quotation.
+The service provider is confirmed by the TSC and is appointed before the project starts. The project leader and the service provider must be employees from different companies.</p>
 </div>
 </div>
 </div>
@@ -508,10 +507,7 @@ See here for the template for a new standard document.
 <p>Study projects provide members an organizational structure to study or analyze specific aspects of ASAM standards in a collaborative way.</p>
 </div>
 <div class="paragraph">
-<p>Study projects have the overall goal to enhance the understanding of ASAM standards among the participants, to promote their application in member companies and to create change requests for the further development of ASAM standards.</p>
-</div>
-<div class="paragraph">
-<p>This project type is specifically intended for members in regions, where ASAM standards are not well known.</p>
+<p>Study projects have the overall goal to enhance the understanding of ASAM standards among the participants, to promote their application in member companies. They also serve to initiate change requests or technology upgrades for the further development of ASAM standards and to uncover new standardization opportunities.</p>
 </div>
 <div class="paragraph">
 <p>The content of study projects can be, but is not limited to:</p>
@@ -533,6 +529,9 @@ See here for the template for a new standard document.
 <li>
 <p>carry out an interoperability analysis of ASAM-related tools</p>
 </li>
+<li>
+<p>carry out a white space analysis to identify standardization needs</p>
+</li>
 </ul>
 </div>
 <div class="paragraph">
@@ -546,8 +545,19 @@ The requirements towards contribution and editorial rules do not apply for study
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Member submits a Study Project Proposal to the ASAM Office for project approval.
-NOTE: <a href="https://asamev.sharepoint.com/:w:/g/ETTPLaotxEdPsFTnJO9MSREBL7z32-NZABqicQYR5aTlkQ?e=G08th5">Workgroup Information Sheet</a></p>
+<p>Project group submits a Study Project Proposal to the ASAM Office for project approval.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="https://asamev.sharepoint.com/:w:/g/ETTPLaotxEdPsFTnJO9MSREBL7z32-NZABqicQYR5aTlkQ?e=G08th5">Study project proposal template</a>
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>ASAM Office checks the information and approves or rejects the project.</p>
@@ -559,7 +569,7 @@ NOTE: <a href="https://asamev.sharepoint.com/:w:/g/ETTPLaotxEdPsFTnJO9MSREBL7z32
 <p>ASAM Office publishes an announcement of the project.</p>
 </li>
 <li>
-<p>The study project starts and is being carried out as described in the study project information sheet.</p>
+<p>The study project starts and is carried out as described in the proposal.</p>
 </li>
 <li>
 <p>The ASAM Office monitors the project activities.</p>
@@ -674,7 +684,7 @@ Excluded are expenses for meeting participation and travel.</p>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="01_project_terms.html">Project roles &amp; structure</a></span>
+  <span class="prev"><a href="01a_project_tsc.html">ASAM TSC</a></span>
   <span class="next"><a href="03_project_phases.html">Project phases</a></span>
 </nav>
 </article>

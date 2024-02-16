@@ -134,6 +134,9 @@
     <a class="nav-link" href="../Development/meeting_types.html">Meeting types</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Development/milestones_and_planning.html">Milestones and planning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Development/polls_votes.html">Polls and voting guidelines</a>
   </li>
 </ul>
@@ -144,6 +147,9 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Projects/01_project_terms.html">Project roles &amp; structure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Projects/01a_project_tsc.html">ASAM TSC</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Projects/02_project_types.html">Project types</a>
@@ -336,37 +342,11 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_new_standard"><a class="anchor" href="#_new_standard"></a>New standard</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Special consideration is made for new standards.
-A first release of an ASAM standard is versioned as "1.0.0".
-A new standard meets the following criteria:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>There exists no predecessor in the ASAM standard portfolio.</p>
-</li>
-<li>
-<p>A predecessor in the ASAM standard portfolio was deprecated and a new standard in the same technology area shall be developed from scratch.</p>
-</li>
-<li>
-<p>The new standard is an extension, substitution or parallel development of a standard from another standardization organization.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>If a new standard replaces a deprecated standard, then the new standard shall not have the same name as the deprecated standard.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="_major_version"><a class="anchor" href="#_major_version"></a>Major version</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Major version developments of ASAM standards introduce significant changes to the standard.
-Major version development projects meet one or more of the following criteria:</p>
+Major version developments meet one or more of the following criteria:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -382,14 +362,35 @@ Major version development projects meet one or more of the following criteria:</
 <p>It is expected that the implementation of the new version will require significant development or migration efforts by tool vendors and end users alike.
 A new major version of an ASAM standard does not have to be backward-compatible to its predecessor versions.</p>
 </div>
+<div class="sect2">
+<h3 id="_new_standard"><a class="anchor" href="#_new_standard"></a>New standard</h3>
+<div class="paragraph">
+<p>Special consideration is made for new standards.
+A first release of an ASAM standard is versioned as "1.0.0".
+A new standard meets the following criteria:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>There exists no predecessor in the ASAM standard portfolio.</p>
+</li>
+<li>
+<p>The new standard is an extension, substitution or parallel development of a standard from another standardization organization.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If a new standard replaces a deprecated standard, then the new standard shall not have the same name as the deprecated standard.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_minor_version"><a class="anchor" href="#_minor_version"></a>Minor version</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Minor version developments of ASAM standards introduce changes to existing features on a smaller scale or introduce new features that are rather small relative to the rest of the standard.
-Minor version development projects meet one or more of the following criteria:</p>
+<p>Minor versions introduce changes to existing features on a smaller scale or introduce new features that are rather small relative to the rest of the standard.
+Minor versions meet one or more of the following criteria:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -402,7 +403,9 @@ Minor version development projects meet one or more of the following criteria:</
 </ul>
 </div>
 <div class="paragraph">
-<p>It is expected that the implementation of the new version will require low development or migration efforts by tool vendors and end users.
+<p>Minor releases do not remove methods, properties or interfaces.<br>
+Minor releases do not change the signature (i.e. name, parameters and return value) of methods or properties.<br>
+It is expected that the implementation of the new minor version will require low development or migration efforts by tool vendors and end users.
 A new minor version of an ASAM standard shall be backward-compatible to its immediate predecessor version.
 Exceptions are allowed, require approval from the TSC and must be documented in the standard.</p>
 </div>
@@ -412,8 +415,8 @@ Exceptions are allowed, require approval from the TSC and must be documented in 
 <h2 id="_maintenance_version"><a class="anchor" href="#_maintenance_version"></a>Maintenance version</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Revision version developments of ASAM standards resolve technical issues with the currently released version of the standard.
-Revision version development projects meet one or more of the following criteria:</p>
+<p>Maintenance version developments of ASAM standards resolve technical issues with the currently released version of the standard.
+Maintenance version development projects meet one or more of the following criteria:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -435,13 +438,13 @@ Revision version development projects meet one or more of the following criteria
 </ul>
 </div>
 <div class="paragraph">
-<p>It is expected that the implementation of the new version will require low development or migration efforts by tool vendors and end users.</p>
+<p>It is expected that the implementation of the new maintenance version will require low development or migration efforts by tool vendors and end users.</p>
 </div>
 <div class="paragraph">
 <p>Maintenance versions cannot include new features.</p>
 </div>
 <div class="paragraph">
-<p>The only exception is, that a new feature has been forgotten in an earlier release of the standard and is absolutely required for a functional and meaningful standard.</p>
+<p>The only exception is that a new feature has been forgotten in an earlier release of the standard and is absolutely required for a functional and meaningful standard.</p>
 </div>
 <div class="paragraph">
 <p>A new maintenance version of an ASAM standard shall be backward-compatible to its immediate predecessor version. The only exception is, that the correction of an error or the removal of an ambiguity cannot be reasonably solved in any other way than breaking the backward compatibility. An exception requires approval from the TSC and must be documented in the standard.</p>
