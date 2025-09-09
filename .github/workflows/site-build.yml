@@ -15,7 +15,7 @@ on:
 jobs:
   build:
     name: Build the ASAM project guide and deploy it to gh-pages
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     services:
       kroki:
